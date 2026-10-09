@@ -1,0 +1,40 @@
+{
+  "_descripcion": "Mapeo de las fuentes originales (rutas relativas a _raw/) a los temas del vault. Cada sección va desde el encabezado 'desde' (incluido) hasta 'hasta' (excluido). 'aceptados' lista bloques originales que no tienen destino a propósito, con su motivo.",
+  "fuentes": {
+    "ramo": "Semestre 3/Ingenieria Software - IIC2143 08c5cccd4c074a7c86e144406cfad16c.html",
+    "c1": "Semestre 3/Calendario/C1 Software 7018748b86f94dbcb5095e047205380d.html",
+    "pt1": "Semestre 3/Ingenieria Software - IIC2143/Resumen Software Pt 1 817fc06029174961a4be71f7f0f90819.html",
+    "pp": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica cc6e3f226a4546cebf8f1ff933abe577.html",
+    "clases": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022) c27376f1ba5f455c93dbe89a05d2c9f8.html",
+    "interrogaciones": "Semestre 3/Ingenieria Software - IIC2143/Interrogaciones - Examenes - Software 778e3eda3d8d4fe1bfdffacfaeb72e5a.html",
+    "libros": "Semestre 3/Ingenieria Software - IIC2143/Libros - Software cb8d7e2a1e9d447995588eb7d1a22b4e.html",
+    "proyecto": "Semestre 3/Ingenieria Software - IIC2143/Proyecto - Software 4dd5ee5039a047ee99c131f12790deca.html"
+  },
+  "temas": {
+    "Procesos de desarrollo": {
+      "carpeta": "Ingeniería de Software/Procesos de desarrollo",
+      "estado": "hecho",
+      "secciones": [
+        {"fuente": "pt1", "desde": "4. Procesos", "hasta": "5. SCRUM"}
+      ]
+    },
+    "Scrum": {"carpeta": "Ingeniería de Software/Scrum y gestión ágil/Scrum", "estado": "pendiente", "secciones": []},
+    "Historias de usuario": {"carpeta": "Ingeniería de Software/Scrum y gestión ágil/Historias de usuario", "estado": "pendiente", "secciones": []},
+    "Planificación y estimación": {"carpeta": "Ingeniería de Software/Scrum y gestión ágil/Planificación y estimación", "estado": "pendiente", "secciones": []},
+    "Ruby": {"carpeta": "Ingeniería de Software/Ruby", "estado": "pendiente", "secciones": []},
+    "Programación orientada a objetos": {"carpeta": "Ingeniería de Software/Programación orientada a objetos", "estado": "pendiente", "secciones": []},
+    "Fundamentos web": {"carpeta": "Ingeniería de Software/Desarrollo web con Rails/Fundamentos web", "estado": "pendiente", "secciones": []},
+    "Rails": {"carpeta": "Ingeniería de Software/Desarrollo web con Rails/Rails", "estado": "pendiente", "secciones": []},
+    "Testing": {"carpeta": "Ingeniería de Software/Testing", "estado": "pendiente", "secciones": []},
+    "UML": {"carpeta": "Ingeniería de Software/Diseño y UML/UML", "estado": "pendiente", "secciones": []},
+    "Principios de diseño": {"carpeta": "Ingeniería de Software/Diseño y UML/Principios de diseño", "estado": "pendiente", "secciones": []},
+    "Patrones de comportamiento": {"carpeta": "Ingeniería de Software/Patrones de Diseño", "estado": "pendiente", "secciones": []},
+    "Patrones estructurales": {"carpeta": "Ingeniería de Software/Patrones de Diseño", "estado": "pendiente", "secciones": []},
+    "Patrones creacionales": {"carpeta": "Ingeniería de Software/Patrones de Diseño", "estado": "pendiente", "secciones": []},
+    "Arquitectura de software": {"carpeta": "Ingeniería de Software/Arquitectura de software", "estado": "pendiente", "secciones": []},
+    "Fundamentos y gestión del curso": {"carpeta": "Ingeniería de Software", "estado": "pendiente", "secciones": []}
+  },
+  "aceptados": [
+    {"fuente": "pp", "link": "https://app.notion.comundefined", "texto": "", "motivo": "Link roto generado por Notion junto a la imagen de Formularios Rails; no apunta a ningún recurso."}
+  ]
+}

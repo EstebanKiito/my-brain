@@ -1,0 +1,93 @@
+[
+  {
+    "tema": "Procesos de desarrollo",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Software Pt 1/Untitled.png",
+    "destino": "Ingeniería de Software/Procesos de desarrollo/adjuntos/Modelo en cascada - etapas.png",
+    "sha256": "2a3da6b34bf631421c502ac4f3d2310b716eefaeadcc793055c985aa82a62535"
+  },
+  {
+    "tema": "Procesos de desarrollo",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Software Pt 1/Untitled 1.png",
+    "destino": "Ingeniería de Software/Procesos de desarrollo/adjuntos/Procesos iterativos - analogía de la Mona Lisa.png",
+    "sha256": "0cc2667a6c829b24ad154b9dc27cd8cab9cd3d3e225b63f4b630afbd7555ff13"
+  },
+  {
+    "tema": "Procesos de desarrollo",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Software Pt 1/Untitled 2.png",
+    "destino": "Ingeniería de Software/Procesos de desarrollo/adjuntos/Modelo en espiral - cuadrantes.png",
+    "sha256": "2920503238cb3bf78e9288ac993bdbabe73b065514e688ee561e4f902b4edb16"
+  },
+  {
+    "tema": "Procesos de desarrollo",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Software Pt 1/Untitled 3.png",
+    "destino": "Ingeniería de Software/Procesos de desarrollo/adjuntos/Modelo de prototipos - flujo.png",
+    "sha256": "fd8957aab206f8cfc79ad36cb998badaa4afe106ced932c8da7e06d93e8b9c5c"
+  },
+  {
+    "tema": "Procesos de desarrollo",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Software Pt 1/Untitled 4.png",
+    "destino": "Ingeniería de Software/Procesos de desarrollo/adjuntos/Proceso unificado - fases y disciplinas.png",
+    "sha256": "6d4b30a37ca67414abbfbf596b17bce52c81ff072534ae4f3693c1e9780b49bd"
+  },
+  {
+    "tema": "Procesos de desarrollo",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Software Pt 1/Untitled 5.png",
+    "destino": "Ingeniería de Software/Procesos de desarrollo/adjuntos/Procesos incrementales - analogía de la Mona Lisa.png",
+    "sha256": "bdcf60d33126018168e37893599c1a02912793c3472bc3f831d6b5a9ad663e83"
+  },
+  {
+    "tema": "Procesos de desarrollo",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Software Pt 1/Untitled 6.png",
+    "destino": "Ingeniería de Software/Procesos de desarrollo/adjuntos/Procesos iterativos e incrementales - analogía de la Mona Lisa.png",
+    "sha256": "c6e87a697a16b2d0cf7dded1e5c7c57b105881856001031761ef15178ee80fad"
+  },
+  {
+    "tema": "Procesos de desarrollo",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Software Pt 1/Untitled 7.png",
+    "destino": "Ingeniería de Software/Procesos de desarrollo/adjuntos/Procesos iterativos e incrementales - del skate al auto.png",
+    "sha256": "9949e01c660325b5c1b590704eb9e75b721174293f2d451d7ee7a9af620e4880"
+  },
+  {
+    "tema": "Procesos de desarrollo",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Software Pt 1/Untitled 8.png",
+    "destino": "Ingeniería de Software/Procesos de desarrollo/adjuntos/Metodología ágil - ciclo.png",
+    "sha256": "a55ce4eb28c1d64dc0c7a5a1fa2b2239be02a245fa5646142e6a15042c1f4177"
+  },
+  {
+    "tema": "Procesos de desarrollo",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/5-SoftwareProcesses.pdf#page=11 (recorte)",
+    "destino": "Ingeniería de Software/Procesos de desarrollo/adjuntos/Slide - enfoque en cascada.png",
+    "sha256": "53c69e1d0d2af5dba91dab248e465b18f8b575480ba23394e4b59810cec5b225"
+  },
+  {
+    "tema": "Procesos de desarrollo",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/5-SoftwareProcesses.pdf#page=12 (recorte)",
+    "destino": "Ingeniería de Software/Procesos de desarrollo/adjuntos/Slide - enfoque iterativo.png",
+    "sha256": "3c5e473c912da4323e8ca99eecc2af4a54f60fece82dbfcc754d2642954dda09"
+  },
+  {
+    "tema": "Procesos de desarrollo",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/5-SoftwareProcesses.pdf#page=13 (recorte)",
+    "destino": "Ingeniería de Software/Procesos de desarrollo/adjuntos/Slide - enfoque iterativo e incremental.png",
+    "sha256": "d37d9253581a0f6368f9998cb95c25579640bf5e5802279c2f0163800bca2337"
+  },
+  {
+    "tema": "Procesos de desarrollo",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/5-SoftwareProcesses.pdf#page=22 (recorte)",
+    "destino": "Ingeniería de Software/Procesos de desarrollo/adjuntos/Slide - cascada en la práctica con retroalimentación.png",
+    "sha256": "998b2795bdb6511d749a757e0147b8bd60fd2831c256d7365eed896607d26456"
+  }
+]
