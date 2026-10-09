@@ -71,10 +71,13 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta.
 | ℹ️ | [[06 - Fixtures en Rails\|Fixtures en Rails]] | "app/test/fixtures/nombre_del_modelo.yml" | La ruta es `test/fixtures/<tabla>.yml` (no dentro de `app/`). |
 | ℹ️ | [[09 - Cobertura de código con SimpleCov\|SimpleCov]] | "gem ‘simplecov’, require: false, group :test" | Comillas rectas y `group: :test`. |
 
+## UML
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| 🟡 | [[04 - Relaciones entre clases en UML\|Relaciones entre clases en UML]] | "Composition: … Los objetos de B son creados dentro de B" | Debe ser "dentro de **A**" (así dice la slide). Se explica en [[05 - Agregación vs composición\|Agregación vs composición]]. |
+
 ## Detectadas para temas pendientes
 Se resolverán, con su callout en la nota, cuando se migre cada tema:
-- **UML:**
-  - Composición: "Los objetos de B son creados dentro de B"; probablemente "dentro de A" (así dice la slide).
 - **Patrones:**
   - Decorator, "Solución: Herencia y Dependencia": el patrón usa composición.
   - "Template Method — Ejemplo Diagrama (ya visto)": no queda claro a qué ejemplo se refiere.

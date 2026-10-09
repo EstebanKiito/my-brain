@@ -17,7 +17,7 @@ Vault de estudio del ramo. Cada nota cubre **un concepto**: no hace falta saber 
 | [[Ingeniería de Software/Programación orientada a objetos/_Índice\|Programación orientada a objetos]] | Clases, visibilidad, herencia, super, polimorfismo, lookup, self vs super | ✅ |
 | [[Ingeniería de Software/Desarrollo web con Rails/_Índice\|Desarrollo web con Rails]] | HTTP, HTML/CSS, MVC, Active Record, rutas, vistas, API | ✅ |
 | [[Ingeniería de Software/Testing/_Índice\|Testing]] | Unit, integration, fixtures, asserts, cobertura | ✅ |
-| Diseño y UML | Diagramas de clases y de secuencia, acoplamiento, cohesión | ⏳ pendiente |
+| [[Ingeniería de Software/Diseño y UML/_Índice\|Diseño y UML]] | Diagramas de clases y de secuencia ✅; acoplamiento y cohesión ⏳ | 🟡 en curso |
 | Patrones de Diseño | Comportamiento, estructurales, creacionales, ejercicios | ⏳ pendiente |
 | Arquitectura de software | Cliente-servidor, capas, microservicios | ⏳ pendiente |
 | Fundamentos y gestión del curso | Qué es la IS, evaluación, checklist de la prueba práctica | ⏳ pendiente |

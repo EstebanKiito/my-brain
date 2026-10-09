@@ -264,5 +264,82 @@
     "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 20.png",
     "destino": "Ingeniería de Software/Testing/adjuntos/SimpleCov - líneas no cubiertas.png",
     "sha256": "9fb5257021d6ab35e149ff464a131e44b3c26c69b6b7131b57b9fed26a758e00"
+  },
+  {
+    "tema": "UML",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 4.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Diagrama de clases - anatomía de una clase.png",
+    "sha256": "09e394012c6b9aab714b5a166856b9cfc2269bb3d4e91361e958188ae49732b7"
+  },
+  {
+    "tema": "UML",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 5.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Diagrama de clases - atributos y operaciones.png",
+    "sha256": "e0b290f20b98489bba1c28fa43a41093668b5e65c1c8e8f49aca4bc455b81082"
+  },
+  {
+    "tema": "UML",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 6.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Diagrama de clases - visibilidad.png",
+    "sha256": "8f0b2ab5e6a2ba7ea02efb02c71a331887962ce47ef645c3e237ca2a4076e213"
+  },
+  {
+    "tema": "UML",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 7.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Herencia UML - dos estilos.png",
+    "sha256": "ec20c9e8353b01255ac2f5c1218f9d82c1850231b5672fcc94b01a9771e8afa6"
+  },
+  {
+    "tema": "UML",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 8.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Realización UML - interfaz Owner.png",
+    "sha256": "e94c8a7cbacfa5c9bf0d58223abb3d6d318e9e3d6fdd531af1c4c1c482bde741"
+  },
+  {
+    "tema": "UML",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 9.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Relaciones UML - tipos de flechas.png",
+    "sha256": "9c657bd8abc9ff63fbc1d08e94ba9bacfe9cdc308d66260d4047110dc1563056"
+  },
+  {
+    "tema": "UML",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 10.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Diagrama de clases - ejemplo tienda online.png",
+    "sha256": "059ba9150e20bf92981bb68d40dc27e0cb5e953152198e6279ef129aa09a231b"
+  },
+  {
+    "tema": "UML",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 11.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Diagrama de secuencia - calculatePrice de Order.png",
+    "sha256": "0f36bcb1ef17280943dcb46ed8c85ada254cdba3ffb55139c4ec5a992377d128"
+  },
+  {
+    "tema": "UML",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 12.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Diagrama de secuencia - código de Order.png",
+    "sha256": "5be5fcb3d2f95595789d3d2cea6ca4f3818d9eba874cb9de941b1060b42cc98f"
+  },
+  {
+    "tema": "UML",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 13.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Diagrama de secuencia - creación y eliminación.png",
+    "sha256": "a0132efa885886d2ecff29d637bd7f57fc9e37ce2f8bd96db54ee820229b6bb7"
+  },
+  {
+    "tema": "UML",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 14.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Diagrama de secuencia - fragmentos loop alt opt.png",
+    "sha256": "cf654dc1b2bda70a1a055abbd763740559c91c7f027ea4633c00c8a8b10418f1"
   }
 ]

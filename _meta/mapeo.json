@@ -136,8 +136,15 @@
     },
     "UML": {
       "carpeta": "Ingeniería de Software/Diseño y UML/UML",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "pp",
+          "desde": "11. Diseño UML",
+          "hasta": "12. Testing"
+        }
+      ],
+      "adjuntos": "Ingeniería de Software/Diseño y UML/adjuntos"
     },
     "Principios de diseño": {
       "carpeta": "Ingeniería de Software/Diseño y UML/Principios de diseño",
