@@ -2,7 +2,7 @@
 ramo: Ingeniería de Software
 tema: Procesos de desarrollo
 tags: [ingsoft/procesos, origen/apuntes]
-prerrequisitos: ["[[Proceso de desarrollo de software]]", "[[Procesos iterativos]]"]
+prerrequisitos: ["[[01 - Proceso de desarrollo de software|Proceso de desarrollo de software]]", "[[03 - Procesos iterativos|Procesos iterativos]]"]
 ---
 # Procesos incrementales
 
@@ -22,11 +22,11 @@ En un proceso incremental el sistema se construye **por piezas terminadas**: cad
 
 > [!tip] Complemento — cuándo usarlo y comparación
 > - **Supone requisitos claros desde el inicio:** como en la imagen, hay que saber exactamente qué cuadro se quiere pintar.
-> - **Ventaja:** entrega partes funcionales antes que la [[Modelo en cascada|cascada]] y reparte el trabajo en entregas manejables.
+> - **Ventaja:** entrega partes funcionales antes que la [[02 - Modelo en cascada|cascada]] y reparte el trabajo en entregas manejables.
 > - **Riesgo:** si el usuario cambia de opinión, las piezas ya hechas no estaban pensadas para cambiar.
-> - La combinación con iteración da los [[Procesos iterativos e incrementales]], la base de los procesos ágiles.
+> - La combinación con iteración da los [[08 - Procesos iterativos e incrementales|Procesos iterativos e incrementales]], la base de los procesos ágiles.
 >
-> | | [[Procesos iterativos\|Iterativo]] | Incremental | Iterativo e incremental |
+> | | [[03 - Procesos iterativos\|Iterativo]] | Incremental | Iterativo e incremental |
 > |---|---|---|---|
 > | Cada entrega | Mejora el todo | Agrega una pieza | Agrega piezas **y** mejora las existentes |
 > | Usable antes del final | No necesariamente | Por partes | Sí, desde temprano |

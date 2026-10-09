@@ -2,12 +2,12 @@
 ramo: Ingeniería de Software
 tema: Procesos de desarrollo
 tags: [ingsoft/procesos, ingsoft/agil, origen/complemento]
-prerrequisitos: ["[[Metodologías ágiles y manifiesto ágil]]"]
+prerrequisitos: ["[[09 - Metodologías ágiles y manifiesto ágil|Metodologías ágiles y manifiesto ágil]]"]
 ---
 # Programación extrema (XP)
 
 > [!tip] Complemento — nota nueva (fuente: slides "Procesos de Desarrollo de Software" y libro del curso, cap. 2.4)
-> **Qué es:** Extreme Programming (XP) es uno de los primeros modelos ágiles. Más que un modelo de proceso, es una **colección de buenas prácticas** alineadas con el [[Metodologías ágiles y manifiesto ágil|Manifiesto Ágil]], llevadas a niveles "extremos".
+> **Qué es:** Extreme Programming (XP) es uno de los primeros modelos ágiles. Más que un modelo de proceso, es una **colección de buenas prácticas** alineadas con el [[09 - Metodologías ágiles y manifiesto ágil|Manifiesto Ágil]], llevadas a niveles "extremos".
 >
 > **Origen (slides):** Kent Beck, 1999. Se desarrolló durante el proyecto C3 junto a Ron Jeffries.
 >

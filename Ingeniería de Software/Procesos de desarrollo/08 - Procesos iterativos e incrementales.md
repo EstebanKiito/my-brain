@@ -2,7 +2,7 @@
 ramo: Ingeniería de Software
 tema: Procesos de desarrollo
 tags: [ingsoft/procesos, origen/apuntes]
-prerrequisitos: ["[[Procesos iterativos]]", "[[Procesos incrementales]]"]
+prerrequisitos: ["[[03 - Procesos iterativos|Procesos iterativos]]", "[[07 - Procesos incrementales|Procesos incrementales]]"]
 ---
 # Procesos iterativos e incrementales
 
@@ -34,13 +34,13 @@ Un proceso iterativo e incremental combina los dos enfoques: cada entrega **agre
 > [!tip] Complemento (libro del curso, cap. 2.4, y slides "Procesos de Desarrollo de Software")
 > - Cada iteración genera un **aumento de valor tangible** para el cliente, con funcionalidades **listas para usar**. El producto está completo con el último incremento.
 > - Los incrementos suelen corresponder a uno o más **relatos (historias) de usuario** nuevos.
-> - Los procesos iterativos e incrementales suelen llamarse **ágiles**; ver [[Metodologías ágiles y manifiesto ágil]].
+> - Los procesos iterativos e incrementales suelen llamarse **ágiles**; ver [[09 - Metodologías ágiles y manifiesto ágil|Metodologías ágiles y manifiesto ágil]].
 >
 > ![Slide - enfoque iterativo e incremental](adjuntos/Slide%20-%20enfoque%20iterativo%20e%20incremental.png)
 > *Analogía de las slides: la zanja se rellena con ladrillos (incrementos) y cada ladrillo se ajusta con el cincel (iteraciones).*
 
 > [!tip] Complemento — cómo se mitiga la segunda desventaja
-> La automatización que mencionan los apuntes corresponde, en la práctica, a la **integración continua** (compilar y correr las pruebas automáticamente en cada cambio) y al **despliegue continuo** (publicar automáticamente cada versión que pasa las pruebas). Por eso las pruebas automatizadas son tan importantes en los procesos ágiles. Ver también [[Programación extrema (XP)]].
+> La automatización que mencionan los apuntes corresponde, en la práctica, a la **integración continua** (compilar y correr las pruebas automáticamente en cada cambio) y al **despliegue continuo** (publicar automáticamente cada versión que pasa las pruebas). Por eso las pruebas automatizadas son tan importantes en los procesos ágiles. Ver también [[10 - Programación extrema (XP)|Programación extrema (XP)]].
 
 ## Preguntas de repaso
 

@@ -2,7 +2,7 @@
 ramo: Ingeniería de Software
 tema: Procesos de desarrollo
 tags: [ingsoft/procesos, origen/complemento]
-prerrequisitos: ["[[Proceso de desarrollo de software]]"]
+prerrequisitos: ["[[01 - Proceso de desarrollo de software|Proceso de desarrollo de software]]"]
 ---
 # Cómo elegir un proceso de desarrollo
 
@@ -39,12 +39,12 @@ prerrequisitos: ["[[Proceso de desarrollo de software]]"]
 > [!example] Ejemplo extra — cómo se traduce en decisiones
 > | Situación | Inclinación razonable |
 > |---|---|
-> | Requisitos estables, contrato cerrado, mucha documentación exigida | [[Modelo en cascada]] o un proceso con fases formales |
-> | Mucha incertidumbre técnica y alto costo de fallar | [[Modelo en espiral]] |
-> | El cliente no sabe bien lo que quiere | [[Modelo de prototipos]] |
-> | Cambios frecuentes y necesidad de entregar valor pronto | [[Procesos iterativos e incrementales]] / [[Metodologías ágiles y manifiesto ágil\|ágil]] |
+> | Requisitos estables, contrato cerrado, mucha documentación exigida | [[02 - Modelo en cascada\|Modelo en cascada]] o un proceso con fases formales |
+> | Mucha incertidumbre técnica y alto costo de fallar | [[04 - Modelo en espiral\|Modelo en espiral]] |
+> | El cliente no sabe bien lo que quiere | [[05 - Modelo de prototipos\|Modelo de prototipos]] |
+> | Cambios frecuentes y necesidad de entregar valor pronto | [[08 - Procesos iterativos e incrementales\|Procesos iterativos e incrementales]] / [[09 - Metodologías ágiles y manifiesto ágil\|ágil]] |
 >
-> Es una guía orientativa, no una regla. Ver también [[Comparación de modelos de proceso]].
+> Es una guía orientativa, no una regla. Ver también [[12 - Comparación de modelos de proceso|Comparación de modelos de proceso]].
 
 ## Preguntas de repaso
 

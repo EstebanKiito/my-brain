@@ -297,7 +297,7 @@ def prueba_grafo(notas):
 def prueba_formato(notas):
     print("\n[+] Formato (advertencias)")
     n_av = len(avisos)
-    prohibidos = re.compile(r"clase\s*\d|semana|resumen|\b[ic]\d+\b", re.I)
+    prohibidos = re.compile(r"clase\s*\d|semana|resumen|\b[ic]\d+\b", re.I)  # el prefijo "NN - " de orden de estudio sí está permitido
     for ruta, texto in notas.items():
         if not es_nota_del_ramo(ruta):
             continue
@@ -311,6 +311,8 @@ def prueba_formato(notas):
             aviso(f"{rel}: {lineas} líneas (> {MAX_LINEAS}); considerar dividir")
         if os.path.basename(ruta) == "_Índice.md":
             continue
+        if not re.match(r"^\d{2} - ", os.path.basename(ruta)):
+            aviso(f"{rel}: sin prefijo de orden de estudio 'NN - '")
         fm = re.match(r"^---\n(.*?)\n---\n", texto, re.S)
         if not fm:
             aviso(f"{rel}: sin frontmatter")
@@ -498,6 +500,19 @@ def prueba_cobertura(tema, items, notas_tema, notas_todas, aceptados, detalle):
                 if detalle:
                     print(f"     = {texto[:70]!r} → {os.path.basename(donde)}")
                 continue
+            if it["clase"] == "encabezado":
+                # un encabezado está cubierto si se parece al título o a un encabezado de alguna nota
+                titulos = [(r, normalizar(re.sub(r"^\d{2} - ", "", os.path.splitext(os.path.basename(r))[0])))
+                           for r in orden]
+                titulos += [(r, normalizar(l)) for r in orden
+                            for l in notas_todas[r].splitlines() if l.startswith("#")]
+                similar = next((r for r, t in titulos
+                                if difflib.SequenceMatcher(None, n, t).ratio() >= 0.75), None)
+                if similar:
+                    stats["reformulado"] += 1
+                    if detalle:
+                        print(f"     ≈ {texto[:70]!r} → título/encabezado de {os.path.basename(similar)}")
+                    continue
             if any(normalizar(a["texto"]) in n or n in normalizar(a["texto"]) for a in aceptados if a["fuente"] == fuente):
                 stats["aceptado"] += 1
                 continue

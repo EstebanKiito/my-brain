@@ -2,7 +2,7 @@
 ramo: Ingeniería de Software
 tema: Procesos de desarrollo
 tags: [ingsoft/procesos, origen/apuntes]
-prerrequisitos: ["[[Procesos iterativos]]"]
+prerrequisitos: ["[[03 - Procesos iterativos|Procesos iterativos]]"]
 ---
 # Proceso unificado (RUP)
 
@@ -43,8 +43,8 @@ flowchart LR
 > - **Cómo leer la imagen:** las columnas son las fases (Inception, Elaboration, Construction, Transition), divididas en iteraciones (I1, E1, C1…Cn, T1, T2). Las filas son **disciplinas** o *workflows* (modelado, implementación, pruebas, despliegue, gestión de configuración, gestión de proyecto, entorno). El alto de cada curva indica **cuánto se trabaja** esa disciplina en cada momento. Por ejemplo, el modelado es fuerte en Inicio y Elaboración, y la implementación es fuerte en Construcción. En todas las fases se hace un poco de todo, pero con distinta intensidad.
 > - **Cada fase puede tener varias iteraciones** hasta cumplir su objetivo.
 > - Define con mucho detalle los *workflows*, roles, artefactos de entrada y de salida. Fue uno de los primeros intentos de un proceso iterativo completo.
-> - **Mitigación temprana del riesgo:** desarrolla primero los casos de uso más riesgosos, en vez de esperar a etapas avanzadas como en la [[Modelo en cascada|cascada]].
-> - **Desafíos:** es complejo para equipos pequeños (una persona puede tener que asumir varios roles). Además, al no ser siempre incremental, encaja mal con las [[Metodologías ágiles y manifiesto ágil|metodologías ágiles]].
+> - **Mitigación temprana del riesgo:** desarrolla primero los casos de uso más riesgosos, en vez de esperar a etapas avanzadas como en la [[02 - Modelo en cascada|cascada]].
+> - **Desafíos:** es complejo para equipos pequeños (una persona puede tener que asumir varios roles). Además, al no ser siempre incremental, encaja mal con las [[09 - Metodologías ágiles y manifiesto ágil|metodologías ágiles]].
 
 ## Preguntas de repaso
 

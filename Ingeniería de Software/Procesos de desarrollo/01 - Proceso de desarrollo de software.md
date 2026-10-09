@@ -48,11 +48,11 @@ prerrequisitos: []
 >   P --> II[Iterativos e incrementales]
 >   II --> AG[Ágiles: XP, Scrum, Kanban]
 > ```
-> - [[Modelo en cascada]]
-> - [[Procesos iterativos]]: [[Modelo en espiral]], [[Modelo de prototipos]], [[Proceso unificado (RUP)]]
-> - [[Procesos incrementales]]
-> - [[Procesos iterativos e incrementales]] → [[Metodologías ágiles y manifiesto ágil]], [[Programación extrema (XP)]]
-> - Para elegir entre ellos: [[Cómo elegir un proceso de desarrollo]] y [[Comparación de modelos de proceso]].
+> - [[02 - Modelo en cascada|Modelo en cascada]]
+> - [[03 - Procesos iterativos|Procesos iterativos]]: [[04 - Modelo en espiral|Modelo en espiral]], [[05 - Modelo de prototipos|Modelo de prototipos]], [[06 - Proceso unificado (RUP)|Proceso unificado (RUP)]]
+> - [[07 - Procesos incrementales|Procesos incrementales]]
+> - [[08 - Procesos iterativos e incrementales|Procesos iterativos e incrementales]] → [[09 - Metodologías ágiles y manifiesto ágil|Metodologías ágiles y manifiesto ágil]], [[10 - Programación extrema (XP)|Programación extrema (XP)]]
+> - Para elegir entre ellos: [[11 - Cómo elegir un proceso de desarrollo|Cómo elegir un proceso de desarrollo]] y [[12 - Comparación de modelos de proceso|Comparación de modelos de proceso]].
 
 ## Preguntas de repaso
 

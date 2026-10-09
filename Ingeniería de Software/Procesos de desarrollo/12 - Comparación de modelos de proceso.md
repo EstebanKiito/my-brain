@@ -2,7 +2,7 @@
 ramo: Ingeniería de Software
 tema: Procesos de desarrollo
 tags: [ingsoft/procesos, origen/complemento]
-prerrequisitos: ["[[Modelo en cascada]]", "[[Procesos iterativos]]", "[[Procesos incrementales]]", "[[Procesos iterativos e incrementales]]"]
+prerrequisitos: ["[[02 - Modelo en cascada|Modelo en cascada]]", "[[03 - Procesos iterativos|Procesos iterativos]]", "[[07 - Procesos incrementales|Procesos incrementales]]", "[[08 - Procesos iterativos e incrementales|Procesos iterativos e incrementales]]"]
 ---
 # Comparación de modelos de proceso
 
@@ -11,12 +11,12 @@ prerrequisitos: ["[[Modelo en cascada]]", "[[Procesos iterativos]]", "[[Procesos
 >
 > | Modelo | Tipo | Feedback del usuario | Manejo del riesgo | Cambios | Punto fuerte | Punto débil |
 > |---|---|---|---|---|---|---|
-> | [[Modelo en cascada\|Cascada]] | Secuencial | Al final | Tardío | Muy difíciles | Simple y fácil de seguir | Rígido, riesgo alto hasta el final |
-> | [[Modelo en espiral\|Espiral]] | Iterativo | En cada ciclo | **Explícito** en cada ciclo | Posibles | Manejo de riesgo | Difícil estimar tiempo; costoso |
-> | [[Modelo de prototipos\|Prototipos]] | Iterativo | Muy temprano (sobre el prototipo) | Reduce imprevistos | Fáciles | Aclara requisitos | Proyecto sin fin, "casi listo" |
-> | [[Proceso unificado (RUP)\|Proceso Unificado]] | Iterativo, 4 fases | Por iteración | Enfocado en riesgos críticos | Posibles, pero formal | Casos de uso y arquitectura | Mucha documentación y costo |
-> | [[Procesos incrementales\|Incremental]] | Incremental | Limitado hasta terminar | Medio | Difíciles sobre lo ya hecho | Entrega por piezas | Supone requisitos claros |
-> | [[Procesos iterativos e incrementales\|Iterativo e incremental]] / [[Metodologías ágiles y manifiesto ágil\|Ágil]] | Ambos | Continuo | Temprano y continuo | Bienvenidos | Valor temprano, adaptación | Puede haber que rehacer; requiere automatizar |
+> | [[02 - Modelo en cascada\|Cascada]] | Secuencial | Al final | Tardío | Muy difíciles | Simple y fácil de seguir | Rígido, riesgo alto hasta el final |
+> | [[04 - Modelo en espiral\|Espiral]] | Iterativo | En cada ciclo | **Explícito** en cada ciclo | Posibles | Manejo de riesgo | Difícil estimar tiempo; costoso |
+> | [[05 - Modelo de prototipos\|Prototipos]] | Iterativo | Muy temprano (sobre el prototipo) | Reduce imprevistos | Fáciles | Aclara requisitos | Proyecto sin fin, "casi listo" |
+> | [[06 - Proceso unificado (RUP)\|Proceso Unificado]] | Iterativo, 4 fases | Por iteración | Enfocado en riesgos críticos | Posibles, pero formal | Casos de uso y arquitectura | Mucha documentación y costo |
+> | [[07 - Procesos incrementales\|Incremental]] | Incremental | Limitado hasta terminar | Medio | Difíciles sobre lo ya hecho | Entrega por piezas | Supone requisitos claros |
+> | [[08 - Procesos iterativos e incrementales\|Iterativo e incremental]] / [[09 - Metodologías ágiles y manifiesto ágil\|Ágil]] | Ambos | Continuo | Temprano y continuo | Bienvenidos | Valor temprano, adaptación | Puede haber que rehacer; requiere automatizar |
 >
 > **Cómo recordarlo:**
 > - **Cascada** = una sola pasada.

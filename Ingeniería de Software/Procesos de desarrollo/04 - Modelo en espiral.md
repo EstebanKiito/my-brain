@@ -2,7 +2,7 @@
 ramo: Ingeniería de Software
 tema: Procesos de desarrollo
 tags: [ingsoft/procesos, origen/apuntes]
-prerrequisitos: ["[[Procesos iterativos]]", "[[Modelo en cascada]]"]
+prerrequisitos: ["[[03 - Procesos iterativos|Procesos iterativos]]", "[[02 - Modelo en cascada|Modelo en cascada]]"]
 ---
 # Modelo en espiral
 
@@ -52,7 +52,7 @@ flowchart LR
 > [!tip] Complemento — cuándo usarlo
 > - **Conviene:** proyectos grandes, costosos o con mucha incertidumbre técnica, donde equivocarse sale caro y vale la pena invertir en analizar riesgos.
 > - **No conviene:** proyectos pequeños o de bajo riesgo; el costo de planificar y analizar riesgos no se justifica.
-> - **Comparación:** a diferencia de la [[Modelo en cascada|cascada]], el riesgo se ataca en cada vuelta y no recién al final. A diferencia de los [[Procesos iterativos e incrementales]], una vuelta no necesariamente entrega funcionalidad usable.
+> - **Comparación:** a diferencia de la [[02 - Modelo en cascada|cascada]], el riesgo se ataca en cada vuelta y no recién al final. A diferencia de los [[08 - Procesos iterativos e incrementales|Procesos iterativos e incrementales]], una vuelta no necesariamente entrega funcionalidad usable.
 
 ## Preguntas de repaso
 

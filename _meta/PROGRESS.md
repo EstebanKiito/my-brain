@@ -22,8 +22,13 @@ Rama: `migrar/software-v2`. Un commit por tema. Antes de cada commit se corre `p
 | 15 | Arquitectura de software | `Arquitectura de software/` | ⏳ pendiente | | |
 | 16 | Fundamentos + Gestión del curso + mapa final | `Fundamentos/`, `Gestión del curso/` | ⏳ pendiente | | |
 
+## Convenciones
+- Cada nota lleva un prefijo `NN - ` con su orden de estudio dentro de la carpeta (`01 - …`, `02 - …`). El `_Índice.md` de la carpeta lista las notas en ese mismo orden.
+- Los wikilinks usan el nombre real y el título como alias: `[[02 - Modelo en cascada|Modelo en cascada]]`. Dentro de tablas el alias va escapado: `\|`.
+
 ## Registro
 - **2026-10-09 — Procesos de desarrollo.**
   - Fuente: "Resumen Software Pt 1", §4 Procesos (81 bloques, 9 imágenes); complementos de las slides "Procesos de Desarrollo de Software" y del libro del curso, cap. 2.
   - Verificación: 0 errores, 0 advertencias. Cobertura: 66 bloques exactos + 15 reformulados, 0 sin cubrir.
+- **2026-10-09 — Orden de estudio.** Se renumeraron las 12 notas de Procesos con prefijo `NN - ` y se actualizaron todos los wikilinks.
 - **Nota técnica:** `.venv` no existe en el repo, así que el verificador usa solo la biblioteca estándar de Python.

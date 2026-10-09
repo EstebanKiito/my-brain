@@ -7,9 +7,9 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta.
 ## Procesos de desarrollo
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
-| 🟡 | [[Proceso unificado (RUP)]] | "Tiene su propio Lenguaje!!! → (UML)" | UML no es exclusivo de RUP: es un lenguaje de modelado general estandarizado por el OMG. Lo crearon los mismos autores (Rational), por eso aparecen juntos. Se agregó la precisión. |
-| 🟡 | [[Procesos incrementales]] | "No Feedback hasta terminar!" | Es discutible: cada pieza terminada puede mostrarse al usuario. Lo distintivo del incremental "puro" es que las piezas no se reelaboran con el feedback. Se agregó el matiz. |
-| ✅ | [[Modelo de prototipos]] | "Reduce Improvistos → Menor tiempo de desarrollo" | Lo había marcado como dudoso, pero el libro del curso lo afirma ("menor tiempo de desarrollo porque no hay grandes sorpresas al final"). Sin cambios, solo se corrigió la errata "Improvistos" → "imprevistos". |
+| 🟡 | [[06 - Proceso unificado (RUP)\|Proceso unificado (RUP)]] | "Tiene su propio Lenguaje!!! → (UML)" | UML no es exclusivo de RUP: es un lenguaje de modelado general estandarizado por el OMG. Lo crearon los mismos autores (Rational), por eso aparecen juntos. Se agregó la precisión. |
+| 🟡 | [[07 - Procesos incrementales\|Procesos incrementales]] | "No Feedback hasta terminar!" | Es discutible: cada pieza terminada puede mostrarse al usuario. Lo distintivo del incremental "puro" es que las piezas no se reelaboran con el feedback. Se agregó el matiz. |
+| ✅ | [[05 - Modelo de prototipos\|Modelo de prototipos]] | "Reduce Improvistos → Menor tiempo de desarrollo" | Lo había marcado como dudoso, pero el libro del curso lo afirma ("menor tiempo de desarrollo porque no hay grandes sorpresas al final"). Sin cambios, solo se corrigió la errata "Improvistos" → "imprevistos". |
 
 ## Detectadas para temas pendientes
 Se resolverán, con su callout en la nota, cuando se migre cada tema:

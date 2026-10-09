@@ -2,7 +2,7 @@
 ramo: Ingeniería de Software
 tema: Procesos de desarrollo
 tags: [ingsoft/procesos, origen/apuntes]
-prerrequisitos: ["[[Proceso de desarrollo de software]]"]
+prerrequisitos: ["[[01 - Proceso de desarrollo de software|Proceso de desarrollo de software]]"]
 ---
 # Modelo en cascada
 
@@ -49,7 +49,7 @@ flowchart LR
 
 > [!tip] Complemento — cuándo sí y cuándo no
 > - **Puede servir:** proyectos cortos, con requisitos estables y bien conocidos, o con exigencias regulatorias de documentación por etapa.
-> - **No conviene:** requisitos inciertos o que cambian, o cuando el cliente necesita ver avances temprano. En esos casos sirven mejor los [[Procesos iterativos]] o los [[Procesos iterativos e incrementales]].
+> - **No conviene:** requisitos inciertos o que cambian, o cuando el cliente necesita ver avances temprano. En esos casos sirven mejor los [[03 - Procesos iterativos|Procesos iterativos]] o los [[08 - Procesos iterativos e incrementales|Procesos iterativos e incrementales]].
 > - **Error común:** confundir "tiene etapas" con "es cascada". Casi todos los procesos tienen etapas; lo que define a la cascada es que **cada etapa se recorre una sola vez y en orden**.
 
 ## Preguntas de repaso

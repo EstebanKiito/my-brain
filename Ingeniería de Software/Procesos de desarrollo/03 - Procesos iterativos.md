@@ -2,7 +2,7 @@
 ramo: Ingeniería de Software
 tema: Procesos de desarrollo
 tags: [ingsoft/procesos, origen/apuntes]
-prerrequisitos: ["[[Proceso de desarrollo de software]]", "[[Modelo en cascada]]"]
+prerrequisitos: ["[[01 - Proceso de desarrollo de software|Proceso de desarrollo de software]]", "[[02 - Modelo en cascada|Modelo en cascada]]"]
 ---
 # Procesos iterativos
 
@@ -19,20 +19,20 @@ En un proceso iterativo el software se desarrolla en **ciclos repetidos (iteraci
 > La persona tiene una idea vaga ("woman in pastoral setting"). Primero hace un boceto completo (1), luego lo colorea a grandes rasgos (2) y finalmente lo refina hasta la obra terminada (3). En **cada iteración está el cuadro completo**, cada vez con más detalle.
 
 ## Modelos iterativos que vimos
-1. [[Modelo en espiral]]
-2. [[Modelo de prototipos]]
-3. [[Proceso unificado (RUP)]]
+1. [[04 - Modelo en espiral|Modelo en espiral]]
+2. [[05 - Modelo de prototipos|Modelo de prototipos]]
+3. [[06 - Proceso unificado (RUP)|Proceso unificado (RUP)]]
 
 > [!tip] Complemento (libro del curso, cap. 2.3, y slides "Procesos de Desarrollo de Software")
 > - Las actividades avanzan como una **secuencia de iteraciones** que se acercan gradualmente al objetivo.
-> - **Ojo:** una iteración **no siempre** genera código nuevo ni un incremento visible y útil. Puede ser, por ejemplo, una iteración de análisis de riesgo o de prototipo. Esa es la diferencia con los [[Procesos iterativos e incrementales]], donde cada iteración sí entrega valor usable.
+> - **Ojo:** una iteración **no siempre** genera código nuevo ni un incremento visible y útil. Puede ser, por ejemplo, una iteración de análisis de riesgo o de prototipo. Esa es la diferencia con los [[08 - Procesos iterativos e incrementales|Procesos iterativos e incrementales]], donde cada iteración sí entrega valor usable.
 > - **Orígenes:** las ideas iterativas vienen de mucho antes que el software. Las slides citan a Larman y Basili (2003, *"Iterative and Incremental Development: A Brief History"*), que relacionan estos procesos con el ciclo **Plan–Do–Study–Act** (Shewhart, años 1930; Deming, años 1940).
 >
 > ![Slide - enfoque iterativo](adjuntos/Slide%20-%20enfoque%20iterativo.png)
 > *Analogía de las slides: se rellena la zanja con un bloque aproximado y se va tallando en cada iteración hasta que calza.*
 
 > [!tip] Complemento — iterativo vs. incremental
-> | | Iterativo | [[Procesos incrementales\|Incremental]] |
+> | | Iterativo | [[07 - Procesos incrementales\|Incremental]] |
 > |---|---|---|
 > | Qué cambia en cada ciclo | Se **mejora** lo que ya existe | Se **agrega** una pieza nueva |
 > | Producto en cada ciclo | Completo pero tosco | Parcial pero terminado |

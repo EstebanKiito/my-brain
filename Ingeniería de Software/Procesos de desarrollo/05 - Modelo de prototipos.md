@@ -2,7 +2,7 @@
 ramo: Ingeniería de Software
 tema: Procesos de desarrollo
 tags: [ingsoft/procesos, origen/apuntes]
-prerrequisitos: ["[[Procesos iterativos]]"]
+prerrequisitos: ["[[03 - Procesos iterativos|Procesos iterativos]]"]
 ---
 # Modelo de prototipos
 
