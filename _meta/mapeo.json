@@ -59,8 +59,20 @@
     },
     "Ruby": {
       "carpeta": "Ingeniería de Software/Ruby",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "pt1",
+          "desde": "1. RUBY",
+          "hasta": "2.3 RAILS / CRUD"
+        },
+        {
+          "fuente": "c1",
+          "desde": "RESUMEN:",
+          "hasta": "RAILS / CRUD",
+          "por_texto": true
+        }
+      ]
     },
     "Programación orientada a objetos": {
       "carpeta": "Ingeniería de Software/Programación orientada a objetos",
@@ -124,6 +136,11 @@
       "link": "https://app.notion.comundefined",
       "texto": "",
       "motivo": "Link roto generado por Notion junto a la imagen de Formularios Rails; no apunta a ningún recurso."
+    },
+    {
+      "fuente": "c1",
+      "texto": "RESUMEN:",
+      "motivo": "Etiqueta estructural de la página C1 (separa la lista de contenidos del resumen); no es contenido."
     }
   ]
 }

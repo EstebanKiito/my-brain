@@ -157,14 +157,15 @@ def extraer(ruta_html):
     return p.items
 
 
-def seccionar(items, desde, hasta):
-    """Devuelve los items entre el encabezado `desde` (incluido) y `hasta` (excluido)."""
+def seccionar(items, desde, hasta, por_texto=False):
+    """Devuelve los items entre el encabezado `desde` (incluido) y `hasta` (excluido).
+    Con por_texto=True los límites pueden ser cualquier bloque (páginas sin encabezados)."""
     nd = normalizar(desde)
     nh = normalizar(hasta) if hasta else None
     dentro = False
     out = []
     for it in items:
-        if it["tipo"] == "bloque" and it["clase"] == "encabezado":
+        if it["tipo"] == "bloque" and (por_texto or it["clase"] == "encabezado"):
             n = normalizar(it["texto"])
             if not dentro and (n == nd or n.startswith(nd)):
                 dentro = True
@@ -423,6 +424,7 @@ def ventana_mejor(tokens_bloque, tokens_nota):
     if clave not in _vocab_cache:
         _vocab_cache[clave] = set(tokens_nota)
     vocab_nota = _vocab_cache[clave]
+    texto_bloque = " ".join(tokens_bloque)
     tokens_bloque = [
         t if t in vocab_nota or len(t) < 5
         else (difflib.get_close_matches(t, vocab_nota, n=1, cutoff=0.8) or [t])[0]
@@ -448,8 +450,14 @@ def ventana_mejor(tokens_bloque, tokens_nota):
         # la ventana se recorta al último token coincidente y, a igual cantidad de
         # coincidencias, se prefiere el tramo más corto, para que la similitud de
         # secuencia no se diluya con palabras ajenas
-        if hit > mejor or (hit == mejor and ultimo + 1 < len(mejor_span.split())):
-            mejor, mejor_span = hit, " ".join(ventana[:ultimo + 1])
+        span = " ".join(ventana[:ultimo + 1])
+        if hit > mejor:
+            mejor, mejor_span = hit, span
+        elif hit == mejor and hit > 0:
+            # empate: se queda con el tramo más parecido en secuencia al bloque
+            if difflib.SequenceMatcher(None, texto_bloque, span).ratio() > \
+               difflib.SequenceMatcher(None, texto_bloque, mejor_span).ratio():
+                mejor_span = span
     return mejor, mejor_span
 
 
@@ -611,7 +619,7 @@ def main():
             fuente = sec["fuente"]
             if fuente not in cache:
                 cache[fuente] = extraer(os.path.join(RAW, conf_fuentes[fuente]))
-            its = seccionar(cache[fuente], sec["desde"], sec.get("hasta"))
+            its = seccionar(cache[fuente], sec["desde"], sec.get("hasta"), sec.get("por_texto", False))
             items.append((fuente, its))
             asignados.setdefault(fuente, set()).update(id(i) for i in its)
         prueba_imagenes(tema, conf, items, imagenes, notas)

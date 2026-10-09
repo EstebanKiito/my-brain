@@ -31,12 +31,16 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta.
 |---|---|---|---|
 | ✅ | [[07 - Estimación de software\|Estimación de software]] | "8. Estimaciones:" (solo el título) | Se completó con las slides y el libro; todas las notas del tema son complemento. |
 
+## Ruby
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| 🟡 | [[02 - Convenciones de estilo en Ruby\|Convenciones de estilo en Ruby]] | "lista.reverse → !Cambia definitivamente" | `reverse` no modifica la lista; `reverse!` sí. Se agregó el ejemplo con ambas. |
+| 🟡 | [[02 - Convenciones de estilo en Ruby\|Convenciones de estilo en Ruby]] | "lista = [1,2] → is_even? → true/false" | El método es `even?` y es de Integer, no de Array. La idea correcta: los métodos con `?` devuelven booleanos. |
+| 🟡 | [[02 - Convenciones de estilo en Ruby\|Convenciones de estilo en Ruby]] | "Convenciones → snake_case →PascalCase" | Falta decir a qué se aplica cada una: `snake_case` para variables, métodos y archivos; `PascalCase` para clases y módulos. Se agregó la tabla del libro. |
+| ℹ️ | [[05 - Arreglos y hashes en Ruby\|Arreglos y hashes en Ruby]] | *(slides y libro)* `inst["c"] # devuelve 2` | Error de las fuentes, no tuyo: una clave inexistente devuelve `nil`. |
+
 ## Detectadas para temas pendientes
 Se resolverán, con su callout en la nota, cuando se migre cada tema:
-- **Ruby:**
-  - `lista.reverse → !Cambia definitivamente`: `reverse` no muta, `reverse!` sí.
-  - `is_even?` sobre una lista: en Ruby `even?` es método de Integer.
-  - Las convenciones "snake_case → PascalCase" no dicen a qué se aplica cada una.
 - **Rails:**
   - `post “/pokemon”, to: “pokemons#create”)`: paréntesis sobrante y `/pokemon` vs `/pokemons`.
   - `create_table: pokemons` debería ser `create_table :pokemons`.
