@@ -11,7 +11,7 @@ Rama: `migrar/software-v2`. Un commit por tema. Antes de cada commit se corre `p
 | 4 | Planificación y estimación | `Scrum y gestión ágil/Planificación y estimación/` | ✅ hecho | 10 + índice | 0 + 6 |
 | 5 | Ruby | `Ruby/` | ✅ hecho | 8 + índice | 0 |
 | 6 | Programación orientada a objetos | `Programación orientada a objetos/` | ✅ hecho | 13 + índice | 0 |
-| 7 | Fundamentos web | `Desarrollo web con Rails/Fundamentos web/` | ⏳ pendiente | | |
+| 7 | Fundamentos web | `Desarrollo web con Rails/Fundamentos web/` | ✅ hecho | 4 + índice | 0 |
 | 8 | Rails | `Desarrollo web con Rails/Rails/` | ⏳ pendiente | | |
 | 9 | Testing | `Testing/` | ⏳ pendiente | | |
 | 10 | UML | `Diseño y UML/UML/` | ⏳ pendiente | | |
@@ -52,4 +52,8 @@ Rama: `migrar/software-v2`. Un commit por tema. Antes de cada commit se corre `p
 - **2026-10-09 — Programación orientada a objetos.**
   - Fuente: "Resumen Prueba Práctica", §13 Polimorfismo y Lookup (67 bloques: todo el código copiado y, donde no corre, con versión corregida al lado); complementos de las slides "Object Oriented Programming" y "Ruby".
   - Verificación: 0 errores, 0 advertencias (58 exactos + 9 reformulados).
+- **2026-10-09 — Fundamentos web.**
+  - Fuente: "Resumen Prueba Práctica", §9 HTML + CSS (39 bloques); HTTP es complemento (slides "RoR - First API").
+  - Las primeras líneas "html", "css" y "htmlCopiar código" de los bloques de código eran restos de copiar desde ChatGPT: se omitieron y verificar.py las ignora (`RE_ETIQUETA_LENGUAJE`).
+  - Verificación: 0 errores, 0 advertencias.
 - **Nota técnica:** `.venv` no existe en el repo, así que el verificador usa solo la biblioteca estándar de Python.

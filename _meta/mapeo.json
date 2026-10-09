@@ -87,8 +87,14 @@
     },
     "Fundamentos web": {
       "carpeta": "Ingeniería de Software/Desarrollo web con Rails/Fundamentos web",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "pp",
+          "desde": "9. HTML + CSS (Vistas)",
+          "hasta": "10. MVC + ROUTING"
+        }
+      ]
     },
     "Rails": {
       "carpeta": "Ingeniería de Software/Desarrollo web con Rails/Rails",

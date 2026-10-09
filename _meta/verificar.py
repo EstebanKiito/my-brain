@@ -199,6 +199,7 @@ def es_nota_del_ramo(ruta):
     return ruta.startswith(VAULT_RAMO + os.sep)
 
 
+RE_ETIQUETA_LENGUAJE = re.compile(r"^(html|css|ruby|erb|bash|yaml|javascript)(\s*copiar c[oó]digo)?$", re.I)
 RE_WIKILINK = re.compile(r"(!?)\[\[([^\]|#]*)(#[^\]|]*)?(\|[^\]]*)?\]\]")
 RE_MDLINK = re.compile(r"(!?)\[([^\]]*)\]\(([^)\s]+)\)")
 
@@ -483,8 +484,12 @@ def prueba_cobertura(tema, items, notas_tema, notas_todas, aceptados, detalle):
                 continue
             texto = it["texto"]
             if it["clase"] == "codigo":
-                lineas = [normalizar_codigo(l) for l in texto.splitlines() if l.strip()]
-                faltan = [l for l, n in zip([l for l in texto.splitlines() if l.strip()], lineas)
+                # se ignoran las etiquetas de lenguaje que Notion/ChatGPT dejan como
+                # primera línea del bloque ("html", "css", "htmlCopiar código")
+                originales = [l for l in texto.splitlines() if l.strip()
+                              and not RE_ETIQUETA_LENGUAJE.match(l.strip())]
+                lineas = [normalizar_codigo(l) for l in originales]
+                faltan = [l for l, n in zip(originales, lineas)
                           if not any(n in codigo[r] for r in orden)]
                 if not faltan:
                     stats["exacto"] += 1

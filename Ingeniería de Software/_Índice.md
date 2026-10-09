@@ -15,7 +15,7 @@ Vault de estudio del ramo. Cada nota cubre **un concepto**: no hace falta saber 
 | [[Ingeniería de Software/Scrum y gestión ágil/_Índice\|Scrum y gestión ágil]] | Scrum, historias de usuario, planificación y estimación | ✅ |
 | [[Ingeniería de Software/Ruby/_Índice\|Ruby]] | Sintaxis, convenciones, métodos, bloques, colecciones, control, strings | ✅ |
 | [[Ingeniería de Software/Programación orientada a objetos/_Índice\|Programación orientada a objetos]] | Clases, visibilidad, herencia, super, polimorfismo, lookup, self vs super | ✅ |
-| Desarrollo web con Rails | HTTP, HTML/CSS, MVC, Active Record, rutas, vistas, API | ⏳ pendiente |
+| [[Ingeniería de Software/Desarrollo web con Rails/_Índice\|Desarrollo web con Rails]] | HTTP, HTML/CSS ✅; MVC, Active Record, rutas, vistas, API ⏳ | 🟡 en curso |
 | Testing | Unit, integration, fixtures, asserts, cobertura | ⏳ pendiente |
 | Diseño y UML | Diagramas de clases y de secuencia, acoplamiento, cohesión | ⏳ pendiente |
 | Patrones de Diseño | Comportamiento, estructurales, creacionales, ejercicios | ⏳ pendiente |
