@@ -10,7 +10,7 @@ Rama: `migrar/software-v2`. Un commit por tema. Antes de cada commit se corre `p
 | 3 | Historias de usuario | `Scrum y gestión ágil/Historias de usuario/` | ✅ hecho | 7 + índice | 0 |
 | 4 | Planificación y estimación | `Scrum y gestión ágil/Planificación y estimación/` | ✅ hecho | 10 + índice | 0 + 6 |
 | 5 | Ruby | `Ruby/` | ✅ hecho | 8 + índice | 0 |
-| 6 | Programación orientada a objetos | `Programación orientada a objetos/` | ⏳ pendiente | | |
+| 6 | Programación orientada a objetos | `Programación orientada a objetos/` | ✅ hecho | 13 + índice | 0 |
 | 7 | Fundamentos web | `Desarrollo web con Rails/Fundamentos web/` | ⏳ pendiente | | |
 | 8 | Rails | `Desarrollo web con Rails/Rails/` | ⏳ pendiente | | |
 | 9 | Testing | `Testing/` | ⏳ pendiente | | |
@@ -49,4 +49,7 @@ Rama: `migrar/software-v2`. Un commit por tema. Antes de cada commit se corre `p
   - "require_relative" (de Resumen Prueba Práctica §14) se dejó como nota en Ruby; se verificará con el tema Principios de diseño.
   - verificar.py: secciones delimitadas por texto (`por_texto`) para páginas sin encabezados; desempate de ventanas por similitud.
   - Verificación: 0 errores, 0 advertencias.
+- **2026-10-09 — Programación orientada a objetos.**
+  - Fuente: "Resumen Prueba Práctica", §13 Polimorfismo y Lookup (67 bloques: todo el código copiado y, donde no corre, con versión corregida al lado); complementos de las slides "Object Oriented Programming" y "Ruby".
+  - Verificación: 0 errores, 0 advertencias (58 exactos + 9 reformulados).
 - **Nota técnica:** `.venv` no existe en el repo, así que el verificador usa solo la biblioteca estándar de Python.

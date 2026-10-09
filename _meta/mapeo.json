@@ -76,8 +76,14 @@
     },
     "Programación orientada a objetos": {
       "carpeta": "Ingeniería de Software/Programación orientada a objetos",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "pp",
+          "desde": "13. Poliformismo y Lookup",
+          "hasta": "14. Diseño Acoplamiento y Cohesión"
+        }
+      ]
     },
     "Fundamentos web": {
       "carpeta": "Ingeniería de Software/Desarrollo web con Rails/Fundamentos web",

@@ -39,6 +39,19 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta.
 | 🟡 | [[02 - Convenciones de estilo en Ruby\|Convenciones de estilo en Ruby]] | "Convenciones → snake_case →PascalCase" | Falta decir a qué se aplica cada una: `snake_case` para variables, métodos y archivos; `PascalCase` para clases y módulos. Se agregó la tabla del libro. |
 | ℹ️ | [[05 - Arreglos y hashes en Ruby\|Arreglos y hashes en Ruby]] | *(slides y libro)* `inst["c"] # devuelve 2` | Error de las fuentes, no tuyo: una clave inexistente devuelve `nil`. |
 
+## Programación orientada a objetos
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| 🟡 | [[05 - Atributos y accesores en Ruby\|Atributos y accesores]] | "Por default los metodos son PRIVADOS…" | La slide dice que son los **atributos** los privados por defecto; en Ruby los métodos son públicos por defecto. |
+| 🟡 | [[03 - Visibilidad de métodos en Ruby\|Visibilidad de métodos]] | "Public: - - -", "Protected: - - -" | Incompletos; se completaron en un complemento. |
+| 🟡 | [[04 - Constructor initialize en Ruby\|Constructor initialize]] | `class Persona … Person.new` | El nombre de la clase no coincide (NameError). Se agregó la versión corregida. |
+| 🟡 | [[05 - Atributos y accesores en Ruby\|Atributos y accesores]] | `attr_accesor :name, :gender # Crea los metodos name= y gender=` | Es `attr_accessor`, y crea además los getters `name` y `gender`. Falta `end`. |
+| 🟡 | [[06 - Variables de clase en Ruby\|Variables de clase]] | `ass Person` | Debe ser `class Person`. |
+| 🟡 | [[07 - Herencia en Ruby\|Herencia]] | `attr_accessor: :stroke :fill`, `attr_accesor: :radius`, `:lenght` | Sintaxis: `attr_accessor :stroke, :fill`; faltan los `end`. |
+| 🟡 | [[08 - super en Ruby\|super]] | `class Hijo` (sin `< Padre`) | Sin herencia, `super` no llama a `Padre#initialize`. Faltan los `end`. |
+| 🟡 | [[11 - Polimorfismo y duck typing\|Polimorfismo]] | `attr_accessor :base :altura`, sin `end` | Falta la coma y los `end`; la idea es correcta. |
+| ℹ️ | [[06 - Variables de clase en Ruby\|Variables de clase]] | *(slides)* `Song.new` sin argumentos | El `initialize` pide 3 argumentos; en el complemento se agregaron. |
+
 ## Detectadas para temas pendientes
 Se resolverán, con su callout en la nota, cuando se migre cada tema:
 - **Rails:**
@@ -47,12 +60,6 @@ Se resolverán, con su callout en la nota, cuando se migre cada tema:
   - "generate migration … (tiene que ser en singular)": lo singular es el nombre del modelo.
   - `<& end %>` y `pokemon_tupe` en la vista ERB.
   - Link roto de Notion `https://app.notion.comundefined` junto a la imagen de Formularios Rails (no se migra).
-- **POO:**
-  - "Por default los métodos son PRIVADOS": en la slide son los *atributos*; en Ruby los métodos son públicos por defecto.
-  - "Public: - - -" y "Protected: - - -" están incompletos.
-  - `attr_accesor`, `attr_accessor: :stroke :fill`, `ass Person`.
-  - `class Persona` con `Person.new`.
-  - `class Hijo` sin `< Padre`.
 - **UML:**
   - Composición: "Los objetos de B son creados dentro de B"; probablemente "dentro de A" (así dice la slide).
 - **Patrones:**

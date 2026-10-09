@@ -50,7 +50,7 @@ Ruby es el lenguaje que se usa en el curso (con el framework Rails). Es interpre
 > "hola".upcase    # => "HOLA"
 > nil.to_a         # => []
 > ```
-> Hasta `nil` es un objeto (de la clase `NilClass`).
+> Hasta `nil` es un objeto (de la clase `NilClass`). Ver también [[01 - Clases y objetos en Ruby|Clases y objetos en Ruby]].
 
 ## Preguntas de repaso
 
