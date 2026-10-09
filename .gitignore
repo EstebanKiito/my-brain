@@ -1,0 +1,30 @@
+# Export original de Notion (pesa ~1.1 GB; se respalda fuera de git)
+_raw/
+*.zip
+
+# Obsidian: estado local y cachés (los plugins y ajustes sí se versionan)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/workspaces.json
+.obsidian/cache
+.obsidian/graph.json
+.trash/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores y herramientas
+.vscode/
+.idea/
+*.swp
+*.tmp
+*~
+
+# Dependencias y entornos (scripts de verificación)
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+.env
