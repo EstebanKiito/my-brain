@@ -98,8 +98,30 @@
     },
     "Rails": {
       "carpeta": "Ingeniería de Software/Desarrollo web con Rails/Rails",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "pt1",
+          "desde": "2.3 RAILS / CRUD",
+          "hasta": "4. Procesos"
+        },
+        {
+          "fuente": "c1",
+          "desde": "RAILS / CRUD",
+          "por_texto": true
+        },
+        {
+          "fuente": "pp",
+          "desde": "10. MVC + ROUTING",
+          "hasta": "11. Diseño UML"
+        },
+        {
+          "fuente": "ramo",
+          "desde": "PASOS PARA INSTALAR ELEMENTOS DEL CURSO MAC M1!!!",
+          "hasta": "Historias de Usuario (mías):"
+        }
+      ],
+      "adjuntos": "Ingeniería de Software/Desarrollo web con Rails/adjuntos"
     },
     "Testing": {
       "carpeta": "Ingeniería de Software/Testing",

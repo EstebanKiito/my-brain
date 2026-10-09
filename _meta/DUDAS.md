@@ -52,14 +52,20 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta.
 | 🟡 | [[11 - Polimorfismo y duck typing\|Polimorfismo]] | `attr_accessor :base :altura`, sin `end` | Falta la coma y los `end`; la idea es correcta. |
 | ℹ️ | [[06 - Variables de clase en Ruby\|Variables de clase]] | *(slides)* `Song.new` sin argumentos | El `initialize` pide 3 argumentos; en el complemento se agregaron. |
 
+## Rails
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| 🟡 | [[10 - Rutas en Rails\|Rutas en Rails]] | `post “/pokemon”, to: “pokemons#create”)` | Sobra `)`, las comillas deben ser rectas y el endpoint es `/pokemons` (como dice la explicación). |
+| 🟡 | [[05 - Migraciones en Rails\|Migraciones en Rails]] | `create_table: pokemons do \|t\|` | Es `create_table :pokemons do \|t\|` y faltan los `end`. |
+| 🟡 | [[05 - Migraciones en Rails\|Migraciones en Rails]] | "rails generate migration CreatePokemon … (tiene que ser en singular)" | Lo singular es el nombre del **modelo**; la tabla queda en plural. Las migraciones se nombran como acción (`CreatePokemons`). |
+| 🟡 | [[11 - Vistas ERB\|Vistas ERB]] | `pokemon_tupe`, `<tr>` sin cerrar, `<& end %>` | `pokemon_type`, `</tr>`, `<% end %>`. El controlador debería ser `PokemonsController`. |
+| ℹ️ | [[14 - render vs redirect_to\|render vs redirect_to]] | "render: edit" | Se escribe `render :edit`. Las demás formas de la lista son correctas. |
+| ℹ️ | [[06 - Comandos de Rails\|Comandos de Rails]] | "sudo service postgresql start" | Es para Linux/WSL; en Mac con Homebrew se usa `brew services start postgresql`. |
+| ✅ | [[13 - Form helpers de Rails\|Form helpers]] | Link `https://app.notion.comundefined` | Link roto de Notion: no se migra (aceptado en `mapeo.json`). |
+| ℹ️ | [[05 - Migraciones en Rails\|Migraciones en Rails]] | *(libro)* "db/migrate/schema.rb" | El archivo es `db/schema.rb`. |
+
 ## Detectadas para temas pendientes
 Se resolverán, con su callout en la nota, cuando se migre cada tema:
-- **Rails:**
-  - `post “/pokemon”, to: “pokemons#create”)`: paréntesis sobrante y `/pokemon` vs `/pokemons`.
-  - `create_table: pokemons` debería ser `create_table :pokemons`.
-  - "generate migration … (tiene que ser en singular)": lo singular es el nombre del modelo.
-  - `<& end %>` y `pokemon_tupe` en la vista ERB.
-  - Link roto de Notion `https://app.notion.comundefined` junto a la imagen de Formularios Rails (no se migra).
 - **UML:**
   - Composición: "Los objetos de B son creados dentro de B"; probablemente "dentro de A" (así dice la slide).
 - **Patrones:**

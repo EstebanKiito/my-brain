@@ -15,7 +15,7 @@ Vault de estudio del ramo. Cada nota cubre **un concepto**: no hace falta saber 
 | [[Ingeniería de Software/Scrum y gestión ágil/_Índice\|Scrum y gestión ágil]] | Scrum, historias de usuario, planificación y estimación | ✅ |
 | [[Ingeniería de Software/Ruby/_Índice\|Ruby]] | Sintaxis, convenciones, métodos, bloques, colecciones, control, strings | ✅ |
 | [[Ingeniería de Software/Programación orientada a objetos/_Índice\|Programación orientada a objetos]] | Clases, visibilidad, herencia, super, polimorfismo, lookup, self vs super | ✅ |
-| [[Ingeniería de Software/Desarrollo web con Rails/_Índice\|Desarrollo web con Rails]] | HTTP, HTML/CSS ✅; MVC, Active Record, rutas, vistas, API ⏳ | 🟡 en curso |
+| [[Ingeniería de Software/Desarrollo web con Rails/_Índice\|Desarrollo web con Rails]] | HTTP, HTML/CSS, MVC, Active Record, rutas, vistas, API | ✅ |
 | Testing | Unit, integration, fixtures, asserts, cobertura | ⏳ pendiente |
 | Diseño y UML | Diagramas de clases y de secuencia, acoplamiento, cohesión | ⏳ pendiente |
 | Patrones de Diseño | Comportamiento, estructurales, creacionales, ejercicios | ⏳ pendiente |
@@ -26,7 +26,7 @@ Vault de estudio del ramo. Cada nota cubre **un concepto**: no hace falta saber 
 1. **Procesos de desarrollo:** por qué hace falta un proceso y qué modelos existen. Es la base para entender Scrum.
 2. **Scrum y gestión ágil:** Scrum aplica las ideas ágiles → historias de usuario → planificación y estimación.
 3. **Ruby → Programación orientada a objetos:** el lenguaje y luego POO (lookup y self vs super salen en la prueba).
-4. Desarrollo web con Rails → Testing *(pendiente)*.
+4. **Desarrollo web con Rails** → Testing *(pendiente)*.
 5. Diseño y UML → Patrones de Diseño *(pendiente)*.
 6. Arquitectura de software *(pendiente)*.
 

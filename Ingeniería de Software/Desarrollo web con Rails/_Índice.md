@@ -6,4 +6,4 @@ Volver al [[Ingeniería de Software/_Índice|mapa del ramo]].
 
 ## Orden de estudio
 1. [[Ingeniería de Software/Desarrollo web con Rails/Fundamentos web/_Índice|Fundamentos web]]: HTTP, HTML, CSS, formularios. ✅
-2. Rails: instalación, MVC, modelos, migraciones, controladores, rutas, vistas, API. ⏳ pendiente
+2. [[Ingeniería de Software/Desarrollo web con Rails/Rails/_Índice|Rails]]: instalación, MVC, modelos, migraciones, controladores, rutas, vistas, API. ✅

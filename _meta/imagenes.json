@@ -194,5 +194,33 @@
     "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/8-ScrumPlanififacion.pdf#page=19",
     "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - release plan en el tiempo.png",
     "sha256": "bdfc67918684250cf9282b303840b5019be5aaf3b362d5189e57f38c9f69999d"
+  },
+  {
+    "tema": "Rails",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled.png",
+    "destino": "Ingeniería de Software/Desarrollo web con Rails/adjuntos/Rails form_with - código ERB.png",
+    "sha256": "3014e297c4be52958b14b758a3fe24e9afc63460a7b65a0fc1d87da15317cd82"
+  },
+  {
+    "tema": "Rails",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 1.png",
+    "destino": "Ingeniería de Software/Desarrollo web con Rails/adjuntos/Rails form_with - HTML generado.png",
+    "sha256": "1e275d490dde856ad6e9f06015d6009b8f4b7413d98b8c613b9e8c725d1b0bdd"
+  },
+  {
+    "tema": "Rails",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 2.png",
+    "destino": "Ingeniería de Software/Desarrollo web con Rails/adjuntos/Rails form_with - formulario renderizado.png",
+    "sha256": "53d0a83eaf8d8639cc37f05686c6a87c2f120ec6703443c905461a7fd7305cf7"
+  },
+  {
+    "tema": "Rails",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 3.png",
+    "destino": "Ingeniería de Software/Desarrollo web con Rails/adjuntos/Rails resources - rutas generadas.png",
+    "sha256": "cf7f1f136043552dfcef49411fe7211637dcd96004853004c443cc2e0b3dd584"
   }
 ]

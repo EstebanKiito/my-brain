@@ -12,7 +12,7 @@ Rama: `migrar/software-v2`. Un commit por tema. Antes de cada commit se corre `p
 | 5 | Ruby | `Ruby/` | ✅ hecho | 8 + índice | 0 |
 | 6 | Programación orientada a objetos | `Programación orientada a objetos/` | ✅ hecho | 13 + índice | 0 |
 | 7 | Fundamentos web | `Desarrollo web con Rails/Fundamentos web/` | ✅ hecho | 4 + índice | 0 |
-| 8 | Rails | `Desarrollo web con Rails/Rails/` | ⏳ pendiente | | |
+| 8 | Rails | `Desarrollo web con Rails/Rails/` | ✅ hecho | 15 + índice | 4 |
 | 9 | Testing | `Testing/` | ⏳ pendiente | | |
 | 10 | UML | `Diseño y UML/UML/` | ⏳ pendiente | | |
 | 11 | Principios de diseño | `Diseño y UML/Principios de diseño/` | ⏳ pendiente | | |
@@ -56,4 +56,8 @@ Rama: `migrar/software-v2`. Un commit por tema. Antes de cada commit se corre `p
   - Fuente: "Resumen Prueba Práctica", §9 HTML + CSS (39 bloques); HTTP es complemento (slides "RoR - First API").
   - Las primeras líneas "html", "css" y "htmlCopiar código" de los bloques de código eran restos de copiar desde ChatGPT: se omitieron y verificar.py las ignora (`RE_ETIQUETA_LENGUAJE`).
   - Verificación: 0 errores, 0 advertencias.
+- **2026-10-09 — Rails.**
+  - Fuentes: Pt. 1 §2.3 y C1 (Rails/CRUD), Prueba Práctica §10 MVC + Routing (4 imágenes) y la página del ramo (instalación en Mac M1); complementos de las slides First API, Active Record y Rails MVC, y del libro (cap. 11–12).
+  - "Vistas ERB" pasaba de 150 líneas: se separó "Parciales en ERB" y se renumeraron las siguientes.
+  - Verificación: 0 errores, 0 advertencias (83 bloques: 72 exactos + 11 reformulados).
 - **Nota técnica:** `.venv` no existe en el repo, así que el verificador usa solo la biblioteca estándar de Python.
