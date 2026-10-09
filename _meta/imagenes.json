@@ -341,5 +341,47 @@
     "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 14.png",
     "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Diagrama de secuencia - fragmentos loop alt opt.png",
     "sha256": "cf654dc1b2bda70a1a055abbd763740559c91c7f027ea4633c00c8a8b10418f1"
+  },
+  {
+    "tema": "Principios de diseño",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 21.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Ejemplo carrito de compras - código original.png",
+    "sha256": "f118407a8991f1a2effbaf197d37b9f6e546206691af3911b30f07f7461d6812"
+  },
+  {
+    "tema": "Principios de diseño",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 22.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Ejemplo carrito de compras - código mejorado.png",
+    "sha256": "dbbba1e5b0a5daff8095e324a3b76cefe0729ebc2b6136a9950cea0a13af4ead"
+  },
+  {
+    "tema": "Principios de diseño",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 23.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Ejemplo filtros de libros - código original.png",
+    "sha256": "617c19d9588f82e0ee06acd22359ad09db5ddfbde126054c4fd747d4cacdb4e6"
+  },
+  {
+    "tema": "Principios de diseño",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 24.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Ejemplo filtros de libros - código mejorado.png",
+    "sha256": "6d517b1c90db69e93951175d4c295fd132071278abc599be5b3d9e36acd30e4d"
+  },
+  {
+    "tema": "Principios de diseño",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 25.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Ejemplo bebidas con cafeína - código original.png",
+    "sha256": "57c231655d0052e4b37145d91dc3a7298601bae5b177dbdf953ac94384171dd9"
+  },
+  {
+    "tema": "Principios de diseño",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 26.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Ejemplo bebidas con cafeína - código mejorado.png",
+    "sha256": "84f18e19b3cc9e4f79281c4bace734494245ed041c6a4b0b4ab944a7f791d862"
   }
 ]

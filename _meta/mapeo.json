@@ -148,8 +148,15 @@
     },
     "Principios de diseño": {
       "carpeta": "Ingeniería de Software/Diseño y UML/Principios de diseño",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "pp",
+          "desde": "14. Diseño Acoplamiento y Cohesión",
+          "hasta": "15. Patrones de Diseño ( COMPORTAMIENTO )"
+        }
+      ],
+      "adjuntos": "Ingeniería de Software/Diseño y UML/adjuntos"
     },
     "Patrones de comportamiento": {
       "carpeta": "Ingeniería de Software/Patrones de Diseño",

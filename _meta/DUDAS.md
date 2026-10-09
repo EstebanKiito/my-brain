@@ -76,6 +76,13 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta.
 |---|---|---|---|
 | 🟡 | [[04 - Relaciones entre clases en UML\|Relaciones entre clases en UML]] | "Composition: … Los objetos de B son creados dentro de B" | Debe ser "dentro de **A**" (así dice la slide). Se explica en [[05 - Agregación vs composición\|Agregación vs composición]]. |
 
+## Principios de diseño
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ℹ️ | [[07 - Ejemplo de diseño - Carrito de compras\|Carrito de compras]] | Imagen del código mejorado: `private:` | Se escribe `private`, sin dos puntos. |
+| ℹ️ | [[09 - Ejemplo de diseño - Bebidas con cafeína\|Bebidas con cafeína]] | Imagen de `Coffee`: falta el `end` de `pourInCup` | Error de la slide; se anotó en la transcripción. |
+| ✅ | [[07 - Ejemplo de diseño - Carrito de compras\|Carrito de compras]] | "SjoppingCar", "acoplamineto", "herado" | Solo erratas; se corrigieron. |
+
 ## Detectadas para temas pendientes
 Se resolverán, con su callout en la nota, cuando se migre cada tema:
 - **Patrones:**
