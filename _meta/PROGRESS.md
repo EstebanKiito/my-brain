@@ -16,7 +16,7 @@ Rama: `migrar/software-v2`. Un commit por tema. Antes de cada commit se corre `p
 | 9 | Testing | `Testing/` | ✅ hecho | 9 + índice | 6 |
 | 10 | UML | `Diseño y UML/UML/` | ✅ hecho | 7 + índice | 11 |
 | 11 | Principios de diseño | `Diseño y UML/Principios de diseño/` | ✅ hecho | 9 + índice | 6 |
-| 12 | Patrones de comportamiento | `Patrones de Diseño/Comportamiento/` | ⏳ pendiente | | |
+| 12 | Patrones de comportamiento | `Patrones de Diseño/Comportamiento/` | ✅ hecho | 6 + 1 general + 1 comparación + 2 ejercicios | 14 |
 | 13 | Patrones estructurales | `Patrones de Diseño/Estructurales/` | ⏳ pendiente | | |
 | 14 | Patrones creacionales | `Patrones de Diseño/Creacionales/` | ⏳ pendiente | | |
 | 15 | Arquitectura de software | `Arquitectura de software/` | ⏳ pendiente | | |
@@ -69,5 +69,9 @@ Rama: `migrar/software-v2`. Un commit por tema. Antes de cada commit se corre `p
 - **2026-10-09 — Principios de diseño.**
   - Fuente: "Resumen Prueba Práctica", §14 Diseño, acoplamiento y cohesión (42 bloques, 6 imágenes de código transcritas). El bloque de `require_relative` de esta sección está en la nota Ruby/08.
   - Complementos de las slides "Diseño Orientado al Objeto" y del libro, cap. 8.5–8.6 (tipos de acoplamiento y cohesión, analogía del tren).
+  - Verificación: 0 errores, 0 advertencias.
+- **2026-10-09 — Patrones de comportamiento.**
+  - Fuente: "Resumen Prueba Práctica", §15 (76 bloques, 14 imágenes). Cada patrón con código largo se dividió en "Patrón X" (concepto) y "X - implementación en Ruby", para no pasar de 150 líneas.
+  - Se crearon "Qué es un patrón de diseño", "Strategy vs Template Method" y los ejercicios de prueba de Strategy (pagos) y Observer (empleados).
   - Verificación: 0 errores, 0 advertencias.
 - **Nota técnica:** `.venv` no existe en el repo, así que el verificador usa solo la biblioteca estándar de Python.

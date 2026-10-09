@@ -160,8 +160,15 @@
     },
     "Patrones de comportamiento": {
       "carpeta": "Ingeniería de Software/Patrones de Diseño",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "pp",
+          "desde": "15. Patrones de Diseño ( COMPORTAMIENTO )",
+          "hasta": "16. Patrones de Diseño (ESTRUCTURALES)"
+        }
+      ],
+      "adjuntos": "Ingeniería de Software/Patrones de Diseño/adjuntos"
     },
     "Patrones estructurales": {
       "carpeta": "Ingeniería de Software/Patrones de Diseño",

@@ -383,5 +383,103 @@
     "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 26.png",
     "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Ejemplo bebidas con cafeína - código mejorado.png",
     "sha256": "84f18e19b3cc9e4f79281c4bace734494245ed041c6a4b0b4ab944a7f791d862"
+  },
+  {
+    "tema": "Patrones de comportamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 27.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Strategy - rutas del navegador.png",
+    "sha256": "63ca4576e19ff16779c8fac5071a10ba8a6e58566156e4a3762f24affeefe2af"
+  },
+  {
+    "tema": "Patrones de comportamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 28.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Strategy - estructura.png",
+    "sha256": "0d3c5665ce6fa1f1d47d1a523e0b543a088d622e13d2272c06b8f917053e6620"
+  },
+  {
+    "tema": "Patrones de comportamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 29.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Ejercicio Strategy - enunciado procesador de pagos.png",
+    "sha256": "ac15d1c378dad37878a17edeb5b05c9cf8a360d0717dc2e09c1b55e12237b411"
+  },
+  {
+    "tema": "Patrones de comportamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 30.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Ejercicio Strategy - solución procesador de pagos.png",
+    "sha256": "bbc900cd4e9d7339e4b12d74be66183cead77877d9b668c7d372dcfb38a1ca17"
+  },
+  {
+    "tema": "Patrones de comportamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 31.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Template Method - problema de los data miners.png",
+    "sha256": "0aa028ebf36472b3ab13d76aa004524b9da47b45864d17ccbf7193a59bb5d304"
+  },
+  {
+    "tema": "Patrones de comportamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 32.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Template Method - DataMiner.png",
+    "sha256": "71df0675409650e59f87f8ff64c0c644adea3288fa015ca2b5d927724f9d0c54"
+  },
+  {
+    "tema": "Patrones de comportamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 33.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Template Method - estructura.png",
+    "sha256": "1acceb225a19dae8abc6d8996dbc50ddebb5ce5190396c8cc5a5f69eef3b9c48"
+  },
+  {
+    "tema": "Patrones de comportamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 34.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Template Method - ejemplo bebidas.png",
+    "sha256": "384f1c758be2697fe1b82029b41b872bd1822e21f4560d3c3ac8c76bae0415cd"
+  },
+  {
+    "tema": "Patrones de comportamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 35.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Observer - visitas a la tienda vs spam.png",
+    "sha256": "cc0ac7753b346895ae65635ed861a0a6d42832b2a4c91f7f1653b26c0ec857d8"
+  },
+  {
+    "tema": "Patrones de comportamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 36.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Observer - mecanismo de suscripción.png",
+    "sha256": "c3eb3288ea9ca51060fe590565a092428eb12493f63c7be6e69735e14f9a9b39"
+  },
+  {
+    "tema": "Patrones de comportamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 37.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Observer - notificar a los suscriptores.png",
+    "sha256": "79196de3e43f7705c7ba62b6afb4f6932281e37ea0dd6399ed1697270578825c"
+  },
+  {
+    "tema": "Patrones de comportamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 38.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Ejercicio Observer - enunciado empleados.png",
+    "sha256": "4f93e65003b463c7fd3b92e5806cc08c17e07cc3beebb662c5868618406d36c7"
+  },
+  {
+    "tema": "Patrones de comportamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 39.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Ejercicio Observer - solución código.png",
+    "sha256": "c33f72895b46be506c0274ab8f8db85970405dc46a546bae3db093f26bd4c25c"
+  },
+  {
+    "tema": "Patrones de comportamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 40.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Ejercicio Observer - solución diagrama de secuencia.png",
+    "sha256": "648afa284c8b9c2a7d58c11755d45b921778a7ea549aaf510a1c2e8543052686"
   }
 ]

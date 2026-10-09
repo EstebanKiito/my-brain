@@ -83,11 +83,17 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta.
 | ℹ️ | [[09 - Ejemplo de diseño - Bebidas con cafeína\|Bebidas con cafeína]] | Imagen de `Coffee`: falta el `end` de `pourInCup` | Error de la slide; se anotó en la transcripción. |
 | ✅ | [[07 - Ejemplo de diseño - Carrito de compras\|Carrito de compras]] | "SjoppingCar", "acoplamineto", "herado" | Solo erratas; se corrigieron. |
 
+## Patrones de comportamiento
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ✅ | [[03 - Patrón Template Method\|Patrón Template Method]] | "Ejemplo Diagrama (ya visto)" | Resuelto: la imagen es el diagrama de las bebidas con cafeína de la clase de Diseño (`CafeineBeverage`, `Coffe`, `Tea`). Se enlazó con esa nota. |
+| ℹ️ | [[02 - Ejercicio - Observer de empleados con diagrama de secuencia\|Ejercicio Observer de empleados]] | Solución: `initialize(name, title, salary)` con `@job = job` | Debe ser `@job = title`; no cambia el output del ejercicio. |
+| ✅ | [[05 - Patrón Observer\|Patrón Observer]] | "NOTOFICADOR" | Solo una errata; se corrigió. |
+
 ## Detectadas para temas pendientes
 Se resolverán, con su callout en la nota, cuando se migre cada tema:
 - **Patrones:**
   - Decorator, "Solución: Herencia y Dependencia": el patrón usa composición.
-  - "Template Method — Ejemplo Diagrama (ya visto)": no queda claro a qué ejemplo se refiere.
   - Builder: `director.builder` sin `attr_reader :builder`, lo que da NoMethodError.
   - "SINGLETON (YO)": no queda claro qué significa "(YO)".
 - **Gestión del curso:**
