@@ -18,7 +18,7 @@ prerrequisitos: ["[[01 - Scrum|Scrum]]", "[[02 - Product Owner|Product Owner]]"]
 > - Es **vivo**: el PO puede agregar o ajustar elementos en cualquier momento según el feedback ("Add/Take from Product Backlog").
 > - Cada ítem tiene una **estimación** de esfuerzo, por ejemplo en story points.
 > - En el backlog inicial participan el **Product Owner, los stakeholders y el equipo de desarrollo**.
-> - Sus ítems suelen escribirse como **historias de usuario**.
+> - Sus ítems suelen escribirse como **[[01 - Historias de usuario|historias de usuario]]**.
 
 > [!example] Ejemplo extra — Product Backlog de un sistema de reservas de hotel (slides)
 > | Backlog item | Estimación |

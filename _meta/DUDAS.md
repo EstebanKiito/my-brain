@@ -20,6 +20,12 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta.
 | ✅ | [[06 - Sprint\|Sprint]] | Imagen: "Sprint 1-4 weeks" | Las slides y el libro dicen 2–4 semanas y la Scrum Guide, un mes o menos. Se muestran todas. |
 | ℹ️ | [[01 - Scrum\|Scrum]] | *(libro)* "desarrollado a fines de los años 90 por Ken Schwaber" | Scrum se presentó formalmente en 1995 por Schwaber y Sutherland. Se aclaró en un complemento; no afecta tus apuntes. |
 
+## Historias de usuario
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ✅ | [[02 - Estructura de una historia de usuario\|Estructura de una historia de usuario]] | "Yo, como (type_usuario) neceisto (tarea) para (onjetivo)" | Solo erratas ("neceisto", "onjetivo"); se corrigieron sin cambiar el sentido. |
+| ℹ️ | [[02 - Estructura de una historia de usuario\|Estructura de una historia de usuario]] | Ejemplo "Como usuario necesito recuperar mi contraseña…" | No es un error, pero el libro recomienda evitar el genérico "como usuario". Se agregó una nota aclarando cuándo es aceptable. |
+
 ## Detectadas para temas pendientes
 Se resolverán, con su callout en la nota, cuando se migre cada tema:
 - **Ruby:**

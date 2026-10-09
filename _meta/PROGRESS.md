@@ -7,7 +7,7 @@ Rama: `migrar/software-v2`. Un commit por tema. Antes de cada commit se corre `p
 | 0 | Infraestructura (`verificar.py`, mapeo, índices) | `_meta/` | ✅ hecho | – | – |
 | 1 | Procesos de desarrollo | `Procesos de desarrollo/` | ✅ hecho | 12 + índice | 9 + 4 |
 | 2 | Scrum | `Scrum y gestión ágil/Scrum/` | ✅ hecho | 11 + índice | 1 + 8 |
-| 3 | Historias de usuario | `Scrum y gestión ágil/Historias de usuario/` | ⏳ pendiente | | |
+| 3 | Historias de usuario | `Scrum y gestión ágil/Historias de usuario/` | ✅ hecho | 7 + índice | 0 |
 | 4 | Planificación y estimación | `Scrum y gestión ágil/Planificación y estimación/` | ⏳ pendiente | | |
 | 5 | Ruby | `Ruby/` | ⏳ pendiente | | |
 | 6 | Programación orientada a objetos | `Programación orientada a objetos/` | ⏳ pendiente | | |
@@ -35,4 +35,9 @@ Rama: `migrar/software-v2`. Un commit por tema. Antes de cada commit se corre `p
   - Fuente: "Resumen Software Pt 1", §5 SCRUM (46 bloques, 1 imagen); complementos de las slides "SCRUM - una introducción rápida", el libro del curso (cap. 3) y la Scrum Guide 2020.
   - Las imágenes de `Scrum y gestión ágil/` se comparten en `Scrum y gestión ágil/adjuntos/` (`"adjuntos"` en mapeo.json).
   - Verificación: 0 errores, 0 advertencias. Cobertura: 37 exactos + 9 reformulados, 0 sin cubrir.
+- **2026-10-09 — Historias de usuario.**
+  - Fuente: "Resumen Software Pt 1", §7 Relatos de usuario (13 bloques, sin imágenes); complementos de las slides "Historias de Usuario" y del libro del curso, cap. 4.
+  - Las "Historias de usuario (mías)" de la página del ramo quedan para el tema Gestión del curso, como estaba planificado.
+  - Verificación: 0 errores, 0 advertencias. Cobertura: 9 exactos + 4 reformulados.
+  - verificar.py: un encabezado original también cuenta como cubierto si todas sus palabras (con tolerancia a erratas) están en el título o en un encabezado de alguna nota.
 - **Nota técnica:** `.venv` no existe en el repo, así que el verificador usa solo la biblioteca estándar de Python.

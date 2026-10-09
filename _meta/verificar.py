@@ -506,8 +506,11 @@ def prueba_cobertura(tema, items, notas_tema, notas_todas, aceptados, detalle):
                            for r in orden]
                 titulos += [(r, normalizar(l)) for r in orden
                             for l in notas_todas[r].splitlines() if l.startswith("#")]
+                def contiene(t):
+                    vocab = t.split()
+                    return all(difflib.get_close_matches(w, vocab, n=1, cutoff=0.8) for w in n.split())
                 similar = next((r for r, t in titulos
-                                if difflib.SequenceMatcher(None, n, t).ratio() >= 0.75), None)
+                                if difflib.SequenceMatcher(None, n, t).ratio() >= 0.75 or contiene(t)), None)
                 if similar:
                     stats["reformulado"] += 1
                     if detalle:

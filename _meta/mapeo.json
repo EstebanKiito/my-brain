@@ -36,8 +36,15 @@
     },
     "Historias de usuario": {
       "carpeta": "Ingeniería de Software/Scrum y gestión ágil/Historias de usuario",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "pt1",
+          "desde": "7. Relatos Usuarios",
+          "hasta": "8. Estimaciones"
+        }
+      ],
+      "adjuntos": "Ingeniería de Software/Scrum y gestión ágil/adjuntos"
     },
     "Planificación y estimación": {
       "carpeta": "Ingeniería de Software/Scrum y gestión ágil/Planificación y estimación",

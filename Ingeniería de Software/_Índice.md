@@ -12,7 +12,7 @@ Vault de estudio del ramo. Cada nota cubre **un concepto**: no hace falta saber 
 | Tema | Qué cubre | Estado |
 |---|---|---|
 | [[Ingeniería de Software/Procesos de desarrollo/_Índice\|Procesos de desarrollo]] | Cascada, iterativos (espiral, prototipos, RUP), incrementales, ágil, XP | ✅ |
-| [[Ingeniería de Software/Scrum y gestión ágil/_Índice\|Scrum y gestión ágil]] | Scrum (roles, eventos, artefactos) ✅; historias de usuario y planificación ⏳ | 🟡 en curso |
+| [[Ingeniería de Software/Scrum y gestión ágil/_Índice\|Scrum y gestión ágil]] | Scrum ✅, historias de usuario ✅, planificación y estimación ⏳ | 🟡 en curso |
 | Ruby | Sintaxis, bloques, colecciones, control | ⏳ pendiente |
 | Programación orientada a objetos | Clases, herencia, polimorfismo, lookup, self vs super | ⏳ pendiente |
 | Desarrollo web con Rails | HTTP, HTML/CSS, MVC, Active Record, rutas, vistas, API | ⏳ pendiente |

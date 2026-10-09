@@ -6,7 +6,7 @@ Volver al [[Ingeniería de Software/_Índice|mapa del ramo]].
 
 ## Orden de estudio
 1. [[Ingeniería de Software/Scrum y gestión ágil/Scrum/_Índice|Scrum]]: roles, eventos y artefactos. ✅
-2. Historias de usuario: cómo se escriben los ítems del backlog. ⏳ pendiente
+2. [[Ingeniería de Software/Scrum y gestión ágil/Historias de usuario/_Índice|Historias de usuario]]: cómo se escriben los ítems del backlog. ✅
 3. Planificación y estimación: story points, velocidad, release plan y estimaciones. ⏳ pendiente
 
 Las imágenes de esta carpeta y sus subcarpetas están en `adjuntos/`.
