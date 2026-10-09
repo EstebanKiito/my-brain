@@ -20,7 +20,7 @@ Rama: `migrar/software-v2`. Un commit por tema. Antes de cada commit se corre `p
 | 13 | Patrones estructurales | `Patrones de Diseño/Estructurales/` | ✅ hecho | 6 + 1 comparación + 2 ejercicios | 22 |
 | 14 | Patrones creacionales | `Patrones de Diseño/Creacionales/` | ✅ hecho | 7 + 1 comparación | 6 |
 | 15 | Arquitectura de software | `Arquitectura de software/` | ✅ hecho | 7 + índice | 0 + 14 |
-| 16 | Fundamentos + Gestión del curso + mapa final | `Fundamentos/`, `Gestión del curso/` | ⏳ pendiente | | |
+| 16 | Fundamentos + Gestión del curso + mapa final | `Fundamentos/`, `Gestión del curso/` | ✅ hecho | 3 + 5 + índices | 0 + 4 + libro PDF |
 
 ## Convenciones
 - Cada nota lleva un prefijo `NN - ` con su orden de estudio dentro de la carpeta (`01 - …`, `02 - …`). El `_Índice.md` de la carpeta lista las notas en ese mismo orden.
@@ -84,5 +84,10 @@ Rama: `migrar/software-v2`. Un commit por tema. Antes de cada commit se corre `p
   - Verificación: 0 errores, 0 advertencias. Con esto, "Resumen Prueba Práctica" queda cubierto completo.
 - **2026-10-09 — Arquitectura de software.**
   - Sin contenido propio (solo nombrada en "Contenidos" de la prueba práctica): 7 notas de complemento basadas en las slides "Arquitecturas Comunes", con 14 diagramas.
+  - Verificación: 0 errores, 0 advertencias.
+- **2026-10-09 — Fundamentos y gestión del curso (cierre).**
+  - Fundamentos (3 notas de complemento: slides de introducción, presentación y libro, cap. 1) y Gestión del curso (evaluación, checklist, proyecto con mis historias, material con el libro en PDF y contenidos de las evaluaciones).
+  - Mapa del ramo final con ruta de estudio completa.
+  - **Cobertura global:** ramo 34/34, C1 32/32, Pt. 1 174/174 y Prueba Práctica 452/452 bloques. Las páginas Interrogaciones, Libros y Proyecto estaban vacías; CLASES solo tenía enlaces a los PDFs.
   - Verificación: 0 errores, 0 advertencias.
 - **Nota técnica:** `.venv` no existe en el repo, así que el verificador usa solo la biblioteca estándar de Python.

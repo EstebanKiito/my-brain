@@ -775,5 +775,40 @@
     "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈33",
     "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - evolución del despliegue.png",
     "sha256": "36ffc38a3f6b347119f0650fd6cc810425f8f1adb8e6d4d88d6b656a821dfbdd"
+  },
+  {
+    "tema": "Fundamentos y gestión del curso",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/1-IntroIS.pdf#page=4",
+    "destino": "Ingeniería de Software/Fundamentos/adjuntos/Slide - CHAOS report 2015.png",
+    "sha256": "ca7a77513c65581ec03172ae92d388518ac69409b70aa1d19dcf65b9d10e88c6"
+  },
+  {
+    "tema": "Fundamentos y gestión del curso",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/1-IntroIS.pdf#page=7",
+    "destino": "Ingeniería de Software/Fundamentos/adjuntos/Slide - éxito según tamaño y complejidad.png",
+    "sha256": "a3072af41ca209e75c3b3d061f5a36996f29ab8d211d5546f2ff533cba8fb286"
+  },
+  {
+    "tema": "Fundamentos y gestión del curso",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/1-IntroIS.pdf#page=11",
+    "destino": "Ingeniería de Software/Fundamentos/adjuntos/Slide - uso de las funcionalidades solicitadas.png",
+    "sha256": "95f17dadd3c714783d885f7e34999964328fb3710700d47aa9da24420ce7f8d0"
+  },
+  {
+    "tema": "Fundamentos y gestión del curso",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/1-IntroIS.pdf#page=12",
+    "destino": "Ingeniería de Software/Fundamentos/adjuntos/Slide - problema de comunicación.png",
+    "sha256": "c05bd417103709d7255fd8e99be6b6c0f907809b09383346e34453f50e84f3e7"
+  },
+  {
+    "tema": "Fundamentos y gestión del curso",
+    "tipo": "libro",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Libro_Ingenieria_de_Software.pdf",
+    "destino": "Ingeniería de Software/Gestión del curso/adjuntos/Libro - Apuntes de Ingeniería de Software - Sandoval y Navon.pdf",
+    "sha256": "10c8fccbcd98d4b0cb8d2f7e293bfe291d176dd850a2f5dc3c13249705383bbe"
   }
 ]

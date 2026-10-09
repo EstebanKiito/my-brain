@@ -105,8 +105,14 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta.
 | 🟡 | [[07 - Patrón Singleton\|Patrón Singleton]] | "11. SINGLETON (YO)" | No queda claro qué significa "(YO)". |
 | ✅ | [[01 - Patrón Abstract Factory\|Abstract Factory]] | "Nos permote", "Instania" | Solo erratas. |
 
-## Detectadas para temas pendientes
-Se resolverán, con su callout en la nota, cuando se migre cada tema:
-- **Gestión del curso:**
-  - Fechas y ponderaciones de la página del ramo y del CSV (2024) no coinciden con el esquema del PDF 0 (I1/I2 de otra versión del curso).
-  - La lista de contenidos de "Resumen Prueba Práctica" nombra DOCUMENTACIÓN y QUALITY ASSESSMENT, pero no tienen contenido en ninguna fuente.
+## Fundamentos y gestión del curso
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| 🟡 | [[05 - Contenidos de las evaluaciones\|Contenidos de las evaluaciones]] | "DOCUMENTACION", "QUALITY ASSESMENT" | Aparecen en tu lista de contenidos, pero no hay apuntes ni slides sobre ellos. Si se vieron en clase, faltan notas. |
+| ℹ️ | [[01 - Evaluación y calendario de IIC2143\|Evaluación y calendario]] | Página del ramo (2024) vs. slides de presentación | Son versiones distintas del curso: 2024 con controles y prueba práctica; las slides con I1/I2. Se muestran ambas. |
+| ℹ️ | [[01 - Evaluación y calendario de IIC2143\|Evaluación y calendario]] | *(slide)* "Si NP >= 3.95 y NP >= 3.95" | Error de la slide: debe ser NI y NP. |
+| ✅ | [[05 - Contenidos de las evaluaciones\|Contenidos de las evaluaciones]] | "Casacada", "Incrementativo" | Erratas (cascada, incremental). |
+| ✅ | [[04 - Material del curso\|Material del curso]] | Páginas "Interrogaciones", "Libros" y "Proyecto" | Estaban vacías en Notion; no tienen destino. |
+
+## Pendientes
+Ninguno: todas las fuentes quedaron migradas. Las dudas 🟡 de arriba son las que tienes que revisar tú.

@@ -200,8 +200,35 @@
     },
     "Fundamentos y gestión del curso": {
       "carpeta": "Ingeniería de Software",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "ramo",
+          "desde": "CATEDRA (50% del Ramo)",
+          "hasta": "PASOS PARA INSTALAR ELEMENTOS DEL CURSO MAC M1!!!"
+        },
+        {
+          "fuente": "ramo",
+          "desde": "Historias de Usuario (mías):"
+        },
+        {
+          "fuente": "c1",
+          "desde": "Contenidos:",
+          "hasta": "RESUMEN:",
+          "por_texto": true
+        },
+        {
+          "fuente": "pt1",
+          "desde": "PARTE 1: Contenidos",
+          "hasta": "1. RUBY"
+        },
+        {
+          "fuente": "pp",
+          "desde": "A continuacion los resumenes",
+          "hasta": "9. HTML + CSS (Vistas)",
+          "por_texto": true
+        }
+      ]
     }
   },
   "aceptados": [
