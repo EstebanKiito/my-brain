@@ -45,6 +45,8 @@ sequenceDiagram
 > | Controlador | `app/controllers/` | `personas_controller.rb` → [[09 - Controladores en Rails\|Controladores en Rails]] |
 > | Rutas | `config/routes.rb` | `resources :personas` → [[10 - Rutas en Rails\|Rutas en Rails]] |
 >
+> MVC organiza la aplicación por responsabilidades, igual que la [[03 - Arquitectura en capas|arquitectura en capas]].
+>
 > **Por qué separar:** cada parte tiene una sola responsabilidad (**alta cohesión**) y se puede cambiar una sin tocar las demás (**bajo acoplamiento**). Por ejemplo, se puede cambiar la vista HTML por una respuesta JSON sin tocar el modelo.
 
 ## Preguntas de repaso

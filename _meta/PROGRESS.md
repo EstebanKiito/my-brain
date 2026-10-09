@@ -19,7 +19,7 @@ Rama: `migrar/software-v2`. Un commit por tema. Antes de cada commit se corre `p
 | 12 | Patrones de comportamiento | `Patrones de Diseño/Comportamiento/` | ✅ hecho | 6 + 1 general + 1 comparación + 2 ejercicios | 14 |
 | 13 | Patrones estructurales | `Patrones de Diseño/Estructurales/` | ✅ hecho | 6 + 1 comparación + 2 ejercicios | 22 |
 | 14 | Patrones creacionales | `Patrones de Diseño/Creacionales/` | ✅ hecho | 7 + 1 comparación | 6 |
-| 15 | Arquitectura de software | `Arquitectura de software/` | ⏳ pendiente | | |
+| 15 | Arquitectura de software | `Arquitectura de software/` | ✅ hecho | 7 + índice | 0 + 14 |
 | 16 | Fundamentos + Gestión del curso + mapa final | `Fundamentos/`, `Gestión del curso/` | ⏳ pendiente | | |
 
 ## Convenciones
@@ -82,4 +82,7 @@ Rama: `migrar/software-v2`. Un commit por tema. Antes de cada commit se corre `p
   - Fuente: "Resumen Prueba Práctica", §17 hasta el final (43 bloques, 6 imágenes). Abstract Factory, Builder y Factory Method separados en concepto + implementación; Singleton con el ejemplo `MainFolder` de las slides.
   - Nueva: "Factory Method vs Abstract Factory". La tabla de "Qué es un patrón de diseño" quedó enlazada completa.
   - Verificación: 0 errores, 0 advertencias. Con esto, "Resumen Prueba Práctica" queda cubierto completo.
+- **2026-10-09 — Arquitectura de software.**
+  - Sin contenido propio (solo nombrada en "Contenidos" de la prueba práctica): 7 notas de complemento basadas en las slides "Arquitecturas Comunes", con 14 diagramas.
+  - Verificación: 0 errores, 0 advertencias.
 - **Nota técnica:** `.venv` no existe en el repo, así que el verificador usa solo la biblioteca estándar de Python.

@@ -677,5 +677,103 @@
     "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 68.png",
     "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Singleton - estructura.png",
     "sha256": "a9e916ec015b6180ca310b3033372c50e3699ee5727cf12df9a641273dc467e5"
+  },
+  {
+    "tema": "Arquitectura de software",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈5",
+    "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - historia de las arquitecturas distribuidas.png",
+    "sha256": "d2505e2c04e1d96e46fdd550643f24fc468238bec0dbc3cc2cdeb6c72a61dded"
+  },
+  {
+    "tema": "Arquitectura de software",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈7",
+    "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - cliente y servidor.png",
+    "sha256": "2f0b73b2d7bacae56112f1be0fd1da790e324629cc47ba0a5d541d84c14ebbd6"
+  },
+  {
+    "tema": "Arquitectura de software",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈12",
+    "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - arquitectura de tres niveles.png",
+    "sha256": "dde41cc0597017386d536a7f0acedbf10d9c2dc700ae8b2cfd67f9278bba29b6"
+  },
+  {
+    "tema": "Arquitectura de software",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈14",
+    "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - arquitectura en capas.png",
+    "sha256": "0dd1732b727ee80d38d448959511405d6e6efdeab0d4a22cd7e75683611ac443"
+  },
+  {
+    "tema": "Arquitectura de software",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈16",
+    "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - escalamiento vertical y horizontal.png",
+    "sha256": "84d9024683f95d1f4f8d40c9aaf1c31d85a227c3c7857e298a6aa1e215eba87e"
+  },
+  {
+    "tema": "Arquitectura de software",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈17",
+    "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - teorema CAP.png",
+    "sha256": "f500108f54f7b8cf9f9609c70f35cb2692da52a936235c13a6f726f256789638"
+  },
+  {
+    "tema": "Arquitectura de software",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈19",
+    "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - arquitectura orientada a servicios.png",
+    "sha256": "2ec2c4aa6c86a3fee1e5b53aa198cb7a476653377bda2376ac6255c9ef150d6f"
+  },
+  {
+    "tema": "Arquitectura de software",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈25",
+    "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - microservicios vs aplicación tradicional.png",
+    "sha256": "b00f73b9c3c8d696c56f62a5ffc2902764661812007e1d5ad028075e2812928e"
+  },
+  {
+    "tema": "Arquitectura de software",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈21",
+    "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - máquinas virtuales vs contenedores.png",
+    "sha256": "464d203ebf56e982f853cd2916566149ac8d15d907b479e36a7675e88df73b70"
+  },
+  {
+    "tema": "Arquitectura de software",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈26",
+    "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - Dockerfile, imagen y contenedor.png",
+    "sha256": "5163aacdddd9b636f1a382ae71020644d90e05da6833c6e7442a58767f19e05b"
+  },
+  {
+    "tema": "Arquitectura de software",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈27",
+    "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - comandos de Docker.png",
+    "sha256": "300461b6da88840cdb7775172f5844176e335dce69d6fd94cd64107831c82a3d"
+  },
+  {
+    "tema": "Arquitectura de software",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈30",
+    "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - arquitectura de Kubernetes.png",
+    "sha256": "a44f32c8c37c749bb59d1bb83f35e93c829e1b5214d0e766f1fa32ccc82b1a09"
+  },
+  {
+    "tema": "Arquitectura de software",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈32",
+    "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - Kafka productor broker consumidor.png",
+    "sha256": "d28b4379f081a01514ba1b9500c91adcf3b982e81b0bfe8473480b6ad23e8900"
+  },
+  {
+    "tema": "Arquitectura de software",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈33",
+    "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - evolución del despliegue.png",
+    "sha256": "36ffc38a3f6b347119f0650fd6cc810425f8f1adb8e6d4d88d6b656a821dfbdd"
   }
 ]

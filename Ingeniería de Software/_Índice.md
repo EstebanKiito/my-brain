@@ -19,7 +19,7 @@ Vault de estudio del ramo. Cada nota cubre **un concepto**: no hace falta saber 
 | [[Ingeniería de Software/Testing/_Índice\|Testing]] | Unit, integration, fixtures, asserts, cobertura | ✅ |
 | [[Ingeniería de Software/Diseño y UML/_Índice\|Diseño y UML]] | Diagramas de clases y de secuencia, acoplamiento, cohesión, abierto/cerrado | ✅ |
 | [[Ingeniería de Software/Patrones de Diseño/_Índice\|Patrones de Diseño]] | Comportamiento, estructurales, creacionales, comparaciones y ejercicios de prueba | ✅ |
-| Arquitectura de software | Cliente-servidor, capas, microservicios | ⏳ pendiente |
+| [[Ingeniería de Software/Arquitectura de software/_Índice\|Arquitectura de software]] | Cliente-servidor, capas, CAP, SOA, microservicios, Docker/Kubernetes | ✅ |
 | Fundamentos y gestión del curso | Qué es la IS, evaluación, checklist de la prueba práctica | ⏳ pendiente |
 
 ## Ruta de estudio sugerida
@@ -28,6 +28,6 @@ Vault de estudio del ramo. Cada nota cubre **un concepto**: no hace falta saber 
 3. **Ruby → Programación orientada a objetos:** el lenguaje y luego POO (lookup y self vs super salen en la prueba).
 4. **Desarrollo web con Rails → Testing.**
 5. **Diseño y UML → Patrones de Diseño:** primero comportamiento (Strategy, Template Method, Observer), luego estructurales y creacionales; cierra con los ejercicios de prueba.
-6. Arquitectura de software *(pendiente)*.
+6. **Arquitectura de software:** la mirada de alto nivel; conecta MVC, capas y despliegue.
 
 Esta ruta se completa a medida que se migran los temas (ver `_meta/PROGRESS.md`).
