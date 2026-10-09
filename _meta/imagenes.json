@@ -1,0 +1,814 @@
+[
+  {
+    "tema": "Procesos de desarrollo",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Software Pt 1/Untitled.png",
+    "destino": "Ingeniería de Software/Procesos de desarrollo/adjuntos/Modelo en cascada - etapas.png",
+    "sha256": "2a3da6b34bf631421c502ac4f3d2310b716eefaeadcc793055c985aa82a62535"
+  },
+  {
+    "tema": "Procesos de desarrollo",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Software Pt 1/Untitled 1.png",
+    "destino": "Ingeniería de Software/Procesos de desarrollo/adjuntos/Procesos iterativos - analogía de la Mona Lisa.png",
+    "sha256": "0cc2667a6c829b24ad154b9dc27cd8cab9cd3d3e225b63f4b630afbd7555ff13"
+  },
+  {
+    "tema": "Procesos de desarrollo",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Software Pt 1/Untitled 2.png",
+    "destino": "Ingeniería de Software/Procesos de desarrollo/adjuntos/Modelo en espiral - cuadrantes.png",
+    "sha256": "2920503238cb3bf78e9288ac993bdbabe73b065514e688ee561e4f902b4edb16"
+  },
+  {
+    "tema": "Procesos de desarrollo",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Software Pt 1/Untitled 3.png",
+    "destino": "Ingeniería de Software/Procesos de desarrollo/adjuntos/Modelo de prototipos - flujo.png",
+    "sha256": "fd8957aab206f8cfc79ad36cb998badaa4afe106ced932c8da7e06d93e8b9c5c"
+  },
+  {
+    "tema": "Procesos de desarrollo",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Software Pt 1/Untitled 4.png",
+    "destino": "Ingeniería de Software/Procesos de desarrollo/adjuntos/Proceso unificado - fases y disciplinas.png",
+    "sha256": "6d4b30a37ca67414abbfbf596b17bce52c81ff072534ae4f3693c1e9780b49bd"
+  },
+  {
+    "tema": "Procesos de desarrollo",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Software Pt 1/Untitled 5.png",
+    "destino": "Ingeniería de Software/Procesos de desarrollo/adjuntos/Procesos incrementales - analogía de la Mona Lisa.png",
+    "sha256": "bdcf60d33126018168e37893599c1a02912793c3472bc3f831d6b5a9ad663e83"
+  },
+  {
+    "tema": "Procesos de desarrollo",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Software Pt 1/Untitled 6.png",
+    "destino": "Ingeniería de Software/Procesos de desarrollo/adjuntos/Procesos iterativos e incrementales - analogía de la Mona Lisa.png",
+    "sha256": "c6e87a697a16b2d0cf7dded1e5c7c57b105881856001031761ef15178ee80fad"
+  },
+  {
+    "tema": "Procesos de desarrollo",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Software Pt 1/Untitled 7.png",
+    "destino": "Ingeniería de Software/Procesos de desarrollo/adjuntos/Procesos iterativos e incrementales - del skate al auto.png",
+    "sha256": "9949e01c660325b5c1b590704eb9e75b721174293f2d451d7ee7a9af620e4880"
+  },
+  {
+    "tema": "Procesos de desarrollo",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Software Pt 1/Untitled 8.png",
+    "destino": "Ingeniería de Software/Procesos de desarrollo/adjuntos/Metodología ágil - ciclo.png",
+    "sha256": "a55ce4eb28c1d64dc0c7a5a1fa2b2239be02a245fa5646142e6a15042c1f4177"
+  },
+  {
+    "tema": "Procesos de desarrollo",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/5-SoftwareProcesses.pdf#page=11 (recorte)",
+    "destino": "Ingeniería de Software/Procesos de desarrollo/adjuntos/Slide - enfoque en cascada.png",
+    "sha256": "53c69e1d0d2af5dba91dab248e465b18f8b575480ba23394e4b59810cec5b225"
+  },
+  {
+    "tema": "Procesos de desarrollo",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/5-SoftwareProcesses.pdf#page=12 (recorte)",
+    "destino": "Ingeniería de Software/Procesos de desarrollo/adjuntos/Slide - enfoque iterativo.png",
+    "sha256": "3c5e473c912da4323e8ca99eecc2af4a54f60fece82dbfcc754d2642954dda09"
+  },
+  {
+    "tema": "Procesos de desarrollo",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/5-SoftwareProcesses.pdf#page=13 (recorte)",
+    "destino": "Ingeniería de Software/Procesos de desarrollo/adjuntos/Slide - enfoque iterativo e incremental.png",
+    "sha256": "d37d9253581a0f6368f9998cb95c25579640bf5e5802279c2f0163800bca2337"
+  },
+  {
+    "tema": "Procesos de desarrollo",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/5-SoftwareProcesses.pdf#page=22 (recorte)",
+    "destino": "Ingeniería de Software/Procesos de desarrollo/adjuntos/Slide - cascada en la práctica con retroalimentación.png",
+    "sha256": "998b2795bdb6511d749a757e0147b8bd60fd2831c256d7365eed896607d26456"
+  },
+  {
+    "tema": "Scrum",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Software Pt 1/Untitled 9.png",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Scrum - proceso completo.png",
+    "sha256": "7018172e045320a8b8271d247e0f8b0cb09cdf632c342ea21210456f592323f5"
+  },
+  {
+    "tema": "Scrum",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/6-ScrumOverview.pdf#page=8",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - matriz de Stacey.png",
+    "sha256": "79f0c98daf99a9a29930779c0be46d7c8b88f58c60c7e5541195be95e3c8ba84"
+  },
+  {
+    "tema": "Scrum",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/6-ScrumOverview.pdf#page=12",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - refinamiento del backlog.png",
+    "sha256": "8e6baf39df92dd72fc150c74d4a7e9d3428ef42501d97bfab074d8e13fe3d13d"
+  },
+  {
+    "tema": "Scrum",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/6-ScrumOverview.pdf#page=15",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - pasos del Sprint Planning.png",
+    "sha256": "12bb6e5cee5abb2cfd84607c6388839b68e4c0b1b0516b1bc62f0866d4c52689"
+  },
+  {
+    "tema": "Scrum",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/6-ScrumOverview.pdf#page=14",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - participantes del Sprint Planning.png",
+    "sha256": "766f9b04bca19d7abce886a420e309cfbad72974743c354fb7a2d67876e23fa0"
+  },
+  {
+    "tema": "Scrum",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/6-ScrumOverview.pdf#page=23",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - Daily Scrum.png",
+    "sha256": "14dbe1a03622579a9ae27c0c36ef4d24762481fe74151ffd768519083b7909d2"
+  },
+  {
+    "tema": "Scrum",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/6-ScrumOverview.pdf#page=25",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - Sprint Review.png",
+    "sha256": "290ecf222f0aa75fa8ea4010882018eebf06eaeb9ac36c76c9fd3fdf88e966ec"
+  },
+  {
+    "tema": "Scrum",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/6-ScrumOverview.pdf#page=27",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - Sprint Retrospective.png",
+    "sha256": "f4cde4b8c832377d8334dc25ebe6808985bcc347c64df14378c9d1bf0de4c834"
+  },
+  {
+    "tema": "Scrum",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/6-ScrumOverview.pdf#page=29",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - roles de Scrum.png",
+    "sha256": "2a7306ef7356d7771fc41b258a37d0ae269a587c0baf07dbdaac6faa2157c87c"
+  },
+  {
+    "tema": "Planificación y estimación",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/9-Estimaciones.pdf#page=10",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - distribución de probabilidad de una estimación.png",
+    "sha256": "aa582bc47f2ca7e2ac416abd3d6effe79d9fdaee91e7ab30acc4cf6862da18d1"
+  },
+  {
+    "tema": "Planificación y estimación",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/9-Estimaciones.pdf#page=14",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - penalización por subestimar y sobreestimar.png",
+    "sha256": "0dcb9efdd64ae46c7e19143b88dfb6cce5bd6bbd7d355f7c4681cf878d9c61cd"
+  },
+  {
+    "tema": "Planificación y estimación",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/9-Estimaciones.pdf#page=17",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - cono de la incertidumbre.png",
+    "sha256": "0d2980829e5d55e74a3f83efe35c31ebfb76be1923e4442498fbdcbaf94e3999"
+  },
+  {
+    "tema": "Planificación y estimación",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/9-Estimaciones.pdf#page=27",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - modelos de duración y esfuerzo.png",
+    "sha256": "0330b641303dc921c4e94c6a7c7e52675a39fe58960cc88833683ab149ba11df"
+  },
+  {
+    "tema": "Planificación y estimación",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/8-ScrumPlanififacion.pdf#page=10",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - cartas de Scrum Poker.png",
+    "sha256": "ae771d644bcf075c76aaa4eb577c30d966fdcb5be9bad8c1144a5bc5e0ba7968"
+  },
+  {
+    "tema": "Planificación y estimación",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/8-ScrumPlanififacion.pdf#page=19",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - release plan en el tiempo.png",
+    "sha256": "bdfc67918684250cf9282b303840b5019be5aaf3b362d5189e57f38c9f69999d"
+  },
+  {
+    "tema": "Rails",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled.png",
+    "destino": "Ingeniería de Software/Desarrollo web con Rails/adjuntos/Rails form_with - código ERB.png",
+    "sha256": "3014e297c4be52958b14b758a3fe24e9afc63460a7b65a0fc1d87da15317cd82"
+  },
+  {
+    "tema": "Rails",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 1.png",
+    "destino": "Ingeniería de Software/Desarrollo web con Rails/adjuntos/Rails form_with - HTML generado.png",
+    "sha256": "1e275d490dde856ad6e9f06015d6009b8f4b7413d98b8c613b9e8c725d1b0bdd"
+  },
+  {
+    "tema": "Rails",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 2.png",
+    "destino": "Ingeniería de Software/Desarrollo web con Rails/adjuntos/Rails form_with - formulario renderizado.png",
+    "sha256": "53d0a83eaf8d8639cc37f05686c6a87c2f120ec6703443c905461a7fd7305cf7"
+  },
+  {
+    "tema": "Rails",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 3.png",
+    "destino": "Ingeniería de Software/Desarrollo web con Rails/adjuntos/Rails resources - rutas generadas.png",
+    "sha256": "cf7f1f136043552dfcef49411fe7211637dcd96004853004c443cc2e0b3dd584"
+  },
+  {
+    "tema": "Testing",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 15.png",
+    "destino": "Ingeniería de Software/Testing/adjuntos/Unit test - modelo Book y su test.png",
+    "sha256": "abc996175cd2066008025de43d3a6aa5365327ae9e3d5b391379d20eba4240f0"
+  },
+  {
+    "tema": "Testing",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 16.png",
+    "destino": "Ingeniería de Software/Testing/adjuntos/Fixtures - books.yml.png",
+    "sha256": "96565420a43773473b35a137c0d6c661c2245603fea873ce312cb44d7bf63a70"
+  },
+  {
+    "tema": "Testing",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 17.png",
+    "destino": "Ingeniería de Software/Testing/adjuntos/Unit test con fixtures.png",
+    "sha256": "0e37037f28e67185ee3fd232264e9fa74530e90711e48270712eff9c1cc3aebd"
+  },
+  {
+    "tema": "Testing",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 18.png",
+    "destino": "Ingeniería de Software/Testing/adjuntos/Integration test - index y new.png",
+    "sha256": "bedf6d21b244c0baf00aaef464480e09766797245190099823bbafafccd3c441"
+  },
+  {
+    "tema": "Testing",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 19.png",
+    "destino": "Ingeniería de Software/Testing/adjuntos/Integration test - show.png",
+    "sha256": "d39d72db0fb44c1d968042a93c1587e91c78fbc00b2695271a36899a81c294c7"
+  },
+  {
+    "tema": "Testing",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 20.png",
+    "destino": "Ingeniería de Software/Testing/adjuntos/SimpleCov - líneas no cubiertas.png",
+    "sha256": "9fb5257021d6ab35e149ff464a131e44b3c26c69b6b7131b57b9fed26a758e00"
+  },
+  {
+    "tema": "UML",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 4.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Diagrama de clases - anatomía de una clase.png",
+    "sha256": "09e394012c6b9aab714b5a166856b9cfc2269bb3d4e91361e958188ae49732b7"
+  },
+  {
+    "tema": "UML",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 5.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Diagrama de clases - atributos y operaciones.png",
+    "sha256": "e0b290f20b98489bba1c28fa43a41093668b5e65c1c8e8f49aca4bc455b81082"
+  },
+  {
+    "tema": "UML",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 6.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Diagrama de clases - visibilidad.png",
+    "sha256": "8f0b2ab5e6a2ba7ea02efb02c71a331887962ce47ef645c3e237ca2a4076e213"
+  },
+  {
+    "tema": "UML",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 7.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Herencia UML - dos estilos.png",
+    "sha256": "ec20c9e8353b01255ac2f5c1218f9d82c1850231b5672fcc94b01a9771e8afa6"
+  },
+  {
+    "tema": "UML",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 8.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Realización UML - interfaz Owner.png",
+    "sha256": "e94c8a7cbacfa5c9bf0d58223abb3d6d318e9e3d6fdd531af1c4c1c482bde741"
+  },
+  {
+    "tema": "UML",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 9.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Relaciones UML - tipos de flechas.png",
+    "sha256": "9c657bd8abc9ff63fbc1d08e94ba9bacfe9cdc308d66260d4047110dc1563056"
+  },
+  {
+    "tema": "UML",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 10.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Diagrama de clases - ejemplo tienda online.png",
+    "sha256": "059ba9150e20bf92981bb68d40dc27e0cb5e953152198e6279ef129aa09a231b"
+  },
+  {
+    "tema": "UML",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 11.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Diagrama de secuencia - calculatePrice de Order.png",
+    "sha256": "0f36bcb1ef17280943dcb46ed8c85ada254cdba3ffb55139c4ec5a992377d128"
+  },
+  {
+    "tema": "UML",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 12.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Diagrama de secuencia - código de Order.png",
+    "sha256": "5be5fcb3d2f95595789d3d2cea6ca4f3818d9eba874cb9de941b1060b42cc98f"
+  },
+  {
+    "tema": "UML",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 13.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Diagrama de secuencia - creación y eliminación.png",
+    "sha256": "a0132efa885886d2ecff29d637bd7f57fc9e37ce2f8bd96db54ee820229b6bb7"
+  },
+  {
+    "tema": "UML",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 14.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Diagrama de secuencia - fragmentos loop alt opt.png",
+    "sha256": "cf654dc1b2bda70a1a055abbd763740559c91c7f027ea4633c00c8a8b10418f1"
+  },
+  {
+    "tema": "Principios de diseño",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 21.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Ejemplo carrito de compras - código original.png",
+    "sha256": "f118407a8991f1a2effbaf197d37b9f6e546206691af3911b30f07f7461d6812"
+  },
+  {
+    "tema": "Principios de diseño",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 22.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Ejemplo carrito de compras - código mejorado.png",
+    "sha256": "dbbba1e5b0a5daff8095e324a3b76cefe0729ebc2b6136a9950cea0a13af4ead"
+  },
+  {
+    "tema": "Principios de diseño",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 23.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Ejemplo filtros de libros - código original.png",
+    "sha256": "617c19d9588f82e0ee06acd22359ad09db5ddfbde126054c4fd747d4cacdb4e6"
+  },
+  {
+    "tema": "Principios de diseño",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 24.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Ejemplo filtros de libros - código mejorado.png",
+    "sha256": "6d517b1c90db69e93951175d4c295fd132071278abc599be5b3d9e36acd30e4d"
+  },
+  {
+    "tema": "Principios de diseño",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 25.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Ejemplo bebidas con cafeína - código original.png",
+    "sha256": "57c231655d0052e4b37145d91dc3a7298601bae5b177dbdf953ac94384171dd9"
+  },
+  {
+    "tema": "Principios de diseño",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 26.png",
+    "destino": "Ingeniería de Software/Diseño y UML/adjuntos/Ejemplo bebidas con cafeína - código mejorado.png",
+    "sha256": "84f18e19b3cc9e4f79281c4bace734494245ed041c6a4b0b4ab944a7f791d862"
+  },
+  {
+    "tema": "Patrones de comportamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 27.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Strategy - rutas del navegador.png",
+    "sha256": "63ca4576e19ff16779c8fac5071a10ba8a6e58566156e4a3762f24affeefe2af"
+  },
+  {
+    "tema": "Patrones de comportamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 28.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Strategy - estructura.png",
+    "sha256": "0d3c5665ce6fa1f1d47d1a523e0b543a088d622e13d2272c06b8f917053e6620"
+  },
+  {
+    "tema": "Patrones de comportamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 29.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Ejercicio Strategy - enunciado procesador de pagos.png",
+    "sha256": "ac15d1c378dad37878a17edeb5b05c9cf8a360d0717dc2e09c1b55e12237b411"
+  },
+  {
+    "tema": "Patrones de comportamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 30.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Ejercicio Strategy - solución procesador de pagos.png",
+    "sha256": "bbc900cd4e9d7339e4b12d74be66183cead77877d9b668c7d372dcfb38a1ca17"
+  },
+  {
+    "tema": "Patrones de comportamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 31.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Template Method - problema de los data miners.png",
+    "sha256": "0aa028ebf36472b3ab13d76aa004524b9da47b45864d17ccbf7193a59bb5d304"
+  },
+  {
+    "tema": "Patrones de comportamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 32.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Template Method - DataMiner.png",
+    "sha256": "71df0675409650e59f87f8ff64c0c644adea3288fa015ca2b5d927724f9d0c54"
+  },
+  {
+    "tema": "Patrones de comportamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 33.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Template Method - estructura.png",
+    "sha256": "1acceb225a19dae8abc6d8996dbc50ddebb5ce5190396c8cc5a5f69eef3b9c48"
+  },
+  {
+    "tema": "Patrones de comportamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 34.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Template Method - ejemplo bebidas.png",
+    "sha256": "384f1c758be2697fe1b82029b41b872bd1822e21f4560d3c3ac8c76bae0415cd"
+  },
+  {
+    "tema": "Patrones de comportamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 35.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Observer - visitas a la tienda vs spam.png",
+    "sha256": "cc0ac7753b346895ae65635ed861a0a6d42832b2a4c91f7f1653b26c0ec857d8"
+  },
+  {
+    "tema": "Patrones de comportamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 36.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Observer - mecanismo de suscripción.png",
+    "sha256": "c3eb3288ea9ca51060fe590565a092428eb12493f63c7be6e69735e14f9a9b39"
+  },
+  {
+    "tema": "Patrones de comportamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 37.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Observer - notificar a los suscriptores.png",
+    "sha256": "79196de3e43f7705c7ba62b6afb4f6932281e37ea0dd6399ed1697270578825c"
+  },
+  {
+    "tema": "Patrones de comportamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 38.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Ejercicio Observer - enunciado empleados.png",
+    "sha256": "4f93e65003b463c7fd3b92e5806cc08c17e07cc3beebb662c5868618406d36c7"
+  },
+  {
+    "tema": "Patrones de comportamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 39.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Ejercicio Observer - solución código.png",
+    "sha256": "c33f72895b46be506c0274ab8f8db85970405dc46a546bae3db093f26bd4c25c"
+  },
+  {
+    "tema": "Patrones de comportamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 40.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Ejercicio Observer - solución diagrama de secuencia.png",
+    "sha256": "648afa284c8b9c2a7d58c11755d45b921778a7ea549aaf510a1c2e8543052686"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 41.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Decorator - persona con suéter y abrigo.png",
+    "sha256": "e25847296bf1193096df5822a3b0d22983eb337972e896c727d8e138d9830e8c"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 42.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Decorator - explosión combinatoria de subclases.png",
+    "sha256": "21da20d1910f683ffe6ad7a83cc65579a28af4b028a065476a4f830c2dcc4c47"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 43.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Decorator - notificadores como decoradores.png",
+    "sha256": "8979c333fde94537e83df94ff5fe57d14b2ea0ecf613ec0e3e78f654aa9f137f"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 44.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Decorator - pros y contras.png",
+    "sha256": "f3f9090394d8a653ef714afcdee8cb25b29981f6f2a153ed838e5286ee82cf94"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 45.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Decorator - pizza con toppings estáticos.png",
+    "sha256": "2d847c9068835505cb63c58eb6d44ec1bbe5af6b7772efa53332a52d7ae0142e"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 46.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Decorator - problema de la pizza.png",
+    "sha256": "3a72132c1af32815d1ba53d27630e5c59e8d50e31d00fb98c3b013a029a5d5f0"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 47.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Decorator - pizza con decoradores.png",
+    "sha256": "90ca1a722df65b0debff7da88d89d6d9ac66f3475c97ddd73cc71914c1581208"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 48.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Ejercicio Decorator - enunciado abrigos.png",
+    "sha256": "a3719fb09a15fcc37ce32f3a0bbf2b335d39f54a1193573485dac52203d21d91"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 49.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Composite - línea de mando.png",
+    "sha256": "ddb85a7380ed3be2060cc2929b90043512c759f3ada64c4df7e5d0573e8b4aee"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 50.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Composite - pedido complejo.png",
+    "sha256": "fccd450f1ff704f8204fd15aadc0dc37d1a31345a0d3fb3fad8e8e33b58e1418"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 51.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Composite - sistema de archivos.png",
+    "sha256": "86606e761d160f54843cc7397d7917ae32e50bd172a9207e73d692a86cc1a564"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 52.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Adapter - enchufe británico.png",
+    "sha256": "25ea9784efb38d4555af891bcc7ace6d55249ab27e806e7311a000074b91a375"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 53.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Adapter - de XML a JSON.png",
+    "sha256": "0e8e2bc3764afd883a29ce1aff5402d1ce5e58ef9f6952526b43a27a30d60be6"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 54.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Adapter - estructura.png",
+    "sha256": "4e5eab40bc5b82951ca04efe09113c43b2bb1368f5a9288388030d0110950256"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 55.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Adapter - problema del RUT.png",
+    "sha256": "bf87525a876f4bed6aa82e546ac287e824d2a5d9f23cd6521a7291a0fe176100"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 56.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Adapter - solución del RUT.png",
+    "sha256": "7fa634750c07703ccfddee677d38dc9a3d81372b622ad4864b7e1f0c23d42f65"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 57.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Proxy - proxy de base de datos.png",
+    "sha256": "7b9d76d2b771ef5b5e1bf53d72d16bf5509ea549dd58fe59e0ee683ea4e4e6c4"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 58.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Proxy - estructura.png",
+    "sha256": "f07dbb52c9eebf042dd3a324029bbdc7841bb95b2f89e6f11d2ebe426570b6be"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 59.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Proxy - problema del log de login.png",
+    "sha256": "ba9f78c5c0f7cd74470983a63ce40179f9db5c0af9fef9b5d029585041badf38"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 60.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Proxy - solución LoginProxy.png",
+    "sha256": "32ef040561f281ee9e6ca05a1f95f0b41c5d75cf6a85a15daa3bf75183ec65ea"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 61.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Ejercicio Proxy y Adapter - enunciado WeChat.png",
+    "sha256": "f19ee3ee2f330789f3c3f1867ffafac3a685ef7bedb943fbd40ac89140c3ae6a"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 62.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Ejercicio Proxy y Adapter - solución WeChat.png",
+    "sha256": "f5bae868383f59e691577629f944b55434c6715496dab176f53029f3576e37a2"
+  },
+  {
+    "tema": "Patrones creacionales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 63.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Abstract Factory - interfaz Chair.png",
+    "sha256": "20fcff77022175ab95eaa94c7945aaf1282ca829b9c450792935f1fb813fd935"
+  },
+  {
+    "tema": "Patrones creacionales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 64.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Abstract Factory - fábricas de muebles.png",
+    "sha256": "8d14177f42b58a5319ec3df443cd6193b266f2bc9f8992dc28ff102d9b8fe635"
+  },
+  {
+    "tema": "Patrones creacionales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 65.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Builder - explosión de subclases de House.png",
+    "sha256": "a76cb110c307d93821f4f985db3d9b58ee60317c9c2193590a72e38e58b6e25c"
+  },
+  {
+    "tema": "Patrones creacionales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 66.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Builder - estructura.png",
+    "sha256": "d0250a315a5aa6ccb7ca6ec11a9c9404d7cf970a8b894a87824ef6ac48ef30c9"
+  },
+  {
+    "tema": "Patrones creacionales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 67.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Factory Method - estructura.png",
+    "sha256": "e3937c0698996f4821a2a9d9a8706e706bf340bd4ae4de1174ab495aee3de618"
+  },
+  {
+    "tema": "Patrones creacionales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 68.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Singleton - estructura.png",
+    "sha256": "a9e916ec015b6180ca310b3033372c50e3699ee5727cf12df9a641273dc467e5"
+  },
+  {
+    "tema": "Arquitectura de software",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈5",
+    "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - historia de las arquitecturas distribuidas.png",
+    "sha256": "d2505e2c04e1d96e46fdd550643f24fc468238bec0dbc3cc2cdeb6c72a61dded"
+  },
+  {
+    "tema": "Arquitectura de software",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈7",
+    "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - cliente y servidor.png",
+    "sha256": "2f0b73b2d7bacae56112f1be0fd1da790e324629cc47ba0a5d541d84c14ebbd6"
+  },
+  {
+    "tema": "Arquitectura de software",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈12",
+    "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - arquitectura de tres niveles.png",
+    "sha256": "dde41cc0597017386d536a7f0acedbf10d9c2dc700ae8b2cfd67f9278bba29b6"
+  },
+  {
+    "tema": "Arquitectura de software",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈14",
+    "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - arquitectura en capas.png",
+    "sha256": "0dd1732b727ee80d38d448959511405d6e6efdeab0d4a22cd7e75683611ac443"
+  },
+  {
+    "tema": "Arquitectura de software",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈16",
+    "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - escalamiento vertical y horizontal.png",
+    "sha256": "84d9024683f95d1f4f8d40c9aaf1c31d85a227c3c7857e298a6aa1e215eba87e"
+  },
+  {
+    "tema": "Arquitectura de software",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈17",
+    "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - teorema CAP.png",
+    "sha256": "f500108f54f7b8cf9f9609c70f35cb2692da52a936235c13a6f726f256789638"
+  },
+  {
+    "tema": "Arquitectura de software",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈19",
+    "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - arquitectura orientada a servicios.png",
+    "sha256": "2ec2c4aa6c86a3fee1e5b53aa198cb7a476653377bda2376ac6255c9ef150d6f"
+  },
+  {
+    "tema": "Arquitectura de software",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈25",
+    "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - microservicios vs aplicación tradicional.png",
+    "sha256": "b00f73b9c3c8d696c56f62a5ffc2902764661812007e1d5ad028075e2812928e"
+  },
+  {
+    "tema": "Arquitectura de software",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈21",
+    "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - máquinas virtuales vs contenedores.png",
+    "sha256": "464d203ebf56e982f853cd2916566149ac8d15d907b479e36a7675e88df73b70"
+  },
+  {
+    "tema": "Arquitectura de software",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈26",
+    "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - Dockerfile, imagen y contenedor.png",
+    "sha256": "5163aacdddd9b636f1a382ae71020644d90e05da6833c6e7442a58767f19e05b"
+  },
+  {
+    "tema": "Arquitectura de software",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈27",
+    "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - comandos de Docker.png",
+    "sha256": "300461b6da88840cdb7775172f5844176e335dce69d6fd94cd64107831c82a3d"
+  },
+  {
+    "tema": "Arquitectura de software",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈30",
+    "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - arquitectura de Kubernetes.png",
+    "sha256": "a44f32c8c37c749bb59d1bb83f35e93c829e1b5214d0e766f1fa32ccc82b1a09"
+  },
+  {
+    "tema": "Arquitectura de software",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈32",
+    "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - Kafka productor broker consumidor.png",
+    "sha256": "d28b4379f081a01514ba1b9500c91adcf3b982e81b0bfe8473480b6ad23e8900"
+  },
+  {
+    "tema": "Arquitectura de software",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/17-ArquitecturaSoftware.pdf#page≈33",
+    "destino": "Ingeniería de Software/Arquitectura de software/adjuntos/Slide - evolución del despliegue.png",
+    "sha256": "36ffc38a3f6b347119f0650fd6cc810425f8f1adb8e6d4d88d6b656a821dfbdd"
+  },
+  {
+    "tema": "Fundamentos y gestión del curso",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/1-IntroIS.pdf#page=4",
+    "destino": "Ingeniería de Software/Fundamentos/adjuntos/Slide - CHAOS report 2015.png",
+    "sha256": "ca7a77513c65581ec03172ae92d388518ac69409b70aa1d19dcf65b9d10e88c6"
+  },
+  {
+    "tema": "Fundamentos y gestión del curso",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/1-IntroIS.pdf#page=7",
+    "destino": "Ingeniería de Software/Fundamentos/adjuntos/Slide - éxito según tamaño y complejidad.png",
+    "sha256": "a3072af41ca209e75c3b3d061f5a36996f29ab8d211d5546f2ff533cba8fb286"
+  },
+  {
+    "tema": "Fundamentos y gestión del curso",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/1-IntroIS.pdf#page=11",
+    "destino": "Ingeniería de Software/Fundamentos/adjuntos/Slide - uso de las funcionalidades solicitadas.png",
+    "sha256": "95f17dadd3c714783d885f7e34999964328fb3710700d47aa9da24420ce7f8d0"
+  },
+  {
+    "tema": "Fundamentos y gestión del curso",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/1-IntroIS.pdf#page=12",
+    "destino": "Ingeniería de Software/Fundamentos/adjuntos/Slide - problema de comunicación.png",
+    "sha256": "c05bd417103709d7255fd8e99be6b6c0f907809b09383346e34453f50e84f3e7"
+  },
+  {
+    "tema": "Fundamentos y gestión del curso",
+    "tipo": "libro",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Libro_Ingenieria_de_Software.pdf",
+    "destino": "Ingeniería de Software/Gestión del curso/adjuntos/Libro - Apuntes de Ingeniería de Software - Sandoval y Navon.pdf",
+    "sha256": "10c8fccbcd98d4b0cb8d2f7e293bfe291d176dd850a2f5dc3c13249705383bbe"
+  }
+]
