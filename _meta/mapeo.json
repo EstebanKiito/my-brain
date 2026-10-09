@@ -48,8 +48,14 @@
     },
     "Planificación y estimación": {
       "carpeta": "Ingeniería de Software/Scrum y gestión ágil/Planificación y estimación",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "pt1",
+          "desde": "8. Estimaciones"
+        }
+      ],
+      "adjuntos": "Ingeniería de Software/Scrum y gestión ágil/adjuntos"
     },
     "Ruby": {
       "carpeta": "Ingeniería de Software/Ruby",

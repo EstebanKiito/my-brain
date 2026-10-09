@@ -8,7 +8,7 @@ Rama: `migrar/software-v2`. Un commit por tema. Antes de cada commit se corre `p
 | 1 | Procesos de desarrollo | `Procesos de desarrollo/` | ✅ hecho | 12 + índice | 9 + 4 |
 | 2 | Scrum | `Scrum y gestión ágil/Scrum/` | ✅ hecho | 11 + índice | 1 + 8 |
 | 3 | Historias de usuario | `Scrum y gestión ágil/Historias de usuario/` | ✅ hecho | 7 + índice | 0 |
-| 4 | Planificación y estimación | `Scrum y gestión ágil/Planificación y estimación/` | ⏳ pendiente | | |
+| 4 | Planificación y estimación | `Scrum y gestión ágil/Planificación y estimación/` | ✅ hecho | 10 + índice | 0 + 6 |
 | 5 | Ruby | `Ruby/` | ⏳ pendiente | | |
 | 6 | Programación orientada a objetos | `Programación orientada a objetos/` | ⏳ pendiente | | |
 | 7 | Fundamentos web | `Desarrollo web con Rails/Fundamentos web/` | ⏳ pendiente | | |
@@ -40,4 +40,8 @@ Rama: `migrar/software-v2`. Un commit por tema. Antes de cada commit se corre `p
   - Las "Historias de usuario (mías)" de la página del ramo quedan para el tema Gestión del curso, como estaba planificado.
   - Verificación: 0 errores, 0 advertencias. Cobertura: 9 exactos + 4 reformulados.
   - verificar.py: un encabezado original también cuenta como cubierto si todas sus palabras (con tolerancia a erratas) están en el título o en un encabezado de alguna nota.
+- **2026-10-09 — Planificación y estimación.**
+  - Fuente: "Resumen Software Pt 1", §8 Estimaciones, que solo tiene el título: las 10 notas son complemento (slides 8 y 9 y libro, cap. 5 y 7).
+  - Se transcribieron como tablas los ejemplos de las slides (velocidad, release plan, tareas, AccSellerator → Triad).
+  - Verificación: 0 errores, 0 advertencias.
 - **Nota técnica:** `.venv` no existe en el repo, así que el verificador usa solo la biblioteca estándar de Python.

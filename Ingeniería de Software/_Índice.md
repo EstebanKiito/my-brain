@@ -12,7 +12,7 @@ Vault de estudio del ramo. Cada nota cubre **un concepto**: no hace falta saber 
 | Tema | Qué cubre | Estado |
 |---|---|---|
 | [[Ingeniería de Software/Procesos de desarrollo/_Índice\|Procesos de desarrollo]] | Cascada, iterativos (espiral, prototipos, RUP), incrementales, ágil, XP | ✅ |
-| [[Ingeniería de Software/Scrum y gestión ágil/_Índice\|Scrum y gestión ágil]] | Scrum ✅, historias de usuario ✅, planificación y estimación ⏳ | 🟡 en curso |
+| [[Ingeniería de Software/Scrum y gestión ágil/_Índice\|Scrum y gestión ágil]] | Scrum, historias de usuario, planificación y estimación | ✅ |
 | Ruby | Sintaxis, bloques, colecciones, control | ⏳ pendiente |
 | Programación orientada a objetos | Clases, herencia, polimorfismo, lookup, self vs super | ⏳ pendiente |
 | Desarrollo web con Rails | HTTP, HTML/CSS, MVC, Active Record, rutas, vistas, API | ⏳ pendiente |
@@ -24,7 +24,7 @@ Vault de estudio del ramo. Cada nota cubre **un concepto**: no hace falta saber 
 
 ## Ruta de estudio sugerida
 1. **Procesos de desarrollo:** por qué hace falta un proceso y qué modelos existen. Es la base para entender Scrum.
-2. **Scrum y gestión ágil:** Scrum aplica las ideas ágiles; luego vienen historias de usuario y estimación *(en curso)*.
+2. **Scrum y gestión ágil:** Scrum aplica las ideas ágiles → historias de usuario → planificación y estimación.
 3. Ruby → Programación orientada a objetos *(pendiente)*.
 4. Desarrollo web con Rails → Testing *(pendiente)*.
 5. Diseño y UML → Patrones de Diseño *(pendiente)*.

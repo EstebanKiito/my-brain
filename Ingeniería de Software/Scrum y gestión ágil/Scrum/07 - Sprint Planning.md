@@ -33,7 +33,7 @@ El Sprint Planning es la **reunión al inicio de cada sprint** en la que se deci
 > - Participa **todo el Scrum Team**: [[02 - Product Owner|Product Owner]], desarrolladores y [[03 - Scrum Master|Scrum Master]].
 > - **¿Qué hacemos?** Planificar el trabajo necesario para entregar un **incremento** que cumpla la **Definition of Done**.
 > - **El Product Owner dice el QUÉ; los desarrolladores deciden el CÓMO.**
-> - Según el libro, los ítems se dividen en tareas para estimar tiempo y esfuerzo. La planificación con story points y velocidad se ve en el tema de planificación y estimación.
+> - Según el libro, los ítems se dividen en tareas para estimar tiempo y esfuerzo. La planificación con [[01 - Story points|story points]] y [[03 - Velocidad de desarrollo|velocidad]] se ve en el tema de planificación y estimación.
 
 > [!tip] Complemento — Scrum Guide 2020
 > El Sprint Planning responde tres preguntas: **¿por qué** es valioso este sprint? (objetivo), **¿qué** se puede terminar? (ítems) y **¿cómo** se hará? (plan). Dura como máximo **8 horas** para un sprint de un mes; para sprints más cortos, suele ser menos.

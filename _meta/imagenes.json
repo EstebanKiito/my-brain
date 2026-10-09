@@ -152,5 +152,47 @@
     "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/6-ScrumOverview.pdf#page=29",
     "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - roles de Scrum.png",
     "sha256": "2a7306ef7356d7771fc41b258a37d0ae269a587c0baf07dbdaac6faa2157c87c"
+  },
+  {
+    "tema": "Planificación y estimación",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/9-Estimaciones.pdf#page=10",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - distribución de probabilidad de una estimación.png",
+    "sha256": "aa582bc47f2ca7e2ac416abd3d6effe79d9fdaee91e7ab30acc4cf6862da18d1"
+  },
+  {
+    "tema": "Planificación y estimación",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/9-Estimaciones.pdf#page=14",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - penalización por subestimar y sobreestimar.png",
+    "sha256": "0dcb9efdd64ae46c7e19143b88dfb6cce5bd6bbd7d355f7c4681cf878d9c61cd"
+  },
+  {
+    "tema": "Planificación y estimación",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/9-Estimaciones.pdf#page=17",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - cono de la incertidumbre.png",
+    "sha256": "0d2980829e5d55e74a3f83efe35c31ebfb76be1923e4442498fbdcbaf94e3999"
+  },
+  {
+    "tema": "Planificación y estimación",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/9-Estimaciones.pdf#page=27",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - modelos de duración y esfuerzo.png",
+    "sha256": "0330b641303dc921c4e94c6a7c7e52675a39fe58960cc88833683ab149ba11df"
+  },
+  {
+    "tema": "Planificación y estimación",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/8-ScrumPlanififacion.pdf#page=10",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - cartas de Scrum Poker.png",
+    "sha256": "ae771d644bcf075c76aaa4eb577c30d966fdcb5be9bad8c1144a5bc5e0ba7968"
+  },
+  {
+    "tema": "Planificación y estimación",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/8-ScrumPlanififacion.pdf#page=19",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - release plan en el tiempo.png",
+    "sha256": "bdfc67918684250cf9282b303840b5019be5aaf3b362d5189e57f38c9f69999d"
   }
 ]

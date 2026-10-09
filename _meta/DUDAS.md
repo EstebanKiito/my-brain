@@ -26,6 +26,11 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta.
 | ✅ | [[02 - Estructura de una historia de usuario\|Estructura de una historia de usuario]] | "Yo, como (type_usuario) neceisto (tarea) para (onjetivo)" | Solo erratas ("neceisto", "onjetivo"); se corrigieron sin cambiar el sentido. |
 | ℹ️ | [[02 - Estructura de una historia de usuario\|Estructura de una historia de usuario]] | Ejemplo "Como usuario necesito recuperar mi contraseña…" | No es un error, pero el libro recomienda evitar el genérico "como usuario". Se agregó una nota aclarando cuándo es aceptable. |
 
+## Planificación y estimación
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ✅ | [[07 - Estimación de software\|Estimación de software]] | "8. Estimaciones:" (solo el título) | Se completó con las slides y el libro; todas las notas del tema son complemento. |
+
 ## Detectadas para temas pendientes
 Se resolverán, con su callout en la nota, cuando se migre cada tema:
 - **Ruby:**
@@ -54,4 +59,3 @@ Se resolverán, con su callout en la nota, cuando se migre cada tema:
 - **Gestión del curso:**
   - Fechas y ponderaciones de la página del ramo y del CSV (2024) no coinciden con el esquema del PDF 0 (I1/I2 de otra versión del curso).
   - La lista de contenidos de "Resumen Prueba Práctica" nombra DOCUMENTACIÓN y QUALITY ASSESSMENT, pero no tienen contenido en ninguna fuente.
-  - "Resumen Software Pt 1", §8 "Estimaciones", solo tiene el título.
