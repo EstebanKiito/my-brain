@@ -52,7 +52,7 @@ Las metodologías ágiles son procesos **iterativos e incrementales** que priori
 > El manifiesto lo escribió un grupo de **17 desarrolladores** (2001) como reacción a los problemas de los procesos tradicionales como la [[02 - Modelo en cascada|cascada]].
 
 > [!tip] Complemento — modelos ágiles conocidos (libro)
-> - **Scrum:** iteraciones de duración fija (*sprints*, generalmente de 2 a 3 semanas). El *product owner* prioriza y, al final de cada sprint, hay **review** del producto y **retrospectiva** del proceso. Es tan popular que muchas veces se usa como sinónimo de "ágil".
+> - **[[01 - Scrum|Scrum]]:** iteraciones de duración fija (*sprints*, generalmente de 2 a 3 semanas). El *product owner* prioriza y, al final de cada sprint, hay **review** del producto y **retrospectiva** del proceso. Es tan popular que muchas veces se usa como sinónimo de "ágil".
 > - **Kanban:** **sin** iteraciones de largo fijo. Optimiza el flujo de tareas de "por hacer" a "hecho" visualizando el progreso y **limitando el trabajo en curso**.
 > - **[[10 - Programación extrema (XP)|Programación extrema (XP)]]:** un conjunto de buenas prácticas técnicas, como pruebas primero y programación en pares.
 > - Alistair Cockburn (coautor del manifiesto) resume la agilidad en **colaborar, entregar, reflexionar, mejorar** (*Heart of Agile*).

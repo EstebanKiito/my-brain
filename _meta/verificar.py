@@ -396,7 +396,7 @@ def prueba_imagenes(tema, conf, items, imagenes, notas):
         else:
             extra_ok += 1
     # adjuntos en disco que nadie usa
-    carpeta = os.path.join(RAIZ, conf["carpeta"], "adjuntos")
+    carpeta = os.path.join(RAIZ, conf.get("adjuntos", os.path.join(conf["carpeta"], "adjuntos")))
     if os.path.isdir(carpeta):
         for f in os.listdir(carpeta):
             if f.startswith("."):

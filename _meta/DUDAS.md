@@ -11,10 +11,17 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta.
 | 🟡 | [[07 - Procesos incrementales\|Procesos incrementales]] | "No Feedback hasta terminar!" | Es discutible: cada pieza terminada puede mostrarse al usuario. Lo distintivo del incremental "puro" es que las piezas no se reelaboran con el feedback. Se agregó el matiz. |
 | ✅ | [[05 - Modelo de prototipos\|Modelo de prototipos]] | "Reduce Improvistos → Menor tiempo de desarrollo" | Lo había marcado como dudoso, pero el libro del curso lo afirma ("menor tiempo de desarrollo porque no hay grandes sorpresas al final"). Sin cambios, solo se corrigió la errata "Improvistos" → "imprevistos". |
 
+## Scrum
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| 🟡 | [[02 - Product Owner\|Product Owner]] | "Asume Responsabilidad total del proyecto" | El libro dice "del **producto**". El PO responde por el valor del producto, pero no gestiona el proyecto ni decide cuánto trabajo entra en cada sprint. Se agregó la precisión. |
+| 🟡 | [[08 - Sprint Backlog\|Sprint Backlog]] | *(contradicción entre fuentes, no en tus apuntes)* | El libro dice que una vez iniciado el sprint no se agregan ni quitan tareas; las slides dicen que cualquier miembro puede agregar, borrar o cambiar el sprint backlog. Según la Scrum Guide 2020, lo fijo es el **objetivo del sprint**; las tareas se ajustan. Se muestran ambas versiones. |
+| ✅ | [[04 - Equipo de desarrollo Scrum\|Equipo de desarrollo Scrum]] | "Son autónomos, 5-8 personas" | Coincide con el libro. Las slides dicen 4–8 y la Scrum Guide 2020, 10 o menos (equipo completo). Se muestran las tres fuentes en una tabla. |
+| ✅ | [[06 - Sprint\|Sprint]] | Imagen: "Sprint 1-4 weeks" | Las slides y el libro dicen 2–4 semanas y la Scrum Guide, un mes o menos. Se muestran todas. |
+| ℹ️ | [[01 - Scrum\|Scrum]] | *(libro)* "desarrollado a fines de los años 90 por Ken Schwaber" | Scrum se presentó formalmente en 1995 por Schwaber y Sutherland. Se aclaró en un complemento; no afecta tus apuntes. |
+
 ## Detectadas para temas pendientes
 Se resolverán, con su callout en la nota, cuando se migre cada tema:
-- **Scrum:**
-  - Equipo de 5–8 personas (tus apuntes y el libro) vs. 4–8 (slides). No es un error: se mostrarán ambas fuentes.
 - **Ruby:**
   - `lista.reverse → !Cambia definitivamente`: `reverse` no muta, `reverse!` sí.
   - `is_even?` sobre una lista: en Ruby `even?` es método de Integer.

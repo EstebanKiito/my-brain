@@ -15,26 +15,102 @@
       "carpeta": "Ingeniería de Software/Procesos de desarrollo",
       "estado": "hecho",
       "secciones": [
-        {"fuente": "pt1", "desde": "4. Procesos", "hasta": "5. SCRUM"}
+        {
+          "fuente": "pt1",
+          "desde": "4. Procesos",
+          "hasta": "5. SCRUM"
+        }
       ]
     },
-    "Scrum": {"carpeta": "Ingeniería de Software/Scrum y gestión ágil/Scrum", "estado": "pendiente", "secciones": []},
-    "Historias de usuario": {"carpeta": "Ingeniería de Software/Scrum y gestión ágil/Historias de usuario", "estado": "pendiente", "secciones": []},
-    "Planificación y estimación": {"carpeta": "Ingeniería de Software/Scrum y gestión ágil/Planificación y estimación", "estado": "pendiente", "secciones": []},
-    "Ruby": {"carpeta": "Ingeniería de Software/Ruby", "estado": "pendiente", "secciones": []},
-    "Programación orientada a objetos": {"carpeta": "Ingeniería de Software/Programación orientada a objetos", "estado": "pendiente", "secciones": []},
-    "Fundamentos web": {"carpeta": "Ingeniería de Software/Desarrollo web con Rails/Fundamentos web", "estado": "pendiente", "secciones": []},
-    "Rails": {"carpeta": "Ingeniería de Software/Desarrollo web con Rails/Rails", "estado": "pendiente", "secciones": []},
-    "Testing": {"carpeta": "Ingeniería de Software/Testing", "estado": "pendiente", "secciones": []},
-    "UML": {"carpeta": "Ingeniería de Software/Diseño y UML/UML", "estado": "pendiente", "secciones": []},
-    "Principios de diseño": {"carpeta": "Ingeniería de Software/Diseño y UML/Principios de diseño", "estado": "pendiente", "secciones": []},
-    "Patrones de comportamiento": {"carpeta": "Ingeniería de Software/Patrones de Diseño", "estado": "pendiente", "secciones": []},
-    "Patrones estructurales": {"carpeta": "Ingeniería de Software/Patrones de Diseño", "estado": "pendiente", "secciones": []},
-    "Patrones creacionales": {"carpeta": "Ingeniería de Software/Patrones de Diseño", "estado": "pendiente", "secciones": []},
-    "Arquitectura de software": {"carpeta": "Ingeniería de Software/Arquitectura de software", "estado": "pendiente", "secciones": []},
-    "Fundamentos y gestión del curso": {"carpeta": "Ingeniería de Software", "estado": "pendiente", "secciones": []}
+    "Scrum": {
+      "carpeta": "Ingeniería de Software/Scrum y gestión ágil/Scrum",
+      "adjuntos": "Ingeniería de Software/Scrum y gestión ágil/adjuntos",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "pt1",
+          "desde": "5. SCRUM",
+          "hasta": "7. Relatos Usuarios"
+        }
+      ]
+    },
+    "Historias de usuario": {
+      "carpeta": "Ingeniería de Software/Scrum y gestión ágil/Historias de usuario",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Planificación y estimación": {
+      "carpeta": "Ingeniería de Software/Scrum y gestión ágil/Planificación y estimación",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Ruby": {
+      "carpeta": "Ingeniería de Software/Ruby",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Programación orientada a objetos": {
+      "carpeta": "Ingeniería de Software/Programación orientada a objetos",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Fundamentos web": {
+      "carpeta": "Ingeniería de Software/Desarrollo web con Rails/Fundamentos web",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Rails": {
+      "carpeta": "Ingeniería de Software/Desarrollo web con Rails/Rails",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Testing": {
+      "carpeta": "Ingeniería de Software/Testing",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "UML": {
+      "carpeta": "Ingeniería de Software/Diseño y UML/UML",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Principios de diseño": {
+      "carpeta": "Ingeniería de Software/Diseño y UML/Principios de diseño",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Patrones de comportamiento": {
+      "carpeta": "Ingeniería de Software/Patrones de Diseño",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Patrones estructurales": {
+      "carpeta": "Ingeniería de Software/Patrones de Diseño",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Patrones creacionales": {
+      "carpeta": "Ingeniería de Software/Patrones de Diseño",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Arquitectura de software": {
+      "carpeta": "Ingeniería de Software/Arquitectura de software",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Fundamentos y gestión del curso": {
+      "carpeta": "Ingeniería de Software",
+      "estado": "pendiente",
+      "secciones": []
+    }
   },
   "aceptados": [
-    {"fuente": "pp", "link": "https://app.notion.comundefined", "texto": "", "motivo": "Link roto generado por Notion junto a la imagen de Formularios Rails; no apunta a ningún recurso."}
+    {
+      "fuente": "pp",
+      "link": "https://app.notion.comundefined",
+      "texto": "",
+      "motivo": "Link roto generado por Notion junto a la imagen de Formularios Rails; no apunta a ningún recurso."
+    }
   ]
 }

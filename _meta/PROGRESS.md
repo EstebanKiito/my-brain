@@ -6,7 +6,7 @@ Rama: `migrar/software-v2`. Un commit por tema. Antes de cada commit se corre `p
 |---|---|---|---|---|---|
 | 0 | Infraestructura (`verificar.py`, mapeo, índices) | `_meta/` | ✅ hecho | – | – |
 | 1 | Procesos de desarrollo | `Procesos de desarrollo/` | ✅ hecho | 12 + índice | 9 + 4 |
-| 2 | Scrum | `Scrum y gestión ágil/Scrum/` | ⏳ pendiente | | |
+| 2 | Scrum | `Scrum y gestión ágil/Scrum/` | ✅ hecho | 11 + índice | 1 + 8 |
 | 3 | Historias de usuario | `Scrum y gestión ágil/Historias de usuario/` | ⏳ pendiente | | |
 | 4 | Planificación y estimación | `Scrum y gestión ágil/Planificación y estimación/` | ⏳ pendiente | | |
 | 5 | Ruby | `Ruby/` | ⏳ pendiente | | |
@@ -31,4 +31,8 @@ Rama: `migrar/software-v2`. Un commit por tema. Antes de cada commit se corre `p
   - Fuente: "Resumen Software Pt 1", §4 Procesos (81 bloques, 9 imágenes); complementos de las slides "Procesos de Desarrollo de Software" y del libro del curso, cap. 2.
   - Verificación: 0 errores, 0 advertencias. Cobertura: 66 bloques exactos + 15 reformulados, 0 sin cubrir.
 - **2026-10-09 — Orden de estudio.** Se renumeraron las 12 notas de Procesos con prefijo `NN - ` y se actualizaron todos los wikilinks.
+- **2026-10-09 — Scrum.**
+  - Fuente: "Resumen Software Pt 1", §5 SCRUM (46 bloques, 1 imagen); complementos de las slides "SCRUM - una introducción rápida", el libro del curso (cap. 3) y la Scrum Guide 2020.
+  - Las imágenes de `Scrum y gestión ágil/` se comparten en `Scrum y gestión ágil/adjuntos/` (`"adjuntos"` en mapeo.json).
+  - Verificación: 0 errores, 0 advertencias. Cobertura: 37 exactos + 9 reformulados, 0 sin cubrir.
 - **Nota técnica:** `.venv` no existe en el repo, así que el verificador usa solo la biblioteca estándar de Python.

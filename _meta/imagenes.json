@@ -89,5 +89,68 @@
     "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/5-SoftwareProcesses.pdf#page=22 (recorte)",
     "destino": "Ingeniería de Software/Procesos de desarrollo/adjuntos/Slide - cascada en la práctica con retroalimentación.png",
     "sha256": "998b2795bdb6511d749a757e0147b8bd60fd2831c256d7365eed896607d26456"
+  },
+  {
+    "tema": "Scrum",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Software Pt 1/Untitled 9.png",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Scrum - proceso completo.png",
+    "sha256": "7018172e045320a8b8271d247e0f8b0cb09cdf632c342ea21210456f592323f5"
+  },
+  {
+    "tema": "Scrum",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/6-ScrumOverview.pdf#page=8",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - matriz de Stacey.png",
+    "sha256": "79f0c98daf99a9a29930779c0be46d7c8b88f58c60c7e5541195be95e3c8ba84"
+  },
+  {
+    "tema": "Scrum",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/6-ScrumOverview.pdf#page=12",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - refinamiento del backlog.png",
+    "sha256": "8e6baf39df92dd72fc150c74d4a7e9d3428ef42501d97bfab074d8e13fe3d13d"
+  },
+  {
+    "tema": "Scrum",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/6-ScrumOverview.pdf#page=15",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - pasos del Sprint Planning.png",
+    "sha256": "12bb6e5cee5abb2cfd84607c6388839b68e4c0b1b0516b1bc62f0866d4c52689"
+  },
+  {
+    "tema": "Scrum",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/6-ScrumOverview.pdf#page=14",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - participantes del Sprint Planning.png",
+    "sha256": "766f9b04bca19d7abce886a420e309cfbad72974743c354fb7a2d67876e23fa0"
+  },
+  {
+    "tema": "Scrum",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/6-ScrumOverview.pdf#page=23",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - Daily Scrum.png",
+    "sha256": "14dbe1a03622579a9ae27c0c36ef4d24762481fe74151ffd768519083b7909d2"
+  },
+  {
+    "tema": "Scrum",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/6-ScrumOverview.pdf#page=25",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - Sprint Review.png",
+    "sha256": "290ecf222f0aa75fa8ea4010882018eebf06eaeb9ac36c76c9fd3fdf88e966ec"
+  },
+  {
+    "tema": "Scrum",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/6-ScrumOverview.pdf#page=27",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - Sprint Retrospective.png",
+    "sha256": "f4cde4b8c832377d8334dc25ebe6808985bcc347c64df14378c9d1bf0de4c834"
+  },
+  {
+    "tema": "Scrum",
+    "tipo": "slide",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/CLASES - Software (2022)/6-ScrumOverview.pdf#page=29",
+    "destino": "Ingeniería de Software/Scrum y gestión ágil/adjuntos/Slide - roles de Scrum.png",
+    "sha256": "2a7306ef7356d7771fc41b258a37d0ae269a587c0baf07dbdaac6faa2157c87c"
   }
 ]
