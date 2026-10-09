@@ -15,10 +15,10 @@ Un patrón de diseño es una **solución habitual y probada a un problema de dis
 **Patrones vistos en el curso:**
 | Comportamiento | Estructurales | Creacionales |
 |---|---|---|
-| [[01 - Patrón Strategy\|Strategy]] | Decorator | Abstract Factory |
-| [[03 - Patrón Template Method\|Template Method]] | Composite | Builder |
-| [[05 - Patrón Observer\|Observer]] | Adapter | Factory Method |
-| | Proxy | Singleton |
+| [[01 - Patrón Strategy\|Strategy]] | [[01 - Patrón Decorator\|Decorator]] | Abstract Factory |
+| [[03 - Patrón Template Method\|Template Method]] | [[02 - Patrón Composite\|Composite]] | Builder |
+| [[05 - Patrón Observer\|Observer]] | [[03 - Patrón Adapter\|Adapter]] | Factory Method |
+| | [[05 - Patrón Proxy\|Proxy]] | Singleton |
 
 > [!tip] Complemento (slides "Patrones de Diseño: Comportamiento" y libro del curso, cap. 9)
 > - Son como **planos prefabricados** que se personalizan para resolver un problema de diseño recurrente. El patrón **no es una función de código**, sino un concepto.
@@ -30,7 +30,7 @@ Un patrón de diseño es una **solución habitual y probada a un problema de dis
 > - **Por qué estudiarlos** (libro): para **reutilizar soluciones** encontradas por otros con experiencia, en vez de llegar a ellas por prueba y error, y para tener una **terminología común** en el equipo ("lo resolvimos con un adaptador").
 > - Casi todos persiguen lo mismo: **bajo acoplamiento, buena cohesión y extensibilidad** (abierto/cerrado), usando clases abstractas, herencia, composición y polimorfismo.
 > - Referencia muy usada en el curso: https://refactoring.guru/es/design-patterns
-> - Comparación útil: [[02 - Strategy vs Template Method|Strategy vs Template Method]].
+> - Comparaciones útiles: [[02 - Strategy vs Template Method|Strategy vs Template Method]] y [[03 - Adapter vs Proxy vs Decorator|Adapter vs Proxy vs Decorator]].
 
 ## Preguntas de repaso
 

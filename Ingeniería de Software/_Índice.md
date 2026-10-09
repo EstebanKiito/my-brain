@@ -18,7 +18,7 @@ Vault de estudio del ramo. Cada nota cubre **un concepto**: no hace falta saber 
 | [[Ingeniería de Software/Desarrollo web con Rails/_Índice\|Desarrollo web con Rails]] | HTTP, HTML/CSS, MVC, Active Record, rutas, vistas, API | ✅ |
 | [[Ingeniería de Software/Testing/_Índice\|Testing]] | Unit, integration, fixtures, asserts, cobertura | ✅ |
 | [[Ingeniería de Software/Diseño y UML/_Índice\|Diseño y UML]] | Diagramas de clases y de secuencia, acoplamiento, cohesión, abierto/cerrado | ✅ |
-| [[Ingeniería de Software/Patrones de Diseño/_Índice\|Patrones de Diseño]] | Comportamiento ✅; estructurales, creacionales ⏳; ejercicios | 🟡 en curso |
+| [[Ingeniería de Software/Patrones de Diseño/_Índice\|Patrones de Diseño]] | Comportamiento ✅, estructurales ✅; creacionales ⏳; ejercicios | 🟡 en curso |
 | Arquitectura de software | Cliente-servidor, capas, microservicios | ⏳ pendiente |
 | Fundamentos y gestión del curso | Qué es la IS, evaluación, checklist de la prueba práctica | ⏳ pendiente |
 

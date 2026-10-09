@@ -481,5 +481,159 @@
     "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 40.png",
     "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Ejercicio Observer - solución diagrama de secuencia.png",
     "sha256": "648afa284c8b9c2a7d58c11755d45b921778a7ea549aaf510a1c2e8543052686"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 41.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Decorator - persona con suéter y abrigo.png",
+    "sha256": "e25847296bf1193096df5822a3b0d22983eb337972e896c727d8e138d9830e8c"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 42.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Decorator - explosión combinatoria de subclases.png",
+    "sha256": "21da20d1910f683ffe6ad7a83cc65579a28af4b028a065476a4f830c2dcc4c47"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 43.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Decorator - notificadores como decoradores.png",
+    "sha256": "8979c333fde94537e83df94ff5fe57d14b2ea0ecf613ec0e3e78f654aa9f137f"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 44.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Decorator - pros y contras.png",
+    "sha256": "f3f9090394d8a653ef714afcdee8cb25b29981f6f2a153ed838e5286ee82cf94"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 45.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Decorator - pizza con toppings estáticos.png",
+    "sha256": "2d847c9068835505cb63c58eb6d44ec1bbe5af6b7772efa53332a52d7ae0142e"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 46.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Decorator - problema de la pizza.png",
+    "sha256": "3a72132c1af32815d1ba53d27630e5c59e8d50e31d00fb98c3b013a029a5d5f0"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 47.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Decorator - pizza con decoradores.png",
+    "sha256": "90ca1a722df65b0debff7da88d89d6d9ac66f3475c97ddd73cc71914c1581208"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 48.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Ejercicio Decorator - enunciado abrigos.png",
+    "sha256": "a3719fb09a15fcc37ce32f3a0bbf2b335d39f54a1193573485dac52203d21d91"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 49.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Composite - línea de mando.png",
+    "sha256": "ddb85a7380ed3be2060cc2929b90043512c759f3ada64c4df7e5d0573e8b4aee"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 50.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Composite - pedido complejo.png",
+    "sha256": "fccd450f1ff704f8204fd15aadc0dc37d1a31345a0d3fb3fad8e8e33b58e1418"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 51.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Composite - sistema de archivos.png",
+    "sha256": "86606e761d160f54843cc7397d7917ae32e50bd172a9207e73d692a86cc1a564"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 52.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Adapter - enchufe británico.png",
+    "sha256": "25ea9784efb38d4555af891bcc7ace6d55249ab27e806e7311a000074b91a375"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 53.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Adapter - de XML a JSON.png",
+    "sha256": "0e8e2bc3764afd883a29ce1aff5402d1ce5e58ef9f6952526b43a27a30d60be6"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 54.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Adapter - estructura.png",
+    "sha256": "4e5eab40bc5b82951ca04efe09113c43b2bb1368f5a9288388030d0110950256"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 55.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Adapter - problema del RUT.png",
+    "sha256": "bf87525a876f4bed6aa82e546ac287e824d2a5d9f23cd6521a7291a0fe176100"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 56.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Adapter - solución del RUT.png",
+    "sha256": "7fa634750c07703ccfddee677d38dc9a3d81372b622ad4864b7e1f0c23d42f65"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 57.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Proxy - proxy de base de datos.png",
+    "sha256": "7b9d76d2b771ef5b5e1bf53d72d16bf5509ea549dd58fe59e0ee683ea4e4e6c4"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 58.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Proxy - estructura.png",
+    "sha256": "f07dbb52c9eebf042dd3a324029bbdc7841bb95b2f89e6f11d2ebe426570b6be"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 59.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Proxy - problema del log de login.png",
+    "sha256": "ba9f78c5c0f7cd74470983a63ce40179f9db5c0af9fef9b5d029585041badf38"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 60.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Proxy - solución LoginProxy.png",
+    "sha256": "32ef040561f281ee9e6ca05a1f95f0b41c5d75cf6a85a15daa3bf75183ec65ea"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 61.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Ejercicio Proxy y Adapter - enunciado WeChat.png",
+    "sha256": "f19ee3ee2f330789f3c3f1867ffafac3a685ef7bedb943fbd40ac89140c3ae6a"
+  },
+  {
+    "tema": "Patrones estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 62.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Ejercicio Proxy y Adapter - solución WeChat.png",
+    "sha256": "f5bae868383f59e691577629f944b55434c6715496dab176f53029f3576e37a2"
   }
 ]
