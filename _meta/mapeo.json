@@ -184,8 +184,14 @@
     },
     "Patrones creacionales": {
       "carpeta": "Ingeniería de Software/Patrones de Diseño",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "pp",
+          "desde": "17. Patrones Diseño (CREACIONALES)"
+        }
+      ],
+      "adjuntos": "Ingeniería de Software/Patrones de Diseño/adjuntos"
     },
     "Arquitectura de software": {
       "carpeta": "Ingeniería de Software/Arquitectura de software",

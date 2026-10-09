@@ -98,11 +98,15 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta.
 | ℹ️ | [[02 - Patrón Composite\|Patrón Composite]] | Imagen FileSystem: `Folder` con `+cost()` | Debería ser `+size()`, como en `FileElement`. |
 | ✅ | [[01 - Patrón Decorator\|Patrón Decorator]] | "piza", "Problematica" | Solo erratas. |
 
+## Patrones creacionales
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| 🟡 | [[04 - Builder - implementación en Ruby\|Builder: implementación]] | `director.builder.obtener_producto` | `Director` no expone `builder`: hay que agregar `attr_reader :builder` o lanza NoMethodError. |
+| 🟡 | [[07 - Patrón Singleton\|Patrón Singleton]] | "11. SINGLETON (YO)" | No queda claro qué significa "(YO)". |
+| ✅ | [[01 - Patrón Abstract Factory\|Abstract Factory]] | "Nos permote", "Instania" | Solo erratas. |
+
 ## Detectadas para temas pendientes
 Se resolverán, con su callout en la nota, cuando se migre cada tema:
-- **Patrones:**
-  - Builder: `director.builder` sin `attr_reader :builder`, lo que da NoMethodError.
-  - "SINGLETON (YO)": no queda claro qué significa "(YO)".
 - **Gestión del curso:**
   - Fechas y ponderaciones de la página del ramo y del CSV (2024) no coinciden con el esquema del PDF 0 (I1/I2 de otra versión del curso).
   - La lista de contenidos de "Resumen Prueba Práctica" nombra DOCUMENTACIÓN y QUALITY ASSESSMENT, pero no tienen contenido en ninguna fuente.

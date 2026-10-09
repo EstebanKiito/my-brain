@@ -10,7 +10,8 @@ Volver al [[Ingeniería de Software/_Índice|mapa del ramo]].
 3. [[02 - Strategy vs Template Method|Strategy vs Template Method]]: la comparación clásica.
 4. [[Ingeniería de Software/Patrones de Diseño/Estructurales/_Índice|Patrones estructurales]]: Decorator, Composite, Adapter, Proxy. ✅
 5. [[03 - Adapter vs Proxy vs Decorator|Adapter vs Proxy vs Decorator]]: tres envoltorios con intenciones distintas.
-6. Patrones creacionales: Abstract Factory, Builder, Factory Method, Singleton. ⏳ pendiente
-7. [[Ingeniería de Software/Patrones de Diseño/Ejercicios de prueba/_Índice|Ejercicios de prueba]]: problemas de interrogación resueltos.
+6. [[Ingeniería de Software/Patrones de Diseño/Creacionales/_Índice|Patrones creacionales]]: Abstract Factory, Builder, Factory Method, Singleton. ✅
+7. [[04 - Factory Method vs Abstract Factory|Factory Method vs Abstract Factory]].
+8. [[Ingeniería de Software/Patrones de Diseño/Ejercicios de prueba/_Índice|Ejercicios de prueba]]: problemas de interrogación resueltos.
 
 Las imágenes de esta carpeta y sus subcarpetas están en `adjuntos/`.

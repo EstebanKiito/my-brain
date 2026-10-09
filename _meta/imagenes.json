@@ -635,5 +635,47 @@
     "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 62.png",
     "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Ejercicio Proxy y Adapter - solución WeChat.png",
     "sha256": "f5bae868383f59e691577629f944b55434c6715496dab176f53029f3576e37a2"
+  },
+  {
+    "tema": "Patrones creacionales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 63.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Abstract Factory - interfaz Chair.png",
+    "sha256": "20fcff77022175ab95eaa94c7945aaf1282ca829b9c450792935f1fb813fd935"
+  },
+  {
+    "tema": "Patrones creacionales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 64.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Abstract Factory - fábricas de muebles.png",
+    "sha256": "8d14177f42b58a5319ec3df443cd6193b266f2bc9f8992dc28ff102d9b8fe635"
+  },
+  {
+    "tema": "Patrones creacionales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 65.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Builder - explosión de subclases de House.png",
+    "sha256": "a76cb110c307d93821f4f985db3d9b58ee60317c9c2193590a72e38e58b6e25c"
+  },
+  {
+    "tema": "Patrones creacionales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 66.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Builder - estructura.png",
+    "sha256": "d0250a315a5aa6ccb7ca6ec11a9c9404d7cf970a8b894a87824ef6ac48ef30c9"
+  },
+  {
+    "tema": "Patrones creacionales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 67.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Factory Method - estructura.png",
+    "sha256": "e3937c0698996f4821a2a9d9a8706e706bf340bd4ae4de1174ab495aee3de618"
+  },
+  {
+    "tema": "Patrones creacionales",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 68.png",
+    "destino": "Ingeniería de Software/Patrones de Diseño/adjuntos/Singleton - estructura.png",
+    "sha256": "a9e916ec015b6180ca310b3033372c50e3699ee5727cf12df9a641273dc467e5"
   }
 ]
