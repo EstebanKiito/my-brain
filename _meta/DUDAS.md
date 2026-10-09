@@ -64,6 +64,13 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta.
 | ✅ | [[13 - Form helpers de Rails\|Form helpers]] | Link `https://app.notion.comundefined` | Link roto de Notion: no se migra (aceptado en `mapeo.json`). |
 | ℹ️ | [[05 - Migraciones en Rails\|Migraciones en Rails]] | *(libro)* "db/migrate/schema.rb" | El archivo es `db/schema.rb`. |
 
+## Testing
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ℹ️ | [[06 - Fixtures en Rails\|Fixtures en Rails]] | Imagen "Unit Test con Fixtures" (`@book = books(:jp1)` + `assert_not result`) | Error del ejemplo de la slide: `jp1` tiene título, así que `save` devuelve `true` y el test falla. Hay que vaciar el título antes. |
+| ℹ️ | [[06 - Fixtures en Rails\|Fixtures en Rails]] | "app/test/fixtures/nombre_del_modelo.yml" | La ruta es `test/fixtures/<tabla>.yml` (no dentro de `app/`). |
+| ℹ️ | [[09 - Cobertura de código con SimpleCov\|SimpleCov]] | "gem ‘simplecov’, require: false, group :test" | Comillas rectas y `group: :test`. |
+
 ## Detectadas para temas pendientes
 Se resolverán, con su callout en la nota, cuando se migre cada tema:
 - **UML:**

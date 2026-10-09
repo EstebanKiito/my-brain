@@ -13,7 +13,7 @@ Rama: `migrar/software-v2`. Un commit por tema. Antes de cada commit se corre `p
 | 6 | Programación orientada a objetos | `Programación orientada a objetos/` | ✅ hecho | 13 + índice | 0 |
 | 7 | Fundamentos web | `Desarrollo web con Rails/Fundamentos web/` | ✅ hecho | 4 + índice | 0 |
 | 8 | Rails | `Desarrollo web con Rails/Rails/` | ✅ hecho | 15 + índice | 4 |
-| 9 | Testing | `Testing/` | ⏳ pendiente | | |
+| 9 | Testing | `Testing/` | ✅ hecho | 9 + índice | 6 |
 | 10 | UML | `Diseño y UML/UML/` | ⏳ pendiente | | |
 | 11 | Principios de diseño | `Diseño y UML/Principios de diseño/` | ⏳ pendiente | | |
 | 12 | Patrones de comportamiento | `Patrones de Diseño/Comportamiento/` | ⏳ pendiente | | |
@@ -60,4 +60,7 @@ Rama: `migrar/software-v2`. Un commit por tema. Antes de cada commit se corre `p
   - Fuentes: Pt. 1 §2.3 y C1 (Rails/CRUD), Prueba Práctica §10 MVC + Routing (4 imágenes) y la página del ramo (instalación en Mac M1); complementos de las slides First API, Active Record y Rails MVC, y del libro (cap. 11–12).
   - "Vistas ERB" pasaba de 150 líneas: se separó "Parciales en ERB" y se renumeraron las siguientes.
   - Verificación: 0 errores, 0 advertencias (83 bloques: 72 exactos + 11 reformulados).
+- **2026-10-09 — Testing.**
+  - Fuente: "Resumen Prueba Práctica", §12 Testing (35 bloques, 6 imágenes transcritas); complementos de las slides "Testing".
+  - Verificación: 0 errores, 0 advertencias (el verificador detectó y se corrigió una ruta `../adjuntos` mal puesta).
 - **Nota técnica:** `.venv` no existe en el repo, así que el verificador usa solo la biblioteca estándar de Python.

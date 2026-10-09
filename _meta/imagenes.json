@@ -222,5 +222,47 @@
     "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 3.png",
     "destino": "Ingeniería de Software/Desarrollo web con Rails/adjuntos/Rails resources - rutas generadas.png",
     "sha256": "cf7f1f136043552dfcef49411fe7211637dcd96004853004c443cc2e0b3dd584"
+  },
+  {
+    "tema": "Testing",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 15.png",
+    "destino": "Ingeniería de Software/Testing/adjuntos/Unit test - modelo Book y su test.png",
+    "sha256": "abc996175cd2066008025de43d3a6aa5365327ae9e3d5b391379d20eba4240f0"
+  },
+  {
+    "tema": "Testing",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 16.png",
+    "destino": "Ingeniería de Software/Testing/adjuntos/Fixtures - books.yml.png",
+    "sha256": "96565420a43773473b35a137c0d6c661c2245603fea873ce312cb44d7bf63a70"
+  },
+  {
+    "tema": "Testing",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 17.png",
+    "destino": "Ingeniería de Software/Testing/adjuntos/Unit test con fixtures.png",
+    "sha256": "0e37037f28e67185ee3fd232264e9fa74530e90711e48270712eff9c1cc3aebd"
+  },
+  {
+    "tema": "Testing",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 18.png",
+    "destino": "Ingeniería de Software/Testing/adjuntos/Integration test - index y new.png",
+    "sha256": "bedf6d21b244c0baf00aaef464480e09766797245190099823bbafafccd3c441"
+  },
+  {
+    "tema": "Testing",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 19.png",
+    "destino": "Ingeniería de Software/Testing/adjuntos/Integration test - show.png",
+    "sha256": "d39d72db0fb44c1d968042a93c1587e91c78fbc00b2695271a36899a81c294c7"
+  },
+  {
+    "tema": "Testing",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Ingenieria Software - IIC2143/Resumen Prueba Practica/Untitled 20.png",
+    "destino": "Ingeniería de Software/Testing/adjuntos/SimpleCov - líneas no cubiertas.png",
+    "sha256": "9fb5257021d6ab35e149ff464a131e44b3c26c69b6b7131b57b9fed26a758e00"
   }
 ]

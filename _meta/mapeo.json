@@ -125,8 +125,14 @@
     },
     "Testing": {
       "carpeta": "Ingeniería de Software/Testing",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "pp",
+          "desde": "12. Testing",
+          "hasta": "13. Poliformismo y Lookup"
+        }
+      ]
     },
     "UML": {
       "carpeta": "Ingeniería de Software/Diseño y UML/UML",
