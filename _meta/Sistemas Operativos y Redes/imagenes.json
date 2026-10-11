@@ -712,5 +712,89 @@
     "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Clases/SSOO/Contenido_7_Archivos.pdf#page=18",
     "destino": "Sistemas Operativos y Redes/Sistemas de archivos/adjuntos/Planificación de disco LOOK y C-LOOK.png",
     "sha256": "45e20ad72aa6bba510c8181a6026d66cc4bf5416c51bfd9a2721fc894c806956"
+  },
+  {
+    "tema": "Implementación de archivos y bloques",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 92.png",
+    "destino": "Sistemas Operativos y Redes/Implementación de archivos y bloques/adjuntos/Diferencia entre hard links y soft links o enlaces simbólicos.png",
+    "sha256": "45158d50665e04a2d753277bd2ac34147f57d4cc74f0f87134977ed1fd831bcf"
+  },
+  {
+    "tema": "Implementación de archivos y bloques",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 93.png",
+    "destino": "Sistemas Operativos y Redes/Implementación de archivos y bloques/adjuntos/Montaje de sistemas de archivos y tabla de monturas.png",
+    "sha256": "33adf989f396eea6d5c41080abdbc5e540b4d3138768d3eb1977cb148a86a7f2"
+  },
+  {
+    "tema": "Implementación de archivos y bloques",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 94.png",
+    "destino": "Sistemas Operativos y Redes/Implementación de archivos y bloques/adjuntos/Estructuras en disco particiones MBR bloques de control y FCB.png",
+    "sha256": "d4313f30fa9e636314bb49825bbcc8af414e1e32c1ecfe12c2a1582572b40c1e"
+  },
+  {
+    "tema": "Implementación de archivos y bloques",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 95.png",
+    "destino": "Sistemas Operativos y Redes/Implementación de archivos y bloques/adjuntos/Arquitectura del sistema de archivos virtual VFS y v-nodes.png",
+    "sha256": "a6300ecc17d88330e1b9268d66b6455e5726e45daf945140526a3b3686a0a009"
+  },
+  {
+    "tema": "Implementación de archivos y bloques",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 96.png",
+    "destino": "Sistemas Operativos y Redes/Implementación de archivos y bloques/adjuntos/Asignación enlazada de bloques de archivo.png",
+    "sha256": "efce47f589e8d686828040d94775e0ac8312ce58b2e5cd9147e5acfb44441cbe"
+  },
+  {
+    "tema": "Implementación de archivos y bloques",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 97.png",
+    "destino": "Sistemas Operativos y Redes/Implementación de archivos y bloques/adjuntos/Asignación enlazada mediante tabla FAT.png",
+    "sha256": "ed55392b1ca0aa80e773d5033e822639ebcc366667d878308f45230e06658cba"
+  },
+  {
+    "tema": "Implementación de archivos y bloques",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 98.png",
+    "destino": "Sistemas Operativos y Redes/Implementación de archivos y bloques/adjuntos/Asignación indexada con bloque de índices.png",
+    "sha256": "43bc399c1b036e8f9ed097fd2a3dcb5df42867e406dfa8b96103b34b37ff1e3d"
+  },
+  {
+    "tema": "Implementación de archivos y bloques",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 99.png",
+    "destino": "Sistemas Operativos y Redes/Implementación de archivos y bloques/adjuntos/Asignación combinada multinivel e inodos Unix.png",
+    "sha256": "173603a2818a9b8243d6de16e92b2d3e7325e34b3edc80aa23fa37d504ee865a"
+  },
+  {
+    "tema": "Implementación de archivos y bloques",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 100.png",
+    "destino": "Sistemas Operativos y Redes/Implementación de archivos y bloques/adjuntos/Estructura de direccionamiento indirecto en inodos.png",
+    "sha256": "faa721b91dd9e44665dcfdb838694c5a4cc0ab6a53d1c7127197a1cb5669be09"
+  },
+  {
+    "tema": "Implementación de archivos y bloques",
+    "tipo": "slide",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Clases/SSOO/Contenido_7_Archivos.pdf#page=36",
+    "destino": "Sistemas Operativos y Redes/Implementación de archivos y bloques/adjuntos/Asignación contigua de bloques de disco.png",
+    "sha256": "1b0623c01fb10ad92680d018f0ab7646c3e0b438b38535c24c1e852dafb07c22"
+  },
+  {
+    "tema": "Implementación de archivos y bloques",
+    "tipo": "slide",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Clases/SSOO/Contenido_7_Archivos.pdf#page=41",
+    "destino": "Sistemas Operativos y Redes/Implementación de archivos y bloques/adjuntos/Gestión de espacio libre con mapa de bits o bitmap.png",
+    "sha256": "a9009f6a81966574f78de49350c17695525796802fcfc75c76662d7b6a966bc1"
+  },
+  {
+    "tema": "Implementación de archivos y bloques",
+    "tipo": "slide",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Clases/SSOO/Contenido_7_Archivos.pdf#page=42",
+    "destino": "Sistemas Operativos y Redes/Implementación de archivos y bloques/adjuntos/Gestión de espacio libre con lista enlazada de bloques.png",
+    "sha256": "5825858c1389d9b33d04c66af13ea17a32ca0d4d9ffbaca335b7c18f7701df6a"
   }
 ]

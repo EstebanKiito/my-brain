@@ -90,6 +90,11 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 ## Implementación de archivos y bloques
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
+| 🟡 | [[01 - Interfaz y llamadas al sistema de archivos y directorios\|Interfaz y llamadas al sistema de archivos y directorios]] | "renaming mv ... eliminar rm" | `mv` y `rm` son utilidades de espacio de usuario; las llamadas al sistema POSIX reales son `rename()` y `unlink()`. |
+| 🟡 | [[05 - Métodos de asignación de bloques: asignación contigua y bloques de control\|Métodos de asignación de bloques: asignación contigua y bloques de control]] | "Problema → No se pueden guardar archivos pequeños" | Precisión conceptual: en asignación contigua el desafío no radica en archivos pequeños, sino en la fragmentación externa y la imposibilidad de expandir archivos sin compactación. |
+| ℹ️ | [[02 - Enlaces duros (hard links) y enlaces simbólicos (soft links)\|Enlaces duros (hard links) y enlaces simbólicos (soft links)]] | "Referencias a los procesos/archivos" | Los enlaces son referencias exclusivas a archivos o directorios en disco, no a procesos del sistema operativo. |
+| ℹ️ | [[05 - Métodos de asignación de bloques: asignación contigua y bloques de control\|Métodos de asignación de bloques: asignación contigua y bloques de control]] | "blouqes ... PAra ... ASGINACION" | Erratas tipográficas ("blouqes" por bloques, "ASGINACION" por asignación). |
+| ℹ️ | [[07 - Asignación indexada y arquitectura de inodos multinivel en Unix\|Asignación indexada y arquitectura de inodos multinivel en Unix]] | "ENLZADO ... MUTINIVEL ... ASGINACION ... Direccion simple" | Erratas de tipeo por enlazado, multinivel, asignación e indirección simple. |
 
 ## Fundamentos de redes y modelos en capas
 | Estado | Nota | Original | Duda / corrección propuesta |
