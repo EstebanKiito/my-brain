@@ -136,6 +136,21 @@
           "hasta": "6. EDD y Almacenamiento e Indices"
         }
       ]
+    },
+    "Almacenamiento e índices": {
+      "carpeta": "Bases de Datos/Almacenamiento e índices",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i2",
+          "desde": "5. Arquitectura de Sistemas y Recuperación de fallas",
+          "hasta": "Tipos de Fallas en Transacciones y Soluciones"
+        },
+        {
+          "fuente": "i2",
+          "desde": "6. EDD y Almacenamiento e Indices"
+        }
+      ]
     }
   },
   "aceptados": []

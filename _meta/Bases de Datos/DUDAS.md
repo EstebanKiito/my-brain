@@ -67,3 +67,10 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | 🟡 | [[12 - Niveles de aislamiento\|Niveles de aislamiento]] | "Por defecto: SET TRANSACTION ISOLATION LEVEL SERIALIZABLE READ WRITE" | Es el default del estándar SQL. En PostgreSQL el default es READ COMMITTED (en MySQL, REPEATABLE READ). Además, READ WRITE es el modo de acceso, no un nivel. |
 | ℹ️ | [[10 - COMMIT, ROLLBACK y SAVEPOINT\|COMMIT, ROLLBACK y SAVEPOINT]] | "Al ejecutar ROLLBACK TO SAVEPOINT se borra el SAVEPOINT" | Lo dice la slide. En PostgreSQL el savepoint sigue vivo después de `ROLLBACK TO` (se elimina con `RELEASE`); los que se crearon después de él sí se borran. |
 | ✅ | [[02 - Propiedades ACID\|Propiedades ACID]] | "Sin Atomoicidad", "transiciones en serie", "Aislamineto (Granulidad)" | Erratas: atomicidad, transacciones, aislamiento (granularidad). Se corrigieron en los títulos sin cambiar el sentido. |
+
+## Almacenamiento e índices
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| 🟡 | [[08 - Tablas de hash\|Tablas de hash]] | "Una función de hash no necesariamente es inyectiva," + ítem vacío | La sección quedó inconclusa. Se completó en un complemento: colisiones y cómo se resuelven, con el ejemplo de la clase (aid mod 5). |
+| ℹ️ | [[02 - Disco duro y páginas\|Disco duro y páginas]] | "Página: … que el sistema operativo gestiona, generalmente de 4 KB" | Precisión: la slide dice que la página la define el SO **o el DBMS**. En PostgreSQL mide 8 KB. |
+| ✅ | [[06 - Arreglos y listas ligadas\|Arreglos y listas ligadas]] | "alteatoria", "utlizando", "lecutras" | Erratas; se dejaron en el texto original y se anotaron. |

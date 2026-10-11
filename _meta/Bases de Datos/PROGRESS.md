@@ -15,6 +15,7 @@ Rama: `migrar/bases-de-datos`. Un commit por tema. Antes de cada commit se corre
 | 8 | Lógica en la base de datos | `Lógica en la base de datos/` | ✅ hecho | 5 + índice | 0 |
 | 9 | Transacciones y concurrencia | `Transacciones y concurrencia/` | ✅ hecho | 12 + índice | 20 + 0 |
 | 10 | Recuperación de fallas | `Recuperación de fallas/` | ✅ hecho | 5 + índice | 0 |
+| 11 | Almacenamiento e índices | `Almacenamiento e índices/` | ✅ hecho | 13 + índice | 10 + 7 |
 
 ## Convenciones
 - Las mismas de Ingeniería de Software: prefijo `NN - ` con orden de estudio por carpeta, wikilinks con alias (`\|` dentro de tablas) e índices enlazados con ruta completa.
@@ -52,3 +53,6 @@ Rama: `migrar/bases-de-datos`. Un commit por tema. Antes de cada commit se corre
   - Nota de complemento puro: 07 Grafo de precedencia. Se restauró el link a ACID desde Lógica/04.
 - **2026-10-11 — Recuperación de fallas.**
   - Fuente: Apuntes I2, «Tipos de Fallas en Transacciones y Soluciones» (incluido el pendiente «Seguir escribiendo este resumen…», que quedó en un callout `[!info]`). Las notas 02 a 05 son complemento de las slides de la clase 11 (log, undo, redo, undo/redo, checkpoints, con los ejemplos resueltos).
+- **2026-10-11 — Almacenamiento e índices.**
+  - Fuentes: Apuntes I2, «Almacenamiento y Jerarquía de Memoria» (sección 5) y «6. EDD y Almacenamiento e Indices» completa, con las imágenes Untitled 20 a 29. Complementos de las slides de la clase 9, con 7 slides.
+  - Notas de complemento puro: 01 y 09 a 13. Se corrigieron los wikilinks sin `\|` dentro de tablas (también uno de Recuperación/02).

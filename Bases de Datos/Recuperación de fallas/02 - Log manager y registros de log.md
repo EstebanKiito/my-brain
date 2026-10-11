@@ -25,9 +25,9 @@ El **log** es un archivo de solo agregar donde el DBMS anota cada acción de cad
 > **¿Cómo los usamos?** Depende de la técnica de logging:
 > | Técnica | Registro de update | Nota |
 > |---|---|---|
-> | Undo logging | `<T, X, t>` con t = valor **antiguo** | [[03 - Undo logging|Undo logging]] |
-> | Redo logging | `<T, X, v>` con v = valor **nuevo** | [[04 - Redo logging|Redo logging]] |
-> | Undo/redo | `<T, X, v_antiguo, v_nuevo>` | [[05 - Undo-redo logging|Undo/redo logging]] |
+> | Undo logging | `<T, X, t>` con t = valor **antiguo** | [[03 - Undo logging\|Undo logging]] |
+> | Redo logging | `<T, X, v>` con v = valor **nuevo** | [[04 - Redo logging\|Redo logging]] |
+> | Undo/redo | `<T, X, v_antiguo, v_nuevo>` | [[05 - Undo-redo logging\|Undo/redo logging]] |
 
 > [!tip] Complemento — cómo detectar el estado de cada transacción en el log
 > | En el log aparece… | Estado de T al momento de la falla |
