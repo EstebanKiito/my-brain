@@ -23,3 +23,12 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | 🟡 | [[08 - LIKE y NOT LIKE\|LIKE y NOT LIKE]] | `WHERE name LIKE ‘%Potter%'`, `# BUSCA TODAS…` | Comillas tipográficas (‘ ’) y comentario con `#`: no corren en PostgreSQL. Se agregó la versión con `'…'` y `--`. |
 | 🟡 | [[08 - LIKE y NOT LIKE\|LIKE y NOT LIKE]] | "  : No otro caracter → ( correo Like ‘%@gmail.com’ )" | Ambiguo. Se interpretó así: un patrón que no termina en `%` no admite más caracteres después (el correo **termina** en @gmail.com). |
 | ℹ️ | [[05 - Alias y expresiones en SELECT\|Alias y expresiones en SELECT]] | "Interestellar" | Errata de "Interstellar"; se dejó tal cual en la tabla de ejemplo. |
+
+## Agregación y subconsultas
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| 🟡 | [[02 - COUNT y DISTINCT\|COUNT y DISTINCT]] | "SELECT DISTINCT COUNT(cantidad): … si hay filas con el mismo valor de cantidad, se cuentan solo una vez." | Falso: `COUNT(cantidad)` cuenta los repetidos (6, 1, 1 → 3) y el `DISTINCT` se aplica a la única fila del resultado. Solo `COUNT(DISTINCT …)` cuenta una vez los valores repetidos. |
+| 🟡 | [[03 - GROUP BY\|GROUP BY]] | `WHERE fecha > '10/01'` | Si `fecha` es texto, `'07/02' > '10/01'` es falso (comparación de strings) y el filtro no hace lo esperado. Viene de la slide. Hace falta un tipo `date`. |
+| 🟡 | [[09 - Subconsulta en el FROM - primera película de cada actor\|Subconsulta en el FROM: primera película de cada actor]] | Tabla intermedia `id/año`: 2 → 2014, 3 → 2001 | Con `Actuo_en` (2→1, 3→2) los años serían 2 → 1997 (Titanic) y 3 → 2014 (Interstellar). O los datos de `Actuo_en` son otros, o el resultado está mal. También cambia el nombre de columna: `pelicula_id` vs `id_pelicula`. |
+| ℹ️ | [[04 - HAVING\|HAVING]] | `HAVING SUM(cantidad) > 100` | Con los datos del ejemplo el resultado es vacío (tomates suma 10, zapallo 3). No es error: el ejemplo muestra la sintaxis. |
+| ℹ️ | [[05 - Consultas anidadas (IN, ALL, ANY, EXISTS)\|Consultas anidadas]] | `‘Lollapalooza’`, `‘Austral Calafate’`, `‘Toyota’` | Comillas tipográficas de la slide; en PostgreSQL van comillas simples rectas. |

@@ -65,6 +65,17 @@
           "hasta": "2. Formas Normales y Dependencias"
         }
       ]
+    },
+    "Agregación y subconsultas": {
+      "carpeta": "Bases de Datos/Agregación y subconsultas",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i1",
+          "desde": "SQL 2",
+          "hasta": "NULL:"
+        }
+      ]
     }
   },
   "aceptados": []
