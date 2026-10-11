@@ -1153,5 +1153,117 @@
     "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 50.png",
     "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Establecimiento de conexión TCP con saludo de tres vías y terminación con FIN.png",
     "sha256": "b25ed01d7003c6b775651f32ba77f7dcecdaf3abbfe178617ae8cf159b2667bb"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 51.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Funciones de la capa de red: enrutamiento en plano de control y reenvío en plano de datos.png",
+    "sha256": "7ec8e0f831237a6baaa822869c0da04c76acd5273eeb58a818fc75d823c4dae7"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 52.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Estructura y campos de la cabecera del datagrama IPv4.png",
+    "sha256": "bd1f0313ce41609766bed2da9908eb36be0f4d1e19e3473df5a8ed73cc8c216a"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 53.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Fragmentación de datagramas IP por MTU en enlaces de red.png",
+    "sha256": "0c5f34c2a15a382b225ecde1a11ef228f6328f189066041b7b2c14cea2c9de0f"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 54.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Ejemplo de campos de fragmentación: identificación, flags y offset de fragmento.png",
+    "sha256": "95c70b31a11961a1f65824414d7bb4802f82affc3f2b5411f7fceb544a8625f2"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 55.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Estructura de direcciones IPv4 con notación CIDR y máscara de subred.png",
+    "sha256": "66dd06787f480d3f4ce58dbc9328dbc0e0cec30b95d1ef76fbb05dc7a9d6761a"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 56.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Cálculo de dirección de red y broadcast mediante máscara de subred.png",
+    "sha256": "42ea513acf599b25f524af2a2800afa635b13d2647ee489316ddcd36ebe85100"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 57.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Topología de subredes conectadas mediante routers e interfaces IP.png",
+    "sha256": "e6b2c6ecee6f425501b8d1f551aa385329a0dacab055caf539b3c6e432d02116"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 58.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Clasificación histórica de direcciones IP en clases A, B y C frente a CIDR.png",
+    "sha256": "26fd5ca6ae29f9d4a58e9480be6af01799b061302e1980788e1d9987bd6e8c61"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 59.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Flujo de cuatro pasos del protocolo DHCP: Discover, Offer, Request y ACK.png",
+    "sha256": "6fb9d4c077be6a3a16ea25ed62f5e68890d663d1a669b6d3fddbcd63074feaa3"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 60.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Arquitectura de traducción de direcciones de red NAT en red local.png",
+    "sha256": "ef14890886719978aa7add78c88cbce5445d1ccd6d63c3068e0198ee2633e75c"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 61.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Tabla de traducción NAT con puertos y direcciones IP públicas y privadas.png",
+    "sha256": "48b6a885c835755f4d30c2b7af07e66039a7eaedca4572e488c7720e33e25494"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 62.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Traversal de NAT y reenvío de puertos mediante UPnP para servidores internos.png",
+    "sha256": "70ac22c1ef38f0aff543dd3287d897fd63943c45c058064026854e7a64dba40a"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 63.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Formato de mensajes y tipos del protocolo de control ICMP.png",
+    "sha256": "298ad0ac3693d5ec47be70cf090710925f13362cece8ca515583fbfbd694fd96"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 64.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Estructura del encabezado simplificado de 40 bytes en IPv6.png",
+    "sha256": "9c64b65c6e9a226304111a4349d315fcb7c5ba41487c8e657447b3b8689e7386"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 65.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Estrategia de transición Dual-Stack para coexistencia de IPv4 e IPv6.png",
+    "sha256": "472a9e6c77dfb68dbb2a7fb9fdc662b0fb5193e878e5941ad161f89072c3d26e"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 66.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Técnica de encapsulamiento por tunneling de paquetes IPv6 sobre redes IPv4.png",
+    "sha256": "7f82bd16902a2702f78b860d30966a862f55251e8c203f3892466fb35607cd82"
   }
 ]

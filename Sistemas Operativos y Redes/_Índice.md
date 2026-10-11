@@ -26,7 +26,7 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: no hace fal
 | [[Sistemas Operativos y Redes/Fundamentos de redes y modelos en capas/_Índice|Fundamentos de redes y modelos en capas]] | Modelos OSI y TCP/IP, ancho de banda, latencia, encapsulación y arquitectura de Internet |
 | [[Sistemas Operativos y Redes/Capa de aplicación y sockets/_Índice|Capa de aplicación y sockets]] | Sockets TCP y UDP, llamadas al sistema, protocolos HTTP, FTP, DNS, cookies, y redes P2P BitTorrent |
 | [[Sistemas Operativos y Redes/Capa de transporte/_Índice|Capa de transporte]] | Puertos, multiplexación, protocolo UDP, evolución rdt, Go-Back-N, Selective Repeat y TCP con 3-way handshake |
-| Capa de red y direccionamiento *(pendiente)* | Direccionamiento IPv4 y IPv6, máscaras de subred, CIDR, DHCP, NAT e ICMP |
+| [[Sistemas Operativos y Redes/Capa de red y direccionamiento/_Índice|Capa de red y direccionamiento]] | Direccionamiento IPv4 y IPv6, fragmentación por MTU, máscaras, CIDR, DHCP, NAT e ICMP |
 | Algoritmos de ruteo *(pendiente)* | Ruteo intra-dominio e inter-dominio, algoritmos Link-State (Dijkstra) y Distance-Vector (Bellman-Ford), BGP |
 | Capa de enlace y seguridad *(pendiente)* | Tramas, direcciones MAC, Ethernet, switches, protocolo ARP, CSMA/CD y fundamentos de seguridad |
 | Gestión del curso *(pendiente)* | Evaluaciones, tareas, resumen midterm y preparación para exámenes |

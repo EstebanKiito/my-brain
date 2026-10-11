@@ -125,6 +125,10 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 ## Capa de red y direccionamiento
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
+| 🟡 | [[02 - Datagrama IPv4: estructura y fragmentación por MTU\|Datagrama IPv4: estructura y fragmentación por MTU]] | "Router del otro extremos lo reensambla" | En la arquitectura de Internet (IPv4), los routers intermedios nunca reensamblan fragmentos; el reensamblado se realiza exclusivamente en el host destinatario final. |
+| 🟡 | [[03 - Direccionamiento IPv4: subredes, máscaras y notación CIDR\|Direccionamiento IPv4: subredes, máscaras y notación CIDR]] | "IPV6: 6 Bytes → 128 bits" | Una dirección IPv6 de 128 bits mide exactamente 16 bytes ($128/8 = 16$), no 6 bytes. |
+| 🟡 | [[04 - Configuración dinámica con DHCP y traducción de direcciones NAT\|Configuración dinámica con DHCP y traducción de direcciones NAT]] | "NAT tiene distractores" | La palabra correcta es detractores (*detractors*), en alusión a las críticas arquitectónicas por violar el principio de extremo a extremo. |
+| ℹ️ | [[04 - Configuración dinámica con DHCP y traducción de direcciones NAT\|Configuración dinámica con DHCP y traducción de direcciones NAT]] | "hacia el destino 128.76.29.7" | En el flujo de retorno se tipeó 128.76.29.7 en vez de la IP pública 138.76.29.7 usada en el ejemplo. |
 
 ## Algoritmos de ruteo
 | Estado | Nota | Original | Duda / corrección propuesta |
