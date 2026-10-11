@@ -161,6 +161,11 @@
       "carpeta": "Bases de Datos/Bases de datos en aplicaciones",
       "estado": "hecho",
       "secciones": []
+    },
+    "NoSQL": {
+      "carpeta": "Bases de Datos/NoSQL",
+      "estado": "hecho",
+      "secciones": []
     }
   },
   "aceptados": []
