@@ -82,5 +82,145 @@
     "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/05_-_Diseno_de_Bases_de_Datos.pdf#page=56",
     "destino": "Bases de Datos/Diseño entidad-relación/adjuntos/Slide - modelo ER de vinos y cervezas.png",
     "sha256": "b06038c93661435843ee1d97d77b2cd0db249c838c854c268af7d424ea3d4752"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Transacciones - ventajas y desventajas.png",
+    "sha256": "b6ef0e782b78bea2a64c682b484889a2bd0c476e191929c2161ef85473be0180"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 1.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Módulo de transacciones - managers y ACID.png",
+    "sha256": "82a980c4c301c71c6f3302aa70fd6d1af40fd00ad32d64cc9c1a37bba360b1e6"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 2.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Transferencia doble - acceso concurrente opción 1.png",
+    "sha256": "dd8a4444b848ae61b47f25b111365c22be33df8f8292f48db4ae7cfa4e80f9bf"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 3.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Transferencia doble - acceso concurrente opción 2.png",
+    "sha256": "074bbcc26e7123c9acbb81209b8aa3e5e57a3b3a981cf2ba128e333aba834997"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 4.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Actualización perdida WW - asiento 24.png",
+    "sha256": "5fa5001dab9953f421172389899a7ece659753eae399fd5dd40a364cc7f06c72"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 5.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Lectura sucia WR - asiento 24.png",
+    "sha256": "b72f144361f7a50dc1088f636fb52117a8eb68d8386c18c8ae344fb2717b4738"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 6.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Lectura no repetible RW - asientos.png",
+    "sha256": "eaec53bd9c32c74bdc051a985c07f40093085977d684e2851aac2d2d0e416a3f"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 7.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Schedule serial - T1 y T2.png",
+    "sha256": "00fec9421a2e8de6b1e89ed4126bb0ed709eb27b32ca80bf32356cd345bf74bb"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 8.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Schedule serializable - T1 y T2.png",
+    "sha256": "591dd6c90126705dd461d26802a5b8620f7fa5e41e2541b2f4d76422c35b452d"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 9.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Schedule no serializable - T1 y T2.png",
+    "sha256": "3feedaa9fa2a4a7dd5ab4076f77cf879e12ca31401738c2deb9268c654499881"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 10.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Acciones no conflictivas.png",
+    "sha256": "1c6e32462e22bba40830c23d5fcd202fc281d3c640e11992459e424ca9c3a794"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 11.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Permutaciones permitidas - antes.png",
+    "sha256": "4753a716a3de228d3b0fcb33ec63fc1d593ca794226b8b3d6c19dc93f9546ba2"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 12.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Permutaciones permitidas - después.png",
+    "sha256": "39325ca35a70fb4ef41992fd4cd8f3d2a4b6636969118e7333eeb62d588d694c"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 13.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Acciones conflictivas.png",
+    "sha256": "18d8813ea2253a60f36903c4ee2b61da00fc512e99d8400c3bb717fd03382a7c"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 14.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Permutaciones no permitidas.png",
+    "sha256": "6799edefb0a04539c908997707517c89a514bc37b9560f2c81ae75bd3ac85e86"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 15.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Strict 2PL - fase de locks.png",
+    "sha256": "13f683c7f00294620baa1a21179d91d566b07b78c1cb203de6e9ebe24969f54b"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 16.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Deadlock en 2PL.png",
+    "sha256": "becdd1baaf8d4f4f608f9efd0b8490aba63e0613550c616dcb155563251e830d"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 17.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Locks y registro fantasma - Sailors.png",
+    "sha256": "9babc6979a6685126d84df2a10374f616a3be232b7eb82b69a9039aafced0b86"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 18.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/T2 espera a T1.png",
+    "sha256": "f343f71c9358aa101f7173d4cb6a4f553d12ab7fa59118dc5d208ac11dc21953"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 19.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Niveles de aislamiento.png",
+    "sha256": "e7c67b663f8663ba95c9df4b2cab859486f079153421bce2a5725e508b2fe735"
   }
 ]

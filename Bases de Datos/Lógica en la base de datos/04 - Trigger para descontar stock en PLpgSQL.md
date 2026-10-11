@@ -101,7 +101,7 @@ Después de insertar esta venta, el stock del Producto A se reducirá automátic
 >   F-->>App: RAISE EXCEPTION 'Stock insuficiente 1'
 >   Note over App,Productos: toda la sentencia se deshace: ni la venta ni el UPDATE quedan
 > ```
-> - `RAISE EXCEPTION` aborta la sentencia completa. Como el `INSERT` y el `UPDATE` del trigger son parte de la misma transacción, se deshacen juntos (atomicidad, ver «Propiedades ACID»).
+> - `RAISE EXCEPTION` aborta la sentencia completa. Como el `INSERT` y el `UPDATE` del trigger son parte de la misma transacción, se deshacen juntos (atomicidad, ver [[02 - Propiedades ACID|Propiedades ACID]]).
 > - El `%` del mensaje se reemplaza por `NEW.id_producto`.
 > - En un trigger `AFTER … FOR EACH ROW` el valor devuelto se ignora; `RETURN NEW` es una convención. En un trigger `BEFORE`, devolver `NEW` deja seguir la operación.
 > - Alternativa sin trigger: `CHECK (stock >= 0)` en `Productos` haría fallar el `UPDATE` por sí solo.

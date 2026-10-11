@@ -114,6 +114,17 @@
           "hasta": "4. ACID, Transacciones y Locks"
         }
       ]
+    },
+    "Transacciones y concurrencia": {
+      "carpeta": "Bases de Datos/Transacciones y concurrencia",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i2",
+          "desde": "4. ACID, Transacciones y Locks",
+          "hasta": "5. Arquitectura de Sistemas y Recuperación de fallas"
+        }
+      ]
     }
   },
   "aceptados": []

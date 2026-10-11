@@ -58,3 +58,12 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | 🟡 | [[03 - Triggers\|Triggers]] | "Ej: BEFORE CREATE", `AFTER CREATE ON Evaluaciones` | CREATE no es un evento de trigger: son INSERT, UPDATE, DELETE (y TRUNCATE). El error viene de la slide 8. |
 | 🟡 | [[03 - Triggers\|Triggers]] | `CREATE TRIGGER … BEGIN … END` | Sintaxis genérica o MySQL ("más o menos así", dice la slide). En PostgreSQL el trigger ejecuta una función (`EXECUTE FUNCTION`), y falta el `;` tras `REFRESH`. Se agregó la versión PostgreSQL. |
 | ℹ️ | [[05 - Stored procedures\|Stored procedures]] | `SELECT insertar_persona(‘11.111.111-1’, …)` | Comillas tipográficas de la slide; van comillas simples rectas. |
+
+## Transacciones y concurrencia
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| 🟡 | [[04 - Lecturas sucias, no repetibles y actualización perdida\|Lecturas sucias, no repetibles y actualización perdida]] | Bloque "Ejemplos": `READ(A,x) WRITE(A,x)` repetido para sucia y no repetible | No indica qué transacción hace cada operación y los dos primeros quedan iguales. Se agregó la notación $W_2(X), R_1(X), A_2$, etc., tomada de las imágenes. |
+| 🟡 | [[05 - Schedules serial y serializable\|Schedules serial y serializable]] | Código de "Schedule Serial" y "Schedule No Serializable" | El serial muestra solo T1, y al no serializable le faltan las operaciones de T2 sobre A. Se reconstruyeron desde las imágenes. |
+| 🟡 | [[12 - Niveles de aislamiento\|Niveles de aislamiento]] | "Por defecto: SET TRANSACTION ISOLATION LEVEL SERIALIZABLE READ WRITE" | Es el default del estándar SQL. En PostgreSQL el default es READ COMMITTED (en MySQL, REPEATABLE READ). Además, READ WRITE es el modo de acceso, no un nivel. |
+| ℹ️ | [[10 - COMMIT, ROLLBACK y SAVEPOINT\|COMMIT, ROLLBACK y SAVEPOINT]] | "Al ejecutar ROLLBACK TO SAVEPOINT se borra el SAVEPOINT" | Lo dice la slide. En PostgreSQL el savepoint sigue vivo después de `ROLLBACK TO` (se elimina con `RELEASE`); los que se crearon después de él sí se borran. |
+| ✅ | [[02 - Propiedades ACID\|Propiedades ACID]] | "Sin Atomoicidad", "transiciones en serie", "Aislamineto (Granulidad)" | Erratas: atomicidad, transacciones, aislamiento (granularidad). Se corrigieron en los títulos sin cambiar el sentido. |
