@@ -9,7 +9,7 @@ Rama: `migrar/sistemas-operativos-y-redes`. Un commit por tema. Antes de cada co
 | 2 | Procesos | `Procesos/` | ✅ hecho | 7 + índice | 7 |
 | 3 | Planificación de CPU | `Planificación de CPU/` | ✅ hecho | 5 + índice | 11 |
 | 4 | Señales e IPC | `Señales e IPC/` | ✅ hecho | 3 + índice | 0 |
-| 5 | Hilos | `Hilos/` | 🟡 pendiente | – | – |
+| 5 | Hilos | `Hilos/` | ✅ hecho | 3 + índice | 3 |
 | 6 | Sincronización | `Sincronización/` | 🟡 pendiente | – | – |
 | 7 | Administración de memoria | `Administración de memoria/` | 🟡 pendiente | – | – |
 | 8 | Paginación y segmentación | `Paginación y segmentación/` | 🟡 pendiente | – | – |
@@ -37,4 +37,5 @@ Rama: `migrar/sistemas-operativos-y-redes`. Un commit por tema. Antes de cada co
 - **2026-10-11 — Procesos.** Fuentes: Clase 3 y Clase 4 de SSOO más Ayudantía 1 (147 bloques totales: 115 de ssoo + 32 de ayudantías). 7 notas atómicas + índice. 7 imágenes migradas con sha256 y transcritas. Complementos de `Contenido_2_Procesos.pdf` y OSTEP. Verificación: 0 errores, 0 advertencias.
 - **2026-10-11 — Planificación de CPU.** Fuentes: sección SCHEDULERS de apuntes de SSOO (65 bloques). 5 notas atómicas + índice. 11 imágenes migradas con sha256 y transcritas. Complementos de `Contenido_3_Scheduling.pdf` y OSTEP (métricas, FCFS/SJF convoy effect, RR quantum trade-offs, y 5 reglas de MLFQ). Verificación: 0 errores, 0 advertencias.
 - **2026-10-11 — Señales e IPC.** Fuentes: secciones Signals y SEÑALES de SSOO (14 bloques). 3 notas atómicas + índice. Complementos de `Contenido_2_Procesos.pdf` y POSIX (ciclo de señales, diferencias semánticas SIGTERM vs SIGKILL, handlers en C con signal/sigaction, y pipes anónimos). Verificación: 0 errores, 0 advertencias.
+- **2026-10-11 — Hilos.** Fuentes: Clase 5 de SSOO (49 bloques). 3 notas atómicas + índice. 3 imágenes migradas con sha256 y transcritas. Complementos de `Contenido_4_Threads.pdf` y POSIX Threads (recursos compartidos vs privados, pthreads en C, y modelos User Space vs Kernel Space vs híbridos M:N). Verificación: 0 errores, 0 advertencias.
 

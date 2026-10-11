@@ -180,5 +180,26 @@
     "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 23.png",
     "destino": "Sistemas Operativos y Redes/Planificación de CPU/adjuntos/Estructura de colas multinivel con retroalimentación MLFQ.png",
     "sha256": "d285879cb63ef67eefa40748f304bdb81fe74b31390df9a18d2e22d04b235eb4"
+  },
+  {
+    "tema": "Hilos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 24.png",
+    "destino": "Sistemas Operativos y Redes/Hilos/adjuntos/Modelos de hilos en espacio de usuario y kernel.png",
+    "sha256": "b61ea7b5d8709a6dfdc2c5dfd4ecc0cbc71e8a1597ec8a03f446f6c772278c15"
+  },
+  {
+    "tema": "Hilos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 25.png",
+    "destino": "Sistemas Operativos y Redes/Hilos/adjuntos/Implementación de hilos en espacio de usuario y tablas.png",
+    "sha256": "756588d975e0b502aff7d3a955d6db274c3971a05a934cdc0ab3e2fa0ab57e8b"
+  },
+  {
+    "tema": "Hilos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 26.png",
+    "destino": "Sistemas Operativos y Redes/Hilos/adjuntos/Funciones principales de la biblioteca POSIX Threads.png",
+    "sha256": "4c926736d54257d71f1338c5c6826b0e137d4b5b4ec29c7efa33f4dc0195b082"
   }
 ]

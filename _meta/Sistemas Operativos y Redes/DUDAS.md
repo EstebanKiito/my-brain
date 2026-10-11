@@ -39,6 +39,9 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 ## Hilos
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
+| 🟡 | [[03 - Hilos a nivel de usuario frente a hilos a nivel de kernel\|Hilos a nivel de usuario frente a hilos a nivel de kernel]] | "No se bloquean, porque pasan directo por abajo" | Precisión técnica: en hilos de kernel, si un hilo realiza una llamada bloqueante (I/O), ese hilo específico sí se bloquea, pero el resto de los hilos del proceso pueden continuar su ejecución en paralelo en otros núcleos. |
+| ℹ️ | [[01 - Concepto de hilo y recursos compartidos versus privados\|Concepto de hilo y recursos compartidos versus privados]] | "parelizarlo... qusiera" | Erratas tipográficas ("parelizarlo" por "paralelizarlo", "qusiera" por "quisiera"). Preservadas intactas en la cita textual. |
+| ℹ️ | [[03 - Hilos a nivel de usuario frente a hilos a nivel de kernel\|Hilos a nivel de usuario frente a hilos a nivel de kernel]] | "Kernell... neceisten... Eliminarmos" | Erratas tipográficas ("Kernell" por "Kernel", "neceisten" por "necesiten", "Eliminarmos" por "Eliminamos"). |
 
 ## Sincronización
 | Estado | Nota | Original | Duda / corrección propuesta |
