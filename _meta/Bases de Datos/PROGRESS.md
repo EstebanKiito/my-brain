@@ -17,6 +17,7 @@ Rama: `migrar/bases-de-datos`. Un commit por tema. Antes de cada commit se corre
 | 10 | Recuperación de fallas | `Recuperación de fallas/` | ✅ hecho | 5 + índice | 0 |
 | 11 | Almacenamiento e índices | `Almacenamiento e índices/` | ✅ hecho | 13 + índice | 10 + 7 |
 | 12 | Evaluación de consultas | `Evaluación de consultas/` | ✅ hecho | 5 + índice | 0 |
+| 13 | Bases de datos en aplicaciones | `Bases de datos en aplicaciones/` | ✅ hecho | 7 + índice | 0 |
 
 ## Convenciones
 - Las mismas de Ingeniería de Software: prefijo `NN - ` con orden de estudio por carpeta, wikilinks con alias (`\|` dentro de tablas) e índices enlazados con ruta completa.
@@ -59,3 +60,5 @@ Rama: `migrar/bases-de-datos`. Un commit por tema. Antes de cada commit se corre
   - Notas de complemento puro: 01 y 09 a 13. Se corrigieron los wikilinks sin `\|` dentro de tablas (también uno de Recuperación/02).
 - **2026-10-11 — Evaluación de consultas.**
   - Sin contenido en mis apuntes: 5 notas de complemento puro basadas en las slides de la clase 10. Se recalcularon los ejemplos de costo (3,1 h vs 3,4 s).
+- **2026-10-11 — Bases de datos en aplicaciones.**
+  - Sin contenido en mis apuntes: 7 notas de complemento puro de las clases 8 (Python, SQL injection, ORM), 11 (Pandas) y 14 (Desarrollo de software, PPTX leído con zipfile). Enlaces a Active Record, Migraciones y Asociaciones de Ingeniería de Software.

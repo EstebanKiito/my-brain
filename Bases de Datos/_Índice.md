@@ -23,6 +23,7 @@ Vault de estudio del ramo. Cada nota cubre **un concepto**: no hace falta saber 
 | [[Bases de Datos/Recuperación de fallas/_Índice\|Recuperación de fallas]] | Tipos de fallas, log, undo / redo / undo-redo logging, checkpoints |
 | [[Bases de Datos/Almacenamiento e índices/_Índice\|Almacenamiento e índices]] | DBMS por dentro, disco y páginas, buffer, costo de I/O, estructuras de datos, hash, índices hash y B+, clustered/unclustered |
 | [[Bases de Datos/Evaluación de consultas/_Índice\|Evaluación de consultas]] | Iteradores, selección/proyección, nested loop y block nested loop join, external merge sort |
+| [[Bases de Datos/Bases de datos en aplicaciones/_Índice\|Bases de datos en aplicaciones]] | Python + SQL, SQL injection, ORMs, migraciones, modelación de procesos, N+1, Pandas |
 
 ## Ruta de estudio sugerida
 1. **Modelo relacional:** qué es un DBMS, cómo se guardan los datos en tablas, las llaves y el álgebra relacional.
@@ -37,3 +38,4 @@ Vault de estudio del ramo. Cada nota cubre **un concepto**: no hace falta saber 
 10. **Recuperación de fallas:** cómo el log asegura atomicidad y durabilidad.
 11. **Almacenamiento e índices:** costo de I/O y cómo los índices lo reducen.
 12. **Evaluación de consultas:** los algoritmos detrás de cada operador y su costo.
+13. **Bases de datos en aplicaciones:** conectar, asegurar y optimizar la BD desde el código.

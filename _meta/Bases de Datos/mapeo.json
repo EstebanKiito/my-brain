@@ -156,6 +156,11 @@
       "carpeta": "Bases de Datos/Evaluación de consultas",
       "estado": "hecho",
       "secciones": []
+    },
+    "Bases de datos en aplicaciones": {
+      "carpeta": "Bases de Datos/Bases de datos en aplicaciones",
+      "estado": "hecho",
+      "secciones": []
     }
   },
   "aceptados": []
