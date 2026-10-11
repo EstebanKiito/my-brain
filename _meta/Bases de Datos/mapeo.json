@@ -1,0 +1,209 @@
+{
+  "_descripcion": "Mapeo de las fuentes originales (rutas relativas a _raw/) a los temas del vault. Cada sección va desde el encabezado 'desde' (incluido) hasta 'hasta' (excluido). 'aceptados' lista bloques originales que no tienen destino a propósito, con su motivo. Las clases (PDF/PPTX de 'CLASES (2023 2°)- Base Datos/') son fuente de complementos y no se verifican por bloques.",
+  "carpeta_ramo": "Bases de Datos",
+  "fuentes": {
+    "ramo": "Semestre 3/Base de Datos - IIC2413 9e09d4843d214035a485a10b5823da0e.html",
+    "i1": "Semestre 3/Base de Datos - IIC2413/Apuntes I1 5662ef516a7e4e4a9bc423d13ec6a185.html",
+    "i2": "Semestre 3/Base de Datos - IIC2413/Apuntes I2 0e99e7e97123427da7044af2a0b2cb97.html",
+    "proyecto": "Semestre 3/Base de Datos - IIC2413/Proyecto - Base Datos 6f7ee2a9d1c3486a97f03dbe1e908d16.html",
+    "interrogaciones": "Semestre 3/Base de Datos - IIC2413/Interrogaciones - Examenes - Base Datos ee531267053b4c43a8395267507360cf.html"
+  },
+  "temas": {
+    "Modelo relacional": {
+      "carpeta": "Bases de Datos/Modelo relacional",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i1",
+          "desde": "ALGEBRA RELACIONAL:",
+          "hasta": "SQL 1:"
+        },
+        {
+          "fuente": "i2",
+          "desde": "EXPLICACION LLAVES:",
+          "hasta": "3. Lógica en Base de Datos"
+        }
+      ]
+    },
+    "Definición de datos en SQL": {
+      "carpeta": "Bases de Datos/Definición de datos en SQL",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i1",
+          "desde": "SQL 1:",
+          "hasta": "4. Consultas Sql (Query) + CRUD"
+        },
+        {
+          "fuente": "i1",
+          "desde": "* Eliminación con Llaves Foráneas:",
+          "hasta": "PRODUCTO CRUZ: (FROM Tabla1,Tabla2)"
+        },
+        {
+          "fuente": "i1",
+          "desde": "RESTRICCION DE NULOS!"
+        }
+      ]
+    },
+    "Consultas SQL": {
+      "carpeta": "Bases de Datos/Consultas SQL",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i1",
+          "desde": "4. Consultas Sql (Query) + CRUD",
+          "hasta": "* Eliminación con Llaves Foráneas:"
+        },
+        {
+          "fuente": "i1",
+          "desde": "PRODUCTO CRUZ: (FROM Tabla1,Tabla2)",
+          "hasta": "SQL 2"
+        },
+        {
+          "fuente": "i2",
+          "desde": "1. SQL Avanzado:",
+          "hasta": "2. Formas Normales y Dependencias"
+        }
+      ]
+    },
+    "Agregación y subconsultas": {
+      "carpeta": "Bases de Datos/Agregación y subconsultas",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i1",
+          "desde": "SQL 2",
+          "hasta": "NULL:"
+        }
+      ]
+    },
+    "Valores nulos": {
+      "carpeta": "Bases de Datos/Valores nulos",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i1",
+          "desde": "NULL:",
+          "hasta": "RESTRICCION DE NULOS!"
+        }
+      ]
+    },
+    "Diseño entidad-relación": {
+      "carpeta": "Bases de Datos/Diseño entidad-relación",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "Normalización": {
+      "carpeta": "Bases de Datos/Normalización",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i2",
+          "desde": "2. Formas Normales y Dependencias",
+          "hasta": "EXPLICACION LLAVES:"
+        }
+      ]
+    },
+    "Lógica en la base de datos": {
+      "carpeta": "Bases de Datos/Lógica en la base de datos",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i2",
+          "desde": "3. Lógica en Base de Datos",
+          "hasta": "4. ACID, Transacciones y Locks"
+        }
+      ]
+    },
+    "Transacciones y concurrencia": {
+      "carpeta": "Bases de Datos/Transacciones y concurrencia",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i2",
+          "desde": "4. ACID, Transacciones y Locks",
+          "hasta": "5. Arquitectura de Sistemas y Recuperación de fallas"
+        }
+      ]
+    },
+    "Recuperación de fallas": {
+      "carpeta": "Bases de Datos/Recuperación de fallas",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i2",
+          "desde": "Tipos de Fallas en Transacciones y Soluciones",
+          "hasta": "6. EDD y Almacenamiento e Indices"
+        }
+      ]
+    },
+    "Almacenamiento e índices": {
+      "carpeta": "Bases de Datos/Almacenamiento e índices",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i2",
+          "desde": "5. Arquitectura de Sistemas y Recuperación de fallas",
+          "hasta": "Tipos de Fallas en Transacciones y Soluciones"
+        },
+        {
+          "fuente": "i2",
+          "desde": "6. EDD y Almacenamiento e Indices"
+        }
+      ]
+    },
+    "Evaluación de consultas": {
+      "carpeta": "Bases de Datos/Evaluación de consultas",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "Bases de datos en aplicaciones": {
+      "carpeta": "Bases de Datos/Bases de datos en aplicaciones",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "NoSQL": {
+      "carpeta": "Bases de Datos/NoSQL",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "Privacidad de datos": {
+      "carpeta": "Bases de Datos/Privacidad de datos",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "Gestión del curso": {
+      "carpeta": "Bases de Datos/Gestión del curso",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "ramo",
+          "desde": "Comandos Terminal",
+          "por_texto": true
+        },
+        {
+          "fuente": "proyecto",
+          "desde": "CONSIDERACIONES INFORME ENTREGA 2:",
+          "por_texto": true
+        },
+        {
+          "fuente": "i2",
+          "desde": "Temario",
+          "hasta": "1. SQL Avanzado:"
+        }
+      ]
+    }
+  },
+  "aceptados": [
+    {
+      "fuente": "proyecto",
+      "texto": "2. 56982296886",
+      "motivo": "Dato personal (número de teléfono) en un recordatorio del proyecto; se omite porque el repo es público (decisión del usuario)."
+    },
+    {
+      "fuente": "proyecto",
+      "texto": "Revisar al fukin Pablo O \\n Ryan",
+      "motivo": "Recordatorio con nombres de compañeros; se omite por privacidad (decisión del usuario)."
+    }
+  ]
+}

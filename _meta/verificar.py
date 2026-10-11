@@ -2,19 +2,28 @@
 """Verificador de la migración de apuntes de Notion al vault de Obsidian.
 
 Uso:
-    python3 _meta/verificar.py                  # todos los temas marcados como "hecho"
-    python3 _meta/verificar.py --tema "Procesos de desarrollo"
-    python3 _meta/verificar.py --detalle        # muestra también los bloques cubiertos
+    python3 _meta/verificar.py --ramo "Ingeniería de Software"     # temas marcados como "hecho"
+    python3 _meta/verificar.py --ramo "Bases de Datos" --tema "Modelo relacional"
+    python3 _meta/verificar.py --ramo "Bases de Datos" --detalle   # lista también los bloques cubiertos
+    python3 _meta/verificar.py --ramo "Bases de Datos" --raw /otra/ruta/_raw   # o RAW_DIR=/otra/ruta/_raw
+
+La configuración de cada ramo vive en _meta/<Ramo>/ (mapeo.json, imagenes.json,
+PROGRESS.md, DUDAS.md). La carpeta del ramo en el vault es mapeo["carpeta_ramo"] o,
+si no está, el nombre del ramo.
 
 Solo usa la biblioteca estándar. Si _raw/ no existe (por ejemplo, en un clone del
 repo), las pruebas que dependen del export original (2, 3 y 4) se omiten con aviso.
 
+Alcance: las pruebas 1 y 5 miran el vault COMPLETO (todas las carpetas de primer
+nivel que no empiezan con "_" ni "."), porque hay links entre ramos. Imágenes,
+cobertura, links externos y formato miran solo el ramo indicado.
+
 Pruebas:
-  1. Autocontención: sin "_raw", rutas absolutas ni URLs de Notion; todo link local existe.
+  1. Autocontención (vault completo): sin "_raw", rutas absolutas ni URLs de Notion; todo link local existe.
   2. Imágenes: asignadas al tema / copiadas (sha256) / referenciadas.
   3. Cobertura: cada bloque de los apuntes originales del tema aparece en alguna nota.
   4. Links externos de los apuntes conservados.
-  5. Grafo: wikilinks válidos, nombres únicos, sin notas huérfanas.
+  5. Grafo (vault completo): wikilinks válidos, nombres únicos, sin notas huérfanas.
   +  Formato (advertencias): frontmatter, preguntas de repaso, largo, nombres, índices.
 """
 import argparse
@@ -28,10 +37,12 @@ import unicodedata
 from html.parser import HTMLParser
 from urllib.parse import unquote
 
-RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-RAW = os.path.join(RAIZ, "_raw")
+RAIZ = unicodedata.normalize("NFC", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 META = os.path.join(RAIZ, "_meta")
-VAULT_RAMO = os.path.join(RAIZ, "Ingeniería de Software")
+# Se fijan en main() según --ramo y --raw
+RAW = os.path.join(RAIZ, "_raw")
+META_RAMO = None
+VAULT_RAMO = None
 
 UMBRAL_TOKENS = 0.85
 UMBRAL_SECUENCIA = 0.80
@@ -180,19 +191,28 @@ def seccionar(items, desde, hasta, por_texto=False):
 
 # ---------------------------------------------------------------- notas del vault
 
+def carpetas_vault():
+    """Carpetas de primer nivel que forman el vault (un ramo cada una)."""
+    return [os.path.join(RAIZ, d) for d in sorted(os.listdir(RAIZ))
+            if not d.startswith(("_", ".")) and os.path.isdir(os.path.join(RAIZ, d))]
+
+
 def listar_notas():
+    """Todas las notas del vault (todos los ramos); deja fuera _meta, _raw y la raíz."""
     notas = {}
-    for base, dirs, files in os.walk(RAIZ):
-        rel = os.path.relpath(base, RAIZ)
-        if rel.startswith(("_raw", ".git", ".obsidian", ".venv")):
-            dirs[:] = []
-            continue
-        for f in files:
-            if f.endswith(".md"):
-                ruta = os.path.join(base, f)
-                with open(ruta, encoding="utf-8") as fh:
-                    notas[ruta] = fh.read()
+    for carpeta in carpetas_vault():
+        for base, dirs, files in os.walk(carpeta):
+            for f in files:
+                if f.endswith(".md"):
+                    ruta = os.path.join(base, f)
+                    with open(ruta, encoding="utf-8") as fh:
+                        notas[nfc(ruta)] = fh.read()
     return notas
+
+
+def nfc(ruta):
+    """Las rutas se comparan en NFC: macOS puede devolver tildes descompuestas (NFD)."""
+    return unicodedata.normalize("NFC", ruta)
 
 
 def es_nota_del_ramo(ruta):
@@ -221,8 +241,6 @@ def prueba_autocontencion(notas):
     ]
     n_err = len(errores)
     for ruta, texto in notas.items():
-        if not es_nota_del_ramo(ruta):
-            continue
         rel = os.path.relpath(ruta, RAIZ)
         for patron, desc in prohibidos:
             if re.search(patron, texto):
@@ -240,7 +258,7 @@ def prueba_autocontencion(notas):
             elif not os.path.exists(objetivo):
                 error(f"{rel}: archivo enlazado no existe '{unquote(destino)}'")
     if len(errores) == n_err:
-        ok("Sin referencias a _raw, rutas absolutas ni Notion; todos los links locales existen")
+        ok(f"{len(notas)} notas del vault sin referencias a _raw, rutas absolutas ni Notion; todos los links locales existen")
 
 
 def prueba_grafo(notas):
@@ -248,14 +266,14 @@ def prueba_grafo(notas):
     n_err = len(errores)
     por_nombre = {}
     for ruta in notas:
-        if es_nota_del_ramo(ruta):
-            por_nombre.setdefault(os.path.splitext(os.path.basename(ruta))[0], []).append(ruta)
+        por_nombre.setdefault(os.path.splitext(os.path.basename(ruta))[0], []).append(ruta)
     for nombre, rutas in por_nombre.items():
         if len(rutas) > 1 and nombre != "_Índice":
             error(f"Nombre de nota repetido '{nombre}': {[os.path.relpath(r, RAIZ) for r in rutas]}")
     adjuntos = set()
-    for base, _, files in os.walk(VAULT_RAMO):
-        adjuntos.update(files)
+    for carpeta in carpetas_vault():
+        for base, _, files in os.walk(carpeta):
+            adjuntos.update(nfc(f) for f in files)
 
     def resolver(objetivo, desde):
         objetivo = objetivo.strip().rstrip("\\")  # [[Nota\|alias]] dentro de tablas
@@ -276,11 +294,9 @@ def prueba_grafo(notas):
             return "adjunto"
         return None
 
-    entrantes = {r: 0 for r in notas if es_nota_del_ramo(r)}
+    entrantes = {r: 0 for r in notas}
     n_links = 0
     for ruta, texto in notas.items():
-        if not es_nota_del_ramo(ruta):
-            continue
         for m in RE_WIKILINK.finditer(quitar_codigo(texto)):
             n_links += 1
             objetivo = m.group(2)
@@ -293,7 +309,7 @@ def prueba_grafo(notas):
         if n == 0 and os.path.basename(ruta) != "_Índice.md":
             error(f"Nota huérfana (sin links entrantes): {os.path.relpath(ruta, RAIZ)}")
     if len(errores) == n_err:
-        ok(f"{n_links} wikilinks válidos; {len(entrantes)} notas, ninguna huérfana ni repetida")
+        ok(f"{n_links} wikilinks válidos; {len(entrantes)} notas del vault, ninguna huérfana ni repetida")
 
 
 def prueba_formato(notas):
@@ -582,14 +598,27 @@ def prueba_links_externos(tema, items, notas_todas, aceptados):
 def main():
     global conf_fuentes
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    global RAW, META_RAMO, VAULT_RAMO
+    ramos = sorted(d for d in os.listdir(META)
+                   if os.path.isfile(os.path.join(META, d, "mapeo.json")))
+    ramos_nfc = {unicodedata.normalize("NFC", r): r for r in ramos}
+    ap.add_argument("--ramo", required=True, help=f"ramo a verificar: {', '.join(ramos_nfc)}")
     ap.add_argument("--tema", help="verificar solo este tema")
     ap.add_argument("--detalle", action="store_true", help="listar también bloques cubiertos")
+    ap.add_argument("--raw", help="ruta del export de Notion (por defecto $RAW_DIR o <repo>/_raw)")
     args = ap.parse_args()
 
-    with open(os.path.join(META, "mapeo.json"), encoding="utf-8") as f:
+    ramo = unicodedata.normalize("NFC", args.ramo)
+    if ramo not in ramos_nfc:
+        sys.exit(f"Ramo desconocido: {args.ramo}. Opciones: {', '.join(ramos_nfc)}")
+    META_RAMO = os.path.join(META, ramos_nfc[ramo])
+    RAW = os.path.abspath(args.raw or os.environ.get("RAW_DIR") or os.path.join(RAIZ, "_raw"))
+
+    with open(os.path.join(META_RAMO, "mapeo.json"), encoding="utf-8") as f:
         mapeo = json.load(f)
-    with open(os.path.join(META, "imagenes.json"), encoding="utf-8") as f:
+    with open(os.path.join(META_RAMO, "imagenes.json"), encoding="utf-8") as f:
         imagenes = json.load(f)
+    VAULT_RAMO = nfc(os.path.join(RAIZ, mapeo.get("carpeta_ramo", ramo)))
     conf_fuentes = mapeo["fuentes"]
     aceptados = mapeo.get("aceptados", [])
     notas = listar_notas()
@@ -602,6 +631,7 @@ def main():
         temas = [t for t, c in mapeo["temas"].items() if c.get("estado") == "hecho"]
 
     print(f"Vault: {RAIZ}")
+    print(f"Ramo: {ramo} ({os.path.relpath(VAULT_RAMO, RAIZ)}) | _raw: {RAW}")
     print(f"Temas a verificar: {', '.join(temas) or '(ninguno marcado como hecho)'}")
     prueba_autocontencion(notas)
 
@@ -612,7 +642,7 @@ def main():
     asignados = {}
     for tema in temas:
         conf = mapeo["temas"][tema]
-        carpeta = os.path.join(RAIZ, conf["carpeta"])
+        carpeta = nfc(os.path.join(RAIZ, conf["carpeta"]))
         notas_tema = {r: t for r, t in notas.items() if r.startswith(carpeta + os.sep)}
         print(f"\n=== Tema: {tema} ({len(notas_tema)} notas) ===")
         if not notas_tema:

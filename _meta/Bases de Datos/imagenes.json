@@ -1,0 +1,345 @@
+[
+  {
+    "tema": "Modelo relacional",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/02_-_Algebra_Relacional.pdf#page=56",
+    "destino": "Bases de Datos/Modelo relacional/adjuntos/Slide - producto cruz en álgebra relacional.png",
+    "sha256": "dd9eb7a7d1385e4b6d81efa0185c47b2045b5525beb6ea44ad0d3e1563d25b9f"
+  },
+  {
+    "tema": "Modelo relacional",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/02_-_Algebra_Relacional.pdf#page=100",
+    "destino": "Bases de Datos/Modelo relacional/adjuntos/Slide - intersección de actores de Nolan e Iñárritu.png",
+    "sha256": "9a51e2e5cb658af490502fe226101911ed9f60d5af425a963bd1e3b933623867"
+  },
+  {
+    "tema": "Modelo relacional",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/02_-_Algebra_Relacional.pdf#page=108",
+    "destino": "Bases de Datos/Modelo relacional/adjuntos/Slide - diferencia de actores de Nolan y no de Iñárritu.png",
+    "sha256": "9b17f0d11ab96e29ab1a8ab60c6242ac46baf24ec8133a982313d9dfa9c61188"
+  },
+  {
+    "tema": "Diseño entidad-relación",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/05_-_Diseno_de_Bases_de_Datos.pdf#page=7",
+    "destino": "Bases de Datos/Diseño entidad-relación/adjuntos/Slide - símbolos de un diagrama ER.png",
+    "sha256": "384ccc32abae022ab3676c86012a7b721d822f9d8ff20e00fd80bd974660a234"
+  },
+  {
+    "tema": "Diseño entidad-relación",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/05_-_Diseno_de_Bases_de_Datos.pdf#page=19",
+    "destino": "Bases de Datos/Diseño entidad-relación/adjuntos/Slide - relación múltiple alquila.png",
+    "sha256": "11acf800b0dff647e1e5f59a80fb7fe93ea0932a6bfcb68f8941c12de39198ab"
+  },
+  {
+    "tema": "Diseño entidad-relación",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/05_-_Diseno_de_Bases_de_Datos.pdf#page=13",
+    "destino": "Bases de Datos/Diseño entidad-relación/adjuntos/Slide - convención de la flecha en ER.png",
+    "sha256": "4698b554e98f050d017cb1c2fb289a5f41394fd699ec22e9b8bcdfa8f2fb8437"
+  },
+  {
+    "tema": "Diseño entidad-relación",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/05_-_Diseno_de_Bases_de_Datos.pdf#page=27",
+    "destino": "Bases de Datos/Diseño entidad-relación/adjuntos/Slide - participación y participación total.png",
+    "sha256": "2bff50630a07cb750a093d98798dca65b189f6a434161485c99a4b9e89bff6c6"
+  },
+  {
+    "tema": "Diseño entidad-relación",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/05_-_Diseno_de_Bases_de_Datos.pdf#page=28",
+    "destino": "Bases de Datos/Diseño entidad-relación/adjuntos/Slide - equivalencia de multiplicidades min-max.png",
+    "sha256": "4f48fb6316264bc1313d6f3385e409fab40f910fd97dcf7ab2b33bb3b473aa9e"
+  },
+  {
+    "tema": "Diseño entidad-relación",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/05_-_Diseno_de_Bases_de_Datos.pdf#page=30",
+    "destino": "Bases de Datos/Diseño entidad-relación/adjuntos/Slide - jerarquía de clases Bebida.png",
+    "sha256": "aa0721fd9eb3302205810b7401e2bf0c333cd5dfd980740ec5d8d307ad645412"
+  },
+  {
+    "tema": "Diseño entidad-relación",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/05_-_Diseno_de_Bases_de_Datos.pdf#page=37",
+    "destino": "Bases de Datos/Diseño entidad-relación/adjuntos/Slide - entidad débil Evaluación de Curso.png",
+    "sha256": "7e73936243e7fd57a609f2ec25d4a9c408d266e339cee0613db8b48c5d80c9fe"
+  },
+  {
+    "tema": "Diseño entidad-relación",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/05_-_Diseno_de_Bases_de_Datos.pdf#page=47",
+    "destino": "Bases de Datos/Diseño entidad-relación/adjuntos/Slide - agregación de la relación tiene.png",
+    "sha256": "76e54bc44b5a8252551d347d8967e344fe7799081065b8127654363ec2c7f00d"
+  },
+  {
+    "tema": "Diseño entidad-relación",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/05_-_Diseno_de_Bases_de_Datos.pdf#page=56",
+    "destino": "Bases de Datos/Diseño entidad-relación/adjuntos/Slide - modelo ER de vinos y cervezas.png",
+    "sha256": "b06038c93661435843ee1d97d77b2cd0db249c838c854c268af7d424ea3d4752"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Transacciones - ventajas y desventajas.png",
+    "sha256": "b6ef0e782b78bea2a64c682b484889a2bd0c476e191929c2161ef85473be0180"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 1.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Módulo de transacciones - managers y ACID.png",
+    "sha256": "82a980c4c301c71c6f3302aa70fd6d1af40fd00ad32d64cc9c1a37bba360b1e6"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 2.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Transferencia doble - acceso concurrente opción 1.png",
+    "sha256": "dd8a4444b848ae61b47f25b111365c22be33df8f8292f48db4ae7cfa4e80f9bf"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 3.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Transferencia doble - acceso concurrente opción 2.png",
+    "sha256": "074bbcc26e7123c9acbb81209b8aa3e5e57a3b3a981cf2ba128e333aba834997"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 4.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Actualización perdida WW - asiento 24.png",
+    "sha256": "5fa5001dab9953f421172389899a7ece659753eae399fd5dd40a364cc7f06c72"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 5.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Lectura sucia WR - asiento 24.png",
+    "sha256": "b72f144361f7a50dc1088f636fb52117a8eb68d8386c18c8ae344fb2717b4738"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 6.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Lectura no repetible RW - asientos.png",
+    "sha256": "eaec53bd9c32c74bdc051a985c07f40093085977d684e2851aac2d2d0e416a3f"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 7.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Schedule serial - T1 y T2.png",
+    "sha256": "00fec9421a2e8de6b1e89ed4126bb0ed709eb27b32ca80bf32356cd345bf74bb"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 8.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Schedule serializable - T1 y T2.png",
+    "sha256": "591dd6c90126705dd461d26802a5b8620f7fa5e41e2541b2f4d76422c35b452d"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 9.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Schedule no serializable - T1 y T2.png",
+    "sha256": "3feedaa9fa2a4a7dd5ab4076f77cf879e12ca31401738c2deb9268c654499881"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 10.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Acciones no conflictivas.png",
+    "sha256": "1c6e32462e22bba40830c23d5fcd202fc281d3c640e11992459e424ca9c3a794"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 11.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Permutaciones permitidas - antes.png",
+    "sha256": "4753a716a3de228d3b0fcb33ec63fc1d593ca794226b8b3d6c19dc93f9546ba2"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 12.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Permutaciones permitidas - después.png",
+    "sha256": "39325ca35a70fb4ef41992fd4cd8f3d2a4b6636969118e7333eeb62d588d694c"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 13.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Acciones conflictivas.png",
+    "sha256": "18d8813ea2253a60f36903c4ee2b61da00fc512e99d8400c3bb717fd03382a7c"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 14.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Permutaciones no permitidas.png",
+    "sha256": "6799edefb0a04539c908997707517c89a514bc37b9560f2c81ae75bd3ac85e86"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 15.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Strict 2PL - fase de locks.png",
+    "sha256": "13f683c7f00294620baa1a21179d91d566b07b78c1cb203de6e9ebe24969f54b"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 16.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Deadlock en 2PL.png",
+    "sha256": "becdd1baaf8d4f4f608f9efd0b8490aba63e0613550c616dcb155563251e830d"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 17.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Locks y registro fantasma - Sailors.png",
+    "sha256": "9babc6979a6685126d84df2a10374f616a3be232b7eb82b69a9039aafced0b86"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 18.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/T2 espera a T1.png",
+    "sha256": "f343f71c9358aa101f7173d4cb6a4f553d12ab7fa59118dc5d208ac11dc21953"
+  },
+  {
+    "tema": "Transacciones y concurrencia",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 19.png",
+    "destino": "Bases de Datos/Transacciones y concurrencia/adjuntos/Niveles de aislamiento.png",
+    "sha256": "e7c67b663f8663ba95c9df4b2cab859486f079153421bce2a5725e508b2fe735"
+  },
+  {
+    "tema": "Almacenamiento e índices",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 20.png",
+    "destino": "Bases de Datos/Almacenamiento e índices/adjuntos/Cómo se guarda una tabla - 9 tuplas en 3 páginas.png",
+    "sha256": "5a54463ee109c12fb410ff748943e10856042824f012854c935a92aaebb6484a"
+  },
+  {
+    "tema": "Almacenamiento e índices",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 21.png",
+    "destino": "Bases de Datos/Almacenamiento e índices/adjuntos/Modelo de costos - memoria principal vs secundaria.png",
+    "sha256": "a36eb12f5297f9055f8adc647103ede9964dab9415b7dd6314d233811afad06b"
+  },
+  {
+    "tema": "Almacenamiento e índices",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 22.png",
+    "destino": "Bases de Datos/Almacenamiento e índices/adjuntos/Modelo de costos - páginas de una relación.png",
+    "sha256": "3b049f9b14a01cb36d70b6b53e2c455b9a4fb8bf17070989cd499608158ae1a1"
+  },
+  {
+    "tema": "Almacenamiento e índices",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 23.png",
+    "destino": "Bases de Datos/Almacenamiento e índices/adjuntos/Costo de una consulta - SELECT todo de T.png",
+    "sha256": "a271128aa161cfe918c18956ee3f865327e02ea6177ccbc1bbd108d6e8aa0d07"
+  },
+  {
+    "tema": "Almacenamiento e índices",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 24.png",
+    "destino": "Bases de Datos/Almacenamiento e índices/adjuntos/Costo de una consulta - SELECT T.a.png",
+    "sha256": "fe63d3af92467dd52faafbabf98e2c364c720f659788cb05f005a2041419f54e"
+  },
+  {
+    "tema": "Almacenamiento e índices",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 25.png",
+    "destino": "Bases de Datos/Almacenamiento e índices/adjuntos/Costo de una consulta - WHERE sobre T.a.png",
+    "sha256": "408af4d9562c284bcaf9801324c3f20d13ad28501cf1d8b38d3ccd7d736ac016"
+  },
+  {
+    "tema": "Almacenamiento e índices",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 26.png",
+    "destino": "Bases de Datos/Almacenamiento e índices/adjuntos/Memoria RAM de 1 GB - direcciones.png",
+    "sha256": "f96f6fc78fecae3c270007ea57bc78fabf40eb0551be3aa542693e88623cf94b"
+  },
+  {
+    "tema": "Almacenamiento e índices",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 27.png",
+    "destino": "Bases de Datos/Almacenamiento e índices/adjuntos/Puntero - celdas de memoria.png",
+    "sha256": "ca459b4addb6fe8ea3ddc576a283edbbd5819d02bf0d9f25066543ac339c708c"
+  },
+  {
+    "tema": "Almacenamiento e índices",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 28.png",
+    "destino": "Bases de Datos/Almacenamiento e índices/adjuntos/Arreglo A en memoria.png",
+    "sha256": "e233df2f0ff7a96078bd27fb33520d9a120c9ed648491cb01f5ffa760bcf1937"
+  },
+  {
+    "tema": "Almacenamiento e índices",
+    "tipo": "apuntes",
+    "original": "Semestre 3/Base de Datos - IIC2413/Apuntes I2/Untitled 29.png",
+    "destino": "Bases de Datos/Almacenamiento e índices/adjuntos/Ejemplo - 25.000 estudiantes en un arreglo.png",
+    "sha256": "31e1208fd768fa987bc9e9b85405d806b933dc389df65770ffcec25db8ad9059"
+  },
+  {
+    "tema": "Almacenamiento e índices",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/09_-_Almacenamiento_-_Indices.pdf#page=3",
+    "destino": "Bases de Datos/Almacenamiento e índices/adjuntos/Slide - arquitectura de un DBMS.png",
+    "sha256": "d0b301f32ea0b119f867c26e6f700b36d14e65717abea2349d70e2302769cf40"
+  },
+  {
+    "tema": "Almacenamiento e índices",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/09_-_Almacenamiento_-_Indices.pdf#page=9",
+    "destino": "Bases de Datos/Almacenamiento e índices/adjuntos/Slide - jerarquía de memoria.png",
+    "sha256": "c2714a0bc2ad729ee9663c011ff3b70421cd6afbf05f86a9e44520a90f26510b"
+  },
+  {
+    "tema": "Almacenamiento e índices",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/09_-_Almacenamiento_-_Indices.pdf#page=25",
+    "destino": "Bases de Datos/Almacenamiento e índices/adjuntos/Slide - páginas, disco y buffer.png",
+    "sha256": "2f201f890c2239082a43e6bf9cde1721078941baf1623b6989c464ae9fc6dda9"
+  },
+  {
+    "tema": "Almacenamiento e índices",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/09_-_Almacenamiento_-_Indices.pdf#page=73",
+    "destino": "Bases de Datos/Almacenamiento e índices/adjuntos/Slide - hash index con overflow page.png",
+    "sha256": "6e619c8d5466ca5306fe8537320241c37a86510ceedef703b829d69299d5df57"
+  },
+  {
+    "tema": "Almacenamiento e índices",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/09_-_Almacenamiento_-_Indices.pdf#page=88",
+    "destino": "Bases de Datos/Almacenamiento e índices/adjuntos/Slide - B+ tree búsqueda de aid 21.png",
+    "sha256": "e42f66a26c6f62cf50eec5cf92a3585bd7c43a96ccde87ef6430d4700c15be74"
+  },
+  {
+    "tema": "Almacenamiento e índices",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/09_-_Almacenamiento_-_Indices.pdf#page=97",
+    "destino": "Bases de Datos/Almacenamiento e índices/adjuntos/Slide - B+ tree consulta de rango.png",
+    "sha256": "dff973f44a4653099730b7ef8d4493540b23cde314981bae1ca8d55e0e18dd19"
+  },
+  {
+    "tema": "Almacenamiento e índices",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/09_-_Almacenamiento_-_Indices.pdf#page=138",
+    "destino": "Bases de Datos/Almacenamiento e índices/adjuntos/Slide - hash vs árbol B+.png",
+    "sha256": "bdbfc0fa7ffc11c8164eb9a0658088ed1487a0c2ce7bb12c65ad206c2626e202"
+  }
+]
