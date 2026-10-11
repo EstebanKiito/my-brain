@@ -18,6 +18,7 @@ Vault de estudio del ramo. Cada nota cubre **un concepto**: no hace falta saber 
 | [[Bases de Datos/Valores nulos/_Índice\|Valores nulos]] | NULL, IS NULL, lógica de tres valores, NOT IN con nulos, agregados con nulos |
 | [[Bases de Datos/Diseño entidad-relación/_Índice\|Diseño entidad-relación]] | Modelo E/R, multiplicidades, IsA, entidades débiles, agregación, paso a tablas, principios de diseño |
 | [[Bases de Datos/Normalización/_Índice\|Normalización]] | Dependencias funcionales, anomalías, reglas de inferencia, 1NF/2NF/3NF/BCNF, descomposición |
+| [[Bases de Datos/Lógica en la base de datos/_Índice\|Lógica en la base de datos]] | Vistas, vistas materializadas, triggers, stored procedures (PL/pgSQL) |
 
 ## Ruta de estudio sugerida
 1. **Modelo relacional:** qué es un DBMS, cómo se guardan los datos en tablas, las llaves y el álgebra relacional.
@@ -27,3 +28,4 @@ Vault de estudio del ramo. Cada nota cubre **un concepto**: no hace falta saber 
 5. **Valores nulos:** la lógica de tres valores y sus trampas (NOT IN, agregados).
 6. **Diseño entidad-relación:** modelar el problema antes de crear tablas.
 7. **Normalización:** dependencias funcionales y formas normales (BCNF, 3NF).
+8. **Lógica en la base de datos:** vistas, triggers y procedimientos almacenados.

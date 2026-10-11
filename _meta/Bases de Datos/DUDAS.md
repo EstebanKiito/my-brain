@@ -51,3 +51,10 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | 🟡 | [[06 - Forma normal de Boyce-Codd\|Forma normal de Boyce-Codd]] | Tabla 1 de la descomposición: "CS102 \| Dr. Brown" | La original dice CS101 \| Dr. Brown. La proyección debe tener (CS101, Dr. Smith) y (CS101, Dr. Brown). |
 | 🟡 | [[06 - Forma normal de Boyce-Codd\|Forma normal de Boyce-Codd]] | "para toda dependencia funcional X→Y, X es una SUPERLLAVE" | Falta "no trivial" (A,B → A se cumple siempre). Además, el ejemplo Curso/Profesor/Aula tampoco está en 2NF, así que no muestra la diferencia entre 3NF y BCNF. Se agregó el ejemplo de la slide. |
 | 🟡 | [[05 - Tercera forma normal\|Tercera forma normal]] | Ejemplo "NO en 3NF" con (Fabricante, Modelo, País, Continente) | Con llave (Fabricante, Modelo), Fabricante → País es parcial: la tabla no está ni en 2NF. Se propuso un ejemplo con llave simple. |
+
+## Lógica en la base de datos
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| 🟡 | [[03 - Triggers\|Triggers]] | "Ej: BEFORE CREATE", `AFTER CREATE ON Evaluaciones` | CREATE no es un evento de trigger: son INSERT, UPDATE, DELETE (y TRUNCATE). El error viene de la slide 8. |
+| 🟡 | [[03 - Triggers\|Triggers]] | `CREATE TRIGGER … BEGIN … END` | Sintaxis genérica o MySQL ("más o menos así", dice la slide). En PostgreSQL el trigger ejecuta una función (`EXECUTE FUNCTION`), y falta el `;` tras `REFRESH`. Se agregó la versión PostgreSQL. |
+| ℹ️ | [[05 - Stored procedures\|Stored procedures]] | `SELECT insertar_persona(‘11.111.111-1’, …)` | Comillas tipográficas de la slide; van comillas simples rectas. |

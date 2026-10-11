@@ -103,6 +103,17 @@
           "hasta": "EXPLICACION LLAVES:"
         }
       ]
+    },
+    "Lógica en la base de datos": {
+      "carpeta": "Bases de Datos/Lógica en la base de datos",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i2",
+          "desde": "3. Lógica en Base de Datos",
+          "hasta": "4. ACID, Transacciones y Locks"
+        }
+      ]
     }
   },
   "aceptados": []
