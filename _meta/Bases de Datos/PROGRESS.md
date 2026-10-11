@@ -20,6 +20,7 @@ Rama: `migrar/bases-de-datos`. Un commit por tema. Antes de cada commit se corre
 | 13 | Bases de datos en aplicaciones | `Bases de datos en aplicaciones/` | ✅ hecho | 7 + índice | 0 |
 | 14 | NoSQL | `NoSQL/` | ✅ hecho | 5 + índice | 0 |
 | 15 | Privacidad de datos | `Privacidad de datos/` | ✅ hecho | 5 + índice | 0 |
+| 16 | Gestión del curso + mapa final | `Gestión del curso/` | ✅ hecho | 4 + índice | 0 |
 
 ## Convenciones
 - Las mismas de Ingeniería de Software: prefijo `NN - ` con orden de estudio por carpeta, wikilinks con alias (`\|` dentro de tablas) e índices enlazados con ruta completa.
@@ -68,3 +69,6 @@ Rama: `migrar/bases-de-datos`. Un commit por tema. Antes de cada commit se corre
   - Sin contenido en mis apuntes: 5 notas de complemento puro del PPTX «14 - NoSQL, MongoDB» (texto extraído con zipfile). CAP se enlaza a «04 - Escalamiento y teorema CAP» de Ingeniería de Software en vez de duplicarlo.
 - **2026-10-11 — Privacidad de datos.**
   - Sin contenido en mis apuntes: 5 notas de complemento puro de la clase 15. Se marcó la errata `eduction_num` de las slides.
+- **2026-10-11 — Gestión del curso y cierre.**
+  - Fuentes: página del ramo completa (comandos Flask y «Estudio para el Examen»), página Proyecto (sin el teléfono ni la nota sobre compañeros, que quedan en `aceptados`) y el «Temario» de los apuntes I2. Fechas del CSV del calendario. Complementos de la clase 1 (evaluación) y de la clase de repaso (formato del examen, temas, repos del Syllabus).
+  - La página Interrogaciones estaba vacía. Se reescribió el mapa del ramo con la ruta de estudio completa.

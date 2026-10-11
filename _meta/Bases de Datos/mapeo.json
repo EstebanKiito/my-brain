@@ -171,7 +171,39 @@
       "carpeta": "Bases de Datos/Privacidad de datos",
       "estado": "hecho",
       "secciones": []
+    },
+    "Gestión del curso": {
+      "carpeta": "Bases de Datos/Gestión del curso",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "ramo",
+          "desde": "Comandos Terminal",
+          "por_texto": true
+        },
+        {
+          "fuente": "proyecto",
+          "desde": "CONSIDERACIONES INFORME ENTREGA 2:",
+          "por_texto": true
+        },
+        {
+          "fuente": "i2",
+          "desde": "Temario",
+          "hasta": "1. SQL Avanzado:"
+        }
+      ]
     }
   },
-  "aceptados": []
+  "aceptados": [
+    {
+      "fuente": "proyecto",
+      "texto": "2. 56982296886",
+      "motivo": "Dato personal (número de teléfono) en un recordatorio del proyecto; se omite porque el repo es público (decisión del usuario)."
+    },
+    {
+      "fuente": "proyecto",
+      "texto": "Revisar al fukin Pablo O \\n Ryan",
+      "motivo": "Recordatorio con nombres de compañeros; se omite por privacidad (decisión del usuario)."
+    }
+  ]
 }

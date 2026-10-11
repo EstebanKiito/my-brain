@@ -74,3 +74,12 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | 🟡 | [[08 - Tablas de hash\|Tablas de hash]] | "Una función de hash no necesariamente es inyectiva," + ítem vacío | La sección quedó inconclusa. Se completó en un complemento: colisiones y cómo se resuelven, con el ejemplo de la clase (aid mod 5). |
 | ℹ️ | [[02 - Disco duro y páginas\|Disco duro y páginas]] | "Página: … que el sistema operativo gestiona, generalmente de 4 KB" | Precisión: la slide dice que la página la define el SO **o el DBMS**. En PostgreSQL mide 8 KB. |
 | ✅ | [[06 - Arreglos y listas ligadas\|Arreglos y listas ligadas]] | "alteatoria", "utlizando", "lecutras" | Erratas; se dejaron en el texto original y se anotaron. |
+
+## Gestión del curso
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| 🟡 | [[03 - Proyecto de Bases de Datos\|Proyecto de Bases de Datos]] | Query 8: `SELECT platos.nombre, plato.nombre_restaurant FROM platos` | Inconsistente con la query 1 (`platos`, `nombre_restaurante`) e incompleta (sin WHERE). Se propuso `SELECT platos.nombre, platos.nombre_restaurante FROM platos;`. |
+| 🟡 | [[03 - Proyecto de Bases de Datos\|Proyecto de Bases de Datos]] | Query 2: "Input: email y gasto mensual" | Solo el enunciado; falta el SQL. |
+| 🟡 | [[03 - Proyecto de Bases de Datos\|Proyecto de Bases de Datos]] | "Al hacer cdeldes sobrescribir clientes" | Ilegible: ¿"deletes"?, ¿"CSV"? Se dejó tal cual. |
+| ℹ️ | [[01 - Evaluación y calendario de IIC2413\|Evaluación y calendario de IIC2413]] | Calendario 2024-1 vs slides 2023-2 | Las slides dicen 3 controles + examen y 3 entregas; el calendario tiene I1, I2, examen, E1, E2 y 4 talleres. Se muestran ambas versiones. |
+| ℹ️ | [[03 - Proyecto de Bases de Datos\|Proyecto de Bases de Datos]] | Teléfono y "Revisar al fukin Pablo O / Ryan" | Omitidos por privacidad (repo público), por decisión tuya; quedan en `aceptados` del mapeo. |
