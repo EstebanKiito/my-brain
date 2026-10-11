@@ -133,6 +133,8 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 ## Algoritmos de ruteo
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
+| 🟡 | [[01 - Modelos de grafo y algoritmos Link-State (Dijkstra)\|Modelos de grafo y algoritmos Link-State (Dijkstra)]] | "Distance-Vector (DS)" | La sigla estándar para Distance Vector es DV (del inglés *Distance Vector*), no DS. |
+| ℹ️ | [[02 - Algoritmos Distance-Vector (Bellman-Ford) y conteo al infinito\|Algoritmos Distance-Vector (Bellman-Ford) y conteo al infinito]] | "BELLAMN FORD" | Errata tipográfica en el apellido del matemático Richard Bellman (Bellman-Ford). |
 
 ## Capa de enlace y seguridad
 | Estado | Nota | Original | Duda / corrección propuesta |

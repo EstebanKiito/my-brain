@@ -1265,5 +1265,26 @@
     "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 66.png",
     "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Técnica de encapsulamiento por tunneling de paquetes IPv6 sobre redes IPv4.png",
     "sha256": "7f82bd16902a2702f78b860d30966a862f55251e8c203f3892466fb35607cd82"
+  },
+  {
+    "tema": "Algoritmos de ruteo",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 67.png",
+    "destino": "Sistemas Operativos y Redes/Algoritmos de ruteo/adjuntos/Algoritmo Link-State de Dijkstra con cálculo de caminos más cortos.png",
+    "sha256": "07ea90b329b69668305a4452946a97e0c5b1cf23a121537568d95f6dc3a0edb7"
+  },
+  {
+    "tema": "Algoritmos de ruteo",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 68.png",
+    "destino": "Sistemas Operativos y Redes/Algoritmos de ruteo/adjuntos/Tabla de iteraciones y árbol de caminos más cortos en Dijkstra.png",
+    "sha256": "b61e4e1a4beb126089a2d9bdac2e9d9040ea325adb2655114cfff9154a050d0c"
+  },
+  {
+    "tema": "Algoritmos de ruteo",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 69.png",
+    "destino": "Sistemas Operativos y Redes/Algoritmos de ruteo/adjuntos/Ecuación de Bellman-Ford y tablas de vectores de distancia.png",
+    "sha256": "c4dc0adef0fe931ac7d4122fe5ab96e0b74abfdc8e5a6912d38b14320dd3dd7c"
   }
 ]
