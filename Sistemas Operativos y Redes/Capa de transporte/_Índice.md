@@ -1,0 +1,19 @@
+# Capa de transporte — índice
+
+Principios teóricos, servicios fundamentales y protocolos de la capa de transporte en las redes de computadores e Internet. Estudio de la abstracción de comunicación lógica extremo a extremo entre procesos de aplicación (*process-to-process*). Mecanismos de multiplexación y desmultiplexación de segmentos en sistemas finales mediante puertos locales: desmultiplexación sin conexión en UDP mediante 2-tupla (IP destino, puerto destino) y desmultiplexación orientada a conexión en TCP mediante 4-tupla completa (IP origen, puerto origen, IP destino, puerto destino). Caracterización del protocolo liviano UDP (RFC 768), formato de cabecera de 8 bytes y algoritmo de suma de verificación (*checksum*). Principios de transferencia confiable de datos sobre canales no confiables (*Reliable Data Transfer*, evolución desde rdt 1.0, 2.0, 2.1, 2.2 hasta rdt 3.0 con temporizadores y modelo Stop-and-Wait). Protocolos con canalización (*pipelining*) y ventanas deslizantes: Go-Back-N (GBN con confirmaciones acumulativas y retransmisión grupal) y Selective Repeat (SR con almacenamiento en búfer receptor y retransmisiones selectivas). Implementación y dinámica del protocolo TCP (RFC 793): estructura de la cabecera de 20 bytes, segmentación basada en bytes con MSS, confirmación acumulativa (*Cumulative ACKs*), confirmación acoplada (*Piggybacking*), variables de estado `SendBase` y `NextSeqNum`, algoritmos de retransmisión rápida (*Fast Retransmit* por 3 ACKs duplicados), y ciclo de vida de la conexión con el saludo de tres vías (*three-way handshake*) y cierre ordenado con FIN/TIME_WAIT.
+
+Volver al [[Sistemas Operativos y Redes/_Índice|mapa del ramo]].
+
+> [!note] Origen
+> Notas elaboradas a partir de la Clase 5 de los apuntes originales de Redes (`CONTENIDO 10 → CAPA DE TRANSPORTE`), complementadas exhaustivamente con las diapositivas oficiales de `Contenido_10_Capa_Transporte.pdf` y la literatura estándar de redes (Kurose & Ross).
+
+## Orden de estudio
+
+1. [[01 - Servicios de la capa de transporte y estructura de segmentos|Servicios de la capa de transporte y estructura de segmentos]]: rol de la capa de transporte en hosts terminales, segmentación de mensajes y relación con la capa de red.
+2. [[02 - Multiplexación y desmultiplexación de puertos en UDP y TCP|Multiplexación y desmultiplexación de puertos en UDP y TCP]]: puertos, abstracción de sockets, desmultiplexación por 2-tupla en UDP y por 4-tupla en TCP para servidores concurrentes.
+3. [[03 - Protocolo UDP: datagramas, sobrecarga y checksum|Protocolo UDP: datagramas, sobrecarga y checksum]]: servicio de mejor esfuerzo sin conexión, cabecera mínima de 8 bytes y cálculo de checksum por complemento a 1.
+4. [[04 - Principios de transferencia confiable de datos (rdt 1.0 a rdt 3.0)|Principios de transferencia confiable de datos (rdt 1.0 a rdt 3.0)]]: evolución formal de protocolos ARQ Stop-and-Wait, manejo de errores de bits con ACKs/NAKs y números de secuencia, y temporizadores ante pérdida de paquetes.
+5. [[05 - Protocolos de canalización: Go-Back-N y Selective Repeat|Protocolos de canalización: Go-Back-N y Selective Repeat]]: técnicas de pipelining, ventana deslizante en emisor y receptor, confirmaciones acumulativas vs selectivas, y retransmisiones.
+6. [[06 - Protocolo TCP: estructura del segmento, MSS y confirmación acumulativa|Protocolo TCP: estructura del segmento, MSS y confirmación acumulativa]]: formato de cabecera de 20 bytes, numeración continua por bytes con MSS, confirmación acumulativa y técnica de piggybacking.
+7. [[07 - Gestión de temporizadores, retransmisión rápida y handshake en TCP|Gestión de temporizadores, retransmisión rápida y handshake en TCP]]: dinámica de SendBase y NextSeqNum, cancelación de timers, retransmisión rápida ante 3 ACKs duplicados, y three-way handshake de apertura y cierre con TIME_WAIT.
+

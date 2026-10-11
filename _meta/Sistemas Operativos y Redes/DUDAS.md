@@ -118,6 +118,9 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 ## Capa de transporte
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
+| 🟡 | [[06 - Protocolo TCP: estructura del segmento, MSS y confirmación acumulativa\|Protocolo TCP: estructura del segmento, MSS y confirmación acumulativa]] | "Posee 20 Bits" y "7 bites" | El encabezado base de TCP mide 20 bytes (160 bits), no 20 bits. Asimismo, los caracteres ASCII son bytes, no bits. |
+| ℹ️ | [[04 - Principios de transferencia confiable de datos (rdt 1.0 a rdt 3.0)\|Principios de transferencia confiable de datos (rdt 1.0 a rdt 3.0)]] | "Cheksum ... Acnolagment ... SEQUENCIA" | Erratas tipográficas ("Cheksum" por checksum, "Acnolagment" por acknowledgment, "SEQUENCIA" por secuencia). |
+| ℹ️ | [[07 - Gestión de temporizadores, retransmisión rápida y handshake en TCP\|Gestión de temporizadores, retransmisión rápida y handshake en TCP]] | "retrasnmitir ... dubplicado" | Erratas tipográficas por retransmitir y duplicado. |
 
 ## Capa de red y direccionamiento
 | Estado | Nota | Original | Duda / corrección propuesta |

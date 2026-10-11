@@ -171,7 +171,7 @@
     },
     "Capa de transporte": {
       "carpeta": "Sistemas Operativos y Redes/Capa de transporte",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "redes",

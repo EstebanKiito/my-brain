@@ -978,5 +978,180 @@
     "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 25.png",
     "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Distribución de archivos por fragmentos y tablas hash distribuidas.png",
     "sha256": "db0df095c3044f9d04b307b17ebce80ff14852d0d24c9a0742d79fc7232f0b31"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 26.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Servicios y responsabilidades de la capa de transporte en sistemas finales.png",
+    "sha256": "734edca12389d9d35cd381d8f7cc0fdd1df5247e7ddc48914c79a0d0e65723c8"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 27.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Estructura de un segmento de transporte con datos y cabeceras.png",
+    "sha256": "54a8c4d9e33d9491c593fd49ea729cf637c3f3f3401d06781b9f6baa6df88a46"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 28.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Proceso de multiplexación y desmultiplexación de segmentos mediante puertos.png",
+    "sha256": "f8434eba9992a4e1e21e2bf4c08999c92bf01bb72d8941cba15e1db7a83ebd42"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 29.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Asignación de puertos y sockets en hosts emisores y receptores.png",
+    "sha256": "63f81052b075e0e84e3190c76ea53ba8fa5daa795e1715d956e7897a43c70f37"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 30.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Desmultiplexación no orientada a conexión en sockets UDP.png",
+    "sha256": "63feb2c685b526ae89c82ce39ef657216d92a73ec14003979900279d7b91a3ba"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 31.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Desmultiplexación orientada a conexión en sockets TCP mediante 4-tupla.png",
+    "sha256": "38c70b95b994d9960da7e12a6ed92cb2072d28607a789778a35473d5526d4633"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 32.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Protocolo de transferencia confiable rdt 1.0 sobre canal perfectamente confiable.png",
+    "sha256": "8c230636bc504e8b60f3e0e24bb2f78b95848dcf7d052ed3446b3cc072fb2505"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 33.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Protocolo rdt 2.0 con detección de errores mediante checksum y ACKs NACKs.png",
+    "sha256": "51bd3563a0a8496e755ed7b64869bc65a78d5dd2e0646348c91c2d3512216002"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 34.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Protocolo rdt 2.1 con números de secuencia para manejar ACKs corruptos.png",
+    "sha256": "a2476e881b7b088b01d9bdeefb5c0f7027c9c6575d4752dc5f41a2464fff51b0"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 35.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Protocolo rdt 2.2 con ACKs duplicados sin NACKs.png",
+    "sha256": "93bc8016f5d1d85e7c02fca159ca1c64006210ee4b8982898f8be149c53b6c72"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 36.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Protocolo rdt 3.0 con temporizador para canales con pérdida de paquetes.png",
+    "sha256": "df257f18a3436ee607ecd9147ea42777ffc59eaf48545be3125a92bc1552888f"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 37.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Escenarios de operación de rdt 3.0 con pérdida de paquetes y timeouts.png",
+    "sha256": "092dba63968c1f110b092aa5d655e625fb0ff804b18dde84fd772280fc07f00e"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 38.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Protocolo de canalización Go-Back-N con ventana deslizante en emisor.png",
+    "sha256": "7eb7aea571fac1f7e224970678cbba2471d8bd05417899fd73aab3aa9d28c153"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 39.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Diagrama de flujo y ventana deslizante en protocolo Go-Back-N.png",
+    "sha256": "d805f80dd9ee05c5d5adc150b6972c314791b376413d1ba98cb45e2073050c9c"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 40.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Protocolo Selective Repeat con ventanas en emisor y receptor.png",
+    "sha256": "02613ee76384cef53f9060e527f6abbc08d35479e805f7bbe8b6a67a236bf375"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 41.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Diagrama de eventos y buffers en protocolo Selective Repeat.png",
+    "sha256": "ce678b85ad6e184af4b52f4e3aa64f12fa07dd6e624335bbe1c851266a83be95"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 42.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Estructura y campos del encabezado TCP de 20 bytes.png",
+    "sha256": "fb4f828e8df9502a0ccd08972477a94a3e1e8b8c34beb5895a16ef436b5389d4"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 43.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Segmentación de flujo de bytes y número de secuencia en TCP.png",
+    "sha256": "db66fe4278eb053f865419f0455c5d31d755ed035f8d9076237a71344dd338d4"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 44.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Piggybacked ACKs y confirmación acumulativa en flujo bidireccional TCP.png",
+    "sha256": "9aef478f1023822caed89f6ab4683375a9c434038d515c09a78216dced44173f"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 45.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Variables de control SendBase y NextSeqNum en emisor TCP.png",
+    "sha256": "8d1661786d07df5a847aacbeda7f508872a8b68936fc4932e0093528fb44800a"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 46.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Manejo de timeout y retransmisión por pérdida de ACK en TCP.png",
+    "sha256": "8ee8afe26b39d3dd3dccba727dc6b593be050479e03257ad3fe5ec2a6c65f46d"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 47.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Escenario de timeout prematuro y confirmación acumulativa en TCP.png",
+    "sha256": "696c1ffbfc986e6a806c015ef6c3ecea3b15092f9f080667a6522c5e195d123e"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 48.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Cancelación de temporizador y avance de SendBase en TCP.png",
+    "sha256": "a27ae8cf6075dcd0510b6c8e366d77a522028ef10550f31175244984d71f09ab"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 49.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Mecanismo de retransmisión rápida con tres ACKs duplicados en TCP.png",
+    "sha256": "778cdd178be75f0d5d3a85e8979a16363c702d659f8045220b3e7c745307acdf"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 50.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Establecimiento de conexión TCP con saludo de tres vías y terminación con FIN.png",
+    "sha256": "b25ed01d7003c6b775651f32ba77f7dcecdaf3abbfe178617ae8cf159b2667bb"
   }
 ]
