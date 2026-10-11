@@ -25,6 +25,7 @@ Vault de estudio del ramo. Cada nota cubre **un concepto**: no hace falta saber 
 | [[Bases de Datos/Evaluación de consultas/_Índice\|Evaluación de consultas]] | Iteradores, selección/proyección, nested loop y block nested loop join, external merge sort |
 | [[Bases de Datos/Bases de datos en aplicaciones/_Índice\|Bases de datos en aplicaciones]] | Python + SQL, SQL injection, ORMs, migraciones, modelación de procesos, N+1, Pandas |
 | [[Bases de Datos/NoSQL/_Índice\|NoSQL]] | NoSQL, CAP, BASE y consistencia eventual, key-value, grafos, documentos, MongoDB |
+| [[Bases de Datos/Privacidad de datos/_Índice\|Privacidad de datos]] | Privacidad vs seguridad, re-identificación, k-anonimato, ℓ-diversidad, privacidad diferencial |
 
 ## Ruta de estudio sugerida
 1. **Modelo relacional:** qué es un DBMS, cómo se guardan los datos en tablas, las llaves y el álgebra relacional.
@@ -41,3 +42,4 @@ Vault de estudio del ramo. Cada nota cubre **un concepto**: no hace falta saber 
 12. **Evaluación de consultas:** los algoritmos detrás de cada operador y su costo.
 13. **Bases de datos en aplicaciones:** conectar, asegurar y optimizar la BD desde el código.
 14. **NoSQL:** cuándo salir del modelo relacional.
+15. **Privacidad de datos:** anonimizar no basta; garantías formales.

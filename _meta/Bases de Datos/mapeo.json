@@ -166,6 +166,11 @@
       "carpeta": "Bases de Datos/NoSQL",
       "estado": "hecho",
       "secciones": []
+    },
+    "Privacidad de datos": {
+      "carpeta": "Bases de Datos/Privacidad de datos",
+      "estado": "hecho",
+      "secciones": []
     }
   },
   "aceptados": []
