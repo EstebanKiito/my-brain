@@ -488,6 +488,7 @@ def umbral_tokens(n):
 def prueba_cobertura(tema, items, notas_tema, notas_todas, aceptados, detalle):
     print(f"\n[3] Cobertura de contenido — {tema}")
     n_err = len(errores)
+    _vocab_cache.clear()
     aceptados = [a for a in aceptados if normalizar(a.get("texto", ""))]
     corp = {r: normalizar(t) for r, t in notas_todas.items()}
     toks = {r: c.split() for r, c in corp.items()}

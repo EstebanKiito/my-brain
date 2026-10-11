@@ -64,6 +64,13 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 ## Paginación y segmentación
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
+| ℹ️ | [[01 - Fundamentos de paginación, marcos y tabla de páginas\|Fundamentos de paginación, marcos y tabla de páginas]] | "framse ... 64b de direcciones ... 16 bits de desplazamiento" | Errata tipográfica ("framse" por frames) y uso de unidades: 64b y 16 bits corresponden a 64 Bytes de espacio de direcciones y 16 Bytes de desplazamiento por página. |
+| ℹ️ | [[02 - Translation Lookaside Buffer (TLB) y tiempo de acceso efectivo\|Translation Lookaside Buffer (TLB) y tiempo de acceso efectivo]] | "TIEMPO ACCESOO PROMEDIO" | Errata tipográfica con doble 'o'. Preservada en la cita textual. |
+| ℹ️ | [[03 - Localidad de referencia y gestión de TLB con ASID en cambios de contexto\|Localidad de referencia y gestión de TLB con ASID en cambios de contexto]] | "cercena ... Adress Space Identifier" | Erratas tipográficas ("cercena" por cercana, "Adress" por *Address*). Preservadas en la cita textual. |
+| ℹ️ | [[04 - Sobrecarga de tablas lineales y compromiso de fragmentación interna\|Sobrecarga de tablas lineales y compromiso de fragmentación interna]] | "2*20 x 2**2B" | Errata de notación en el exponente: se pretendía calcular $2^{20} \times 2^2\text{ B} = 4\text{ MB}$. |
+| ℹ️ | [[05 - Arquitectura de segmentos paginados\|Arquitectura de segmentos paginados]] | "ESPACIO VIRUTAL" | Errata tipográfica por Espacio Virtual. Preservada en la cita textual. |
+| ℹ️ | [[06 - Paginación multinivel y tablas de páginas invertidas\|Paginación multinivel y tablas de páginas invertidas]] | "sitemas ... pagiunas" | Erratas tipográficas ("sitemas" por sistemas, "pagiunas" por páginas). Preservadas en la cita textual. |
+| ℹ️ | [[07 - Introducción al intercambio por demanda y ciclo de fallos de página\|Introducción al intercambio por demanda y ciclo de fallos de página]] | "realmente te" | Frase inconclusa al cierre del párrafo ("realmente tenemos"). Preservada en la cita textual. |
 
 ## Memoria virtual
 | Estado | Nota | Original | Duda / corrección propuesta |

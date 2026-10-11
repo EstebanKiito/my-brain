@@ -488,5 +488,159 @@
     "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 66.png",
     "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Aplicación de máscara binaria y desplazamiento a la derecha.png",
     "sha256": "62bc831a3a28a5a87439d2b72353e8014403c8613e23337871db7e0ee6622010"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 67.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/División de memoria virtual en páginas y memoria física en marcos.png",
+    "sha256": "f7ecfbaadeead9f904e5510a2f1ed9464afc50290c2349a2e8b98432ace7624e"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 68.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Traducción de VPN a PFN preservando el offset.png",
+    "sha256": "45ac2c5e47f50e093ea3d0ce50c7eefb304a6eb921fa8c284e91240febe7a6dd"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 69.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Estructura de la entrada de tabla de páginas y metadatos.png",
+    "sha256": "13afec092cb174687eceeeebba9231d6a80e4c5f2b42ccc47340b8c2d01b842f"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 70.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Duplicación de accesos a memoria por consulta a tabla de páginas.png",
+    "sha256": "347551c5c0ae341b2dc0791cb86d6cd3ee8d0a89064bc8a721f4fdc8f3799ef3"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 71.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Arquitectura de TLB y flujo de aciertos y fallos.png",
+    "sha256": "e199fde9b859f3f9a4527072c82e705632cef12d1e943bf9c703a4228b2453a5"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 72.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Distribución de un arreglo en páginas virtuales.png",
+    "sha256": "442739681c03fcd6913c7315857816293154c35e11ad039214a10e4d4082a2d2"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 73.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Cálculo de tasa de aciertos de TLB en bucle secuencial.png",
+    "sha256": "f9d14e4ff276f06236d8af6ad6000196b17dc83cb067a36869e4e853f2c0f97c"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 74.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Uso de ASID en la TLB para cambios de contexto.png",
+    "sha256": "2f33b2974029708a54ce537d73321c50123f22b25aa86f1208ad0a7a5fc0d3a4"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 75.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Fragmentación interna por asignación de páginas grandes.png",
+    "sha256": "32737119a5b8791775bc425ed887bedf1c35f8a4a5ee80c5d97fe8404a41adbe"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 76.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Esquema de segmentos paginados con tablas independientes.png",
+    "sha256": "68a2fa28708028ababd76c608a8ca8f70776437fc3628187b28fe16185665664"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 77.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Reducción de entradas vacías en segmentos paginados.png",
+    "sha256": "bd6ce0c6cc8fd61811418e7e524d63a963abe14f9c8383e00428ef1be6e8f97d"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 78.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Paginación multinivel con división jerárquica de VPN.png",
+    "sha256": "64e8126c35b7281fb0de354c477aaf2196113d8e56959d17990f3ea42d593943"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 79.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Estructura de árbol de directorios y tablas de páginas.png",
+    "sha256": "6d56b834c3c05b183e3e41dc7ac8ee5d6379b5f6186385c50850521ed02e50b4"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 80.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Ejemplo numérico de traducción en paginación de dos niveles.png",
+    "sha256": "0accf916fd5ac9a13b4d5e15270d623aeffb865248049af04cb3f4d5d3093169"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 81.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Ahorro de memoria por tablas no asignadas en dos niveles.png",
+    "sha256": "1739292298126d3028c62f9c7fa4fd0c3efef5a6ad6dc43733fa91c5aba657a7"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 82.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Comparación de espacio entre tabla lineal y dos niveles.png",
+    "sha256": "aee17c4e3ab36179c4777c2c4186aced2f3caf89497f5397286d9f1bc80f3b8d"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 83.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Estructura jerárquica de paginación a tres niveles.png",
+    "sha256": "5e72856630f89585dad5c4eb1fbbc44a5dbaef077d038cf05148a5b4473317dd"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 84.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Descomposición de dirección virtual para tres niveles.png",
+    "sha256": "1845e539be75bdabf05778f5a181084c8fd5bd56adf529235dd52fe29a713a9f"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 85.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Recorrido jerárquico hasta la tabla de último nivel.png",
+    "sha256": "38a25f4b41a3f0dc864912aeed2dda9c25e31173fd2287df781af53b7d9cda76"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 86.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Concepto y estructura de tabla de páginas invertida.png",
+    "sha256": "66cd50244d4668681194d3a57a3fc64424cc99add7e44f21c25c7d63ddb37e6b"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 87.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Búsqueda y sobrecarga en tabla de páginas invertida.png",
+    "sha256": "abd42bc398077786ce97bb07211cf6aae899e8ad21f2792e7304edf6ea0fec2c"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 88.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Ciclo de atención de interrupción por fallo de página.png",
+    "sha256": "168de54201887d51e018fd5a0d9eb570e5baddf8570bc1f2a35e2510ab7d8e84"
   }
 ]

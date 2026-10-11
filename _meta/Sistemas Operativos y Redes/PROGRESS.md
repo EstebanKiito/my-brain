@@ -12,7 +12,7 @@ Rama: `migrar/sistemas-operativos-y-redes`. Un commit por tema. Antes de cada co
 | 5 | Hilos | `Hilos/` | ✅ hecho | 3 + índice | 3 |
 | 6 | Sincronización | `Sincronización/` | ✅ hecho | 9 + índice | 25 |
 | 7 | Administración de memoria | `Administración de memoria/` | ✅ hecho | 6 + índice | 16 |
-| 8 | Paginación y segmentación | `Paginación y segmentación/` | 🟡 pendiente | – | – |
+| 8 | Paginación y segmentación | `Paginación y segmentación/` | ✅ hecho | 7 + índice | 22 |
 | 9 | Memoria virtual | `Memoria virtual/` | 🟡 pendiente | – | – |
 | 10 | Sistemas de archivos | `Sistemas de archivos/` | 🟡 pendiente | – | – |
 | 11 | Implementación de archivos y bloques | `Implementación de archivos y bloques/` | 🟡 pendiente | – | – |
@@ -40,4 +40,5 @@ Rama: `migrar/sistemas-operativos-y-redes`. Un commit por tema. Antes de cada co
 - **2026-10-11 — Hilos.** Fuentes: Clase 5 de SSOO (49 bloques). 3 notas atómicas + índice. 3 imágenes migradas con sha256 y transcritas. Complementos de `Contenido_4_Threads.pdf` y POSIX Threads (recursos compartidos vs privados, pthreads en C, y modelos User Space vs Kernel Space vs híbridos M:N). Verificación: 0 errores, 0 advertencias.
 - **2026-10-11 — Sincronización.** Fuentes: CONTENIDO 5: SINCRONIZACIÓN de apuntes de SSOO (68 bloques). 9 notas atómicas + índice. 25 imágenes migradas con sha256 y transcritas (incluye diagramas y slides de apoyo). Complementos de `Contenido_5_Sincronizacion.pdf` y Silberschatz (condiciones de carrera, requisitos de sección crítica, Peterson, primitivas atómicas de hardware, mutex vs spinlocks, buffer acotado, semáforos de Dijkstra, variables de condición/monitores, lectores-escritores, filósofos comelones y condiciones de Coffman para deadlock). Verificación: 0 errores, 0 advertencias.
 - **2026-10-11 — Administración de memoria.** Fuentes: Clase 6 de apuntes de SSOO (124 bloques). 6 notas atómicas + índice. 16 imágenes migradas con sha256 y transcritas. Complementos de `Contenido_6_Memoria.pdf`, Silberschatz y OSTEP (memoria como arreglo de bytes, multiprogramación, relocalización vs protección, registros base y límite en MMU, swapping, fragmentación externa, algoritmos First Fit / Best Fit / Worst Fit, segmentación y lógica/máscaras de bits). Verificación: 0 errores, 0 advertencias.
+- **2026-10-11 — Paginación y segmentación.** Fuentes: Clase 7 y Clase 8 de apuntes de SSOO (200 bloques). 7 notas atómicas + índice. 22 imágenes únicas migradas con sha256 y transcritas. Complementos de `Contenido_6_Memoria.pdf`, Silberschatz y OSTEP (páginas y marcos, VPN a PFN, estructura de PTE, TLB y tiempo efectivo de acceso, principio de localidad, soporte ASID en cambios de contexto, sobrecarga de tablas lineales de 32 bits, trade-off de fragmentación interna, segmentos paginados, paginación multinivel a 2 y 3 niveles, tablas invertidas con hash, y ciclo del fallo de página en swap). Verificación: 0 errores, 0 advertencias.
 
