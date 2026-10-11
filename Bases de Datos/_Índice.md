@@ -13,7 +13,9 @@ Vault de estudio del ramo. Cada nota cubre **un concepto**: no hace falta saber 
 |---|---|
 | [[Bases de Datos/Modelo relacional/_Índice\|Modelo relacional]] | DBMS, relaciones, llaves, álgebra relacional |
 | [[Bases de Datos/Definición de datos en SQL/_Índice\|Definición de datos en SQL]] | DDL: CREATE/ALTER/DROP TABLE, llaves primarias y foráneas, INSERT, ON DELETE, restricciones |
+| [[Bases de Datos/Consultas SQL/_Índice\|Consultas SQL]] | SELECT-FROM-WHERE, UPDATE/DELETE, producto cruz, joins (WHERE, INNER, OUTER), alias, ORDER BY, conjuntos, LIKE, DISTINCT |
 
 ## Ruta de estudio sugerida
 1. **Modelo relacional:** qué es un DBMS, cómo se guardan los datos en tablas, las llaves y el álgebra relacional.
 2. **Definición de datos en SQL:** cómo se crean las tablas, sus llaves y sus restricciones.
+3. **Consultas SQL:** leer y modificar datos; joins implícitos y explícitos.

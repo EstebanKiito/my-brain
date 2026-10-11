@@ -44,6 +44,27 @@
           "desde": "RESTRICCION DE NULOS!"
         }
       ]
+    },
+    "Consultas SQL": {
+      "carpeta": "Bases de Datos/Consultas SQL",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i1",
+          "desde": "4. Consultas Sql (Query) + CRUD",
+          "hasta": "* Eliminación con Llaves Foráneas:"
+        },
+        {
+          "fuente": "i1",
+          "desde": "PRODUCTO CRUZ: (FROM Tabla1,Tabla2)",
+          "hasta": "SQL 2"
+        },
+        {
+          "fuente": "i2",
+          "desde": "1. SQL Avanzado:",
+          "hasta": "2. Formas Normales y Dependencias"
+        }
+      ]
     }
   },
   "aceptados": []

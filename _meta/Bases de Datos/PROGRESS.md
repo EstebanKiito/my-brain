@@ -7,6 +7,7 @@ Rama: `migrar/bases-de-datos`. Un commit por tema. Antes de cada commit se corre
 | 0 | Infraestructura multi-ramo (`verificar.py --ramo`, `_meta/<Ramo>/`) | `_meta/` | ✅ hecho | – | – |
 | 1 | Modelo relacional | `Modelo relacional/` | ✅ hecho | 6 + índice | 0 + 3 |
 | 2 | Definición de datos en SQL | `Definición de datos en SQL/` | ✅ hecho | 7 + índice | 0 |
+| 3 | Consultas SQL | `Consultas SQL/` | ✅ hecho | 11 + índice | 0 |
 
 ## Convenciones
 - Las mismas de Ingeniería de Software: prefijo `NN - ` con orden de estudio por carpeta, wikilinks con alias (`\|` dentro de tablas) e índices enlazados con ruta completa.
@@ -22,3 +23,6 @@ Rama: `migrar/bases-de-datos`. Un commit por tema. Antes de cada commit se corre
 - **2026-10-11 — Definición de datos en SQL.**
   - Fuentes: Apuntes I1, «SQL 1» (crear tabla, llaves foráneas, modificar tabla, insertar datos), «Eliminación con llaves foráneas» y «RESTRICCION DE NULOS». Complementos de las slides de las clases 3 y 6.
   - Nota de complemento puro: 01 SQL y PostgreSQL. Enlaces cruzados a Active Record, Migraciones y Asociaciones de Ingeniería de Software.
+- **2026-10-11 — Consultas SQL.**
+  - Fuentes: Apuntes I1, «4. Consultas Sql (Query) + CRUD» y de «PRODUCTO CRUZ» a «DISTINCT»; Apuntes I2, «1. SQL Avanzado» (INNER, LEFT, RIGHT y FULL JOIN). Complementos de las slides de las clases 3 y 4.
+  - El ítem vacío «Producto Cruz:» de la sección 4 quedó como aviso en la nota 03.
