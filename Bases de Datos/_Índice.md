@@ -22,6 +22,7 @@ Vault de estudio del ramo. Cada nota cubre **un concepto**: no hace falta saber 
 | [[Bases de Datos/Transacciones y concurrencia/_Índice\|Transacciones y concurrencia]] | Transacciones, ACID, conflictos WR/RW/WW, schedules, conflict serializability, grafo de precedencia, Strict 2PL, deadlocks, SQL, aislamiento |
 | [[Bases de Datos/Recuperación de fallas/_Índice\|Recuperación de fallas]] | Tipos de fallas, log, undo / redo / undo-redo logging, checkpoints |
 | [[Bases de Datos/Almacenamiento e índices/_Índice\|Almacenamiento e índices]] | DBMS por dentro, disco y páginas, buffer, costo de I/O, estructuras de datos, hash, índices hash y B+, clustered/unclustered |
+| [[Bases de Datos/Evaluación de consultas/_Índice\|Evaluación de consultas]] | Iteradores, selección/proyección, nested loop y block nested loop join, external merge sort |
 
 ## Ruta de estudio sugerida
 1. **Modelo relacional:** qué es un DBMS, cómo se guardan los datos en tablas, las llaves y el álgebra relacional.
@@ -35,3 +36,4 @@ Vault de estudio del ramo. Cada nota cubre **un concepto**: no hace falta saber 
 9. **Transacciones y concurrencia:** ACID, serializabilidad y locks.
 10. **Recuperación de fallas:** cómo el log asegura atomicidad y durabilidad.
 11. **Almacenamiento e índices:** costo de I/O y cómo los índices lo reducen.
+12. **Evaluación de consultas:** los algoritmos detrás de cada operador y su costo.

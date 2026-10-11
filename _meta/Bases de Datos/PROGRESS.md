@@ -16,6 +16,7 @@ Rama: `migrar/bases-de-datos`. Un commit por tema. Antes de cada commit se corre
 | 9 | Transacciones y concurrencia | `Transacciones y concurrencia/` | ✅ hecho | 12 + índice | 20 + 0 |
 | 10 | Recuperación de fallas | `Recuperación de fallas/` | ✅ hecho | 5 + índice | 0 |
 | 11 | Almacenamiento e índices | `Almacenamiento e índices/` | ✅ hecho | 13 + índice | 10 + 7 |
+| 12 | Evaluación de consultas | `Evaluación de consultas/` | ✅ hecho | 5 + índice | 0 |
 
 ## Convenciones
 - Las mismas de Ingeniería de Software: prefijo `NN - ` con orden de estudio por carpeta, wikilinks con alias (`\|` dentro de tablas) e índices enlazados con ruta completa.
@@ -56,3 +57,5 @@ Rama: `migrar/bases-de-datos`. Un commit por tema. Antes de cada commit se corre
 - **2026-10-11 — Almacenamiento e índices.**
   - Fuentes: Apuntes I2, «Almacenamiento y Jerarquía de Memoria» (sección 5) y «6. EDD y Almacenamiento e Indices» completa, con las imágenes Untitled 20 a 29. Complementos de las slides de la clase 9, con 7 slides.
   - Notas de complemento puro: 01 y 09 a 13. Se corrigieron los wikilinks sin `\|` dentro de tablas (también uno de Recuperación/02).
+- **2026-10-11 — Evaluación de consultas.**
+  - Sin contenido en mis apuntes: 5 notas de complemento puro basadas en las slides de la clase 10. Se recalcularon los ejemplos de costo (3,1 h vs 3,4 s).

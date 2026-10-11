@@ -151,6 +151,11 @@
           "desde": "6. EDD y Almacenamiento e Indices"
         }
       ]
+    },
+    "Evaluación de consultas": {
+      "carpeta": "Bases de Datos/Evaluación de consultas",
+      "estado": "hecho",
+      "secciones": []
     }
   },
   "aceptados": []
