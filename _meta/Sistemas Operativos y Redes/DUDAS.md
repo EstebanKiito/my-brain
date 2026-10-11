@@ -32,6 +32,9 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 ## Señales e IPC
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
+| 🟡 | [[02 - Señales comunes y mecanismos de control SIGTERM, SIGKILL y SIGINT\|Señales comunes y mecanismos de control SIGTERM, SIGKILL y SIGINT]] | "SIGCOM: Continua" | Errata evidente por `SIGCONT` (señal POSIX número 18), encargada de reanudar un proceso suspendido. |
+| ℹ️ | [[01 - Concepto de señal y ciclo de vida de señales POSIX\|Concepto de señal y ciclo de vida de señales POSIX]] | "SigStopy" | Errata tipográfica por `SIGSTOP` o `SIGTSTP`. Preservada intacta en la cita textual. |
+| ℹ️ | [[02 - Señales comunes y mecanismos de control SIGTERM, SIGKILL y SIGINT\|Señales comunes y mecanismos de control SIGTERM, SIGKILL y SIGINT]] | "SIGSTP: Stop" | Errata tipográfica por `SIGTSTP` / `SIGSTOP`. Preservada en la cita textual. |
 
 ## Hilos
 | Estado | Nota | Original | Duda / corrección propuesta |
