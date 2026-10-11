@@ -14,6 +14,7 @@ Rama: `migrar/bases-de-datos`. Un commit por tema. Antes de cada commit se corre
 | 7 | Normalización | `Normalización/` | ✅ hecho | 8 + índice | 0 |
 | 8 | Lógica en la base de datos | `Lógica en la base de datos/` | ✅ hecho | 5 + índice | 0 |
 | 9 | Transacciones y concurrencia | `Transacciones y concurrencia/` | ✅ hecho | 12 + índice | 20 + 0 |
+| 10 | Recuperación de fallas | `Recuperación de fallas/` | ✅ hecho | 5 + índice | 0 |
 
 ## Convenciones
 - Las mismas de Ingeniería de Software: prefijo `NN - ` con orden de estudio por carpeta, wikilinks con alias (`\|` dentro de tablas) e índices enlazados con ruta completa.
@@ -49,3 +50,5 @@ Rama: `migrar/bases-de-datos`. Un commit por tema. Antes de cada commit se corre
 - **2026-10-11 — Transacciones y concurrencia.**
   - Fuente: Apuntes I2, «4. ACID, Transacciones y Locks» completa, con 20 imágenes (Untitled a Untitled 19) copiadas con sha256 y transcritas. Complementos de las slides de la clase 11.
   - Nota de complemento puro: 07 Grafo de precedencia. Se restauró el link a ACID desde Lógica/04.
+- **2026-10-11 — Recuperación de fallas.**
+  - Fuente: Apuntes I2, «Tipos de Fallas en Transacciones y Soluciones» (incluido el pendiente «Seguir escribiendo este resumen…», que quedó en un callout `[!info]`). Las notas 02 a 05 son complemento de las slides de la clase 11 (log, undo, redo, undo/redo, checkpoints, con los ejemplos resueltos).

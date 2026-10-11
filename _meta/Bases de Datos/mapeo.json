@@ -125,6 +125,17 @@
           "hasta": "5. Arquitectura de Sistemas y Recuperación de fallas"
         }
       ]
+    },
+    "Recuperación de fallas": {
+      "carpeta": "Bases de Datos/Recuperación de fallas",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i2",
+          "desde": "Tipos de Fallas en Transacciones y Soluciones",
+          "hasta": "6. EDD y Almacenamiento e Indices"
+        }
+      ]
     }
   },
   "aceptados": []
