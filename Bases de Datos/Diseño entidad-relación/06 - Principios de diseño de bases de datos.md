@@ -10,7 +10,7 @@ Reglas prácticas para un buen esquema: ser fiel al problema, evitar la redundan
 
 > [!tip] Complemento — nota nueva (fuente: slides "Clase 6: Diseño de Bases de Datos II")
 > 1. **Fidelidad al problema:** el diagrama debe reflejar la realidad. Ejemplos de la slide: un `Producto —compra— Persona` mal dirigido, o `País —Presidente— Persona` con multiplicidades que permiten varios presidentes por país.
-> 2. **Evitar redundancia:** guardar el mismo dato en varios lugares genera **anomalías** de actualización, inserción y borrado (se ven en «Dependencias funcionales», tema Normalización).
+> 2. **Evitar redundancia:** guardar el mismo dato en varios lugares genera **anomalías** de actualización, inserción y borrado (se ven en [[01 - Dependencias funcionales|Dependencias funcionales]]).
 > 3. **Elegir entidades y relaciones correctamente:** por ejemplo, ¿la compañía es un atributo del producto o una entidad?
 > 4. **No complicar más de lo necesario:** no agregar entidades o relaciones que no aportan.
 > 5. **Elección de llave primaria:**

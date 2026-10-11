@@ -92,6 +92,17 @@
       "carpeta": "Bases de Datos/Diseño entidad-relación",
       "estado": "hecho",
       "secciones": []
+    },
+    "Normalización": {
+      "carpeta": "Bases de Datos/Normalización",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i2",
+          "desde": "2. Formas Normales y Dependencias",
+          "hasta": "EXPLICACION LLAVES:"
+        }
+      ]
     }
   },
   "aceptados": []

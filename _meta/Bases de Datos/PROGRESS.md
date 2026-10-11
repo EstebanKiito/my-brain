@@ -11,6 +11,7 @@ Rama: `migrar/bases-de-datos`. Un commit por tema. Antes de cada commit se corre
 | 4 | Agregación y subconsultas | `Agregación y subconsultas/` | ✅ hecho | 9 + índice | 0 |
 | 5 | Valores nulos | `Valores nulos/` | ✅ hecho | 4 + índice | 0 |
 | 6 | Diseño entidad-relación | `Diseño entidad-relación/` | ✅ hecho | 6 + índice | 0 + 9 |
+| 7 | Normalización | `Normalización/` | ✅ hecho | 8 + índice | 0 |
 
 ## Convenciones
 - Las mismas de Ingeniería de Software: prefijo `NN - ` con orden de estudio por carpeta, wikilinks con alias (`\|` dentro de tablas) e índices enlazados con ruta completa.
@@ -37,3 +38,6 @@ Rama: `migrar/bases-de-datos`. Un commit por tema. Antes de cada commit se corre
 - **2026-10-11 — Diseño entidad-relación.**
   - Sin contenido en mis apuntes: 6 notas de complemento puro basadas en las slides de las clases 5 y 6, con 9 diagramas en PNG (todos transcritos).
   - Se marcó la errata de la slide `email nombre varchar(30)`.
+- **2026-10-11 — Normalización.**
+  - Fuente: Apuntes I2, «2. Formas Normales y Dependencias» hasta «EXPLICACION LLAVES» (las llaves se migraron con Modelo relacional). Complementos de las slides de la clase 7.
+  - Notas de complemento puro: 02 Reglas de inferencia y 08 Descomposición en BCNF y 3NF. Se agregó el link pendiente desde Diseño E/R/06.

@@ -44,3 +44,10 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
 | ℹ️ | [[06 - Principios de diseño de bases de datos\|Principios de diseño de bases de datos]] | *(slide 6)* `email nombre varchar(30) UNIQUE NOT NULL` | Errata de la slide: son dos columnas. En la nota se dejó `email varchar(30) UNIQUE NOT NULL`. |
+
+## Normalización
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| 🟡 | [[06 - Forma normal de Boyce-Codd\|Forma normal de Boyce-Codd]] | Tabla 1 de la descomposición: "CS102 \| Dr. Brown" | La original dice CS101 \| Dr. Brown. La proyección debe tener (CS101, Dr. Smith) y (CS101, Dr. Brown). |
+| 🟡 | [[06 - Forma normal de Boyce-Codd\|Forma normal de Boyce-Codd]] | "para toda dependencia funcional X→Y, X es una SUPERLLAVE" | Falta "no trivial" (A,B → A se cumple siempre). Además, el ejemplo Curso/Profesor/Aula tampoco está en 2NF, así que no muestra la diferencia entre 3NF y BCNF. Se agregó el ejemplo de la slide. |
+| 🟡 | [[05 - Tercera forma normal\|Tercera forma normal]] | Ejemplo "NO en 3NF" con (Fabricante, Modelo, País, Continente) | Con llave (Fabricante, Modelo), Fabricante → País es parcial: la tabla no está ni en 2NF. Se propuso un ejemplo con llave simple. |
