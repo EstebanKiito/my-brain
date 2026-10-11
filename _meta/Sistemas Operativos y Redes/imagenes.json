@@ -1286,5 +1286,12 @@
     "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 69.png",
     "destino": "Sistemas Operativos y Redes/Algoritmos de ruteo/adjuntos/Ecuación de Bellman-Ford y tablas de vectores de distancia.png",
     "sha256": "c4dc0adef0fe931ac7d4122fe5ab96e0b74abfdc8e5a6912d38b14320dd3dd7c"
+  },
+  {
+    "tema": "Capa de enlace y seguridad",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 70.png",
+    "destino": "Sistemas Operativos y Redes/Capa de enlace y seguridad/adjuntos/Diagrama de capa de enlace, switches, LANs, VLANs y protocolos de acceso al medio.png",
+    "sha256": "51870da600b2948d31c9900b78695aba985eeb4b71515c6ff0553e5ccb95f15a"
   }
 ]

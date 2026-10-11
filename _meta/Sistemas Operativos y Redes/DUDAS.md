@@ -139,6 +139,7 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 ## Capa de enlace y seguridad
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
+| ℹ️ | [[03 - Conmutación en redes locales (Switches L2, STP) y VLANs\|Conmutación en redes locales (Switches L2, STP) y VLANs]] | "trafico de pquetes" | Errata tipográfica ("pquetes" por paquetes). |
 
 ## Gestión del curso
 | Estado | Nota | Original | Duda / corrección propuesta |
