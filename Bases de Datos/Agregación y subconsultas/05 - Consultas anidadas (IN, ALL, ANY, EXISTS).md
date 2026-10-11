@@ -73,7 +73,7 @@ WHERE Cervezas.precio < ANY (
 > FROM Bandas AS b
 > WHERE EXISTS (SELECT * FROM Toco_en t WHERE t.nombre_banda = b.nombre);
 > ```
-> `NOT EXISTS` da las que nunca han tocado. Ojo: con `NOT IN` y nulos el resultado puede quedar vacío (ver «NOT IN con nulos», en Valores nulos).
+> `NOT EXISTS` da las que nunca han tocado. Ojo: con `NOT IN` y nulos el resultado puede quedar vacío (ver [[03 - NOT IN con nulos|NOT IN con nulos]]).
 
 ## Preguntas de repaso
 

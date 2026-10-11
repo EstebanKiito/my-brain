@@ -76,6 +76,17 @@
           "hasta": "NULL:"
         }
       ]
+    },
+    "Valores nulos": {
+      "carpeta": "Bases de Datos/Valores nulos",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i1",
+          "desde": "NULL:",
+          "hasta": "RESTRICCION DE NULOS!"
+        }
+      ]
     }
   },
   "aceptados": []

@@ -9,6 +9,7 @@ Rama: `migrar/bases-de-datos`. Un commit por tema. Antes de cada commit se corre
 | 2 | Definición de datos en SQL | `Definición de datos en SQL/` | ✅ hecho | 7 + índice | 0 |
 | 3 | Consultas SQL | `Consultas SQL/` | ✅ hecho | 11 + índice | 0 |
 | 4 | Agregación y subconsultas | `Agregación y subconsultas/` | ✅ hecho | 9 + índice | 0 |
+| 5 | Valores nulos | `Valores nulos/` | ✅ hecho | 4 + índice | 0 |
 
 ## Convenciones
 - Las mismas de Ingeniería de Software: prefijo `NN - ` con orden de estudio por carpeta, wikilinks con alias (`\|` dentro de tablas) e índices enlazados con ruta completa.
@@ -30,3 +31,5 @@ Rama: `migrar/bases-de-datos`. Un commit por tema. Antes de cada commit se corre
 - **2026-10-11 — Agregación y subconsultas.**
   - Fuente: Apuntes I1, «SQL 2» hasta «NULL» (agregación, COUNT, GROUP BY, HAVING, anidadas, ALL/ANY, monótonas, correlacionadas, join anidado). Complementos de las slides de la clase 4.
   - El join anidado se dividió en dos notas (08 y 09) para no pasar de 150 líneas. Se detectó una inconsistencia de datos en el Ejemplo 2 (DUDAS).
+- **2026-10-11 — Valores nulos.**
+  - Fuente: Apuntes I1, «NULL» hasta «RESTRICCION DE NULOS» (esta última está en Definición de datos/07). Complementos de las slides de la clase 4: las tablas de verdad de AND, OR y NOT se transcribieron en Markdown.

@@ -15,9 +15,11 @@ Vault de estudio del ramo. Cada nota cubre **un concepto**: no hace falta saber 
 | [[Bases de Datos/Definición de datos en SQL/_Índice\|Definición de datos en SQL]] | DDL: CREATE/ALTER/DROP TABLE, llaves primarias y foráneas, INSERT, ON DELETE, restricciones |
 | [[Bases de Datos/Consultas SQL/_Índice\|Consultas SQL]] | SELECT-FROM-WHERE, UPDATE/DELETE, producto cruz, joins (WHERE, INNER, OUTER), alias, ORDER BY, conjuntos, LIKE, DISTINCT |
 | [[Bases de Datos/Agregación y subconsultas/_Índice\|Agregación y subconsultas]] | AVG/MIN/MAX/COUNT/SUM, GROUP BY, HAVING, IN/ALL/ANY/EXISTS, correlacionadas, subconsultas en el FROM |
+| [[Bases de Datos/Valores nulos/_Índice\|Valores nulos]] | NULL, IS NULL, lógica de tres valores, NOT IN con nulos, agregados con nulos |
 
 ## Ruta de estudio sugerida
 1. **Modelo relacional:** qué es un DBMS, cómo se guardan los datos en tablas, las llaves y el álgebra relacional.
 2. **Definición de datos en SQL:** cómo se crean las tablas, sus llaves y sus restricciones.
 3. **Consultas SQL:** leer y modificar datos; joins implícitos y explícitos.
 4. **Agregación y subconsultas:** resumir con GROUP BY/HAVING y anidar consultas.
+5. **Valores nulos:** la lógica de tres valores y sus trampas (NOT IN, agregados).

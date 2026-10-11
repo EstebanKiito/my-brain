@@ -32,3 +32,10 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | 🟡 | [[09 - Subconsulta en el FROM - primera película de cada actor\|Subconsulta en el FROM: primera película de cada actor]] | Tabla intermedia `id/año`: 2 → 2014, 3 → 2001 | Con `Actuo_en` (2→1, 3→2) los años serían 2 → 1997 (Titanic) y 3 → 2014 (Interstellar). O los datos de `Actuo_en` son otros, o el resultado está mal. También cambia el nombre de columna: `pelicula_id` vs `id_pelicula`. |
 | ℹ️ | [[04 - HAVING\|HAVING]] | `HAVING SUM(cantidad) > 100` | Con los datos del ejemplo el resultado es vacío (tomates suma 10, zapallo 3). No es error: el ejemplo muestra la sintaxis. |
 | ℹ️ | [[05 - Consultas anidadas (IN, ALL, ANY, EXISTS)\|Consultas anidadas]] | `‘Lollapalooza’`, `‘Austral Calafate’`, `‘Toyota’` | Comillas tipográficas de la slide; en PostgreSQL van comillas simples rectas. |
+
+## Valores nulos
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| 🟡 | [[01 - NULL en SQL\|NULL en SQL]] | "(Que no sea ni 3 ni distinto a 3 NO ES NULO!!!)" | Redacción confusa. La idea de la slide: si `b` **es** nulo, ni `b = 3` ni `b <> 3` son verdaderos, así que esas filas se pierden y hay que agregar `IS NULL`. |
+| ✅ | [[02 - Lógica de tres valores\|Lógica de tres valores]] | Encabezado "R.A + R.S" y "UNKWNOWN" | Erratas: debería decir R.A + S.B y UNKNOWN. Los valores están correctos. |
+| ℹ️ | [[03 - NOT IN con nulos\|NOT IN con nulos]] | "La comparación NULL NOT IN (...) se comporta como si la condición fuera desconocida…" | Precisión: el NULL problemático está **dentro** de la subconsulta (R), no en S.A. Cada `x = null` da UNKNOWN. Se aclaró en un complemento. |
