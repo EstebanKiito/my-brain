@@ -46,6 +46,10 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 ## Sincronización
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
+| 🟡 | [[01 - Condiciones de carrera y el problema de la sección crítica\|Condiciones de carrera y el problema de la sección crítica]] | "Espera Agotada" | Errata en el tercer criterio formal de la sección crítica: el término estándar es *Espera Acotada* (*Bounded Waiting*), que garantiza un límite finito a la cantidad de accesos concedidos a otros procesos antes de admitir al solicitante. |
+| ℹ️ | [[04 - Mutex locks y el dilema de busy waiting versus dormir\|Mutex locks y el dilema de busy waiting versus dormir]] | "aquite() y realease()" | Erratas tipográficas por las operaciones canónicas `acquire()` y `release()` de cerrojos de exclusión mutua. |
+| ℹ️ | [[05 - Problema del productor-consumidor y buffer acotado\|Problema del productor-consumidor y buffer acotado]] | "PRODUCTO-CONSUMIDOR" | Errata tipográfica ("PRODUCTO" por "PRODUCTOR"). Preservada en la cita textual. |
+| ℹ️ | [[06 - Semáforos de Dijkstra y tipos de semáforos\|Semáforos de Dijkstra y tipos de semáforos]] | "dercrementa" | Errata tipográfica en la definición de la operación `wait()`. Preservada en la cita textual. |
 
 ## Administración de memoria
 | Estado | Nota | Original | Duda / corrección propuesta |

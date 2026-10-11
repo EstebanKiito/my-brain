@@ -201,5 +201,180 @@
     "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 26.png",
     "destino": "Sistemas Operativos y Redes/Hilos/adjuntos/Funciones principales de la biblioteca POSIX Threads.png",
     "sha256": "4c926736d54257d71f1338c5c6826b0e137d4b5b4ec29c7efa33f4dc0195b082"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 27.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Solución con alternancia estricta de turnos.png",
+    "sha256": "b5b79d15ec914f111848c36fa12059d21dc869d76be243e221564252fb4e6276"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 28.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Algoritmo de Peterson con turno e interés.png",
+    "sha256": "f1ecea7200a3888908a77b153c05e8e67ec2e8ff5329230306a33f68b63fa558"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 29.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Instrucción atómica hardware test and set.png",
+    "sha256": "d09596d234ae03378c42ee00a1a59dd7a4b1de316a717da8324ceb16bfc68fc6"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 30.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Exclusión mutua ideal en región crítica.png",
+    "sha256": "94111ba5be6a2535ed400067910e4ec7b8e70a6baaf29dd63a93a4222f5379e7"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 31.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Código de alternancia estricta para dos hilos.png",
+    "sha256": "7ee3cb329a2116bd2c338eb4867995d280765a20da8e5654a3ab4aff0f83186c"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 32.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Detalle de ejecución del algoritmo de Peterson.png",
+    "sha256": "2843caccb12942e9731164c14a99cdf1cb9c6a1e0b0140e5ae687dddd25ff165"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 33.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Semántica equivalente de test and set.png",
+    "sha256": "e3a74a2b1578a104f93196b843a9b70d1db18e75a08ec1246022600d812fb32f"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 34.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Implementación básica de lock con test and set.png",
+    "sha256": "2285bde9fbbfbb65a6ff2a3792309c555726d64a8ab94500f18a3b0c5d85186f"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 35.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Semántica equivalente de compare and swap.png",
+    "sha256": "3d34854cf240af54b43b7afa11adaeedf95a2e59d650cfb315d03ade507bf374"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 36.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Implementación de lock con compare and swap.png",
+    "sha256": "4e7c981d8f4a6d1330cd8021eaec7be2b8f04996c72a9d145c77c66729467367"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 37.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Estructura de mutex lock con acquire y release.png",
+    "sha256": "b833dc2398fc49edcb83d04a62ed82127d676a9a5a46a2f156878c3ca4fe0525"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 38.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Protección de sección crítica mediante mutex lock.png",
+    "sha256": "26747c34a5aa0cff9257f50d6e39abe523f2c126cc082965e59e4e29cd169fb9"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 39.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Problema del productor consumidor y buffer circular.png",
+    "sha256": "ed4f5a7de11becc657a0352d95124a2bd89b193a3f67d088497c92ff9447a997"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 40.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Condición de carrera en variable stock compartida.png",
+    "sha256": "c744e2f90dceae1fa522a9a2f4d27e6556bdcaa96c028db45c1ff22cac4cdde9"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 41.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Protección de variable stock con locks.png",
+    "sha256": "355071e2190f678d485db55adba21fc903d120e09668316a362dbed3d378721a"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 42.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Eliminación de busy waiting mediante sleep y wakeup.png",
+    "sha256": "82981469c423b672bb110cab14d4ed7a350c8a7d80e685596bfc49116bdce7a7"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 43.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Estructura y definición de semáforo de Dijkstra.png",
+    "sha256": "d720d26f70a5b686103839d443414614b6a8b8d762abbca77b563a527c8b3de5"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 44.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Operación P wait o down en semáforos.png",
+    "sha256": "55ce7de77324cf1358a1ee6821d20eb5fdc876b0615aedfc89e9a7153a2791eb"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 45.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Operación V signal o up en semáforos.png",
+    "sha256": "a00af77cb5febda37160642357ab183f62cb13dace4ac0bf88d238df0c32c87b"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 46.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Concepto y operaciones de variables de condición.png",
+    "sha256": "fcf8559ddf512d5b0e8a01fe42920c778024d8561823c74483ffe6e6b42d9eda"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 47.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Productor consumidor con variables de condición.png",
+    "sha256": "ea267aa1c4b930d2e49796d3db898f69528dba46f51d9b0e752680f017cefdc9"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 48.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Problema de lectores y escritores con semáforos.png",
+    "sha256": "af053b2c13fe7806feb63ab0a2b60068575f1b5f8b93698018afb9f5dc17d148"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 49.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Ilustración del problema de la cena de los filósofos.png",
+    "sha256": "9bd3e7c5f887c8fa3661ee0b6fe7eb05280a2021398a1c3f88966d7be5ec53cf"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 50.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Implementación de filósofo con riesgo de deadlock.png",
+    "sha256": "e4833fb1e57c11165fdca384948f4ad348b2991da9dd5a521e2588928151796d"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 51.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Solución con jerarquía de recursos para filósofos.png",
+    "sha256": "f75ddc5f99c80156810d9631178689b6335be254f2c9d0ec3f4cdcd19c93c593"
   }
 ]
