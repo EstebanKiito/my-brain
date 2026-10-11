@@ -24,6 +24,26 @@
           "hasta": "3. Lógica en Base de Datos"
         }
       ]
+    },
+    "Definición de datos en SQL": {
+      "carpeta": "Bases de Datos/Definición de datos en SQL",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i1",
+          "desde": "SQL 1:",
+          "hasta": "4. Consultas Sql (Query) + CRUD"
+        },
+        {
+          "fuente": "i1",
+          "desde": "* Eliminación con Llaves Foráneas:",
+          "hasta": "PRODUCTO CRUZ: (FROM Tabla1,Tabla2)"
+        },
+        {
+          "fuente": "i1",
+          "desde": "RESTRICCION DE NULOS!"
+        }
+      ]
     }
   },
   "aceptados": []

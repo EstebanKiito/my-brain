@@ -12,6 +12,8 @@ Vault de estudio del ramo. Cada nota cubre **un concepto**: no hace falta saber 
 | Tema | Qué cubre |
 |---|---|
 | [[Bases de Datos/Modelo relacional/_Índice\|Modelo relacional]] | DBMS, relaciones, llaves, álgebra relacional |
+| [[Bases de Datos/Definición de datos en SQL/_Índice\|Definición de datos en SQL]] | DDL: CREATE/ALTER/DROP TABLE, llaves primarias y foráneas, INSERT, ON DELETE, restricciones |
 
 ## Ruta de estudio sugerida
 1. **Modelo relacional:** qué es un DBMS, cómo se guardan los datos en tablas, las llaves y el álgebra relacional.
+2. **Definición de datos en SQL:** cómo se crean las tablas, sus llaves y sus restricciones.

@@ -6,6 +6,7 @@ Rama: `migrar/bases-de-datos`. Un commit por tema. Antes de cada commit se corre
 |---|---|---|---|---|---|
 | 0 | Infraestructura multi-ramo (`verificar.py --ramo`, `_meta/<Ramo>/`) | `_meta/` | ✅ hecho | – | – |
 | 1 | Modelo relacional | `Modelo relacional/` | ✅ hecho | 6 + índice | 0 + 3 |
+| 2 | Definición de datos en SQL | `Definición de datos en SQL/` | ✅ hecho | 7 + índice | 0 |
 
 ## Convenciones
 - Las mismas de Ingeniería de Software: prefijo `NN - ` con orden de estudio por carpeta, wikilinks con alias (`\|` dentro de tablas) e índices enlazados con ruta completa.
@@ -18,3 +19,6 @@ Rama: `migrar/bases-de-datos`. Un commit por tema. Antes de cada commit se corre
 - **2026-10-11 — Modelo relacional.**
   - Fuentes: Apuntes I1, «ALGEBRA RELACIONAL» (álgebra y el ejemplo de join), y Apuntes I2, «EXPLICACION LLAVES» (superllaves, candidatas, primaria). Complementos de las slides de las clases 1 (Motivación), 2 (Álgebra Relacional) y 3 (Repaso de llaves + SQL).
   - Notas de complemento puro: 01 DBMS, 02 Modelo relacional y 06 Consultas en álgebra relacional.
+- **2026-10-11 — Definición de datos en SQL.**
+  - Fuentes: Apuntes I1, «SQL 1» (crear tabla, llaves foráneas, modificar tabla, insertar datos), «Eliminación con llaves foráneas» y «RESTRICCION DE NULOS». Complementos de las slides de las clases 3 y 6.
+  - Nota de complemento puro: 01 SQL y PostgreSQL. Enlaces cruzados a Active Record, Migraciones y Asociaciones de Ingeniería de Software.

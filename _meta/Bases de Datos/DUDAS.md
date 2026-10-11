@@ -10,3 +10,8 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | 🟡 | [[04 - Álgebra relacional\|Álgebra relacional]] | "Join (⨝): … combina tuplas de dos relaciones basándose en una condición de igualdad. Hay varios tipos de Join, incluyendo Inner Join, Left Outer Join…" | La igualdad describe el *equi-join*. En la clase el join admite cualquier condición: $R_1 \bowtie_{cond} R_2 = \sigma_{cond}(R_1 \times R_2)$. Los outer joins son una extensión de SQL, no del álgebra vista en clase. |
 | 🟡 | [[03 - Superllaves, claves candidatas y clave primaria\|Superllaves, claves candidatas y clave primaria]] | "Superllave: Cualquier combinación de atributos que incluya una clave candidata. Por lo tanto." | La frase quedó cortada. Se propone completarla con la cita siguiente: toda clave candidata es superllave, pero no al revés. |
 | ℹ️ | [[05 - Join en álgebra relacional\|Join en álgebra relacional]] | Resultado con una sola columna B | Con la condición explícita `R1.B = R2.B` el resultado tendría `R1.B` y `R2.B`. Una sola columna B corresponde al *natural join*. Se explicó en un complemento; no es un error grave. |
+
+## Definición de datos en SQL
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ℹ️ | [[05 - INSERT e integridad referencial\|INSERT e integridad referencial]] | `CREATE TABLE S(a int, c int, FOREIGN KEY(a) REFERENCES R, ...);` | El `...` viene de la slide y no es SQL válido. Se aclaró en una nota: `REFERENCES R` sin columnas apunta a la llave primaria de R. |
