@@ -54,6 +54,12 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 ## Administración de memoria
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
+| 🟡 | [[01 - Coordinación de filósofos y manejo de estados con semáforos\|Coordinación de filósofos y manejo de estados con semáforos]] | "Estado filosofal → Tiene palillo" | En la formulación estándar (Dijkstra/Tanenbaum), en el estado *THINKING* (filosofando) el filósofo no retiene recursos; ambos palillos se adquieren exclusivamente al pasar a *EATING*. |
+| ℹ️ | [[02 - Memoria principal y el desafío de la multiprogramación\|Memoria principal y el desafío de la multiprogramación]] | "DIRECCIONES ABSOLUTAS EN MULTIPGROMACION" | Errata tipográfica ("MULTIPGROMACION" por multiprogramación). Preservada intacta en la cita textual. |
+| ℹ️ | [[03 - Relocalización, protección de memoria y registros base y límite\|Relocalización, protección de memoria y registros base y límite]] | "realocalizada ... Memory Managment Unit" | Erratas tipográficas ("realocalizada" por relocalizada, "Managment" por Management). Preservadas en la cita textual. |
+| ℹ️ | [[04 - Swapping, fragmentación externa y algoritmos de asignación libre\|Swapping, fragmentación externa y algoritmos de asignación libre]] | "memoria secundaria que usaremos como memoria secundaria" | Redundancia textual en la explicación de memoria swap. Preservada en la cita textual. |
+| ℹ️ | [[05 - Segmentación de memoria y prevención de segmentation fault\|Segmentación de memoria y prevención de segmentation fault]] | "SEGMENTION FAULT" | Errata tipográfica por *Segmentation Fault* (`SIGSEGV`). Preservada en la cita textual. |
+| ℹ️ | [[06 - Aritmética de bits y máscara de segmento en traducción de direcciones\|Aritmética de bits y máscara de segmento en traducción de direcciones]] | "aritmetrica" | Errata tipográfica por aritmética. Preservada en la cita textual. |
 
 ## Paginación y segmentación
 | Estado | Nota | Original | Duda / corrección propuesta |

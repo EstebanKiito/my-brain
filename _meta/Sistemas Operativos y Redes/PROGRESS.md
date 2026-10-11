@@ -11,7 +11,7 @@ Rama: `migrar/sistemas-operativos-y-redes`. Un commit por tema. Antes de cada co
 | 4 | Señales e IPC | `Señales e IPC/` | ✅ hecho | 3 + índice | 0 |
 | 5 | Hilos | `Hilos/` | ✅ hecho | 3 + índice | 3 |
 | 6 | Sincronización | `Sincronización/` | ✅ hecho | 9 + índice | 25 |
-| 7 | Administración de memoria | `Administración de memoria/` | 🟡 pendiente | – | – |
+| 7 | Administración de memoria | `Administración de memoria/` | ✅ hecho | 6 + índice | 16 |
 | 8 | Paginación y segmentación | `Paginación y segmentación/` | 🟡 pendiente | – | – |
 | 9 | Memoria virtual | `Memoria virtual/` | 🟡 pendiente | – | – |
 | 10 | Sistemas de archivos | `Sistemas de archivos/` | 🟡 pendiente | – | – |
@@ -39,4 +39,5 @@ Rama: `migrar/sistemas-operativos-y-redes`. Un commit por tema. Antes de cada co
 - **2026-10-11 — Señales e IPC.** Fuentes: secciones Signals y SEÑALES de SSOO (14 bloques). 3 notas atómicas + índice. Complementos de `Contenido_2_Procesos.pdf` y POSIX (ciclo de señales, diferencias semánticas SIGTERM vs SIGKILL, handlers en C con signal/sigaction, y pipes anónimos). Verificación: 0 errores, 0 advertencias.
 - **2026-10-11 — Hilos.** Fuentes: Clase 5 de SSOO (49 bloques). 3 notas atómicas + índice. 3 imágenes migradas con sha256 y transcritas. Complementos de `Contenido_4_Threads.pdf` y POSIX Threads (recursos compartidos vs privados, pthreads en C, y modelos User Space vs Kernel Space vs híbridos M:N). Verificación: 0 errores, 0 advertencias.
 - **2026-10-11 — Sincronización.** Fuentes: CONTENIDO 5: SINCRONIZACIÓN de apuntes de SSOO (68 bloques). 9 notas atómicas + índice. 25 imágenes migradas con sha256 y transcritas (incluye diagramas y slides de apoyo). Complementos de `Contenido_5_Sincronizacion.pdf` y Silberschatz (condiciones de carrera, requisitos de sección crítica, Peterson, primitivas atómicas de hardware, mutex vs spinlocks, buffer acotado, semáforos de Dijkstra, variables de condición/monitores, lectores-escritores, filósofos comelones y condiciones de Coffman para deadlock). Verificación: 0 errores, 0 advertencias.
+- **2026-10-11 — Administración de memoria.** Fuentes: Clase 6 de apuntes de SSOO (124 bloques). 6 notas atómicas + índice. 16 imágenes migradas con sha256 y transcritas. Complementos de `Contenido_6_Memoria.pdf`, Silberschatz y OSTEP (memoria como arreglo de bytes, multiprogramación, relocalización vs protección, registros base y límite en MMU, swapping, fragmentación externa, algoritmos First Fit / Best Fit / Worst Fit, segmentación y lógica/máscaras de bits). Verificación: 0 errores, 0 advertencias.
 

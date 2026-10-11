@@ -376,5 +376,117 @@
     "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 51.png",
     "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Solución con jerarquía de recursos para filósofos.png",
     "sha256": "f75ddc5f99c80156810d9631178689b6335be254f2c9d0ec3f4cdcd19c93c593"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 51.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Coordinación de filósofos con estados y semáforos.png",
+    "sha256": "f75ddc5f99c80156810d9631178689b6335be254f2c9d0ec3f4cdcd19c93c593"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 52.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Memoria como arreglo lineal de bytes sin multiprogramación.png",
+    "sha256": "a0454b106848fe0fa9673cd4def4637f299cef1c165b57257a271772d27a6d49"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 53.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Memoria física compartida con multiprogramación.png",
+    "sha256": "82bb8dc956b9ae21edc294a150faa6e2fcb90c13ae6469860a650e6cb1c39a13"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 54.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Problemas de relocalización y protección con multiprogramación.png",
+    "sha256": "ea3a5ef7fbabaf90a518123222032a629431c5ddc66311a0c3f8e50bd4d4e28f"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 55.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Traducción de direcciones con registros base y límite en MMU.png",
+    "sha256": "e029c713b58c40754c2867260043414d455f73cc54eedb12c0b8926647a46cb9"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 56.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Mecanismo de swapping y generación de huecos de memoria.png",
+    "sha256": "4736ef296b0c7e3a2586362c2c003eb060df80abf34d923828ed9a50a2eec866"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 57.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Compactación de memoria para fusionar huecos libres.png",
+    "sha256": "c90b3ec8cd0c3e0cf5298a8ff97a7fd65b454d47f3caad810056a5edfd597da8"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 58.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Estrategias de colocación contigua First Fit y Best Fit.png",
+    "sha256": "900a55d6198cbf4b0bb6138fa51e8f5745332fdff6697af8b1895ff8badba826"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 59.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Estrategia Worst Fit y fragmentación externa.png",
+    "sha256": "8bf94b53cc76c825ece3600efd4b9766e845a75c5b8adc91bf61cea56f4a3f7a"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 60.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Partición del espacio de direcciones en segmentos independientes.png",
+    "sha256": "ed6886c4f1735990d557adfa5083d25766cf8224cd8718e7c6bd680aced0ccea"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 61.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Traducción con tabla de segmentos y MMU.png",
+    "sha256": "4ca0c722485547a114bc778d4a8091b0b8018c08541364d951af2beecf3269f4"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 62.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Verificación de límites en tabla de segmentos.png",
+    "sha256": "921a6e50fa289e40220fa44a21d1ae7cf50c11be52eb9031461b44f7542d45d6"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 63.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Causa de segmentation fault por desborde de segmento.png",
+    "sha256": "933980ed444ec732bef2d710ed73a030c55e2dcbc0e05c51deb76c7bc382bca8"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 64.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Cálculo de desplazamiento relativo virtual en el heap.png",
+    "sha256": "ee0e41d5b7d19750740cf672b9592a2ec47da2b7a6f9f616ddc9bda56161554f"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 65.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Descomposición de dirección virtual en bits de segmento y offset.png",
+    "sha256": "93c78602f53cc72f7dd6ecc781c2f422882d6f35cd1b5ed07f10c4a96e4e89de"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 66.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Aplicación de máscara binaria y desplazamiento a la derecha.png",
+    "sha256": "62bc831a3a28a5a87439d2b72353e8014403c8613e23337871db7e0ee6622010"
   }
 ]

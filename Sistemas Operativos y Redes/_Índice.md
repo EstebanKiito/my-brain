@@ -18,7 +18,7 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: no hace fal
 | [[Sistemas Operativos y Redes/Señales e IPC/_Índice|Señales e IPC]] | Señales UNIX (SIGINT, SIGTERM, SIGKILL, SIGSTOP, SIGCONT), handlers en C, máscaras e introducción a IPC (pipes) |
 | [[Sistemas Operativos y Redes/Hilos/_Índice|Hilos]] | Threads vs procesos, recursos compartidos vs privados, estándar POSIX Threads (pthreads), hilos en espacio de usuario vs kernel |
 | [[Sistemas Operativos y Redes/Sincronización/_Índice|Sincronización]] | Condiciones de carrera, sección crítica, exclusión mutua, hardware (Test-and-Set), mutex, semáforos, problemas clásicos y deadlocks |
-| Administración de memoria *(pendiente)* | Jerarquía de memoria, direcciones lógicas vs físicas, MMU, registros base y límite, particiones y fragmentación |
+| [[Sistemas Operativos y Redes/Administración de memoria/_Índice|Administración de memoria]] | Jerarquía de memoria, direcciones lógicas vs físicas, MMU, registros base y límite, particiones y fragmentación |
 | Paginación y segmentación *(pendiente)* | Segmentos, páginas y marcos, tabla de páginas, TLB, tiempo efectivo de acceso, paginación multinivel |
 | Memoria virtual *(pendiente)* | Paginación por demanda, fallos de página (page faults), algoritmos de reemplazo (FIFO, Belady, Óptimo, LRU, Clock) y thrashing |
 | Sistemas de archivos *(pendiente)* | Archivos, operaciones, discos magnéticos y SSDs, particionamiento, formateo lógico y estructura de directorios |
