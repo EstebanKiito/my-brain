@@ -1,0 +1,265 @@
+{
+  "_descripcion": "Mapeo de las fuentes originales (rutas relativas a _raw/) a los temas del vault para Sistemas Operativos y Redes (IIC2333). Cada sección va desde el encabezado 'desde' (incluido) hasta 'hasta' (excluido). 'aceptados' lista bloques originales que se omiten a propósito con su motivo.",
+  "carpeta_ramo": "Sistemas Operativos y Redes",
+  "fuentes": {
+    "ssoo": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333 2ff038030e7442e7bfb7b8e38ae90bf8.html",
+    "redes": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333 11a60dd6de8180989081c3a2f6037b76.html",
+    "resumen_midterm": "Semestre 4/Sistemas Operativos & Redes - IIC2333/RESUMEN MIDTERM SSOO 12d60dd6de818029a75ec81cf5d1830f.html",
+    "ayudantias": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Ayudantías - SSOO IIC2333 508f15c81242420187d4777d7a5bf9ea.html",
+    "ramo": "Semestre 4/Sistemas Operativos & Redes - IIC2333 b057efb40b5249deaf4d4b782afeddac.html",
+    "clases": "Semestre 4/Sistemas Operativos & Redes - IIC2333/CLASES 054ff47accd347519ec5d97990175b04.html",
+    "interrogaciones": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Interrogaciones 8b6d76c9a8a84656be2f97f566ec995c.html",
+    "libros": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Libros 1390da76739d46d780af649eb1f7d6ba.html",
+    "tareas": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Tareas cade153343874d1c852b8a9b7794adfb.html"
+  },
+  "temas": {
+    "Estructura de sistemas operativos": {
+      "carpeta": "Sistemas Operativos y Redes/Estructura de sistemas operativos",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "ssoo",
+          "desde": "CLASE 1",
+          "hasta": "CLASE 3 (PROCESOS)"
+        }
+      ]
+    },
+    "Procesos": {
+      "carpeta": "Sistemas Operativos y Redes/Procesos",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "ssoo",
+          "desde": "CLASE 3 (PROCESOS)",
+          "hasta": "Signals"
+        },
+        {
+          "fuente": "ssoo",
+          "desde": "CREACION DE PROCESOS",
+          "hasta": "SEÑALES → Siempre se pregunta"
+        },
+        {
+          "fuente": "ayudantias",
+          "desde": "Ayudantía 1"
+        }
+      ]
+    },
+    "Planificación de CPU": {
+      "carpeta": "Sistemas Operativos y Redes/Planificación de CPU",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "ssoo",
+          "desde": "SCHEDULERS",
+          "hasta": "CLASE 5: THREADS y SINCRONIZACIÓN"
+        }
+      ]
+    },
+    "Señales e IPC": {
+      "carpeta": "Sistemas Operativos y Redes/Señales e IPC",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "ssoo",
+          "desde": "Signals",
+          "hasta": "CREACION DE PROCESOS"
+        },
+        {
+          "fuente": "ssoo",
+          "desde": "SEÑALES → Siempre se pregunta",
+          "hasta": "SCHEDULERS"
+        }
+      ]
+    },
+    "Hilos": {
+      "carpeta": "Sistemas Operativos y Redes/Hilos",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "ssoo",
+          "desde": "CLASE 5: THREADS y SINCRONIZACIÓN",
+          "hasta": "CONTENIDO 5: SINCRONIZACIÓN"
+        }
+      ]
+    },
+    "Sincronización": {
+      "carpeta": "Sistemas Operativos y Redes/Sincronización",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "ssoo",
+          "desde": "CONTENIDO 5: SINCRONIZACIÓN",
+          "hasta": "Clase 6 (Online) → Mauro Quintana"
+        }
+      ]
+    },
+    "Administración de memoria": {
+      "carpeta": "Sistemas Operativos y Redes/Administración de memoria",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "ssoo",
+          "desde": "Clase 6 (Online) → Mauro Quintana",
+          "hasta": "Clase 7"
+        }
+      ]
+    },
+    "Paginación y segmentación": {
+      "carpeta": "Sistemas Operativos y Redes/Paginación y segmentación",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "ssoo",
+          "desde": "Clase 7",
+          "hasta": "Clase 9"
+        }
+      ]
+    },
+    "Memoria virtual": {
+      "carpeta": "Sistemas Operativos y Redes/Memoria virtual",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "ssoo",
+          "desde": "Clase 9",
+          "hasta": "Clase 10"
+        }
+      ]
+    },
+    "Sistemas de archivos": {
+      "carpeta": "Sistemas Operativos y Redes/Sistemas de archivos",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "ssoo",
+          "desde": "Clase 10",
+          "hasta": "Clase 11"
+        }
+      ]
+    },
+    "Implementación de archivos y bloques": {
+      "carpeta": "Sistemas Operativos y Redes/Implementación de archivos y bloques",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "ssoo",
+          "desde": "Clase 11"
+        }
+      ]
+    },
+    "Fundamentos de redes y modelos en capas": {
+      "carpeta": "Sistemas Operativos y Redes/Fundamentos de redes y modelos en capas",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "redes",
+          "desde": "CLASE 1",
+          "hasta": "CLASE 3"
+        }
+      ]
+    },
+    "Capa de aplicación y sockets": {
+      "carpeta": "Sistemas Operativos y Redes/Capa de aplicación y sockets",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "redes",
+          "desde": "CLASE 3",
+          "hasta": "CONTENIDO 10 → CAPA DE TRANSPORTE"
+        }
+      ]
+    },
+    "Capa de transporte": {
+      "carpeta": "Sistemas Operativos y Redes/Capa de transporte",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "redes",
+          "desde": "CONTENIDO 10 → CAPA DE TRANSPORTE",
+          "hasta": "CLASE 6"
+        }
+      ]
+    },
+    "Capa de red y direccionamiento": {
+      "carpeta": "Sistemas Operativos y Redes/Capa de red y direccionamiento",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "redes",
+          "desde": "CLASE 6",
+          "hasta": "ALGORITMOS DE RUTEO"
+        }
+      ]
+    },
+    "Algoritmos de ruteo": {
+      "carpeta": "Sistemas Operativos y Redes/Algoritmos de ruteo",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "redes",
+          "desde": "ALGORITMOS DE RUTEO",
+          "hasta": "Clase 7"
+        }
+      ]
+    },
+    "Capa de enlace y seguridad": {
+      "carpeta": "Sistemas Operativos y Redes/Capa de enlace y seguridad",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "redes",
+          "desde": "Clase 7"
+        }
+      ]
+    },
+    "Gestión del curso": {
+      "carpeta": "Sistemas Operativos y Redes/Gestión del curso",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "resumen_midterm",
+          "desde": "RESUMEN MIDTERM SSOO"
+        }
+      ]
+    }
+  },
+  "aceptados": [
+    {
+      "texto": "Sistemas Operativos & Redes - IIC2333",
+      "motivo": "Encabezado y título de la página principal del curso en Notion"
+    },
+    {
+      "texto": "CLASES",
+      "motivo": "Enlace/título de subpágina en la landing de Notion"
+    },
+    {
+      "texto": "Interrogaciones",
+      "motivo": "Enlace/título de subpágina vacía en Notion"
+    },
+    {
+      "texto": "Tareas",
+      "motivo": "Enlace/título de subpágina vacía en Notion"
+    },
+    {
+      "texto": "Libros",
+      "motivo": "Enlace/título de subpágina vacía en Notion"
+    },
+    {
+      "texto": "Apuntes - SSOO IIC2333",
+      "motivo": "Enlace/título de la página de apuntes de SSOO en Notion"
+    },
+    {
+      "texto": "Apuntes - Redes IIC2333",
+      "motivo": "Enlace/título de la página de apuntes de Redes en Notion"
+    },
+    {
+      "texto": "Ayudantías - SSOO IIC2333",
+      "motivo": "Enlace/título de subpágina en Notion"
+    },
+    {
+      "texto": "RESUMEN MIDTERM SSOO",
+      "motivo": "Enlace/título de subpágina en Notion"
+    }
+  ]
+}
+
