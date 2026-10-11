@@ -39,3 +39,8 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | 🟡 | [[01 - NULL en SQL\|NULL en SQL]] | "(Que no sea ni 3 ni distinto a 3 NO ES NULO!!!)" | Redacción confusa. La idea de la slide: si `b` **es** nulo, ni `b = 3` ni `b <> 3` son verdaderos, así que esas filas se pierden y hay que agregar `IS NULL`. |
 | ✅ | [[02 - Lógica de tres valores\|Lógica de tres valores]] | Encabezado "R.A + R.S" y "UNKWNOWN" | Erratas: debería decir R.A + S.B y UNKNOWN. Los valores están correctos. |
 | ℹ️ | [[03 - NOT IN con nulos\|NOT IN con nulos]] | "La comparación NULL NOT IN (...) se comporta como si la condición fuera desconocida…" | Precisión: el NULL problemático está **dentro** de la subconsulta (R), no en S.A. Cada `x = null` da UNKNOWN. Se aclaró en un complemento. |
+
+## Diseño entidad-relación
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ℹ️ | [[06 - Principios de diseño de bases de datos\|Principios de diseño de bases de datos]] | *(slide 6)* `email nombre varchar(30) UNIQUE NOT NULL` | Errata de la slide: son dos columnas. En la nota se dejó `email varchar(30) UNIQUE NOT NULL`. |

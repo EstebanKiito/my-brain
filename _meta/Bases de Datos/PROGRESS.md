@@ -10,6 +10,7 @@ Rama: `migrar/bases-de-datos`. Un commit por tema. Antes de cada commit se corre
 | 3 | Consultas SQL | `Consultas SQL/` | ✅ hecho | 11 + índice | 0 |
 | 4 | Agregación y subconsultas | `Agregación y subconsultas/` | ✅ hecho | 9 + índice | 0 |
 | 5 | Valores nulos | `Valores nulos/` | ✅ hecho | 4 + índice | 0 |
+| 6 | Diseño entidad-relación | `Diseño entidad-relación/` | ✅ hecho | 6 + índice | 0 + 9 |
 
 ## Convenciones
 - Las mismas de Ingeniería de Software: prefijo `NN - ` con orden de estudio por carpeta, wikilinks con alias (`\|` dentro de tablas) e índices enlazados con ruta completa.
@@ -33,3 +34,6 @@ Rama: `migrar/bases-de-datos`. Un commit por tema. Antes de cada commit se corre
   - El join anidado se dividió en dos notas (08 y 09) para no pasar de 150 líneas. Se detectó una inconsistencia de datos en el Ejemplo 2 (DUDAS).
 - **2026-10-11 — Valores nulos.**
   - Fuente: Apuntes I1, «NULL» hasta «RESTRICCION DE NULOS» (esta última está en Definición de datos/07). Complementos de las slides de la clase 4: las tablas de verdad de AND, OR y NOT se transcribieron en Markdown.
+- **2026-10-11 — Diseño entidad-relación.**
+  - Sin contenido en mis apuntes: 6 notas de complemento puro basadas en las slides de las clases 5 y 6, con 9 diagramas en PNG (todos transcritos).
+  - Se marcó la errata de la slide `email nombre varchar(30)`.

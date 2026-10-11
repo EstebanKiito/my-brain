@@ -19,5 +19,68 @@
     "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/02_-_Algebra_Relacional.pdf#page=108",
     "destino": "Bases de Datos/Modelo relacional/adjuntos/Slide - diferencia de actores de Nolan y no de Iñárritu.png",
     "sha256": "9b17f0d11ab96e29ab1a8ab60c6242ac46baf24ec8133a982313d9dfa9c61188"
+  },
+  {
+    "tema": "Diseño entidad-relación",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/05_-_Diseno_de_Bases_de_Datos.pdf#page=7",
+    "destino": "Bases de Datos/Diseño entidad-relación/adjuntos/Slide - símbolos de un diagrama ER.png",
+    "sha256": "384ccc32abae022ab3676c86012a7b721d822f9d8ff20e00fd80bd974660a234"
+  },
+  {
+    "tema": "Diseño entidad-relación",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/05_-_Diseno_de_Bases_de_Datos.pdf#page=19",
+    "destino": "Bases de Datos/Diseño entidad-relación/adjuntos/Slide - relación múltiple alquila.png",
+    "sha256": "11acf800b0dff647e1e5f59a80fb7fe93ea0932a6bfcb68f8941c12de39198ab"
+  },
+  {
+    "tema": "Diseño entidad-relación",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/05_-_Diseno_de_Bases_de_Datos.pdf#page=13",
+    "destino": "Bases de Datos/Diseño entidad-relación/adjuntos/Slide - convención de la flecha en ER.png",
+    "sha256": "4698b554e98f050d017cb1c2fb289a5f41394fd699ec22e9b8bcdfa8f2fb8437"
+  },
+  {
+    "tema": "Diseño entidad-relación",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/05_-_Diseno_de_Bases_de_Datos.pdf#page=27",
+    "destino": "Bases de Datos/Diseño entidad-relación/adjuntos/Slide - participación y participación total.png",
+    "sha256": "2bff50630a07cb750a093d98798dca65b189f6a434161485c99a4b9e89bff6c6"
+  },
+  {
+    "tema": "Diseño entidad-relación",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/05_-_Diseno_de_Bases_de_Datos.pdf#page=28",
+    "destino": "Bases de Datos/Diseño entidad-relación/adjuntos/Slide - equivalencia de multiplicidades min-max.png",
+    "sha256": "4f48fb6316264bc1313d6f3385e409fab40f910fd97dcf7ab2b33bb3b473aa9e"
+  },
+  {
+    "tema": "Diseño entidad-relación",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/05_-_Diseno_de_Bases_de_Datos.pdf#page=30",
+    "destino": "Bases de Datos/Diseño entidad-relación/adjuntos/Slide - jerarquía de clases Bebida.png",
+    "sha256": "aa0721fd9eb3302205810b7401e2bf0c333cd5dfd980740ec5d8d307ad645412"
+  },
+  {
+    "tema": "Diseño entidad-relación",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/05_-_Diseno_de_Bases_de_Datos.pdf#page=37",
+    "destino": "Bases de Datos/Diseño entidad-relación/adjuntos/Slide - entidad débil Evaluación de Curso.png",
+    "sha256": "7e73936243e7fd57a609f2ec25d4a9c408d266e339cee0613db8b48c5d80c9fe"
+  },
+  {
+    "tema": "Diseño entidad-relación",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/05_-_Diseno_de_Bases_de_Datos.pdf#page=47",
+    "destino": "Bases de Datos/Diseño entidad-relación/adjuntos/Slide - agregación de la relación tiene.png",
+    "sha256": "76e54bc44b5a8252551d347d8967e344fe7799081065b8127654363ec2c7f00d"
+  },
+  {
+    "tema": "Diseño entidad-relación",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/05_-_Diseno_de_Bases_de_Datos.pdf#page=56",
+    "destino": "Bases de Datos/Diseño entidad-relación/adjuntos/Slide - modelo ER de vinos y cervezas.png",
+    "sha256": "b06038c93661435843ee1d97d77b2cd0db249c838c854c268af7d424ea3d4752"
   }
 ]

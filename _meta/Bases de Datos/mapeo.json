@@ -87,6 +87,11 @@
           "hasta": "RESTRICCION DE NULOS!"
         }
       ]
+    },
+    "Diseño entidad-relación": {
+      "carpeta": "Bases de Datos/Diseño entidad-relación",
+      "estado": "hecho",
+      "secciones": []
     }
   },
   "aceptados": []
