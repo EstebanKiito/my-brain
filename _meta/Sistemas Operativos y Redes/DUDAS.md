@@ -7,6 +7,10 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 ## Estructura de sistemas operativos
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
+| 🟡 | [[03 - Arquitecturas de kernel monolítico y microkernel\|Arquitecturas de kernel monolítico y microkernel]] | "MONOLITICO: Falta todo → Linux (Mas rápido)" | Errata evidente en el texto: un kernel monolítico no le "falta todo", sino que *junta todo* o *contiene todos los servicios* (drivers, IPC, memoria, fs) dentro del mismo espacio de kernel. Se propone corregir la lectura aclarando que empaqueta todos los subsistemas. |
+| ℹ️ | [[01 - Qué es un sistema operativo\|Qué es un sistema operativo]] | "(SystemD = System Daemon) → probee funcionalidades basicas" | Errata menor de tipeo ("probee" por "provee") y precisión técnica: Systemd es el init system estándar moderno en GNU/Linux con PID 1, responsable de inicializar el espacio de usuario. |
+| ℹ️ | [[03 - Arquitecturas de kernel monolítico y microkernel\|Arquitecturas de kernel monolítico y microkernel]] | "→ Microkernelll:" | Errata tipográfica con triple 'l'. Se preservó intacta en los apuntes. |
+| ℹ️ | [[06 - Arranque del sistema computacional\|Arranque del sistema computacional]] | "Este codio tiene dos misions fundamentales" | Erratas tipográficas ("codio" por "código", "misions" por "misiones"). Se conservaron tal cual en la cita textual. |
 
 ## Procesos
 | Estado | Nota | Original | Duda / corrección propuesta |
@@ -75,4 +79,3 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 ## Gestión del curso
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
-

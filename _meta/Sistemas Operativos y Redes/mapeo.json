@@ -15,7 +15,7 @@
   "temas": {
     "Estructura de sistemas operativos": {
       "carpeta": "Sistemas Operativos y Redes/Estructura de sistemas operativos",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "ssoo",

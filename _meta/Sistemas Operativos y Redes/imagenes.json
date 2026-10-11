@@ -1,2 +1,58 @@
-[]
-
+[
+  {
+    "tema": "Estructura de sistemas operativos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image.png",
+    "destino": "Sistemas Operativos y Redes/Estructura de sistemas operativos/adjuntos/Estructura de un sistema operativo.png",
+    "sha256": "1f600dca202f0ca05eb55b0acd9119744e279ae4efcd2468ca44cace44c6dde0"
+  },
+  {
+    "tema": "Estructura de sistemas operativos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 1.png",
+    "destino": "Sistemas Operativos y Redes/Estructura de sistemas operativos/adjuntos/Capas del sistema operativo.png",
+    "sha256": "bdb0c108edcade2cb9253b46971050fda1bce1c808e68531540974567d3f7a25"
+  },
+  {
+    "tema": "Estructura de sistemas operativos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 2.png",
+    "destino": "Sistemas Operativos y Redes/Estructura de sistemas operativos/adjuntos/Syscalls UNIX versus Win32.png",
+    "sha256": "c19e1949b02510ae68b5301c63ae6ebfe225c70be1f64db27971dcbf13d92d7d"
+  },
+  {
+    "tema": "Estructura de sistemas operativos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 3.png",
+    "destino": "Sistemas Operativos y Redes/Estructura de sistemas operativos/adjuntos/Comparación de kernel monolítico y microkernel.png",
+    "sha256": "f9746ca133d65c2ad1c7a1f238c740d7ad316d84c0add31a871b0cf0e8aa0f74"
+  },
+  {
+    "tema": "Estructura de sistemas operativos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 4.png",
+    "destino": "Sistemas Operativos y Redes/Estructura de sistemas operativos/adjuntos/Flujo de interrupción entre usuario y kernel.png",
+    "sha256": "17251130a350b0f52c0dc7d07c8f7839337acb57884ffaf7bc297a9958189e74"
+  },
+  {
+    "tema": "Estructura de sistemas operativos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 5.png",
+    "destino": "Sistemas Operativos y Redes/Estructura de sistemas operativos/adjuntos/Anillo de privilegios x86.png",
+    "sha256": "e3b4828940b2c4cb2bb8b0e66ab23bf2e311aa27ca9b18f00849012595d69eb7"
+  },
+  {
+    "tema": "Estructura de sistemas operativos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 6.png",
+    "destino": "Sistemas Operativos y Redes/Estructura de sistemas operativos/adjuntos/Clasificación de syscalls en UNIX.png",
+    "sha256": "80d2b4f940a51eb059c5fa581900c3407abab32555984f7b979674b7a049674c"
+  },
+  {
+    "tema": "Estructura de sistemas operativos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 7.png",
+    "destino": "Sistemas Operativos y Redes/Estructura de sistemas operativos/adjuntos/Llamadas al sistema al copiar un archivo.png",
+    "sha256": "efbc585003d428d58ef6225bd03793144a3b19938dc02b9747375fc5de978e78"
+  }
+]
