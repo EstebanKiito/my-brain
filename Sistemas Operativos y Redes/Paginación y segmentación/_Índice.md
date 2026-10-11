@@ -16,3 +16,4 @@ Volver al [[Sistemas Operativos y Redes/_Índice|mapa del ramo]].
 5. [[05 - Arquitectura de segmentos paginados|Arquitectura de segmentos paginados]]: integración de tablas de segmentos con tablas de páginas privadas por segmento, delimitación de regiones activas con registros límite y reducción de entradas vacías.
 6. [[06 - Paginación multinivel y tablas de páginas invertidas|Paginación multinivel y tablas de páginas invertidas]]: descomposición jerárquica del VPN en árboles de directorios de páginas, asignación dispersa en dos y tres niveles, y tablas invertidas globales indexadas por marcos físicos.
 7. [[07 - Introducción al intercambio por demanda y ciclo de fallos de página|Introducción al intercambio por demanda y ciclo de fallos de página]]: ampliación del espacio virtual sobre el disco de intercambio (*swap space*), semántica del bit de presencia, interrupción por fallo de página (*Page Fault*) y reinicio de instrucciones.
+

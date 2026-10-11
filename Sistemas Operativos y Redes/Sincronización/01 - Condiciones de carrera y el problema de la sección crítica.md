@@ -97,3 +97,4 @@ Cuando múltiples hilos o procesos acceden concurrentemente a recursos compartid
 
 > [!question]- ¿Ocurre una condición de carrera si diez hilos leen simultáneamente un mismo archivo compartido sin escribir?
 > No. La concurrencia de solo lectura (*read-only*) es intrínsecamente segura y no produce condiciones de carrera, ya que el estado del recurso compartido no se altera. El conflicto surge en cuanto al menos un hilo ejecuta operaciones de modificación (*write*).
+

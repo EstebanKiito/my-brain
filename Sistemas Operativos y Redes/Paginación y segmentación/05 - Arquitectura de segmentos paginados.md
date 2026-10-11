@@ -72,3 +72,4 @@ Los esquemas híbridos de segmentos paginados combinan las fortalezas de la segm
 
 > [!question]- ¿Por qué un esquema de segmentos paginados reduce el espacio consumido por tablas de páginas frente a una tabla lineal?
 > Porque los rangos vacíos no mapeados (como el espacio no utilizado entre el Heap y el Stack) no requieren entradas en la tabla de páginas. Solo los segmentos activos mantienen tablas asignadas proporcionales a su tamaño efectivo.
+

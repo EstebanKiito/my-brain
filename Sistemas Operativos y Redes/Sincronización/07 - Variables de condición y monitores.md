@@ -97,3 +97,4 @@ Una **variable de condición** (*Condition Variable*, CV) es una primitiva de si
 
 > [!question]- ¿Tienen memoria o estado interno las variables de condición a diferencia de los semáforos?
 > No. Las variables de condición son "stateless": si se ejecuta `signal()` en un momento en que ningún hilo está esperando en el `wait()`, la señal se pierde sin dejar rastro en el sistema. Los semáforos, en cambio, incrementan su contador interno y recuerdan el evento.
+

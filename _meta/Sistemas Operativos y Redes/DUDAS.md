@@ -75,6 +75,7 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 ## Memoria virtual
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
+| ℹ️ | [[01 - Fundamentos de memoria virtual y espacio de intercambio (swap)\|Fundamentos de memoria virtual y espacio de intercambio (swap)]] | "ecnuentren ... reemplazen" | Erratas tipográficas ("ecnuentren" por encuentren, "reemplazen" por reemplacen). Preservadas en la cita textual. |
 
 ## Sistemas de archivos
 | Estado | Nota | Original | Duda / corrección propuesta |

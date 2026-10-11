@@ -18,3 +18,4 @@ Volver al [[Sistemas Operativos y Redes/_Índice|mapa del ramo]].
 7. [[07 - Variables de condición y monitores|Variables de condición y monitores]]: abstracciones de sincronización estructuradas en lenguajes de alto nivel, semántica de monitores, variables de condición (`cond_wait`, `cond_signal`, `cond_broadcast`) y el patrón de verificación en ciclo `while`.
 8. [[08 - Problema de los lectores y escritores|Problema de los lectores y escritores]]: sincronización con acceso asimétrico a datos compartidos (lectura concurrente vs. escritura exclusiva), inanición (*starvation*) y variantes de prioridad.
 9. [[09 - Problema de los filósofos comelones y deadlocks|Problema de los filósofos comelones y deadlocks]]: dilema clásico de asignación de recursos circulares, caracterización de interbloqueos (*deadlocks*), las 4 condiciones de Coffman y algoritmos de prevención.
+

@@ -75,3 +75,4 @@ A nivel de arquitectura de hardware, la extracción del identificador de segment
 
 > [!question]- ¿Cómo se obtiene el desplazamiento (*offset*) a partir del valor hexadecimal `0x1068` empleando una máscara binaria?
 > Se aplica la operación `0x1068 & 0x0FFF`. Como `0x0FFF` contiene 1s en los 12 bits inferiores y 0s en los bits superiores, el resultado es `0x0068`, que corresponde exactamente a $104$ en decimal ($6 \times 16^1 + 8 \times 16^0 = 96 + 8 = 104$).
+

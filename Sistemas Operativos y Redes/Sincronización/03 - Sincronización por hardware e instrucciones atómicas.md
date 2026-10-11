@@ -99,3 +99,4 @@ Para garantizar exclusión mutua de forma eficiente y segura en sistemas multipr
 
 > [!question]- ¿Cuál es la ventaja de compare_and_swap frente a test_and_set?
 > `compare_and_swap` opera sobre enteros o punteros arbitrarios en lugar de solo booleanos, y solo realiza la escritura si el valor actual coincide exactamente con un valor esperado. Esto habilita estructuras de datos concurrentes avanzadas y libres de cerrojos (*lock-free data structures*).
+

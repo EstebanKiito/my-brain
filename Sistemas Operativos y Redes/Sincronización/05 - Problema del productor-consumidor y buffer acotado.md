@@ -88,3 +88,4 @@ El **problema del productor-consumidor** (o del búfer limitado / *bounded buffe
 
 > [!question]- ¿Basta un simple Mutex para resolver completamente el problema del búfer limitado?
 > No. El Mutex solo asegura exclusión mutua para que no escriban a la vez; no resuelve de forma eficiente la coordinación cuando el búfer está completamente lleno o vacío (requiriendo semáforos o variables de condición para suspender y despertar hilos).
+

@@ -92,3 +92,4 @@ Históricamente se propusieron diversas soluciones algorítmicas por software pu
 
 > [!question]- ¿Por qué el algoritmo de Peterson no se utiliza directamente en procesadores modernos multicore?
 > Porque las arquitecturas modernas ejecutan instrucciones fuera de orden (*out-of-order execution*) y emplean cachés con consistencia relajada; sin barreras de memoria explícitas (*memory barriers*), el hardware puede reordenar las escrituras en `flag` y `turn`, rompiendo la exclusión mutua.
+

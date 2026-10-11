@@ -642,5 +642,33 @@
     "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 88.png",
     "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Ciclo de atención de interrupción por fallo de página.png",
     "sha256": "168de54201887d51e018fd5a0d9eb570e5baddf8570bc1f2a35e2510ab7d8e84"
+  },
+  {
+    "tema": "Memoria virtual",
+    "tipo": "slide",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Clases/SSOO/Contenido_6_Memoria.pdf#page=55",
+    "destino": "Sistemas Operativos y Redes/Memoria virtual/adjuntos/Algoritmo de reemplazo óptimo de Belady.png",
+    "sha256": "caaaa8e6b73a292943f75946c5e8a7a7cdfbbf2d2722cf2d5740d3e3d3991068"
+  },
+  {
+    "tema": "Memoria virtual",
+    "tipo": "slide",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Clases/SSOO/Contenido_6_Memoria.pdf#page=56",
+    "destino": "Sistemas Operativos y Redes/Memoria virtual/adjuntos/Algoritmo de reemplazo First In First Out FIFO.png",
+    "sha256": "9582850634020610223853b874fd79051f51f372617e7be43e524ff39d7b6c05"
+  },
+  {
+    "tema": "Memoria virtual",
+    "tipo": "slide",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Clases/SSOO/Contenido_6_Memoria.pdf#page=59",
+    "destino": "Sistemas Operativos y Redes/Memoria virtual/adjuntos/Algoritmo de reemplazo Least Recently Used LRU.png",
+    "sha256": "4252960f0b3debec65a1e9c856ca5d7ab79cd56b8e805610f5b7e807d592a8de"
+  },
+  {
+    "tema": "Memoria virtual",
+    "tipo": "slide",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Clases/SSOO/Contenido_6_Memoria.pdf#page=66",
+    "destino": "Sistemas Operativos y Redes/Memoria virtual/adjuntos/Algoritmo del reloj Clock y bit de referencia.png",
+    "sha256": "50bc0dfdf556f5ebd52ffc56dc7b1a8863c8ec51625cf500a4de6dca8468817d"
   }
 ]

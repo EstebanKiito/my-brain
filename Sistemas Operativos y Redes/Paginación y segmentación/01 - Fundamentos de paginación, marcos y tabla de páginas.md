@@ -117,3 +117,4 @@ La paginación es un mecanismo arquitectónico de gestión de memoria que desaco
 
 > [!question]- Si un sistema posee páginas de 4 KB y direcciones virtuales de 32 bits, ¿cuántos bits se destinan al offset y cuántos al VPN?
 > Como $4\text{ KB} = 2^{12}\text{ bytes}$, el offset requiere 12 bits para direccionar dentro de la página. Los restantes $32 - 12 = 20\text{ bits}$ identifican el número de página virtual (VPN).
+

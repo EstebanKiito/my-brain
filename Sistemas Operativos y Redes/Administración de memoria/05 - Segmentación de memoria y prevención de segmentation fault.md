@@ -85,3 +85,4 @@ La segmentación es un esquema de administración de memoria que divide el espac
 
 > [!question]- ¿Qué ventaja ofrece la segmentación frente a la asignación contigua monolítica para mitigar la fragmentación?
 > Al dividir el proceso en múltiples bloques autónomos y más pequeños (código, heap, stack), el sistema operativo ya no necesita encontrar un único hueco gigantesco contiguo en la RAM; puede aprovechar huecos medianos y dispersos para cada segmento individual.
+

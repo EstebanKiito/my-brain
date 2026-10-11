@@ -72,3 +72,4 @@ La altísima efectividad real de la caché TLB (tasas de acierto superiores al 9
 
 > [!question]- ¿Qué ventaja de rendimiento ofrece el campo ASID frente a realizar un vaciado completo (*flush*) de la TLB?
 > Permite conservar en la TLB las traducciones de múltiples procesos concurrentes. Cuando el planificador devuelve la CPU al Proceso A, muchas de sus entradas continúan residentes y válidas en la caché, evitando la penalización de tener que recargar todas las traducciones desde RAM con sucesivos TLB misses.
+

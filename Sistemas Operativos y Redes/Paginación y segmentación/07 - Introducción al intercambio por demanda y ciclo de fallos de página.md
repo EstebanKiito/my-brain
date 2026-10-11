@@ -73,3 +73,4 @@ En sistemas reales, la suma de los espacios virtuales de todos los procesos exce
 
 > [!question]- Si no existen marcos físicos libres en la memoria RAM al producirse un Page Fault, ¿qué acción debe tomar el sistema operativo?
 > Debe ejecutar un algoritmo de reemplazo de páginas para seleccionar una página víctima residente, escribirla a disco si fue modificada (*dirty bit = 1*), invalidar su bit de presencia y reutilizar su marco para cargar la nueva página requerida.
+

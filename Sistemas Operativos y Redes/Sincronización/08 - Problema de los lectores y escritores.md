@@ -89,3 +89,4 @@ El problema de los **Lectores y Escritores** (*Readers-Writers Problem*) modela 
 
 > [!question]- ¿Qué problema sufre la solución básica que prioriza a los lectores?
 > Sufre el riesgo de **inanición de escritores**: si hay un flujo ininterrumpido de lectores donde siempre hay al menos uno activo, `read_count` nunca baja a 0, impidiendo que los escritores puedan tomar `rw` y actualizar los datos.
+

@@ -89,3 +89,4 @@ El problema de la **Cena de los Filósofos** (*Dining Philosophers Problem*), fo
 
 > [!question]- ¿Qué otra estrategia existe para evitar que los filósofos caigan en deadlock sin cambiar el orden de toma?
 > Limitar el número máximo de comensales sentados a la mesa simultáneamente a $N-1$ (mediante un semáforo contador inicializado en 4). Si solo 4 filósofos intentan comer con 5 palillos disponibles, por el principio del palomar al menos uno tendrá acceso a dos palillos.
+

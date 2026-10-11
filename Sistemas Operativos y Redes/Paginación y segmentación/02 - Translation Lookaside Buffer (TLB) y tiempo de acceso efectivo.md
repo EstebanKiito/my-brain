@@ -106,3 +106,4 @@ Para resolver la duplicación en el tiempo de acceso que impone consultar la tab
 
 > [!question]- ¿Por qué aumentar el tamaño de página incrementa directamente la tasa de aciertos (*Hit Rate*) de la TLB?
 > Porque caben más variables consecutivas dentro de una misma página física. Por tanto, el primer acceso que causa un fallo amortiza su costo sobre una mayor cantidad de accesos subsiguientes antes de cruzar la frontera de página.
+

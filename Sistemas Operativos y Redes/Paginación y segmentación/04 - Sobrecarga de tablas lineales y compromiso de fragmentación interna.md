@@ -83,3 +83,4 @@ Una tabla de páginas lineal simple impone una sobrecarga de memoria inasumible 
 
 > [!question]- ¿Cuál es el tamaño de página estándar adoptado en la mayoría de las arquitecturas comerciales (x86, ARM)?
 > 4 Kilobytes ($4096\text{ bytes}$), determinado empíricamente como el punto de equilibrio óptimo entre fragmentación interna y sobrecarga de tablas y TLB.
+

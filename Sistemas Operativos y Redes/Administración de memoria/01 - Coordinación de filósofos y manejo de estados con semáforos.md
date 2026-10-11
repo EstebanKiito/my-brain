@@ -88,3 +88,4 @@ En la sesión inicial del módulo de memoria se repasaron las primitivas de sinc
 
 > [!question]- ¿Cómo garantiza esta solución que no ocurra deadlock?
 > El interbloqueo se elimina porque ningún filósofo toma un solo palillo y espera pasivamente con él en mano: solo se adquiere permiso para comer si ambos vecinos están libres simultáneamente, rompiendo la condición de retención y espera (*hold and wait*).
+

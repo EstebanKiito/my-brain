@@ -106,3 +106,4 @@ Un **semáforo** es una variable entera especial introducida por Edsger Dijkstra
 
 > [!question]- ¿Por qué las operaciones wait() y signal() deben ejecutarse de forma atómica?
 > Porque si dos hilos decrementaran o incrementaran concurrentemente el contador sin exclusión mutua, se produciría una condición de carrera sobre la variable entera interna, pudiendo admitir a más hilos de los permitidos en la sección crítica.
+

@@ -97,3 +97,4 @@ Los **cerrojos de exclusión mutua** (*Mutex Locks*) son primitivas de alto nive
 
 > [!question]- ¿Por qué release() debe arrojar un error si el hilo invocador no posee el cerrojo?
 > Porque los mutex poseen semántica de propiedad (*ownership*): únicamente el hilo que tomó exitosamente el cerrojo mediante `acquire()` tiene la autoridad para liberarlo con `release()`. Liberar un lock ajeno rompería la invariante de exclusión mutua.
+

@@ -82,3 +82,4 @@ Cuando la memoria física disponible es insuficiente para alojar todos los proce
 
 > [!question]- ¿Por qué no se utiliza la compactación en sistemas operativos modernos?
 > Porque requiere suspender la ejecución del sistema y copiar físicamente bloques masivos de memoria en tiempo de ejecución, lo que genera una latencia inaceptable. Los sistemas modernos eliminan este problema mediante paginación y segmentación, que no exigen contigüidad física.
+

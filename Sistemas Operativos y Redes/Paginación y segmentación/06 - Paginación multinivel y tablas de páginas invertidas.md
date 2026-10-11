@@ -137,3 +137,4 @@ Para gestionar espacios de direcciones dispersos en arquitecturas modernas sin r
 
 > [!question]- ¿Cuál es la principal ventaja y la principal desventaja de una tabla de páginas invertida?
 > Ventaja: El consumo de memoria es fijo y proporcional únicamente al tamaño de la RAM física instalada, independientemente de cuántos cientos de procesos se estén ejecutando. Desventaja: La traducción de VPN a PFN no es directa por indexación, requiriendo búsquedas con funciones hash o cadenas de colisión que aumentan la latencia.
+
