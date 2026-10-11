@@ -80,6 +80,12 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 ## Sistemas de archivos
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
+| 🟡 | [[03 - Niveles de formateo y esquemas de particionamiento (MBR y GPT)\|Niveles de formateo y esquemas de particionamiento (MBR y GPT)]] | "GPT (Guide partition table)" | Errata en el acrónimo: GPT corresponde a GUID Partition Table (*Globally Unique Identifier Partition Table*), no Guide. |
+| ℹ️ | [[01 - Capas de abstracción de entrada-salida y mecanismos de buffering\|Capas de abstracción de entrada-salida y mecanismos de buffering]] | "Buffer en el espacio KERNELL" | Errata tipográfica en "KERNELL" con doble 'L'. |
+| ℹ️ | [[02 - Discos duros magnéticos (HDD) y discos de estado sólido (SSD)\|Discos duros magnéticos (HDD) y discos de estado sólido (SSD)]] | "Memoira Secundaria" | Errata tipográfica por Memoria Secundaria. |
+| ℹ️ | [[04 - Algoritmos de planificación de disco (Disk Scheduling)\|Algoritmos de planificación de disco (Disk Scheduling)]] | "Schedulling ... Numeros de secotres" | Erratas tipográficas ("Schedulling" por Scheduling y "secotres" por sectores). |
+| ℹ️ | [[05 - Concepto de archivo, atributos y metadatos\|Concepto de archivo, atributos y metadatos]] | "“hellowoeld.py”" | Errata tipográfica por "helloworld.py". |
+| ℹ️ | [[06 - Estructura de directorios y resolución de rutas\|Estructura de directorios y resolución de rutas]] | "directiors ... Jerarqui ... Partencon" | Erratas tipográficas ("directiors" por directorios, "Jerarqui" por jerarquía, "Partencon" por parten con). |
 
 ## Implementación de archivos y bloques
 | Estado | Nota | Original | Duda / corrección propuesta |

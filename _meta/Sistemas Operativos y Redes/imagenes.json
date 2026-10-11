@@ -670,5 +670,47 @@
     "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Clases/SSOO/Contenido_6_Memoria.pdf#page=66",
     "destino": "Sistemas Operativos y Redes/Memoria virtual/adjuntos/Algoritmo del reloj Clock y bit de referencia.png",
     "sha256": "50bc0dfdf556f5ebd52ffc56dc7b1a8863c8ec51625cf500a4de6dca8468817d"
+  },
+  {
+    "tema": "Sistemas de archivos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 89.png",
+    "destino": "Sistemas Operativos y Redes/Sistemas de archivos/adjuntos/Planificación de disco First In First Out FCFS.png",
+    "sha256": "d8fa73f87b7f76f68117aff6b7e782e961ad5babf84b1a4656ed6094b92a907b"
+  },
+  {
+    "tema": "Sistemas de archivos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 90.png",
+    "destino": "Sistemas Operativos y Redes/Sistemas de archivos/adjuntos/Planificación de disco Shortest Seek Time First SSTF.png",
+    "sha256": "667a4a7a39ad9ff39e0d44ff5610e43ddb58b793cd58fbcb019265ea4c5620df"
+  },
+  {
+    "tema": "Sistemas de archivos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 91.png",
+    "destino": "Sistemas Operativos y Redes/Sistemas de archivos/adjuntos/Planificación de disco SCAN elevador.png",
+    "sha256": "f59638548858709b8433ea8bbef89e0e61fafeaae9233cf11b54e0d8b11e8bf8"
+  },
+  {
+    "tema": "Sistemas de archivos",
+    "tipo": "slide",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Clases/SSOO/Contenido_7_Archivos.pdf#page=7",
+    "destino": "Sistemas Operativos y Redes/Sistemas de archivos/adjuntos/Geometría de un disco duro magnético HDD.png",
+    "sha256": "226b85daa6a422871828ca221a256840e00936d31cb3e2deb911ff84c47ff60b"
+  },
+  {
+    "tema": "Sistemas de archivos",
+    "tipo": "slide",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Clases/SSOO/Contenido_7_Archivos.pdf#page=17",
+    "destino": "Sistemas Operativos y Redes/Sistemas de archivos/adjuntos/Planificación de disco C-SCAN y F-SCAN elevador circular.png",
+    "sha256": "063e7c554bb42e035f8b1723385f9d1824e75c2a33e16cedb34bca0dd19f58cd"
+  },
+  {
+    "tema": "Sistemas de archivos",
+    "tipo": "slide",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Clases/SSOO/Contenido_7_Archivos.pdf#page=18",
+    "destino": "Sistemas Operativos y Redes/Sistemas de archivos/adjuntos/Planificación de disco LOOK y C-LOOK.png",
+    "sha256": "45e20ad72aa6bba510c8181a6026d66cc4bf5416c51bfd9a2721fc894c806956"
   }
 ]
