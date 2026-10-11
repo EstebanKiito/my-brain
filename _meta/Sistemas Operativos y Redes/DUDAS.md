@@ -15,6 +15,10 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 ## Procesos
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
+| 🟡 | [[03 - Estados de un proceso y ciclo de vida\|Estados de un proceso y ciclo de vida]] | "RUNNING: Corriendo en CPU → CPU Y CORE ES LO MISMO" | Precisión técnica: un zócalo o procesador físico (*CPU*) puede albergar múltiples núcleos independientes (*cores*), cada uno capaz de ejecutar un hilo o proceso en paralelo. En un procesador multinúcleo, la afirmación no es estrictamente cierta a nivel de hardware. |
+| ℹ️ | [[03 - Estados de un proceso y ciclo de vida\|Estados de un proceso y ciclo de vida]] | "Schedule FIFO: ... Schedule FCFS: ..." | FIFO (*First-In, First-Out*) y FCFS (*First-Come, First-Served*) son sinónimos exactos para la misma política de planificación no apropiativa. |
+| ℹ️ | [[06 - Control de procesos con wait, exec y terminación\|Control de procesos con wait, exec y terminación]] | "Si no se le retorna al padre → Se genera un Proceso Zombie" | Un proceso zombie es un hijo que finalizó su ejecución pero cuyo padre aún no ha invocado `wait()` para leer su estado de salida, manteniendo su entrada en la tabla de procesos. |
+| ℹ️ | [[07 - Programación de procesos en C y prevención de fork bombs\|Programación de procesos en C y prevención de fork bombs]] | `structs Process{...} enum Sates{RUNNING, WAI}` | Erratas tipográficas del código de ayudantía (`structs` por `struct`, `Sates` por `States`, `WAI` por `WAITING`). Se conservaron tal cual en el extracto textual. |
 
 ## Planificación de CPU
 | Estado | Nota | Original | Duda / corrección propuesta |

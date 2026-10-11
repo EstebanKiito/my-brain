@@ -13,7 +13,7 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: no hace fal
 | Tema | Qué cubre |
 |---|---|
 | [[Sistemas Operativos y Redes/Estructura de sistemas operativos/_Índice\|Estructura de sistemas operativos]] | Qué es un SO, modos de operación (dual-mode, Ring 0 a 3), kernel monolítico vs microkernel, interrupciones, syscalls, arranque (BIOS/UEFI, GRUB) y multitasking |
-| Procesos *(en progreso)* | Concepto de proceso, espacio de memoria (text, data, heap, stack), PCB, estados, cambio de contexto, creación con fork/exec/wait |
+| [[Sistemas Operativos y Redes/Procesos/_Índice\|Procesos]] | Concepto de proceso, espacio de memoria (text, data, heap, stack), PCB, estados, cambio de contexto, creación con fork/exec/wait |
 | Planificación de CPU *(pendiente)* | Criterios y métricas, algoritmos FIFO, SJF, STCF, Round Robin, colas multinivel con retroalimentación (MLFQ) |
 | Señales e IPC *(pendiente)* | Señales UNIX, handlers, máscaras, pipes y comunicación entre procesos |
 | Hilos *(pendiente)* | Threads vs procesos, espacio compartido, hilos de usuario vs kernel, modelos de threading y POSIX threads |

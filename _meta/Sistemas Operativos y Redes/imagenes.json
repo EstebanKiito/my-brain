@@ -54,5 +54,54 @@
     "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 7.png",
     "destino": "Sistemas Operativos y Redes/Estructura de sistemas operativos/adjuntos/Llamadas al sistema al copiar un archivo.png",
     "sha256": "efbc585003d428d58ef6225bd03793144a3b19938dc02b9747375fc5de978e78"
+  },
+  {
+    "tema": "Procesos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 8.png",
+    "destino": "Sistemas Operativos y Redes/Procesos/adjuntos/Espacio de memoria de un proceso.png",
+    "sha256": "c86e82f5c98de8aa243548cc66c93a85d140b9121c68d47685f3bda84475d4dd"
+  },
+  {
+    "tema": "Procesos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 9.png",
+    "destino": "Sistemas Operativos y Redes/Procesos/adjuntos/Tabla de procesos y estructura del PCB.png",
+    "sha256": "a88acffcf20fbb2bdcd7d9e76f48878096f7bd3d31140a610ef4f941671b432f"
+  },
+  {
+    "tema": "Procesos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 10.png",
+    "destino": "Sistemas Operativos y Redes/Procesos/adjuntos/Diagrama de estados de un proceso.png",
+    "sha256": "7dcb7c58bcbb6f23b18575475ef9bcd08515cfd4f2d068eacd92dd403cf934e9"
+  },
+  {
+    "tema": "Procesos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 11.png",
+    "destino": "Sistemas Operativos y Redes/Procesos/adjuntos/Secuencia temporal del cambio de contexto.png",
+    "sha256": "d309fe819558ee9ebc66b2c36e56c149ec7613569b7ba2cafd6e81c332e77474"
+  },
+  {
+    "tema": "Procesos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 12.png",
+    "destino": "Sistemas Operativos y Redes/Procesos/adjuntos/Bifurcación de procesos con fork.png",
+    "sha256": "8ff8657125c99e142065d70cd62d21a164b59bf750f76efa5dcf9be85c9983b0"
+  },
+  {
+    "tema": "Procesos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Ayudantías - SSOO IIC2333/image.png",
+    "destino": "Sistemas Operativos y Redes/Procesos/adjuntos/Uso de fork en lenguaje C.png",
+    "sha256": "1d41842f69ceb16d6d293223c738bba7c26a6b76afd3571f3ebec051d1352b41"
+  },
+  {
+    "tema": "Procesos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Ayudantías - SSOO IIC2333/image 1.png",
+    "destino": "Sistemas Operativos y Redes/Procesos/adjuntos/Ciclo de sincronización fork y wait.png",
+    "sha256": "a3a03fc79fc5dc6d98138b0bf633e5c04e9a03b53770be600d5a28d11854bfa3"
   }
 ]

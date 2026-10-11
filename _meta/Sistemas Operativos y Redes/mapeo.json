@@ -26,7 +26,7 @@
     },
     "Procesos": {
       "carpeta": "Sistemas Operativos y Redes/Procesos",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "ssoo",
@@ -226,40 +226,48 @@
   "aceptados": [
     {
       "texto": "Sistemas Operativos & Redes - IIC2333",
-      "motivo": "Encabezado y título de la página principal del curso en Notion"
+      "motivo": "Encabezado y título de la página principal del curso en Notion",
+      "fuente": "ramo"
     },
     {
       "texto": "CLASES",
-      "motivo": "Enlace/título de subpágina en la landing de Notion"
+      "motivo": "Enlace/título de subpágina en la landing de Notion",
+      "fuente": "ramo"
     },
     {
       "texto": "Interrogaciones",
-      "motivo": "Enlace/título de subpágina vacía en Notion"
+      "motivo": "Enlace/título de subpágina vacía en Notion",
+      "fuente": "ramo"
     },
     {
       "texto": "Tareas",
-      "motivo": "Enlace/título de subpágina vacía en Notion"
+      "motivo": "Enlace/título de subpágina vacía en Notion",
+      "fuente": "ramo"
     },
     {
       "texto": "Libros",
-      "motivo": "Enlace/título de subpágina vacía en Notion"
+      "motivo": "Enlace/título de subpágina vacía en Notion",
+      "fuente": "ramo"
     },
     {
       "texto": "Apuntes - SSOO IIC2333",
-      "motivo": "Enlace/título de la página de apuntes de SSOO en Notion"
+      "motivo": "Enlace/título de la página de apuntes de SSOO en Notion",
+      "fuente": "ramo"
     },
     {
       "texto": "Apuntes - Redes IIC2333",
-      "motivo": "Enlace/título de la página de apuntes de Redes en Notion"
+      "motivo": "Enlace/título de la página de apuntes de Redes en Notion",
+      "fuente": "ramo"
     },
     {
       "texto": "Ayudantías - SSOO IIC2333",
-      "motivo": "Enlace/título de subpágina en Notion"
+      "motivo": "Enlace/título de subpágina en Notion",
+      "fuente": "ramo"
     },
     {
       "texto": "RESUMEN MIDTERM SSOO",
-      "motivo": "Enlace/título de subpágina en Notion"
+      "motivo": "Enlace/título de subpágina en Notion",
+      "fuente": "ramo"
     }
   ]
 }
-
