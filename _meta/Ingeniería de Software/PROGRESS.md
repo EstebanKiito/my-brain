@@ -1,6 +1,8 @@
 # Progreso de la migración — Ingeniería de Software (IIC2143)
 
-Rama: `migrar/software-v2`. Un commit por tema. Antes de cada commit se corre `python3 _meta/verificar.py`.
+Rama: `migrar/software-v2`. Un commit por tema. Antes de cada commit se corre `python3 _meta/verificar.py --ramo "Ingeniería de Software"`.
+
+Desde la migración de Bases de Datos, la configuración de este ramo vive en `_meta/Ingeniería de Software/` y el verificador es multi-ramo (ver el registro al final).
 
 | # | Tema | Carpeta | Estado | Notas | Imágenes (apuntes + slides) |
 |---|---|---|---|---|---|
@@ -91,3 +93,4 @@ Rama: `migrar/software-v2`. Un commit por tema. Antes de cada commit se corre `p
   - **Cobertura global:** ramo 34/34, C1 32/32, Pt. 1 174/174 y Prueba Práctica 452/452 bloques. Las páginas Interrogaciones, Libros y Proyecto estaban vacías; CLASES solo tenía enlaces a los PDFs.
   - Verificación: 0 errores, 0 advertencias.
 - **Nota técnica:** `.venv` no existe en el repo, así que el verificador usa solo la biblioteca estándar de Python.
+- **2026-10-11 — Verificador multi-ramo.** `mapeo.json`, `imagenes.json`, `PROGRESS.md` y `DUDAS.md` se movieron a `_meta/Ingeniería de Software/`. `verificar.py` ahora exige `--ramo` y acepta `--raw` (o `RAW_DIR`). Los chequeos de autocontención y de grafo miran el vault completo. Verificación: 0 errores, 0 advertencias. Las notas que dicen «registrado en `_meta/DUDAS.md`» ahora se refieren a `_meta/Ingeniería de Software/DUDAS.md`.
