@@ -110,6 +110,10 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 ## Capa de aplicación y sockets
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
+| 🟡 | [[01 - Arquitecturas de aplicación y modelos de comunicación\|Arquitecturas de aplicación y modelos de comunicación]] | "Es ICP Friendly" | El término técnico formal es *ISP-friendly* (amigable con el Proveedor de Servicios de Internet / Internet Service Provider). |
+| 🟡 | [[03 - Sockets UDP y TCP: modelos y llamadas al sistema\|Sockets UDP y TCP: modelos y llamadas al sistema]] | "Por cada cliente → Un puerto" y "TCP: Conexion única (un puerto por cada conexion)" | El servidor mantiene el mismo puerto local (ej. 80); lo que se crea para cada cliente conectado es un nuevo descriptor de socket, diferenciado por la 4-tupla `(IP_src, Port_src, IP_dst, Port_dst)`. |
+| ℹ️ | [[01 - Arquitecturas de aplicación y modelos de comunicación\|Arquitecturas de aplicación y modelos de comunicación]] | "RECPETORES ... ciuertas ... fekear ip" | Erratas tipográficas ("RECPETORES" por receptores, "ciuertas" por ciertas, "fekear ip" por IP spoofing). |
+| ℹ️ | [[04 - Protocolo HTTP, formato de mensajes y estado con cookies\|Protocolo HTTP, formato de mensajes y estado con cookies]] | "CLOUDFORM ... Filezile" | Erratas tipográficas por Cloudflare / CloudFront y FileZilla. |
 
 ## Capa de transporte
 | Estado | Nota | Original | Duda / corrección propuesta |

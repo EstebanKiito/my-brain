@@ -873,5 +873,110 @@
     "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 10.png",
     "destino": "Sistemas Operativos y Redes/Fundamentos de redes y modelos en capas/adjuntos/Proceso de encapsulamiento y recorrido a través de capas de red.png",
     "sha256": "72297d9778e4e9c5efd8b5eccc9b9b671523e05c70b5d7d8ed7385e0bbe5a12e"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 11.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Arquitectura cliente servidor y modelos de comunicación de aplicaciones.png",
+    "sha256": "dcebb397fbbc545ba2db1695114c12b95c07c4e175aa6fd3ce694d357d498f25"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 12.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Concepto de socket e identificación por dirección IP y puerto.png",
+    "sha256": "da19a70b0664a36636a94239784192335dba0e57b7b12d561b67955a2a519117"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 13.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Flujo de intercambio de mensajes mediante sockets UDP.png",
+    "sha256": "66c82d99a0ae50fc46724ce13073fdeded9c0385ba6e79cc19eeb2bd787f1dca"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 14.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Diagrama de llamadas al sistema para sockets UDP no orientados a conexión.png",
+    "sha256": "2c7149c2e246ec413c6d4b58abc003b2ae23617255cd0c20f16e6b685b3dc90f"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 15.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Diagrama de llamadas al sistema para sockets TCP welcoming y conexión.png",
+    "sha256": "b626a5abdf0fbcde2c11eadaa60e1f43229be56bc6c5cdaf5e2fe8df0160a9fd"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 16.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Estructura y formato de un mensaje de solicitud HTTP request.png",
+    "sha256": "e1c82ddde290838331e425aa1a3536be3ad88969b2b9292776b6737a7170e389"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 17.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Estructura y formato de un mensaje de respuesta HTTP response.png",
+    "sha256": "bc183bb724c13c77609e8fd0cb3c6be016cb20deb9f5deb013d81a5347bfa5fe"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 18.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Mecanismo de estado mediante cookies HTTP entre cliente y servidor.png",
+    "sha256": "11a75bf1c042780f7d4464c2835c8816478dada7691661edfb400720d65a4dbb"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 19.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Jerarquía distribuida del sistema de nombres de dominio DNS.png",
+    "sha256": "ae0ad054870ef7598f20d436944fad3518be5ee09cca6862af22b0bad186bb6c"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 20.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Resolución iterativa de consultas en el sistema DNS.png",
+    "sha256": "9ad31a49945885dee53ea2ad1de6784c2a3c8138f7326a2a2fef1364e78b1dd4"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 21.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Resolución recursiva de consultas en el sistema DNS.png",
+    "sha256": "a3bc92e66b5f29e9f501520768a00ccb1c69fe0e4b2dc9607b016676f1977ab6"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 22.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Registros de recursos DNS Resource Records tipo A NS CNAME y MX.png",
+    "sha256": "3f437702fe9baa3cd0ceb3929494a19cd875ed6107e85bce6fb4e3fcaf9fdc7e"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 23.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Caché DNS y balanceo de carga entre múltiples servidores.png",
+    "sha256": "43e6168a8c3844fcedcb04214653d34b828d47cdb1f8731747bb9e0c144400f4"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 24.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Arquitectura de redes peer to peer P2P y protocolo BitTorrent.png",
+    "sha256": "946fc8207333a85647d1352d1caa237211eb4eb40a65742fb53f66068830aea9"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 25.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Distribución de archivos por fragmentos y tablas hash distribuidas.png",
+    "sha256": "db0df095c3044f9d04b307b17ebce80ff14852d0d24c9a0742d79fc7232f0b31"
   }
 ]
