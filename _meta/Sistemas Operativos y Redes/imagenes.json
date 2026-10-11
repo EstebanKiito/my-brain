@@ -103,5 +103,82 @@
     "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Ayudantías - SSOO IIC2333/image 1.png",
     "destino": "Sistemas Operativos y Redes/Procesos/adjuntos/Ciclo de sincronización fork y wait.png",
     "sha256": "a3a03fc79fc5dc6d98138b0bf633e5c04e9a03b53770be600d5a28d11854bfa3"
+  },
+  {
+    "tema": "Planificación de CPU",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 13.png",
+    "destino": "Sistemas Operativos y Redes/Planificación de CPU/adjuntos/Niveles de scheduling y colas del sistema operativo.png",
+    "sha256": "30d6be7740d66332cf19c5cf7f984f00628b5f19c1c30a664b5ee5851a40744f"
+  },
+  {
+    "tema": "Planificación de CPU",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 14.png",
+    "destino": "Sistemas Operativos y Redes/Planificación de CPU/adjuntos/Alternancia entre ráfagas de CPU y de entrada y salida.png",
+    "sha256": "862e2f0a86cdfb131e4cb256691de794011944d669c347bac86665a399b9594c"
+  },
+  {
+    "tema": "Planificación de CPU",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 15.png",
+    "destino": "Sistemas Operativos y Redes/Planificación de CPU/adjuntos/Clasificación de planificadores expropiativos y colaborativos.png",
+    "sha256": "57fa0480b3cd2c5154dbbdfaadf8df561781c0229d4e460cd0051093e3b42535"
+  },
+  {
+    "tema": "Planificación de CPU",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 16.png",
+    "destino": "Sistemas Operativos y Redes/Planificación de CPU/adjuntos/Objetivos de planificación batch interactiva y tiempo real.png",
+    "sha256": "d748bc2bf187a9e2304746b844e10c99de1e91fa526391f5a9fda35fe54fc6b1"
+  },
+  {
+    "tema": "Planificación de CPU",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 17.png",
+    "destino": "Sistemas Operativos y Redes/Planificación de CPU/adjuntos/Conceptos y métricas clave de planificación.png",
+    "sha256": "6d02fa0dd0d48cf51e983a0ba5419ee6a427585d849e5f147cb869b1a7cf1049"
+  },
+  {
+    "tema": "Planificación de CPU",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 18.png",
+    "destino": "Sistemas Operativos y Redes/Planificación de CPU/adjuntos/Planificación FCFS y efecto convoy.png",
+    "sha256": "bb0326e67e82036abf2074e5ecc2c81834ad59061cde150440e50dc660e06e79"
+  },
+  {
+    "tema": "Planificación de CPU",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 19.png",
+    "destino": "Sistemas Operativos y Redes/Planificación de CPU/adjuntos/Planificación SJF y cálculo de turnaround.png",
+    "sha256": "78f4d71effedea8cecb358c18c08ecaf2965721997e7f0aaa3827e105e7f3cb5"
+  },
+  {
+    "tema": "Planificación de CPU",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 20.png",
+    "destino": "Sistemas Operativos y Redes/Planificación de CPU/adjuntos/Métrica de tiempo de respuesta en sistemas interactivos.png",
+    "sha256": "b3c21ec11078e4e0d18bbe1261bbd1f07b9291d25456ffaf8b01f6369aa3afb0"
+  },
+  {
+    "tema": "Planificación de CPU",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 21.png",
+    "destino": "Sistemas Operativos y Redes/Planificación de CPU/adjuntos/Planificación Round Robin con quantum unitario.png",
+    "sha256": "0409200abbe68153724de2473413f76a757a929263c82e817099da5935616378"
+  },
+  {
+    "tema": "Planificación de CPU",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 22.png",
+    "destino": "Sistemas Operativos y Redes/Planificación de CPU/adjuntos/Planificación por prioridad starvation y aging.png",
+    "sha256": "4691c62d376670fe9f34ebb22b96111e0b648955fa8013e874b40756d98cfe62"
+  },
+  {
+    "tema": "Planificación de CPU",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 23.png",
+    "destino": "Sistemas Operativos y Redes/Planificación de CPU/adjuntos/Estructura de colas multinivel con retroalimentación MLFQ.png",
+    "sha256": "d285879cb63ef67eefa40748f304bdb81fe74b31390df9a18d2e22d04b235eb4"
   }
 ]

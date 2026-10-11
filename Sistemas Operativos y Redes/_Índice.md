@@ -14,7 +14,7 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: no hace fal
 |---|---|
 | [[Sistemas Operativos y Redes/Estructura de sistemas operativos/_Índice\|Estructura de sistemas operativos]] | Qué es un SO, modos de operación (dual-mode, Ring 0 a 3), kernel monolítico vs microkernel, interrupciones, syscalls, arranque (BIOS/UEFI, GRUB) y multitasking |
 | [[Sistemas Operativos y Redes/Procesos/_Índice\|Procesos]] | Concepto de proceso, espacio de memoria (text, data, heap, stack), PCB, estados, cambio de contexto, creación con fork/exec/wait |
-| Planificación de CPU *(pendiente)* | Criterios y métricas, algoritmos FIFO, SJF, STCF, Round Robin, colas multinivel con retroalimentación (MLFQ) |
+| [[Sistemas Operativos y Redes/Planificación de CPU/_Índice|Planificación de CPU]] | Niveles de planificación (largo, mediano y corto plazo), métricas, FCFS, SJF, Round Robin y colas multinivel con retroalimentación (MLFQ) |
 | Señales e IPC *(pendiente)* | Señales UNIX, handlers, máscaras, pipes y comunicación entre procesos |
 | Hilos *(pendiente)* | Threads vs procesos, espacio compartido, hilos de usuario vs kernel, modelos de threading y POSIX threads |
 | Sincronización *(pendiente)* | Condiciones de carrera, sección crítica, exclusión mutua, hardware (Test-and-Set), mutex, semáforos, problemas clásicos y deadlocks |

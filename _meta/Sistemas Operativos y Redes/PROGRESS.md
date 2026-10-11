@@ -7,7 +7,7 @@ Rama: `migrar/sistemas-operativos-y-redes`. Un commit por tema. Antes de cada co
 | 0 | Infraestructura (`verificar.py`, `_meta/Sistemas Operativos y Redes/`) | `_meta/` | ✅ hecho | – | – |
 | 1 | Estructura de sistemas operativos | `Estructura de sistemas operativos/` | ✅ hecho | 7 + índice | 8 |
 | 2 | Procesos | `Procesos/` | ✅ hecho | 7 + índice | 7 |
-| 3 | Planificación de CPU | `Planificación de CPU/` | 🟡 pendiente | – | – |
+| 3 | Planificación de CPU | `Planificación de CPU/` | ✅ hecho | 5 + índice | 11 |
 | 4 | Señales e IPC | `Señales e IPC/` | 🟡 pendiente | – | – |
 | 5 | Hilos | `Hilos/` | 🟡 pendiente | – | – |
 | 6 | Sincronización | `Sincronización/` | 🟡 pendiente | – | – |
@@ -35,4 +35,5 @@ Rama: `migrar/sistemas-operativos-y-redes`. Un commit por tema. Antes de cada co
 - **2026-10-11 — Infraestructura.** Creación de `_meta/Sistemas Operativos y Redes/` (`mapeo.json`, `imagenes.json`, `PROGRESS.md`, `DUDAS.md`). Se definió la arquitectura del curso en 18 temas (11 de Sistemas Operativos, 6 de Redes y Gestión del curso). Verificación multi-ramo en limpio: 0 errores, 0 advertencias.
 - **2026-10-11 — Estructura de sistemas operativos.** Fuentes: Clase 1 y Clase 2 completas (108 bloques). 7 notas atómicas + índice. 8 imágenes migradas con sha256 y transcritas. Complementos de `Contenido_1.pdf` y Tanenbaum. Errata marcada en `DUDAS.md` para "MONOLITICO: Falta todo". Verificación: 0 errores, 0 advertencias.
 - **2026-10-11 — Procesos.** Fuentes: Clase 3 y Clase 4 de SSOO más Ayudantía 1 (147 bloques totales: 115 de ssoo + 32 de ayudantías). 7 notas atómicas + índice. 7 imágenes migradas con sha256 y transcritas. Complementos de `Contenido_2_Procesos.pdf` y OSTEP. Verificación: 0 errores, 0 advertencias.
+- **2026-10-11 — Planificación de CPU.** Fuentes: sección SCHEDULERS de apuntes de SSOO (65 bloques). 5 notas atómicas + índice. 11 imágenes migradas con sha256 y transcritas. Complementos de `Contenido_3_Scheduling.pdf` y OSTEP (métricas, FCFS/SJF convoy effect, RR quantum trade-offs, y 5 reglas de MLFQ). Verificación: 0 errores, 0 advertencias.
 

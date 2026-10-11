@@ -23,6 +23,11 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 ## Planificación de CPU
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
+| 🟡 | [[03 - Planificación FCFS y SJF\|Planificación FCFS y SJF]] | "0 10 → 10 / 1 10 → 19 / 2 100 → 118" | Los valores corresponden al caso alternativo donde los procesos cortos llegan antes que el largo, invirtiendo el orden de llegada en FCFS y mitigando el efecto convoy. Se documentó la tabla comparativa para evitar confusión. |
+| 🟡 | [[02 - Clasificación de planificadores y métricas de rendimiento\|Clasificación de planificadores y métricas de rendimiento]] | "los colaborativos son casi inutiles, mejor expropiar" | Aunque en sistemas multiusuario de escritorio/servidor la falta de expropiación es inaceptable, en sistemas embebidos de bajo costo o esquemas de concurrencia cooperativa (corrutinas) sigue siendo un patrón útil. |
+| ℹ️ | [[01 - Niveles de planificación y ciclo de ráfagas CPU-IO\|Niveles de planificación y ciclo de ráfagas CPU-I/O]] | "Regals para elegir... Depende del tipo de schedule" | Erratas tipográficas ("Regals" por "Reglas", "schedule" por "scheduler"). Preservadas intactas en la cita textual. |
+| ℹ️ | [[02 - Clasificación de planificadores y métricas de rendimiento\|Clasificación de planificadores y métricas de rendimiento]] | "som los expropiativos... Real tiem... interacutar" | Erratas de tipeo en apuntes ("som" por "son", "Real tiem" por "Real Time", "interacutar" por "interactuar"). |
+| ℹ️ | [[05 - Planificación por prioridad y colas multinivel (MLFQ)\|Planificación por prioridad y colas multinivel (MLFQ)]] | "PRORITY SCHEDULING... nivels" | Erratas tipográficas ("PRORITY" por "PRIORITY", "nivels" por "niveles"). |
 
 ## Señales e IPC
 | Estado | Nota | Original | Duda / corrección propuesta |
