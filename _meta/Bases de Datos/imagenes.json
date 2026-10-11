@@ -1,0 +1,23 @@
+[
+  {
+    "tema": "Modelo relacional",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/02_-_Algebra_Relacional.pdf#page=56",
+    "destino": "Bases de Datos/Modelo relacional/adjuntos/Slide - producto cruz en álgebra relacional.png",
+    "sha256": "dd9eb7a7d1385e4b6d81efa0185c47b2045b5525beb6ea44ad0d3e1563d25b9f"
+  },
+  {
+    "tema": "Modelo relacional",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/02_-_Algebra_Relacional.pdf#page=100",
+    "destino": "Bases de Datos/Modelo relacional/adjuntos/Slide - intersección de actores de Nolan e Iñárritu.png",
+    "sha256": "9a51e2e5cb658af490502fe226101911ed9f60d5af425a963bd1e3b933623867"
+  },
+  {
+    "tema": "Modelo relacional",
+    "tipo": "slide",
+    "original": "Semestre 3/Base de Datos - IIC2413/CLASES (2023 2°)- Base Datos/02_-_Algebra_Relacional.pdf#page=108",
+    "destino": "Bases de Datos/Modelo relacional/adjuntos/Slide - diferencia de actores de Nolan y no de Iñárritu.png",
+    "sha256": "9b17f0d11ab96e29ab1a8ab60c6242ac46baf24ec8133a982313d9dfa9c61188"
+  }
+]

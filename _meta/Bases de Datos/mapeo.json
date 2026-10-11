@@ -1,0 +1,30 @@
+{
+  "_descripcion": "Mapeo de las fuentes originales (rutas relativas a _raw/) a los temas del vault. Cada sección va desde el encabezado 'desde' (incluido) hasta 'hasta' (excluido). 'aceptados' lista bloques originales que no tienen destino a propósito, con su motivo. Las clases (PDF/PPTX de 'CLASES (2023 2°)- Base Datos/') son fuente de complementos y no se verifican por bloques.",
+  "carpeta_ramo": "Bases de Datos",
+  "fuentes": {
+    "ramo": "Semestre 3/Base de Datos - IIC2413 9e09d4843d214035a485a10b5823da0e.html",
+    "i1": "Semestre 3/Base de Datos - IIC2413/Apuntes I1 5662ef516a7e4e4a9bc423d13ec6a185.html",
+    "i2": "Semestre 3/Base de Datos - IIC2413/Apuntes I2 0e99e7e97123427da7044af2a0b2cb97.html",
+    "proyecto": "Semestre 3/Base de Datos - IIC2413/Proyecto - Base Datos 6f7ee2a9d1c3486a97f03dbe1e908d16.html",
+    "interrogaciones": "Semestre 3/Base de Datos - IIC2413/Interrogaciones - Examenes - Base Datos ee531267053b4c43a8395267507360cf.html"
+  },
+  "temas": {
+    "Modelo relacional": {
+      "carpeta": "Bases de Datos/Modelo relacional",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i1",
+          "desde": "ALGEBRA RELACIONAL:",
+          "hasta": "SQL 1:"
+        },
+        {
+          "fuente": "i2",
+          "desde": "EXPLICACION LLAVES:",
+          "hasta": "3. Lógica en Base de Datos"
+        }
+      ]
+    }
+  },
+  "aceptados": []
+}
