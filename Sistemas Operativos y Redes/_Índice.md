@@ -23,7 +23,7 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: no hace fal
 | [[Sistemas Operativos y Redes/Memoria virtual/_Índice|Memoria virtual]] | Paginación por demanda, fallos de página (page faults), algoritmos de reemplazo (FIFO, Belady, Óptimo, LRU, Clock) y thrashing |
 | [[Sistemas Operativos y Redes/Sistemas de archivos/_Índice|Sistemas de archivos]] | Archivos, operaciones, discos magnéticos y SSDs, particionamiento, formateo lógico y estructura de directorios |
 | [[Sistemas Operativos y Redes/Implementación de archivos y bloques/_Índice|Implementación de archivos y bloques]] | Hard links vs symlinks, asignación contigua, enlazada e indexada (inodos UNIX), gestión de espacio libre |
-| Fundamentos de redes y modelos en capas *(pendiente)* | Modelos OSI y TCP/IP, ancho de banda, latencia, encapsulación y arquitectura de Internet |
+| [[Sistemas Operativos y Redes/Fundamentos de redes y modelos en capas/_Índice|Fundamentos de redes y modelos en capas]] | Modelos OSI y TCP/IP, ancho de banda, latencia, encapsulación y arquitectura de Internet |
 | Capa de aplicación y sockets *(pendiente)* | Sockets TCP y UDP, protocolos HTTP, FTP, DNS y arquitectura cliente-servidor |
 | Capa de transporte *(pendiente)* | Puertos, multiplexación, protocolo UDP, TCP, three-way handshake, control de flujo y control de congestión |
 | Capa de red y direccionamiento *(pendiente)* | Direccionamiento IPv4 y IPv6, máscaras de subred, CIDR, DHCP, NAT e ICMP |

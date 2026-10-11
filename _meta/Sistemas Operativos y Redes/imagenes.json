@@ -796,5 +796,82 @@
     "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Clases/SSOO/Contenido_7_Archivos.pdf#page=42",
     "destino": "Sistemas Operativos y Redes/Implementación de archivos y bloques/adjuntos/Gestión de espacio libre con lista enlazada de bloques.png",
     "sha256": "5825858c1389d9b33d04c66af13ea17a32ca0d4d9ffbaca335b7c18f7701df6a"
+  },
+  {
+    "tema": "Fundamentos de redes y modelos en capas",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image.png",
+    "destino": "Sistemas Operativos y Redes/Fundamentos de redes y modelos en capas/adjuntos/Estructura general de interconexión de redes e Internet.png",
+    "sha256": "edd6d111fd367e651559b9651ad13ca6312aa6c1dbe3e94fe2c921f4e9838600"
+  },
+  {
+    "tema": "Fundamentos de redes y modelos en capas",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 1.png",
+    "destino": "Sistemas Operativos y Redes/Fundamentos de redes y modelos en capas/adjuntos/Comunicación entre procesos clientes y servidores en la red.png",
+    "sha256": "06fa09f856317b2fbb8f0c4266a5333c2cb29ff681ab971762fff807cce749c1"
+  },
+  {
+    "tema": "Fundamentos de redes y modelos en capas",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 2.png",
+    "destino": "Sistemas Operativos y Redes/Fundamentos de redes y modelos en capas/adjuntos/Red de acceso mediante línea telefónica DSL.png",
+    "sha256": "2330b95d3f90a131a0e06cdbff0ed55ef3e8a591fa3901d1c626b71d7196a8bb"
+  },
+  {
+    "tema": "Fundamentos de redes y modelos en capas",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 3.png",
+    "destino": "Sistemas Operativos y Redes/Fundamentos de redes y modelos en capas/adjuntos/Red de acceso mediante cable coaxial y medio compartido.png",
+    "sha256": "622ca67b7c7f031e49935fd816e390911212692b98373a8179d5d6b667df2449"
+  },
+  {
+    "tema": "Fundamentos de redes y modelos en capas",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 4.png",
+    "destino": "Sistemas Operativos y Redes/Fundamentos de redes y modelos en capas/adjuntos/Red de área local cableada Ethernet con switches y routers.png",
+    "sha256": "87b6afea79f4fb08e20ff1f3bbbae4484ffc232a732801e48b64f371ad52ffd9"
+  },
+  {
+    "tema": "Fundamentos de redes y modelos en capas",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 5.png",
+    "destino": "Sistemas Operativos y Redes/Fundamentos de redes y modelos en capas/adjuntos/Red de acceso inalámbrico Wi-Fi y banda ancha móvil.png",
+    "sha256": "3ccb134f5678d806fd03412737d4e4a703499958e9eb0ba4b79f3f27dbbfc7d6"
+  },
+  {
+    "tema": "Fundamentos de redes y modelos en capas",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 6.png",
+    "destino": "Sistemas Operativos y Redes/Fundamentos de redes y modelos en capas/adjuntos/Conmutación de paquetes packet switching y tablas de reenvío.png",
+    "sha256": "54d1e43ad11b24917d6d3c7c43446d51bc57c59102e31cb42ac2bd4c55865f83"
+  },
+  {
+    "tema": "Fundamentos de redes y modelos en capas",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 7.png",
+    "destino": "Sistemas Operativos y Redes/Fundamentos de redes y modelos en capas/adjuntos/Colas de espera en routers y pérdida de paquetes por congestión.png",
+    "sha256": "5ee9901f6f0c9dde0cc65f2274cb4759fec49586f24d14efaaf0e1ef66ad990c"
+  },
+  {
+    "tema": "Fundamentos de redes y modelos en capas",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 8.png",
+    "destino": "Sistemas Operativos y Redes/Fundamentos de redes y modelos en capas/adjuntos/Conmutación de circuitos circuit switching y reserva de recursos.png",
+    "sha256": "f5990e55063e73e2aad81f686043b8d23c665d10b193982e0b1371e959479794"
+  },
+  {
+    "tema": "Fundamentos de redes y modelos en capas",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 9.png",
+    "destino": "Sistemas Operativos y Redes/Fundamentos de redes y modelos en capas/adjuntos/Comparación de modelos en capas OSI frente a TCP IP.png",
+    "sha256": "78a89a66677e56a6db1cf8f84fd31ac8a9d7e230db8831f2d69d3b3f97cc0289"
+  },
+  {
+    "tema": "Fundamentos de redes y modelos en capas",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 10.png",
+    "destino": "Sistemas Operativos y Redes/Fundamentos de redes y modelos en capas/adjuntos/Proceso de encapsulamiento y recorrido a través de capas de red.png",
+    "sha256": "72297d9778e4e9c5efd8b5eccc9b9b671523e05c70b5d7d8ed7385e0bbe5a12e"
   }
 ]

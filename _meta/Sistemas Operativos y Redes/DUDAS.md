@@ -99,6 +99,13 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 ## Fundamentos de redes y modelos en capas
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
+| 🟡 | [[01 - Arquitectura de Internet, nodos, enlaces y protocolos\|Arquitectura de Internet, nodos, enlaces y protocolos]] | "TCP: Transport control protocol" | El acrónimo estándar de IETF para TCP es *Transmission Control Protocol* (Protocolo de Control de Transmisión). |
+| 🟡 | [[03 - Conmutación de paquetes frente a conmutación de circuitos\|Conmutación de paquetes frente a conmutación de circuitos]] | "red de INTERCAMBIO DE CIRCUITOS" | El término técnico formal en telecomunicaciones y redes es *conmutación de circuitos* (*Circuit Switching*). |
+| ℹ️ | [[01 - Arquitectura de Internet, nodos, enlaces y protocolos\|Arquitectura de Internet, nodos, enlaces y protocolos]] | "PROVEDORES ... Elemenots ... atravez" | Erratas tipográficas ("PROVEDORES" por proveedores, "Elemenots" por elementos, "atravez" por a través). |
+| ℹ️ | [[02 - Redes de acceso y medios físicos de transmisión\|Redes de acceso y medios físicos de transmisión]] | "acutan ... Comuncacion ... wirless ... Porpagacion" | Erratas tipográficas ("acutan" por actúan, "Comuncacion" por comunicación, "wirless" por wireless, "Porpagacion" por propagación). |
+| ℹ️ | [[03 - Conmutación de paquetes frente a conmutación de circuitos\|Conmutación de paquetes frente a conmutación de circuitos]] | "trasnmicion ... packetes ... congesiton" | Erratas tipográficas ("trasnmicion" por transmisión, "packetes" por paquetes, "congesiton" por congestión). |
+| ℹ️ | [[05 - Capas de transporte, red, enlace y física\|Capas de transporte, red, enlace y física]] | "ORGIN Y DESTINY ... Sevicion ... gratiza ... SWITCHS" | Erratas tipográficas en nombres y conceptos ("ORGIN Y DESTINY" por origen y destino, "Sevicion" por servicio, "gratiza" por garantiza, "SWITCHS" por switches). |
+| ℹ️ | [[06 - Proceso de encapsulamiento y flujo de datos en la red\|Proceso de encapsulamiento y flujo de datos en la red]] | "trasnporte ... dispoisitvo" | Erratas de tipeo por transporte y dispositivo. |
 
 ## Capa de aplicación y sockets
 | Estado | Nota | Original | Duda / corrección propuesta |
