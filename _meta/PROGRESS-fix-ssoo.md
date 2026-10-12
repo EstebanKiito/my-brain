@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 21 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 04-Señales e IPC/02 - Señales comunes y mecanismos de control SIGTERM, SIGKILL y SIGINT.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 22 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 05-Hilos/01 - Concepto de hilo y recursos compartidos versus privados.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -35,7 +35,7 @@ Reescritas hasta ahora: 21 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 20 | 04-Señales e IPC/01 - Concepto de señal y ciclo de vida de señales POSIX.md | reescrita | 93 líneas; C y Mermaid ok |
 | 21 | 04-Señales e IPC/02 - Señales comunes y mecanismos de control SIGTERM, SIGKILL y SIGINT.md | reescrita | 89 líneas; C ok; 1 duda |
 | – | 04-Señales e IPC/03 - Comunicación entre procesos y manejo de señales en C.md | sin marca | nota modelo |
-| 22 | 05-Hilos/01 - Concepto de hilo y recursos compartidos versus privados.md | pendiente | |
+| 22 | 05-Hilos/01 - Concepto de hilo y recursos compartidos versus privados.md | reescrita | 98 líneas; C ok |
 | 23 | 05-Hilos/02 - Programación con POSIX Threads y ciclo de vida.md | pendiente | |
 | 24 | 05-Hilos/03 - Hilos a nivel de usuario frente a hilos a nivel de kernel.md | pendiente | |
 | 25 | 06-Sincronización/01 - Condiciones de carrera y el problema de la sección crítica.md | pendiente | |
@@ -151,3 +151,4 @@ Reescritas hasta ahora: 21 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **03/05 Prioridad y MLFQ**: 82 líneas, 2 imágenes comprobadas, tabla de las reglas R1-R5 con su propósito, 1 Mermaid (válido). Se agregaron los otros schedulers del material de clase (Lottery, Fair Share, O(1), BFS). Se quitó el recordatorio personal sobre la clase de paginación. Sin dudas nuevas.
 - **04/01 Concepto de señal**: 93 líneas, tabla de las 4 señales de tus apuntes, 1 Mermaid (válido), ejemplo C con `kill` + `WIFSIGNALED` (compila y corre: imprime 15). "SigStopy" se corrigió a `SIGSTOP`/`SIGTSTP`. Se omitió "kill -l lista 64 señales" porque el número exacto depende del sistema. Sin dudas nuevas.
 - **04/02 Señales comunes**: 89 líneas, tabla de señales, mnemotecnia "TERM pregunta, KILL impone", ejemplo C con `sigaction`: captura SIGTERM, y el intento sobre SIGKILL falla con EINVAL (verificado). Solo se dan los números portables (2, 9, 11, 15); los de STOP/TSTP/CONT/CHLD del complemento eran de Linux x86 y en macOS son otros. SIGCOM se corrigió a SIGCONT y SIGSTP a SIGTSTP. Duda nueva 🟡: la analogía "espérame un poco" para SIGINT.
+- **05/01 Concepto de hilo**: 98 líneas, tabla comparten/no comparten ampliada con la lista del material de clase, regla "privado = ejecución, compartido = recursos". Ejemplo C que muestra la misma dirección para la global y distintas para la local: al probarlo con los threads en serie el stack se reutilizaba y las direcciones coincidían, así que se dejaron vivos a la vez. Se conservó el ejemplo del Excel como problema de sincronización. Se quitó el Mermaid antiguo porque duplicaba la tabla. Sin dudas nuevas.
