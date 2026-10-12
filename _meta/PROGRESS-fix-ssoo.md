@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 90 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 17-Capa de enlace y seguridad/02 - Direcciones MAC, protocolo ARP y trama Ethernet.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 91 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 17-Capa de enlace y seguridad/03 - Conmutación en redes locales (Switches L2, STP) y VLANs.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -107,7 +107,7 @@ Reescritas hasta ahora: 90 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 88 | 16-Algoritmos de ruteo/03 - Enrutamiento jerárquico y sistemas autónomos (Intra-AS e Inter-AS).md | reescrita | ~93 líneas; sin imágenes; 2 Mermaid |
 | 89 | 17-Capa de enlace y seguridad/01 - Servicios de capa de enlace y control de acceso al medio (MAC).md | reescrita | ~104 líneas; 1 imagen; Python CRC |
 | 90 | 17-Capa de enlace y seguridad/02 - Direcciones MAC, protocolo ARP y trama Ethernet.md | reescrita | 109 líneas; sin imágenes; Python siguiente salto ARP |
-| 91 | 17-Capa de enlace y seguridad/03 - Conmutación en redes locales (Switches L2, STP) y VLANs.md | pendiente | |
+| 91 | 17-Capa de enlace y seguridad/03 - Conmutación en redes locales (Switches L2, STP) y VLANs.md | reescrita | ~108 líneas; sin imágenes; Python switch autoaprendizaje |
 | 92 | 17-Capa de enlace y seguridad/04 - Fundamentos de seguridad en redes: amenazas, ataques y defensas.md | pendiente | |
 | 93 | 18-Gestión del curso/01 - Estructura de evaluaciones y preparación del Midterm.md | saltada: no es concepto de estudio (logística/síntesis); decide tú | |
 | 94 | 18-Gestión del curso/02 - Síntesis de procesos, hilos y planificación para el Midterm.md | saltada: no es concepto de estudio (logística/síntesis); decide tú | |
@@ -226,3 +226,4 @@ Reescritas hasta ahora: 90 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **16/03 Enrutamiento jerárquico**: ~93 líneas, sin imágenes, 2 Mermaid (válidos): AS con gateways y el ejemplo de BGP con los ISP A, B, C y los clientes W, X, Y. Por qué hace falta la jerarquía, intra/inter-AS, tabla RIP/OSPF del material, funciones de BGP y la política de B. Se conservaron el Link-State interno de tus apuntes y la papa caliente del complemento. Se quitó el recordatorio de las clases de repaso. Duda ℹ️: título "Intra-AS: BGP" en la diapositiva.
 - **17/01 Servicios de enlace y MAC**: ~104 líneas, 1 imagen comprobada (es tu apunte a mano; la transcripción anterior agregaba conceptos que no tiene). Servicios del material, detección de errores (paridad, checksum, CRC con el ejemplo D=101110, G=1001 → 101110011 calculado en Python, incluido un bit corrupto), acceso al medio con tabla TDMA/FDMA/CDMA, ALOHA particionado (37 %) y puro (18 %), CSMA, CSMA/CD, CSMA/CA con RTS/CTS, polling y token. Se quitaron la fecha, "Clase 7", "XD" y "Por Estudiar". Sin dudas nuevas.
 - **17/02 MAC, ARP y Ethernet**: 109 líneas, sin imágenes. Tu idea de la MAC como identificación ante el switch, con el formato del material (48 bits, 24 + 24, plana, modificable por software, broadcast FF), tabla IP/MAC, ARP con el ejemplo de C y A, el cruce de subredes 111.111.111.111 → 222.222.222.222 con las MAC del material, evolución de Ethernet y tabla del frame. Python que decide la MAC de destino (router o ARP query). El complemento decía que la MAC está grabada de forma permanente; se dejó lo del material (modificable por software). Sin dudas nuevas.
+- **17/03 Switches, STP y VLANs**: ~108 líneas, sin imágenes. Tu definición de LAN y tus ejemplos de VLAN (domótica, servidores), con el material: filtering/forwarding, tabla de decisión del switch, autoaprendizaje con aging time (simulado en Python), ciclos y las 4 etapas de STP, tabla switch/router, motivación de las VLAN, trunking e IEEE 802.1Q, y VLAN por puerto, MAC o IP. Sin dudas nuevas.
