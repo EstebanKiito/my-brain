@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 58 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 11-Implementación de archivos y bloques/05 - Métodos de asignación de bloques: asignación contigua y bloques de control.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 59 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 11-Implementación de archivos y bloques/06 - Asignación enlazada y tabla de asignación de archivos (FAT).md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -75,7 +75,7 @@ Reescritas hasta ahora: 58 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 56 | 11-Implementación de archivos y bloques/03 - Montaje de sistemas de archivos y puntos de montaje.md | reescrita | 63 líneas; 1 imagen |
 | 57 | 11-Implementación de archivos y bloques/04 - Estructuras en disco y en memoria del sistema de archivos virtual (VFS).md | reescrita | 77 líneas; 2 imágenes; Mermaid ok |
 | 58 | 11-Implementación de archivos y bloques/05 - Métodos de asignación de bloques: asignación contigua y bloques de control.md | reescrita | 70 líneas; 1 imagen; Python ok |
-| 59 | 11-Implementación de archivos y bloques/06 - Asignación enlazada y tabla de asignación de archivos (FAT).md | pendiente | |
+| 59 | 11-Implementación de archivos y bloques/06 - Asignación enlazada y tabla de asignación de archivos (FAT).md | reescrita | 76 líneas; 2 imágenes; Python ok; 1 duda |
 | 60 | 11-Implementación de archivos y bloques/07 - Asignación indexada y arquitectura de inodos multinivel en Unix.md | pendiente | |
 | 61 | 11-Implementación de archivos y bloques/08 - Administración del espacio libre en disco: mapas de bits y listas enlazadas.md | pendiente | |
 | 62 | 12-Fundamentos de redes y modelos en capas/01 - Arquitectura de Internet, nodos, enlaces y protocolos.md | pendiente | |
@@ -191,3 +191,4 @@ Reescritas hasta ahora: 58 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **11/03 Montaje**: 63 líneas, 1 imagen comprobada (estaba anidada en un callout; es un árbol bin/dev/lib/mnt/usr antes y después de montar, con colores a mano, y la transcripción anterior hablaba de una "tabla de monturas" que no aparece). Se conservó tu ejemplo de colores (rojo NTFS, azul FAT32) y `mount /dev/sda1 /home/users`. "Se monta en la carpeta MNT" se matizó como convención. El VFS quedó enlazado a 11/04. Sin dudas nuevas.
 - **11/04 Estructuras y VFS**: 77 líneas, 2 imágenes comprobadas (figuras de Tanenbaum: layout de partición y VFS; estaban anidadas en un callout y las transcripciones anteriores describían más de lo que muestran). Tabla de estructuras en disco con los nombres UNIX/Windows del material, lista de estructuras en memoria y Mermaid (válido) de la cadena fd → archivo abierto → v-node → funciones. Sin dudas nuevas.
 - **11/05 Asignación contigua**: 70 líneas, 1 imagen comprobada (la de Silberschatz con la tabla count/tr/mail/list/f; la transcripción anterior agregaba fórmulas que no están en la figura). Tabla de tipos de bloque de tus apuntes, camino de un read y tabla de ventajas/desventajas. Python sobre la figura: bloque 3 de mail → 22; 15 bloques libres en huecos de 4/6/2/3, así que un archivo de 7 no cabe (fragmentación externa). "No se pueden guardar archivos pequeños" se reformuló como fragmentación externa. Sin dudas nuevas.
+- **11/06 Enlazada y FAT**: 76 líneas, 2 imágenes comprobadas (Silberschatz: jeep 9→16→1→10→25 y FAT test 217→618→339; estaban anidadas en un callout y las transcripciones agregaban datos ajenos a las figuras). Tabla de ventajas y desventajas del material (508 de 512 B, solo secuencial, vulnerable, clusters). Python que recorre la FAT de la figura. Duda nueva 🟡: entrada por archivo frente a por bloque, y la causa del límite de 4 GB.
