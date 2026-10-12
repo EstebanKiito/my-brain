@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 86 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 16-Algoritmos de ruteo/01 - Modelos de grafo y algoritmos Link-State (Dijkstra).md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 87 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 16-Algoritmos de ruteo/02 - Algoritmos Distance-Vector (Bellman-Ford) y conteo al infinito.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -103,7 +103,7 @@ Reescritas hasta ahora: 86 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 84 | 15-Capa de red y direccionamiento/04 - Configuración dinámica con DHCP y traducción de direcciones NAT.md | reescrita | 111 líneas; 4 imágenes; Python tabla NAT |
 | 85 | 15-Capa de red y direccionamiento/05 - Protocolo ICMP y transición a IPv6: dual-stack y tunneling.md | reescrita | 111 líneas; 4 imágenes; Python traceroute |
 | 86 | 16-Algoritmos de ruteo/01 - Modelos de grafo y algoritmos Link-State (Dijkstra).md | reescrita | 126 líneas; 2 imágenes; Python Dijkstra |
-| 87 | 16-Algoritmos de ruteo/02 - Algoritmos Distance-Vector (Bellman-Ford) y conteo al infinito.md | pendiente | |
+| 87 | 16-Algoritmos de ruteo/02 - Algoritmos Distance-Vector (Bellman-Ford) y conteo al infinito.md | reescrita | ~112 líneas; 1 imagen; Python conteo al infinito |
 | 88 | 16-Algoritmos de ruteo/03 - Enrutamiento jerárquico y sistemas autónomos (Intra-AS e Inter-AS).md | pendiente | |
 | 89 | 17-Capa de enlace y seguridad/01 - Servicios de capa de enlace y control de acceso al medio (MAC).md | pendiente | |
 | 90 | 17-Capa de enlace y seguridad/02 - Direcciones MAC, protocolo ARP y trama Ethernet.md | pendiente | |
@@ -221,3 +221,5 @@ Reescritas hasta ahora: 86 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **15/04 DHCP y NAT**: 111 líneas, 4 imágenes comprobadas (DHCP de Kurose con 223.1.2.5/223.1.2.4 y puertos 67/68; topología PC1-PC3 con R1 200.100.101.1; tabla NAT de Kurose con tus anotaciones de YouTube; servidor detrás de NAT con el registro p:4577 → 10.0.0.1:443. Las transcripciones anteriores eran genéricas). Las 4 etapas DHCP, tu ejemplo de YouTube paso a paso (128.76.29.7 se corrigió a 138.76.29.7), UPnP y los detractores del material ("distractores" se corrigió). Python que simula la tabla NAT con los números del ejemplo. Se quitó el callout "Posible error". Sin dudas nuevas.
 - **15/05 ICMP e IPv6**: 111 líneas, 4 imágenes comprobadas (la de "formato ICMP" es la tabla de tipos y códigos; la del "header IPv6" es la conversión dual-stack con `Flow: ??`; la de dual-stack es el servidor IPv6 en un host dual-stack; la de tunneling, la vista lógica y física de Kurose. Las transcripciones anteriores no coincidían; ver DUDAS ℹ️). ping, traceroute (simulado en Python), simplificaciones del header IPv6, flag day, dual-stack y tunneling con tabla comparativa y tu observación del Flow. Se quitó la comparación con los átomos del universo (ℹ️ en DUDAS).
 - **16/01 Link-State y Dijkstra**: 126 líneas, 2 imágenes comprobadas (la primera es el grafo u-v-w-x-y-z de Kurose con sus costos, no el pseudocódigo; la segunda es el árbol de caminos más cortos desde u. Las transcripciones anteriores no coincidían). Tabla LS/DV del material ("DS" se corrigió a DV), pasos de Link-State, Dijkstra con la tabla de iteraciones completa del ejemplo y Python verificado (D(w) = 3 por u-x-y-w; todo salvo v sale por (u,x)). Complejidad O(NE) mensajes y O(N²) por nodo del material. Sin dudas nuevas.
+- **Verificación completa al cerrar la carpeta 14** (terminó 15:28): sin errores nuevos en [1], [2] ni [5].
+- **16/02 Distance-Vector**: ~112 líneas, 1 imagen comprobada (las tablas de x, y, z de Kurose en el triángulo 2-1-7; la transcripción anterior era genérica). Bellman-Ford con el cálculo de d_x(z) = 3, diferencia LS/DV, tu ejemplo 4→60 explicado paso a paso, reversa envenenada (tu "declarar la ruta inválida", con el 61) y tabla LS/DV del material. Python que compara la convergencia sin veneno (24 rondas) y con veneno (2). "BELLAMN" corregido. Sin dudas nuevas.
