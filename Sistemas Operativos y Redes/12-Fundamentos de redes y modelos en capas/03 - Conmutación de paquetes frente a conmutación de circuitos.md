@@ -4,7 +4,6 @@ tema: "Fundamentos de redes y modelos en capas"
 tags:
   - redes/nucleo
   - redes/conmutacion
-  - origen/apuntes
   - origen/complemento
 prerrequisitos:
   - "[[Sistemas Operativos y Redes/12-Fundamentos de redes y modelos en capas/01 - Arquitectura de Internet, nodos, enlaces y protocolos\|01 - Arquitectura de Internet, nodos, enlaces y protocolos]]"
@@ -12,65 +11,75 @@ prerrequisitos:
 
 # Conmutación de paquetes frente a conmutación de circuitos
 
-El núcleo de la red interconecta los sistemas terminales utilizando dos paradigmas opuestos de transporte de información: conmutación de paquetes (*Packet Switching*) y conmutación de circuitos (*Circuit Switching*).
+Una vez que los datos entran a la red, ¿cómo cruzan el núcleo hasta el destino? Hay dos enfoques opuestos. Internet usa la **conmutación de paquetes**: cada paquete viaja por su cuenta y los routers deciden hacia dónde reenviarlo. La red telefónica tradicional usa la **conmutación de circuitos**: antes de hablar, se reserva un camino completo de extremo a extremo.
 
-## Funcionamiento del núcleo de red y conmutación (mis apuntes)
+## La demora de transmisión
 
-- FUNCIONAMIENTO DE RED
-- Si quiero transmitir L bits sobre un enlace que soporta R bits por segundo
-- Entonces puedo transmitir a una velocidad de L/R
-- Formula Importante: Demora de trasnmicion : L bits sobre enlace / R (bits/sec)
-- La red de INTERNET es una red de Paquetes, transmite paquetes de un destino a otro, con etiquetas origen y destino a una InfraEstructura
-- Esta estructura es capaz de mirar los packetes, examinarlos y reenviarlos (reenrutar)
-- Estan configurados con tablas (mapeo)
-- EJ : “Todos los paquetes que empiezen con 120.algo … mandalos por este camino”
-- Cada dispositivo router es capaz de tomar cualqueir paquete, y rutearlo al camino correcto
-- PACKET SWITCHING
-- ROUTER: Almacena Paquetes
-- Examina Paquetes y determina punto de envio (FORWARD)
-- Usa Tablas de reenvio (FORWARDING TABLES
-- Estos routers tienen una memoria (limitada), si la cola de procesos se llena, decimos que esta congestionado, pero si tenemos varios buffers, podemos enrutar el camino atravez de distintas rutas
-- Si tengo mas routers, es mas fácil de manejar la congesiton !!!
-- N Saltos (en cada enlace)
-- La competencia, es la red (telefonica) o red de INTERCAMBIO DE CIRCUITOS
-- CIRCUIT SWITCHING
-- En vez de enviar paquetes, se buscan caminos para elegir rutas
-- Cada router tiene entradas / salidas
-- Cada vez que llamo, la conexion no es instantanea, se genera primero el circuito y luego con ese delay, se establece la conexion
-- Es muy SENSIBLE A CONGESTIONES , ej: Cuando hay terremotos, se saturan estas vias
+Transmitir $L$ bits sobre un enlace que soporta $R$ bits por segundo demora:
 
-> [!warning] Posible error
-> En los apuntes aparecen erratas en `trasnmicion` (transmisión), `packetes` (paquetes) y `congesiton` (congestión). Además, el término estándar en redes es **conmutación de circuitos**, no "intercambio de circuitos".
+$$d_{\text{trans}} = \frac{L}{R}$$
 
-> [!tip] Complemento: Comparación arquitectónica de Packet Switching frente a Circuit Switching
-> 1. **Retardo de transmisión (*Transmission Delay*):**
->    $$d_{\text{trans}} = \frac{L}{R}$$
->    Donde $L$ es la longitud del paquete en bits y $R$ es la tasa de transmisión del enlace (*bandwidth*) en bits por segundo ($\text{bps}$).
-> 2. **Conmutación de paquetes (*Packet Switching*):**
->    ![Conmutación de paquetes packet switching y tablas de reenvío](adjuntos/Conmutación%20de%20paquetes%20packet%20switching%20y%20tablas%20de%20reenvío.png)
->    ![Colas de espera en routers y pérdida de paquetes por congestión](adjuntos/Colas%20de%20espera%20en%20routers%20y%20pérdida%20de%20paquetes%20por%20congestión.png)
->    > [!example]- Transcripción de las imágenes
->    > **Mecanismo de Store-and-Forward y colas en Packet Switching:**
->    > - Los routers almacenan el paquete completo antes de comenzar a transmitir el primer bit al siguiente enlace (*almacenar y reenviar*).
->    > - **Tablas de reenvío (*Forwarding Tables*):** mapean prefijos de dirección IP de destino a interfaces de salida físicas.
->    > - **Colas y pérdida de paquetes (*Packet Loss*):** si la tasa de llegada de paquetes excede la capacidad de salida del enlace, los paquetes esperan en búferes de memoria (*queues*). Si la cola se llena (*buffer overflow*), los paquetes excedentes se descartan irrevocablemente.
->
-> 3. **Conmutación de circuitos (*Circuit Switching*):**
->    ![Conmutación de circuitos circuit switching y reserva de recursos](adjuntos/Conmutación%20de%20circuitos%20circuit%20switching%20y%20reserva%20de%20recursos.png)
->    > [!example]- Transcripción de la imagen
->    > **Reserva dedicada de circuitos:**
->    > - Se establece un canal físico o lógico exclusivo de extremo a extremo (*end-to-end*) antes de iniciar la transmisión (retardo de establecimiento o *call setup*).
->    > - Recursos garantizados mediante multiplexación por división de frecuencia (FDM) o división de tiempo (TDM).
->    > - Si el circuito está inactivo durante la llamada, los recursos reservados se desperdician (*idle capacity*). Si todos los circuitos están ocupados, nuevas solicitudes son bloqueadas de inmediato.
+Por ejemplo, un paquete de 1500 bytes ($L = 12\,000$ bits) en un enlace de 100 Mbps tarda $12\,000 / 10^8 = 120\ \mu s$.
+
+## Conmutación de paquetes (*packet switching*)
+
+Internet es una **red de paquetes**: cada paquete lleva etiquetas de origen y destino, y la infraestructura lo mira, lo examina y lo reenvía. Cada router:
+
+1. **Almacena** el paquete completo (*store*);
+2. **Examina** el paquete y determina el punto de reenvío (*forward*);
+3. Usa **tablas de reenvío** (*forwarding tables*), un mapeo del tipo "todos los paquetes cuyo destino empiece con `120.…`, mándalos por este camino".
+
+![Conmutación de paquetes packet switching y tablas de reenvío](adjuntos/Conmutaci%C3%B3n%20de%20paquetes%20packet%20switching%20y%20tablas%20de%20reenv%C3%ADo.png)
+
+> [!example]- Transcripción de la imagen
+> Un *Source* envía los paquetes 1, 2 y 3 por un enlace de *R bps* hacia un router: "Front of packet 1 stored in router, awaiting remaining bits before forwarding". Del router sale un enlace hacia el *Destination*.
+
+Como cada router espera el paquete completo antes de reenviarlo, si la ruta tiene $N$ enlaces iguales:
+
+$$d_{\text{end-to-end}} = N \times \frac{L}{R}$$
+
+La **tasa** queda determinada por **el enlace más lento**, y el router puede sufrir **congestión**: su memoria es limitada. Si llegan más paquetes de los que puede enviar, se forma una **cola**, y si la cola se llena, se pierden paquetes. Con más routers y rutas alternativas es más fácil manejar la congestión, porque el tráfico se puede desviar.
+
+![Colas de espera en routers y pérdida de paquetes por congestión](adjuntos/Colas%20de%20espera%20en%20routers%20y%20p%C3%A9rdida%20de%20paquetes%20por%20congesti%C3%B3n.png)
+
+> [!example]- Transcripción de la imagen
+> "Tasa de transmisión determinada por el enlace más lento. *Router* puede sufrir **congestión**. Si hay $N$ enlaces iguales en la ruta, el tiempo de transmisión de origen a destino (*end-to-end delay*) es: $d_{end-to-end} = N \times \frac{L}{R}$". En el diagrama, A y B envían por enlaces de *10 Mbps Ethernet* a un router cuyo enlace de salida es de *1.5 Mbps*; se forma una *Queue of packets waiting for output link* hacia los hosts C, D y E.
+
+## Conmutación de circuitos (*circuit switching*)
+
+En vez de enviar paquetes sueltos, primero se **establece una conexión** entre origen y destino, eligiendo un camino y reservando recursos en cada tramo. Es el enfoque de la **comunicación telefónica**: al llamar, la conexión no es instantánea, porque primero se arma el circuito.
+
+- **Ancho de banda garantizado** durante toda la comunicación.
+- **Sensible a la saturación** ante muchas conexiones simultáneas: por ejemplo, tras un terremoto las líneas colapsan porque todos llaman a la vez.
+- Un enlace de 1 Mbps con 4 conexiones simultáneas le da a cada una hasta **250 kbps**, la use o no.
+
+Para mantener separadas las comunicaciones en un medio compartido se usa **multiplexación**:
+
+- **FDM** (*Frequency-Division Multiplexing*): cada transmisión tiene su banda de frecuencia.
+- **TDM** (*Time-Division Multiplexing*): cada emisor tiene un turno para transmitir con todo el ancho de banda.
+
+![Conmutación de circuitos circuit switching y reserva de recursos](adjuntos/Conmutaci%C3%B3n%20de%20circuitos%20circuit%20switching%20y%20reserva%20de%20recursos.png)
+
+> [!example]- Transcripción de la imagen
+> "CIRCUIT SWITCHING. Establecimiento previo de conexión entre origen-destino. *Ancho de banda garantizado durante comunicación*. Enfoque usado por comunicación **telefónica**. Sensible a saturación ante conexiones simultáneas. Enlace de 1Mbps, con 4 conexiones simultáneas, cada una recibe hasta 250kbps. Si hay N enlaces iguales en la ruta, el tiempo de transmisión de origen a destino (*end-to-end delay*) es: $d_{end-to-end} = N \times \frac{L}{R}$". A la derecha, cuatro switches en cuadrado con un camino resaltado en azul entre dos computadores.
+
+| | Paquetes | Circuitos |
+|---|---|---|
+| Antes de transmitir | Nada: se envía de inmediato | Hay que establecer el circuito |
+| Recursos | Compartidos según demanda | Reservados, aunque no se usen |
+| Ante congestión | Colas y posible pérdida de paquetes | Rechazo de nuevas conexiones |
+| Uso | Internet | Telefonía tradicional |
 
 ## Preguntas de repaso
 
-> [!question]- ¿Por qué Internet eligió la conmutación de paquetes (*Packet Switching*) en lugar de la conmutación de circuitos (*Circuit Switching*)?
-> Porque la conmutación de paquetes ofrece un uso mucho más eficiente y elástico de la capacidad de los enlaces para tráfico a ráfagas (*bursty traffic*), comparte dinámicamente los recursos entre múltiples usuarios sin necesidad de reserva previa dedicada, y permite una alta resiliencia ante caídas de nodos enrutando por rutas alternativas.
+> [!question]- ¿Cuánto demora transmitir 1500 bytes por un enlace de 100 Mbps?
+> $L = 12\,000$ bits, así que $d = 12\,000 / 10^8 = 120\ \mu s$.
 
-> [!question]- ¿Cómo se calcula el tiempo necesario para transmitir un paquete de $1500\text{ bytes}$ a través de un enlace de $100\text{ Mbps}$?
-> Convertimos bytes a bits: $L = 1500 \times 8 = 12000\text{ bits}$. La tasa de transmisión es $R = 100 \times 10^6\text{ bps}$. El retardo de transmisión es $d_{\text{trans}} = \frac{12000}{10^8}\text{ s} = 0.00012\text{ s} = 0.12\text{ ms} = 120\text{ }\mu\text{s}$.
+> [!question]- ¿Por qué con conmutación de paquetes el retardo de extremo a extremo es $N \times L/R$?
+> Porque cada router almacena el paquete completo antes de reenviarlo (*store-and-forward*): en cada uno de los $N$ enlaces se paga de nuevo la transmisión $L/R$.
 
-> [!question]- ¿Qué ocurre en un router de conmutación de paquetes cuando el búfer de entrada o salida se llena por congestión?
-> El router descarta los nuevos paquetes entrantes (*packet drop* o descarte de paquetes). La recuperación y retransmisión de los paquetes perdidos debe ser gestionada por capas superiores de la pila de protocolos (como TCP en la capa de transporte).
+> [!question]- ¿Qué pasa en un router congestionado?
+> Los paquetes que no alcanzan a salir esperan en una cola de memoria limitada; si la cola se llena, los nuevos paquetes se pierden.
 
+> [!question]- ¿Qué ventaja y qué desventaja tiene la conmutación de circuitos?
+> Garantiza un ancho de banda durante toda la comunicación. Pero exige establecer el circuito antes, reserva recursos aunque no se usen y se satura cuando hay muchas conexiones simultáneas.

@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 63 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 12-Fundamentos de redes y modelos en capas/02 - Redes de acceso y medios físicos de transmisión.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 64 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 12-Fundamentos de redes y modelos en capas/03 - Conmutación de paquetes frente a conmutación de circuitos.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -80,7 +80,7 @@ Reescritas hasta ahora: 63 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 61 | 11-Implementación de archivos y bloques/08 - Administración del espacio libre en disco: mapas de bits y listas enlazadas.md | reescrita | 77 líneas; 2 imágenes; Python ok; 1 duda |
 | 62 | 12-Fundamentos de redes y modelos en capas/01 - Arquitectura de Internet, nodos, enlaces y protocolos.md | reescrita | 77 líneas; 2 imágenes; 1 duda ℹ️ |
 | 63 | 12-Fundamentos de redes y modelos en capas/02 - Redes de acceso y medios físicos de transmisión.md | reescrita | 86 líneas; 4 imágenes; 1 duda |
-| 64 | 12-Fundamentos de redes y modelos en capas/03 - Conmutación de paquetes frente a conmutación de circuitos.md | pendiente | |
+| 64 | 12-Fundamentos de redes y modelos en capas/03 - Conmutación de paquetes frente a conmutación de circuitos.md | reescrita | 86 líneas; 3 imágenes; 1 duda |
 | 65 | 12-Fundamentos de redes y modelos en capas/04 - Modelos de capas: modelo de referencia OSI frente al stack TCP-IP.md | pendiente | |
 | 66 | 12-Fundamentos de redes y modelos en capas/05 - Capas de transporte, red, enlace y física.md | pendiente | |
 | 67 | 12-Fundamentos de redes y modelos en capas/06 - Proceso de encapsulamiento y flujo de datos en la red.md | pendiente | |
@@ -196,3 +196,4 @@ Reescritas hasta ahora: 63 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **11/08 Espacio libre**: 77 líneas, 2 imágenes comprobadas (diapositivas de bitmap y de lista enlazada; estaban anidadas en un callout y las transcripciones inventaban una fórmula y "30,5 MB"). Python: búsqueda del primer bloque libre y tamaño del bitmap. Duda nueva 🟡: 256 MB frente a 32 MiB.
 - **12/01 Arquitectura de Internet**: 77 líneas, 2 imágenes comprobadas (estaban anidadas en un callout; la segunda tiene las IP y el recorrido a mano). Tabla de elementos de red del material de clase, con tus analogías (switch = zapatilla, la conversación "hola / ¿tienes la hora?") y tu ejemplo de IP local frente a pública. Se agregaron IETF/RFC del material. Duda ℹ️: nombre de TCP. Se quitaron "CLASE 1", la fecha e "investigar".
 - **12/02 Redes de acceso y medios**: 86 líneas, 4 imágenes comprobadas (figuras de Kurose; estaban anidadas en un callout y la cuarta es una red doméstica con cable, no "banda ancha móvil"). Tablas de tecnologías y medios con los datos del material (frecuencias DSL, HFC 42,8/30,7, dial-up, ONT/OLT, categorías UTP). El video de YouTube de tus apuntes se conservó como recurso; se quitó la frase sobre qué clase lo vio. Duda nueva 🟡: "UTP recubierto".
+- **12/03 Paquetes frente a circuitos**: 86 líneas, 3 imágenes comprobadas (estaban anidadas en un callout; las transcripciones anteriores describían FDM/TDM y descarte, que no aparecen en las figuras). Ejemplos numéricos verificados (120 µs, 250 kbps). Se conservaron tu ejemplo de la tabla de reenvío ("todo lo que empiece con 120.…") y el del terremoto. Tabla comparativa y FDM/TDM del material. Duda nueva 🟡: N·L/R en circuitos.
