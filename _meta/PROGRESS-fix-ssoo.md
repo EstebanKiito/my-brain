@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 55 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 11-Implementación de archivos y bloques/02 - Enlaces duros (hard links) y enlaces simbólicos (soft links).md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 56 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 11-Implementación de archivos y bloques/03 - Montaje de sistemas de archivos y puntos de montaje.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -72,7 +72,7 @@ Reescritas hasta ahora: 55 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 53 | 10-Sistemas de archivos/06 - Estructura de directorios y resolución de rutas.md | reescrita | 79 líneas; Mermaid ok |
 | 54 | 11-Implementación de archivos y bloques/01 - Interfaz y llamadas al sistema de archivos y directorios.md | reescrita | 92 líneas; C ok |
 | 55 | 11-Implementación de archivos y bloques/02 - Enlaces duros (hard links) y enlaces simbólicos (soft links).md | reescrita | 90 líneas; 1 imagen; C ok |
-| 56 | 11-Implementación de archivos y bloques/03 - Montaje de sistemas de archivos y puntos de montaje.md | pendiente | |
+| 56 | 11-Implementación de archivos y bloques/03 - Montaje de sistemas de archivos y puntos de montaje.md | reescrita | 63 líneas; 1 imagen |
 | 57 | 11-Implementación de archivos y bloques/04 - Estructuras en disco y en memoria del sistema de archivos virtual (VFS).md | pendiente | |
 | 58 | 11-Implementación de archivos y bloques/05 - Métodos de asignación de bloques: asignación contigua y bloques de control.md | pendiente | |
 | 59 | 11-Implementación de archivos y bloques/06 - Asignación enlazada y tabla de asignación de archivos (FAT).md | pendiente | |
@@ -188,3 +188,4 @@ Reescritas hasta ahora: 55 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **10/06 Directorios y rutas**: 79 líneas, Mermaid (válido) con el árbol del ejemplo del material (/foo, /bar/bar, /bar/foo/bar.txt) y tabla absoluta/relativa ("la ruta absoluta no puede repetirse"). Resolución de rutas paso a paso con el permiso `x`. Frontmatter: quedó solo `complemento`. Sin dudas nuevas.
 - **11/01 API de archivos y directorios**: 92 líneas, tablas de operaciones del material de clase. `mv`/`rm` se presentan como los comandos que usan `rename`/`unlink` (la errata se corrigió sin comentarla). Programa C nuevo que ejercita toda la API (mkdir, open, write, fsync, lseek, read, rename, stat, opendir/readdir, unlink, rmdir): compila sin avisos y deja todo limpio. Se quitaron "Clase 11" y la fecha. Sin dudas nuevas.
 - **11/02 Hard y soft links**: 90 líneas, 1 imagen comprobada (estaba anidada en un callout; es el grafo dict/spell de Silberschatz y la transcripción anterior describía otra cosa). Tabla comparativa y contador de referencias del material de clase. Se conservó tu lectura de la figura (count = hard link, w = soft link) como analogía. Demo C nueva con `link`/`symlink`/`unlink`: tras borrar el original, el hard link sigue con 1 referencia y el soft link queda roto (verificado). "Referencias a procesos/archivos" se corrigió a "referencias a archivos". Sin dudas nuevas.
+- **11/03 Montaje**: 63 líneas, 1 imagen comprobada (estaba anidada en un callout; es un árbol bin/dev/lib/mnt/usr antes y después de montar, con colores a mano, y la transcripción anterior hablaba de una "tabla de monturas" que no aparece). Se conservó tu ejemplo de colores (rojo NTFS, azul FAT32) y `mount /dev/sda1 /home/users`. "Se monta en la carpeta MNT" se matizó como convención. El VFS quedó enlazado a 11/04. Sin dudas nuevas.
