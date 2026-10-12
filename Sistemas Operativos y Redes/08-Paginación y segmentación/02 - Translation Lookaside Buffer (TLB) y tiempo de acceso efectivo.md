@@ -4,106 +4,98 @@ tema: "Paginación y segmentación"
 tags:
   - so/memoria
   - so/tlb
-  - origen/apuntes
+  - origen/complemento
 prerrequisitos:
   - "[[01 - Fundamentos de paginación, marcos y tabla de páginas]]"
 ---
 
 # Translation Lookaside Buffer (TLB) y tiempo de acceso efectivo
 
-Para resolver la duplicación en el tiempo de acceso que impone consultar la tabla de páginas en RAM, la MMU incorpora una memoria caché asociativa de hardware ultrarrápida denominada Translation Lookaside Buffer (TLB).
+Con [[01 - Fundamentos de paginación, marcos y tabla de páginas|paginación]], cada acceso a memoria se vuelve dos: uno para leer la tabla de páginas y otro para el dato. La solución es guardar las traducciones recientes en una memoria muy rápida dentro de la MMU, la **TLB**, para no tener que ir a la tabla cada vez.
 
-## Aceleración con TLB y cálculo de rendimiento (mis apuntes)
+## Qué es la TLB
 
-> [!note] Apuntes de clase
-> Solucion: Para acelerar acceso a memoria: fully associative caché de direcciones en MMU.
-> Para esto utilizaremos un CACHE llamado TLB.
->
-> **TLB Translation look-aside buffer (TLB):**
-> - Traducciones de VPN → PFN
-> - Se almacenara dentro de la memoria de la cpu, y no dentro de la memoria principal
-> - TLB HIT: Encontramos traduccion
-> - TLB Miss: Traducción no esta en caché
->
-> Con esto, los accesos a memorias se verían asi:
-> Con esto, si obtenemos un TLB Miss → Nos demorariamos mas, porque tenemos que buscar las mismas operaciones que antes (buscar en page table y physical memory) sumado a buscar en la tlb y no encontrar, si tenemos un tbl hit, nos ahorramos buscar en la page table, tlb es mucho mas rapido de buscar (no es significiativo realmente si hay tlb miss).
->
-> **EJEMPLO DE TLB:**
-> ```c
-> int sum = 0;
-> for (i = 0; i<10; i++){
-> 	sum += a[i];
-> }
-> ```
->
-> Si solo hacemos accesos a memoria sin tlb:
-> Tenemos que hacer las 2 operaciones por cada acceso a memoria a[i].
-> Por lo tanto son 10*2 = 20 Accesos a memoria.
->
-> Con TLB, primero veamos como esta almacenado en la memoria del programa:
-> Esto, dado que el espacio virtual de 8 bit, con paginas de 16B, almacenando un arreglo de 10 int (4B):
-> - Sum = 0 → 4B
-> - a[0] → 4B
-> - a[1] → 4B
-> - a[2] → 4B
-> Ahi ya tenemos 16B, por lo que saltamos a otra pagina.
-> a[3], a[4], a[5], a[6] caen en la siguiente pagina, y asi…
->
-> Notemos que, cada vez que acceda a un valor por pagina, suponiendo que no estaba en la cache, nos da un miss, pero los siguientes, ya estan cargados en la tlb, por lo tanto, son hits:
-> Asi tenemos Miss*3 , Hit*7 → 70% TLB Hit Rate (7 de 10 accesos ahorrados).
-> Con paginas mas grandes → El Hit Rate Aumenta!!!
->
-> TIEMPO ACCESOO PROMEDIO: T(hit) * Hit_Rate(%) + T(miss)* ( 1 - hit_rate )
-> ej: tiempo del ejemplo de acceso: 101ns x 0,7 + 201ns x 0,3 = 131 ns
+La **TLB** (*Translation Lookaside Buffer*) es una **caché totalmente asociativa** (*fully associative*) de traducciones, dentro de la MMU:
 
-> [!warning] Posible error
-> En los apuntes aparece la errata tipográfica "TIEMPO ACCESOO PROMEDIO" por TIEMPO DE ACCESO PROMEDIO.
+- Guarda traducciones **VPN → PFN**.
+- Está en la CPU, no en la memoria principal, así que consultarla es muchísimo más rápido.
+- **TLB hit**: la traducción está en la caché y se responde directamente.
+- **TLB miss**: la traducción no está, así que se lee la tabla de páginas desde memoria y se **actualiza la TLB**.
 
 ![Arquitectura de TLB y flujo de aciertos y fallos](adjuntos/Arquitectura%20de%20TLB%20y%20flujo%20de%20aciertos%20y%20fallos.png)
 
 > [!example]- Transcripción de la imagen
-> Flujo de hardware en la MMU con TLB:
-> 1. La CPU genera una dirección virtual con VPN y Offset.
-> 2. Se consulta en paralelo el VPN en la TLB:
->    - **TLB Hit:** La traducción a PFN está presente. Se toma el PFN en $\sim 1\text{ ns}$ y se accede directamente a la RAM física. Total: 1 acceso a RAM.
->    - **TLB Miss:** La traducción no está en la TLB. Se consulta la Tabla de Páginas en memoria RAM (o hardware walker), se carga la traducción en la TLB y luego se accede al dato físico. Total: 2 accesos a RAM.
+> La CPU emite una *logical address* `p | d`. El número de página `p` se compara a la vez con todas las entradas de la **TLB** (*page number / frame number*). En un **TLB hit**, la TLB entrega `f` directamente. En un **TLB miss** (flecha roja a mano), se consulta la *page table* con `p` para obtener `f`. En ambos casos la *physical address* es `f | d`, que va a la *physical memory*.
+
+Un miss cuesta un poco **más** que no tener TLB, porque además de la tabla y el dato se perdió tiempo buscando en la TLB. Pero ese extra es pequeño, porque la TLB es muy rápida, y cada hit **se ahorra el acceso a la tabla**.
+
+## Ejemplo: recorrer un arreglo
+
+```c
+int sum = 0;
+for (i = 0; i < 10; i++) {
+    sum += a[i];
+}
+```
+
+Con un espacio virtual de 8 bits y páginas de 16 B (4 bits de offset, 4 de página, 16 páginas), y un arreglo de 10 `int` de 4 B, la memoria queda así: `sum`, `a[0]`, `a[1]` y `a[2]` llenan los primeros 16 B (una página); `a[3]` a `a[6]` caen en la siguiente; y `a[7]` a `a[9]` en la tercera.
 
 ![Distribución de un arreglo en páginas virtuales](adjuntos/Distribuci%C3%B3n%20de%20un%20arreglo%20en%20p%C3%A1ginas%20virtuales.png)
 
 > [!example]- Transcripción de la imagen
-> Mapeo del arreglo de 10 enteros (4 bytes c/u) en páginas de 16 bytes:
-> - **Página 0:** `sum` (bytes 0-3), `a[0]` (bytes 4-7), `a[1]` (bytes 8-11), `a[2]` (bytes 12-15).
-> - **Página 1:** `a[3]` (bytes 16-19), `a[4]` (bytes 20-23), `a[5]` (bytes 24-27), `a[6]` (bytes 28-31).
-> - **Página 2:** `a[7]` (bytes 32-35), `a[8]` (bytes 36-39), `a[9]` (bytes 40-43).
+> Dibujo a mano de la memoria del programa: `sum = 0`, `a[0]`, `a[1]` y `a[2]` en la primera página (flechas sobre `a[0]`, `a[1]` y `a[2]`); una línea roja separa `a[3]` a `a[6]` (segunda página) y otra separa `a[7]` a `a[9]` (tercera página).
 
 ![Cálculo de tasa de aciertos de TLB en bucle secuencial](adjuntos/C%C3%A1lculo%20de%20tasa%20de%20aciertos%20de%20TLB%20en%20bucle%20secuencial.png)
 
 > [!example]- Transcripción de la imagen
-> Secuencia de aciertos y fallos:
-> - `a[0]`: Miss (primer acceso a Página 0, carga en TLB).
-> - `a[1]`, `a[2]`: Hit, Hit.
-> - `a[3]`: Miss (primer acceso a Página 1, carga en TLB).
-> - `a[4]`, `a[5]`, `a[6]`: Hit, Hit, Hit.
-> - `a[7]`: Miss (primer acceso a Página 2, carga en TLB).
-> - `a[8]`, `a[9]`: Hit, Hit.
-> Total: 3 fallos (Misses) y 7 aciertos (Hits) en 10 referencias $\implies \text{Hit Rate} = 70\%$.
+> El mismo dibujo con anotaciones: `a[0]` **Miss**, `a[1]` **Hit**, `a[2]` **Hit**; `a[3]` **Miss** y luego **Hit × 3**; `a[7]` **Miss** y luego **Hit × 2**.
 
-> [!tip] Complemento: EAT (Effective Access Time)
-> Si el acceso a TLB toma $1\text{ ns}$ y el acceso a RAM toma $100\text{ ns}$:
-> - $T_{\text{hit}} = 1\text{ ns} (\text{TLB}) + 100\text{ ns} (\text{RAM}) = 101\text{ ns}$.
-> - $T_{\text{miss}} = 1\text{ ns} (\text{TLB}) + 100\text{ ns} (\text{Tabla}) + 100\text{ ns} (\text{Dato}) = 201\text{ ns}$.
-> Con un $70\%$ de aciertos: $EAT = 101 \times 0.7 + 201 \times 0.3 = 131\text{ ns}$. Con tasas reales del $99\%$: $EAT = 101 \times 0.99 + 201 \times 0.01 = 102\text{ ns}$, casi idéntico al acceso directo sin paginación.
+Contando solo los accesos a `a`:
+
+| | Accesos a memoria | Detalle |
+|---|---|---|
+| Sin TLB | **20** | 10 × (tabla de páginas + `a[i]`) |
+| Con TLB | **13** | miss, hit, hit, miss, hit, hit, hit, miss, hit, hit: 10 a `a[i]` + 3 a la tabla |
+
+Cada vez que se accede por primera vez a una página es un miss, y los siguientes accesos a esa página ya están en la TLB y son hits. Resultado: **3 misses y 7 hits, 70% de TLB hit rate** (7 de 10 accesos a la tabla ahorrados). **Con páginas más grandes, el hit rate aumenta**: con páginas de 32 B solo habría 2 misses (80%).
+
+## ¿Es bueno un 70%? Tiempo de acceso promedio
+
+Con un acceso a memoria física de ≈100 ns y uno a TLB de 1 ns:
+
+- **TLB hit** ≈ 1 + 100 = **101 ns** (TLB + dato);
+- **TLB miss** ≈ 1 + 100 + 100 = **201 ns** (TLB + tabla + dato).
+
+$$T_{\text{promedio}} = T_{\text{hit}} \cdot \text{hit rate} + T_{\text{miss}} \cdot (1 - \text{hit rate}) = 101 \cdot 0{,}7 + 201 \cdot 0{,}3 = 131 \text{ ns}$$
+
+Este promedio también se llama **tiempo de acceso efectivo** (EAT, *effective access time*). Con un hit rate realista de 99%, queda en $101 \cdot 0{,}99 + 201 \cdot 0{,}01 = 102$ ns, casi lo mismo que un acceso sin paginación.
+
+En el ejemplo, sin TLB son 20 accesos (2000 ns); con TLB, 13 accesos a memoria y 10 a la TLB (1310 ns): **≈1,52 veces más rápido**. Funciona tan bien porque los programas suelen acceder a direcciones cercanas y repetidas, lo que se llama [[03 - Localidad de referencia y gestión de TLB con ASID en cambios de contexto|localidad de referencia]].
+
+```python
+def accesos_tlb(tam_pagina, n=10, base=4, tam_int=4):
+    """a[i] está en la dirección base + 4*i (sum ocupa los bytes 0-3)."""
+    tlb, resultado = set(), []
+    for i in range(n):
+        pagina = (base + tam_int * i) // tam_pagina
+        resultado.append("hit" if pagina in tlb else "miss")
+        tlb.add(pagina)                       # tras un miss, la PTE queda en la TLB
+    return resultado
+
+print(accesos_tlb(16))   # miss, hit, hit, miss, hit, hit, hit, miss, hit, hit -> 70%
+print(accesos_tlb(32))   # 2 misses -> 80%
+```
 
 ## Preguntas de repaso
 
-> [!question]- ¿Qué ocurre a nivel de hardware cuando se produce un TLB Miss?
-> La MMU (o una rutina de interrupción de software según la arquitectura) debe suspender la traducción rápida, consultar la tabla de páginas en memoria RAM física para obtener la PTE, actualizar una entrada de la TLB con el par VPN $\to$ PFN recién obtenido y reintentar la instrucción.
+> [!question]- ¿Qué pasa en un TLB hit y en un TLB miss?
+> En un hit, la TLB entrega el PFN y se accede directo al dato: un acceso a memoria. En un miss, se lee la PTE en la tabla de páginas, se guarda en la TLB y luego se accede al dato: dos accesos.
 
-> [!question]- ¿Cómo se calcula el Tiempo de Acceso Efectivo (*Effective Access Time* - EAT)?
-> Mediante la fórmula de esperanza matemática ponderada:
-> $$EAT = \text{Hit Rate} \times T_{\text{hit}} + (1 - \text{Hit Rate}) \times T_{\text{miss}}$$
-> donde $T_{\text{hit}}$ incluye la consulta a TLB más el acceso al dato en RAM, y $T_{\text{miss}}$ añade el acceso a la tabla de páginas.
+> [!question]- ¿Por qué en el ejemplo del arreglo hay 3 misses?
+> Porque los 10 elementos ocupan 3 páginas, y solo el primer acceso a cada página falla. Los siguientes accesos a la misma página encuentran la traducción en la TLB.
 
-> [!question]- ¿Por qué aumentar el tamaño de página incrementa directamente la tasa de aciertos (*Hit Rate*) de la TLB?
-> Porque caben más variables consecutivas dentro de una misma página física. Por tanto, el primer acceso que causa un fallo amortiza su costo sobre una mayor cantidad de accesos subsiguientes antes de cruzar la frontera de página.
+> [!question]- Calcula el tiempo promedio con hit rate de 70%, hit de 101 ns y miss de 201 ns.
+> $101 \cdot 0{,}7 + 201 \cdot 0{,}3 = 70{,}7 + 60{,}3 = 131$ ns.
 
+> [!question]- ¿Por qué páginas más grandes aumentan el hit rate?
+> Porque caben más datos consecutivos en cada página, así que el miss inicial de cada página se reparte entre más accesos que después son hits.
