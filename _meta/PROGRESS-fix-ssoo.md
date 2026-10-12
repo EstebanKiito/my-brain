@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 16 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 03-Planificación de CPU/02 - Clasificación de planificadores y métricas de rendimiento.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 17 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 03-Planificación de CPU/03 - Planificación FCFS y SJF.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -29,7 +29,7 @@ Reescritas hasta ahora: 16 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 14 | 02-Procesos/07 - Programación de procesos en C y prevención de fork bombs.md | reescrita (piloto) | 111 líneas; 2 imágenes; C compila y corre; 1 duda |
 | 15 | 03-Planificación de CPU/01 - Niveles de planificación y ciclo de ráfagas CPU-IO.md | reescrita | 81 líneas; 2 imágenes |
 | 16 | 03-Planificación de CPU/02 - Clasificación de planificadores y métricas de rendimiento.md | reescrita | 83 líneas; 3 imágenes |
-| 17 | 03-Planificación de CPU/03 - Planificación FCFS y SJF.md | pendiente | |
+| 17 | 03-Planificación de CPU/03 - Planificación FCFS y SJF.md | reescrita | 96 líneas; 2 imágenes; Python ok |
 | 18 | 03-Planificación de CPU/04 - Planificación Round Robin y sistemas interactivos.md | pendiente | |
 | 19 | 03-Planificación de CPU/05 - Planificación por prioridad y colas multinivel (MLFQ).md | pendiente | |
 | 20 | 04-Señales e IPC/01 - Concepto de señal y ciclo de vida de señales POSIX.md | pendiente | |
@@ -146,3 +146,4 @@ Reescritas hasta ahora: 16 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **02/06 wait, exec y terminación**: 77 líneas, tabla de syscalls, 1 Mermaid (sequenceDiagram, válido). Zombies y huérfanos se reescribieron con el material de clase (los huérfanos pasan a `init`). La mención de NAS de los apuntes, fuera de tema, quedó como callout plegado "Al margen". Se quitaron "Investigar sobre servidores", la fecha y "IMPORTANTE/PREGUNTA". Sin dudas nuevas.
 - **03/01 Niveles de planificación**: 81 líneas, 2 imágenes comprobadas, tabla de los 3 niveles con verbos clave (pone/saca/elige), ejemplo numérico de utilización -p^n$ calculado con python3 (p=0,8 → 20/36/48,8/59/67,2%). Se quitó el Mermaid antiguo porque duplicaba la imagen de colas. La errata "quién llega a la cola Ready" se corrigió a "quién sale de Ready a la CPU" sin comentarla. Sin dudas nuevas.
 - **03/02 Clasificación de planificadores**: 83 líneas, 3 imágenes comprobadas, tablas por interrupción, objetivo y métricas, y un ejemplo numérico de turnaround/response/waiting/throughput. Los ejemplos de tus apuntes (transcribir llamadas, hospital, Webpay, compra despachada días después) quedaron en la tabla de objetivos. "Colaborativos casi inútiles" se reescribió como "los más usados son los expropiativos" (fila 🟡 ya existente). Sin dudas nuevas.
+- **03/03 FCFS y SJF**: 96 líneas, 2 imágenes comprobadas. Simulador FCFS/SJF en Python que reproduce los promedios del material (109, 49, 79) y el de tus apuntes (llegadas 0/1/2 con ráfagas 10/10/100 → 10/19/118, promedio 49). Esa última tabla se integró como un escenario más; el callout de "confusión" y el "o 79" ambiguo se eliminaron. Sin dudas nuevas (la fila 🟡 existente queda resuelta en la nota).

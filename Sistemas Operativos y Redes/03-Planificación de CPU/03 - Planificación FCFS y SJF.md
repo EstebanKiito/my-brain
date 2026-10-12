@@ -8,97 +8,88 @@ tags:
   - sjf
   - convoy-effect
   - starvation
+  - origen/complemento
 prerrequisitos:
   - "[[02 - Clasificación de planificadores y métricas de rendimiento]]"
 ---
 
 # Planificación FCFS y SJF
 
-Los algoritmos de planificación básicos para procesamiento por lotes (*batch*) organizan los procesos según su orden de llegada (**FCFS**) o según la duración estimada de su ráfaga (**SJF**).
+Los dos algoritmos más simples para sistemas *batch* responden a la pregunta "¿quién sigue?" de formas opuestas: **FCFS** atiende por orden de llegada, mientras que **SJF** atiende primero al más corto. Compararlos muestra por qué el orden importa tanto para el *turnaround*, la métrica que más interesa en batch.
 
----
+## FCFS: orden de llegada
 
-## ORDEN DE LLEGADA (mis apuntes)
+**FCFS** (*First-Come, First-Served*), también llamado **FIFO**, atiende a los procesos en el orden en que llegan, con una cola FIFO. Es **no expropiativo** y **simple**, pero **poco predecible**, porque el resultado depende de quién llegó primero.
 
-> FIFO
-> FCFS
-> 
-> ![Planificación FCFS y efecto convoy](adjuntos/Planificaci%C3%B3n%20FCFS%20y%20efecto%20convoy.png)
-> 
-> El segundo en el que sali - El segundo en el que llegue
-> 100 + 10 - 1 → Llegue en 1 = 109
-> 110+ 10 - 2 → Llegue en 2 = 118
-> 0 10 → 10
-> 1 10 → 19
-> 2 100 → 118
-> 
-> Siempre generalmente se pone el mas corto primero
-> SJF
-> 
-> ![Planificación SJF y cálculo de turnaround](adjuntos/Planificaci%C3%B3n%20SJF%20y%20c%C3%A1lculo%20de%20turnaround.png)
-> 
-> PROBLEMA : No atender un proceso por mucho tiempo → (Pasa hambre)
-> Puede haber uno que es largo, pero es importante → Y no lo estariamos ejecutando todavia
+El turnaround de cada proceso es *el instante en que salió menos el instante en que llegó*. Con un proceso largo adelante:
 
-> [!warning] Posible confusión en apuntes: Caso alternativo en FCFS
-> Las líneas `0 10 → 10`, `1 10 → 19`, `2 100 → 118` corresponden al caso inverso donde los trabajos cortos llegan primero:
-> * Proceso corto $A$ llega en $t=0$ con duración 10: termina en 10 ($10 - 0 = 10$).
-> * Proceso corto $B$ llega en $t=1$ con duración 10: termina en 20 ($20 - 1 = 19$).
-> * Proceso largo $C$ llega en $t=2$ con duración 100: termina en 120 ($120 - 2 = 118$).
-> El *turnaround* promedio baja drásticamente de $109$ a $(10 + 19 + 118)/3 = 49$ (o 79 según la variación de arribos), demostrando la alta sensibilidad de FCFS al orden de llegada.
+| Proceso | Llegada | CPU-burst | Término | Turnaround |
+|---|---|---|---|---|
+| P1 | 0 | 100 | 100 | $100 - 0 = 100$ |
+| P2 | 1 | 10 | 110 | $110 - 1 = 109$ |
+| P3 | 2 | 10 | 120 | $120 - 2 = 118$ |
 
----
+El promedio es **109**. Los procesos cortos esperan detrás del largo, igual que autos detrás de un camión en una carretera de un carril: es el **efecto convoy** (*convoy effect*). Además, mientras el proceso largo acapara la CPU, los procesos cortos que harían I/O no la piden, y los dispositivos quedan ociosos. Si P2 hubiera llegado en $t=0$ y P1 en $t=1$, el promedio bajaría a **79**. Y si los dos cortos llegan antes que el largo (llegadas 0, 1 y 2 con ráfagas 10, 10 y 100), los turnaround son 10, 19 y 118, con promedio **49**.
 
-> [!example]- Transcripción de la imagen: Planificación FCFS y efecto convoy.png
-> **First-Come, First-Served (FCFS):**
-> * Orden de llegada estricto mediante cola FIFO no expropiativa (*non-preemptive*).
-> * **Tabla de ejecución:**
->   - $P_1$: Llegada $0$, CPU-burst $100$, Término $100$, Turnaround $= 100 - 0 = 100$.
->   - $P_2$: Llegada $1$, CPU-burst $10$, Término $110$, Turnaround $= 110 - 1 = 109$.
->   - $P_3$: Llegada $2$, CPU-burst $10$, Término $120$, Turnaround $= 120 - 2 = 118$.
-> * **Turnaround promedio:** $(100 + 109 + 118) / 3 = 109$.
-> * Si $P_2$ y $P_3$ hubiesen llegado antes que $P_1$, el turnaround promedio se reduciría notablemente.
-> * **Características:** Simple de implementar, pero produce el **efecto convoy** (*convoy effect*), donde procesos cortos esperan tras un proceso masivo.
+![Planificación FCFS y efecto convoy](adjuntos/Planificaci%C3%B3n%20FCFS%20y%20efecto%20convoy.png)
 
-> [!example]- Transcripción de la imagen: Planificación SJF y cálculo de turnaround.png
-> **Shortest Job First (SJF):**
-> * Selecciona el proceso con la ráfaga de CPU (*CPU-burst*) más corta.
-> * **Tabla con orden por duración:**
->   - $P_1$: Llegada $0$, CPU-burst $10$, Término $10$, Turnaround $= 10$.
->   - $P_2$: Llegada $2$, CPU-burst $10$, Término $20$, Turnaround $= 18$.
->   - $P_3$: Llegada $1$, CPU-burst $100$, Término $120$, Turnaround $= 119$.
-> * **Turnaround promedio:** $(10 + 18 + 119) / 3 = 49$.
-> * **Propiedades:**
->   - Teóricamente **óptimo** para minimizar el tiempo de retorno promedio.
->   - Versión preemptive: *Shortest Remaining Time Next* (SRTN / STCF).
->   - **Desventaja:** Requiere conocer la duración del CPU-burst de antemano y genera riesgo de **inanición** (*starvation*) para procesos largos si siguen llegando trabajos cortos.
+> [!example]- Transcripción de la imagen
+> "Orden de llegada. Cola FIFO." La tabla P1/P2/P3 de arriba (llegadas 0, 1, 2; ráfagas 100, 10, 10; término 100, 110, 120; turnaround 100, 109, 118) y un diagrama de Gantt: P1 de 0 a 100, P2 de 100 a 110, P3 de 110 a 120. "Turnaround time promedio: **109**. Si P2 hubiese llegado en t=0, y P1 hubiese llegado en t=1, entonces turnaround time promedio → 79". Non-Preemptive · Simple · Poco predecible. Convoy effect.
 
----
+## SJF: el más corto primero
 
-> [!tip] Complemento: Comparativa analítica entre FCFS y SJF/SRTN
-> 
-> ```
-> Diagrama de Gantt - Efecto Convoy (FCFS):
-> [        P1 (100)        ][ P2 (10) ][ P3 (10) ]
-> 0                       100        110        120
-> 
-> Diagrama de Gantt - SJF (Óptimo en Turnaround):
-> [ P1 (10) ][ P2 (10) ][        P3 (100)        ]
-> 0         10         20                       120
-> ```
-> 
-> * **Efecto convoy (*Convoy Effect*):** Análogo a autos rápidos atascados detrás de un camión lento en una carretera de un solo carril. Los dispositivos de I/O quedan ociosos mientras el proceso CPU-bound acapara el procesador.
-> * **Inanición (*Starvation* / Pasa hambre):** Ocurre cuando un proceso listo nunca recibe CPU porque el algoritmo siempre favorece procesos con ráfagas menores.
+La lección de FCFS es que conviene poner primero al más corto. **SJF** (*Shortest Job First*) lo hace de forma sistemática: cuando la CPU se libera, elige el proceso listo con la ráfaga de CPU más corta.
 
----
+| Proceso | Llegada | CPU-burst | Término | Turnaround |
+|---|---|---|---|---|
+| P1 | 0 | 10 | 10 | 10 |
+| P2 | 2 | 10 | 20 | 18 |
+| P3 | 1 | 100 | 120 | 119 |
+
+En $t=0$ solo está P1. Cuando termina, en $t=10$, compiten P2 y P3, y gana P2 por ser más corto. El promedio es **49**.
+
+![Planificación SJF y cálculo de turnaround](adjuntos/Planificaci%C3%B3n%20SJF%20y%20c%C3%A1lculo%20de%20turnaround.png)
+
+> [!example]- Transcripción de la imagen
+> "El más corto primero." Tabla con P1 (llegada 0, ráfaga 10, término 10, turnaround 10), P2 (2, 10, 20, 18) y P3 (1, 100, 120, 119). Gantt: P1 de 0 a 10, P2 de 10 a 20, P3 de 20 a 120. "Turnaround time promedio: **49**". Versión preemptive: Shortest Remaining Time Next, que elige al que le queda menos tiempo · No sabemos cuánto demora cada CPU-burst · Óptimo · Potencial inanición (*starvation*) de procesos largos.
+
+Propiedades de SJF:
+
+- **Es óptimo** para minimizar el turnaround promedio.
+- Su versión expropiativa es **SRTN** (*Shortest Remaining Time Next*, también llamada STCF, *Shortest Time-to-Completion First*): si llega un proceso al que le queda menos tiempo que al actual, lo desaloja.
+- **No sabemos cuánto demora cada CPU-burst**, así que en la práctica solo se puede estimar.
+
+> [!warning] Inanición (*starvation*)
+> Con SJF, un proceso largo puede quedarse **sin ser atendido por mucho tiempo**, "pasando hambre", si siguen llegando procesos cortos. Y ese proceso largo puede ser importante: SJF no considera la importancia, solo la duración.
+
+## Simulación
+
+```python
+def planificar(procesos, sjf=False):
+    """procesos: lista de (nombre, llegada, rafaga). No expropiativo."""
+    pendientes, t, turnaround = list(procesos), 0, {}
+    while pendientes:
+        listos = [p for p in pendientes if p[1] <= t] or [min(pendientes, key=lambda p: p[1])]
+        elegido = min(listos, key=lambda p: (p[2], p[1]) if sjf else (p[1],))
+        t = max(t, elegido[1]) + elegido[2]          # corre hasta terminar
+        turnaround[elegido[0]] = t - elegido[1]
+        pendientes.remove(elegido)
+    return turnaround, sum(turnaround.values()) / len(turnaround)
+
+print(planificar([("P1", 0, 100), ("P2", 1, 10), ("P3", 2, 10)]))            # promedio 109.0
+print(planificar([("P1", 0, 10), ("P2", 2, 10), ("P3", 1, 100)], sjf=True))  # promedio 49.0
+```
 
 ## Preguntas de repaso
 
-> [!question]- ¿Qué es el efecto convoy y por qué afecta negativamente a FCFS?
-> Ocurre cuando un proceso largo con alto uso de CPU se ubica al frente de la cola FIFO, obligando a todos los procesos cortos a esperar. Esto aumenta drásticamente el tiempo de retorno promedio y deja los dispositivos de entrada/salida subutilizados.
+> [!question]- ¿Qué es el efecto convoy y por qué afecta a FCFS?
+> Es cuando procesos cortos quedan esperando detrás de uno largo que llegó antes. FCFS no reordena, así que el turnaround promedio sube mucho: 109 en el ejemplo, contra 49 si los cortos van primero.
 
-> [!question]- ¿Por qué no es posible implementar un SJF puro en sistemas de propósito general?
-> Porque el sistema operativo no puede conocer con exactitud la duración del próximo ciclo de CPU (*CPU-burst*) de un programa arbitrario antes de ejecutarlo. Solo se pueden hacer estimaciones estadísticas (por ejemplo, mediante medias móviles exponenciales).
+> [!question]- ¿Por qué SJF no se puede implementar tal cual en un SO de propósito general?
+> Porque el SO no sabe de antemano cuánto durará la próxima ráfaga de CPU de un proceso. Solo puede estimarla a partir del comportamiento pasado.
 
-> [!question]- ¿Cuál es la variante expropiativa de SJF y cómo funciona?
-> Es **SRTN** (*Shortest Remaining Time Next*) o **STCF** (*Shortest Time-to-Completion First*). Si llega un nuevo proceso cuya ráfaga restante es menor que el tiempo que le queda al proceso en ejecución, el planificador desaloja al proceso actual para atender al nuevo.
+> [!question]- ¿Qué hace SRTN distinto de SJF?
+> Es expropiativo: si llega un proceso al que le queda menos tiempo que al que está corriendo, lo desaloja. SJF, en cambio, deja terminar al proceso actual.
+
+> [!question]- Calcula el turnaround promedio con FCFS para llegadas 0, 1, 2 y ráfagas 10, 10, 100.
+> Terminan en 10, 20 y 120. Los turnaround son 10, 19 y 118, y el promedio es $147/3 = 49$.
