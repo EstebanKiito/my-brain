@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 81 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 15-Capa de red y direccionamiento/01 - Servicios de la capa de red: enrutamiento y reenvío.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 82 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 15-Capa de red y direccionamiento/02 - Datagrama IPv4: estructura y fragmentación por MTU.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -98,7 +98,7 @@ Reescritas hasta ahora: 81 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 79 | 14-Capa de transporte/06 - Protocolo TCP: estructura del segmento, MSS y confirmación acumulativa.md | reescrita | 92 líneas; 3 imágenes; Python ok |
 | 80 | 14-Capa de transporte/07 - Gestión de temporizadores, retransmisión rápida y handshake en TCP.md | reescrita | 130 líneas; 6 imágenes; Python fast retransmit |
 | 81 | 15-Capa de red y direccionamiento/01 - Servicios de la capa de red: enrutamiento y reenvío.md | reescrita | 103 líneas; 1 imagen; Python tabla de reenvío |
-| 82 | 15-Capa de red y direccionamiento/02 - Datagrama IPv4: estructura y fragmentación por MTU.md | pendiente | |
+| 82 | 15-Capa de red y direccionamiento/02 - Datagrama IPv4: estructura y fragmentación por MTU.md | reescrita | ~106 líneas; 3 imágenes; Python fragmentación |
 | 83 | 15-Capa de red y direccionamiento/03 - Direccionamiento IPv4: subredes, máscaras y notación CIDR.md | pendiente | |
 | 84 | 15-Capa de red y direccionamiento/04 - Configuración dinámica con DHCP y traducción de direcciones NAT.md | pendiente | |
 | 85 | 15-Capa de red y direccionamiento/05 - Protocolo ICMP y transición a IPv6: dual-stack y tunneling.md | pendiente | |
@@ -216,3 +216,4 @@ Reescritas hasta ahora: 81 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **Verificación completa al cerrar las carpetas 12 y 13** (terminaron 14:46 y 15:09): sin errores nuevos en [1], [2] ni [5].
 - **14/07 Temporizadores, retransmisión rápida y handshake**: 130 líneas, 6 imágenes comprobadas (Kurose; las transcripciones anteriores de la ventana, la retransmisión rápida y el cierre no coincidían con las figuras). Reglas del emisor con SendBase/NextSeqNum ("ACK ≥ SendBase" se corrigió a ACK > SendBase, como en el material), los tres escenarios (ACK perdido, timeout prematuro, ACK acumulativo que corta el timer) con tus observaciones, retransmisión rápida con 3 ACK duplicados y handshake SYN / SYN ACK / ACK con cierre FIN. Python verificado contra la figura: cuatro ACK=100, reenvío de seq=100 y ACK=157. Sin dudas nuevas.
 - **15/01 Servicios de la capa de red**: 103 líneas, 1 imagen comprobada (es la red de Kurose con H1, R1, R2 y H2 y la capa Network destacada; la transcripción anterior describía plano de datos y de control, que la figura no muestra; el nombre del archivo no se cambió). Desafíos de direccionamiento y enrutamiento, store-and-forward, forwarding/routing con Mermaid (válido) y modos de conexión (circuitos virtuales frente a datagramas) del material. Python con una tabla de reenvío por prefijos (ejecutado). Se conservó el enlace al video. Se quitaron "CLASE 6", la fecha y "CONTENIDO 11". Sin dudas nuevas.
+- **15/02 Datagrama IPv4**: ~106 líneas, 3 imágenes comprobadas (dos tienen los nombres cruzados: la "cabecera" es la tabla *Prefix Match* y el "ejemplo de fragmentación" es el header IPv4; ver DUDAS ℹ️). Modos de conexión con tus ejemplos (autopista, terremoto) enlazando a la tabla de 15/01 para no duplicarla; tabla *Prefix Match* traducida a 200.23.x.x/21-24; tabla de campos del header (TTL, 20 bytes); fragmentación con el ejemplo 4000/1500 calculado en Python (offsets 0, 185, 370). Se quitó el callout "Posible error" sobre el reensamblado: la nota dice lo de la diapositiva y describe la figura (que muestra el reensamblado en el host). Duda nueva 🟡 (figura frente a diapositiva) e ℹ️ (nombres de imagen).
