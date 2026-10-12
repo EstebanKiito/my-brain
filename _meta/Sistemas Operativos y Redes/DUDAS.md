@@ -144,3 +144,6 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 ## Gestión del curso
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
+| ℹ️ | [[01 - Estructura de evaluaciones y preparación del Midterm\|Estructura de evaluaciones y preparación del Midterm]] | "permote Compartir" | Errata tipográfica ("permote" por permite). |
+| ℹ️ | [[02 - Síntesis de procesos, hilos y planificación para el Midterm\|Síntesis de procesos, hilos y planificación para el Midterm]] | "Kernell ... Compusto ... Preemptie" | Erratas tipográficas recurrentes en apuntes ("Kernell" por kernel, "Compusto" por compuesto, "Preemptie" por preemptive). |
+| ℹ️ | [[03 - Síntesis de sincronización, memoria y archivos para el Midterm\|Síntesis de sincronización, memoria y archivos para el Midterm]] | "esoera ... Los lonks" | Erratas tipográficas ("esoera" por espera, "lonks" por links). |

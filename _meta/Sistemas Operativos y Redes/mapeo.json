@@ -214,11 +214,12 @@
     },
     "Gestión del curso": {
       "carpeta": "Sistemas Operativos y Redes/Gestión del curso",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "resumen_midterm",
-          "desde": "RESUMEN MIDTERM SSOO"
+          "desde": "Resumen Clase Lunes 28/10/24: Profe Lesly Reyes",
+          "por_texto": true
         }
       ]
     }

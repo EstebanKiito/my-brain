@@ -29,7 +29,7 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: no hace fal
 | [[Sistemas Operativos y Redes/Capa de red y direccionamiento/_Índice|Capa de red y direccionamiento]] | Direccionamiento IPv4 y IPv6, fragmentación por MTU, máscaras, CIDR, DHCP, NAT e ICMP |
 | [[Sistemas Operativos y Redes/Algoritmos de ruteo/_Índice|Algoritmos de ruteo]] | Ruteo intra-dominio e inter-dominio, Link-State (Dijkstra), Distance-Vector (Bellman-Ford), y Sistemas Autónomos |
 | [[Sistemas Operativos y Redes/Capa de enlace y seguridad/_Índice|Capa de enlace y seguridad]] | Tramas, direcciones MAC, Ethernet, switches, protocolo ARP, CSMA/CD y fundamentos de seguridad |
-| Gestión del curso *(pendiente)* | Evaluaciones, tareas, resumen midterm y preparación para exámenes |
+| [[Sistemas Operativos y Redes/Gestión del curso/_Índice|Gestión del curso]] | Evaluaciones, tareas, resumen midterm y preparación para exámenes |
 
 ## Ruta de estudio sugerida
 1. **Estructura de sistemas operativos → Procesos → Hilos:** La base del sistema, cómo se pasa a modo kernel y cómo se ejecutan las unidades de computación.
