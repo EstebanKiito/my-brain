@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 72 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 13-Capa de aplicación y sockets/05 - Sistema de nombres de dominio (DNS) y resolución de consultas.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 73 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 13-Capa de aplicación y sockets/06 - Redes Peer-to-Peer (P2P) y distribución con BitTorrent.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -89,7 +89,7 @@ Reescritas hasta ahora: 72 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 70 | 13-Capa de aplicación y sockets/03 - Sockets UDP y TCP: modelos y llamadas al sistema.md | reescrita | 115 líneas; 3 imágenes; C ok; 1 duda |
 | 71 | 13-Capa de aplicación y sockets/04 - Protocolo HTTP, formato de mensajes y estado con cookies.md | reescrita | 118 líneas; 3 imágenes; Python ok |
 | 72 | 13-Capa de aplicación y sockets/05 - Sistema de nombres de dominio (DNS) y resolución de consultas.md | reescrita | 105 líneas; 5 imágenes; 1 duda |
-| 73 | 13-Capa de aplicación y sockets/06 - Redes Peer-to-Peer (P2P) y distribución con BitTorrent.md | pendiente | |
+| 73 | 13-Capa de aplicación y sockets/06 - Redes Peer-to-Peer (P2P) y distribución con BitTorrent.md | reescrita | 86 líneas; 2 imágenes; Python ok |
 | 74 | 14-Capa de transporte/01 - Servicios de la capa de transporte y estructura de segmentos.md | pendiente | |
 | 75 | 14-Capa de transporte/02 - Multiplexación y desmultiplexación de puertos en UDP y TCP.md | pendiente | |
 | 76 | 14-Capa de transporte/03 - Protocolo UDP: datagramas, sobrecarga y checksum.md | pendiente | |
@@ -206,3 +206,4 @@ Reescritas hasta ahora: 72 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **13/03 Sockets UDP y TCP**: 115 líneas, 3 imágenes comprobadas (las transcripciones anteriores describían otras figuras; los nombres de archivo no calzan con el contenido, ver DUDAS). Tabla UDP/TCP con las llamadas del material (`socket`/`sendto` con sus parámetros). Servidores de mayúsculas en C con UDP y TCP (compilan sin avisos e imprimen HOLA UDP / HOLA TCP); la nota incluye el de TCP. Duda nueva 🟡: puerto por cliente.
 - **13/04 HTTP, cookies, FTP y correo**: 118 líneas, 3 imágenes comprobadas (la de request es el flujo navegador-servidor en 5 pasos y la de response la tabla de códigos; las transcripciones anteriores no coincidían). Se conservaron el request de ejemplo y la prueba con `telnet` de tus apuntes, y la explicación de cookies. Demo Python ejecutada con un servidor HTTP local y un request escrito a mano (respuesta 200 con Set-Cookie). FTP y correo quedan en la misma nota: cabe en menos de 150 líneas y no fue necesario dividirla. "CLOUDFORM" se corrigió a Cloudflare. Sin dudas nuevas.
 - **13/05 DNS**: 105 líneas, 5 imágenes comprobadas. Transcripciones corregidas: la imagen "Registros… A NS CNAME MX" es el **formato del mensaje DNS**, y la "Caché DNS y balanceo…" es la **lista de tipos de registro**; los nombres de archivo no se cambiaron. Pasos de resolución, 13 servidores raíz, autoritativo/no autoritativo y tabla de registros del material. Duda nueva 🟡: iterativa frente a recursiva en la diapositiva. Se quitaron "Clase 4" y la fecha.
+- **13/06 P2P y BitTorrent**: 86 líneas, 2 imágenes comprobadas (la segunda es la DHT circular de Kurose; la transcripción anterior hablaba de *rarest first*, *tit-for-tat* y Kademlia, que no aparecen en la figura). Se conservaron el tracker y tu ejemplo del juego por pedazos. Simulación Python del anillo: la clave 11 queda en el nodo 12, ruta 3→4→5→8→10→12. Se omitieron las cifras no verificables (256 KB, 160 bits). Sin dudas nuevas.
