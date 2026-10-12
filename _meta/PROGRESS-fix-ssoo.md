@@ -7,7 +7,7 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 Notas con marca detectadas: 95 de 100.
 
 Reescritas hasta ahora: 67 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 12-Fundamentos de redes y modelos en capas/06 - Proceso de encapsulamiento y flujo de datos en la red.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Última reescrita: 11-Implementación de archivos y bloques/08 - Administración del espacio libre en disco: mapas de bits y listas enlazadas.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -200,3 +200,4 @@ Reescritas hasta ahora: 67 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **12/04 Modelos de capas**: 67 líneas, 1 imagen comprobada (es el diagrama de servicio y protocolo de Tanenbaum; estaba anidada en un callout con una transcripción inventada). Tabla OSI/TCP-IP, analogía de los traductores del material, historia (Day y Zimmerman 1983; Cerf y Kahn 1974). Duda ℹ️: "Open Systems Interface".
 - **12/05 Capas inferiores**: 80 líneas, sin imágenes, Mermaid (válido) de la pila con las unidades de cada capa, tabla TCP/UDP y una sección por capa con el contenido del material. Enlaces a las notas de cada capa (14, 15, 17, 12/02). Duda ℹ️ sobre IGMP.
 - **12/06 Encapsulamiento**: 66 líneas, 1 imagen comprobada (Kurose; estaba anidada en un callout). Tabla de unidades y headers, recorrido por switch (2 capas) y router (3 capas) de tus apuntes, y un Mermaid (válido). Sin dudas nuevas.
+- **Verificación completa al cerrar las carpetas 10 y 11** (terminaron 13:57 y 14:27): sin errores nuevos en [1], [2] ni [5].
