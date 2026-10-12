@@ -3,7 +3,7 @@ ramo: "Sistemas Operativos y Redes"
 tema: "Administración de memoria"
 tags:
   - so/memoria
-  - origen/apuntes
+  - origen/complemento
 prerrequisitos:
   - "[[01 - Qué es un sistema operativo]]"
   - "[[01 - Concepto de proceso y espacio de memoria]]"
@@ -11,65 +11,67 @@ prerrequisitos:
 
 # Memoria principal y el desafío de la multiprogramación
 
-La memoria principal (RAM) es un recurso físico finito estructurado como un gran arreglo lineal de bytes direccionables. Cuando el sistema operativo soporta múltiples procesos en ejecución simultánea, el modelo simplista de asignación estática con direcciones absolutas resulta insostenible.
+Este capítulo trata de cómo el sistema operativo administra la memoria principal de los procesos que están en ejecución. El punto de partida es simple: la memoria es un gran arreglo de bytes. La dificultad aparece cuando hay que repartirla entre varios procesos a la vez.
 
-## Gestión de memoria y multiprogramación (mis apuntes)
+## La memoria es un arreglo de bytes
 
-> [!note] Apuntes de clase
-> **CONTENIDO 6: MEMORIA**
-> Veremos como el sistema operativo es capaz de adminisitrar la memoria principal del proceso que esta ejecución
->
-> La memoria es un arreglo de bytes
->
-> - 1 KB | 1024 B | 2**10 B
-> - 1 MB | 2**20 B
-> - 1 GB | 2**30 B
->
-> Como guardamos los procesos? → Variables codigos etc:
-> - Sin Multiprogramacion → Muy facil: Solo tenemos que cargar el espacio completo.
-> - Con Multiprogramacion se complica mas:
->   - Si el SO, no se encarga de avisarme donde esta, voy a entrar a una direccion de memoria que no es propia.
->   - Por lo tanto: DIRECCIONES ABSOLUTAS EN MULTIPGROMACION → NO SIRVE.
->
-> Compilador + Sistema Operativo:
-> Debe encargarse de utilizar no direccions absolutas, si no relativas dentro de la memoria principal. No buscar la direccion absoluta, si no la actual → (Se va actualiuzando).
+La memoria principal es **un gran arreglo de bytes, cada uno con su propia dirección**. Las unidades son potencias de 2:
 
-> [!warning] Posible error
-> En los apuntes figura la errata tipográfica "DIRECCIONES ABSOLUTAS EN MULTIPGROMACION" por multiprogramación.
+| Unidad | Bytes |
+|---|---|
+| 1 KB | $1024 = 2^{10}$ |
+| 1 MB | $2^{20} = 1\,048\,576$ |
+| 1 GB | $2^{30}$ |
 
-![Memoria como arreglo lineal de bytes sin multiprogramación](adjuntos/Memoria%20como%20arreglo%20lineal%20de%20bytes%20sin%20multiprogramaci%C3%B3n.png)
-
-> [!example]- Transcripción de la imagen
-> Representación de la memoria sin multiprogramación:
-> - Un único proceso de usuario reside en memoria física.
-> - El espacio de direcciones del sistema operativo ocupa la parte baja o alta (por ejemplo, direcciones $0$ a $k$), y el resto pertenece enteramente al proceso en ejecución.
-> - El compilador puede generar direcciones absolutas fijas porque el programa siempre se ubica en la misma posición base.
+Una memoria de 256 KB, por ejemplo, tiene direcciones desde `0x000…0` hasta $256 \cdot 2^{10} - 1 = 262\,143$.
 
 ![Memoria física compartida con multiprogramación](adjuntos/Memoria%20f%C3%ADsica%20compartida%20con%20multiprogramaci%C3%B3n.png)
 
 > [!example]- Transcripción de la imagen
-> Memoria física compartida en un entorno con multiprogramación:
-> - La memoria RAM alberga de forma concurrente el código y datos del Sistema Operativo junto a múltiples procesos independientes (Proceso A, Proceso B, Proceso C).
-> - Cada proceso ocupa una porción arbitraria y dinámica de memoria según el orden de llegada y la disponibilidad de espacio libre.
+> Dibujo a mano: la memoria como una fila de casillas (bytes), con la primera dirección marcada `0x000..0` y la última $256 \cdot 2^{10} - 1$.
+
+## Sin multiprogramación: fácil
+
+¿Cómo se guardan en memoria los procesos, con sus variables y su código? Si hay **un solo proceso**, basta con cargar su espacio completo. La vida del compilador es fácil: **el programa siempre se carga en la misma dirección** y cada variable tiene la misma dirección en cada ejecución.
+
+![Memoria como arreglo lineal de bytes sin multiprogramación](adjuntos/Memoria%20como%20arreglo%20lineal%20de%20bytes%20sin%20multiprogramaci%C3%B3n.png)
+
+> [!example]- Transcripción de la imagen
+> Memoria desde 0 KB hasta *max* (anotado a mano: 256 KB). De 0 KB a 64 KB está el *Operating System (code, data, etc.)*; de 64 KB hasta el final, el *Current Program (code, data, etc.)*.
+
+## Con multiprogramación: dos problemas
+
+Con **varios procesos en memoria**, cada uno puede cargarse en cualquier parte, y eso trae dos problemas:
+
+| Problema | Qué pasa | Requisito |
+|---|---|---|
+| **1. Relocalización** | Las variables no están siempre en la misma ubicación: dependen de dónde se cargó el proceso | Relocalizar las direcciones |
+| **2. Protección** | Un proceso, por error, podría leer y modificar la memoria de otro | Proteger la memoria de cada proceso |
 
 ![Problemas de relocalización y protección con multiprogramación](adjuntos/Problemas%20de%20relocalizaci%C3%B3n%20y%20protecci%C3%B3n%20con%20multiprogramaci%C3%B3n.png)
 
 > [!example]- Transcripción de la imagen
-> Esquema de desafíos que surgen al compartir la memoria física:
-> - **Incertidumbre de carga:** Un proceso no sabe de antemano en qué rango de direcciones físicas será cargado en cada ejecución.
-> - **Riesgo de colisión:** Si los programas usaran direcciones absolutas codificadas por el compilador, dos procesos sobreescribirían las mismas posiciones de memoria.
-> - **Necesidad de abstracción:** Se requiere disociar las direcciones lógicas utilizadas por el procesador durante la ejecución de las direcciones físicas reales del hardware.
+> "Con Multiprogramación". La memoria va de 0 KB a 512 KB en bloques de 64 KB: *Operating System* (0-64 KB), *free* (64-128 KB), *Process C* (128-192 KB), *Process B* (192-256 KB), *free* (256-320 KB), *Process A* (320-384 KB) y dos bloques *free* (384-512 KB). Anotaciones a mano: el bloque libre de 64 KB está marcado "PA" con "64·1024", y Process A, tachado, tiene una flecha a "320·1024", es decir, la dirección inicial de A depende de dónde se cargue.
 
-> [!tip] Complemento: Direcciones absolutas vs. relativas
-> En los sistemas primitivos monoprogramados, el compilador generaba código máquina con direcciones absolutas (físicas directas). Con la multiprogramación, un programa puede cargarse en cualquier ubicación física arbitraria. Por esta razón, el compilador y el enlazador (*linker*) generan direcciones relativas (lógicas), y el sistema operativo colabora con el hardware para traducir dinámicamente cada referencia en tiempo de ejecución.
+El ejemplo de la figura lo muestra: si el proceso A se carga en 320 KB, su primer byte está en $320 \cdot 1024$. Si la próxima vez cabe en el hueco de 64 KB, empieza en $64 \cdot 1024$. Un programa compilado con la dirección fija $320 \cdot 1024$ escribiría, en el segundo caso, en una zona que no le pertenece.
+
+> [!warning] Direcciones absolutas no sirven con multiprogramación
+> Si el SO no se encarga de indicarle al proceso dónde está, el proceso terminará accediendo a direcciones de memoria que no son suyas. Por eso **el compilador y el sistema operativo** trabajan con direcciones **relativas** al inicio del proceso, no absolutas. La dirección real se calcula al ejecutar, según dónde quedó cargado el proceso.
+
+## La solución: espacio de direcciones
+
+Las direcciones que usa un proceso son **virtuales**: no son absolutas, sino direcciones dentro de un **espacio virtual que el SO asigna a cada proceso**. Esa abstracción se llama **espacio de direcciones**, y resuelve a la vez la relocalización y la protección. La primera forma de implementarla, con los registros base y límite, está en [[03 - Relocalización, protección de memoria y registros base y límite|relocalización y registros base y límite]].
 
 ## Preguntas de repaso
 
-> [!question]- ¿Por qué no es viable utilizar direcciones de memoria absolutas en un sistema multiprogramado?
-> Porque al compilar un programa no se puede predecir qué posición física de la RAM estará libre al momento de su ejecución. Si dos programas compilaran usando la misma dirección absoluta fija, entrarían en colisión inmediata, sobreescribiéndose mutuamente el código y los datos.
+> [!question]- ¿Por qué con un solo proceso el compilador puede usar direcciones fijas?
+> Porque el programa siempre se carga en la misma dirección, así que cada variable queda siempre en el mismo lugar en todas las ejecuciones.
 
-> [!question]- ¿Cuál es la equivalencia exacta en bytes de 1 Kilobyte (KB) y 1 Megabyte (MB) en arquitectura de computadores?
-> En el sistema binario estándar de computadores, $1\text{ KB} = 2^{10}\text{ bytes} = 1024\text{ bytes}$, y $1\text{ MB} = 2^{20}\text{ bytes} = 1\,048\,576\text{ bytes}$.
+> [!question]- ¿Cuáles son los dos problemas que trae la multiprogramación a la memoria?
+> La relocalización (el proceso puede cargarse en cualquier lugar, así que sus direcciones cambian) y la protección (un proceso podría leer o modificar la memoria de otro).
 
-> [!question]- ¿Qué rol cumplen el compilador y el enlazador respecto a las direcciones de memoria de un programa?
-> En lugar de emitir direcciones físicas reales de la RAM, el compilador y el enlazador estructuran las referencias del programa de forma relativa a un origen lógico base ($0$), permitiendo que el binario pueda relocalizarse en cualquier zona de la memoria física.
+> [!question]- ¿Por qué no sirven las direcciones absolutas con multiprogramación?
+> Porque el proceso no se carga siempre en el mismo lugar. Una dirección absoluta fija, válida si se cargó en 320 KB, apuntaría a memoria ajena si esta vez se cargó en 64 KB.
+
+> [!question]- ¿Cuál es la última dirección de una memoria de 256 KB?
+> $256 \cdot 2^{10} - 1 = 262\,143$, porque las direcciones van desde 0.
