@@ -1288,7 +1288,8 @@
     "sha256": "c4dc0adef0fe931ac7d4122fe5ab96e0b74abfdc8e5a6912d38b14320dd3dd7c"
   },
   {
-    "origen": "Apuntes - Redes IIC2333/image 70.png",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 70.png",
     "destino": "Sistemas Operativos y Redes/17-Capa de enlace y seguridad/adjuntos/Diagrama de capa de enlace, switches, LANs, VLANs y protocolos de acceso al medio.png",
     "sha256": "51870da600b2948d31c9900b78695aba985eeb4b71515c6ff0553e5ccb95f15a",
     "tema": "Capa de enlace y seguridad"
