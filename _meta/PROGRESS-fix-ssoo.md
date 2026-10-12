@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 28 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 06-Sincronización/04 - Mutex locks y el dilema de busy waiting versus dormir.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 29 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 06-Sincronización/05 - Problema del productor-consumidor y buffer acotado.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -42,7 +42,7 @@ Reescritas hasta ahora: 28 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 26 | 06-Sincronización/02 - Soluciones por software y algoritmo de Peterson.md | reescrita | 109 líneas; 4 imágenes; C ok; duda Peterson |
 | 27 | 06-Sincronización/03 - Sincronización por hardware e instrucciones atómicas.md | reescrita | 127 líneas; 5 imágenes; C ok |
 | 28 | 06-Sincronización/04 - Mutex locks y el dilema de busy waiting versus dormir.md | reescrita | 104 líneas; 3 imágenes; C ok |
-| 29 | 06-Sincronización/05 - Problema del productor-consumidor y buffer acotado.md | pendiente | |
+| 29 | 06-Sincronización/05 - Problema del productor-consumidor y buffer acotado.md | reescrita | 85 líneas; 3 imágenes |
 | 30 | 06-Sincronización/06 - Semáforos de Dijkstra y tipos de semáforos.md | pendiente | |
 | 31 | 06-Sincronización/07 - Variables de condición y monitores.md | pendiente | |
 | 32 | 06-Sincronización/08 - Problema de los lectores y escritores.md | pendiente | |
@@ -158,3 +158,4 @@ Reescritas hasta ahora: 28 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **06/02 Peterson**: 109 líneas, 4 imágenes comprobadas. Recorre los tres intentos: bandera de ocupado, alternancia con `turn` y Peterson. La evaluación de los criterios sigue exactamente lo que dicen las diapositivas. **Peterson y la espera acotada no se resolvió**: se reproduce el caso borde del material y se registró en DUDAS (🟡). Código C de Peterson con atómicos C11: da 2000000 en 3 de 3 ejecuciones. Con `volatile int` perdió 27 incrementos en 1 de 3 ejecuciones en arm64, lo que respalda el callout sobre reordenamiento.
 - **06/03 Instrucciones atómicas**: 127 líneas (sobre el rango ideal, bajo el máximo), 5 imágenes comprobadas. Las transcripciones anteriores reescribían el código con otros nombres (`rv`, `prev`); se reemplazaron por el código literal de las diapositivas. Ejemplo C11 con spinlocks TAS (`atomic_flag`) y CAS (`atomic_compare_exchange_strong`): ambos dan 2000000. "Solo se usan si se trabaja con sistemas operativos (ej: Microsoft)" se reescribió con el material: no se usan directamente, se construyen primitivas sobre ellas. Sin dudas nuevas.
 - **06/04 Mutex y busy waiting**: 104 líneas, 3 imágenes comprobadas. Las transcripciones anteriores no coincidían con las figuras (p. ej., la primera muestra `struct Lock { bool value; }` con `acquire` sobre `test_and_set` + `thread_yield`); se rehicieron. Ejemplo C con `pthread_mutex`: contador = 2000000. Tabla busy waiting vs dormir. Se conservó la analogía "si no hay comida, mándame a dormir". La V/F de prueba pasó a pregunta de repaso. Se quitaron los rangos de "pocos µs" del complemento. Sin dudas nuevas.
+- **06/05 Productor-consumidor**: 85 líneas, 3 imágenes comprobadas (las transcripciones anteriores no coincidían: hablaban de punteros y de "INCORRECTO/CORRECTO" que la figura no tiene; se rehicieron). Recorre las 3 versiones del material (sin sincronización, locks en stock, sleep/wakeup) y la pregunta del material: "¿y si el consumidor es interrumpido antes de dormir?" (aviso perdido). Tabla comparativa. Sin código nuevo: la solución ejecutable con semáforos está en 06/06. Sin dudas nuevas.
