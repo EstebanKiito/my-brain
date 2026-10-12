@@ -8,6 +8,7 @@ tags:
   - starvation
   - aging
   - mlfq
+  - origen/complemento
 prerrequisitos:
   - "[[03 - Planificación FCFS y SJF]]"
   - "[[04 - Planificación Round Robin y sistemas interactivos]]"
@@ -15,72 +16,66 @@ prerrequisitos:
 
 # Planificación por prioridad y colas multinivel (MLFQ)
 
-Para satisfacer simultáneamente tiempos de retorno bajos para tareas cortas y tiempos de respuesta ágiles para tareas interactivas sin conocer la duración futura de los procesos, los sistemas operativos emplean **planificación por prioridades** y **colas multinivel con retroalimentación** (*Multilevel Feedback Queue* o MLFQ).
+SJF minimiza el turnaround, pero exige conocer el futuro; Round Robin da buena respuesta, pero alarga el turnaround. Los schedulers reales combinan ambas ideas usando **prioridades**, y el diseño más influyente es la **cola multinivel con retroalimentación** (MLFQ), que aprende la prioridad de cada proceso observando cómo se comporta.
 
----
+## Priority scheduling
 
-## PRORITY SCHEDULING (mis apuntes)
+Cada proceso tiene asociada una **prioridad**, y se atienden por orden de prioridad.
 
-> ![Planificación por prioridad starvation y aging](adjuntos/Planificaci%C3%B3n%20por%20prioridad%20starvation%20y%20aging.png)
-> 
-> Existen priorida + tiempo de vida → AGING
-> - Para eso existe aging, para que cuando pase el tiempo, sumen aging y les de mas prioridad
-> 
-> STARVATION: Sufren de baja prioridad → Nadie los tomo en cuenta
-> 
-> PRIORIDADES DE LA COLA
-> Colas de multinivel → Se van cambiando de colas con nivels de prioridad
-> Me van a atender cuando sea el mas importante de una Cola (A, B o C)
-> 
-> ![Estructura de colas multinivel con retroalimentación MLFQ](adjuntos/Estructura%20de%20colas%20multinivel%20con%20retroalimentaci%C3%B3n%20MLFQ.png)
-> 
-> Observacion → No faltar a la clase de paginacion → dado que los videos en youtube son demasiado largos y no sirve tanto verlos → Mejor venir a la clase que es mas densa
+- **Empates:** entre procesos de igual prioridad se usa FCFS o RR.
+- **SJF es un caso particular:** basta definir la prioridad como inversa a la duración $\tau$ de la ráfaga ($p = 1/\tau$), de modo que el más corto sea el más prioritario.
+- Las prioridades pueden ser **estáticas** (fijas) o **dinámicas** (cambian con el tiempo o el comportamiento).
+- En UNIX un proceso puede **reducir su propia prioridad** aumentando su **niceness** (comando `nice`): se vuelve más "amable" con los demás.
 
-> [!warning] Posible error en apuntes
-> * *"PRORITY"*: errata por *Priority*.
-> * *"priorida"*: errata por "prioridad".
-> * *"nivels"*: errata por "niveles".
-> * La última observación es un recordatorio personal del estudiante referente al tema posterior de memoria y paginación.
+> [!warning] Inanición y aging
+> Los procesos de baja prioridad pueden sufrir **starvation**: si siempre llega alguien más importante, nadie los toma en cuenta. La solución es el **aging** (envejecimiento): combinar la prioridad con el tiempo de vida en espera. A medida que pasa el tiempo, el proceso acumula *aging* y su prioridad sube, hasta que inevitablemente le toca.
 
----
+![Planificación por prioridad starvation y aging](adjuntos/Planificaci%C3%B3n%20por%20prioridad%20starvation%20y%20aging.png)
 
-> [!example]- Transcripción de la imagen: Planificación por prioridad starvation y aging.png
-> **Priority Scheduling:**
-> * A cada proceso se le asigna un valor numérico de prioridad.
-> * La CPU atiende siempre al proceso listo con mayor prioridad.
-> * Desempate entre prioridades iguales: se utiliza FCFS o Round-Robin.
-> * **SJF como caso particular:** SJF equivale a un planificador de prioridad donde la prioridad es inversamente proporcional a la duración del *burst* ($p = 1 / \tau$).
-> * Las prioridades pueden ser **estáticas** (fijas de por vida) o **dinámicas** (cambian según el comportamiento del proceso o mandatos como `nice` en UNIX).
-> * **Inanición (*Starvation*):** Los procesos con baja prioridad pueden quedar postergados indefinidamente ante la llegada continua de procesos de alta prioridad.
-> * **Envejecimiento (*Aging*):** Solución que incrementa gradualmente la prioridad de los procesos a medida que acumulan tiempo de espera en la cola *Ready*.
+> [!example]- Transcripción de la imagen
+> "Cada proceso tiene asociada una **prioridad**": se atienden por orden de prioridad · prioridades iguales: FCFS ó RR · SJF es un caso particular de este algoritmo (¿por qué?) · prioridades pueden ser estáticas o dinámicas · **Starvation** de procesos con baja prioridad · **Aging**: incrementar prioridad de procesos que llevan más tiempo. "Permite reducir la prioridad de un proceso (incrementa su niceness)".
 
-> [!example]- Transcripción de la imagen: Estructura de colas multinivel con retroalimentación MLFQ.png
-> **Esquema de colas MLFQ:**
-> * Estructura jerárquica con múltiples colas de prioridad:
->   - **Cola superior (Alta prioridad):** Quantum corto (*shorter quantum*), ideal para tareas interactivas / I/O-bound.
->   - **Colas intermedias (Media prioridad):** Quantum moderado.
->   - **Cola inferior (Baja prioridad):** Quantum largo (*longer quantum*) o FCFS para tareas intensivas en CPU (*CPU-bound*).
-> * Los procesos que agotan su quantum son expropiados (*preempted*) y degradados al nivel inferior.
+## Colas multinivel con retroalimentación (MLFQ)
 
----
+La meta de MLFQ es **optimizar el turnaround como SJF y, a la vez, minimizar el tiempo de respuesta como RR**, sin conocer la duración de los procesos. Se usó en CTSS (1962) y Multics (1965), y es la base de los schedulers de Windows y macOS.
 
-> [!tip] Complemento: Las 5 Reglas Fundamentales de MLFQ
-> El planificador MLFQ (introducido históricamente en sistemas CTSS y base de Windows y macOS) implementa las siguientes reglas:
-> 1. **Regla 1:** Si $\text{Prioridad}(A) > \text{Prioridad}(B)$, se ejecuta el proceso $A$.
-> 2. **Regla 2:** Si $\text{Prioridad}(A) = \text{Prioridad}(B)$, se ejecutan $A$ y $B$ usando Round-Robin en esa cola.
-> 3. **Regla 3:** Cuando un proceso ingresa al sistema, entra en la cola de **máxima prioridad**.
-> 4. **Regla 4 (Contabilidad estricta):** Al consumir su cuota de tiempo acumulada en un nivel (incluso si cede la CPU antes de terminar el quantum), su prioridad desciende un nivel. Esto evita que un proceso haga trampa (*gaming the scheduler*) cediendo la CPU deliberadamente al $99\%$ del quantum.
-> 5. **Regla 5 (Reinicio periódico / *Priority Boost*):** Tras un intervalo $S$, todos los procesos del sistema se promueven a la cola de máxima prioridad, eliminando la inanición (*starvation*) y permitiendo que procesos que cambiaron de fase recuperen interactividad.
+Hay **varias colas, cada una con distinta prioridad** (piensa en colas A, B y C). A un proceso lo atienden cuando es el más importante entre todas las colas, y **va cambiando de cola** según cómo se comporte. Las reglas son:
 
----
+| Regla | Enunciado | Para qué |
+|---|---|---|
+| **R1** | Si prioridad(A) > prioridad(B), ejecutar A | Respetar la prioridad |
+| **R2** | Si prioridad(A) = prioridad(B), ejecutar A y B con RR | Repartir con justicia dentro de una cola |
+| **R3** | Los procesos nuevos entran en la cola de mayor prioridad | Suponer que todo proceso es corto hasta que demuestre lo contrario |
+| **R4** | Si un proceso usa su quantum (acumulado en todos sus turnos), baja de prioridad | Detectar procesos CPU-bound. Al contar el acumulado, no sirve ceder la CPU justo antes de agotarlo para quedarse arriba |
+| **R5** | Después de un tiempo $S$, todos los procesos se mueven a la cola de mayor prioridad | Evitar la inanición y dar otra oportunidad a quien cambió de comportamiento |
+
+El resultado: **los cortos salen más rápido y los largos descienden a colas de menor prioridad**. Las colas altas usan un quantum más corto (ideal para procesos interactivos) y las bajas uno más largo (los CPU-bound hacen menos cambios de contexto).
+
+![Estructura de colas multinivel con retroalimentación MLFQ](adjuntos/Estructura%20de%20colas%20multinivel%20con%20retroalimentaci%C3%B3n%20MLFQ.png)
+
+> [!example]- Transcripción de la imagen
+> Tres colas apiladas, numeradas 0, 1 y 2, con una flecha "Higher priority" hacia arriba. La cola 0 (*Shorter quantum*) tiene P9, P7, P3 y P1, y P0 está ejecutando. Cuando P0 es *preempted*, una flecha lo baja a la cola 1, que tiene varios procesos P. Una segunda flecha *preempted* baja de la cola 1 a la cola 2 (*Longer quantum*), donde están P3 y P1.
+
+```mermaid
+flowchart TD
+  N["Proceso nuevo"] --> Q0["Cola 0: prioridad alta, quantum corto"]
+  Q0 -->|agota su quantum| Q1["Cola 1: prioridad media"]
+  Q1 -->|agota su quantum| Q2["Cola 2: prioridad baja, quantum largo"]
+  Q2 -->|"tras un tiempo S: boost"| Q0
+```
+
+Otros schedulers que aparecen en el curso: **Lottery** (1994, los procesos reciben "boletos" y se sortea la CPU), **Fair Share** (1988, reparte el tiempo entre grupos de procesos o usuarios), **O(1)** (dos colas, activos y expirados; Linux 2.6 antes de 2.6.23) y **BFS** (2009).
 
 ## Preguntas de repaso
 
-> [!question]- ¿Qué problema resuelve la técnica de Aging en un planificador por prioridades?
-> Resuelve la **inanición** (*starvation*). Al elevar progresivamente la prioridad de un proceso que lleva mucho tiempo esperando en la cola, se garantiza que tarde o temprano alcance una prioridad suficiente para ser ejecutado por la CPU.
+> [!question]- ¿Por qué SJF es un caso particular de priority scheduling?
+> Porque basta asignar como prioridad el inverso de la duración de la ráfaga: el proceso más corto queda con la prioridad más alta y se atiende primero.
 
-> [!question]- ¿Cómo clasifica MLFQ los procesos entre I/O-bound y CPU-bound de forma automática?
-> Todos los procesos ingresan en la cola superior. Si un proceso realiza ráfagas cortas de CPU y se bloquea esperando I/O antes de agotar su tiempo, se mantiene en las colas de alta prioridad (favoreciendo la interactividad). Si un proceso monopoliza la CPU agotando su cuota de tiempo, desciende a las colas inferiores (asumiendo que es *CPU-bound*).
+> [!question]- ¿Qué problema resuelve el aging y cómo?
+> Resuelve la inanición de los procesos de baja prioridad: su prioridad sube con el tiempo que llevan esperando, hasta que les toca la CPU.
 
-> [!question]- ¿Por qué es necesaria la regla del Priority Boost (Regla 5) en MLFQ?
-> Porque sin un reinicio periódico, un proceso largo que desciende a la cola inferior podría sufrir inanición si el sistema recibe muchas tareas interactivas nuevas. Además, permite que un proceso que pasa de una fase de cómputo intensivo a una fase interactiva recupere rápidamente una alta prioridad.
+> [!question]- ¿Cómo distingue MLFQ entre procesos interactivos y CPU-bound sin conocerlos de antemano?
+> Todos entran arriba (R3). El que usa poca CPU y se bloquea pronto nunca agota su quantum y se queda arriba. El que consume su quantum completo baja (R4). Así, el comportamiento observado revela el tipo de proceso.
+
+> [!question]- ¿Por qué R4 cuenta el quantum acumulado y para qué existe R5?
+> Si solo se contara el turno actual, un proceso podría ceder la CPU justo antes de agotar su quantum y quedarse siempre en la cola alta. R5 sube a todos periódicamente para que los procesos largos no sufran inanición y para que uno que se volvió interactivo recupere prioridad.

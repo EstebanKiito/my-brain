@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 18 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 03-Planificación de CPU/04 - Planificación Round Robin y sistemas interactivos.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 19 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 03-Planificación de CPU/05 - Planificación por prioridad y colas multinivel (MLFQ).md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -31,7 +31,7 @@ Reescritas hasta ahora: 18 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 16 | 03-Planificación de CPU/02 - Clasificación de planificadores y métricas de rendimiento.md | reescrita | 83 líneas; 3 imágenes |
 | 17 | 03-Planificación de CPU/03 - Planificación FCFS y SJF.md | reescrita | 96 líneas; 2 imágenes; Python ok |
 | 18 | 03-Planificación de CPU/04 - Planificación Round Robin y sistemas interactivos.md | reescrita | 118 líneas; 2 imágenes; Python ok |
-| 19 | 03-Planificación de CPU/05 - Planificación por prioridad y colas multinivel (MLFQ).md | pendiente | |
+| 19 | 03-Planificación de CPU/05 - Planificación por prioridad y colas multinivel (MLFQ).md | reescrita | 82 líneas; 2 imágenes; Mermaid ok |
 | 20 | 04-Señales e IPC/01 - Concepto de señal y ciclo de vida de señales POSIX.md | pendiente | |
 | 21 | 04-Señales e IPC/02 - Señales comunes y mecanismos de control SIGTERM, SIGKILL y SIGINT.md | pendiente | |
 | – | 04-Señales e IPC/03 - Comunicación entre procesos y manejo de señales en C.md | sin marca | nota modelo |
@@ -148,3 +148,4 @@ Reescritas hasta ahora: 18 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **03/02 Clasificación de planificadores**: 83 líneas, 3 imágenes comprobadas, tablas por interrupción, objetivo y métricas, y un ejemplo numérico de turnaround/response/waiting/throughput. Los ejemplos de tus apuntes (transcribir llamadas, hospital, Webpay, compra despachada días después) quedaron en la tabla de objetivos. "Colaborativos casi inútiles" se reescribió como "los más usados son los expropiativos" (fila 🟡 ya existente). Sin dudas nuevas.
 - **03/03 FCFS y SJF**: 96 líneas, 2 imágenes comprobadas. Simulador FCFS/SJF en Python que reproduce los promedios del material (109, 49, 79) y el de tus apuntes (llegadas 0/1/2 con ráfagas 10/10/100 → 10/19/118, promedio 49). Esa última tabla se integró como un escenario más; el callout de "confusión" y el "o 79" ambiguo se eliminaron. Sin dudas nuevas (la fila 🟡 existente queda resuelta en la nota).
 - **03/04 Round Robin**: 118 líneas, 2 imágenes comprobadas. Simulador RR en Python que reproduce 13,9/0,9 del material, y con q=100 degenera en FCFS (9,9/4,9). Se quitaron los rangos numéricos de quantum y del costo de cambio de contexto ("10-100 ms", "<10 µs") porque no están en el material y no eran seguros. Sin dudas nuevas.
+- **03/05 Prioridad y MLFQ**: 82 líneas, 2 imágenes comprobadas, tabla de las reglas R1-R5 con su propósito, 1 Mermaid (válido). Se agregaron los otros schedulers del material de clase (Lottery, Fair Share, O(1), BFS). Se quitó el recordatorio personal sobre la clase de paginación. Sin dudas nuevas.
