@@ -6,7 +6,7 @@ tags:
   - so/inodos
   - origen/complemento
 prerrequisitos:
-  - "[[Sistemas Operativos y Redes/11-Implementación de archivos y bloques/06 - Asignación enlazada y tabla de asignación de archivos (FAT)\|06 - Asignación enlazada y tabla de asignación de archivos (FAT)]]"
+  - "[[Sistemas Operativos y Redes/11-Implementación de archivos y bloques/06 - Asignación enlazada y tabla de asignación de archivos (FAT)|06 - Asignación enlazada y tabla de asignación de archivos (FAT)]]"
 ---
 
 # Asignación indexada y arquitectura de inodos multinivel en Unix

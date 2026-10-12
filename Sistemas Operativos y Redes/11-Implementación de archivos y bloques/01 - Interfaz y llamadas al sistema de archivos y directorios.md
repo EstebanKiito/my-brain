@@ -6,8 +6,8 @@ tags:
   - so/syscalls
   - origen/complemento
 prerrequisitos:
-  - "[[Sistemas Operativos y Redes/10-Sistemas de archivos/05 - Concepto de archivo, atributos y metadatos\|05 - Concepto de archivo, atributos y metadatos]]"
-  - "[[Sistemas Operativos y Redes/10-Sistemas de archivos/06 - Estructura de directorios y resolución de rutas\|06 - Estructura de directorios y resolución de rutas]]"
+  - "[[Sistemas Operativos y Redes/10-Sistemas de archivos/05 - Concepto de archivo, atributos y metadatos|05 - Concepto de archivo, atributos y metadatos]]"
+  - "[[Sistemas Operativos y Redes/10-Sistemas de archivos/06 - Estructura de directorios y resolución de rutas|06 - Estructura de directorios y resolución de rutas]]"
 ---
 
 # Interfaz y llamadas al sistema de archivos y directorios

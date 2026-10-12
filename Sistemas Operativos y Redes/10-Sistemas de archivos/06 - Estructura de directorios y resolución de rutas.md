@@ -5,7 +5,7 @@ tags:
   - so/archivos
   - origen/complemento
 prerrequisitos:
-  - "[[Sistemas Operativos y Redes/10-Sistemas de archivos/05 - Concepto de archivo, atributos y metadatos\|05 - Concepto de archivo, atributos y metadatos]]"
+  - "[[Sistemas Operativos y Redes/10-Sistemas de archivos/05 - Concepto de archivo, atributos y metadatos|05 - Concepto de archivo, atributos y metadatos]]"
 ---
 
 # Estructura de directorios y resolución de rutas

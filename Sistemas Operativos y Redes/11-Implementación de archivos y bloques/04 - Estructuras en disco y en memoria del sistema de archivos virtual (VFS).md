@@ -6,7 +6,7 @@ tags:
   - so/vfs
   - origen/complemento
 prerrequisitos:
-  - "[[Sistemas Operativos y Redes/11-Implementación de archivos y bloques/03 - Montaje de sistemas de archivos y puntos de montaje\|03 - Montaje de sistemas de archivos y puntos de montaje]]"
+  - "[[Sistemas Operativos y Redes/11-Implementación de archivos y bloques/03 - Montaje de sistemas de archivos y puntos de montaje|03 - Montaje de sistemas de archivos y puntos de montaje]]"
 ---
 
 # Estructuras en disco y en memoria del sistema de archivos virtual (VFS)

@@ -6,7 +6,7 @@ tags:
   - so/io
   - origen/complemento
 prerrequisitos:
-  - "[[Sistemas Operativos y Redes/01-Estructura de sistemas operativos/05 - Llamadas al sistema\|05 - Llamadas al sistema]]"
+  - "[[Sistemas Operativos y Redes/01-Estructura de sistemas operativos/05 - Llamadas al sistema|05 - Llamadas al sistema]]"
 ---
 
 # Capas de abstracción de entrada-salida y mecanismos de buffering

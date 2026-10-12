@@ -6,7 +6,7 @@ tags:
   - so/scheduling
   - origen/complemento
 prerrequisitos:
-  - "[[Sistemas Operativos y Redes/10-Sistemas de archivos/02 - Discos duros magnéticos (HDD) y discos de estado sólido (SSD)\|02 - Discos duros magnéticos (HDD) y discos de estado sólido (SSD)]]"
+  - "[[Sistemas Operativos y Redes/10-Sistemas de archivos/02 - Discos duros magnéticos (HDD) y discos de estado sólido (SSD)|02 - Discos duros magnéticos (HDD) y discos de estado sólido (SSD)]]"
 ---
 
 # Algoritmos de planificación de disco (Disk Scheduling)

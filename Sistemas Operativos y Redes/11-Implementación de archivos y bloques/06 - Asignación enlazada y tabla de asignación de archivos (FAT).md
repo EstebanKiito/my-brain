@@ -6,7 +6,7 @@ tags:
   - so/fat
   - origen/complemento
 prerrequisitos:
-  - "[[Sistemas Operativos y Redes/11-Implementación de archivos y bloques/05 - Métodos de asignación de bloques: asignación contigua y bloques de control\|05 - Métodos de asignación de bloques: asignación contigua y bloques de control]]"
+  - "[[Sistemas Operativos y Redes/11-Implementación de archivos y bloques/05 - Métodos de asignación de bloques: asignación contigua y bloques de control|05 - Métodos de asignación de bloques: asignación contigua y bloques de control]]"
 ---
 
 # Asignación enlazada y tabla de asignación de archivos (FAT)

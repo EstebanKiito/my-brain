@@ -5,7 +5,7 @@ tags:
   - so/archivos
   - origen/complemento
 prerrequisitos:
-  - "[[Sistemas Operativos y Redes/10-Sistemas de archivos/01 - Capas de abstracción de entrada-salida y mecanismos de buffering\|01 - Capas de abstracción de entrada-salida y mecanismos de buffering]]"
+  - "[[Sistemas Operativos y Redes/10-Sistemas de archivos/01 - Capas de abstracción de entrada-salida y mecanismos de buffering|01 - Capas de abstracción de entrada-salida y mecanismos de buffering]]"
 ---
 
 # Concepto de archivo, atributos y metadatos

@@ -6,7 +6,7 @@ tags:
   - so/almacenamiento
   - origen/complemento
 prerrequisitos:
-  - "[[Sistemas Operativos y Redes/10-Sistemas de archivos/02 - Discos duros magnéticos (HDD) y discos de estado sólido (SSD)\|02 - Discos duros magnéticos (HDD) y discos de estado sólido (SSD)]]"
+  - "[[Sistemas Operativos y Redes/10-Sistemas de archivos/02 - Discos duros magnéticos (HDD) y discos de estado sólido (SSD)|02 - Discos duros magnéticos (HDD) y discos de estado sólido (SSD)]]"
 ---
 
 # Niveles de formateo y esquemas de particionamiento (MBR y GPT)

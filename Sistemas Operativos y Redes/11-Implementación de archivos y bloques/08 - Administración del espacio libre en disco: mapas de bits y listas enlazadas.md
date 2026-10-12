@@ -6,7 +6,7 @@ tags:
   - so/almacenamiento
   - origen/complemento
 prerrequisitos:
-  - "[[Sistemas Operativos y Redes/11-Implementación de archivos y bloques/07 - Asignación indexada y arquitectura de inodos multinivel en Unix\|07 - Asignación indexada y arquitectura de inodos multinivel en Unix]]"
+  - "[[Sistemas Operativos y Redes/11-Implementación de archivos y bloques/07 - Asignación indexada y arquitectura de inodos multinivel en Unix|07 - Asignación indexada y arquitectura de inodos multinivel en Unix]]"
 ---
 
 # Administración del espacio libre en disco: mapas de bits y listas enlazadas

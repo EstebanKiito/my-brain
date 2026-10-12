@@ -7,7 +7,7 @@ tags:
   - redes/routers
   - origen/complemento
 prerrequisitos:
-  - "[[Sistemas Operativos y Redes/12-Fundamentos de redes y modelos en capas/05 - Capas de transporte, red, enlace y física\|05 - Capas de transporte, red, enlace y física]]"
+  - "[[Sistemas Operativos y Redes/12-Fundamentos de redes y modelos en capas/05 - Capas de transporte, red, enlace y física|05 - Capas de transporte, red, enlace y física]]"
 ---
 
 # Proceso de encapsulamiento y flujo de datos en la red

@@ -5,7 +5,7 @@ tags:
   - so/archivos
   - origen/complemento
 prerrequisitos:
-  - "[[Sistemas Operativos y Redes/11-Implementación de archivos y bloques/01 - Interfaz y llamadas al sistema de archivos y directorios\|01 - Interfaz y llamadas al sistema de archivos y directorios]]"
+  - "[[Sistemas Operativos y Redes/11-Implementación de archivos y bloques/01 - Interfaz y llamadas al sistema de archivos y directorios|01 - Interfaz y llamadas al sistema de archivos y directorios]]"
 ---
 
 # Enlaces duros (hard links) y enlaces simbólicos (soft links)

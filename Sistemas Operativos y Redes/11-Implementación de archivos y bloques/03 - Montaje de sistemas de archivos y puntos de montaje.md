@@ -5,7 +5,7 @@ tags:
   - so/archivos
   - origen/complemento
 prerrequisitos:
-  - "[[Sistemas Operativos y Redes/10-Sistemas de archivos/06 - Estructura de directorios y resolución de rutas\|06 - Estructura de directorios y resolución de rutas]]"
+  - "[[Sistemas Operativos y Redes/10-Sistemas de archivos/06 - Estructura de directorios y resolución de rutas|06 - Estructura de directorios y resolución de rutas]]"
 ---
 
 # Montaje de sistemas de archivos y puntos de montaje

@@ -6,7 +6,7 @@ tags:
   - redes/arquitectura
   - origen/complemento
 prerrequisitos:
-  - "[[Sistemas Operativos y Redes/01-Estructura de sistemas operativos/01 - Qué es un sistema operativo\|01 - Qué es un sistema operativo]]"
+  - "[[Sistemas Operativos y Redes/01-Estructura de sistemas operativos/01 - Qué es un sistema operativo|01 - Qué es un sistema operativo]]"
 ---
 
 # Arquitectura de Internet, nodos, enlaces y protocolos

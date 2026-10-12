@@ -7,7 +7,7 @@ tags:
   - redes/enlace
   - origen/complemento
 prerrequisitos:
-  - "[[Sistemas Operativos y Redes/12-Fundamentos de redes y modelos en capas/04 - Modelos de capas: modelo de referencia OSI frente al stack TCP-IP\|04 - Modelos de capas: modelo de referencia OSI frente al stack TCP-IP]]"
+  - "[[Sistemas Operativos y Redes/12-Fundamentos de redes y modelos en capas/04 - Modelos de capas: modelo de referencia OSI frente al stack TCP-IP|04 - Modelos de capas: modelo de referencia OSI frente al stack TCP-IP]]"
 ---
 
 # Capas de transporte, red, enlace y física

@@ -6,7 +6,7 @@ tags:
   - redes/medios-fisicos
   - origen/complemento
 prerrequisitos:
-  - "[[Sistemas Operativos y Redes/12-Fundamentos de redes y modelos en capas/01 - Arquitectura de Internet, nodos, enlaces y protocolos\|01 - Arquitectura de Internet, nodos, enlaces y protocolos]]"
+  - "[[Sistemas Operativos y Redes/12-Fundamentos de redes y modelos en capas/01 - Arquitectura de Internet, nodos, enlaces y protocolos|01 - Arquitectura de Internet, nodos, enlaces y protocolos]]"
 ---
 
 # Redes de acceso y medios físicos de transmisión

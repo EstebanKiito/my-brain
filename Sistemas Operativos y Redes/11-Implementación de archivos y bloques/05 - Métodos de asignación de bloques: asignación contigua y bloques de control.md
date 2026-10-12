@@ -5,7 +5,7 @@ tags:
   - so/archivos
   - origen/complemento
 prerrequisitos:
-  - "[[Sistemas Operativos y Redes/11-Implementación de archivos y bloques/04 - Estructuras en disco y en memoria del sistema de archivos virtual (VFS)\|04 - Estructuras en disco y en memoria del sistema de archivos virtual (VFS)]]"
+  - "[[Sistemas Operativos y Redes/11-Implementación de archivos y bloques/04 - Estructuras en disco y en memoria del sistema de archivos virtual (VFS)|04 - Estructuras en disco y en memoria del sistema de archivos virtual (VFS)]]"
 ---
 
 # Métodos de asignación de bloques: asignación contigua y bloques de control
@@ -21,7 +21,7 @@ Un archivo ocupa más que los bytes de su contenido. Tiene un **tamaño real** (
 | **Bloques de datos** | Los bytes que son, en sí, el archivo |
 | **Bloque de directorio** | Asocia el nombre del archivo con su información |
 | **File Control Block** (FCB) | Contiene la información para poder leer los datos del archivo: metadatos y dónde están sus bloques |
-| **Bloques índice** y **de indirección** (simple, doble) | En algunas estrategias, guardan las direcciones de los bloques de datos ([[07 - Asignación indexada y arquitectura de inodos multinivel en Unix\|asignación indexada]]) |
+| **Bloques índice** y **de indirección** (simple, doble) | En algunas estrategias, guardan las direcciones de los bloques de datos ([[07 - Asignación indexada y arquitectura de inodos multinivel en Unix|asignación indexada]]) |
 
 Para leer un archivo, el SO recorre varias estructuras: consulta la **tabla de archivos del proceso**, luego la **tabla de archivos del sistema**, luego el **v-node** para saber qué función `read` usar según el sistema de archivos, y recién entonces lee los **bloques de datos** (ver [[04 - Estructuras en disco y en memoria del sistema de archivos virtual (VFS)|VFS]]). La idea de cada estrategia de asignación es no tener que dar tantas vueltas para encontrar los bloques, y cada SO tiene la suya.
 
