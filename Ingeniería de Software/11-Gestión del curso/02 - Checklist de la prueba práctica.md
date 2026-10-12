@@ -20,7 +20,7 @@ Mi lista de lo que había que dominar para la prueba práctica, con cada punto e
 - [ ] **Testing** → [[04 - Unit tests en Rails|Unit tests]], [[07 - Integration tests en Rails|Integration tests]], [[05 - Asserts en Minitest|Asserts]]
 
 > [!tip] Complemento — cómo practicar
-> - Los [[Ingeniería de Software/08-Patrones de Diseño/Ejercicios de prueba/_Índice|ejercicios de prueba]] combinan patrones con diagramas de clases y de secuencia: hazlos sin mirar la solución.
+> - Los [[Ingeniería de Software/08-Patrones de Diseño/04-Ejercicios de prueba/_Índice|ejercicios de prueba]] combinan patrones con diagramas de clases y de secuencia: hazlos sin mirar la solución.
 > - Para lookup, toma los ejemplos de [[13 - self vs super|self vs super]], tapa la salida y predícela.
 > - Para planificación, repite el ejemplo del release plan y el de AccSellerator → Triad con otros números.
 

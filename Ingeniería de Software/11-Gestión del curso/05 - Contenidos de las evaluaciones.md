@@ -18,24 +18,24 @@ Las listas de contenidos de mis resúmenes, con cada tema enlazado a su nota. Si
 
 ## Resumen Software Pt. 1 — Parte 1: Contenidos
 - RUBY → [[Ingeniería de Software/03-Ruby/_Índice|Ruby]]
-- RAILS CRUD → [[Ingeniería de Software/05-Desarrollo web con Rails/Rails/_Índice|Rails]]
+- RAILS CRUD → [[Ingeniería de Software/05-Desarrollo web con Rails/02-Rails/_Índice|Rails]]
 - PROCESOS → [[Ingeniería de Software/01-Procesos de desarrollo/_Índice|Procesos de desarrollo]]
-- SCRUM → [[Ingeniería de Software/02-Scrum y gestión ágil/Scrum/_Índice|Scrum]]
-- HISTORIAS DE USUARIO → [[Ingeniería de Software/02-Scrum y gestión ágil/Historias de usuario/_Índice|Historias de usuario]]
-- ESTIMACIONES → [[Ingeniería de Software/02-Scrum y gestión ágil/Planificación y estimación/_Índice|Planificación y estimación]]
-- EJERCICIOS PRUEBA PRÁCTICA → [[Ingeniería de Software/08-Patrones de Diseño/Ejercicios de prueba/_Índice|Ejercicios de prueba]]
+- SCRUM → [[Ingeniería de Software/02-Scrum y gestión ágil/01-Scrum/_Índice|Scrum]]
+- HISTORIAS DE USUARIO → [[Ingeniería de Software/02-Scrum y gestión ágil/02-Historias de usuario/_Índice|Historias de usuario]]
+- ESTIMACIONES → [[Ingeniería de Software/02-Scrum y gestión ágil/03-Planificación y estimación/_Índice|Planificación y estimación]]
+- EJERCICIOS PRUEBA PRÁCTICA → [[Ingeniería de Software/08-Patrones de Diseño/04-Ejercicios de prueba/_Índice|Ejercicios de prueba]]
 
 ## Resumen Prueba Práctica — Contenidos
 A continuación, los resúmenes de los ppts de las clases de Ing. Software:
 - HTML + CSS → [[02 - HTML|HTML]], [[03 - CSS|CSS]]
 - MVC + ROUTING → [[03 - Patrón MVC en Rails|MVC]], [[10 - Rutas en Rails|Rutas]]
-- DISEÑO UML → [[Ingeniería de Software/07-Diseño y UML/UML/_Índice|UML]]
+- DISEÑO UML → [[Ingeniería de Software/07-Diseño y UML/01-UML/_Índice|UML]]
 - TESTING → [[Ingeniería de Software/06-Testing/_Índice|Testing]]
 - POLIMORFISMO Y LOOKUP → [[Ingeniería de Software/04-Programación orientada a objetos/_Índice|POO]]
-- DISEÑO + ACOPLAMIENTO + COHESIÓN → [[Ingeniería de Software/07-Diseño y UML/Principios de diseño/_Índice|Principios de diseño]]
-- PATRONES DISEÑO COMPORTAMIENTO → [[Ingeniería de Software/08-Patrones de Diseño/Comportamiento/_Índice|Comportamiento]]
-- PATRONES DISEÑO ESTRUCTURALES → [[Ingeniería de Software/08-Patrones de Diseño/Estructurales/_Índice|Estructurales]]
-- PATRONES DISEÑO CREACIONALES → [[Ingeniería de Software/08-Patrones de Diseño/Creacionales/_Índice|Creacionales]]
+- DISEÑO + ACOPLAMIENTO + COHESIÓN → [[Ingeniería de Software/07-Diseño y UML/02-Principios de diseño/_Índice|Principios de diseño]]
+- PATRONES DISEÑO COMPORTAMIENTO → [[Ingeniería de Software/08-Patrones de Diseño/01-Comportamiento/_Índice|Comportamiento]]
+- PATRONES DISEÑO ESTRUCTURALES → [[Ingeniería de Software/08-Patrones de Diseño/02-Estructurales/_Índice|Estructurales]]
+- PATRONES DISEÑO CREACIONALES → [[Ingeniería de Software/08-Patrones de Diseño/03-Creacionales/_Índice|Creacionales]]
 - TESTING (repetido en la lista)
 - ARQUITECTURA → [[Ingeniería de Software/09-Arquitectura de software/_Índice|Arquitectura de software]]
 - DOCUMENTACIÓN → *sin notas en mis apuntes ni en las slides*

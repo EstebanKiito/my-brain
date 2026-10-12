@@ -5,8 +5,8 @@ Cómo se organiza un proyecto ágil en la práctica: el marco Scrum, los requisi
 Volver al [[Ingeniería de Software/_Índice|mapa del ramo]].
 
 ## Orden de estudio
-1. [[Ingeniería de Software/02-Scrum y gestión ágil/Scrum/_Índice|Scrum]]: roles, eventos y artefactos. ✅
-2. [[Ingeniería de Software/02-Scrum y gestión ágil/Historias de usuario/_Índice|Historias de usuario]]: cómo se escriben los ítems del backlog. ✅
-3. [[Ingeniería de Software/02-Scrum y gestión ágil/Planificación y estimación/_Índice|Planificación y estimación]]: story points, velocidad, release plan y estimaciones. ✅
+1. [[Ingeniería de Software/02-Scrum y gestión ágil/01-Scrum/_Índice|Scrum]]: roles, eventos y artefactos. ✅
+2. [[Ingeniería de Software/02-Scrum y gestión ágil/02-Historias de usuario/_Índice|Historias de usuario]]: cómo se escriben los ítems del backlog. ✅
+3. [[Ingeniería de Software/02-Scrum y gestión ágil/03-Planificación y estimación/_Índice|Planificación y estimación]]: story points, velocidad, release plan y estimaciones. ✅
 
 Las imágenes de esta carpeta y sus subcarpetas están en `adjuntos/`.

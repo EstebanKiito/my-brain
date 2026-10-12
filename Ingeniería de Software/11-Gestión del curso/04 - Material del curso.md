@@ -32,14 +32,14 @@ Licencia **Creative Commons Atribución-CompartirIgual 3.0** (http://creativecom
 > | 2-ruby-we | [[Ingeniería de Software/03-Ruby/_Índice\|Ruby]] |
 > | 3-FirstAPI, 4-ActiveRecord | [[15 - Construir una API JSON en Rails\|API JSON]] · [[04 - Modelos y Active Record\|Active Record]] · [[01 - Protocolo HTTP\|HTTP]] |
 > | 5-SoftwareProcesses | [[Ingeniería de Software/01-Procesos de desarrollo/_Índice\|Procesos de desarrollo]] |
-> | 6-ScrumOverview | [[Ingeniería de Software/02-Scrum y gestión ágil/Scrum/_Índice\|Scrum]] |
-> | 7-UserStory | [[Ingeniería de Software/02-Scrum y gestión ágil/Historias de usuario/_Índice\|Historias de usuario]] |
-> | 8-ScrumPlanificacion, 9-Estimaciones | [[Ingeniería de Software/02-Scrum y gestión ágil/Planificación y estimación/_Índice\|Planificación y estimación]] |
+> | 6-ScrumOverview | [[Ingeniería de Software/02-Scrum y gestión ágil/01-Scrum/_Índice\|Scrum]] |
+> | 7-UserStory | [[Ingeniería de Software/02-Scrum y gestión ágil/02-Historias de usuario/_Índice\|Historias de usuario]] |
+> | 8-ScrumPlanificacion, 9-Estimaciones | [[Ingeniería de Software/02-Scrum y gestión ágil/03-Planificación y estimación/_Índice\|Planificación y estimación]] |
 > | 10-HTML-CSS, 10-RailsMVC | [[Ingeniería de Software/05-Desarrollo web con Rails/_Índice\|Desarrollo web con Rails]] |
 > | 11-Testing | [[Ingeniería de Software/06-Testing/_Índice\|Testing]] |
-> | 12-UML | [[Ingeniería de Software/07-Diseño y UML/UML/_Índice\|UML]] |
+> | 12-UML | [[Ingeniería de Software/07-Diseño y UML/01-UML/_Índice\|UML]] |
 > | 13-POO-v2 | [[Ingeniería de Software/04-Programación orientada a objetos/_Índice\|POO]] |
-> | 14-Diseno | [[Ingeniería de Software/07-Diseño y UML/Principios de diseño/_Índice\|Principios de diseño]] |
+> | 14-Diseno | [[Ingeniería de Software/07-Diseño y UML/02-Principios de diseño/_Índice\|Principios de diseño]] |
 > | 15-PatronesDeComportamiento, 15-PatronesEstructurales, 16-SingletonAdapterProxy | [[Ingeniería de Software/08-Patrones de Diseño/_Índice\|Patrones de Diseño]] |
 > | 17-ArquitecturaSoftware | [[Ingeniería de Software/09-Arquitectura de software/_Índice\|Arquitectura]] |
 >

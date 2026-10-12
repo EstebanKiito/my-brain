@@ -32,4 +32,4 @@ Vault de estudio del ramo. Cada nota cubre **un concepto**: no hace falta saber 
 6. **Diseño y UML → Patrones de Diseño:** UML, principios de diseño, patrones (comportamiento → estructurales → creacionales) y ejercicios de prueba.
 7. **Arquitectura de software:** la mirada de alto nivel.
 
-**Para la prueba práctica:** sigue el [[02 - Checklist de la prueba práctica|checklist]] y repasa los [[Ingeniería de Software/08-Patrones de Diseño/Ejercicios de prueba/_Índice|ejercicios de prueba]].
+**Para la prueba práctica:** sigue el [[02 - Checklist de la prueba práctica|checklist]] y repasa los [[Ingeniería de Software/08-Patrones de Diseño/04-Ejercicios de prueba/_Índice|ejercicios de prueba]].

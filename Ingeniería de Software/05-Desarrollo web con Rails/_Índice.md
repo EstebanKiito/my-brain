@@ -5,5 +5,5 @@ De la web básica a una aplicación Ruby on Rails completa (MVC, Active Record, 
 Volver al [[Ingeniería de Software/_Índice|mapa del ramo]].
 
 ## Orden de estudio
-1. [[Ingeniería de Software/05-Desarrollo web con Rails/Fundamentos web/_Índice|Fundamentos web]]: HTTP, HTML, CSS, formularios. ✅
-2. [[Ingeniería de Software/05-Desarrollo web con Rails/Rails/_Índice|Rails]]: instalación, MVC, modelos, migraciones, controladores, rutas, vistas, API. ✅
+1. [[Ingeniería de Software/05-Desarrollo web con Rails/01-Fundamentos web/_Índice|Fundamentos web]]: HTTP, HTML, CSS, formularios. ✅
+2. [[Ingeniería de Software/05-Desarrollo web con Rails/02-Rails/_Índice|Rails]]: instalación, MVC, modelos, migraciones, controladores, rutas, vistas, API. ✅

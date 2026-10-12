@@ -67,7 +67,7 @@ Sistemas Operativos/
 ```
 - **Un concepto por nota**, de 150 líneas como máximo (si pasa, se divide).
 - Nombres con prefijo `NN - ` según el **orden de estudio** dentro de la carpeta. Los nombres **no** pueden contener "clase N", "semana", "resumen", "i1" ni "c2". Los nombres de nota son únicos en todo el vault.
-- Las carpetas de primer nivel de cada ramo llevan prefijo `NN-` (sin espacios, ej.: `02-Procesos`) según el orden de la tabla de `_meta/<Ramo>/PROGRESS.md`; los wikilinks y rutas de `mapeo.json`/`imagenes.json` usan el nombre con prefijo.
+- Las carpetas de primer y segundo nivel (excepto `adjuntos`) llevan prefijo `NN-` (sin espacios, ej.: `02-Procesos`) según el orden de la tabla de `_meta/<Ramo>/PROGRESS.md`; los wikilinks y rutas de `mapeo.json`/`imagenes.json` usan el nombre con prefijo.
 
 ### Plantilla de nota
 ```markdown

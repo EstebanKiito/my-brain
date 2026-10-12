@@ -23,7 +23,7 @@
       ]
     },
     "Scrum": {
-      "carpeta": "Ingeniería de Software/02-Scrum y gestión ágil/Scrum",
+      "carpeta": "Ingeniería de Software/02-Scrum y gestión ágil/01-Scrum",
       "adjuntos": "Ingeniería de Software/02-Scrum y gestión ágil/adjuntos",
       "estado": "hecho",
       "secciones": [
@@ -35,7 +35,7 @@
       ]
     },
     "Historias de usuario": {
-      "carpeta": "Ingeniería de Software/02-Scrum y gestión ágil/Historias de usuario",
+      "carpeta": "Ingeniería de Software/02-Scrum y gestión ágil/02-Historias de usuario",
       "estado": "hecho",
       "secciones": [
         {
@@ -47,7 +47,7 @@
       "adjuntos": "Ingeniería de Software/02-Scrum y gestión ágil/adjuntos"
     },
     "Planificación y estimación": {
-      "carpeta": "Ingeniería de Software/02-Scrum y gestión ágil/Planificación y estimación",
+      "carpeta": "Ingeniería de Software/02-Scrum y gestión ágil/03-Planificación y estimación",
       "estado": "hecho",
       "secciones": [
         {
@@ -86,7 +86,7 @@
       ]
     },
     "Fundamentos web": {
-      "carpeta": "Ingeniería de Software/05-Desarrollo web con Rails/Fundamentos web",
+      "carpeta": "Ingeniería de Software/05-Desarrollo web con Rails/01-Fundamentos web",
       "estado": "hecho",
       "secciones": [
         {
@@ -97,7 +97,7 @@
       ]
     },
     "Rails": {
-      "carpeta": "Ingeniería de Software/05-Desarrollo web con Rails/Rails",
+      "carpeta": "Ingeniería de Software/05-Desarrollo web con Rails/02-Rails",
       "estado": "hecho",
       "secciones": [
         {
@@ -135,7 +135,7 @@
       ]
     },
     "UML": {
-      "carpeta": "Ingeniería de Software/07-Diseño y UML/UML",
+      "carpeta": "Ingeniería de Software/07-Diseño y UML/01-UML",
       "estado": "hecho",
       "secciones": [
         {
@@ -147,7 +147,7 @@
       "adjuntos": "Ingeniería de Software/07-Diseño y UML/adjuntos"
     },
     "Principios de diseño": {
-      "carpeta": "Ingeniería de Software/07-Diseño y UML/Principios de diseño",
+      "carpeta": "Ingeniería de Software/07-Diseño y UML/02-Principios de diseño",
       "estado": "hecho",
       "secciones": [
         {
