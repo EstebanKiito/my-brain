@@ -84,6 +84,7 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | ℹ️ | [[05 - Arquitectura de segmentos paginados\|Arquitectura de segmentos paginados]] | "ESPACIO VIRUTAL" | Errata tipográfica por Espacio Virtual. Preservada en la cita textual. |
 | ℹ️ | [[06 - Paginación multinivel y tablas de páginas invertidas\|Paginación multinivel y tablas de páginas invertidas]] | "sitemas ... pagiunas" | Erratas tipográficas ("sitemas" por sistemas, "pagiunas" por páginas). Preservadas en la cita textual. |
 | ℹ️ | [[07 - Introducción al intercambio por demanda y ciclo de fallos de página\|Introducción al intercambio por demanda y ciclo de fallos de página]] | "realmente te" | Frase inconclusa al cierre del párrafo ("realmente tenemos"). Preservada en la cita textual. |
+| ℹ️ | [[04 - Sobrecarga de tablas lineales y compromiso de fragmentación interna\|Sobrecarga de tablas lineales y compromiso de fragmentación interna]] | "4GB/ 16KB: 2**2 * 2**30 / 2**4 ** 2**10 = 2**16" (reescritura) | Errata de cálculo: $2^{32}/2^{14} = 2^{18}$ PTE, no $2^{16}$ (16 KB $= 2^{14}$). La nota usa $2^{18}$ (tabla de 1 MB). El ejemplo del material de clase usa páginas de 1 MB → $2^{12}$ PTE y tabla de 16 KB; ambos casos quedaron en la tabla. |
 
 ## Memoria virtual
 | Estado | Nota | Original | Duda / corrección propuesta |
