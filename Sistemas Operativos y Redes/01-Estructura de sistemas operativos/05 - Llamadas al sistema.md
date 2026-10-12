@@ -1,96 +1,95 @@
 ---
 ramo: Sistemas Operativos y Redes
 tema: Estructura de sistemas operativos
-tags: [so/estructura-so, origen/apuntes]
+tags: [so/estructura-so, origen/complemento]
 prerrequisitos: ["[[02 - Modos de operación y anillos de protección|Modos de operación y anillos de protección]]", "[[04 - Interrupciones y excepciones|Interrupciones y excepciones]]"]
 ---
 # Llamadas al sistema
 
-Las llamadas al sistema (*system calls* o *syscalls*) constituyen la interfaz programática controlada mediante la cual los programas de usuario solicitan servicios al núcleo del sistema operativo.
+Un programa en modo usuario no puede leer el disco ni crear procesos por su cuenta: tiene que pedírselo al sistema operativo. Las **llamadas al sistema** (*system calls* o *syscalls*) son la forma precisa de hacer ese pedido: una lista definida de operaciones que el SO ofrece, cada una con un punto de entrada controlado al kernel.
 
-## Comunicación con el sistema operativo (mis apuntes)
-Para esto se usan las SYSCALL
-SYSCALL
-- Read
-- Write
-- Copiar
-Tabla definida de opciones de operaciones para el S.O → guias de llamadas al systema
-Son llamadas que se hacen al sistema
-****— IMPORTANTE PARA LA TAREA 1 —*****
-Se pueden llamar desde linea comandos, interfaz, etc
+## Qué son y cómo se usan
 
-SYSCALLS
-Interfaz de Llamadas al sistema
-→ Cada S.O tiene su LIBRERIA para invocar Syscalls
-Ejemplo
-Al copiar un archivo → Pasan cosas por detras
-- Verificar si existe el archivo
-- Si tengo permisos para leerlo
-- Si puede escribir en memoria
+Una syscall equivale a decir "por favor, sistema operativo, haz esto por mí". Operaciones como leer (`read`), escribir (`write`) o copiar un archivo terminan siempre en syscalls, aunque se lancen desde la línea de comandos o desde una interfaz gráfica.
 
-SYSCALL
-Es una librería, serie de instrucciones para llamar al sistema
-Cada sistema tiene la suya
-→ LISTA
-- Necesitamos de las syscalls para por ej: copiar un archivo
-EJEMPLO DE SYSCALL (Copiar)
-Para escribir una syscall, necesitamos permisos de kernell, y esto es peligroso, podria romper nuestro sistema
+- **Cada SO tiene su propio conjunto de syscalls**, y una **biblioteca** (estática o dinámica, en C) que las invoca. El programador llama a una función normal como `read(fd, buf, n)` y la biblioteca se encarga del resto.
+- Una syscall es un **trap**: la biblioteca pone el número de la llamada y sus argumentos en registros de la CPU (en Linux x86-64, el número en `%rax` y los argumentos en `%rdi`, `%rsi`, `%rdx`…) y ejecuta la instrucción especial que pasa a modo kernel. El kernel ubica el código correspondiente en su tabla de syscalls y verifica los argumentos, por ejemplo que los punteros apunten a memoria del propio proceso. Luego ejecuta el servicio y devuelve el resultado, o un código de error en `errno`.
+- En la ejecución participan el proceso de usuario, la biblioteca, el **vector de interrupciones** que el SO configuró en el hardware y el código de syscalls del kernel (ver [[04 - Interrupciones y excepciones|interrupciones]]).
 
-![Syscalls UNIX versus Win32](adjuntos/Syscalls%20UNIX%20versus%20Win32.png)
+> [!warning] Implementar una syscall es otra cosa
+> *Usar* una syscall es seguro: el kernel valida cada pedido. *Escribir* una nueva requiere modificar código que corre con permisos de kernel, y un error ahí puede romper el sistema completo.
 
-> [!example]- Transcripción de la imagen
-> Comparativa de llamadas al sistema entre UNIX y la API Win32 de Windows:
-> | Operación | UNIX | Win32 | Descripción |
-> |---|---|---|---|
-> | Crear proceso | `fork` | `CreateProcess` | Crea un nuevo proceso hijo |
-> | Esperar proceso | `waitpid` | `WaitForSingleObject` | Espera que un proceso termine |
-> | Cargar ejecutable | `execve` | *(none: CreateProcess = fork + execve)* | Reemplaza la imagen de memoria del proceso |
-> | Terminar proceso | `exit` | `ExitProcess` | Termina la ejecución y retorna estado |
-> | Abrir archivo | `open` | `CreateFile` | Abre un archivo existente o crea uno nuevo |
-> | Cerrar archivo | `close` | `CloseHandle` | Cierra el descriptor o handle de archivo |
-> | Leer datos | `read` | `ReadFile` | Lee datos desde el archivo hacia un buffer |
-> | Escribir datos | `write` | `WriteFile` | Escribe datos de un buffer hacia el archivo |
+## Ejemplo: copiar un archivo
 
-![Clasificación de syscalls en UNIX](adjuntos/Clasificación%20de%20syscalls%20en%20UNIX.png)
+Detrás de `cp source.txt dest.txt` pasan muchas cosas:
 
-> [!example]- Transcripción de la imagen
-> Clasificación estándar de llamadas al sistema en UNIX:
-> - **Process management:** `fork()`, `waitpid()`, `execve()`, `exit()`.
-> - **File management:** `open()`, `close()`, `read()`, `write()`, `lseek()`, `stat()`.
-> - **Directory and file-system management:** `mkdir()`, `rmdir()`, `link()`, `unlink()`, `mount()`, `umount()`.
-> - **Miscellaneous:** `chdir()`, `chmod()`, `kill()`, `time()`.
+1. Abrir el origen (`stat`, `open`). El SO verifica si existe y si hay permiso de lectura.
+2. Leer el origen hacia una región de memoria (`mmap` o `read`).
+3. Escribir desde memoria hacia el destino (`write`).
+4. Liberar la memoria y cerrar los archivos (`munmap`, `close`).
+
+Todas estas acciones requieren syscalls. Para verlas en Linux: `strace cp source.txt dest.txt`.
 
 ![Llamadas al sistema al copiar un archivo](adjuntos/Llamadas%20al%20sistema%20al%20copiar%20un%20archivo.png)
 
 > [!example]- Transcripción de la imagen
-> Secuencia de syscalls ejecutadas por el comando `cp source.txt dest.txt`:
-> 1. El proceso en *user space* invoca `stat` para verificar atributos y tamaño del origen.
-> 2. Llama a `open` para abrir `source.txt` en modo lectura y `dest.txt` en modo escritura.
-> 3. Emplea `mmap` o bucles sucesivos de `read` y `write` transfiriendo bloques de datos a través de memoria intermedia.
-> 4. Al finalizar la transferencia, ejecuta `munmap` y `close` para liberar los descriptores de archivo.
+> El comando `cp source.txt dest.txt` corre en *user space* como una sucesión de bloques cortos. Cada uno cruza la franja **Syscalls** hacia *kernel space*, donde aparecen en orden `stat`, `open`, `mmap`, `read`, `write`, `munmap` y `close`, y luego vuelve a *user space*.
 
-> [!tip] Complemento (slides "Contenido 1: Invocación de Syscalls")
-> Las aplicaciones rara vez ejecutan directamente la instrucción de máquina `syscall`. En su lugar, invocan la biblioteca estándar de C (`libc` / glibc):
-> 1. El programa llama a una función envoltorio (*wrapper*) como `read(fd, buf, n)`.
-> 2. La biblioteca coloca el identificador numérico de la llamada en un registro de CPU (por ejemplo, `%rax` en x86_64) y los argumentos en registros designados (`%rdi`, `%rsi`, `%rdx`).
-> 3. Ejecuta la instrucción `syscall`, provocando el cambio a Ring 0 y saltando al dispatcher del kernel.
-> 4. El kernel busca el número en la tabla de despacho (*syscall table*), valida los punteros del usuario, ejecuta la rutina interna y almacena el resultado o código de error (`errno`).
+Una versión mínima de `cp` escrita solo con syscalls:
+
+```c
+#include <fcntl.h>
+#include <stdio.h>
+#include <unistd.h>
+
+int main(int argc, char *argv[]) {
+    if (argc != 3) { fprintf(stderr, "uso: %s origen destino\n", argv[0]); return 1; }
+    int in = open(argv[1], O_RDONLY);                            /* ¿existe? ¿puedo leerlo? */
+    if (in < 0) { perror("open origen"); return 1; }
+    int out = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0644);
+    if (out < 0) { perror("open destino"); return 1; }
+    char buf[4096];
+    ssize_t n;
+    while ((n = read(in, buf, sizeof buf)) > 0)                  /* disco -> memoria */
+        write(out, buf, n);                                      /* memoria -> disco */
+    close(in);
+    close(out);
+    return 0;
+}
+```
+
+## Catálogo y portabilidad
+
+![Clasificación de syscalls en UNIX](adjuntos/Clasificación%20de%20syscalls%20en%20UNIX.png)
+
+> [!example]- Transcripción de la imagen
+> Cuatro tablas de syscalls POSIX:
+> - **Process management:** `fork()` (crea un hijo idéntico al padre), `waitpid(pid, &statloc, options)` (espera que un hijo termine), `execve(name, argv, environp)` (reemplaza la imagen del proceso) y `exit(status)` (termina y retorna el estado).
+> - **File management:** `open`, `close`, `read`, `write`, `lseek` (mueve el puntero del archivo) y `stat` (información del archivo).
+> - **Directory and file-system management:** `mkdir`, `rmdir` (borra un directorio vacío), `link`, `unlink`, `mount` y `umount`.
+> - **Miscellaneous:** `chdir`, `chmod` (bits de protección), `kill` (envía una señal) y `time` (segundos desde el 1 de enero de 1970).
+
+![Syscalls UNIX versus Win32](adjuntos/Syscalls%20UNIX%20versus%20Win32.png)
+
+> [!example]- Transcripción de la imagen
+> Equivalencias UNIX → Win32: `fork` → `CreateProcess`, `waitpid` → `WaitForSingleObject`, `execve` → *(none)*, porque `CreateProcess` = `fork` + `execve`; `exit` → `ExitProcess`, `open` → `CreateFile`, `close` → `CloseHandle`, `read` → `ReadFile`, `write` → `WriteFile`.
+
+Definir una interfaz estándar ayuda a la **portabilidad**: un programa escrito contra ella compila en cualquier SO que la implemente.
+
+- **POSIX** (*Portable Operating System Interface*, estándar IEEE 1003.1) define la interfaz entre las aplicaciones y los sistemas tipo UNIX.
+- En Linux, la **SCI** (*System Call Interface*) más su implementación en glibc forman la API del kernel.
+- En Windows está la *Native API* de NT (en `ntdll.dll`) y, sobre ella, la **Win32 API** (`kernel32.dll`, `advapi32.dll`, `user32.dll`).
 
 ## Preguntas de repaso
 
-1. ¿Por qué las aplicaciones de usuario utilizan funciones wrapper de bibliotecas (como `libc`) en lugar de invocar `syscall` directamente?
-> [!question]- Respuesta
-> Porque los wrappers ofrecen una API portable estándar (POSIX) en C, ocultando las particularidades de arquitectura y registros de máquina de cada procesador.
+> [!question]- ¿Por qué los programas usan funciones de biblioteca en vez de ejecutar directamente la instrucción de syscall?
+> Porque la biblioteca oculta los detalles de cada arquitectura (qué registros usar, qué instrucción ejecutar) y ofrece una interfaz estándar en C, como POSIX, que hace portable el programa.
 
-2. ¿Cómo valida el kernel la seguridad de los parámetros enviados en una syscall?
-> [!question]- Respuesta
-> Verifica que los punteros proporcionados pertenezcan al espacio de direcciones del proceso y no apunten a memoria protegida del kernel, y valida que el tamaño del buffer y los descriptores de archivo sean válidos.
+> [!question]- ¿Qué verifica el SO cuando un programa intenta abrir un archivo para copiarlo?
+> Que el archivo exista y que el proceso tenga permiso de lectura. También que los argumentos sean válidos, por ejemplo que los punteros apunten a memoria del propio proceso.
 
-3. ¿Qué llamadas al sistema intervienen para copiar un archivo (`cp origen destino`)?
-> [!question]- Respuesta
-> `open` para abrir origen y crear destino, `read` para transferir datos al buffer de memoria, `write` para vaciar el buffer al disco, y `close` para cerrar ambos descriptores.
+> [!question]- ¿Qué diferencia de diseño hay entre crear un proceso en UNIX y en Win32?
+> UNIX separa la duplicación del proceso (`fork`) de la carga de otro programa (`execve`). Win32 hace ambas cosas en una sola llamada, `CreateProcess`.
 
-4. ¿Qué diferencia de diseño existe entre la creación de procesos en UNIX y en Win32?
-> [!question]- Respuesta
-> UNIX separa la duplicación del proceso (`fork`) de la carga de un nuevo ejecutable (`execve`), mientras que Win32 combina ambas operaciones en una sola llamada de alto nivel (`CreateProcess`).
-
+> [!question]- ¿Por qué usar una syscall es seguro, pero escribir una nueva es peligroso?
+> Al usarla, el kernel valida el pedido antes de ejecutarlo. Escribir una nueva implica agregar código que corre en modo kernel, sin esa protección, y un error ahí puede botar todo el sistema.

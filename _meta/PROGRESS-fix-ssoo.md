@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 6 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 01-Estructura de sistemas operativos/04 - Interrupciones y excepciones.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 7 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 01-Estructura de sistemas operativos/05 - Llamadas al sistema.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -17,7 +17,7 @@ Reescritas hasta ahora: 6 de 92 notas de concepto (95 marcadas menos 3 saltadas)
 | 2 | 01-Estructura de sistemas operativos/02 - Modos de operación y anillos de protección.md | reescrita | 79 líneas; 1 imagen; Mermaid ok |
 | 3 | 01-Estructura de sistemas operativos/03 - Arquitecturas de kernel monolítico y microkernel.md | reescrita | 69 líneas; 1 imagen |
 | 4 | 01-Estructura de sistemas operativos/04 - Interrupciones y excepciones.md | reescrita | 66 líneas; 1 imagen; Mermaid ok |
-| 5 | 01-Estructura de sistemas operativos/05 - Llamadas al sistema.md | pendiente | |
+| 5 | 01-Estructura de sistemas operativos/05 - Llamadas al sistema.md | reescrita | 96 líneas; 3 imágenes; C ok |
 | 6 | 01-Estructura de sistemas operativos/06 - Arranque del sistema computacional.md | reescrita (piloto) | 74 líneas; Mermaid ok |
 | 7 | 01-Estructura de sistemas operativos/07 - Multitasking y fundamentos de multiprocesamiento.md | pendiente | |
 | 8 | 02-Procesos/01 - Concepto de proceso y espacio de memoria.md | pendiente | |
@@ -136,3 +136,4 @@ Reescritas hasta ahora: 6 de 92 notas de concepto (95 marcadas menos 3 saltadas)
 - **01/02 Modos de operación**: 81 líneas, 1 imagen comprobada, 1 Mermaid (stateDiagram, válido). Se agregó la lista de instrucciones privilegiadas del material de clase. La mnemotecnia arriba/abajo y el ejemplo de copiar un CD quedaron en un callout. El bit 0/1 se presenta como convención de los textos, porque el material de clase no da valores. Sin dudas nuevas.
 - **01/03 Arquitecturas de kernel**: 69 líneas, 1 imagen comprobada. La transcripción anterior hablaba de un diagrama "Híbrido", pero la imagen no tiene ese rótulo; se describe sin él. Se agregaron los ejemplos del material de clase. "Falta todo" se corrigió a "junta todo" (fila 🟡 ya existente en DUDAS).
 - **01/04 Interrupciones**: 66 líneas, 1 imagen comprobada, tabla de tipos de evento, 1 Mermaid (válido). Se agregó el flujo de 4 pasos del trap del material de clase. Sin dudas nuevas.
+- **01/05 Llamadas al sistema**: 96 líneas, 3 imágenes comprobadas. Nuevo mini `cp` hecho solo con syscalls: compila con `-Wall`, copia bien y reporta error si falta el origen. Se agregaron POSIX, SCI y Win32 del material de clase. Se quitó la nota "IMPORTANTE PARA LA TAREA 1". Sin dudas nuevas.
