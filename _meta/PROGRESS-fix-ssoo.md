@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 11 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 02-Procesos/03 - Estados de un proceso y ciclo de vida.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 12 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 02-Procesos/04 - Cambio de contexto y tipos de procesos.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -23,7 +23,7 @@ Reescritas hasta ahora: 11 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 8 | 02-Procesos/01 - Concepto de proceso y espacio de memoria.md | reescrita | 86 líneas; 1 imagen; C ok; 1 duda |
 | 9 | 02-Procesos/02 - Bloque de control de procesos y tabla de procesos.md | reescrita | 70 líneas; 1 imagen; 1 duda |
 | 10 | 02-Procesos/03 - Estados de un proceso y ciclo de vida.md | reescrita | 74 líneas; 1 imagen; Mermaid ok |
-| 11 | 02-Procesos/04 - Cambio de contexto y tipos de procesos.md | pendiente | |
+| 11 | 02-Procesos/04 - Cambio de contexto y tipos de procesos.md | reescrita | 55 líneas; 1 imagen |
 | 12 | 02-Procesos/05 - Jerarquía y creación de procesos con fork.md | pendiente | |
 | 13 | 02-Procesos/06 - Control de procesos con wait, exec y terminación.md | pendiente | |
 | 14 | 02-Procesos/07 - Programación de procesos en C y prevención de fork bombs.md | reescrita (piloto) | 111 líneas; 2 imágenes; C compila y corre; 1 duda |
@@ -141,3 +141,4 @@ Reescritas hasta ahora: 11 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **02/01 Concepto de proceso**: 86 líneas, 1 imagen comprobada. La transcripción anterior decía que el kernel ocupaba el "espacio superior", pero la figura lo muestra en la parte baja de la memoria física; se corrigió. Ejemplo C de los segmentos: compila y corre. Se quitó el comentario sobre la pregunta de prueba. Duda nueva 🟡: `.data` frente a `.bss`.
 - **02/02 PCB**: 70 líneas, 1 imagen comprobada (la transcripción anterior agregaba un PID que la figura no muestra; se corrigió). La tabla de campos se armó con la lista del material de clase. La pregunta de prueba "tabla que maneja los stacks" pasó a un callout de concepto. Duda nueva 🟡: id del hijo frente a PPID, y "Anchos", que se omitió.
 - **02/03 Estados de un proceso**: 74 líneas, 1 imagen comprobada, 1 Mermaid (stateDiagram, válido), tabla de estados con la mnemotecnia "tiene todo / le falta algo". "CPU y core es lo mismo" se reescribió como "un núcleo de la CPU" (fila 🟡 ya existente). FIFO y FCFS se presentan como sinónimos. El quantum de "5 segundos" de los apuntes se generalizó a "un intervalo fijo; en la práctica, milisegundos".
+- **02/04 Cambio de contexto**: 55 líneas (algo bajo el rango, pero completa), 1 imagen comprobada, tabla CPU-bound/I-O-bound con los ejemplos de los apuntes (cálculos y "caja oscura", ML, WhatsApp, juego). Se omitió "el SO probablemente cierra la app minimizada y recarga la info": es especulativo y no está en el material de clase. Se quitaron la duración en µs del complemento y la pregunta de prueba V/F. Sin dudas nuevas.
