@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 76 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 14-Capa de transporte/03 - Protocolo UDP: datagramas, sobrecarga y checksum.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 77 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 14-Capa de transporte/04 - Principios de transferencia confiable de datos (rdt 1.0 a rdt 3.0).md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -93,7 +93,7 @@ Reescritas hasta ahora: 76 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 74 | 14-Capa de transporte/01 - Servicios de la capa de transporte y estructura de segmentos.md | reescrita | 77 líneas; 3 imágenes |
 | 75 | 14-Capa de transporte/02 - Multiplexación y desmultiplexación de puertos en UDP y TCP.md | reescrita | 90 líneas; 3 imágenes; Python ok |
 | 76 | 14-Capa de transporte/03 - Protocolo UDP: datagramas, sobrecarga y checksum.md | reescrita | 90 líneas; 1 imagen; Python ok |
-| 77 | 14-Capa de transporte/04 - Principios de transferencia confiable de datos (rdt 1.0 a rdt 3.0).md | pendiente | |
+| 77 | 14-Capa de transporte/04 - Principios de transferencia confiable de datos (rdt 1.0 a rdt 3.0).md | reescrita | 120 líneas; 6 imágenes; Python ok |
 | 78 | 14-Capa de transporte/05 - Protocolos de canalización: Go-Back-N y Selective Repeat.md | pendiente | |
 | 79 | 14-Capa de transporte/06 - Protocolo TCP: estructura del segmento, MSS y confirmación acumulativa.md | pendiente | |
 | 80 | 14-Capa de transporte/07 - Gestión de temporizadores, retransmisión rápida y handshake en TCP.md | pendiente | |
@@ -210,3 +210,4 @@ Reescritas hasta ahora: 76 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **14/01 Servicios de transporte**: 77 líneas, 3 imágenes comprobadas (las tres transcripciones anteriores no coincidían: la 1 es la pila de 4 capas con ejemplos, la 2 la diapositiva de puertos y la 3 el formato del segmento UDP). Tabla emisor/receptor y TCP/UDP del material. Se quitó "CONTENIDO 10". Sin dudas nuevas.
 - **14/02 Multiplexación**: 90 líneas, 3 imágenes comprobadas (figuras de Kurose con los puertos 19157/46428 y 7532/26145/80; las transcripciones anteriores eran genéricas). Python que agrupa los segmentos de la figura por 2-tupla (UDP: 1 socket) y por 4-tupla (TCP: 3 sockets). Tabla UDP/TCP. Duda ℹ️: "un puerto no puede estar en varios sockets".
 - **14/03 UDP**: 90 líneas, 1 imagen comprobada (la misma de 14/01, el formato del segmento UDP; la transcripción anterior era genérica). Tabla de los 4 campos y ventajas de UDP del material. Checksum implementado en Python con el ejemplo de Kurose (1011010100111101), con la verificación del receptor y el caso de un bit corrupto. Sin dudas nuevas.
+- **14/04 rdt 1.0 a 3.0**: 120 líneas, 6 imágenes comprobadas (FSM de Kurose; dos están mal nombradas, ver DUDAS ℹ️). Sección por versión con el problema que resuelve cada una (resumen del material), la nota sobre cómo leer las FSM de tus apuntes y tu ejemplo de HTML con ACK/NAK. Simulación Python de rdt 3.0 con 30% de pérdida: llega "HOLA MUNDO" completo y sin duplicados en 27 envíos. Utilización stop-and-wait ≈ 0,00027 (verificada).
