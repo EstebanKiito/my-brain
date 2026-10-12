@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 14 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 02-Procesos/06 - Control de procesos con wait, exec y terminación.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 15 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 03-Planificación de CPU/01 - Niveles de planificación y ciclo de ráfagas CPU-IO.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -27,7 +27,7 @@ Reescritas hasta ahora: 14 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 12 | 02-Procesos/05 - Jerarquía y creación de procesos con fork.md | reescrita | 84 líneas; 1 imagen; C y Mermaid ok; 1 duda |
 | 13 | 02-Procesos/06 - Control de procesos con wait, exec y terminación.md | reescrita | 77 líneas; Mermaid ok |
 | 14 | 02-Procesos/07 - Programación de procesos en C y prevención de fork bombs.md | reescrita (piloto) | 111 líneas; 2 imágenes; C compila y corre; 1 duda |
-| 15 | 03-Planificación de CPU/01 - Niveles de planificación y ciclo de ráfagas CPU-IO.md | pendiente | |
+| 15 | 03-Planificación de CPU/01 - Niveles de planificación y ciclo de ráfagas CPU-IO.md | reescrita | 81 líneas; 2 imágenes |
 | 16 | 03-Planificación de CPU/02 - Clasificación de planificadores y métricas de rendimiento.md | pendiente | |
 | 17 | 03-Planificación de CPU/03 - Planificación FCFS y SJF.md | pendiente | |
 | 18 | 03-Planificación de CPU/04 - Planificación Round Robin y sistemas interactivos.md | pendiente | |
@@ -144,3 +144,4 @@ Reescritas hasta ahora: 14 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **02/04 Cambio de contexto**: 55 líneas (algo bajo el rango, pero completa), 1 imagen comprobada, tabla CPU-bound/I-O-bound con los ejemplos de los apuntes (cálculos y "caja oscura", ML, WhatsApp, juego). Se omitió "el SO probablemente cierra la app minimizada y recarga la info": es especulativo y no está en el material de clase. Se quitaron la duración en µs del complemento y la pregunta de prueba V/F. Sin dudas nuevas.
 - **02/05 Jerarquía y fork**: 84 líneas, 1 imagen comprobada, 1 Mermaid (válido). Ejemplo C con PID/PPID: compila y corre. Al probarlo apareció la duplicación del buffer de stdio al redirigir la salida; se agregó `fflush` y un callout de trampa. Duda nueva 🟡: PID del proceso raíz en Windows.
 - **02/06 wait, exec y terminación**: 77 líneas, tabla de syscalls, 1 Mermaid (sequenceDiagram, válido). Zombies y huérfanos se reescribieron con el material de clase (los huérfanos pasan a `init`). La mención de NAS de los apuntes, fuera de tema, quedó como callout plegado "Al margen". Se quitaron "Investigar sobre servidores", la fecha y "IMPORTANTE/PREGUNTA". Sin dudas nuevas.
+- **03/01 Niveles de planificación**: 81 líneas, 2 imágenes comprobadas, tabla de los 3 niveles con verbos clave (pone/saca/elige), ejemplo numérico de utilización -p^n$ calculado con python3 (p=0,8 → 20/36/48,8/59/67,2%). Se quitó el Mermaid antiguo porque duplicaba la imagen de colas. La errata "quién llega a la cola Ready" se corrigió a "quién sale de Ready a la CPU" sin comentarla. Sin dudas nuevas.
