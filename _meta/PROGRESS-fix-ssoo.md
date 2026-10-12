@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 7 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 01-Estructura de sistemas operativos/05 - Llamadas al sistema.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 8 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 01-Estructura de sistemas operativos/07 - Multitasking y fundamentos de multiprocesamiento.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -19,7 +19,7 @@ Reescritas hasta ahora: 7 de 92 notas de concepto (95 marcadas menos 3 saltadas)
 | 4 | 01-Estructura de sistemas operativos/04 - Interrupciones y excepciones.md | reescrita | 66 líneas; 1 imagen; Mermaid ok |
 | 5 | 01-Estructura de sistemas operativos/05 - Llamadas al sistema.md | reescrita | 96 líneas; 3 imágenes; C ok |
 | 6 | 01-Estructura de sistemas operativos/06 - Arranque del sistema computacional.md | reescrita (piloto) | 74 líneas; Mermaid ok |
-| 7 | 01-Estructura de sistemas operativos/07 - Multitasking y fundamentos de multiprocesamiento.md | pendiente | |
+| 7 | 01-Estructura de sistemas operativos/07 - Multitasking y fundamentos de multiprocesamiento.md | reescrita | 74 líneas; Mermaid ok |
 | 8 | 02-Procesos/01 - Concepto de proceso y espacio de memoria.md | pendiente | |
 | 9 | 02-Procesos/02 - Bloque de control de procesos y tabla de procesos.md | pendiente | |
 | 10 | 02-Procesos/03 - Estados de un proceso y ciclo de vida.md | pendiente | |
@@ -137,3 +137,4 @@ Reescritas hasta ahora: 7 de 92 notas de concepto (95 marcadas menos 3 saltadas)
 - **01/03 Arquitecturas de kernel**: 69 líneas, 1 imagen comprobada. La transcripción anterior hablaba de un diagrama "Híbrido", pero la imagen no tiene ese rótulo; se describe sin él. Se agregaron los ejemplos del material de clase. "Falta todo" se corrigió a "junta todo" (fila 🟡 ya existente en DUDAS).
 - **01/04 Interrupciones**: 66 líneas, 1 imagen comprobada, tabla de tipos de evento, 1 Mermaid (válido). Se agregó el flujo de 4 pasos del trap del material de clase. Sin dudas nuevas.
 - **01/05 Llamadas al sistema**: 96 líneas, 3 imágenes comprobadas. Nuevo mini `cp` hecho solo con syscalls: compila con `-Wall`, copia bien y reporta error si falta el origen. Se agregaron POSIX, SCI y Win32 del material de clase. Se quitó la nota "IMPORTANTE PARA LA TAREA 1". Sin dudas nuevas.
+- **01/07 Multitasking**: 74 líneas, tabla concurrencia/paralelismo, 1 Mermaid (válido). Se completó con el cambio de contexto y la multiprogramación del material de clase. La prueba [4] del verificador marca "link externo perdido: http://python.py": es un autoenlace de Notion sobre el nombre de archivo `python.py`, no un enlace real, así que es un falso positivo. Sin dudas nuevas.
