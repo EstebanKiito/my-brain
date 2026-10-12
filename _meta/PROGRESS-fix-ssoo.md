@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 79 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 14-Capa de transporte/06 - Protocolo TCP: estructura del segmento, MSS y confirmación acumulativa.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 80 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 14-Capa de transporte/07 - Gestión de temporizadores, retransmisión rápida y handshake en TCP.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -96,7 +96,7 @@ Reescritas hasta ahora: 79 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 77 | 14-Capa de transporte/04 - Principios de transferencia confiable de datos (rdt 1.0 a rdt 3.0).md | reescrita | 120 líneas; 6 imágenes; Python ok |
 | 78 | 14-Capa de transporte/05 - Protocolos de canalización: Go-Back-N y Selective Repeat.md | reescrita | 118 líneas; 4 imágenes; Python ok |
 | 79 | 14-Capa de transporte/06 - Protocolo TCP: estructura del segmento, MSS y confirmación acumulativa.md | reescrita | 92 líneas; 3 imágenes; Python ok |
-| 80 | 14-Capa de transporte/07 - Gestión de temporizadores, retransmisión rápida y handshake en TCP.md | pendiente | |
+| 80 | 14-Capa de transporte/07 - Gestión de temporizadores, retransmisión rápida y handshake en TCP.md | reescrita | 130 líneas; 6 imágenes; Python fast retransmit |
 | 81 | 15-Capa de red y direccionamiento/01 - Servicios de la capa de red: enrutamiento y reenvío.md | pendiente | |
 | 82 | 15-Capa de red y direccionamiento/02 - Datagrama IPv4: estructura y fragmentación por MTU.md | pendiente | |
 | 83 | 15-Capa de red y direccionamiento/03 - Direccionamiento IPv4: subredes, máscaras y notación CIDR.md | pendiente | |
@@ -213,3 +213,5 @@ Reescritas hasta ahora: 79 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **14/04 rdt 1.0 a 3.0**: 120 líneas, 6 imágenes comprobadas (FSM de Kurose; dos están mal nombradas, ver DUDAS ℹ️). Sección por versión con el problema que resuelve cada una (resumen del material), la nota sobre cómo leer las FSM de tus apuntes y tu ejemplo de HTML con ACK/NAK. Simulación Python de rdt 3.0 con 30% de pérdida: llega "HOLA MUNDO" completo y sin duplicados en 27 envíos. Utilización stop-and-wait ≈ 0,00027 (verificada).
 - **14/05 Go-Back-N y Selective Repeat**: 118 líneas, 4 imágenes comprobadas (ventanas y diagramas de Kurose con N = 4 y pkt2 perdido). Simulador Python verificado contra las figuras: GBN reenvía 2, 3, 4, 5 (14 envíos) y SR solo el 2 (11 envíos). Tabla comparativa y requisitos del pipelining del material. Duda ℹ️: timer en SR.
 - **14/06 TCP: segmento, MSS y ACK**: 92 líneas, 3 imágenes comprobadas (header TCP, segmentación de un archivo y el ejemplo Telnet de Kurose). Tabla de campos del header y tus ejemplos (taza en la cocina; "iic2333" → ACK 49, verificado). Los casos de timeout y de ACK acumulativo que evita retransmisión quedaron en 14/07 para no duplicar. "20 bits" se corrigió a 20 bytes. Sin dudas nuevas.
+- **Verificación completa al cerrar las carpetas 12 y 13** (terminaron 14:46 y 15:09): sin errores nuevos en [1], [2] ni [5].
+- **14/07 Temporizadores, retransmisión rápida y handshake**: 130 líneas, 6 imágenes comprobadas (Kurose; las transcripciones anteriores de la ventana, la retransmisión rápida y el cierre no coincidían con las figuras). Reglas del emisor con SendBase/NextSeqNum ("ACK ≥ SendBase" se corrigió a ACK > SendBase, como en el material), los tres escenarios (ACK perdido, timeout prematuro, ACK acumulativo que corta el timer) con tus observaciones, retransmisión rápida con 3 ACK duplicados y handshake SYN / SYN ACK / ACK con cierre FIN. Python verificado contra la figura: cuatro ACK=100, reenvío de seq=100 y ACK=157. Sin dudas nuevas.
