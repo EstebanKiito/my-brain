@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 37 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 07-Administración de memoria/04 - Swapping, fragmentación externa y algoritmos de asignación libre.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 38 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 07-Administración de memoria/05 - Segmentación de memoria y prevención de segmentation fault.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -51,7 +51,7 @@ Reescritas hasta ahora: 37 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 35 | 07-Administración de memoria/02 - Memoria principal y el desafío de la multiprogramación.md | reescrita | 78 líneas; 3 imágenes |
 | 36 | 07-Administración de memoria/03 - Relocalización, protección de memoria y registros base y límite.md | reescrita | 69 líneas; 1 imagen; Mermaid ok; 1 duda |
 | 37 | 07-Administración de memoria/04 - Swapping, fragmentación externa y algoritmos de asignación libre.md | reescrita | 105 líneas; 4 imágenes; Python ok |
-| 38 | 07-Administración de memoria/05 - Segmentación de memoria y prevención de segmentation fault.md | pendiente | |
+| 38 | 07-Administración de memoria/05 - Segmentación de memoria y prevención de segmentation fault.md | reescrita | 100 líneas; 5 imágenes; Python ok |
 | 39 | 07-Administración de memoria/06 - Aritmética de bits y máscara de segmento en traducción de direcciones.md | pendiente | |
 | 40 | 08-Paginación y segmentación/01 - Fundamentos de paginación, marcos y tabla de páginas.md | pendiente | |
 | 41 | 08-Paginación y segmentación/02 - Translation Lookaside Buffer (TLB) y tiempo de acceso efectivo.md | pendiente | |
@@ -168,3 +168,4 @@ Reescritas hasta ahora: 37 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **07/02 Memoria principal**: 78 líneas, 3 imágenes comprobadas. Las 3 transcripciones anteriores eran genéricas y no describían las figuras reales (OSTEP sin y con multiprogramación, con anotaciones a mano, y un dibujo del arreglo de 0 a 256·2^10−1); se rehicieron. **Ojo:** los nombres de archivo no calzan con el contenido ("Memoria física compartida con multiprogramación.png" es el dibujo del arreglo, y "Problemas de relocalización…png" es la figura con multiprogramación); no se renombraron. Ejemplo numérico 320·1024 frente a 64·1024 tomado de las anotaciones de la figura. Sin dudas nuevas.
 - **07/03 Base y límite**: 69 líneas, 1 imagen comprobada (la transcripción anterior describía un diagrama de hardware; la figura real es la diapositiva del ejemplo 4096 + 768 = 4864), 1 Mermaid (válido). Tabla absoluta/virtual. La verificación del límite se cita tal como la enuncia el material. Duda nueva 🟡: semántica de `limit` (última dirección frente a tamaño). Verificación completa: ~20 min, limpia.
 - **07/04 Swapping y fragmentación**: 105 líneas, 4 imágenes comprobadas, todas con transcripción nueva (las anteriores eran genéricas). **Ojo:** la imagen "Estrategia Worst Fit y fragmentación externa.png" muestra **Best fit** (12 KB en el hueco de 13 KB); se transcribió lo que muestra y no se renombró. Simulador Python de first/best/worst fit sobre los huecos de la figura (14/13/19 KB), más un caso de fragmentación (20 KB no caben aunque haya 63 KB libres). La regla del 50% se mantuvo como conocimiento general. Se omitió "Ventajas: ninguna, es aleatorio" de la compactación porque no se entiende; se dejó lo del material: "caro, no se hace". Sin dudas nuevas.
+- **07/05 Segmentación**: 100 líneas, 5 imágenes comprobadas, todas con transcripción nueva (las anteriores inventaban "segmentos 0/1/2" y validaciones `d < Límite(s)` que no están en las figuras). Traductor Python con la tabla del material: 100 → 32868, 4200 → 34920 (offset 104), 3000 → segfault. Se mantuvo la solución de tus apuntes (restar la base virtual, "B.Heap + X"). Duda ℹ️ nueva: errata aritmética de la diapositiva (39016 frente a 36968).
