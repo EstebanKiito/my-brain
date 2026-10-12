@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 52 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 10-Sistemas de archivos/05 - Concepto de archivo, atributos y metadatos.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 53 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 10-Sistemas de archivos/06 - Estructura de directorios y resolución de rutas.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -69,7 +69,7 @@ Reescritas hasta ahora: 52 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 50 | 10-Sistemas de archivos/03 - Niveles de formateo y esquemas de particionamiento (MBR y GPT).md | reescrita | 66 líneas; Mermaid ok |
 | 51 | 10-Sistemas de archivos/04 - Algoritmos de planificación de disco (Disk Scheduling).md | reescrita | 102 líneas; 5 imágenes; Python ok; 1 duda |
 | 52 | 10-Sistemas de archivos/05 - Concepto de archivo, atributos y metadatos.md | reescrita | 80 líneas; C ok |
-| 53 | 10-Sistemas de archivos/06 - Estructura de directorios y resolución de rutas.md | pendiente | |
+| 53 | 10-Sistemas de archivos/06 - Estructura de directorios y resolución de rutas.md | reescrita | 79 líneas; Mermaid ok |
 | 54 | 11-Implementación de archivos y bloques/01 - Interfaz y llamadas al sistema de archivos y directorios.md | pendiente | |
 | 55 | 11-Implementación de archivos y bloques/02 - Enlaces duros (hard links) y enlaces simbólicos (soft links).md | pendiente | |
 | 56 | 11-Implementación de archivos y bloques/03 - Montaje de sistemas de archivos y puntos de montaje.md | pendiente | |
@@ -184,3 +184,5 @@ Reescritas hasta ahora: 52 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **10/03 Formateo y particiones**: 66 líneas, 1 Mermaid (válido) de los 3 niveles y tabla MBR/GPT. Los 3 niveles y el límite de 32 bits del MBR salen del material de clase (2^32 × 512 B = 2 TiB, verificado). "Guide partition table" se corrigió a GUID. Se conservaron los detalles verificables del complemento (446/64/2 B, 0x55AA, CRC32, 128 particiones) y se omitió el "9,4 ZB". Sin dudas nuevas.
 - **10/04 Scheduling de disco**: 102 líneas, 5 imágenes comprobadas (estaban anidadas en un callout de complemento; ahora son independientes, con transcripciones ajustadas a cada figura). Tabla SCAN/C-SCAN/LOOK/F-SCAN con los recorridos del ejemplo. Simulador Python: FCFS 640 (igual que el material) y SSTF 236. Duda nueva 🟡: el material dice 208 para SSTF.
 - **10/05 Concepto de archivo**: 80 líneas, tabla de atributos con la lista completa del material (incluye usuario y atributos extendidos, que faltaban). Ejemplo C con `stat()` (compila y corre): un archivo de 11 bytes ocupa 8 bloques de 512 B, lo que muestra la fragmentación interna. Se corrigió "hellowoeld.py". Frontmatter: quedó solo `origen/complemento`. Sin dudas nuevas.
+- **Verificación completa al cerrar la carpeta 08** (terminó 13:43): sin errores nuevos en [1], [2] ni [5].
+- **10/06 Directorios y rutas**: 79 líneas, Mermaid (válido) con el árbol del ejemplo del material (/foo, /bar/bar, /bar/foo/bar.txt) y tabla absoluta/relativa ("la ruta absoluta no puede repetirse"). Resolución de rutas paso a paso con el permiso `x`. Frontmatter: quedó solo `complemento`. Sin dudas nuevas.
