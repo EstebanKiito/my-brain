@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 87 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 16-Algoritmos de ruteo/02 - Algoritmos Distance-Vector (Bellman-Ford) y conteo al infinito.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 88 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 16-Algoritmos de ruteo/03 - Enrutamiento jerárquico y sistemas autónomos (Intra-AS e Inter-AS).md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -104,7 +104,7 @@ Reescritas hasta ahora: 87 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 85 | 15-Capa de red y direccionamiento/05 - Protocolo ICMP y transición a IPv6: dual-stack y tunneling.md | reescrita | 111 líneas; 4 imágenes; Python traceroute |
 | 86 | 16-Algoritmos de ruteo/01 - Modelos de grafo y algoritmos Link-State (Dijkstra).md | reescrita | 126 líneas; 2 imágenes; Python Dijkstra |
 | 87 | 16-Algoritmos de ruteo/02 - Algoritmos Distance-Vector (Bellman-Ford) y conteo al infinito.md | reescrita | ~112 líneas; 1 imagen; Python conteo al infinito |
-| 88 | 16-Algoritmos de ruteo/03 - Enrutamiento jerárquico y sistemas autónomos (Intra-AS e Inter-AS).md | pendiente | |
+| 88 | 16-Algoritmos de ruteo/03 - Enrutamiento jerárquico y sistemas autónomos (Intra-AS e Inter-AS).md | reescrita | ~93 líneas; sin imágenes; 2 Mermaid |
 | 89 | 17-Capa de enlace y seguridad/01 - Servicios de capa de enlace y control de acceso al medio (MAC).md | pendiente | |
 | 90 | 17-Capa de enlace y seguridad/02 - Direcciones MAC, protocolo ARP y trama Ethernet.md | pendiente | |
 | 91 | 17-Capa de enlace y seguridad/03 - Conmutación en redes locales (Switches L2, STP) y VLANs.md | pendiente | |
@@ -223,3 +223,4 @@ Reescritas hasta ahora: 87 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **16/01 Link-State y Dijkstra**: 126 líneas, 2 imágenes comprobadas (la primera es el grafo u-v-w-x-y-z de Kurose con sus costos, no el pseudocódigo; la segunda es el árbol de caminos más cortos desde u. Las transcripciones anteriores no coincidían). Tabla LS/DV del material ("DS" se corrigió a DV), pasos de Link-State, Dijkstra con la tabla de iteraciones completa del ejemplo y Python verificado (D(w) = 3 por u-x-y-w; todo salvo v sale por (u,x)). Complejidad O(NE) mensajes y O(N²) por nodo del material. Sin dudas nuevas.
 - **Verificación completa al cerrar la carpeta 14** (terminó 15:28): sin errores nuevos en [1], [2] ni [5].
 - **16/02 Distance-Vector**: ~112 líneas, 1 imagen comprobada (las tablas de x, y, z de Kurose en el triángulo 2-1-7; la transcripción anterior era genérica). Bellman-Ford con el cálculo de d_x(z) = 3, diferencia LS/DV, tu ejemplo 4→60 explicado paso a paso, reversa envenenada (tu "declarar la ruta inválida", con el 61) y tabla LS/DV del material. Python que compara la convergencia sin veneno (24 rondas) y con veneno (2). "BELLAMN" corregido. Sin dudas nuevas.
+- **16/03 Enrutamiento jerárquico**: ~93 líneas, sin imágenes, 2 Mermaid (válidos): AS con gateways y el ejemplo de BGP con los ISP A, B, C y los clientes W, X, Y. Por qué hace falta la jerarquía, intra/inter-AS, tabla RIP/OSPF del material, funciones de BGP y la política de B. Se conservaron el Link-State interno de tus apuntes y la papa caliente del complemento. Se quitó el recordatorio de las clases de repaso. Duda ℹ️: título "Intra-AS: BGP" en la diapositiva.

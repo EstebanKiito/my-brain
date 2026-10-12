@@ -167,6 +167,7 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 |---|---|---|---|
 | 🟡 | [[01 - Modelos de grafo y algoritmos Link-State (Dijkstra)\|Modelos de grafo y algoritmos Link-State (Dijkstra)]] | "Distance-Vector (DS)" | La sigla estándar para Distance Vector es DV (del inglés *Distance Vector*), no DS. |
 | ℹ️ | [[02 - Algoritmos Distance-Vector (Bellman-Ford) y conteo al infinito\|Algoritmos Distance-Vector (Bellman-Ford) y conteo al infinito]] | "BELLAMN FORD" | Errata tipográfica en el apellido del matemático Richard Bellman (Bellman-Ford). |
+| ℹ️ | [[03 - Enrutamiento jerárquico y sistemas autónomos (Intra-AS e Inter-AS)\|Enrutamiento jerárquico y sistemas autónomos (Intra-AS e Inter-AS)]] | (reescritura) La diapositiva de BGP se titula "Intra-AS: BGP" | El mismo texto dice que BGP es el "estándar de facto para comunicación Inter-AS". La nota lo presenta como inter-AS. |
 
 ## Capa de enlace y seguridad
 | Estado | Nota | Original | Duda / corrección propuesta |
