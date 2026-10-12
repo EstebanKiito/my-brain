@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 53 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 10-Sistemas de archivos/06 - Estructura de directorios y resolución de rutas.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 54 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 11-Implementación de archivos y bloques/01 - Interfaz y llamadas al sistema de archivos y directorios.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -70,7 +70,7 @@ Reescritas hasta ahora: 53 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 51 | 10-Sistemas de archivos/04 - Algoritmos de planificación de disco (Disk Scheduling).md | reescrita | 102 líneas; 5 imágenes; Python ok; 1 duda |
 | 52 | 10-Sistemas de archivos/05 - Concepto de archivo, atributos y metadatos.md | reescrita | 80 líneas; C ok |
 | 53 | 10-Sistemas de archivos/06 - Estructura de directorios y resolución de rutas.md | reescrita | 79 líneas; Mermaid ok |
-| 54 | 11-Implementación de archivos y bloques/01 - Interfaz y llamadas al sistema de archivos y directorios.md | pendiente | |
+| 54 | 11-Implementación de archivos y bloques/01 - Interfaz y llamadas al sistema de archivos y directorios.md | reescrita | 92 líneas; C ok |
 | 55 | 11-Implementación de archivos y bloques/02 - Enlaces duros (hard links) y enlaces simbólicos (soft links).md | pendiente | |
 | 56 | 11-Implementación de archivos y bloques/03 - Montaje de sistemas de archivos y puntos de montaje.md | pendiente | |
 | 57 | 11-Implementación de archivos y bloques/04 - Estructuras en disco y en memoria del sistema de archivos virtual (VFS).md | pendiente | |
@@ -186,3 +186,4 @@ Reescritas hasta ahora: 53 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **10/05 Concepto de archivo**: 80 líneas, tabla de atributos con la lista completa del material (incluye usuario y atributos extendidos, que faltaban). Ejemplo C con `stat()` (compila y corre): un archivo de 11 bytes ocupa 8 bloques de 512 B, lo que muestra la fragmentación interna. Se corrigió "hellowoeld.py". Frontmatter: quedó solo `origen/complemento`. Sin dudas nuevas.
 - **Verificación completa al cerrar la carpeta 08** (terminó 13:43): sin errores nuevos en [1], [2] ni [5].
 - **10/06 Directorios y rutas**: 79 líneas, Mermaid (válido) con el árbol del ejemplo del material (/foo, /bar/bar, /bar/foo/bar.txt) y tabla absoluta/relativa ("la ruta absoluta no puede repetirse"). Resolución de rutas paso a paso con el permiso `x`. Frontmatter: quedó solo `complemento`. Sin dudas nuevas.
+- **11/01 API de archivos y directorios**: 92 líneas, tablas de operaciones del material de clase. `mv`/`rm` se presentan como los comandos que usan `rename`/`unlink` (la errata se corrigió sin comentarla). Programa C nuevo que ejercita toda la API (mkdir, open, write, fsync, lseek, read, rename, stat, opendir/readdir, unlink, rmdir): compila sin avisos y deja todo limpio. Se quitaron "Clase 11" y la fecha. Sin dudas nuevas.
