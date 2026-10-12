@@ -8,6 +8,7 @@ tags:
   - dijkstra
   - p-wait
   - v-signal
+  - origen/complemento
 prerrequisitos:
   - "[[04 - Mutex locks y el dilema de busy waiting versus dormir]]"
   - "[[05 - Problema del productor-consumidor y buffer acotado]]"
@@ -15,95 +16,110 @@ prerrequisitos:
 
 # Semáforos de Dijkstra y tipos de semáforos
 
-Un **semáforo** es una variable entera especial introducida por Edsger Dijkstra en 1965 que, además de su inicialización, solo puede manipularse mediante dos operaciones atómicas indivisibles: **P** (*wait* / *down*) y **V** (*signal* / *up*).
+Un mutex deja pasar a un solo thread. Pero a veces se quiere permitir **hasta cierta cantidad** (por ejemplo, $N$ espacios en un buffer), o esperar a que "haya algo" sin perder avisos, como pasaba con `sleep` y `wakeup`. Para eso E. W. Dijkstra propuso en 1965 una nueva primitiva de sincronización, el **semáforo**, que introdujo en Algol 68.
 
----
+## Definición
 
-## SEMAFOROS (mis apuntes)
+Un semáforo **permite un número limitado de threads en una sección crítica**. Un semáforo `S` incluye un **contador** y dos operaciones:
 
-> Primitiva de sincronización que invento Dijkstra → De P dercrementa y V Aumenta
-> Un semáforo S incluye un contador y dos operaciones:
-> - proberen P() ó wait() ó down(). Intenta decrementar el valor.
-> - verhogen V() ó signal() ó up(). Incrementa el valor.
-> 
-> ![Estructura y definición de semáforo de Dijkstra](adjuntos/Estructura%20y%20definici%C3%B3n%20de%20sem%C3%A1foro%20de%20Dijkstra.png)
-> 
-> ![Operación P wait o down en semáforos](adjuntos/Operaci%C3%B3n%20P%20wait%20o%20down%20en%20sem%C3%A1foros.png)
-> 
-> ![Operación V signal o up en semáforos](adjuntos/Operaci%C3%B3n%20V%20signal%20o%20up%20en%20sem%C3%A1foros.png)
-> 
-> Implementan una version sin Bussy Waiting
-> Los semaforos se pueden arreglar mucho haciendo usando sleep
-> Pregunta prueba → Semaforos tiene una implementacion sin Bussy Waiting
+| Operación | Otros nombres | Qué hace |
+|---|---|---|
+| **P()** (*proberen*) | `wait()`, `down()` | **Intenta decrementar** el contador; si es 0, el thread espera |
+| **V()** (*verhogen*) | `signal()`, `up()` | **Incrementa** el contador y despierta a un thread que espere |
 
-> [!warning] Posible error en apuntes
-> * *"dercrementa"*: errata por "decrementa".
-> * *"Bussy Waiting"*: errata por *Busy Waiting*.
-> * Nombres históricos en holandés: *Proberen* (probar/intentar) y *Verhogen* (incrementar/elevar).
+> [!tip] Mnemotecnia: Pedir / Votar
+> Dijkstra era holandés, pero si no sabes holandés es más fácil recordar **P = Pedir** (decrementa: "pido un permiso") y **V = Votar** (incrementa: "devuelvo un permiso").
 
----
+El valor inicial define el tipo de semáforo:
 
-> [!example]- Transcripción de la imagen: Estructura y definición de semáforo de Dijkstra.png y Operaciones P y V
-> **Definición clásica con Busy Waiting:**
-> ```c
-> struct semaphore {
->     int count;
-> };
-> 
-> void wait(semaphore *S) {     // P(S) o down(S)
->     while (S->count <= 0);    // Espera activa
->     S->count--;
-> }
-> 
-> void signal(semaphore *S) {   // V(S) o up(S)
->     S->count++;
-> }
-> ```
-> 
-> **Implementación robusta del Sistema Operativo (Sin Busy Waiting):**
-> ```c
-> struct semaphore {
->     int value;
->     Queue<PCB*> waiting_queue;
-> };
-> 
-> void wait(semaphore *S) {
->     S->value--;
->     if (S->value < 0) {
->         // Añadir este proceso a S->waiting_queue
->         sleep(); // Suspende el hilo en la cola del SO
->     }
-> }
-> 
-> void signal(semaphore *S) {
->     S->value++;
->     if (S->value <= 0) {
->         // Remover un proceso P de S->waiting_queue
->         wakeup(P); // Pasa P al estado Ready
->     }
-> }
-> ```
-> * **Propiedad del contador negativo:** Si `value < 0`, su magnitud absoluta $|value|$ representa exactamente el número de procesos actualmente bloqueados esperando el semáforo.
+- **Binario** (0 o 1): deja pasar a uno a la vez, como un mutex. La diferencia es que el mutex tiene **propietario** (solo quien lo tomó puede liberarlo), mientras que el `V()` de un semáforo lo puede hacer cualquier thread, lo que permite usarlo para avisar entre threads.
+- **Contador** (valor inicial $N$): representa $N$ unidades de un recurso, por ejemplo $N$ espacios libres en un buffer.
 
----
+## Implementación sin busy waiting
 
-> [!tip] Complemento: Tipos de Semáforos
-> 1. **Semáforo Binario (*Binary Semaphore*):**
->    - Su valor solo puede ser 0 o 1.
->    - Opera de forma muy similar a un Mutex (utilizado comúnmente para exclusión mutua simple).
-> 2. **Semáforo Contador (*Counting Semaphore*):**
->    - Su valor inicial se establece en $N \ge 0$, representando la cantidad de unidades disponibles de un conjunto de recursos compartidos (ejemplo: $N$ slots en un buffer o $N$ conexiones a una base de datos).
+Los semáforos tienen una implementación **sin busy waiting**: en vez de girar, el thread que no puede pasar **se va a dormir** en una cola, y `V()` lo despierta.
 
----
+![Estructura y definición de semáforo de Dijkstra](adjuntos/Estructura%20y%20definici%C3%B3n%20de%20sem%C3%A1foro%20de%20Dijkstra.png)
+
+> [!example]- Transcripción de la imagen
+> `struct semaphore { int count; struct Lock l; struct process* slept = NULL; }`.
+
+![Operación P wait o down en semáforos](adjuntos/Operaci%C3%B3n%20P%20wait%20o%20down%20en%20sem%C3%A1foros.png)
+
+> [!example]- Transcripción de la imagen
+> `void init(c) { count = c; }` y `void P() { /* wait: put into queue and sleep */ l.acquire(); while(count <= 0) { /* code to add itself to 'slept' */ l.release(); sleep(); l.acquire(); } count--; l.release(); }`.
+
+![Operación V signal o up en semáforos](adjuntos/Operaci%C3%B3n%20V%20signal%20o%20up%20en%20sem%C3%A1foros.png)
+
+> [!example]- Transcripción de la imagen
+> `void V(S) { /* signal */ l.acquire(); count++; wakeup(/* first from 'slept' */); // plus, remove from queue  l.release(); }`.
+
+El contador está protegido por un lock interno `l`, así que revisarlo y modificarlo es atómico. En `P()`, mientras no haya permisos, el thread se anota en la cola `slept`, suelta el lock y duerme; al despertar, vuelve a tomar el lock y revisa otra vez. `V()` incrementa y despierta al primero de la cola. Otras implementaciones, pensadas para multiprocesadores, sí usan busy waiting.
+
+## Ejemplo: buffer acotado con semáforos
+
+Los semáforos resuelven el [[05 - Problema del productor-consumidor y buffer acotado|productor-consumidor]] sin busy waiting y sin avisos perdidos: `vacios` cuenta los espacios libres (parte en $N$), `llenos` los elementos (parte en 0) y un mutex protege los índices.
+
+```c
+#include <pthread.h>
+#include <semaphore.h>
+#include <stdio.h>
+
+#define N 4                          /* tamaño del buffer */
+#define ITEMS 20
+int buffer[N], in = 0, out = 0;
+sem_t vacios, llenos;                /* cuentan espacios libres y elementos */
+pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
+
+void *productor(void *arg) {
+    for (int item = 1; item <= ITEMS; item++) {
+        sem_wait(&vacios);           /* P: espera un espacio libre */
+        pthread_mutex_lock(&mutex);
+        buffer[in] = item; in = (in + 1) % N;
+        pthread_mutex_unlock(&mutex);
+        sem_post(&llenos);           /* V: hay un elemento más */
+    }
+    return NULL;
+}
+
+void *consumidor(void *arg) {
+    long suma = 0;
+    for (int k = 0; k < ITEMS; k++) {
+        sem_wait(&llenos);           /* P: espera un elemento */
+        pthread_mutex_lock(&mutex);
+        suma += buffer[out]; out = (out + 1) % N;
+        pthread_mutex_unlock(&mutex);
+        sem_post(&vacios);           /* V: hay un espacio más */
+    }
+    printf("suma consumida = %ld\n", suma);   /* 1 + 2 + ... + 20 = 210 */
+    return NULL;
+}
+
+int main(void) {
+    sem_init(&vacios, 0, N);         /* N espacios libres al inicio */
+    sem_init(&llenos, 0, 0);         /* 0 elementos al inicio */
+    pthread_t p, c;
+    pthread_create(&p, NULL, productor, NULL);
+    pthread_create(&c, NULL, consumidor, NULL);
+    pthread_join(p, NULL);
+    pthread_join(c, NULL);
+    return 0;
+}
+```
+
+> [!warning] `sem_init` en macOS
+> macOS no implementa los semáforos sin nombre (`sem_init`): compila con un aviso de función obsoleta, pero no funcionan. Allí hay que usar semáforos con nombre (`sem_open`). En Linux, el código anterior funciona tal cual.
 
 ## Preguntas de repaso
 
-> [!question]- ¿Qué significa el valor negativo del contador en la implementación de semáforos sin espera activa?
-> En una implementación con cola de bloqueo, si el contador de un semáforo es negativo (ej. $-k$), indica que no hay recursos disponibles y que existen exactamente $k$ procesos suspendidos en la cola de espera de ese semáforo.
+> [!question]- ¿Qué hacen P y V sobre el contador del semáforo?
+> P intenta decrementarlo: si no hay permisos (contador en 0), el thread espera. V lo incrementa y despierta a un thread que esté esperando.
 
-> [!question]- ¿Cuál es la diferencia entre un Semáforo Binario y un Mutex?
-> Aunque ambos restringen el acceso a un solo hilo (valores 0 y 1), un Mutex tiene concepto estricto de **propiedad** (*ownership*: solo quien lo adquiere puede liberarlo), mientras que un semáforo puede ser señalado (`signal`) por un hilo diferente al que ejecutó el `wait` (permitiendo sincronización y señalización entre hilos).
+> [!question]- Verdadero o falso: los semáforos tienen una implementación sin busy waiting.
+> Verdadero. El thread que no puede pasar se anota en una cola y duerme, y V lo despierta. No gasta CPU mientras espera.
 
-> [!question]- ¿Por qué las operaciones wait() y signal() deben ejecutarse de forma atómica?
-> Porque si dos hilos decrementaran o incrementaran concurrentemente el contador sin exclusión mutua, se produciría una condición de carrera sobre la variable entera interna, pudiendo admitir a más hilos de los permitidos en la sección crítica.
+> [!question]- ¿Con qué valores se inicializan los semáforos del buffer acotado y por qué?
+> `vacios` en $N$, porque al principio todo el buffer está libre, y `llenos` en 0, porque no hay elementos. El productor hace P sobre `vacios` y V sobre `llenos`; el consumidor, al revés.
 
+> [!question]- ¿Por qué la implementación de P suelta el lock antes de dormir?
+> Porque si durmiera con el lock tomado, ningún otro thread podría ejecutar V (que también necesita el lock) para despertarlo, y el sistema se trabaría.
