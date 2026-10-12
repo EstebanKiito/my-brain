@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 9 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 02-Procesos/01 - Concepto de proceso y espacio de memoria.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 10 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 02-Procesos/02 - Bloque de control de procesos y tabla de procesos.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -21,7 +21,7 @@ Reescritas hasta ahora: 9 de 92 notas de concepto (95 marcadas menos 3 saltadas)
 | 6 | 01-Estructura de sistemas operativos/06 - Arranque del sistema computacional.md | reescrita (piloto) | 74 líneas; Mermaid ok |
 | 7 | 01-Estructura de sistemas operativos/07 - Multitasking y fundamentos de multiprocesamiento.md | reescrita | 74 líneas; Mermaid ok |
 | 8 | 02-Procesos/01 - Concepto de proceso y espacio de memoria.md | reescrita | 86 líneas; 1 imagen; C ok; 1 duda |
-| 9 | 02-Procesos/02 - Bloque de control de procesos y tabla de procesos.md | pendiente | |
+| 9 | 02-Procesos/02 - Bloque de control de procesos y tabla de procesos.md | reescrita | 70 líneas; 1 imagen; 1 duda |
 | 10 | 02-Procesos/03 - Estados de un proceso y ciclo de vida.md | pendiente | |
 | 11 | 02-Procesos/04 - Cambio de contexto y tipos de procesos.md | pendiente | |
 | 12 | 02-Procesos/05 - Jerarquía y creación de procesos con fork.md | pendiente | |
@@ -139,3 +139,4 @@ Reescritas hasta ahora: 9 de 92 notas de concepto (95 marcadas menos 3 saltadas)
 - **01/05 Llamadas al sistema**: 96 líneas, 3 imágenes comprobadas. Nuevo mini `cp` hecho solo con syscalls: compila con `-Wall`, copia bien y reporta error si falta el origen. Se agregaron POSIX, SCI y Win32 del material de clase. Se quitó la nota "IMPORTANTE PARA LA TAREA 1". Sin dudas nuevas.
 - **01/07 Multitasking**: 74 líneas, tabla concurrencia/paralelismo, 1 Mermaid (válido). Se completó con el cambio de contexto y la multiprogramación del material de clase. La prueba [4] del verificador marca "link externo perdido: http://python.py": es un autoenlace de Notion sobre el nombre de archivo `python.py`, no un enlace real, así que es un falso positivo. Sin dudas nuevas.
 - **02/01 Concepto de proceso**: 86 líneas, 1 imagen comprobada. La transcripción anterior decía que el kernel ocupaba el "espacio superior", pero la figura lo muestra en la parte baja de la memoria física; se corrigió. Ejemplo C de los segmentos: compila y corre. Se quitó el comentario sobre la pregunta de prueba. Duda nueva 🟡: `.data` frente a `.bss`.
+- **02/02 PCB**: 70 líneas, 1 imagen comprobada (la transcripción anterior agregaba un PID que la figura no muestra; se corrigió). La tabla de campos se armó con la lista del material de clase. La pregunta de prueba "tabla que maneja los stacks" pasó a un callout de concepto. Duda nueva 🟡: id del hijo frente a PPID, y "Anchos", que se omitió.
