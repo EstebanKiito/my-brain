@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 44 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 08-Paginación y segmentación/05 - Arquitectura de segmentos paginados.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 45 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 08-Paginación y segmentación/06 - Paginación multinivel y tablas de páginas invertidas.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -58,7 +58,7 @@ Reescritas hasta ahora: 44 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 42 | 08-Paginación y segmentación/03 - Localidad de referencia y gestión de TLB con ASID en cambios de contexto.md | reescrita | 70 líneas; 1 imagen |
 | 43 | 08-Paginación y segmentación/04 - Sobrecarga de tablas lineales y compromiso de fragmentación interna.md | reescrita | 74 líneas; 1 imagen; Python ok; 1 duda ℹ️ |
 | 44 | 08-Paginación y segmentación/05 - Arquitectura de segmentos paginados.md | reescrita | 96 líneas; 2 imágenes; Python ok |
-| 45 | 08-Paginación y segmentación/06 - Paginación multinivel y tablas de páginas invertidas.md | pendiente | |
+| 45 | 08-Paginación y segmentación/06 - Paginación multinivel y tablas de páginas invertidas.md | reescrita | 128 líneas; 10 imágenes |
 | 46 | 08-Paginación y segmentación/07 - Introducción al intercambio por demanda y ciclo de fallos de página.md | pendiente | |
 | 47 | 09-Memoria virtual/01 - Fundamentos de memoria virtual y espacio de intercambio (swap).md | pendiente | |
 | – | 09-Memoria virtual/02 - Algoritmos de reemplazo FIFO, Óptimo (Belady) y anomalía de Belady.md | sin marca | nota modelo |
@@ -176,3 +176,4 @@ Reescritas hasta ahora: 44 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **Verificación completa al cerrar la carpeta 07** (corrida en segundo plano, terminó 13:26): sin errores nuevos en [1], [2] ni [5]; solo cobertura [3] (esperada) y los 4 `.heic` de base.
 - **08/04 Tablas lineales y fragmentación interna**: 74 líneas, 1 imagen comprobada (dibujo a mano; la transcripción anterior inventaba un ejemplo de "100 bytes en 16 KB"). El cálculo paso a paso de 32 bits y 4 KB sale de tus apuntes, y los ejemplos de 1 MB (16 KB → 1008 KB desperdiciados, 1025 KB → 2 MB) del material de clase, verificados con Python. Tabla de tamaños de página. Duda ℹ️: el 2^16 de los apuntes debería ser 2^18.
 - **08/05 Segmentos paginados**: 96 líneas, 2 imágenes comprobadas (la primera es el formato de dirección Seg/VPN/Offset de 32 bits y la segunda un dibujo a mano S0-S3; las transcripciones anteriores describían un algoritmo que no está en las figuras). El 75% de entradas vacías y base/límite = dirección de tabla/número de páginas salen del material de clase, igual que "vuelve la fragmentación externa". Traductor Python con verificación de límite. La frase de los apuntes "los segmentos tienen tamaño fijo a diferencia del heap" se reformuló como "un segmento no usa todas sus páginas posibles". Sin dudas nuevas.
+- **08/06 Multinivel e invertida**: 128 líneas, 10 imágenes comprobadas, todas con transcripción nueva. Las anteriores eran inventadas: hablaban de "48 entradas" y "87% de ahorro", cuando la figura a mano dice \|T1\| + \|T2\| = 32 PTE, igual que el material (16×4 B + 16×4 B = 128 B), y describían una tabla hash que no aparece. **Ojo:** varios nombres de archivo no calzan con su contenido (p. ej., "Estructura jerárquica… a tres niveles.png" es el cálculo de 32 PTE, y "Recorrido jerárquico…png" es la traducción x86 con CR3/PDPT); no se renombraron. Ejemplo de 14 bits y 64 B tomado de tus apuntes y del material. Se agregó el resumen de estrategias de tus apuntes. No se dividió (128 < 150). Sin dudas nuevas.
