@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 25 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 06-Sincronización/01 - Condiciones de carrera y el problema de la sección crítica.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 26 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 06-Sincronización/02 - Soluciones por software y algoritmo de Peterson.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -39,7 +39,7 @@ Reescritas hasta ahora: 25 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 23 | 05-Hilos/02 - Programación con POSIX Threads y ciclo de vida.md | reescrita | 112 líneas; 1 imagen; C y Mermaid ok; 1 duda |
 | 24 | 05-Hilos/03 - Hilos a nivel de usuario frente a hilos a nivel de kernel.md | reescrita | 78 líneas; 2 imágenes; 1 duda |
 | 25 | 06-Sincronización/01 - Condiciones de carrera y el problema de la sección crítica.md | reescrita | 101 líneas; 1 imagen; C ok |
-| 26 | 06-Sincronización/02 - Soluciones por software y algoritmo de Peterson.md | pendiente | |
+| 26 | 06-Sincronización/02 - Soluciones por software y algoritmo de Peterson.md | reescrita | 109 líneas; 4 imágenes; C ok; duda Peterson |
 | 27 | 06-Sincronización/03 - Sincronización por hardware e instrucciones atómicas.md | pendiente | |
 | 28 | 06-Sincronización/04 - Mutex locks y el dilema de busy waiting versus dormir.md | pendiente | |
 | 29 | 06-Sincronización/05 - Problema del productor-consumidor y buffer acotado.md | pendiente | |
@@ -155,3 +155,4 @@ Reescritas hasta ahora: 25 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **05/02 POSIX Threads**: 112 líneas, 1 imagen comprobada, tabla de funciones con su análogo en procesos, 1 Mermaid (sequenceDiagram, válido). Nuevo ejemplo C: suma un arreglo con 2 threads y devuelve el resultado por `pthread_join` (compila con `-Wall`, imprime 500500). Duda nueva 🟡: `pthread_yield` frente a `sched_yield`.
 - **05/03 Hilos de usuario y de kernel**: 78 líneas, 2 imágenes comprobadas (la primera estaba mal transcrita; se corrigió), tablas bueno/malo de ULT y KLT tomadas del material de clase, más el modelo híbrido M:N. Se conservaron los thread pools ("threads precreados"), el costo de crear demasiados threads y qué se elimina al borrar un thread. Duda nueva 🟡: "kernel threads son más rápidos".
 - **06/01 Condiciones de carrera**: 101 líneas, 1 imagen comprobada. Demo C del contador sin protección (compila; da ~1.000.000 en vez de 2.000.000, distinto en cada ejecución) y esqueleto entry/leave compilado. Tabla de los 3 criterios con la definición del material de clase y la mnemotecnia E-P-E. La anécdota de "Amazon" se generalizó a "sistemas empresariales que paralelizan mucho" porque no se pudo verificar. "Espera agotada/actodada" se corrigió a "acotada". Sin dudas nuevas.
+- **06/02 Peterson**: 109 líneas, 4 imágenes comprobadas. Recorre los tres intentos: bandera de ocupado, alternancia con `turn` y Peterson. La evaluación de los criterios sigue exactamente lo que dicen las diapositivas. **Peterson y la espera acotada no se resolvió**: se reproduce el caso borde del material y se registró en DUDAS (🟡). Código C de Peterson con atómicos C11: da 2000000 en 3 de 3 ejecuciones. Con `volatile int` perdió 27 incrementos en 1 de 3 ejecuciones en arm64, lo que respalda el callout sobre reordenamiento.
