@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 31 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 06-Sincronización/07 - Variables de condición y monitores.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 32 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 06-Sincronización/08 - Problema de los lectores y escritores.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -45,7 +45,7 @@ Reescritas hasta ahora: 31 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 29 | 06-Sincronización/05 - Problema del productor-consumidor y buffer acotado.md | reescrita | 85 líneas; 3 imágenes |
 | 30 | 06-Sincronización/06 - Semáforos de Dijkstra y tipos de semáforos.md | reescrita | 127 líneas; 3 imágenes; C ok (macOS: sem_open) |
 | 31 | 06-Sincronización/07 - Variables de condición y monitores.md | reescrita | 125 líneas; 2 imágenes; C ok |
-| 32 | 06-Sincronización/08 - Problema de los lectores y escritores.md | pendiente | |
+| 32 | 06-Sincronización/08 - Problema de los lectores y escritores.md | reescrita | 103 líneas; 1 imagen; C compila |
 | 33 | 06-Sincronización/09 - Problema de los filósofos comelones y deadlocks.md | pendiente | |
 | 34 | 07-Administración de memoria/01 - Coordinación de filósofos y manejo de estados con semáforos.md | pendiente | |
 | 35 | 07-Administración de memoria/02 - Memoria principal y el desafío de la multiprogramación.md | pendiente | |
@@ -161,3 +161,4 @@ Reescritas hasta ahora: 31 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **06/05 Productor-consumidor**: 85 líneas, 3 imágenes comprobadas (las transcripciones anteriores no coincidían: hablaban de punteros y de "INCORRECTO/CORRECTO" que la figura no tiene; se rehicieron). Recorre las 3 versiones del material (sin sincronización, locks en stock, sleep/wakeup) y la pregunta del material: "¿y si el consumidor es interrumpido antes de dormir?" (aviso perdido). Tabla comparativa. Sin código nuevo: la solución ejecutable con semáforos está en 06/06. Sin dudas nuevas.
 - **06/06 Semáforos**: 127 líneas, 3 imágenes comprobadas. La transcripción anterior inventaba una implementación con contador negativo y `waiting_queue` que no está en las figuras; se rehízo con el código real (`count` + `Lock l` + cola `slept`). Por lo mismo se quitó la propiedad "|value| = procesos bloqueados", que no aplica a esa implementación. Se agregó la mnemotecnia Pedir/Votar del material. Ejemplo C de buffer acotado con `sem_init`: compila con `-Wall -pthread` (solo avisos de deprecación en macOS). **Prueba única de semáforos en macOS**: la variante con `sem_open` dio 210 en 2 de 2 ejecuciones. Con `sem_init` el binario también imprimió 210, pero no es una prueba válida, porque en macOS `sem_wait` falla sin bloquear. Sin dudas nuevas.
 - **06/07 Variables de condición**: 125 líneas, 2 imágenes comprobadas. La transcripción anterior describía la API `cond_t`/`broadcast` y un código distinto del de la figura; se rehízo con el código real (`condCons`/`condProd`, `stock`). Ejemplo pthreads del buffer acotado con condvars: suma 210. **Monitores:** ni el material ni tus apuntes los tratan, pero el título los nombra; se agregó un párrafo breve de conocimiento general (Java `synchronized`/`wait`/`notify`). Revísalo si prefieres quitarlo. Se eliminó el recordatorio "Estudiar". Sin dudas nuevas.
+- **06/08 Lectores y escritores**: 103 líneas, 1 imagen comprobada (la transcripción anterior traía un código distinto, con `read_count`/`write_data`; se rehízo con el de la figura). En la diapositiva los títulos "Escritor (fácil)…" y "Lectores…" quedan sobre el código del otro rol; se transcribió tal cual, aclarando qué código es de cada uno. Ejemplo C con semáforos POSIX: solo se compiló (`sem_init` no funciona en macOS; la lógica de semáforos ya se probó una vez en 06/06). Se agregó por qué `rw` debe ser semáforo y no mutex. Se conservó strongly consistent / no strongly consistent. Sin dudas nuevas.
