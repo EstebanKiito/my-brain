@@ -4,7 +4,6 @@ tema: "Sistemas de archivos"
 tags:
   - so/archivos
   - so/io
-  - origen/apuntes
   - origen/complemento
 prerrequisitos:
   - "[[Sistemas Operativos y Redes/01-Estructura de sistemas operativos/05 - Llamadas al sistema\|05 - Llamadas al sistema]]"
@@ -12,55 +11,81 @@ prerrequisitos:
 
 # Capas de abstracción de entrada-salida y mecanismos de buffering
 
-El sistema operativo proporciona capas de abstracción para independizar a las aplicaciones del hardware subyacente y gestiona la transferencia de datos mediante diferentes esquemas de buffering.
+Un programa que guarda un archivo no sabe si escribe en un disco magnético, un SSD o un pendrive, y no le hace falta saberlo. El sistema operativo nos abstrae del hardware apilando **capas** que van de lo más específico (el dispositivo) a lo más general (la aplicación). Encima de esas capas, el SO nos brinda un **sistema de archivos**.
 
-## Capas de abstracción y buffering de E/S (mis apuntes)
+## Las capas de abstracción
 
-- Clase 10
-- 30/09/24
-- ARCHIVOS
-- S.O nos abstrae del hardware
-- Implementa capas de abstraccion
-- La primera → Device Driver
-- La segunda → Generic Block Layer
-- La tercera → File System
-- la Cuarta → Application
-- open
-- read
-- write
-- close, etc
-- Este nos permite ejecutar funciones
-- El sistema operativo nos brinda un SISTEMA DE ARCHIVOS
-- Como nos comunicamos con dispositivos I/O
-- 4 Tipos de forma de transferir datos entre dispositivos (I/O)
-- Lectura Directa → Comunicacion Unbuffered → Bloquea la cpu hasta que termine de leer (LENTO)
-- Buffer en el espacio de USUARIO → Esto permite CEDER en la CPU (pagina puede ser swapped out), ——> Al terminar tendremos en el buffer la memoria
-- Buffer en el espacio KERNELL → Las paginas Nunca seran Swapeadas, siempre estaran disponibles para leer
-- Double-Buffer → Version para escribir en varios buffers, ej: pantallas → Generan imagenes
+```mermaid
+flowchart TD
+  A["4. Aplicación: open, read, write, close"] --> B["3. Sistema de archivos: capa visible al programador mediante su API"]
+  B --> C["2. Generic Block Layer: abstracción de bloques de disco"]
+  C --> D["1. Device driver: código específico de cada dispositivo"]
+  D --> E["Hardware"]
+```
 
-> [!warning] Posible error
-> En los apuntes dice `KERNELL` con doble 'L'; el término correcto es *kernel* space.
+| Capa | Qué hace |
+|---|---|
+| **Device driver** | Código específico para comunicarse con un dispositivo concreto |
+| **Generic block layer** | Capa intermedia: presenta cualquier disco como un arreglo de bloques |
+| **Sistema de archivos** | Organiza los bloques en archivos y directorios; es lo que ve el programador |
+| **Aplicación** | Usa las llamadas al sistema POSIX `open`, `read`, `write`, `close`… |
 
-> [!tip] Complemento: Arquitectura de E/S y estrategias de Buffering
-> 1. **Objetivo de independencia de dispositivo (*Device Independence*):**
->    - **Device Driver:** código específico para cada controlador de hardware (representa más del 70% del código fuente de Linux).
->    - **Generic Block Layer:** abstracción uniforme para dispositivos orientados a bloques (sectores fijos, colas de peticiones y scheduling de I/O).
->    - **File System:** mapea nombres de archivos y estructuras jerárquicas a bloques lógicos de disco.
->    - **Application:** invoca llamadas al sistema estándar POSIX (`open`, `read`, `write`, `close`).
-> 2. **Comparación de esquemas de transferencia:**
->    - **Lectura directa (Unbuffered):** la CPU o el proceso se bloquea activamente durante la transferencia. Cero sobrecarga de copia en memoria, pero nula concurrencia.
->    - **Buffer en espacio de usuario:** el proceso cede la CPU, pero la página que alberga el buffer puede sufrir *page out* hacia el swap mientras el dispositivo opera, complicando el acceso por DMA.
->    - **Buffer en espacio de kernel:** las páginas de kernel están fijadas (*pinned*) en RAM y nunca se swapean. Una vez completada la transferencia por DMA, el kernel copia los datos al buffer del proceso de usuario.
->    - **Double Buffering:** desacopla al productor y al consumidor. El dispositivo llena el búfer $A$ mientras el proceso procesa el búfer $B$; al terminar, los roles se intercambian instantáneamente.
+Todas estas abstracciones persiguen un objetivo de diseño: la **independencia del dispositivo** (*device independence*). La aplicación ejecuta las mismas funciones sea cual sea el hardware de abajo. El costo está en los drivers: cerca del **70% del código de Linux** son drivers, y son una fuente importante de bugs.
+
+## Cómo se transfieren los datos: buffers
+
+Hay cuatro formas de transferir datos entre un dispositivo de I/O y un proceso:
+
+| Esquema | Cómo funciona | Consecuencia |
+|---|---|---|
+| **Lectura directa** (*unbuffered*) | Se lee directamente, sin buffer intermedio | El proceso queda bloqueado hasta que termina de leer: lento |
+| **Buffer en espacio de usuario** | El dispositivo escribe en un buffer del proceso | El proceso puede ceder la CPU mientras tanto, pero la página del buffer podría ser *swapped out* a mitad de la transferencia |
+| **Buffer en espacio de kernel** | El dispositivo escribe en un buffer del kernel, que se transfiere al proceso al llenarse | Las páginas del kernel nunca se swapean, así que siempre están disponibles, también para que el hardware escriba directo en ellas por DMA (*direct memory access*) |
+| **Double buffer** | Dos buffers: mientras uno se transfiere, se escribe en el otro | Producción y transferencia se solapan; por ejemplo, en pantallas, mientras una imagen se muestra se genera la siguiente |
+
+En la práctica, la transmisión de datos pasa por **varios buffers intermedios**, que pueden quedar reservados mientras dura la transmisión. Si hay muchos dispositivos o clientes conectados, eso se nota en el uso de memoria.
+
+> [!tip] Por qué conviene un buffer grande
+> Cada `read` es una syscall, con su cambio a modo kernel. Leer de a un byte implica una syscall por byte; leer de a 4 KB las reduce miles de veces.
+
+```c
+#include <fcntl.h>
+#include <stdio.h>
+#include <time.h>
+#include <unistd.h>
+
+/* Lee el archivo completo con un buffer de 'tam' bytes y cuenta las syscalls read(). */
+void leer(const char *ruta, size_t tam) {
+    char buf[4096];
+    int fd = open(ruta, O_RDONLY);
+    long llamadas = 0;
+    clock_t t0 = clock();
+    while (read(fd, buf, tam) > 0)
+        llamadas++;
+    double ms = 1000.0 * (clock() - t0) / CLOCKS_PER_SEC;
+    close(fd);
+    printf("buffer de %4zu B: %7ld llamadas a read(), %.1f ms de CPU\n", tam, llamadas, ms);
+}
+
+int main(int argc, char *argv[]) {
+    leer(argv[1], 1);       /* casi sin buffer: una syscall por byte */
+    leer(argv[1], 4096);    /* con buffer de 4 KB */
+    return 0;
+}
+```
+
+Con un archivo de 1 MB: 1.048.576 llamadas y unos 460 ms de CPU con el buffer de 1 byte, contra 256 llamadas y menos de 1 ms con el de 4 KB.
 
 ## Preguntas de repaso
 
-> [!question]- ¿Por qué el buffering en espacio de kernel es preferible para transferencias DMA frente al buffering exclusivo en espacio de usuario?
-> Porque los buffers del kernel pueden fijarse (*pinned*) en marcos de memoria física contigua sin riesgo de sufrir *swap-out* o reubicación de marcos por el paginador mientras el controlador de hardware DMA transfiere los datos.
+> [!question]- ¿Cuáles son las capas de abstracción de I/O, de abajo hacia arriba?
+> Device driver (específico del dispositivo), generic block layer (bloques de disco genéricos), sistema de archivos (archivos y directorios visibles por API) y aplicación (`open`, `read`, `write`, `close`).
 
-> [!question]- ¿Cuál es la función de la capa de bloques genéricos (Generic Block Layer) entre el sistema de archivos y el device driver?
-> Proporciona una interfaz y cola de peticiones uniforme para todos los dispositivos de bloques, permitiendo aplicar algoritmos de ordenación y combinación de peticiones (I/O scheduling) independientemente del hardware específico.
+> [!question]- ¿Qué objetivo de diseño persiguen esas capas?
+> La independencia del dispositivo: la aplicación usa las mismas operaciones sin importar qué hardware hay debajo.
 
-> [!question]- ¿Cómo mejora el rendimiento el doble buffering (double buffering) en operaciones de entrada/salida?
-> Permite solapar en el tiempo el procesamiento en CPU con la transferencia de hardware: mientras el hardware llena o vacía un búfer, el procesador trabaja simultáneamente sobre el segundo búfer sin esperar inactivo.
+> [!question]- ¿Qué riesgo tiene usar un buffer en espacio de usuario y cómo lo evita el buffer de kernel?
+> La página del buffer de usuario podría ser llevada al swap mientras el dispositivo está escribiendo en ella. Las páginas del kernel nunca se swapean, así que el dispositivo siempre puede escribir en ellas.
 
+> [!question]- ¿Qué gana el double buffering?
+> Solapar el trabajo: mientras uno de los buffers se transfiere, el otro ya se está llenando, y nadie espera ocioso.
