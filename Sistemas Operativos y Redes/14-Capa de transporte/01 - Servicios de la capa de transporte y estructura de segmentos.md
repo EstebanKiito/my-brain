@@ -7,81 +7,70 @@ tags:
   - capa-de-transporte
   - segmentos
   - multiplexacion
+  - origen/complemento
 prerrequisitos:
   - "[[13-Capa de aplicación y sockets/_Índice|Capa de aplicación y sockets]]"
 ---
 
 # Servicios de la capa de transporte y estructura de segmentos
 
-La capa de transporte proporciona comunicación lógica directa entre procesos de aplicación que se ejecutan en diferentes sistemas finales (*hosts*). A diferencia de la capa de red, que enruta paquetes entre computadores físicos (*host-to-host*), la capa de transporte extiende la entrega de datos hasta el nivel de proceso (*process-to-process*) mediante la segmentación y multiplexación por puertos.
-
----
-
-## Servicios y agentes de transporte (mis apuntes)
-
-### CONTENIDO 10 → CAPA DE TRANSPORTE
-
-CAPA TRANSPORTE : Transmision Origen - Destino
-- Se encuentra entre la Capa de APLICACION y la de NETWORK
-- NO VIVE en los SERVIDORES intermedios, el objetivo es que llegue de un emisor a un receptor
+La capa de red sabe llevar paquetes de un **host** a otro, pero en cada host corren muchos procesos. La **capa de transporte** completa el viaje: su objetivo es que un mensaje llegue **desde el proceso emisor hasta el proceso receptor**. Se ubica entre la capa de aplicación y la de red, y vive solo en los extremos: los routers intermedios no examinan sus headers.
 
 ![Servicios y responsabilidades de la capa de transporte en sistemas finales](adjuntos/Servicios%20y%20responsabilidades%20de%20la%20capa%20de%20transporte%20en%20sistemas%20finales.png)
 
 > [!example]- Transcripción de la imagen
-> La capa de transporte en la arquitectura de red:
-> - Reside exclusivamente en los hosts terminales (emisor y receptor); los conmutadores y enrutadores del núcleo de red solo procesan las capas física, de enlace y de red.
-> - El emisor divide los mensajes de aplicación en segmentos y los entrega a la capa de red (IP).
-> - El receptor reensambla los segmentos recibidos y entrega los mensajes a los procesos de aplicación.
+> Pila de cuatro capas: *Application Layer* (e.g. HTTP, FTP, RTP, RTSP), *Transport Layer* (e.g. UDP, TCP), *Network Layer* (e.g. IPv4, IPv6) y *Link Layer* (e.g. Ethernet/802.3, WiFi/802.11).
 
-Existen 2 Agentes importantes
-- lo divide en SEGMENTOS
-- Solicita a capa de RED que ENVÍE los segmentos al Receptor
-- Emisor: Recibe un mensaje de CAPA APLICACION,
-- los Ensambla para formar mensaje
-- Lo entrega a la CAPA APLICACIÓN
-- Receptor: Recibe Segmentos,
+## Emisor y receptor
 
-PROTOCOLOS
-- Establecimiento de conexión.
-- TCP: Entrega confiable y ordenada. Control de flujo.
-- UDP: Entrega no confiable y desordenada. Más rápida.
-- (información que quiero enviar desde la capa de aplicacion por ej un Html con cierto header que me va a llevar a ejecutar ciertas reglas que tenga en el protocolo)
+| Agente | Qué hace |
+|---|---|
+| **Emisor** | Recibe un mensaje de la capa de aplicación, **lo divide en segmentos** y le pide a la capa de red que **envíe** los segmentos al receptor |
+| **Receptor** | Recibe los segmentos, **los ensambla** para formar el mensaje y **lo entrega** a la capa de aplicación |
+
+El protocolo de transporte **solo lo ejecutan el origen y el destino**, nunca los intermediarios. Los segmentos viajan **dentro de paquetes IP**.
+
+## Dos protocolos
+
+- **TCP**: entrega **confiable y ordenada**, con **control de flujo** y **establecimiento de conexión** previo.
+- **UDP**: entrega **no confiable y desordenada**, pero **más rápida**.
+
+Sobre ellos van los mensajes de la aplicación, por ejemplo una página HTML con sus headers HTTP, que el receptor interpretará según las reglas de su protocolo.
+
+## Puertos: a qué proceso va cada segmento
+
+¿Cómo se distinguen los mensajes de distintos procesos que viajan entre los mismos dos hosts? Con el **puerto**:
+
+- el puerto permite **identificar procesos** dentro del nodo emisor o del receptor;
+- el puerto permite **multiplexar** mensajes: varios procesos comparten la misma conexión de red y cada segmento lleva el puerto de su proceso.
 
 ![Estructura de un segmento de transporte con datos y cabeceras](adjuntos/Estructura%20de%20un%20segmento%20de%20transporte%20con%20datos%20y%20cabeceras.png)
 
 > [!example]- Transcripción de la imagen
-> Estructura genérica de una PDU de transporte (segmento):
-> - Campos de cabecera (*header fields*): Puerto de origen, puerto de destino, números de secuencia/confirmación y flags de control.
-> - Carga útil (*payload* o datos): Contiene el mensaje completo o fragmentado proveniente de la capa de aplicación.
+> "Mensaje se divide en segmentos → Segmentos se transmiten en paquetes IP. ¿Cómo identificar mensajes a distintos procesos? **Puerto** permite identificar procesos dentro del nodo emisor o del nodo receptor. **Puerto** permite multiplexar mensajes".
 
-- Se Transmiten Segmentos
-- El protocolo solo lo ejecuta origen y destino (NO INTERMEDIARIOS como ROUTERS, etc)
+Todo segmento lleva, como mínimo, el **puerto de origen** (para saber a quién responder) y el **puerto de destino** (para saber a qué socket entregarlo). Por ejemplo, el segmento UDP:
 
-SEGMENTOS
-Segmentos se transmiten en paquetes IP, podemos identificarlos mensajes de sitntos procesos con Puertos
-- Puerto → Permite identificar procesos del nodo emisor o receptor
-- Multiplexar mensajes
-
-![Proceso de multiplexación y desmultiplexación de segmentos mediante puertos](adjuntos/Proceso%20de%20multiplexación%20y%20desmultiplexación%20de%20segmentos%20mediante%20puertos.png)
+![Proceso de multiplexación y desmultiplexación de segmentos mediante puertos](adjuntos/Proceso%20de%20multiplexaci%C3%B3n%20y%20desmultiplexaci%C3%B3n%20de%20segmentos%20mediante%20puertos.png)
 
 > [!example]- Transcripción de la imagen
-> Multiplexación y desmultiplexación:
-> - Multiplexación en el emisor: Recopila datos de múltiples sockets de aplicación, añade los encabezados de transporte correspondientes y los pasa a la capa de red.
-> - Desmultiplexación en el receptor: Examina los campos de puerto del encabezado de transporte para entregar los datos entrantes al socket correcto del proceso destinatario.
+> Formato del segmento UDP, en filas de **32 bits**: *Source port #* y *Dest. port #*; *Length* y *Checksum*; y luego *Application data (message)*.
 
-> [!tip] Complemento de clase: Relación entre transporte y red
-> Mientras que la capa de red (IP) brinda un servicio de "mejor esfuerzo" (*best-effort*) no confiable entre hosts, los protocolos de transporte pueden construir garantías más estrictas por encima de IP (como la confiabilidad absoluta y control de congestión en TCP), o bien proporcionar una interfaz ligera y directa sin sobrecarga (UDP).
+El detalle de cómo se reparten los segmentos entre sockets está en [[02 - Multiplexación y desmultiplexación de puertos en UDP y TCP|multiplexación y desmultiplexación]].
 
----
+> [!tip] Transporte sobre red
+> La capa de red (IP) ofrece un servicio de "mejor esfuerzo": no garantiza que los paquetes lleguen ni que lleguen en orden. Sobre esa base, TCP construye un servicio confiable, y UDP ofrece uno mínimo y liviano.
 
 ## Preguntas de repaso
 
-> [!question]- ¿Por qué los routers del núcleo de red no ejecutan protocolos de la capa de transporte?
-> Porque los routers solo requieren inspeccionar las cabeceras de la capa de red (direcciones IP) para enrutar paquetes; mantener estado de conexiones de transporte en los enrutadores saturaría la memoria y destruiría la escalabilidad de Internet.
+> [!question]- ¿Qué hacen el emisor y el receptor de la capa de transporte?
+> El emisor divide el mensaje de la aplicación en segmentos y pide a la capa de red que los envíe. El receptor recibe los segmentos, los ensambla y entrega el mensaje a la aplicación.
 
-> [!question]- ¿Cuál es la diferencia fundamental entre la entrega *host-to-host* y *process-to-process*?
-> *Host-to-host* (capa de red) solo garantiza llevar paquetes desde una máquina física hacia otra; *process-to-process* (capa de transporte) identifica exactamente a cuál de los múltiples procesos o hilos que corren concurrentemente en la máquina receptora le corresponde la información.
+> [!question]- ¿Por qué los routers no ejecutan la capa de transporte?
+> Porque para reenviar un paquete solo necesitan la información de la capa de red (la IP de destino). El transporte es asunto de los extremos.
 
-> [!question]- ¿Qué campos mínimos debe incluir la cabecera de cualquier segmento de transporte para permitir la desmultiplexación?
-> El número de puerto de origen (para saber a dónde responder) y el número de puerto de destino (para saber a qué socket local entregar el paquete en el receptor).
+> [!question]- ¿Para qué sirven los puertos en la capa de transporte?
+> Para identificar a qué proceso de cada host pertenece un segmento y así multiplexar los mensajes de varios procesos sobre la misma red.
 
+> [!question]- ¿Qué diferencia hay entre TCP y UDP?
+> TCP establece conexión y entrega de forma confiable y ordenada, con control de flujo. UDP no establece conexión ni garantiza la entrega ni el orden, pero es más rápido.
