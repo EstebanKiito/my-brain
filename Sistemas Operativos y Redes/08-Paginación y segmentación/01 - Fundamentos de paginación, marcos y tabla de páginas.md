@@ -4,7 +4,7 @@ tema: "Paginación y segmentación"
 tags:
   - so/memoria
   - so/paginacion
-  - origen/apuntes
+  - origen/complemento
 prerrequisitos:
   - "[[03 - Relocalización, protección de memoria y registros base y límite]]"
   - "[[05 - Segmentación de memoria y prevención de segmentation fault]]"
@@ -12,109 +12,96 @@ prerrequisitos:
 
 # Fundamentos de paginación, marcos y tabla de páginas
 
-La paginación es un mecanismo arquitectónico de gestión de memoria que desacopla el espacio de direcciones virtuales de la memoria física mediante particiones de tamaño fijo idéntico, eliminando por completo la fragmentación externa.
+La [[05 - Segmentación de memoria y prevención de segmentation fault|segmentación]] reduce el problema de los huecos, pero los segmentos siguen teniendo tamaños distintos y la fragmentación externa no desaparece. La **paginación** es otra estrategia para ubicar la memoria: corta todo en trozos **del mismo tamaño**, de modo que cualquier trozo libre sirve para cualquier pedazo de cualquier proceso.
 
-## Paginación y traducción de direcciones (mis apuntes)
+## Páginas y marcos
 
-> [!note] Apuntes de clase
-> **Clase 7**
-> 4/09/2024
->
-> **PAGINACION**
-> Otra estrategia para localizacion de memoria.
-> Lo que hace es dividir la memoria fisica → en framse
-> Y la virtual en → Paginas
-> |Paginas| = |Frame|
->
-> Para hacer esto, necesitamos informacion extra → Necesitamos una TABLA DE PAGINAS:
-> - Guarda las traducciones de memoria de pagina a frame
-> - Basicamente es en que frame se encuentra guardada cada pagina de un proceso
->
-> **TABLA DE PAGINAS: Ejemplo**
-> Para este caso, notemos que tenemos 64b de direcciones de espacio virtual:
-> - direcciones = 64 = 2**6 = 6 bits necesarios
-> - Entre cada pagina hay 16 bits de desplazamiento: offset = 16 = 2**4 = 4 bits
-> - y 64/16 = 4 = 2**2 = 2 bits de numero de pagina
-> - Bits direccion virtual = b5 b4 b3 b2 b1 b0:
->   - b5 b4 = VPN (numero pagina) → virtual page number
->   - b3 b2 b1 b0 = OFFSET
->
-> En el espacio fisico: 128b = 2**7 = 7 bits necesarios:
-> - offset = 16 → 4 bits
-> - Numero frame = 8 = 2**3 = 3 bits (PFN) → physical frame number
-> - Bits direccion fisica = b6 b5 b4 b3 b2 b1 b0:
->   - b6 b5 b4 = PFN (numero frame)
->   - b3 b2 b1 b0 = OFFSET
->
-> Ahora → Como traducir una direccion a la otra?
-> TABLA DE PAGINA: Almacenara la traduccion de un numero de pagina a un numero de frame.
->
-> **CONCLUSION (y pregunta de prueba probablemente):**
-> TRADUCCION: conservar OFFSET y cambiar VPN por PFN.
->
-> La tabla ademas de las traducciones tambien almacena otros valores: (Metadatos)
-> - Bit de validez: indica si la entrada es valida (si la pagina ha sido asignada) → Importante para la tarea
-> - Bit de presencia: si esta en la memoria primaria o secundaria
-> - Bit de escritura: indica si se puede escribir
-> - etc…. → Depende de cada OS
->
-> PTE (page table entry) = PFN + Metadatos
-> |Tabla de pagina| = | PTE | * Numero de paginas
-> Esto porque la tabla de paginas se debe almacenar en la memoria principal, y esa cantidad de memoria es significativa → Hay que tratar de reducir el tamaño de la tabla.
->
-> Ojo: Esto afecta al tiempo de acceso (al doble practicamente)
-> Dado que siempre para buscar una variable, primero hay que cargar la tabla de paginas para traducir, y luego ir a buscar.
-> Por lo tanto: CADA ACCESO A MEMORIA SE DUPLICA (a 2 accesos).
+- La memoria **física** se divide en **marcos** (*frames*).
+- La memoria **virtual** de cada proceso se divide en **páginas**.
+- **Página y marco tienen el mismo tamaño**: $|\text{página}| = |\text{frame}|$.
 
-> [!warning] Posible error
-> En los apuntes figura "framse" por frames. Asimismo, la notación "64b de direcciones" y "16 bits de desplazamiento" refiere en realidad a unidades de *bytes* (un espacio virtual de 64 Bytes con páginas de 16 Bytes), pues $2^6 = 64$ y $2^4 = 16$.
+Cualquier página puede ir en cualquier marco libre, sin necesidad de que las páginas de un proceso queden contiguas. Como todos los marcos son iguales, no hay fragmentación externa.
+
+Para saber dónde quedó cada página hace falta información extra: la **tabla de páginas**, una por proceso, que guarda la traducción de **número de página a número de frame**, es decir, en qué frame está guardada cada página del proceso.
+
+## Ejemplo: 64 bytes virtuales, 128 físicos
 
 ![División de memoria virtual en páginas y memoria física en marcos](adjuntos/Divisi%C3%B3n%20de%20memoria%20virtual%20en%20p%C3%A1ginas%20y%20memoria%20f%C3%ADsica%20en%20marcos.png)
 
 > [!example]- Transcripción de la imagen
-> Esquema de correspondencia entre páginas y marcos:
-> - Espacio de direcciones virtual particionado en páginas fijas ($P_0, P_1, P_2, P_3$).
-> - Memoria física particionada en marcos de página (*page frames*) del mismo tamaño ($f_0, f_1, \dots, f_7$).
-> - Una página virtual puede ubicarse en cualquier marco físico disponible, sin necesidad de contigüidad.
+> A la izquierda, el **Espacio virtual** de 0 a 64 con 4 páginas de 16 (*page 0 of the address space*, *page 1*, *page 2*, *page 3*). A la derecha, el **Espacio Físico** de 0 a 128 con **8 frames** de 16: frame 0 *reserved for OS*, frame 1 *unused*, frame 2 *page 3 of AS*, frame 3 *page 0 of AS*, frame 4 *unused*, frame 5 *page 2 of AS*, frame 6 *unused* y frame 7 *page 1 of AS*. Líneas de colores unen cada página con su frame, y una **X** a mano marca el mismo desplazamiento dentro de la página 2 y dentro del frame 5.
+
+| | Espacio virtual | Espacio físico |
+|---|---|---|
+| Tamaño | 64 B $= 2^6$ → **6 bits** de dirección | 128 B $= 2^7$ → **7 bits** |
+| Offset (página o frame de 16 B $= 2^4$) | **4 bits** | **4 bits** |
+| Número de página o frame | $64/16 = 4 = 2^2$ → **2 bits de VPN** | $128/16 = 8 = 2^3$ → **3 bits de PFN** |
+| Formato | `b5 b4` = VPN · `b3 b2 b1 b0` = offset | `b6 b5 b4` = PFN · `b3 b2 b1 b0` = offset |
+
+VPN es el *virtual page number* y PFN el *physical frame number*. La tabla de páginas de este proceso:
 
 ![Traducción de VPN a PFN preservando el offset](adjuntos/Traducci%C3%B3n%20de%20VPN%20a%20PFN%20preservando%20el%20offset.png)
 
 > [!example]- Transcripción de la imagen
-> Regla de traducción de direcciones:
-> - Dirección virtual: dividida en VPN (*Virtual Page Number*) y Offset.
-> - El VPN indexa la Tabla de Páginas para obtener el PFN (*Physical Frame Number*).
-> - Dirección física = $\text{PFN concatenated with Offset}$. El desplazamiento interno permanece idéntico.
+> Tabla *Page (VPN) / Frame (PFN)*: 0 (`0b00`) → 3 (`0b011`); 1 (`0b01`) → 7 (`0b111`); 2 (`0b10`) → 5 (`0b101`); 3 (`0b11`) → 2 (`0b010`).
+
+## Cómo se traduce
+
+> [!tip] Regla de traducción
+> **Se conserva el offset y se cambia el VPN por el PFN.** Esta traducción la hace la MMU en cada acceso. Como página y frame miden lo mismo, el byte $k$ de una página está en el byte $k$ del frame donde quedó.
 
 ![Estructura de la entrada de tabla de páginas y metadatos](adjuntos/Estructura%20de%20la%20entrada%20de%20tabla%20de%20p%C3%A1ginas%20y%20metadatos.png)
 
 > [!example]- Transcripción de la imagen
-> Formato de una PTE (*Page Table Entry*):
-> - PFN: bits que identifican el marco físico asignado.
-> - Bit de validez ($V$): 1 si la página pertenece al espacio del proceso, 0 si no está mapeada.
-> - Bit de presencia ($P$): 1 si reside en RAM física, 0 si está en el espacio de intercambio (*swap*).
-> - Bits de protección: permisos $R$ (lectura), $W$ (escritura), $X$ (ejecución).
-> - Bit de referencia / modificado (*dirty bit*): registra accesos y modificaciones.
+> *Virtual Address* `0 1 | 0 1 0 1` (VPN | offset). Los bits del VPN entran a *Address Translation*, que produce el PFN `1 1 1`; los 4 bits del offset bajan sin cambios. *Physical Address* `1 1 1 | 0 1 0 1` (PFN | offset).
+
+La dirección virtual 21 = `01 0101` está en la página 1 con offset 5. La página 1 está en el frame 7, así que la física es `111 0101` = 117.
 
 ![Duplicación de accesos a memoria por consulta a tabla de páginas](adjuntos/Duplicaci%C3%B3n%20de%20accesos%20a%20memoria%20por%20consulta%20a%20tabla%20de%20p%C3%A1ginas.png)
 
 > [!example]- Transcripción de la imagen
-> Sobrecarga temporal de la paginación pura:
-> Para ejecutar una sola instrucción que lee una variable (e.g. `MOV EAX, [addr]`):
-> 1. Primer acceso a memoria RAM: leer la PTE correspondiente en la tabla de páginas del proceso.
-> 2. Segundo acceso a memoria RAM: leer el byte solicitado en la dirección física traducida.
-> Todo acceso se duplica, reduciendo la velocidad a la mitad.
+> Hardware de paginación: la CPU emite una *logical address* `p | d`. Con `p` se indexa la *page table*, que entrega `f`. La *physical address* es `f | d`, que apunta dentro del frame `f` de la *physical memory* (direcciones `f0000…0000` a `f1111…1111`).
 
-> [!tip] Complemento: Eliminación de la fragmentación externa
-> Dado que todos los marcos físicos tienen exactamente el mismo tamaño que las páginas virtuales, cualquier marco libre en RAM puede satisfacer la solicitud de cualquier página. Como consecuencia directa, la paginación elimina completamente la fragmentación externa.
+```python
+OFFSET_BITS = 4                       # páginas de 16 bytes
+TABLA = {0: 3, 1: 7, 2: 5, 3: 2}      # VPN -> PFN
+
+def traducir(virtual):
+    vpn = virtual >> OFFSET_BITS                   # bits altos: número de página
+    offset = virtual & ((1 << OFFSET_BITS) - 1)    # bits bajos: se conservan
+    pfn = TABLA[vpn]
+    fisica = (pfn << OFFSET_BITS) | offset         # cambiar VPN por PFN
+    return fisica
+
+print(traducir(21))   # 117
+```
+
+## Qué guarda cada entrada
+
+Además de la traducción, la tabla guarda **metadatos**, que dependen de cada SO:
+
+- **Bit de validez**: si la entrada es válida, es decir, si la página fue asignada al proceso. Si la MMU encuentra una entrada inválida, genera una excepción y el SO envía `SIGSEGV`;
+- **Bit de presencia**: si la página está en memoria principal o en la secundaria (swap);
+- **Bit de escritura**: si la página se puede escribir.
+
+Cada entrada es una **PTE** (*page table entry*): $\text{PTE} = \text{PFN} + \text{metadatos}$, y el tamaño de la tabla es $|\text{tabla}| = |\text{PTE}| \times \text{número de páginas}$. Como la tabla vive en la memoria principal, ocupa una cantidad significativa de ella, y hay que tratar de reducirla (ver [[04 - Sobrecarga de tablas lineales y compromiso de fragmentación interna|sobrecarga de las tablas]]).
+
+> [!warning] Cada acceso a memoria se duplica
+> Para leer una variable, primero hay que leer la tabla de páginas en memoria para traducir, y recién después ir a buscar el dato: **dos accesos en vez de uno**, lo que casi duplica el tiempo de acceso. La solución es la [[02 - Translation Lookaside Buffer (TLB) y tiempo de acceso efectivo|TLB]].
 
 ## Preguntas de repaso
 
-> [!question]- ¿Por qué el desplazamiento (*offset*) permanece invariante al traducir una dirección virtual a una dirección física?
-> Porque tanto la página virtual como el marco físico tienen idéntico tamaño. El offset representa la distancia en bytes relativa al inicio del bloque, por lo que el byte $k$ de la página virtual se ubica exactamente en el byte $k$ del marco físico asignado.
+> [!question]- ¿Cuál es la regla para traducir una dirección virtual a física con paginación?
+> Se conserva el offset y se reemplaza el VPN por el PFN que indica la tabla de páginas.
 
-> [!question]- ¿Qué ocurre si un proceso intenta acceder a una dirección virtual cuyo bit de validez en la PTE es 0?
-> La MMU detecta que la entrada no es válida, bloquea el acceso físico a la memoria y genera una excepción de trampa (*trap*) al kernel, provocando que el sistema operativo envíe una señal `SIGSEGV` (*Segmentation Fault*) al proceso.
+> [!question]- Con 64 B virtuales, 128 B físicos y páginas de 16 B, ¿cuántos bits tienen el VPN, el PFN y el offset?
+> El offset tiene 4 bits ($16 = 2^4$), el VPN 2 bits (4 páginas) y el PFN 3 bits (8 frames). La dirección virtual tiene 6 bits y la física 7.
 
-> [!question]- Si un sistema posee páginas de 4 KB y direcciones virtuales de 32 bits, ¿cuántos bits se destinan al offset y cuántos al VPN?
-> Como $4\text{ KB} = 2^{12}\text{ bytes}$, el offset requiere 12 bits para direccionar dentro de la página. Los restantes $32 - 12 = 20\text{ bits}$ identifican el número de página virtual (VPN).
+> [!question]- ¿Qué indican los bits de validez y de presencia de una PTE?
+> El de validez indica si la página fue asignada al proceso. El de presencia indica si la página está en RAM o en el disco (swap).
 
+> [!question]- ¿Por qué la paginación pura duplica el costo de cada acceso a memoria?
+> Porque antes de leer el dato hay que leer la PTE en la tabla de páginas, que también está en memoria. Son dos accesos por cada uno que pide el programa.
+
+> [!question]- Con páginas de 4 KB y direcciones virtuales de 32 bits, ¿cuántos bits son de offset y cuántos de VPN?
+> $4\text{ KB} = 2^{12}$, así que el offset tiene 12 bits y el VPN los $32 - 12 = 20$ restantes.
