@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 61 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 11-Implementación de archivos y bloques/08 - Administración del espacio libre en disco: mapas de bits y listas enlazadas.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 62 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 12-Fundamentos de redes y modelos en capas/01 - Arquitectura de Internet, nodos, enlaces y protocolos.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -78,7 +78,7 @@ Reescritas hasta ahora: 61 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 59 | 11-Implementación de archivos y bloques/06 - Asignación enlazada y tabla de asignación de archivos (FAT).md | reescrita | 76 líneas; 2 imágenes; Python ok; 1 duda |
 | 60 | 11-Implementación de archivos y bloques/07 - Asignación indexada y arquitectura de inodos multinivel en Unix.md | reescrita | 81 líneas; 3 imágenes; Python ok; 1 duda ℹ️ |
 | 61 | 11-Implementación de archivos y bloques/08 - Administración del espacio libre en disco: mapas de bits y listas enlazadas.md | reescrita | 77 líneas; 2 imágenes; Python ok; 1 duda |
-| 62 | 12-Fundamentos de redes y modelos en capas/01 - Arquitectura de Internet, nodos, enlaces y protocolos.md | pendiente | |
+| 62 | 12-Fundamentos de redes y modelos en capas/01 - Arquitectura de Internet, nodos, enlaces y protocolos.md | reescrita | 77 líneas; 2 imágenes; 1 duda ℹ️ |
 | 63 | 12-Fundamentos de redes y modelos en capas/02 - Redes de acceso y medios físicos de transmisión.md | pendiente | |
 | 64 | 12-Fundamentos de redes y modelos en capas/03 - Conmutación de paquetes frente a conmutación de circuitos.md | pendiente | |
 | 65 | 12-Fundamentos de redes y modelos en capas/04 - Modelos de capas: modelo de referencia OSI frente al stack TCP-IP.md | pendiente | |
@@ -194,3 +194,4 @@ Reescritas hasta ahora: 61 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **11/06 Enlazada y FAT**: 76 líneas, 2 imágenes comprobadas (Silberschatz: jeep 9→16→1→10→25 y FAT test 217→618→339; estaban anidadas en un callout y las transcripciones agregaban datos ajenos a las figuras). Tabla de ventajas y desventajas del material (508 de 512 B, solo secuencial, vulnerable, clusters). Python que recorre la FAT de la figura. Duda nueva 🟡: entrada por archivo frente a por bloque, y la causa del límite de 4 GB.
 - **11/07 Indexada e inodos**: 81 líneas, 3 imágenes comprobadas (dos son dibujos a mano: BI → datos y un índice de dos niveles; la tercera es el inodo de Silberschatz). Tabla de esquemas enlazado/multinivel/combinado del material y tabla de capacidades del inodo (12 directos, simple, doble, triple) calculada con Python. Duda ℹ️: el "1024·1024·32 KB = 4 TB" de los apuntes.
 - **11/08 Espacio libre**: 77 líneas, 2 imágenes comprobadas (diapositivas de bitmap y de lista enlazada; estaban anidadas en un callout y las transcripciones inventaban una fórmula y "30,5 MB"). Python: búsqueda del primer bloque libre y tamaño del bitmap. Duda nueva 🟡: 256 MB frente a 32 MiB.
+- **12/01 Arquitectura de Internet**: 77 líneas, 2 imágenes comprobadas (estaban anidadas en un callout; la segunda tiene las IP y el recorrido a mano). Tabla de elementos de red del material de clase, con tus analogías (switch = zapatilla, la conversación "hola / ¿tienes la hora?") y tu ejemplo de IP local frente a pública. Se agregaron IETF/RFC del material. Duda ℹ️: nombre de TCP. Se quitaron "CLASE 1", la fecha e "investigar".

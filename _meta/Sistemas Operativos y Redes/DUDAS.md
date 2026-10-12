@@ -124,6 +124,7 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | ℹ️ | [[03 - Conmutación de paquetes frente a conmutación de circuitos\|Conmutación de paquetes frente a conmutación de circuitos]] | "trasnmicion ... packetes ... congesiton" | Erratas tipográficas ("trasnmicion" por transmisión, "packetes" por paquetes, "congesiton" por congestión). |
 | ℹ️ | [[05 - Capas de transporte, red, enlace y física\|Capas de transporte, red, enlace y física]] | "ORGIN Y DESTINY ... Sevicion ... gratiza ... SWITCHS" | Erratas tipográficas en nombres y conceptos ("ORGIN Y DESTINY" por origen y destino, "Sevicion" por servicio, "gratiza" por garantiza, "SWITCHS" por switches). |
 | ℹ️ | [[06 - Proceso de encapsulamiento y flujo de datos en la red\|Proceso de encapsulamiento y flujo de datos en la red]] | "trasnporte ... dispoisitvo" | Erratas de tipeo por transporte y dispositivo. |
+| ℹ️ | [[01 - Arquitectura de Internet, nodos, enlaces y protocolos\|Arquitectura de Internet, nodos, enlaces y protocolos]] | "TCP: Transport control protocol" (apuntes y material de clase) (reescritura) | El nombre estándar (RFC 793/9293) es *Transmission Control Protocol*. La nota usa el estándar y menciona que el material lo nombra *Transport Control Protocol*. |
 
 ## Capa de aplicación y sockets
 | Estado | Nota | Original | Duda / corrección propuesta |
