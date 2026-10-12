@@ -8,115 +8,105 @@ tags:
   - subredes
   - mascaras
   - cidr
+  - origen/complemento
 prerrequisitos:
   - "[[15-Capa de red y direccionamiento/02 - Datagrama IPv4: estructura y fragmentación por MTU|02 - Datagrama IPv4: estructura y fragmentación por MTU]]"
 ---
 
 # Direccionamiento IPv4: subredes, máscaras y notación CIDR
 
-Una dirección IPv4 es un identificador de 32 bits asignado a cada interfaz de red conectada a Internet. Para organizar y enrutar el tráfico eficientemente, las direcciones se dividen jerárquicamente en una porción de red (*network prefix*) y una porción de host (*host portion*), delimitadas mediante máscaras de subred y notación CIDR (*Classless Inter-Domain Routing*, `a.b.c.d/x`).
+El [[02 - Datagrama IPv4: estructura y fragmentación por MTU|datagrama IP]] lleva las direcciones de origen y destino, y la capa de red lo hace saltar de enlace en enlace (fragmentándolo si no cabe). Falta entender qué es una dirección IP y cómo se agrupan las direcciones en **subredes**, que es lo que permite que las tablas de reenvío trabajen con prefijos.
 
----
+## Direcciones IPv4
 
-## Estructura de direcciones y subredes (mis apuntes)
+- Una dirección IPv4 mide **32 bits = 4 bytes**, así que hay $2^{32} = 4\,294\,967\,296$ direcciones posibles.
+- Se escribe en **notación decimal con puntos** (*dotted-decimal notation*): cuatro grupos de 8 bits, cada uno entre 0 y 255. Por ejemplo, `146.155.13.45` es `10010010.10011011.00001101.00101101`.
+- Debe ser **única globalmente**, aunque solo "casi": como los números de 32 bits son limitados, no alcanzan para todos los dispositivos (de ahí las redes privadas y [[04 - Configuración dinámica con DHCP y traducción de direcciones NAT|NAT]]).
 
-Como la capa de red, utiliza la capa de enlace para hacer un salto a otro, hay que ver si ¿puede caber? en otros enlaces,
-si no cabe, hay que fragmentarlo!!
-Por ejemplo en 3 paquetes, con el mismo identificador, y con un flag, cuando se levante, ya no quedan fragmentos
+IPv6 resuelve la escasez con direcciones de **128 bits (16 bytes)**: $2^{128}$ direcciones posibles (ver [[05 - Protocolo ICMP y transición a IPv6: dual-stack y tunneling|IPv6]]).
 
-DIRECCIONES IP
-- Dado que esos numeros de 32 bits son limitados, no existen unicos para todos los dispositivos
-- 146.155.13.15: 10010010.10011011.00001101.00101101
-- DOTTED DECIMAL NOTATION → Grupo de 8 BITS: (0-255)
-- IPV4: 4 Bytes → 32 bits: 2**32 direcciones posibles
+## Subredes y notación CIDR
 
-Tenemos subconjuntos llamados Subredes → Se dividen por prefijos de direcciones IP
-- ej: 223.1.1.0/24
-- 223.1.1 = Subred
-- .0/24 = Numero de host → la idea es que no se repite con otro computador
-- 24 → Se Refiere a la ctd de bits que requiere la sub RED!!!
-- Ademas se le añade una MASCARA
+Una **subred** es un subconjunto de direcciones con el mismo **prefijo**. Se escribe con la notación **CIDR** (*Classless Interdomain Routing*): `a.b.c.d/x`.
 
-Classless interdomain Routing → a.b.c.d/x
-ej: /24 : 255.255.255.0: equivalente a tener 24 bit 1, 8 bit 0
+- Los **primeros $x$ bits** definen la subred. En `223.1.1.0/24`, los 24 bits de `223.1.1` son la subred.
+- Los **últimos $32 - x$ bits** definen el host dentro de la subred, y no se repiten entre dos equipos de la misma subred. En `223.1.1.40/24`, el host es el `.40`.
+- La **máscara** tiene $x$ bits en 1 y $32 - x$ en 0. Para `/24` es `255.255.255.0`: 24 unos y 8 ceros.
 
-![Estructura de direcciones IPv4 con notación CIDR y máscara de subred](adjuntos/Estructura%20de%20direcciones%20IPv4%20con%20notación%20CIDR%20y%20máscara%20de%20subred.png)
+Para saber a qué subred pertenece una IP se hace un **AND bit a bit** con la máscara: **IP & máscara = subred**.
+
+![Estructura de direcciones IPv4 con notación CIDR y máscara de subred](adjuntos/Estructura%20de%20direcciones%20IPv4%20con%20notaci%C3%B3n%20CIDR%20y%20m%C3%A1scara%20de%20subred.png)
 
 > [!example]- Transcripción de la imagen
-> Formato CIDR (`a.b.c.d/x`): La barra `/x` indica que los primeros $x$ bits corresponden a la porción de subred y los restantes $32 - x$ bits corresponden a la porción de host. La máscara de subred contiene $x$ unos binarios seguidos de $32 - x$ ceros.
+> `146.155.13.78` = `10010010.10011011.00001101.01001110`; `255.255.255.0` = `11111111.11111111.11111111.00000000`; el AND bit a bit da `146.155.13.0` = `10010010.10011011.00001101.00000000`.
 
-MASCARA: Si quiero conocer a que su ¿red pertence una subred?, aplico un AND bit a bit con una Mascara
-IP & MASCARA = SUBRED
-En este caso: Dio que la SUBRED ES : 146.155.13.0
+## Dos direcciones que no se usan
 
-![Cálculo de dirección de red y broadcast mediante máscara de subred](adjuntos/Cálculo%20de%20dirección%20de%20red%20y%20broadcast%20mediante%20máscara%20de%20subred.png)
+En cada subred hay **dos direcciones reservadas**: la que tiene todos los bits de host en 0 es el **nombre de la subred**, y la que los tiene todos en 1 es la **dirección de broadcast**, que sirve para enviar a todos los miembros de la subred. Por eso una `/24` admite $2^8 - 2 = 254$ hosts.
 
-> [!example]- Transcripción de la imagen
-> Operación AND bit a bit para obtener la dirección de subred:
-> - IP: `146.155.13.15` $\to$ `10010010.10011011.00001101.00001111`
-> - Máscara `/24`: `255.255.255.0` $\to$ `11111111.11111111.11111111.00000000`
-> - Dirección de Red (AND): `146.155.13.0`
-> - Dirección de Broadcast (hosts en 1): `146.155.13.255`
-
-Para este ejemplo: Siempre son 2 las Direcciones que no podemos utilizar de esos 24 bits que son, para la subred hay 2 que no!
-- La que tenga direccion 0 → Es el nombre de la Subred a.b.c.0 → Es la subred
-- La que tiene todos: por ej: 146.155.13.255 → Esto sera la direccion de BROADCAST
-Bits del host en 1: BROADCAST → Envio a todos los miembros de la SUBRED
-→ IPV6: 6 Bytes → 128 bits: 2**128 direcciones posibles
-
-Dentro del direccionamiento de REDES, cada Router es un LIMITANTE → pto limite
-Cada ROUTER posee una direccion IP en cada salida
-→ Switches por otro lado, NO poseen direccion IP
-→ Switches son dispositivos de CAPA 2 (ENLACE)
-Cada grupo de HOSTS conectados a un ROUTER → Forma una SUBRED
-- En el ejemplo, hay 6 subredes!
-
-![Topología de subredes conectadas mediante routers e interfaces IP](adjuntos/Topología%20de%20subredes%20conectadas%20mediante%20routers%20e%20interfaces%20IP.png)
+![Cálculo de dirección de red y broadcast mediante máscara de subred](adjuntos/C%C3%A1lculo%20de%20direcci%C3%B3n%20de%20red%20y%20broadcast%20mediante%20m%C3%A1scara%20de%20subred.png)
 
 > [!example]- Transcripción de la imagen
-> Topología de subredes aisladas por routers: Una subred es una red IP cuyos dispositivos pueden comunicarse físicamente entre sí a nivel de Capa 2 (conmutadores) sin intermediación de un router. Los enlaces punto a punto entre interfaces de routers también constituyen subredes independientes (ej. con máscara `/30` o `/31`).
+> "Subred: `146.155.13.0/24`. 24 bits para subred, 8 bit para host. Tamaño de subred: $2^8 = 256 - 2 = 254$ hosts máximo. Nombre de subred: bits de *host* en 0: `146.155.13.0`. Dirección broadcast: bits de *host* en 1: `146.155.13.255`. Máscara (mask): $x$ bit en 1, $32 - x$ bit en 0: `255.255.255.0`". Abajo: "Google: IP calculator".
 
-Direcciones reservadas
-- 0.0.0.0. Forma de referirse a la Dirección de host actual (sólo sirve como origen). "Todas las IPs locales".
-- 127.0.0.1. Dirección loopback (localhost)
+```python
+from ipaddress import IPv4Address as IP
 
-Subredes reservadas
-- Red local: 0.0.0.0/8
-- Red loopback: 127.0.0.0/8
-- 10.0.0.0 / 8
-- 172.16.0.0 / 12
-- 192.168.0.0 / 16
-- Redes privadas:
+def subred(ip, x):
+    """IP & máscara = subred; bits de host en 1 = broadcast."""
+    mascara = (0xFFFFFFFF << (32 - x)) & 0xFFFFFFFF      # x unos y 32 - x ceros
+    red = int(IP(ip)) & mascara
+    broadcast = red | (~mascara & 0xFFFFFFFF)
+    return str(IP(mascara)), str(IP(red)), str(IP(broadcast)), 2 ** (32 - x) - 2
 
-Modelo antiguo de clasificacion de redes → CLASES
+print(subred("146.155.13.78", 24))   # ('255.255.255.0', '146.155.13.0', '146.155.13.255', 254)
+print(subred("223.1.1.40", 24))      # ('255.255.255.0', '223.1.1.0', '223.1.1.255', 254)
+```
 
-![Clasificación histórica de direcciones IP en clases A, B y C frente a CIDR](adjuntos/Clasificación%20histórica%20de%20direcciones%20IP%20en%20clases%20A,%20B%20y%20C%20frente%20a%20CIDR.png)
+## Routers y subredes
+
+Cada router es un **punto límite** entre subredes: posee **una dirección IP en cada salida** (interfaz). Los **switches**, en cambio, **no tienen dirección IP**, porque son dispositivos de capa 2 ([[17-Capa de enlace y seguridad/03 - Conmutación en redes locales (Switches L2, STP) y VLANs|enlace]]). Cada grupo de hosts conectados a un router forma una subred, y también los enlaces entre routers.
+
+![Topología de subredes conectadas mediante routers e interfaces IP](adjuntos/Topolog%C3%ADa%20de%20subredes%20conectadas%20mediante%20routers%20e%20interfaces%20IP.png)
 
 > [!example]- Transcripción de la imagen
-> Direccionamiento por Clases (*Classful Addressing*):
-> - Clase A: Prefijo `0...` (/8), 126 redes, 16 millones de hosts.
-> - Clase B: Prefijo `10...` (/16), 16.384 redes, 65.534 hosts.
-> - Clase C: Prefijo `110...` (/24), 2 millones de redes, 254 hosts.
-> - Reemplazado por CIDR debido al desperdicio masivo de direcciones públicas.
+> Tres routers en triángulo. **R1** tiene las interfaces `223.1.1.3` (hacia los hosts `223.1.1.1` y `223.1.1.4`), `223.1.9.2` y `223.1.7.0`. **R2** tiene `223.1.9.1`, `223.1.8.1` y `223.1.2.6` (hacia `223.1.2.1` y `223.1.2.2`). **R3** tiene `223.1.7.1`, `223.1.8.0` y `223.1.3.27` (hacia `223.1.3.1` y `223.1.3.2`).
 
-Luego esto se descarto porque se usaban mas direcciones de las que realmente se necesitaban, era mas facil usar las MASCARAS para determinar el tamaño de subredes
-Asignacion de Direcciones
-ISPs (Proveedores de internet) asignan bloques de direcciones a organizaciones, y publican sus bloques
-Organizaciones pueden crear nuevas subredes dentro de su bloque
+En el ejemplo hay **6 subredes**: las tres de hosts (`223.1.1`, `223.1.2` y `223.1.3`) y las tres que unen a los routers entre sí (`223.1.7`, `223.1.8` y `223.1.9`).
 
-> [!warning] Posible error en apuntes: Tamaño de dirección IPv6
-> En los apuntes dice "IPV6: 6 Bytes → 128 bits". En realidad, 128 bits equivalen exactamente a **16 bytes** ($128 / 8 = 16$), no 6 bytes.
+## Direcciones y subredes reservadas
 
----
+| Dirección o subred | Uso |
+|---|---|
+| `0.0.0.0` | El host actual, "todas las IPs locales"; solo sirve como origen |
+| `127.0.0.1` | *Loopback* (`localhost`) |
+| `0.0.0.0/8` | Red local |
+| `127.0.0.0/8` | Red *loopback* |
+| `10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16` | Redes privadas (RFC 1918) |
+
+## De las clases a CIDR
+
+En el modelo antiguo (*classful routing*), las direcciones se dividían en **clases** según sus primeros bits, con tamaños fijos de red:
+
+![Clasificación histórica de direcciones IP en clases A, B y C frente a CIDR](adjuntos/Clasificaci%C3%B3n%20hist%C3%B3rica%20de%20direcciones%20IP%20en%20clases%20A,%20B%20y%20C%20frente%20a%20CIDR.png)
+
+> [!example]- Transcripción de la imagen
+> Tabla *Clase / bits / Rango de direcciones / Hosts por red / # redes*: **A**, `0`, 1.0.0.0 → 126.0.0.0, $2^{24} - 2 = 16\,777\,214$, $2^7 - 2 = 126$. **B**, `10`, 128.1.0.0 → 191.254.0.0, $2^{16} - 2 = 65\,534$, $2^{14} - 2 = 16\,382$. **C**, `110`, 192.0.1.0 → 223.255.254.0, $2^8 - 2 = 254$, $2^{21} - 2 = 2\,097\,150$. **D**, `1110`, 224.0.0.1 → 239.255.255.254, multicast. **E**, `11110`, 240.0.0.1 → 247.255.255.254, reservado para uso futuro. Abajo, las 32 bits de cada clase divididas en *Red* y *Host* (A: 8/24, B: 16/16, C: 24/8).
+
+Se descartó porque se asignaban muchas más direcciones de las que se necesitaban: una organización con 300 equipos no cabía en una clase C y recibía una B de 65 534. Con **máscaras** de largo arbitrario, el tamaño de cada subred se ajusta a lo necesario.
+
+**Asignación:** los ISP asignan bloques de direcciones a las organizaciones y publican sus bloques; cada organización puede crear nuevas subredes dentro del suyo. Los bloques los administra la ICANN (*Internet Corporation for Assigned Names and Numbers*), que los asigna a los registros regionales de Internet.
 
 ## Preguntas de repaso
 
-> [!question]- ¿Por qué una subred con máscara `/24` solo permite direccionar hasta 254 hosts?
-> Porque con 8 bits para hosts existen $2^8 = 256$ combinaciones posibles, pero se descuentan 2 direcciones especiales obligatorias: la dirección de red (todos ceros binarios, ej. `.0`) y la dirección de broadcast (todos unos binarios, ej. `.255`).
+> [!question]- ¿Cómo se obtiene la subred de `146.155.13.78/24`?
+> Con un AND bit a bit entre la IP y la máscara `255.255.255.0`: da `146.155.13.0`.
 
-> [!question]- ¿Por qué un router tiene asignada más de una dirección IP?
-> Porque un router es un dispositivo multitarjeta que interconecta dos o más subredes; cada interfaz física de red conectada a una subred distinta debe poseer una dirección IP válida perteneciente a dicha subred.
+> [!question]- ¿Por qué una subred `/24` admite solo 254 hosts?
+> Porque los 8 bits de host dan 256 combinaciones, y se descuentan el nombre de la subred (bits de host en 0) y el broadcast (bits de host en 1).
 
-> [!question]- ¿Cuáles son los rangos de direcciones IP privadas definidos por el RFC 1918 y por qué no se enrutan en Internet?
-> `10.0.0.0/8`, `172.16.0.0/12` y `192.168.0.0/16`. Están reservadas para redes locales privadas y los routers globales de Internet descartan cualquier paquete dirigido a ellas, exigiendo NAT para salir al exterior.
+> [!question]- ¿Por qué un router tiene varias direcciones IP y un switch ninguna?
+> El router tiene una IP en cada interfaz porque cada una pertenece a una subred distinta. El switch trabaja en la capa 2 y no necesita dirección IP.
 
+> [!question]- ¿Por qué se reemplazaron las clases por CIDR?
+> Porque las clases tenían tamaños fijos (8, 16 o 24 bits de red) y se desperdiciaban direcciones. CIDR permite máscaras de cualquier largo.
