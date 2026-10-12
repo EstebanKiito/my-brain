@@ -40,6 +40,7 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | 🟡 | [[02 - Señales comunes y mecanismos de control SIGTERM, SIGKILL y SIGINT\|Señales comunes y mecanismos de control SIGTERM, SIGKILL y SIGINT]] | "SIGCOM: Continua" | Errata evidente por `SIGCONT` (señal POSIX número 18), encargada de reanudar un proceso suspendido. |
 | ℹ️ | [[01 - Concepto de señal y ciclo de vida de señales POSIX\|Concepto de señal y ciclo de vida de señales POSIX]] | "SigStopy" | Errata tipográfica por `SIGSTOP` o `SIGTSTP`. Preservada intacta en la cita textual. |
 | ℹ️ | [[02 - Señales comunes y mecanismos de control SIGTERM, SIGKILL y SIGINT\|Señales comunes y mecanismos de control SIGTERM, SIGKILL y SIGINT]] | "SIGSTP: Stop" | Errata tipográfica por `SIGTSTP` / `SIGSTOP`. Preservada en la cita textual. |
+| 🟡 | [[02 - Señales comunes y mecanismos de control SIGTERM, SIGKILL y SIGINT\|Señales comunes y mecanismos de control SIGTERM, SIGKILL y SIGINT]] | "SIGINT: Interrumpe → (Le puedo mandar cosas) → Es como Esperame un poco" (reescritura) | La analogía "espérame un poco" corresponde más a detener (`SIGTSTP`/`SIGSTOP`) que a `SIGINT`: la acción por defecto de `SIGINT` (`Ctrl+C`) es **terminar**, aunque el programa puede capturarla. El material de clase no trata `SIGINT`. La nota usa el comportamiento estándar POSIX y no incluye la analogía. Confirma qué quisiste anotar. |
 
 ## Hilos
 | Estado | Nota | Original | Duda / corrección propuesta |

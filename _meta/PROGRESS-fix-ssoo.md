@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 20 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 04-Señales e IPC/01 - Concepto de señal y ciclo de vida de señales POSIX.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 21 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 04-Señales e IPC/02 - Señales comunes y mecanismos de control SIGTERM, SIGKILL y SIGINT.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -33,7 +33,7 @@ Reescritas hasta ahora: 20 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 18 | 03-Planificación de CPU/04 - Planificación Round Robin y sistemas interactivos.md | reescrita | 118 líneas; 2 imágenes; Python ok |
 | 19 | 03-Planificación de CPU/05 - Planificación por prioridad y colas multinivel (MLFQ).md | reescrita | 82 líneas; 2 imágenes; Mermaid ok |
 | 20 | 04-Señales e IPC/01 - Concepto de señal y ciclo de vida de señales POSIX.md | reescrita | 93 líneas; C y Mermaid ok |
-| 21 | 04-Señales e IPC/02 - Señales comunes y mecanismos de control SIGTERM, SIGKILL y SIGINT.md | pendiente | |
+| 21 | 04-Señales e IPC/02 - Señales comunes y mecanismos de control SIGTERM, SIGKILL y SIGINT.md | reescrita | 89 líneas; C ok; 1 duda |
 | – | 04-Señales e IPC/03 - Comunicación entre procesos y manejo de señales en C.md | sin marca | nota modelo |
 | 22 | 05-Hilos/01 - Concepto de hilo y recursos compartidos versus privados.md | pendiente | |
 | 23 | 05-Hilos/02 - Programación con POSIX Threads y ciclo de vida.md | pendiente | |
@@ -150,3 +150,4 @@ Reescritas hasta ahora: 20 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **03/04 Round Robin**: 118 líneas, 2 imágenes comprobadas. Simulador RR en Python que reproduce 13,9/0,9 del material, y con q=100 degenera en FCFS (9,9/4,9). Se quitaron los rangos numéricos de quantum y del costo de cambio de contexto ("10-100 ms", "<10 µs") porque no están en el material y no eran seguros. Sin dudas nuevas.
 - **03/05 Prioridad y MLFQ**: 82 líneas, 2 imágenes comprobadas, tabla de las reglas R1-R5 con su propósito, 1 Mermaid (válido). Se agregaron los otros schedulers del material de clase (Lottery, Fair Share, O(1), BFS). Se quitó el recordatorio personal sobre la clase de paginación. Sin dudas nuevas.
 - **04/01 Concepto de señal**: 93 líneas, tabla de las 4 señales de tus apuntes, 1 Mermaid (válido), ejemplo C con `kill` + `WIFSIGNALED` (compila y corre: imprime 15). "SigStopy" se corrigió a `SIGSTOP`/`SIGTSTP`. Se omitió "kill -l lista 64 señales" porque el número exacto depende del sistema. Sin dudas nuevas.
+- **04/02 Señales comunes**: 89 líneas, tabla de señales, mnemotecnia "TERM pregunta, KILL impone", ejemplo C con `sigaction`: captura SIGTERM, y el intento sobre SIGKILL falla con EINVAL (verificado). Solo se dan los números portables (2, 9, 11, 15); los de STOP/TSTP/CONT/CHLD del complemento eran de Linux x86 y en macOS son otros. SIGCOM se corrigió a SIGCONT y SIGSTP a SIGTSTP. Duda nueva 🟡: la analogía "espérame un poco" para SIGINT.
