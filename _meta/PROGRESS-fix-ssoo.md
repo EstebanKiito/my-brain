@@ -15,7 +15,7 @@ Notas con marca detectadas: 95 de 100.
 | 3 | 01-Estructura de sistemas operativos/03 - Arquitecturas de kernel monolítico y microkernel.md | pendiente | |
 | 4 | 01-Estructura de sistemas operativos/04 - Interrupciones y excepciones.md | pendiente | |
 | 5 | 01-Estructura de sistemas operativos/05 - Llamadas al sistema.md | pendiente | |
-| 6 | 01-Estructura de sistemas operativos/06 - Arranque del sistema computacional.md | pendiente (piloto) | |
+| 6 | 01-Estructura de sistemas operativos/06 - Arranque del sistema computacional.md | reescrita (piloto) | 74 líneas; Mermaid ok |
 | 7 | 01-Estructura de sistemas operativos/07 - Multitasking y fundamentos de multiprocesamiento.md | pendiente | |
 | 8 | 02-Procesos/01 - Concepto de proceso y espacio de memoria.md | pendiente | |
 | 9 | 02-Procesos/02 - Bloque de control de procesos y tabla de procesos.md | pendiente | |
@@ -127,3 +127,4 @@ Notas con marca detectadas: 95 de 100.
 
 ## Registro por nota
 
+- **01/06 Arranque** (conceptual): 74 líneas, 1 Mermaid (parse ok), 1 tabla. Reincorporados: PC y firmware en ROM/NVRAM, `vmlinuz`, `initramfs`, `grubx64.efi`, GUID, ring 0. Omitido: "ejecutables de 64 bits" (UEFI de 32 bits también existe). Sin dudas nuevas.
