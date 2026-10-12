@@ -173,6 +173,7 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
 | ℹ️ | [[03 - Conmutación en redes locales (Switches L2, STP) y VLANs\|Conmutación en redes locales (Switches L2, STP) y VLANs]] | "trafico de pquetes" | Errata tipográfica ("pquetes" por paquetes). |
+| ℹ️ | [[04 - Fundamentos de seguridad en redes: amenazas, ataques y defensas\|Fundamentos de seguridad en redes: amenazas, ataques y defensas]] | (reescritura) Los apuntes solo dicen "Problemas y casos típicos de fallas de seguridad" y "Estrategias sobre seguridad"; las diapositivas de la charla de seguridad no están en el material disponible | La nota se construyó con el contenido del complemento (tríada, ataques, criptografía, firewalls, seguridad L2), que no se pudo contrastar con el material de clase. Conviene revisarla contra las diapositivas de la charla. |
 
 ## Gestión del curso
 | Estado | Nota | Original | Duda / corrección propuesta |

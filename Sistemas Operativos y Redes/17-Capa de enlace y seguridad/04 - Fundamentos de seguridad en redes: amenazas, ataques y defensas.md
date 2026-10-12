@@ -8,58 +8,80 @@ tags:
   - criptografia
   - ataques
   - defensas
+  - origen/complemento
 prerrequisitos:
   - "[[17-Capa de enlace y seguridad/03 - Conmutación en redes locales (Switches L2, STP) y VLANs|03 - Conmutación en redes locales (Switches L2, STP) y VLANs]]"
 ---
 
 # Fundamentos de seguridad en redes: amenazas, ataques y defensas
 
-La **seguridad computacional en redes** aborda la protección de los canales de comunicación y de los sistemas interconectados frente a adversarios activos o pasivos. Históricamente, muchos protocolos fundacionales de Internet (como IP, ARP, DNS y HTTP) fueron diseñados sin mecanismos criptográficos intrínsecos de autenticación o privacidad, asumiendo un entorno cooperativo de confianza. Por ello, la seguridad actual opera bajo una estrategia de **defensa en profundidad** (*Defense in Depth*) a lo largo de todas las capas de la pila protocolar.
+Casi todos los protocolos vistos en el curso (IP, ARP, DNS, HTTP) se diseñaron suponiendo que todos en la red cooperan: no autentican a nadie ni cifran nada. Esta nota repasa los **casos típicos de fallas de seguridad** que eso permite y las **estrategias** para defenderse. La idea de fondo es la **defensa en profundidad** (*defense in depth*): proteger cada capa, sin confiar en una sola barrera.
 
----
+## Qué se quiere proteger
 
-## Amenazas y estrategias de seguridad (mis apuntes)
+Confidencialidad, integridad y disponibilidad forman la llamada tríada CIA (*confidentiality, integrity, availability*); a menudo se agrega la autenticación.
 
-CHARLA SEGURIDAD
-Anotar lo mas importante → No hay videos del profe RUZ , pero la SLIDES tiene lo importante
-- Problemas y Casos tipicos de FALLAS DE SEGURIDAD
-- Estrategias Sobre SEGURIDAD
+| Propiedad | Pregunta que responde | Herramienta típica |
+|---|---|---|
+| **Confidencialidad** | ¿Solo el destinatario puede leer el mensaje? | Cifrado |
+| **Integridad** | ¿El mensaje llegó sin modificaciones? | Firmas digitales, HMAC |
+| **Autenticación** | ¿Quien habla es quien dice ser? | Certificados, claves públicas |
+| **Disponibilidad** | ¿El servicio sigue funcionando ante fallas o ataques? | Redundancia, filtrado de tráfico |
 
-> [!tip] Complemento de clase: Pilares fundamentales de la seguridad (Tríada CIA)
-> Toda arquitectura de seguridad informática busca garantizar cuatro propiedades fundamentales:
-> 1. **Confidencialidad**: Garantizar que la información transmitida solo sea legible por los destinatarios autorizados mediante técnicas de cifrado.
-> 2. **Integridad**: Comprobar que los mensajes recibidos no han sido modificados, truncados o inyectados fraudulentamente en tránsito.
-> 3. **Autenticación**: Validar con certeza matemática la identidad del emisor o de la entidad remota antes de conceder acceso a recursos o procesar datos.
-> 4. **Disponibilidad**: Garantizar que los servidores, interfaces y servicios de red permanezcan operativos y accesibles ante fallos o agresiones maliciosas.
+## Ataques típicos
 
-> [!tip] Complemento de clase: Taxonomía de ataques comunes en redes
-> - **Sniffing (Espionaje pasivo)**: Interceptación y lectura de tramas en medios compartidos o mediante herramientas como Wireshark. Si los protocolos transmiten credenciales en texto plano (como HTTP o Telnet), la información queda expuesta de inmediato.
-> - **ARP Spoofing / Envenenamiento ARP**: Un atacante en la red local emite respuestas ARP gratuitas falsificadas asociando la IP del router con su propia MAC. Esto canaliza todo el tráfico saliente a través del atacante en un ataque de **Hombre en el Medio** (*Man-in-the-Middle*, MitM).
-> - **IP Spoofing**: Inyección de paquetes IP con direcciones de origen falsas para saltarse listas de control de acceso o redirigir respuestas a víctimas involuntarias.
-> - **Ataques de Denegación de Servicio (DoS / DDoS)**: Inundación masiva de tráfico coordinada mediante botnets. Ejemplos clásicos:
->   - **TCP SYN Flood**: Envío de oleadas de paquetes SYN sin completar el handshake de 3 vías, agotando la tabla de conexiones pendientes (*backlog queue*) del servidor.
->   - **Ataques de amplificación**: Envío de peticiones UDP (DNS, NTP) con IP de origen falsificada hacia servidores públicos que devuelven respuestas desproporcionadamente grandes hacia la víctima.
+Cada ataque explota algo que ya vimos que un protocolo **no verifica**:
 
-> [!tip] Complemento de clase: Estrategias de mitigación y defensa en profundidad
-> 1. **Criptografía**:
->    - **Cifrado simétrico** (AES): Utiliza una misma clave secreta compartida; es óptimo por su alta velocidad de procesamiento para flujos masivos de datos.
->    - **Cifrado asimétrico** (RSA, curvas elípticas): Utiliza un par de claves (pública y privada); se usa para autenticación y para establecer claves simétricas de sesión de forma segura.
->    - **Firmas digitales y HMAC**: Proveen integridad irrefutable y no repudio.
-> 2. **Protocolos seguros de aplicación y transporte**: Implementación obligatoria de **TLS** (*Transport Layer Security*) sobre TCP para encapsular HTTP (formando HTTPS), SMTP y DNS (DoT/DoH).
-> 3. **Cortafuegos (Firewalls)**: Dispositivos o software que inspeccionan paquetes en el perímetro:
->    - *Stateless*: Filtran por tuplas simples (IPs, puertos, flags TCP).
->    - *Stateful*: Realizan seguimiento del estado de cada conexión TCP para bloquear tráfico entrante que no responda a una petición legítima interna.
-> 4. **Seguridad en conmutación local**: Mecanismos como *DHCP Snooping*, *Dynamic ARP Inspection* (DAI) y *Port Security* en switches L2 para evitar envenenamiento de tablas y spoofing de direcciones.
+- **Sniffing** (espionaje pasivo): leer los frames que pasan por un medio compartido, por ejemplo con Wireshark. Si un protocolo envía credenciales en texto plano (HTTP, Telnet), quedan expuestas.
+- **ARP spoofing** (envenenamiento ARP): [[02 - Direcciones MAC, protocolo ARP y trama Ethernet|ARP]] acepta cualquier respuesta. Un atacante de la LAN envía respuestas falsas que asocian la IP del router con **su** MAC; las víctimas actualizan su tabla y le mandan todo su tráfico. Es un ataque de **hombre en el medio** (*man-in-the-middle*, MitM). Es un pariente del *switch poisoning*, que afecta la [[03 - Conmutación en redes locales (Switches L2, STP) y VLANs|tabla del switch]].
+- **IP spoofing**: enviar paquetes con una IP de origen falsa, para saltarse listas de acceso o para que las respuestas le lleguen a otra víctima.
+- **Denegación de servicio** (DoS, o DDoS si es coordinado desde una *botnet*): saturar a la víctima para que no atienda a nadie.
+  - **TCP SYN flood**: enviar muchos SYN sin completar el [[14-Capa de transporte/07 - Gestión de temporizadores, retransmisión rápida y handshake en TCP|handshake]]. Como el servidor asigna buffers en el segundo paso, se le agota la cola de conexiones pendientes (*backlog*).
+  - **Amplificación**: enviar consultas UDP pequeñas (DNS, NTP) con la IP de la víctima como origen falso; los servidores le responden a ella con respuestas mucho más grandes.
 
----
+## Estrategias de defensa
+
+**1. Criptografía.**
+
+- **Cifrado simétrico** (AES): una misma clave secreta para cifrar y descifrar. Es rápido, ideal para grandes volúmenes de datos, pero ambos lados deben compartir la clave.
+- **Cifrado asimétrico** (RSA, curvas elípticas): un par de claves, pública y privada. Es lento, así que se usa para autenticar y para acordar una clave simétrica de sesión.
+- **Firmas digitales y HMAC**: garantizan integridad; las firmas además impiden negar la autoría (no repudio).
+
+**2. Protocolos seguros.** **TLS** (*Transport Layer Security*) va sobre TCP y protege a la aplicación: HTTP sobre TLS es HTTPS, y también se usa con SMTP y DNS. Combina ambos cifrados: el asimétrico al inicio y el simétrico para los datos.
+
+**3. Firewalls.** Inspeccionan los paquetes en el borde de la red:
+
+- *stateless*: filtran cada paquete por sí solo, según IP, puertos y flags TCP;
+- *stateful*: recuerdan las conexiones abiertas desde adentro y solo dejan entrar lo que responde a ellas.
+
+```python
+conexiones = set()          # conexiones iniciadas desde adentro: (ip_int, p_int, ip_ext, p_ext)
+
+def sale(ip_int, p_int, ip_ext, p_ext):
+    conexiones.add((ip_int, p_int, ip_ext, p_ext))
+    return "permitido"
+
+def entra(ip_ext, p_ext, ip_int, p_int):
+    """Stateful: solo deja pasar respuestas a conexiones que alguien de adentro abrió."""
+    return "permitido" if (ip_int, p_int, ip_ext, p_ext) in conexiones else "descartado"
+
+print(sale("192.168.1.86", 8120, "64.233.186.90", 443))    # permitido
+print(entra("64.233.186.90", 443, "192.168.1.86", 8120))   # permitido: es una respuesta
+print(entra("203.0.113.9", 4444, "192.168.1.86", 8120))    # descartado: nadie lo pidió
+```
+
+**4. Seguridad en la LAN.** Los switches pueden validar lo que otros protocolos no validan: *DHCP snooping* (solo aceptar ofertas DHCP del puerto del servidor legítimo), *Dynamic ARP Inspection*, DAI (descartar respuestas ARP que no calzan con las asignaciones conocidas) y *port security* (limitar qué MAC pueden usar cada puerto). Las [[03 - Conmutación en redes locales (Switches L2, STP) y VLANs|VLANs]] también ayudan, porque aíslan los broadcasts.
 
 ## Preguntas de repaso
 
-> [!question]- ¿Cómo se ejecuta un ataque de envenenamiento ARP (*ARP Cache Poisoning*) en una red local?
-> El atacante transmite periódicamente mensajes falsos de ARP Reply al host víctima indicando que la dirección IP del *Default Gateway* corresponde a la dirección MAC física del atacante. El host actualiza su caché ARP local y redirige todo su tráfico de salida hacia el atacante.
+> [!question]- ¿Cómo funciona un ataque de envenenamiento ARP?
+> El atacante envía respuestas ARP falsas que asocian la IP del router con su propia MAC. Las víctimas actualizan su tabla ARP y le envían su tráfico, y el atacante queda en medio de la comunicación.
 
-> [!question]- ¿Por qué el cifrado asimétrico se combina habitualmente con el cifrado simétrico en protocolos como TLS/HTTPS en lugar de usar solo cifrado asimétrico?
-> Porque los algoritmos asimétricos (como RSA o Diffie-Hellman) son computacionalmente costosos y lentos. Por ello, solo se usan al inicio para autenticar a los pares y negociar una clave secreta de sesión; una vez acordada, todos los datos subsiguientes se cifran con algoritmos simétricos rápidos como AES.
+> [!question]- ¿Por qué un SYN flood agota los recursos de un servidor?
+> Porque en el handshake el servidor asigna buffers al recibir cada SYN. Si nunca llega el ACK final, esas conexiones a medias llenan la cola de pendientes y no quedan recursos para clientes legítimos.
 
-> [!question]- ¿Cómo mitiga un cortafuegos con inspección de estado (*Stateful Firewall*) los paquetes maliciosos no solicitados?
-> El cortafuegos mantiene una tabla de estados de conexión en memoria. Si recibe un paquete externo entrante (por ejemplo, un segmento TCP con flag ACK) que no corresponde a ninguna conexión previamente iniciada por un host interno, lo descarta inmediatamente.
+> [!question]- ¿Por qué TLS usa cifrado asimétrico y simétrico, y no solo uno?
+> El asimétrico permite autenticar y acordar una clave sin haberla compartido antes, pero es lento. Por eso solo se usa al inicio, y los datos se cifran con el simétrico, que es rápido.
+
+> [!question]- ¿Qué hace un firewall stateful con un paquete entrante que no responde a ninguna conexión?
+> Lo descarta: solo deja entrar paquetes que corresponden a conexiones iniciadas desde la red interna.
