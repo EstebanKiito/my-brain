@@ -8,85 +8,110 @@ tags:
   - selective-repeat
   - pipelining
   - ventana-deslizante
+  - origen/complemento
 prerrequisitos:
   - "[[14-Capa de transporte/04 - Principios de transferencia confiable de datos (rdt 1.0 a rdt 3.0)|04 - Principios de transferencia confiable de datos (rdt 1.0 a rdt 3.0)]]"
 ---
 
 # Protocolos de canalización: Go-Back-N y Selective Repeat
 
-Para superar la ineficiencia del modelo *Stop-and-Wait*, los protocolos de transporte modernos implementan canalización (*pipelining*), permitiendo transmitir múltiples paquetes consecutivos sin esperar confirmaciones intermedias. Los dos enfoques fundamentales de ventana deslizante son **Go-Back-N (GBN)**, que utiliza confirmaciones acumulativas y retransmisión de grupo, y **Selective Repeat (SR)**, que gestiona confirmaciones individuales y almacenamiento en búfer receptor.
+[[14-Capa de transporte/04 - Principios de transferencia confiable de datos (rdt 1.0 a rdt 3.0)|rdt 3.0]] funciona, pero envía un paquete a la vez y espera su ACK (*stop-and-wait*), así que desperdicia casi todo el enlace. La solución es enviar **una serie de paquetes seguidos**, en modo ***pipeline***, sin esperar cada ACK. Eso exige más:
 
----
+- números de secuencia **incrementales** (ya no basta 1 bit);
+- **buffers** en el emisor y en el receptor;
+- una política para cuando se pierde un paquete intermedio: **cuánto retroceder**. Hay dos enfoques, Go-Back-N y Selective Repeat.
 
-## Modelos de canalización (mis apuntes)
+## La ventana
 
-En la practica, no se manda solo un paquete, los protocolos funcionan con un modo STOP-WAIT
-Envia una SERIE DE PAQUETES, en modo PIPELINED y ahi ver si uno falla, ver cuanto retrocedo
-Usamos buffers, si se pierde un intermedio → Generara problemas
+El emisor puede tener hasta **N paquetes sin ACK**: $N$ es el **tamaño de la ventana** (*window size*).
 
-GO-BACK-N
-Emisor puede mantener hasta N paquetes sin ACK
-Receptor envia ACK por el ultimo paquete recibido CORRECTamente
-Emisor usa un TIMER para parquete mas ANTIGUO SIN ACK
-- Si el timer expira, se retrasmite → TODO EL GRUPO SIN ACK
-- Base : El paquete mas antiguo sin ACK
-- nextseqnum: Proximo numero de secuencia a usar
-- Ejemplo con N = 4
-- N es un WINDOW SIZE
+- **base**: el número de secuencia más antiguo sin ACK;
+- **nextseqnum**: el próximo número de secuencia a usar.
 
-![Protocolo de canalización Go-Back-N con ventana deslizante en emisor](adjuntos/Protocolo%20de%20canalización%20Go-Back-N%20con%20ventana%20deslizante%20en%20emisor.png)
+La ventana cubre los números $[base,\ base + N - 1]$.
+
+![Protocolo de canalización Go-Back-N con ventana deslizante en emisor](adjuntos/Protocolo%20de%20canalizaci%C3%B3n%20Go-Back-N%20con%20ventana%20deslizante%20en%20emisor.png)
 
 > [!example]- Transcripción de la imagen
-> Ventana deslizante en Go-Back-N (GBN):
-> - `base`: Secuencia del paquete más antiguo transmitido y aún no confirmado.
-> - `nextseqnum`: Próximo número de secuencia disponible para transmitir.
-> - Tamaño de ventana $N$: Límite máximo de paquetes en vuelo sin confirmar (`[base, base + N - 1]`).
+> Una fila de números de secuencia. A la izquierda, en verde, los que ya tienen *ACK recibidos*. Desde **base** ("Núm. Sec. más antiguo sin ACK"), en amarillo, los de *ACK pendientes*. Desde **nextseqnum** ("Próximo número de secuencia a usar"), en azul, los *usables, aún no enviados*. Los de la derecha, en blanco, son *no usables*. Entre base y el final de los azules está el *tamaño de ventana N*.
+
+## Go-Back-N
+
+- El receptor envía un **ACK por el último paquete recibido correctamente en orden** (ACK acumulativo); descarta los que llegan fuera de orden.
+- El emisor usa **un timer**, para el paquete **más antiguo sin ACK**.
+- Si el timer expira, **retransmite todo el grupo sin ACK**: vuelve atrás N.
 
 ![Diagrama de flujo y ventana deslizante en protocolo Go-Back-N](adjuntos/Diagrama%20de%20flujo%20y%20ventana%20deslizante%20en%20protocolo%20Go-Back-N.png)
 
 > [!example]- Transcripción de la imagen
-> Flujo de paquetes en GBN: Si un paquete (ej. pkt2) se pierde, el receptor descarta silenciosamente los paquetes posteriores fuera de orden (pkt3, pkt4, pkt5) y reenvía repetidamente el ACK del último paquete consecutivo (ACK 1). Al expirar el timer de la base, el emisor retransmite todos los paquetes desde la base (`pkt2, pkt3, pkt4, pkt5`).
+> Con N = 4: el emisor envía pkt0, pkt1, pkt2 (se pierde, *X loss*) y pkt3, y espera. El receptor confirma pkt0 y pkt1 (ACK0, ACK1), pero al recibir pkt3 lo descarta y reenvía ACK1. Al recibir ACK0 y ACK1, el emisor envía pkt4 y pkt5, que también se descartan con ACK1. Al expirar el timeout de pkt2, el emisor reenvía pkt2, pkt3, pkt4 y pkt5, que ahora se entregan (ACK2, ACK3…).
 
-- Fijate que los Acks que devuelven el receptor, es 1 porque todavia no recibe el pkt2 (paquete 2), hasta que no lo reciba, no va a dar otro ACK
+Los ACK que devuelve el receptor siguen siendo **ACK 1** mientras no reciba pkt2: hasta que no lo reciba, no confirma nada nuevo.
 
-SELECTED-REPEAT
-Tiene una ventana tanto en el emisor como en el Receptor
-Recpetor No va a hacer avanzar la ventana, hasta que haya recibido todos los paquetes enviados del emisor
+## Selective Repeat
+
+- **Emisor y receptor** tienen ventana.
+- El receptor envía **ACK por cada paquete individual** y **guarda en buffer** los que llegan fuera de orden.
+- El emisor tiene **un timer por cada paquete sin ACK** y, si expira, **solo retransmite ese paquete** (no todos).
+- El receptor **no avanza su ventana** hasta recibir el paquete que falta; cuando llega, entrega todo el bloque.
 
 ![Protocolo Selective Repeat con ventanas en emisor y receptor](adjuntos/Protocolo%20Selective%20Repeat%20con%20ventanas%20en%20emisor%20y%20receptor.png)
 
 > [!example]- Transcripción de la imagen
-> Ventanas en Selective Repeat (SR): Tanto el emisor como el receptor mantienen ventanas de tamaño $N$. El receptor almacena en búfer los paquetes que llegan fuera de orden en lugar de descartarlos, esperando los faltantes para entregar los datos en orden a la capa de aplicación.
-
-- Emisor puede mantener hasta N paquetes sin ACK
-- Receptor envia ACK para cada paquete Individual!
+> **a) Vista del transmisor**: desde *send_base* hasta *send_base + N*, mezcla de *ACK pendientes* (amarillo) y *con ACK recibidos* (verde, también dentro de la ventana), y luego *usable, aún no enviados* desde *nextseqnum*. **b) Vista del receptor**: desde *rcv_base*, el *esperado, aún no recibido* (gris), los *fuera de orden (almacenados) con ACK enviado* (rosado) y los *aceptables (en ventana)* (azul).
 
 ![Diagrama de eventos y buffers en protocolo Selective Repeat](adjuntos/Diagrama%20de%20eventos%20y%20buffers%20en%20protocolo%20Selective%20Repeat.png)
 
 > [!example]- Transcripción de la imagen
-> Flujo de Selective Repeat: Cada paquete tiene su propio temporizador lógico en el emisor. Al expirar un timeout, únicamente se retransmite el paquete específico no confirmado. Cuando el paquete rezagado llega, el receptor avanza su ventana y entrega todo el bloque consecutivo.
+> Con N = 4 y la ventana `0 1 2 3 4 5 6 7 8 9` sobre cada lado: se pierde pkt2. El receptor guarda pkt3, pkt4 y pkt5 (*buffered*) y envía ACK3, ACK4 y ACK5. Al expirar el timeout de pkt2, el emisor reenvía **solo pkt2**; cuando llega, el receptor entrega pkt2, pkt3, pkt4 y pkt5 juntos, y su ventana salta a 6-9. Al llegar ACK3, el emisor no envía nada nuevo (ya estaba confirmado).
 
-- Emisor cuando recibe el ACK 0, avanza la ventana hacia el 1
-- Receptor no mueve la ventana si no recibe cierto paquete
-- Cuando se perdio el 2, el 3 4 y 5 ya habian sido enviados, por ende cuando lo reciba, la ventana avanza 2 3 4 5 → 6 7 8 9
-- En caso de timer expirado → SOLO SE RETRANSMITEN PAQUETES SIN ACK
-- (NO TODOS)!!!
-- Emisor usa TIMER para paquete mas antiguo
-Implementando estas cosas → Nace TCP
+```python
+def simular(total, N, perdido, selectivo):
+    """N paquetes en vuelo; 'perdido' se pierde la primera vez que se envía."""
+    envios, aceptados = [], set()
+    base, sig, ya_perdido = 0, 0, False
+    while base < total:
+        while sig < min(base + N, total):             # enviar mientras haya ventana
+            envios.append(sig)
+            if sig == perdido and not ya_perdido:
+                ya_perdido = True                     # se pierde en el camino
+            elif selectivo or sig == len(aceptados):  # GBN solo acepta en orden; SR guarda todo
+                aceptados.add(sig)
+            sig += 1
+        if base in aceptados:                         # ACK de la base: la ventana se desliza
+            base += 1
+        elif selectivo:                               # timeout en SR: solo el que falta
+            envios.append(base); aceptados.add(base)
+        else:                                         # timeout en GBN: todo desde la base
+            for p in range(base, sig):
+                envios.append(p); aceptados.add(p)
+    return envios
 
-> [!tip] Complemento de clase: Tamaño de ventana y espacio de secuencias en SR
-> En Selective Repeat, para evitar ambigüedades entre paquetes nuevos y duplicados con el mismo número de secuencia circular, el tamaño de ventana $N$ debe satisfacer $N \le \frac{1}{2} \cdot \text{Espacio de Secuencia}$. Si se usan números de secuencia módulo $K$, entonces $N \le K/2$.
+print(simular(10, 4, 2, selectivo=False))  # 0..5, luego 2 3 4 5, luego 6..9 -> 14 envíos
+print(simular(10, 4, 2, selectivo=True))   # 0..5, luego solo 2, luego 6..9  -> 11 envíos
+```
 
----
+| | Go-Back-N | Selective Repeat |
+|---|---|---|
+| ACK | Acumulativo (último en orden) | Individual por paquete |
+| Fuera de orden | Se descarta | Se guarda en buffer |
+| Timers | Uno (el paquete más antiguo) | Uno por paquete |
+| Al expirar | Reenvía todo desde la base | Reenvía solo ese paquete |
+
+En Selective Repeat, si los números de secuencia se reutilizan módulo $K$, la ventana debe cumplir $N \le K/2$: si no, el receptor podría confundir un paquete nuevo con un duplicado viejo del mismo número.
+
+Implementando estas ideas nace [[06 - Protocolo TCP: estructura del segmento, MSS y confirmación acumulativa|TCP]], que combina ambos: ACK acumulativos como Go-Back-N, pero guardando en buffer lo que llega fuera de orden, y con la opción de ACK selectivos (SACK, RFC 2018).
 
 ## Preguntas de repaso
 
-> [!question]- ¿Por qué Go-Back-N descarta los paquetes recibidos fuera de orden aunque no tengan errores de bit?
-> Porque el receptor GBN no mantiene búfer de recepción; al no poder almacenar paquetes fuera de orden, simplifica el diseño del receptor exigiendo únicamente recordar el número de secuencia del próximo paquete esperado.
+> [!question]- ¿Qué problema de rdt 3.0 resuelve el pipelining y qué exige?
+> Que el emisor pase casi todo el tiempo esperando ACKs. Permite tener hasta N paquetes en vuelo, y para eso exige números de secuencia incrementales y buffers en emisor y receptor.
 
-> [!question]- ¿Cuál es la principal ventaja de Selective Repeat frente a Go-Back-N en enlaces con alta tasa de pérdida?
-> La eficiencia de ancho de banda: solo retransmite los paquetes individuales que realmente se perdieron, evitando el reenvío redundante de decenas de paquetes que el receptor ya había recibido correctamente.
+> [!question]- En Go-Back-N con N = 4, si se pierde pkt2, ¿qué se retransmite?
+> Todo lo enviado desde la base: pkt2, pkt3, pkt4 y pkt5, porque el receptor descartó los que llegaron fuera de orden.
 
-> [!question]- ¿Cómo se compara el mecanismo de confirmación de TCP con GBN y Selective Repeat?
-> TCP es un híbrido: utiliza confirmaciones acumulativas (*Cumulative ACKs*) y un solo temporizador como GBN, pero almacena paquetes fuera de orden en un búfer receptor y soporta confirmaciones selectivas (SACK, RFC 2018) similar a Selective Repeat.
+> [!question]- ¿Por qué Selective Repeat retransmite menos?
+> Porque el receptor guarda los paquetes fuera de orden y confirma cada uno: el emisor solo reenvía el que no recibió ACK.
 
+> [!question]- ¿Cuándo avanza la ventana del receptor en Selective Repeat?
+> Solo cuando recibe el paquete esperado (el de la base); en ese momento entrega ese paquete y todos los que tenía guardados a continuación.
