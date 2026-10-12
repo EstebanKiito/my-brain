@@ -7,85 +7,105 @@ tags:
   - pthreads
   - c
   - posix
+  - origen/complemento
 prerrequisitos:
   - "[[01 - Concepto de hilo y recursos compartidos versus privados]]"
 ---
 
 # Programación con POSIX Threads y ciclo de vida
 
-La API estándar para la gestión de hilos en sistemas tipo UNIX es **POSIX Threads** (definida en el estándar IEEE 1003.1c y conocida comúnmente como `pthreads`). Proporciona funciones de biblioteca para la creación, sincronización y finalización controlada de hilos.
+Para crear y coordinar threads en C, los sistemas tipo UNIX ofrecen la biblioteca estándar **POSIX Threads** o **`pthreads`** (estándar IEEE 1003.1c). Sus operaciones son análogas a las de procesos: crear, terminar, esperar y ceder la CPU.
 
----
+## Las funciones principales
 
-## Funciones (Mas Usadas en Threads) (mis apuntes)
+| Función | Qué hace | Análogo en procesos |
+|---|---|---|
+| `pthread_create` | **Crea** un nuevo thread, que ejecuta la función indicada | `fork()` |
+| `pthread_exit` | **Termina** el thread que la llama (solo ese thread) | `exit()` |
+| `pthread_join` | **Espera** a que un thread específico termine y recoge su valor de retorno | `wait()` |
+| `pthread_yield` | **Cede la CPU** a otro thread: le pasa el turno | — |
+| `pthread_attr_init` / `pthread_attr_destroy` | Crea o elimina la estructura de **atributos** de un thread | — |
 
-> - pthread_create: Crea un nuevo Thread
-> - pthread_join: Espera un Thread
-> - pthread_yield: Le pasa a la CPU o otro Thread → Pasarle el turno a otro Thread
-> 
-> OPERACIONES → FUNCIONES
-> 
-> ![Funciones principales de la biblioteca POSIX Threads](adjuntos/Funciones%20principales%20de%20la%20biblioteca%20POSIX%20Threads.png)
+![Funciones principales de la biblioteca POSIX Threads](adjuntos/Funciones%20principales%20de%20la%20biblioteca%20POSIX%20Threads.png)
 
----
+> [!example]- Transcripción de la imagen
+> "POSIX THREADS. Estándar IEEE 1003.1c. Librería pthreads". Tabla *Thread call* / *Description*: `Pthread_create`: *Create a new thread* · `Pthread_exit`: *Terminate the calling thread* · `Pthread_join`: *Wait for a specific thread to exit* · `Pthread_yield`: *Release the CPU to let another thread run* · `Pthread_attr_init`: *Create and initialize a thread's attribute structure* · `Pthread_attr_destroy`: *Remove a thread's attribute structure*.
 
-> [!example]- Transcripción de la imagen: Funciones principales de la biblioteca POSIX Threads.png
-> **Llamadas del estándar POSIX Threads (IEEE 1003.1c):**
-> 
-> | Llamada (*Thread call*) | Descripción formal |
-> | :--- | :--- |
-> | **`pthread_create`** | Crea y pone en marcha un nuevo hilo (*Create a new thread*). |
-> | **`pthread_exit`** | Termina la ejecución del hilo invocador (*Terminate the calling thread*). |
-> | **`pthread_join`** | Bloquea al llamador hasta que un hilo específico finaliza (*Wait for a specific thread to exit*). |
-> | **`pthread_yield`** | Cede voluntariamente la CPU para permitir la ejecución de otro hilo listo (*Release the CPU to let another thread run*). |
-> | **`pthread_attr_init`** | Crea e inicializa la estructura de atributos del hilo (*Create and initialize a thread's attribute structure*). |
-> | **`pthread_attr_destroy`** | Elimina la estructura de atributos de un hilo (*Remove a thread's attribute structure*). |
+Para ceder la CPU en código real se usa `sched_yield()` (de `<sched.h>`), porque `pthread_yield` no está disponible en todos los sistemas.
 
----
+## Ciclo de vida de un thread
 
-> [!tip] Complemento: Ejemplo clásico de hilos en lenguaje C
-> Para compilar código que utiliza POSIX Threads en GCC o Clang se requiere la bandera `-pthread`:
-> 
-> ```c
-> #include <stdio.h>
-> #include <stdlib.h>
-> #include <pthread.h>
-> 
-> void* tarea_hilo(void* arg) {
->     int id = *(int*)arg;
->     printf("Hilo %d ejecutando de forma concurrente\n", id);
->     pthread_exit(NULL); // Termina el hilo devolviendo un puntero de retorno
-> }
-> 
-> int main() {
->     pthread_t hilo1, hilo2;
->     int id1 = 1, id2 = 2;
-> 
->     // Crear hilos pasando la función de entrada y su argumento
->     pthread_create(&hilo1, NULL, tarea_hilo, &id1);
->     pthread_create(&hilo2, NULL, tarea_hilo, &id2);
-> 
->     // Esperar a que ambos hilos concluyan (análogo a wait en procesos)
->     pthread_join(hilo1, NULL);
->     pthread_join(hilo2, NULL);
-> 
->     printf("Ambos hilos finalizaron exitosamente.\n");
->     return 0;
-> }
-> ```
-> 
-> * **Similitud funcional:** `pthread_create()` cumple un rol similar a `fork()`, mientras que `pthread_join()` opera de forma análoga a `wait()`, evitando que un hilo termine sin entregar su código de salida.
+```mermaid
+sequenceDiagram
+  participant M as main
+  participant T as thread
+  M->>T: pthread_create(&t, NULL, f, arg)
+  Note over T: ejecuta f(arg), puede ceder la CPU
+  M->>M: sigue trabajando en paralelo
+  T-->>M: pthread_exit(resultado) o return
+  M->>M: pthread_join(t, &resultado)
+```
 
----
+La función que ejecuta un thread tiene la firma `void *f(void *arg)`. Se usa `void *` para poder **recibir y devolver cualquier tipo de dato**: se le pasa un puntero a lo que necesite y devuelve un puntero a su resultado, que el creador recibe con `pthread_join`.
+
+## Ejemplo: sumar un arreglo con dos threads
+
+```c
+#include <pthread.h>
+#include <sched.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+#define N 1000
+int datos[N];
+
+typedef struct { int desde, hasta; } Rango;
+
+void *sumar(void *arg) {
+    Rango *r = arg;
+    long *total = malloc(sizeof *total);          /* el resultado debe sobrevivir al thread */
+    *total = 0;
+    for (int i = r->desde; i < r->hasta; i++) {
+        *total += datos[i];
+        if (i % 100 == 0) sched_yield();          /* ceder la CPU de vez en cuando (opcional) */
+    }
+    pthread_exit(total);                          /* equivale a: return total; */
+}
+
+int main(void) {
+    for (int i = 0; i < N; i++) datos[i] = i + 1;
+    pthread_t t[2];
+    Rango r[2] = { {0, N / 2}, {N / 2, N} };
+    for (int k = 0; k < 2; k++)
+        pthread_create(&t[k], NULL, sumar, &r[k]);
+    long suma = 0;
+    for (int k = 0; k < 2; k++) {
+        void *res;
+        pthread_join(t[k], &res);                 /* espera al thread y recibe su resultado */
+        suma += *(long *)res;
+        free(res);
+    }
+    printf("suma = %ld\n", suma);                 /* 500500 */
+    return 0;
+}
+```
+
+Se compila con `gcc -Wall -pthread`. Cada thread suma su mitad del arreglo **sin tocar datos del otro**, así que no hace falta sincronización: los threads solo leen `datos` (compartido) y escriben en su propio `total`.
+
+> [!warning] Errores típicos
+> - **No devolver un puntero a una variable local:** vive en el stack del thread y desaparece cuando el thread termina. Por eso el ejemplo usa `malloc`.
+> - **`exit()` no es `pthread_exit()`:** `exit()` termina el **proceso completo**, con todos sus threads. Lo mismo pasa si `main` retorna sin hacer `pthread_join`: los demás threads mueren con el proceso.
 
 ## Preguntas de repaso
 
-> [!question]- ¿Qué rol cumple la función pthread_join() y qué sucedería si el hilo principal (main) termina sin invocarla?
-> `pthread_join()` bloquea la ejecución del hilo llamador hasta que el hilo objetivo especificado finalice, permitiendo recolectar su valor de retorno. Si la función `main()` termina con `exit()` o `return 0` sin esperar a sus hilos con `pthread_join()`, todo el proceso es destruido por el kernel y todos los hilos secundarios mueren de inmediato.
+> [!question]- ¿Qué hace `pthread_join` y a qué syscall de procesos se parece?
+> Bloquea al llamador hasta que el thread indicado termine y recoge su valor de retorno. Es el análogo de `wait()` para procesos.
 
-> [!question]- ¿Por qué pthread_create() recibe funciones con firma void* (*)(void*)?
-> Porque utiliza punteros genéricos `void*` tanto para recibir cualquier tipo de estructura de datos como parámetro de entrada, como para devolver cualquier resultado o estructura de retorno a través de `pthread_join()`.
+> [!question]- ¿Por qué la función de un thread recibe y devuelve `void *`?
+> Porque `void *` es un puntero genérico: permite pasarle cualquier estructura como argumento y devolver cualquier resultado, sin que la biblioteca tenga que conocer los tipos.
 
-> [!question]- ¿Cuál es la diferencia entre pthread_exit() y exit()?
-> `pthread_exit()` termina únicamente el hilo que invoca la función, permitiendo que los demás hilos del proceso continúen ejecutando normalmente. Por el contrario, la llamada a `exit()` finaliza el proceso completo en el sistema operativo, cancelando forzosamente todos los hilos en ejecución.
+> [!question]- ¿Qué diferencia hay entre `pthread_exit()` y `exit()`?
+> `pthread_exit()` termina solo el thread que la llama y los demás siguen. `exit()` termina el proceso entero, con todos sus threads.
 
+> [!question]- ¿Por qué en el ejemplo el resultado se reserva con `malloc` y no como variable local?
+> Porque una variable local está en el stack del thread, que se libera al terminar este. El puntero que recibiría `pthread_join` apuntaría a memoria inválida.

@@ -4,86 +4,71 @@ tema: "Fundamentos de redes y modelos en capas"
 tags:
   - redes/fundamentos
   - redes/arquitectura
-  - origen/apuntes
   - origen/complemento
 prerrequisitos:
-  - "[[Sistemas Operativos y Redes/01-Estructura de sistemas operativos/01 - Qué es un sistema operativo\|01 - Qué es un sistema operativo]]"
+  - "[[Sistemas Operativos y Redes/01-Estructura de sistemas operativos/01 - Qué es un sistema operativo|01 - Qué es un sistema operativo]]"
 ---
 
 # Arquitectura de Internet, nodos, enlaces y protocolos
 
-Internet constituye una red global de redes interconectadas que permite la comunicación entre procesos distribuidos mediante la conmutación de paquetes y un conjunto riguroso de protocolos.
+¿Para qué sirven las redes de datos? Para que **un proceso se comunique con otro**. Si el otro proceso está en la misma máquina, basta con un pipe o memoria compartida. Si está en otra, aparecen preguntas nuevas: dónde está el otro proceso, por qué medio se envía (¿cable?, ¿aire?), cómo se expresa el mensaje en ese medio, si se manda completo, a quién se le transmite, cómo se encamina hasta el destinatario y si este está dispuesto a recibirlo. Las redes responden esas preguntas.
 
-## Elementos de una red y protocolos (mis apuntes)
+## Internet: una red de redes
 
-- CLASE 1
-- 7 / 10 / 2024
-- Preguntas concurrentes
-- ¿Porque las redes de datos? → Permitir que un proceso se comunique con otro
-- ¿Donde se encuentra el otro proceso?
-- ¿Por que medio? → Cable, aire?
-- Como se transmite? por el aire?
-- etc etc etc
-- La red mas grande: Internet
-- red como interconexion de redes mas pequeñas
-- hay estructuras de red distintas
-- Ejemplo de redes distintas:
-- Elementos de las redes
-- Ej: Puede ser un dispositivo inalambrico, cableado etc (celular computador)
-- NODOS (HOST): Elemenots de origen y destinto de mensajes
-- Cada enlace varia en velocidad, calidad etc
-- ENLACES: por donde se transmiten, enlaces por cables o inalambricas (datos moviles, wifi)
-- Router: Para darle conexion a varios dispositivos → Lo que hace es conectarse al Switch
-- Switch: Comparte la conexion a varios dispositivos (es como una zapatilla)
-- DISPOSITIVOS INTERCAMBIOS: Routers, Switches, son el medio donde se deciden encaminar la red, para hacer llegar el mensaje donde deba llegar
-- El modem lo que puede hacer es transformar una señal enviada atravez de los cables (una señal analogica) a una digital → esto Permite ser compartida con los elementos de una red en una casa por ejemplo
-- Modem = MOdulador - DEModulador → Dispositivo que permite transforma una señal de un tipo a otro, investigar
-- Puede hacer la transformacion inversa, para enviar a los cables la señal (digital → Analoga)
-- PUNTOS ACCESO: Modem, Access point(inalambricos), Cell tower (conexion celular) → Esta ultima, es conectada desde el router para compartir conexion a varios dispositivos
-- PROVEDORES DE ACCESO: ISP (internet Service Provider) → Empresa que vende servicio
-- ENTONCES?
-- En una casa, se envia informacion a la ISP (proveedor de internet), el modem transforma la señal digital a analoga para pasarla por los cables (cableado, fibra optica coaxial etc), y en ISP se hace el trabajo inverso, transforma la señal de los cables a digital para poder compartirla entre la estructura de red definida por isp
-- COMO SE TRANSMITE?
-- No se transmite la informacion byte a byte → Se transmiten unidades llamadas paquetes
-- Internet es una RED DE PAQUETES
-- Mediante routers, se envían paquetes a distintas direcciones
-- Existen 2:
-- TCP: Transport control protocol
-- IP: Internet protocol
-- Reglas para intercambiar : PROTOCOLOS
-- El protocolo TCP, lo que busca es la integridad del mensaje, que el mensaje enviado llegue correctamente a su destino, ya que como se envian paquetes, quizas un mensaje puede estar siendo enviado particionado, por caminos distintos, afectando el tiempo de llegada a destino
-- Ejemplo ilustrativo
-- Finalmente, se busca con una direccion, y por ejemplo el computador con ip: 146.155.13.75 que esta levantando un servidor, (un proceso que espera, esta escuchando), a que le llegue algo, le enviamos a traves de los routers, un paquete
-- En nuestro caso: 192.168.1.10 seria nuestra ip local, de la conexion en nuestro hogar, y 180.106.50.27 seria la direccion publica con la que se identifica mi dispositivo
-- Los procesos finalmente, utilizan un API (application Programming Interface) de internet, que permite que el proceso interactue con una infraestructura (otros procesos en otra parte de la red!!!)
-- COMO COMUNICARSE?
-- Al igual que una conversacion humana (+hola -hola +¿tienes la hora? -2.00 )
-- Las computadoras deben interactuar, de tal forma que se avise y se responda, quiero enviar algo, ok solicitud permitida,
-- +Tcp connection request -Tcp connection reply + get http://awl.com/kurose-ross - file
+La red más grande es **Internet**, una **interconexión de redes más pequeñas**, cada una con su propia estructura: redes domésticas, empresariales, móviles y las de los proveedores.
 
-> [!warning] Posible error
-> En los apuntes aparecen erratas en `PROVEDORES` (proveedores), `Elemenots` (elementos) y `atravez` (a través). Además, `TCP` corresponde a *Transmission Control Protocol* (no Transport Control Protocol).
+![Estructura general de interconexión de redes e Internet](adjuntos/Estructura%20general%20de%20interconexi%C3%B3n%20de%20redes%20e%20Internet.png)
 
-> [!tip] Complemento: Infraestructura de red y semántica de protocolos
-> ![Estructura general de interconexión de redes e Internet](adjuntos/Estructura%20general%20de%20interconexión%20de%20redes%20e%20Internet.png)
-> ![Comunicación entre procesos clientes y servidores en la red](adjuntos/Comunicación%20entre%20procesos%20clientes%20y%20servidores%20en%20la%20red.png)
->
-> > [!example]- Transcripción de las imágenes
-> > **Componentes de la red e interacción de protocolos:**
-> > - **Borde de la red (*Network Edge*):** sistemas terminales o hosts (clientes y servidores en centros de datos) que ejecutan procesos de aplicación de usuario.
-> > - **Núcleo de la red (*Network Core*):** malla de routers y conmutadores interconectados que transfieren paquetes de datos.
-> > - **Redes de acceso (*Access Networks*):** enlaces que conectan los hosts al primer router (*edge router*) a través de ISPs locales, regionales y de nivel 1 (*Tier-1*).
-> > - **Definición de protocolo:** un protocolo define el formato, el orden de los mensajes transmitidos y recibidos entre entidades de red, y las acciones ejecutadas ante la transmisión o recepción de un mensaje o evento.
-> > - **Direccionamiento privado vs público:** un host dentro de una red doméstica usa una dirección privada (p. ej. `192.168.1.10`, RFC 1918), la cual es traducida por un router mediante NAT (*Network Address Translation*) a una IP pública única global (`180.106.50.27`).
+> [!example]- Transcripción de la imagen
+> Varias nubes de redes conectadas: una **Mobile Network** (teléfonos, notebook, auto y una antena celular), dos **Home Network** (computadores, router y módem conectados por cables de poste), un **Local or Regional ISP** y un **National or Global ISP** (mallas de routers) y una **Enterprise Network** (computadores, switches, puntos de acceso inalámbricos y servidores).
+
+## Los elementos de una red
+
+| Elemento | Qué es | Ejemplos |
+|---|---|---|
+| **Nodos** (*hosts*) | Dispositivos de **origen y destino** de los mensajes | Computador, celular, servidor |
+| **Enlaces** | Por donde se **transmiten** los datos; cada uno varía en velocidad y calidad | Cable, fibra óptica, wifi, datos móviles |
+| **Dispositivos de intercambio** | Deciden por dónde **encaminar** el mensaje para que llegue a su destino | **Routers**, **switches** |
+| **Puntos de acceso** | Conectan los dispositivos a la red | Módem, *access point* (inalámbrico), antena celular |
+| **Proveedores de acceso** | Empresas que venden el servicio de conexión | ISP (*Internet Service Provider*) |
+
+- El **switch** comparte la conexión entre varios dispositivos de una red local, como una zapatilla eléctrica comparte un enchufe.
+- El **router** conecta redes distintas y decide hacia dónde enviar cada paquete; en una casa, conecta la red local con la del ISP.
+- El **módem** (*MOdulador-DEModulador*) transforma la señal: convierte la señal digital de los equipos en una señal adecuada para el medio físico del proveedor (por ejemplo, analógica por cable) y hace la transformación inversa con lo que llega.
+
+## Cómo se transmite: paquetes y protocolos
+
+La información **no se transmite byte a byte ni completa**: se divide en unidades llamadas **paquetes**. Internet es una **red de paquetes**: los routers reenvían cada paquete hacia su destino, y los paquetes de un mismo mensaje pueden ir por caminos distintos y llegar en distinto orden.
+
+Las **reglas para intercambiar paquetes** son los **protocolos**. Dos son críticos:
+
+- **IP** (*Internet Protocol*): lleva cada paquete de una dirección a otra.
+- **TCP** (*Transmission Control Protocol*; el material lo nombra *Transport Control Protocol*): busca la **integridad del mensaje**, que lo enviado llegue completo, correcto y en orden aunque haya viajado en pedazos por caminos distintos.
+
+Para que todos sigan el mismo protocolo se acuerdan **estándares**, no implementaciones: los define la **IETF** (*Internet Engineering Task Force*) y se publican como **RFC** (*Request For Comments*).
+
+## Un ejemplo: de la casa al servidor
+
+![Comunicación entre procesos clientes y servidores en la red](adjuntos/Comunicaci%C3%B3n%20entre%20procesos%20clientes%20y%20servidores%20en%20la%20red.png)
+
+> [!example]- Transcripción de la imagen
+> Flechas rojas a mano muestran el recorrido de un paquete: sale de un computador de la **Home Network** con dirección **192.168.1.10**, pasa por el router y el módem de la casa (dirección **180.106.50.27**), cruza el **Local or Regional ISP** y entra a la **Enterprise Network** hasta un servidor con dirección **146.155.13.75**.
+
+Un servidor con IP `146.155.13.75` tiene un proceso **escuchando**, esperando que le llegue algo. Desde la casa se le envía un paquete a través de los routers. `192.168.1.10` es la dirección **local** del computador dentro del hogar, y `180.106.50.27` es la dirección **pública** con que la casa se identifica hacia afuera. Las direcciones como `192.168.x.x` son privadas (RFC 1918), y el router las traduce a la pública mediante [[04 - Configuración dinámica con DHCP y traducción de direcciones NAT|NAT]]. Los procesos usan una **API** de red para interactuar con procesos en otra parte de la red, sin preocuparse de este recorrido.
+
+> [!tip] Un protocolo es como una conversación
+> Entre personas: "Hola" → "Hola" → "¿Tienes la hora?" → "Las 2:00". Entre computadores: *TCP connection request* → *TCP connection reply* → `GET http://awl.com/kurose-ross` → *archivo*. En ambos casos hay un formato de mensajes (**sintaxis**), un significado (**semántica**) y un orden con la acción esperada ante cada mensaje (**temporización**): eso es lo que define un protocolo.
 
 ## Preguntas de repaso
 
-> [!question]- ¿Qué es un protocolo de red y qué tres elementos fundamentales define?
-> Un protocolo es un conjunto de reglas que gobierna la comunicación entre dos o más entidades remotas. Define formalmente la **sintaxis** (formato y estructura de los paquetes), la **semántica** (significado de cada campo y código de control) y la **temporización o secuencia** (orden de intercambio y acciones ante eventos).
+> [!question]- ¿Qué son los nodos, los enlaces y los dispositivos de intercambio?
+> Los nodos (hosts) son el origen y el destino de los mensajes; los enlaces son los medios por donde viajan los datos; los dispositivos de intercambio (routers y switches) deciden por dónde encaminar cada mensaje.
 
-> [!question]- ¿Cuál es la diferencia de función entre un Switch y un Router en una red de área local?
-> Un switch opera a nivel de enlace (Capa 2), interconectando dispositivos dentro de la misma red local mediante direcciones físicas MAC. Un router opera a nivel de red (Capa 3), interconectando diferentes subredes lógicas y determinando la mejor ruta para enviar paquetes IP entre ellas.
+> [!question]- ¿Qué diferencia hay entre un switch y un router?
+> El switch comparte la conexión entre los dispositivos de una misma red local. El router conecta redes distintas y decide hacia dónde reenviar cada paquete.
 
-> [!question]- ¿Qué función realiza un módem (Modulador-Demodulador) en una red doméstica?
-> Modula las señales digitales producidas por los dispositivos computacionales en ondas analógicas compatibles con el medio de transmisión físico del proveedor (hilo de cobre, cable coaxial), y demodula las señales analógicas entrantes para convertirlas de nuevo en bits digitales comprensibles por el router.
+> [!question]- ¿Qué hace un módem?
+> Transforma la señal digital de los equipos en la señal que usa el medio físico del proveedor (modula) y hace la conversión inversa con la señal que llega (demodula).
 
+> [!question]- ¿Por qué se necesitan TCP además de IP?
+> Porque IP lleva paquetes sueltos de un punto a otro, pero estos pueden perderse, desordenarse o tomar caminos distintos. TCP asegura que el mensaje llegue completo, correcto y en orden.

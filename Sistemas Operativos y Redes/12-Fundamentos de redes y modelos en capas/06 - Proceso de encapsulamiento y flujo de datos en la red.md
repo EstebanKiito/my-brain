@@ -5,64 +5,61 @@ tags:
   - redes/encapsulamiento
   - redes/switches
   - redes/routers
-  - origen/apuntes
   - origen/complemento
 prerrequisitos:
-  - "[[Sistemas Operativos y Redes/12-Fundamentos de redes y modelos en capas/05 - Capas de transporte, red, enlace y física\|05 - Capas de transporte, red, enlace y física]]"
+  - "[[Sistemas Operativos y Redes/12-Fundamentos de redes y modelos en capas/05 - Capas de transporte, red, enlace y física|05 - Capas de transporte, red, enlace y física]]"
 ---
 
 # Proceso de encapsulamiento y flujo de datos en la red
 
-El encapsulamiento y desencapsulamiento sucesivo de cabeceras permite que los datos viajen a través de nodos intermediarios con diferentes profundidades en la pila de protocolos.
+El modelo de capas funciona gracias al **encapsulamiento**: al bajar por la pila, cada capa le **agrega un encabezado** (*header*) al mensaje con la información que ella necesita; al subir en el destino, cada capa **quita** el suyo. Los dispositivos intermedios solo abren las capas que necesitan.
 
-## Encapsulamiento y recorrido de paquetes (mis apuntes)
+## Bajando por la pila: encapsular
 
-- ENCAPSULAMIENTO
-- Tecnica para envio de mensajes
-- El mensaje se divide en varios segmentos
-- La capa de trasnporte les pone headers, info relevante para capa de transporte
-- La capa de transporte se lo pasa a la capa de red, como PAQUETE de Red o Datagrama → Se le agrega un header de la capa de red
-- La capa de enlace, le agrega su header (link header)
-- Al final la capa fisica se encarga de transmitirlo
-- Cuando el paquete fue enviado y llega a un switch, al ser un dispoisitvo de CAPA DE ENLACE
-- SOLO TIENE 2 CAPAS: Enlace y fisica
-- El enlace toma el mensaje, se lo transfiere a la capa fisica y este se lo envia a la siguiente dispositivo
-- Llega al router, EL ROUTER Tiene 3 CAPAS: Red , Enlace y Fisica
-- Aca llega a la parte fisica, lo pasa a la parte de enlace, en la parte de enlace se le QUITA EL HEADER, Y en la capa de red, analiza su HEADER, y decide que hacer → Borrar modificar etc
-- Devuelta al las capas hacia abajo, hasta llegar a enviar al computador de destino, y subir en capas hasta la ultima
-- EJEMPLO VISUAL
+1. La **aplicación** produce el **mensaje** $M$.
+2. La **capa de transporte** lo divide en **segmentos** y les agrega su header $H_t$, con la información relevante para el transporte (por ejemplo, los puertos).
+3. Se lo pasa a la **capa de red**, que lo convierte en un **paquete de red** o **datagrama** agregando su header $H_n$ (por ejemplo, las direcciones IP).
+4. La **capa de enlace** agrega su header $H_l$ (*link header*), normalmente también un *trailer* con un código de detección de errores (CRC), y forma el **frame**.
+5. La **capa física** se encarga de transmitir los bits.
 
-> [!warning] Posible error
-> En los apuntes aparecen erratas en `trasnporte` (transporte) y `dispoisitvo` (dispositivo).
+| Capa | Unidad | Contenido |
+|---|---|---|
+| Aplicación | Mensaje | $M$ |
+| Transporte | Segmento | $H_t + M$ |
+| Red | Datagrama | $H_n + H_t + M$ |
+| Enlace | Frame | $H_l + H_n + H_t + M$ |
 
-> [!tip] Complemento: Ciclo de encapsulamiento y desencapsulamiento
-> ![Proceso de encapsulamiento y recorrido a través de capas de red](adjuntos/Proceso%20de%20encapsulamiento%20y%20recorrido%20a%20través%20de%20capas%20de%20red.png)
->
-> > [!example]- Transcripción de la imagen
-> > **Diagrama de flujo de datos y niveles de procesamiento en nodos de red:**
-> > 1. **Host emisor (5 capas):**
-> >    - Aplicación: genera el mensaje de datos $M$.
-> >    - Transporte: encapsula en un segmento agregando la cabecera de transporte $H_t$ (puertos origen/destino).
-> >    - Red: encapsula en un datagrama agregando la cabecera IP $H_n$ (IPs origen/destino).
-> >    - Enlace: encapsula en una trama agregando la cabecera de enlace $H_l$ (MACs origen/destino) y un trailer de chequeo CRC.
-> >    - Física: transmite los bits sobre el medio físico.
-> > 2. **Switch de enlace (dispositivo de 2 capas):**
-> >    - Procesa únicamente las capas Física y de Enlace.
-> >    - Lee la cabecera de enlace $H_l$ para aprender o consultar la tabla MAC y conmutar la trama hacia el puerto correspondiente sin modificar el datagrama IP ni la cabecera de transporte.
-> > 3. **Router de red (dispositivo de 3 capas):**
-> >    - Procesa capas Física, Enlace y Red.
-> >    - Desencapsula la trama retirando $H_l$, analiza la cabecera IP $H_n$ (decrementa el campo TTL y recalcula la suma de comprobación), consulta su tabla de reenvío, y encapsula el datagrama en una **nueva cabecera de enlace** $H_l'$ adecuada a la tecnología del siguiente salto.
-> > 4. **Host receptor (5 capas):**
-> >    - El paquete asciende por las capas retirando sucesivamente $H_l$, $H_n$ y $H_t$ hasta entregar el mensaje original $M$ al proceso de aplicación de destino.
+## El viaje: switch y router
+
+![Proceso de encapsulamiento y recorrido a través de capas de red](adjuntos/Proceso%20de%20encapsulamiento%20y%20recorrido%20a%20trav%C3%A9s%20de%20capas%20de%20red.png)
+
+> [!example]- Transcripción de la imagen
+> En el *Source*, la pila *Application / Transport / Network / Link / Physical* muestra cómo crece el mensaje: *Message* `M`, *Segment* `Ht M`, *Datagram* `Hn Ht M`, *Frame* `Hl Hn Ht M`. Una línea azul baja por la pila del origen, sube al **Link-layer switch** (que solo tiene *Link* y *Physical* y recibe y entrega `Hl Hn Ht M`), sube al **Router** (que tiene *Network*, *Link* y *Physical*: abre hasta `Hn Ht M` y vuelve a armar `Hl Hn Ht M`) y llega al *Destination*, donde la pila se recorre hacia arriba quitando headers hasta dejar `M` en la aplicación.
+
+- **Switch** (dispositivo de **capa de enlace**): **solo tiene 2 capas**, enlace y física. Recibe el frame, lo procesa en la capa de enlace y lo envía por la física al siguiente dispositivo, sin mirar el datagrama.
+- **Router**: tiene **3 capas**, red, enlace y física. Recibe los bits, la capa de enlace **quita su header**, la capa de red **analiza el header de red** y decide qué hacer (por dónde reenviarlo, modificarlo o descartarlo). Luego el paquete vuelve a bajar, con un **nuevo header de enlace**, hacia el siguiente salto.
+- En el **destino**, el paquete sube por las 5 capas, cada una quitando su header, hasta entregar $M$ a la aplicación.
+
+```mermaid
+flowchart LR
+  O["Origen: 5 capas"] --> S["Switch: enlace y física"]
+  S --> R["Router: red, enlace y física"]
+  R --> D["Destino: 5 capas"]
+```
+
+> [!tip] Por qué cambia el header de enlace y no el de red
+> El header de enlace sirve solo para el salto actual, entre dos dispositivos vecinos, así que cada router pone uno nuevo. El header de red lleva el origen y el destino finales y se mantiene de extremo a extremo; el router solo lo lee (y actualiza campos de control, como el TTL o tiempo de vida del paquete; si llega a 0, lo descarta y avisa al origen con un mensaje ICMP).
 
 ## Preguntas de repaso
 
-> [!question]- ¿Por qué la cabecera de enlace ($H_l$) cambia en cada salto entre routers mientras que la cabecera de red ($H_n$) permanece constante de origen a fin?
-> Porque la cabecera de enlace contiene las direcciones físicas MAC válidas exclusivamente para el enlace local inmediato entre dos interfaces vecinas. La cabecera de red contiene las direcciones IP de origen y destino finales que identifican a los dos hosts de extremo a extremo a través de toda la Internet.
+> [!question]- ¿Qué agrega cada capa al encapsular un mensaje?
+> Transporte agrega $H_t$ (segmento), red agrega $H_n$ (datagrama) y enlace agrega $H_l$ (frame). Física transmite los bits.
 
-> [!question]- ¿Qué capas de la pila de protocolos implementa internamente un switch de capa 2?
-> Un switch convencional implementa únicamente la capa física (Capa 1) y la capa de enlace de datos (Capa 2), siendo transparente para los protocolos de red y transporte.
+> [!question]- ¿Qué capas tiene un switch y cuáles un router?
+> El switch tiene enlace y física (2 capas). El router tiene red, enlace y física (3 capas).
 
-> [!question]- ¿Qué modificación obligatoria realiza un router sobre la cabecera IP de red antes de reenviar un paquete al siguiente salto?
-> Decrementa en 1 el campo de tiempo de vida (TTL, *Time to Live*) del paquete para evitar que circule indefinidamente en caso de bucles de enrutamiento, y recalcula la suma de comprobación de la cabecera (*Header Checksum*). Si el TTL llega a cero, el router descarta el paquete y emite un mensaje ICMP *Time Exceeded* al emisor.
+> [!question]- ¿Qué hace un router con un paquete que recibe?
+> Le quita el header de enlace, lee el header de red para decidir por dónde reenviarlo y vuelve a encapsularlo con un nuevo header de enlace para el siguiente salto.
 
+> [!question]- ¿Qué pasa en el host de destino?
+> El paquete sube por todas las capas y cada una quita su header, hasta que la aplicación recibe el mensaje original $M$.

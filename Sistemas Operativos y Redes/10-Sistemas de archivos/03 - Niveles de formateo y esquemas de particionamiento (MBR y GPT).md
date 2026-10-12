@@ -4,66 +4,62 @@ tema: "Sistemas de archivos"
 tags:
   - so/archivos
   - so/almacenamiento
-  - origen/apuntes
   - origen/complemento
 prerrequisitos:
-  - "[[Sistemas Operativos y Redes/10-Sistemas de archivos/02 - Discos duros magnéticos (HDD) y discos de estado sólido (SSD)\|02 - Discos duros magnéticos (HDD) y discos de estado sólido (SSD)]]"
+  - "[[Sistemas Operativos y Redes/10-Sistemas de archivos/02 - Discos duros magnéticos (HDD) y discos de estado sólido (SSD)|02 - Discos duros magnéticos (HDD) y discos de estado sólido (SSD)]]"
 ---
 
 # Niveles de formateo y esquemas de particionamiento (MBR y GPT)
 
-Para que un dispositivo de almacenamiento secundario pueda ser utilizado por el sistema operativo, debe atravesar tres niveles sucesivos de estructuración: formateo de bajo nivel, particionamiento y formateo lógico.
+Un disco recién fabricado es solo una superficie capaz de guardar bits. **Formatear** es dejar la memoria secundaria en un formato listo para usarse, y se hace en **tres niveles**, cada uno sobre el anterior: primero sectores físicos, después particiones y al final un sistema de archivos.
 
-## Niveles de formateo y particionamiento (mis apuntes)
+```mermaid
+flowchart LR
+  A["Bajo nivel: sectores con header, data y trailer"] --> B["Particionamiento: MBR o GPT"]
+  B --> C["Formateo lógico: sistema de archivos en cada partición"]
+```
 
-- FORMATEO
-- Dejar la memoria secundaria en un formato listo para hacer algo
-- Podemos hacer formateos a distintos niveles
-- FORMATEO BAJO NIVEL
-- Formateo de fabrica : ESTRUCTURA : header + data + trailer
-- PARTICIONAMIENTO
-- Formateo que permite tener varias particiones
-- Un espacio para administrar las particiones, y luego las particiones, donde se pueden hacer unidades independientes por ejemplo, instalar un S.O alternativo, etc
-- Sistemas antiguos utilizan MBR (master boot record)
-- Sistemas modernos usan GPT (Guide partition table)
-- → Permite tener una cantidad mayor de particiones (sigue siendo limitada)
-- FORMATEO LOGICO
-- El que se encarga de hacer el sistema de archivos
-- Divido memoria en bloques, y a cada uno le doy una interpretacion
-- Por ejemplo, un bloque es un directorio, otro es un archivo, etc
+## 1. Formateo de bajo nivel
 
-> [!warning] Posible error
-> En los apuntes se menciona `GPT (Guide partition table)`. El acrónimo estándar de la industria es **GUID Partition Table** (tabla de particiones basada en identificadores únicos globales, *Globally Unique Identifier*).
+Crea la **estructura de los sectores**: cada uno queda como **header + data + trailer**.
 
-> [!tip] Complemento: Las tres fases de preparación del almacenamiento
-> 1. **Formateo de bajo nivel (*Low-level formatting* o físico):**
->    - Realizado típicamente en fábrica por el fabricante del disco.
->    - Escribe en la superficie magnética la estructura básica de los sectores:
->      - **Header:** número de sector, número de cilindro y bandera de sincronización.
->      - **Data:** área útil de carga (típicamente $512\text{ B}$ o $4096\text{ B}$).
->      - **Trailer:** código de redundancia cíclica o de corrección de errores (ECC, *Error-Correcting Code*).
-> 2. **Particionamiento de disco:**
->    - Divide el almacenamiento físico en una o más regiones lógicas tratadas como unidades independientes por el kernel.
->    - **MBR (*Master Boot Record*):**
->      - Ubicado en el sector 0 del disco ($512\text{ bytes}$).
->      - Contiene el cargador de arranque primario ($446\text{ B}$), la tabla de 4 particiones primarias ($64\text{ B}$) y la firma mágica `0x55AA` ($2\text{ B}$).
->      - Límite de direccionamiento: campos LBA de 32 bits, lo que restringe el tamaño máximo del disco a $2^{32} \times 512\text{ B} = 2\text{ TB}$.
->    - **GPT (*GUID Partition Table*):**
->      - Estándar de la arquitectura UEFI. Direccionamiento LBA de 64 bits (capacidad de hasta $9.4\text{ ZB}$).
->      - Soporta hasta 128 particiones primarias en Windows/Linux por omisión.
->      - Incluye redundancia mediante una copia de respaldo de la cabecera y tabla de particiones al final físico del disco, verificadas con CRC32.
-> 3. **Formateo lógico (*High-level formatting* o creación de FS):**
->    - Crea las estructuras de datos del sistema de archivos en una partición dada (p. ej., ext4, NTFS, APFS).
->    - Inicializa el superbloque, las tablas de inodos o tablas de asignación (FAT), mapas de bits de espacio libre y el directorio raíz (`/`).
+- **Header:** información para ubicar el sector (su número, entre otros datos).
+- **Data:** los datos útiles (por ejemplo, 512 bytes).
+- **Trailer:** incluye un código de corrección de errores (**ECC**), que permite detectar y corregir errores al leer el sector.
+
+Se ejecuta **en fábrica**. Hacer un *low-level formatting* equivale a regresar el disco a sus valores de fábrica.
+
+## 2. Particionamiento
+
+Permite tener **varias particiones**: agrupaciones de sectores que el sistema **trata como discos separados**. Hay un espacio para administrar las particiones (la tabla de particiones) y luego las particiones mismas, que funcionan como unidades independientes; por ejemplo, para instalar un SO alternativo en otra partición.
+
+| | **MBR** (*Master Boot Record*) | **GPT** (*GUID Partition Table*) |
+|---|---|---|
+| Uso | Sistemas antiguos (BIOS) | Sistemas modernos (UEFI) |
+| Dónde está la tabla | En el primer sector del disco (512 B), junto al código de arranque | En los primeros sectores, con una **copia de respaldo al final** del disco |
+| Direccionamiento | **32 bits** para direccionar bloques de 512 B | 64 bits |
+| Tamaño máximo de disco | $2^{32} \times 512\text{ B} = 2$ TiB | Prácticamente sin límite actual |
+| Particiones | 4 primarias | Muchas más (128 por defecto), aunque sigue habiendo un límite |
+
+El sector del MBR reparte sus 512 bytes en 446 de código de arranque, 64 de tabla (4 entradas de 16) y 2 de firma (`0x55AA`). El límite viene directo de sus 32 bits: las direcciones de bloque (LBA, *logical block address*) no pueden nombrar más de $2^{32}$ bloques de 512 bytes. GPT, además, protege su tabla con sumas de verificación (CRC32) y con la copia del final, de modo que si una se corrompe, se recupera de la otra. La relación con el arranque se ve en [[06 - Arranque del sistema computacional|arranque del sistema]].
+
+## 3. Formateo lógico
+
+Es el que **crea el sistema de archivos** en una partición: divide la partición en **bloques** y le da a cada uno una interpretación. Por ejemplo, un bloque guarda un directorio, otro el contenido de un archivo, otro los metadatos. Distintos sistemas de archivos (FAT, ext4, NTFS, APFS) organizan esos bloques de forma distinta. Así nacen, entre otras, las estructuras que se ven en [[05 - Concepto de archivo, atributos y metadatos|archivos y metadatos]] y en la implementación de bloques e inodos.
+
+> [!tip] Para recordar
+> **Bajo nivel → sectores** (en fábrica). **Particionamiento → discos lógicos** (MBR/GPT). **Lógico → sistema de archivos** (bloques con significado).
 
 ## Preguntas de repaso
 
-> [!question]- ¿Por qué el esquema de particionamiento MBR impone un límite de tamaño de disco de 2 TB para sectores de 512 bytes?
-> Porque la tabla de particiones en el MBR reserva exactamente 32 bits para el número de sectores lógicos direccionables ($2^{32}$ sectores). Multiplicado por $512\text{ bytes/sector}$, la capacidad máxima direccionable es $2^{32} \times 512\text{ B} = 2\text{ TiB}$.
+> [!question]- ¿Qué estructura deja el formateo de bajo nivel en cada sector?
+> Header + data + trailer: la cabecera con información del sector, los datos útiles y un trailer con el código de corrección de errores (ECC).
 
-> [!question]- ¿Qué información crucial contiene el trailer de un sector físico en un disco formateado a bajo nivel?
-> Contiene el código de corrección de errores (ECC). Cuando la cabeza lee el sector, el controlador calcula el ECC de los datos leídos; si difiere del trailer, detecta y corrige automáticamente errores de lectura menores sin involucrar al sistema operativo.
+> [!question]- ¿Por qué MBR no puede manejar discos de más de 2 TiB?
+> Porque usa 32 bits para direccionar bloques de 512 bytes: a lo más $2^{32}$ bloques, es decir, $2^{32} \times 512\text{ B} = 2$ TiB.
 
-> [!question]- ¿Qué ventaja de fiabilidad ofrece GPT frente a MBR ante fallas o corrupción de sectores?
-> GPT almacena una copia íntegra de respaldo de su cabecera y tabla de particiones en los últimos sectores físicos del disco y utiliza sumas de verificación CRC32 para detectar corrupción y auto-reparar la tabla desde la réplica.
+> [!question]- ¿Qué ventajas tiene GPT sobre MBR?
+> Direcciona con 64 bits, así que admite discos muchísimo más grandes. Permite muchas más particiones. Y guarda una copia de respaldo de la tabla al final del disco, con sumas de verificación para detectar corrupción.
 
+> [!question]- ¿Qué hace el formateo lógico?
+> Crea el sistema de archivos en una partición: divide el espacio en bloques y define qué representa cada uno (directorios, archivos, metadatos, espacio libre).

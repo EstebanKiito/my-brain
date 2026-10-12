@@ -4,76 +4,73 @@ tema: "Sistemas de archivos"
 tags:
   - so/archivos
   - so/almacenamiento
-  - origen/apuntes
   - origen/complemento
 prerrequisitos:
-  - "[[Sistemas Operativos y Redes/10-Sistemas de archivos/01 - Capas de abstracción de entrada-salida y mecanismos de buffering\|01 - Capas de abstracción de entrada-salida y mecanismos de buffering]]"
+  - "[[Sistemas Operativos y Redes/10-Sistemas de archivos/01 - Capas de abstracción de entrada-salida y mecanismos de buffering|01 - Capas de abstracción de entrada-salida y mecanismos de buffering]]"
 ---
 
 # Discos duros magnéticos (HDD) y discos de estado sólido (SSD)
 
-La memoria secundaria provee persistencia no volátil y gran capacidad, implementándose principalmente mediante discos mecánicos magnéticos (HDD) o unidades de estado sólido basadas en semiconductores (SSD).
+Lo que realmente interesa en esta parte de la materia es la **memoria secundaria**: almacenamiento de **alta capacidad** y **no volátil** (no se borra al apagar), pero **más lento** (y más barato) que la memoria principal. Cómo está construido el disco explica por qué cuesta lo que cuesta acceder a él, y por qué el SO se esfuerza tanto en ordenar esos accesos.
 
-## Memoria secundaria, HDD y SSD (mis apuntes)
+## El disco duro magnético (HDD)
 
-- Lo que nos interesa realmente de esta materia → MEMORIA SECUNDARIA
-- Memoira Secundaria
-- Almacenamiento de Alta capacidad
-- Memoria No volatil
-- Mas lento (y barato) que la memoria principal
-- DISCO DURO
-- DISCO DURO: Esta armado a traves de brazos,
-- ROTAR
-- Esto implica tiempos de demora distintos
-- tiene que ejecutar movimientos para trabajar
-- Latencia de Rotacion
-- Seek Time (mover el brazo lector (para leer los discos))
-- Hay ciertas formas
-- Defragmentar → Posicionar memoria util, para evitar tener que hacer tantos movimientos al leer la información
-- Latencias:
-- DISCO ESTADO SOLIDO (SSD)
-- Mejor que el Disco Duro → No tiene brazos
-- Dado que eliminamos la latencia de rotacion y Seek Time
-- Son mas rapidos
-- Mas costosos por MB
-- Menor consumo electrico
-- CELDAS LIMITADAS de reescrituras
-- Usan celdas para descargar informacion
+![Geometría de un disco duro magnético HDD](adjuntos/Geometr%C3%ADa%20de%20un%20disco%20duro%20magn%C3%A9tico%20HDD.png)
 
-> [!warning] Posible error
-> En los apuntes aparece `Memoira Secundaria` (error tipográfico por Memoria Secundaria).
+> [!example]- Transcripción de la imagen
+> "Sistemas de Disco – Memoria Secundaria". Diagrama de un disco con varios *platters* apilados sobre un *spindle* que gira (*rotation*); en cada plato se marcan un *track t* y un *sector s*; las pistas alineadas de todos los platos forman el *cylinder c*; un *arm assembly* mueve varios *arms*, cada uno con su *read-write head*. Texto: **Brazos (arms)** se mueven juntos. **Brazos** poseen cabezas lectoras (*heads*). **Platos (platter)** divididos en tracks circulares. **Tracks** divididos en sectores: bloques de 512 byte. **Conjunto de tracks** entre varios platos forman un cilindro. **Velocidades de rotación**: 5400, 7200, 10000, 15000 RPM (rotaciones por minuto).
 
-> [!tip] Complemento: Geometría mecánica y características físicas
-> ![Geometría de un disco duro magnético HDD](adjuntos/Geometría%20de%20un%20disco%20duro%20magnético%20HDD.png)
->
-> > [!example]- Transcripción de la imagen
-> > **Diagrama de arquitectura interna de un disco duro magnético (HDD):**
-> > - **Spindle:** eje central de rotación que gira a velocidad constante ($5400$, $7200$, $10000$, $15000\text{ RPM}$).
-> > - **Platters:** platos circulares magnéticos apilados. Cada plato posee dos superficies de grabación.
-> > - **Tracks:** pistas circulares concéntricas trazadas en la superficie del plato.
-> > - **Sectores:** divisiones angulares de una pista (típicamente $512\text{ bytes}$ o $4\text{ KB}$).
-> > - **Cilindro:** conjunto de todas las pistas que comparten el mismo radio vertical entre todos los platos.
-> > - **Cabezas lectoras/escritoras (heads):** una por superficie, unidas a brazos mecánicos rígidos (*arm assembly*) que se desplazan solidariamente.
->
-> 1. **Componentes del tiempo de acceso en HDD:**
->    $$\text{Tiempo de I/O} = \text{Seek Time} + \text{Latencia Rotacional} + \text{Tiempo de Transferencia}$$
->    - **Seek Time:** tiempo físico para acelerar, mover y estabilizar el brazo sobre el cilindro destino ($3\text{ a }10\text{ ms}$).
->    - **Latencia rotacional:** tiempo de giro hasta que el sector deseado pasa bajo la cabeza lectora. En promedio:
->      $$\text{Latencia promedio} = \frac{1}{2 \times \text{RPM}} \times 60\text{ s}$$
->      Para $7200\text{ RPM}$, equivale aproximadamente a $4.17\text{ ms}$.
->    - **Desfragmentación:** reorganiza los archivos para que sus bloques residan en sectores contiguos de un mismo cilindro o cilindros adyacentes, minimizando saltos del cabezal.
-> 2. **Arquitectura y funcionamiento de SSD:**
->    - Basado en memoria flash NAND. Sin partes mecánicas: latencia rotacional y seek time iguales a cero.
->    - Lecturas y escrituras a nivel de páginas ($4\text{ KB} - 16\text{ KB}$), pero borrado únicamente por bloques completos ($128\text{ a }512\text{ páginas}$, $2\text{ a }8\text{ MB}$).
->    - Ciclos de escritura/borrado limitados por desgaste de las compuertas flotantes (endurance). Los controladores implementan algoritmos de nivelación de desgaste (*wear leveling*) y comandos TRIM para maximizar su vida útil.
+| Componente | Qué es |
+|---|---|
+| **Plato** (*platter*) | Disco magnético; está dividido en **pistas** (*tracks*) circulares |
+| **Sector** | División de una pista; un bloque de **512 bytes** |
+| **Cilindro** | El conjunto de pistas a la misma distancia del centro en todos los platos |
+| **Brazos y cabezas** | Los brazos tienen las cabezas lectoras y **se mueven todos juntos** |
+
+Como el disco funciona con partes que **rotan** y brazos que **se mueven**, cada acceso tiene demoras mecánicas distintas según dónde esté el dato.
+
+## Tiempo de acceso
+
+$$T_{\text{acceso}} = \underbrace{\text{seek time} + \text{latencia rotacional}}_{\text{posicionamiento}} + \text{tiempo de transferencia}$$
+
+- **Seek time:** cambiar de pista, es decir, mover el brazo hasta el cilindro buscado.
+- **Latencia rotacional:** esperar dentro de la pista hasta que el sector quede debajo de la cabeza. En promedio es media vuelta.
+- **Transferencia:** leer los datos. **Leer sectores consecutivos es más rápido**, porque no hay que reposicionar.
+
+| RPM | Una vuelta | Latencia rotacional promedio (½ vuelta) |
+|---|---|---|
+| 5400 | 11,1 ms | 5,6 ms |
+| 7200 | 8,3 ms | 4,2 ms |
+| 10000 | 6 ms | 3 ms |
+| 15000 | 4 ms | 2 ms |
+
+> [!tip] Desfragmentar
+> Como leer sectores contiguos es mucho más rápido, **desfragmentar** reubica los bloques de cada archivo para que queden juntos, y así el brazo hace menos movimientos al leer. Por la misma razón el SO ordena los pedidos al disco (ver [[04 - Algoritmos de planificación de disco (Disk Scheduling)|scheduling de disco]]).
+
+## El disco de estado sólido (SSD)
+
+El SSD **no tiene brazos ni platos**: guarda la información en **celdas** de memoria flash (NAND).
+
+| | HDD | SSD |
+|---|---|---|
+| Seek time y latencia rotacional | Sí | **No existen** |
+| Velocidad | Más lento | **Más rápido** |
+| Costo por MB | Más barato | **Más costoso** |
+| Consumo eléctrico | Mayor | **Menor** |
+| Desgaste | Mecánico | Las **celdas tienen una cantidad limitada de reescrituras** |
+
+Para que las celdas se desgasten parejo, el controlador del SSD reparte las escrituras entre todas (*wear leveling*), y el SO le avisa con el comando TRIM qué bloques ya no se usan. Como no hay movimiento mecánico, la fragmentación casi no afecta su rendimiento.
 
 ## Preguntas de repaso
 
-> [!question]- ¿Por qué la fragmentación de archivos perjudica gravemente el rendimiento de un disco HDD pero casi no afecta a un SSD?
-> Porque en un HDD cada fragmento no contiguo obliga al brazo a realizar una operación mecánica de búsqueda (*seek*) y esperar una latencia rotacional ($4\text{–}10\text{ ms}$ por salto). En un SSD el acceso a cualquier dirección flash toma un tiempo prácticamente idéntico de microsegundos mediante direccionamiento puramente electrónico.
+> [!question]- ¿Qué componentes tiene el tiempo de acceso de un HDD?
+> El seek time (mover el brazo al cilindro), la latencia rotacional (esperar que el sector pase bajo la cabeza) y el tiempo de transferencia.
 
-> [!question]- ¿Cómo se calcula la latencia rotacional promedio de un disco que gira a $10000\text{ RPM}$?
-> Un disco a $10000\text{ RPM}$ da una vuelta completa en $\frac{60}{10000}\text{ s} = 6\text{ ms}$. En promedio, el sector deseado se encuentra a media vuelta de distancia, por lo que la latencia rotacional media es de $3\text{ ms}$.
+> [!question]- ¿Cuál es la latencia rotacional promedio de un disco de 7200 RPM?
+> Una vuelta toma $60\,000/7200 \approx 8{,}33$ ms; en promedio se espera media vuelta, unos 4,17 ms.
 
-> [!question]- ¿Qué es la nivelación de desgaste (*wear leveling*) en unidades SSD y qué problema resuelve?
-> Es un algoritmo del controlador del SSD que distribuye las escrituras de manera uniforme entre todos los bloques físicos de la memoria flash NAND para evitar que celdas frecuentemente reescritas se degraden prematuramente antes que el resto.
+> [!question]- ¿Por qué desfragmentar mejora un HDD pero casi no cambia un SSD?
+> En el HDD cada salto entre bloques no contiguos cuesta seek y latencia rotacional; juntar los bloques los elimina. El SSD no tiene partes mecánicas, así que acceder a un bloque cuesta casi lo mismo esté donde esté.
+
+> [!question]- ¿Qué ventajas y desventajas tiene un SSD frente a un HDD?
+> Es más rápido y consume menos energía, porque no tiene seek ni latencia rotacional. Pero es más caro por MB y sus celdas soportan un número limitado de reescrituras.

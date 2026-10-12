@@ -1,72 +1,78 @@
 ---
 ramo: Sistemas Operativos y Redes
 tema: Estructura de sistemas operativos
-tags: [so/estructura-so, origen/apuntes]
+tags: [so/estructura-so, origen/complemento]
 prerrequisitos: ["[[01 - Qué es un sistema operativo|Qué es un sistema operativo]]"]
 ---
 # Modos de operación y anillos de protección
 
-Para garantizar la integridad y estabilidad del sistema, el procesador implementa soporte de hardware para múltiples niveles de privilegios (*dual mode* y anillos de protección), aislando el código del usuario del núcleo del sistema operativo.
+Si cualquier programa pudiera escribir en cualquier dirección de memoria o hablar directamente con el disco, un solo error bastaría para corromper a los demás programas o al propio sistema operativo. Para evitarlo, el **hardware** distingue niveles de privilegio, y solo el kernel corre en el más alto.
 
-## Dónde vive el sistema operativo (mis apuntes)
-DONDE VIVE?
-+Arriba : - Privilegios, menos poder → Programas muy arriba tendran que pedir permiso a abajo → OVERHEAD
-+Abajo : + Poder → Son los mas Rápidos, no tienen que pedir permiso (Permiso Admin)
-Ej: Programa de copiar un cd, poco importante → Poco privilegio:
-No tiene permisos para hacer todo (ej: Pedir permiso para lectura de I/O del disco)
+## Dos modos de ejecución
 
-COMUNICACION S.O y HARDWARE
-El Programa se comunica primero con el S.O antes que con el hardware, no se puede sobreescribir memoria directamente
-El el S.O el que maneja los permisos directos al hardware, no se puede si no atravez de el
+La CPU tiene al menos dos **modos de protección**:
 
-MODO DE EJECUCION
-- MODO USUARIO (Overhead → Mayor tiempo de espera en pedir permisos)
-- MODO KERNELL (Todos los permisos → Sin tiempo de espera)
-- El modo usuario → No puede leer ni escribir directamente, tiene que pedir permisos
-- Si el programa de usuario falla → No pasa nada, porque como no tiene acceso al hardware, podemos cerrarlo y abrirlo sin problemas
+| Modo | Qué puede hacer | Quién corre ahí |
+|---|---|---|
+| **Kernel mode** (privilegiado o *supervisor mode*) | Acceso completo al hardware y a todas las instrucciones | El kernel |
+| **User mode** | Solo un conjunto restringido de instrucciones | Las aplicaciones |
 
-ANILLOS DE PRIVILEGIOS
+El modo vigente lo indica un **bit de modo** (*mode bit*) del procesador. En la convención habitual de los textos, 0 significa kernel y 1 significa usuario. Si un programa en modo usuario intenta ejecutar una instrucción privilegiada, el hardware **genera una interrupción** (*protection fault*) **o ignora la instrucción**. En ningún caso la ejecuta.
+
+Por eso un programa no puede, por ejemplo, sobrescribir memoria ajena ni leer el disco por su cuenta: **se comunica primero con el SO**, que es quien tiene el acceso directo al hardware y decide si concede el permiso.
+
+> [!tip] Mnemotecnia: arriba y abajo
+> Imagina el sistema en capas. **Arriba** están las aplicaciones: menos privilegios y menos poder, por lo que deben **pedir permiso** a las capas de abajo para todo, y eso cuesta tiempo (*overhead*). **Abajo** está el kernel: todo el poder, sin pedirle permiso a nadie, y por eso es más rápido. Un programa poco importante, como uno para copiar un CD, no necesita más que privilegios mínimos: para leer el disco le pide la operación de I/O al SO.
+
+## Instrucciones privilegiadas
+
+Estas son algunas instrucciones que solo se ejecutan en el nivel más privilegiado (*ring 0*), tomadas del set de instrucciones Intel 64:
+
+- Modificar el vector de interrupciones o habilitarlas y deshabilitarlas (`CLI`, `IRET`).
+- Acceder a dispositivos de I/O.
+- Modificar el *timer* del computador.
+- Detener el computador (`HLT`).
+- Cambiar el modo de protección (de usuario a kernel o viceversa).
+- Modificar las tablas de acceso a memoria (tabla de páginas, `INVLPG`).
+- Almacenar el estado de la máquina (`SMSW`).
+
+Todas comparten una razón: si un programa cualquiera pudiera ejecutarlas, podría desactivar las interrupciones y monopolizar la CPU, saltarse la protección de memoria o apagar la máquina.
+
+## Anillos de protección
+
+El hardware moderno ofrece **4 o más** niveles, llamados **anillos** (*rings*). Intel 64 tiene 4 niveles. Tener más de dos anillos permite, entre otras cosas, implementar **virtualización**.
 
 ![Anillo de privilegios x86](adjuntos/Anillo%20de%20privilegios%20x86.png)
 
 > [!example]- Transcripción de la imagen
-> Anillos concéntricos de privilegios de arquitectura x86:
-> - **Ring 0 (Centro, kernel):** Máximo nivel de privilegio, reservado exclusivamente para el código central del kernel del sistema operativo.
-> - **Ring 1 y Ring 2 (Niveles intermedios):** Históricamente pensados para controladores de dispositivos o servicios de middleware (raramente usados por sistemas operativos modernos).
-> - **Ring 3 (Anillo exterior, aplicaciones):** Menor nivel de privilegio, donde se ejecutan los procesos de espacio de usuario y aplicaciones normales.
+> Cuatro círculos concéntricos, "Anillo de privilegios". En el centro, **Ring 0**, marcado *kernel*. Hacia afuera, **Ring 1** y **Ring 2**. En el anillo exterior, **Ring 3**, marcado *Aplicaciones*.
 
-> [!tip] Complemento (slides "Contenido 1: Dual Mode")
-> La CPU incluye un bit de modo (*mode bit*) en el registro de estado del procesador:
-> - **0 = Kernel Mode (Modo privilegiado / Supervisor mode):** La CPU puede ejecutar cualquier instrucción de máquina (instrucciones privilegiadas como deshabilitar interrupciones, modificar la tabla de páginas o acceder a registros de control del hardware).
-> - **1 = User Mode (Modo no privilegiado):** La ejecución de instrucciones privilegiadas genera inmediatamente un *trap* o excepción por violación de privilegios, abortando el proceso sin comprometer al resto de la máquina.
->
-> **Cambio de modo (*Mode Switch*):** Ocurre de forma segura únicamente mediante mecanismos de hardware:
-> 1. Una llamada al sistema ([[05 - Llamadas al sistema|syscall]]), interrupción de hardware o excepción cambia el bit a `0` y salta a una dirección fija en memoria controlada por el kernel.
-> 2. Al completar la tarea, el kernel ejecuta una instrucción especial de retorno (como `sysret` o `iret`) que restaura el bit a `1` y devuelve el control al programa de usuario.
+Los anillos 1 y 2 se pensaron históricamente para drivers y servicios intermedios, pero en la práctica los sistemas operativos usan sobre todo el anillo 0 (kernel) y el anillo 3 (aplicaciones).
+
+## El costo y el beneficio
 
 ```mermaid
 stateDiagram-v2
   direction LR
-  [*] --> UserMode: Proceso inicia (bit = 1)
-  UserMode --> KernelMode: Syscall / Interrupción / Excepción (bit = 0)
-  KernelMode --> UserMode: Retorno de interrupción iret / sysret (bit = 1)
+  Usuario --> Kernel: syscall, interrupción o excepción
+  Kernel --> Usuario: retorno al programa
 ```
+
+- **Costo:** en modo usuario hay más tiempo de espera, porque cada operación sobre el hardware pasa por el kernel. Cambiar de modo exige guardar el estado del programa y validar la petición.
+- **Beneficio:** si un programa de usuario falla, no pasa nada grave. Como nunca tocó el hardware directamente, basta con cerrarlo y volver a abrirlo; el resto del sistema sigue intacto.
+
+El SO no actúa por iniciativa propia: mientras nadie lo llame, no hace nada. El cambio a modo kernel ocurre solo por mecanismos controlados por el hardware, como una [[05 - Llamadas al sistema|llamada al sistema]] o una [[04 - Interrupciones y excepciones|interrupción o excepción]], y al terminar el kernel ejecuta una instrucción especial de retorno (como `iret` o `sysret` en x86) que vuelve a modo usuario.
 
 ## Preguntas de repaso
 
-1. ¿Qué es el *mode bit* y cómo protege al sistema computacional?
-> [!question]- Respuesta
-> Es un bit en el hardware del procesador que indica si la instrucción actual corre en modo usuario (1) o modo kernel (0). Impide que las aplicaciones comunes ejecuten instrucciones privilegiadas que puedan alterar el hardware o la memoria ajena.
+> [!question]- ¿Qué pasa si un programa en modo usuario intenta ejecutar una instrucción privilegiada?
+> El hardware no la ejecuta: genera una interrupción (*protection fault*) que pasa el control al kernel, o bien ignora la instrucción.
 
-2. ¿Qué ocurre si un proceso en espacio de usuario intenta ejecutar directamente una instrucción de entrada/salida o deshabilitar interrupciones?
-> [!question]- Respuesta
-> El procesador detecta que el *mode bit* es 1, no ejecuta la instrucción y lanza una excepción por violación de privilegios, transfiriendo el control al kernel para sancionar o terminar el proceso infractor.
+> [!question]- ¿Por qué cambiar el modo de protección es en sí una instrucción privilegiada?
+> Porque si un programa de usuario pudiera pasar por su cuenta a modo kernel, toda la protección sería inútil. Solo se entra al kernel por puntos controlados (syscalls, interrupciones, excepciones).
 
-3. ¿Por qué existe un costo de *overhead* al transicionar entre User Mode y Kernel Mode?
-> [!question]- Respuesta
-> Porque el procesador debe guardar los registros del proceso actual, cambiar a la pila de kernel, validar los permisos del invocador y cargar el contexto correspondiente del controlador de interrupción o syscall.
+> [!question]- ¿Por qué el modo usuario tiene *overhead* y por qué vale la pena pagarlo?
+> Porque cada acceso al hardware debe pedirse al SO, lo que implica cambiar de modo y validar la petición. A cambio, un programa defectuoso o malicioso no puede dañar a otros ni al SO, y si falla basta con reiniciarlo.
 
-4. ¿Cuál es la diferencia entre Ring 0 y Ring 3 en la arquitectura x86?
-> [!question]- Respuesta
-> Ring 0 tiene privilegios totales de ejecución y acceso al hardware para el kernel; Ring 3 tiene privilegios restringidos y está reservado para aplicaciones de usuario comunes.
-
+> [!question]- ¿Qué diferencia hay entre el anillo 0 y el anillo 3 en x86?
+> El anillo 0 tiene todos los privilegios y es donde corre el kernel. El anillo 3 es el menos privilegiado y es donde corren las aplicaciones. Los anillos intermedios existen en el hardware, pero los SO comunes casi no los usan.

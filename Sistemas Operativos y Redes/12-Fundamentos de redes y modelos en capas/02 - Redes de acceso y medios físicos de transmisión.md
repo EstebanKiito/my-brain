@@ -4,89 +4,83 @@ tema: "Fundamentos de redes y modelos en capas"
 tags:
   - redes/acceso
   - redes/medios-fisicos
-  - origen/apuntes
   - origen/complemento
 prerrequisitos:
-  - "[[Sistemas Operativos y Redes/12-Fundamentos de redes y modelos en capas/01 - Arquitectura de Internet, nodos, enlaces y protocolos\|01 - Arquitectura de Internet, nodos, enlaces y protocolos]]"
+  - "[[Sistemas Operativos y Redes/12-Fundamentos de redes y modelos en capas/01 - Arquitectura de Internet, nodos, enlaces y protocolos|01 - Arquitectura de Internet, nodos, enlaces y protocolos]]"
 ---
 
 # Redes de acceso y medios físicos de transmisión
 
-Las redes de acceso conectan los sistemas terminales al primer router de la red troncal mediante tecnologías de enlace guiadas por cable o inalámbricas no guiadas.
+Antes de cruzar Internet, los datos de un computador tienen que llegar a la red: ese primer tramo es la **red de acceso**. Hay muchas tecnologías para hacerlo, y todas terminan transmitiendo bits por algún **medio físico**: un cable, una fibra o el aire.
 
-## Tecnologías de acceso y medios físicos (mis apuntes)
+## Clientes y servidores
 
-- CLASE 2
-- 9/10/24
-- Supuesto de que la clase 2 se vio la clase:
-- https://www.youtube.com/watch?v=_pyWVod9dzE&list=PLVTkEjeczcER2aOMHPIfaHCpTx61iKsoV&index=51
-- COMUNICACION END-To-END
-- Hosts: Dispositivos que ejecutan programas
-- Unos host acutan como clientes
-- Otro como servidores
-- Comuncacion entre HOSTS:
-- Clientes: Dispositivo liviano que solicita un servicio
-- Servidores: En dispositivos poderosos que poseen servicios (data centers)
-- INFRAESTRUCTURAS DE COMUNCACIONES
-- DSL
-- CABLE
-- FTTH
-- ETHERNET
-- FIBRA OPTICA
-- Wi-Fi
-- etc
-- DSL: utiliza la via telefónica para comunicarse
-- Transforma la señal digital, y la envia mediante via telefónica tradicional, transformando frecuencias de transmision
-- CABLE: Coaxial por ejemplo, cables de cobre con recubrimiento, esta es un medio compartido, a diferencia de dsl
-- Ventaja: Instalación mas facil → Extensión de cables
-- Desventaja: Medio es compartido, si varios usarios se conectan, provoca congestiones
-- CABLE FIBRA OPTICA (FTTH):
-- Se basa en cables de fibra optica que tienen una altísima tasa de transmisión
-- Estándares: desde 1Mbps a 1Gbps
-- ETHERNET: Cables de red, pares de trenzados de cobre, protocolo IEEE 802.3
-- Velocidad de transmision: 10Mbs 100Mbps 1Gbps 10 Gbps
-- Implementan la famosa LAN (LOCAL AREA NETWORK)
-- Router → Switch (comparte conexion) → → → Varios dispositivos (cada uno con su ancho de banda estandarizado)
-- WIFI: simil al ethernet pero inalambcrica, de corto alcance
-- IEE 802.11 Velocidades: 54Mbps, 150Mbps
-- Implementan WLAN (wirless LAN)
-- Similar a esta BANDA ANCHA MOVIL → Wide Area: 3G, 4G, LTE
-- MEDIOS FISICOS
-- Transmitir bits atravez de un enlace fisico o inalambrico
-- Los medios pueden ser guiados o cableados: solidos
-- los no guiados son los de tipo broadcast: inalambricos, satelital
-- Solidos:
-- Par trenzado de cobre UTP RECUBIERTO → (cable que no este recubierto puede tener interferencias y afectar los bits)
-- Cable Coaxial de Cobre → Un unico cable protegido (asilado del ruido electromagnetico)
-- FIBRA OPTICA → Usa haz de luz
-- Medio inalambricos → Al ser emitida, esta expuesto a las interferencias que atenuen
-- Porpagacion multicamino: Señales que llegan por multiples caminos
+La comunicación es **de extremo a extremo** entre **hosts**, dispositivos que ejecutan programas. Unos actúan como **clientes** y otros como **servidores**; es un **rol que toma un programa**, no un tipo de máquina:
 
-> [!warning] Posible error
-> En los apuntes aparecen erratas en `acutan` (actúan), `Comuncacion` (comunicación), `wirless` (wireless), `IEE` (IEEE) y `Porpagacion` (propagación).
+- **Clientes:** en dispositivos livianos que **solicitan** servicios; suelen estar bajo control del usuario.
+- **Servidores:** en dispositivos poderosos que **proveen** servicios; suelen vivir en *data centers* o en la nube.
 
-> [!tip] Complemento: Tecnologías de acceso al borde y medios de transmisión
-> ![Red de acceso mediante línea telefónica DSL](adjuntos/Red%20de%20acceso%20mediante%20línea%20telefónica%20DSL.png)
-> ![Red de acceso mediante cable coaxial y medio compartido](adjuntos/Red%20de%20acceso%20mediante%20cable%20coaxial%20y%20medio%20compartido.png)
-> ![Red de área local cableada Ethernet con switches y routers](adjuntos/Red%20de%20área%20local%20cableada%20Ethernet%20con%20switches%20y%20routers.png)
-> ![Red de acceso inalámbrico Wi-Fi y banda ancha móvil](adjuntos/Red%20de%20acceso%20inalámbrico%20Wi-Fi%20y%20banda%20ancha%20móvil.png)
->
-> > [!example]- Transcripción de las imágenes
-> > **Comparación de redes de acceso y medios físicos:**
-> > - **DSL (*Digital Subscriber Line*):** línea telefónica punto a punto dedicada desde el hogar hasta el DSLAM de la central telefónica; no comparte el enlace físico con vecinos.
-> > - **Cable (HFC - *Hybrid Fiber-Coaxial*):** red coaxial compartida entre múltiples hogares de un vecindario; la capacidad se divide concurrentemente entre usuarios activos.
-> > - **FTTH (*Fiber To The Home*):** red óptica pasiva (PON) que entrega pulsos de luz láser directamente al hogar con tasas de transmisión simétricas superiores a $1\text{ Gbps}$.
-> > - **Ethernet (IEEE 802.3):** LAN cableada con pares trenzados UTP/STP y conmutación en estrella mediante switches.
-> > - **Wi-Fi (IEEE 802.11) y telefonía celular:** medios no guiados sujetos a pérdida de trayectoria (*path loss*), atenuación por obstáculos y desvanecimiento por propagación multicamino (*multipath fading*).
+## Tecnologías de acceso
+
+| Tecnología | Cómo funciona | Característica clave |
+|---|---|---|
+| **DSL** (*Digital Subscriber Line*) | Usa la **línea telefónica** tradicional. El módem DSL convierte la señal digital en análoga y el **DSLAM** de la central la reconvierte | Separa la línea por **frecuencias**: teléfono 0-4 kHz, subida 4-50 kHz, bajada 50 kHz-1 MHz. Enlace **privado** |
+| **Cable** (HFC, *Hybrid Fiber Coaxial*) | Usa la red de TV por cable: fibra hasta un nodo del barrio y luego **coaxial** | **Medio compartido**: si muchos vecinos navegan a la vez, se congestiona. Asimétrico (42,8 Mbps bajada, 30,7 Mbps subida) |
+| **FTTH** (*Fiber To The Home*) | **Fibra óptica** hasta la casa; el ONT (casa) y el OLT (proveedor) convierten entre señal óptica y eléctrica | Muy alta tasa de transmisión; estándares desde 1 Mbps a 1 Gbps |
+| **Dial-up** y **satélite** | Dial-up por línea telefónica (2,4 a 56 kbps), la conexión original; satélite para zonas rurales | Lentos, históricamente |
+| **Ethernet** (IEEE 802.3) | Pares trenzados de cobre | 10 Mbps a 10 Gbps; implementa la **LAN** (*Local Area Network*) |
+| **Wi-Fi** (IEEE 802.11) | Como Ethernet, pero **inalámbrico** y de corto alcance | 54 Mbps, 150 Mbps…; implementa la **WLAN** (*Wireless LAN*) |
+| **Banda ancha móvil** (3G, 4G, LTE) | Inalámbrico de **área amplia** (*wide area*) | Conexión a través de antenas celulares |
+
+En una LAN típica, el router se conecta a un **switch**, que comparte la conexión con varios dispositivos, cada uno con su ancho de banda estandarizado.
+
+![Red de acceso mediante línea telefónica DSL](adjuntos/Red%20de%20acceso%20mediante%20l%C3%ADnea%20telef%C3%B3nica%20DSL.png)
+
+> [!example]- Transcripción de la imagen
+> *Home phone* y *Home PC* (con *DSL modem*) se unen en un *Splitter* conectado a la *Existing phone line*: "0-4KHz phone; 4-50KHz upstream data; 50KHz-1MHz downstream data". En la *Central office*, el **DSLAM** separa el tráfico hacia *Internet* y hacia la *Telephone network*.
+
+![Red de acceso mediante cable coaxial y medio compartido](adjuntos/Red%20de%20acceso%20mediante%20cable%20coaxial%20y%20medio%20compartido.png)
+
+> [!example]- Transcripción de la imagen
+> Grupos de *Hundreds of homes* conectados por *Coaxial cable* a un *Fiber node*; desde ahí, *Fiber cable* hasta el *Cable head end*, donde el **CMTS** conecta con *Internet*.
+
+![Red de área local cableada Ethernet con switches y routers](adjuntos/Red%20de%20%C3%A1rea%20local%20cableada%20Ethernet%20con%20switches%20y%20routers.png)
+
+> [!example]- Transcripción de la imagen
+> Varios computadores conectados a 100 Mbps a un *Ethernet switch*, junto con un *Server*; el switch se conecta a un *Institutional router*, que va *To Institution's ISP*.
+
+![Red de acceso inalámbrico Wi-Fi y banda ancha móvil](adjuntos/Red%20de%20acceso%20inal%C3%A1mbrico%20Wi-Fi%20y%20banda%20ancha%20m%C3%B3vil.png)
+
+> [!example]- Transcripción de la imagen
+> Una *House* con notebook y computador conectados (inalámbricamente y por cable) a un router con punto de acceso; el router va a un módem de cable, y de ahí por el tendido al *Cable head end* y a *Internet*.
+
+## Medios físicos
+
+Los bits se transmiten como **ondas** a través de un medio:
+
+- **Guiados** (sólidos): el par trenzado de cobre, el cable coaxial y la fibra óptica.
+- **No guiados**: inalámbricos y enlace satelital, donde la señal se difunde (*broadcast*).
+
+| Medio | Características |
+|---|---|
+| **Par trenzado de cobre** (UTP, *unshielded twisted pair*) | Cables de cobre trenzados entre sí, sin blindaje (la versión blindada es STP); categorías según cuán trenzados están (3, 5, 5e, 6, 6a). 10 Mbps a 10 Gbps. Se usa en telefonía y Ethernet (LAN) |
+| **Cable coaxial de cobre** | Un par concéntrico (no trenzado), con **alta resistencia al ruido externo**; fácil insertar nodos nuevos; **medio compartido** |
+| **Fibra óptica** | Transmite **haces de luz** por fibra de vidrio. **Inmune a la interferencia electromagnética**, alta velocidad y baja atenuación (más de 100 km). Monomodo (un haz) o multimodo (varios haces en distintos ángulos) |
+| **Inalámbrico** | La señal se debilita al propagarse y queda expuesta a interferencias y obstáculos. **Propagación multicamino**: la señal llega por varios caminos (rebotes) a distintos tiempos y se distorsiona |
+
+> [!tip] Para profundizar
+> Video de referencia sobre redes de acceso: <https://www.youtube.com/watch?v=_pyWVod9dzE&list=PLVTkEjeczcER2aOMHPIfaHCpTx61iKsoV&index=51>
 
 ## Preguntas de repaso
 
-> [!question]- ¿Por qué la velocidad efectiva en una red de acceso por cable (HFC) puede degradarse durante horas punta mientras que en DSL se mantiene más estable?
-> Porque en la arquitectura de cable coaxial HFC el medio físico de transmisión es compartido (*shared medium*) por todos los hogares conectados al mismo nodo vecinal; si múltiples vecinos descargan simultáneamente, el ancho de banda del canal se divide. En DSL la línea de cobre es un enlace dedicado punto a punto entre el hogar y la central (DSLAM).
+> [!question]- ¿Por qué el acceso por cable puede ponerse lento en horas punta y DSL no tanto?
+> Porque el cable es un medio compartido entre los hogares del barrio: si muchos lo usan a la vez, se reparten la capacidad. En DSL, cada casa tiene su propia línea hasta la central.
 
-> [!question]- ¿Cuál es la diferencia física de propagación entre un cable de par trenzado de cobre y un cable de fibra óptica?
-> El par trenzado transmite señales como pulsos de voltaje eléctrico a través de conductores de cobre, estando expuesto a interferencias electromagnéticas (EMI) y atenuación resistiva. La fibra óptica transmite pulsos de luz (fotones) a través de filamentos de vidrio de sílice, siendo completamente inmune al ruido electromagnético y sufriendo una atenuación drásticamente inferior en largas distancias.
+> [!question]- ¿Cómo comparte DSL la línea telefónica entre voz y datos?
+> Usando frecuencias distintas: el teléfono va de 0 a 4 kHz, la subida de 4 a 50 kHz y la bajada de 50 kHz a 1 MHz.
 
-> [!question]- ¿Qué es la propagación multicamino (*multipath propagation*) en enlaces inalámbricos y cómo afecta la señal?
-> Es el fenómeno donde la onda electromagnética transmitida se refleja y dispersa en obstáculos físicos (muros, edificios, suelo), llegando al receptor por múltiples trayectorias con diferentes retardos de tiempo y fases, lo que genera interferencia constructiva o destructiva (desvanecimiento o *fading*) y distorsión de la señal.
+> [!question]- ¿Qué diferencia hay entre medios guiados y no guiados?
+> En los guiados la señal viaja por un medio sólido (cobre o fibra). En los no guiados se propaga por el aire o el espacio, y queda más expuesta a atenuación, interferencias y propagación multicamino.
 
+> [!question]- ¿Qué ventajas tiene la fibra óptica frente al cobre?
+> Transmite luz en vez de electricidad, así que es inmune a la interferencia electromagnética, alcanza velocidades más altas y se atenúa muy poco con la distancia.

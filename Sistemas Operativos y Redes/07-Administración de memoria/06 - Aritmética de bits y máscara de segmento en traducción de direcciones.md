@@ -3,7 +3,7 @@ ramo: "Sistemas Operativos y Redes"
 tema: "Administración de memoria"
 tags:
   - so/memoria
-  - origen/apuntes
+  - origen/complemento
 prerrequisitos:
   - "[[05 - Segmentación de memoria y prevención de segmentation fault]]"
   - "[[03 - Relocalización, protección de memoria y registros base y límite]]"
@@ -11,68 +11,73 @@ prerrequisitos:
 
 # Aritmética de bits y máscara de segmento en traducción de direcciones
 
-A nivel de arquitectura de hardware, la extracción del identificador de segmento y del desplazamiento relativo no se realiza con lentas operaciones de división o resta decimal, sino mediante operaciones lógicas a nivel de bits sobre la palabra de dirección virtual.
+En [[05 - Segmentación de memoria y prevención de segmentation fault|segmentación]] se obtuvo el offset restando la dirección virtual de inicio del segmento. Funciona, pero la MMU traduce en **cada** acceso a memoria y necesita algo más rápido. La lógica de bits da la respuesta: si la dirección virtual se arma de la forma adecuada, el segmento y el offset ya están escritos en ella y basta con separarlos.
 
-## Descomposición binaria y máscaras (mis apuntes)
+## Bits de segmento y bits de offset
 
-> [!note] Apuntes de clase
-> **LOGICA DE BITS**
-> Para hacer lo que hicimos con aritmetrica en decimales nuestros, podemos hacerlo con logica de BITS.
->
-> - Los bits de segmento: Nos dice en que segmento nos encontramos.
-> - Los bits de offset: Nos dice que tan desplazado estoy desde el INICIO del segmento.
->
-> En este caso, tengo 12 bits para el offset, por lo tanto, lo maximo que me puedo desplazar es $2^{12}$ bytes.
-> Si tengo 2 bits de segmento, puedo tener:
-> - $2^2$ posibles segmentos: 4
->   - 00
->   - 01
->   - 10
->   - 11
->
-> Notar que:
-> - Bits de offset: 0000 0110 1000: 104
-> - Y la direccion del segmento 1 aprox (heap): 4kb → 4096
-> - 4096 + 104 = 4200 !!! → Magia? No → LOGICA!
-> - Investigar → Mascara de segmento
+Lo que se hizo con aritmética decimal se puede hacer con **lógica de bits**. La dirección virtual se divide en dos partes:
 
-> [!warning] Posible error
-> En los apuntes aparece la errata tipográfica "aritmetrica" por aritmética.
+- **Bits de segmento** (los más significativos): dicen **en qué segmento** estamos.
+- **Bits de offset** (el resto): dicen **qué tan desplazado** se está desde el **inicio** del segmento.
+
+¿Cuántos bits hacen falta para identificar 3 segmentos (código, heap, stack)? **2**, porque con 2 bits hay $2^2 = 4$ combinaciones: `00`, `01`, `10`, `11`. En el ejemplo, la dirección virtual tiene 14 bits (16 KB): 2 de segmento y **12 de offset**, así que lo máximo que uno se puede desplazar dentro de un segmento es $2^{12} = 4096$ bytes (4 KB).
 
 ![Descomposición de dirección virtual en bits de segmento y offset](adjuntos/Descomposici%C3%B3n%20de%20direcci%C3%B3n%20virtual%20en%20bits%20de%20segmento%20y%20offset.png)
 
 > [!example]- Transcripción de la imagen
-> Formato de dirección virtual de 14 bits:
-> - **Bits 13-12 (2 bits más significativos):** Selector de segmento ($s$).
->   - `00`: Código
->   - `01`: Heap
->   - `10`: Stack
->   - `11`: Reservado / no asignado
-> - **Bits 11-0 (12 bits menos significativos):** Desplazamiento u offset dentro del segmento ($d$), con capacidad de direccionamiento de hasta $2^{12} = 4096\text{ bytes} = 4\text{ KB}$.
+> "¿Cómo conocer segmento y offset? Se pueden hacer restas… pero la lógica de bit es más rápida. Ejemplo: ¿cuántos bit necesitamos para identificar 3 segmentos? → 2". Una dirección de 14 bits (13 a 0) con el valor `0 1 | 0 0 0 0 0 1 1 0 1 0 0 0`: los bits 13-12 marcados *Segment* y los bits 11-0 *Offset*. "Dirección virtual: 4200 = 0b01000001101000 = 0x1068. Bits de segmento: 0b01 = 1 = 0x1. Bits de offset: 0b000001101000 = 104 = 0x068".
 
 ![Aplicación de máscara binaria y desplazamiento a la derecha](adjuntos/Aplicaci%C3%B3n%20de%20m%C3%A1scara%20binaria%20y%20desplazamiento%20a%20la%20derecha.png)
 
 > [!example]- Transcripción de la imagen
-> Extracción del segmento mediante operaciones bit a bit en lenguaje C / Hardware:
-> 1. Dirección virtual de ejemplo: `4200` en decimal = `0b01000001101000` (hexadecimal `0x1068`).
-> 2. Se aplica la **Máscara de segmento** `0x3000` (`0b11000000000000`) con un operador bitwise AND (`&`):
->    $$\text{Segmento\_crudo} = 0\text{x}1068 \ \& \ 0\text{x}3000 = 0\text{b}01000000000000$$
-> 3. Se desplaza a la derecha (*right shift*) en 12 posiciones (`>> 12`):
->    $$\text{Segmento} = \text{Segmento\_crudo} \gg 12 = 0\text{b}01 = 1 \text{ (Heap)}$$
-> 4. Se extrae el offset con la **Máscara de offset** `0x0FFF` (`0b00111111111111`):
->    $$\text{Offset} = 0\text{x}1068 \ \& \ 0\text{x}0\text{FFF} = 0\text{b}000001101000 = 104\text{ decimal}$$
+> Dibujo a mano sobre el espacio "Virtual" de 16 KB: el 100 en *Program Code* y el 4200 en *Heap*. Llaves rojas dividen el espacio en cuatro franjas de 4 KB, numeradas **0** (0-4 KB, código), **1** (4-8 KB, heap), **2** (8-12 KB, libre) y **3** (12-16 KB, la parte de abajo, donde está el stack).
 
-> [!tip] Complemento: Eficiencia de la lógica de bits en hardware
-> Para la circuitería digital de la MMU, esta división no requiere siquiera ciclos de reloj de cómputo aritmético: basta con rutear físicamente los 2 cables de los pines superiores del registro de direcciones directamente a las líneas de decodificación de la tabla de segmentos, y los 12 cables inferiores al sumador de la base física.
+Y aquí está la "magia": los bits de offset `0000 0110 1000` valen **104**, y el segmento 1 (heap) empieza en 4 KB = **4096**. $4096 + 104 = 4200$. No es magia, es lógica: los 2 bits altos valen exactamente "qué bloque de 4 KB", y los 12 bajos "cuánto dentro del bloque".
+
+## Máscaras
+
+Para extraer cada parte se usa una **máscara**, que se aplica a la dirección original con un AND bit a bit. La máscara tiene **1 en las posiciones que interesan y 0 en las demás**.
+
+| Paso | Operación | Resultado con 4200 = `0b01000001101000` |
+|---|---|---|
+| Máscara de segmento | `v & 0x3000` (`0b11000000000000`) | `0b01000000000000` |
+| Desplazar a la derecha 12 (el tamaño del offset) | `>> 12` | `0b01` = **1**, el heap |
+| Máscara de offset (complementaria) | `v & 0xFFF` (`0b00111111111111`) | `0b00000001101000` = **104** |
+
+Con el segmento se busca la base física en la tabla de segmentos y se le suma el offset.
+
+```c
+#include <stdio.h>
+
+#define SEG_MASK    0x3000      /* 0b11 0000 0000 0000: los 2 bits de segmento */
+#define SEG_SHIFT   12          /* el offset ocupa 12 bits */
+#define OFFSET_MASK 0x0FFF      /* 0b00 1111 1111 1111: los 12 bits de offset */
+
+int main(void) {
+    unsigned int virtuales[] = { 100, 4200, 15000 };
+    for (int k = 0; k < 3; k++) {
+        unsigned int v = virtuales[k];
+        unsigned int segmento = (v & SEG_MASK) >> SEG_SHIFT;
+        unsigned int offset   =  v & OFFSET_MASK;
+        printf("virtual %5u = 0x%04X -> segmento %u, offset %u\n", v, v, segmento, offset);
+    }
+    return 0;   /* 100 -> seg 0, off 100 · 4200 -> seg 1, off 104 · 15000 -> seg 3, off 2712 */
+}
+```
+
+> [!tip] Por qué es más rápido
+> Un AND y un desplazamiento son operaciones elementales. En hardware ni siquiera hace falta calcular: los 2 bits altos se conectan directamente a la selección de la entrada de la tabla de segmentos, y los 12 bajos al sumador con la base.
 
 ## Preguntas de repaso
 
-> [!question]- Si una arquitectura utiliza 3 bits para el número de segmento y 13 bits para el desplazamiento, ¿cuántos segmentos admite y cuál es el tamaño máximo de cada uno?
-> Con 3 bits de segmento puede direccionar hasta $2^3 = 8$ segmentos independientes. Con 13 bits de offset, el tamaño máximo de cada segmento es de $2^{13} = 8192\text{ bytes} = 8\text{ KB}$.
+> [!question]- ¿Cuántos bits de segmento se necesitan para 3 segmentos y cuántos segmentos permiten?
+> 2 bits, que permiten $2^2 = 4$ segmentos (`00`, `01`, `10`, `11`). Con 1 bit solo habría 2.
 
-> [!question]- ¿Qué operación lógica realiza la MMU para aislar el número de segmento a partir de una dirección virtual de 14 bits?
-> Realiza un producto lógico bit a bit (*bitwise AND*) con la máscara `0x3000` (`11000000000000` en binario) para conservar únicamente los 2 bits más significativos, seguido de un desplazamiento hacia la derecha de 12 posiciones (`>> 12`).
+> [!question]- Con 12 bits de offset, ¿cuál es el tamaño máximo de un segmento?
+> $2^{12} = 4096$ bytes, es decir, 4 KB.
 
-> [!question]- ¿Cómo se obtiene el desplazamiento (*offset*) a partir del valor hexadecimal `0x1068` empleando una máscara binaria?
-> Se aplica la operación `0x1068 & 0x0FFF`. Como `0x0FFF` contiene 1s en los 12 bits inferiores y 0s en los bits superiores, el resultado es `0x0068`, que corresponde exactamente a $104$ en decimal ($6 \times 16^1 + 8 \times 16^0 = 96 + 8 = 104$).
+> [!question]- Obtén segmento y offset de la dirección virtual 4200 con máscaras.
+> $4200 = $ `0x1068`. Segmento: `(0x1068 & 0x3000) >> 12 = 1` (heap). Offset: `0x1068 & 0xFFF = 0x068 = 104`.
 
+> [!question]- Si una arquitectura usa 3 bits de segmento y 13 de offset, ¿cuántos segmentos admite y de qué tamaño máximo?
+> $2^3 = 8$ segmentos de hasta $2^{13} = 8192$ bytes (8 KB) cada uno.

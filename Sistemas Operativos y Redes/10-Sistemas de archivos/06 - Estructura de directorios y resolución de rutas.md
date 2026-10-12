@@ -3,54 +3,76 @@ ramo: "Sistemas Operativos y Redes"
 tema: "Sistemas de archivos"
 tags:
   - so/archivos
-  - origen/apuntes
   - origen/complemento
 prerrequisitos:
-  - "[[Sistemas Operativos y Redes/10-Sistemas de archivos/05 - Concepto de archivo, atributos y metadatos\|05 - Concepto de archivo, atributos y metadatos]]"
+  - "[[Sistemas Operativos y Redes/10-Sistemas de archivos/05 - Concepto de archivo, atributos y metadatos|05 - Concepto de archivo, atributos y metadatos]]"
 ---
 
 # Estructura de directorios y resolución de rutas
 
-Los directorios organizan los archivos del sistema en una estructura jerárquica de árbol, funcionando internamente como tablas de correspondencia entre nombres legibles y números de inodo.
+Con miles de archivos, hace falta una forma de organizarlos y de encontrarlos por nombre. Los **directorios** son otra abstracción del sistema de archivos: contenedores de archivos y de otros directorios que forman un árbol. Por dentro son algo muy simple: una tabla de nombres.
 
-## Directorios y rutas (mis apuntes)
+## Qué es un directorio
 
-- DIRECTORIOS
-- Contenedores de archivos o otro directorios (de manera de alto nivel (para usuarios))
-- Lista de pares (nombre leible, low-level nombre)
-- Jerarquia empieza con : (la raiz): “/”
-- Usa separador /
-- Unidades son Subdirectorios
-- Otros directiors : Jerarqui o arboles de directorios
-- Puede contener:
-- Rutas absolutas : Partencon desde la raiz (con / ) → UNICAS
-- v/s Rutas relativas: Parten desde el directorio donde nos encontremos
+Un directorio también tiene su **nombre de bajo nivel** (su número de inodo), y su contenido es una **lista de pares**:
 
-> [!warning] Posible error
-> En los apuntes aparecen erratas en `directiors` (directorios), `Jerarqui` (jerarquía) y `Partencon` (parten con).
+$$(\text{nombre legible},\ \text{nombre de bajo nivel})$$
 
-> [!tip] Complemento: Implementación de directorios y resolución de rutas
-> 1. **Estructura interna de un directorio:**
->    - En sistemas tipo Unix, un directorio es un archivo cuyo contenido es gestionado exclusivamente por el kernel.
->    - Consiste en una lista de entradas de directorio (*dentries*), donde cada entrada vincula:
->      $$\text{Entrada} = (\text{nombre legible por el usuario}, \text{número de inodo})$$
->    - Todo directorio contiene siempre dos entradas iniciales obligatorias:
->      - `.` : apunta al inodo del directorio actual.
->      - `..` : apunta al inodo del directorio padre (en la raíz `/`, tanto `.` como `..` apuntan al mismo inodo raíz, típicamente el inodo 2 en ext4).
-> 2. **Tipos de rutas y resolución por el kernel:**
->    - **Ruta absoluta:** comienza con `/` (raíz). Identifica un único nodo en el árbol de forma absoluta e independiente del estado de ejecución del proceso (p. ej. `/home/user/documentos/archivo.txt`).
->    - **Ruta relativa:** no comienza con `/`. Su resolución depende del directorio de trabajo actual (*Current Working Directory* o CWD) almacenado en el bloque de control del proceso (PCB).
-> 3. **Proceso de resolución de nombres (*Path traversal*):**
->    - El kernel lee el inodo raíz, busca en su bloque de datos la entrada del primer componente de la ruta, obtiene su inodo, verifica permisos de ejecución (`+x`), y repite recursivamente hasta alcanzar el archivo o subdirectorio final.
+Es decir, asocia cada nombre que ve el usuario con el inodo del archivo o subdirectorio correspondiente. El nombre de un archivo no se guarda en el archivo: **se guarda en el directorio que lo contiene**.
+
+Como un directorio puede contener otros directorios, se forma una **jerarquía o árbol de directorios**:
+
+- la jerarquía empieza en una **raíz**, `/`;
+- se usa `/` como **separador**;
+- las unidades del árbol son **subdirectorios**.
+
+Todo directorio tiene además dos entradas especiales: `.`, que apunta a sí mismo, y `..`, que apunta a su padre. En la raíz, `..` apunta a la misma raíz.
+
+```mermaid
+flowchart TD
+  R["/"] --> B["bar"]
+  R --> F["foo"]
+  B --> BB["bar"]
+  B --> BF["foo"]
+  BF --> T["bar.txt"]
+```
+
+## Rutas
+
+El nombre que incluye los subdirectorios es la **ruta** (*pathname*):
+
+| | Ruta absoluta | Ruta relativa |
+|---|---|---|
+| Parte desde | La raíz: empieza con `/` | El directorio donde nos encontremos: el directorio de trabajo del proceso (CWD, *current working directory*), que el SO guarda en su PCB |
+| Ejemplos | `/foo`, `/bar/bar`, `/bar/foo/bar.txt` | `foo`, `foo/bar.txt` |
+| ¿Es única? | **Sí**: una ruta absoluta no puede repetirse | No: el mismo texto apunta a lugares distintos según desde dónde se use |
+
+Desde el directorio `/bar`, la ruta relativa `foo/bar.txt` corresponde a la absoluta `/bar/foo/bar.txt`.
+
+## Cómo se resuelve una ruta
+
+Para abrir `/bar/foo/bar.txt`, el SO recorre el árbol componente por componente:
+
+1. Parte del inodo de la raíz `/` (un número conocido; en ext4, el inodo 2).
+2. Lee el contenido de `/`, busca el par con nombre `bar` y obtiene su inodo.
+3. Lee ese directorio, busca `foo` y obtiene su inodo.
+4. Lee ese directorio, busca `bar.txt` y obtiene, por fin, el inodo del archivo.
+
+En cada paso verifica permisos: para **atravesar** un directorio se necesita el permiso de ejecución (`x`); el de lectura (`r`) solo permite listar sus nombres (por ejemplo, con `ls`). Por eso las rutas largas cuestan varios accesos a disco, y el SO guarda en caché los directorios recién recorridos.
+
+> [!tip] Para recordar
+> **Directorio = tabla de (nombre → inodo).** Una ruta absoluta se resuelve desde `/`; una relativa, desde el directorio actual.
 
 ## Preguntas de repaso
 
-> [!question]- ¿Por qué un proceso requiere permiso de ejecución (`x`) y no solo de lectura (`r`) sobre un directorio para acceder a sus archivos?
-> Porque el permiso de lectura (`r`) solo autoriza a listar los nombres de los archivos contenidos en el directorio (con `ls`). El permiso de ejecución (`x`) autoriza al kernel a atravesar (*traverse*) el directorio y resolver sus nombres de inodo para abrir o acceder a los archivos internos.
+> [!question]- ¿Qué contiene un directorio?
+> Una lista de pares (nombre legible, nombre de bajo nivel), que asocia cada nombre con el inodo de un archivo o subdirectorio. También tiene su propio inodo.
 
-> [!question]- ¿Qué representan las entradas especiales `.` y `..` y a qué apuntan en el directorio raíz `/`?
-> Representan el directorio actual (`.`) y el directorio contenedor padre (`..`). En el directorio raíz `/`, dado que no existe un contenedor superior, ambas entradas apuntan al mismo inodo raíz.
+> [!question]- ¿Qué diferencia hay entre una ruta absoluta y una relativa?
+> La absoluta empieza en la raíz `/` y es única. La relativa parte del directorio de trabajo actual, así que el mismo texto puede referirse a archivos distintos según dónde se esté.
 
-> [!question]- ¿Dónde reside físicamente el nombre de un archivo en un sistema de archivos Unix?
-> El nombre reside en los bloques de datos del directorio que lo contiene, emparejado con su número de inodo. El inodo del archivo en sí mismo no almacena su nombre legible.
+> [!question]- Desde `/bar`, ¿a qué ruta absoluta corresponde `foo/bar.txt`?
+> A `/bar/foo/bar.txt`.
 
+> [!question]- ¿Dónde se guarda el nombre legible de un archivo?
+> En el directorio que lo contiene, emparejado con el número de inodo. El inodo del archivo no guarda su nombre.

@@ -8,51 +8,99 @@ tags:
   - vlan
   - stp
   - lan
+  - origen/complemento
 prerrequisitos:
   - "[[17-Capa de enlace y seguridad/02 - Direcciones MAC, protocolo ARP y trama Ethernet|02 - Direcciones MAC, protocolo ARP y trama Ethernet]]"
 ---
 
 # Conmutación en redes locales (Switches L2, STP) y VLANs
 
-En las redes de área local modernas (**LAN**), los conmutadores o **switches de capa 2** (L2) son los dispositivos centrales encargados de interconectar estaciones y servidores. A diferencia de los concentradores antiguos (*hubs*), que operaban como medios compartidos en capa física retransmitiendo bits a todos los puertos, un switch aísla dominios de colisión y reenvía tramas selectivamente en base a direcciones MAC. Para segmentar el tráfico y aislar dominios de difusión sin necesidad de comprar equipamiento físico adicional, se emplean **VLANs** (*Virtual Local Area Networks*).
+Una **LAN** (*Local Area Network*) parte de una interfaz de un router que se extiende a uno o más switches: son todos los dispositivos conectados a una misma **subred**. El switch es el que reparte los frames dentro de ella, usando las [[02 - Direcciones MAC, protocolo ARP y trama Ethernet|direcciones MAC]]. Esta nota explica cómo decide, cómo evita los ciclos y cómo se divide una LAN en **VLANs**.
 
----
+## El switch L2
 
-## Conmutación, LAN y VLANs (mis apuntes)
+Un switch recibe un frame y lo retransmite por el enlace apropiado según la **MAC de destino**. Hace dos cosas:
 
-LAN : Local Area Network → A partir de un router, una interfaz que puede ser extendida a un switch, la Lan son todos aquellos dispositivos conectados a una misma SUBRED
-VLAN : Lans Virtuales, para separar trafico de pquetes segun se quiera separar (ej: Domotica, servidores, etc..)
+- **Filtering**: decidir si hace *forward* o *drop* (descarta).
+- **Forwarding**: decidir por cuál enlace retransmitir.
 
-> [!tip] Complemento de clase: Operación de switches y autoaprendizaje (*self-learning*)
-> Los switches son dispositivos transparentes y *plug-and-play*:
-> 1. **Tabla de conmutación**: Mantiene entradas $\langle \text{Dirección MAC}, \text{Puerto/Interfaz}, \text{TTL} \rangle$.
-> 2. **Autoaprendizaje**: Cuando una trama arriba al switch por el puerto $x$ con MAC de origen $S$, el switch aprende automáticamente que el host con MAC $S$ está conectado en ese puerto.
-> 3. **Lógica de reenvío**:
->    - Si la MAC destino $D$ ya está en la tabla asociada al mismo puerto $x$, la trama se filtra/descarta.
->    - Si la MAC destino $D$ está asociada a otro puerto $y$, la trama se transmite exclusivamente por el puerto $y$.
->    - Si la MAC destino $D$ no existe en la tabla (o es broadcast), el switch realiza una inundación (*flooding*), replicando la trama por todos los puertos excepto por el puerto de llegada $x$.
+Si recibe por el enlace $x$ un frame con destino `DD-DD-DD-DD-DD-DD`:
 
-> [!tip] Complemento de clase: Ciclos de red y Spanning Tree Protocol (STP, IEEE 802.1D)
-> Cuando se instalan switches con enlaces redundantes para alta disponibilidad, se crean ciclos físicos. Dado que las tramas Ethernet carecen de un campo TTL (a diferencia de los paquetes IP), las tramas de difusión atrapadas en un ciclo generan **tormentas de difusión** (*broadcast storms*) y tablas de conmutación oscilantes, colapsando la red en milisegundos.
-> El protocolo **STP** (IEEE 802.1D) evita estos bucles de forma autónoma:
-> - Los switches intercambian mensajes **BPDU** (*Bridge Protocol Data Units*) para elegir un conmutador raíz (*Root Bridge*).
-> - Cada switch calcula el camino de menor costo hacia la raíz y bloquea lógicamente los puertos redundantes (*blocking state*), convirtiendo la topología física mallada en un árbol de expansión acíclico. Si un enlace activo falla, el protocolo recalcula el árbol y activa los enlaces de respaldo.
+| Situación en la tabla | Acción |
+|---|---|
+| No hay entrada para esa MAC | **Broadcast** por todos los enlaces, salvo $x$ |
+| La MAC está asociada al mismo enlace $x$ | **Descarta** (*filtering*): el destino ya lo recibió por ahí |
+| La MAC está asociada a otro enlace $y \neq x$ | **Reenvía** por $y$ (*forwarding*) |
 
-> [!tip] Complemento de clase: VLANs y enlace troncal (IEEE 802.1Q)
-> Las **VLANs** dividen los puertos físicos de un switch en redes locales lógicas independientes:
-> - **Aislamiento de tráfico**: El tráfico de difusión (broadcast ARP, DHCP) de una VLAN nunca llega a los puertos de otra VLAN, mejorando seguridad y rendimiento.
-> - **VLAN Trunking**: Para transportar el tráfico de múltiples VLANs a través de un único enlace físico entre switches, se utiliza el estándar **IEEE 802.1Q**. Este protocolo inserta una cabecera de 4 bytes en la trama Ethernet que contiene el **VLAN ID** (12 bits, permitiendo hasta 4096 VLANs).
-> - **Intercomunicación entre VLANs**: Dos hosts en distintas VLANs pertenecen a subredes IP distintas; para comunicarse requieren obligatoriamente un enrutador de capa 3 (*Router-on-a-Stick* o switch multicapa L3).
+## La tabla se aprende sola
 
----
+La tabla parte **vacía**. Por cada frame recibido, el switch guarda la **MAC de origen**, el **enlace** por donde llegó y la **hora**: así aprende dónde está cada host sin que nadie lo configure. Después de un **aging time** borra la entrada, de modo que si un host se reemplaza o se mueve, el switch eventualmente se entera. Por eso **un switch es plug-and-play**.
+
+```python
+ENLACES = [1, 2, 3, 4]
+tabla = {}                                   # MAC -> enlace (se aprende sola)
+
+def recibir(origen, destino, x):
+    """Frame que entra por el enlace x."""
+    tabla[origen] = x                        # aprende: 'origen' está detrás de x
+    y = tabla.get(destino)
+    if y is None:
+        return f"broadcast por {[e for e in ENLACES if e != x]}"
+    if y == x:
+        return "filtering: descartar"
+    return f"forwarding por {y}"
+
+print(recibir("AA", "DD", 1))   # DD desconocida: broadcast por [2, 3, 4]
+print(recibir("DD", "AA", 3))   # AA ya aprendida: forwarding por 1
+print(recibir("AA", "DD", 1))   # forwarding por 3
+print(recibir("BB", "AA", 1))   # AA está en el mismo enlace: filtering
+```
+
+## Ciclos y Spanning Tree Protocol
+
+Para tener respaldo se conectan switches con enlaces redundantes, y eso forma **ciclos**. Los ciclos son malos para el broadcast: el frame Ethernet no tiene TTL, así que un broadcast da vueltas para siempre y se multiplica (*broadcast storm*, tormenta de difusión). El **Spanning Tree Protocol (STP)** lo evita en cuatro etapas; los switches se coordinan con mensajes BPDU (*Bridge Protocol Data Units*):
+
+1. Elegir un **root bridge**, según una prioridad más un identificador (la MAC).
+2. Cada switch, salvo el root, elige su enlace en dirección al root: el **root port** (RP).
+3. Cada segmento determina su **designated port**.
+4. Los puertos que no se usan quedan **bloqueados** (alternativos).
+
+La topología final se autoconfigura como un **árbol de expansión** (*spanning tree*): sin ciclos, pero con los enlaces bloqueados listos para usarse si otro falla.
+
+## Switch frente a router
+
+| | Switch | Router |
+|---|---|---|
+| Capa | L2: decide según la MAC | L3: decide según la IP |
+| Tabla | Se aprende sola (MAC → enlace) | La llenan algoritmos de ruteo como OSPF o BGP |
+| Configuración | Se autoconfigura | Debe configurarse |
+| ARP | No lo resuelve (no conoce IP) | Sí |
+| Riesgos | *Switch poisoning* y *broadcast storm* | — |
+
+## VLANs
+
+Los switches **no aíslan bien el tráfico**: los broadcasts (ARP, DHCP) recorren toda la LAN conmutada, y cualquiera con un *sniffer* podría verlos. Una solución sería usar varios switches, pero si un usuario cambia de grupo de trabajo habría que recablearlo al switch correcto. Los routers también lo resolverían, pero las **VLANs** (*Virtual LANs*) son más accesibles.
+
+Una **VLAN** separa el tráfico según se quiera, sobre la **misma LAN física**: por ejemplo, una VLAN para domótica y otra para servidores. Hay varias formas de construirlas:
+
+- **por puertos** (cada puerto del switch pertenece a una VLAN);
+- **por MAC**;
+- **por IP**.
+
+Para tener VLANs **distribuidas entre varios switches** se usa **VLAN trunking**: un **trunk port** pertenece a **todas** las VLANs y reenvía entre switches. ¿Cómo sabe el otro switch a qué VLAN va cada frame? **Se modifica el frame Ethernet**: el estándar **IEEE 802.1Q** agrega un campo *Tag Control Information* (4 bytes en total) con el número de VLAN, el VLAN ID de 12 bits: hasta 4096 VLANs.
+
+Dos hosts en VLANs distintas están en subredes distintas: para hablar entre sí necesitan pasar por un router.
 
 ## Preguntas de repaso
 
-> [!question]- ¿Por qué una trama Ethernet que entra en un ciclo de switches puede derribar una red local mientras que un paquete IP en un ciclo de routers no lo hace?
-> Porque los encabezados Ethernet no poseen un campo de tiempo de vida (*TTL* o *Hop Limit*). Un paquete IP se descarta tras agotar su TTL, pero un frame Ethernet en broadcast circula infinitamente, duplicándose en cada ciclo hasta saturar la memoria y el ancho de banda de todos los switches.
+> [!question]- ¿Qué hace un switch con un frame cuyo destino no está en su tabla?
+> Lo envía por broadcast por todos sus enlaces, salvo por el que llegó.
 
-> [!question]- ¿Cuál es la diferencia fundamental entre un switch de capa 2 y un router de capa 3?
-> Un switch L2 opera con direcciones físicas MAC de capa de enlace, mantiene una tabla de conmutación autoaprendida y aísla dominios de colisión; un router L3 opera con direcciones IP jerárquicas de capa de red, ejecuta algoritmos de enrutamiento (como OSPF o BGP) y aísla dominios de difusión entre subredes.
+> [!question]- ¿Cómo aprende un switch su tabla?
+> Por cada frame que recibe, anota la MAC de origen, el enlace por donde llegó y la hora. Las entradas se borran después de un aging time.
 
-> [!question]- ¿Qué función cumple el etiquetado IEEE 802.1Q en un puerto troncal (*trunk port*)?
-> Añade una etiqueta de 4 bytes a la trama Ethernet que identifica el *VLAN ID* al que pertenece el frame, permitiendo a los switches receptores discriminar y distribuir las tramas a sus respectivas VLANs lógicas de destino.
+> [!question]- ¿Por qué hace falta STP y qué produce?
+> Porque los enlaces redundantes forman ciclos, y un broadcast sin TTL circularía para siempre. STP elige un root bridge, root ports y designated ports, y bloquea los demás: la topología queda como un árbol sin ciclos.
+
+> [!question]- ¿Cómo sabe un switch a qué VLAN pertenece un frame que llega por un trunk port?
+> Porque IEEE 802.1Q agrega al frame Ethernet un campo con el número de VLAN.

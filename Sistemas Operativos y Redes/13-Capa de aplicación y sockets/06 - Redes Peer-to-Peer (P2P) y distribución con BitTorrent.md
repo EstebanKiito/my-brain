@@ -7,57 +7,79 @@ tags:
   - p2p
   - bittorrent
   - dht
+  - origen/complemento
 prerrequisitos:
   - "[[13-Capa de aplicación y sockets/01 - Arquitecturas de aplicación y modelos de comunicación|01 - Arquitecturas de aplicación y modelos de comunicación]]"
 ---
 
 # Redes Peer-to-Peer (P2P) y distribución con BitTorrent
 
-Las arquitecturas entre pares (*Peer-to-Peer*, P2P) distribuyen el almacenamiento y la carga computacional entre nodos autónomos (*peers*) de igual jerarquía, sin depender de servidores centrales permanentes. Protocolos como BitTorrent y las Tablas Hash Distribuidas (DHT) permiten la transferencia eficiente y altamente escalable de archivos de gran tamaño.
+En una red **P2P** (*peer-to-peer*), los clientes forman una red entre ellos y **no dependen de un servidor**. Eso les da **mejor escalabilidad**, porque cada miembro aporta capacidad, pero también un problema nuevo: los miembros entran y salen todo el tiempo, y la red **debe manejar la pertenencia y el abandono de miembros**. La comparación con cliente-servidor está en [[13-Capa de aplicación y sockets/01 - Arquitecturas de aplicación y modelos de comunicación|arquitecturas de aplicación]].
 
----
+## BitTorrent
 
-## Redes P2P y protocolo BitTorrent (mis apuntes)
+BitTorrent reparte un archivo grande **por pedazos** (*chunks*). Si quiero descargar, por ejemplo, un juego, cada host de la red me puede prestar una parte, y yo a la vez comparto las partes que ya tengo. Así se pueden distribuir archivos muy grandes sin un servidor que los entregue completos a todos.
 
-RED P2P
-- Mejor escalabilidad
-- Deben maneja pertenencia y abandono de miembros
-- Redes entre pares de clientes (NO DEPENDEN DE UN SERVER)
+Para unirse:
+
+1. Se consulta a un **tracker**, un servidor que conoce a los pares que participan en la red de ese archivo, y se obtiene una **lista de pares**.
+2. Se conecta con algunos de esos pares y empieza el **intercambio de pedazos**: descarga lo que le falta y sube lo que tiene.
 
 ![Arquitectura de redes peer to peer P2P y protocolo BitTorrent](adjuntos/Arquitectura%20de%20redes%20peer%20to%20peer%20P2P%20y%20protocolo%20BitTorrent.png)
 
 > [!example]- Transcripción de la imagen
-> Arquitectura de BitTorrent:
-> - Enjambre (*swarm*): Conjunto de todos los pares que participan en la descarga o subida de un archivo específico.
-> - Rastreador (*tracker*): Nodo o servicio que registra la lista de pares actualmente activos en el enjambre y entrega un subconjunto aleatorio de IPs a nuevos participantes.
-> - *Leechers* (descargando) y *Seeds* (pares que poseen el archivo completo y continúan subiendo fragmentos).
+> *Alice* se conecta al *Tracker* para *Obtain list of peers* (flecha azul). Luego intercambia pedazos (*Trading chunks*) con varios *Peer*, todos conectados entre sí con flechas en ambas direcciones.
 
-Cuando me quiero conectar a una red p2p: consulto al servidor un tracker → Como conectarme a los otros clientes que estan participando de la red
-Por ejemplo otro protocolo BitTorrent → Si quiero descargar un juego, cada uno de los host, me puede prestar una parte del juego (archivos por pedazos) para abarcar juegos mas grandes por ejemplo
-Se construye una red a base de una HASH TABLE
+En BitTorrent, los pares que ya tienen el archivo completo y solo suben se suelen llamar *seeds*, y los que todavía descargan, *leechers*. Para que nadie solo descargue sin aportar, cada par prioriza subirle a quienes le suben más rápido.
 
-![Distribución de archivos por fragmentos y tablas hash distribuidas](adjuntos/Distribución%20de%20archivos%20por%20fragmentos%20y%20tablas%20hash%20distribuidas.png)
+## DHT: P2P sin tracker
+
+Una **DHT** (*Distributed Hash Table*) es un **método de direccionamiento para redes P2P estructuradas**:
+
+- **cada miembro posee una identificación única**;
+- se construye una **red superpuesta** (*overlay network*) entre los miembros, una red lógica sobre Internet;
+- **los miembros se encargan de enrutar los mensajes**: no hace falta un servidor central que sepa quién tiene qué.
+
+Cada clave (por ejemplo, el identificador de un archivo) queda a cargo de un miembro determinado. En el anillo de la figura, una convención habitual es que el responsable de una clave sea el primer miembro con identificador mayor o igual a ella.
+
+![Distribución de archivos por fragmentos y tablas hash distribuidas](adjuntos/Distribuci%C3%B3n%20de%20archivos%20por%20fragmentos%20y%20tablas%20hash%20distribuidas.png)
 
 > [!example]- Transcripción de la imagen
-> Fragmentación y Tablas Hash Distribuidas (DHT):
-> - Los archivos se dividen en fragmentos (*chunks* o bloques) de tamaño fijo (típicamente 256 KB).
-> - Algoritmo *Rarest First*: los pares solicitan primero los fragmentos más escasos en el enjambre para maximizar la diversidad de bloques.
-> - *Tit-for-Tat*: un par envía fragmentos a los 4 pares que actualmente le proveen la mayor tasa de descarga (*unchoked*), reservando un optimista (*optimistic unchoking*) para descubrir nuevos pares rápidos.
-> - DHT (e.g. Kademlia): Permite operar sin *trackers* centralizados (*trackerless*), distribuyendo el mapeo clave-valor sobre el espacio de identificadores de los nodos.
+> "Método de direccionamiento para redes P2P estructuradas. Cada miembro posee una identificación única. Se construye una *overlay network* entre miembros. Miembros se encarga de enrutar mensajes". Dos anillos con los nodos 1, 3, 4, 5, 8, 10, 12 y 15. En el izquierdo, cada nodo apunta solo a su sucesor, y el nodo 3 pregunta "*Who is responsible for key 11?*". En el derecho, además del anillo, cada nodo tiene atajos hacia nodos lejanos.
 
-> [!tip] Complemento de clase: Churn en redes P2P
-> El dinamismo de entrada y salida arbitraria de pares se denomina *churn*. Las redes P2P deben ser tolerantes a fallos y reconfigurar sus rutas o redistribuir fragmentos cuando nodos abandonan la red sin previo aviso.
+```python
+NODOS = sorted([1, 3, 4, 5, 8, 10, 12, 15])     # identificadores del anillo
 
----
+def responsable(clave):
+    """El primer nodo con id >= clave; si no hay, se da la vuelta al anillo."""
+    for n in NODOS:
+        if n >= clave:
+            return n
+    return NODOS[0]
+
+def buscar(clave, desde):
+    """Cada nodo solo conoce a su sucesor: la consulta avanza por el anillo."""
+    i, saltos = NODOS.index(desde), [desde]
+    while NODOS[i] != responsable(clave):
+        i = (i + 1) % len(NODOS)
+        saltos.append(NODOS[i])
+    return saltos
+
+print(responsable(11), buscar(11, 3))   # 12 [3, 4, 5, 8, 10, 12]
+```
+
+Si cada nodo conoce solo a su sucesor, la consulta da la vuelta paso a paso (5 saltos en el ejemplo). Los **atajos** del anillo derecho permiten llegar en muchos menos saltos.
 
 ## Preguntas de repaso
 
-> [!question]- ¿Por qué la estrategia *Rarest First* es fundamental para la supervivencia de un enjambre BitTorrent?
-> Porque asegura que los fragmentos menos comunes se repliquen rápidamente entre múltiples pares; si un par con un fragmento único se desconecta antes de compartirlo, el archivo quedaría incompleto para todo el enjambre.
+> [!question]- ¿Qué ventaja y qué desafío tiene una red P2P frente a cliente-servidor?
+> Escala mejor, porque cada miembro aporta capacidad y no depende de un servidor. El desafío es manejar la entrada y salida constante de miembros.
 
-> [!question]- ¿Qué incentivo proporciona el algoritmo *Tit-for-Tat* frente al problema del usuario parásito (*free rider*)?
-> Cada nodo prioriza subir datos a los pares que le están devolviendo datos a mayor velocidad. Un usuario que bloquea sus subidas o limita su ancho de banda es penalizado (*choked*) por sus vecinos, reduciendo drásticamente su velocidad de descarga.
+> [!question]- ¿Para qué sirve el tracker en BitTorrent?
+> Para que un nuevo par obtenga la lista de pares que están compartiendo el archivo y pueda conectarse con ellos para intercambiar pedazos.
 
-> [!question]- ¿Cómo reemplaza una DHT (Distributed Hash Table) al *tracker* centralizado en BitTorrent?
-> Asigna a cada archivo un hash infohash de 160 bits e indexa los pares responsables de cada clave en una red superpuesta (*overlay network*), permitiendo que los nodos encuentren otros pares mediante consultas estructuradas nodo a nodo sin necesidad de un servidor único.
+> [!question]- ¿Qué es una DHT y qué problema resuelve?
+> Una tabla hash distribuida: cada miembro tiene un identificador y es responsable de ciertas claves, y los miembros enrutan las consultas entre ellos. Permite encontrar quién tiene un recurso sin un servidor central.
 
+> [!question]- En el anillo de la figura, ¿qué nodo es responsable de la clave 11 y por qué ayudan los atajos?
+> El nodo 12, el primero con identificador mayor o igual a 11. Sin atajos, una consulta desde el nodo 3 recorre 3 → 4 → 5 → 8 → 10 → 12; con atajos, se salta por encima de varios nodos y se llega antes.

@@ -1,67 +1,65 @@
 ---
 ramo: Sistemas Operativos y Redes
 tema: Estructura de sistemas operativos
-tags: [so/estructura-so, origen/apuntes]
+tags: [so/estructura-so, origen/complemento]
 prerrequisitos: ["[[02 - Modos de operación y anillos de protección|Modos de operación y anillos de protección]]"]
 ---
 # Interrupciones y excepciones
 
-Un sistema operativo es esencialmente un sistema conducido por eventos (*event-driven*): permanece en reposo hasta que una interrupción de hardware o una trampa/excepción de software solicita la intervención del procesador.
+El sistema operativo **no hace nada por sí solo**: su trabajo es brindar servicios, así que espera a que alguien se los pida. Ese "alguien" se manifiesta como una **interrupción**, un evento que detiene lo que está haciendo la CPU y le entrega el control al kernel. Por eso se dice que el SO está **conducido por eventos** (*event-driven*).
 
-## CLASE 2 (mis apuntes)
-14 / 08 / 2024
+## El SO responde, no actúa
 
-Estos son INTERRUPCIONES, el Kernell es quien le responde al usuario si cumple con los permisos anteriores,
+Si el usuario no hace nada, no se generan interrupciones de su parte y el SO solo mantiene los servicios básicos, como la gestión de batería. Cuando un programa necesita algo que requiere privilegios (leer un archivo, usar la red), **le pregunta al SO**, y el kernel responde solo si el programa cumple los permisos. Esta consulta tiene un costo en tiempo (*overhead*): es el precio de la protección vista en [[02 - Modos de operación y anillos de protección|modos de operación]].
 
-### INTERRUPCIONES
-- El programa le pregunta al S.O si tenemos permisos → Esto quita tiempo (OVERHEAD)
-- El sistema operativo no hace nada por si solo, porque brinda servicios
-- Si yo no hago nada, no genero interrupciones, esperará a que yo le pida algo
-- Solo correra lo basico → bateria, etc
-- Si nosotros no hacemos nada, solo dara servicios basicos
+El flujo cuando un programa de usuario pide un servicio tiene cuatro pasos:
+
+1. El programa genera un **trap** (trampa), que es una interrupción generada por software.
+2. El control pasa al sistema operativo, en *kernel space*.
+3. El SO ejecuta el servicio solicitado. Mientras tanto, el programa queda en espera.
+4. Terminado el servicio, el SO devuelve el control al programa de usuario.
 
 ![Flujo de interrupción entre usuario y kernel](adjuntos/Flujo%20de%20interrupción%20entre%20usuario%20y%20kernel.png)
 
 > [!example]- Transcripción de la imagen
-> Diagrama temporal del flujo de una interrupción:
-> 1. Un **Programa de usuario** se ejecuta en *User space*.
-> 2. Ocurre un evento o solicitud que dispara una **INTERRUPCIÓN**, forzando un salto a *Kernel space*.
-> 3. El programa de usuario entra en estado de espera mientras se ejecuta el **Servicio de kernel** (rutina de atención de la interrupción / ISR).
-> 4. Concluida la atención del evento, el kernel restablece el contexto del procesador y retorna el control al programa en *User space* a través de una instrucción de retorno (`iret`).
+> Línea de tiempo con dos franjas, *User space* arriba y *Kernel space* abajo. El "Programa de usuario" corre en *user space* hasta que una flecha roja marcada **INTERRUPCION** baja al "Servicio de *kernel*". Mientras el servicio corre, el programa aparece "en espera" (línea punteada). Al terminar el servicio, otra flecha devuelve la ejecución al programa de usuario.
 
-> [!tip] Complemento (slides "Contenido 1: Interrupciones y Excepciones")
-> En la arquitectura computacional moderna se distinguen dos clases de eventos:
-> - **Interrupciones de hardware (asíncronas):** Señales eléctricas generadas por dispositivos periféricos externos a la CPU (un clic del mouse, llegada de un paquete de red por la tarjeta NIC, pulso periódico del reloj / *timer interrupt*). No están sincronizadas con la instrucción actual de la CPU.
-> - **Trampas / Excepciones (síncronas):** Eventos generados por la propia CPU durante la ejecución de una instrucción:
->   - **Excepciones de error:** División por cero, desbordamiento aritmético, violación de segmento (*segmentation fault*), fallo de página (*page fault*).
->   - **Trampas de software / Syscalls:** Instrucciones deliberadas de software (`int 0x80`, `syscall`, `sysenter`) para solicitar servicios al kernel.
->
-> **Tabla de vectores de interrupción (IVT / IDT):** Una tabla fija en memoria administrada por el kernel donde cada índice de interrupción apunta a la dirección de memoria de su manejador correspondiente (*Interrupt Service Routine* - ISR).
+## Tipos de eventos
+
+| Tipo | Origen | Relación con la instrucción actual | Ejemplos |
+|---|---|---|---|
+| **Interrupción de hardware** | Un dispositivo externo a la CPU | **Asíncrona**: llega en cualquier momento | Teclado o mouse, llegada de un paquete a la tarjeta de red, el *timer* |
+| **Excepción** | La propia CPU, al fallar una instrucción | **Síncrona**: la causa la instrucción en curso | División por cero, acceso inválido a memoria (*segmentation fault*), fallo de página |
+| **Trap** (interrupción de software) | El programa, deliberadamente | **Síncrona** | Una [[05 - Llamadas al sistema\|llamada al sistema]] (instrucciones `syscall`/`sysenter`, o `int 0x80` en Linux x86 antiguo) |
+
+La interrupción del **timer** merece mención aparte: llega periódicamente y le devuelve el control al kernel aunque ningún programa lo pida. Así el SO puede quitarle la CPU a un proceso que no la suelta, que es la base de la planificación expropiativa.
+
+## Cómo encuentra el kernel qué ejecutar
+
+Cada tipo de interrupción tiene un número. El **vector de interrupciones** es una tabla que el SO configura en el hardware (en el x86 original era la IVT, *Interrupt Vector Table*; en modo protegido es la IDT, *Interrupt Descriptor Table*), donde cada número apunta al código del kernel que la atiende, la **rutina de servicio** (ISR, *Interrupt Service Routine*). Modificar esa tabla es una instrucción privilegiada: si un programa pudiera cambiarla, podría hacer que el kernel ejecutara su código.
 
 ```mermaid
 flowchart TD
-  Event["Evento ocurre (HW o SW)"] --> SaveContext["CPU guarda registros y estado en pila de kernel"]
-  SaveContext --> SwitchMode["Cambio a Kernel Mode (mode bit = 0)"]
-  SwitchMode --> LookupIDT["Búsqueda en tabla de vectores (IDT)"]
-  LookupIDT --> RunISR["Ejecución del manejador (ISR)"]
-  RunISR --> Restore["Restauración de contexto y modo usuario (iret)"]
+  A["Ocurre un evento: hardware, excepción o trap"] --> B["CPU guarda el estado del programa"]
+  B --> C["Cambia a modo kernel"]
+  C --> D["Busca la rutina en el vector de interrupciones"]
+  D --> E["Ejecuta la rutina de servicio, ISR"]
+  E --> F["Restaura el estado y vuelve a modo usuario, iret"]
 ```
 
 ## Preguntas de repaso
 
-1. ¿Por qué se dice que el sistema operativo es un sistema guiado por eventos (*event-driven*)?
-> [!question]- Respuesta
-> Porque no consume ciclos de CPU en bucles activos esperando tareas; si no hay eventos pendientes ni procesos listos, la CPU pasa a un estado de bajo consumo hasta que una interrupción la despierta.
+> [!question]- ¿Por qué se dice que el sistema operativo es conducido por eventos?
+> Porque no hace nada por iniciativa propia: actúa solo cuando una interrupción, sea del hardware, una excepción o un trap de un programa, le transfiere el control. Sin eventos, solo mantiene los servicios básicos.
 
-2. ¿Cuál es la diferencia fundamental entre una interrupción de hardware y una excepción?
-> [!question]- Respuesta
-> La interrupción de hardware es asíncrona y proviene de un dispositivo externo a la CPU (como el teclado o el reloj); la excepción es síncrona y es causada directamente por la instrucción que la CPU está ejecutando (como una división por cero o una llamada al sistema).
+> [!question]- ¿En qué se diferencia una interrupción de hardware de una excepción?
+> La interrupción de hardware es asíncrona: la genera un dispositivo externo en cualquier momento. La excepción es síncrona: la provoca la instrucción que la CPU está ejecutando, como una división por cero.
 
-3. ¿Qué rol juega el temporizador (*timer interrupt*) en los sistemas operativos con multitasking?
-> [!question]- Respuesta
-> Envía interrupciones periódicas a intervalos fijos de tiempo para que el kernel retome el control de la CPU, impidiendo que un proceso de usuario monopolice el procesador y permitiendo la planificación equitativa (*preemption*).
+> [!question]- ¿Qué es un trap y cuándo lo usa un programa?
+> Es una interrupción generada por software a propósito. El programa la usa para pedirle un servicio al SO (una syscall), pasando de modo usuario a modo kernel por un punto de entrada controlado.
 
-4. ¿Qué es la Tabla de Descriptores de Interrupción (IDT)?
-> [!question]- Respuesta
-> Es una estructura de datos en memoria cargada durante el arranque que asocia cada número de interrupción con la dirección de memoria de la rutina de servicio del kernel (ISR) encargada de procesarlo.
+> [!question]- ¿Por qué el timer es esencial para el SO?
+> Porque garantiza que el kernel recupere el control periódicamente, aunque un proceso nunca haga syscalls. Sin él, un programa en un ciclo infinito monopolizaría la CPU.
 
+> [!question]- ¿Por qué modificar el vector de interrupciones debe ser privilegiado?
+> Porque el vector decide qué código se ejecuta en modo kernel ante cada evento. Si un programa de usuario pudiera cambiarlo, ejecutaría su propio código con todos los privilegios.

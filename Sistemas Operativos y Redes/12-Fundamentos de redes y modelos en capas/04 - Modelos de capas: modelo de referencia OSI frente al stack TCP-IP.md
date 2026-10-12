@@ -5,80 +5,62 @@ tags:
   - redes/modelos
   - redes/osi
   - redes/tcp-ip
-  - origen/apuntes
   - origen/complemento
 prerrequisitos:
-  - "[[Sistemas Operativos y Redes/12-Fundamentos de redes y modelos en capas/01 - Arquitectura de Internet, nodos, enlaces y protocolos\|01 - Arquitectura de Internet, nodos, enlaces y protocolos]]"
+  - "[[Sistemas Operativos y Redes/12-Fundamentos de redes y modelos en capas/01 - Arquitectura de Internet, nodos, enlaces y protocolos|01 - Arquitectura de Internet, nodos, enlaces y protocolos]]"
 ---
 
 # Modelos de capas: modelo de referencia OSI frente al stack TCP-IP
 
-Para gestionar la complejidad del software y hardware de comunicaciones, las redes se estructuran modularmente en capas donde cada estrato implementa protocolos específicos y ofrece servicios bien definidos al nivel superior.
+El hardware de red resuelve solo la mitad de la tarea: además de mover bits, el mensaje tiene que llegar al **proceso** correcto. Para que algo tan complejo sea manejable, el software de redes se organiza en **capas**: cada una resuelve un problema específico, y esa separación de responsabilidades permite modelar e implementar sistemas complejos.
 
-## Modelos en capas y arquitectura de protocolos (mis apuntes)
+## Capas, servicios y protocolos
 
-- Software de Redes
-- Hardware soluciona mitad de la tarea
-- Redes se organizan en base a un modelo de CAPAS
-- Las Capas se comunican usando PROTOCOLOS
-- Este modelo de capas se ven a partir de un medio fisico
-- Cada capa atiende a un problema especifico
-- Y cada capa funciona utilizando un protocolo específico
-- Los mensajes pueden ser modificados en cada capa → Agregando headers o modificando todo el mensaje
-- Cada capa entrega servicios a una Capa Superior
-- Y solicita servicios a una capa inferior
-- Modelo OSI (modelo de referencia)
-- Define las reponsabilidades para cada capa
-- No define estandares ni protocolos ni implementaciones
-- A partir de esto, una implementacion practica es la STACK TCP/IP
-- TCP/IP
-- Con respecto al modelos OSI: es mas compactada, y tenemos solo 5 capas:
-- Applicacion
-- Transporte
-- Network
-- Link
-- Physical
-- CAPA APLICACION
-- Funciona con los procesos, cuando vemos el tema de sockets, estamos hablando de la capa aplicacion, vamos a pedirle servicios a la capa de transporte
-- Algunos de esto son los protocolos que intercambian MENSAJES
-- ej:
-- HTTP
-- SMTP
-- FTP
-- DNS
-- IMAP
-- POP
-- Capa presentacion y sesion (solo en modelo OSI) → Son compactadas en Applicacion (para modelo TCP/IP)
-- Presentacion de mensajes y sesion → Es la logica en el envio
-- Cada capa aplicacion es encargado de:
-- Codificar
-- Encriptar
-- Autorizar
-- etc
+- Las capas se construyen a partir del **medio físico**, de abajo hacia arriba.
+- Cada capa **atiende un problema específico** y funciona con un **protocolo** propio.
+- Cada capa **entrega servicios a la capa superior** y **solicita servicios a la inferior**.
+- Los mensajes pueden **modificarse en cada capa**: se les agregan *headers* o se transforma todo el mensaje.
 
-> [!tip] Complemento: Comparación arquitectónica de OSI frente a TCP/IP
-> ![Comparación de modelos en capas OSI frente a TCP IP](adjuntos/Comparación%20de%20modelos%20en%20capas%20OSI%20frente%20a%20TCP%20IP.png)
->
-> > [!example]- Transcripción de la imagen
-> > **Mapeo entre el modelo de referencia OSI (7 capas) y el modelo de Internet TCP/IP (5 capas):**
-> > - **Modelo OSI (ISO/IEC 7498-1):**
-> >   - 7. **Aplicación:** interfaz directa con el usuario o aplicación.
-> >   - 6. **Presentación:** sintaxis y semántica de datos (codificación, compresión, cifrado).
-> >   - 5. **Sesión:** control de diálogo, sincronización y delimitación de sesión.
-> >   - 4. **Transporte:** transferencia confiable de datos de proceso a proceso.
-> >   - 3. **Red:** enrutamiento de paquetes de host a host a través de la subred.
-> >   - 2. **Enlace de datos:** transferencia confiable de tramas sobre el enlace físico adyacente.
-> >   - 1. **Física:** transmisión de flujo de bits brutos sobre el medio.
-> > - **Stack TCP/IP:** fusiona las funciones de las capas 5, 6 y 7 de OSI dentro de una única capa superior (**Capa de Aplicación**). Si una aplicación necesita cifrado o control de sesión, lo implementa en su propio código o biblioteca de espacio de usuario (p. ej. mediante TLS/HTTPS).
+Un **servicio** es el conjunto de primitivas que provee una funcionalidad hacia arriba; un **protocolo** son las reglas con que una capa conversa con su par del otro lado. Por eso el **protocolo de una capa se puede cambiar sin afectar el servicio** que reciben las demás.
+
+![Comparación de modelos en capas OSI frente a TCP IP](adjuntos/Comparaci%C3%B3n%20de%20modelos%20en%20capas%20OSI%20frente%20a%20TCP%20IP.png)
+
+> [!example]- Transcripción de la imagen
+> "*Servicio*: conjunto de primitivas que provee una funcionalidad". Dos pilas, una a cada lado. En cada una, *Layer k* recibe servicios de *Layer k − 1* y ofrece el *Service provided by layer k* a *Layer k + 1*. Entre las dos *Layer k* hay una flecha punteada marcada *Protocol*.
+
+> [!tip] Analogía: dos personas que no hablan el mismo idioma
+> Dos personas quieren conversar (capa 3: mensaje entre personas). Cada una le pasa su mensaje a un traductor, y los traductores se ponen de acuerdo en un idioma común (capa 2: mensaje entre traductores). Los traductores se lo pasan a una secretaria que lo envía por fax (capa 1: envío físico). Si los traductores cambian de idioma común, las personas ni se enteran: el protocolo cambió, pero el servicio es el mismo.
+
+## OSI frente a TCP/IP
+
+El **modelo OSI** (ISO, *Open Systems Interconnection*, norma ISO/IEC 7498-1), propuesto en 1983 y revisado en 1995, es un **modelo de referencia**: define las **responsabilidades** de cada capa, pero **no define estándares, protocolos ni implementaciones**. La implementación práctica es el **stack TCP/IP** (modelo Internet), que nació como el stack de protocolos de ARPANET, un proyecto de investigación del Departamento de Defensa de EE. UU. Lo propusieron Vinton Cerf y Robert E. Kahn en 1974 y se estandarizó en 1989. Es más compacto: tiene **5 capas**.
+
+| OSI (7 capas) | TCP/IP (5 capas) | Qué hace | Ejemplos |
+|---|---|---|---|
+| Aplicación | **Aplicación** | Los procesos intercambian **mensajes** | HTTP, SMTP, FTP, DNS, IMAP, POP, SSH |
+| Presentación | (dentro de Aplicación) | Codificación, encriptación, serialización | — |
+| Sesión | (dentro de Aplicación) | Sesión entre aplicaciones, autorización y autenticación | — |
+| Transporte | **Transporte** | Lleva mensajes entre procesos de origen y destino | TCP, UDP |
+| Red | **Red** | Lleva paquetes entre un par de hosts | IP |
+| Enlace | **Enlace** | Transfiere datos entre nodos vecinos | Ethernet, Wi-Fi |
+| Física | **Física** | Transmite los bits por el medio | Cobre, fibra, radio |
+
+## La capa de aplicación
+
+Funciona con los **procesos**: cuando se programan *sockets*, se trabaja en la capa de aplicación y se le piden servicios a la capa de transporte. Sus protocolos intercambian **mensajes**: HTTP (*HyperText Transfer Protocol*), SMTP (*Simple Mail Transfer Protocol*), FTP (*File Transfer Protocol*), DNS (*Domain Name System*), IMAP, POP, SSH, DHCP, Telnet, XMPP…
+
+Las capas de **presentación y sesión** solo existen en OSI. En TCP/IP, si una aplicación necesita codificar, encriptar o autorizar, lo implementa ella misma (por ejemplo, el cifrado TLS que usa HTTPS). Las capas inferiores se ven en [[05 - Capas de transporte, red, enlace y física|capas de transporte, red, enlace y física]], y cómo se van agregando los *headers* en [[06 - Proceso de encapsulamiento y flujo de datos en la red|encapsulamiento]].
 
 ## Preguntas de repaso
 
-> [!question]- ¿Por qué el modelo OSI se considera un modelo de referencia teórico mientras que TCP/IP es la arquitectura práctica de Internet?
-> Porque OSI definió una especificación conceptual formal de 7 capas antes de que existieran implementaciones masivas de mercado. En contraste, TCP/IP evolucionó de forma pragmática a partir de la implementación de ARPANET, guiada por el principio de desarrollo empírico de la IETF (*rough consensus and running code*).
+> [!question]- ¿Qué diferencia hay entre un servicio y un protocolo?
+> El servicio es lo que una capa ofrece a la capa de arriba (sus primitivas). El protocolo son las reglas con que esa capa se comunica con la capa equivalente del otro extremo. Se puede cambiar el protocolo sin cambiar el servicio.
 
-> [!question]- ¿Dónde residen las responsabilidades de las capas de presentación y sesión de OSI dentro del modelo de Internet TCP/IP?
-> Residen íntegramente dentro de la capa de aplicación o en bibliotecas auxiliares de espacio de usuario utilizadas por el desarrollador (como OpenSSL para cifrado TLS, o mecanismos de cookies/tokens para gestión de sesión en HTTP).
+> [!question]- ¿Por qué OSI es un modelo de referencia y TCP/IP un stack de protocolos?
+> OSI define qué responsabilidad tiene cada capa, sin especificar protocolos ni implementaciones. TCP/IP es una implementación concreta, con protocolos reales (IP, TCP, UDP, HTTP…).
 
-> [!question]- ¿Cuál es la unidad de datos de protocolo (PDU) intercambiada en la capa de aplicación?
-> En la capa de aplicación, la unidad de datos intercambiada entre procesos se denomina formalmente **mensaje** (*message*).
+> [!question]- ¿Qué pasa con las capas de presentación y sesión en TCP/IP?
+> No existen como capas separadas: si una aplicación necesita codificar, encriptar o manejar sesiones y autenticación, lo hace dentro de la capa de aplicación.
 
+> [!question]- Nombra las 5 capas de TCP/IP y un protocolo de cada una.
+> Aplicación (HTTP), transporte (TCP), red (IP), enlace (Ethernet) y física (el medio: cobre, fibra o radio).

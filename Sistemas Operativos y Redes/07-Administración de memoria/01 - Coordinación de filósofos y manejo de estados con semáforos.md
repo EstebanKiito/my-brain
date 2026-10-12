@@ -4,7 +4,7 @@ tema: "Administración de memoria"
 tags:
   - so/memoria
   - so/sincronizacion
-  - origen/apuntes
+  - origen/complemento
 prerrequisitos:
   - "[[09 - Problema de los filósofos comelones y deadlocks]]"
   - "[[06 - Semáforos de Dijkstra y tipos de semáforos]]"
@@ -12,80 +12,126 @@ prerrequisitos:
 
 # Coordinación de filósofos y manejo de estados con semáforos
 
-En la sesión inicial del módulo de memoria se repasaron las primitivas de sincronización y se analizó la implementación concreta del problema clásico de los cinco filósofos empleando una máquina de estados por filósofo y semáforos privados para evitar la inanición y el interbloqueo.
+En [[09 - Problema de los filósofos comelones y deadlocks|el problema de los filósofos]] se vio que tomar los palillos uno por uno puede llevar a un deadlock. Esta nota desarrolla la solución que lo evita: en vez de pelear por cada palillo, cada filósofo **declara un estado**, y solo pasa a comer cuando sus dos vecinos no están comiendo. Sirve además como repaso de las herramientas del capítulo de sincronización.
 
-## Sincronización y cena de los filósofos (mis apuntes)
+## Herramientas en juego
 
-> [!note] Apuntes de clase
-> **Clase 6 (Online) → Mauro Quintana**
-> **MEMORIA**
-> 2/09/24
->
-> **Resumen:**
-> - Mutex Lock: Aquire() - Realease()
-> - Semaforos: V() - P()
-> - Varaibles de condicion: singal() - wait()
-> - Primitivas de Software
-> - Exclusion mutua
-> - Progreso
-> - Espera Acotada
-> - Propiedades de la Sincronizacion (Seccion Critica
->
-> **Problema visto en clases → Problema de los 5 filósofos**
-> Cada filosofo tendre un semaforo que va a empezar en 1
-> Los filosofos van a tener 3 estados posibles:
-> - Estado filosofal → Tiene palillo
-> - Estado hungry → Tiene intenciones de utilizar el palillo
-> - Estado eating → Esta usando el
->
-> **POSIBLES CASOS DE LOS THREADS**
-> Intento tomar los palillos:
-> Entro a try forks
-> Compruebo el estado de los comesales a la derecha y izquierda
-> - Happy path → irse a take_forks : Y se ejecuta a la primera, aquire el lock
->
-> Dentro de try forks:
-> Nunca accedi a philoshoppher[i}.V() → Por lo tanto el contador sigue en 0
-> Y se va a bloquear en la instruccion philosopher[i].P() → Porque el contador sigue en 0
-> No pude decrementar en el contador
-> El de la izquierda o la derecha esta comiendo
-> Por lo tanto ese ejecuto take_force
-> va a comer eat()
-> y va a soltar los palillos
-> en realease forks → Cambia de estado a filosofando
-> Y le avisa al de la izquierda → Intenta tomar los palillos
-> Ahora en nuestro principal si cumple, aumenta el contador → Vuelve a estar en 1
-> Dentro de la funcion, desperte al proceso de la cola de dormidos
-> El que estaba durmiendo era philosopher[i].P() para decrementar el contador
-> Se levanta y hace lo que debia
-> Finalmente en este caso, es otro thread el que nos avisa que podemos continuar (realese_forks)
-> - Unhappy path → Alguno esta usando los palillos
+| Primitiva | Operaciones |
+|---|---|
+| [[04 - Mutex locks y el dilema de busy waiting versus dormir\|Mutex lock]] | `acquire()`, `release()` |
+| [[06 - Semáforos de Dijkstra y tipos de semáforos\|Semáforo]] | `P()`, `V()` |
+| [[07 - Variables de condición y monitores\|Variable de condición]] | `wait()`, `signal()` |
 
-> [!warning] Posible error
-> En los apuntes se indica "Estado filosofal → Tiene palillo". En la formulación estándar (Tanenbaum), en el estado *THINKING* (pensando/filosofando) el proceso no retiene ningún recurso; los palillos se adquieren exclusivamente al transicionar a *EATING*. Asimismo, figuran erratas tipográficas menores: "Aquire() - Realease()", "singal()", "philoshoppher[i}.V()", "take_force" y "realese_forks".
+Todas son primitivas de software, y toda solución debe cumplir los tres criterios de la sección crítica: exclusión mutua, progreso y espera acotada.
+
+## La idea: estados y un semáforo por filósofo
+
+Cada filósofo tiene un estado:
+
+| Estado | Significado |
+|---|---|
+| `PHILOSOPHISE` | Pensando (*free*): no tiene palillos |
+| `HUNGRY` | Quiere comer (*waiting*): tiene intenciones de usar los palillos |
+| `EATING` | Está comiendo (*using*): tiene ambos palillos |
+
+Es la solución clásica de Tanenbaum, que usa los nombres `THINKING`, `test()` y `put_forks()` donde el curso usa `PHILOSOPHISE`, `try_forks()` y `release_forks()`. Además, **cada filósofo tiene su propio semáforo, que empieza en 0**. Un filósofo que no puede comer se bloquea en su semáforo, y un vecino lo despierta cuando le llega el turno. Un lock `l` protege el arreglo de estados.
 
 ![Coordinación de filósofos con estados y semáforos](adjuntos/Coordinaci%C3%B3n%20de%20fil%C3%B3sofos%20con%20estados%20y%20sem%C3%A1foros.png)
 
 > [!example]- Transcripción de la imagen
-> Diagrama y pseudocódigo en C de la solución de Tanenbaum al problema de los filósofos comelones:
-> - Vector de estados `state[N]` con valores `THINKING`, `HUNGRY`, `EATING`.
-> - Mutex `mutex` para proteger la evaluación y actualización de estados.
-> - Arreglo de semáforos `s[N]` (inicializados en 0) donde se bloquea cada filósofo si sus vecinos comen.
-> - Función `test(i)`: verifica si `state[i] == HUNGRY && state[LEFT] != EATING && state[RIGHT] != EATING`. Si se cumple, cambia a `state[i] = EATING` y ejecuta `V(s[i])`.
-> - `take_forks(i)`: adquiere mutex, fija `state[i] = HUNGRY`, ejecuta `test(i)`, suelta mutex y ejecuta `P(s[i])`.
-> - `put_forks(i)`: adquiere mutex, fija `state[i] = THINKING`, prueba `test(LEFT)` y `test(RIGHT)`, y suelta mutex.
+> `int N = 5; enum {PHILOSOPHISE, HUNGRY, EATING} state[N]; /* free / waiting / using */ struct lock l; struct semaphore philosopher[N]; // inicializados en 0`.
+> `int left(i) { return (i+N-1)%N; }`, `int right(i) { return (i+1)%N; }`.
+> `void philosoph(int i) { while(TRUE) { think(); take_forks(); eat(); release_forks(); } }`.
+> `void take_forks(int i) { l.acquire(); state[i] = HUNGRY; try_forks(i); l.release(); philosopher[i].P(); }`.
+> `void release_forks(int i) { l.acquire(); state[i] = PHILOSOPHISE; try_forks(left(i)); try_forks(right(i)); l.release(); }`.
+> `void try_forks(int i) { if(state[i] == HUNGRY && state[left(i)] != EATING && state[right] != EATING) { state[i] = EATING; philosopher[i].V(); } }`.
 
-> [!tip] Complemento: Mecanismo de señalización cruzada
-> La clave de este diseño radica en que cuando un filósofo no puede comer inmediatamente en `take_forks()`, no entra a la sección crítica de comer y queda suspendido en su semáforo privado (`P(s[i])`). Cuando sus vecinos terminan de comer en `put_forks()`, evalúan `test()` sobre sus adyacentes y ejecutan `V(s[vecino])`, despertándolo de la cola de bloqueados del kernel.
+## Los dos caminos
+
+**Happy path: los palillos están libres.** El filósofo entra a `take_forks`, se marca `HUNGRY` y llama a `try_forks`, que revisa a los comensales de la izquierda y la derecha. Si ninguno está comiendo, lo pasa a `EATING` y hace `V()` sobre su semáforo, que sube a 1. Al salir, el `P()` decrementa ese 1 de inmediato: pasa a la primera y come.
+
+**Unhappy path: algún vecino está comiendo.** `try_forks` no cumple la condición, así que nunca se ejecutó el `V()` y el contador sigue en 0. El filósofo **se bloquea en `philosopher[i].P()`**, porque no puede decrementar el contador. Mientras tanto, el vecino que comía termina y llama a `release_forks`: se marca `PHILOSOPHISE` y prueba `try_forks` sobre sus dos vecinos. Para nuestro filósofo la condición ahora se cumple, así que lo pasa a `EATING` y hace `V()`. Eso **despierta al que dormía** en `P()`, que decrementa el contador y come. En este caso es **otro thread** el que avisa que se puede continuar.
+
+```mermaid
+sequenceDiagram
+  participant A as Filósofo i
+  participant B as Vecino comiendo
+  A->>A: take_forks: HUNGRY, try_forks falla
+  A->>A: P() con contador 0, se bloquea
+  B->>B: release_forks: PHILOSOPHISE
+  B->>A: try_forks(i): EATING y V()
+  A->>A: despierta, P() decrementa y come
+```
+
+## En C
+
+```c
+#include <pthread.h>
+#include <semaphore.h>
+#include <stdio.h>
+
+#define N 5
+enum { PHILOSOPHISE, HUNGRY, EATING } state[N];   /* libre / esperando / usando */
+pthread_mutex_t l = PTHREAD_MUTEX_INITIALIZER;
+sem_t philosopher[N];                             /* uno por filósofo, inicializados en 0 */
+
+int left(int i)  { return (i + N - 1) % N; }
+int right(int i) { return (i + 1) % N; }
+
+void try_forks(int i) {                           /* se llama con l tomado */
+    if (state[i] == HUNGRY && state[left(i)] != EATING && state[right(i)] != EATING) {
+        state[i] = EATING;
+        sem_post(&philosopher[i]);                /* V: le da permiso a i */
+    }
+}
+
+void take_forks(int i) {
+    pthread_mutex_lock(&l);
+    state[i] = HUNGRY;
+    try_forks(i);                                 /* ¿puedo comer ya? */
+    pthread_mutex_unlock(&l);
+    sem_wait(&philosopher[i]);                    /* P: si no pude, duermo aquí */
+}
+
+void release_forks(int i) {
+    pthread_mutex_lock(&l);
+    state[i] = PHILOSOPHISE;
+    try_forks(left(i));                           /* ¿mis vecinos pueden comer ahora? */
+    try_forks(right(i));
+    pthread_mutex_unlock(&l);
+}
+
+void *philosoph(void *arg) {
+    int i = *(int *)arg;
+    for (int k = 0; k < 3; k++) {
+        /* think() */
+        take_forks(i);
+        printf("filósofo %d come\n", i);          /* eat() */
+        release_forks(i);
+    }
+    return NULL;
+}
+
+int main(void) {
+    pthread_t t[N];
+    int id[N];
+    for (int i = 0; i < N; i++) sem_init(&philosopher[i], 0, 0);
+    for (int i = 0; i < N; i++) { id[i] = i; pthread_create(&t[i], NULL, philosoph, &id[i]); }
+    for (int i = 0; i < N; i++) pthread_join(t[i], NULL);
+    return 0;
+}
+```
 
 ## Preguntas de repaso
 
-> [!question]- ¿Por qué cada filósofo requiere un semáforo privado inicializado en 0 en lugar de bloquearse sobre un mutex global?
-> Si se bloqueara sobre el mutex global, impediría que cualquier otro filósofo verifique o cambie de estado. El semáforo privado permite suspender selectivamente solo al filósofo que no tiene ambos palillos disponibles, manteniendo la concurrencia en la mesa.
+> [!question]- ¿Por qué el semáforo de cada filósofo se inicializa en 0?
+> Porque representa el permiso para comer, y al inicio nadie lo tiene. Solo `try_forks` lo concede con `V()` cuando los dos vecinos no están comiendo, y así el `P()` de `take_forks` deja pasar al filósofo o lo bloquea.
 
-> [!question]- ¿Qué rol cumple la función `test(i)` durante la ejecución de `put_forks()`?
-> Al terminar de comer y soltar los palillos, el filósofo invoca `test()` para su vecino izquierdo y derecho. Si alguno estaba en estado `HUNGRY` esperando palillos y ahora ambos vecinos están libres, `test()` transiciona su estado a `EATING` y realiza un `signal` (`V`) sobre su semáforo privado para despertarlo.
+> [!question]- ¿Por qué esta solución no produce deadlock?
+> Porque un filósofo nunca retiene un palillo mientras espera el otro: solo pasa a `EATING` si ambos vecinos están libres, y toma los dos de una vez. Así se rompe la condición de retención y espera.
 
-> [!question]- ¿Cómo garantiza esta solución que no ocurra deadlock?
-> El interbloqueo se elimina porque ningún filósofo toma un solo palillo y espera pasivamente con él en mano: solo se adquiere permiso para comer si ambos vecinos están libres simultáneamente, rompiendo la condición de retención y espera (*hold and wait*).
+> [!question]- ¿Para qué llama `release_forks` a `try_forks` sobre sus vecinos?
+> Para despertar a un vecino que esté `HUNGRY` esperando y que ahora sí pueda comer. Si nadie lo hiciera, ese vecino se quedaría bloqueado en su `P()` para siempre.
 
+> [!question]- ¿Por qué el `P()` de `take_forks` se hace después de soltar el lock `l`?
+> Porque si el filósofo durmiera con `l` tomado, ningún vecino podría entrar a `release_forks` para despertarlo, y el sistema se trabaría.

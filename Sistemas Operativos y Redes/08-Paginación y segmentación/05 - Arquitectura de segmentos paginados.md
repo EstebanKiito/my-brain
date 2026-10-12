@@ -5,7 +5,7 @@ tags:
   - so/memoria
   - so/segmentacion
   - so/paginacion
-  - origen/apuntes
+  - origen/complemento
 prerrequisitos:
   - "[[05 - Segmentación de memoria y prevención de segmentation fault]]"
   - "[[04 - Sobrecarga de tablas lineales y compromiso de fragmentación interna]]"
@@ -13,63 +13,83 @@ prerrequisitos:
 
 # Arquitectura de segmentos paginados
 
-Los esquemas híbridos de segmentos paginados combinan las fortalezas de la segmentación (reflejar la estructura lógica del programa y delimitar rangos útiles) con las de la paginación (eliminar la fragmentación externa dividiendo cada segmento en páginas de tamaño uniforme).
+Una tabla de páginas lineal tiene una entrada para **cada** página posible del espacio virtual, aunque el proceso use muy pocas. La mayor parte del espacio entre heap y stack nunca se usa, y sus entradas igual ocupan memoria. Los **segmentos paginados** combinan segmentación y paginación para no gastar entradas en esos huecos.
 
-## Combinación de segmentación y paginación (mis apuntes)
+## El problema: entradas vacías
 
-> [!note] Apuntes de clase
-> **Segmentos Paginados:**
-> Seg:
-> - Limite y base de segmento
-> - LA direccion virtual (primeros dos bits: Indican 4 segmentos posibles)
->
-> Dentro de cada segmento → Paginas:
-> - (VPN)
->
-> La idea es: Cada SEGMENTO tiene su propia TABLA DE PAGINAS!
-> Los segmentos en teoria, tienen un tamaño fijo a diferencia del heap, por lo tanto no va a usar todas las paginas que tiene asociada a el!!
->
-> ESPACIO VIRUTAL: 16 PAGINAS
-> - Un Proceso utiliza (EFECTIVAMENTE): 4 Paginas
-> - 12 entradas vacias (75%) en tabla de paginas
->
-> Con esto en la tabla de pagina, bastaría con poner menos (solo las utilizadas).
-> Con eso → Reduzco la gran cantidad de Entradas en paginas.
+Los procesos no suelen ocupar todas sus páginas. Con un espacio virtual de **16 páginas** y un proceso que **efectivamente usa 4**, quedan **12 entradas vacías (75%)** en la tabla de páginas. Bastaría con tener entradas solo para las páginas usadas.
 
-> [!warning] Posible error
-> En los apuntes figura la errata tipográfica "ESPACIO VIRUTAL" por Espacio Virtual.
+## La idea: una tabla de páginas por segmento
+
+**Cada segmento tiene su propia tabla de páginas.** La dirección virtual se divide en tres partes:
 
 ![Esquema de segmentos paginados con tablas independientes](adjuntos/Esquema%20de%20segmentos%20paginados%20con%20tablas%20independientes.png)
 
 > [!example]- Transcripción de la imagen
-> Traducción en arquitectura de segmentos paginados:
-> 1. Dirección virtual dividida en: Bits de Segmento ($s$), Número de Página dentro del segmento ($VPN_{\text{seg}}$) y Desplazamiento ($Offset$).
-> 2. Los bits de segmento indexan la Tabla de Segmentos para obtener la Base y Límite de la tabla de páginas de ese segmento específico.
-> 3. Se verifica que $VPN_{\text{seg}} < \text{Límite}(s)$.
-> 4. Se suma $\text{Base}(s) + VPN_{\text{seg}} \times \text{sizeof(PTE)}$ para leer la PTE y obtener el marco físico PFN.
-> 5. Dirección física = $\text{PFN} + Offset$.
+> Una dirección virtual de 32 bits: **Seg** en los bits 31-30, **VPN** en los bits 29-12 y **Offset** en los bits 11-0.
 
-![Reducción de entradas vacías en segmentos paginados](adjuntos/Reducción%20de%20entradas%20vacías%20en%20segmentos%20paginados.png)
+- **Bits de segmento** (los primeros 2): indican uno de **4 segmentos posibles**.
+- **VPN**: la página **dentro del segmento**.
+- **Offset**: el byte dentro de la página.
+
+Para cada segmento, la MMU guarda un par **base / límite** con otro significado que en la segmentación pura:
+
+- **base**: la dirección de la **tabla de páginas** del segmento;
+- **límite**: cuántas **páginas** tiene ese segmento.
+
+Así, la tabla de cada segmento solo tiene entradas para las páginas que el segmento realmente usa, y desaparecen las entradas vacías del hueco entre heap y stack.
+
+![Reducción de entradas vacías en segmentos paginados](adjuntos/Reducci%C3%B3n%20de%20entradas%20vac%C3%ADas%20en%20segmentos%20paginados.png)
 
 > [!example]- Transcripción de la imagen
-> Ahorro de memoria en espacio de direcciones disperso:
-> - En una tabla lineal continua, si un proceso define 16 páginas pero solo utiliza efectivamente 4 (por ejemplo, 1 de código, 1 de heap, 2 de stack), las 12 páginas restantes (75%) ocupan entradas no asignadas nulas que consumen memoria RAM.
-> - Al asignar una tabla de páginas independiente por segmento, el registro Límite de cada segmento restringe la tabla para que cubra únicamente las páginas que el proceso realmente ha reservado.
+> Dibujo a mano: una tabla dividida en bloques de distinto tamaño marcados **S0**, **S1**, **S2** y **S3**. El bloque S0 se subdivide en entradas **VPN0**, **VPN1**, … Cada segmento tiene su propia porción de entradas, de su propio tamaño.
 
-> [!tip] Complemento: Limitación de los segmentos paginados
-> Aunque este esquema resuelve el desperdicio de páginas intermedias no utilizadas entre el Heap y el Stack, aún requiere que cada tabla de páginas de segmento resida en un bloque de memoria física contiguo. Si un segmento crece considerablemente, su tabla de páginas asociada puede volver a sufrir de fragmentación externa, lo que motivó el desarrollo de la paginación puramente multinivel.
+## Traducción paso a paso
+
+1. Con los bits de segmento se elige la base y el límite del segmento.
+2. Se verifica que el **VPN < límite**. Si no, la dirección no pertenece al segmento: *segmentation fault*.
+3. Se lee la PTE en la posición VPN de la tabla del segmento y se obtiene el PFN.
+4. Dirección física = PFN seguido del offset.
+
+```python
+SEG_SHIFT, VPN_SHIFT = 30, 12
+VPN_MASK, OFFSET_MASK = 0x3FFFF000, 0xFFF
+
+# Una tabla de páginas por segmento; "limit" = cuántas páginas tiene de verdad
+SEGMENTOS = {
+    0: {"tabla": [7, 3],    "limit": 2},   # código: 2 páginas
+    1: {"tabla": [12],      "limit": 1},   # heap: 1 página
+    3: {"tabla": [20, 21],  "limit": 2},   # stack: 2 páginas
+}
+
+def traducir(va):
+    seg = va >> SEG_SHIFT                       # bits 31-30
+    vpn = (va & VPN_MASK) >> VPN_SHIFT          # bits 29-12
+    off = va & OFFSET_MASK                      # bits 11-0
+    s = SEGMENTOS.get(seg)
+    if s is None or vpn >= s["limit"]:
+        return "segmentation fault"
+    return (s["tabla"][vpn] << VPN_SHIFT) | off
+
+print(hex(traducir(0x00001010)))   # seg 0, VPN 1 -> 0x3010
+print(traducir(0x40005000))        # seg 1, VPN 5 >= límite 1 -> segmentation fault
+```
+
+En este ejemplo hay 5 entradas en total, en vez de las $2^{20}$ que tendría una tabla lineal de 32 bits con páginas de 4 KB.
+
+> [!warning] Vuelve la fragmentación externa
+> Las tablas de páginas de cada segmento tienen **tamaños distintos** y cada una debe quedar contigua en memoria. Con eso **vuelve la fragmentación externa**, ahora entre tablas de páginas. Además, un segmento muy disperso (por ejemplo, un heap grande y poco usado) igual desperdicia entradas. Las [[06 - Paginación multinivel y tablas de páginas invertidas|tablas multinivel]] atacan esto sin depender de segmentos.
 
 ## Preguntas de repaso
 
-> [!question]- ¿Cómo se descompone una dirección virtual bajo un esquema de segmentos paginados?
-> Se divide en tres campos:
-> 1. Bits de segmento ($S$): identifican el segmento lógico (Código, Heap, Stack).
-> 2. Número de página virtual ($VPN$): indexa la tabla de páginas privada de ese segmento.
-> 3. Desplazamiento ($Offset$): byte específico dentro de la página y el marco físico.
+> [!question]- ¿Qué problema de las tablas lineales resuelven los segmentos paginados?
+> El de las entradas vacías: una tabla lineal tiene entradas para todas las páginas posibles, aunque el proceso use pocas. Con una tabla por segmento solo hay entradas para las páginas de cada segmento.
 
-> [!question]- ¿Qué rol cumple el registro límite en la tabla de segmentos cuando estos están paginados?
-> En lugar de indicar el límite en bytes, el registro límite indica la cantidad de páginas válidas que posee la tabla de páginas de ese segmento, evitando asignar entradas para páginas que no están en uso.
+> [!question]- ¿Cómo se divide una dirección virtual en segmentos paginados?
+> En bits de segmento (cuál de los 4 segmentos), VPN (la página dentro del segmento) y offset (el byte dentro de la página).
 
-> [!question]- ¿Por qué un esquema de segmentos paginados reduce el espacio consumido por tablas de páginas frente a una tabla lineal?
-> Porque los rangos vacíos no mapeados (como el espacio no utilizado entre el Heap y el Stack) no requieren entradas en la tabla de páginas. Solo los segmentos activos mantienen tablas asignadas proporcionales a su tamaño efectivo.
+> [!question]- ¿Qué significan base y límite en este esquema?
+> La base es la dirección de la tabla de páginas del segmento, y el límite, la cantidad de páginas del segmento. Si el VPN no es menor que el límite, el acceso es un segmentation fault.
 
+> [!question]- ¿Por qué vuelve la fragmentación externa?
+> Porque cada segmento tiene una tabla de páginas de tamaño distinto que debe ocupar memoria contigua, y entre esas tablas pueden quedar huecos difíciles de reutilizar.

@@ -8,93 +8,96 @@ tags:
   - spinlock
   - busy-waiting
   - sleep-wakeup
+  - origen/complemento
 prerrequisitos:
   - "[[03 - Sincronización por hardware e instrucciones atómicas]]"
 ---
 
 # Mutex locks y el dilema de busy waiting versus dormir
 
-Los **cerrojos de exclusión mutua** (*Mutex Locks*) son primitivas de alto nivel que simplifican el acceso a la sección crítica mediante dos operaciones atómicas fundamentales: **adquirir** (`acquire`) y **liberar** (`release`).
+Las instrucciones atómicas resuelven la exclusión mutua, pero son incómodas de usar y obligan a girar en un `while` mientras se espera. Por eso, sobre ellas se construyen **primitivas de software**, más cómodas. La más simple es el **mutex lock** (*MUTual EXclusion lock*). Al diseñarlo aparece la pregunta central de este capítulo: mientras un thread espera, ¿conviene que siga revisando o que se vaya a dormir?
 
----
+## El mutex: acquire y release
 
-## MUTEX LOCKS (mis apuntes)
+Un mutex ofrece dos operaciones:
 
-> Solucion por Software
-> Lock::aquite() : Toma el lock
-> Lock::realease() : Libera el lock (error si no está tomado)
-> Pregunta prueba (V/F) → Los mutex son implementaciones por software
-> 
-> Hay 2 tipos de espera:
-> Bussy Waiting → Thread constantemente revisa si puede entrar a la seccion critica → Constantemente revisando un WHILE por su turno
-> Irse a Dormir → Madar a dormir el Thread mientras espera
-> 
-> EJEMPLOS DE USO
-> 
-> ![Estructura de mutex lock con acquire y release](adjuntos/Estructura%20de%20mutex%20lock%20con%20acquire%20y%20release.png)
-> 
-> ![Protección de sección crítica mediante mutex lock](adjuntos/Protecci%C3%B3n%20de%20secci%C3%B3n%20cr%C3%ADtica%20mediante%20mutex%20lock.png)
-> 
-> Como se elimina el busy waiting → Irse a dormir
-> 
-> ![Eliminación de busy waiting mediante sleep y wakeup](adjuntos/Eliminaci%C3%B3n%20de%20busy%20waiting%20mediante%20sleep%20y%20wakeup.png)
-> 
-> Si no hay comida, mandame a dormir, si hay comida, despiertame
-> Cuando se genere una comida → Le avisa al Consumidor que hay comida
-> Cuando el consumidor consume → Le avisa al Productor
+- `Lock::acquire()`: **toma** el lock. Si está tomado, espera hasta que se libere.
+- `Lock::release()`: **libera** el lock (es un error si no está tomado).
 
-> [!warning] Posible error en apuntes
-> * *"aquite"* / *"realease"*: erratas tipográficas por `acquire` y `release`.
-> * *"Bussy Waiting"*: errata por *Busy Waiting* (espera activa).
-> * *"Madar"*: errata por "Mandar".
-> * *"Los mutex son implementaciones por software"*: la interfaz es de software (API POSIX), pero internamente los sistemas operativos y bibliotecas combinan instrucciones atómicas de hardware para el cerrojo rápido con llamadas al kernel para suspender hilos cuando la espera se prolonga.
+Es una **solución por software**: una abstracción que se implementa usando una instrucción atómica del hardware por debajo.
 
----
+![Estructura de mutex lock con acquire y release](adjuntos/Estructura%20de%20mutex%20lock%20con%20acquire%20y%20release.png)
 
-> [!example]- Transcripción de la imagen: Estructura de mutex lock con acquire y release.png y Protección de sección crítica mediante mutex lock.png
-> **Definición de interfaz Mutex:**
-> ```c
-> struct Lock {
->     void acquire(); // Solicita posesión del cerrojo; bloquea si ya está tomado
->     void release(); // Libera el cerrojo; error si quien llama no lo poseía
-> };
-> ```
-> * **Uso estándar:**
-> ```c
-> struct Lock lock;
-> 
-> lock.acquire();
-> // SECCIÓN CRÍTICA (acceso seguro a memoria compartida)
-> lock.release();
-> ```
+> [!example]- Transcripción de la imagen
+> `struct Lock { bool value = false; // false==free, true==busy }`. "Implementación sin (mucho) busy waiting": `void acquire() { while(test_and_set(&value)) thread_yield(); // otras implementaciones usan sleep() y colas de espera }` y `void release() { value = false; }`.
 
-> [!example]- Transcripción de la imagen: Eliminación de busy waiting mediante sleep y wakeup.png
-> **Esquema de transición de estados sin desperdicio de CPU:**
-> * `sleep()`: El hilo cede voluntariamente la CPU y el planificador lo traslada al estado **Waiting / Blocked** en una cola de espera.
-> * `wakeup()`: Cuando el recurso queda disponible, el hilo que libera el cerrojo despierta al hilo dormido, trasladándolo al estado **Ready**.
+Para proteger una sección crítica basta con encerrarla entre `acquire` y `release`:
 
----
+![Protección de sección crítica mediante mutex lock](adjuntos/Protecci%C3%B3n%20de%20secci%C3%B3n%20cr%C3%ADtica%20mediante%20mutex%20lock.png)
 
-> [!tip] Complemento: Spinlocks versus Mutex con Bloqueo
-> 1. **Spinlock (Espera activa / Busy Waiting):**
->    - El hilo ejecuta continuamente un bucle `while (locked);` consumiendo el $100\%$ del núcleo de la CPU.
->    - **Ventaja:** Cero costo de cambio de contexto (*context switch overhead*).
->    - **Uso ideal:** Secciones críticas extremadamente cortas (menos de unos pocos microsegundos) en sistemas multiprocesador.
-> 2. **Mutex con Bloqueo (*Sleep-Wakeup*):**
->    - El hilo se suspende en el kernel permitiendo que otros procesos utilicen la CPU.
->    - **Costo:** Involucra dos cambios de contexto (dormir y despertar).
->    - **Uso ideal:** Secciones críticas de duración moderada o larga (I/O, operaciones de red, cálculos pesados).
+> [!example]- Transcripción de la imagen
+> "Solución a Sección Crítica": `while(true) { ... lock.acquire(); /* SC */ lock.release(); /* Out of SC */ }`. "Contador con acceso exclusivo": `struct Lock l; // compartido` y `for(int i=0; i<max; i++) { l.acquire(); counter = counter + 1; l.release(); }`.
 
----
+En C con POSIX, el mismo contador queda así, y llega siempre a 2.000.000, a diferencia del ejemplo sin protección de [[01 - Condiciones de carrera y el problema de la sección crítica|condiciones de carrera]]:
+
+```c
+#include <pthread.h>
+#include <stdio.h>
+
+#define VECES 1000000
+long contador = 0;
+pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;   /* compartido */
+
+void *incrementar(void *arg) {
+    for (int i = 0; i < VECES; i++) {
+        pthread_mutex_lock(&lock);       /* acquire: si está tomado, el thread duerme */
+        contador = contador + 1;         /* sección crítica */
+        pthread_mutex_unlock(&lock);     /* release */
+    }
+    return NULL;
+}
+
+int main(void) {
+    pthread_t a, b;
+    pthread_create(&a, NULL, incrementar, NULL);
+    pthread_create(&b, NULL, incrementar, NULL);
+    pthread_join(a, NULL);
+    pthread_join(b, NULL);
+    printf("contador = %ld\n", contador);   /* siempre 2000000 */
+    return 0;
+}
+```
+
+## Dos formas de esperar
+
+| | **Busy waiting** (espera activa; un lock así se llama *spinlock*) | **Irse a dormir** (*sleep*) |
+|---|---|---|
+| Qué hace el thread | Revisa constantemente, en un `while`, si ya puede entrar a la SC | Se bloquea en una cola de espera y no usa CPU |
+| Costo | Gasta CPU mientras espera | Dos cambios de contexto: dormir y despertar |
+| Conviene cuando | La espera es muy corta y hay varios núcleos | La espera puede ser larga |
+
+La implementación de la figura es un punto intermedio: si el lock está tomado, el thread no gira sin parar, sino que **cede la CPU** con `thread_yield()`. Para eliminar el busy waiting del todo, el thread **se va a dormir**:
+
+- `sleep()`: el thread se bloquea en la **cola waiting** (pasa a estado *Waiting*).
+- `wakeup(t)`: saca al thread `t` de la cola waiting, si está ahí, y lo deja en *Ready*.
+
+![Eliminación de busy waiting mediante sleep y wakeup](adjuntos/Eliminaci%C3%B3n%20de%20busy%20waiting%20mediante%20sleep%20y%20wakeup.png)
+
+> [!example]- Transcripción de la imagen
+> "sleep() se bloquea en cola waiting · wakeup(t) saca a t de la cola waiting (si está)". **Productor:** `while('p') { item = produce(); while (stock == N) sleep(); // Storage full  storage[in] = item; in = ++in%N; lock.acquire(); stock++; lock.release(); if(stock == 1) wakeup(consumer); }`. **Consumidor:** `while('c') { while(!stock) sleep(); // Wait for new items  item = storage[out]; out = ++out%N; lock.acquire(); stock--; lock.release(); if(stock == N-1) wakeup(producer); consume(item); }`.
+
+La idea, aplicada al [[05 - Problema del productor-consumidor y buffer acotado|productor-consumidor]], es: *"si no hay comida, mándame a dormir; si hay comida, despiértame"*. Cuando el productor genera algo, le avisa al consumidor que hay comida; cuando el consumidor consume, le avisa al productor que hay espacio.
 
 ## Preguntas de repaso
 
-> [!question]- ¿Qué problema genera el Busy Waiting en un sistema mono-núcleo?
-> Genera un desperdicio total de CPU e inanición: el hilo que espera consume todos los ciclos de reloj ejecutando un bucle vacío, impidiendo que el hilo que posee el cerrojo reciba tiempo de CPU para avanzar y liberarlo.
+> [!question]- Verdadero o falso: los mutex son implementaciones por software.
+> Verdadero. El mutex es una primitiva de software (con `acquire` y `release`) construida sobre una instrucción atómica del hardware, como `test_and_set`.
 
-> [!question]- ¿Cuándo es preferible utilizar un Spinlock en lugar de un Mutex con suspensión (sleep)?
-> Cuando el tiempo estimado que el hilo pasará dentro de la sección crítica es inferior al costo temporal de ejecutar dos cambios de contexto (el costo de suspender y despertar el hilo mediante el planificador).
+> [!question]- ¿Qué es busy waiting y por qué es un problema?
+> Es esperar revisando constantemente en un ciclo si ya se puede entrar. Gasta CPU sin avanzar, y en un sistema de un solo núcleo le quita tiempo justo al thread que tiene el lock y debe liberarlo.
 
-> [!question]- ¿Por qué release() debe arrojar un error si el hilo invocador no posee el cerrojo?
-> Porque los mutex poseen semántica de propiedad (*ownership*): únicamente el hilo que tomó exitosamente el cerrojo mediante `acquire()` tiene la autoridad para liberarlo con `release()`. Liberar un lock ajeno rompería la invariante de exclusión mutua.
+> [!question]- ¿Cuándo conviene esperar activamente en vez de dormir?
+> Cuando se espera que el lock se libere muy pronto y hay otros núcleos: dormir y despertar cuesta dos cambios de contexto, y si la espera es más corta que eso, girar sale más barato.
 
+> [!question]- ¿Qué hacen `sleep()` y `wakeup(t)`?
+> `sleep()` bloquea al thread que la llama en la cola waiting, sin consumir CPU. `wakeup(t)` saca al thread `t` de esa cola para que vuelva a estar listo.

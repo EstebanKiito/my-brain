@@ -4,7 +4,7 @@ tema: "Paginación y segmentación"
 tags:
   - so/memoria
   - so/tlb
-  - origen/apuntes
+  - origen/complemento
 prerrequisitos:
   - "[[02 - Translation Lookaside Buffer (TLB) y tiempo de acceso efectivo]]"
   - "[[04 - Cambio de contexto y tipos de procesos]]"
@@ -12,64 +12,56 @@ prerrequisitos:
 
 # Localidad de referencia y gestión de TLB con ASID en cambios de contexto
 
-La altísima efectividad real de la caché TLB (tasas de acierto superiores al 99%) se fundamenta en el principio de localidad de referencia. Para mantener este rendimiento a través de cambios de contexto entre procesos, las arquitecturas introducen identificadores de espacio de direcciones (ASID).
+En el ejemplo del arreglo, la [[02 - Translation Lookaside Buffer (TLB) y tiempo de acceso efectivo|TLB]] logró un 70% de aciertos. En sistemas reales el *hit rate* ronda el 99%. ¿Por qué funciona tan bien una caché tan pequeña? Por la **localidad de referencia**. Y como la TLB es una sola para todos los procesos, hay que resolver qué pasa con ella en cada **cambio de contexto**.
 
-## Principios de localidad y soporte para cambios de contexto (mis apuntes)
+## Localidad de referencia
 
-> [!note] Apuntes de clase
-> **Clase 8**
-> 09/09/2024
->
-> Explicaciones de porqué TLB Hit Rate REALES! ~= 99%
->
-> **Localidad Espacial:**
-> Estamos escribiendo en un arreglo → Se guarda de forma contigua en memoria.
-> Como el programa probablemente vaya a acceder a memoria cercana a la buscada (memoria espacialmente cercena).
-> Luego de un miss → Vendrán muchos HITS.
->
-> **Localidad Temporal:**
-> Acceder a variables que ya habiamos accedido con anterioridad.
-> Como el programa accedio a una variable, probablemente será accedida en un futuro.
->
-> Ahora bien, como identificamos las traducciones? Sobre todo en los cambios de contexto:
-> Recordatorio: Cambio contexto: Cambiar espacio de memoria que estoy utilizando, desde un proceso A a un proceso B.
-> Porque la TLB NO! se almacena en memoria del S.O. (como la Tabla de Páginas), ni en el PCB.
-> PTE’s de un proceso, no le sirven al siguiente!
-> Si por ejemplo tuviera 0 (pag)→ 255 (frame), ¿A que proceso le pertenece esta traduccion? → Tenemos un ASID (funciona como un PID).
-> - Cada proceso tiene su unico ASID (en su PCB)
-> - Campo ASID permite que coexistan entradas de distintos procesos en la TLB
->
-> ASID: Adress Space Identifier:
-> V = Bit de validez: Si la entrada es valida o no
-> Con esto:
-> Si un proceso que ejecuta, sale de la cpu → En lugar d eperder traducciones, al volver a entrar, las puede reutilizar sin tener Tantos Miss’s.
+| Tipo | Idea | Ejemplo | Efecto en la TLB |
+|---|---|---|---|
+| **Espacial** | Después de acceder a una dirección $x$, el programa probablemente accederá a direcciones **cercanas** a $x$ | Recorrer un arreglo, que se guarda contiguo en memoria | Luego de un miss y de guardar la PTE en la TLB, vendrán muchos hits |
+| **Temporal** | Una dirección recién accedida probablemente se **volverá a acceder** pronto | Una variable usada en cada vuelta de un ciclo | Una PTE recién guardada volverá a usarse pronto |
 
-> [!warning] Posible error
-> En los apuntes figuran erratas de tipeo: "cercena" por cercana, "Adress Space Identifier" por *Address Space Identifier*, y "d eperder" por de perder.
+El comportamiento real depende de cada programa, pero la mayor parte del tiempo los programas manifiestan localidad, espacial o temporal. Por eso la TLB acierta casi siempre.
+
+## La TLB en un cambio de contexto
+
+Un cambio de contexto cambia el espacio de memoria en uso: de pasar del proceso A al proceso B, las traducciones de A **no le sirven** a B. Si la TLB tiene la entrada "página 0 → frame 255", ¿de qué proceso es? Hay que tener en cuenta que:
+
+- **La TLB no se almacena** en la memoria del SO (como la tabla de páginas) **ni en el PCB**: está en la MMU.
+- Lo que sí cambia en cada cambio de contexto es el **PTBR** (*page table base register*), que apunta a la tabla de páginas del proceso que entra.
+- Las PTE de un proceso no sirven al siguiente.
+
+Hay dos soluciones:
+
+1. **Vaciar la TLB** (*flush*): marcar todos los bits de validez **V** en 0. Es simple, pero el proceso que vuelve a entrar parte con la TLB vacía y sufre muchos misses.
+2. **Etiquetar cada entrada con un ASID** (*Address Space Identifier*), que funciona como un PID:
+   - cada proceso tiene su propio ASID, guardado en su PCB;
+   - el campo ASID permite que **coexistan entradas de distintos procesos** en la TLB.
+
+Con ASID, cuando un proceso sale de la CPU no pierde sus traducciones, y al volver puede reutilizarlas sin tantos misses. En x86, por ejemplo, cambiar de tabla de páginas (recargar el registro `CR3`) vaciaba la TLB; el soporte posterior de PCID (el equivalente a ASID) permite evitarlo. ARM y MIPS usan ASID.
+
+| VPN | PFN | V | ASID |
+|---|---|---|---|
+| 0 | 255 | 1 | 1 |
+| 0 | 112 | 1 | 2 |
+
+En este ejemplo, la página 0 del proceso con ASID 1 y la del proceso con ASID 2 coexisten en la TLB sin confundirse: la MMU solo usa las entradas cuyo ASID coincide con el del proceso en ejecución.
 
 ![Uso de ASID en la TLB para cambios de contexto](adjuntos/Uso%20de%20ASID%20en%20la%20TLB%20para%20cambios%20de%20contexto.png)
 
 > [!example]- Transcripción de la imagen
-> Estructura de entradas en una TLB con soporte ASID:
-> | VPN | PFN | Valid ($V$) | Prot | ASID |
-> |---|---|---|---|---|
-> | 10 | 100 | 1 | rwx | 1 |
-> | 10 | 170 | 1 | r-x | 2 |
-> | 50 | 204 | 1 | rw- | 1 |
-> 
-> Dos procesos diferentes (ASID 1 y ASID 2) pueden tener mapeada la misma página virtual (VPN 10) a distintos marcos físicos (PFN 100 y PFN 170) simultáneamente en la misma caché de hardware sin interferencia.
-
-> [!tip] Complemento: Estrategias ante cambios de contexto
-> En arquitecturas sin soporte ASID (como x86 original), el kernel debe vaciar completamente la TLB en cada cambio de contexto (*TLB Flush*, típicamente recargando el registro `CR3`). Esto provoca una ráfaga masiva de fallos (*cold-start misses*) tras cada conmutación de proceso. Con ASID (ARM, MIPS, y x86 moderno con PCID), la TLB no se vacía: el procesador simplemente compara el ASID de la entrada con el ASID del proceso actualmente en ejecución.
+> Formato de una entrada de TLB en dos filas de 32 bits (bits 0 a 31). Fila 1: **VPN** (bits 0-18), **G** (bit 19), una zona sin usar (20-23) y **ASID** (bits 24-31). Fila 2: una zona sin usar (0-1), **PFN** (bits 2-25), **C** (26-28), **D** (29), **V** (30) y otra zona sin usar (31). Es el formato de la TLB de MIPS: G marca páginas globales compartidas por todos los procesos, C son bits de coherencia de caché, D indica página modificada (*dirty*) y V entrada válida.
 
 ## Preguntas de repaso
 
-> [!question]- ¿Qué diferencia existe entre localidad espacial y localidad temporal en la ejecución de un programa?
-> La localidad espacial establece que si se referencia una posición de memoria, es muy probable que se referencien posiciones contiguas o cercanas en el futuro inmediato (e.g. recorrer un arreglo o instrucciones secuenciales). La localidad temporal establece que si se accede a una dirección, es muy probable que se vuelva a acceder a la misma dirección prontamente (e.g. contadores en bucles o funciones recursivas).
+> [!question]- ¿Qué diferencia hay entre localidad espacial y temporal?
+> La espacial dice que, tras acceder a una dirección, probablemente se accederá a direcciones cercanas, como al recorrer un arreglo. La temporal dice que una dirección recién usada probablemente se volverá a usar pronto, como una variable dentro de un ciclo.
 
-> [!question]- ¿Por qué una entrada de TLB válida para el Proceso A resultaría desastrosa si fuera utilizada por el Proceso B?
-> Porque cada proceso posee su propio espacio de direcciones virtual independiente. El VPN 0 del Proceso A apunta a su propio código en RAM, mientras que el VPN 0 del Proceso B apunta a datos completamente distintos. Reutilizar la traducción rompería el aislamiento y causaría corrupción de memoria o fuga de seguridad.
+> [!question]- ¿Por qué el hit rate real de la TLB es cercano al 99%?
+> Por la localidad: tras un miss, la PTE queda en la TLB y los accesos siguientes a la misma página (espacial) o a las mismas variables (temporal) aciertan.
 
-> [!question]- ¿Qué ventaja de rendimiento ofrece el campo ASID frente a realizar un vaciado completo (*flush*) de la TLB?
-> Permite conservar en la TLB las traducciones de múltiples procesos concurrentes. Cuando el planificador devuelve la CPU al Proceso A, muchas de sus entradas continúan residentes y válidas en la caché, evitando la penalización de tener que recargar todas las traducciones desde RAM con sucesivos TLB misses.
+> [!question]- ¿Por qué las entradas de la TLB de un proceso no sirven a otro?
+> Porque cada proceso tiene su propio espacio de direcciones: la página 0 de A y la página 0 de B están en frames distintos. Usar la traducción de A para B accedería a la memoria equivocada.
 
+> [!question]- ¿Qué ventaja tiene usar ASID frente a vaciar la TLB en cada cambio de contexto?
+> Las traducciones de varios procesos conviven en la TLB, así que al volver a la CPU un proceso encuentra parte de sus traducciones y no parte desde cero con una racha de misses.

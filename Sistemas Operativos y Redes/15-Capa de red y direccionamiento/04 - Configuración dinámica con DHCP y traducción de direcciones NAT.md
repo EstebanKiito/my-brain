@@ -8,105 +8,103 @@ tags:
   - nat
   - upnp
   - redes-locales
+  - origen/complemento
 prerrequisitos:
   - "[[15-Capa de red y direccionamiento/03 - Direccionamiento IPv4: subredes, máscaras y notación CIDR|03 - Direccionamiento IPv4: subredes, máscaras y notación CIDR]]"
 ---
 
 # Configuración dinámica con DHCP y traducción de direcciones NAT
 
-La incorporación automática de dispositivos a una red local y la mitigación de la escasez de direcciones IPv4 descansan en dos tecnologías clave de borde: **DHCP** (*Dynamic Host Configuration Protocol*), que asigna dinámicamente direcciones IP, máscaras, gateways y servidores DNS a nuevos clientes, y **NAT** (*Network Address Translation* / NAPT), que traduce múltiples direcciones privadas hacia una única IP pública modificando cabeceras de red y puertos de transporte.
+Pocas veces configuramos a mano nuestra IP, y en una casa suele haber muchos equipos con una sola IP pública. Dos protocolos lo hacen posible: **DHCP** entrega la configuración a cada equipo que se conecta, y **NAT** permite que toda una red privada salga a Internet con una sola dirección.
 
----
+## DHCP: configuración automática
 
-## DHCP y Traducción NAT (mis apuntes)
+**DHCP** (*Dynamic Host Configuration Protocol*, RFC 2131) es un protocolo **plug-and-play**: cuando detecta que un equipo se conecta a la red, le entrega los parámetros para conectarse, entre ellos su IP. Es un protocolo cliente-servidor de **4 etapas** (por sus iniciales se le dice DORA):
 
-DHCP : DYNAMIC HOST CONFIG PROTOCOL
-DHCP es un protocolo plug and play, que nos configura nuestra IP
-Cuando detecta que alguien se contecta, le entrega los parametros para la conexion
-
-4 Etapas del protocolo
-- Destino → 255.255.255.255:
-- Cuando el cliente llega (enchufa a la red) → Cliente DHCP discover message
-- Destino → 255.255.255.255 : Sigue siendo braodcast (le llega a todos)
-- El Servidor Responde: DHCP offer Message
-- Cliente envía un DHCP Request Message
-- Server envía DHCP ACK Message
+1. **Discover**: el cliente que llega (se enchufa a la red) envía un *DHCP discover message* a `255.255.255.255`, es decir, en **broadcast**: le llega a todos, porque todavía no sabe quién es el servidor.
+2. **Offer**: el servidor responde con un *DHCP offer message*, también en broadcast, ofreciendo una IP.
+3. **Request**: el cliente envía un *DHCP request message* pidiendo la IP ofrecida.
+4. **ACK**: el servidor confirma con un *DHCP ACK message*.
 
 ![Flujo de cuatro pasos del protocolo DHCP: Discover, Offer, Request y ACK](adjuntos/Flujo%20de%20cuatro%20pasos%20del%20protocolo%20DHCP:%20Discover,%20Offer,%20Request%20y%20ACK.png)
 
 > [!example]- Transcripción de la imagen
-> El intercambio DORA de DHCP (puerto UDP 67 servidor, 68 cliente):
-> 1. **Discover**: Cliente sin IP envía broadcast `255.255.255.255` con `src 0.0.0.0`.
-> 2. **Offer**: Servidor DHCP reserva una IP y envía broadcast ofreciendo la IP, máscara, lease time y gateway.
-> 3. **Request**: Cliente confirma la elección de la IP ofrecida mediante broadcast.
-> 4. **ACK**: Servidor confirma definitivamente la asignación de la dirección IP.
+> *DHCP server: 223.1.2.5* y un *Arriving client*. **DHCP discover**: `src: 0.0.0.0, 68`, `dest: 255.255.255.255, 67`, `yiaddr: 0.0.0.0`, `transaction ID: 654`. **DHCP offer**: `src: 223.1.2.5, 67`, `dest: 255.255.255.255, 68`, `yiaddr: 223.1.2.4`, `transaction ID: 654`, `DHCP server ID: 223.1.2.5`, `Lifetime: 3600 secs`. **DHCP request**: `src: 0.0.0.0, 68`, `dest: 255.255.255.255, 67`, `yiaddr: 223.1.2.4`, `transaction ID: 655`, mismo server ID y lifetime. **DHCP ACK**: `src: 223.1.2.5, 67`, `dest: 255.255.255.255, 68`, `yiaddr: 223.1.2.4`, `transaction ID: 655`, mismo server ID y lifetime.
 
-NAT
-Network Addres Translation
-ISP provee ctd limitada de IPs, y aveces solo una por Casas o oficinas que formen una LAN
-- Esto es posible gracias a que la NAT utiliza direcciones IP privadas de forma interna en la red doméstica.
-- 1 Direccion Publica
-- Varias Direcciones Internas → Usando NAT
-- Resumen:
-NAT: Es una tecnología que permite que varios dispositivos se conecten a Internet usando 1 sola dirección IP pública.
+En la figura, el cliente usa `0.0.0.0` como origen porque aún no tiene IP, el servidor escucha en el puerto 67 y el cliente en el 68. La IP ofrecida (`yiaddr`, "your IP address") es `223.1.2.4`, prestada por 3600 segundos.
 
-![Arquitectura de traducción de direcciones de red NAT en red local](adjuntos/Arquitectura%20de%20traducción%20de%20direcciones%20de%20red%20NAT%20en%20red%20local.png)
+## NAT: muchas IP privadas, una pública
+
+Las casas y oficinas pequeñas forman una **LAN**, pero el ISP les da una cantidad limitada de IP públicas, a veces solo una. **NAT** (*Network Address Translation*, RFC 2663 y RFC 3022) permite que **varios dispositivos se conecten a Internet usando una sola dirección IP pública**: dentro de la red se usan [[03 - Direccionamiento IPv4: subredes, máscaras y notación CIDR#Direcciones y subredes reservadas|direcciones privadas]] y el router traduce. Como la traducción usa también los puertos, a esta variante se le llama a veces NAPT (*Network Address and Port Translation*).
+
+![Arquitectura de traducción de direcciones de red NAT en red local](adjuntos/Arquitectura%20de%20traducci%C3%B3n%20de%20direcciones%20de%20red%20NAT%20en%20red%20local.png)
 
 > [!example]- Transcripción de la imagen
-> Funcionamiento del router NAT: Todo el tráfico que sale de la red local (10.0.0.0/24 o 192.168.1.0/24) se reescribe con la única dirección IP pública asignada por el ISP, diferenciando las conexiones mediante números de puerto asignados dinámicamente.
+> PC1 (`192.168.0.5`), PC2 (`192.168.0.6`) y PC3 (`192.168.0.7`) se conectan al switch SW1, en la *Private network 192.168.0.0/24*. SW1 va a la interfaz `f0/0` (`192.168.0.1`) del *Router with NAT* R1, cuya interfaz `f0/1` (`200.100.101.1`) da a la *Public NETWORK* e Internet.
 
-EJEMPLO DE USO COTIDIANO
-- La ip destino no vive dentro de la Misma Subred
-- Gateway : Puerta de enlace
-- Consecuencia: Comunicarse con el ROUTER (gateway)
-- Mi ip interna es 192.168.1.86 y por el puerto 8120 me quiero conectar a Youtube.com, lo hare con ip destinatario: 64.233.186.90 por el puerto 443(https),
-El router que implementa NAT: va a recibir el paquete, cuando reciba eso, va a ver, que alguien interno quiere conectarse a alguien externo
-El Router lo que hace será : CAMBIAR EL PAQUETE (header)
-- Para cambiarle la direccion de Origen, ya no sera 192.168.1.86, si no sera que la que proveyo el ISP ej: 138.76.29.7 por el puerto 6010
-- Luego va el paquete al servidor, se devuelve con origen 64.233.186.90 puerto 443, hacia el destino 128.76.29.7 puerto 6010
-- Y el PROPIO ROUTER NAT, traduce a quien le llega el paquete → Que es 192.168.1.86
+## Un ejemplo cotidiano
 
-![Tabla de traducción NAT con puertos y direcciones IP públicas y privadas](adjuntos/Tabla%20de%20traducción%20NAT%20con%20puertos%20y%20direcciones%20IP%20públicas%20y%20privadas.png)
+Mi IP interna es `192.168.1.86` y quiero conectarme desde el puerto 8120 a YouTube (`64.233.186.90`, puerto 443, HTTPS). Esa IP de destino no está en mi subred, así que el paquete va al **gateway** (puerta de enlace): el router.
+
+1. El router NAT ve que alguien interno quiere hablar con alguien externo y **cambia el header**: reemplaza el origen `192.168.1.86:8120` por la IP que le dio el ISP, `138.76.29.7`, con un puerto nuevo, 6010. Anota la traducción en su tabla.
+2. El servidor responde con origen `64.233.186.90:443` y destino `138.76.29.7:6010`.
+3. El propio router busca en la tabla a quién corresponde el puerto 6010 y reescribe el destino a `192.168.1.86:8120`.
+
+![Tabla de traducción NAT con puertos y direcciones IP públicas y privadas](adjuntos/Tabla%20de%20traducci%C3%B3n%20NAT%20con%20puertos%20y%20direcciones%20IP%20p%C3%BAblicas%20y%20privadas.png)
 
 > [!example]- Transcripción de la imagen
-> Tabla de traducción NAT: Mapea tuplas `(IP privada, Puerto privado)` $\leftrightarrow$ `(IP pública NAT, Puerto público NAT)`. Al recibir una respuesta externa, consulta la tabla para revertir la traducción y reenviar el datagrama al host interno.
+> *NAT translation table*: *WAN side* `138.76.29.7, 5001` ↔ *LAN side* `10.0.0.1, 3345`. (1) el host `10.0.0.1` envía `S = 10.0.0.1, 3345; D = 128.119.40.186, 80` al router (`10.0.0.4` hacia dentro, `138.76.29.7` hacia fuera); (2) sale `S = 138.76.29.7, 5001; D = 128.119.40.186, 80`; (3) vuelve `S = 128.119.40.186, 80; D = 138.76.29.7, 5001`; (4) entra `S = 128.119.40.186, 80; D = 10.0.0.1, 3345`. A mano, en rojo, el ejemplo de YouTube: *IP externa 138.76.29.7: 6010* ↔ *192.168.1.86: 8120*, *IP destino (pública): 64.233.186.90*, y las respuestas *Origen 64.233.186.90:443, Destino 138.76.29.7:6010* y luego *Destino 192.168.1.86:8120*.
 
-Eso desde el lado del cliente → COMO FUNCIONA PARA UN SERVIDOR?
-Conectar un Servicio detras de NAT
-El Cliente no sabe con quien contactarse (es una IP PRIVADA)
-El Cliente para conectarse al servidor, tiene que conectarse con la direccion del Router
-El Router del servidor debe tener un protocolo llamado: UPNP (Universal plug-play)
-- Esto le permite que los serviodres se registren dentro del ROUTER NAT
+```python
+IP_PUBLICA = "138.76.29.7"
+tabla = {}                 # (IP pública, puerto WAN) -> (IP privada, puerto LAN)
+siguiente_puerto = 6010
 
-![Traversal de NAT y reenvío de puertos mediante UPnP para servidores internos](adjuntos/Traversal%20de%20NAT%20y%20reenvío%20de%20puertos%20mediante%20UPnP%20para%20servidores%20internos.png)
+def salida(origen, destino):
+    """Paquete que sale: se reemplaza el origen privado por la IP pública y un puerto nuevo."""
+    global siguiente_puerto
+    wan = (IP_PUBLICA, siguiente_puerto)
+    siguiente_puerto += 1
+    tabla[wan] = origen
+    return wan, destino
+
+def entrada(origen, destino):
+    """Respuesta que entra: la tabla dice a qué host interno corresponde."""
+    return origen, tabla[destino]
+
+print(salida(("192.168.1.86", 8120), ("64.233.186.90", 443)))   # origen 138.76.29.7:6010
+print(entrada(("64.233.186.90", 443), ("138.76.29.7", 6010)))   # destino 192.168.1.86:8120
+```
+
+## Servidores detrás de NAT
+
+Eso funciona desde el lado del cliente. ¿Y si el **servidor** está detrás de NAT? Un cliente externo no puede contactarlo, porque su IP es **privada**. Tiene que conectarse a la dirección del router, y el router debe saber a quién reenviar. Para eso existe **UPnP** (*Universal Plug and Play*): permite que los servidores se **registren en el router NAT** con un mapeo dinámico `(IP privada, puerto privado) → (IP pública, puerto público)`. El router guarda qué puerto lleva a qué dirección, y el servidor debe **anunciarse** (por ejemplo, en un DNS) para que los clientes sepan a qué puerto conectarse.
+
+![Traversal de NAT y reenvío de puertos mediante UPnP para servidores internos](adjuntos/Traversal%20de%20NAT%20y%20reenv%C3%ADo%20de%20puertos%20mediante%20UPnP%20para%20servidores%20internos.png)
 
 > [!example]- Transcripción de la imagen
-> Apertura y reenvío de puertos (*Port Forwarding* y UPnP): Permite a un host interno solicitar al router NAT la creación estática o automática de una entrada en la tabla para recibir conexiones entrantes desde el exterior en un puerto específico.
+> Un *Client* con un signo de pregunta frente al *NAT router* (`138.76.29.7` hacia fuera, `10.0.0.4` hacia dentro). Anotaciones en rojo: "Cliente no puede contactar a la dirección de destino: `10.0.0.1:443`". "Debe conectarse a la dirección del router. IP destino: `138.76.29.7`, p: ?" y luego "IP destino: `138.76.29.7`, p: 4577". En el router, "Registro p:4577 --> `10.0.0.1`, p:443", que lleva al "servidor web. IP privada: `10.0.0.1`, p: 443".
 
-El Router poseera el registro de que puertos dirigen a que direcciones
-- Se registra a travez de un PUERTO
-Los Clientes deben conocer esto → El servidor debe anunciarse, o en algun DNS , para que el Cliente sepa a que puerto debe conectarse!
+## Los detractores de NAT
 
-ANTI NATS
-NAT tiene distractores, dado que Viola el principio de Extremo-Extremo
-- Son de CAPA DE TRANSPORTE!!!
-- Router son de Capa 3 → NAT requiere que modifiquen puertos, y Puertos no son de capa 3
-- Comunicacion Sin Modificacion Intermedia
-- NAT es un parche, con ipv6 ya nunca deberiamos necesitar NAT
+NAT es muy usado, pero tiene **detractores**:
 
-> [!warning] Posible error en apuntes: "distractores" de NAT y errata en IP
-> En los apuntes se menciona "NAT tiene distractores"; la palabra adecuada es **detractores**. Asimismo, en el flujo de retorno se menciona la IP 128.76.29.7 como destino, cuando la IP pública original del ejemplo era 138.76.29.7.
-
----
+- los **números de puerto son para procesos**, no para hosts: son de la [[14-Capa de transporte/02 - Multiplexación y desmultiplexación de puertos en UDP y TCP|capa de transporte]];
+- los routers son de **capa 3**, y NAT los obliga a modificar puertos, que no son de capa 3;
+- **viola el principio de extremo a extremo**: la comunicación debería ocurrir sin modificaciones intermedias;
+- complica las aplicaciones en que alguien de afuera debe iniciar la conexión, como [[13-Capa de aplicación y sockets/06 - Redes Peer-to-Peer (P2P) y distribución con BitTorrent|P2P]] (de ahí UPnP);
+- **es un parche**: con IPv6 ya no debería necesitarse NAT.
 
 ## Preguntas de repaso
 
-> [!question]- ¿Por qué el mensaje DHCP Discover utiliza la dirección de destino 255.255.255.255?
-> Porque el nuevo cliente recién conectado aún no tiene asignada una dirección IP ni conoce la dirección IP del servidor DHCP local; el broadcast a nivel de subred asegura que cualquier servidor DHCP activo reciba la solicitud.
+> [!question]- ¿Por qué el DHCP discover se envía a `255.255.255.255`?
+> Porque el cliente aún no tiene IP ni sabe cuál es el servidor DHCP: el broadcast llega a todos los equipos de la subred, incluido el servidor.
 
-> [!question]- ¿Por qué los puristas de la arquitectura de redes critican el uso de NAT?
-> Porque viola el principio de extremo a extremo (*End-to-End principle*): los routers (Capa 3) inspeccionan y modifican números de puerto (Capa 4), impiden que hosts externos inicien conexiones directas con hosts internos y complican protocolos P2P y de telefonía IP.
+> [!question]- ¿Qué cambia el router NAT en un paquete que sale y cómo sabe a quién entregar la respuesta?
+> Reemplaza la IP y el puerto de origen privados por su IP pública y un puerto nuevo, y anota esa traducción en su tabla. Cuando llega la respuesta a ese puerto, la tabla le dice a qué IP y puerto internos reenviarla.
 
-> [!question]- ¿Cómo resuelve UPnP (*Universal Plug and Play*) la dificultad de alojar servidores detrás de NAT?
-> Proporciona un protocolo automatizado para que una aplicación interna descubra el router NAT y le solicite abrir y mapear automáticamente un puerto público externo hacia su IP y puerto privado sin intervención manual del usuario.
+> [!question]- ¿Cómo puede un cliente externo llegar a un servidor que está detrás de NAT?
+> Conectándose a la IP pública del router en un puerto que el servidor registró (por ejemplo con UPnP); el router reenvía ese puerto a la IP y puerto privados del servidor.
 
+> [!question]- ¿Por qué se dice que NAT viola el principio de extremo a extremo?
+> Porque un dispositivo intermedio modifica los paquetes, y además toca puertos, que pertenecen a la capa de transporte, siendo el router un dispositivo de capa 3.

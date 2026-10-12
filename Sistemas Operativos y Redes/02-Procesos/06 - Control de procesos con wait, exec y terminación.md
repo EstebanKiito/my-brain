@@ -1,78 +1,76 @@
 ---
 ramo: Sistemas Operativos y Redes
 tema: Procesos
-tags: [so/procesos, origen/apuntes]
+tags: [so/procesos, origen/complemento]
 prerrequisitos: ["[[05 - Jerarquía y creación de procesos con fork|Jerarquía y creación de procesos con fork]]"]
 ---
 # Control de procesos con wait, exec y terminación
 
-El ciclo de vida de los procesos se gestiona mediante la combinación fundamental de llamadas al sistema `fork()`, `exec()`, `wait()` y `exit()`, que coordinan la ejecución de nuevos programas y la recolección de su estado de salida para evitar procesos zombies y huérfanos.
+Crear un proceso con `fork()` es solo el comienzo. El padre también necesita poder lanzar otro programa, esperar a que el hijo termine y enterarse de cómo terminó, y el sistema tiene que limpiar lo que queda cuando un proceso muere. Cuatro syscalls cubren ese ciclo.
 
-## Syscalls de procesos y ciclo de terminación (mis apuntes)
-SYSCALLS
-- FORK: Clona el procesos
-- WAIT: Espera que el proceso termine
-- EXECV: Reemplaza el proceso (Ejecucion)
-- KILL: Termina el Proceso
-NAS: Tecnica para usar mas espacio → Mas discos que están conectados directo a la red
-→ Investigar sobre servidores y estas cosas
+## Las syscalls del ciclo de vida
 
-CLASE 4
-21/08/2024
-IMPORTANTE
-PREGUNTA: Empieza a ejecutar desde la linea en que se hace fork
-FORK: Crea un proceso hijo (copia del padre)
-Cuando un proceso termina, le retorna al padre
-Si no se le retorna al padre → Se genera un Proceso Zombie
-Si retorna 0 → Termina bien
-Si retorna otro → Error
-WAIT: Espera que el proceso hijo termine
+| Syscall | Qué hace |
+|---|---|
+| `fork()` | **Clona** el proceso: crea un hijo, copia del padre |
+| `exec()` (`execl`, `execv`, `execve`, `execvp`…) | **Reemplaza** el programa del proceso por otro ejecutable |
+| `wait()` / `waitpid()` | **Espera** a que un hijo termine y recibe su código de salida |
+| `exit()` | **Termina** el proceso con un código de retorno |
+| `kill()` | **Envía una señal** a otro proceso; por defecto `SIGTERM`, que le pide terminar |
 
-> [!warning] Posible error (registrado en `_meta/Sistemas Operativos y Redes/DUDAS.md`)
-> En la frase "Si no se le retorna al padre → Se genera un Proceso Zombie", la precisión técnica es que el proceso hijo ya terminó y envió su código de salida, pero se convierte en *Zombie* cuando su proceso padre aún no ha ejecutado `wait()` para recolectar dicha información, ocupando una ranura en la tabla de procesos.
+Dos detalles clave:
 
-> [!tip] Complemento (slides "Contenido 2: Control de Procesos")
-> - **Familia `exec` (`execve`, `execl`, `execvp`):** Reemplaza completamente el espacio de memoria (código, datos, stack y heap) del proceso actual por el nuevo archivo ejecutable binario. El PID del proceso **se mantiene intacto**; no se crea un nuevo proceso, sino que se transforma el existente.
-> - **Llamada `wait()` / `waitpid()`:**
->   - Bloquea al proceso padre hasta que alguno de sus hijos termine.
->   - Extrae el código de terminación mediante macros como `WIFEXITED(status)` y `WEXITSTATUS(status)`.
->   - Libera formalmente el PCB del hijo de la tabla de procesos del kernel.
-> - **Procesos Huérfanos (*Orphan processes*):** Si el padre termina antes que el hijo, el hijo queda huérfano. El sistema operativo lo adopta automáticamente asignándole como nuevo padre al proceso `systemd` (PID 1), que se encarga de ejecutar `wait()` cuando el hijo finalice.
+- **Tras `fork()`, el hijo empieza a ejecutar desde la línea en que se hizo el `fork`**, es decir, desde su retorno, y no desde el inicio del programa.
+- **`exec()` no crea un proceso**: sobrescribe el código, los datos, el heap y el stack del proceso actual con el nuevo binario, y **el PID se mantiene**. Por eso el patrón típico para lanzar un programa es *`fork()` y luego `exec()` en el hijo*.
+
+## Terminación y código de retorno
+
+Todo proceso, al terminar, ejecuta `exit()` y **le entrega un código de retorno a su padre**. El SO recupera los recursos asignados al proceso. Por convención:
+
+- **0** significa que terminó bien;
+- **distinto de 0** indica un error o una situación especial, y la documentación del programa debería explicar qué significa cada código.
+
+El padre recibe ese valor con `wait()`, que lo bloquea hasta que un hijo termina. Con las macros `WIFEXITED(status)` y `WEXITSTATUS(status)` revisa si el hijo terminó normalmente y con qué código.
 
 ```mermaid
 sequenceDiagram
-  autonumber
-  participant Padre as Proceso Padre
-  participant Kernel as Kernel del SO
-  participant Hijo as Proceso Hijo
-
-  Padre->>Kernel: fork()
-  Kernel-->>Padre: Retorna PID del hijo
-  Kernel-->>Hijo: Retorna 0
-  Hijo->>Kernel: execve("/bin/programa")
-  Kernel->>Hijo: Reemplaza imagen de memoria
-  Padre->>Kernel: wait(&status) (Se bloquea)
-  Hijo->>Kernel: exit(0)
-  Note over Hijo: Estado Zombie temporal
-  Kernel-->>Padre: Despierta wait(), entrega status
-  Note over Hijo: PCB liberado de la tabla
+  participant P as Padre
+  participant K as Kernel
+  participant H as Hijo
+  P->>K: fork()
+  K-->>P: PID del hijo
+  K-->>H: 0
+  H->>K: exec("programa")
+  P->>K: wait(&status), se bloquea
+  H->>K: exit(0)
+  Note over H: zombie hasta que el padre recoja el estado
+  K-->>P: wait retorna con status
+  Note over H: PCB liberado
 ```
+
+## Zombies y huérfanos
+
+> [!warning] Proceso zombie
+> Cuando un hijo termina y **su padre todavía no ha hecho `wait()`**, el proceso no se borra de inmediato de la tabla de procesos, aunque tampoco ejecuta: queda como **zombie** hasta que el padre hace `wait()` y recoge su código de salida. No consume CPU, pero ocupa una entrada de la tabla y un PID. Si se acumulan muchos, pueden agotar los PID disponibles.
+
+> [!tip] Proceso huérfano
+> Si el **padre termina antes que el hijo**, el hijo queda **huérfano**. Linux permite que siga viviendo: pasa a ser hijo de **`init`** (el proceso raíz, PID 1, que en Linux moderno es `systemd`), que hace `wait()` periódicamente por sus hijos y así evita que queden zombies para siempre.
+
+Ojo: al cerrar una terminal puede *parecer* que los hijos mueren con el padre. Eso no es porque los hijos dependan del padre, sino porque normalmente reciben una señal de término.
+
+> [!example]- Al margen: NAS
+> Un **NAS** (*Network Attached Storage*) es una técnica para tener más espacio de almacenamiento: discos conectados directamente a la red, a los que los equipos acceden como si fueran un disco compartido.
 
 ## Preguntas de repaso
 
-1. ¿Qué ocurre exactamente con la memoria y el PID de un proceso cuando ejecuta `execve()`?
-> [!question]- Respuesta
-> La imagen de memoria (código, variables, heap y stack) se sobreescribe por completo con el nuevo binario ejecutable, pero el PID del proceso sigue siendo exactamente el mismo.
+> [!question]- ¿Desde dónde empieza a ejecutar el hijo después de `fork()`?
+> Desde el retorno de `fork()`, la misma instrucción en que estaba el padre, porque hereda una copia de su estado, incluido el PC.
 
-2. ¿Qué es un proceso *Zombie* y qué consecuencias tiene en el sistema operativo?
-> [!question]- Respuesta
-> Es un proceso que ya terminó su ejecución mediante `exit()`, pero cuyo padre no ha llamado a `wait()` para leer su estado. No consume CPU ni RAM, pero ocupa una entrada en la tabla de procesos del kernel; si se acumulan demasiados, pueden agotar los PIDs disponibles.
+> [!question]- ¿Qué pasa con la memoria y el PID cuando un proceso llama a `exec()`?
+> Su memoria (código, datos, heap y stack) se reemplaza por la del nuevo ejecutable, pero el PID sigue siendo el mismo: es el mismo proceso corriendo otro programa.
 
-3. ¿Qué es un proceso *Huérfano* y cómo lo maneja el kernel?
-> [!question]- Respuesta
-> Es un proceso en ejecución cuyo padre murió antes de que él terminara. El kernel lo reasigna automáticamente al proceso raíz (PID 1, `systemd`), el cual adopta al huérfano y ejecuta `wait()` cuando termine.
+> [!question]- ¿Qué es un zombie y cómo deja de serlo?
+> Es un proceso que ya terminó, pero cuyo padre no ha llamado a `wait()`: su entrada en la tabla de procesos sigue ocupada. Deja de serlo cuando el padre hace `wait()`, o cuando muere el padre y lo adopta `init`, que sí hace `wait()`.
 
-4. ¿Desde qué instrucción comienza a ejecutar el proceso hijo tras la llamada a `fork()`?
-> [!question]- Respuesta
-> Ejecuta exactamente desde la instrucción inmediatamente posterior a la llamada `fork()`, ya que hereda el Program Counter (PC) en el mismo punto de ejecución del padre.
-
+> [!question]- ¿Qué indica un código de retorno distinto de 0?
+> Que el programa terminó con un error o en una situación especial. Por convención, 0 significa éxito, y el significado de cada otro código debería estar en la documentación del programa.

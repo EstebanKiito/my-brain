@@ -3,7 +3,7 @@ ramo: "Sistemas Operativos y Redes"
 tema: "Administración de memoria"
 tags:
   - so/memoria
-  - origen/apuntes
+  - origen/complemento
 prerrequisitos:
   - "[[04 - Swapping, fragmentación externa y algoritmos de asignación libre]]"
   - "[[03 - Relocalización, protección de memoria y registros base y límite]]"
@@ -11,78 +11,87 @@ prerrequisitos:
 
 # Segmentación de memoria y prevención de segmentation fault
 
-La segmentación es un esquema de administración de memoria que divide el espacio de direcciones lógico de un proceso en bloques de tamaño variable llamados segmentos (código, datos, heap, stack), permitiendo ubicarlos de manera independiente y dispersa en la memoria física.
+Con [[03 - Relocalización, protección de memoria y registros base y límite|base y límite]], cada proceso ocupa un solo bloque grande y contiguo, que incluye el espacio vacío entre heap y stack. Eso hace difícil encontrarle lugar y agrava la [[04 - Swapping, fragmentación externa y algoritmos de asignación libre|fragmentación]]. La **segmentación** ataca ese problema dividiendo el proceso en trozos más pequeños.
 
-## Segmentación lógica y tabla de segmentos (mis apuntes)
+## La idea
 
-> [!note] Apuntes de clase
-> **ESTRATEGIAS → ELIMINAR POR COMPLETO PROBLEMA DE FRAGMENTACION**
-> - SEGMENTACION →
-> Ya mencionamos que a ciertas partes del codigo le damos interpretaciones:
-> La idea es ya no guardar todo el bloque de codigo unico de un programa dentro de la memoria fisica → si no que guardar segmentos de manera INDEPENDIENTE.
-> → al ser mas pequeños, mas probabilidad que caigan en un lugar mas pequeño.
->
-> Para ello, la MMU debe ser capaz de TRADUCIR.
->
-> **PROBLEMA → SEGMENTION FAULT**
-> En este caso claro, la direccion virtual del heap por ej buscamos en 4.2kb, eso si se lo sumamos a la base de la direccion fisica, ira a buscar memoria que no pertenece al programa → SEGMENTION FAULT.
->
-> **SOL:**
-> - La manera mas simple de corregir esto, es teniendo la direccion virtual de donde empieza el heap, restarle la direccion (offset: 4200), y esto nos da el desplazamiento (virtual)
-> - Este mismo, se le suma a la direccion del Heap (de nuestro programa en la memoria real), y asi no nos salimos.
-
-> [!warning] Posible error
-> En los apuntes figura repetida la errata tipográfica "SEGMENTION FAULT" en lugar del término formal *Segmentation Fault* (`SIGSEGV`).
+Las partes del espacio de direcciones ya tienen una interpretación propia: **código, heap, stack** (y datos). Un **segmento** es un espacio de direcciones contiguo con una de esas interpretaciones. En vez de guardar el programa como un bloque único en la memoria física, **cada segmento se guarda de forma independiente**. Al ser más pequeños, es más probable que quepan en huecos pequeños, y el espacio libre entre heap y stack ya no ocupa RAM.
 
 ![Partición del espacio de direcciones en segmentos independientes](adjuntos/Partici%C3%B3n%20del%20espacio%20de%20direcciones%20en%20segmentos%20independientes.png)
 
 > [!example]- Transcripción de la imagen
-> División lógica del espacio de direcciones en tres segmentos principales:
-> - **Segmento 0 (Code):** Código del programa (instrucciones legibles y ejecutables, típicamente de solo lectura).
-> - **Segmento 1 (Heap):** Memoria asignada dinámicamente que crece hacia direcciones crecientes.
-> - **Segmento 2 (Stack):** Pila de llamadas y variables locales que crece en sentido decreciente.
-> Cada segmento se aloja en una región contigua separada dentro de la RAM.
+> A la derecha, la *Virtual memory (Task A's)*: *Code* (0-2 KB), *Heap* (2-4 KB, crece hacia abajo), *Free* (4-14 KB) y *Stack* (14-16 KB, crece hacia arriba). A la izquierda, la *Physical memory (RAM)*: *OS* (0-4 KB), *Free* (4-8), *A's Code* (8-10), *Free* (10-12), *A's Stack* (12-14), *Free* (14-126) y *A's Heap* (126-128 KB). Las flechas unen cada segmento virtual con su lugar en la RAM, que no es contiguo ni sigue el mismo orden.
+
+## Traducción con tabla de segmentos
+
+Ahora hay varios espacios lineales de direcciones, y la MMU debe ser capaz de **traducir** cada uno: tiene una **tabla de segmentos** con la base física y el tamaño de cada segmento.
 
 ![Traducción con tabla de segmentos y MMU](adjuntos/Traducci%C3%B3n%20con%20tabla%20de%20segmentos%20y%20MMU.png)
 
 > [!example]- Transcripción de la imagen
-> Mecanismo de traducción con Tabla de Segmentos:
-> - La dirección virtual especifica un número de segmento ($s$) y un desplazamiento u offset ($d$).
-> - La MMU consulta la fila $s$ en la **Tabla de Segmentos** (*Segment Table*), obteniendo el par `[Base, Límite]`.
-> - Dirección física = $\text{Base}(s) + d$.
+> Tabla *Segment / Base / Size*: `code`, 32768 (32 KB), 2048 (2 KB); `heap`, 34816 (34 KB), 2048 (2 KB); `stack`, 28672 (28 KB), 2048 (2 KB).
+
+En el espacio virtual del proceso, el código empieza en 0 y el heap en 4096 (4 KB). La dirección virtual **100** está en el código, cuya base virtual es 0, así que: $32768 + 100 = 32868$.
 
 ![Verificación de límites en tabla de segmentos](adjuntos/Verificaci%C3%B3n%20de%20l%C3%ADmites%20en%20tabla%20de%20segmentos.png)
 
 > [!example]- Transcripción de la imagen
-> Validación de seguridad en la MMU:
-> - Antes de calcular la dirección física, el hardware compara si $d < \text{Límite}(s)$.
-> - Si $d \ge \text{Límite}(s)$, el acceso es ilegal y se dispara una trampa (*Trap*) al sistema operativo, abortando la instrucción.
+> "Tabla de Segmentos: Dirección virtual (lógica): 100. Está en segmento code. Base + dirección = 32768+100 = 32868. Dirección física: 32868." Abajo, la memoria física de 0 a 64 KB (*Operating System* 0-16 KB; *Stack*, *Code* y *Heap* cerca de 28-36 KB; el resto *not in use*) y el espacio virtual de 0 a 16 KB (*Program Code* 0-2 KB, *Heap* 4-6 KB, *free* y *Stack* 14-16 KB). Una flecha roja a mano va del 100 virtual al segmento *Code* físico.
+
+## El error: sumar la dirección virtual completa
+
+¿Qué pasa con la dirección virtual **4200**, que está en el heap (4 KB = 4096 a 6 KB)? Si se suma tal cual a una base física, se sale del espacio del programa:
 
 ![Causa de segmentation fault por desborde de segmento](adjuntos/Causa%20de%20segmentation%20fault%20por%20desborde%20de%20segmento.png)
 
 > [!example]- Transcripción de la imagen
-> Ejemplo de error de acceso en el Heap:
-> - Si el proceso intenta leer en la dirección virtual 4200 (que corresponde al Heap, iniciado en 4096), y sumara 4200 directamente a la base física del Heap, se desviaría completamente fuera del segmento asignado invadiendo memoria ajena.
+> "Tabla de Segmentos: Dirección virtual (lógica): 4200 (offset). Está en segmento code. Base + dirección = 32768+4200 = 39016. Dirección física: 39016." En el dibujo, "Virtual" con el 100 en el código y el 4200 en el heap; la flecha azul del 4200 cae en una zona *not in use* de la memoria física. Nota al pie: "Espacio Libre: Espacio no asignado a este proceso produce segmentation fault".
+
+Sumar 4200 a la base del código (la diapositiva anota 39016; la suma exacta es $32768 + 4200 = 36968$) da una dirección **fuera de todos los segmentos del proceso**: memoria que no le pertenece. Eso es un **segmentation fault**: el kernel detecta el acceso inválido y envía al proceso la señal `SIGSEGV`.
+
+## La solución: usar el desplazamiento (offset)
+
+La forma más simple de corregirlo es restar a la dirección virtual **la dirección virtual donde empieza su segmento**, lo que da el **desplazamiento** (*offset*) dentro del segmento, y sumarle eso a la base física del segmento:
+
+$$\text{offset} = 4200 - 4096 = 104 \qquad \text{física} = 34816 + 104 = 34920$$
+
+Así nunca se sale del segmento. Además, la MMU verifica que el offset sea **menor que el tamaño** del segmento: si no lo es, también es un *segmentation fault*. Como cada segmento tiene su propia entrada en la tabla, también se le pueden dar permisos distintos (por ejemplo, código de solo lectura). Eso sí, los segmentos tienen tamaños variables y siguen ocupando trozos contiguos, así que la fragmentación externa no desaparece del todo.
 
 ![Cálculo de desplazamiento relativo virtual en el heap](adjuntos/C%C3%A1lculo%20de%20desplazamiento%20relativo%20virtual%20en%20el%20heap.png)
 
 > [!example]- Transcripción de la imagen
-> Solución mediante resta de la base virtual:
-> - Desplazamiento ($d$) = $\text{Dirección Virtual} - \text{Base Virtual del Segmento} = 4200 - 4096 = 104\text{ bytes}$.
-> - Dirección física resultante = $\text{Base Física del Heap} + 104$.
-> - La referencia cae de manera segura dentro de la región asignada al proceso.
+> Dibujo a mano sobre la misma figura: el heap virtual ampliado, con el 4200 marcado a una distancia **X** de su inicio, y en la memoria física la anotación "B. Heap + X", es decir, la base física del heap más el desplazamiento.
 
-> [!tip] Complemento: Ventajas y limitaciones de la segmentación pura
-> La segmentación refleja la estructura lógica del programa (un módulo de código, una pila, una tabla de símbolos) y permite aplicar permisos de protección independientes por segmento (e.g. Código = Read/Execute, Heap/Stack = Read/Write). No obstante, como los segmentos tienen tamaños variables, la segmentación pura sigue sufriendo de fragmentación externa, lo que derivó en la creación de esquemas combinados como la segmentación paginada.
+```python
+# Tabla de segmentos del ejemplo: nombre -> (base virtual, base física, tamaño)
+SEGMENTOS = {
+    "code": (0,    32768, 2048),
+    "heap": (4096, 34816, 2048),
+}
+
+def traducir(virtual):
+    for nombre, (base_v, base_f, tam) in SEGMENTOS.items():
+        offset = virtual - base_v                 # desplazamiento dentro del segmento
+        if 0 <= offset < tam:                     # ¿cae dentro del segmento?
+            return f"{virtual} -> {nombre}, offset {offset} -> física {base_f + offset}"
+    return f"{virtual} -> segmentation fault"
+
+for v in (100, 4200, 5000, 3000):
+    print(traducir(v))    # 32868, 34920, 35720 y segmentation fault (3000 está en el hueco)
+```
+
+Restar funciona, pero la MMU lo hace más rápido con lógica de bits: los primeros bits de la dirección indican el segmento y el resto el offset. Se ve en [[06 - Aritmética de bits y máscara de segmento en traducción de direcciones|máscaras de segmento]].
 
 ## Preguntas de repaso
 
-> [!question]- ¿Qué información almacena cada entrada de la tabla de segmentos administrada por la MMU?
-> Cada entrada contiene la dirección física de inicio del segmento en la RAM (**Base**) y la longitud máxima permitida de dicho segmento (**Límite** o tamaño), junto con los bits de permisos de acceso (lectura, escritura, ejecución).
+> [!question]- ¿Qué ventaja tiene la segmentación frente a un solo bloque con base y límite?
+> Cada segmento se ubica de forma independiente y es más pequeño, así que cabe en huecos más chicos, y el espacio vacío entre heap y stack no ocupa RAM.
 
-> [!question]- ¿Por qué no se puede sumar directamente la dirección virtual completa a la base física de un segmento en memoria?
-> Porque la dirección virtual incluye la base virtual del segmento en el espacio lógico. Si se sumara directamente sin extraer el desplazamiento relativo (*offset*), el resultado apuntaría a una dirección física inflada mucho más allá del final del segmento, violando el límite y generando un *Segmentation Fault*.
+> [!question]- ¿Qué guarda la tabla de segmentos?
+> Para cada segmento (código, heap, stack…), su dirección base en la memoria física y su tamaño.
 
-> [!question]- ¿Qué ventaja ofrece la segmentación frente a la asignación contigua monolítica para mitigar la fragmentación?
-> Al dividir el proceso en múltiples bloques autónomos y más pequeños (código, heap, stack), el sistema operativo ya no necesita encontrar un único hueco gigantesco contiguo en la RAM; puede aprovechar huecos medianos y dispersos para cada segmento individual.
+> [!question]- ¿Por qué sumar la dirección virtual 4200 a una base física produce un segmentation fault?
+> Porque 4200 incluye la posición del heap dentro del espacio virtual (4096). Sumada completa, la dirección cae fuera de los segmentos del proceso, en memoria que no le pertenece.
 
+> [!question]- Calcula la dirección física de la virtual 4200 con la tabla del ejemplo.
+> Está en el heap, que empieza en 4096: offset $= 4200 - 4096 = 104$. Física $= 34816 + 104 = 34920$.

@@ -1,115 +1,110 @@
 ---
 ramo: Sistemas Operativos y Redes
 tema: Procesos
-tags: [so/procesos, origen/apuntes]
+tags: [so/procesos, origen/complemento]
 prerrequisitos: ["[[05 - Jerarquía y creación de procesos con fork|Jerarquía y creación de procesos con fork]]", "[[06 - Control de procesos con wait, exec y terminación|Control de procesos con wait, exec y terminación]]"]
 ---
 # Programación de procesos en C y prevención de fork bombs
 
-Implementar procesos en lenguaje C requiere estructurar rigurosamente las llamadas a `fork()`, `exec()` y `wait()`, cuidando las condiciones de término para prevenir crecimiento descontrolado y ataques de denegación por bomba de bifurcación (*fork bomb*).
+Crear procesos en C se reduce a combinar tres llamadas al sistema: `fork()` crea, `exec()` reemplaza y `wait()` espera. Bien estructuradas permiten que un programa principal (el padre) reparta trabajo entre hijos. Mal estructuradas, los procesos se multiplican sin control hasta botar la máquina: una **fork bomb**.
 
-## Ayudantía 1 (mis apuntes)
-16 / 8 / 2024
+## Herramientas de C que se usan
 
-Tipos de datos
-- Usar double mejor porque acepta mas cosas
-- Punteros → Apuntan a direcciones de memoria, para la tarea 0 no se van a necesitar
-- strutct
-- argv : Cantidad de lineas que se recibe por comando
-- enum: define constantes enteras
+- **`double`** para números reales: tiene más precisión y rango que `float`.
+- **Punteros:** variables que guardan direcciones de memoria.
+- **`struct`:** agrupa datos relacionados, por ejemplo la descripción de un proceso.
+- **`enum`:** define constantes enteras con nombre, útil para estados.
+- **`argc` / `argv`:** cuántos argumentos llegaron por línea de comandos y cuáles son (`argv` es el arreglo de strings).
+- **`clock()`** de `<time.h>`: mide el tiempo de CPU consumido por el proceso.
+- **Encabezados:** `<unistd.h>` (`fork`, `exec*`, `getpid`), `<sys/types.h>` (`pid_t`) y `<sys/wait.h>` (`wait`, `waitpid`, `WEXITSTATUS`).
 
-```c
-structs Process{
-	int pid,
-	char* name,
-	int argv
-	
-}
+## El patrón fork → exit → wait
 
-enum Sates{
-	RUNNING
-	WAITING
-	FINISHED
-}
-```
-
-Esto para procesos en memoria
-- Estudiar : clock
-- Estudiar: fork() → Crea procesos con id
-- exec : distintos tipos de exec
-- cada uno tiene sus argumentos
-- wait : → Syscall
-- #include sys.types.h
-- #includes sys.wait.h
-
-cuidado con fork
-LA tarea pide padre hijo padre hijo, y no existe un hijo de un hijo
-Podriamos crear hijos de manera exponencial, y el computador pordia fallar y apagarse
-Teoricamente
-El padre seria el programa principal
-Y los hijos serian las funcionalidades por ejemplo
+`fork()` crea un hijo como **copia del padre**. Ambos continúan ejecutando desde la misma instrucción, el retorno de `fork()`, y solo se distinguen por el valor que reciben: el padre obtiene el **PID del hijo** y el hijo obtiene **0** (un valor negativo indica error). Lo típico es que el padre sea el programa principal y los hijos ejecuten funcionalidades concretas.
 
 ![Uso de fork en lenguaje C](adjuntos/Uso%20de%20fork%20en%20lenguaje%20C.png)
 
 > [!example]- Transcripción de la imagen
-> Fragmento de código en C mostrando el flujo de decisión tras `fork()`:
-> ```c
-> main() {
->     pid = fork();
->     if (pid == 0)
->         ChildProcess();
->     else
->         ParentProcess();
-> }
-> ```
-> En el proceso padre `pid` recibe el PID del hijo (ejemplo: 3456), derivando a `ParentProcess()`; en el proceso hijo `pid` recibe 0, ejecutando `ChildProcess()`.
+> Dos copias del mismo programa, una por proceso. Ambas ejecutan `pid = fork(); if (pid == 0) ChildProcess(); else ParentProcess();`. En el padre, `pid = 3456` (el PID del hijo) y entra a `ParentProcess()`. En el hijo, `pid = 0` y entra a `ChildProcess()`.
 
-Fork retorna un id → Si es 0 es el proceso del hijo y si no del padre
+El hijo hace su trabajo y termina con `exit(código)`. El padre, mientras tanto, llama a `wait()` para esperarlo y recoger ese código de retorno (0 = terminó bien).
 
 ![Ciclo de sincronización fork y wait](adjuntos/Ciclo%20de%20sincronización%20fork%20y%20wait.png)
 
 > [!example]- Transcripción de la imagen
-> Esquema de bifurcación y sincronización:
-> - `fork`: Bifurca en `child program` y `main program (parent)`.
-> - El proceso hijo ejecuta sus tareas y realiza `exit`.
-> - El proceso padre alcanza la llamada `wait` y aguarda la señal de término del hijo antes de continuar su ejecución (`continue`).
+> Desde `fork` salen dos ramas. La rama *child* va a *child program* y luego a `exit`. La rama *parent* va a *main program* y luego a `wait`. Una flecha une `exit` con `wait`, y desde `wait` el padre sigue (`continue`).
 
-El padre crea al hijo, se hace el exit, y se devuelve al padre, y al padre hay que hacerle un wait, esperando a lo que haga el hijo
-Cuidado con los fork bomb, crear un for dentro de un while
-Si hacemos fork pero ordenadamente dentro del while, y sabemos que termina todo OK
-El hijo es una copia del padre, pero solo ejecuta la linea de comandos
-exec es distinto al fork
-Reemplaza el path que le damos
-exec es un archivo .c que multiplica numeros
-el child ya no es el codigo, si no que el archivo .c
+Ejemplo completo: un padre crea tres hijos, nunca nietos, y espera a cada uno.
 
-> [!warning] Posible error (registrado en `_meta/Sistemas Operativos y Redes/DUDAS.md`)
-> En el extracto de código de la ayudantía se conservaron las erratas de sintaxis del apunte original (`structs` por `struct`, `Sates` por `States`, `WAI` por `WAITING`). La sintaxis válida en C requiere `struct Process { ... };` y encabezados `#include <sys/types.h>` y `#include <sys/wait.h>`.
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <unistd.h>
 
-> [!tip] Complemento (slides "Contenido 2: Fork Bomb y ulimit")
-> Una **bomba de bifurcación (*Fork Bomb*)** ocurre cuando un proceso genera copias recursivas de sí mismo sin condición de término:
-> ```bash
-> :(){ :|:& };:   # Fork bomb canónica en Bash
-> ```
-> Cada llamada genera 2 procesos, luego 4, 8, 16... saturando la tabla de procesos del kernel en milisegundos y congelando el sistema operativo.
->
-> **Defensa del sistema:** Los administradores configuran límites con `ulimit -u <máximo_procesos>` o en `/etc/security/limits.conf` para acotar la cantidad máxima de procesos permitidos por usuario.
+enum State { RUNNING, WAITING, FINISHED };
+
+struct Process {
+    pid_t pid;
+    char *name;
+    enum State state;
+};
+
+int main(void) {
+    struct Process hijos[3];
+    for (int i = 0; i < 3; i++) {
+        pid_t pid = fork();
+        if (pid < 0) { perror("fork"); exit(1); }
+        if (pid == 0) {              /* hijo: trabaja y termina */
+            printf("hijo %d (pid %d)\n", i, getpid());
+            exit(i);                 /* sin exit, el hijo seguiría el for y crearía nietos */
+        }
+        hijos[i] = (struct Process){ pid, "worker", RUNNING };
+    }
+    for (int i = 0; i < 3; i++) {    /* padre: espera a cada hijo */
+        int status;
+        waitpid(hijos[i].pid, &status, 0);
+        hijos[i].state = FINISHED;
+        printf("hijo %d terminó con código %d\n", hijos[i].pid, WEXITSTATUS(status));
+    }
+    return 0;
+}
+```
+
+## exec: el hijo deja de ser el mismo código
+
+`exec()` es distinto de `fork()`: no crea un proceso, sino que **reemplaza** el programa del proceso actual por el ejecutable de la ruta indicada, manteniendo el PID. Hay varias variantes (`execl`, `execlp`, `execv`, `execvp`…), cada una con su forma de recibir los argumentos. Tras un `exec` exitoso el hijo ya no ejecuta el código del padre, sino el otro programa, por ejemplo uno que multiplica números:
+
+```c
+if (fork() == 0) {
+    execlp("expr", "expr", "6", "*", "7", (char *)NULL);  /* imprime 42 */
+    perror("exec");                  /* solo se llega aquí si exec falla */
+    exit(1);
+}
+wait(NULL);
+```
+
+## Fork bombs: crecimiento exponencial
+
+Si los hijos también ejecutan `fork()`, el número de procesos se duplica en cada vuelta. Con `for (i = 0; i < 3; i++) fork();` terminan existiendo $2^3 = 8$ procesos. El riesgo típico es un `fork()` dentro de un ciclo (un `for` dentro de un `while`) sin que el hijo salga del ciclo: la tabla de procesos del kernel se llena y el computador puede colgarse. Usar `fork` dentro de un ciclo no es un error en sí. Es seguro mientras sea ordenado, es decir, mientras cada hijo termine (`exit`) y el ciclo tenga fin.
+
+> [!warning] Fork bomb canónica (no ejecutar)
+> En Bash, `:(){ :|:& };:` define una función `:` que se llama dos veces a sí misma en segundo plano: 2, 4, 8, 16… procesos. Para defender el sistema se limita la cantidad de procesos por usuario con `ulimit -u <máximo>` o en `/etc/security/limits.conf`.
 
 ## Preguntas de repaso
 
-1. ¿Cómo se distingue programáticamente si el código está corriendo en el proceso padre o en el proceso hijo tras un `fork()`?
-> [!question]- Respuesta
-> Evaluando el valor retornado por `fork()`: si el valor retornado es `0`, el flujo corre en el proceso hijo; si es mayor a cero (el PID del hijo), corre en el proceso padre.
+> [!question]- Tras un `fork()`, ¿cómo sabe el código si corre en el padre o en el hijo?
+> Por el valor de retorno: 0 en el hijo, el PID del hijo (mayor que 0) en el padre y negativo si falló.
 
-2. ¿Qué ocurre en el sistema operativo durante una *Fork Bomb* y cómo se mitiga?
-> [!question]- Respuesta
-> Se crean procesos exponencialmente hasta agotar las entradas en la tabla de procesos del kernel y los PIDs disponibles, impidiendo ejecutar cualquier nuevo comando. Se mitiga configurando límites de recursos por usuario mediante `ulimit -u`.
+> [!question]- ¿Por qué el hijo debe llamar a `exit()` dentro del ciclo que crea hijos?
+> Porque el hijo continúa desde el retorno de `fork()` con una copia del estado del padre, incluido el contador del ciclo. Si no termina, sigue iterando y crea sus propios hijos (nietos del padre), y el número de procesos crece de forma exponencial.
 
-3. ¿Por qué es necesario incluir `<sys/wait.h>` al implementar procesos padres en C?
-> [!question]- Respuesta
-> Porque declara las firmas de las funciones `wait()` y `waitpid()`, así como las macros para inspeccionar el estado de terminación del hijo (`WIFEXITED`, `WEXITSTATUS`).
+> [!question]- ¿Qué diferencia hay entre `fork()` y `exec()`?
+> `fork()` crea un proceso nuevo, copia del llamador, con otro PID. `exec()` no crea procesos: reemplaza el programa del proceso actual por otro ejecutable y conserva el PID.
 
-4. ¿Cuál es la diferencia entre `fork()` y `exec()` en un programa en C?
-> [!question]- Respuesta
-> `fork()` crea un nuevo proceso clonando al llamador con un nuevo PID; `exec()` sustituye el código y memoria del proceso actual por un nuevo ejecutable, manteniendo el mismo PID sin crear un proceso adicional.
+> [!question]- ¿Para qué sirve `wait()` y qué entrega?
+> Bloquea al padre hasta que un hijo termine y le entrega su estado: `WIFEXITED` indica si terminó normalmente y `WEXITSTATUS` extrae el código pasado a `exit()`. Así el padre sabe cuándo y cómo terminó cada hijo.
 
+> [!question]- ¿Qué hace una fork bomb al sistema y cómo se mitiga?
+> Crea procesos en forma exponencial hasta agotar la tabla de procesos, y entonces no se pueden lanzar comandos nuevos. Se mitiga limitando los procesos por usuario (`ulimit -u`, `limits.conf`).

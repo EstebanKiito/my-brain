@@ -4,91 +4,98 @@ tema: "Sistemas de archivos"
 tags:
   - so/archivos
   - so/scheduling
-  - origen/apuntes
   - origen/complemento
 prerrequisitos:
-  - "[[Sistemas Operativos y Redes/10-Sistemas de archivos/02 - Discos duros magnéticos (HDD) y discos de estado sólido (SSD)\|02 - Discos duros magnéticos (HDD) y discos de estado sólido (SSD)]]"
+  - "[[Sistemas Operativos y Redes/10-Sistemas de archivos/02 - Discos duros magnéticos (HDD) y discos de estado sólido (SSD)|02 - Discos duros magnéticos (HDD) y discos de estado sólido (SSD)]]"
 ---
 
 # Algoritmos de planificación de disco (Disk Scheduling)
 
-El sistema operativo reordena las solicitudes de entrada/salida pendientes en la cola del controlador para minimizar los desplazamientos mecánicos del brazo lector (*seek time*) y optimizar el rendimiento global del disco.
+En un [[02 - Discos duros magnéticos (HDD) y discos de estado sólido (SSD)|disco duro]], lo más caro es mover el brazo (*seek time*). Si hay varias solicitudes pendientes, el orden en que se atienden determina cuánto se mueve el brazo. Por eso el SO **encola y ordena** las solicitudes: el objetivo es minimizar los movimientos del brazo al buscar la información.
 
-## Planificación de solicitudes de disco (mis apuntes)
+## Qué pide el SO al disco
 
-- Schedulling de Accesos
-- Para minimizar los movimientos a la hora de buscar informacion en el disco
-- El S.O solicita datos del disco especificando:
-- Lectura? o Escritura?
-- Direccion del Disco → CHS o LBA
-- Direccion de memoria fisica (Buffer)
-- El orden de atencion → Determina el seek time de la transferencia
-- Numeros de secotres a transferir
-- Objetivo: Minimizar la latencia de escritura (movimientos en un disco duro)
-- SCHEDULING FCFS (FIFO)
-- Primero en llegar, primero en ser atendido
-- Justo, pero no necesariamente el de mejor servicio
-- Este es el movimiento del brazo
-- Si contamos en total las distancias que recorrio:
-- Desplazamiento de 640
-- FCFS dependemos mucho del orden de acceso → No podemos asumir nada
-- SCHEDULING SSTF : (Shortest Seek Time First)
-- Busca moverse lo menos posible → Busca en minimos locales los mas cercanos
-- Desplazamiento de 208 (mucho menos)
-- No es optimo → Posible inanicion
-- 😭 Mientras estamos leyendo, pueden llegar peticiones cercanas, y provoca inanicion en los lejanos!
-- SCHEDULING SCAN
-- Elevador → Se va a ir moviendo completamente hacia un lado, y luego hacia el otro
-- Lee todo lo que encuentre en el camino
-- Tiempo de respuesta menos variado que SSTF
-- El brazo lector no se desgasta tanto → No tiene que cambiar de direccion
-- Pero es ineficiente igualmente, probablemente mas que los anteriores
-- C-SCAN: Lo mismo pero va hasta la orilla y lee en una direccion (no lee entremedio, se dirige hasta la esquina y de ahi empieza a leer hacia adelante)
-- LOOK y C-LOOK → Es SCAN pero sin llegar a los extremos
+Cada solicitud especifica: si es **lectura o escritura**, la **dirección en el disco** (CHS, *cylinder-head-sector*, o LBA, *logical block address*), la **dirección de memoria física** del buffer y el **número de sectores** a transferir. La métrica para comparar algoritmos es el **desplazamiento total del brazo**, medido en cilindros.
 
-> [!warning] Posible error
-> En los apuntes se escribe `Schedulling` con doble 'L' (scheduling) y `Numeros de secotres a transferir` (error tipográfico por sectores).
+Todos los ejemplos usan la cola `98, 183, 37, 122, 14, 124, 65, 67`, con el cabezal partiendo en el cilindro **53** (cilindros 0 a 199).
 
-> [!tip] Complemento: Comparación de políticas de planificación
-> Las solicitudes hacia el disco se formulan típicamente usando direccionamiento LBA (*Logical Block Addressing*) o históricamente CHS (*Cylinder-Head-Sector*). Para una cola de solicitudes sobre un disco de 200 cilindros ($0\text{ a }199$) con cola `98, 183, 37, 122, 14, 124, 65, 67` e inicio en el cilindro 53:
->
-> 1. **FCFS (*First-Come, First-Served*):**
->    ![Planificación de disco First In First Out FCFS](adjuntos/Planificación%20de%20disco%20First%20In%20First%20Out%20FCFS.png)
->    > [!example]- Transcripción de la imagen
->    > Diagrama de movimiento de cabezal FCFS: orden exacto de llegada $53 \to 98 \to 183 \to 37 \to 122 \to 14 \to 124 \to 65 \to 67$.
->    > Desplazamiento total del brazo = 640 cilindros.
->
-> 2. **SSTF (*Shortest Seek Time First*):**
->    ![Planificación de disco Shortest Seek Time First SSTF](adjuntos/Planificación%20de%20disco%20Shortest%20Seek%20Time%20First%20SSTF.png)
->    > [!example]- Transcripción de la imagen
->    > Diagrama SSTF: selecciona la solicitud con mínima distancia al cilindro actual.
->    > Recorrido: $53 \to 65 \to 67 \to 37 \to 14 \to 98 \to 122 \to 124 \to 183$.
->    > Desplazamiento total = 208 cilindros. Vulnerable a inanición (*starvation*) si continúan llegando solicitudes locales.
->
-> 3. **SCAN (Elevador):**
->    ![Planificación de disco SCAN elevador](adjuntos/Planificación%20de%20disco%20SCAN%20elevador.png)
->    > [!example]- Transcripción de la imagen
->    > Diagrama SCAN: el brazo se desplaza en una dirección (hacia 0) atendiendo solicitudes ($53 \to 37 \to 14 \to 0$), rebota en el extremo y barre en sentido opuesto ($0 \to 65 \to 67 \to 98 \to 122 \to 124 \to 183$).
->
-> 4. **C-SCAN (*Circular SCAN*) y F-SCAN:**
->    ![Planificación de disco C-SCAN y F-SCAN elevador circular](adjuntos/Planificación%20de%20disco%20C-SCAN%20y%20F-SCAN%20elevador%20circular.png)
->    > [!example]- Transcripción de la imagen
->    > Diagrama C-SCAN: barre en una sola dirección ($53 \to 183 \to 199$). Al llegar al final viaja rápidamente hasta 0 sin atender solicitudes intermedias, garantizando tiempos de espera más uniformes.
->    > F-SCAN congela la cola al iniciar el barrido para atender las nuevas solicitudes en una pasada posterior.
->
-> 5. **LOOK y C-LOOK:**
->    ![Planificación de disco LOOK y C-LOOK](adjuntos/Planificación%20de%20disco%20LOOK%20y%20C-LOOK.png)
->    > [!example]- Transcripción de la imagen
->    > Diagrama LOOK/C-LOOK: idéntico a SCAN/C-SCAN pero el cabezal solo viaja hasta la solicitud más extrema en cada sentido ($183$ y $14$), sin gastar seek hasta los extremos físicos $199$ y $0$.
+## FCFS (FIFO)
+
+Atiende en **orden de llegada**: es **justo, pero no necesariamente el de mejor servicio**, y depende totalmente del orden en que llegan las solicitudes. Desplazamiento: **640**.
+
+![Planificación de disco First In First Out FCFS](adjuntos/Planificaci%C3%B3n%20de%20disco%20First%20In%20First%20Out%20FCFS.png)
+
+> [!example]- Transcripción de la imagen
+> "queue = 98, 183, 37, 122, 14, 124, 65, 67; head starts at 53". Eje de cilindros 0 a 199. El recorrido zigzaguea en el orden de llegada: 53 → 98 → 183 → 37 → 122 → 14 → 124 → 65 → 67. Encima hay trazos a mano.
+
+## SSTF (*Shortest Seek Time First*)
+
+Atiende siempre la solicitud **más cercana** a la posición actual: busca moverse lo menos posible. Para este ejemplo, el material indica un desplazamiento de **208**; sumando el recorrido de la figura, da 236. En ambos casos es mucho menos que FCFS.
+
+- **No es óptimo**: elegir siempre el más cercano (un mínimo local) no garantiza el menor total.
+- **Posible inanición**: mientras se atiende una zona pueden seguir llegando pedidos cercanos, y los sectores alejados esperan indefinidamente.
+
+![Planificación de disco Shortest Seek Time First SSTF](adjuntos/Planificaci%C3%B3n%20de%20disco%20Shortest%20Seek%20Time%20First%20SSTF.png)
+
+> [!example]- Transcripción de la imagen
+> La misma cola y el mismo inicio. Recorrido: 53 → 65 → 67 → 37 → 14 → 98 → 122 → 124 → 183.
+
+## SCAN (el elevador) y sus variantes
+
+| Algoritmo | Cómo se mueve | Recorrido en el ejemplo |
+|---|---|---|
+| **SCAN** | Va de un extremo al otro, como un ascensor, atendiendo todo lo que encuentra en el camino; luego vuelve | 53 → 37 → 14 → **0** → 65 → … → 183 |
+| **C-SCAN** | Atiende en un solo sentido; al llegar al extremo, salta al extremo opuesto sin atender nada y sigue en el mismo sentido | 53 → 65 → … → 183 → **199** → **0** → 14 → 37 |
+| **LOOK / C-LOOK** | Como SCAN / C-SCAN, pero no llegan hasta los extremos del disco si no es necesario: se devuelven en la última solicitud | C-LOOK: 53 → … → 183 → 14 → 37 |
+| **F-SCAN** | Elevador "congelado": no atiende solicitudes nuevas hasta terminar la cola actual | — |
+
+SCAN da tiempos de respuesta **menos variados** que SSTF, y el brazo cambia de dirección menos veces. Pero las solicitudes que llegan **justo después de que el brazo pasó** esperan mucho: tienen que aguardar el viaje de ida y de vuelta. C-SCAN lo corrige barriendo siempre en el mismo sentido.
+
+![Planificación de disco SCAN elevador](adjuntos/Planificaci%C3%B3n%20de%20disco%20SCAN%20elevador.png)
+
+> [!example]- Transcripción de la imagen
+> SCAN con la misma cola: desde 53 baja a 37, 14 y el extremo 0, y luego sube atendiendo 65, 67, 98, 122, 124 y 183.
+
+![Planificación de disco C-SCAN y F-SCAN elevador circular](adjuntos/Planificaci%C3%B3n%20de%20disco%20C-SCAN%20y%20F-SCAN%20elevador%20circular.png)
+
+> [!example]- Transcripción de la imagen
+> "SCHEDULING C-SCAN. *C-SCAN. Elevador circular.* Las solicitudes que llegan justo después que el brazo ha pasado, llevan más tiempo esperando. Llega a un extremo y se mueve completamente al extremo opuesto. Continúa en el mismo sentido." Recorrido: 53 → 65 → … → 183 → 199, salto a 0 → 14 → 37. Al pie: "No atiende solicitudes nuevas hasta haber acabado con la cola. *F-SCAN. Elevador congelado.*"
+
+![Planificación de disco LOOK y C-LOOK](adjuntos/Planificaci%C3%B3n%20de%20disco%20LOOK%20y%20C-LOOK.png)
+
+> [!example]- Transcripción de la imagen
+> "SCHEDULING LOOK Y C-LOOK. Similares a SCAN y C-SCAN, pero no se mueven hasta los extremos si no es necesario." Recorrido C-LOOK: 53 → 65 → … → 183, salto a 14 → 37.
+
+```python
+COLA, INICIO = [98, 183, 37, 122, 14, 124, 65, 67], 53
+
+def recorrido(orden, pos=INICIO):
+    total = 0
+    for c in orden:
+        total += abs(c - pos); pos = c
+    return total
+
+def sstf(cola, pos=INICIO):
+    pendientes, orden = list(cola), []
+    while pendientes:
+        c = min(pendientes, key=lambda x: abs(x - pos))   # el más cercano
+        orden.append(c); pendientes.remove(c); pos = c
+    return orden
+
+print(recorrido(COLA))          # FCFS: 640
+print(recorrido(sstf(COLA)))    # SSTF: 236
+```
 
 ## Preguntas de repaso
 
-> [!question]- ¿Por qué el algoritmo SSTF puede provocar inanición (*starvation*) en ciertas solicitudes?
-> Porque al atender siempre la petición más cercana al cabezal actual, si un flujo continuo de nuevas solicitudes se concentra en cilindros cercanos, las solicitudes lejanas ubicadas en los extremos del disco pueden posponerse indefinidamente.
+> [!question]- ¿Qué datos especifica el SO en cada solicitud al disco?
+> Si es lectura o escritura, la dirección en el disco (CHS o LBA), la dirección de memoria física del buffer y cuántos sectores transferir.
 
-> [!question]- ¿Qué ventaja fundamental introduce C-SCAN respecto a SCAN convencional?
-> Proporciona un tiempo de espera mucho más uniforme entre cilindros. En SCAN, cuando el cabezal rebota en un extremo, los sectores recién visitados tienen muy poca probabilidad de tener solicitudes, mientras que los sectores del otro extremo llevan el doble de tiempo esperando. C-SCAN elimina esa asimetría barriendo siempre en el mismo sentido.
+> [!question]- ¿Por qué SSTF puede causar inanición?
+> Porque siempre atiende la solicitud más cercana; si siguen llegando pedidos cerca del brazo, los lejanos se postergan indefinidamente.
 
-> [!question]- ¿Cuál es la diferencia práctica entre SCAN y LOOK?
-> SCAN desplaza obligatoriamente el cabezal hasta el extremo físico final del disco ($0$ o $N-1$) antes de cambiar de sentido, mientras que LOOK solo se mueve hasta la última petición pendiente en esa dirección y cambia de sentido inmediatamente.
+> [!question]- ¿Qué problema de SCAN corrige C-SCAN?
+> Que las solicitudes que llegan justo detrás del brazo esperan el viaje de ida y vuelta. C-SCAN barre siempre en un mismo sentido y salta al otro extremo, lo que hace las esperas más parejas.
 
+> [!question]- ¿En qué se diferencian SCAN y LOOK?
+> SCAN llega hasta el extremo del disco antes de devolverse; LOOK se devuelve en la última solicitud pendiente de esa dirección, sin recorrer cilindros vacíos.

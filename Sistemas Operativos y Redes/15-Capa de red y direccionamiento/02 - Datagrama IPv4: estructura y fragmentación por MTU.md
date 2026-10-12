@@ -8,96 +8,96 @@ tags:
   - datagrama
   - mtu
   - fragmentacion
+  - origen/complemento
 prerrequisitos:
   - "[[15-Capa de red y direccionamiento/01 - Servicios de la capa de red: enrutamiento y reenvío|01 - Servicios de la capa de red: enrutamiento y reenvío]]"
 ---
 
 # Datagrama IPv4: estructura y fragmentación por MTU
 
-Internet opera como una red de datagramas sin conexión (*connectionless*), a diferencia de las redes de circuitos virtuales (como las redes telefónicas tradicionales). La PDU fundamental es el datagrama IPv4 (RFC 791). Dado que cada enlace físico de red impone una Unidad Máxima de Transferencia (MTU), los datagramas que superan la capacidad del enlace deben fragmentarse utilizando los campos de identificación, flags y desplazamiento de fragmento (*fragment offset*).
+Internet funciona como una **red de datagramas**: cada paquete viaja por su cuenta con la dirección de destino escrita en su header. Esta nota explica por qué se eligió ese modo, qué lleva el datagrama IP y qué pasa cuando un datagrama es más grande de lo que un enlace puede transportar.
 
----
+## Por qué Internet usa datagramas
 
-## Formato del paquete y fragmentación (mis apuntes)
+Los dos [[01 - Servicios de la capa de red: enrutamiento y reenvío#Modos de conexión|modos de conexión]] se entienden mejor con ejemplos:
 
-MODOS DE CONEXION
-Es un modo, que usa la via telefonica por ejemplo, establece un circuito
-Antes de establecer una conexion, va construyendo una ruta de a poco el circuito
-En construye primero la autopista entre yo y el destino
+- **Circuito virtual (esquema de red telefónica).** Antes de enviar nada, se construye la ruta de a poco: primero se arma "la autopista" entre el emisor y el destino, y cada router guarda el estado de la conexión. A cambio, el ancho de banda queda **garantizado** durante la conexión. El costo es que es **poco flexible ante la congestión**: si un router está saturado, no acepta más conexiones. Por ejemplo, tras un terremoto todos llaman a la vez, la línea telefónica llega a su límite de ancho de banda y las llamadas no se establecen.
+- **Datagramas (esquema de Internet).** Los segmentos TCP se encapsulan en paquetes con sus headers y se envían; cada router los reenvía según su **tabla de reenvío**, sin saber nada del camino completo (*connectionless*), así que dos paquetes pueden tomar caminos distintos. **No garantiza ancho de banda**, pero es **flexible ante la congestión** y aprovecha mejor el ancho de banda.
 
-VIRTUAL NETWORK: ESQUEMA RED TELEFONICA
-- Router mantiene estado de la conexión: Connection-oriented
-- Garantiza ancho de banda durante la conexión
-Provoca que si un router esta saturado → No va a poder tener mas conexiones
-Por ejemplo → Terremoto, la linea telefonica tiene ancho de banda limite → Satura y la llamada no se establece
-- Sin embargo: Poco flexible a CONGESTIONES
+## Tablas de reenvío con prefijos
 
-DATAGRAM NETWORK: ESQUEMA DE INTERNET
-- Asi funciona la internet, mediante segmentos tcp, se encapsulan paquetes, con sus headers, y se envian, y los routers van ruteando ellos, podrian tener distintos caminos
-- Los Routers reenvian de acuerdo a forwarding Table
-- Routers no saben de caminos: Connectionless
-- NO GARANTIZA ANCHO DE BANDA!! → El otro si
-- Es Flexible ante CONGESTION!!
-- Permite ocupar de mejor manera ancho de banda
-- Sin embargo:
-
-FORWARDING TABLES
-Router debe tener respuesta para cada direccion posible → Usualmente contiene prefijos!
-Ejemplos con 32 bits:
+Un router debe tener respuesta para **cada dirección posible**, así que la tabla guarda **prefijos** de las direcciones de 32 bits y no direcciones completas:
 
 ![Estructura y campos de la cabecera del datagrama IPv4](adjuntos/Estructura%20y%20campos%20de%20la%20cabecera%20del%20datagrama%20IPv4.png)
 
 > [!example]- Transcripción de la imagen
-> Encabezado IPv4 (20 bytes fijos):
-> - Versión (4 bits, ej. 4).
-> - Longitud de cabecera (*IHL*, 4 bits, en múltiplos de 32 bits).
-> - Tipo de servicio (*TOS*, 8 bits).
-> - Longitud total del datagrama (16 bits, hasta 65.535 bytes).
-> - Identificador (16 bits), Flags (3 bits: Reservado, DF - Don't Fragment, MF - More Fragments) y Offset de fragmento (13 bits).
-> - Tiempo de vida (*TTL*, 8 bits): Decrementado en 1 por cada router para evitar bucles infinitos.
-> - Protocolo de capa superior (8 bits, ej. 6 para TCP, 17 para UDP, 1 para ICMP).
-> - Checksum de cabecera (16 bits).
-> - Dirección IP de origen (32 bits) y Dirección IP de destino (32 bits).
+> Tabla *Prefix Match* → *Link Interface*: `11001000 00010111 00010` → 0; `11001000 00010111 00011000` → 1; `11001000 00010111 00011` → 2; *otherwise* → 3.
 
-¿Como un mensaje encuentra su destinatario?
-Gracias al DATAGRAMA (PAQUETE) IP
-Longitud tipica < 1500 bytes
-Parametro: MTU : Maximum Transfer Unit
+En decimal, `11001000 00010111` es `200.23`, así que las filas corresponden a `200.23.16.0/21`, `200.23.24.0/24` y `200.23.24.0/21`. Una dirección como `200.23.24.170` calza con las filas 1 y 2: se elige la de **prefijo más largo** (la 1). La [[01 - Servicios de la capa de red: enrutamiento y reenvío|nota anterior]] implementa justo esta tabla en Python.
 
-![Fragmentación de datagramas IP por MTU en enlaces de red](adjuntos/Fragmentación%20de%20datagramas%20IP%20por%20MTU%20en%20enlaces%20de%20red.png)
+## El datagrama IP
+
+¿Cómo encuentra un mensaje a su destinatario? Gracias al **datagrama (paquete) IP**, que lleva en su header todo lo que los routers necesitan.
+
+![Ejemplo de campos de fragmentación: identificación, flags y offset de fragmento](adjuntos/Ejemplo%20de%20campos%20de%20fragmentaci%C3%B3n:%20identificaci%C3%B3n,%20flags%20y%20offset%20de%20fragmento.png)
 
 > [!example]- Transcripción de la imagen
-> Fragmentación IP: Un datagrama grande (ej. 4000 bytes) proveniente de un enlace con MTU grande debe atravesar un enlace intermedio con MTU menor (ej. 1500 bytes). El router divide el datagrama en múltiples fragmentos más pequeños, cada uno con su propia cabecera IP de 20 bytes.
+> Formato del datagrama IPv4 en filas de **32 bits**: *Version*, *Header length*, *Type of service* y *Datagram length (bytes)*; *16-bit Identifier*, *Flags* y *13-bit Fragmentation offset*; *Time-to-live*, *Upper-layer protocol* y *Header checksum*; *32-bit Source IP address*; *32-bit Destination IP address*; *Options (if any)*; *Data*.
 
-- Paso 1: Fragmentar Datagrama
-- Enviar fragmentos con mismo ID
-- Router del otro extremos lo reensambla
+| Campo | Para qué sirve |
+|---|---|
+| Versión y largo del header | Distinguir IPv4 de IPv6 y saber dónde empiezan los datos |
+| Largo del datagrama | Tamaño total (16 bits: hasta 65 535 bytes); típicamente **menos de 1500 bytes** |
+| Identificador, flags y offset | Reconstruir un datagrama fragmentado; el flag DF (*don't fragment*) prohíbe fragmentarlo |
+| **TTL** (*time-to-live*) | Cantidad máxima de saltos (*hops*); cada router lo resta y el paquete se descarta al llegar a 0 |
+| Protocolo de capa superior | A quién entregar los datos (6 = TCP, 17 = UDP, 1 = ICMP) |
+| Checksum del header | Detectar errores en el header |
+| IP de origen y de destino | 32 bits cada una |
 
-![Ejemplo de campos de fragmentación: identificación, flags y offset de fragmento](adjuntos/Ejemplo%20de%20campos%20de%20fragmentación:%20identificación,%20flags%20y%20offset%20de%20fragmento.png)
+Sin *options*, el header mide **20 bytes**.
+
+## Fragmentación por MTU
+
+Cada enlace tiene su **MTU** (*Maximum Transfer Unit*), el tamaño máximo de paquete que puede transportar, y no todos los enlaces tienen la misma. El tamaño que puede tener un datagrama queda determinado por los **enlaces intermedios**, que son un problema de la [[17-Capa de enlace y seguridad/01 - Servicios de capa de enlace y control de acceso al medio (MAC)|capa de enlace]]. Al encontrar un enlace con **menor MTU**:
+
+1. el router **fragmenta** el datagrama;
+2. envía los fragmentos con el **mismo identificador**;
+3. según el material, el router en el otro extremo del enlace lo **reensambla**.
+
+![Fragmentación de datagramas IP por MTU en enlaces de red](adjuntos/Fragmentaci%C3%B3n%20de%20datagramas%20IP%20por%20MTU%20en%20enlaces%20de%20red.png)
 
 > [!example]- Transcripción de la imagen
-> Cálculo de fragmentación para un paquete de 4000 bytes (20 cabecera + 3980 datos) con MTU = 1500 bytes:
-> - Fragmento 1: 1500 bytes (20 cabecera + 1480 datos), `ID=x`, `Offset=0`, `MF=1`.
-> - Fragmento 2: 1500 bytes (20 cabecera + 1480 datos), `ID=x`, `Offset=185` ($1480 / 8$), `MF=1`.
-> - Fragmento 3: 1040 bytes (20 cabecera + 1020 datos), `ID=x`, `Offset=370` ($2960 / 8$), `MF=0`.
+> *Fragmentation*: *In: one large datagram (4,000 bytes)*, *Out: 3 smaller datagrams*, en un router frente a un enlace con *Link MTU: 1,500 bytes*. *Reassembly*: *In: 3 smaller datagrams*, *Out: one large datagram (4,000 bytes)*; en la figura, los tres fragmentos se reúnen en el host de destino.
 
-El tamaño va a estar determinado por los ENLACES INTERMEDIO
-→ Problemas de la capa de ENLACE
-Enlace con MENOR MTU:
+Con los números de la figura: un datagrama de 4000 bytes tiene 20 de header y 3980 de datos. Con MTU de 1500, cada fragmento lleva a lo más 1480 bytes de datos. El **offset** se mide en unidades de 8 bytes, y el flag **MF** (*more fragments*) vale 1 en todos menos el último. Los offsets quedan en $1480/8 = 185$ y $2960/8 = 370$, y el último fragmento lleva los 1020 bytes de datos que sobran. Se usan unidades de 8 bytes porque el campo tiene 13 bits: $2^{13} \cdot 8 = 65\,536$ alcanza para cualquier posición dentro de un datagrama de hasta 65 535 bytes.
 
-> [!warning] Posible error en apuntes: ¿Quién reensambla los fragmentos IP?
-> En los apuntes se menciona "Router del otro extremos lo reensambla". En la arquitectura de Internet, los routers intermedios **nunca reensamblan fragmentos**, ya que los fragmentos pueden viajar por rutas distintas y el reensamblado consumiría memoria crítica en los routers. El reensamblado lo realiza exclusivamente el **host receptor final**.
+```python
+def fragmentar(total, mtu, header=20):
+    """Divide un datagrama de 'total' bytes (header incluido) para un enlace con esa MTU."""
+    datos = total - header
+    por_frag = (mtu - header) // 8 * 8          # datos por fragmento: múltiplo de 8
+    frags, offset = [], 0
+    while datos > 0:
+        n = min(por_frag, datos)
+        datos -= n
+        frags.append({"largo": n + header, "offset": offset // 8, "MF": int(datos > 0)})
+        offset += n
+    return frags
 
----
+for f in fragmentar(4000, 1500):
+    print(f)   # largos 1500, 1500, 1040; offsets 0, 185, 370; MF 1, 1, 0
+```
 
 ## Preguntas de repaso
 
-> [!question]- ¿Por qué el campo *Fragment Offset* se expresa en múltiplos de 8 bytes?
-> Porque el campo de desplazamiento tiene solo 13 bits para representar posiciones de hasta 65.535 bytes; al escalarlo por $2^3 = 8$, los 13 bits pueden abarcar hasta $8191 \times 8 = 65.528$ bytes.
+> [!question]- ¿Por qué Internet usa una red de datagramas y no circuitos virtuales?
+> Porque es flexible ante la congestión y aprovecha mejor el ancho de banda: los routers no guardan estado ni reservan recursos. A cambio, no garantiza ancho de banda.
 
-> [!question]- ¿Qué ocurre si un único fragmento de un datagrama IP se pierde en la red?
-> Todo el datagrama original es descartado por el host receptor una vez que expira su temporizador de reensamblado; la capa de transporte (TCP) tendrá que retransmitir el segmento completo.
+> [!question]- ¿Qué indica el TTL y qué pasa cuando llega a 0?
+> La cantidad máxima de saltos que le quedan al paquete. Cada router lo disminuye, y al llegar a 0 el paquete se descarta; así no circula para siempre en un ciclo.
 
-> [!question]- ¿Qué función cumple el campo TTL (*Time-To-Live*) en la cabecera IPv4?
-> Evita que datagramas atrapados en bucles de enrutamiento circulen indefinidamente por la red; cada router decrementa el TTL en 1 y, si llega a 0, descarta el datagrama y envía un mensaje ICMP *Time Exceeded* al emisor.
+> [!question]- ¿Cuándo se fragmenta un datagrama y cómo se sabe qué fragmentos van juntos?
+> Cuando debe atravesar un enlace con una MTU menor que su tamaño. Todos los fragmentos llevan el mismo identificador, y el offset indica la posición de cada uno.
 
+> [!question]- Un datagrama de 4000 bytes cruza un enlace de MTU 1500. ¿Cuántos fragmentos salen y con qué offsets?
+> Tres: de 1500, 1500 y 1040 bytes, con offsets 0, 185 y 370 (en unidades de 8 bytes).

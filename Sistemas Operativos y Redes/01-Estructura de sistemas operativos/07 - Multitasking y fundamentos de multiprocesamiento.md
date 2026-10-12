@@ -1,61 +1,73 @@
 ---
 ramo: Sistemas Operativos y Redes
 tema: Estructura de sistemas operativos
-tags: [so/estructura-so, origen/apuntes]
+tags: [so/estructura-so, origen/complemento]
 prerrequisitos: ["[[01 - Qué es un sistema operativo|Qué es un sistema operativo]]", "[[04 - Interrupciones y excepciones|Interrupciones y excepciones]]"]
 ---
 # Multitasking y fundamentos de multiprocesamiento
 
-El multitasking permite que múltiples procesos compartan el uso de la CPU mediante alternancia rápida en el tiempo (*time-sharing*), ofreciendo la percepción de ejecución simultánea aun en sistemas de un único núcleo.
+En un computador hay decenas de programas "abiertos" al mismo tiempo, aunque tenga pocos núcleos. Lo que lo hace posible no es que todos corran literalmente a la vez, sino que el sistema operativo los **alterna** tan rápido que el usuario no lo nota. Esta nota presenta los conceptos que se usan en todo el curso: proceso, multiprogramación, multitasking y paralelismo.
 
-## Procesos y recursos (mis apuntes)
-PROCESOS → Tarea 0
-(Codigo) + (Recursos)
-[python.py](http://python.py) → CPU
-Se van poniendo en una cola
-Recursos: CPU, Memoria, Archivos
+## Proceso: código + recursos
 
-DISTINTAS CPU´S
-- 1 CPU: 1 Proceso en el mismo instante
-- 2 CPU: 2 Procesos en el mismo instante
-PREGUNTA DE PRUEBA: Lo que pasa es que estan todos en una cola, nunca se ejecutan mas de una a la vez, esto es MULTITASKING:
-MULTITASKING
-Los procesos entran y salen de la CPU, haciendo creer al usuario que ejecutan varios procesos a la vez
+Un **proceso** es un programa en ejecución:
 
-> [!tip] Complemento (slides "Contenido 1: Concurrencia y Paralelismo")
-> - **Concurrencia vs Paralelismo:**
->   - **Concurrencia (*Concurrency*):** Gestionar múltiples tareas que progresan durante el mismo intervalo de tiempo. En una sola CPU se logra mediante multiplexación en el tiempo (*time slicing*).
->   - **Paralelismo (*Parallelism*):** Ejecutar físicamente dos o más instrucciones exactamente en el mismo instante de tiempo sobre diferentes núcleos o procesadores físicos (*multicore / multiprocessor*).
-> - **Multiprogramación vs Tiempo compartido:**
->   - **Multiprogramación:** Mantiene varios procesos en memoria para que, cuando uno se bloquee esperando I/O, la CPU pase de inmediato a otro, maximizando el aprovechamiento del hardware.
->   - **Tiempo compartido (*Time-sharing / Multitasking*):** Cambia rápidamente entre procesos mediante interrupciones del temporizador (cuantos de tiempo de decenas de milisegundos), permitiendo interactividad directa con el usuario.
+$$\text{Proceso} = \text{Código (programa)} + \text{Recursos}$$
+
+Los recursos son CPU, memoria y archivos, además de sockets, dispositivos de I/O y bibliotecas. Por ejemplo, al ejecutar `python script.py` el SO crea un proceso con ese código y le asigna memoria y archivos abiertos. Luego el proceso espera en una **cola** su turno de usar la CPU. El detalle está en [[01 - Concepto de proceso y espacio de memoria|concepto de proceso]].
+
+## Una CPU, un proceso a la vez
+
+Un núcleo atiende **un solo proceso en un instante dado**:
+
+- Con 1 CPU, 1 proceso se ejecuta en cada instante.
+- Con 2 CPU, 2 procesos se ejecutan en el mismo instante.
+
+¿Cómo parecen correr muchos a la vez con una sola CPU? Los procesos están en una cola y nunca se ejecuta más de uno al mismo tiempo en ese núcleo, pero **entran y salen de la CPU** cada pocos milisegundos. Eso es el **multitasking**: hacerle creer al usuario que varios procesos se ejecutan a la vez.
+
+> [!tip] Multiprogramación frente a multitasking
+> - **Multiprogramación:** mantener **varios procesos en memoria** al mismo tiempo. Si uno se bloquea esperando I/O, la CPU pasa a otro y no queda ociosa.
+> - **Multitasking:** **repartir el tiempo de CPU** entre esos procesos, alternándolos tan rápido que parecen simultáneos.
+>
+> La multiprogramación pone a los candidatos en memoria; el multitasking los turna en la CPU.
+
+## Cómo se alternan
+
+El SO solo actúa tras una [[04 - Interrupciones y excepciones|interrupción]]: una syscall, el *timer* o algún evento. En ese momento puede sacar al proceso actual y poner otro, lo que se llama **cambio de contexto**:
+
+1. El SO guarda el estado de los registros del proceso P1 en su PCB. P1 queda "en pausa".
+2. Restaura el estado de los registros de P2 desde su PCB.
+3. P2 continúa su ejecución como si nunca se hubiera detenido.
+
+Elegir cuál de los procesos listos corre a continuación es el trabajo del **scheduler** (planificador). Gracias a la interrupción periódica del *timer*, ningún proceso puede quedarse con la CPU indefinidamente.
+
+## Concurrencia y paralelismo
+
+| | Concurrencia | Paralelismo |
+|---|---|---|
+| Idea | Varias tareas **progresan** en el mismo intervalo de tiempo | Varias tareas se ejecutan **en el mismo instante** |
+| Hardware | Basta un núcleo, que alterna entre ellas | Requiere varios núcleos o procesadores |
+| Mecanismo | Multitasking (tiempo compartido) | Multiprocesamiento (*multicore*) |
 
 ```mermaid
 flowchart LR
-  subgraph UnCore["1 Núcleo (Concurrencia / Time-sharing)"]
-    P1["Proceso A"] --> S["Switch"] --> P2["Proceso B"] --> S2["Switch"] --> P1B["Proceso A"]
-  end
-  subgraph MultiCore["2 Núcleos (Paralelismo real)"]
-    CPU1["Núcleo 1: Proceso A"]
-    CPU2["Núcleo 2: Proceso B"]
-  end
+  A1["Núcleo único: A"] --> B1["B"] --> A2["A"] --> B2["B"]
+  C1["Núcleo 1: A"] --> C2["A"] --> C3["A"]
+  D1["Núcleo 2: B"] --> D2["B"] --> D3["B"]
 ```
+
+En la primera fila, A y B son concurrentes pero nunca paralelos: se turnan el núcleo. En las dos filas siguientes, con dos núcleos, A y B avanzan en paralelo.
 
 ## Preguntas de repaso
 
-1. ¿Cuál es la diferencia fundamental entre concurrencia y paralelismo?
-> [!question]- Respuesta
-> La concurrencia es la capacidad de estructurar y alternar múltiples tareas en avance intercalado (posible incluso en 1 solo núcleo); el paralelismo requiere hardware con múltiples núcleos físicos ejecutando instrucciones en simultáneo.
+> [!question]- Con una sola CPU, ¿cuántos procesos se ejecutan en un instante? ¿Por qué parecen más?
+> Uno solo. Parecen más porque el SO los saca y mete en la CPU cada pocos milisegundos (multitasking), lo que crea la ilusión de simultaneidad.
 
-2. ¿Cómo logra un procesador monocore la ilusión de que decenas de programas corren al mismo tiempo?
-> [!question]- Respuesta
-> Mediante la técnica de tiempo compartido (*time-sharing*), asignando a cada proceso una pequeña fracción de tiempo de CPU (*quantum*) y rotando velozmente entre ellos asistido por el temporizador del sistema.
+> [!question]- ¿Qué diferencia hay entre multiprogramación y multitasking?
+> La multiprogramación mantiene varios procesos en memoria para que la CPU tenga a quién atender si uno se bloquea. El multitasking reparte el tiempo de CPU entre esos procesos, alternándolos rápidamente.
 
-3. ¿Qué compone esencialmente a un proceso en un sistema operativo?
-> [!question]- Respuesta
-> El código del programa en ejecución más los recursos asociados asignados por el kernel (espacio de memoria con stack y heap, registros de CPU, descriptores de archivos abiertos y credenciales).
+> [!question]- ¿Qué es concurrencia sin paralelismo?
+> Es cuando varias tareas progresan en el mismo intervalo, pero turnándose un único núcleo: en ningún instante se ejecutan dos a la vez.
 
-4. ¿Qué ventaja aporta la multiprogramación al rendimiento global de la computadora?
-> [!question]- Respuesta
-> Evita que la CPU permanezca ociosa cuando un proceso espera que termine una operación lenta de entrada/salida (disco o red), conmutando inmediatamente a otro proceso listo para ejecutar.
-
+> [!question]- ¿Qué hace el SO en un cambio de contexto y qué lo dispara?
+> Lo dispara una interrupción (syscall, *timer* u otro evento). El SO guarda los registros del proceso actual en su PCB, restaura los del siguiente desde el suyo y lo deja continuar.

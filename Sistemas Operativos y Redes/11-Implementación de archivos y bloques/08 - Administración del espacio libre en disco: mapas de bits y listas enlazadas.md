@@ -4,56 +4,73 @@ tema: "Implementación de archivos y bloques"
 tags:
   - so/archivos
   - so/almacenamiento
-  - origen/apuntes
   - origen/complemento
 prerrequisitos:
-  - "[[Sistemas Operativos y Redes/11-Implementación de archivos y bloques/07 - Asignación indexada y arquitectura de inodos multinivel en Unix\|07 - Asignación indexada y arquitectura de inodos multinivel en Unix]]"
+  - "[[Sistemas Operativos y Redes/11-Implementación de archivos y bloques/07 - Asignación indexada y arquitectura de inodos multinivel en Unix|07 - Asignación indexada y arquitectura de inodos multinivel en Unix]]"
 ---
 
 # Administración del espacio libre en disco: mapas de bits y listas enlazadas
 
-Para asignar nuevos bloques a archivos en crecimiento, el sistema operativo implementa estructuras dedicadas de administración del espacio libre mediante vectores de bits o esquemas de listas enlazadas y conteo.
+Cada vez que un archivo crece, el sistema de archivos necesita un bloque libre. ¿Cómo encontrarlo rápido sin revisar el disco entero? Hay dos estructuras clásicas para llevar la cuenta del **espacio libre**: el **bitmap** y la **lista enlazada**.
 
-## Gestión de espacio libre (mis apuntes)
+## Bitmap (*bit vector*)
 
-- Memoria libre
-- Como encontramos bloque libres → BITMAP de bloques libres
-- Sencillo, eficiente, implementable en hardware
-- - Problema: No escala tan bien
-- Otra Estrategia, es que cada bloque libre, tiene un puntero al siguiente bloque libre
-- Poco eficiente
-- Mejora: Agrupar espacio contiguos
+Se usa **un bit por cada bloque** del disco, que indica si el bloque está libre u ocupado.
 
-> [!tip] Complemento: Comparación de técnicas de administración de bloques libres
-> 1. **Vector de bits (*Bitmap* o *Bit Vector*):**
->    ![Gestión de espacio libre con mapa de bits o bitmap](adjuntos/Gestión%20de%20espacio%20libre%20con%20mapa%20de%20bits%20o%20bitmap.png)
->    > [!example]- Transcripción de la imagen
->    > **Vector de bits (*Bitmap*):**
->    > - Se asocia exactamente 1 bit por cada bloque físico del disco:
->      $$\text{bit}[i] = \begin{cases} 0 & \text{si el bloque } i \text{ está ocupado} \\ 1 & \text{si el bloque } i \text{ está libre} \end{cases}$$
->    > - **Ventajas:** operaciones muy rápidas en CPU mediante instrucciones de conteo de bits iniciales en cero/uno (instrucciones a nivel de palabra); facilita encontrar secuencias de bloques contiguos.
->    > - **Sobrecarga de memoria:**
->    >   - Disco de $1.3\text{ GB}$ con bloques de $512\text{ B} \implies \frac{1.3 \times 10^9}{512 \times 8} \approx 332\text{ KB}$ de bitmap.
->    >   - Disco de $1\text{ TB}$ con bloques de $4\text{ KB} \implies \frac{10^{12}}{4096 \times 8} \approx 30.5\text{ MB}$ (o hasta $256\text{ MB}$ en sectores menores).
->
-> 2. **Lista enlazada de bloques libres (*Free-Space List*):**
->    ![Gestión de espacio libre con lista enlazada de bloques](adjuntos/Gestión%20de%20espacio%20libre%20con%20lista%20enlazada%20de%20bloques.png)
->    > [!example]- Transcripción de la imagen
->    > **Lista enlazada de bloques libres:**
->    > - El superbloque mantiene un puntero a la cabeza de la lista (*free-space list head*).
->    > - Cada bloque libre utiliza su propio espacio interno para guardar el puntero al siguiente bloque libre.
->    > - Cero sobrecarga de espacio de disco o memoria RAM dedicada.
->    > - Desventaja: recorrer la lista requiere lecturas a disco continuas.
->    > - **Optimización por conteo (*Counting*):** en lugar de enlazar cada bloque individual, se almacena la dirección del primer bloque libre junto con un contador de cuántos bloques contiguos libres le siguen.
+- ✅ **Sencillo, eficiente e implementable en hardware**: buscar un bloque libre es buscar un bit en un arreglo, y la CPU puede revisar palabras completas de 32 o 64 bits de una vez. También facilita encontrar bloques libres **contiguos**.
+- ❌ **No escala tan bien**: el bitmap crece con el disco y conviene tenerlo en memoria.
+
+![Gestión de espacio libre con mapa de bits o bitmap](adjuntos/Gesti%C3%B3n%20de%20espacio%20libre%20con%20mapa%20de%20bits%20o%20bitmap.png)
+
+> [!example]- Transcripción de la imagen
+> "¿Cómo encontrar bloques libres? **Bit vector** ó **bitmap** de bloques libres. + Sencillo, eficiente, e implementable en hardware. − No escala tan bien: disco de 1.3 GB, con bloques de 512 byte → 332 KB; disco de 1 TB, con bloques de 4 KB → 256 MB".
+
+El tamaño del bitmap es $\dfrac{\text{tamaño del disco}}{\text{tamaño de bloque}}$ bits:
+
+| Disco | Bloque | Bloques (= bits) | Bitmap |
+|---|---|---|---|
+| 1,3 GB | 512 B | ≈ 2,7 millones | ≈ **332 KB** |
+| 1 TB | 4 KB | $2^{28}$ ≈ 268 millones | el material indica 256 MB; $2^{28}$ bits son **32 MB** |
+
+```python
+def primer_libre(bitmap):
+    """bitmap[i] == 1 si el bloque i está libre."""
+    for i, libre in enumerate(bitmap):
+        if libre:
+            return i
+    return None
+
+bitmap = [0, 0, 1, 1, 0, 1, 0, 0]          # bloques 2, 3 y 5 libres
+print(primer_libre(bitmap))                # 2
+print(2**40 // 4096 // 8 / 2**20, "MiB")   # bitmap de 1 TiB con bloques de 4 KiB: 32.0
+```
+
+## Lista enlazada de bloques libres
+
+Otra estrategia: **cada bloque libre guarda un puntero al siguiente bloque libre**, y el sistema guarda dónde empieza la lista. Los bloques que se liberan se agregan a la lista.
+
+- ✅ No necesita espacio extra: los punteros van dentro de los mismos bloques libres.
+- ❌ **Poco eficiente**: recorrerla implica leer bloque por bloque del disco, y es difícil encontrar bloques contiguos.
+- **Mejora: agrupar espacios contiguos**. En vez de un puntero por bloque, se guarda un puntero al inicio de cada grupo de bloques libres más el **número de bloques contiguos** del grupo.
+
+![Gestión de espacio libre con lista enlazada de bloques](adjuntos/Gesti%C3%B3n%20de%20espacio%20libre%20con%20lista%20enlazada%20de%20bloques.png)
+
+> [!example]- Transcripción de la imagen
+> "Lista Enlazada: punteros a bloques libres; bloques nuevos se agregan a la lista; − poco eficiente; mejora: agrupar espacios contiguos; mantener punteros a espacios libres + número de espacios contiguos". Un disco con bloques 0 a 31; *free-space list head* apunta al bloque 2, y flechas encadenan los bloques libres: 2 → 3 → 4 → 5 → 8 → 9 → 10 → 11 → 12 → 13 → 17 → 18 → 25 → 26 → 27.
+
+> [!tip] Para recordar
+> **Bitmap:** 1 bit por bloque, rápido y con costo de memoria proporcional al disco. **Lista enlazada:** sin costo extra, pero lenta; mejor si se guardan grupos (inicio + cantidad).
 
 ## Preguntas de repaso
 
-> [!question]- ¿Por qué el mapa de bits (*bitmap*) permite encontrar bloques libres contiguos más rápidamente que una lista enlazada simple?
-> Porque los bits están empaquetados en palabras de memoria contiguas en RAM, permitiendo al procesador escanear palabras completas (de 32 o 64 bits) usando operaciones a nivel de bit e instrucciones de hardware especializadas en un solo ciclo de reloj.
+> [!question]- ¿Cómo representa el bitmap el espacio libre y por qué es eficiente?
+> Con un bit por bloque que indica si está libre. Buscar un bloque libre es buscar un bit, y el hardware puede revisar muchos bits a la vez.
 
-> [!question]- ¿Qué ventaja clave tiene la lista enlazada de espacio libre respecto al mapa de bits en términos de consumo de memoria?
-> La lista enlazada almacena los punteros dentro de los mismos bloques de disco que están libres, sin requerir reservar memoria RAM fija ni sectores dedicados de disco para alojar un mapa de bits.
+> [!question]- ¿Por qué se dice que el bitmap no escala tan bien?
+> Porque su tamaño crece con el número de bloques del disco, y para que sea rápido conviene tenerlo en memoria. Un disco de 1,3 GB con bloques de 512 B ya necesita unos 332 KB de bitmap.
 
-> [!question]- ¿En qué consiste la técnica de conteo (*counting*) en la gestión de espacio libre?
-> Aprovecha que frecuentemente se liberan grupos de bloques físicamente adyacentes; en vez de registrar cada bloque por separado, guarda pares formados por la dirección del primer bloque libre y la cantidad de bloques contiguos disponibles a partir de él.
+> [!question]- ¿Qué ventaja y qué desventaja tiene la lista enlazada de bloques libres?
+> No usa espacio adicional, porque los punteros van dentro de los bloques libres, pero es poco eficiente: recorrerla requiere leer cada bloque y no sirve para encontrar bloques contiguos.
 
+> [!question]- ¿En qué consiste la mejora de agrupar espacios contiguos?
+> En guardar, para cada grupo de bloques libres seguidos, un puntero a su inicio y la cantidad de bloques, en vez de un puntero por cada bloque.

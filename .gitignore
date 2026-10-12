@@ -28,3 +28,5 @@ __pycache__/
 *.pyc
 .venv/
 .env
+# Caché local de texto extraído del material de clase (regenerable)
+_meta/cache/
