@@ -11,6 +11,7 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | ℹ️ | [[01 - Qué es un sistema operativo\|Qué es un sistema operativo]] | "(SystemD = System Daemon) → probee funcionalidades basicas" | Errata menor de tipeo ("probee" por "provee") y precisión técnica: Systemd es el init system estándar moderno en GNU/Linux con PID 1, responsable de inicializar el espacio de usuario. |
 | ℹ️ | [[03 - Arquitecturas de kernel monolítico y microkernel\|Arquitecturas de kernel monolítico y microkernel]] | "→ Microkernelll:" | Errata tipográfica con triple 'l'. Se preservó intacta en los apuntes. |
 | ℹ️ | [[06 - Arranque del sistema computacional\|Arranque del sistema computacional]] | "Este codio tiene dos misions fundamentales" | Erratas tipográficas ("codio" por "código", "misions" por "misiones"). Se conservaron tal cual en la cita textual. |
+| 🟡 | [[01 - Qué es un sistema operativo\|Qué es un sistema operativo]] | "Manejo de memoria: Donde se guardan las descargas" (reescritura) | El ejemplo no calza con el material de clase ni con la definición habitual: las descargas se guardan en disco y eso es del **sistema de archivos**. El manejo de memoria decide en qué parte de la RAM vive cada programa y la protege. La nota reescrita usa esta última definición y no menciona las descargas. Confirma si querías decir otra cosa. |
 
 ## Procesos
 | Estado | Nota | Original | Duda / corrección propuesta |

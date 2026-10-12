@@ -10,7 +10,7 @@ Notas con marca detectadas: 95 de 100.
 
 | # | Nota | Estado | Observaciones |
 |---|---|---|---|
-| 1 | 01-Estructura de sistemas operativos/01 - Qué es un sistema operativo.md | pendiente (piloto) | |
+| 1 | 01-Estructura de sistemas operativos/01 - Qué es un sistema operativo.md | reescrita (piloto) | 84 líneas; 2 imágenes; Mermaid ok; 1 duda |
 | 2 | 01-Estructura de sistemas operativos/02 - Modos de operación y anillos de protección.md | pendiente | |
 | 3 | 01-Estructura de sistemas operativos/03 - Arquitecturas de kernel monolítico y microkernel.md | pendiente | |
 | 4 | 01-Estructura de sistemas operativos/04 - Interrupciones y excepciones.md | pendiente | |
@@ -128,3 +128,4 @@ Notas con marca detectadas: 95 de 100.
 ## Registro por nota
 
 - **01/06 Arranque** (conceptual): 74 líneas, 1 Mermaid (parse ok), 1 tabla. Reincorporados: PC y firmware en ROM/NVRAM, `vmlinuz`, `initramfs`, `grubx64.efi`, GUID, ring 0. Omitido: "ejecutables de 64 bits" (UEFI de 32 bits también existe). Sin dudas nuevas.
+- **01/01 Qué es un SO** (con imagen): 84 líneas, 2 imágenes comprobadas (Tanenbaum fig. 1-1 y estructura user/kernel space), 1 Mermaid (parse ok), 1 tabla de roles. Reincorporados: *resource manager*, *extended machine*, SysV init de UNIX. Ignorados: fecha y encabezado "CLASE". El rol de "programa de control" se completó desde el material de clase. Duda nueva 🟡: "manejo de memoria = dónde se guardan las descargas". "Scheduling: elegir quién va a estar en la RAM" calza con el scheduler de largo plazo del material de clase, así que no es duda.
