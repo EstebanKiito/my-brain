@@ -146,6 +146,7 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | 🟡 | [[06 - Protocolo TCP: estructura del segmento, MSS y confirmación acumulativa\|Protocolo TCP: estructura del segmento, MSS y confirmación acumulativa]] | "Posee 20 Bits" y "7 bites" | El encabezado base de TCP mide 20 bytes (160 bits), no 20 bits. Asimismo, los caracteres ASCII son bytes, no bits. |
 | ℹ️ | [[04 - Principios de transferencia confiable de datos (rdt 1.0 a rdt 3.0)\|Principios de transferencia confiable de datos (rdt 1.0 a rdt 3.0)]] | "Cheksum ... Acnolagment ... SEQUENCIA" | Erratas tipográficas ("Cheksum" por checksum, "Acnolagment" por acknowledgment, "SEQUENCIA" por secuencia). |
 | ℹ️ | [[07 - Gestión de temporizadores, retransmisión rápida y handshake en TCP\|Gestión de temporizadores, retransmisión rápida y handshake en TCP]] | "retrasnmitir ... dubplicado" | Erratas tipográficas por retransmitir y duplicado. |
+| ℹ️ | [[02 - Multiplexación y desmultiplexación de puertos en UDP y TCP\|Multiplexación y desmultiplexación de puertos en UDP y TCP]] | "Un Puerto NO PUEDE estar asignado a multiples sockets" (reescritura) | Vale para el `bind` de dos sockets al mismo puerto y protocolo. Pero en TCP todos los sockets de conexión que crea `accept` comparten el puerto del servidor (p. ej., 80), y se distinguen por la 4-tupla, como muestra la misma figura del material. La nota precisa "no puede asignarse con `bind` a dos sockets" y explica el caso TCP. |
 
 ## Capa de red y direccionamiento
 | Estado | Nota | Original | Duda / corrección propuesta |

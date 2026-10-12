@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 74 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 14-Capa de transporte/01 - Servicios de la capa de transporte y estructura de segmentos.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 75 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 14-Capa de transporte/02 - Multiplexación y desmultiplexación de puertos en UDP y TCP.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -91,7 +91,7 @@ Reescritas hasta ahora: 74 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 72 | 13-Capa de aplicación y sockets/05 - Sistema de nombres de dominio (DNS) y resolución de consultas.md | reescrita | 105 líneas; 5 imágenes; 1 duda |
 | 73 | 13-Capa de aplicación y sockets/06 - Redes Peer-to-Peer (P2P) y distribución con BitTorrent.md | reescrita | 86 líneas; 2 imágenes; Python ok |
 | 74 | 14-Capa de transporte/01 - Servicios de la capa de transporte y estructura de segmentos.md | reescrita | 77 líneas; 3 imágenes |
-| 75 | 14-Capa de transporte/02 - Multiplexación y desmultiplexación de puertos en UDP y TCP.md | pendiente | |
+| 75 | 14-Capa de transporte/02 - Multiplexación y desmultiplexación de puertos en UDP y TCP.md | reescrita | 90 líneas; 3 imágenes; Python ok |
 | 76 | 14-Capa de transporte/03 - Protocolo UDP: datagramas, sobrecarga y checksum.md | pendiente | |
 | 77 | 14-Capa de transporte/04 - Principios de transferencia confiable de datos (rdt 1.0 a rdt 3.0).md | pendiente | |
 | 78 | 14-Capa de transporte/05 - Protocolos de canalización: Go-Back-N y Selective Repeat.md | pendiente | |
@@ -208,3 +208,4 @@ Reescritas hasta ahora: 74 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **13/05 DNS**: 105 líneas, 5 imágenes comprobadas. Transcripciones corregidas: la imagen "Registros… A NS CNAME MX" es el **formato del mensaje DNS**, y la "Caché DNS y balanceo…" es la **lista de tipos de registro**; los nombres de archivo no se cambiaron. Pasos de resolución, 13 servidores raíz, autoritativo/no autoritativo y tabla de registros del material. Duda nueva 🟡: iterativa frente a recursiva en la diapositiva. Se quitaron "Clase 4" y la fecha.
 - **13/06 P2P y BitTorrent**: 86 líneas, 2 imágenes comprobadas (la segunda es la DHT circular de Kurose; la transcripción anterior hablaba de *rarest first*, *tit-for-tat* y Kademlia, que no aparecen en la figura). Se conservaron el tracker y tu ejemplo del juego por pedazos. Simulación Python del anillo: la clave 11 queda en el nodo 12, ruta 3→4→5→8→10→12. Se omitieron las cifras no verificables (256 KB, 160 bits). Sin dudas nuevas.
 - **14/01 Servicios de transporte**: 77 líneas, 3 imágenes comprobadas (las tres transcripciones anteriores no coincidían: la 1 es la pila de 4 capas con ejemplos, la 2 la diapositiva de puertos y la 3 el formato del segmento UDP). Tabla emisor/receptor y TCP/UDP del material. Se quitó "CONTENIDO 10". Sin dudas nuevas.
+- **14/02 Multiplexación**: 90 líneas, 3 imágenes comprobadas (figuras de Kurose con los puertos 19157/46428 y 7532/26145/80; las transcripciones anteriores eran genéricas). Python que agrupa los segmentos de la figura por 2-tupla (UDP: 1 socket) y por 4-tupla (TCP: 3 sockets). Tabla UDP/TCP. Duda ℹ️: "un puerto no puede estar en varios sockets".
