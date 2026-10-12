@@ -3,7 +3,6 @@ ramo: "Sistemas Operativos y Redes"
 tema: "Sistemas de archivos"
 tags:
   - so/archivos
-  - origen/apuntes
   - origen/complemento
 prerrequisitos:
   - "[[Sistemas Operativos y Redes/10-Sistemas de archivos/01 - Capas de abstracción de entrada-salida y mecanismos de buffering\|01 - Capas de abstracción de entrada-salida y mecanismos de buffering]]"
@@ -11,47 +10,70 @@ prerrequisitos:
 
 # Concepto de archivo, atributos y metadatos
 
-Un archivo constituye la unidad lógica elemental de almacenamiento persistente ofrecida al usuario, encapsulando una secuencia lineal de bytes junto con un conjunto estructurado de metadatos y atributos de control.
+El disco solo sabe de bloques. Al usuario, en cambio, le interesan su tarea, su foto o su programa. El **archivo** es la abstracción que une ambos mundos: el SO presenta los bloques del disco como una unidad con nombre, tipo y permisos, y lleva la cuenta de todo eso en los **metadatos**.
 
-## Concepto de archivos y atributos (mis apuntes)
+## Qué es un archivo
 
-- ARCHIVOS
-- Los archivos son la unidad minima de almacenamiento para el usuario
-- Simplemente es una agrupacion de bytes (tiene que estar continua o linkeadas (los frames))
-- Con el formato, sabemos como interpretar un archivo → El s.o sabra con que abrir el archivo
-- Nombre → Low level (para el S.O)
-- Nombre → Simbolico, leible para el humano “hellowoeld.py”
-- tipo
-- ubicacion
-- tamaño
-- proteccion
-- etc
-- Tienen datos:
+- Es la **unidad mínima de almacenamiento para el usuario**.
+- Es una **agrupación lógica de bytes**, una abstracción. En el disco, sus bloques pueden estar contiguos o enlazados (ver la implementación de bloques).
+- Su **significado lo determina la forma en que se usa su contenido**: texto, imagen, código fuente, binario ejecutable…
 
-> [!warning] Posible error
-> En los apuntes aparece `“hellowoeld.py”` (error tipográfico por `helloworld.py`).
+Conociendo el formato, se sabe cómo interpretar el archivo, y el SO o el usuario saben con qué programa abrirlo.
 
-> [!tip] Complemento: Atributos y metadatos de un archivo
-> 1. **Doble identificación de un archivo:**
->    - **Nombre simbólico (*human-readable*):** cadena de caracteres almacenada en la estructura del directorio que lo contiene.
->    - **Nombre de bajo nivel (*low-level name*):** número entero unívoco dentro del sistema de archivos, conocido como **número de inodo** (*inode number*) en entornos Unix/Linux.
-> 2. **Metadatos esenciales (estructura de control o inodo):**
->    - **Tipo:** archivo regular, directorio, enlace simbólico, socket, tubería nombrada (FIFO) o archivo especial de dispositivo.
->    - **Ubicación:** punteros directos e indirectos a los bloques físicos en el almacenamiento.
->    - **Tamaño:** longitud actual en bytes y cantidad de bloques asignados en disco.
->    - **Protección y permisos:** bits de control de acceso (lectura, escritura, ejecución) para usuario, grupo y otros (`rwxrwxrwx`), además de bits especiales (SUID, SGID, Sticky).
->    - **Marcas de tiempo (*timestamps*):** fecha y hora de último acceso (`atime`), última modificación de datos (`mtime`) y último cambio de metadatos (`ctime`).
-> 3. **Determinación del tipo de archivo:**
->    - En Unix, la extensión del archivo (p. ej. `.py`, `.c`, `.png`) es solo una convención de conveniencia para aplicaciones o usuarios. El kernel no impone semántica a la extensión.
->    - Herramientas y bibliotecas determinan el tipo real inspeccionando los **números mágicos** (*magic numbers*), que son secuencias de bytes fijas al inicio del contenido del archivo (cabecera).
+## Cómo se caracteriza un archivo
+
+| Atributo | Qué guarda |
+|---|---|
+| **Nombre de bajo nivel** | El identificador que usa el SO: el **número de inodo** (*inode number*) |
+| **Nombre simbólico** | El nombre legible para humanos, como `helloworld.py` |
+| **Tipo** | Lo **determina el contenido**; la extensión es solo una convención |
+| **Ubicación** | Puntero a la dirección en disco de sus datos |
+| **Tamaño** | Tamaño actual, en bytes o en bloques; puede incluir un máximo |
+| **Protección** | Control de acceso: lectura, escritura, ejecución; en UNIX, `rwx` para el usuario, el grupo y los otros (`rwxrwxrwx`) |
+| **Fechas** | Creación, último acceso, última modificación (en UNIX: `atime`, `mtime` y `ctime`, este último el cambio de metadatos) |
+| **Usuario** | El propietario |
+| **Atributos extendidos** | Más metadatos: codificación, *checksum*, programas asociados |
+
+> [!tip] Dos nombres para lo mismo
+> El SO trabaja con el **número de inodo**, un entero fijo y fácil de manejar. El humano usa el **nombre simbólico**. El [[06 - Estructura de directorios y resolución de rutas|directorio]] es justamente la tabla que traduce uno en otro. Gracias a esa separación, un mismo archivo puede tener varios nombres (ver [[02 - Enlaces duros (hard links) y enlaces simbólicos (soft links)|enlaces]]).
+
+> [!warning] La extensión no define el tipo
+> Renombrar `foto.png` a `foto.txt` no convierte la imagen en texto. En UNIX, el tipo real se reconoce por el contenido, típicamente por unos bytes fijos al inicio del archivo (*magic numbers*). Por ejemplo, un ejecutable ELF de Linux empieza con los bytes `0x7F 'E' 'L' 'F'`, y un script ejecutable con `#!` seguido de la ruta del intérprete. Además de los archivos regulares, el SO maneja otros tipos de "archivo": directorios, enlaces simbólicos, tuberías con nombre (FIFO) y dispositivos.
+
+## Leer los metadatos de un archivo
+
+La syscall `stat` entrega los metadatos de un archivo:
+
+```c
+#include <stdio.h>
+#include <sys/stat.h>
+#include <time.h>
+
+int main(int argc, char *argv[]) {
+    struct stat st;
+    if (argc < 2 || stat(argv[1], &st) == -1) { perror("stat"); return 1; }
+    printf("nombre de bajo nivel (inodo): %llu\n", (unsigned long long)st.st_ino);
+    printf("tipo: %s\n", S_ISDIR(st.st_mode) ? "directorio" : S_ISREG(st.st_mode) ? "archivo regular" : "otro");
+    printf("tamaño: %lld bytes en %lld bloques de 512 B\n", (long long)st.st_size, (long long)st.st_blocks);
+    printf("permisos: %o\n", st.st_mode & 0777);
+    printf("propietario (uid): %d\n", st.st_uid);
+    printf("última modificación: %s", ctime(&st.st_mtime));
+    return 0;
+}
+```
+
+Con un archivo de texto de 11 bytes, el resultado muestra un tamaño de **11 bytes** pero **8 bloques de 512 B** (4 KB) ocupados en disco: el sistema de archivos asigna bloques completos, y el resto del bloque queda sin usar (fragmentación interna).
 
 ## Preguntas de repaso
 
-> [!question]- ¿Por qué el sistema de archivos separa el nombre legible del archivo de su identificador de bajo nivel (número de inodo)?
-> Porque permite que múltiples nombres o enlaces de directorios distintos apunten al mismo archivo físico en disco (hard links) y simplifica la gestión interna del kernel, que opera con índices numéricos fijos en memoria y tablas de inodos en vez de manipular cadenas de longitud variable.
+> [!question]- ¿Qué diferencia hay entre el nombre de bajo nivel y el nombre simbólico de un archivo?
+> El de bajo nivel es el número de inodo, que usa el SO para identificar el archivo. El simbólico es el nombre legible por humanos, guardado en un directorio que lo asocia con el inodo.
 
-> [!question]- ¿Cómo determina un sistema tipo Unix el tipo real de un archivo ejecutable o script si el usuario cambia su extensión?
-> El sistema analiza los primeros bytes del archivo (números mágicos o cabecera). Por ejemplo, un ejecutable ELF comienza con `0x7F 'E' 'L' 'F'`, y un script ejecutable comienza con el *shebang* `#!` seguido de la ruta al intérprete.
+> [!question]- ¿Qué determina el tipo de un archivo?
+> Su contenido, es decir, cómo se interpretan sus bytes. La extensión es solo una convención que ayuda a elegir el programa con que abrirlo.
 
-> [!question]- ¿Cuál es la diferencia entre el tamaño lógico de un archivo y el espacio físico que ocupa en disco?
-> El tamaño lógico es la cantidad exacta de bytes útiles que contiene el archivo. El espacio físico en disco es siempre un múltiplo entero del tamaño de bloque del sistema de archivos (p. ej., bloques de 4 KB), pudiendo generar fragmentación interna en el último bloque asignado.
+> [!question]- Menciona cinco atributos que guarda el SO de un archivo.
+> Nombre de bajo nivel (inodo), tipo, ubicación en disco, tamaño, protección, fechas de creación, acceso y modificación, propietario y atributos extendidos.
+
+> [!question]- ¿Por qué un archivo de 11 bytes puede ocupar 4 KB en disco?
+> Porque el sistema de archivos asigna espacio en bloques completos: aunque el contenido mida 11 bytes, se reserva al menos un bloque entero.
