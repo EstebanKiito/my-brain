@@ -1,0 +1,1296 @@
+[
+  {
+    "tema": "Estructura de sistemas operativos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image.png",
+    "destino": "Sistemas Operativos y Redes/Estructura de sistemas operativos/adjuntos/Estructura de un sistema operativo.png",
+    "sha256": "1f600dca202f0ca05eb55b0acd9119744e279ae4efcd2468ca44cace44c6dde0"
+  },
+  {
+    "tema": "Estructura de sistemas operativos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 1.png",
+    "destino": "Sistemas Operativos y Redes/Estructura de sistemas operativos/adjuntos/Capas del sistema operativo.png",
+    "sha256": "bdb0c108edcade2cb9253b46971050fda1bce1c808e68531540974567d3f7a25"
+  },
+  {
+    "tema": "Estructura de sistemas operativos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 2.png",
+    "destino": "Sistemas Operativos y Redes/Estructura de sistemas operativos/adjuntos/Syscalls UNIX versus Win32.png",
+    "sha256": "c19e1949b02510ae68b5301c63ae6ebfe225c70be1f64db27971dcbf13d92d7d"
+  },
+  {
+    "tema": "Estructura de sistemas operativos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 3.png",
+    "destino": "Sistemas Operativos y Redes/Estructura de sistemas operativos/adjuntos/Comparación de kernel monolítico y microkernel.png",
+    "sha256": "f9746ca133d65c2ad1c7a1f238c740d7ad316d84c0add31a871b0cf0e8aa0f74"
+  },
+  {
+    "tema": "Estructura de sistemas operativos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 4.png",
+    "destino": "Sistemas Operativos y Redes/Estructura de sistemas operativos/adjuntos/Flujo de interrupción entre usuario y kernel.png",
+    "sha256": "17251130a350b0f52c0dc7d07c8f7839337acb57884ffaf7bc297a9958189e74"
+  },
+  {
+    "tema": "Estructura de sistemas operativos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 5.png",
+    "destino": "Sistemas Operativos y Redes/Estructura de sistemas operativos/adjuntos/Anillo de privilegios x86.png",
+    "sha256": "e3b4828940b2c4cb2bb8b0e66ab23bf2e311aa27ca9b18f00849012595d69eb7"
+  },
+  {
+    "tema": "Estructura de sistemas operativos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 6.png",
+    "destino": "Sistemas Operativos y Redes/Estructura de sistemas operativos/adjuntos/Clasificación de syscalls en UNIX.png",
+    "sha256": "80d2b4f940a51eb059c5fa581900c3407abab32555984f7b979674b7a049674c"
+  },
+  {
+    "tema": "Estructura de sistemas operativos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 7.png",
+    "destino": "Sistemas Operativos y Redes/Estructura de sistemas operativos/adjuntos/Llamadas al sistema al copiar un archivo.png",
+    "sha256": "efbc585003d428d58ef6225bd03793144a3b19938dc02b9747375fc5de978e78"
+  },
+  {
+    "tema": "Procesos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 8.png",
+    "destino": "Sistemas Operativos y Redes/Procesos/adjuntos/Espacio de memoria de un proceso.png",
+    "sha256": "c86e82f5c98de8aa243548cc66c93a85d140b9121c68d47685f3bda84475d4dd"
+  },
+  {
+    "tema": "Procesos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 9.png",
+    "destino": "Sistemas Operativos y Redes/Procesos/adjuntos/Tabla de procesos y estructura del PCB.png",
+    "sha256": "a88acffcf20fbb2bdcd7d9e76f48878096f7bd3d31140a610ef4f941671b432f"
+  },
+  {
+    "tema": "Procesos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 10.png",
+    "destino": "Sistemas Operativos y Redes/Procesos/adjuntos/Diagrama de estados de un proceso.png",
+    "sha256": "7dcb7c58bcbb6f23b18575475ef9bcd08515cfd4f2d068eacd92dd403cf934e9"
+  },
+  {
+    "tema": "Procesos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 11.png",
+    "destino": "Sistemas Operativos y Redes/Procesos/adjuntos/Secuencia temporal del cambio de contexto.png",
+    "sha256": "d309fe819558ee9ebc66b2c36e56c149ec7613569b7ba2cafd6e81c332e77474"
+  },
+  {
+    "tema": "Procesos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 12.png",
+    "destino": "Sistemas Operativos y Redes/Procesos/adjuntos/Bifurcación de procesos con fork.png",
+    "sha256": "8ff8657125c99e142065d70cd62d21a164b59bf750f76efa5dcf9be85c9983b0"
+  },
+  {
+    "tema": "Procesos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Ayudantías - SSOO IIC2333/image.png",
+    "destino": "Sistemas Operativos y Redes/Procesos/adjuntos/Uso de fork en lenguaje C.png",
+    "sha256": "1d41842f69ceb16d6d293223c738bba7c26a6b76afd3571f3ebec051d1352b41"
+  },
+  {
+    "tema": "Procesos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Ayudantías - SSOO IIC2333/image 1.png",
+    "destino": "Sistemas Operativos y Redes/Procesos/adjuntos/Ciclo de sincronización fork y wait.png",
+    "sha256": "a3a03fc79fc5dc6d98138b0bf633e5c04e9a03b53770be600d5a28d11854bfa3"
+  },
+  {
+    "tema": "Planificación de CPU",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 13.png",
+    "destino": "Sistemas Operativos y Redes/Planificación de CPU/adjuntos/Niveles de scheduling y colas del sistema operativo.png",
+    "sha256": "30d6be7740d66332cf19c5cf7f984f00628b5f19c1c30a664b5ee5851a40744f"
+  },
+  {
+    "tema": "Planificación de CPU",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 14.png",
+    "destino": "Sistemas Operativos y Redes/Planificación de CPU/adjuntos/Alternancia entre ráfagas de CPU y de entrada y salida.png",
+    "sha256": "862e2f0a86cdfb131e4cb256691de794011944d669c347bac86665a399b9594c"
+  },
+  {
+    "tema": "Planificación de CPU",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 15.png",
+    "destino": "Sistemas Operativos y Redes/Planificación de CPU/adjuntos/Clasificación de planificadores expropiativos y colaborativos.png",
+    "sha256": "57fa0480b3cd2c5154dbbdfaadf8df561781c0229d4e460cd0051093e3b42535"
+  },
+  {
+    "tema": "Planificación de CPU",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 16.png",
+    "destino": "Sistemas Operativos y Redes/Planificación de CPU/adjuntos/Objetivos de planificación batch interactiva y tiempo real.png",
+    "sha256": "d748bc2bf187a9e2304746b844e10c99de1e91fa526391f5a9fda35fe54fc6b1"
+  },
+  {
+    "tema": "Planificación de CPU",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 17.png",
+    "destino": "Sistemas Operativos y Redes/Planificación de CPU/adjuntos/Conceptos y métricas clave de planificación.png",
+    "sha256": "6d02fa0dd0d48cf51e983a0ba5419ee6a427585d849e5f147cb869b1a7cf1049"
+  },
+  {
+    "tema": "Planificación de CPU",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 18.png",
+    "destino": "Sistemas Operativos y Redes/Planificación de CPU/adjuntos/Planificación FCFS y efecto convoy.png",
+    "sha256": "bb0326e67e82036abf2074e5ecc2c81834ad59061cde150440e50dc660e06e79"
+  },
+  {
+    "tema": "Planificación de CPU",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 19.png",
+    "destino": "Sistemas Operativos y Redes/Planificación de CPU/adjuntos/Planificación SJF y cálculo de turnaround.png",
+    "sha256": "78f4d71effedea8cecb358c18c08ecaf2965721997e7f0aaa3827e105e7f3cb5"
+  },
+  {
+    "tema": "Planificación de CPU",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 20.png",
+    "destino": "Sistemas Operativos y Redes/Planificación de CPU/adjuntos/Métrica de tiempo de respuesta en sistemas interactivos.png",
+    "sha256": "b3c21ec11078e4e0d18bbe1261bbd1f07b9291d25456ffaf8b01f6369aa3afb0"
+  },
+  {
+    "tema": "Planificación de CPU",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 21.png",
+    "destino": "Sistemas Operativos y Redes/Planificación de CPU/adjuntos/Planificación Round Robin con quantum unitario.png",
+    "sha256": "0409200abbe68153724de2473413f76a757a929263c82e817099da5935616378"
+  },
+  {
+    "tema": "Planificación de CPU",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 22.png",
+    "destino": "Sistemas Operativos y Redes/Planificación de CPU/adjuntos/Planificación por prioridad starvation y aging.png",
+    "sha256": "4691c62d376670fe9f34ebb22b96111e0b648955fa8013e874b40756d98cfe62"
+  },
+  {
+    "tema": "Planificación de CPU",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 23.png",
+    "destino": "Sistemas Operativos y Redes/Planificación de CPU/adjuntos/Estructura de colas multinivel con retroalimentación MLFQ.png",
+    "sha256": "d285879cb63ef67eefa40748f304bdb81fe74b31390df9a18d2e22d04b235eb4"
+  },
+  {
+    "tema": "Hilos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 24.png",
+    "destino": "Sistemas Operativos y Redes/Hilos/adjuntos/Modelos de hilos en espacio de usuario y kernel.png",
+    "sha256": "b61ea7b5d8709a6dfdc2c5dfd4ecc0cbc71e8a1597ec8a03f446f6c772278c15"
+  },
+  {
+    "tema": "Hilos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 25.png",
+    "destino": "Sistemas Operativos y Redes/Hilos/adjuntos/Implementación de hilos en espacio de usuario y tablas.png",
+    "sha256": "756588d975e0b502aff7d3a955d6db274c3971a05a934cdc0ab3e2fa0ab57e8b"
+  },
+  {
+    "tema": "Hilos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 26.png",
+    "destino": "Sistemas Operativos y Redes/Hilos/adjuntos/Funciones principales de la biblioteca POSIX Threads.png",
+    "sha256": "4c926736d54257d71f1338c5c6826b0e137d4b5b4ec29c7efa33f4dc0195b082"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 27.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Solución con alternancia estricta de turnos.png",
+    "sha256": "b5b79d15ec914f111848c36fa12059d21dc869d76be243e221564252fb4e6276"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 28.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Algoritmo de Peterson con turno e interés.png",
+    "sha256": "f1ecea7200a3888908a77b153c05e8e67ec2e8ff5329230306a33f68b63fa558"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 29.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Instrucción atómica hardware test and set.png",
+    "sha256": "d09596d234ae03378c42ee00a1a59dd7a4b1de316a717da8324ceb16bfc68fc6"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 30.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Exclusión mutua ideal en región crítica.png",
+    "sha256": "94111ba5be6a2535ed400067910e4ec7b8e70a6baaf29dd63a93a4222f5379e7"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 31.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Código de alternancia estricta para dos hilos.png",
+    "sha256": "7ee3cb329a2116bd2c338eb4867995d280765a20da8e5654a3ab4aff0f83186c"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 32.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Detalle de ejecución del algoritmo de Peterson.png",
+    "sha256": "2843caccb12942e9731164c14a99cdf1cb9c6a1e0b0140e5ae687dddd25ff165"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 33.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Semántica equivalente de test and set.png",
+    "sha256": "e3a74a2b1578a104f93196b843a9b70d1db18e75a08ec1246022600d812fb32f"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 34.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Implementación básica de lock con test and set.png",
+    "sha256": "2285bde9fbbfbb65a6ff2a3792309c555726d64a8ab94500f18a3b0c5d85186f"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 35.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Semántica equivalente de compare and swap.png",
+    "sha256": "3d34854cf240af54b43b7afa11adaeedf95a2e59d650cfb315d03ade507bf374"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 36.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Implementación de lock con compare and swap.png",
+    "sha256": "4e7c981d8f4a6d1330cd8021eaec7be2b8f04996c72a9d145c77c66729467367"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 37.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Estructura de mutex lock con acquire y release.png",
+    "sha256": "b833dc2398fc49edcb83d04a62ed82127d676a9a5a46a2f156878c3ca4fe0525"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 38.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Protección de sección crítica mediante mutex lock.png",
+    "sha256": "26747c34a5aa0cff9257f50d6e39abe523f2c126cc082965e59e4e29cd169fb9"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 39.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Problema del productor consumidor y buffer circular.png",
+    "sha256": "ed4f5a7de11becc657a0352d95124a2bd89b193a3f67d088497c92ff9447a997"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 40.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Condición de carrera en variable stock compartida.png",
+    "sha256": "c744e2f90dceae1fa522a9a2f4d27e6556bdcaa96c028db45c1ff22cac4cdde9"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 41.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Protección de variable stock con locks.png",
+    "sha256": "355071e2190f678d485db55adba21fc903d120e09668316a362dbed3d378721a"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 42.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Eliminación de busy waiting mediante sleep y wakeup.png",
+    "sha256": "82981469c423b672bb110cab14d4ed7a350c8a7d80e685596bfc49116bdce7a7"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 43.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Estructura y definición de semáforo de Dijkstra.png",
+    "sha256": "d720d26f70a5b686103839d443414614b6a8b8d762abbca77b563a527c8b3de5"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 44.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Operación P wait o down en semáforos.png",
+    "sha256": "55ce7de77324cf1358a1ee6821d20eb5fdc876b0615aedfc89e9a7153a2791eb"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 45.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Operación V signal o up en semáforos.png",
+    "sha256": "a00af77cb5febda37160642357ab183f62cb13dace4ac0bf88d238df0c32c87b"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 46.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Concepto y operaciones de variables de condición.png",
+    "sha256": "fcf8559ddf512d5b0e8a01fe42920c778024d8561823c74483ffe6e6b42d9eda"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 47.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Productor consumidor con variables de condición.png",
+    "sha256": "ea267aa1c4b930d2e49796d3db898f69528dba46f51d9b0e752680f017cefdc9"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 48.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Problema de lectores y escritores con semáforos.png",
+    "sha256": "af053b2c13fe7806feb63ab0a2b60068575f1b5f8b93698018afb9f5dc17d148"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 49.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Ilustración del problema de la cena de los filósofos.png",
+    "sha256": "9bd3e7c5f887c8fa3661ee0b6fe7eb05280a2021398a1c3f88966d7be5ec53cf"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 50.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Implementación de filósofo con riesgo de deadlock.png",
+    "sha256": "e4833fb1e57c11165fdca384948f4ad348b2991da9dd5a521e2588928151796d"
+  },
+  {
+    "tema": "Sincronización",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 51.png",
+    "destino": "Sistemas Operativos y Redes/Sincronización/adjuntos/Solución con jerarquía de recursos para filósofos.png",
+    "sha256": "f75ddc5f99c80156810d9631178689b6335be254f2c9d0ec3f4cdcd19c93c593"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 51.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Coordinación de filósofos con estados y semáforos.png",
+    "sha256": "f75ddc5f99c80156810d9631178689b6335be254f2c9d0ec3f4cdcd19c93c593"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 52.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Memoria como arreglo lineal de bytes sin multiprogramación.png",
+    "sha256": "a0454b106848fe0fa9673cd4def4637f299cef1c165b57257a271772d27a6d49"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 53.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Memoria física compartida con multiprogramación.png",
+    "sha256": "82bb8dc956b9ae21edc294a150faa6e2fcb90c13ae6469860a650e6cb1c39a13"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 54.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Problemas de relocalización y protección con multiprogramación.png",
+    "sha256": "ea3a5ef7fbabaf90a518123222032a629431c5ddc66311a0c3f8e50bd4d4e28f"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 55.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Traducción de direcciones con registros base y límite en MMU.png",
+    "sha256": "e029c713b58c40754c2867260043414d455f73cc54eedb12c0b8926647a46cb9"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 56.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Mecanismo de swapping y generación de huecos de memoria.png",
+    "sha256": "4736ef296b0c7e3a2586362c2c003eb060df80abf34d923828ed9a50a2eec866"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 57.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Compactación de memoria para fusionar huecos libres.png",
+    "sha256": "c90b3ec8cd0c3e0cf5298a8ff97a7fd65b454d47f3caad810056a5edfd597da8"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 58.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Estrategias de colocación contigua First Fit y Best Fit.png",
+    "sha256": "900a55d6198cbf4b0bb6138fa51e8f5745332fdff6697af8b1895ff8badba826"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 59.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Estrategia Worst Fit y fragmentación externa.png",
+    "sha256": "8bf94b53cc76c825ece3600efd4b9766e845a75c5b8adc91bf61cea56f4a3f7a"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 60.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Partición del espacio de direcciones en segmentos independientes.png",
+    "sha256": "ed6886c4f1735990d557adfa5083d25766cf8224cd8718e7c6bd680aced0ccea"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 61.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Traducción con tabla de segmentos y MMU.png",
+    "sha256": "4ca0c722485547a114bc778d4a8091b0b8018c08541364d951af2beecf3269f4"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 62.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Verificación de límites en tabla de segmentos.png",
+    "sha256": "921a6e50fa289e40220fa44a21d1ae7cf50c11be52eb9031461b44f7542d45d6"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 63.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Causa de segmentation fault por desborde de segmento.png",
+    "sha256": "933980ed444ec732bef2d710ed73a030c55e2dcbc0e05c51deb76c7bc382bca8"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 64.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Cálculo de desplazamiento relativo virtual en el heap.png",
+    "sha256": "ee0e41d5b7d19750740cf672b9592a2ec47da2b7a6f9f616ddc9bda56161554f"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 65.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Descomposición de dirección virtual en bits de segmento y offset.png",
+    "sha256": "93c78602f53cc72f7dd6ecc781c2f422882d6f35cd1b5ed07f10c4a96e4e89de"
+  },
+  {
+    "tema": "Administración de memoria",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 66.png",
+    "destino": "Sistemas Operativos y Redes/Administración de memoria/adjuntos/Aplicación de máscara binaria y desplazamiento a la derecha.png",
+    "sha256": "62bc831a3a28a5a87439d2b72353e8014403c8613e23337871db7e0ee6622010"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 67.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/División de memoria virtual en páginas y memoria física en marcos.png",
+    "sha256": "f7ecfbaadeead9f904e5510a2f1ed9464afc50290c2349a2e8b98432ace7624e"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 68.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Traducción de VPN a PFN preservando el offset.png",
+    "sha256": "45ac2c5e47f50e093ea3d0ce50c7eefb304a6eb921fa8c284e91240febe7a6dd"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 69.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Estructura de la entrada de tabla de páginas y metadatos.png",
+    "sha256": "13afec092cb174687eceeeebba9231d6a80e4c5f2b42ccc47340b8c2d01b842f"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 70.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Duplicación de accesos a memoria por consulta a tabla de páginas.png",
+    "sha256": "347551c5c0ae341b2dc0791cb86d6cd3ee8d0a89064bc8a721f4fdc8f3799ef3"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 71.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Arquitectura de TLB y flujo de aciertos y fallos.png",
+    "sha256": "e199fde9b859f3f9a4527072c82e705632cef12d1e943bf9c703a4228b2453a5"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 72.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Distribución de un arreglo en páginas virtuales.png",
+    "sha256": "442739681c03fcd6913c7315857816293154c35e11ad039214a10e4d4082a2d2"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 73.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Cálculo de tasa de aciertos de TLB en bucle secuencial.png",
+    "sha256": "f9d14e4ff276f06236d8af6ad6000196b17dc83cb067a36869e4e853f2c0f97c"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 74.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Uso de ASID en la TLB para cambios de contexto.png",
+    "sha256": "2f33b2974029708a54ce537d73321c50123f22b25aa86f1208ad0a7a5fc0d3a4"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 75.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Fragmentación interna por asignación de páginas grandes.png",
+    "sha256": "32737119a5b8791775bc425ed887bedf1c35f8a4a5ee80c5d97fe8404a41adbe"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 76.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Esquema de segmentos paginados con tablas independientes.png",
+    "sha256": "68a2fa28708028ababd76c608a8ca8f70776437fc3628187b28fe16185665664"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 77.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Reducción de entradas vacías en segmentos paginados.png",
+    "sha256": "bd6ce0c6cc8fd61811418e7e524d63a963abe14f9c8383e00428ef1be6e8f97d"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 78.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Paginación multinivel con división jerárquica de VPN.png",
+    "sha256": "64e8126c35b7281fb0de354c477aaf2196113d8e56959d17990f3ea42d593943"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 79.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Estructura de árbol de directorios y tablas de páginas.png",
+    "sha256": "6d56b834c3c05b183e3e41dc7ac8ee5d6379b5f6186385c50850521ed02e50b4"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 80.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Ejemplo numérico de traducción en paginación de dos niveles.png",
+    "sha256": "0accf916fd5ac9a13b4d5e15270d623aeffb865248049af04cb3f4d5d3093169"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 81.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Ahorro de memoria por tablas no asignadas en dos niveles.png",
+    "sha256": "1739292298126d3028c62f9c7fa4fd0c3efef5a6ad6dc43733fa91c5aba657a7"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 82.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Comparación de espacio entre tabla lineal y dos niveles.png",
+    "sha256": "aee17c4e3ab36179c4777c2c4186aced2f3caf89497f5397286d9f1bc80f3b8d"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 83.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Estructura jerárquica de paginación a tres niveles.png",
+    "sha256": "5e72856630f89585dad5c4eb1fbbc44a5dbaef077d038cf05148a5b4473317dd"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 84.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Descomposición de dirección virtual para tres niveles.png",
+    "sha256": "1845e539be75bdabf05778f5a181084c8fd5bd56adf529235dd52fe29a713a9f"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 85.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Recorrido jerárquico hasta la tabla de último nivel.png",
+    "sha256": "38a25f4b41a3f0dc864912aeed2dda9c25e31173fd2287df781af53b7d9cda76"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 86.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Concepto y estructura de tabla de páginas invertida.png",
+    "sha256": "66cd50244d4668681194d3a57a3fc64424cc99add7e44f21c25c7d63ddb37e6b"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 87.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Búsqueda y sobrecarga en tabla de páginas invertida.png",
+    "sha256": "abd42bc398077786ce97bb07211cf6aae899e8ad21f2792e7304edf6ea0fec2c"
+  },
+  {
+    "tema": "Paginación y segmentación",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 88.png",
+    "destino": "Sistemas Operativos y Redes/Paginación y segmentación/adjuntos/Ciclo de atención de interrupción por fallo de página.png",
+    "sha256": "168de54201887d51e018fd5a0d9eb570e5baddf8570bc1f2a35e2510ab7d8e84"
+  },
+  {
+    "tema": "Memoria virtual",
+    "tipo": "slide",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Clases/SSOO/Contenido_6_Memoria.pdf#page=55",
+    "destino": "Sistemas Operativos y Redes/Memoria virtual/adjuntos/Algoritmo de reemplazo óptimo de Belady.png",
+    "sha256": "caaaa8e6b73a292943f75946c5e8a7a7cdfbbf2d2722cf2d5740d3e3d3991068"
+  },
+  {
+    "tema": "Memoria virtual",
+    "tipo": "slide",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Clases/SSOO/Contenido_6_Memoria.pdf#page=56",
+    "destino": "Sistemas Operativos y Redes/Memoria virtual/adjuntos/Algoritmo de reemplazo First In First Out FIFO.png",
+    "sha256": "9582850634020610223853b874fd79051f51f372617e7be43e524ff39d7b6c05"
+  },
+  {
+    "tema": "Memoria virtual",
+    "tipo": "slide",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Clases/SSOO/Contenido_6_Memoria.pdf#page=59",
+    "destino": "Sistemas Operativos y Redes/Memoria virtual/adjuntos/Algoritmo de reemplazo Least Recently Used LRU.png",
+    "sha256": "4252960f0b3debec65a1e9c856ca5d7ab79cd56b8e805610f5b7e807d592a8de"
+  },
+  {
+    "tema": "Memoria virtual",
+    "tipo": "slide",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Clases/SSOO/Contenido_6_Memoria.pdf#page=66",
+    "destino": "Sistemas Operativos y Redes/Memoria virtual/adjuntos/Algoritmo del reloj Clock y bit de referencia.png",
+    "sha256": "50bc0dfdf556f5ebd52ffc56dc7b1a8863c8ec51625cf500a4de6dca8468817d"
+  },
+  {
+    "tema": "Sistemas de archivos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 89.png",
+    "destino": "Sistemas Operativos y Redes/Sistemas de archivos/adjuntos/Planificación de disco First In First Out FCFS.png",
+    "sha256": "d8fa73f87b7f76f68117aff6b7e782e961ad5babf84b1a4656ed6094b92a907b"
+  },
+  {
+    "tema": "Sistemas de archivos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 90.png",
+    "destino": "Sistemas Operativos y Redes/Sistemas de archivos/adjuntos/Planificación de disco Shortest Seek Time First SSTF.png",
+    "sha256": "667a4a7a39ad9ff39e0d44ff5610e43ddb58b793cd58fbcb019265ea4c5620df"
+  },
+  {
+    "tema": "Sistemas de archivos",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 91.png",
+    "destino": "Sistemas Operativos y Redes/Sistemas de archivos/adjuntos/Planificación de disco SCAN elevador.png",
+    "sha256": "f59638548858709b8433ea8bbef89e0e61fafeaae9233cf11b54e0d8b11e8bf8"
+  },
+  {
+    "tema": "Sistemas de archivos",
+    "tipo": "slide",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Clases/SSOO/Contenido_7_Archivos.pdf#page=7",
+    "destino": "Sistemas Operativos y Redes/Sistemas de archivos/adjuntos/Geometría de un disco duro magnético HDD.png",
+    "sha256": "226b85daa6a422871828ca221a256840e00936d31cb3e2deb911ff84c47ff60b"
+  },
+  {
+    "tema": "Sistemas de archivos",
+    "tipo": "slide",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Clases/SSOO/Contenido_7_Archivos.pdf#page=17",
+    "destino": "Sistemas Operativos y Redes/Sistemas de archivos/adjuntos/Planificación de disco C-SCAN y F-SCAN elevador circular.png",
+    "sha256": "063e7c554bb42e035f8b1723385f9d1824e75c2a33e16cedb34bca0dd19f58cd"
+  },
+  {
+    "tema": "Sistemas de archivos",
+    "tipo": "slide",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Clases/SSOO/Contenido_7_Archivos.pdf#page=18",
+    "destino": "Sistemas Operativos y Redes/Sistemas de archivos/adjuntos/Planificación de disco LOOK y C-LOOK.png",
+    "sha256": "45e20ad72aa6bba510c8181a6026d66cc4bf5416c51bfd9a2721fc894c806956"
+  },
+  {
+    "tema": "Implementación de archivos y bloques",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 92.png",
+    "destino": "Sistemas Operativos y Redes/Implementación de archivos y bloques/adjuntos/Diferencia entre hard links y soft links o enlaces simbólicos.png",
+    "sha256": "45158d50665e04a2d753277bd2ac34147f57d4cc74f0f87134977ed1fd831bcf"
+  },
+  {
+    "tema": "Implementación de archivos y bloques",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 93.png",
+    "destino": "Sistemas Operativos y Redes/Implementación de archivos y bloques/adjuntos/Montaje de sistemas de archivos y tabla de monturas.png",
+    "sha256": "33adf989f396eea6d5c41080abdbc5e540b4d3138768d3eb1977cb148a86a7f2"
+  },
+  {
+    "tema": "Implementación de archivos y bloques",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 94.png",
+    "destino": "Sistemas Operativos y Redes/Implementación de archivos y bloques/adjuntos/Estructuras en disco particiones MBR bloques de control y FCB.png",
+    "sha256": "d4313f30fa9e636314bb49825bbcc8af414e1e32c1ecfe12c2a1582572b40c1e"
+  },
+  {
+    "tema": "Implementación de archivos y bloques",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 95.png",
+    "destino": "Sistemas Operativos y Redes/Implementación de archivos y bloques/adjuntos/Arquitectura del sistema de archivos virtual VFS y v-nodes.png",
+    "sha256": "a6300ecc17d88330e1b9268d66b6455e5726e45daf945140526a3b3686a0a009"
+  },
+  {
+    "tema": "Implementación de archivos y bloques",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 96.png",
+    "destino": "Sistemas Operativos y Redes/Implementación de archivos y bloques/adjuntos/Asignación enlazada de bloques de archivo.png",
+    "sha256": "efce47f589e8d686828040d94775e0ac8312ce58b2e5cd9147e5acfb44441cbe"
+  },
+  {
+    "tema": "Implementación de archivos y bloques",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 97.png",
+    "destino": "Sistemas Operativos y Redes/Implementación de archivos y bloques/adjuntos/Asignación enlazada mediante tabla FAT.png",
+    "sha256": "ed55392b1ca0aa80e773d5033e822639ebcc366667d878308f45230e06658cba"
+  },
+  {
+    "tema": "Implementación de archivos y bloques",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 98.png",
+    "destino": "Sistemas Operativos y Redes/Implementación de archivos y bloques/adjuntos/Asignación indexada con bloque de índices.png",
+    "sha256": "43bc399c1b036e8f9ed097fd2a3dcb5df42867e406dfa8b96103b34b37ff1e3d"
+  },
+  {
+    "tema": "Implementación de archivos y bloques",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 99.png",
+    "destino": "Sistemas Operativos y Redes/Implementación de archivos y bloques/adjuntos/Asignación combinada multinivel e inodos Unix.png",
+    "sha256": "173603a2818a9b8243d6de16e92b2d3e7325e34b3edc80aa23fa37d504ee865a"
+  },
+  {
+    "tema": "Implementación de archivos y bloques",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333/image 100.png",
+    "destino": "Sistemas Operativos y Redes/Implementación de archivos y bloques/adjuntos/Estructura de direccionamiento indirecto en inodos.png",
+    "sha256": "faa721b91dd9e44665dcfdb838694c5a4cc0ab6a53d1c7127197a1cb5669be09"
+  },
+  {
+    "tema": "Implementación de archivos y bloques",
+    "tipo": "slide",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Clases/SSOO/Contenido_7_Archivos.pdf#page=36",
+    "destino": "Sistemas Operativos y Redes/Implementación de archivos y bloques/adjuntos/Asignación contigua de bloques de disco.png",
+    "sha256": "1b0623c01fb10ad92680d018f0ab7646c3e0b438b38535c24c1e852dafb07c22"
+  },
+  {
+    "tema": "Implementación de archivos y bloques",
+    "tipo": "slide",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Clases/SSOO/Contenido_7_Archivos.pdf#page=41",
+    "destino": "Sistemas Operativos y Redes/Implementación de archivos y bloques/adjuntos/Gestión de espacio libre con mapa de bits o bitmap.png",
+    "sha256": "a9009f6a81966574f78de49350c17695525796802fcfc75c76662d7b6a966bc1"
+  },
+  {
+    "tema": "Implementación de archivos y bloques",
+    "tipo": "slide",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Clases/SSOO/Contenido_7_Archivos.pdf#page=42",
+    "destino": "Sistemas Operativos y Redes/Implementación de archivos y bloques/adjuntos/Gestión de espacio libre con lista enlazada de bloques.png",
+    "sha256": "5825858c1389d9b33d04c66af13ea17a32ca0d4d9ffbaca335b7c18f7701df6a"
+  },
+  {
+    "tema": "Fundamentos de redes y modelos en capas",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image.png",
+    "destino": "Sistemas Operativos y Redes/Fundamentos de redes y modelos en capas/adjuntos/Estructura general de interconexión de redes e Internet.png",
+    "sha256": "edd6d111fd367e651559b9651ad13ca6312aa6c1dbe3e94fe2c921f4e9838600"
+  },
+  {
+    "tema": "Fundamentos de redes y modelos en capas",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 1.png",
+    "destino": "Sistemas Operativos y Redes/Fundamentos de redes y modelos en capas/adjuntos/Comunicación entre procesos clientes y servidores en la red.png",
+    "sha256": "06fa09f856317b2fbb8f0c4266a5333c2cb29ff681ab971762fff807cce749c1"
+  },
+  {
+    "tema": "Fundamentos de redes y modelos en capas",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 2.png",
+    "destino": "Sistemas Operativos y Redes/Fundamentos de redes y modelos en capas/adjuntos/Red de acceso mediante línea telefónica DSL.png",
+    "sha256": "2330b95d3f90a131a0e06cdbff0ed55ef3e8a591fa3901d1c626b71d7196a8bb"
+  },
+  {
+    "tema": "Fundamentos de redes y modelos en capas",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 3.png",
+    "destino": "Sistemas Operativos y Redes/Fundamentos de redes y modelos en capas/adjuntos/Red de acceso mediante cable coaxial y medio compartido.png",
+    "sha256": "622ca67b7c7f031e49935fd816e390911212692b98373a8179d5d6b667df2449"
+  },
+  {
+    "tema": "Fundamentos de redes y modelos en capas",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 4.png",
+    "destino": "Sistemas Operativos y Redes/Fundamentos de redes y modelos en capas/adjuntos/Red de área local cableada Ethernet con switches y routers.png",
+    "sha256": "87b6afea79f4fb08e20ff1f3bbbae4484ffc232a732801e48b64f371ad52ffd9"
+  },
+  {
+    "tema": "Fundamentos de redes y modelos en capas",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 5.png",
+    "destino": "Sistemas Operativos y Redes/Fundamentos de redes y modelos en capas/adjuntos/Red de acceso inalámbrico Wi-Fi y banda ancha móvil.png",
+    "sha256": "3ccb134f5678d806fd03412737d4e4a703499958e9eb0ba4b79f3f27dbbfc7d6"
+  },
+  {
+    "tema": "Fundamentos de redes y modelos en capas",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 6.png",
+    "destino": "Sistemas Operativos y Redes/Fundamentos de redes y modelos en capas/adjuntos/Conmutación de paquetes packet switching y tablas de reenvío.png",
+    "sha256": "54d1e43ad11b24917d6d3c7c43446d51bc57c59102e31cb42ac2bd4c55865f83"
+  },
+  {
+    "tema": "Fundamentos de redes y modelos en capas",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 7.png",
+    "destino": "Sistemas Operativos y Redes/Fundamentos de redes y modelos en capas/adjuntos/Colas de espera en routers y pérdida de paquetes por congestión.png",
+    "sha256": "5ee9901f6f0c9dde0cc65f2274cb4759fec49586f24d14efaaf0e1ef66ad990c"
+  },
+  {
+    "tema": "Fundamentos de redes y modelos en capas",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 8.png",
+    "destino": "Sistemas Operativos y Redes/Fundamentos de redes y modelos en capas/adjuntos/Conmutación de circuitos circuit switching y reserva de recursos.png",
+    "sha256": "f5990e55063e73e2aad81f686043b8d23c665d10b193982e0b1371e959479794"
+  },
+  {
+    "tema": "Fundamentos de redes y modelos en capas",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 9.png",
+    "destino": "Sistemas Operativos y Redes/Fundamentos de redes y modelos en capas/adjuntos/Comparación de modelos en capas OSI frente a TCP IP.png",
+    "sha256": "78a89a66677e56a6db1cf8f84fd31ac8a9d7e230db8831f2d69d3b3f97cc0289"
+  },
+  {
+    "tema": "Fundamentos de redes y modelos en capas",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 10.png",
+    "destino": "Sistemas Operativos y Redes/Fundamentos de redes y modelos en capas/adjuntos/Proceso de encapsulamiento y recorrido a través de capas de red.png",
+    "sha256": "72297d9778e4e9c5efd8b5eccc9b9b671523e05c70b5d7d8ed7385e0bbe5a12e"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 11.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Arquitectura cliente servidor y modelos de comunicación de aplicaciones.png",
+    "sha256": "dcebb397fbbc545ba2db1695114c12b95c07c4e175aa6fd3ce694d357d498f25"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 12.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Concepto de socket e identificación por dirección IP y puerto.png",
+    "sha256": "da19a70b0664a36636a94239784192335dba0e57b7b12d561b67955a2a519117"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 13.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Flujo de intercambio de mensajes mediante sockets UDP.png",
+    "sha256": "66c82d99a0ae50fc46724ce13073fdeded9c0385ba6e79cc19eeb2bd787f1dca"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 14.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Diagrama de llamadas al sistema para sockets UDP no orientados a conexión.png",
+    "sha256": "2c7149c2e246ec413c6d4b58abc003b2ae23617255cd0c20f16e6b685b3dc90f"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 15.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Diagrama de llamadas al sistema para sockets TCP welcoming y conexión.png",
+    "sha256": "b626a5abdf0fbcde2c11eadaa60e1f43229be56bc6c5cdaf5e2fe8df0160a9fd"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 16.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Estructura y formato de un mensaje de solicitud HTTP request.png",
+    "sha256": "e1c82ddde290838331e425aa1a3536be3ad88969b2b9292776b6737a7170e389"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 17.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Estructura y formato de un mensaje de respuesta HTTP response.png",
+    "sha256": "bc183bb724c13c77609e8fd0cb3c6be016cb20deb9f5deb013d81a5347bfa5fe"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 18.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Mecanismo de estado mediante cookies HTTP entre cliente y servidor.png",
+    "sha256": "11a75bf1c042780f7d4464c2835c8816478dada7691661edfb400720d65a4dbb"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 19.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Jerarquía distribuida del sistema de nombres de dominio DNS.png",
+    "sha256": "ae0ad054870ef7598f20d436944fad3518be5ee09cca6862af22b0bad186bb6c"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 20.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Resolución iterativa de consultas en el sistema DNS.png",
+    "sha256": "9ad31a49945885dee53ea2ad1de6784c2a3c8138f7326a2a2fef1364e78b1dd4"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 21.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Resolución recursiva de consultas en el sistema DNS.png",
+    "sha256": "a3bc92e66b5f29e9f501520768a00ccb1c69fe0e4b2dc9607b016676f1977ab6"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 22.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Registros de recursos DNS Resource Records tipo A NS CNAME y MX.png",
+    "sha256": "3f437702fe9baa3cd0ceb3929494a19cd875ed6107e85bce6fb4e3fcaf9fdc7e"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 23.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Caché DNS y balanceo de carga entre múltiples servidores.png",
+    "sha256": "43e6168a8c3844fcedcb04214653d34b828d47cdb1f8731747bb9e0c144400f4"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 24.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Arquitectura de redes peer to peer P2P y protocolo BitTorrent.png",
+    "sha256": "946fc8207333a85647d1352d1caa237211eb4eb40a65742fb53f66068830aea9"
+  },
+  {
+    "tema": "Capa de aplicación y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 25.png",
+    "destino": "Sistemas Operativos y Redes/Capa de aplicación y sockets/adjuntos/Distribución de archivos por fragmentos y tablas hash distribuidas.png",
+    "sha256": "db0df095c3044f9d04b307b17ebce80ff14852d0d24c9a0742d79fc7232f0b31"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 26.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Servicios y responsabilidades de la capa de transporte en sistemas finales.png",
+    "sha256": "734edca12389d9d35cd381d8f7cc0fdd1df5247e7ddc48914c79a0d0e65723c8"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 27.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Estructura de un segmento de transporte con datos y cabeceras.png",
+    "sha256": "54a8c4d9e33d9491c593fd49ea729cf637c3f3f3401d06781b9f6baa6df88a46"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 28.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Proceso de multiplexación y desmultiplexación de segmentos mediante puertos.png",
+    "sha256": "f8434eba9992a4e1e21e2bf4c08999c92bf01bb72d8941cba15e1db7a83ebd42"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 29.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Asignación de puertos y sockets en hosts emisores y receptores.png",
+    "sha256": "63f81052b075e0e84e3190c76ea53ba8fa5daa795e1715d956e7897a43c70f37"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 30.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Desmultiplexación no orientada a conexión en sockets UDP.png",
+    "sha256": "63feb2c685b526ae89c82ce39ef657216d92a73ec14003979900279d7b91a3ba"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 31.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Desmultiplexación orientada a conexión en sockets TCP mediante 4-tupla.png",
+    "sha256": "38c70b95b994d9960da7e12a6ed92cb2072d28607a789778a35473d5526d4633"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 32.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Protocolo de transferencia confiable rdt 1.0 sobre canal perfectamente confiable.png",
+    "sha256": "8c230636bc504e8b60f3e0e24bb2f78b95848dcf7d052ed3446b3cc072fb2505"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 33.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Protocolo rdt 2.0 con detección de errores mediante checksum y ACKs NACKs.png",
+    "sha256": "51bd3563a0a8496e755ed7b64869bc65a78d5dd2e0646348c91c2d3512216002"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 34.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Protocolo rdt 2.1 con números de secuencia para manejar ACKs corruptos.png",
+    "sha256": "a2476e881b7b088b01d9bdeefb5c0f7027c9c6575d4752dc5f41a2464fff51b0"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 35.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Protocolo rdt 2.2 con ACKs duplicados sin NACKs.png",
+    "sha256": "93bc8016f5d1d85e7c02fca159ca1c64006210ee4b8982898f8be149c53b6c72"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 36.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Protocolo rdt 3.0 con temporizador para canales con pérdida de paquetes.png",
+    "sha256": "df257f18a3436ee607ecd9147ea42777ffc59eaf48545be3125a92bc1552888f"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 37.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Escenarios de operación de rdt 3.0 con pérdida de paquetes y timeouts.png",
+    "sha256": "092dba63968c1f110b092aa5d655e625fb0ff804b18dde84fd772280fc07f00e"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 38.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Protocolo de canalización Go-Back-N con ventana deslizante en emisor.png",
+    "sha256": "7eb7aea571fac1f7e224970678cbba2471d8bd05417899fd73aab3aa9d28c153"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 39.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Diagrama de flujo y ventana deslizante en protocolo Go-Back-N.png",
+    "sha256": "d805f80dd9ee05c5d5adc150b6972c314791b376413d1ba98cb45e2073050c9c"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 40.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Protocolo Selective Repeat con ventanas en emisor y receptor.png",
+    "sha256": "02613ee76384cef53f9060e527f6abbc08d35479e805f7bbe8b6a67a236bf375"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 41.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Diagrama de eventos y buffers en protocolo Selective Repeat.png",
+    "sha256": "ce678b85ad6e184af4b52f4e3aa64f12fa07dd6e624335bbe1c851266a83be95"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 42.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Estructura y campos del encabezado TCP de 20 bytes.png",
+    "sha256": "fb4f828e8df9502a0ccd08972477a94a3e1e8b8c34beb5895a16ef436b5389d4"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 43.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Segmentación de flujo de bytes y número de secuencia en TCP.png",
+    "sha256": "db66fe4278eb053f865419f0455c5d31d755ed035f8d9076237a71344dd338d4"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 44.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Piggybacked ACKs y confirmación acumulativa en flujo bidireccional TCP.png",
+    "sha256": "9aef478f1023822caed89f6ab4683375a9c434038d515c09a78216dced44173f"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 45.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Variables de control SendBase y NextSeqNum en emisor TCP.png",
+    "sha256": "8d1661786d07df5a847aacbeda7f508872a8b68936fc4932e0093528fb44800a"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 46.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Manejo de timeout y retransmisión por pérdida de ACK en TCP.png",
+    "sha256": "8ee8afe26b39d3dd3dccba727dc6b593be050479e03257ad3fe5ec2a6c65f46d"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 47.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Escenario de timeout prematuro y confirmación acumulativa en TCP.png",
+    "sha256": "696c1ffbfc986e6a806c015ef6c3ecea3b15092f9f080667a6522c5e195d123e"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 48.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Cancelación de temporizador y avance de SendBase en TCP.png",
+    "sha256": "a27ae8cf6075dcd0510b6c8e366d77a522028ef10550f31175244984d71f09ab"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 49.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Mecanismo de retransmisión rápida con tres ACKs duplicados en TCP.png",
+    "sha256": "778cdd178be75f0d5d3a85e8979a16363c702d659f8045220b3e7c745307acdf"
+  },
+  {
+    "tema": "Capa de transporte",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 50.png",
+    "destino": "Sistemas Operativos y Redes/Capa de transporte/adjuntos/Establecimiento de conexión TCP con saludo de tres vías y terminación con FIN.png",
+    "sha256": "b25ed01d7003c6b775651f32ba77f7dcecdaf3abbfe178617ae8cf159b2667bb"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 51.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Funciones de la capa de red: enrutamiento en plano de control y reenvío en plano de datos.png",
+    "sha256": "7ec8e0f831237a6baaa822869c0da04c76acd5273eeb58a818fc75d823c4dae7"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 52.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Estructura y campos de la cabecera del datagrama IPv4.png",
+    "sha256": "bd1f0313ce41609766bed2da9908eb36be0f4d1e19e3473df5a8ed73cc8c216a"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 53.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Fragmentación de datagramas IP por MTU en enlaces de red.png",
+    "sha256": "0c5f34c2a15a382b225ecde1a11ef228f6328f189066041b7b2c14cea2c9de0f"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 54.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Ejemplo de campos de fragmentación: identificación, flags y offset de fragmento.png",
+    "sha256": "95c70b31a11961a1f65824414d7bb4802f82affc3f2b5411f7fceb544a8625f2"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 55.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Estructura de direcciones IPv4 con notación CIDR y máscara de subred.png",
+    "sha256": "66dd06787f480d3f4ce58dbc9328dbc0e0cec30b95d1ef76fbb05dc7a9d6761a"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 56.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Cálculo de dirección de red y broadcast mediante máscara de subred.png",
+    "sha256": "42ea513acf599b25f524af2a2800afa635b13d2647ee489316ddcd36ebe85100"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 57.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Topología de subredes conectadas mediante routers e interfaces IP.png",
+    "sha256": "e6b2c6ecee6f425501b8d1f551aa385329a0dacab055caf539b3c6e432d02116"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 58.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Clasificación histórica de direcciones IP en clases A, B y C frente a CIDR.png",
+    "sha256": "26fd5ca6ae29f9d4a58e9480be6af01799b061302e1980788e1d9987bd6e8c61"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 59.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Flujo de cuatro pasos del protocolo DHCP: Discover, Offer, Request y ACK.png",
+    "sha256": "6fb9d4c077be6a3a16ea25ed62f5e68890d663d1a669b6d3fddbcd63074feaa3"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 60.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Arquitectura de traducción de direcciones de red NAT en red local.png",
+    "sha256": "ef14890886719978aa7add78c88cbce5445d1ccd6d63c3068e0198ee2633e75c"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 61.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Tabla de traducción NAT con puertos y direcciones IP públicas y privadas.png",
+    "sha256": "48b6a885c835755f4d30c2b7af07e66039a7eaedca4572e488c7720e33e25494"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 62.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Traversal de NAT y reenvío de puertos mediante UPnP para servidores internos.png",
+    "sha256": "70ac22c1ef38f0aff543dd3287d897fd63943c45c058064026854e7a64dba40a"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 63.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Formato de mensajes y tipos del protocolo de control ICMP.png",
+    "sha256": "298ad0ac3693d5ec47be70cf090710925f13362cece8ca515583fbfbd694fd96"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 64.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Estructura del encabezado simplificado de 40 bytes en IPv6.png",
+    "sha256": "9c64b65c6e9a226304111a4349d315fcb7c5ba41487c8e657447b3b8689e7386"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 65.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Estrategia de transición Dual-Stack para coexistencia de IPv4 e IPv6.png",
+    "sha256": "472a9e6c77dfb68dbb2a7fb9fdc662b0fb5193e878e5941ad161f89072c3d26e"
+  },
+  {
+    "tema": "Capa de red y direccionamiento",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 66.png",
+    "destino": "Sistemas Operativos y Redes/Capa de red y direccionamiento/adjuntos/Técnica de encapsulamiento por tunneling de paquetes IPv6 sobre redes IPv4.png",
+    "sha256": "7f82bd16902a2702f78b860d30966a862f55251e8c203f3892466fb35607cd82"
+  },
+  {
+    "tema": "Algoritmos de ruteo",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 67.png",
+    "destino": "Sistemas Operativos y Redes/Algoritmos de ruteo/adjuntos/Algoritmo Link-State de Dijkstra con cálculo de caminos más cortos.png",
+    "sha256": "07ea90b329b69668305a4452946a97e0c5b1cf23a121537568d95f6dc3a0edb7"
+  },
+  {
+    "tema": "Algoritmos de ruteo",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 68.png",
+    "destino": "Sistemas Operativos y Redes/Algoritmos de ruteo/adjuntos/Tabla de iteraciones y árbol de caminos más cortos en Dijkstra.png",
+    "sha256": "b61e4e1a4beb126089a2d9bdac2e9d9040ea325adb2655114cfff9154a050d0c"
+  },
+  {
+    "tema": "Algoritmos de ruteo",
+    "tipo": "apuntes",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333/image 69.png",
+    "destino": "Sistemas Operativos y Redes/Algoritmos de ruteo/adjuntos/Ecuación de Bellman-Ford y tablas de vectores de distancia.png",
+    "sha256": "c4dc0adef0fe931ac7d4122fe5ab96e0b74abfdc8e5a6912d38b14320dd3dd7c"
+  },
+  {
+    "origen": "Apuntes - Redes IIC2333/image 70.png",
+    "destino": "Sistemas Operativos y Redes/Capa de enlace y seguridad/adjuntos/Diagrama de capa de enlace, switches, LANs, VLANs y protocolos de acceso al medio.png",
+    "sha256": "51870da600b2948d31c9900b78695aba985eeb4b71515c6ff0553e5ccb95f15a",
+    "tema": "Capa de enlace y seguridad"
+  }
+]

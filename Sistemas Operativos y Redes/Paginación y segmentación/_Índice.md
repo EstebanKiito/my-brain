@@ -1,0 +1,19 @@
+# Paginación y segmentación — índice
+
+Mecanismos arquitectónicos y algorítmicos para la gestión no contigua de memoria principal. Partición de la memoria física en marcos (*frames*) y de la memoria lógica en páginas (*pages*) de tamaño uniforme para erradicar la fragmentación externa. Estructura y formato de las entradas de tabla de páginas (PTE) y aceleración de hardware mediante la caché asociativa Translation Lookaside Buffer (TLB), analizando el tiempo de acceso efectivo (EAT), el principio de localidad de referencia y el soporte para cambios de contexto con identificadores de espacio de direcciones (ASID). Compromisos de diseño frente al tamaño de página y el dilema de la fragmentación interna. Soluciones escalables para mitigar la sobrecarga de tablas lineales masivas: esquemas híbridos de segmentos paginados, estructuras jerárquicas de paginación multinivel y tablas de páginas invertidas. Introducción al intercambio por demanda (*paging*), espacio swap y el ciclo de atención de fallos de página (*Page Fault*).
+
+Volver al [[Sistemas Operativos y Redes/_Índice|mapa del ramo]].
+
+> [!note] Origen
+> Notas elaboradas a partir de la Clase 7 y Clase 8 de los apuntes originales de Sistemas Operativos, complementadas con las diapositivas oficiales de `Contenido_6_Memoria.pdf` y la literatura estándar de sistemas operativos (Silberschatz et al., OSTEP).
+
+## Orden de estudio
+
+1. [[01 - Fundamentos de paginación, marcos y tabla de páginas|Fundamentos de paginación, marcos y tabla de páginas]]: división simétrica en páginas y marcos físicos, formato de la dirección virtual (VPN y Offset), traducción preservando el desplazamiento, estructura de la PTE y la penalización de duplicación de accesos a memoria.
+2. [[02 - Translation Lookaside Buffer (TLB) y tiempo de acceso efectivo|Translation Lookaside Buffer (TLB) y tiempo de acceso efectivo]]: caché asociativa en la MMU, aciertos (*hits*) y fallos (*misses*), análisis empírico con bucles sobre arreglos y cálculo formal del Tiempo de Acceso Efectivo (EAT).
+3. [[03 - Localidad de referencia y gestión de TLB con ASID en cambios de contexto|Localidad de referencia y gestión de TLB con ASID en cambios de contexto]]: justificación teórica de tasas de acierto del 99% mediante localidad espacial y temporal, impacto de las conmutaciones de procesos y aislamiento mediante identificadores de espacio de direcciones (ASID).
+4. [[04 - Sobrecarga de tablas lineales y compromiso de fragmentación interna|Sobrecarga de tablas lineales y compromiso de fragmentación interna]]: cálculo del consumo masivo de memoria de tablas lineales en 32 bits, inviabilidad de páginas gigantes y caracterización formal del compromiso entre fragmentación externa e interna.
+5. [[05 - Arquitectura de segmentos paginados|Arquitectura de segmentos paginados]]: integración de tablas de segmentos con tablas de páginas privadas por segmento, delimitación de regiones activas con registros límite y reducción de entradas vacías.
+6. [[06 - Paginación multinivel y tablas de páginas invertidas|Paginación multinivel y tablas de páginas invertidas]]: descomposición jerárquica del VPN en árboles de directorios de páginas, asignación dispersa en dos y tres niveles, y tablas invertidas globales indexadas por marcos físicos.
+7. [[07 - Introducción al intercambio por demanda y ciclo de fallos de página|Introducción al intercambio por demanda y ciclo de fallos de página]]: ampliación del espacio virtual sobre el disco de intercambio (*swap space*), semántica del bit de presencia, interrupción por fallo de página (*Page Fault*) y reinicio de instrucciones.
+

@@ -1,0 +1,20 @@
+# Implementación de archivos y bloques — índice
+
+Estructuras internas y mecanismos de implementación de sistemas de archivos en disco y memoria principal. Estudio de la interfaz y llamadas al sistema POSIX para manipulación de archivos y directorios (`open`, `read`, `write`, `lseek`, `fsync`, `mkdir`, `rmdir`). Semántica y diferencias entre enlaces duros (*hard links*, punteros directos al inodo con contador de referencias) y enlaces simbólicos (*soft links*, archivos con rutas textuales). Integración de dispositivos mediante puntos de montaje (*mount points*) y tabla de monturas (*Mount Table*). Arquitectura de particiones y estructuras de almacenamiento persistente (MBR, *Boot Control Block*, superbloque o *Volume Control Block*, bloques de directorios y bloques de control de archivo / FCB) junto con la capa de abstracción polimórfica del Sistema de Archivos Virtual (VFS) y nodos virtuales (*v-nodes*). Métodos de asignación de bloques físicos en almacenamiento secundario: asignación contigua, asignación enlazada básica, Tabla de Asignación de Archivos (FAT), asignación indexada y la arquitectura combinada multinivel de inodos en Unix (punteros directos, indirectos simples, dobles y triples). Estrategias para la administración de bloques libres mediante mapas de bits (*bitmaps*) y listas enlazadas con optimizaciones por conteo (*counting*).
+
+Volver al [[Sistemas Operativos y Redes/_Índice|mapa del ramo]].
+
+> [!note] Origen
+> Notas elaboradas a partir de la Clase 11 de los apuntes originales de Sistemas Operativos, complementadas exhaustivamente con las diapositivas oficiales de `Contenido_7_Archivos.pdf` y la literatura estándar de sistemas operativos (Silberschatz et al., Tanenbaum, OSTEP).
+
+## Orden de estudio
+
+1. [[01 - Interfaz y llamadas al sistema de archivos y directorios|Interfaz y llamadas al sistema de archivos y directorios]]: API de llamadas al sistema POSIX para archivos y directorios, funciones de sincronización a disco (`fsync`), y navegación secuencial y aleatoria (`lseek`).
+2. [[02 - Enlaces duros (hard links) y enlaces simbólicos (soft links)|Enlaces duros (hard links) y enlaces simbólicos (soft links)]]: punteros directos a inodos frente a punteros a rutas textuales, contador de referencias (`link_count`), restricciones de directorios y enlaces rotos (*dangling links*).
+3. [[03 - Montaje de sistemas de archivos y puntos de montaje|Montaje de sistemas de archivos y puntos de montaje]]: incorporación de particiones y dispositivos externos, jerarquía unificada de Unix frente a letras de unidad en Windows, tabla de monturas y enmascaramiento de directorios.
+4. [[04 - Estructuras en disco y en memoria del sistema de archivos virtual (VFS)|Estructuras en disco y en memoria del sistema de archivos virtual (VFS)]]: superbloques, tablas de inodos, tablas de descriptores por proceso y tabla global de archivos abiertos, desacoplamiento y polimorfismo con VFS y estructuras V-Node.
+5. [[05 - Métodos de asignación de bloques: asignación contigua y bloques de control|Métodos de asignación de bloques: asignación contigua y bloques de control]]: asignación contigua de sectores, acceso secuencial y directo $O(1)$, problemas de fragmentación externa y sobrecarga de defragmentación.
+6. [[06 - Asignación enlazada y tabla de asignación de archivos (FAT)|Asignación enlazada y tabla de asignación de archivos (FAT)]]: punteros encadenados en bloques de datos, arquitectura de la tabla FAT residente en RAM y límites de direccionamiento en FAT32.
+7. [[07 - Asignación indexada y arquitectura de inodos multinivel en Unix|Asignación indexada y arquitectura de inodos multinivel en Unix]]: bloques de índices dedicados, arquitectura de inodo combinado Unix con punteros directos, indirectos simples, dobles y triples para archivos de gran escala.
+8. [[08 - Administración del espacio libre en disco: mapas de bits y listas enlazadas|Administración del espacio libre en disco: mapas de bits y listas enlazadas]]: seguimiento de sectores libres mediante vectores de bits (bitmap) y listas enlazadas de bloques libres con técnicas de agrupación y conteo.
+
