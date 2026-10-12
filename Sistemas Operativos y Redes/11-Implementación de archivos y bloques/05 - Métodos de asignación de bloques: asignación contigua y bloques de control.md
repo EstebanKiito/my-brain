@@ -3,7 +3,6 @@ ramo: "Sistemas Operativos y Redes"
 tema: "Implementación de archivos y bloques"
 tags:
   - so/archivos
-  - origen/apuntes
   - origen/complemento
 prerrequisitos:
   - "[[Sistemas Operativos y Redes/11-Implementación de archivos y bloques/04 - Estructuras en disco y en memoria del sistema de archivos virtual (VFS)\|04 - Estructuras en disco y en memoria del sistema de archivos virtual (VFS)]]"
@@ -11,55 +10,60 @@ prerrequisitos:
 
 # Métodos de asignación de bloques: asignación contigua y bloques de control
 
-La asignación de bloques determina cómo se mapean los bytes lógicos de un archivo a los sectores físicos de almacenamiento secundario mediante estructuras de control de archivos (FCB).
+Cada archivo necesita bloques de disco, y cómo se eligen esos bloques determina qué tan rápido se puede leer el archivo. Una mala asignación provoca demoras en los tiempos de acceso. Esta nota presenta qué bloques necesita un archivo y la estrategia más simple: la **asignación contigua**.
 
-## Bloques y asignación contigua (mis apuntes)
+## Un archivo no es solo sus datos
 
-- BLOQUES
-- Bloque de directorio
-- Read (index)
-- Voy a consultar tabla de archivos por procesos
-- Luego voy a la tabla de archivos del sistema
-- Leer Bloques de datos
-- Bytes que son en si el archivo
-- Luego voy a consultar a v-nodes para saber que funcion read (segun sistema de archivos) necesito utilizar
-- File Control Block (bloque que contiene info para poder leer datos de un archivo)
-- Bloques indice
-- Bloques Indireccion (Simple, Doble)
-- Los archivos no son solo blouqes de datos
-- Hay un tamaño real, y un tamaño que ocupa en disco
-- Necesito almacenar metadatos, datos extras
-- PAra leer un archivo, tengo que cargar y cargar bloques
-- La idea es no tener que andar dando tantas vueltas → Cada S.O Tendra una estrategia Distinta
-- ESTRATEGIAS
-- ASGINACION CONTIGUA
-- que los archivos guarden sus bloque de datos de manera contigua
-- Es bien sencillo de almacenar y leer
-- La compactacion es costoso → queremos evitarlo
-- - Problema → No se pueden guardar archivos pequeños → Compactar el archivo
+Un archivo ocupa más que los bytes de su contenido. Tiene un **tamaño real** (sus bytes) y un **tamaño en disco** (los bloques que ocupa), y además necesita metadatos:
 
-> [!warning] Posible error
-> En los apuntes aparecen erratas en `blouqes` (bloques), `ASGINACION` (asignación) y en la afirmación "No se pueden guardar archivos pequeños": en asignación contigua el problema crítico no son los archivos pequeños, sino la **fragmentación externa** del disco y la incapacidad de **crecimiento dinámico** de los archivos sin reubicación o compactación.
+| Tipo de bloque | Para qué sirve |
+|---|---|
+| **Bloques de datos** | Los bytes que son, en sí, el archivo |
+| **Bloque de directorio** | Asocia el nombre del archivo con su información |
+| **File Control Block** (FCB) | Contiene la información para poder leer los datos del archivo: metadatos y dónde están sus bloques |
+| **Bloques índice** y **de indirección** (simple, doble) | En algunas estrategias, guardan las direcciones de los bloques de datos ([[07 - Asignación indexada y arquitectura de inodos multinivel en Unix\|asignación indexada]]) |
 
-> [!tip] Complemento: Mecanismo de asignación contigua
-> ![Asignación contigua de bloques de disco](adjuntos/Asignación%20contigua%20de%20bloques%20de%20disco.png)
->
-> > [!example]- Transcripción de la imagen
-> > **Diagrama de asignación contigua de bloques en disco:**
-> > - Un archivo de $n$ bloques ocupa un rango continuo de direcciones físicas en disco: $b, b+1, b+2, \dots, b+n-1$.
-> > - La entrada de directorio únicamente requiere registrar dos enteros:
-> >   $$\text{Entrada} = (\text{nombre}, \text{bloque inicial } b, \text{longitud } n)$$
-> > - **Ventajas:** rendimiento óptimo de lectura secuencial (el brazo no realiza *seek*) y acceso aleatorio instantáneo al bloque $i$ calculando la dirección física directa $b + i$.
-> > - **Desventajas:** severa fragmentación externa similar a la de memoria contigua; requiere conocer el tamaño final al crear el archivo o ejecutar costosas compactaciones periódicas (*defragmentación*).
+Para leer un archivo, el SO recorre varias estructuras: consulta la **tabla de archivos del proceso**, luego la **tabla de archivos del sistema**, luego el **v-node** para saber qué función `read` usar según el sistema de archivos, y recién entonces lee los **bloques de datos** (ver [[04 - Estructuras en disco y en memoria del sistema de archivos virtual (VFS)|VFS]]). La idea de cada estrategia de asignación es no tener que dar tantas vueltas para encontrar los bloques, y cada SO tiene la suya.
+
+## Asignación contigua
+
+Los **bloques de datos de cada archivo se guardan de forma contigua**: un archivo de $n$ bloques que empieza en el bloque $b$ ocupa $b, b+1, \dots, b+n-1$. El directorio solo necesita guardar el **inicio** y el **largo**.
+
+![Asignación contigua de bloques de disco](adjuntos/Asignaci%C3%B3n%20contigua%20de%20bloques%20de%20disco.png)
+
+> [!example]- Transcripción de la imagen
+> "Asignación contigua. Archivo de n bloques: b, b+1, …, b+n−1. Fácil de acceder a siguiente bloque. Problema: fragmentación externa. Require operaciones de compactación (defragmentación)." Un disco con bloques 0 a 31 y la tabla *directory* (*file / start / length*): *count* 0 2, *tr* 14 3, *mail* 19 6, *list* 28 4, *f* 6 2.
+
+| Ventajas | Desventajas |
+|---|---|
+| **Muy sencilla** de almacenar y leer | **Fragmentación externa**: quedan huecos entre archivos, como con la memoria contigua |
+| **Fácil acceder al siguiente bloque**, y al bloque $k$ directamente: $b + k$ | Hay que saber el tamaño al crear el archivo, y crecer es difícil si el bloque siguiente está ocupado |
+| Lectura secuencial rapidísima en un HDD (casi sin *seek*) | Arreglarlo requiere **compactar** (desfragmentar), lo que es costoso y se quiere evitar |
+
+```python
+DIRECTORIO = {"count": (0, 2), "tr": (14, 3), "mail": (19, 6), "list": (28, 4), "f": (6, 2)}  # (inicio, largo)
+
+def bloque_fisico(archivo, k):
+    inicio, largo = DIRECTORIO[archivo]
+    if not 0 <= k < largo:
+        raise IndexError("bloque fuera del archivo")
+    return inicio + k                                # acceso directo: b + k
+
+print(bloque_fisico("mail", 3))                      # 22
+```
+
+Con la tabla de la figura, en los 32 bloques quedan **15 libres**, repartidos en huecos de 4, 6, 2 y 3 bloques. Un archivo de **7 bloques no cabe**, aunque sobre espacio: eso es la fragmentación externa.
 
 ## Preguntas de repaso
 
-> [!question]- ¿Por qué la asignación contigua ofrece el mejor rendimiento de transferencia de entrada/salida?
-> Porque al residir todos los bloques del archivo en sectores y pistas consecutivas, el brazo lector del disco magnético solo ejecuta un único movimiento de búsqueda (*seek*) inicial y luego transfiere secuencialmente a velocidad máxima de rotación.
+> [!question]- ¿Qué guarda el directorio para un archivo con asignación contigua?
+> El bloque de inicio y el largo, en bloques. Con eso se puede calcular la ubicación de cualquier bloque del archivo.
 
-> [!question]- ¿Cómo se calcula la dirección del bloque lógico $k$ de un archivo en asignación contigua si comienza en el bloque $b$?
-> La dirección física se calcula de forma directa e instantánea como $b + k$, sin necesidad de consultar tablas auxiliares ni realizar accesos adicionales a disco.
+> [!question]- ¿Dónde está el bloque 3 del archivo `mail` de la figura?
+> `mail` empieza en el bloque 19, así que su bloque 3 está en $19 + 3 = 22$.
 
-> [!question]- ¿Cuál es la principal limitación de la asignación contigua cuando un archivo necesita incrementar su tamaño?
-> Si el bloque físico contiguo adyacente ($b + n$) ya se encuentra ocupado por otro archivo o estructura, el archivo no puede expandirse in situ y el kernel se ve obligado a reubicarlo por completo en un espacio libre mayor o abortar la escritura por falta de espacio contiguo.
+> [!question]- ¿Cuál es el problema principal de la asignación contigua?
+> La fragmentación externa: entre archivos quedan huecos que, sumados, alcanzarían para un archivo nuevo, pero ninguno basta por sí solo. Resolverlo exige compactar, lo que es costoso.
 
+> [!question]- ¿Qué es el File Control Block?
+> El bloque con la información necesaria para leer un archivo: sus metadatos y la ubicación de sus bloques de datos. En UNIX corresponde al inodo.
