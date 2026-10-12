@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 23 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 05-Hilos/02 - Programación con POSIX Threads y ciclo de vida.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 24 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 05-Hilos/03 - Hilos a nivel de usuario frente a hilos a nivel de kernel.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -37,7 +37,7 @@ Reescritas hasta ahora: 23 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | – | 04-Señales e IPC/03 - Comunicación entre procesos y manejo de señales en C.md | sin marca | nota modelo |
 | 22 | 05-Hilos/01 - Concepto de hilo y recursos compartidos versus privados.md | reescrita | 98 líneas; C ok |
 | 23 | 05-Hilos/02 - Programación con POSIX Threads y ciclo de vida.md | reescrita | 112 líneas; 1 imagen; C y Mermaid ok; 1 duda |
-| 24 | 05-Hilos/03 - Hilos a nivel de usuario frente a hilos a nivel de kernel.md | pendiente | |
+| 24 | 05-Hilos/03 - Hilos a nivel de usuario frente a hilos a nivel de kernel.md | reescrita | 78 líneas; 2 imágenes; 1 duda |
 | 25 | 06-Sincronización/01 - Condiciones de carrera y el problema de la sección crítica.md | pendiente | |
 | 26 | 06-Sincronización/02 - Soluciones por software y algoritmo de Peterson.md | pendiente | |
 | 27 | 06-Sincronización/03 - Sincronización por hardware e instrucciones atómicas.md | pendiente | |
@@ -153,3 +153,4 @@ Reescritas hasta ahora: 23 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **04/02 Señales comunes**: 89 líneas, tabla de señales, mnemotecnia "TERM pregunta, KILL impone", ejemplo C con `sigaction`: captura SIGTERM, y el intento sobre SIGKILL falla con EINVAL (verificado). Solo se dan los números portables (2, 9, 11, 15); los de STOP/TSTP/CONT/CHLD del complemento eran de Linux x86 y en macOS son otros. SIGCOM se corrigió a SIGCONT y SIGSTP a SIGTSTP. Duda nueva 🟡: la analogía "espérame un poco" para SIGINT.
 - **05/01 Concepto de hilo**: 98 líneas, tabla comparten/no comparten ampliada con la lista del material de clase, regla "privado = ejecución, compartido = recursos". Ejemplo C que muestra la misma dirección para la global y distintas para la local: al probarlo con los threads en serie el stack se reutilizaba y las direcciones coincidían, así que se dejaron vivos a la vez. Se conservó el ejemplo del Excel como problema de sincronización. Se quitó el Mermaid antiguo porque duplicaba la tabla. Sin dudas nuevas.
 - **05/02 POSIX Threads**: 112 líneas, 1 imagen comprobada, tabla de funciones con su análogo en procesos, 1 Mermaid (sequenceDiagram, válido). Nuevo ejemplo C: suma un arreglo con 2 threads y devuelve el resultado por `pthread_join` (compila con `-Wall`, imprime 500500). Duda nueva 🟡: `pthread_yield` frente a `sched_yield`.
+- **05/03 Hilos de usuario y de kernel**: 78 líneas, 2 imágenes comprobadas (la primera estaba mal transcrita; se corrigió), tablas bueno/malo de ULT y KLT tomadas del material de clase, más el modelo híbrido M:N. Se conservaron los thread pools ("threads precreados"), el costo de crear demasiados threads y qué se elimina al borrar un thread. Duda nueva 🟡: "kernel threads son más rápidos".
