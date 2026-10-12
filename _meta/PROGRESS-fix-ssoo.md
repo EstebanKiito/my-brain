@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 33 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 06-Sincronización/09 - Problema de los filósofos comelones y deadlocks.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 34 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 07-Administración de memoria/01 - Coordinación de filósofos y manejo de estados con semáforos.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -47,7 +47,7 @@ Reescritas hasta ahora: 33 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 31 | 06-Sincronización/07 - Variables de condición y monitores.md | reescrita | 125 líneas; 2 imágenes; C ok |
 | 32 | 06-Sincronización/08 - Problema de los lectores y escritores.md | reescrita | 103 líneas; 1 imagen; C compila |
 | 33 | 06-Sincronización/09 - Problema de los filósofos comelones y deadlocks.md | reescrita | 88 líneas; 3 imágenes; Mermaid ok; separada de 07/01 |
-| 34 | 07-Administración de memoria/01 - Coordinación de filósofos y manejo de estados con semáforos.md | pendiente | |
+| 34 | 07-Administración de memoria/01 - Coordinación de filósofos y manejo de estados con semáforos.md | reescrita | 140 líneas; 1 imagen; C compila; Mermaid ok; 1 duda |
 | 35 | 07-Administración de memoria/02 - Memoria principal y el desafío de la multiprogramación.md | pendiente | |
 | 36 | 07-Administración de memoria/03 - Relocalización, protección de memoria y registros base y límite.md | pendiente | |
 | 37 | 07-Administración de memoria/04 - Swapping, fragmentación externa y algoritmos de asignación libre.md | pendiente | |
@@ -163,3 +163,4 @@ Reescritas hasta ahora: 33 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **06/07 Variables de condición**: 125 líneas, 2 imágenes comprobadas. La transcripción anterior describía la API `cond_t`/`broadcast` y un código distinto del de la figura; se rehízo con el código real (`condCons`/`condProd`, `stock`). Ejemplo pthreads del buffer acotado con condvars: suma 210. **Monitores:** ni el material ni tus apuntes los tratan, pero el título los nombra; se agregó un párrafo breve de conocimiento general (Java `synchronized`/`wait`/`notify`). Revísalo si prefieres quitarlo. Se eliminó el recordatorio "Estudiar". Sin dudas nuevas.
 - **06/08 Lectores y escritores**: 103 líneas, 1 imagen comprobada (la transcripción anterior traía un código distinto, con `read_count`/`write_data`; se rehízo con el de la figura). En la diapositiva los títulos "Escritor (fácil)…" y "Lectores…" quedan sobre el código del otro rol; se transcribió tal cual, aclarando qué código es de cada uno. Ejemplo C con semáforos POSIX: solo se compiló (`sem_init` no funciona en macOS; la lógica de semáforos ya se probó una vez en 06/06). Se agregó por qué `rw` debe ser semáforo y no mutex. Se conservó strongly consistent / no strongly consistent. Sin dudas nuevas.
 - **06/09 Filósofos y deadlock** (separada de 07/01, como pediste): esta nota tiene el **problema y el deadlock** (solución ingenua, Mermaid del ciclo de espera, las 4 condiciones de Coffman y cómo romperlas); 07/01 tiene la **solución por estados**. Se enlazan entre sí. 3 imágenes comprobadas: la tercera es la misma diapositiva que la de 07/01, con una transcripción breve y el enlace. Se retiró la "solución asimétrica pares/impares" que la transcripción antigua atribuía a la imagen. Las condiciones de Coffman no están en el material de clase; se incluyeron como teoría estándar. Duda ℹ️ nueva.
+- **07/01 Coordinación de filósofos** (pareja de 06/09): contiene la **solución por estados**: tabla de estados, happy y unhappy path de tus apuntes, sequenceDiagram (válido) y código C completo (compila; usa `sem_init`, así que no se ejecutó en macOS). 140 líneas, cerca del máximo, por el código; no se dividió. La transcripción anterior usaba los nombres de Tanenbaum (`test`, `put_forks`, `THINKING`), que no están en la figura; se transcribió la figura real y se dejó una línea con la equivalencia. El repaso inicial de primitivas pasó a una tabla con enlaces. Se quitó el encabezado "Clase 6 (Online)" con la fecha y el nombre del profesor. Duda nueva 🟡: semáforo inicial 1 frente a 0 y "estado filosofal tiene palillo".
