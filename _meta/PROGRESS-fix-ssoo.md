@@ -23,7 +23,7 @@ Notas con marca detectadas: 95 de 100.
 | 11 | 02-Procesos/04 - Cambio de contexto y tipos de procesos.md | pendiente | |
 | 12 | 02-Procesos/05 - Jerarquía y creación de procesos con fork.md | pendiente | |
 | 13 | 02-Procesos/06 - Control de procesos con wait, exec y terminación.md | pendiente | |
-| 14 | 02-Procesos/07 - Programación de procesos en C y prevención de fork bombs.md | pendiente (piloto) | |
+| 14 | 02-Procesos/07 - Programación de procesos en C y prevención de fork bombs.md | reescrita (piloto) | 111 líneas; 2 imágenes; C compila y corre; 1 duda |
 | 15 | 03-Planificación de CPU/01 - Niveles de planificación y ciclo de ráfagas CPU-IO.md | pendiente | |
 | 16 | 03-Planificación de CPU/02 - Clasificación de planificadores y métricas de rendimiento.md | pendiente | |
 | 17 | 03-Planificación de CPU/03 - Planificación FCFS y SJF.md | pendiente | |
@@ -129,3 +129,4 @@ Notas con marca detectadas: 95 de 100.
 
 - **01/06 Arranque** (conceptual): 74 líneas, 1 Mermaid (parse ok), 1 tabla. Reincorporados: PC y firmware en ROM/NVRAM, `vmlinuz`, `initramfs`, `grubx64.efi`, GUID, ring 0. Omitido: "ejecutables de 64 bits" (UEFI de 32 bits también existe). Sin dudas nuevas.
 - **01/01 Qué es un SO** (con imagen): 84 líneas, 2 imágenes comprobadas (Tanenbaum fig. 1-1 y estructura user/kernel space), 1 Mermaid (parse ok), 1 tabla de roles. Reincorporados: *resource manager*, *extended machine*, SysV init de UNIX. Ignorados: fecha y encabezado "CLASE". El rol de "programa de control" se completó desde el material de clase. Duda nueva 🟡: "manejo de memoria = dónde se guardan las descargas". "Scheduling: elegir quién va a estar en la RAM" calza con el scheduler de largo plazo del material de clase, así que no es duda.
+- **02/07 Programación de procesos en C** (con código): 111 líneas, 2 imágenes comprobadas. Código: el programa completo (struct/enum + fork/exit/waitpid) y el fragmento de `exec` (`expr 6 * 7` → 42) compilan sin avisos con `gcc -Wall -pthread` y corren bien; el conteo exponencial (3 `fork` en un for → 8 procesos) también se comprobó. La fork bomb de Bash se documenta pero, a propósito, no se ejecutó. Erratas corregidas sin comentar: `structs`/`Sates`, `argv` descrito como "cantidad de líneas" (ahora `argc`/`argv`), "exec es un archivo .c" (ahora: un ejecutable). Se quitaron los recordatorios "Estudiar", la fecha y las referencias a la tarea. El complemento antiguo atribuía fork bomb y `ulimit` a las diapositivas, pero no aparecen en ellas; se conserva como conocimiento general. Duda nueva 🟡: "el hijo solo ejecuta la línea de comandos".
