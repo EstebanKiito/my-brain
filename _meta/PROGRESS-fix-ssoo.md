@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 50 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 10-Sistemas de archivos/03 - Niveles de formateo y esquemas de particionamiento (MBR y GPT).md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 51 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 10-Sistemas de archivos/04 - Algoritmos de planificación de disco (Disk Scheduling).md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -67,7 +67,7 @@ Reescritas hasta ahora: 50 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 48 | 10-Sistemas de archivos/01 - Capas de abstracción de entrada-salida y mecanismos de buffering.md | reescrita | 92 líneas; C y Mermaid ok |
 | 49 | 10-Sistemas de archivos/02 - Discos duros magnéticos (HDD) y discos de estado sólido (SSD).md | reescrita | 77 líneas; 1 imagen |
 | 50 | 10-Sistemas de archivos/03 - Niveles de formateo y esquemas de particionamiento (MBR y GPT).md | reescrita | 66 líneas; Mermaid ok |
-| 51 | 10-Sistemas de archivos/04 - Algoritmos de planificación de disco (Disk Scheduling).md | pendiente | |
+| 51 | 10-Sistemas de archivos/04 - Algoritmos de planificación de disco (Disk Scheduling).md | reescrita | 102 líneas; 5 imágenes; Python ok; 1 duda |
 | 52 | 10-Sistemas de archivos/05 - Concepto de archivo, atributos y metadatos.md | pendiente | |
 | 53 | 10-Sistemas de archivos/06 - Estructura de directorios y resolución de rutas.md | pendiente | |
 | 54 | 11-Implementación de archivos y bloques/01 - Interfaz y llamadas al sistema de archivos y directorios.md | pendiente | |
@@ -182,3 +182,4 @@ Reescritas hasta ahora: 50 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **10/01 Capas de I/O y buffering**: 92 líneas, 1 Mermaid (válido), tablas de capas y de los 4 esquemas de buffer del material de clase (el ejemplo de double buffer en pantallas sale de tus apuntes). Demo C nueva y medida: leer 1 MB con buffer de 1 B hace 1.048.576 `read()` (~0,5 s de CPU), contra 256 con buffer de 4 KB (<1 ms). Frontmatter: tenía `origen/apuntes` y `origen/complemento` a la vez; quedó solo `complemento`. Se quitaron "Clase 10" y la fecha. Sin dudas nuevas.
 - **10/02 HDD y SSD**: 77 líneas, 1 imagen comprobada (estaba anidada en un callout de complemento; ahora es independiente y su transcripción coincide con la diapositiva). Tabla de latencia rotacional por RPM calculada con Python (7200 → 4,17 ms). Tabla HDD/SSD con los puntos de tus apuntes y del material. Se quitaron los rangos dudosos del complemento (tamaños de página/bloque NAND, 3-10 ms de seek). Frontmatter: tenía dos tags de origen y quedó solo `complemento` (un error transitorio en el enlace de prerrequisitos se corrigió antes de commitear). Sin dudas nuevas.
 - **10/03 Formateo y particiones**: 66 líneas, 1 Mermaid (válido) de los 3 niveles y tabla MBR/GPT. Los 3 niveles y el límite de 32 bits del MBR salen del material de clase (2^32 × 512 B = 2 TiB, verificado). "Guide partition table" se corrigió a GUID. Se conservaron los detalles verificables del complemento (446/64/2 B, 0x55AA, CRC32, 128 particiones) y se omitió el "9,4 ZB". Sin dudas nuevas.
+- **10/04 Scheduling de disco**: 102 líneas, 5 imágenes comprobadas (estaban anidadas en un callout de complemento; ahora son independientes, con transcripciones ajustadas a cada figura). Tabla SCAN/C-SCAN/LOOK/F-SCAN con los recorridos del ejemplo. Simulador Python: FCFS 640 (igual que el material) y SSTF 236. Duda nueva 🟡: el material dice 208 para SSTF.

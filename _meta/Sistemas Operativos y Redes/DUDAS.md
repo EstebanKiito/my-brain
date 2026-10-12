@@ -100,6 +100,7 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | ℹ️ | [[04 - Algoritmos de planificación de disco (Disk Scheduling)\|Algoritmos de planificación de disco (Disk Scheduling)]] | "Schedulling ... Numeros de secotres" | Erratas tipográficas ("Schedulling" por Scheduling y "secotres" por sectores). |
 | ℹ️ | [[05 - Concepto de archivo, atributos y metadatos\|Concepto de archivo, atributos y metadatos]] | "“hellowoeld.py”" | Errata tipográfica por "helloworld.py". |
 | ℹ️ | [[06 - Estructura de directorios y resolución de rutas\|Estructura de directorios y resolución de rutas]] | "directiors ... Jerarqui ... Partencon" | Erratas tipográficas ("directiors" por directorios, "Jerarqui" por jerarquía, "Partencon" por parten con). |
+| 🟡 | [[04 - Algoritmos de planificación de disco (Disk Scheduling)\|Algoritmos de planificación de disco (Disk Scheduling)]] | "SCHEDULING SSTF … Desplazamiento = 208" (material y apuntes) (reescritura) | Con la cola 98, 183, 37, 122, 14, 124, 65, 67, el inicio en 53 y el recorrido que dibuja la figura (53→65→67→37→14→98→122→124→183), el desplazamiento suma **236** (12+2+30+23+84+24+2+59). Así lo da también Silberschatz para este mismo ejemplo, y se verificó con Python. 208 coincide con LOOK hacia 0 (53→37→14→65…→183). La nota muestra ambos valores sin elegir. Confirma el valor del curso. |
 
 ## Implementación de archivos y bloques
 | Estado | Nota | Original | Duda / corrección propuesta |
