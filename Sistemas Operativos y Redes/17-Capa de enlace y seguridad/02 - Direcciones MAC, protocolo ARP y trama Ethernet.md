@@ -8,50 +8,101 @@ tags:
   - arp
   - ethernet
   - tramas
+  - origen/complemento
 prerrequisitos:
   - "[[17-Capa de enlace y seguridad/01 - Servicios de capa de enlace y control de acceso al medio (MAC)|01 - Servicios de capa de enlace y control de acceso al medio (MAC)]]"
 ---
 
 # Direcciones MAC, protocolo ARP y trama Ethernet
 
-Mientras que las direcciones IP son lógicas y jerárquicas (dependientes de la subred a la que está conectado el host), las direcciones de capa de enlace (**direcciones MAC** o de hardware) son identificadores planos grabados de forma permanente en la memoria ROM o flash de la tarjeta de red (*Network Interface Card*, NIC). Para traducir direcciones lógicas IP en direcciones físicas MAC dentro de una misma subred local, la arquitectura de Internet emplea el protocolo **ARP** (*Address Resolution Protocol*).
+La IP dice **a qué host** debe llegar un paquete al final del camino, pero en cada tramo el frame va de una tarjeta de red a otra. Para eso la capa de enlace usa otra dirección, la **MAC**, y un protocolo, **ARP**, que traduce de una a otra.
 
----
+## Direcciones MAC
 
-## Direcciones físicas e identificación de interfaz (mis apuntes)
+La **dirección MAC** (también dirección física o de hardware) está en la **tarjeta de red** (NIC). Sirve para que el **switch nos identifique** y sepa por qué camino nos llega la información.
 
-Direcciones MAC
-Direcciones fisicas que se encuentran dentro de la Tarjeta de Red, Nos sirven para que EL SWITCH NOS IDENTIFIQUE, y el camino por donde nos llega la INFO
+- Es un identificador único de **48 bits (6 bytes)**, escrito en hexadecimal: `1A-2F-BB-76-09-AD`. Aunque viene de fábrica, es **modificable por software**.
+- **24 bits** identifican al **fabricante** (el OUI, *Organizationally Unique Identifier*, que asigna la IEEE) y **24 bits** a la NIC.
+- La estructura de direccionamiento es **plana**: a diferencia de la IP, no dice nada de dónde está el equipo, así que no sirve para rutear entre redes.
+- `FF-FF-FF-FF-FF-FF` es la dirección de **broadcast**.
 
-> [!tip] Complemento de clase: Estructura de las direcciones MAC y trama Ethernet (IEEE 802.3)
-> - **Formato de dirección MAC**: Tiene una longitud de 48 bits (6 bytes), expresada como 12 dígitos hexadecimales separados por guiones o dos puntos (por ejemplo, `1A-2F-BB-76-09-AD`).
->   - Los primeros 24 bits (3 bytes) corresponden al **OUI** (*Organizationally Unique Identifier*), asignado por la IEEE a cada fabricante de hardware.
->   - Los últimos 24 bits identifican la interfaz específica producida por ese fabricante.
->   - La dirección de difusión (*broadcast*) en capa de enlace es `FF-FF-FF-FF-FF-FF`.
-> - **Estructura del frame Ethernet**:
->   1. **Preámbulo** (8 bytes): 7 bytes `10101010` seguidos de `10101011` (SFD, *Start Frame Delimiter*) para sincronización de osciladores de reloj.
->   2. **Dirección Destino** (6 bytes): MAC del receptor o switch de siguiente salto.
->   3. **Dirección Origen** (6 bytes): MAC de la interfaz transmisora.
->   4. **Tipo** (2 bytes): Identifica el protocolo de capa superior (por ejemplo, `0x0800` para IPv4, `0x86DD` para IPv6, `0x0806` para ARP).
->   5. **Carga útil / Datos** (46 a 1500 bytes): Contiene el paquete IP. La MTU estándar de Ethernet es 1500 bytes.
->   6. **CRC / FCS** (4 bytes): Código de redundancia cíclica de 32 bits para detección de errores.
+| | Dirección IP | Dirección MAC |
+|---|---|---|
+| Capa | Red | Enlace |
+| Tamaño | 32 bits (IPv4) | 48 bits |
+| Estructura | Jerárquica (subred + host) | Plana (fabricante + NIC) |
+| Alcance | Todo el camino, de extremo a extremo | Un solo enlace |
 
-> [!tip] Complemento de clase: Protocolo de resolución de direcciones (ARP)
-> El protocolo **ARP** (RFC 826) permite a un host averiguar la dirección MAC asociada a una dirección IP de destino dentro de la misma red local:
-> 1. **Tabla ARP**: Cada nodo almacena una caché en memoria con pares $\langle \text{IP}, \text{MAC}, \text{TTL} \rangle$. Cada entrada expira típicamente tras 10 a 20 minutos.
-> 2. **ARP Request**: Si el nodo emisor no tiene la MAC en su tabla, emite una consulta ARP encapsulada en una trama de broadcast (`FF-FF-FF-FF-FF-FF`). Todos los equipos de la LAN procesan el paquete.
-> 3. **ARP Reply**: El equipo cuya IP coincide con la solicitada responde directamente al emisor mediante una trama unicast con su dirección MAC física.
-> 4. **Tráfico inter-subredes**: Si el destino final se encuentra fuera de la subred local, el emisor consulta ARP por la dirección IP de su *Default Gateway* (router). El datagrama IP conserva las direcciones IP origen y destino finales, pero la trama Ethernet lleva como MAC de destino la interfaz del router local.
+## ARP: de IP a MAC
 
----
+**ARP** (*Address Resolution Protocol*, RFC 826) encuentra la MAC que corresponde a una IP de la misma subred. Cada nodo (host, router y algunos switches) mantiene una **tabla ARP** con asociaciones $\langle \text{IP}, \text{MAC}, \text{TTL} \rangle$, donde el TTL indica cuánto tiempo se recordará la entrada. En un computador se puede ver con el comando `arp`.
+
+¿Cómo se encuentra una MAC? Si C quiere comunicarse con A, pero A no está en su tabla:
+
+1. C envía un **ARP query** (o *ARP request*) con la IP de A, a la MAC `FF-FF-FF-FF-FF-FF`.
+2. **Todos** lo reciben (es broadcast).
+3. **Solo A** responde con un **ARP response** (o *reply*), que lleva su MAC. Se envía solo a C, porque el query ya traía la MAC de C.
+4. C guarda en su tabla la asociación ⟨IP(A), MAC(A)⟩.
+
+## Atravesando subredes
+
+¿Y si el mensaje va a otra subred? Supongamos que `111.111.111.111` quiere enviar un frame a `222.222.222.222`, que no está en su tabla ARP (ni puede descubrirla por broadcast, que no sale de la subred). El paquete lleva ⟨IP = 222.222.222.222, MAC = ?⟩:
+
+- si pusiera la MAC del destino, `49-BD-D2-C7-56-2A`, el frame **no saldría de la subred**;
+- debe poner la MAC del **router**, `E6-E9-00-17-BB-4B`. El router recibe el frame, lo pasa a su capa de red y decide el siguiente salto;
+- ya en la subred del destino, el router envía el frame con ⟨IP = 222.222.222.222, MAC = 49-BD-D2-C7-56-2A⟩.
+
+La **IP de destino no cambia** en todo el camino; la **MAC de destino cambia en cada salto**.
+
+```python
+from ipaddress import ip_address, ip_network
+
+MI_RED = ip_network("111.111.111.0/24")
+GATEWAY = "111.111.111.110"
+tabla_arp = {"111.111.111.110": "E6-E9-00-17-BB-4B"}    # <IP, MAC> (sin TTL)
+
+def mac_destino(ip_dst):
+    """La IP de destino no cambia; la MAC es la del siguiente salto en la subred."""
+    salto = ip_dst if ip_address(ip_dst) in MI_RED else GATEWAY
+    if salto not in tabla_arp:
+        return f"ARP query a FF-FF-FF-FF-FF-FF: ¿quién tiene {salto}?"
+    return tabla_arp[salto]
+
+print(mac_destino("222.222.222.222"))   # E6-E9-00-17-BB-4B: la del router
+print(mac_destino("111.111.111.112"))   # ARP query: está en mi subred y no la conozco
+```
+
+## Ethernet
+
+Ethernet (IEEE 802.3) es el estándar más usado en las LAN. Nació en los años 70 y es conmutado (*switched*) desde los 90:
+
+- **basado en coaxial**: LAN de broadcast, topología de **bus**;
+- **basado en hub**: LAN de broadcast, topología de **estrella**;
+- **basado en switch**: evita las colisiones; el switch es un dispositivo de capa 2 (ver [[03 - Conmutación en redes locales (Switches L2, STP) y VLANs|switches]]).
+
+El frame Ethernet tiene estos campos:
+
+| Campo | Contenido |
+|---|---|
+| **Preamble** | 7 bytes `10101010` y 1 byte `10101011` (el SFD, *Start Frame Delimiter*), para sincronizarse |
+| **Destination MAC** | El destinatario procesa el frame solo si es su propia MAC o `FF-FF-FF-FF-FF-FF` |
+| **Source MAC** | MAC de quien envía |
+| **Type** | Protocolo de arriba: IP, Novell IPX, AppleTalk, ARP (por ejemplo `0x0800` IPv4, `0x86DD` IPv6, `0x0806` ARP) |
+| **Data** | De 46 a 1500 bytes: la MTU de Ethernet es 1500 (los *jumbo frames* llegan a ~9000) |
+| **CRC** (o FCS, 4 bytes) | Si detecta un error, Ethernet **descarta** el frame y **no avisa**: no es confiable |
+
+Que Ethernet no sea confiable no es un problema: si hace falta, la confiabilidad la pone [[14-Capa de transporte/06 - Protocolo TCP: estructura del segmento, MSS y confirmación acumulativa|TCP]] en los extremos.
 
 ## Preguntas de repaso
 
-> [!question]- ¿Por qué los hosts requieren tanto direcciones IP como direcciones MAC?
-> Porque cumplen roles desacoplados: las direcciones IP son jerárquicas y permiten enrutar paquetes a nivel global a través de múltiples redes arbitrarias; las direcciones MAC son planas e identifican interfaces individuales para el transporte local de trama en trama dentro de un medio físico específico.
+> [!question]- ¿Por qué un host necesita una dirección IP y una MAC?
+> La IP es jerárquica y sirve para llegar al destino final a través de muchas redes. La MAC es plana y sirve para entregar el frame dentro de un enlace, de una tarjeta de red a otra.
 
-> [!question]- ¿Qué ocurre a nivel de tramas cuando un host envía un paquete a otra subred?
-> El paquete IP mantiene las IPs del host emisor y receptor original. Sin embargo, el frame Ethernet de capa de enlace coloca como dirección MAC de destino la interfaz física del router local (*Default Gateway*), el cual desencapsulará la trama y la reenviará hacia el siguiente salto.
+> [!question]- ¿Cómo descubre C la MAC de A si no está en su tabla ARP?
+> Envía un ARP query con la IP de A a `FF-FF-FF-FF-FF-FF`. Todos lo reciben, pero solo A responde con su MAC, y C guarda el par en su tabla.
 
-> [!question]- ¿Por qué los paquetes ARP Request se envían por broadcast mientras que los ARP Reply por unicast?
-> La petición se envía por broadcast porque el emisor desconoce qué interfaz posee esa IP y qué dirección MAC tiene. La respuesta se envía por unicast porque la petición ya incluía la dirección MAC física del emisor original, por lo que el destinatario ya sabe exactamente a quién responder.
+> [!question]- Si `111.111.111.111` envía a `222.222.222.222`, ¿qué MAC de destino lleva el primer frame?
+> La del router (`E6-E9-00-17-BB-4B`). Con la MAC del destino, el frame no saldría de la subred.
+
+> [!question]- ¿Qué hace Ethernet con un frame que llega con error?
+> Lo descarta sin avisar: Ethernet no es confiable, y la retransmisión queda a cargo de capas superiores como TCP.
