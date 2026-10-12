@@ -14,7 +14,7 @@
   },
   "temas": {
     "Estructura de sistemas operativos": {
-      "carpeta": "Sistemas Operativos y Redes/Estructura de sistemas operativos",
+      "carpeta": "Sistemas Operativos y Redes/01-Estructura de sistemas operativos",
       "estado": "hecho",
       "secciones": [
         {
@@ -25,7 +25,7 @@
       ]
     },
     "Procesos": {
-      "carpeta": "Sistemas Operativos y Redes/Procesos",
+      "carpeta": "Sistemas Operativos y Redes/02-Procesos",
       "estado": "hecho",
       "secciones": [
         {
@@ -45,7 +45,7 @@
       ]
     },
     "Planificación de CPU": {
-      "carpeta": "Sistemas Operativos y Redes/Planificación de CPU",
+      "carpeta": "Sistemas Operativos y Redes/03-Planificación de CPU",
       "estado": "hecho",
       "secciones": [
         {
@@ -56,7 +56,7 @@
       ]
     },
     "Señales e IPC": {
-      "carpeta": "Sistemas Operativos y Redes/Señales e IPC",
+      "carpeta": "Sistemas Operativos y Redes/04-Señales e IPC",
       "estado": "hecho",
       "secciones": [
         {
@@ -72,7 +72,7 @@
       ]
     },
     "Hilos": {
-      "carpeta": "Sistemas Operativos y Redes/Hilos",
+      "carpeta": "Sistemas Operativos y Redes/05-Hilos",
       "estado": "hecho",
       "secciones": [
         {
@@ -83,7 +83,7 @@
       ]
     },
     "Sincronización": {
-      "carpeta": "Sistemas Operativos y Redes/Sincronización",
+      "carpeta": "Sistemas Operativos y Redes/06-Sincronización",
       "estado": "hecho",
       "secciones": [
         {
@@ -94,7 +94,7 @@
       ]
     },
     "Administración de memoria": {
-      "carpeta": "Sistemas Operativos y Redes/Administración de memoria",
+      "carpeta": "Sistemas Operativos y Redes/07-Administración de memoria",
       "estado": "hecho",
       "secciones": [
         {
@@ -105,7 +105,7 @@
       ]
     },
     "Paginación y segmentación": {
-      "carpeta": "Sistemas Operativos y Redes/Paginación y segmentación",
+      "carpeta": "Sistemas Operativos y Redes/08-Paginación y segmentación",
       "estado": "hecho",
       "secciones": [
         {
@@ -116,7 +116,7 @@
       ]
     },
     "Memoria virtual": {
-      "carpeta": "Sistemas Operativos y Redes/Memoria virtual",
+      "carpeta": "Sistemas Operativos y Redes/09-Memoria virtual",
       "estado": "hecho",
       "secciones": [
         {
@@ -127,7 +127,7 @@
       ]
     },
     "Sistemas de archivos": {
-      "carpeta": "Sistemas Operativos y Redes/Sistemas de archivos",
+      "carpeta": "Sistemas Operativos y Redes/10-Sistemas de archivos",
       "estado": "hecho",
       "secciones": [
         {
@@ -138,7 +138,7 @@
       ]
     },
     "Implementación de archivos y bloques": {
-      "carpeta": "Sistemas Operativos y Redes/Implementación de archivos y bloques",
+      "carpeta": "Sistemas Operativos y Redes/11-Implementación de archivos y bloques",
       "estado": "hecho",
       "secciones": [
         {
@@ -148,7 +148,7 @@
       ]
     },
     "Fundamentos de redes y modelos en capas": {
-      "carpeta": "Sistemas Operativos y Redes/Fundamentos de redes y modelos en capas",
+      "carpeta": "Sistemas Operativos y Redes/12-Fundamentos de redes y modelos en capas",
       "estado": "hecho",
       "secciones": [
         {
@@ -159,7 +159,7 @@
       ]
     },
     "Capa de aplicación y sockets": {
-      "carpeta": "Sistemas Operativos y Redes/Capa de aplicación y sockets",
+      "carpeta": "Sistemas Operativos y Redes/13-Capa de aplicación y sockets",
       "estado": "hecho",
       "secciones": [
         {
@@ -170,7 +170,7 @@
       ]
     },
     "Capa de transporte": {
-      "carpeta": "Sistemas Operativos y Redes/Capa de transporte",
+      "carpeta": "Sistemas Operativos y Redes/14-Capa de transporte",
       "estado": "hecho",
       "secciones": [
         {
@@ -181,7 +181,7 @@
       ]
     },
     "Capa de red y direccionamiento": {
-      "carpeta": "Sistemas Operativos y Redes/Capa de red y direccionamiento",
+      "carpeta": "Sistemas Operativos y Redes/15-Capa de red y direccionamiento",
       "estado": "hecho",
       "secciones": [
         {
@@ -192,7 +192,7 @@
       ]
     },
     "Algoritmos de ruteo": {
-      "carpeta": "Sistemas Operativos y Redes/Algoritmos de ruteo",
+      "carpeta": "Sistemas Operativos y Redes/16-Algoritmos de ruteo",
       "estado": "hecho",
       "secciones": [
         {
@@ -203,7 +203,7 @@
       ]
     },
     "Capa de enlace y seguridad": {
-      "carpeta": "Sistemas Operativos y Redes/Capa de enlace y seguridad",
+      "carpeta": "Sistemas Operativos y Redes/17-Capa de enlace y seguridad",
       "estado": "hecho",
       "secciones": [
         {
@@ -213,7 +213,7 @@
       ]
     },
     "Gestión del curso": {
-      "carpeta": "Sistemas Operativos y Redes/Gestión del curso",
+      "carpeta": "Sistemas Operativos y Redes/18-Gestión del curso",
       "estado": "hecho",
       "secciones": [
         {

@@ -5,22 +5,22 @@ Rama: `migrar/bases-de-datos`. Un commit por tema. Antes de cada commit se corre
 | # | Tema | Carpeta | Estado | Notas | Imágenes (apuntes + slides) |
 |---|---|---|---|---|---|
 | 0 | Infraestructura multi-ramo (`verificar.py --ramo`, `_meta/<Ramo>/`) | `_meta/` | ✅ hecho | – | – |
-| 1 | Modelo relacional | `Modelo relacional/` | ✅ hecho | 6 + índice | 0 + 3 |
-| 2 | Definición de datos en SQL | `Definición de datos en SQL/` | ✅ hecho | 7 + índice | 0 |
-| 3 | Consultas SQL | `Consultas SQL/` | ✅ hecho | 11 + índice | 0 |
-| 4 | Agregación y subconsultas | `Agregación y subconsultas/` | ✅ hecho | 9 + índice | 0 |
-| 5 | Valores nulos | `Valores nulos/` | ✅ hecho | 4 + índice | 0 |
-| 6 | Diseño entidad-relación | `Diseño entidad-relación/` | ✅ hecho | 6 + índice | 0 + 9 |
-| 7 | Normalización | `Normalización/` | ✅ hecho | 8 + índice | 0 |
-| 8 | Lógica en la base de datos | `Lógica en la base de datos/` | ✅ hecho | 5 + índice | 0 |
-| 9 | Transacciones y concurrencia | `Transacciones y concurrencia/` | ✅ hecho | 12 + índice | 20 + 0 |
-| 10 | Recuperación de fallas | `Recuperación de fallas/` | ✅ hecho | 5 + índice | 0 |
-| 11 | Almacenamiento e índices | `Almacenamiento e índices/` | ✅ hecho | 13 + índice | 10 + 7 |
-| 12 | Evaluación de consultas | `Evaluación de consultas/` | ✅ hecho | 5 + índice | 0 |
-| 13 | Bases de datos en aplicaciones | `Bases de datos en aplicaciones/` | ✅ hecho | 7 + índice | 0 |
-| 14 | NoSQL | `NoSQL/` | ✅ hecho | 5 + índice | 0 |
-| 15 | Privacidad de datos | `Privacidad de datos/` | ✅ hecho | 5 + índice | 0 |
-| 16 | Gestión del curso + mapa final | `Gestión del curso/` | ✅ hecho | 4 + índice | 0 |
+| 1 | Modelo relacional | `01-Modelo relacional/` | ✅ hecho | 6 + índice | 0 + 3 |
+| 2 | Definición de datos en SQL | `02-Definición de datos en SQL/` | ✅ hecho | 7 + índice | 0 |
+| 3 | Consultas SQL | `03-Consultas SQL/` | ✅ hecho | 11 + índice | 0 |
+| 4 | Agregación y subconsultas | `04-Agregación y subconsultas/` | ✅ hecho | 9 + índice | 0 |
+| 5 | Valores nulos | `05-Valores nulos/` | ✅ hecho | 4 + índice | 0 |
+| 6 | Diseño entidad-relación | `06-Diseño entidad-relación/` | ✅ hecho | 6 + índice | 0 + 9 |
+| 7 | Normalización | `07-Normalización/` | ✅ hecho | 8 + índice | 0 |
+| 8 | Lógica en la base de datos | `08-Lógica en la base de datos/` | ✅ hecho | 5 + índice | 0 |
+| 9 | Transacciones y concurrencia | `09-Transacciones y concurrencia/` | ✅ hecho | 12 + índice | 20 + 0 |
+| 10 | Recuperación de fallas | `10-Recuperación de fallas/` | ✅ hecho | 5 + índice | 0 |
+| 11 | Almacenamiento e índices | `11-Almacenamiento e índices/` | ✅ hecho | 13 + índice | 10 + 7 |
+| 12 | Evaluación de consultas | `12-Evaluación de consultas/` | ✅ hecho | 5 + índice | 0 |
+| 13 | Bases de datos en aplicaciones | `13-Bases de datos en aplicaciones/` | ✅ hecho | 7 + índice | 0 |
+| 14 | NoSQL | `14-NoSQL/` | ✅ hecho | 5 + índice | 0 |
+| 15 | Privacidad de datos | `15-Privacidad de datos/` | ✅ hecho | 5 + índice | 0 |
+| 16 | Gestión del curso + mapa final | `16-Gestión del curso/` | ✅ hecho | 4 + índice | 0 |
 
 ## Convenciones
 - Las mismas de Ingeniería de Software: prefijo `NN - ` con orden de estudio por carpeta, wikilinks con alias (`\|` dentro de tablas) e índices enlazados con ruta completa.

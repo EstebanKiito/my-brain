@@ -5,24 +5,24 @@ Rama: `migrar/sistemas-operativos-y-redes`. Un commit por tema. Antes de cada co
 | # | Tema | Carpeta | Estado | Notas | Imágenes (apuntes + slides) |
 |---|---|---|---|---|---|
 | 0 | Infraestructura (`verificar.py`, `_meta/Sistemas Operativos y Redes/`) | `_meta/` | ✅ hecho | – | – |
-| 1 | Estructura de sistemas operativos | `Estructura de sistemas operativos/` | ✅ hecho | 7 + índice | 8 |
-| 2 | Procesos | `Procesos/` | ✅ hecho | 7 + índice | 7 |
-| 3 | Planificación de CPU | `Planificación de CPU/` | ✅ hecho | 5 + índice | 11 |
-| 4 | Señales e IPC | `Señales e IPC/` | ✅ hecho | 3 + índice | 0 |
-| 5 | Hilos | `Hilos/` | ✅ hecho | 3 + índice | 3 |
-| 6 | Sincronización | `Sincronización/` | ✅ hecho | 9 + índice | 25 |
-| 7 | Administración de memoria | `Administración de memoria/` | ✅ hecho | 6 + índice | 16 |
-| 8 | Paginación y segmentación | `Paginación y segmentación/` | ✅ hecho | 7 + índice | 22 |
-| 9 | Memoria virtual | `Memoria virtual/` | ✅ hecho | 4 + índice | 4 |
-| 10 | Sistemas de archivos | `Sistemas de archivos/` | ✅ hecho | 6 + índice | 6 |
-| 11 | Implementación de archivos y bloques | `Implementación de archivos y bloques/` | ✅ hecho | 8 + índice | 12 |
-| 12 | Fundamentos de redes y modelos en capas | `Fundamentos de redes y modelos en capas/` | ✅ hecho | 6 + índice | 11 |
-| 13 | Capa de aplicación y sockets | `Capa de aplicación y sockets/` | ✅ hecho | 6 + índice | 15 |
-| 14 | Capa de transporte | `Capa de transporte/` | ✅ hecho | 7 + índice | 25 |
-| 15 | Capa de red y direccionamiento | `Capa de red y direccionamiento/` | ✅ hecho | 5 + índice | 16 |
-| 16 | Algoritmos de ruteo | `Algoritmos de ruteo/` | ✅ hecho | 3 + índice | 3 |
-| 17 | Capa de enlace y seguridad | `Capa de enlace y seguridad/` | ✅ hecho | 4 + índice | 1 |
-| 18 | Gestión del curso + mapa final | `Gestión del curso/` | ✅ hecho | 4 + índice | 4 |
+| 1 | Estructura de sistemas operativos | `01-Estructura de sistemas operativos/` | ✅ hecho | 7 + índice | 8 |
+| 2 | Procesos | `02-Procesos/` | ✅ hecho | 7 + índice | 7 |
+| 3 | Planificación de CPU | `03-Planificación de CPU/` | ✅ hecho | 5 + índice | 11 |
+| 4 | Señales e IPC | `04-Señales e IPC/` | ✅ hecho | 3 + índice | 0 |
+| 5 | Hilos | `05-Hilos/` | ✅ hecho | 3 + índice | 3 |
+| 6 | Sincronización | `06-Sincronización/` | ✅ hecho | 9 + índice | 25 |
+| 7 | Administración de memoria | `07-Administración de memoria/` | ✅ hecho | 6 + índice | 16 |
+| 8 | Paginación y segmentación | `08-Paginación y segmentación/` | ✅ hecho | 7 + índice | 22 |
+| 9 | Memoria virtual | `09-Memoria virtual/` | ✅ hecho | 4 + índice | 4 |
+| 10 | Sistemas de archivos | `10-Sistemas de archivos/` | ✅ hecho | 6 + índice | 6 |
+| 11 | Implementación de archivos y bloques | `11-Implementación de archivos y bloques/` | ✅ hecho | 8 + índice | 12 |
+| 12 | Fundamentos de redes y modelos en capas | `12-Fundamentos de redes y modelos en capas/` | ✅ hecho | 6 + índice | 11 |
+| 13 | Capa de aplicación y sockets | `13-Capa de aplicación y sockets/` | ✅ hecho | 6 + índice | 15 |
+| 14 | Capa de transporte | `14-Capa de transporte/` | ✅ hecho | 7 + índice | 25 |
+| 15 | Capa de red y direccionamiento | `15-Capa de red y direccionamiento/` | ✅ hecho | 5 + índice | 16 |
+| 16 | Algoritmos de ruteo | `16-Algoritmos de ruteo/` | ✅ hecho | 3 + índice | 3 |
+| 17 | Capa de enlace y seguridad | `17-Capa de enlace y seguridad/` | ✅ hecho | 4 + índice | 1 |
+| 18 | Gestión del curso + mapa final | `18-Gestión del curso/` | ✅ hecho | 4 + índice | 4 |
 
 ## Convenciones
 - Las mismas de Bases de Datos e Ingeniería de Software: prefijo `NN - ` con orden de estudio por carpeta, wikilinks con alias (`\|` dentro de tablas) e índices enlazados con ruta completa.

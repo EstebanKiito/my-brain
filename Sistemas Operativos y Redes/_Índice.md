@@ -12,24 +12,24 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: no hace fal
 ## Temas
 | Tema | Qué cubre |
 |---|---|
-| [[Sistemas Operativos y Redes/Estructura de sistemas operativos/_Índice\|Estructura de sistemas operativos]] | Qué es un SO, modos de operación (dual-mode, Ring 0 a 3), kernel monolítico vs microkernel, interrupciones, syscalls, arranque (BIOS/UEFI, GRUB) y multitasking |
-| [[Sistemas Operativos y Redes/Procesos/_Índice\|Procesos]] | Concepto de proceso, espacio de memoria (text, data, heap, stack), PCB, estados, cambio de contexto, creación con fork/exec/wait |
-| [[Sistemas Operativos y Redes/Planificación de CPU/_Índice|Planificación de CPU]] | Niveles de planificación (largo, mediano y corto plazo), métricas, FCFS, SJF, Round Robin y colas multinivel con retroalimentación (MLFQ) |
-| [[Sistemas Operativos y Redes/Señales e IPC/_Índice|Señales e IPC]] | Señales UNIX (SIGINT, SIGTERM, SIGKILL, SIGSTOP, SIGCONT), handlers en C, máscaras e introducción a IPC (pipes) |
-| [[Sistemas Operativos y Redes/Hilos/_Índice|Hilos]] | Threads vs procesos, recursos compartidos vs privados, estándar POSIX Threads (pthreads), hilos en espacio de usuario vs kernel |
-| [[Sistemas Operativos y Redes/Sincronización/_Índice|Sincronización]] | Condiciones de carrera, sección crítica, exclusión mutua, hardware (Test-and-Set), mutex, semáforos, problemas clásicos y deadlocks |
-| [[Sistemas Operativos y Redes/Administración de memoria/_Índice|Administración de memoria]] | Jerarquía de memoria, direcciones lógicas vs físicas, MMU, registros base y límite, particiones y fragmentación |
-| [[Sistemas Operativos y Redes/Paginación y segmentación/_Índice|Paginación y segmentación]] | Segmentos, páginas y marcos, tabla de páginas, TLB, tiempo efectivo de acceso, paginación multinivel |
-| [[Sistemas Operativos y Redes/Memoria virtual/_Índice|Memoria virtual]] | Paginación por demanda, fallos de página (page faults), algoritmos de reemplazo (FIFO, Belady, Óptimo, LRU, Clock) y thrashing |
-| [[Sistemas Operativos y Redes/Sistemas de archivos/_Índice|Sistemas de archivos]] | Archivos, operaciones, discos magnéticos y SSDs, particionamiento, formateo lógico y estructura de directorios |
-| [[Sistemas Operativos y Redes/Implementación de archivos y bloques/_Índice|Implementación de archivos y bloques]] | Hard links vs symlinks, asignación contigua, enlazada e indexada (inodos UNIX), gestión de espacio libre |
-| [[Sistemas Operativos y Redes/Fundamentos de redes y modelos en capas/_Índice|Fundamentos de redes y modelos en capas]] | Modelos OSI y TCP/IP, ancho de banda, latencia, encapsulación y arquitectura de Internet |
-| [[Sistemas Operativos y Redes/Capa de aplicación y sockets/_Índice|Capa de aplicación y sockets]] | Sockets TCP y UDP, llamadas al sistema, protocolos HTTP, FTP, DNS, cookies, y redes P2P BitTorrent |
-| [[Sistemas Operativos y Redes/Capa de transporte/_Índice|Capa de transporte]] | Puertos, multiplexación, protocolo UDP, evolución rdt, Go-Back-N, Selective Repeat y TCP con 3-way handshake |
-| [[Sistemas Operativos y Redes/Capa de red y direccionamiento/_Índice|Capa de red y direccionamiento]] | Direccionamiento IPv4 y IPv6, fragmentación por MTU, máscaras, CIDR, DHCP, NAT e ICMP |
-| [[Sistemas Operativos y Redes/Algoritmos de ruteo/_Índice|Algoritmos de ruteo]] | Ruteo intra-dominio e inter-dominio, Link-State (Dijkstra), Distance-Vector (Bellman-Ford), y Sistemas Autónomos |
-| [[Sistemas Operativos y Redes/Capa de enlace y seguridad/_Índice|Capa de enlace y seguridad]] | Tramas, direcciones MAC, Ethernet, switches, protocolo ARP, CSMA/CD y fundamentos de seguridad |
-| [[Sistemas Operativos y Redes/Gestión del curso/_Índice|Gestión del curso]] | Evaluaciones, tareas, resumen midterm y preparación para exámenes |
+| [[Sistemas Operativos y Redes/01-Estructura de sistemas operativos/_Índice\|Estructura de sistemas operativos]] | Qué es un SO, modos de operación (dual-mode, Ring 0 a 3), kernel monolítico vs microkernel, interrupciones, syscalls, arranque (BIOS/UEFI, GRUB) y multitasking |
+| [[Sistemas Operativos y Redes/02-Procesos/_Índice\|Procesos]] | Concepto de proceso, espacio de memoria (text, data, heap, stack), PCB, estados, cambio de contexto, creación con fork/exec/wait |
+| [[Sistemas Operativos y Redes/03-Planificación de CPU/_Índice|Planificación de CPU]] | Niveles de planificación (largo, mediano y corto plazo), métricas, FCFS, SJF, Round Robin y colas multinivel con retroalimentación (MLFQ) |
+| [[Sistemas Operativos y Redes/04-Señales e IPC/_Índice|Señales e IPC]] | Señales UNIX (SIGINT, SIGTERM, SIGKILL, SIGSTOP, SIGCONT), handlers en C, máscaras e introducción a IPC (pipes) |
+| [[Sistemas Operativos y Redes/05-Hilos/_Índice|Hilos]] | Threads vs procesos, recursos compartidos vs privados, estándar POSIX Threads (pthreads), hilos en espacio de usuario vs kernel |
+| [[Sistemas Operativos y Redes/06-Sincronización/_Índice|Sincronización]] | Condiciones de carrera, sección crítica, exclusión mutua, hardware (Test-and-Set), mutex, semáforos, problemas clásicos y deadlocks |
+| [[Sistemas Operativos y Redes/07-Administración de memoria/_Índice|Administración de memoria]] | Jerarquía de memoria, direcciones lógicas vs físicas, MMU, registros base y límite, particiones y fragmentación |
+| [[Sistemas Operativos y Redes/08-Paginación y segmentación/_Índice|Paginación y segmentación]] | Segmentos, páginas y marcos, tabla de páginas, TLB, tiempo efectivo de acceso, paginación multinivel |
+| [[Sistemas Operativos y Redes/09-Memoria virtual/_Índice|Memoria virtual]] | Paginación por demanda, fallos de página (page faults), algoritmos de reemplazo (FIFO, Belady, Óptimo, LRU, Clock) y thrashing |
+| [[Sistemas Operativos y Redes/10-Sistemas de archivos/_Índice|Sistemas de archivos]] | Archivos, operaciones, discos magnéticos y SSDs, particionamiento, formateo lógico y estructura de directorios |
+| [[Sistemas Operativos y Redes/11-Implementación de archivos y bloques/_Índice|Implementación de archivos y bloques]] | Hard links vs symlinks, asignación contigua, enlazada e indexada (inodos UNIX), gestión de espacio libre |
+| [[Sistemas Operativos y Redes/12-Fundamentos de redes y modelos en capas/_Índice|Fundamentos de redes y modelos en capas]] | Modelos OSI y TCP/IP, ancho de banda, latencia, encapsulación y arquitectura de Internet |
+| [[Sistemas Operativos y Redes/13-Capa de aplicación y sockets/_Índice|Capa de aplicación y sockets]] | Sockets TCP y UDP, llamadas al sistema, protocolos HTTP, FTP, DNS, cookies, y redes P2P BitTorrent |
+| [[Sistemas Operativos y Redes/14-Capa de transporte/_Índice|Capa de transporte]] | Puertos, multiplexación, protocolo UDP, evolución rdt, Go-Back-N, Selective Repeat y TCP con 3-way handshake |
+| [[Sistemas Operativos y Redes/15-Capa de red y direccionamiento/_Índice|Capa de red y direccionamiento]] | Direccionamiento IPv4 y IPv6, fragmentación por MTU, máscaras, CIDR, DHCP, NAT e ICMP |
+| [[Sistemas Operativos y Redes/16-Algoritmos de ruteo/_Índice|Algoritmos de ruteo]] | Ruteo intra-dominio e inter-dominio, Link-State (Dijkstra), Distance-Vector (Bellman-Ford), y Sistemas Autónomos |
+| [[Sistemas Operativos y Redes/17-Capa de enlace y seguridad/_Índice|Capa de enlace y seguridad]] | Tramas, direcciones MAC, Ethernet, switches, protocolo ARP, CSMA/CD y fundamentos de seguridad |
+| [[Sistemas Operativos y Redes/18-Gestión del curso/_Índice|Gestión del curso]] | Evaluaciones, tareas, resumen midterm y preparación para exámenes |
 
 ## Ruta de estudio sugerida
 1. **Estructura de sistemas operativos → Procesos → Hilos:** La base del sistema, cómo se pasa a modo kernel y cómo se ejecutan las unidades de computación.

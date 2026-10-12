@@ -7,22 +7,22 @@ Desde la migración de Bases de Datos, la configuración de este ramo vive en `_
 | # | Tema | Carpeta | Estado | Notas | Imágenes (apuntes + slides) |
 |---|---|---|---|---|---|
 | 0 | Infraestructura (`verificar.py`, mapeo, índices) | `_meta/` | ✅ hecho | – | – |
-| 1 | Procesos de desarrollo | `Procesos de desarrollo/` | ✅ hecho | 12 + índice | 9 + 4 |
-| 2 | Scrum | `Scrum y gestión ágil/Scrum/` | ✅ hecho | 11 + índice | 1 + 8 |
-| 3 | Historias de usuario | `Scrum y gestión ágil/Historias de usuario/` | ✅ hecho | 7 + índice | 0 |
-| 4 | Planificación y estimación | `Scrum y gestión ágil/Planificación y estimación/` | ✅ hecho | 10 + índice | 0 + 6 |
-| 5 | Ruby | `Ruby/` | ✅ hecho | 8 + índice | 0 |
-| 6 | Programación orientada a objetos | `Programación orientada a objetos/` | ✅ hecho | 13 + índice | 0 |
-| 7 | Fundamentos web | `Desarrollo web con Rails/Fundamentos web/` | ✅ hecho | 4 + índice | 0 |
-| 8 | Rails | `Desarrollo web con Rails/Rails/` | ✅ hecho | 15 + índice | 4 |
-| 9 | Testing | `Testing/` | ✅ hecho | 9 + índice | 6 |
-| 10 | UML | `Diseño y UML/UML/` | ✅ hecho | 7 + índice | 11 |
-| 11 | Principios de diseño | `Diseño y UML/Principios de diseño/` | ✅ hecho | 9 + índice | 6 |
-| 12 | Patrones de comportamiento | `Patrones de Diseño/Comportamiento/` | ✅ hecho | 6 + 1 general + 1 comparación + 2 ejercicios | 14 |
-| 13 | Patrones estructurales | `Patrones de Diseño/Estructurales/` | ✅ hecho | 6 + 1 comparación + 2 ejercicios | 22 |
-| 14 | Patrones creacionales | `Patrones de Diseño/Creacionales/` | ✅ hecho | 7 + 1 comparación | 6 |
-| 15 | Arquitectura de software | `Arquitectura de software/` | ✅ hecho | 7 + índice | 0 + 14 |
-| 16 | Fundamentos + Gestión del curso + mapa final | `Fundamentos/`, `Gestión del curso/` | ✅ hecho | 3 + 5 + índices | 0 + 4 + libro PDF |
+| 1 | Procesos de desarrollo | `01-Procesos de desarrollo/` | ✅ hecho | 12 + índice | 9 + 4 |
+| 2 | Scrum | `02-Scrum y gestión ágil/Scrum/` | ✅ hecho | 11 + índice | 1 + 8 |
+| 3 | Historias de usuario | `02-Scrum y gestión ágil/Historias de usuario/` | ✅ hecho | 7 + índice | 0 |
+| 4 | Planificación y estimación | `02-Scrum y gestión ágil/Planificación y estimación/` | ✅ hecho | 10 + índice | 0 + 6 |
+| 5 | Ruby | `03-Ruby/` | ✅ hecho | 8 + índice | 0 |
+| 6 | Programación orientada a objetos | `04-Programación orientada a objetos/` | ✅ hecho | 13 + índice | 0 |
+| 7 | Fundamentos web | `05-Desarrollo web con Rails/Fundamentos web/` | ✅ hecho | 4 + índice | 0 |
+| 8 | Rails | `05-Desarrollo web con Rails/Rails/` | ✅ hecho | 15 + índice | 4 |
+| 9 | Testing | `06-Testing/` | ✅ hecho | 9 + índice | 6 |
+| 10 | UML | `07-Diseño y UML/UML/` | ✅ hecho | 7 + índice | 11 |
+| 11 | Principios de diseño | `07-Diseño y UML/Principios de diseño/` | ✅ hecho | 9 + índice | 6 |
+| 12 | Patrones de comportamiento | `08-Patrones de Diseño/Comportamiento/` | ✅ hecho | 6 + 1 general + 1 comparación + 2 ejercicios | 14 |
+| 13 | Patrones estructurales | `08-Patrones de Diseño/Estructurales/` | ✅ hecho | 6 + 1 comparación + 2 ejercicios | 22 |
+| 14 | Patrones creacionales | `08-Patrones de Diseño/Creacionales/` | ✅ hecho | 7 + 1 comparación | 6 |
+| 15 | Arquitectura de software | `09-Arquitectura de software/` | ✅ hecho | 7 + índice | 0 + 14 |
+| 16 | Fundamentos + Gestión del curso + mapa final | `10-Fundamentos/`, `11-Gestión del curso/` | ✅ hecho | 3 + 5 + índices | 0 + 4 + libro PDF |
 
 ## Convenciones
 - Cada nota lleva un prefijo `NN - ` con su orden de estudio dentro de la carpeta (`01 - …`, `02 - …`). El `_Índice.md` de la carpeta lista las notas en ese mismo orden.
@@ -35,7 +35,7 @@ Desde la migración de Bases de Datos, la configuración de este ramo vive en `_
 - **2026-10-09 — Orden de estudio.** Se renumeraron las 12 notas de Procesos con prefijo `NN - ` y se actualizaron todos los wikilinks.
 - **2026-10-09 — Scrum.**
   - Fuente: "Resumen Software Pt 1", §5 SCRUM (46 bloques, 1 imagen); complementos de las slides "SCRUM - una introducción rápida", el libro del curso (cap. 3) y la Scrum Guide 2020.
-  - Las imágenes de `Scrum y gestión ágil/` se comparten en `Scrum y gestión ágil/adjuntos/` (`"adjuntos"` en mapeo.json).
+  - Las imágenes de `02-Scrum y gestión ágil/` se comparten en `02-Scrum y gestión ágil/adjuntos/` (`"adjuntos"` en mapeo.json).
   - Verificación: 0 errores, 0 advertencias. Cobertura: 37 exactos + 9 reformulados, 0 sin cubrir.
 - **2026-10-09 — Historias de usuario.**
   - Fuente: "Resumen Software Pt 1", §7 Relatos de usuario (13 bloques, sin imágenes); complementos de las slides "Historias de Usuario" y del libro del curso, cap. 4.

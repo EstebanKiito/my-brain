@@ -10,7 +10,7 @@
   },
   "temas": {
     "Modelo relacional": {
-      "carpeta": "Bases de Datos/Modelo relacional",
+      "carpeta": "Bases de Datos/01-Modelo relacional",
       "estado": "hecho",
       "secciones": [
         {
@@ -26,7 +26,7 @@
       ]
     },
     "Definición de datos en SQL": {
-      "carpeta": "Bases de Datos/Definición de datos en SQL",
+      "carpeta": "Bases de Datos/02-Definición de datos en SQL",
       "estado": "hecho",
       "secciones": [
         {
@@ -46,7 +46,7 @@
       ]
     },
     "Consultas SQL": {
-      "carpeta": "Bases de Datos/Consultas SQL",
+      "carpeta": "Bases de Datos/03-Consultas SQL",
       "estado": "hecho",
       "secciones": [
         {
@@ -67,7 +67,7 @@
       ]
     },
     "Agregación y subconsultas": {
-      "carpeta": "Bases de Datos/Agregación y subconsultas",
+      "carpeta": "Bases de Datos/04-Agregación y subconsultas",
       "estado": "hecho",
       "secciones": [
         {
@@ -78,7 +78,7 @@
       ]
     },
     "Valores nulos": {
-      "carpeta": "Bases de Datos/Valores nulos",
+      "carpeta": "Bases de Datos/05-Valores nulos",
       "estado": "hecho",
       "secciones": [
         {
@@ -89,12 +89,12 @@
       ]
     },
     "Diseño entidad-relación": {
-      "carpeta": "Bases de Datos/Diseño entidad-relación",
+      "carpeta": "Bases de Datos/06-Diseño entidad-relación",
       "estado": "hecho",
       "secciones": []
     },
     "Normalización": {
-      "carpeta": "Bases de Datos/Normalización",
+      "carpeta": "Bases de Datos/07-Normalización",
       "estado": "hecho",
       "secciones": [
         {
@@ -105,7 +105,7 @@
       ]
     },
     "Lógica en la base de datos": {
-      "carpeta": "Bases de Datos/Lógica en la base de datos",
+      "carpeta": "Bases de Datos/08-Lógica en la base de datos",
       "estado": "hecho",
       "secciones": [
         {
@@ -116,7 +116,7 @@
       ]
     },
     "Transacciones y concurrencia": {
-      "carpeta": "Bases de Datos/Transacciones y concurrencia",
+      "carpeta": "Bases de Datos/09-Transacciones y concurrencia",
       "estado": "hecho",
       "secciones": [
         {
@@ -127,7 +127,7 @@
       ]
     },
     "Recuperación de fallas": {
-      "carpeta": "Bases de Datos/Recuperación de fallas",
+      "carpeta": "Bases de Datos/10-Recuperación de fallas",
       "estado": "hecho",
       "secciones": [
         {
@@ -138,7 +138,7 @@
       ]
     },
     "Almacenamiento e índices": {
-      "carpeta": "Bases de Datos/Almacenamiento e índices",
+      "carpeta": "Bases de Datos/11-Almacenamiento e índices",
       "estado": "hecho",
       "secciones": [
         {
@@ -153,27 +153,27 @@
       ]
     },
     "Evaluación de consultas": {
-      "carpeta": "Bases de Datos/Evaluación de consultas",
+      "carpeta": "Bases de Datos/12-Evaluación de consultas",
       "estado": "hecho",
       "secciones": []
     },
     "Bases de datos en aplicaciones": {
-      "carpeta": "Bases de Datos/Bases de datos en aplicaciones",
+      "carpeta": "Bases de Datos/13-Bases de datos en aplicaciones",
       "estado": "hecho",
       "secciones": []
     },
     "NoSQL": {
-      "carpeta": "Bases de Datos/NoSQL",
+      "carpeta": "Bases de Datos/14-NoSQL",
       "estado": "hecho",
       "secciones": []
     },
     "Privacidad de datos": {
-      "carpeta": "Bases de Datos/Privacidad de datos",
+      "carpeta": "Bases de Datos/15-Privacidad de datos",
       "estado": "hecho",
       "secciones": []
     },
     "Gestión del curso": {
-      "carpeta": "Bases de Datos/Gestión del curso",
+      "carpeta": "Bases de Datos/16-Gestión del curso",
       "estado": "hecho",
       "secciones": [
         {

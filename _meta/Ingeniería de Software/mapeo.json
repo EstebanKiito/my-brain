@@ -12,7 +12,7 @@
   },
   "temas": {
     "Procesos de desarrollo": {
-      "carpeta": "Ingeniería de Software/Procesos de desarrollo",
+      "carpeta": "Ingeniería de Software/01-Procesos de desarrollo",
       "estado": "hecho",
       "secciones": [
         {
@@ -23,8 +23,8 @@
       ]
     },
     "Scrum": {
-      "carpeta": "Ingeniería de Software/Scrum y gestión ágil/Scrum",
-      "adjuntos": "Ingeniería de Software/Scrum y gestión ágil/adjuntos",
+      "carpeta": "Ingeniería de Software/02-Scrum y gestión ágil/Scrum",
+      "adjuntos": "Ingeniería de Software/02-Scrum y gestión ágil/adjuntos",
       "estado": "hecho",
       "secciones": [
         {
@@ -35,7 +35,7 @@
       ]
     },
     "Historias de usuario": {
-      "carpeta": "Ingeniería de Software/Scrum y gestión ágil/Historias de usuario",
+      "carpeta": "Ingeniería de Software/02-Scrum y gestión ágil/Historias de usuario",
       "estado": "hecho",
       "secciones": [
         {
@@ -44,10 +44,10 @@
           "hasta": "8. Estimaciones"
         }
       ],
-      "adjuntos": "Ingeniería de Software/Scrum y gestión ágil/adjuntos"
+      "adjuntos": "Ingeniería de Software/02-Scrum y gestión ágil/adjuntos"
     },
     "Planificación y estimación": {
-      "carpeta": "Ingeniería de Software/Scrum y gestión ágil/Planificación y estimación",
+      "carpeta": "Ingeniería de Software/02-Scrum y gestión ágil/Planificación y estimación",
       "estado": "hecho",
       "secciones": [
         {
@@ -55,10 +55,10 @@
           "desde": "8. Estimaciones"
         }
       ],
-      "adjuntos": "Ingeniería de Software/Scrum y gestión ágil/adjuntos"
+      "adjuntos": "Ingeniería de Software/02-Scrum y gestión ágil/adjuntos"
     },
     "Ruby": {
-      "carpeta": "Ingeniería de Software/Ruby",
+      "carpeta": "Ingeniería de Software/03-Ruby",
       "estado": "hecho",
       "secciones": [
         {
@@ -75,7 +75,7 @@
       ]
     },
     "Programación orientada a objetos": {
-      "carpeta": "Ingeniería de Software/Programación orientada a objetos",
+      "carpeta": "Ingeniería de Software/04-Programación orientada a objetos",
       "estado": "hecho",
       "secciones": [
         {
@@ -86,7 +86,7 @@
       ]
     },
     "Fundamentos web": {
-      "carpeta": "Ingeniería de Software/Desarrollo web con Rails/Fundamentos web",
+      "carpeta": "Ingeniería de Software/05-Desarrollo web con Rails/Fundamentos web",
       "estado": "hecho",
       "secciones": [
         {
@@ -97,7 +97,7 @@
       ]
     },
     "Rails": {
-      "carpeta": "Ingeniería de Software/Desarrollo web con Rails/Rails",
+      "carpeta": "Ingeniería de Software/05-Desarrollo web con Rails/Rails",
       "estado": "hecho",
       "secciones": [
         {
@@ -121,10 +121,10 @@
           "hasta": "Historias de Usuario (mías):"
         }
       ],
-      "adjuntos": "Ingeniería de Software/Desarrollo web con Rails/adjuntos"
+      "adjuntos": "Ingeniería de Software/05-Desarrollo web con Rails/adjuntos"
     },
     "Testing": {
-      "carpeta": "Ingeniería de Software/Testing",
+      "carpeta": "Ingeniería de Software/06-Testing",
       "estado": "hecho",
       "secciones": [
         {
@@ -135,7 +135,7 @@
       ]
     },
     "UML": {
-      "carpeta": "Ingeniería de Software/Diseño y UML/UML",
+      "carpeta": "Ingeniería de Software/07-Diseño y UML/UML",
       "estado": "hecho",
       "secciones": [
         {
@@ -144,10 +144,10 @@
           "hasta": "12. Testing"
         }
       ],
-      "adjuntos": "Ingeniería de Software/Diseño y UML/adjuntos"
+      "adjuntos": "Ingeniería de Software/07-Diseño y UML/adjuntos"
     },
     "Principios de diseño": {
-      "carpeta": "Ingeniería de Software/Diseño y UML/Principios de diseño",
+      "carpeta": "Ingeniería de Software/07-Diseño y UML/Principios de diseño",
       "estado": "hecho",
       "secciones": [
         {
@@ -156,10 +156,10 @@
           "hasta": "15. Patrones de Diseño ( COMPORTAMIENTO )"
         }
       ],
-      "adjuntos": "Ingeniería de Software/Diseño y UML/adjuntos"
+      "adjuntos": "Ingeniería de Software/07-Diseño y UML/adjuntos"
     },
     "Patrones de comportamiento": {
-      "carpeta": "Ingeniería de Software/Patrones de Diseño",
+      "carpeta": "Ingeniería de Software/08-Patrones de Diseño",
       "estado": "hecho",
       "secciones": [
         {
@@ -168,10 +168,10 @@
           "hasta": "16. Patrones de Diseño (ESTRUCTURALES)"
         }
       ],
-      "adjuntos": "Ingeniería de Software/Patrones de Diseño/adjuntos"
+      "adjuntos": "Ingeniería de Software/08-Patrones de Diseño/adjuntos"
     },
     "Patrones estructurales": {
-      "carpeta": "Ingeniería de Software/Patrones de Diseño",
+      "carpeta": "Ingeniería de Software/08-Patrones de Diseño",
       "estado": "hecho",
       "secciones": [
         {
@@ -180,10 +180,10 @@
           "hasta": "17. Patrones Diseño (CREACIONALES)"
         }
       ],
-      "adjuntos": "Ingeniería de Software/Patrones de Diseño/adjuntos"
+      "adjuntos": "Ingeniería de Software/08-Patrones de Diseño/adjuntos"
     },
     "Patrones creacionales": {
-      "carpeta": "Ingeniería de Software/Patrones de Diseño",
+      "carpeta": "Ingeniería de Software/08-Patrones de Diseño",
       "estado": "hecho",
       "secciones": [
         {
@@ -191,10 +191,10 @@
           "desde": "17. Patrones Diseño (CREACIONALES)"
         }
       ],
-      "adjuntos": "Ingeniería de Software/Patrones de Diseño/adjuntos"
+      "adjuntos": "Ingeniería de Software/08-Patrones de Diseño/adjuntos"
     },
     "Arquitectura de software": {
-      "carpeta": "Ingeniería de Software/Arquitectura de software",
+      "carpeta": "Ingeniería de Software/09-Arquitectura de software",
       "estado": "hecho",
       "secciones": []
     },
