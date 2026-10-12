@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 41 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 08-Paginación y segmentación/02 - Translation Lookaside Buffer (TLB) y tiempo de acceso efectivo.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 42 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 08-Paginación y segmentación/03 - Localidad de referencia y gestión de TLB con ASID en cambios de contexto.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -55,7 +55,7 @@ Reescritas hasta ahora: 41 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 39 | 07-Administración de memoria/06 - Aritmética de bits y máscara de segmento en traducción de direcciones.md | reescrita | 84 líneas; 2 imágenes; C ok |
 | 40 | 08-Paginación y segmentación/01 - Fundamentos de paginación, marcos y tabla de páginas.md | reescrita | 110 líneas; 4 imágenes; Python ok |
 | 41 | 08-Paginación y segmentación/02 - Translation Lookaside Buffer (TLB) y tiempo de acceso efectivo.md | reescrita | 102 líneas; 3 imágenes; Python y C ok |
-| 42 | 08-Paginación y segmentación/03 - Localidad de referencia y gestión de TLB con ASID en cambios de contexto.md | pendiente | |
+| 42 | 08-Paginación y segmentación/03 - Localidad de referencia y gestión de TLB con ASID en cambios de contexto.md | reescrita | 70 líneas; 1 imagen |
 | 43 | 08-Paginación y segmentación/04 - Sobrecarga de tablas lineales y compromiso de fragmentación interna.md | pendiente | |
 | 44 | 08-Paginación y segmentación/05 - Arquitectura de segmentos paginados.md | pendiente | |
 | 45 | 08-Paginación y segmentación/06 - Paginación multinivel y tablas de páginas invertidas.md | pendiente | |
@@ -172,3 +172,4 @@ Reescritas hasta ahora: 41 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **07/06 Máscaras de segmento**: 84 líneas, 2 imágenes comprobadas (la segunda es un dibujo a mano de las 4 franjas 0-3; la transcripción anterior inventaba "10 = Stack, 11 = reservado"). Tabla de pasos con máscara 0x3000, shift 12 y máscara 0xFFF, tomados del material. Código C con las máscaras: 4200 → seg 1, off 104. Se conservó el "¿magia? No, lógica" (4096 + 104 = 4200). Se quitó "Investigar → Máscara de segmento". Sin dudas nuevas.
 - **08/01 Paginación**: 110 líneas, 4 imágenes comprobadas, todas con transcripción nueva (las anteriores eran genéricas; p. ej., la cuarta es el hardware de paginación de Silberschatz, no un diagrama de "duplicación"). Tabla de bits del ejemplo de 64/128 B tomada de tus apuntes. Traductor Python: 21 → 117 (`010101` → `1110101`), igual que la figura. Se quitaron "Clase 7", la fecha, "pregunta de prueba" e "importante para la tarea". Sin dudas nuevas.
 - **08/02 TLB**: 102 líneas, 3 imágenes comprobadas (dos son dibujos a mano del arreglo, con Miss/Hit anotados; la primera es el diagrama de TLB de Silberschatz). Tabla con 20 accesos sin TLB y 13 con TLB, del material de clase. Simulador Python del hit rate: 70% con páginas de 16 B y 80% con 32 B. Cálculo de 131 ns y aceleración 1,52 del material, más el EAT con 99%. El fragmento C del bucle compila. La localidad se dejó enlazada a 08/03 para no duplicar. Sin dudas nuevas.
+- **08/03 Localidad y ASID**: 70 líneas, 1 imagen comprobada (es el formato de la entrada de TLB de MIPS; la transcripción anterior inventaba una tabla con VPN 10/50 y PFN 100/170/204). Tabla de localidad espacial/temporal y la explicación de flush frente a ASID, del material (incluido el PTBR). La tabla de ejemplo con el caso "página 0 → frame 255" sale de tus apuntes. Se quitaron "Clase 8" y la fecha. Sin dudas nuevas.
