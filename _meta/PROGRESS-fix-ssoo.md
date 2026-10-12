@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 67 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 11-Implementación de archivos y bloques/08 - Administración del espacio libre en disco: mapas de bits y listas enlazadas.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 68 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 13-Capa de aplicación y sockets/01 - Arquitecturas de aplicación y modelos de comunicación.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -84,7 +84,7 @@ Reescritas hasta ahora: 67 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 65 | 12-Fundamentos de redes y modelos en capas/04 - Modelos de capas: modelo de referencia OSI frente al stack TCP-IP.md | reescrita | 67 líneas; 1 imagen |
 | 66 | 12-Fundamentos de redes y modelos en capas/05 - Capas de transporte, red, enlace y física.md | reescrita | 80 líneas; Mermaid ok |
 | 67 | 12-Fundamentos de redes y modelos en capas/06 - Proceso de encapsulamiento y flujo de datos en la red.md | reescrita | 66 líneas; 1 imagen; Mermaid ok |
-| 68 | 13-Capa de aplicación y sockets/01 - Arquitecturas de aplicación y modelos de comunicación.md | pendiente | |
+| 68 | 13-Capa de aplicación y sockets/01 - Arquitecturas de aplicación y modelos de comunicación.md | reescrita | 80 líneas; 1 imagen |
 | 69 | 13-Capa de aplicación y sockets/02 - Concepto de socket e identificación por IP y puerto.md | pendiente | |
 | 70 | 13-Capa de aplicación y sockets/03 - Sockets UDP y TCP: modelos y llamadas al sistema.md | pendiente | |
 | 71 | 13-Capa de aplicación y sockets/04 - Protocolo HTTP, formato de mensajes y estado con cookies.md | pendiente | |
@@ -201,3 +201,4 @@ Reescritas hasta ahora: 67 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **12/05 Capas inferiores**: 80 líneas, sin imágenes, Mermaid (válido) de la pila con las unidades de cada capa, tabla TCP/UDP y una sección por capa con el contenido del material. Enlaces a las notas de cada capa (14, 15, 17, 12/02). Duda ℹ️ sobre IGMP.
 - **12/06 Encapsulamiento**: 66 líneas, 1 imagen comprobada (Kurose; estaba anidada en un callout). Tabla de unidades y headers, recorrido por switch (2 capas) y router (3 capas) de tus apuntes, y un Mermaid (válido). Sin dudas nuevas.
 - **Verificación completa al cerrar las carpetas 10 y 11** (terminaron 13:57 y 14:27): sin errores nuevos en [1], [2] ni [5].
+- **13/01 Arquitecturas de aplicación**: 80 líneas, 1 imagen comprobada (Server-based frente a P2P-network; la transcripción anterior atribuía a la figura texto que no tiene). Tabla de capas y tabla cliente-servidor/P2P con los desafíos del material (ISP friendly, seguridad). "ICP friendly" se corrigió a ISP friendly. Ejemplo numérico de distribución con las fórmulas de Kurose, calculado con Python. Se quitaron "CLASE 3", la fecha y "Pregunta Prueba". Sin dudas nuevas.
