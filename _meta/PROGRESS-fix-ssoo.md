@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 46 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 08-Paginación y segmentación/07 - Introducción al intercambio por demanda y ciclo de fallos de página.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 47 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 09-Memoria virtual/01 - Fundamentos de memoria virtual y espacio de intercambio (swap).md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -60,7 +60,7 @@ Reescritas hasta ahora: 46 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 44 | 08-Paginación y segmentación/05 - Arquitectura de segmentos paginados.md | reescrita | 96 líneas; 2 imágenes; Python ok |
 | 45 | 08-Paginación y segmentación/06 - Paginación multinivel y tablas de páginas invertidas.md | reescrita | 128 líneas; 10 imágenes |
 | 46 | 08-Paginación y segmentación/07 - Introducción al intercambio por demanda y ciclo de fallos de página.md | reescrita | 81 líneas; 1 imagen; Mermaid ok |
-| 47 | 09-Memoria virtual/01 - Fundamentos de memoria virtual y espacio de intercambio (swap).md | pendiente | |
+| 47 | 09-Memoria virtual/01 - Fundamentos de memoria virtual y espacio de intercambio (swap).md | reescrita | 77 líneas; Mermaid ok |
 | – | 09-Memoria virtual/02 - Algoritmos de reemplazo FIFO, Óptimo (Belady) y anomalía de Belady.md | sin marca | nota modelo |
 | – | 09-Memoria virtual/03 - Algoritmo LRU e implementaciones con hardware y software.md | sin marca | nota modelo |
 | – | 09-Memoria virtual/04 - Algoritmo del reloj (Clock) y aproximaciones prácticas de LRU.md | sin marca | nota modelo |
@@ -178,3 +178,4 @@ Reescritas hasta ahora: 46 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **08/05 Segmentos paginados**: 96 líneas, 2 imágenes comprobadas (la primera es el formato de dirección Seg/VPN/Offset de 32 bits y la segunda un dibujo a mano S0-S3; las transcripciones anteriores describían un algoritmo que no está en las figuras). El 75% de entradas vacías y base/límite = dirección de tabla/número de páginas salen del material de clase, igual que "vuelve la fragmentación externa". Traductor Python con verificación de límite. La frase de los apuntes "los segmentos tienen tamaño fijo a diferencia del heap" se reformuló como "un segmento no usa todas sus páginas posibles". Sin dudas nuevas.
 - **08/06 Multinivel e invertida**: 128 líneas, 10 imágenes comprobadas, todas con transcripción nueva. Las anteriores eran inventadas: hablaban de "48 entradas" y "87% de ahorro", cuando la figura a mano dice \|T1\| + \|T2\| = 32 PTE, igual que el material (16×4 B + 16×4 B = 128 B), y describían una tabla hash que no aparece. **Ojo:** varios nombres de archivo no calzan con su contenido (p. ej., "Estructura jerárquica… a tres niveles.png" es el cálculo de 32 PTE, y "Recorrido jerárquico…png" es la traducción x86 con CR3/PDPT); no se renombraron. Ejemplo de 14 bits y 64 B tomado de tus apuntes y del material. Se agregó el resumen de estrategias de tus apuntes. No se dividió (128 < 150). Sin dudas nuevas.
 - **08/07 Page faults**: 81 líneas, 1 imagen comprobada (Silberschatz, 6 pasos; la transcripción anterior se ajustó a lo que muestra la figura). Flowchart Mermaid (válido) del manejo de un page fault con y sin frame libre. Ejemplo de mala elección del material (0x6300 → página 6, sacar la 9, luego 0x9204), verificado. Se completó la frase truncada de tus apuntes ("realmente te…"). Sin dudas nuevas.
+- **09/01 Memoria virtual**: 77 líneas, sin imágenes, 1 Mermaid (válido). Se agregó el cálculo del EAT con page faults (p = 0,001 → ~8100 ns, 81 veces más lento; verificado con Python), con 100 ns de RAM (valor del curso) y 8 ms de page fault (valor típico, presentado como ejemplo). Tabla de los algoritmos de reemplazo con enlaces a las notas modelo 09/02-09/04. Se quitaron "Clase 9" y la fecha. Sin dudas nuevas.
