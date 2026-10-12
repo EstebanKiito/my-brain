@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 65 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 12-Fundamentos de redes y modelos en capas/04 - Modelos de capas: modelo de referencia OSI frente al stack TCP-IP.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 66 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 12-Fundamentos de redes y modelos en capas/05 - Capas de transporte, red, enlace y física.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -82,7 +82,7 @@ Reescritas hasta ahora: 65 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 63 | 12-Fundamentos de redes y modelos en capas/02 - Redes de acceso y medios físicos de transmisión.md | reescrita | 86 líneas; 4 imágenes; 1 duda |
 | 64 | 12-Fundamentos de redes y modelos en capas/03 - Conmutación de paquetes frente a conmutación de circuitos.md | reescrita | 86 líneas; 3 imágenes; 1 duda |
 | 65 | 12-Fundamentos de redes y modelos en capas/04 - Modelos de capas: modelo de referencia OSI frente al stack TCP-IP.md | reescrita | 67 líneas; 1 imagen |
-| 66 | 12-Fundamentos de redes y modelos en capas/05 - Capas de transporte, red, enlace y física.md | pendiente | |
+| 66 | 12-Fundamentos de redes y modelos en capas/05 - Capas de transporte, red, enlace y física.md | reescrita | 80 líneas; Mermaid ok |
 | 67 | 12-Fundamentos de redes y modelos en capas/06 - Proceso de encapsulamiento y flujo de datos en la red.md | pendiente | |
 | 68 | 13-Capa de aplicación y sockets/01 - Arquitecturas de aplicación y modelos de comunicación.md | pendiente | |
 | 69 | 13-Capa de aplicación y sockets/02 - Concepto de socket e identificación por IP y puerto.md | pendiente | |
@@ -198,3 +198,4 @@ Reescritas hasta ahora: 65 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **12/02 Redes de acceso y medios**: 86 líneas, 4 imágenes comprobadas (figuras de Kurose; estaban anidadas en un callout y la cuarta es una red doméstica con cable, no "banda ancha móvil"). Tablas de tecnologías y medios con los datos del material (frecuencias DSL, HFC 42,8/30,7, dial-up, ONT/OLT, categorías UTP). El video de YouTube de tus apuntes se conservó como recurso; se quitó la frase sobre qué clase lo vio. Duda nueva 🟡: "UTP recubierto".
 - **12/03 Paquetes frente a circuitos**: 86 líneas, 3 imágenes comprobadas (estaban anidadas en un callout; las transcripciones anteriores describían FDM/TDM y descarte, que no aparecen en las figuras). Ejemplos numéricos verificados (120 µs, 250 kbps). Se conservaron tu ejemplo de la tabla de reenvío ("todo lo que empiece con 120.…") y el del terremoto. Tabla comparativa y FDM/TDM del material. Duda nueva 🟡: N·L/R en circuitos.
 - **12/04 Modelos de capas**: 67 líneas, 1 imagen comprobada (es el diagrama de servicio y protocolo de Tanenbaum; estaba anidada en un callout con una transcripción inventada). Tabla OSI/TCP-IP, analogía de los traductores del material, historia (Day y Zimmerman 1983; Cerf y Kahn 1974). Duda ℹ️: "Open Systems Interface".
+- **12/05 Capas inferiores**: 80 líneas, sin imágenes, Mermaid (válido) de la pila con las unidades de cada capa, tabla TCP/UDP y una sección por capa con el contenido del material. Enlaces a las notas de cada capa (14, 15, 17, 12/02). Duda ℹ️ sobre IGMP.
