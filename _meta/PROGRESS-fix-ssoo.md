@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 35 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 07-Administración de memoria/02 - Memoria principal y el desafío de la multiprogramación.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 36 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 07-Administración de memoria/03 - Relocalización, protección de memoria y registros base y límite.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -49,7 +49,7 @@ Reescritas hasta ahora: 35 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 33 | 06-Sincronización/09 - Problema de los filósofos comelones y deadlocks.md | reescrita | 88 líneas; 3 imágenes; Mermaid ok; separada de 07/01 |
 | 34 | 07-Administración de memoria/01 - Coordinación de filósofos y manejo de estados con semáforos.md | reescrita | 140 líneas; 1 imagen; C compila; Mermaid ok; 1 duda |
 | 35 | 07-Administración de memoria/02 - Memoria principal y el desafío de la multiprogramación.md | reescrita | 78 líneas; 3 imágenes |
-| 36 | 07-Administración de memoria/03 - Relocalización, protección de memoria y registros base y límite.md | pendiente | |
+| 36 | 07-Administración de memoria/03 - Relocalización, protección de memoria y registros base y límite.md | reescrita | 69 líneas; 1 imagen; Mermaid ok; 1 duda |
 | 37 | 07-Administración de memoria/04 - Swapping, fragmentación externa y algoritmos de asignación libre.md | pendiente | |
 | 38 | 07-Administración de memoria/05 - Segmentación de memoria y prevención de segmentation fault.md | pendiente | |
 | 39 | 07-Administración de memoria/06 - Aritmética de bits y máscara de segmento en traducción de direcciones.md | pendiente | |
@@ -121,6 +121,7 @@ Reescritas hasta ahora: 35 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **`_meta/cache/`** no estaba en `.gitignore` y se agregó. Contiene el texto extraído de los 12 PDFs del ramo con `pdftotext -layout`.
 - **`imagenes.json`:** la entrada de `image 70.png` (tema Capa de enlace y seguridad) usaba `origen` en vez de `original` y no tenía `tipo`. Por eso `verificar.py` se caía con `KeyError: 'tipo'` y la prueba 5 nunca corría. Se corrigió solo ese dato; `verificar.py` no se modificó.
 - **Línea base del verificador** (después de la corrección): 4 errores previos, todos imágenes `.heic` de RESUMEN MIDTERM SSOO sin destino (tema Gestión del curso). Las notas reescritas no deben sumar errores en las pruebas [1], [2] ni [5]. La prueba [3] (cobertura textual) falla a propósito, porque ya no se copia literal.
+- **Verificador, cambio de procedimiento desde 07/04:** la corrida completa (`--ramo` sin `--tema`) pasó de ~2 min a ~20 min a medida que las notas dejaron de ser literales (la prueba [3] de cobertura hace emparejamiento difuso). Desde 07/04, antes de cada commit se corre `verificar.py --ramo "Sistemas Operativos y Redes" --tema "<tema de la nota>"`, que igual ejecuta las pruebas [1] (autocontención y `_raw`, vault completo) y [5] (grafo, vault completo), más la [2] de imágenes del tema. La corrida completa se hace en segundo plano al cerrar cada carpeta. `verificar.py` no se modificó.
 - **Mermaid:** se valida con `mermaid.parse` (mermaid + jsdom instalados en el scratchpad de la sesión, fuera del repo).
 - **Semáforos en macOS:** `sem_init` (semáforos sin nombre) no funciona en macOS. El código de las notas queda en POSIX estándar; la lógica se prueba una sola vez con una variante para macOS.
 - **DUDAS.md:** su encabezado dice "el texto original se conserva tal cual", lo que deja de ser cierto en las notas reescritas. No se cambió; decide tú. Las filas antiguas quedan como historial.
@@ -165,3 +166,4 @@ Reescritas hasta ahora: 35 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **06/09 Filósofos y deadlock** (separada de 07/01, como pediste): esta nota tiene el **problema y el deadlock** (solución ingenua, Mermaid del ciclo de espera, las 4 condiciones de Coffman y cómo romperlas); 07/01 tiene la **solución por estados**. Se enlazan entre sí. 3 imágenes comprobadas: la tercera es la misma diapositiva que la de 07/01, con una transcripción breve y el enlace. Se retiró la "solución asimétrica pares/impares" que la transcripción antigua atribuía a la imagen. Las condiciones de Coffman no están en el material de clase; se incluyeron como teoría estándar. Duda ℹ️ nueva.
 - **07/01 Coordinación de filósofos** (pareja de 06/09): contiene la **solución por estados**: tabla de estados, happy y unhappy path de tus apuntes, sequenceDiagram (válido) y código C completo (compila; usa `sem_init`, así que no se ejecutó en macOS). 140 líneas, cerca del máximo, por el código; no se dividió. La transcripción anterior usaba los nombres de Tanenbaum (`test`, `put_forks`, `THINKING`), que no están en la figura; se transcribió la figura real y se dejó una línea con la equivalencia. El repaso inicial de primitivas pasó a una tabla con enlaces. Se quitó el encabezado "Clase 6 (Online)" con la fecha y el nombre del profesor. Duda nueva 🟡: semáforo inicial 1 frente a 0 y "estado filosofal tiene palillo".
 - **07/02 Memoria principal**: 78 líneas, 3 imágenes comprobadas. Las 3 transcripciones anteriores eran genéricas y no describían las figuras reales (OSTEP sin y con multiprogramación, con anotaciones a mano, y un dibujo del arreglo de 0 a 256·2^10−1); se rehicieron. **Ojo:** los nombres de archivo no calzan con el contenido ("Memoria física compartida con multiprogramación.png" es el dibujo del arreglo, y "Problemas de relocalización…png" es la figura con multiprogramación); no se renombraron. Ejemplo numérico 320·1024 frente a 64·1024 tomado de las anotaciones de la figura. Sin dudas nuevas.
+- **07/03 Base y límite**: 69 líneas, 1 imagen comprobada (la transcripción anterior describía un diagrama de hardware; la figura real es la diapositiva del ejemplo 4096 + 768 = 4864), 1 Mermaid (válido). Tabla absoluta/virtual. La verificación del límite se cita tal como la enuncia el material. Duda nueva 🟡: semántica de `limit` (última dirección frente a tamaño). Verificación completa: ~20 min, limpia.
