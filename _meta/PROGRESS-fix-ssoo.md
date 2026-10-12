@@ -6,8 +6,8 @@ Estados: pendiente · reescrita · sin marca (no se toca) · saltada (motivo).
 
 Notas con marca detectadas: 95 de 100.
 
-Reescritas hasta ahora: 43 de 92 notas de concepto (95 marcadas menos 3 saltadas).
-Última reescrita: 08-Paginación y segmentación/04 - Sobrecarga de tablas lineales y compromiso de fragmentación interna.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
+Reescritas hasta ahora: 44 de 92 notas de concepto (95 marcadas menos 3 saltadas).
+Última reescrita: 08-Paginación y segmentación/05 - Arquitectura de segmentos paginados.md. Para retomar, sigue con la próxima fila 'pendiente' de la tabla.
 
 ## Notas
 
@@ -57,7 +57,7 @@ Reescritas hasta ahora: 43 de 92 notas de concepto (95 marcadas menos 3 saltadas
 | 41 | 08-Paginación y segmentación/02 - Translation Lookaside Buffer (TLB) y tiempo de acceso efectivo.md | reescrita | 102 líneas; 3 imágenes; Python y C ok |
 | 42 | 08-Paginación y segmentación/03 - Localidad de referencia y gestión de TLB con ASID en cambios de contexto.md | reescrita | 70 líneas; 1 imagen |
 | 43 | 08-Paginación y segmentación/04 - Sobrecarga de tablas lineales y compromiso de fragmentación interna.md | reescrita | 74 líneas; 1 imagen; Python ok; 1 duda ℹ️ |
-| 44 | 08-Paginación y segmentación/05 - Arquitectura de segmentos paginados.md | pendiente | |
+| 44 | 08-Paginación y segmentación/05 - Arquitectura de segmentos paginados.md | reescrita | 96 líneas; 2 imágenes; Python ok |
 | 45 | 08-Paginación y segmentación/06 - Paginación multinivel y tablas de páginas invertidas.md | pendiente | |
 | 46 | 08-Paginación y segmentación/07 - Introducción al intercambio por demanda y ciclo de fallos de página.md | pendiente | |
 | 47 | 09-Memoria virtual/01 - Fundamentos de memoria virtual y espacio de intercambio (swap).md | pendiente | |
@@ -175,3 +175,4 @@ Reescritas hasta ahora: 43 de 92 notas de concepto (95 marcadas menos 3 saltadas
 - **08/03 Localidad y ASID**: 70 líneas, 1 imagen comprobada (es el formato de la entrada de TLB de MIPS; la transcripción anterior inventaba una tabla con VPN 10/50 y PFN 100/170/204). Tabla de localidad espacial/temporal y la explicación de flush frente a ASID, del material (incluido el PTBR). La tabla de ejemplo con el caso "página 0 → frame 255" sale de tus apuntes. Se quitaron "Clase 8" y la fecha. Sin dudas nuevas.
 - **Verificación completa al cerrar la carpeta 07** (corrida en segundo plano, terminó 13:26): sin errores nuevos en [1], [2] ni [5]; solo cobertura [3] (esperada) y los 4 `.heic` de base.
 - **08/04 Tablas lineales y fragmentación interna**: 74 líneas, 1 imagen comprobada (dibujo a mano; la transcripción anterior inventaba un ejemplo de "100 bytes en 16 KB"). El cálculo paso a paso de 32 bits y 4 KB sale de tus apuntes, y los ejemplos de 1 MB (16 KB → 1008 KB desperdiciados, 1025 KB → 2 MB) del material de clase, verificados con Python. Tabla de tamaños de página. Duda ℹ️: el 2^16 de los apuntes debería ser 2^18.
+- **08/05 Segmentos paginados**: 96 líneas, 2 imágenes comprobadas (la primera es el formato de dirección Seg/VPN/Offset de 32 bits y la segunda un dibujo a mano S0-S3; las transcripciones anteriores describían un algoritmo que no está en las figuras). El 75% de entradas vacías y base/límite = dirección de tabla/número de páginas salen del material de clase, igual que "vuelve la fragmentación externa". Traductor Python con verificación de límite. La frase de los apuntes "los segmentos tienen tamaño fijo a diferencia del heap" se reformuló como "un segmento no usa todas sus páginas posibles". Sin dudas nuevas.
