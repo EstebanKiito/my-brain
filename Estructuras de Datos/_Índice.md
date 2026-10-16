@@ -24,3 +24,4 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: basta con b
 | [[Estructuras de Datos/10-Árboles B+/_Índice\|Árboles B+]] | Árboles de orden $d$ para disco, split, redistribución, unsplit y bulk loading |
 | [[Estructuras de Datos/11-Tablas de hash/_Índice\|Tablas de hash]] | Función de hash, encadenamiento, sondeo y doble hashing, factor de carga y rehashing |
 | [[Estructuras de Datos/12-Backtracking/_Índice\|Backtracking]] | CSP, plantilla isSolvable, laberintos y grafos implícitos, podas, propagación y heurísticas |
+| [[Estructuras de Datos/13-Algoritmos codiciosos/_Índice\|Algoritmos codiciosos]] | Paradigma de subconjuntos, plantilla Greedy, mochila fraccional y contraejemplos |

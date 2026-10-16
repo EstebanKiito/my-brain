@@ -1241,5 +1241,68 @@
   "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 36.png",
   "destino": "Estructuras de Datos/12-Backtracking/adjuntos/isSolvable con heurísticas, poda y propagación.png",
   "sha256": "d85dbab5457a30a2d848e510c0c2b3a34d0b008427cf34182f1c0740272d0789"
+ },
+ {
+  "tema": "Algoritmos codiciosos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 37.png",
+  "destino": "Estructuras de Datos/13-Algoritmos codiciosos/adjuntos/Problema de la mochila fraccional.png",
+  "sha256": "2425c309d55a79f4f57f828fff36e24f6a6019c15e9129433e49fc7d9449cda6"
+ },
+ {
+  "tema": "Algoritmos codiciosos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 38.png",
+  "destino": "Estructuras de Datos/13-Algoritmos codiciosos/adjuntos/Mochila - función objetivo y restricciones.png",
+  "sha256": "7d2299f153050e671cd5b1a2dbb0ab71e04918d2f2c3cac2b4b607a8c9c06e16"
+ },
+ {
+  "tema": "Algoritmos codiciosos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 39.png",
+  "destino": "Estructuras de Datos/13-Algoritmos codiciosos/adjuntos/Solución factible y solución óptima.png",
+  "sha256": "c9911e9beed21686b6582887e8e84152fe898e30e2079869059cdc2319310449"
+ },
+ {
+  "tema": "Algoritmos codiciosos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 40.png",
+  "destino": "Estructuras de Datos/13-Algoritmos codiciosos/adjuntos/Paradigma de subconjuntos.png",
+  "sha256": "78b2e25a0c0b311562e171358a0eaa57872657becb3f8de3bef54bfcef58d0d8"
+ },
+ {
+  "tema": "Algoritmos codiciosos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 41.png",
+  "destino": "Estructuras de Datos/13-Algoritmos codiciosos/adjuntos/Los algoritmos codiciosos trabajan en etapas.png",
+  "sha256": "f1dadeb0205b19323962844ea924847d14a4a41ed6f585fa86a743b4d59ec9f3"
+ },
+ {
+  "tema": "Algoritmos codiciosos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 42.png",
+  "destino": "Estructuras de Datos/13-Algoritmos codiciosos/adjuntos/Procedimiento de selección.png",
+  "sha256": "ca045ac58996d1df3f1c713bd31984c9dde1585a7ced42abae61d5216bc49462"
+ },
+ {
+  "tema": "Algoritmos codiciosos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 43.png",
+  "destino": "Estructuras de Datos/13-Algoritmos codiciosos/adjuntos/Estrategias codiciosas para la mochila.png",
+  "sha256": "0ad77c5813a39cf4091ef0f28499dc410b921f4f05b51f91650d9490d585bfc2"
+ },
+ {
+  "tema": "Algoritmos codiciosos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 44.png",
+  "destino": "Estructuras de Datos/13-Algoritmos codiciosos/adjuntos/Comparación de estrategias en una instancia.png",
+  "sha256": "4ae96ba13cc79c75015fc5b9380186f0ff4774e57c3b8db0f54ed728797e0903"
+ },
+ {
+  "tema": "Algoritmos codiciosos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 45.png",
+  "destino": "Estructuras de Datos/13-Algoritmos codiciosos/adjuntos/Pseudocódigo de Greedy.png",
+  "sha256": "3109cbec6e87b5b3fefae066d09e3ddf8f9e623cc2817b766b3514b096b1936c"
  }
 ]

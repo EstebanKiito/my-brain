@@ -17,7 +17,7 @@ Rama: `migrar/estructuras-de-datos` (compartida por Estructuras de Datos y Progr
 | 10 | Árboles B+ | `10-Árboles B+/` | ✅ hecho | 3 + índice | 18 + 0 |
 | 11 | Tablas de hash | `11-Tablas de hash/` | ✅ hecho | 3 + índice | 6 + 0 |
 | 12 | Backtracking | `12-Backtracking/` | ✅ hecho | 4 + índice | 14 + 0 |
-| 13 | Algoritmos codiciosos | `13-Algoritmos codiciosos/` | pendiente | – | – |
+| 13 | Algoritmos codiciosos | `13-Algoritmos codiciosos/` | ✅ hecho | 2 + índice | 9 + 0 |
 | 14 | Programación dinámica | `14-Programación dinámica/` | pendiente | – | – |
 | 15 | Grafos y DFS | `15-Grafos y DFS/` | pendiente | – | – |
 | 16 | Árboles de cobertura mínima | `16-Árboles de cobertura mínima/` | pendiente | – | – |
@@ -49,3 +49,4 @@ Rama: `migrar/estructuras-de-datos` (compartida por Estructuras de Datos y Progr
 - **2026-10-16 · Árboles B+.** Fuentes: `i2` (desde "CLASE 14" hasta "DICIONARIOS"; 18 imágenes en `Apuntes I2 - EDD IIC2133/`). Las secuencias de inserción (8) y eliminación (19, 20, 22) se reconstruyeron a partir de las figuras. Sin código: el pseudocódigo del curso basta. 1 duda 🟡 (cota de la definición en hijos o en llaves).
 - **2026-10-16 · Tablas de hash.** Fuentes: `i2` (desde "DICIONARIOS" hasta "CLASE DE LA MUERTE 17"; 6 imágenes). Python verificado con las llaves de las figuras: encadenamiento con inserción en la cabeza (58 → 51 → 37), sondeo lineal (29 en la celda 4), doble hashing y rehash al superar $\lambda = 1$ (de 7 a 17). Se conservó el caso de la biblioteca como ejemplo de diagnóstico. 2 dudas ℹ️. **Segundo bloque de 5 temas (07 a 11) cerrado: se detiene para revisión del usuario.**
 - **2026-10-16 · Backtracking.** Fuentes: `i2` (desde "CLASE DE LA MUERTE 17" hasta "CLASE 19"; 13 imágenes y un dibujo). Complemento: podas, propagación y heurísticas de la slide `class16`. Python verificado: 8 reinas (la solución de la figura es válida; hay 92 de $8^8$ tuplas) y laberinto con marcas de visitado. 1 duda ℹ️ (signo de la restricción de diagonales).
+- **2026-10-16 · Algoritmos codiciosos.** Fuentes: `i2` (clase 19; 9 imágenes); los ejemplos de vuelto y de charlas salen de las clases 20 y 21. Python verificado: las tres estrategias de la tabla de la mochila (28,2; 31; 31,5), el vuelto codicioso con {6, 4, 1} (3 monedas frente a 2) y la selección de charlas que terminan primero. 1 duda ℹ️ (definición de $p_k$).

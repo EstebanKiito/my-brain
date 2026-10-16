@@ -36,3 +36,8 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
 | ℹ️ | [[01 - Problemas de satisfacción de restricciones\|Problemas de satisfacción de restricciones]] | Slide de las 8 reinas como CSP: "diagonales: $i \ne j \to |(x_j - x_i)/(j - i)| = 1$" | Como restricción debe decir $\ne 1$: dos reinas **no** pueden estar en la misma diagonal. La transcripción respeta la slide y la nota da la forma correcta (verificada con el código de las 8 reinas, que encuentra las 92 soluciones). |
+
+## Algoritmos codiciosos
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ℹ️ | [[02 - Mochila fraccional y contraejemplos\|Mochila fraccional y contraejemplos]] | Slide: "los objetos tienen ganancias **por unidad de peso** $p_k$" y "incluir $x_k$ da ganancia $p_k x_k$" | En el ejemplo ($p_1 = 25$, $w_1 = 18$, $x_1 = 1$ aporta 25) $p_k$ es la ganancia del objeto **completo**; si fuera por unidad de peso, el aporte sería $p_k w_k x_k$. Los números de la tabla (28,2; 31; 31,5) solo cuadran con la lectura de ganancia total, verificada en Python. |

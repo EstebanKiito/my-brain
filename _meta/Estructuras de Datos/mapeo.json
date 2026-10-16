@@ -195,8 +195,14 @@
     },
     "Algoritmos codiciosos": {
       "carpeta": "Estructuras de Datos/13-Algoritmos codiciosos",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i2",
+          "desde": "CLASE 19",
+          "hasta": "CLASE 20"
+        }
+      ]
     },
     "Programación dinámica": {
       "carpeta": "Estructuras de Datos/14-Programación dinámica",
