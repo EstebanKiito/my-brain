@@ -53,8 +53,26 @@
     },
     "Ordenamiento elemental": {
       "carpeta": "Estructuras de Datos/03-Ordenamiento elemental",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "Clase 1",
+          "hasta": "DEMOSTRACIÓN CON INDUCCION",
+          "por_texto": true
+        },
+        {
+          "fuente": "apuntes",
+          "desde": "El algoritmo que acabos de ver se llama SELECTION SORT",
+          "hasta": "Clase 3 - MergeSort",
+          "por_texto": true
+        },
+        {
+          "fuente": "ayudantias",
+          "desde": "SORTING",
+          "hasta": "AYUDANTÍA 2"
+        }
+      ]
     },
     "Mergesort": {
       "carpeta": "Estructuras de Datos/04-Mergesort",

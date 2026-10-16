@@ -75,5 +75,105 @@
   "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class00.pdf#page=47",
   "destino": "Estructuras de Datos/02-Estructuras lineales/adjuntos/Slide - inserción en una lista ligada.png",
   "sha256": "90509d7e15695e0b14cd6160a264bd580fa0ea449336be76244ef3bd91d86588"
+ },
+ {
+  "tema": "Ordenamiento elemental",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/Untitled 1.png",
+  "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Cálculo de la complejidad de selection sort.png",
+  "sha256": "6a7b0229f5d0fb8b47da7be7b59fc1a610b500495059a6859d5ddacf71ea96fc"
+ },
+ {
+  "tema": "Ordenamiento elemental",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/SelectionSort.gif",
+  "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Animación de selection sort.gif",
+  "sha256": "80556156b26290eaa9aba3011cc8c930d6d5691ef2ac575460dc75807286572c"
+ },
+ {
+  "tema": "Ordenamiento elemental",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/SelectionSort 1.gif",
+  "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Animación de selection sort.gif",
+  "sha256": "80556156b26290eaa9aba3011cc8c930d6d5691ef2ac575460dc75807286572c"
+ },
+ {
+  "tema": "Ordenamiento elemental",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image.png",
+  "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Insertar ordenadamente en un arreglo.png",
+  "sha256": "d4b04e6e6ab52779aa714538475b4321ef24680d62aa611a729a26dd0578d15f"
+ },
+ {
+  "tema": "Ordenamiento elemental",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/InsertionSort.gif",
+  "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Animación de insertion sort.gif",
+  "sha256": "9ede4b6ee6ea6cb7926eab20bada57a0f899a45b04b336f3718908ea16742271"
+ },
+ {
+  "tema": "Ordenamiento elemental",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/InsertionSort 1.gif",
+  "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Animación de insertion sort.gif",
+  "sha256": "9ede4b6ee6ea6cb7926eab20bada57a0f899a45b04b336f3718908ea16742271"
+ },
+ {
+  "tema": "Ordenamiento elemental",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 1.png",
+  "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Traza de insertion sort sobre SORTINGEXAMPLE.png",
+  "sha256": "32d1e141121cfd26862b519f79a4418764bdcb9cf0b4af17ad183ebd5a2f508f"
+ },
+ {
+  "tema": "Ordenamiento elemental",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 2.png",
+  "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Peor caso de insertion sort por inversiones.png",
+  "sha256": "b11207c1213274911763f9176ce01062ac72a10f9c35147d0a126b90821d718a"
+ },
+ {
+  "tema": "Ordenamiento elemental",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 3.png",
+  "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Pseudocódigo in place de selection e insertion sort.png",
+  "sha256": "c2df81461be557af694d123053764b61a812fef5f3bf66896b069eff2fd22d04"
+ },
+ {
+  "tema": "Ordenamiento elemental",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Ayudantías - EDD IIC2133/selectionSort(inplace).gif",
+  "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Animación de selection sort in place.gif",
+  "sha256": "e3f948c1039fa17578c8b0efca8079386d938907e39c77604e89712ab357f41c"
+ },
+ {
+  "tema": "Ordenamiento elemental",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Ayudantías - EDD IIC2133/InsertionSort(In_place).gif",
+  "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Animación de insertion sort in place.gif",
+  "sha256": "3ba0782e5079ac802cb0a49338cca76bb6b85dfcbd7610ccf7ea58f19fc4c953"
+ },
+ {
+  "tema": "Ordenamiento elemental",
+  "tipo": "editada",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Ayudantías - EDD IIC2133/IMG_0786.jpeg",
+  "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Pizarra - n sobre k sublistas de largo k.jpeg",
+  "sha256": "48ecf157ff0904270531539c03189e825e2ec6555ad290d26d52b9dff15d0d43",
+  "motivo": "Foto de pizarra girada 90° y reducida para que se lea."
+ },
+ {
+  "tema": "Ordenamiento elemental",
+  "tipo": "editada",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Ayudantías - EDD IIC2133/IMG_0787.jpeg",
+  "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Pizarra - insertion sort por bloques en tiempo nk.jpeg",
+  "sha256": "1c533bd5edf1dd501d5a51460a4091d0bfaca1657cf5f10d40a3ac6701a863f1",
+  "motivo": "Foto de pizarra girada 90° y reducida para que se lea."
+ },
+ {
+  "tema": "Ordenamiento elemental",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Ayudantías - EDD IIC2133/image 3.png",
+  "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Ejercicio de insertion sort sobre sublistas.png",
+  "sha256": "a884316d06e114d3175dee0a2744122c4af163e91c181f4c65d7efd5bc3d9437"
  }
 ]
