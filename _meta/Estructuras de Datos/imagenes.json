@@ -632,5 +632,89 @@
   "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 65.png",
   "destino": "Estructuras de Datos/07-Ordenamiento lineal/adjuntos/Radix sort MSD sobre palabras.png",
   "sha256": "0903b7e9656f52140e03dc8db289ba674c46b28ab040e3fbc92f5720d9d9c489"
+ },
+ {
+  "tema": "Árboles binarios de búsqueda",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 66.png",
+  "destino": "Estructuras de Datos/08-Árboles binarios de búsqueda/adjuntos/Dos árboles binarios de 6 nodos.png",
+  "sha256": "e887e44db9711f8594d93b815b12342c9af72b55f9f2a31000ad7f05eebf9792"
+ },
+ {
+  "tema": "Árboles binarios de búsqueda",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 67.png",
+  "destino": "Estructuras de Datos/08-Árboles binarios de búsqueda/adjuntos/Anatomía de un árbol binario - raíz, niveles y altura.png",
+  "sha256": "886d3a0ba7464bba3500506e79debd9d0f491383f872f2de17580006b87c7aa0"
+ },
+ {
+  "tema": "Árboles binarios de búsqueda",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 68.png",
+  "destino": "Estructuras de Datos/08-Árboles binarios de búsqueda/adjuntos/Atributos de un nodo de ABB.png",
+  "sha256": "734474956057c8428f7150c05ab078476159cb4f43f07a4b280ca8d36c45d4e0"
+ },
+ {
+  "tema": "Árboles binarios de búsqueda",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 69.png",
+  "destino": "Estructuras de Datos/08-Árboles binarios de búsqueda/adjuntos/Búsqueda de la llave 7 en un ABB.png",
+  "sha256": "2e1e1b6158b3e38d4c0050c13a97d7b1795cd942a6e03f756a2d49ebffa1d2bd"
+ },
+ {
+  "tema": "Árboles binarios de búsqueda",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 70.png",
+  "destino": "Estructuras de Datos/08-Árboles binarios de búsqueda/adjuntos/Pseudocódigo de Search.png",
+  "sha256": "768efe260ce9803a8b00ff3d6e9039d3826e2623755be089f8aef814414b6e85"
+ },
+ {
+  "tema": "Árboles binarios de búsqueda",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 71.png",
+  "destino": "Estructuras de Datos/08-Árboles binarios de búsqueda/adjuntos/Búsqueda fallida de la llave 4.png",
+  "sha256": "6c02d446ea2a817299ad011710c7546b937e4fa48bb8d381616d4bc00455f19b"
+ },
+ {
+  "tema": "Árboles binarios de búsqueda",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 72.png",
+  "destino": "Estructuras de Datos/08-Árboles binarios de búsqueda/adjuntos/Inserción de la llave 4.png",
+  "sha256": "8bd704b7ed8156285cb1e3402d22f761b7de645d2d2c861bcab939100608c548"
+ },
+ {
+  "tema": "Árboles binarios de búsqueda",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 73.png",
+  "destino": "Estructuras de Datos/08-Árboles binarios de búsqueda/adjuntos/Search que retorna también el padre.png",
+  "sha256": "84b52a1d2f508010da645301bbe58b801c7329b2d18d8e6993ce93458ed03840"
+ },
+ {
+  "tema": "Árboles binarios de búsqueda",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 74.png",
+  "destino": "Estructuras de Datos/08-Árboles binarios de búsqueda/adjuntos/Pseudocódigo de Insert.png",
+  "sha256": "6c4fa8a629b84b761c479c79a75e828c4daab88ffedbf8e3724319ec94306ce7"
+ },
+ {
+  "tema": "Árboles binarios de búsqueda",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 75.png",
+  "destino": "Estructuras de Datos/08-Árboles binarios de búsqueda/adjuntos/ABB antes de eliminar la raíz.png",
+  "sha256": "5f9198bd1533644664a7fec33c15927a025f810e3815407271ec19d6d307e17f"
+ },
+ {
+  "tema": "Árboles binarios de búsqueda",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 76.png",
+  "destino": "Estructuras de Datos/08-Árboles binarios de búsqueda/adjuntos/Mínimo y máximo de un ABB.png",
+  "sha256": "dc8ab871572290010dc9d451ffa055dd0b20727584eb4ac82737bff11d2bbf36"
+ },
+ {
+  "tema": "Árboles binarios de búsqueda",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 77.png",
+  "destino": "Estructuras de Datos/08-Árboles binarios de búsqueda/adjuntos/Pseudocódigo de Delete.png",
+  "sha256": "7b456d0da0938765254f6cfb35e5f9e10f7178361f857f5cf0f3a8cf0caaa5a3"
  }
 ]

@@ -140,8 +140,14 @@
     },
     "Árboles binarios de búsqueda": {
       "carpeta": "Estructuras de Datos/08-Árboles binarios de búsqueda",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "CLASE 8: Arboles Binarios de Busqueda",
+          "hasta": "ARBOLES AVL → CLASE 9"
+        }
+      ]
     },
     "Árboles balanceados": {
       "carpeta": "Estructuras de Datos/09-Árboles balanceados",
