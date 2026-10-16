@@ -249,8 +249,43 @@
     },
     "Gestión del curso": {
       "carpeta": "Estructuras de Datos/18-Gestión del curso",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "CLASE 13"
+        },
+        {
+          "fuente": "i2",
+          "desde": "CLASE 25"
+        },
+        {
+          "fuente": "ayudantias",
+          "desde": "Ayudantía 1",
+          "hasta": "INDUCCION",
+          "por_texto": true
+        },
+        {
+          "fuente": "clases",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "interrogaciones",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "ayudantias_pasadas",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "tareas",
+          "desde": "",
+          "por_texto": true
+        }
+      ]
     }
   },
   "aceptados": [

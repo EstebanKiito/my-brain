@@ -22,7 +22,7 @@ Rama: `migrar/estructuras-de-datos` (compartida por Estructuras de Datos y Progr
 | 15 | Grafos y DFS | `15-Grafos y DFS/` | ✅ hecho | 5 + índice | 0 + 7 |
 | 16 | Árboles de cobertura mínima | `16-Árboles de cobertura mínima/` | ✅ hecho | 3 + índice | 0 + 6 |
 | 17 | Caminos más cortos | `17-Caminos más cortos/` | ✅ hecho | 3 + índice | 12 + 0 |
-| 18 | Gestión del curso | `18-Gestión del curso/` | pendiente | – | – |
+| 18 | Gestión del curso + mapa final | `18-Gestión del curso/` | ✅ hecho | 4 + índice | 0 |
 
 ## Convenciones
 - Notas escritas según [`_meta/ESTANDAR-NOTAS.md`](../ESTANDAR-NOTAS.md): prosa reescrita, sin marcas de procedencia ni citas literales, de 60 a 120 líneas (máximo 150) y de 3 a 5 preguntas de repaso plegables.
@@ -54,3 +54,9 @@ Rama: `migrar/estructuras-de-datos` (compartida por Estructuras de Datos y Progr
 - **2026-10-16 · Grafos y DFS.** Fuentes: `i2` (clases 22 y 23: solo 7 bloques, casi vacíos). El contenido sale de las slides `class20` y `class21`, con 7 slides en PNG. Python verificado: los tiempos de DFS son idénticos a la figura, isCyclic detecta la arista (2, 0), el orden topológico es 0, 1, 3, 2, 4, 6, 5 y Kosaraju da {a, b, e}, {c, d}, {f, g}, {h} con las aristas leídas de la slide. 2 dudas ℹ️.
 - **2026-10-16 · Árboles de cobertura mínima.** Fuentes: `i2` (clase 24: una sola línea). El contenido sale de las slides `class22` y `class23`, con 6 slides en PNG. Python verificado: Kruskal con union-find (unión por altura y compresión de rutas) y Prim con `heapq` sobre el grafo de las slides; ambos dan el mismo MST de costo 204, que coincide con las figuras. Sin dudas nuevas. **Tercer bloque de 5 temas (12 a 16) cerrado: se detiene para revisión del usuario.**
 - **2026-10-16 · Caminos más cortos.** Fuentes: `examen` (clases 26 y 27; 10 imágenes y 2 HEIC convertidos y reducidos). Python verificado: BFS desde A ($\delta$ y $\pi[D] = H$ como en la figura), Dijkstra desde 0 (las 8 distancias de la figura), el fallo de Dijkstra con la arista −3 (B = 1 en vez de −1, igual a la tabla de la slide) y Bellman-Ford (corrige a −1 y detecta el ciclo negativo). Enlaces a las notas de ruteo de Redes. 2 dudas ℹ️.
+- **2026-10-16 · Gestión del curso y mapa final.** Fuentes: `apuntes` (clase 13, resumen I1), `i2` (clase 25, resumen I2), `ayudantias` (índice de la ayudantía 1) y los índices `clases`, `interrogaciones`, `ayudantias_pasadas` y `tareas` (solo nombres de archivos), más la slide `class00` (programa, evaluación y bibliografía). Se omitieron los datos de contacto del equipo docente y todo el contenido de las tareas. Las notas de preparación no llevan "I1"/"I2" en el nombre (el verificador lo marca como numeración de evaluación).
+
+## Cierre
+- 18 temas, 63 notas más índices. 18 commits de temas, más el de infraestructura, que comparte con Programación en C.
+- Fuentes sin asignar a propósito: las clases 10 a 13 de `i2` (duplicadas de `apuntes`), `tareas_respaldo` (en `aceptados`), `ramo` y `libros` (solo enlaces), y los títulos de página de Notion, que el extractor no lee.
+- Dudas: 1 🟡 (definición de B+ en hijos o en llaves) y el resto ℹ️.

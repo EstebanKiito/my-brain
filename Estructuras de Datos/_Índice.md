@@ -29,3 +29,12 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: basta con b
 | [[Estructuras de Datos/15-Grafos y DFS/_Índice\|Grafos y DFS]] | Representación de grafos, DFS, ciclos, tipos de aristas, orden topológico y Kosaraju |
 | [[Estructuras de Datos/16-Árboles de cobertura mínima/_Índice\|Árboles de cobertura mínima]] | MST, propiedad del corte, Kruskal con union-find y Prim con heap |
 | [[Estructuras de Datos/17-Caminos más cortos/_Índice\|Caminos más cortos]] | BFS, Dijkstra, Bellman-Ford y detección de ciclos negativos |
+| [[Estructuras de Datos/18-Gestión del curso/_Índice\|Gestión del curso]] | Evaluación, preparación de las interrogaciones y material del curso |
+
+## Ruta de estudio sugerida
+1. **Análisis de algoritmos → Estructuras lineales:** las herramientas para demostrar y medir, y las dos formas básicas de guardar datos. El C necesario está en [[Programación en C/_Índice|Programación en C]].
+2. **Ordenamiento elemental → Mergesort → Quicksort → Heaps → Ordenamiento lineal:** de $O(n^2)$ a $O(n \log n)$ y, con información extra sobre los datos, a $O(n)$.
+3. **ABB → Árboles balanceados → Árboles B+ → Tablas de hash:** diccionarios, desde el árbol simple hasta la tabla sin orden.
+4. **Backtracking → Algoritmos codiciosos → Programación dinámica:** las técnicas de diseño y cuándo usar cada una.
+5. **Grafos y DFS → Árboles de cobertura mínima → Caminos más cortos:** algoritmos en grafos, muchos de ellos aplicaciones de las técnicas anteriores (Prim y Dijkstra son codiciosos; Bellman-Ford es programación dinámica).
+6. **Gestión del curso:** para preparar cada interrogación.
