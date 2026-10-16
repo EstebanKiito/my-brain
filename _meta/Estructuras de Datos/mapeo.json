@@ -217,8 +217,14 @@
     },
     "Grafos y DFS": {
       "carpeta": "Estructuras de Datos/15-Grafos y DFS",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i2",
+          "desde": "CLASE 22",
+          "hasta": "CLASE 24"
+        }
+      ]
     },
     "Árboles de cobertura mínima": {
       "carpeta": "Estructuras de Datos/16-Árboles de cobertura mínima",

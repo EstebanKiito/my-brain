@@ -1396,5 +1396,54 @@
   "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 57.png",
   "destino": "Estructuras de Datos/14-Programación dinámica/adjuntos/Algoritmo iterativo Change.png",
   "sha256": "f91006fa70c669978f79818caa958363afbddf0a39339086360800d6658b191a"
+ },
+ {
+  "tema": "Grafos y DFS",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class20_-_Grafos.pdf#page=11",
+  "destino": "Estructuras de Datos/15-Grafos y DFS/adjuntos/Slide - grafo de dependencias entre tareas.png",
+  "sha256": "f26dbc385a4beb2024e443248cca4b82550f6c89f1f91cd17da7c06c5f8f4a8d"
+ },
+ {
+  "tema": "Grafos y DFS",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class20_-_Grafos.pdf#page=18",
+  "destino": "Estructuras de Datos/15-Grafos y DFS/adjuntos/Slide - lista y matriz de adyacencias.png",
+  "sha256": "25b61f4bb24acc64f7110440b22cbf761679f737bade6b3be5d840d5c6f45b73"
+ },
+ {
+  "tema": "Grafos y DFS",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class20_-_Grafos.pdf#page=62",
+  "destino": "Estructuras de Datos/15-Grafos y DFS/adjuntos/Slide - detección de ciclos con colores.png",
+  "sha256": "1d3017b1f454053314a2343e8bf341fd579183c5112f7e3bc5ba701585213cbf"
+ },
+ {
+  "tema": "Grafos y DFS",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class21_-_DFS_y_aplicaciones.pdf#page=26",
+  "destino": "Estructuras de Datos/15-Grafos y DFS/adjuntos/Slide - DFS con tiempos de inicio y término.png",
+  "sha256": "3b13473d50d63b8b374673980cc13bbc8dd361d9a3bb0e3b1fdfa9ab42f6791d"
+ },
+ {
+  "tema": "Grafos y DFS",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class21_-_DFS_y_aplicaciones.pdf#page=35",
+  "destino": "Estructuras de Datos/15-Grafos y DFS/adjuntos/Slide - orden topológico desde los tiempos de término.png",
+  "sha256": "f304781af8f93fe4effa1d64cd0744ed19b97114749d3f80a6238cd9bb36d33e"
+ },
+ {
+  "tema": "Grafos y DFS",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class21_-_DFS_y_aplicaciones.pdf#page=42",
+  "destino": "Estructuras de Datos/15-Grafos y DFS/adjuntos/Slide - componentes fuertemente conectadas.png",
+  "sha256": "010a563bbf4a75d551226f089b4313ea10914a191f5c78a6bd6845408f3bca7d"
+ },
+ {
+  "tema": "Grafos y DFS",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class21_-_DFS_y_aplicaciones.pdf#page=50",
+  "destino": "Estructuras de Datos/15-Grafos y DFS/adjuntos/Slide - Kosaraju sobre el grafo transpuesto.png",
+  "sha256": "e8dfeac70e827ad7e620ac1a20dc0358a61bbef1227d96da5dfeb093bb39aca1"
  }
 ]

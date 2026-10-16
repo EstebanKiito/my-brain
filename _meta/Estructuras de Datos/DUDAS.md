@@ -46,3 +46,9 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
 | ℹ️ | [[03 - Problema del vuelto con programación dinámica\|Problema del vuelto con programación dinámica]] | Slide de Change: `Z[T][k] ← min{Z[T][k], Z[T − v_k, k]}`; recurrencia general: $Z(T,k)=\min\{Z(T - v_k, n) + 1, Z(T, k-1)\}$ | En el algoritmo falta el $+1$ por la moneda usada (mis apuntes ya marcaban "2 typos"), y en la recurrencia el segundo argumento debe ser $k$ y no $n$. La nota usa $\min\{Z[T][k-1],\ Z[T - v_k][k] + 1\}$, verificado en Python (vuelto de 8 con {6, 4, 1} = 2 monedas). |
+
+## Grafos y DFS
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ℹ️ | [[05 - Componentes fuertemente conectadas y Kosaraju\|Componentes fuertemente conectadas y Kosaraju]] | Slide: "Un grafo $G$ acíclico tiene 0 componentes fuertemente conectadas" | Con la definición de CFC como conjunto maximal (que incluye conjuntos de un nodo), un grafo acíclico tiene $V$ CFC triviales, una por nodo. La afirmación de la slide vale si solo se cuentan las componentes con más de un nodo. La nota no la incluye. |
+| ℹ️ | [[02 - Detección de ciclos y búsqueda en profundidad\|Detección de ciclos y búsqueda en profundidad]] | Slide: "un camino es $v_0, \dots, v_n$ tal que $\{v_i, v_{i+1}\} \in E$" en un grafo **dirigido** | En un grafo dirigido la arista es el par ordenado $(v_i, v_{i+1})$. La nota define el camino con aristas sin entrar en la notación. |
