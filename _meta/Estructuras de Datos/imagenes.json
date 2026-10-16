@@ -175,5 +175,47 @@
   "original": "Semestre 4/Estructuras de Datos - IIC2133/Ayudantías - EDD IIC2133/image 3.png",
   "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Ejercicio de insertion sort sobre sublistas.png",
   "sha256": "a884316d06e114d3175dee0a2744122c4af163e91c181f4c65d7efd5bc3d9437"
+ },
+ {
+  "tema": "Mergesort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/MergeSort.gif",
+  "destino": "Estructuras de Datos/04-Mergesort/adjuntos/Animación de mergesort.gif",
+  "sha256": "f3e1a97d2854be6aa038f96ef2f1f1ebb14a76869afc1690d53938e04349d38d"
+ },
+ {
+  "tema": "Mergesort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 4.png",
+  "destino": "Estructuras de Datos/04-Mergesort/adjuntos/Merge tras la segunda y tercera iteración.png",
+  "sha256": "7f6e4cab4e32fa866025159ff889a3b57a3e682909db7a8fe468ace24a3d3e73"
+ },
+ {
+  "tema": "Mergesort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 5.png",
+  "destino": "Estructuras de Datos/04-Mergesort/adjuntos/Demostración del propósito de merge.png",
+  "sha256": "8ebfeee3702724a693e3f52e8a4bbb01e4061e851620c850b8e5cc58268bddc9"
+ },
+ {
+  "tema": "Mergesort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 6.png",
+  "destino": "Estructuras de Datos/04-Mergesort/adjuntos/Complejidad de merge con memoria adicional.png",
+  "sha256": "dda1f254db15097edd411d1344bfd9d21cc6caec77f8e477c04e2d56a0ad0dc5"
+ },
+ {
+  "tema": "Mergesort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 7.png",
+  "destino": "Estructuras de Datos/04-Mergesort/adjuntos/Complejidad de merge in place.png",
+  "sha256": "40f8817ed544d0a9c47d0dccdec108d354a42783c157d746e3d957bc26022195"
+ },
+ {
+  "tema": "Mergesort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 8.png",
+  "destino": "Estructuras de Datos/04-Mergesort/adjuntos/Tabla de complejidad de los algoritmos de ordenación.png",
+  "sha256": "3ea79ef9b65682931f24cd9ff87f399b493f2ab2897f068658c36e74cab9a492"
  }
 ]

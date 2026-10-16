@@ -76,8 +76,21 @@
     },
     "Mergesort": {
       "carpeta": "Estructuras de Datos/04-Mergesort",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "Clase 3 - MergeSort",
+          "hasta": "DIVIDIR PARA CONQUISTAR",
+          "por_texto": true
+        },
+        {
+          "fuente": "ayudantias",
+          "desde": "AYUDANTÍA 2",
+          "hasta": "QUICKSORT",
+          "por_texto": true
+        }
+      ]
     },
     "Quicksort": {
       "carpeta": "Estructuras de Datos/05-Quicksort",
