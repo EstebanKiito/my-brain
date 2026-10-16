@@ -29,3 +29,9 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 |---|---|---|---|
 | ℹ️ | [[04 - Structs como objetos y tipos compuestos\|Structs como objetos y tipos compuestos]] | Cápsulas y CheatSheet: `List* list_append(List* list);` | Sin un parámetro con el valor a agregar, la función no sabe qué insertar. La nota usa `list_append(List* list, int value)`. |
 | ℹ️ | [[03 - Structs anidados y structs recursivos\|Structs anidados y structs recursivos]] | Cápsulas: "No se puede usar typedef recursivo" | Lo que no se puede es usar el **alias** dentro de su propia definición (`Dog*` antes de que exista). `typedef struct dog { struct dog* friend; } Dog;` sí compila. La nota explica las dos salidas. |
+
+## Módulos, compilación y depuración
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ℹ️ | [[02 - Compilación separada, enlazado y pragma once\|Compilación separada, enlazado y pragma once]] | CheatSheet: el ejemplo `reptil.c` termina con `void foo(...) {...};` y lleva `#pragma once` | `#pragma once` va en el `.h`, no en el `.c` (el `.c` no se incluye). La nota lo muestra en el header. |
+| ℹ️ | (ramo completo) | CheatSheet: 5 imágenes (memoria, structs, módulos) | No vienen en el export de Notion porque enlazan a otra página. Las figuras equivalentes de las cápsulas sí están en las notas. |
