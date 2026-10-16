@@ -217,5 +217,251 @@
   "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 8.png",
   "destino": "Estructuras de Datos/04-Mergesort/adjuntos/Tabla de complejidad de los algoritmos de ordenación.png",
   "sha256": "3ea79ef9b65682931f24cd9ff87f399b493f2ab2897f068658c36e74cab9a492"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 9.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Partición de puntos 2D por medianas.png",
+  "sha256": "b725e0a14bb9116b7fe63d48a92f4d6d2d403797130ed13ad07e195b30c82bbb"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 10.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Definición de mediana.png",
+  "sha256": "66544dc8c0f1b2db7185fd7e29311eeb5fc09a1a3e178b486053c1448222e206"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 11.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Mediana - primer pivote 6.png",
+  "sha256": "41cbe41766706686f2ff26634d42e752e0dd710d8461e38f40c5ea25a9d2a441"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 12.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Mediana - secuencia reorganizada en torno a 6.png",
+  "sha256": "533548e4db7f09199592556f086af0645f75b0ed409b277b07b62376f638f9c8"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 13.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Mediana - se revisa el tramo izquierdo.png",
+  "sha256": "4462c3065a7584b0c502536e95182b0df45f391a0338a3d3c04295456f5bdca4"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 14.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Mediana - pivote 2 en el tramo izquierdo.png",
+  "sha256": "0e18158675ddada38e85455d39974b13f3c8510ab4f2308e88eb672d1837516b"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 15.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Mediana - se revisa el subtramo derecho.png",
+  "sha256": "7b45892af63e8d39be40478b30d790b34e9192820200866d3991817701b7b369"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 16.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Mediana - pivote 5 y reubicación.png",
+  "sha256": "bf94c63c606f5e840d3931cc0867bcd8883132283e6aa48ee1a4edcbe4815006"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 17.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Mediana - el pivote queda en la posición central.png",
+  "sha256": "373bb778cede900ffd3cd6754e300a5043d4da2d7ec0be673cae34fdb705a873"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 18.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Partición en menores y mayores al pivote.png",
+  "sha256": "fc945905011ebb97ceb7f3dfe3e4fb1f9ed945628577636f662e1fdcfc2264f6"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 19.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Qué retorna Partition.png",
+  "sha256": "fcd955f61c6b21b42503d7bc22e44173494e5e93cf5a6710ac43cf6e93ef3b30"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 20.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Costo de Partition con memoria adicional.png",
+  "sha256": "a6f05812caedb2138139d23b4e8697eedab0e6e86a031a5a524bbc47cfb0ed1d"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 21.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Memoria adicional de Partition.png",
+  "sha256": "966df93ab37f74f3a8bfe29432459887090fd0d2fc8862dbb20a4b826a0737cd"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 22.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Qué entrega Median.png",
+  "sha256": "b41fa798ecab2334c190a7ea1a76de318658a7d51f563c7546f94d1696299a5c"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 23.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Mejor y peor caso de Median.png",
+  "sha256": "35a512010a908e105f42aa7577507efbba1c0122d8d5e6171c9df173135e4300"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 24.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Cada pivote queda en su posición ordenada.png",
+  "sha256": "83eeb83275fff7d2b2bd97cb5051e60da79f9e4707f4d6774ef48f8ece73087a"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 25.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Quicksort como dividir para conquistar.png",
+  "sha256": "0bf7e4126817f172f42f3906f839750ce4e97b2bf7133a08779fe98758f40a66"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 26.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Traza de quicksort sobre ASORTINGEXAMPLE.png",
+  "sha256": "f957fa72b9d996c4b5b9545d91639c488766d32d0b14608fbfd9bcb6c794b711"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 27.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Partition in place.png",
+  "sha256": "a4dd16dd7ce13082a71bab7664988fe00b8c9826a479bf4e06afd6aabfd1c066"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 28.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Video de partition step.png",
+  "sha256": "f0ecc626c285fe1f04d36c268996df68780875b4d87591a9f96ca8e0208954b0"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 29.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Tabla de complejidad antes de quicksort.png",
+  "sha256": "14bd78a56978cd3e45cca259e4b478262f97ef73d74fb472a949a61fd1428b26"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 30.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Traza de quicksort con pivotes por nivel.png",
+  "sha256": "d34efd69b42da18bea652d088ba872fd85a6070219db0c2dd5eb3027ce348d43"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 31.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Partition in place - propiedad del invariante.png",
+  "sha256": "fb4c5cc477fe01606679a837726e6e89fac4a0e516d6ab08b49184475f987541"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 32.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Partition in place - caso base.png",
+  "sha256": "b71f1bc60373eef89b81ce7f1bade9b3561c7bf77fb414bf548a05e1247e5884"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 33.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Partition in place - hipótesis inductiva.png",
+  "sha256": "7bc006bb11a37a4aa08ef2b1033e3fa4a2e0ccc9a74b551d97d13eda74724bdd"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 34.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Partition in place - tesis inductiva.png",
+  "sha256": "59d53bb635c6233623ccc8bc080e27681d767d7cd734cd02fbd6334b2df85572"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 35.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Quicksort - finitud parte 1.png",
+  "sha256": "9eed6e505d117c7d8ee74bd3d6f71cf8a7781927508c787a2eabc24486e90bab"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 36.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Quicksort - finitud parte 2.png",
+  "sha256": "57a3ba19d8afb435345216da4861a36f98261743b042a8a0850b4c8e18167ede"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 37.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Quicksort - demostración de ordenación.png",
+  "sha256": "e2e911117d3fbe62963cfc54c18389938b157395b464ffebcc40e369a661d629"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "convertida",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/IMG_0841.heic",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Pizarra - árbol de recursión del peor y mejor caso.png",
+  "sha256": "7d359b249b426223a7997b4b8e543f6efe2110490486fe6a3bf354ed1f6bb7c1",
+  "motivo": "HEIC convertido a PNG con sips y reducido a 1400 px."
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 38.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Mejor y peor caso de quicksort.png",
+  "sha256": "b545cd8b074c1c5300be75507f1f2a32c42992f1a62cfcf6bd48a83c7dab592c"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 39.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Comparaciones de quicksort según la posición del pivote.png",
+  "sha256": "9c3993ed3ef3cc5cdf4b64049db6a3f9608f8f965dc48b956e4d1ef5c95c3d6a"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 40.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Recurrencia del caso promedio de quicksort.png",
+  "sha256": "731162297bc76da1420281ce89741aec03626e5eac061e55dddc72b980872eff"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 41.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Cota del caso promedio de quicksort.png",
+  "sha256": "e7eb373d67f10e0051db08e606f9c1c066ebabdc137ddb4fcc6002bd683d9366"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 42.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Tabla de complejidad con quicksort.png",
+  "sha256": "5b322aab753071471eac40fc6931ea05ae6bdf42d5545ac769b29f6b73d02adc"
  }
 ]

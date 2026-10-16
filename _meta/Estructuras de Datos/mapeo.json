@@ -94,8 +94,21 @@
     },
     "Quicksort": {
       "carpeta": "Estructuras de Datos/05-Quicksort",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "Consideremos el problema de procesar",
+          "hasta": "CLASE 6",
+          "por_texto": true
+        },
+        {
+          "fuente": "ayudantias",
+          "desde": "QUICKSORT",
+          "hasta": "AYUDANTIA 3",
+          "por_texto": true
+        }
+      ]
     },
     "Heaps y colas de prioridad": {
       "carpeta": "Estructuras de Datos/06-Heaps y colas de prioridad",
