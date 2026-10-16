@@ -463,5 +463,132 @@
   "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 42.png",
   "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Tabla de complejidad con quicksort.png",
   "sha256": "5b322aab753071471eac40fc6931ea05ae6bdf42d5545ac769b29f6b73d02adc"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 45.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Costos de cola de prioridad en arreglos.png",
+  "sha256": "693397df94545a8c12378f994893aa5070bddfc3ad4f1f0fe6de36c447e8dc1d"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 46.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Definición de árbol binario.png",
+  "sha256": "e7865de9dd370473f54235aea5360e45a407d562bd36a7a0454157b8ec62ead5"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 47.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Árbol binario sin orden entre sus elementos.png",
+  "sha256": "8052f2f1f257fde2c8a48132926b1faf73d91affab57e1e4ed829f6589c267f6"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 48.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Definición de max heap binario.png",
+  "sha256": "b49b3a720cd8a5922acaed7e1686a109f87b2afbd2ce36c5b51ea8d54613123c"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 49.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Max heap con nodos de un mismo nivel sin orden.png",
+  "sha256": "9080d1e06d2f2831276438b1631fe2068370f99fc7be859b94fbedc3b018976c"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "editada",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/IMG_0846.jpeg",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Pizarra - nodo con llave y punteros a sus hijos.jpeg",
+  "sha256": "460fb8225824d5810adc686848422b4ed59c1dbbca3cb6db6ac7ebf64cc69824",
+  "motivo": "Foto de pizarra girada 90° y reducida para que se lea."
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 50.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Heaps como árboles casi llenos.png",
+  "sha256": "af10d6110021636e8179b45908de6157b2c22203bb556ac78d3206f3f19736f0"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 51.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Árbol binario lleno y casi lleno.png",
+  "sha256": "1e0fa826fd19860a3b3a94d4c326ed1003d9767e0b28821fa5d2e21516af91fa"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 52.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Índices de padre e hijos en el arreglo.png",
+  "sha256": "ed87159bb3a70fb5697439e5bfb10852df6f61143300da359058ae32d187373d"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 53.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Max heap y su arreglo.png",
+  "sha256": "954155d24af3929c35c8e5ee123359320196d39b6cefa646a44de620c422e988"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 54.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Camino de la raíz a la última hoja.png",
+  "sha256": "f273861f57487a0cc52677be9227bf320a935ac99a53b42eeede287eb83dd257"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 55.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Extracción - se saca la raíz.png",
+  "sha256": "1d86a77447fa0fb512ff74d38a4ba1d73393f93031361d8c1179b77458f9e1fd"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 56.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Extracción - el último elemento pasa a la raíz.png",
+  "sha256": "e54d9de63cb09b0d1ec8385ff189b7eff434765e6f8d5fad95f928ebecb0a122"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/HeapSort.gif",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Animación de heapsort.gif",
+  "sha256": "a12cb9a2f7b2fba046e1a0ffaa7fe9e7db2033b64a128494c691dea8d898fe55"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 57.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Pseudocódigo de BuildHeap.png",
+  "sha256": "bdd63ad126fe186ae6b74650cb3f343d44cbb78b2676700f25f0fda08fab1f09"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 58.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Pseudocódigo de HeapSort.png",
+  "sha256": "60cba43024bfb6f129524ea36be3ce3561dba659c091cbec4c56d5a0e88d5b83"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 59.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Complejidad de heapsort.png",
+  "sha256": "3994b1a857cb977ccfa091793abfd8c061d12333c87b3943d39e876f9aa8bd04"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 60.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Tabla de complejidad con heapsort.png",
+  "sha256": "a29684ed6b0e89b2904b222edd673f368e873ffba70640a56b4d5270274ef517"
  }
 ]

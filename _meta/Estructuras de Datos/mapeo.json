@@ -112,8 +112,20 @@
     },
     "Heaps y colas de prioridad": {
       "carpeta": "Estructuras de Datos/06-Heaps y colas de prioridad",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "COLA DE PRIORIDAD",
+          "hasta": "ORDENACION LINEAL → Categorizar!",
+          "por_texto": true
+        },
+        {
+          "fuente": "ayudantias",
+          "desde": "AYUDANTIA 3",
+          "por_texto": true
+        }
+      ]
     },
     "Ordenamiento lineal": {
       "carpeta": "Estructuras de Datos/07-Ordenamiento lineal",
