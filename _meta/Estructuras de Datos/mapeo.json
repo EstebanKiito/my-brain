@@ -18,7 +18,7 @@
   "temas": {
     "Análisis de algoritmos": {
       "carpeta": "Estructuras de Datos/01-Análisis de algoritmos",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "apuntes",

@@ -5,7 +5,7 @@ Rama: `migrar/estructuras-de-datos` (compartida por Estructuras de Datos y Progr
 | # | Tema | Carpeta | Estado | Notas | Imágenes (apuntes + slides) |
 |---|---|---|---|---|---|
 | 0 | Infraestructura (`_meta/Estructuras de Datos/`, cobertura reescrita en `verificar.py`) | `_meta/` | ✅ hecho | – | – |
-| 1 | Análisis de algoritmos | `01-Análisis de algoritmos/` | pendiente | – | – |
+| 1 | Análisis de algoritmos | `01-Análisis de algoritmos/` | ✅ hecho | 4 + índice | 6 + 0 |
 | 2 | Estructuras lineales | `02-Estructuras lineales/` | pendiente | – | – |
 | 3 | Ordenamiento elemental | `03-Ordenamiento elemental/` | pendiente | – | – |
 | 4 | Mergesort | `04-Mergesort/` | pendiente | – | – |
@@ -36,3 +36,5 @@ Rama: `migrar/estructuras-de-datos` (compartida por Estructuras de Datos y Progr
 - **Duplicado:** las clases 10-13 de `Apuntes I2` son idénticas a las de `Apuntes` (salvo una tilde). Se mapean solo desde `apuntes`, así que el estado global de `i2` muestra esos bloques como no asignados.
 
 ## Registro
+
+- **2026-10-16 · Análisis de algoritmos** (tema piloto, queda para revisión manual del usuario). Fuentes: `apuntes` clase 1 (desde "DEMOSTRACIÓN CON INDUCCION" hasta el nombre de selection sort) y clase 4 (dividir para conquistar y búsqueda binaria), `ayudantias` ayudantía 1 (inducción, notación asintótica, correctitud con bubble sort). Complementos: slides `class00` (algoritmo, pseudocódigo, reglas de cálculo, $T \in \Omega(M)$) y `class01` (principio de inducción, demostración de finitud). 4 notas de 83 a 101 líneas; 6 imágenes (2 GIF) con transcripción; 4 snippets Python verificados (`python3`). El resto de la clase 1 (motivación de ordenar, selection sort) queda para Ordenamiento elemental. Cobertura [3]: 81 bloques sin coincidencia textual, revisados a mano; todos los conceptos están reescritos en las notas. Sin dudas nuevas.

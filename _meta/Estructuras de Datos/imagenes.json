@@ -1,1 +1,44 @@
-[]
+[
+ {
+  "tema": "Análisis de algoritmos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Ayudantías - EDD IIC2133/image.png",
+  "destino": "Estructuras de Datos/01-Análisis de algoritmos/adjuntos/Gráfico de la cota superior O.png",
+  "sha256": "4837821d211594271d26a747c71c596d6ea6c6c25c34b019d9edc07a21afee71"
+ },
+ {
+  "tema": "Análisis de algoritmos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Ayudantías - EDD IIC2133/image 1.png",
+  "destino": "Estructuras de Datos/01-Análisis de algoritmos/adjuntos/Gráfico de la cota inferior Omega.png",
+  "sha256": "195a69a97d6ffb3f8fa389d76ac0fc2902e0b21f0cc9783e135593951649d4d5"
+ },
+ {
+  "tema": "Análisis de algoritmos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Ayudantías - EDD IIC2133/image 2.png",
+  "destino": "Estructuras de Datos/01-Análisis de algoritmos/adjuntos/Gráfico de la cota ajustada Theta.png",
+  "sha256": "cf72c9ed12bdbca623760133e43eb44c3469eb88356b14711e4dc1d6eab7a1ae"
+ },
+ {
+  "tema": "Análisis de algoritmos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Ayudantías - EDD IIC2133/BubbleSort.gif",
+  "destino": "Estructuras de Datos/01-Análisis de algoritmos/adjuntos/Animación de bubble sort.gif",
+  "sha256": "24c65bfed89fedb61f678fae89511fd0c5185bf10d96dcab058b83459ee68b88"
+ },
+ {
+  "tema": "Análisis de algoritmos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/Untitled.png",
+  "destino": "Estructuras de Datos/01-Análisis de algoritmos/adjuntos/Demostración de finitud de un algoritmo de ordenación.png",
+  "sha256": "fb338c376d458ccd08918a26e41d0175bfa803b9945bb2dbd094590fc6640253"
+ },
+ {
+  "tema": "Análisis de algoritmos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/BinarySearchvsLineal.gif",
+  "destino": "Estructuras de Datos/01-Análisis de algoritmos/adjuntos/Búsqueda binaria frente a búsqueda secuencial.gif",
+  "sha256": "866c59de7948199648046c9e747fb59d08eed5957b53414c9b3b201236c7b452"
+ }
+]

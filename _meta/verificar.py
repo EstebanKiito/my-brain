@@ -584,7 +584,7 @@ def prueba_cobertura(tema, items, notas_tema, notas_todas, aceptados, detalle, r
             print(f"     · {m}")
         if not detalle and len(sin_cubrir) > 10:
             print(f"     … y {len(sin_cubrir) - 10} más (usar --detalle)")
-    if len(errores) == n_err:
+    if len(errores) == n_err and not sin_cubrir:
         ok("Todo el contenido original del tema aparece en las notas")
 
 
