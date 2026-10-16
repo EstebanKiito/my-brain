@@ -1445,5 +1445,47 @@
   "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class21_-_DFS_y_aplicaciones.pdf#page=50",
   "destino": "Estructuras de Datos/15-Grafos y DFS/adjuntos/Slide - Kosaraju sobre el grafo transpuesto.png",
   "sha256": "e8dfeac70e827ad7e620ac1a20dc0358a61bbef1227d96da5dfeb093bb39aca1"
+ },
+ {
+  "tema": "Árboles de cobertura mínima",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class22_-_MST_y_algoritmo_de_Kruskal.pdf#page=16",
+  "destino": "Estructuras de Datos/16-Árboles de cobertura mínima/adjuntos/Slide - grafo no dirigido con costos.png",
+  "sha256": "d109001c172d3df872703b21b2e9cae509abb907978e04fe63c823088e49b708"
+ },
+ {
+  "tema": "Árboles de cobertura mínima",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class22_-_MST_y_algoritmo_de_Kruskal.pdf#page=35",
+  "destino": "Estructuras de Datos/16-Árboles de cobertura mínima/adjuntos/Slide - MST obtenido por Kruskal.png",
+  "sha256": "78abe807a83e6420f1d071bce9977a94bd998326943f4e59371dff2dfd00f719"
+ },
+ {
+  "tema": "Árboles de cobertura mínima",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class22_-_MST_y_algoritmo_de_Kruskal.pdf#page=44",
+  "destino": "Estructuras de Datos/16-Árboles de cobertura mínima/adjuntos/Slide - Union de conjuntos como árboles.png",
+  "sha256": "7314b7ea9209b83524a1186bc84a89bd8b426457a82f3fa70c6d26b1d053389a"
+ },
+ {
+  "tema": "Árboles de cobertura mínima",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class22_-_MST_y_algoritmo_de_Kruskal.pdf#page=48",
+  "destino": "Estructuras de Datos/16-Árboles de cobertura mínima/adjuntos/Slide - conjuntos disjuntos en un arreglo de padres.png",
+  "sha256": "4ca900192e55596a4e78ec00622f59a47ac3b70ba5de78ac765a2fa5d772588d"
+ },
+ {
+  "tema": "Árboles de cobertura mínima",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class23_-_MST_y_algoritmo_de_Prim.pdf#page=22",
+  "destino": "Estructuras de Datos/16-Árboles de cobertura mínima/adjuntos/Slide - Prim tras extraer los nodos 0 y 2.png",
+  "sha256": "8641b56319069db68d1481dd440136810954ca2e79a206d67cc10870027f3868"
+ },
+ {
+  "tema": "Árboles de cobertura mínima",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class23_-_MST_y_algoritmo_de_Prim.pdf#page=29",
+  "destino": "Estructuras de Datos/16-Árboles de cobertura mínima/adjuntos/Slide - MST obtenido por Prim.png",
+  "sha256": "1947ca0b22a25c90a615885fdfe0bde5cfc6dc67e95db8ceb4cf42cd86e9c239"
  }
 ]

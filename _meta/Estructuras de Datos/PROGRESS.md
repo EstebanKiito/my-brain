@@ -20,7 +20,7 @@ Rama: `migrar/estructuras-de-datos` (compartida por Estructuras de Datos y Progr
 | 13 | Algoritmos codiciosos | `13-Algoritmos codiciosos/` | ✅ hecho | 2 + índice | 9 + 0 |
 | 14 | Programación dinámica | `14-Programación dinámica/` | ✅ hecho | 4 + índice | 13 + 0 |
 | 15 | Grafos y DFS | `15-Grafos y DFS/` | ✅ hecho | 5 + índice | 0 + 7 |
-| 16 | Árboles de cobertura mínima | `16-Árboles de cobertura mínima/` | pendiente | – | – |
+| 16 | Árboles de cobertura mínima | `16-Árboles de cobertura mínima/` | ✅ hecho | 3 + índice | 0 + 6 |
 | 17 | Caminos más cortos | `17-Caminos más cortos/` | pendiente | – | – |
 | 18 | Gestión del curso | `18-Gestión del curso/` | pendiente | – | – |
 
@@ -52,3 +52,4 @@ Rama: `migrar/estructuras-de-datos` (compartida por Estructuras de Datos y Progr
 - **2026-10-16 · Algoritmos codiciosos.** Fuentes: `i2` (clase 19; 9 imágenes); los ejemplos de vuelto y de charlas salen de las clases 20 y 21. Python verificado: las tres estrategias de la tabla de la mochila (28,2; 31; 31,5), el vuelto codicioso con {6, 4, 1} (3 monedas frente a 2) y la selección de charlas que terminan primero. 1 duda ℹ️ (definición de $p_k$).
 - **2026-10-16 · Programación dinámica.** Fuentes: `i2` (clases 20 y 21; 12 imágenes y 1 HEIC convertido y reducido). Complemento: la comparación de técnicas y el caso de coloración salen de la slide `class19`. Python verificado: $b(i)$, la recursión ingenua (31 llamadas), RecOpt e ItOpt ($M = [0,2,4,6,7,8,8]$), la reconstrucción {1, 3, 5} y Change (8 con {6, 4, 1} = 2; 68 con {100, 50, 10, 1} = 10). 1 duda ℹ️ (typos de Change).
 - **2026-10-16 · Grafos y DFS.** Fuentes: `i2` (clases 22 y 23: solo 7 bloques, casi vacíos). El contenido sale de las slides `class20` y `class21`, con 7 slides en PNG. Python verificado: los tiempos de DFS son idénticos a la figura, isCyclic detecta la arista (2, 0), el orden topológico es 0, 1, 3, 2, 4, 6, 5 y Kosaraju da {a, b, e}, {c, d}, {f, g}, {h} con las aristas leídas de la slide. 2 dudas ℹ️.
+- **2026-10-16 · Árboles de cobertura mínima.** Fuentes: `i2` (clase 24: una sola línea). El contenido sale de las slides `class22` y `class23`, con 6 slides en PNG. Python verificado: Kruskal con union-find (unión por altura y compresión de rutas) y Prim con `heapq` sobre el grafo de las slides; ambos dan el mismo MST de costo 204, que coincide con las figuras. Sin dudas nuevas. **Tercer bloque de 5 temas (12 a 16) cerrado: se detiene para revisión del usuario.**

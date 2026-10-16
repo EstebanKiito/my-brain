@@ -27,3 +27,4 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: basta con b
 | [[Estructuras de Datos/13-Algoritmos codiciosos/_Índice\|Algoritmos codiciosos]] | Paradigma de subconjuntos, plantilla Greedy, mochila fraccional y contraejemplos |
 | [[Estructuras de Datos/14-Programación dinámica/_Índice\|Programación dinámica]] | Subestructura óptima, memoización, versión iterativa, vuelto y comparación de técnicas |
 | [[Estructuras de Datos/15-Grafos y DFS/_Índice\|Grafos y DFS]] | Representación de grafos, DFS, ciclos, tipos de aristas, orden topológico y Kosaraju |
+| [[Estructuras de Datos/16-Árboles de cobertura mínima/_Índice\|Árboles de cobertura mínima]] | MST, propiedad del corte, Kruskal con union-find y Prim con heap |

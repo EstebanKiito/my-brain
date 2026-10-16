@@ -228,8 +228,14 @@
     },
     "Árboles de cobertura mínima": {
       "carpeta": "Estructuras de Datos/16-Árboles de cobertura mínima",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i2",
+          "desde": "CLASE 24",
+          "hasta": "CLASE 25"
+        }
+      ]
     },
     "Caminos más cortos": {
       "carpeta": "Estructuras de Datos/17-Caminos más cortos",
