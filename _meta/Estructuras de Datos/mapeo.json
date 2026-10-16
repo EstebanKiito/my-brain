@@ -206,8 +206,14 @@
     },
     "Programación dinámica": {
       "carpeta": "Estructuras de Datos/14-Programación dinámica",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i2",
+          "desde": "CLASE 20",
+          "hasta": "CLASE 22"
+        }
+      ]
     },
     "Grafos y DFS": {
       "carpeta": "Estructuras de Datos/15-Grafos y DFS",

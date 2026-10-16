@@ -1304,5 +1304,97 @@
   "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 45.png",
   "destino": "Estructuras de Datos/13-Algoritmos codiciosos/adjuntos/Pseudocódigo de Greedy.png",
   "sha256": "3109cbec6e87b5b3fefae066d09e3ddf8f9e623cc2817b766b3514b096b1936c"
+ },
+ {
+  "tema": "Programación dinámica",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 46.png",
+  "destino": "Estructuras de Datos/14-Programación dinámica/adjuntos/Problema de asignar charlas con ganancias.png",
+  "sha256": "3271118b6c02b6afef261ae5313cad993da083c5c0e7af89dc929c354cf2d0fa"
+ },
+ {
+  "tema": "Programación dinámica",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 47.png",
+  "destino": "Estructuras de Datos/14-Programación dinámica/adjuntos/Instancia de 6 charlas con ganancias.png",
+  "sha256": "59bc68de1691298b251f2be9313dfd628c96d138be20cfc5c840f13d72e0fe76"
+ },
+ {
+  "tema": "Programación dinámica",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 48.png",
+  "destino": "Estructuras de Datos/14-Programación dinámica/adjuntos/La estrategia codiciosa no es óptima con ganancias.png",
+  "sha256": "96f49c63ea3d6a269d16163c48f6ca757ef6ceb35e1f6e5c430a44de887ebca0"
+ },
+ {
+  "tema": "Programación dinámica",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 49.png",
+  "destino": "Estructuras de Datos/14-Programación dinámica/adjuntos/Definición de b(i).png",
+  "sha256": "da2fe1215a2f0c00c29af8e31bcdeadcae7e6e2fbfca6b4a640d0f175eb358a2"
+ },
+ {
+  "tema": "Programación dinámica",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 50.png",
+  "destino": "Estructuras de Datos/14-Programación dinámica/adjuntos/Subestructura óptima de las charlas.png",
+  "sha256": "6b61bdcc2565259895b0def4676d625aedd2b8fe4f0d1271324e639ae7bda6cd"
+ },
+ {
+  "tema": "Programación dinámica",
+  "tipo": "convertida",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/IMG_1087.heic",
+  "destino": "Estructuras de Datos/14-Programación dinámica/adjuntos/Pizarra - la charla n está o no está en la solución.png",
+  "sha256": "e5859fd2a3b18484d7cac8e1c5f608c330e4a546851a4ee3065f87439c11192c",
+  "motivo": "HEIC convertido a PNG con sips y reducido a 1400 px."
+ },
+ {
+  "tema": "Programación dinámica",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 51.png",
+  "destino": "Estructuras de Datos/14-Programación dinámica/adjuntos/Recurrencia opt(j).png",
+  "sha256": "dac066e86f47f030626a1826de2b103666746a73c820546e9f7ed7930d057b71"
+ },
+ {
+  "tema": "Programación dinámica",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 52.png",
+  "destino": "Estructuras de Datos/14-Programación dinámica/adjuntos/Algoritmo recursivo Opt.png",
+  "sha256": "ba4fc97fd01488786238b917075f32a6b30ee0ffd94fab36210bdbeaafcf4a3e"
+ },
+ {
+  "tema": "Programación dinámica",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 53.png",
+  "destino": "Estructuras de Datos/14-Programación dinámica/adjuntos/Algoritmo RecOpt con memoización.png",
+  "sha256": "da28b4915ece444d3f6f67dba925da5e982d8ec50d015f86e2042770e57d699c"
+ },
+ {
+  "tema": "Programación dinámica",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 54.png",
+  "destino": "Estructuras de Datos/14-Programación dinámica/adjuntos/Árbol de llamadas de RecOpt.png",
+  "sha256": "b96416645132c2379b87299b1d8d2ac43f1429a84d208fc41818b591ec328a37"
+ },
+ {
+  "tema": "Programación dinámica",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 55.png",
+  "destino": "Estructuras de Datos/14-Programación dinámica/adjuntos/Matriz M y reconstrucción de la asignación.png",
+  "sha256": "4411ec037b56f1cc5dbc03ad9cf5f042f4c85b1887990f3f5b4544261ab49fbd"
+ },
+ {
+  "tema": "Programación dinámica",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 56.png",
+  "destino": "Estructuras de Datos/14-Programación dinámica/adjuntos/Algoritmo iterativo ItOpt.png",
+  "sha256": "a0913b0ce8a2220107ae28cbac472460dff32df38b7bddb1a90fbbc5bfd2ea06"
+ },
+ {
+  "tema": "Programación dinámica",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 57.png",
+  "destino": "Estructuras de Datos/14-Programación dinámica/adjuntos/Algoritmo iterativo Change.png",
+  "sha256": "f91006fa70c669978f79818caa958363afbddf0a39339086360800d6658b191a"
  }
 ]

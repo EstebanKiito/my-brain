@@ -41,3 +41,8 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
 | ℹ️ | [[02 - Mochila fraccional y contraejemplos\|Mochila fraccional y contraejemplos]] | Slide: "los objetos tienen ganancias **por unidad de peso** $p_k$" y "incluir $x_k$ da ganancia $p_k x_k$" | En el ejemplo ($p_1 = 25$, $w_1 = 18$, $x_1 = 1$ aporta 25) $p_k$ es la ganancia del objeto **completo**; si fuera por unidad de peso, el aporte sería $p_k w_k x_k$. Los números de la tabla (28,2; 31; 31,5) solo cuadran con la lectura de ganancia total, verificada en Python. |
+
+## Programación dinámica
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ℹ️ | [[03 - Problema del vuelto con programación dinámica\|Problema del vuelto con programación dinámica]] | Slide de Change: `Z[T][k] ← min{Z[T][k], Z[T − v_k, k]}`; recurrencia general: $Z(T,k)=\min\{Z(T - v_k, n) + 1, Z(T, k-1)\}$ | En el algoritmo falta el $+1$ por la moneda usada (mis apuntes ya marcaban "2 typos"), y en la recurrencia el segundo argumento debe ser $k$ y no $n$. La nota usa $\min\{Z[T][k-1],\ Z[T - v_k][k] + 1\}$, verificado en Python (vuelto de 8 con {6, 4, 1} = 2 monedas). |
