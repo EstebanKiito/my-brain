@@ -716,5 +716,264 @@
   "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 77.png",
   "destino": "Estructuras de Datos/08-Árboles binarios de búsqueda/adjuntos/Pseudocódigo de Delete.png",
   "sha256": "7b456d0da0938765254f6cfb35e5f9e10f7178361f857f5cf0f3a8cf0caaa5a3"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 78.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/ABB colapsado sobre una recta.png",
+  "sha256": "c5db29bf31e6f2e4cf02ce183192c191f6c9856e2ef93985aa704cae967c99d9"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 79.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Subárboles de alturas distintas.png",
+  "sha256": "a25ec134578de4b63a802b979e6d6101d8947ebdd7d159413a71d2c381354e2a"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 80.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Propiedad de balance.png",
+  "sha256": "0e12e6975e1e8bfd2e417403a152718156bf12a160f1e8fe9378abd6f66de7d0"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 81.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Árbol antes de insertar B.png",
+  "sha256": "d844f86950de0ece1fd14bd88c0d8774030e37cfa3aa4ccda4a68be5cbb3c598"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 82.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Inserción de B desbalancea T y K.png",
+  "sha256": "a8bece5ec90a2ea964e74fe5e01a86da7737ce7d32a917db8adb4f722d6358d2"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 83.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Desbalance hacia el exterior - nodos X e Y.png",
+  "sha256": "7cac826561a5ed27e4c2f2bdee23072beab73eb3a7a7b44486eb22ccef9e3165"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 84.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Rotación simple.png",
+  "sha256": "de594d4a1ccd5b552fbde994a4b65fc61f99d257ba1766f35d7aea5e0e02060a"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 85.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Rotación simple en K - antes.png",
+  "sha256": "6f31e086eff8a11601cff8e9ccf127b92ec5b3cad13c4146c56ee3a79aaff306"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 86.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Rotación simple en K - después.png",
+  "sha256": "bac902c8e6fce6a8c536472ba48bb8b609ef55532593e9177a162f7037fef7cb"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 87.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Inserción de G - cambio de dirección.png",
+  "sha256": "abd4da8e9ec7640a6daaa6a68d86047f274d0fa46fdab51617555d1a4d054163"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 88.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/La rotación simple no basta.png",
+  "sha256": "938494641fdbc3df1830ebcdd997c0ee81635ce88f30a4f01a2d28d8f0e7b727"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 89.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Subárbol T2 con raíz Z.png",
+  "sha256": "b71e2fbf16d8a07fea69c0a48ffed26aca22f54ea139754e7720c994b17aa7a1"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 90.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Rotación doble - primera rotación.png",
+  "sha256": "32d8710174cb8871e516376300426e21583ba5eded107d123fc6b89db8c6b2a7"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 91.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Rotación doble - resultado.png",
+  "sha256": "4db004728d5922f2a92738b726795b10a7d9475bff232b850a0e0fc957a2e592"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 92.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Orden de llaves en nodos 2 y 3.png",
+  "sha256": "cf894123db250a438cc05fa1821d853eae49a6bedb6881dc8b85e7dab695d040"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 93.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Nodo 2.png",
+  "sha256": "be0df51d343aad2dd2d78ecb9a68e2f109dbff26c7e99bcd693c2367358db62b"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 94.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Nodo 3.png",
+  "sha256": "36bc248c433f0d80c31f749c36ff288a4b51af5d8bc297dd7648a7d828369fb4"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 95.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Ejemplo de árbol 2-3.png",
+  "sha256": "fe9a7755f1d595e9c048b1865d4c2ec10f421ff35eff69d89c030707e48da717"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 96.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Búsqueda de X en un árbol 2-3.png",
+  "sha256": "235ac9201e39150ed892b1884c10e45af982b7484e6f6d5d69088773ebf93111"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 97.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Estrategia de inserción en un árbol 2-3.png",
+  "sha256": "78480f26e479ee56ba43aabf0348c10523cb6f8e1355c166ecb3e3e3798284bb"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 98.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Inserción 2-3 - D.png",
+  "sha256": "42ac25cfc63d082d0e5fb0ddc36c220245e2dc1d632a5b39145681cb36421606"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 99.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Inserción 2-3 - A.png",
+  "sha256": "9ee4c9d3631dd6c3257d7228be9ced282cd922dfe51204ea0ab057e54622c7ba"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 100.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Inserción 2-3 - C forma un 4-nodo.png",
+  "sha256": "71fc9ff843936c5522ea85a32a946df34e27ac7b40a3b983676604caf7ddda56"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 101.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Inserción 2-3 - split con C en la raíz.png",
+  "sha256": "09706bc368300597ab0b81dadd9f832bd2d708d0cf57b8dba330379a8838bac0"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 102.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Inserción 2-3 - E.png",
+  "sha256": "d88b4e3141593dd7c719b95b4e4a417875feda7e4e474c0d13a0823402287ff2"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 103.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Inserción 2-3 - N forma un 4-nodo.png",
+  "sha256": "113d4318d697a1c8b4f8ba6666b99a59f2ec3bdc269aa02e3ad3f2fa40c13d64"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 104.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Inserción 2-3 - E sube a la raíz.png",
+  "sha256": "ce71568e8d1f5c9f4c4b2de146b3ee620a2ca3519191a19448cdff6c9239764d"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 105.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Inserción 2-3 - F y H forman un 4-nodo.png",
+  "sha256": "5ae17297947bf368bad9d595d099256ec31aaad9878a1bf09526d5b2f6faa568"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 106.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Inserción 2-3 - la raíz se llena.png",
+  "sha256": "327a57b8653d86c722e7c71a6b577028609cc68ba09e8af43f34f5a7d28d50ce"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 107.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Inserción 2-3 - el árbol crece en altura.png",
+  "sha256": "08e135402aae287c80b813fcf4b9a92b66f68597a6bb8f48e8240b70b126c2a6"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 108.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Rojo-negro - los 2-nodos se representan igual.png",
+  "sha256": "dada2a8e68cbff76b9343118b2bd0d03536fce07b8244be4f89d80e874d1a724"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 109.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Rojo-negro - un 3-nodo como padre negro e hijo rojo.png",
+  "sha256": "4dba3ea6098315aabec02191d75db4ca3af64ec056f9c306d67324e7c62e7fd9"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 110.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Rojo-negro - árbol 2-3 convertido.png",
+  "sha256": "3b0da0ebfc747e72840b94e3ce571ce8521656af67b9df2f0895f2ab03dba7e9"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 111.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Rojo-negro - equivalencia con un 2-4.png",
+  "sha256": "6c9bf1fba2107bf923bf7974e0780b2d1ed9278ed0e9bc64efca51e23a49c6d1"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 112.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Rojo-negro - árbol de ejemplo.png",
+  "sha256": "aff41a697a37584bc2c0e3af9ce426b2d38414c6f88ff088b1ef6817855dccbd"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 113.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Rojo-negro - equivalencias de nodos 2, 3 y 4.png",
+  "sha256": "a63808dfd91ffd2b3aa7f81f57833ac9f4bdfa1c354e4175ae959aa270ba8ccf"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 114.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Rojo-negro - árbol y su 2-4 equivalente.png",
+  "sha256": "8a6543c69cfb9043e00f7d72dc66b807a9807108ac4df687553cc0a57ef42542"
  }
 ]

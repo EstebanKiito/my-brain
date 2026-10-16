@@ -20,3 +20,4 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: basta con b
 | [[Estructuras de Datos/06-Heaps y colas de prioridad/_Índice\|Heaps y colas de prioridad]] | Colas de prioridad, heap binario en arreglo, SiftUp y SiftDown, min heap en C, BuildHeap y heapsort |
 | [[Estructuras de Datos/07-Ordenamiento lineal/_Índice\|Ordenamiento lineal]] | Cota $\Omega(n \log n)$ por comparación, counting sort y radix sort LSD y MSD |
 | [[Estructuras de Datos/08-Árboles binarios de búsqueda/_Índice\|Árboles binarios de búsqueda]] | Diccionarios, propiedad de ABB, búsqueda, inserción, eliminación e in-order |
+| [[Estructuras de Datos/09-Árboles balanceados/_Índice\|Árboles balanceados]] | AVL y rotaciones, árboles 2-3 con split, árboles rojo-negro y su equivalencia con 2-4 |

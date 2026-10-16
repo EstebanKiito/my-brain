@@ -151,8 +151,14 @@
     },
     "Árboles balanceados": {
       "carpeta": "Estructuras de Datos/09-Árboles balanceados",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "ARBOLES AVL → CLASE 9",
+          "hasta": "CLASE 13"
+        }
+      ]
     },
     "Árboles B+": {
       "carpeta": "Estructuras de Datos/10-Árboles B+",
