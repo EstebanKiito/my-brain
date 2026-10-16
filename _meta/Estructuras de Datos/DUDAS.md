@@ -31,3 +31,8 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 |---|---|---|---|
 | ℹ️ | [[01 - Función de hash y tablas de hash\|Función de hash y tablas de hash]] | Apuntes: "si m es primo, casi nunca me da el valor 0; solo cuando la llave es igual al tamaño del arreglo" | $k \bmod m = 0$ para **todo** múltiplo de $m$, no solo para $k = m$. La razón real para usar $m$ primo es que reparte mejor llaves con patrones comunes (múltiplos de 2, de 10, …). La nota da esa razón y omite la frase. |
 | ℹ️ | [[02 - Resolución de colisiones\|Resolución de colisiones]] | Apuntes: "Encadenamiento → lista ligada (con puntero al final)" | El pseudocódigo del curso inserta como **cabeza** de la lista, que es $O(1)$ sin puntero al final. La nota sigue al pseudocódigo. |
+
+## Backtracking
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ℹ️ | [[01 - Problemas de satisfacción de restricciones\|Problemas de satisfacción de restricciones]] | Slide de las 8 reinas como CSP: "diagonales: $i \ne j \to |(x_j - x_i)/(j - i)| = 1$" | Como restricción debe decir $\ne 1$: dos reinas **no** pueden estar en la misma diagonal. La transcripción respeta la slide y la nota da la forma correcta (verificada con el código de las 8 reinas, que encuentra las 92 soluciones). |

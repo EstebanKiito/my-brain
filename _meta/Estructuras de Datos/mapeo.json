@@ -184,8 +184,14 @@
     },
     "Backtracking": {
       "carpeta": "Estructuras de Datos/12-Backtracking",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i2",
+          "desde": "CLASE DE LA MUERTE 17",
+          "hasta": "CLASE 19"
+        }
+      ]
     },
     "Algoritmos codiciosos": {
       "carpeta": "Estructuras de Datos/13-Algoritmos codiciosos",

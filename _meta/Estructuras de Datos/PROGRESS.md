@@ -16,7 +16,7 @@ Rama: `migrar/estructuras-de-datos` (compartida por Estructuras de Datos y Progr
 | 9 | Árboles balanceados | `09-Árboles balanceados/` | ✅ hecho | 4 + índice | 37 + 0 |
 | 10 | Árboles B+ | `10-Árboles B+/` | ✅ hecho | 3 + índice | 18 + 0 |
 | 11 | Tablas de hash | `11-Tablas de hash/` | ✅ hecho | 3 + índice | 6 + 0 |
-| 12 | Backtracking | `12-Backtracking/` | pendiente | – | – |
+| 12 | Backtracking | `12-Backtracking/` | ✅ hecho | 4 + índice | 14 + 0 |
 | 13 | Algoritmos codiciosos | `13-Algoritmos codiciosos/` | pendiente | – | – |
 | 14 | Programación dinámica | `14-Programación dinámica/` | pendiente | – | – |
 | 15 | Grafos y DFS | `15-Grafos y DFS/` | pendiente | – | – |
@@ -48,3 +48,4 @@ Rama: `migrar/estructuras-de-datos` (compartida por Estructuras de Datos y Progr
 - **2026-10-16 · Árboles balanceados.** Fuentes: `apuntes` (desde "ARBOLES AVL → CLASE 9" hasta "CLASE 13", que incluye las clases 10 a 12; 37 imágenes). Las clases 10 a 12 de `i2` son duplicadas y no se mapean. El ejemplo de AVL (M, D, H, B, A, C, S, K, I) se recalculó con una implementación en Python; la recurrencia $N(h)$ se verificó (0, 1, 2, 4, 7, 12, …). La secuencia de inserciones 2-3 (D, A, C, E, N, F, H) se reconstruyó a partir de las 10 figuras. Las imágenes se insertan con `img_md.py` (scratchpad): marcadores `@@IMG nombre … @@END`, que se convierten en el link codificado más la transcripción. 2 dudas ℹ️.
 - **2026-10-16 · Árboles B+.** Fuentes: `i2` (desde "CLASE 14" hasta "DICIONARIOS"; 18 imágenes en `Apuntes I2 - EDD IIC2133/`). Las secuencias de inserción (8) y eliminación (19, 20, 22) se reconstruyeron a partir de las figuras. Sin código: el pseudocódigo del curso basta. 1 duda 🟡 (cota de la definición en hijos o en llaves).
 - **2026-10-16 · Tablas de hash.** Fuentes: `i2` (desde "DICIONARIOS" hasta "CLASE DE LA MUERTE 17"; 6 imágenes). Python verificado con las llaves de las figuras: encadenamiento con inserción en la cabeza (58 → 51 → 37), sondeo lineal (29 en la celda 4), doble hashing y rehash al superar $\lambda = 1$ (de 7 a 17). Se conservó el caso de la biblioteca como ejemplo de diagnóstico. 2 dudas ℹ️. **Segundo bloque de 5 temas (07 a 11) cerrado: se detiene para revisión del usuario.**
+- **2026-10-16 · Backtracking.** Fuentes: `i2` (desde "CLASE DE LA MUERTE 17" hasta "CLASE 19"; 13 imágenes y un dibujo). Complemento: podas, propagación y heurísticas de la slide `class16`. Python verificado: 8 reinas (la solución de la figura es válida; hay 92 de $8^8$ tuplas) y laberinto con marcas de visitado. 1 duda ℹ️ (signo de la restricción de diagonales).

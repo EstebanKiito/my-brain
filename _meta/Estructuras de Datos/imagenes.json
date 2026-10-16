@@ -1143,5 +1143,103 @@
   "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 23.png",
   "destino": "Estructuras de Datos/11-Tablas de hash/adjuntos/Rehashing.png",
   "sha256": "071e91f369106d26395999da4f22645ab2cb1f78c04523339e4ffe18b8af9aad"
+ },
+ {
+  "tema": "Backtracking",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 24.png",
+  "destino": "Estructuras de Datos/12-Backtracking/adjuntos/Problema de las 8 reinas.png",
+  "sha256": "885af066502653553e3a3b26d38079593ca4cae696c8685f73c036f28dc67828"
+ },
+ {
+  "tema": "Backtracking",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 25.png",
+  "destino": "Estructuras de Datos/12-Backtracking/adjuntos/Las reinas como vector de columnas.png",
+  "sha256": "9c5251906ca9e2a69e002097d135518a124609eb6c5ec645ff627772ff8a2fe4"
+ },
+ {
+  "tema": "Backtracking",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 26.png",
+  "destino": "Estructuras de Datos/12-Backtracking/adjuntos/Tablero con la solución 4 6 8 2 7 1 3 5.png",
+  "sha256": "806d4f3caef422a0f0e0ecac460486b6d23a3c533e914161d6b96ddd03bd5e6f"
+ },
+ {
+  "tema": "Backtracking",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 27.png",
+  "destino": "Estructuras de Datos/12-Backtracking/adjuntos/Definición de CSP.png",
+  "sha256": "199a535d360702f518432ba139534fd71b8030a5d1d3e80a79f3cc7bc9c6754a"
+ },
+ {
+  "tema": "Backtracking",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 28.png",
+  "destino": "Estructuras de Datos/12-Backtracking/adjuntos/Las 8 reinas como CSP.png",
+  "sha256": "7d1ea1da0723b20a98b8e60cbe48e77be40997a627c35d50b2e947e927a28b7d"
+ },
+ {
+  "tema": "Backtracking",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 29.png",
+  "destino": "Estructuras de Datos/12-Backtracking/adjuntos/Sudoku como CSP.png",
+  "sha256": "02e9482c43746c1d5fe534c0e7b1caf9b621dc02fe1b05e951c08f5a1eb46106"
+ },
+ {
+  "tema": "Backtracking",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 30.png",
+  "destino": "Estructuras de Datos/12-Backtracking/adjuntos/Idea de backtracking.png",
+  "sha256": "f5f1d8317d94673c92b02aff34000c6116ae67adcda6a6303701a1d31731fb4a"
+ },
+ {
+  "tema": "Backtracking",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 31.png",
+  "destino": "Estructuras de Datos/12-Backtracking/adjuntos/Pseudocódigo de isSolvable.png",
+  "sha256": "19ecbd87afd383583cb14bbf8dfaf7c3ae918bffd749d8daaabbc31ed55345e5"
+ },
+ {
+  "tema": "Backtracking",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 32.png",
+  "destino": "Estructuras de Datos/12-Backtracking/adjuntos/Complejidad de backtracking.png",
+  "sha256": "f64d3ee3890664173f2e02a6af914ddccd3bc3f787f09d8316c32945daedfaf7"
+ },
+ {
+  "tema": "Backtracking",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 33.png",
+  "destino": "Estructuras de Datos/12-Backtracking/adjuntos/Laberinto como grafo implícito.png",
+  "sha256": "247147587f863d01fbb2b2ded85c30d452630c2e30d7ddc53e6f55c68bebc638"
+ },
+ {
+  "tema": "Backtracking",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/IMG_5A95F998F805-1.jpeg",
+  "destino": "Estructuras de Datos/12-Backtracking/adjuntos/Dibujo del laberinto como grafo de celdas.jpeg",
+  "sha256": "c6cf645749dfba417f08c9bfaf119dc6feb2f4e724c6ddd7dccad2beefce2208"
+ },
+ {
+  "tema": "Backtracking",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 34.png",
+  "destino": "Estructuras de Datos/12-Backtracking/adjuntos/Recorrido del laberinto con retrocesos.png",
+  "sha256": "41140c7be1b99bc53f1e9e44349e6f533e3ae494f1b4e3268dc7ab272691ed1b"
+ },
+ {
+  "tema": "Backtracking",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 35.png",
+  "destino": "Estructuras de Datos/12-Backtracking/adjuntos/isSolvable para el laberinto.png",
+  "sha256": "8da1d505d182c677668f04aa071e09b12d8c13119436de7192296adb69b52b3d"
+ },
+ {
+  "tema": "Backtracking",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 36.png",
+  "destino": "Estructuras de Datos/12-Backtracking/adjuntos/isSolvable con heurísticas, poda y propagación.png",
+  "sha256": "d85dbab5457a30a2d848e510c0c2b3a34d0b008427cf34182f1c0740272d0789"
  }
 ]
