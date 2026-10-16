@@ -1,0 +1,38 @@
+# Progreso de la migración — Estructuras de Datos (IIC2133)
+
+Rama: `migrar/estructuras-de-datos` (compartida por Estructuras de Datos y Programación en C). Un commit por tema. Antes de cada commit se corre `python3 _meta/verificar.py --ramo "Estructuras de Datos" --tema "<Tema>"` revisando el código de salida; al cerrar cada bloque de temas, la verificación completa de todos los ramos (el grafo es del vault completo).
+
+| # | Tema | Carpeta | Estado | Notas | Imágenes (apuntes + slides) |
+|---|---|---|---|---|---|
+| 0 | Infraestructura (`_meta/Estructuras de Datos/`, cobertura reescrita en `verificar.py`) | `_meta/` | ✅ hecho | – | – |
+| 1 | Análisis de algoritmos | `01-Análisis de algoritmos/` | pendiente | – | – |
+| 2 | Estructuras lineales | `02-Estructuras lineales/` | pendiente | – | – |
+| 3 | Ordenamiento elemental | `03-Ordenamiento elemental/` | pendiente | – | – |
+| 4 | Mergesort | `04-Mergesort/` | pendiente | – | – |
+| 5 | Quicksort | `05-Quicksort/` | pendiente | – | – |
+| 6 | Heaps y colas de prioridad | `06-Heaps y colas de prioridad/` | pendiente | – | – |
+| 7 | Ordenamiento lineal | `07-Ordenamiento lineal/` | pendiente | – | – |
+| 8 | Árboles binarios de búsqueda | `08-Árboles binarios de búsqueda/` | pendiente | – | – |
+| 9 | Árboles balanceados | `09-Árboles balanceados/` | pendiente | – | – |
+| 10 | Árboles B+ | `10-Árboles B+/` | pendiente | – | – |
+| 11 | Tablas de hash | `11-Tablas de hash/` | pendiente | – | – |
+| 12 | Backtracking | `12-Backtracking/` | pendiente | – | – |
+| 13 | Algoritmos codiciosos | `13-Algoritmos codiciosos/` | pendiente | – | – |
+| 14 | Programación dinámica | `14-Programación dinámica/` | pendiente | – | – |
+| 15 | Grafos y DFS | `15-Grafos y DFS/` | pendiente | – | – |
+| 16 | Árboles de cobertura mínima | `16-Árboles de cobertura mínima/` | pendiente | – | – |
+| 17 | Caminos más cortos | `17-Caminos más cortos/` | pendiente | – | – |
+| 18 | Gestión del curso | `18-Gestión del curso/` | pendiente | – | – |
+
+## Convenciones
+- Notas escritas según [`_meta/ESTANDAR-NOTAS.md`](../ESTANDAR-NOTAS.md): prosa reescrita, sin marcas de procedencia ni citas literales, de 60 a 120 líneas (máximo 150) y de 3 a 5 preguntas de repaso plegables.
+- Prefijo `NN - ` con orden de estudio por carpeta, wikilinks con alias (`\|` dentro de tablas) e índices enlazados con ruta completa.
+- `mapeo.json` lleva `"cobertura": "reescrita"`: la prueba [3] del verificador da advertencias y no errores, porque ya no se copia literal. Las pruebas [1], [2], [4] y [5] siguen siendo errores.
+- **Slides:** ningún PDF entra al repo. Las útiles se convierten a PNG (`pdftoppm -r 110`), van en `adjuntos/` dentro de un callout que cita la clase y se registran con `tipo: "slide"` y `original: …pdf#page=N`.
+- **Imágenes HEIC:** se convierten a PNG con `sips` y se registran con `tipo: "convertida"`.
+- **Código:** C solo donde la fuente ya trae C (listas ligadas, structs, malloc, heap de la ayudantía 3). Los algoritmos se explican con el pseudocódigo del curso más una implementación corta en Python. Todo snippet se ejecuta antes del commit (`python3`; `gcc -Wall -Wextra`).
+- **Tutorial de C:** vive en `Programación en C/` (`_meta/Programación en C/`). Las notas de EDD lo enlazan como prerrequisito.
+- **Tareas:** las soluciones personales (`TAREAS - RESPALDO`) no entran al vault; quedan en `aceptados`.
+- **Duplicado:** las clases 10-13 de `Apuntes I2` son idénticas a las de `Apuntes` (salvo una tilde). Se mapean solo desde `apuntes`, así que el estado global de `i2` muestra esos bloques como no asignados.
+
+## Registro

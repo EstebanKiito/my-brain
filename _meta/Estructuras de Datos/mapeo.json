@@ -1,0 +1,135 @@
+{
+  "_descripcion": "Mapeo de las fuentes originales (rutas relativas a _raw/) a los temas del vault. Cada sección va desde el bloque 'desde' (incluido) hasta 'hasta' (excluido); con 'por_texto' los límites pueden ser cualquier bloque. Las notas se reescriben según _meta/ESTANDAR-NOTAS.md, por eso 'cobertura' es 'reescrita' (la cobertura textual es advertencia). Las clases 10-13 de 'i2' duplican las de 'apuntes' y se mapean solo desde 'apuntes'. Las slides (PDF de 'CLASES - EDD/') son fuente de complementos y entran solo como PNG. El tutorial de C (Cápsulas, CheatSheet, Taller) está en _meta/Programación en C/.",
+  "carpeta_ramo": "Estructuras de Datos",
+  "cobertura": "reescrita",
+  "fuentes": {
+    "apuntes": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133 b011fd5927f94e01bf8934ed9bc3f0bd.html",
+    "i2": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133 11860dd6de81808395c4d90b923ebadb.html",
+    "examen": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes EXAMEN - EDD IIC2133 14960dd6de81805ca806d1db70aead48.html",
+    "ayudantias": "Semestre 4/Estructuras de Datos - IIC2133/Ayudantías - EDD IIC2133 79117c49d9d34f43a22cd82523ed9b81.html",
+    "ramo": "Semestre 4/Estructuras de Datos - IIC2133 8c57d634289c49f195e83585943045e2.html",
+    "clases": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD afd88ba8d3df4e599e5bc23dbe4ffe8e.html",
+    "interrogaciones": "Semestre 4/Estructuras de Datos - IIC2133/Interrogaciones - Examenes - EDD 069b3b9989bd4f42bba98982d719167e.html",
+    "ayudantias_pasadas": "Semestre 4/Estructuras de Datos - IIC2133/Ayudantias Pasadas d3e1dba9e5b44b8dacf981873f4051b1.html",
+    "tareas": "Semestre 4/Estructuras de Datos - IIC2133/Tareas - EDD 81587e3d74724b888191aca214ad2793.html",
+    "tareas_respaldo": "Semestre 4/Estructuras de Datos - IIC2133/TAREAS - RESPALDO f68627dd03584fc38d01251d357b0fec.html",
+    "libros": "Semestre 4/Estructuras de Datos - IIC2133/Libros - Discretas 38768833c00f40b8879636b95cdf956f.html"
+  },
+  "temas": {
+    "Análisis de algoritmos": {
+      "carpeta": "Estructuras de Datos/01-Análisis de algoritmos",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "DEMOSTRACIÓN CON INDUCCION",
+          "hasta": "El algoritmo que acabos de ver se llama SELECTION SORT",
+          "por_texto": true
+        },
+        {
+          "fuente": "apuntes",
+          "desde": "DIVIDIR PARA CONQUISTAR",
+          "hasta": "EJEMPLO",
+          "por_texto": true
+        },
+        {
+          "fuente": "ayudantias",
+          "desde": "INDUCCION",
+          "hasta": "SORTING"
+        }
+      ]
+    },
+    "Estructuras lineales": {
+      "carpeta": "Estructuras de Datos/02-Estructuras lineales",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Ordenamiento elemental": {
+      "carpeta": "Estructuras de Datos/03-Ordenamiento elemental",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Mergesort": {
+      "carpeta": "Estructuras de Datos/04-Mergesort",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Quicksort": {
+      "carpeta": "Estructuras de Datos/05-Quicksort",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Heaps y colas de prioridad": {
+      "carpeta": "Estructuras de Datos/06-Heaps y colas de prioridad",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Ordenamiento lineal": {
+      "carpeta": "Estructuras de Datos/07-Ordenamiento lineal",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Árboles binarios de búsqueda": {
+      "carpeta": "Estructuras de Datos/08-Árboles binarios de búsqueda",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Árboles balanceados": {
+      "carpeta": "Estructuras de Datos/09-Árboles balanceados",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Árboles B+": {
+      "carpeta": "Estructuras de Datos/10-Árboles B+",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Tablas de hash": {
+      "carpeta": "Estructuras de Datos/11-Tablas de hash",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Backtracking": {
+      "carpeta": "Estructuras de Datos/12-Backtracking",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Algoritmos codiciosos": {
+      "carpeta": "Estructuras de Datos/13-Algoritmos codiciosos",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Programación dinámica": {
+      "carpeta": "Estructuras de Datos/14-Programación dinámica",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Grafos y DFS": {
+      "carpeta": "Estructuras de Datos/15-Grafos y DFS",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Árboles de cobertura mínima": {
+      "carpeta": "Estructuras de Datos/16-Árboles de cobertura mínima",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Caminos más cortos": {
+      "carpeta": "Estructuras de Datos/17-Caminos más cortos",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Gestión del curso": {
+      "carpeta": "Estructuras de Datos/18-Gestión del curso",
+      "estado": "pendiente",
+      "secciones": []
+    }
+  },
+  "aceptados": [
+    {
+      "fuente": "tareas_respaldo",
+      "texto": "// TAREA 1",
+      "motivo": "Código de soluciones de tareas personales evaluadas; no entra al vault (decisión del usuario)."
+    }
+  ]
+}

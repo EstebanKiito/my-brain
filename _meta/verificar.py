@@ -22,6 +22,8 @@ Pruebas:
   1. Autocontención (vault completo): sin "_raw", rutas absolutas ni URLs de Notion; todo link local existe.
   2. Imágenes: asignadas al tema / copiadas (sha256) / referenciadas.
   3. Cobertura: cada bloque de los apuntes originales del tema aparece en alguna nota.
+     Con "cobertura": "reescrita" en mapeo.json (notas reescritas según
+     _meta/ESTANDAR-NOTAS.md), los bloques sin cobertura textual son advertencias.
   4. Links externos de los apuntes conservados.
   5. Grafo (vault completo): wikilinks válidos, nombres únicos, sin notas huérfanas.
   +  Formato (advertencias): frontmatter, preguntas de repaso, largo, nombres, índices.
@@ -384,7 +386,9 @@ def prueba_imagenes(tema, conf, items, imagenes, notas):
                 originales.append(os.path.normpath(os.path.join(base, it["src"])))
     originales = list(dict.fromkeys(originales))
     del_tema = [e for e in imagenes if e["tema"] == tema]
-    por_original = {os.path.normpath(os.path.join(RAW, e["original"])): e for e in del_tema if e["tipo"] == "apuntes"}
+    # "convertida": original en un formato que Obsidian no muestra (.heic) copiado como PNG
+    por_original = {os.path.normpath(os.path.join(RAW, e["original"])): e for e in del_tema
+                    if e["tipo"] in ("apuntes", "convertida")}
     copiadas = referidas = 0
     for o in originales:
         e = por_original.get(o)
@@ -395,7 +399,7 @@ def prueba_imagenes(tema, conf, items, imagenes, notas):
         if not os.path.exists(destino):
             error(f"Falta la copia: {e['destino']}")
             continue
-        if sha256(destino) != sha256(o):
+        if e["tipo"] == "apuntes" and sha256(destino) != sha256(o):
             error(f"La copia no coincide con el original (sha256): {e['destino']}")
             continue
         copiadas += 1
@@ -403,7 +407,7 @@ def prueba_imagenes(tema, conf, items, imagenes, notas):
             referidas += 1
         else:
             error(f"Imagen copiada pero no referenciada: {e['destino']}")
-    extra = [e for e in del_tema if e["tipo"] != "apuntes"]
+    extra = [e for e in del_tema if e["tipo"] not in ("apuntes", "convertida")]
     extra_ok = 0
     for e in extra:
         destino = os.path.join(RAIZ, e["destino"])
@@ -485,9 +489,12 @@ def umbral_tokens(n):
     return min(UMBRAL_TOKENS, (n - 1) / n)
 
 
-def prueba_cobertura(tema, items, notas_tema, notas_todas, aceptados, detalle):
+def prueba_cobertura(tema, items, notas_tema, notas_todas, aceptados, detalle, reescrita=False):
     print(f"\n[3] Cobertura de contenido — {tema}")
     n_err = len(errores)
+    sin_cubrir = []
+    # en un ramo reescrito no se copia literal: lo no cubierto se revisa a mano
+    reportar = sin_cubrir.append if reescrita else error
     _vocab_cache.clear()
     aceptados = [a for a in aceptados if normalizar(a.get("texto", ""))]
     corp = {r: normalizar(t) for r, t in notas_todas.items()}
@@ -515,7 +522,7 @@ def prueba_cobertura(tema, items, notas_tema, notas_todas, aceptados, detalle):
                     stats["aceptado"] += 1
                     continue
                 stats["no"] += 1
-                error(f"[{fuente}] código no cubierto ({len(faltan)}/{len(lineas)} líneas faltan): "
+                reportar(f"[{fuente}] código no cubierto ({len(faltan)}/{len(lineas)} líneas faltan): "
                       f"{faltan[0].strip()[:90]!r}")
                 continue
             if it["clase"] == "encabezado":
@@ -567,10 +574,16 @@ def prueba_cobertura(tema, items, notas_tema, notas_todas, aceptados, detalle):
                 continue
             stats["no"] += 1
             pista = f" (mejor candidato: {os.path.basename(mejor[2])}, tokens {mejor[0]:.0%})" if mejor[2] else ""
-            error(f"[{fuente}] {it['clase']} no cubierto: {texto[:110]!r}{pista}")
+            reportar(f"[{fuente}] {it['clase']} no cubierto: {texto[:110]!r}{pista}")
     total = sum(stats.values())
     print(f"     bloques: {total} | exactos: {stats['exacto']} | reformulados: {stats['reformulado']} "
           f"| aceptados sin destino: {stats['aceptado']} | NO cubiertos: {stats['no']}")
+    if sin_cubrir:
+        aviso(f"{len(sin_cubrir)} bloques sin cobertura textual (ramo reescrito: revisar a mano)")
+        for m in sin_cubrir if detalle else sin_cubrir[:10]:
+            print(f"     · {m}")
+        if not detalle and len(sin_cubrir) > 10:
+            print(f"     … y {len(sin_cubrir) - 10} más (usar --detalle)")
     if len(errores) == n_err:
         ok("Todo el contenido original del tema aparece en las notas")
 
@@ -659,7 +672,8 @@ def main():
             items.append((fuente, its))
             asignados.setdefault(fuente, set()).update(id(i) for i in its)
         prueba_imagenes(tema, conf, items, imagenes, notas)
-        prueba_cobertura(tema, items, notas_tema, notas, aceptados, args.detalle)
+        prueba_cobertura(tema, items, notas_tema, notas, aceptados, args.detalle,
+                         mapeo.get("cobertura") == "reescrita")
         prueba_links_externos(tema, items, notas, aceptados)
 
     prueba_grafo(notas)
