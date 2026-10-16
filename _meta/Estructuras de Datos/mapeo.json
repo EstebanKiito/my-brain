@@ -262,7 +262,7 @@
         {
           "fuente": "ayudantias",
           "desde": "Ayudantía 1",
-          "hasta": "INDUCCION",
+          "hasta": "Cada cosa que se puede demostrar con induccion",
           "por_texto": true
         },
         {
