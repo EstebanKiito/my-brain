@@ -1487,5 +1487,91 @@
   "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class23_-_MST_y_algoritmo_de_Prim.pdf#page=29",
   "destino": "Estructuras de Datos/16-Árboles de cobertura mínima/adjuntos/Slide - MST obtenido por Prim.png",
   "sha256": "1947ca0b22a25c90a615885fdfe0bde5cfc6dc67e95db8ceb4cf42cd86e9c239"
+ },
+ {
+  "tema": "Caminos más cortos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes EXAMEN - EDD IIC2133/image.png",
+  "destino": "Estructuras de Datos/17-Caminos más cortos/adjuntos/Grafo dirigido con costos no negativos.png",
+  "sha256": "1a0282202197072427fb567410db5d5f711db5e820b908568d58d8425db8c166"
+ },
+ {
+  "tema": "Caminos más cortos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes EXAMEN - EDD IIC2133/image 1.png",
+  "destino": "Estructuras de Datos/17-Caminos más cortos/adjuntos/BFS - distancias desde A.png",
+  "sha256": "94263bc48ae892aa1f701b3fafbaf86a141be3b26ba69da1f4a68728fbd2591c"
+ },
+ {
+  "tema": "Caminos más cortos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes EXAMEN - EDD IIC2133/image 2.png",
+  "destino": "Estructuras de Datos/17-Caminos más cortos/adjuntos/Pseudocódigo de BFS.png",
+  "sha256": "7e9f33808a2259ed94f4ace7a4d024b2a306fcae58e5a0c77434f3f391a86414"
+ },
+ {
+  "tema": "Caminos más cortos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes EXAMEN - EDD IIC2133/image 3.png",
+  "destino": "Estructuras de Datos/17-Caminos más cortos/adjuntos/Dijkstra - distancias finales desde 0.png",
+  "sha256": "6b0d160aace10ff67f48eb1d865870e76d4ed1d7e274bb86685d57e4743a3843"
+ },
+ {
+  "tema": "Caminos más cortos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes EXAMEN - EDD IIC2133/image 4.png",
+  "destino": "Estructuras de Datos/17-Caminos más cortos/adjuntos/Pseudocódigo de Dijkstra.png",
+  "sha256": "9e00d11ed66f1112d3c2e3617f9e9bba01434a437f83be15aaf31463c23ef01c"
+ },
+ {
+  "tema": "Caminos más cortos",
+  "tipo": "convertida",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes EXAMEN - EDD IIC2133/IMG_1243.heic",
+  "destino": "Estructuras de Datos/17-Caminos más cortos/adjuntos/Pizarra - Dijkstra con un costo negativo.png",
+  "sha256": "057a0800d66366cc64b4684a331fe29727c429323078ae49b8547e5014d60d03",
+  "motivo": "HEIC convertido a PNG con sips y reducido a 1400 px."
+ },
+ {
+  "tema": "Caminos más cortos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes EXAMEN - EDD IIC2133/image 5.png",
+  "destino": "Estructuras de Datos/17-Caminos más cortos/adjuntos/Grafo con una arista de costo negativo.png",
+  "sha256": "535e52995fe47ba5a55b9468cf3d2a0fc9b289700c80e6469cf24127d8b5a751"
+ },
+ {
+  "tema": "Caminos más cortos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes EXAMEN - EDD IIC2133/image 6.png",
+  "destino": "Estructuras de Datos/17-Caminos más cortos/adjuntos/Dijkstra falla con el costo negativo.png",
+  "sha256": "c51b0945d860f520569f2ce0c2666731398123925aa32baedb7e5cc60d5b8123"
+ },
+ {
+  "tema": "Caminos más cortos",
+  "tipo": "convertida",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes EXAMEN - EDD IIC2133/IMG_1262.heic",
+  "destino": "Estructuras de Datos/17-Caminos más cortos/adjuntos/Pizarra - rutas con más aristas pero menor costo.png",
+  "sha256": "c2c0660ebb2d212582ec94cf9588c949700a36e2ad1322f8313b0b5a880564b1",
+  "motivo": "HEIC convertido a PNG con sips y reducido a 1400 px."
+ },
+ {
+  "tema": "Caminos más cortos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes EXAMEN - EDD IIC2133/image 7.png",
+  "destino": "Estructuras de Datos/17-Caminos más cortos/adjuntos/Pseudocódigo de Bellman-Ford.png",
+  "sha256": "abedb1d8892f48000cea5d4a848a7d83e00d05fac528506a83aa3331609ad527"
+ },
+ {
+  "tema": "Caminos más cortos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes EXAMEN - EDD IIC2133/image 8.png",
+  "destino": "Estructuras de Datos/17-Caminos más cortos/adjuntos/Bellman-Ford con chequeo de ciclos negativos.png",
+  "sha256": "b74f86d7c8070019965889813837a25a4fa966bf82f31d84e92cba38a2957a54"
+ },
+ {
+  "tema": "Caminos más cortos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes EXAMEN - EDD IIC2133/image 9.png",
+  "destino": "Estructuras de Datos/17-Caminos más cortos/adjuntos/Complejidad de Bellman-Ford.png",
+  "sha256": "9e11fdda56ea51b5a9ba75816befe70e4fc533a031349e270ba17e34e035f10a"
  }
 ]

@@ -239,8 +239,13 @@
     },
     "Caminos más cortos": {
       "carpeta": "Estructuras de Datos/17-Caminos más cortos",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "examen",
+          "desde": "CLASE 26"
+        }
+      ]
     },
     "Gestión del curso": {
       "carpeta": "Estructuras de Datos/18-Gestión del curso",

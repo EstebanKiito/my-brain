@@ -52,3 +52,9 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 |---|---|---|---|
 | ℹ️ | [[05 - Componentes fuertemente conectadas y Kosaraju\|Componentes fuertemente conectadas y Kosaraju]] | Slide: "Un grafo $G$ acíclico tiene 0 componentes fuertemente conectadas" | Con la definición de CFC como conjunto maximal (que incluye conjuntos de un nodo), un grafo acíclico tiene $V$ CFC triviales, una por nodo. La afirmación de la slide vale si solo se cuentan las componentes con más de un nodo. La nota no la incluye. |
 | ℹ️ | [[02 - Detección de ciclos y búsqueda en profundidad\|Detección de ciclos y búsqueda en profundidad]] | Slide: "un camino es $v_0, \dots, v_n$ tal que $\{v_i, v_{i+1}\} \in E$" en un grafo **dirigido** | En un grafo dirigido la arista es el par ordenado $(v_i, v_{i+1})$. La nota define el camino con aristas sin entrar en la notación. |
+
+## Caminos más cortos
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ℹ️ | [[02 - Algoritmo de Dijkstra\|Algoritmo de Dijkstra]] | Slide de Dijkstra: `DecreaseKey(Q, v, d[v])` se aplica a nodos blancos y grises, y después se inserta el blanco | Un nodo blanco todavía no está en el heap, así que no se le puede aplicar `DecreaseKey` (mis apuntes ya lo señalaban). Lo correcto es `DecreaseKey` si es gris e `Insert` si es blanco. La nota lo explica en un callout. |
+| ℹ️ | [[01 - Búsqueda en amplitud (BFS)\|Búsqueda en amplitud (BFS)]] | Apuntes: "Dijkstra a partir de DFS encuentra el camino más corto" | Dijkstra generaliza **BFS** (con una cola de prioridad en vez de una FIFO), no DFS. La nota lo presenta así. |
