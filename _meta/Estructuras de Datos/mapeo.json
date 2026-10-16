@@ -41,8 +41,15 @@
     },
     "Estructuras lineales": {
       "carpeta": "Estructuras de Datos/02-Estructuras lineales",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "Colas de prioridades",
+          "hasta": "COLA DE PRIORIDAD",
+          "por_texto": true
+        }
+      ]
     },
     "Ordenamiento elemental": {
       "carpeta": "Estructuras de Datos/03-Ordenamiento elemental",

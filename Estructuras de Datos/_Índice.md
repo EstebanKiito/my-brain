@@ -13,3 +13,4 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: basta con b
 | Tema | Qué cubre |
 |---|---|
 | [[Estructuras de Datos/01-Análisis de algoritmos/_Índice\|Análisis de algoritmos]] | Inducción, correctitud, notación O/Ω/Θ, búsqueda binaria y dividir para conquistar |
+| [[Estructuras de Datos/02-Estructuras lineales/_Índice\|Estructuras lineales]] | Arreglos frente a listas ligadas, lista ligada en C, pilas y colas |

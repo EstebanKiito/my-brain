@@ -40,5 +40,40 @@
   "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/BinarySearchvsLineal.gif",
   "destino": "Estructuras de Datos/01-Análisis de algoritmos/adjuntos/Búsqueda binaria frente a búsqueda secuencial.gif",
   "sha256": "866c59de7948199648046c9e747fb59d08eed5957b53414c9b3b201236c7b452"
+ },
+ {
+  "tema": "Estructuras lineales",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 43.png",
+  "destino": "Estructuras de Datos/02-Estructuras lineales/adjuntos/Cola FIFO con enqueue y dequeue.png",
+  "sha256": "22f2d7cd012161c8f535c8de44ad1833de9fba01eb10743d94f32c12f136b216"
+ },
+ {
+  "tema": "Estructuras lineales",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 44.png",
+  "destino": "Estructuras de Datos/02-Estructuras lineales/adjuntos/Pila LIFO al apilar un elemento.png",
+  "sha256": "f5527ec8b950f8c953bb35f64f5aecb6086b01d8298754a7d122cad373311b0c"
+ },
+ {
+  "tema": "Estructuras lineales",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class00.pdf#page=43",
+  "destino": "Estructuras de Datos/02-Estructuras lineales/adjuntos/Slide - arreglo contiguo en memoria.png",
+  "sha256": "dc34ee175d074f533992b5b25cd1ef3b1417a7da989747ba9fc912596e78e417"
+ },
+ {
+  "tema": "Estructuras lineales",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class00.pdf#page=45",
+  "destino": "Estructuras de Datos/02-Estructuras lineales/adjuntos/Slide - lista ligada en memoria.png",
+  "sha256": "c248595e979858a48849138a0e57f4057ea026a4c4d8317de3fafc479856db2f"
+ },
+ {
+  "tema": "Estructuras lineales",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class00.pdf#page=47",
+  "destino": "Estructuras de Datos/02-Estructuras lineales/adjuntos/Slide - inserción en una lista ligada.png",
+  "sha256": "90509d7e15695e0b14cd6160a264bd580fa0ea449336be76244ef3bd91d86588"
  }
 ]
