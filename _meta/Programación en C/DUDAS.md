@@ -23,3 +23,9 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | ℹ️ | [[03 - Errores de memoria y memory leaks\|Errores de memoria y memory leaks]] | Cápsulas y CheatSheet: la memoria con leak "sigue marcada como ocupada" al terminar el programa y el SO "se puede demorar mucho en recuperarla" | En un SO moderno, toda la memoria de un proceso se recupera al terminar. El daño real de un leak ocurre **mientras** el programa corre (programas largos o leaks dentro de ciclos). La nota lo plantea así. |
 | ℹ️ | [[02 - malloc, calloc y free\|malloc, calloc y free]] | Taller: "malloc… Aquí solo tiene nulls" y "Calloc me devuelve lo que ya había en el espacio" | Está al revés: `malloc` deja la basura que hubiera y `calloc` inicializa en 0. La nota usa la versión correcta, que coincide con las cápsulas y el CheatSheet. |
 | ℹ️ | [[04 - Valgrind y detección de memory leaks\|Valgrind y detección de memory leaks]] | Captura del curso tras agregar `free(B)`: "total heap usage: 11 allocs, 0 frees" | Con el `free(B)` debería decir 1 free. Probablemente se reutilizó el encabezado de la captura anterior. La transcripción describe solo las líneas relevantes. |
+
+## Structs
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ℹ️ | [[04 - Structs como objetos y tipos compuestos\|Structs como objetos y tipos compuestos]] | Cápsulas y CheatSheet: `List* list_append(List* list);` | Sin un parámetro con el valor a agregar, la función no sabe qué insertar. La nota usa `list_append(List* list, int value)`. |
+| ℹ️ | [[03 - Structs anidados y structs recursivos\|Structs anidados y structs recursivos]] | Cápsulas: "No se puede usar typedef recursivo" | Lo que no se puede es usar el **alias** dentro de su propia definición (`Dog*` antes de que exista). `typedef struct dog { struct dog* friend; } Dog;` sí compila. La nota explica las dos salidas. |
