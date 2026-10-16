@@ -129,8 +129,14 @@
     },
     "Ordenamiento lineal": {
       "carpeta": "Estructuras de Datos/07-Ordenamiento lineal",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "ORDENACION LINEAL → Categorizar!",
+          "hasta": "CLASE 8: Arboles Binarios de Busqueda"
+        }
+      ]
     },
     "Árboles binarios de búsqueda": {
       "carpeta": "Estructuras de Datos/08-Árboles binarios de búsqueda",

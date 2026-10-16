@@ -18,3 +18,4 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: basta con b
 | [[Estructuras de Datos/04-Mergesort/_Índice\|Mergesort]] | Merge, mergesort, resolución de la recurrencia y compromiso memoria-tiempo |
 | [[Estructuras de Datos/05-Quicksort/_Índice\|Quicksort]] | Mediana y Partition, quicksort, partition in place y correctitud, análisis de casos y mejoras |
 | [[Estructuras de Datos/06-Heaps y colas de prioridad/_Índice\|Heaps y colas de prioridad]] | Colas de prioridad, heap binario en arreglo, SiftUp y SiftDown, min heap en C, BuildHeap y heapsort |
+| [[Estructuras de Datos/07-Ordenamiento lineal/_Índice\|Ordenamiento lineal]] | Cota $\Omega(n \log n)$ por comparación, counting sort y radix sort LSD y MSD |

@@ -590,5 +590,47 @@
   "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 60.png",
   "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Tabla de complejidad con heapsort.png",
   "sha256": "a29684ed6b0e89b2904b222edd673f368e873ffba70640a56b4d5270274ef517"
+ },
+ {
+  "tema": "Ordenamiento lineal",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 61.png",
+  "destino": "Estructuras de Datos/07-Ordenamiento lineal/adjuntos/Pseudocódigo de counting sort.png",
+  "sha256": "c77ce3f77835fdc0b650607382b9e801d853d0d4a9558ad9dca13b9dbbaba042"
+ },
+ {
+  "tema": "Ordenamiento lineal",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 62.png",
+  "destino": "Estructuras de Datos/07-Ordenamiento lineal/adjuntos/Complejidad de counting sort.png",
+  "sha256": "b1694238acfe771cb6aa141b2849b3b4e15eec20e389548fe98739efc4bb7770"
+ },
+ {
+  "tema": "Ordenamiento lineal",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/CountingSort.gif",
+  "destino": "Estructuras de Datos/07-Ordenamiento lineal/adjuntos/Animación de counting sort.gif",
+  "sha256": "d27921c1a754c0353e121d9c53379de5e2112d344bf6a0314ec801accd6061fd"
+ },
+ {
+  "tema": "Ordenamiento lineal",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 63.png",
+  "destino": "Estructuras de Datos/07-Ordenamiento lineal/adjuntos/Radix sort LSD por unidad, decena y centena.png",
+  "sha256": "f8d6a3dcf4dc2ef91748d741cf971e695845463dd415a0a0c77db273b6a9c3d7"
+ },
+ {
+  "tema": "Ordenamiento lineal",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 64.png",
+  "destino": "Estructuras de Datos/07-Ordenamiento lineal/adjuntos/Complejidad de radix sort.png",
+  "sha256": "e72c6eb32dd1fc9887ed479c950bd2da403b1513645cc95b161f9a4ba6f8c0d6"
+ },
+ {
+  "tema": "Ordenamiento lineal",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 65.png",
+  "destino": "Estructuras de Datos/07-Ordenamiento lineal/adjuntos/Radix sort MSD sobre palabras.png",
+  "sha256": "0903b7e9656f52140e03dc8db289ba674c46b28ab040e3fbc92f5720d9d9c489"
  }
 ]
