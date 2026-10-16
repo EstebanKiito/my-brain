@@ -162,13 +162,25 @@
     },
     "Árboles B+": {
       "carpeta": "Estructuras de Datos/10-Árboles B+",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i2",
+          "desde": "CLASE 14",
+          "hasta": "DICIONARIOS"
+        }
+      ]
     },
     "Tablas de hash": {
       "carpeta": "Estructuras de Datos/11-Tablas de hash",
       "estado": "pendiente",
-      "secciones": []
+      "secciones": [
+        {
+          "fuente": "i2",
+          "desde": "DICIONARIOS",
+          "hasta": "CLASE DE LA MUERTE 17"
+        }
+      ]
     },
     "Backtracking": {
       "carpeta": "Estructuras de Datos/12-Backtracking",

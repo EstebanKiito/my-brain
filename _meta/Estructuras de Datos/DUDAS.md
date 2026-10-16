@@ -20,3 +20,8 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 |---|---|---|---|
 | ℹ️ | [[02 - Rotaciones simples y dobles en AVL\|Rotaciones simples y dobles en AVL]] | Apuntes, ejemplo M, D, H, B, A, C, S, K, I: al insertar A se marca "D −2 → Y" y "B −1 → X"; al insertar B se anota "H −1 … M 0" | El primer nodo desbalanceado al insertar A es D (X) y su hijo B es Y. La tabla de la nota se recalculó con una implementación de AVL; los pasos de H y C coinciden con el pizarrón. La traza de los apuntes queda incompleta después de C, y se completó con S, K e I. |
 | ℹ️ | [[03 - Árboles 2-3\|Árboles 2-3]] | Captura del 3-nodo: hijo derecho con "$X < k'''$" | Debe ser $Y < k'''$ (mis apuntes ya lo anotaban). La transcripción respeta la imagen; la regla correcta está en la figura de orden de llaves y en el texto. |
+
+## Árboles B+
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| 🟡 | [[01 - Estructura de un árbol B+\|Estructura de un árbol B+]] | Apuntes: "La raíz tiene entre 1 y 2d hijos; los nodos internos tienen entre d y 2d hijos" | En los ejemplos del curso, con $d = 2$, los directorios tienen 2 a 4 **llaves** (por ejemplo, 5, 13 y 24, 30) y la raíz puede tener 1 llave (17), así que la cota se cumple en llaves, no en hijos (que serían $d + 1$ a $2d + 1$). La nota la escribe en llaves. Conviene confirmarlo con la slide de la definición. |

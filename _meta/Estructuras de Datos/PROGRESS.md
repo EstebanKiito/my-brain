@@ -14,7 +14,7 @@ Rama: `migrar/estructuras-de-datos` (compartida por Estructuras de Datos y Progr
 | 7 | Ordenamiento lineal | `07-Ordenamiento lineal/` | ✅ hecho | 2 + índice | 6 + 0 |
 | 8 | Árboles binarios de búsqueda | `08-Árboles binarios de búsqueda/` | ✅ hecho | 3 + índice | 12 + 0 |
 | 9 | Árboles balanceados | `09-Árboles balanceados/` | ✅ hecho | 4 + índice | 37 + 0 |
-| 10 | Árboles B+ | `10-Árboles B+/` | pendiente | – | – |
+| 10 | Árboles B+ | `10-Árboles B+/` | ✅ hecho | 3 + índice | 18 + 0 |
 | 11 | Tablas de hash | `11-Tablas de hash/` | pendiente | – | – |
 | 12 | Backtracking | `12-Backtracking/` | pendiente | – | – |
 | 13 | Algoritmos codiciosos | `13-Algoritmos codiciosos/` | pendiente | – | – |
@@ -46,3 +46,4 @@ Rama: `migrar/estructuras-de-datos` (compartida por Estructuras de Datos y Progr
 - **2026-10-16 · Ordenamiento lineal.** Fuentes: `apuntes` (desde "ORDENACION LINEAL" en la clase 7 hasta el inicio de los ABB en la clase 8; 5 imágenes y una animación). Se agregó la cota inferior $\Omega(n \log n)$ para algoritmos por comparación (conocimiento general; no aparece en las slides de la clase 7). Python verificado: counting sort estable, radix LSD (la pasada por unidades coincide con la figura) y MSD sobre las palabras de la figura. Sin dudas nuevas.
 - **2026-10-16 · Árboles binarios de búsqueda.** Fuentes: `apuntes` (desde "CLASE 8: Arboles Binarios de Busqueda" hasta el inicio de AVL en la clase 9; 12 imágenes). Python verificado: search con padre, insert, delete con sucesor (raíz y nodo con dos hijos), in-order y altura del caso degenerado (7 frente a 3). Sin dudas nuevas.
 - **2026-10-16 · Árboles balanceados.** Fuentes: `apuntes` (desde "ARBOLES AVL → CLASE 9" hasta "CLASE 13", que incluye las clases 10 a 12; 37 imágenes). Las clases 10 a 12 de `i2` son duplicadas y no se mapean. El ejemplo de AVL (M, D, H, B, A, C, S, K, I) se recalculó con una implementación en Python; la recurrencia $N(h)$ se verificó (0, 1, 2, 4, 7, 12, …). La secuencia de inserciones 2-3 (D, A, C, E, N, F, H) se reconstruyó a partir de las 10 figuras. Las imágenes se insertan con `img_md.py` (scratchpad): marcadores `@@IMG nombre … @@END`, que se convierten en el link codificado más la transcripción. 2 dudas ℹ️.
+- **2026-10-16 · Árboles B+.** Fuentes: `i2` (desde "CLASE 14" hasta "DICIONARIOS"; 18 imágenes en `Apuntes I2 - EDD IIC2133/`). Las secuencias de inserción (8) y eliminación (19, 20, 22) se reconstruyeron a partir de las figuras. Sin código: el pseudocódigo del curso basta. 1 duda 🟡 (cota de la definición en hijos o en llaves).

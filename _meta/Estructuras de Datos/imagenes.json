@@ -975,5 +975,173 @@
   "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 114.png",
   "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Rojo-negro - árbol y su 2-4 equivalente.png",
   "sha256": "8a6543c69cfb9043e00f7d72dc66b807a9807108ac4df687553cc0a57ef42542"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Nodos directorio y nodos de datos.png",
+  "sha256": "5b9fa1953abd0f5a26ca872ecddd8ab44da80a27ac10678990ce839cf603454a"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 1.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Anatomía de un nodo directorio.png",
+  "sha256": "e3488e89e4ce80262af579bb45525e9ba0dcad36d7f3c0a16bcfc167015768c9"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 2.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Árbol B+ de orden 2 con hojas ligadas.png",
+  "sha256": "d17d3fcf6325d46aac034ef82ffde0a916c54303b3ead55389f2394d1775b7ea"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 3.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Algoritmo de split.png",
+  "sha256": "6eb1b9d00d993e7a7366061c7837c234e890ad1391fc7c65e1f79c62498771d1"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 4.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Inserción de 8 - árbol inicial.png",
+  "sha256": "484db727be8756832b351a2cd01b9a4d5a8cd546d48f31964a61fe602a5d333c"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 5.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Inserción de 8 - split de la hoja.png",
+  "sha256": "0d27366c2aa08fc5e168d477df0677c38291a7d50b7584ff7e308f78e8e7d75a"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 6.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Inserción de 8 - el directorio se desborda.png",
+  "sha256": "8cc5af0a9c7ab601efbfd25744c774d0804a304668abedc8ba79893a43b18b61"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 7.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Inserción de 8 - 17 sube como divisor.png",
+  "sha256": "a1e260943e5276494c0e02ff0b859fbcd7dcdc8107b1e6c6cf6e5d7e15b18f0a"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 8.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Inserción de 8 - árbol resultante.png",
+  "sha256": "84dac37001f10a84053ab66621cbff31667914d451c4bbba7e29b1275fe65ff8"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 9.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Eliminación - árbol inicial.png",
+  "sha256": "6b9a1984177a5ab85aebfb2ceafa3a30c3b39dba114339af41bc49408a64bdce"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 10.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Eliminación de 19.png",
+  "sha256": "0a6b17cf95e8f29e3015c39d3d2c57539d6678ac330a427f1e9255dec2fc9fbe"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 11.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Eliminación de 20 deja una hoja con poca ocupación.png",
+  "sha256": "482a215fadf508d949f220c9f071c94c3d991fe169faeb5e2e96d55deb8b0824"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 12.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Eliminación de 20 - redistribución con el hermano.png",
+  "sha256": "b6e2519b30c9963e83e3f22fef2bb16cb3ecec32ae381f0d9a31b317c899d11d"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 13.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Eliminación de 22 - hoja con poca ocupación.png",
+  "sha256": "aeb2d46534e928fbc4ae14112702d3af613f222c05e0d841c813f82182e6a423"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 14.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Eliminación de 22 - unsplit de hojas.png",
+  "sha256": "ca8b862cce8e035228add934a504cd9fb4e5c6c0e8e21a1a5b9c08cc93ba9427"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 15.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Eliminación de 22 - directorio con poca ocupación.png",
+  "sha256": "b3947eb9c4f8882dd96f0e19cfc36aa531464652391ad9c5e2151e6266aeb6c2"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 16.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Eliminación de 22 - unsplit del directorio.png",
+  "sha256": "40e5f82ed8256c3117d31af2823d03535a45da3fc03ef839e3232f977085f17b"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 17.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Costo de las operaciones en un árbol B+.png",
+  "sha256": "6e405661db3d14baab293f72c32dad661038a9eef3ccbb0c64546fd434548a19"
+ },
+ {
+  "tema": "Tablas de hash",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 18.png",
+  "destino": "Estructuras de Datos/11-Tablas de hash/adjuntos/Arreglo indexado directamente por la llave.png",
+  "sha256": "9bebd493a0fca6c40dc7b6daadb9d2686a90250fb2776ac52c682ade48be839c"
+ },
+ {
+  "tema": "Tablas de hash",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 19.png",
+  "destino": "Estructuras de Datos/11-Tablas de hash/adjuntos/Definición de tabla de hash.png",
+  "sha256": "03c7677619365f4616f6c3ff457c96522067ef76fbde4eb0e2a092d1174a36dd"
+ },
+ {
+  "tema": "Tablas de hash",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 20.png",
+  "destino": "Estructuras de Datos/11-Tablas de hash/adjuntos/Colisiones del hashing modular.png",
+  "sha256": "fd132879f8246ad16f48960aa2387d92b9db1d61a2544fe4e7227fb0d744f4b2"
+ },
+ {
+  "tema": "Tablas de hash",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 21.png",
+  "destino": "Estructuras de Datos/11-Tablas de hash/adjuntos/Encadenamiento - inserción de 58 como cabeza.png",
+  "sha256": "ab1e32917abf17aeb3522483dfdd89e4d903aab5181e827c3d2a61b9bcacf3b4"
+ },
+ {
+  "tema": "Tablas de hash",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 22.png",
+  "destino": "Estructuras de Datos/11-Tablas de hash/adjuntos/Sondeo lineal - inserción de 29.png",
+  "sha256": "75928cf38ddda81c1d368e1be5432eadbf6d9b9c9257e522b79658209b164464"
+ },
+ {
+  "tema": "Tablas de hash",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 23.png",
+  "destino": "Estructuras de Datos/11-Tablas de hash/adjuntos/Rehashing.png",
+  "sha256": "071e91f369106d26395999da4f22645ab2cb1f78c04523339e4ffe18b8af9aad"
  }
 ]
