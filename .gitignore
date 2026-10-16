@@ -2,12 +2,8 @@
 _raw/
 *.zip
 
-# Obsidian: estado local y cachés (los plugins y ajustes sí se versionan)
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
-.obsidian/workspaces.json
-.obsidian/cache
-.obsidian/graph.json
+# Obsidian: configuración local, cachés y temas
+.obsidian/
 .trash/
 
 # Sistema operativo
