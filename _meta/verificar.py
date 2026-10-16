@@ -386,11 +386,15 @@ def prueba_imagenes(tema, conf, items, imagenes, notas):
                 originales.append(os.path.normpath(os.path.join(base, it["src"])))
     originales = list(dict.fromkeys(originales))
     del_tema = [e for e in imagenes if e["tema"] == tema]
-    # "convertida": original en un formato que Obsidian no muestra (.heic) copiado como PNG
+    # "convertida": .heic pasado a PNG; "editada": copia retocada (p. ej. rostro tapado)
     por_original = {os.path.normpath(os.path.join(RAW, e["original"])): e for e in del_tema
-                    if e["tipo"] in ("apuntes", "convertida")}
+                    if e["tipo"] in ("apuntes", "convertida", "editada")}
     copiadas = referidas = 0
     for o in originales:
+        if not os.path.exists(o) and not os.path.exists(unicodedata.normalize("NFD", o)):
+            # Notion a veces enlaza imágenes que no vienen en el export
+            aviso(f"Imagen original ausente en el export (sin copia posible): {os.path.relpath(o, RAW)}")
+            continue
         e = por_original.get(o)
         if not e:
             error(f"Imagen original sin destino: {os.path.relpath(o, RAW)}")
@@ -407,7 +411,7 @@ def prueba_imagenes(tema, conf, items, imagenes, notas):
             referidas += 1
         else:
             error(f"Imagen copiada pero no referenciada: {e['destino']}")
-    extra = [e for e in del_tema if e["tipo"] not in ("apuntes", "convertida")]
+    extra = [e for e in del_tema if e["tipo"] not in ("apuntes", "convertida", "editada")]
     extra_ok = 0
     for e in extra:
         destino = os.path.join(RAIZ, e["destino"])
@@ -501,6 +505,10 @@ def prueba_cobertura(tema, items, notas_tema, notas_todas, aceptados, detalle, r
     toks = {r: c.split() for r, c in corp.items()}
     codigo = {r: normalizar_codigo(quitar_marcas_callout(t)) for r, t in notas_todas.items()}
     orden = list(notas_tema) + [r for r in notas_todas if r not in notas_tema]
+    if reescrita:
+        # la búsqueda difusa sobre todo el vault es lenta y poco útil si no se copia literal:
+        # se limita a las notas del ramo
+        orden = [r for r in orden if es_nota_del_ramo(r)]
     stats = {"exacto": 0, "reformulado": 0, "aceptado": 0, "no": 0}
     for fuente, its in items:
         for it in its:

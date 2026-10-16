@@ -1,1 +1,397 @@
-[]
+[
+ {
+  "tema": "Fundamentos del lenguaje",
+  "tipo": "editada",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/Untitled.png",
+  "destino": "Programación en C/01-Fundamentos del lenguaje/adjuntos/Stack de llamadas con main y r activos.png",
+  "sha256": "a792fd06b533e446c478d4fd9b26000b66c8f1c3a7cb6303d073c77c8eaf71d4",
+  "motivo": "Se tapó la cámara del expositor (rostro) con el color de fondo; el repo es público."
+ },
+ {
+  "tema": "Fundamentos del lenguaje",
+  "tipo": "editada",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/Untitled 1.png",
+  "destino": "Programación en C/01-Fundamentos del lenguaje/adjuntos/Stack de llamadas cuando r llama a p.png",
+  "sha256": "c834d3dc80357e14abaef0771e431308bf16f0053a6627a5f143230ae1d0f6eb",
+  "motivo": "Se tapó la cámara del expositor (rostro) con el color de fondo; el repo es público."
+ },
+ {
+  "tema": "Fundamentos del lenguaje",
+  "tipo": "editada",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/Untitled 2.png",
+  "destino": "Programación en C/01-Fundamentos del lenguaje/adjuntos/Stack de llamadas al terminar el programa.png",
+  "sha256": "1b59bf5263ac3a9dbc6deed321406c3812b2dd49e1ded75846ff97e753dae42b",
+  "motivo": "Se tapó la cámara del expositor (rostro) con el color de fondo; el repo es público."
+ },
+ {
+  "tema": "Fundamentos del lenguaje",
+  "tipo": "editada",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/Untitled 3.png",
+  "destino": "Programación en C/01-Fundamentos del lenguaje/adjuntos/Stack de llamadas de div_count.png",
+  "sha256": "693e25e63eb5954c36331a2d844f58aa3c93240d850c23c986d74a2dfc628b7a",
+  "motivo": "Se tapó la cámara del expositor (rostro) con el color de fondo; el repo es público."
+ },
+ {
+  "tema": "Punteros, arreglos y strings",
+  "tipo": "editada",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/Untitled 4.png",
+  "destino": "Programación en C/02-Punteros, arreglos y strings/adjuntos/Base hexadecimal.png",
+  "sha256": "ee9ad7d4e18b1b7284bd4b0ee5eb712caed1ea2322f665ea1c135370d7a1d236",
+  "motivo": "Se tapó la cámara del expositor (rostro) con el color de fondo; el repo es público."
+ },
+ {
+  "tema": "Punteros, arreglos y strings",
+  "tipo": "editada",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/Untitled 5.png",
+  "destino": "Programación en C/02-Punteros, arreglos y strings/adjuntos/Memoria como tabla de direcciones y bytes.png",
+  "sha256": "1ddec65d4025e1bd13ceb3124b932b027b9205595d4b7c970ec2a3a1b5e2caac",
+  "motivo": "Se tapó la cámara del expositor (rostro) con el color de fondo; el repo es público."
+ },
+ {
+  "tema": "Punteros, arreglos y strings",
+  "tipo": "editada",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/Untitled 6.png",
+  "destino": "Programación en C/02-Punteros, arreglos y strings/adjuntos/Puntero a int en el stack.png",
+  "sha256": "72a7d4d3f1caa478d5df38f2794c7db9cab88238922d40d0203fe9ddf2c35d2a",
+  "motivo": "Se tapó la cámara del expositor (rostro) con el color de fondo; el repo es público."
+ },
+ {
+  "tema": "Punteros, arreglos y strings",
+  "tipo": "editada",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/Untitled 7.png",
+  "destino": "Programación en C/02-Punteros, arreglos y strings/adjuntos/Stack de increase con un puntero a x.png",
+  "sha256": "7e298cf5e8ca7741e6da877db93e987d7fd0762a465d99ffa7c0a60b84422bae",
+  "motivo": "Se tapó la cámara del expositor (rostro) con el color de fondo; el repo es público."
+ },
+ {
+  "tema": "Punteros, arreglos y strings",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/Untitled 8.png",
+  "destino": "Programación en C/02-Punteros, arreglos y strings/adjuntos/Aritmética de punteros con sizeof.png",
+  "sha256": "1479e16d055c42c5bc67098bec9aa71943ec81d4c84fbe6f112d9e46aef4b848"
+ },
+ {
+  "tema": "Punteros, arreglos y strings",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/Untitled 9.png",
+  "destino": "Programación en C/02-Punteros, arreglos y strings/adjuntos/Variables contiguas en el stack.png",
+  "sha256": "0dde43527bb56717571dcd155f2fd9c22146412751be6ee9168c0a757153876f"
+ },
+ {
+  "tema": "Punteros, arreglos y strings",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/Untitled 10.png",
+  "destino": "Programación en C/02-Punteros, arreglos y strings/adjuntos/Arreglo contiguo en el stack.png",
+  "sha256": "a73846f38d349a38a6990190f8b7d3f73bcb8b45fba06ec85abe6607def6e13b"
+ },
+ {
+  "tema": "Punteros, arreglos y strings",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/Untitled 11.png",
+  "destino": "Programación en C/02-Punteros, arreglos y strings/adjuntos/Indexación como aritmética de punteros.png",
+  "sha256": "2b9866f07e9ef972b4446584d370b11b0e3cc6b576a37b9ff8d3e4c7df19316d"
+ },
+ {
+  "tema": "Punteros, arreglos y strings",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/Untitled 12.png",
+  "destino": "Programación en C/02-Punteros, arreglos y strings/adjuntos/A[i] es lo mismo que i[A].png",
+  "sha256": "4a47205fd9d7c4c355dfe0c945ccffe6bc1d3228fbdae82dca2c7396b33e5a1a"
+ },
+ {
+  "tema": "Punteros, arreglos y strings",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/Untitled 13.png",
+  "destino": "Programación en C/02-Punteros, arreglos y strings/adjuntos/Dirección de A[2] en el arreglo.png",
+  "sha256": "a991574de10df7a3929649b11b3efb9ec6fc99c91c1f66b570f88420ad3d9ddf"
+ },
+ {
+  "tema": "Punteros, arreglos y strings",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/Untitled 14.png",
+  "destino": "Programación en C/02-Punteros, arreglos y strings/adjuntos/Imprimir los argumentos de consola.png",
+  "sha256": "9ac11b1014c1a4b6d5dbe92af562692c77c20edb3bf3a8c5255b96e61bbe4fe4"
+ },
+ {
+  "tema": "Punteros, arreglos y strings",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/Untitled 15.png",
+  "destino": "Programación en C/02-Punteros, arreglos y strings/adjuntos/Argumento numérico leído sin atoi.png",
+  "sha256": "bf1604a543e2cb9cf661b0f11e451788c39092fa19a7a88affa263c43c186f14"
+ },
+ {
+  "tema": "Punteros, arreglos y strings",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/Untitled 16.png",
+  "destino": "Programación en C/02-Punteros, arreglos y strings/adjuntos/Argumento numérico convertido con atoi.png",
+  "sha256": "7be112e330bf50143972eb3710625e40ffd020f099fb1ba1c9d0e217ca741fc6"
+ },
+ {
+  "tema": "Memoria dinámica y Valgrind",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/Untitled 17.png",
+  "destino": "Programación en C/03-Memoria dinámica y Valgrind/adjuntos/Bloques del heap en la RAM.png",
+  "sha256": "13beca36c0b29d3ff966c87849dea9fb1c1f7e24fcd0027b5f78e32be98d4f0f"
+ },
+ {
+  "tema": "Memoria dinámica y Valgrind",
+  "tipo": "editada",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/Untitled 18.png",
+  "destino": "Programación en C/03-Memoria dinámica y Valgrind/adjuntos/Arreglo en el heap apuntado desde el stack.png",
+  "sha256": "ad83635243636d0f6fe01523bc6037dd796ce909d83580c050eddf0d384c9fb7",
+  "motivo": "Se tapó la cámara del expositor (rostro) con el color de fondo; el repo es público."
+ },
+ {
+  "tema": "Memoria dinámica y Valgrind",
+  "tipo": "editada",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/Untitled 19.png",
+  "destino": "Programación en C/03-Memoria dinámica y Valgrind/adjuntos/Matriz en el heap - arreglo de punteros a filas.png",
+  "sha256": "f34958a049e94a3dec39cdd20fcad6c18dfeab7bc88d6f9c201f43d4be601d87",
+  "motivo": "Se tapó la cámara del expositor (rostro) con el color de fondo; el repo es público."
+ },
+ {
+  "tema": "Memoria dinámica y Valgrind",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/Untitled 20.png",
+  "destino": "Programación en C/03-Memoria dinámica y Valgrind/adjuntos/Matriz en el heap - primera fila.png",
+  "sha256": "7d213c6a315d68caac3f53c6910272ca1bd96292280cdaff0491738c2ef3cd3b"
+ },
+ {
+  "tema": "Memoria dinámica y Valgrind",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/Untitled 21.png",
+  "destino": "Programación en C/03-Memoria dinámica y Valgrind/adjuntos/Matriz en el heap - puntero a la primera fila.png",
+  "sha256": "87c6ca6d67fa75644bcf287a127889ea590c6861261fa7aaf4cf3c5fb70b83ea"
+ },
+ {
+  "tema": "Memoria dinámica y Valgrind",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/Untitled 22.png",
+  "destino": "Programación en C/03-Memoria dinámica y Valgrind/adjuntos/Matriz en el heap - segunda fila.png",
+  "sha256": "ecf595d9296d2e0b85127f4fcc31f44e71d30ce7be14c01ffd1fc93ab433138f"
+ },
+ {
+  "tema": "Memoria dinámica y Valgrind",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/Untitled 23.png",
+  "destino": "Programación en C/03-Memoria dinámica y Valgrind/adjuntos/Matriz en el heap - puntero a la segunda fila.png",
+  "sha256": "1257544468766b969cfc6b10681c52ff711bb23c62eccfac0759382b8dab6df6"
+ },
+ {
+  "tema": "Memoria dinámica y Valgrind",
+  "tipo": "editada",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/Untitled 24.png",
+  "destino": "Programación en C/03-Memoria dinámica y Valgrind/adjuntos/Matriz en el heap - acceso a A[0][0].png",
+  "sha256": "7538f17d165b994883add0f5dd6667b78a5a92aa19c14c2433fa04e9188f725a",
+  "motivo": "Se tapó la cámara del expositor (rostro) con el color de fondo; el repo es público."
+ },
+ {
+  "tema": "Memoria dinámica y Valgrind",
+  "tipo": "editada",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image.png",
+  "destino": "Programación en C/03-Memoria dinámica y Valgrind/adjuntos/Tiempo de ejecución con y sin Valgrind.png",
+  "sha256": "6d47bb4674a151a16ed659f5b0bed427568615a5dd8cc24dd7c40b440a894649",
+  "motivo": "Se tapó la cámara del expositor (rostro) con el color de fondo; el repo es público."
+ },
+ {
+  "tema": "Memoria dinámica y Valgrind",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image 1.png",
+  "destino": "Programación en C/03-Memoria dinámica y Valgrind/adjuntos/Valgrind sobre un programa sin errores.png",
+  "sha256": "e0e65b586c08f80579e35bbb563f2ba8754ed4f80edf399a27cfecbb998a1d90"
+ },
+ {
+  "tema": "Memoria dinámica y Valgrind",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image 2.png",
+  "destino": "Programación en C/03-Memoria dinámica y Valgrind/adjuntos/Valgrind - resumen de un leak directo e indirecto.png",
+  "sha256": "1b7ca70df3e20b77446e1129083fa6a5e558cd4cf9d6e67418bf5964c4e3c096"
+ },
+ {
+  "tema": "Memoria dinámica y Valgrind",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image 3.png",
+  "destino": "Programación en C/03-Memoria dinámica y Valgrind/adjuntos/Valgrind - leak-check full apunta a la línea del malloc.png",
+  "sha256": "212c2537f185de35372626c67ea6a7b8612bcee623ac2c8c9be2dd8065e1e6ba"
+ },
+ {
+  "tema": "Memoria dinámica y Valgrind",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image 4.png",
+  "destino": "Programación en C/03-Memoria dinámica y Valgrind/adjuntos/Valgrind - leak restante tras liberar B.png",
+  "sha256": "3486a012d823e2cf99ad05b4c34e51d146d8ef3485ce6b26f1fd775c68279f0d"
+ },
+ {
+  "tema": "Memoria dinámica y Valgrind",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image 5.png",
+  "destino": "Programación en C/03-Memoria dinámica y Valgrind/adjuntos/Código bad_val con valor no inicializado.png",
+  "sha256": "dd0372ea2f42b01c6a364a61526691b658c356bb83c3522ee4476ae66bc953c3"
+ },
+ {
+  "tema": "Memoria dinámica y Valgrind",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image 6.png",
+  "destino": "Programación en C/03-Memoria dinámica y Valgrind/adjuntos/Valgrind - salto condicional con valor no inicializado.png",
+  "sha256": "cae1e1a2d147fa30a6564bc3eaeb22bdc9be5a8e26df3f544482edc5b34ccab9"
+ },
+ {
+  "tema": "Memoria dinámica y Valgrind",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image 7.png",
+  "destino": "Programación en C/03-Memoria dinámica y Valgrind/adjuntos/Valgrind - sugerencia de track-origins.png",
+  "sha256": "f2bd4037810d6be10bcb71ff727b6ce9c12445c554f1742df85c19254b71834c"
+ },
+ {
+  "tema": "Memoria dinámica y Valgrind",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image 8.png",
+  "destino": "Programación en C/03-Memoria dinámica y Valgrind/adjuntos/Valgrind - origen del valor no inicializado.png",
+  "sha256": "cfa1854daba202d4fe40bfd9fe2f29c83ca245c00c64bc8054dd5a2e549a07c0"
+ },
+ {
+  "tema": "Memoria dinámica y Valgrind",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image 9.png",
+  "destino": "Programación en C/03-Memoria dinámica y Valgrind/adjuntos/Código bad_write con escritura fuera del arreglo.png",
+  "sha256": "f003f5043ccd7c309bf0589a233b6f4b22b4aefba21660b53040cde213b70193"
+ },
+ {
+  "tema": "Memoria dinámica y Valgrind",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image 10.png",
+  "destino": "Programación en C/03-Memoria dinámica y Valgrind/adjuntos/Valgrind - escritura inválida después del bloque.png",
+  "sha256": "10f63763930ada472009abeeb6cfbbfc959ffe60d519eb27f15ecc5c1f32a2f2"
+ },
+ {
+  "tema": "Memoria dinámica y Valgrind",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image 11.png",
+  "destino": "Programación en C/03-Memoria dinámica y Valgrind/adjuntos/Valgrind - lectura inválida antes del bloque.png",
+  "sha256": "a15ef5eded0d38040db2889c6bab6dc2652b6383487209ba849339e432de5295"
+ },
+ {
+  "tema": "Memoria dinámica y Valgrind",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image 12.png",
+  "destino": "Programación en C/03-Memoria dinámica y Valgrind/adjuntos/Valgrind - stack trace de un leak en funciones anidadas.png",
+  "sha256": "038d2060ba8131f4c203178fd7bfa91f617281e0aadcf0f318dba1358c36ec02"
+ },
+ {
+  "tema": "Structs",
+  "tipo": "editada",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image 13.png",
+  "destino": "Programación en C/04-Structs/adjuntos/Struct dentro de otro struct en memoria.png",
+  "sha256": "0e8daf72a54b4e96991f5d5d66029786fa050baf02ac86f0d35cfe0d40478b63",
+  "motivo": "Se tapó la cámara del expositor (rostro) con el color de fondo; el repo es público."
+ },
+ {
+  "tema": "Structs",
+  "tipo": "editada",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image 14.png",
+  "destino": "Programación en C/04-Structs/adjuntos/Struct con un arreglo de structs en el heap.png",
+  "sha256": "3d289d009c663eed709151e4b62195f0ebe476ddd7a42d2c41e97ab089925153",
+  "motivo": "Se tapó la cámara del expositor (rostro) con el color de fondo; el repo es público."
+ },
+ {
+  "tema": "Structs",
+  "tipo": "editada",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image 15.png",
+  "destino": "Programación en C/04-Structs/adjuntos/Struct recursivo de tamaño infinito.png",
+  "sha256": "2d5a79c25836be1be965625baeff2e3d66e233b48e92cddefedf50ad88b63eea",
+  "motivo": "Se tapó la cámara del expositor (rostro) con el color de fondo; el repo es público."
+ },
+ {
+  "tema": "Structs",
+  "tipo": "editada",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image 16.png",
+  "destino": "Programación en C/04-Structs/adjuntos/Structs que se apuntan mutuamente.png",
+  "sha256": "3d6987b1d2c4630a0035c43a76e647671205877ede85308955d1da552e91c0eb",
+  "motivo": "Se tapó la cámara del expositor (rostro) con el color de fondo; el repo es público."
+ },
+ {
+  "tema": "Módulos, compilación y depuración",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image 17.png",
+  "destino": "Programación en C/05-Módulos, compilación y depuración/adjuntos/Qué va en modulo.h y en modulo.c.png",
+  "sha256": "7fcc5ee803834512b27d2f680c18d2174e46d7fbf94f4fa7682c2fa901e0a6cc"
+ },
+ {
+  "tema": "Módulos, compilación y depuración",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image 18.png",
+  "destino": "Programación en C/05-Módulos, compilación y depuración/adjuntos/Módulo de lista ligada en list.h y list.c.png",
+  "sha256": "87e52b78a2e0aa879f9c9949e15914eb3a13b1375933d5345d595fde45bc2bfe"
+ },
+ {
+  "tema": "Módulos, compilación y depuración",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image 19.png",
+  "destino": "Programación en C/05-Módulos, compilación y depuración/adjuntos/Compilación de todo en un solo paso.png",
+  "sha256": "5c6ad529fb3e3371aa6dab15d2c17d9b3880c3e8c23b5443d9a2e9da2cf3b0f4"
+ },
+ {
+  "tema": "Módulos, compilación y depuración",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image 20.png",
+  "destino": "Programación en C/05-Módulos, compilación y depuración/adjuntos/Compilación separada a archivos objeto.png",
+  "sha256": "634cfd0193e921f8f3d3751c516498b5c822d452d8f578c66b854537aa6a0fac"
+ },
+ {
+  "tema": "Módulos, compilación y depuración",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image 21.png",
+  "destino": "Programación en C/05-Módulos, compilación y depuración/adjuntos/Enlazado de archivos objeto.png",
+  "sha256": "6c3defa82ef54391b2d19be960a22f9273deac77ab8bdf52e5f32d68de0cc848"
+ },
+ {
+  "tema": "Módulos, compilación y depuración",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image 22.png",
+  "destino": "Programación en C/05-Módulos, compilación y depuración/adjuntos/Inclusión repetida de reptil.h.png",
+  "sha256": "b551525396ec16f61a2cf2869b21dbb7278b0b67ecf2387c316442117839bc16"
+ },
+ {
+  "tema": "Módulos, compilación y depuración",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image 23.png",
+  "destino": "Programación en C/05-Módulos, compilación y depuración/adjuntos/Inclusión circular de headers.png",
+  "sha256": "2c7bff209f3ce4a55b64527e9c93271e946cf72ebd8d4a15a33e38be8e7be092"
+ },
+ {
+  "tema": "Módulos, compilación y depuración",
+  "tipo": "editada",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image 24.png",
+  "destino": "Programación en C/05-Módulos, compilación y depuración/adjuntos/Compilación manual de todos los módulos.png",
+  "sha256": "d3bd00891ebbaf0a5a36dd9fcbec71801b3ec5f7d9ebc744ae021f8f0e6b0f9f",
+  "motivo": "Se tapó la cámara del expositor (rostro) con el color de fondo; el repo es público."
+ },
+ {
+  "tema": "Módulos, compilación y depuración",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image 25.png",
+  "destino": "Programación en C/05-Módulos, compilación y depuración/adjuntos/Make - regla de reptil.o.png",
+  "sha256": "4fa2d6cd9551e08c21c73fc15cdd87b2e28eda6d44ab747d1c4969277e9cda0e"
+ },
+ {
+  "tema": "Módulos, compilación y depuración",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image 26.png",
+  "destino": "Programación en C/05-Módulos, compilación y depuración/adjuntos/Make - regla de frog.o.png",
+  "sha256": "75ce47bf4342a2f3c92a65c482f36762b6ebf56aa2e21a521a60e8b70966a013"
+ },
+ {
+  "tema": "Módulos, compilación y depuración",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image 27.png",
+  "destino": "Programación en C/05-Módulos, compilación y depuración/adjuntos/Make - regla de main.o.png",
+  "sha256": "761e8ef2494c135e273b1775068cfc08c8423d63c74336a6aada098f73a47bd2"
+ },
+ {
+  "tema": "Módulos, compilación y depuración",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/image 28.png",
+  "destino": "Programación en C/05-Módulos, compilación y depuración/adjuntos/Makefile completo del ejemplo de reptiles.png",
+  "sha256": "99ff494d350affddb760b0ac22643351df37e304ad92fbe4376d4b84d6a721be"
+ }
+]

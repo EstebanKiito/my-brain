@@ -5,3 +5,4 @@ Tutorial del lenguaje C usado en Estructuras de Datos (IIC2133): sintaxis, punte
 ## Temas
 | Tema | Qué cubre |
 |---|---|
+| [[Programación en C/01-Fundamentos del lenguaje/_Índice\|Fundamentos del lenguaje]] | Estructura de un programa, compilación con gcc, tipos y casting, control de flujo, funciones y stack |

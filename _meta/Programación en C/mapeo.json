@@ -1,5 +1,5 @@
 {
-  "_descripcion": "Mapeo de las fuentes del tutorial de C (material de Estructuras de Datos IIC2133, rutas relativas a _raw/) a los temas del vault. Mismo formato que _meta/Estructuras de Datos/mapeo.json. Las guías .md de 'Guias/' (setup, depuración) son material del curso y se usan como complemento.",
+  "_descripcion": "Mapeo de las fuentes del tutorial de C (material de Estructuras de Datos IIC2133, rutas relativas a _raw/) a los temas del vault. Mismo formato que _meta/Estructuras de Datos/mapeo.json. Las guías .md de 'Guias/' (setup, depuración) son material del curso y se usan como complemento. Las páginas del cheatsheet se mapean completas con 'desde': '' y 'por_texto'.",
   "carpeta_ramo": "Programación en C",
   "cobertura": "reescrita",
   "fuentes": {
@@ -22,28 +22,172 @@
   "temas": {
     "Fundamentos del lenguaje": {
       "carpeta": "Programación en C/01-Fundamentos del lenguaje",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "capsulas",
+          "desde": "Repositorio del curso:",
+          "hasta": "4. Punteros",
+          "por_texto": true
+        },
+        {
+          "fuente": "cheat00",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "cheat01",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "cheat02",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "cheat03",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "taller",
+          "desde": "Compilar y ejecutar",
+          "hasta": "PUNTERO",
+          "por_texto": true
+        }
+      ]
     },
     "Punteros, arreglos y strings": {
       "carpeta": "Programación en C/02-Punteros, arreglos y strings",
       "estado": "pendiente",
-      "secciones": []
+      "secciones": [
+        {
+          "fuente": "capsulas",
+          "desde": "4. Punteros",
+          "hasta": "7. MEMORIA"
+        },
+        {
+          "fuente": "cheat04",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "cheat05",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "cheat06",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "taller",
+          "desde": "PUNTERO",
+          "hasta": "Taller Parte 2",
+          "por_texto": true
+        }
+      ]
     },
     "Memoria dinámica y Valgrind": {
       "carpeta": "Programación en C/03-Memoria dinámica y Valgrind",
       "estado": "pendiente",
-      "secciones": []
+      "secciones": [
+        {
+          "fuente": "capsulas",
+          "desde": "7. MEMORIA",
+          "hasta": "9. STRUCTS"
+        },
+        {
+          "fuente": "cheat07",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "cheat08",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "taller",
+          "desde": "MEMORIA",
+          "hasta": "EJEMPLO",
+          "por_texto": true
+        },
+        {
+          "fuente": "taller",
+          "desde": "ARREGLOS EN EL HEAP",
+          "hasta": "LISTA LIGADA",
+          "por_texto": true
+        },
+        {
+          "fuente": "taller",
+          "desde": "MATRICES",
+          "hasta": "MODULARIZAR",
+          "por_texto": true
+        }
+      ]
     },
     "Structs": {
       "carpeta": "Programación en C/04-Structs",
       "estado": "pendiente",
-      "secciones": []
+      "secciones": [
+        {
+          "fuente": "capsulas",
+          "desde": "9. STRUCTS",
+          "hasta": "10. MODULOS EN C"
+        },
+        {
+          "fuente": "cheat09",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "taller",
+          "desde": "Taller Parte 2",
+          "hasta": "MEMORIA",
+          "por_texto": true
+        },
+        {
+          "fuente": "taller",
+          "desde": "EJEMPLO",
+          "hasta": "ARREGLOS EN EL HEAP",
+          "por_texto": true
+        },
+        {
+          "fuente": "taller",
+          "desde": "LISTA LIGADA",
+          "hasta": "MATRICES",
+          "por_texto": true
+        }
+      ]
     },
     "Módulos, compilación y depuración": {
       "carpeta": "Programación en C/05-Módulos, compilación y depuración",
       "estado": "pendiente",
-      "secciones": []
+      "secciones": [
+        {
+          "fuente": "capsulas",
+          "desde": "10. MODULOS EN C"
+        },
+        {
+          "fuente": "cheat10",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "cheatsheet",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "taller",
+          "desde": "MODULARIZAR",
+          "hasta": null,
+          "por_texto": true
+        }
+      ]
     }
   },
   "aceptados": []
