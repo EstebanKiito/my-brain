@@ -25,3 +25,9 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
 | 🟡 | [[01 - Estructura de un árbol B+\|Estructura de un árbol B+]] | Apuntes: "La raíz tiene entre 1 y 2d hijos; los nodos internos tienen entre d y 2d hijos" | En los ejemplos del curso, con $d = 2$, los directorios tienen 2 a 4 **llaves** (por ejemplo, 5, 13 y 24, 30) y la raíz puede tener 1 llave (17), así que la cota se cumple en llaves, no en hijos (que serían $d + 1$ a $2d + 1$). La nota la escribe en llaves. Conviene confirmarlo con la slide de la definición. |
+
+## Tablas de hash
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ℹ️ | [[01 - Función de hash y tablas de hash\|Función de hash y tablas de hash]] | Apuntes: "si m es primo, casi nunca me da el valor 0; solo cuando la llave es igual al tamaño del arreglo" | $k \bmod m = 0$ para **todo** múltiplo de $m$, no solo para $k = m$. La razón real para usar $m$ primo es que reparte mejor llaves con patrones comunes (múltiplos de 2, de 10, …). La nota da esa razón y omite la frase. |
+| ℹ️ | [[02 - Resolución de colisiones\|Resolución de colisiones]] | Apuntes: "Encadenamiento → lista ligada (con puntero al final)" | El pseudocódigo del curso inserta como **cabeza** de la lista, que es $O(1)$ sin puntero al final. La nota sigue al pseudocódigo. |
