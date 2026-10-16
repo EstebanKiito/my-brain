@@ -1,0 +1,1577 @@
+[
+ {
+  "tema": "Análisis de algoritmos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Ayudantías - EDD IIC2133/image.png",
+  "destino": "Estructuras de Datos/01-Análisis de algoritmos/adjuntos/Gráfico de la cota superior O.png",
+  "sha256": "4837821d211594271d26a747c71c596d6ea6c6c25c34b019d9edc07a21afee71"
+ },
+ {
+  "tema": "Análisis de algoritmos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Ayudantías - EDD IIC2133/image 1.png",
+  "destino": "Estructuras de Datos/01-Análisis de algoritmos/adjuntos/Gráfico de la cota inferior Omega.png",
+  "sha256": "195a69a97d6ffb3f8fa389d76ac0fc2902e0b21f0cc9783e135593951649d4d5"
+ },
+ {
+  "tema": "Análisis de algoritmos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Ayudantías - EDD IIC2133/image 2.png",
+  "destino": "Estructuras de Datos/01-Análisis de algoritmos/adjuntos/Gráfico de la cota ajustada Theta.png",
+  "sha256": "cf72c9ed12bdbca623760133e43eb44c3469eb88356b14711e4dc1d6eab7a1ae"
+ },
+ {
+  "tema": "Análisis de algoritmos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Ayudantías - EDD IIC2133/BubbleSort.gif",
+  "destino": "Estructuras de Datos/01-Análisis de algoritmos/adjuntos/Animación de bubble sort.gif",
+  "sha256": "24c65bfed89fedb61f678fae89511fd0c5185bf10d96dcab058b83459ee68b88"
+ },
+ {
+  "tema": "Análisis de algoritmos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/Untitled.png",
+  "destino": "Estructuras de Datos/01-Análisis de algoritmos/adjuntos/Demostración de finitud de un algoritmo de ordenación.png",
+  "sha256": "fb338c376d458ccd08918a26e41d0175bfa803b9945bb2dbd094590fc6640253"
+ },
+ {
+  "tema": "Análisis de algoritmos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/BinarySearchvsLineal.gif",
+  "destino": "Estructuras de Datos/01-Análisis de algoritmos/adjuntos/Búsqueda binaria frente a búsqueda secuencial.gif",
+  "sha256": "866c59de7948199648046c9e747fb59d08eed5957b53414c9b3b201236c7b452"
+ },
+ {
+  "tema": "Estructuras lineales",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 43.png",
+  "destino": "Estructuras de Datos/02-Estructuras lineales/adjuntos/Cola FIFO con enqueue y dequeue.png",
+  "sha256": "22f2d7cd012161c8f535c8de44ad1833de9fba01eb10743d94f32c12f136b216"
+ },
+ {
+  "tema": "Estructuras lineales",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 44.png",
+  "destino": "Estructuras de Datos/02-Estructuras lineales/adjuntos/Pila LIFO al apilar un elemento.png",
+  "sha256": "f5527ec8b950f8c953bb35f64f5aecb6086b01d8298754a7d122cad373311b0c"
+ },
+ {
+  "tema": "Estructuras lineales",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class00.pdf#page=43",
+  "destino": "Estructuras de Datos/02-Estructuras lineales/adjuntos/Slide - arreglo contiguo en memoria.png",
+  "sha256": "dc34ee175d074f533992b5b25cd1ef3b1417a7da989747ba9fc912596e78e417"
+ },
+ {
+  "tema": "Estructuras lineales",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class00.pdf#page=45",
+  "destino": "Estructuras de Datos/02-Estructuras lineales/adjuntos/Slide - lista ligada en memoria.png",
+  "sha256": "c248595e979858a48849138a0e57f4057ea026a4c4d8317de3fafc479856db2f"
+ },
+ {
+  "tema": "Estructuras lineales",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class00.pdf#page=47",
+  "destino": "Estructuras de Datos/02-Estructuras lineales/adjuntos/Slide - inserción en una lista ligada.png",
+  "sha256": "90509d7e15695e0b14cd6160a264bd580fa0ea449336be76244ef3bd91d86588"
+ },
+ {
+  "tema": "Ordenamiento elemental",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/Untitled 1.png",
+  "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Cálculo de la complejidad de selection sort.png",
+  "sha256": "6a7b0229f5d0fb8b47da7be7b59fc1a610b500495059a6859d5ddacf71ea96fc"
+ },
+ {
+  "tema": "Ordenamiento elemental",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/SelectionSort.gif",
+  "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Animación de selection sort.gif",
+  "sha256": "80556156b26290eaa9aba3011cc8c930d6d5691ef2ac575460dc75807286572c"
+ },
+ {
+  "tema": "Ordenamiento elemental",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/SelectionSort 1.gif",
+  "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Animación de selection sort.gif",
+  "sha256": "80556156b26290eaa9aba3011cc8c930d6d5691ef2ac575460dc75807286572c"
+ },
+ {
+  "tema": "Ordenamiento elemental",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image.png",
+  "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Insertar ordenadamente en un arreglo.png",
+  "sha256": "d4b04e6e6ab52779aa714538475b4321ef24680d62aa611a729a26dd0578d15f"
+ },
+ {
+  "tema": "Ordenamiento elemental",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/InsertionSort.gif",
+  "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Animación de insertion sort.gif",
+  "sha256": "9ede4b6ee6ea6cb7926eab20bada57a0f899a45b04b336f3718908ea16742271"
+ },
+ {
+  "tema": "Ordenamiento elemental",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/InsertionSort 1.gif",
+  "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Animación de insertion sort.gif",
+  "sha256": "9ede4b6ee6ea6cb7926eab20bada57a0f899a45b04b336f3718908ea16742271"
+ },
+ {
+  "tema": "Ordenamiento elemental",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 1.png",
+  "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Traza de insertion sort sobre SORTINGEXAMPLE.png",
+  "sha256": "32d1e141121cfd26862b519f79a4418764bdcb9cf0b4af17ad183ebd5a2f508f"
+ },
+ {
+  "tema": "Ordenamiento elemental",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 2.png",
+  "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Peor caso de insertion sort por inversiones.png",
+  "sha256": "b11207c1213274911763f9176ce01062ac72a10f9c35147d0a126b90821d718a"
+ },
+ {
+  "tema": "Ordenamiento elemental",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 3.png",
+  "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Pseudocódigo in place de selection e insertion sort.png",
+  "sha256": "c2df81461be557af694d123053764b61a812fef5f3bf66896b069eff2fd22d04"
+ },
+ {
+  "tema": "Ordenamiento elemental",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Ayudantías - EDD IIC2133/selectionSort(inplace).gif",
+  "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Animación de selection sort in place.gif",
+  "sha256": "e3f948c1039fa17578c8b0efca8079386d938907e39c77604e89712ab357f41c"
+ },
+ {
+  "tema": "Ordenamiento elemental",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Ayudantías - EDD IIC2133/InsertionSort(In_place).gif",
+  "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Animación de insertion sort in place.gif",
+  "sha256": "3ba0782e5079ac802cb0a49338cca76bb6b85dfcbd7610ccf7ea58f19fc4c953"
+ },
+ {
+  "tema": "Ordenamiento elemental",
+  "tipo": "editada",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Ayudantías - EDD IIC2133/IMG_0786.jpeg",
+  "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Pizarra - n sobre k sublistas de largo k.jpeg",
+  "sha256": "48ecf157ff0904270531539c03189e825e2ec6555ad290d26d52b9dff15d0d43",
+  "motivo": "Foto de pizarra girada 90° y reducida para que se lea."
+ },
+ {
+  "tema": "Ordenamiento elemental",
+  "tipo": "editada",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Ayudantías - EDD IIC2133/IMG_0787.jpeg",
+  "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Pizarra - insertion sort por bloques en tiempo nk.jpeg",
+  "sha256": "1c533bd5edf1dd501d5a51460a4091d0bfaca1657cf5f10d40a3ac6701a863f1",
+  "motivo": "Foto de pizarra girada 90° y reducida para que se lea."
+ },
+ {
+  "tema": "Ordenamiento elemental",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Ayudantías - EDD IIC2133/image 3.png",
+  "destino": "Estructuras de Datos/03-Ordenamiento elemental/adjuntos/Ejercicio de insertion sort sobre sublistas.png",
+  "sha256": "a884316d06e114d3175dee0a2744122c4af163e91c181f4c65d7efd5bc3d9437"
+ },
+ {
+  "tema": "Mergesort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/MergeSort.gif",
+  "destino": "Estructuras de Datos/04-Mergesort/adjuntos/Animación de mergesort.gif",
+  "sha256": "f3e1a97d2854be6aa038f96ef2f1f1ebb14a76869afc1690d53938e04349d38d"
+ },
+ {
+  "tema": "Mergesort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 4.png",
+  "destino": "Estructuras de Datos/04-Mergesort/adjuntos/Merge tras la segunda y tercera iteración.png",
+  "sha256": "7f6e4cab4e32fa866025159ff889a3b57a3e682909db7a8fe468ace24a3d3e73"
+ },
+ {
+  "tema": "Mergesort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 5.png",
+  "destino": "Estructuras de Datos/04-Mergesort/adjuntos/Demostración del propósito de merge.png",
+  "sha256": "8ebfeee3702724a693e3f52e8a4bbb01e4061e851620c850b8e5cc58268bddc9"
+ },
+ {
+  "tema": "Mergesort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 6.png",
+  "destino": "Estructuras de Datos/04-Mergesort/adjuntos/Complejidad de merge con memoria adicional.png",
+  "sha256": "dda1f254db15097edd411d1344bfd9d21cc6caec77f8e477c04e2d56a0ad0dc5"
+ },
+ {
+  "tema": "Mergesort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 7.png",
+  "destino": "Estructuras de Datos/04-Mergesort/adjuntos/Complejidad de merge in place.png",
+  "sha256": "40f8817ed544d0a9c47d0dccdec108d354a42783c157d746e3d957bc26022195"
+ },
+ {
+  "tema": "Mergesort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 8.png",
+  "destino": "Estructuras de Datos/04-Mergesort/adjuntos/Tabla de complejidad de los algoritmos de ordenación.png",
+  "sha256": "3ea79ef9b65682931f24cd9ff87f399b493f2ab2897f068658c36e74cab9a492"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 9.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Partición de puntos 2D por medianas.png",
+  "sha256": "b725e0a14bb9116b7fe63d48a92f4d6d2d403797130ed13ad07e195b30c82bbb"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 10.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Definición de mediana.png",
+  "sha256": "66544dc8c0f1b2db7185fd7e29311eeb5fc09a1a3e178b486053c1448222e206"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 11.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Mediana - primer pivote 6.png",
+  "sha256": "41cbe41766706686f2ff26634d42e752e0dd710d8461e38f40c5ea25a9d2a441"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 12.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Mediana - secuencia reorganizada en torno a 6.png",
+  "sha256": "533548e4db7f09199592556f086af0645f75b0ed409b277b07b62376f638f9c8"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 13.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Mediana - se revisa el tramo izquierdo.png",
+  "sha256": "4462c3065a7584b0c502536e95182b0df45f391a0338a3d3c04295456f5bdca4"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 14.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Mediana - pivote 2 en el tramo izquierdo.png",
+  "sha256": "0e18158675ddada38e85455d39974b13f3c8510ab4f2308e88eb672d1837516b"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 15.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Mediana - se revisa el subtramo derecho.png",
+  "sha256": "7b45892af63e8d39be40478b30d790b34e9192820200866d3991817701b7b369"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 16.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Mediana - pivote 5 y reubicación.png",
+  "sha256": "bf94c63c606f5e840d3931cc0867bcd8883132283e6aa48ee1a4edcbe4815006"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 17.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Mediana - el pivote queda en la posición central.png",
+  "sha256": "373bb778cede900ffd3cd6754e300a5043d4da2d7ec0be673cae34fdb705a873"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 18.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Partición en menores y mayores al pivote.png",
+  "sha256": "fc945905011ebb97ceb7f3dfe3e4fb1f9ed945628577636f662e1fdcfc2264f6"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 19.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Qué retorna Partition.png",
+  "sha256": "fcd955f61c6b21b42503d7bc22e44173494e5e93cf5a6710ac43cf6e93ef3b30"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 20.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Costo de Partition con memoria adicional.png",
+  "sha256": "a6f05812caedb2138139d23b4e8697eedab0e6e86a031a5a524bbc47cfb0ed1d"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 21.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Memoria adicional de Partition.png",
+  "sha256": "966df93ab37f74f3a8bfe29432459887090fd0d2fc8862dbb20a4b826a0737cd"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 22.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Qué entrega Median.png",
+  "sha256": "b41fa798ecab2334c190a7ea1a76de318658a7d51f563c7546f94d1696299a5c"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 23.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Mejor y peor caso de Median.png",
+  "sha256": "35a512010a908e105f42aa7577507efbba1c0122d8d5e6171c9df173135e4300"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 24.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Cada pivote queda en su posición ordenada.png",
+  "sha256": "83eeb83275fff7d2b2bd97cb5051e60da79f9e4707f4d6774ef48f8ece73087a"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 25.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Quicksort como dividir para conquistar.png",
+  "sha256": "0bf7e4126817f172f42f3906f839750ce4e97b2bf7133a08779fe98758f40a66"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 26.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Traza de quicksort sobre ASORTINGEXAMPLE.png",
+  "sha256": "f957fa72b9d996c4b5b9545d91639c488766d32d0b14608fbfd9bcb6c794b711"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 27.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Partition in place.png",
+  "sha256": "a4dd16dd7ce13082a71bab7664988fe00b8c9826a479bf4e06afd6aabfd1c066"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 28.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Video de partition step.png",
+  "sha256": "f0ecc626c285fe1f04d36c268996df68780875b4d87591a9f96ca8e0208954b0"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 29.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Tabla de complejidad antes de quicksort.png",
+  "sha256": "14bd78a56978cd3e45cca259e4b478262f97ef73d74fb472a949a61fd1428b26"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 30.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Traza de quicksort con pivotes por nivel.png",
+  "sha256": "d34efd69b42da18bea652d088ba872fd85a6070219db0c2dd5eb3027ce348d43"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 31.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Partition in place - propiedad del invariante.png",
+  "sha256": "fb4c5cc477fe01606679a837726e6e89fac4a0e516d6ab08b49184475f987541"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 32.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Partition in place - caso base.png",
+  "sha256": "b71f1bc60373eef89b81ce7f1bade9b3561c7bf77fb414bf548a05e1247e5884"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 33.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Partition in place - hipótesis inductiva.png",
+  "sha256": "7bc006bb11a37a4aa08ef2b1033e3fa4a2e0ccc9a74b551d97d13eda74724bdd"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 34.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Partition in place - tesis inductiva.png",
+  "sha256": "59d53bb635c6233623ccc8bc080e27681d767d7cd734cd02fbd6334b2df85572"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 35.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Quicksort - finitud parte 1.png",
+  "sha256": "9eed6e505d117c7d8ee74bd3d6f71cf8a7781927508c787a2eabc24486e90bab"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 36.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Quicksort - finitud parte 2.png",
+  "sha256": "57a3ba19d8afb435345216da4861a36f98261743b042a8a0850b4c8e18167ede"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 37.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Quicksort - demostración de ordenación.png",
+  "sha256": "e2e911117d3fbe62963cfc54c18389938b157395b464ffebcc40e369a661d629"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "convertida",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/IMG_0841.heic",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Pizarra - árbol de recursión del peor y mejor caso.png",
+  "sha256": "7d359b249b426223a7997b4b8e543f6efe2110490486fe6a3bf354ed1f6bb7c1",
+  "motivo": "HEIC convertido a PNG con sips y reducido a 1400 px."
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 38.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Mejor y peor caso de quicksort.png",
+  "sha256": "b545cd8b074c1c5300be75507f1f2a32c42992f1a62cfcf6bd48a83c7dab592c"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 39.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Comparaciones de quicksort según la posición del pivote.png",
+  "sha256": "9c3993ed3ef3cc5cdf4b64049db6a3f9608f8f965dc48b956e4d1ef5c95c3d6a"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 40.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Recurrencia del caso promedio de quicksort.png",
+  "sha256": "731162297bc76da1420281ce89741aec03626e5eac061e55dddc72b980872eff"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 41.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Cota del caso promedio de quicksort.png",
+  "sha256": "e7eb373d67f10e0051db08e606f9c1c066ebabdc137ddb4fcc6002bd683d9366"
+ },
+ {
+  "tema": "Quicksort",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 42.png",
+  "destino": "Estructuras de Datos/05-Quicksort/adjuntos/Tabla de complejidad con quicksort.png",
+  "sha256": "5b322aab753071471eac40fc6931ea05ae6bdf42d5545ac769b29f6b73d02adc"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 45.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Costos de cola de prioridad en arreglos.png",
+  "sha256": "693397df94545a8c12378f994893aa5070bddfc3ad4f1f0fe6de36c447e8dc1d"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 46.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Definición de árbol binario.png",
+  "sha256": "e7865de9dd370473f54235aea5360e45a407d562bd36a7a0454157b8ec62ead5"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 47.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Árbol binario sin orden entre sus elementos.png",
+  "sha256": "8052f2f1f257fde2c8a48132926b1faf73d91affab57e1e4ed829f6589c267f6"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 48.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Definición de max heap binario.png",
+  "sha256": "b49b3a720cd8a5922acaed7e1686a109f87b2afbd2ce36c5b51ea8d54613123c"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 49.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Max heap con nodos de un mismo nivel sin orden.png",
+  "sha256": "9080d1e06d2f2831276438b1631fe2068370f99fc7be859b94fbedc3b018976c"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "editada",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/IMG_0846.jpeg",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Pizarra - nodo con llave y punteros a sus hijos.jpeg",
+  "sha256": "460fb8225824d5810adc686848422b4ed59c1dbbca3cb6db6ac7ebf64cc69824",
+  "motivo": "Foto de pizarra girada 90° y reducida para que se lea."
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 50.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Heaps como árboles casi llenos.png",
+  "sha256": "af10d6110021636e8179b45908de6157b2c22203bb556ac78d3206f3f19736f0"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 51.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Árbol binario lleno y casi lleno.png",
+  "sha256": "1e0fa826fd19860a3b3a94d4c326ed1003d9767e0b28821fa5d2e21516af91fa"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 52.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Índices de padre e hijos en el arreglo.png",
+  "sha256": "ed87159bb3a70fb5697439e5bfb10852df6f61143300da359058ae32d187373d"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 53.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Max heap y su arreglo.png",
+  "sha256": "954155d24af3929c35c8e5ee123359320196d39b6cefa646a44de620c422e988"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 54.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Camino de la raíz a la última hoja.png",
+  "sha256": "f273861f57487a0cc52677be9227bf320a935ac99a53b42eeede287eb83dd257"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 55.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Extracción - se saca la raíz.png",
+  "sha256": "1d86a77447fa0fb512ff74d38a4ba1d73393f93031361d8c1179b77458f9e1fd"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 56.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Extracción - el último elemento pasa a la raíz.png",
+  "sha256": "e54d9de63cb09b0d1ec8385ff189b7eff434765e6f8d5fad95f928ebecb0a122"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/HeapSort.gif",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Animación de heapsort.gif",
+  "sha256": "a12cb9a2f7b2fba046e1a0ffaa7fe9e7db2033b64a128494c691dea8d898fe55"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 57.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Pseudocódigo de BuildHeap.png",
+  "sha256": "bdd63ad126fe186ae6b74650cb3f343d44cbb78b2676700f25f0fda08fab1f09"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 58.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Pseudocódigo de HeapSort.png",
+  "sha256": "60cba43024bfb6f129524ea36be3ce3561dba659c091cbec4c56d5a0e88d5b83"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 59.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Complejidad de heapsort.png",
+  "sha256": "3994b1a857cb977ccfa091793abfd8c061d12333c87b3943d39e876f9aa8bd04"
+ },
+ {
+  "tema": "Heaps y colas de prioridad",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 60.png",
+  "destino": "Estructuras de Datos/06-Heaps y colas de prioridad/adjuntos/Tabla de complejidad con heapsort.png",
+  "sha256": "a29684ed6b0e89b2904b222edd673f368e873ffba70640a56b4d5270274ef517"
+ },
+ {
+  "tema": "Ordenamiento lineal",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 61.png",
+  "destino": "Estructuras de Datos/07-Ordenamiento lineal/adjuntos/Pseudocódigo de counting sort.png",
+  "sha256": "c77ce3f77835fdc0b650607382b9e801d853d0d4a9558ad9dca13b9dbbaba042"
+ },
+ {
+  "tema": "Ordenamiento lineal",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 62.png",
+  "destino": "Estructuras de Datos/07-Ordenamiento lineal/adjuntos/Complejidad de counting sort.png",
+  "sha256": "b1694238acfe771cb6aa141b2849b3b4e15eec20e389548fe98739efc4bb7770"
+ },
+ {
+  "tema": "Ordenamiento lineal",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/CountingSort.gif",
+  "destino": "Estructuras de Datos/07-Ordenamiento lineal/adjuntos/Animación de counting sort.gif",
+  "sha256": "d27921c1a754c0353e121d9c53379de5e2112d344bf6a0314ec801accd6061fd"
+ },
+ {
+  "tema": "Ordenamiento lineal",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 63.png",
+  "destino": "Estructuras de Datos/07-Ordenamiento lineal/adjuntos/Radix sort LSD por unidad, decena y centena.png",
+  "sha256": "f8d6a3dcf4dc2ef91748d741cf971e695845463dd415a0a0c77db273b6a9c3d7"
+ },
+ {
+  "tema": "Ordenamiento lineal",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 64.png",
+  "destino": "Estructuras de Datos/07-Ordenamiento lineal/adjuntos/Complejidad de radix sort.png",
+  "sha256": "e72c6eb32dd1fc9887ed479c950bd2da403b1513645cc95b161f9a4ba6f8c0d6"
+ },
+ {
+  "tema": "Ordenamiento lineal",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 65.png",
+  "destino": "Estructuras de Datos/07-Ordenamiento lineal/adjuntos/Radix sort MSD sobre palabras.png",
+  "sha256": "0903b7e9656f52140e03dc8db289ba674c46b28ab040e3fbc92f5720d9d9c489"
+ },
+ {
+  "tema": "Árboles binarios de búsqueda",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 66.png",
+  "destino": "Estructuras de Datos/08-Árboles binarios de búsqueda/adjuntos/Dos árboles binarios de 6 nodos.png",
+  "sha256": "e887e44db9711f8594d93b815b12342c9af72b55f9f2a31000ad7f05eebf9792"
+ },
+ {
+  "tema": "Árboles binarios de búsqueda",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 67.png",
+  "destino": "Estructuras de Datos/08-Árboles binarios de búsqueda/adjuntos/Anatomía de un árbol binario - raíz, niveles y altura.png",
+  "sha256": "886d3a0ba7464bba3500506e79debd9d0f491383f872f2de17580006b87c7aa0"
+ },
+ {
+  "tema": "Árboles binarios de búsqueda",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 68.png",
+  "destino": "Estructuras de Datos/08-Árboles binarios de búsqueda/adjuntos/Atributos de un nodo de ABB.png",
+  "sha256": "734474956057c8428f7150c05ab078476159cb4f43f07a4b280ca8d36c45d4e0"
+ },
+ {
+  "tema": "Árboles binarios de búsqueda",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 69.png",
+  "destino": "Estructuras de Datos/08-Árboles binarios de búsqueda/adjuntos/Búsqueda de la llave 7 en un ABB.png",
+  "sha256": "2e1e1b6158b3e38d4c0050c13a97d7b1795cd942a6e03f756a2d49ebffa1d2bd"
+ },
+ {
+  "tema": "Árboles binarios de búsqueda",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 70.png",
+  "destino": "Estructuras de Datos/08-Árboles binarios de búsqueda/adjuntos/Pseudocódigo de Search.png",
+  "sha256": "768efe260ce9803a8b00ff3d6e9039d3826e2623755be089f8aef814414b6e85"
+ },
+ {
+  "tema": "Árboles binarios de búsqueda",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 71.png",
+  "destino": "Estructuras de Datos/08-Árboles binarios de búsqueda/adjuntos/Búsqueda fallida de la llave 4.png",
+  "sha256": "6c02d446ea2a817299ad011710c7546b937e4fa48bb8d381616d4bc00455f19b"
+ },
+ {
+  "tema": "Árboles binarios de búsqueda",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 72.png",
+  "destino": "Estructuras de Datos/08-Árboles binarios de búsqueda/adjuntos/Inserción de la llave 4.png",
+  "sha256": "8bd704b7ed8156285cb1e3402d22f761b7de645d2d2c861bcab939100608c548"
+ },
+ {
+  "tema": "Árboles binarios de búsqueda",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 73.png",
+  "destino": "Estructuras de Datos/08-Árboles binarios de búsqueda/adjuntos/Search que retorna también el padre.png",
+  "sha256": "84b52a1d2f508010da645301bbe58b801c7329b2d18d8e6993ce93458ed03840"
+ },
+ {
+  "tema": "Árboles binarios de búsqueda",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 74.png",
+  "destino": "Estructuras de Datos/08-Árboles binarios de búsqueda/adjuntos/Pseudocódigo de Insert.png",
+  "sha256": "6c4fa8a629b84b761c479c79a75e828c4daab88ffedbf8e3724319ec94306ce7"
+ },
+ {
+  "tema": "Árboles binarios de búsqueda",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 75.png",
+  "destino": "Estructuras de Datos/08-Árboles binarios de búsqueda/adjuntos/ABB antes de eliminar la raíz.png",
+  "sha256": "5f9198bd1533644664a7fec33c15927a025f810e3815407271ec19d6d307e17f"
+ },
+ {
+  "tema": "Árboles binarios de búsqueda",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 76.png",
+  "destino": "Estructuras de Datos/08-Árboles binarios de búsqueda/adjuntos/Mínimo y máximo de un ABB.png",
+  "sha256": "dc8ab871572290010dc9d451ffa055dd0b20727584eb4ac82737bff11d2bbf36"
+ },
+ {
+  "tema": "Árboles binarios de búsqueda",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 77.png",
+  "destino": "Estructuras de Datos/08-Árboles binarios de búsqueda/adjuntos/Pseudocódigo de Delete.png",
+  "sha256": "7b456d0da0938765254f6cfb35e5f9e10f7178361f857f5cf0f3a8cf0caaa5a3"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 78.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/ABB colapsado sobre una recta.png",
+  "sha256": "c5db29bf31e6f2e4cf02ce183192c191f6c9856e2ef93985aa704cae967c99d9"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 79.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Subárboles de alturas distintas.png",
+  "sha256": "a25ec134578de4b63a802b979e6d6101d8947ebdd7d159413a71d2c381354e2a"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 80.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Propiedad de balance.png",
+  "sha256": "0e12e6975e1e8bfd2e417403a152718156bf12a160f1e8fe9378abd6f66de7d0"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 81.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Árbol antes de insertar B.png",
+  "sha256": "d844f86950de0ece1fd14bd88c0d8774030e37cfa3aa4ccda4a68be5cbb3c598"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 82.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Inserción de B desbalancea T y K.png",
+  "sha256": "a8bece5ec90a2ea964e74fe5e01a86da7737ce7d32a917db8adb4f722d6358d2"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 83.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Desbalance hacia el exterior - nodos X e Y.png",
+  "sha256": "7cac826561a5ed27e4c2f2bdee23072beab73eb3a7a7b44486eb22ccef9e3165"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 84.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Rotación simple.png",
+  "sha256": "de594d4a1ccd5b552fbde994a4b65fc61f99d257ba1766f35d7aea5e0e02060a"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 85.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Rotación simple en K - antes.png",
+  "sha256": "6f31e086eff8a11601cff8e9ccf127b92ec5b3cad13c4146c56ee3a79aaff306"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 86.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Rotación simple en K - después.png",
+  "sha256": "bac902c8e6fce6a8c536472ba48bb8b609ef55532593e9177a162f7037fef7cb"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 87.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Inserción de G - cambio de dirección.png",
+  "sha256": "abd4da8e9ec7640a6daaa6a68d86047f274d0fa46fdab51617555d1a4d054163"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 88.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/La rotación simple no basta.png",
+  "sha256": "938494641fdbc3df1830ebcdd997c0ee81635ce88f30a4f01a2d28d8f0e7b727"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 89.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Subárbol T2 con raíz Z.png",
+  "sha256": "b71e2fbf16d8a07fea69c0a48ffed26aca22f54ea139754e7720c994b17aa7a1"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 90.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Rotación doble - primera rotación.png",
+  "sha256": "32d8710174cb8871e516376300426e21583ba5eded107d123fc6b89db8c6b2a7"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 91.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Rotación doble - resultado.png",
+  "sha256": "4db004728d5922f2a92738b726795b10a7d9475bff232b850a0e0fc957a2e592"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 92.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Orden de llaves en nodos 2 y 3.png",
+  "sha256": "cf894123db250a438cc05fa1821d853eae49a6bedb6881dc8b85e7dab695d040"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 93.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Nodo 2.png",
+  "sha256": "be0df51d343aad2dd2d78ecb9a68e2f109dbff26c7e99bcd693c2367358db62b"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 94.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Nodo 3.png",
+  "sha256": "36bc248c433f0d80c31f749c36ff288a4b51af5d8bc297dd7648a7d828369fb4"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 95.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Ejemplo de árbol 2-3.png",
+  "sha256": "fe9a7755f1d595e9c048b1865d4c2ec10f421ff35eff69d89c030707e48da717"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 96.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Búsqueda de X en un árbol 2-3.png",
+  "sha256": "235ac9201e39150ed892b1884c10e45af982b7484e6f6d5d69088773ebf93111"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 97.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Estrategia de inserción en un árbol 2-3.png",
+  "sha256": "78480f26e479ee56ba43aabf0348c10523cb6f8e1355c166ecb3e3e3798284bb"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 98.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Inserción 2-3 - D.png",
+  "sha256": "42ac25cfc63d082d0e5fb0ddc36c220245e2dc1d632a5b39145681cb36421606"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 99.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Inserción 2-3 - A.png",
+  "sha256": "9ee4c9d3631dd6c3257d7228be9ced282cd922dfe51204ea0ab057e54622c7ba"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 100.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Inserción 2-3 - C forma un 4-nodo.png",
+  "sha256": "71fc9ff843936c5522ea85a32a946df34e27ac7b40a3b983676604caf7ddda56"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 101.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Inserción 2-3 - split con C en la raíz.png",
+  "sha256": "09706bc368300597ab0b81dadd9f832bd2d708d0cf57b8dba330379a8838bac0"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 102.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Inserción 2-3 - E.png",
+  "sha256": "d88b4e3141593dd7c719b95b4e4a417875feda7e4e474c0d13a0823402287ff2"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 103.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Inserción 2-3 - N forma un 4-nodo.png",
+  "sha256": "113d4318d697a1c8b4f8ba6666b99a59f2ec3bdc269aa02e3ad3f2fa40c13d64"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 104.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Inserción 2-3 - E sube a la raíz.png",
+  "sha256": "ce71568e8d1f5c9f4c4b2de146b3ee620a2ca3519191a19448cdff6c9239764d"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 105.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Inserción 2-3 - F y H forman un 4-nodo.png",
+  "sha256": "5ae17297947bf368bad9d595d099256ec31aaad9878a1bf09526d5b2f6faa568"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 106.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Inserción 2-3 - la raíz se llena.png",
+  "sha256": "327a57b8653d86c722e7c71a6b577028609cc68ba09e8af43f34f5a7d28d50ce"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 107.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Inserción 2-3 - el árbol crece en altura.png",
+  "sha256": "08e135402aae287c80b813fcf4b9a92b66f68597a6bb8f48e8240b70b126c2a6"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 108.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Rojo-negro - los 2-nodos se representan igual.png",
+  "sha256": "dada2a8e68cbff76b9343118b2bd0d03536fce07b8244be4f89d80e874d1a724"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 109.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Rojo-negro - un 3-nodo como padre negro e hijo rojo.png",
+  "sha256": "4dba3ea6098315aabec02191d75db4ca3af64ec056f9c306d67324e7c62e7fd9"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 110.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Rojo-negro - árbol 2-3 convertido.png",
+  "sha256": "3b0da0ebfc747e72840b94e3ce571ce8521656af67b9df2f0895f2ab03dba7e9"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 111.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Rojo-negro - equivalencia con un 2-4.png",
+  "sha256": "6c9bf1fba2107bf923bf7974e0780b2d1ed9278ed0e9bc64efca51e23a49c6d1"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 112.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Rojo-negro - árbol de ejemplo.png",
+  "sha256": "aff41a697a37584bc2c0e3af9ce426b2d38414c6f88ff088b1ef6817855dccbd"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 113.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Rojo-negro - equivalencias de nodos 2, 3 y 4.png",
+  "sha256": "a63808dfd91ffd2b3aa7f81f57833ac9f4bdfa1c354e4175ae959aa270ba8ccf"
+ },
+ {
+  "tema": "Árboles balanceados",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133/image 114.png",
+  "destino": "Estructuras de Datos/09-Árboles balanceados/adjuntos/Rojo-negro - árbol y su 2-4 equivalente.png",
+  "sha256": "8a6543c69cfb9043e00f7d72dc66b807a9807108ac4df687553cc0a57ef42542"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Nodos directorio y nodos de datos.png",
+  "sha256": "5b9fa1953abd0f5a26ca872ecddd8ab44da80a27ac10678990ce839cf603454a"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 1.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Anatomía de un nodo directorio.png",
+  "sha256": "e3488e89e4ce80262af579bb45525e9ba0dcad36d7f3c0a16bcfc167015768c9"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 2.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Árbol B+ de orden 2 con hojas ligadas.png",
+  "sha256": "d17d3fcf6325d46aac034ef82ffde0a916c54303b3ead55389f2394d1775b7ea"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 3.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Algoritmo de split.png",
+  "sha256": "6eb1b9d00d993e7a7366061c7837c234e890ad1391fc7c65e1f79c62498771d1"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 4.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Inserción de 8 - árbol inicial.png",
+  "sha256": "484db727be8756832b351a2cd01b9a4d5a8cd546d48f31964a61fe602a5d333c"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 5.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Inserción de 8 - split de la hoja.png",
+  "sha256": "0d27366c2aa08fc5e168d477df0677c38291a7d50b7584ff7e308f78e8e7d75a"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 6.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Inserción de 8 - el directorio se desborda.png",
+  "sha256": "8cc5af0a9c7ab601efbfd25744c774d0804a304668abedc8ba79893a43b18b61"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 7.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Inserción de 8 - 17 sube como divisor.png",
+  "sha256": "a1e260943e5276494c0e02ff0b859fbcd7dcdc8107b1e6c6cf6e5d7e15b18f0a"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 8.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Inserción de 8 - árbol resultante.png",
+  "sha256": "84dac37001f10a84053ab66621cbff31667914d451c4bbba7e29b1275fe65ff8"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 9.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Eliminación - árbol inicial.png",
+  "sha256": "6b9a1984177a5ab85aebfb2ceafa3a30c3b39dba114339af41bc49408a64bdce"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 10.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Eliminación de 19.png",
+  "sha256": "0a6b17cf95e8f29e3015c39d3d2c57539d6678ac330a427f1e9255dec2fc9fbe"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 11.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Eliminación de 20 deja una hoja con poca ocupación.png",
+  "sha256": "482a215fadf508d949f220c9f071c94c3d991fe169faeb5e2e96d55deb8b0824"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 12.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Eliminación de 20 - redistribución con el hermano.png",
+  "sha256": "b6e2519b30c9963e83e3f22fef2bb16cb3ecec32ae381f0d9a31b317c899d11d"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 13.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Eliminación de 22 - hoja con poca ocupación.png",
+  "sha256": "aeb2d46534e928fbc4ae14112702d3af613f222c05e0d841c813f82182e6a423"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 14.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Eliminación de 22 - unsplit de hojas.png",
+  "sha256": "ca8b862cce8e035228add934a504cd9fb4e5c6c0e8e21a1a5b9c08cc93ba9427"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 15.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Eliminación de 22 - directorio con poca ocupación.png",
+  "sha256": "b3947eb9c4f8882dd96f0e19cfc36aa531464652391ad9c5e2151e6266aeb6c2"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 16.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Eliminación de 22 - unsplit del directorio.png",
+  "sha256": "40e5f82ed8256c3117d31af2823d03535a45da3fc03ef839e3232f977085f17b"
+ },
+ {
+  "tema": "Árboles B+",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 17.png",
+  "destino": "Estructuras de Datos/10-Árboles B+/adjuntos/Costo de las operaciones en un árbol B+.png",
+  "sha256": "6e405661db3d14baab293f72c32dad661038a9eef3ccbb0c64546fd434548a19"
+ },
+ {
+  "tema": "Tablas de hash",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 18.png",
+  "destino": "Estructuras de Datos/11-Tablas de hash/adjuntos/Arreglo indexado directamente por la llave.png",
+  "sha256": "9bebd493a0fca6c40dc7b6daadb9d2686a90250fb2776ac52c682ade48be839c"
+ },
+ {
+  "tema": "Tablas de hash",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 19.png",
+  "destino": "Estructuras de Datos/11-Tablas de hash/adjuntos/Definición de tabla de hash.png",
+  "sha256": "03c7677619365f4616f6c3ff457c96522067ef76fbde4eb0e2a092d1174a36dd"
+ },
+ {
+  "tema": "Tablas de hash",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 20.png",
+  "destino": "Estructuras de Datos/11-Tablas de hash/adjuntos/Colisiones del hashing modular.png",
+  "sha256": "fd132879f8246ad16f48960aa2387d92b9db1d61a2544fe4e7227fb0d744f4b2"
+ },
+ {
+  "tema": "Tablas de hash",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 21.png",
+  "destino": "Estructuras de Datos/11-Tablas de hash/adjuntos/Encadenamiento - inserción de 58 como cabeza.png",
+  "sha256": "ab1e32917abf17aeb3522483dfdd89e4d903aab5181e827c3d2a61b9bcacf3b4"
+ },
+ {
+  "tema": "Tablas de hash",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 22.png",
+  "destino": "Estructuras de Datos/11-Tablas de hash/adjuntos/Sondeo lineal - inserción de 29.png",
+  "sha256": "75928cf38ddda81c1d368e1be5432eadbf6d9b9c9257e522b79658209b164464"
+ },
+ {
+  "tema": "Tablas de hash",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 23.png",
+  "destino": "Estructuras de Datos/11-Tablas de hash/adjuntos/Rehashing.png",
+  "sha256": "071e91f369106d26395999da4f22645ab2cb1f78c04523339e4ffe18b8af9aad"
+ },
+ {
+  "tema": "Backtracking",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 24.png",
+  "destino": "Estructuras de Datos/12-Backtracking/adjuntos/Problema de las 8 reinas.png",
+  "sha256": "885af066502653553e3a3b26d38079593ca4cae696c8685f73c036f28dc67828"
+ },
+ {
+  "tema": "Backtracking",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 25.png",
+  "destino": "Estructuras de Datos/12-Backtracking/adjuntos/Las reinas como vector de columnas.png",
+  "sha256": "9c5251906ca9e2a69e002097d135518a124609eb6c5ec645ff627772ff8a2fe4"
+ },
+ {
+  "tema": "Backtracking",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 26.png",
+  "destino": "Estructuras de Datos/12-Backtracking/adjuntos/Tablero con la solución 4 6 8 2 7 1 3 5.png",
+  "sha256": "806d4f3caef422a0f0e0ecac460486b6d23a3c533e914161d6b96ddd03bd5e6f"
+ },
+ {
+  "tema": "Backtracking",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 27.png",
+  "destino": "Estructuras de Datos/12-Backtracking/adjuntos/Definición de CSP.png",
+  "sha256": "199a535d360702f518432ba139534fd71b8030a5d1d3e80a79f3cc7bc9c6754a"
+ },
+ {
+  "tema": "Backtracking",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 28.png",
+  "destino": "Estructuras de Datos/12-Backtracking/adjuntos/Las 8 reinas como CSP.png",
+  "sha256": "7d1ea1da0723b20a98b8e60cbe48e77be40997a627c35d50b2e947e927a28b7d"
+ },
+ {
+  "tema": "Backtracking",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 29.png",
+  "destino": "Estructuras de Datos/12-Backtracking/adjuntos/Sudoku como CSP.png",
+  "sha256": "02e9482c43746c1d5fe534c0e7b1caf9b621dc02fe1b05e951c08f5a1eb46106"
+ },
+ {
+  "tema": "Backtracking",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 30.png",
+  "destino": "Estructuras de Datos/12-Backtracking/adjuntos/Idea de backtracking.png",
+  "sha256": "f5f1d8317d94673c92b02aff34000c6116ae67adcda6a6303701a1d31731fb4a"
+ },
+ {
+  "tema": "Backtracking",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 31.png",
+  "destino": "Estructuras de Datos/12-Backtracking/adjuntos/Pseudocódigo de isSolvable.png",
+  "sha256": "19ecbd87afd383583cb14bbf8dfaf7c3ae918bffd749d8daaabbc31ed55345e5"
+ },
+ {
+  "tema": "Backtracking",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 32.png",
+  "destino": "Estructuras de Datos/12-Backtracking/adjuntos/Complejidad de backtracking.png",
+  "sha256": "f64d3ee3890664173f2e02a6af914ddccd3bc3f787f09d8316c32945daedfaf7"
+ },
+ {
+  "tema": "Backtracking",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 33.png",
+  "destino": "Estructuras de Datos/12-Backtracking/adjuntos/Laberinto como grafo implícito.png",
+  "sha256": "247147587f863d01fbb2b2ded85c30d452630c2e30d7ddc53e6f55c68bebc638"
+ },
+ {
+  "tema": "Backtracking",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/IMG_5A95F998F805-1.jpeg",
+  "destino": "Estructuras de Datos/12-Backtracking/adjuntos/Dibujo del laberinto como grafo de celdas.jpeg",
+  "sha256": "c6cf645749dfba417f08c9bfaf119dc6feb2f4e724c6ddd7dccad2beefce2208"
+ },
+ {
+  "tema": "Backtracking",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 34.png",
+  "destino": "Estructuras de Datos/12-Backtracking/adjuntos/Recorrido del laberinto con retrocesos.png",
+  "sha256": "41140c7be1b99bc53f1e9e44349e6f533e3ae494f1b4e3268dc7ab272691ed1b"
+ },
+ {
+  "tema": "Backtracking",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 35.png",
+  "destino": "Estructuras de Datos/12-Backtracking/adjuntos/isSolvable para el laberinto.png",
+  "sha256": "8da1d505d182c677668f04aa071e09b12d8c13119436de7192296adb69b52b3d"
+ },
+ {
+  "tema": "Backtracking",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 36.png",
+  "destino": "Estructuras de Datos/12-Backtracking/adjuntos/isSolvable con heurísticas, poda y propagación.png",
+  "sha256": "d85dbab5457a30a2d848e510c0c2b3a34d0b008427cf34182f1c0740272d0789"
+ },
+ {
+  "tema": "Algoritmos codiciosos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 37.png",
+  "destino": "Estructuras de Datos/13-Algoritmos codiciosos/adjuntos/Problema de la mochila fraccional.png",
+  "sha256": "2425c309d55a79f4f57f828fff36e24f6a6019c15e9129433e49fc7d9449cda6"
+ },
+ {
+  "tema": "Algoritmos codiciosos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 38.png",
+  "destino": "Estructuras de Datos/13-Algoritmos codiciosos/adjuntos/Mochila - función objetivo y restricciones.png",
+  "sha256": "7d2299f153050e671cd5b1a2dbb0ab71e04918d2f2c3cac2b4b607a8c9c06e16"
+ },
+ {
+  "tema": "Algoritmos codiciosos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 39.png",
+  "destino": "Estructuras de Datos/13-Algoritmos codiciosos/adjuntos/Solución factible y solución óptima.png",
+  "sha256": "c9911e9beed21686b6582887e8e84152fe898e30e2079869059cdc2319310449"
+ },
+ {
+  "tema": "Algoritmos codiciosos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 40.png",
+  "destino": "Estructuras de Datos/13-Algoritmos codiciosos/adjuntos/Paradigma de subconjuntos.png",
+  "sha256": "78b2e25a0c0b311562e171358a0eaa57872657becb3f8de3bef54bfcef58d0d8"
+ },
+ {
+  "tema": "Algoritmos codiciosos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 41.png",
+  "destino": "Estructuras de Datos/13-Algoritmos codiciosos/adjuntos/Los algoritmos codiciosos trabajan en etapas.png",
+  "sha256": "f1dadeb0205b19323962844ea924847d14a4a41ed6f585fa86a743b4d59ec9f3"
+ },
+ {
+  "tema": "Algoritmos codiciosos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 42.png",
+  "destino": "Estructuras de Datos/13-Algoritmos codiciosos/adjuntos/Procedimiento de selección.png",
+  "sha256": "ca045ac58996d1df3f1c713bd31984c9dde1585a7ced42abae61d5216bc49462"
+ },
+ {
+  "tema": "Algoritmos codiciosos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 43.png",
+  "destino": "Estructuras de Datos/13-Algoritmos codiciosos/adjuntos/Estrategias codiciosas para la mochila.png",
+  "sha256": "0ad77c5813a39cf4091ef0f28499dc410b921f4f05b51f91650d9490d585bfc2"
+ },
+ {
+  "tema": "Algoritmos codiciosos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 44.png",
+  "destino": "Estructuras de Datos/13-Algoritmos codiciosos/adjuntos/Comparación de estrategias en una instancia.png",
+  "sha256": "4ae96ba13cc79c75015fc5b9380186f0ff4774e57c3b8db0f54ed728797e0903"
+ },
+ {
+  "tema": "Algoritmos codiciosos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 45.png",
+  "destino": "Estructuras de Datos/13-Algoritmos codiciosos/adjuntos/Pseudocódigo de Greedy.png",
+  "sha256": "3109cbec6e87b5b3fefae066d09e3ddf8f9e623cc2817b766b3514b096b1936c"
+ },
+ {
+  "tema": "Programación dinámica",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 46.png",
+  "destino": "Estructuras de Datos/14-Programación dinámica/adjuntos/Problema de asignar charlas con ganancias.png",
+  "sha256": "3271118b6c02b6afef261ae5313cad993da083c5c0e7af89dc929c354cf2d0fa"
+ },
+ {
+  "tema": "Programación dinámica",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 47.png",
+  "destino": "Estructuras de Datos/14-Programación dinámica/adjuntos/Instancia de 6 charlas con ganancias.png",
+  "sha256": "59bc68de1691298b251f2be9313dfd628c96d138be20cfc5c840f13d72e0fe76"
+ },
+ {
+  "tema": "Programación dinámica",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 48.png",
+  "destino": "Estructuras de Datos/14-Programación dinámica/adjuntos/La estrategia codiciosa no es óptima con ganancias.png",
+  "sha256": "96f49c63ea3d6a269d16163c48f6ca757ef6ceb35e1f6e5c430a44de887ebca0"
+ },
+ {
+  "tema": "Programación dinámica",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 49.png",
+  "destino": "Estructuras de Datos/14-Programación dinámica/adjuntos/Definición de b(i).png",
+  "sha256": "da2fe1215a2f0c00c29af8e31bcdeadcae7e6e2fbfca6b4a640d0f175eb358a2"
+ },
+ {
+  "tema": "Programación dinámica",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 50.png",
+  "destino": "Estructuras de Datos/14-Programación dinámica/adjuntos/Subestructura óptima de las charlas.png",
+  "sha256": "6b61bdcc2565259895b0def4676d625aedd2b8fe4f0d1271324e639ae7bda6cd"
+ },
+ {
+  "tema": "Programación dinámica",
+  "tipo": "convertida",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/IMG_1087.heic",
+  "destino": "Estructuras de Datos/14-Programación dinámica/adjuntos/Pizarra - la charla n está o no está en la solución.png",
+  "sha256": "e5859fd2a3b18484d7cac8e1c5f608c330e4a546851a4ee3065f87439c11192c",
+  "motivo": "HEIC convertido a PNG con sips y reducido a 1400 px."
+ },
+ {
+  "tema": "Programación dinámica",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 51.png",
+  "destino": "Estructuras de Datos/14-Programación dinámica/adjuntos/Recurrencia opt(j).png",
+  "sha256": "dac066e86f47f030626a1826de2b103666746a73c820546e9f7ed7930d057b71"
+ },
+ {
+  "tema": "Programación dinámica",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 52.png",
+  "destino": "Estructuras de Datos/14-Programación dinámica/adjuntos/Algoritmo recursivo Opt.png",
+  "sha256": "ba4fc97fd01488786238b917075f32a6b30ee0ffd94fab36210bdbeaafcf4a3e"
+ },
+ {
+  "tema": "Programación dinámica",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 53.png",
+  "destino": "Estructuras de Datos/14-Programación dinámica/adjuntos/Algoritmo RecOpt con memoización.png",
+  "sha256": "da28b4915ece444d3f6f67dba925da5e982d8ec50d015f86e2042770e57d699c"
+ },
+ {
+  "tema": "Programación dinámica",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 54.png",
+  "destino": "Estructuras de Datos/14-Programación dinámica/adjuntos/Árbol de llamadas de RecOpt.png",
+  "sha256": "b96416645132c2379b87299b1d8d2ac43f1429a84d208fc41818b591ec328a37"
+ },
+ {
+  "tema": "Programación dinámica",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 55.png",
+  "destino": "Estructuras de Datos/14-Programación dinámica/adjuntos/Matriz M y reconstrucción de la asignación.png",
+  "sha256": "4411ec037b56f1cc5dbc03ad9cf5f042f4c85b1887990f3f5b4544261ab49fbd"
+ },
+ {
+  "tema": "Programación dinámica",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 56.png",
+  "destino": "Estructuras de Datos/14-Programación dinámica/adjuntos/Algoritmo iterativo ItOpt.png",
+  "sha256": "a0913b0ce8a2220107ae28cbac472460dff32df38b7bddb1a90fbbc5bfd2ea06"
+ },
+ {
+  "tema": "Programación dinámica",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133/image 57.png",
+  "destino": "Estructuras de Datos/14-Programación dinámica/adjuntos/Algoritmo iterativo Change.png",
+  "sha256": "f91006fa70c669978f79818caa958363afbddf0a39339086360800d6658b191a"
+ },
+ {
+  "tema": "Grafos y DFS",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class20_-_Grafos.pdf#page=11",
+  "destino": "Estructuras de Datos/15-Grafos y DFS/adjuntos/Slide - grafo de dependencias entre tareas.png",
+  "sha256": "f26dbc385a4beb2024e443248cca4b82550f6c89f1f91cd17da7c06c5f8f4a8d"
+ },
+ {
+  "tema": "Grafos y DFS",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class20_-_Grafos.pdf#page=18",
+  "destino": "Estructuras de Datos/15-Grafos y DFS/adjuntos/Slide - lista y matriz de adyacencias.png",
+  "sha256": "25b61f4bb24acc64f7110440b22cbf761679f737bade6b3be5d840d5c6f45b73"
+ },
+ {
+  "tema": "Grafos y DFS",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class20_-_Grafos.pdf#page=62",
+  "destino": "Estructuras de Datos/15-Grafos y DFS/adjuntos/Slide - detección de ciclos con colores.png",
+  "sha256": "1d3017b1f454053314a2343e8bf341fd579183c5112f7e3bc5ba701585213cbf"
+ },
+ {
+  "tema": "Grafos y DFS",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class21_-_DFS_y_aplicaciones.pdf#page=26",
+  "destino": "Estructuras de Datos/15-Grafos y DFS/adjuntos/Slide - DFS con tiempos de inicio y término.png",
+  "sha256": "3b13473d50d63b8b374673980cc13bbc8dd361d9a3bb0e3b1fdfa9ab42f6791d"
+ },
+ {
+  "tema": "Grafos y DFS",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class21_-_DFS_y_aplicaciones.pdf#page=35",
+  "destino": "Estructuras de Datos/15-Grafos y DFS/adjuntos/Slide - orden topológico desde los tiempos de término.png",
+  "sha256": "f304781af8f93fe4effa1d64cd0744ed19b97114749d3f80a6238cd9bb36d33e"
+ },
+ {
+  "tema": "Grafos y DFS",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class21_-_DFS_y_aplicaciones.pdf#page=42",
+  "destino": "Estructuras de Datos/15-Grafos y DFS/adjuntos/Slide - componentes fuertemente conectadas.png",
+  "sha256": "010a563bbf4a75d551226f089b4313ea10914a191f5c78a6bd6845408f3bca7d"
+ },
+ {
+  "tema": "Grafos y DFS",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class21_-_DFS_y_aplicaciones.pdf#page=50",
+  "destino": "Estructuras de Datos/15-Grafos y DFS/adjuntos/Slide - Kosaraju sobre el grafo transpuesto.png",
+  "sha256": "e8dfeac70e827ad7e620ac1a20dc0358a61bbef1227d96da5dfeb093bb39aca1"
+ },
+ {
+  "tema": "Árboles de cobertura mínima",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class22_-_MST_y_algoritmo_de_Kruskal.pdf#page=16",
+  "destino": "Estructuras de Datos/16-Árboles de cobertura mínima/adjuntos/Slide - grafo no dirigido con costos.png",
+  "sha256": "d109001c172d3df872703b21b2e9cae509abb907978e04fe63c823088e49b708"
+ },
+ {
+  "tema": "Árboles de cobertura mínima",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class22_-_MST_y_algoritmo_de_Kruskal.pdf#page=35",
+  "destino": "Estructuras de Datos/16-Árboles de cobertura mínima/adjuntos/Slide - MST obtenido por Kruskal.png",
+  "sha256": "78abe807a83e6420f1d071bce9977a94bd998326943f4e59371dff2dfd00f719"
+ },
+ {
+  "tema": "Árboles de cobertura mínima",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class22_-_MST_y_algoritmo_de_Kruskal.pdf#page=44",
+  "destino": "Estructuras de Datos/16-Árboles de cobertura mínima/adjuntos/Slide - Union de conjuntos como árboles.png",
+  "sha256": "7314b7ea9209b83524a1186bc84a89bd8b426457a82f3fa70c6d26b1d053389a"
+ },
+ {
+  "tema": "Árboles de cobertura mínima",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class22_-_MST_y_algoritmo_de_Kruskal.pdf#page=48",
+  "destino": "Estructuras de Datos/16-Árboles de cobertura mínima/adjuntos/Slide - conjuntos disjuntos en un arreglo de padres.png",
+  "sha256": "4ca900192e55596a4e78ec00622f59a47ac3b70ba5de78ac765a2fa5d772588d"
+ },
+ {
+  "tema": "Árboles de cobertura mínima",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class23_-_MST_y_algoritmo_de_Prim.pdf#page=22",
+  "destino": "Estructuras de Datos/16-Árboles de cobertura mínima/adjuntos/Slide - Prim tras extraer los nodos 0 y 2.png",
+  "sha256": "8641b56319069db68d1481dd440136810954ca2e79a206d67cc10870027f3868"
+ },
+ {
+  "tema": "Árboles de cobertura mínima",
+  "tipo": "slide",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD/class23_-_MST_y_algoritmo_de_Prim.pdf#page=29",
+  "destino": "Estructuras de Datos/16-Árboles de cobertura mínima/adjuntos/Slide - MST obtenido por Prim.png",
+  "sha256": "1947ca0b22a25c90a615885fdfe0bde5cfc6dc67e95db8ceb4cf42cd86e9c239"
+ },
+ {
+  "tema": "Caminos más cortos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes EXAMEN - EDD IIC2133/image.png",
+  "destino": "Estructuras de Datos/17-Caminos más cortos/adjuntos/Grafo dirigido con costos no negativos.png",
+  "sha256": "1a0282202197072427fb567410db5d5f711db5e820b908568d58d8425db8c166"
+ },
+ {
+  "tema": "Caminos más cortos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes EXAMEN - EDD IIC2133/image 1.png",
+  "destino": "Estructuras de Datos/17-Caminos más cortos/adjuntos/BFS - distancias desde A.png",
+  "sha256": "94263bc48ae892aa1f701b3fafbaf86a141be3b26ba69da1f4a68728fbd2591c"
+ },
+ {
+  "tema": "Caminos más cortos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes EXAMEN - EDD IIC2133/image 2.png",
+  "destino": "Estructuras de Datos/17-Caminos más cortos/adjuntos/Pseudocódigo de BFS.png",
+  "sha256": "7e9f33808a2259ed94f4ace7a4d024b2a306fcae58e5a0c77434f3f391a86414"
+ },
+ {
+  "tema": "Caminos más cortos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes EXAMEN - EDD IIC2133/image 3.png",
+  "destino": "Estructuras de Datos/17-Caminos más cortos/adjuntos/Dijkstra - distancias finales desde 0.png",
+  "sha256": "6b0d160aace10ff67f48eb1d865870e76d4ed1d7e274bb86685d57e4743a3843"
+ },
+ {
+  "tema": "Caminos más cortos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes EXAMEN - EDD IIC2133/image 4.png",
+  "destino": "Estructuras de Datos/17-Caminos más cortos/adjuntos/Pseudocódigo de Dijkstra.png",
+  "sha256": "9e00d11ed66f1112d3c2e3617f9e9bba01434a437f83be15aaf31463c23ef01c"
+ },
+ {
+  "tema": "Caminos más cortos",
+  "tipo": "convertida",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes EXAMEN - EDD IIC2133/IMG_1243.heic",
+  "destino": "Estructuras de Datos/17-Caminos más cortos/adjuntos/Pizarra - Dijkstra con un costo negativo.png",
+  "sha256": "057a0800d66366cc64b4684a331fe29727c429323078ae49b8547e5014d60d03",
+  "motivo": "HEIC convertido a PNG con sips y reducido a 1400 px."
+ },
+ {
+  "tema": "Caminos más cortos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes EXAMEN - EDD IIC2133/image 5.png",
+  "destino": "Estructuras de Datos/17-Caminos más cortos/adjuntos/Grafo con una arista de costo negativo.png",
+  "sha256": "535e52995fe47ba5a55b9468cf3d2a0fc9b289700c80e6469cf24127d8b5a751"
+ },
+ {
+  "tema": "Caminos más cortos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes EXAMEN - EDD IIC2133/image 6.png",
+  "destino": "Estructuras de Datos/17-Caminos más cortos/adjuntos/Dijkstra falla con el costo negativo.png",
+  "sha256": "c51b0945d860f520569f2ce0c2666731398123925aa32baedb7e5cc60d5b8123"
+ },
+ {
+  "tema": "Caminos más cortos",
+  "tipo": "convertida",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes EXAMEN - EDD IIC2133/IMG_1262.heic",
+  "destino": "Estructuras de Datos/17-Caminos más cortos/adjuntos/Pizarra - rutas con más aristas pero menor costo.png",
+  "sha256": "c2c0660ebb2d212582ec94cf9588c949700a36e2ad1322f8313b0b5a880564b1",
+  "motivo": "HEIC convertido a PNG con sips y reducido a 1400 px."
+ },
+ {
+  "tema": "Caminos más cortos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes EXAMEN - EDD IIC2133/image 7.png",
+  "destino": "Estructuras de Datos/17-Caminos más cortos/adjuntos/Pseudocódigo de Bellman-Ford.png",
+  "sha256": "abedb1d8892f48000cea5d4a848a7d83e00d05fac528506a83aa3331609ad527"
+ },
+ {
+  "tema": "Caminos más cortos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes EXAMEN - EDD IIC2133/image 8.png",
+  "destino": "Estructuras de Datos/17-Caminos más cortos/adjuntos/Bellman-Ford con chequeo de ciclos negativos.png",
+  "sha256": "b74f86d7c8070019965889813837a25a4fa966bf82f31d84e92cba38a2957a54"
+ },
+ {
+  "tema": "Caminos más cortos",
+  "tipo": "apuntes",
+  "original": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes EXAMEN - EDD IIC2133/image 9.png",
+  "destino": "Estructuras de Datos/17-Caminos más cortos/adjuntos/Complejidad de Bellman-Ford.png",
+  "sha256": "9e11fdda56ea51b5a9ba75816befe70e4fc533a031349e270ba17e34e035f10a"
+ }
+]

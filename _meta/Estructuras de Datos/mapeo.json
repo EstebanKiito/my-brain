@@ -1,0 +1,298 @@
+{
+  "_descripcion": "Mapeo de las fuentes originales (rutas relativas a _raw/) a los temas del vault. Cada sección va desde el bloque 'desde' (incluido) hasta 'hasta' (excluido); con 'por_texto' los límites pueden ser cualquier bloque. Las notas se reescriben según _meta/ESTANDAR-NOTAS.md, por eso 'cobertura' es 'reescrita' (la cobertura textual es advertencia). Las clases 10-13 de 'i2' duplican las de 'apuntes' y se mapean solo desde 'apuntes'. Las slides (PDF de 'CLASES - EDD/') son fuente de complementos y entran solo como PNG. El tutorial de C (Cápsulas, CheatSheet, Taller) está en _meta/Programación en C/.",
+  "carpeta_ramo": "Estructuras de Datos",
+  "cobertura": "reescrita",
+  "fuentes": {
+    "apuntes": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes - EDD IIC2133 b011fd5927f94e01bf8934ed9bc3f0bd.html",
+    "i2": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes I2 - EDD IIC2133 11860dd6de81808395c4d90b923ebadb.html",
+    "examen": "Semestre 4/Estructuras de Datos - IIC2133/Apuntes EXAMEN - EDD IIC2133 14960dd6de81805ca806d1db70aead48.html",
+    "ayudantias": "Semestre 4/Estructuras de Datos - IIC2133/Ayudantías - EDD IIC2133 79117c49d9d34f43a22cd82523ed9b81.html",
+    "ramo": "Semestre 4/Estructuras de Datos - IIC2133 8c57d634289c49f195e83585943045e2.html",
+    "clases": "Semestre 4/Estructuras de Datos - IIC2133/CLASES - EDD afd88ba8d3df4e599e5bc23dbe4ffe8e.html",
+    "interrogaciones": "Semestre 4/Estructuras de Datos - IIC2133/Interrogaciones - Examenes - EDD 069b3b9989bd4f42bba98982d719167e.html",
+    "ayudantias_pasadas": "Semestre 4/Estructuras de Datos - IIC2133/Ayudantias Pasadas d3e1dba9e5b44b8dacf981873f4051b1.html",
+    "tareas": "Semestre 4/Estructuras de Datos - IIC2133/Tareas - EDD 81587e3d74724b888191aca214ad2793.html",
+    "tareas_respaldo": "Semestre 4/Estructuras de Datos - IIC2133/TAREAS - RESPALDO f68627dd03584fc38d01251d357b0fec.html",
+    "libros": "Semestre 4/Estructuras de Datos - IIC2133/Libros - Discretas 38768833c00f40b8879636b95cdf956f.html"
+  },
+  "temas": {
+    "Análisis de algoritmos": {
+      "carpeta": "Estructuras de Datos/01-Análisis de algoritmos",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "DEMOSTRACIÓN CON INDUCCION",
+          "hasta": "El algoritmo que acabos de ver se llama SELECTION SORT",
+          "por_texto": true
+        },
+        {
+          "fuente": "apuntes",
+          "desde": "DIVIDIR PARA CONQUISTAR",
+          "hasta": "EJEMPLO",
+          "por_texto": true
+        },
+        {
+          "fuente": "ayudantias",
+          "desde": "INDUCCION",
+          "hasta": "SORTING"
+        }
+      ]
+    },
+    "Estructuras lineales": {
+      "carpeta": "Estructuras de Datos/02-Estructuras lineales",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "Colas de prioridades",
+          "hasta": "COLA DE PRIORIDAD",
+          "por_texto": true
+        }
+      ]
+    },
+    "Ordenamiento elemental": {
+      "carpeta": "Estructuras de Datos/03-Ordenamiento elemental",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "Clase 1",
+          "hasta": "DEMOSTRACIÓN CON INDUCCION",
+          "por_texto": true
+        },
+        {
+          "fuente": "apuntes",
+          "desde": "El algoritmo que acabos de ver se llama SELECTION SORT",
+          "hasta": "Clase 3 - MergeSort",
+          "por_texto": true
+        },
+        {
+          "fuente": "ayudantias",
+          "desde": "SORTING",
+          "hasta": "AYUDANTÍA 2"
+        }
+      ]
+    },
+    "Mergesort": {
+      "carpeta": "Estructuras de Datos/04-Mergesort",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "Clase 3 - MergeSort",
+          "hasta": "DIVIDIR PARA CONQUISTAR",
+          "por_texto": true
+        },
+        {
+          "fuente": "ayudantias",
+          "desde": "AYUDANTÍA 2",
+          "hasta": "QUICKSORT",
+          "por_texto": true
+        }
+      ]
+    },
+    "Quicksort": {
+      "carpeta": "Estructuras de Datos/05-Quicksort",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "Consideremos el problema de procesar",
+          "hasta": "CLASE 6",
+          "por_texto": true
+        },
+        {
+          "fuente": "ayudantias",
+          "desde": "QUICKSORT",
+          "hasta": "AYUDANTIA 3",
+          "por_texto": true
+        }
+      ]
+    },
+    "Heaps y colas de prioridad": {
+      "carpeta": "Estructuras de Datos/06-Heaps y colas de prioridad",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "COLA DE PRIORIDAD",
+          "hasta": "ORDENACION LINEAL → Categorizar!",
+          "por_texto": true
+        },
+        {
+          "fuente": "ayudantias",
+          "desde": "AYUDANTIA 3",
+          "por_texto": true
+        }
+      ]
+    },
+    "Ordenamiento lineal": {
+      "carpeta": "Estructuras de Datos/07-Ordenamiento lineal",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "ORDENACION LINEAL → Categorizar!",
+          "hasta": "CLASE 8: Arboles Binarios de Busqueda"
+        }
+      ]
+    },
+    "Árboles binarios de búsqueda": {
+      "carpeta": "Estructuras de Datos/08-Árboles binarios de búsqueda",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "CLASE 8: Arboles Binarios de Busqueda",
+          "hasta": "ARBOLES AVL → CLASE 9"
+        }
+      ]
+    },
+    "Árboles balanceados": {
+      "carpeta": "Estructuras de Datos/09-Árboles balanceados",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "ARBOLES AVL → CLASE 9",
+          "hasta": "CLASE 13"
+        }
+      ]
+    },
+    "Árboles B+": {
+      "carpeta": "Estructuras de Datos/10-Árboles B+",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i2",
+          "desde": "CLASE 14",
+          "hasta": "DICIONARIOS"
+        }
+      ]
+    },
+    "Tablas de hash": {
+      "carpeta": "Estructuras de Datos/11-Tablas de hash",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i2",
+          "desde": "DICIONARIOS",
+          "hasta": "CLASE DE LA MUERTE 17"
+        }
+      ]
+    },
+    "Backtracking": {
+      "carpeta": "Estructuras de Datos/12-Backtracking",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i2",
+          "desde": "CLASE DE LA MUERTE 17",
+          "hasta": "CLASE 19"
+        }
+      ]
+    },
+    "Algoritmos codiciosos": {
+      "carpeta": "Estructuras de Datos/13-Algoritmos codiciosos",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i2",
+          "desde": "CLASE 19",
+          "hasta": "CLASE 20"
+        }
+      ]
+    },
+    "Programación dinámica": {
+      "carpeta": "Estructuras de Datos/14-Programación dinámica",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i2",
+          "desde": "CLASE 20",
+          "hasta": "CLASE 22"
+        }
+      ]
+    },
+    "Grafos y DFS": {
+      "carpeta": "Estructuras de Datos/15-Grafos y DFS",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i2",
+          "desde": "CLASE 22",
+          "hasta": "CLASE 24"
+        }
+      ]
+    },
+    "Árboles de cobertura mínima": {
+      "carpeta": "Estructuras de Datos/16-Árboles de cobertura mínima",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "i2",
+          "desde": "CLASE 24",
+          "hasta": "CLASE 25"
+        }
+      ]
+    },
+    "Caminos más cortos": {
+      "carpeta": "Estructuras de Datos/17-Caminos más cortos",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "examen",
+          "desde": "CLASE 26"
+        }
+      ]
+    },
+    "Gestión del curso": {
+      "carpeta": "Estructuras de Datos/18-Gestión del curso",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "CLASE 13"
+        },
+        {
+          "fuente": "i2",
+          "desde": "CLASE 25"
+        },
+        {
+          "fuente": "ayudantias",
+          "desde": "Ayudantía 1",
+          "hasta": "Cada cosa que se puede demostrar con induccion",
+          "por_texto": true
+        },
+        {
+          "fuente": "clases",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "interrogaciones",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "ayudantias_pasadas",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "tareas",
+          "desde": "",
+          "por_texto": true
+        }
+      ]
+    }
+  },
+  "aceptados": [
+    {
+      "fuente": "tareas_respaldo",
+      "texto": "// TAREA 1",
+      "motivo": "Código de soluciones de tareas personales evaluadas; no entra al vault (decisión del usuario)."
+    }
+  ]
+}

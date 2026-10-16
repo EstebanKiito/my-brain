@@ -1,0 +1,194 @@
+{
+  "_descripcion": "Mapeo de las fuentes del tutorial de C (material de Estructuras de Datos IIC2133, rutas relativas a _raw/) a los temas del vault. Mismo formato que _meta/Estructuras de Datos/mapeo.json. Las guías .md de 'Guias/' (setup, depuración) son material del curso y se usan como complemento. Las páginas del cheatsheet se mapean completas con 'desde': '' y 'por_texto'.",
+  "carpeta_ramo": "Programación en C",
+  "cobertura": "reescrita",
+  "fuentes": {
+    "capsulas": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen 53994cebae5b443c86ef8e64da9cf65d.html",
+    "cheatsheet": "Semestre 4/Estructuras de Datos - IIC2133/EDD - CheatSheet C 2831f0c9d5854758b0ca7fa240d3fecd.html",
+    "taller": "Semestre 4/Estructuras de Datos - IIC2133/Ayudantia 1 - Taller Introductorio C 31347753da344995adec821c686a51d6.html",
+    "guias": "Semestre 4/Estructuras de Datos - IIC2133/Guias 3bb91ce02d6e43b985d1ff30018ff7d7.html",
+    "cheat00": "Semestre 4/Estructuras de Datos - IIC2133/EDD - CheatSheet C/0 - Hello World 77c12b24bd1c4f7da34fbb122bf7e22c.html",
+    "cheat01": "Semestre 4/Estructuras de Datos - IIC2133/EDD - CheatSheet C/1 - Tipos bf31b3b745974763a88094f3728db6fb.html",
+    "cheat02": "Semestre 4/Estructuras de Datos - IIC2133/EDD - CheatSheet C/2 - Booleanos y Flujo fff60dd6de818095bde4e4ebc4dc64cc.html",
+    "cheat03": "Semestre 4/Estructuras de Datos - IIC2133/EDD - CheatSheet C/3 - Funciones 149e6d8294214f2584a338e58bd4ff19.html",
+    "cheat04": "Semestre 4/Estructuras de Datos - IIC2133/EDD - CheatSheet C/4 - Punteros da5ae3a270a6448cbd41c0daefac6abb.html",
+    "cheat05": "Semestre 4/Estructuras de Datos - IIC2133/EDD - CheatSheet C/5 - Arreglos 8941815b791140ae98f41ee283ed5b17.html",
+    "cheat06": "Semestre 4/Estructuras de Datos - IIC2133/EDD - CheatSheet C/6 - Strings 926f5f823bba4671b247a923b30fb77f.html",
+    "cheat07": "Semestre 4/Estructuras de Datos - IIC2133/EDD - CheatSheet C/7 - Memoria cf72085d656f4340b9c835737d944f17.html",
+    "cheat08": "Semestre 4/Estructuras de Datos - IIC2133/EDD - CheatSheet C/8 - Valgrind faf1bcf637934c63853a8dddafb9e7eb.html",
+    "cheat09": "Semestre 4/Estructuras de Datos - IIC2133/EDD - CheatSheet C/9 - Structs 4dfdb0d4fd914bf980aaeb4b12866a75.html",
+    "cheat10": "Semestre 4/Estructuras de Datos - IIC2133/EDD - CheatSheet C/10 - Módulos, h y Make f240d5a441c341c48859c2dd773a51cc.html"
+  },
+  "temas": {
+    "Fundamentos del lenguaje": {
+      "carpeta": "Programación en C/01-Fundamentos del lenguaje",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "capsulas",
+          "desde": "Repositorio del curso:",
+          "hasta": "4. Punteros",
+          "por_texto": true
+        },
+        {
+          "fuente": "cheat00",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "cheat01",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "cheat02",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "cheat03",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "taller",
+          "desde": "Compilar y ejecutar",
+          "hasta": "PUNTERO",
+          "por_texto": true
+        }
+      ]
+    },
+    "Punteros, arreglos y strings": {
+      "carpeta": "Programación en C/02-Punteros, arreglos y strings",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "capsulas",
+          "desde": "4. Punteros",
+          "hasta": "7. MEMORIA"
+        },
+        {
+          "fuente": "cheat04",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "cheat05",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "cheat06",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "taller",
+          "desde": "PUNTERO",
+          "hasta": "Taller Parte 2",
+          "por_texto": true
+        }
+      ]
+    },
+    "Memoria dinámica y Valgrind": {
+      "carpeta": "Programación en C/03-Memoria dinámica y Valgrind",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "capsulas",
+          "desde": "7. MEMORIA",
+          "hasta": "9. STRUCTS"
+        },
+        {
+          "fuente": "cheat07",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "cheat08",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "taller",
+          "desde": "MEMORIA",
+          "hasta": "EJEMPLO",
+          "por_texto": true
+        },
+        {
+          "fuente": "taller",
+          "desde": "ARREGLOS EN EL HEAP",
+          "hasta": "LISTA LIGADA",
+          "por_texto": true
+        },
+        {
+          "fuente": "taller",
+          "desde": "MATRICES",
+          "hasta": "MODULARIZAR",
+          "por_texto": true
+        }
+      ]
+    },
+    "Structs": {
+      "carpeta": "Programación en C/04-Structs",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "capsulas",
+          "desde": "9. STRUCTS",
+          "hasta": "10. MODULOS EN C"
+        },
+        {
+          "fuente": "cheat09",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "taller",
+          "desde": "Taller Parte 2",
+          "hasta": "MEMORIA",
+          "por_texto": true
+        },
+        {
+          "fuente": "taller",
+          "desde": "EJEMPLO",
+          "hasta": "ARREGLOS EN EL HEAP",
+          "por_texto": true
+        },
+        {
+          "fuente": "taller",
+          "desde": "LISTA LIGADA",
+          "hasta": "MATRICES",
+          "por_texto": true
+        }
+      ]
+    },
+    "Módulos, compilación y depuración": {
+      "carpeta": "Programación en C/05-Módulos, compilación y depuración",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "capsulas",
+          "desde": "10. MODULOS EN C"
+        },
+        {
+          "fuente": "cheat10",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "cheatsheet",
+          "desde": "",
+          "por_texto": true
+        },
+        {
+          "fuente": "taller",
+          "desde": "MODULARIZAR",
+          "hasta": null,
+          "por_texto": true
+        }
+      ]
+    }
+  },
+  "aceptados": []
+}
