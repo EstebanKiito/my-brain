@@ -160,14 +160,14 @@
   "tema": "Memoria dinámica y Valgrind",
   "tipo": "apuntes",
   "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/Untitled 21.png",
-  "destino": "Programación en C/03-Memoria dinámica y Valgrind/adjuntos/Matriz en el heap - puntero a la primera fila.png",
+  "destino": "Programación en C/03-Memoria dinámica y Valgrind/adjuntos/Matriz en el heap - segunda celda aún en NULL.png",
   "sha256": "87c6ca6d67fa75644bcf287a127889ea590c6861261fa7aaf4cf3c5fb70b83ea"
  },
  {
   "tema": "Memoria dinámica y Valgrind",
   "tipo": "apuntes",
   "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/Untitled 22.png",
-  "destino": "Programación en C/03-Memoria dinámica y Valgrind/adjuntos/Matriz en el heap - segunda fila.png",
+  "destino": "Programación en C/03-Memoria dinámica y Valgrind/adjuntos/Matriz en el heap - segunda fila reservada.png",
   "sha256": "ecf595d9296d2e0b85127f4fcc31f44e71d30ce7be14c01ffd1fc93ab433138f"
  },
  {
@@ -181,7 +181,7 @@
   "tema": "Memoria dinámica y Valgrind",
   "tipo": "editada",
   "original": "Semestre 4/Estructuras de Datos - IIC2133/Capsulas de C - Resumen/Untitled 24.png",
-  "destino": "Programación en C/03-Memoria dinámica y Valgrind/adjuntos/Matriz en el heap - acceso a A[0][0].png",
+  "destino": "Programación en C/03-Memoria dinámica y Valgrind/adjuntos/Matriz en el heap - escritura del primer elemento.png",
   "sha256": "7538f17d165b994883add0f5dd6667b78a5a92aa19c14c2433fa04e9188f725a",
   "motivo": "Se tapó la cámara del expositor (rostro) con el color de fondo; el repo es público."
  },

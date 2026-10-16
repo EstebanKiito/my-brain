@@ -92,7 +92,7 @@
     },
     "Memoria dinámica y Valgrind": {
       "carpeta": "Programación en C/03-Memoria dinámica y Valgrind",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "capsulas",

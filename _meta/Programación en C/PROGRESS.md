@@ -7,7 +7,7 @@ Rama: `migrar/estructuras-de-datos` (compartida por Estructuras de Datos y Progr
 | 0 | Infraestructura (`_meta/Programación en C/`, cobertura reescrita en `verificar.py`) | `_meta/` | ✅ hecho | – | – |
 | 1 | Fundamentos del lenguaje | `01-Fundamentos del lenguaje/` | ✅ hecho | 4 + índice | 4 + 0 |
 | 2 | Punteros, arreglos y strings | `02-Punteros, arreglos y strings/` | ✅ hecho | 4 + índice | 13 + 0 |
-| 3 | Memoria dinámica y Valgrind | `03-Memoria dinámica y Valgrind/` | pendiente | – | – |
+| 3 | Memoria dinámica y Valgrind | `03-Memoria dinámica y Valgrind/` | ✅ hecho | 5 + índice | 21 + 0 |
 | 4 | Structs | `04-Structs/` | pendiente | – | – |
 | 5 | Módulos, compilación y depuración | `05-Módulos, compilación y depuración/` | pendiente | – | – |
 
@@ -27,3 +27,4 @@ Rama: `migrar/estructuras-de-datos` (compartida por Estructuras de Datos y Progr
 - **2026-10-16 · Fundamentos del lenguaje.** Fuentes: `capsulas` (0 a 3, con 4 diagramas del stack), `cheat00` a `cheat03` y `taller` (consejos iniciales). 4 notas; 5 programas C compilados con `gcc -Wall -Wextra` sin advertencias y ejecutados. Se conservaron los 2 videos Loom del cheatsheet (switch, funciones). Las 4 imágenes del stack tienen la cámara tapada (`editada`). Para no dejar wikilinks rotos entre commits, las notas solo enlazan hacia atrás. 2 dudas ℹ️ (`bool` en C99, `atof` en `int`).
 - **Cambios a `verificar.py`** durante este tema: el tipo de imagen `editada`; las imágenes enlazadas que no vienen en el export (5 del cheatsheet) son advertencia y no error; en ramos reescritos, la búsqueda difusa de cobertura mira solo las notas del ramo (pasó de más de 10 minutos a 3 segundos).
 - **2026-10-16 · Punteros, arreglos y strings.** Fuentes: `capsulas` (4 a 6, 13 imágenes; 4 con la cámara tapada), `cheat04` a `cheat06` y `taller` (punteros y paso por valor). 4 notas; 4 programas C compilados y ejecutados (la única advertencia de `-Wextra` es la que la nota usa como ejemplo). 2 imágenes renombradas sin corchetes, porque `[ ]` rompe el link Markdown. 3 dudas ℹ️.
+- **2026-10-16 · Memoria dinámica y Valgrind.** Fuentes: `capsulas` (7 y 8, 21 imágenes; 4 con la cámara tapada), `cheat07`, `cheat08`, `taller` (memoria, arreglos en el heap, matrices, tips de Valgrind) y la guía AYUDAA (síntomas, comando completo). 4 imágenes renombradas para describir bien cada paso de la matriz y sin corchetes. Programas compilados y ejecutados; `leaks --atExit` de macOS confirma 0 leaks en el ejemplo correcto y 10 en el que libera solo `B`. Valgrind y ASan no corren en este entorno, así que sus salidas vienen de las capturas del curso. Las 2 imágenes del CheatSheet no están en el export (advertencia). Se conservó el video de memoria. 3 dudas ℹ️.
