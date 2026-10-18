@@ -5,7 +5,7 @@ Bases de datos más allá del modelo relacional: por qué existen, el dilema CAP
 Volver al [[Bases de Datos/_Índice|mapa del ramo]].
 
 > [!note] Origen
-> Mis apuntes no cubren este tema. Todas las notas son complemento del PPTX de la clase 14 (NoSQL, MongoDB). El teorema CAP se enlaza a la nota de Ingeniería de Software en vez de duplicarlo.
+> Todas las notas son complemento del PPTX de la clase 14 (NoSQL, MongoDB). El teorema CAP se enlaza a la nota de Ingeniería de Software en vez de duplicarlo.
 
 ## Orden de estudio
 1. [[01 - Bases de datos NoSQL|Bases de datos NoSQL]]: SQL vs NoSQL, fragmentación y replicación.

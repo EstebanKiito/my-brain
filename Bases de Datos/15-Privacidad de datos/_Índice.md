@@ -5,7 +5,7 @@ Qué significa preservar la privacidad al publicar o consultar datos personales,
 Volver al [[Bases de Datos/_Índice|mapa del ramo]].
 
 > [!note] Origen
-> Mis apuntes no cubren este tema. Todas las notas son complemento de las slides de la clase 15 (Privacidad). Según la clase de repaso, la privacidad entra en el examen.
+> Todas las notas son complemento de las slides de la clase 15 (Privacidad).
 
 ## Orden de estudio
 1. [[01 - Privacidad vs seguridad|Privacidad vs seguridad]]: definición, casos Netflix y Massachusetts, datos sintéticos vs respuestas a consultas.
