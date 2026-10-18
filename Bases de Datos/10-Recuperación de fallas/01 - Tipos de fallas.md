@@ -8,29 +8,20 @@ prerrequisitos: ["[[02 - Propiedades ACID|Propiedades ACID]]"]
 
 Una base de datos puede fallar por datos erróneos, por daño del almacenamiento, por catástrofes o por caídas del sistema. Cada falla tiene su solución; las caídas del sistema se resuelven con el **log** y el Recovery Manager.
 
-## Tipos de fallas en transacciones y soluciones (mis apuntes)
+## Tipos de fallas en transacciones y soluciones
 ### Fallas en la ejecución de transacciones
-- **Datos Erróneos:**
-    - Problema: Entrada de datos incorrectos debido a errores humanos o problemas de integración.
-    - Soluciones: Implementar validaciones estrictas, controles de integridad
-    - procesos de limpieza de datos periódicos.
-- **Fallas en el Almacenamiento:**
-    - Problema: Fallos físicos en los dispositivos de almacenamiento.
-    - Soluciones: Uso de configuraciones RAID (Redundant Array of Independent Disks) para redundancia
-    - Copias de seguridad regulares.
+- **Datos erróneos:**
+    - Problema: se ingresan datos incorrectos por errores humanos o problemas de integración.
+    - Soluciones: validaciones estrictas, controles de integridad y procesos periódicos de limpieza de datos.
+- **Fallas en el almacenamiento:**
+    - Problema: fallos físicos en los dispositivos de almacenamiento.
+    - Soluciones: configuraciones RAID (*Redundant Array of Independent Disks*) para tener redundancia, y copias de seguridad regulares.
 - **Catástrofes:**
-    - Problema: Eventos graves como incendios, inundaciones, ataques cibernéticos, etc.
-    - Soluciones: Implementar estrategias de recuperación ante desastres
-    - copias de seguridad distribuidas geográficamente
-    - planes de continuidad del negocio.
-- **Fallas del Sistema:**
-    - Problema: Interrupciones en el funcionamiento del sistema de base de datos, como fallos de software o hardware.
-    - Solución: Utilización de técnicas de recuperación mediante logs, checkpointing y reinicio del sistema para restaurar el estado consistente de la base de datos.
-
-> [!info] Pendiente en mis apuntes
-> - Seguir escribiendo este resumen …
->
-> La sección quedó inconclusa. Lo que faltaba (logs y recuperación) se completó con las slides en las notas siguientes, desde [[02 - Log manager y registros de log|Log manager y registros de log]].
+    - Problema: eventos graves como incendios, inundaciones o ciberataques.
+    - Soluciones: estrategias de recuperación ante desastres, copias de seguridad distribuidas geográficamente y planes de continuidad del negocio.
+- **Fallas del sistema:**
+    - Problema: interrupciones en el funcionamiento del sistema de base de datos, como fallos de software o de hardware.
+    - Solución: técnicas de recuperación con logs, *checkpointing* y reinicio del sistema, para volver a un estado consistente de la base de datos. Se explican desde [[02 - Log manager y registros de log|Log manager y registros de log]].
 
 > [!tip] Complemento (slides "Clase 11: Transacciones y Recuperación de Fallas")
 > | Falla | Solución según la slide |

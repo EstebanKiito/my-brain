@@ -2,7 +2,7 @@
 
 Rama `fix/bases-de-datos`. Solo se corrige lo que no vale la pena mostrar (marcas personales, Posible error, frases de borrador, ejemplos incorrectos). Un commit por carpeta: `pule apuntes: <carpeta>`.
 
-Carpetas cerradas: 01, 02, 03, 04, 05, 07, 08, 09.
+Carpetas cerradas: 01, 02, 03, 04, 05, 07, 08, 09, 10.
 
 Estados: pendiente · pulida · sin cambios.
 
@@ -63,7 +63,7 @@ Estados: pendiente · pulida · sin cambios.
 | 53 | 09-Transacciones y concurrencia/10 - COMMIT, ROLLBACK y SAVEPOINT.md | pulida | |
 | 54 | 09-Transacciones y concurrencia/11 - Locks y registros fantasma.md | pulida | |
 | 55 | 09-Transacciones y concurrencia/12 - Niveles de aislamiento.md | pulida | |
-| 56 | 10-Recuperación de fallas/01 - Tipos de fallas.md | pendiente | |
+| 56 | 10-Recuperación de fallas/01 - Tipos de fallas.md | pulida | |
 | 57 | 11-Almacenamiento e índices/02 - Disco duro y páginas.md | pendiente | |
 | 58 | 11-Almacenamiento e índices/03 - Disco, RAM y buffer pool.md | pendiente | |
 | 59 | 11-Almacenamiento e índices/04 - Modelo de costos de IO.md | pendiente | |
