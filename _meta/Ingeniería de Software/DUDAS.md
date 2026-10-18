@@ -55,10 +55,10 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta.
 ## Rails
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
-| 🟡 | [[10 - Rutas en Rails\|Rutas en Rails]] | `post “/pokemon”, to: “pokemons#create”)` | Sobra `)`, las comillas deben ser rectas y el endpoint es `/pokemons` (como dice la explicación). |
-| 🟡 | [[05 - Migraciones en Rails\|Migraciones en Rails]] | `create_table: pokemons do \|t\|` | Es `create_table :pokemons do \|t\|` y faltan los `end`. |
-| 🟡 | [[05 - Migraciones en Rails\|Migraciones en Rails]] | "rails generate migration CreatePokemon … (tiene que ser en singular)" | Lo singular es el nombre del **modelo**; la tabla queda en plural. Las migraciones se nombran como acción (`CreatePokemons`). |
-| 🟡 | [[11 - Vistas ERB\|Vistas ERB]] | `pokemon_tupe`, `<tr>` sin cerrar, `<& end %>` | `pokemon_type`, `</tr>`, `<% end %>`. El controlador debería ser `PokemonsController`. |
+| ✅ | [[10 - Rutas en Rails\|Rutas en Rails]] | `post “/pokemon”, to: “pokemons#create”)` | Sobra `)`, las comillas deben ser rectas y el endpoint es `/pokemons` (como dice la explicación). Corregido en el texto de la nota. |
+| ✅ | [[05 - Migraciones en Rails\|Migraciones en Rails]] | `create_table: pokemons do \|t\|` | Es `create_table :pokemons do \|t\|` y faltan los `end`. Corregido en el texto de la nota. |
+| ✅ | [[05 - Migraciones en Rails\|Migraciones en Rails]] | "rails generate migration CreatePokemon … (tiene que ser en singular)" | Lo singular es el nombre del **modelo**; la tabla queda en plural. Las migraciones se nombran como acción (`CreatePokemons`). Corregido en el texto de la nota. |
+| ✅ | [[11 - Vistas ERB\|Vistas ERB]] | `pokemon_tupe`, `<tr>` sin cerrar, `<& end %>` | `pokemon_type`, `</tr>`, `<% end %>`. El controlador debería ser `PokemonsController`. Corregido en el texto de la nota. |
 | ℹ️ | [[14 - render vs redirect_to\|render vs redirect_to]] | "render: edit" | Se escribe `render :edit`. Las demás formas de la lista son correctas. |
 | ℹ️ | [[06 - Comandos de Rails\|Comandos de Rails]] | "sudo service postgresql start" | Es para Linux/WSL; en Mac con Homebrew se usa `brew services start postgresql`. |
 | ✅ | [[13 - Form helpers de Rails\|Form helpers]] | Link `https://app.notion.comundefined` | Link roto de Notion: no se migra (aceptado en `mapeo.json`). |

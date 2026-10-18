@@ -6,14 +6,10 @@ prerrequisitos: ["[[02 - HTML|HTML]]"]
 ---
 # CSS
 
-CSS (Cascading Style Sheets) es un lenguaje de hojas de estilo que se utiliza para describir la **apariencia y el formato** de un documento escrito en HTML.
-
-A continuación, se destacan algunas características clave de CSS, junto con ejemplos de código:
+CSS (*Cascading Style Sheets*) es el lenguaje de hojas de estilo que describe la **apariencia y el formato** de un documento HTML. HTML define la estructura; CSS, cómo se ve.
 
 ## Estilos externos
-Los estilos CSS pueden definirse en archivos separados con la extensión `.css` y enlazarse a los documentos HTML.
-
-Ejemplo:
+Los estilos se pueden definir en un archivo aparte, con extensión `.css`, y enlazarlo desde el `<head>` del HTML con `<link>`. Así un mismo archivo de estilos sirve para varias páginas:
 ```html
 <!DOCTYPE html>
 <html>
@@ -42,8 +38,7 @@ p {
 ```
 
 ## Atributos
-- Los atributos CSS definen cómo se deben mostrar los elementos HTML.
-- Ejemplo:
+Cada regla CSS tiene un **selector** (a qué elementos se aplica) y una lista de **propiedades** con sus valores, que definen cómo se muestran esos elementos:
 ```css
 p {
     color: blue;
@@ -55,8 +50,7 @@ p {
 ```
 
 ## Clases
-- Las reglas de estilo CSS pueden **reutilizarse** asignando la misma clase a varios elementos HTML.
-- Ejemplo:
+Una regla se puede **reutilizar** asignando la misma clase a varios elementos HTML, aunque sean de distinto tipo. En CSS, la clase se selecciona con un punto (`.myClass`):
 ```html
 <div class="myClass">Este es un div con clase reutilizable.</div>
 <p class="myClass">Este es un párrafo con la misma clase.</p>
@@ -68,7 +62,6 @@ p {
 }
 ```
 
-Estas características permiten a los desarrolladores crear y dar estilo a páginas web de manera eficiente y consistente.
 
 > [!tip] Complemento — las tres formas de aplicar CSS (slides "HTML + CSS")
 > | Forma | Cómo | Ejemplo |
@@ -82,7 +75,7 @@ Estas características permiten a los desarrolladores crear y dar estilo a pági
 > - **Selectores básicos:** `p` (todos los `<p>`), `.clase` (atributo `class`), `#id` (atributo `id`).
 
 > [!example] Ejemplo extra — márgenes y relleno
-> `margin` es el espacio **fuera** del borde del elemento; `padding` es el espacio **dentro**, entre el borde y el contenido. En el ejemplo de los apuntes, `margin: 10px; padding: 5px;` separa el párrafo 10 px de sus vecinos y deja 5 px de fondo amarillo alrededor del texto.
+> `margin` es el espacio **fuera** del borde del elemento; `padding` es el espacio **dentro**, entre el borde y el contenido. En el ejemplo de la sección Atributos, `margin: 10px; padding: 5px;` separa el párrafo 10 px de sus vecinos y deja 5 px de fondo amarillo alrededor del texto.
 
 ## Preguntas de repaso
 

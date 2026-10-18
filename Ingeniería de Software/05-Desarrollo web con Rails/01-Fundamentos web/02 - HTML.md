@@ -6,12 +6,10 @@ prerrequisitos: ["[[01 - Protocolo HTTP|Protocolo HTTP]]"]
 ---
 # HTML
 
-HTML (HyperText Markup Language) es el lenguaje de marcado utilizado para **estructurar y presentar contenido en la web**. A continuación, se detallan algunas de las características más importantes de HTML, junto con ejemplos de código:
+HTML (HyperText Markup Language) es el lenguaje de marcado utilizado para **estructurar y presentar contenido en la web**. Esta nota recorre sus elementos principales: estructura de la página, enlaces, imágenes, listas y atributos.
 
 ## Estructuras
-HTML utiliza **etiquetas** para definir y organizar los distintos elementos y secciones de una página web.
-
-Ejemplo:
+HTML usa **etiquetas** para definir y organizar los elementos y las secciones de una página. Toda página tiene un `<head>` (metadatos, como el título de la pestaña) y un `<body>` (el contenido visible), que a su vez se divide en secciones como `<header>`, `<div>` y `<footer>`:
 ```html
 <!DOCTYPE html>
 <html>
@@ -33,25 +31,19 @@ Ejemplo:
 ```
 
 ## Enlaces
-Los enlaces se crean utilizando la etiqueta `<a>` con el atributo `href` para especificar la URL de destino.
-
-Ejemplo:
+Los enlaces se crean con la etiqueta `<a>`, y el atributo `href` indica la URL de destino:
 ```html
 <a href="https://www.example.com">Visita Example</a>
 ```
 
 ## Imágenes
-Las imágenes se incorporan utilizando la etiqueta `<img>` con el atributo `src` para especificar la ubicación de la imagen.
-
-Ejemplo:
+Las imágenes se incorporan con la etiqueta `<img>`. El atributo `src` indica dónde está la imagen y `alt` es el texto alternativo que se muestra si no carga:
 ```html
 <img src="imagen.jpg" alt="Descripción de la imagen">
 ```
 
 ## Listas
-HTML permite crear diferentes tipos de listas.
-
-Ejemplo de lista ordenada:
+HTML tiene listas ordenadas (`<ol>`, numeradas) y no ordenadas (`<ul>`, con viñetas); cada elemento va en un `<li>`. Ejemplo de lista ordenada:
 ```html
 <ol>
     <li>Elemento 1</li>
@@ -61,9 +53,7 @@ Ejemplo de lista ordenada:
 ```
 
 ## Atributos de las etiquetas
-Los atributos proporcionan información adicional sobre los elementos HTML.
-
-Ejemplo:
+Los atributos entregan información adicional sobre un elemento. Los más usados son `class` (agrupa elementos para darles estilo con CSS) e `id` (identifica un elemento único):
 ```html
 <div class="contenedor">
     <p id="parrafoPrincipal">Este es un párrafo dentro de un contenedor.</p>

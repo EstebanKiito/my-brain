@@ -5,7 +5,7 @@ Lo que hay que saber de la web antes de Rails: cómo viajan los requests (HTTP) 
 Volver a [[Ingeniería de Software/05-Desarrollo web con Rails/_Índice|Desarrollo web con Rails]] · [[Ingeniería de Software/_Índice|mapa del ramo]].
 
 ## Origen
-HTML, CSS y formularios vienen de la sección **9. HTML + CSS (Vistas)** de mis apuntes de la prueba práctica; HTTP es complemento.
+HTML, CSS y formularios parten de los apuntes de la sección **HTML + CSS (Vistas)**; HTTP es complemento.
 
 ## Orden de estudio
 1. [[01 - Protocolo HTTP|Protocolo HTTP]]: request y response, métodos y códigos de estado.

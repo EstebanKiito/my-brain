@@ -9,7 +9,7 @@ prerrequisitos: ["[[11 - Vistas ERB|Vistas ERB]]", "[[07 - Validaciones en Activ
 Un **parcial** es un fragmento de vista reutilizable (archivo que empieza con `_`). En el ejemplo de Persona, `new` y `edit` comparten el mismo formulario `_form.html.erb`.
 
 ## new.html.erb y edit.html.erb
-Ambos formularios son similares, así que puedes usar un **parcial** para el formulario.
+Las vistas `new` y `edit` muestran el mismo formulario, así que se extrae a un **parcial**, `_form.html.erb`, y ambas lo renderizan con `render 'form'`.
 
 ### _form.html.erb
 ```erb

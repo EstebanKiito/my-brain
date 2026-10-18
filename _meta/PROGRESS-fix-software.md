@@ -2,7 +2,7 @@
 
 Rama `fix/software`. Plan: ordenar las notas `origen/apuntes` sin cambiar su estructura (ver la sección "Qué se hace en cada nota" del plan). Un commit por carpeta: `ordena apuntes: <carpeta>`.
 
-Carpetas cerradas: 01, 02, 03, 04.
+Carpetas cerradas: 01, 02, 03, 04, 05.
 
 Estados: pendiente · ordenada · sin cambios.
 
@@ -45,21 +45,21 @@ Estados: pendiente · ordenada · sin cambios.
 | 35 | 04-Programación orientada a objetos/11 - Polimorfismo y duck typing.md | ordenada | |
 | 36 | 04-Programación orientada a objetos/12 - Method lookup en Ruby.md | ordenada | |
 | 37 | 04-Programación orientada a objetos/13 - self vs super.md | ordenada | |
-| 38 | 05-Desarrollo web con Rails/01-Fundamentos web/02 - HTML.md | pendiente | |
-| 39 | 05-Desarrollo web con Rails/01-Fundamentos web/03 - CSS.md | pendiente | |
-| 40 | 05-Desarrollo web con Rails/01-Fundamentos web/04 - Formularios HTML.md | pendiente | |
-| 41 | 05-Desarrollo web con Rails/02-Rails/01 - Instalar Ruby on Rails en Mac M1.md | pendiente | |
-| 42 | 05-Desarrollo web con Rails/02-Rails/02 - CRUD.md | pendiente | |
-| 43 | 05-Desarrollo web con Rails/02-Rails/03 - Patrón MVC en Rails.md | pendiente | |
-| 44 | 05-Desarrollo web con Rails/02-Rails/04 - Modelos y Active Record.md | pendiente | |
-| 45 | 05-Desarrollo web con Rails/02-Rails/05 - Migraciones en Rails.md | pendiente | |
-| 46 | 05-Desarrollo web con Rails/02-Rails/06 - Comandos de Rails.md | pendiente | |
-| 47 | 05-Desarrollo web con Rails/02-Rails/09 - Controladores en Rails.md | pendiente | |
-| 48 | 05-Desarrollo web con Rails/02-Rails/10 - Rutas en Rails.md | pendiente | |
-| 49 | 05-Desarrollo web con Rails/02-Rails/11 - Vistas ERB.md | pendiente | |
-| 50 | 05-Desarrollo web con Rails/02-Rails/12 - Parciales en ERB.md | pendiente | |
-| 51 | 05-Desarrollo web con Rails/02-Rails/13 - Form helpers de Rails.md | pendiente | |
-| 52 | 05-Desarrollo web con Rails/02-Rails/14 - render vs redirect_to.md | pendiente | |
+| 38 | 05-Desarrollo web con Rails/01-Fundamentos web/02 - HTML.md | ordenada | |
+| 39 | 05-Desarrollo web con Rails/01-Fundamentos web/03 - CSS.md | ordenada | |
+| 40 | 05-Desarrollo web con Rails/01-Fundamentos web/04 - Formularios HTML.md | ordenada | |
+| 41 | 05-Desarrollo web con Rails/02-Rails/01 - Instalar Ruby on Rails en Mac M1.md | ordenada | |
+| 42 | 05-Desarrollo web con Rails/02-Rails/02 - CRUD.md | ordenada | |
+| 43 | 05-Desarrollo web con Rails/02-Rails/03 - Patrón MVC en Rails.md | ordenada | |
+| 44 | 05-Desarrollo web con Rails/02-Rails/04 - Modelos y Active Record.md | ordenada | |
+| 45 | 05-Desarrollo web con Rails/02-Rails/05 - Migraciones en Rails.md | ordenada | |
+| 46 | 05-Desarrollo web con Rails/02-Rails/06 - Comandos de Rails.md | ordenada | |
+| 47 | 05-Desarrollo web con Rails/02-Rails/09 - Controladores en Rails.md | ordenada | |
+| 48 | 05-Desarrollo web con Rails/02-Rails/10 - Rutas en Rails.md | ordenada | |
+| 49 | 05-Desarrollo web con Rails/02-Rails/11 - Vistas ERB.md | ordenada | |
+| 50 | 05-Desarrollo web con Rails/02-Rails/12 - Parciales en ERB.md | ordenada | |
+| 51 | 05-Desarrollo web con Rails/02-Rails/13 - Form helpers de Rails.md | ordenada | |
+| 52 | 05-Desarrollo web con Rails/02-Rails/14 - render vs redirect_to.md | ordenada | |
 | 53 | 06-Testing/03 - Niveles de testing en Rails.md | pendiente | |
 | 54 | 06-Testing/04 - Unit tests en Rails.md | pendiente | |
 | 55 | 06-Testing/05 - Asserts en Minitest.md | pendiente | |

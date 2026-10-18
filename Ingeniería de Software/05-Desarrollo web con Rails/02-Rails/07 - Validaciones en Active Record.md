@@ -6,7 +6,7 @@ prerrequisitos: ["[[04 - Modelos y Active Record|Modelos y Active Record]]"]
 ---
 # Validaciones en Active Record
 
-> [!tip] Complemento — nota nueva (fuente: slides "RoR - Active Record"; ejemplo `Persona` de mis apuntes)
+> [!tip] Complemento — nota nueva (fuente: slides "RoR - Active Record"; ejemplo `Persona` de [[04 - Modelos y Active Record|Modelos y Active Record]])
 > **Qué es:** las validaciones son reglas declaradas en el modelo que se revisan **antes de guardar** en la base de datos. Si alguna falla, `save` devuelve `false` y los errores quedan en `errors`.
 >
 > ```ruby
@@ -39,7 +39,7 @@ prerrequisitos: ["[[04 - Modelos y Active Record|Modelos y Active Record]]"]
 > end
 > ```
 >
-> **Ejemplo de mis apuntes (modelo `Persona`):** `nombre` obligatorio y `edad` entera mayor o igual a 0.
+> **Ejemplo con el modelo `Persona`:** `nombre` obligatorio y `edad` entera mayor o igual a 0.
 > ```ruby
 > validates :nombre, presence: true
 > validates :edad, numericality: { only_integer: true, greater_than_or_equal_to: 0 }

@@ -8,13 +8,13 @@ prerrequisitos: ["[[01 - Instalar Ruby on Rails en Mac M1|Instalar Ruby on Rails
 
 Resumen de los comandos de consola de Rails (y de PostgreSQL) que se usan en el curso.
 
-## Mis apuntes
-- `rails s` = `rails server` = `bin/rails server` → inicializa el servidor
-- `rails generate model Pokemon name:string`
-- `rails generate migration CreatePokemon` → atributos opcionales
-- `db:migrate` → aplica las migraciones a la BDD
-- `rails console`
-- `sudo service postgresql start` → inicia postgres
+## Los más usados
+- `rails s` (o `rails server`, `bin/rails server`): levanta el servidor de desarrollo.
+- `rails generate model Pokemon name:string`: crea el modelo `Pokemon` y su migración.
+- `rails generate migration CreatePokemons`: crea una migración suelta; los atributos son opcionales.
+- `rails db:migrate`: aplica las migraciones pendientes a la base de datos.
+- `rails console`: abre una consola de Ruby con la aplicación cargada, para probar los modelos.
+- `sudo service postgresql start`: inicia PostgreSQL (en Linux; en Mac, `brew services start postgresql`).
 
 > [!tip] Complemento — tabla de comandos
 > | Comando | Qué hace |

@@ -8,32 +8,23 @@ prerrequisitos: ["[[04 - Modelos y Active Record|Modelos y Active Record]]"]
 
 Una migración es un **script de Ruby que modifica el esquema de la base de datos** (crear tablas, agregar columnas…) de forma versionada, para que la base de datos evolucione junto con el código.
 
-## Mis apuntes
-- **`db:migrate`** → se guardan migraciones: modificar la BDD **consistentemente e iterativamente**.
-- `rails generate model Pokemon name:string`
-- `create_pokemons.rb`
-- `rails generate migration CreatePokemon` → atributos opcionales (tiene que ser en singular)
+## Cómo se crean
+- Las migraciones permiten modificar la base de datos de forma **consistente e iterativa**: cada cambio queda guardado como un archivo, y `rails db:migrate` aplica los que faltan.
+- `rails generate model Pokemon name:string` crea el modelo y su migración, en un archivo `db/migrate/<timestamp>_create_pokemons.rb`.
+- `rails generate migration CreatePokemons` crea una migración suelta; los atributos son opcionales. Una migración suelta se nombra como acción (`CreatePokemons`, `AddTypeToPokemons`).
+- El **modelo** va en **singular** (`Pokemon`) y Rails crea la **tabla** en **plural** (`pokemons`).
 
 ```ruby
-create_table: pokemons do |t|
-	t.string :name
-	t.string :pokemon_type
+class CreatePokemons < ActiveRecord::Migration[7.0]
+  def change
+    create_table :pokemons do |t|
+      t.string :name
+      t.string :pokemon_type
+      t.timestamps
+    end
+  end
+end
 ```
-
-> [!warning] Posible error (registrado en `_meta/DUDAS.md`)
-> - **Sintaxis:** es `create_table :pokemons do |t|` (el símbolo va después de un espacio, no con `:` pegado al método), y faltan los `end`. Versión completa:
-> ```ruby
-> class CreatePokemons < ActiveRecord::Migration[7.0]
->   def change
->     create_table :pokemons do |t|
->       t.string :name
->       t.string :pokemon_type
->       t.timestamps
->     end
->   end
-> end
-> ```
-> - **"(tiene que ser en singular)":** lo que va en **singular es el nombre del modelo** (`rails generate model Pokemon`), y Rails crea la tabla en **plural** (`pokemons`). Una migración suelta suele nombrarse como acción: `rails generate migration CreatePokemons` o `AddTypeToPokemons`.
 
 > [!tip] Complemento (slides "RoR - First API" y "RoR - Active Record", libro cap. 11)
 > - `rails generate model Student name score` crea el modelo **y** su migración. Se puede indicar el tipo: `name:text score:integer`; si no se indica, es `string`.
