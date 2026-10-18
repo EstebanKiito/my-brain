@@ -8,7 +8,7 @@ prerrequisitos: ["[[05 - Código duplicado (code clones)|Código duplicado (code
 
 Ejemplo de clase sobre **código duplicado dentro de una clase**: dos métodos de filtro casi iguales se reemplazan por estrategias intercambiables. Es un adelanto del patrón Strategy.
 
-## Ejemplo 2 (código duplicado)
+## Código original (código duplicado)
 ![Ejemplo filtros de libros - código original](../adjuntos/Ejemplo%20filtros%20de%20libros%20-%20código%20original.png)
 
 > [!note]- Transcripción de la imagen
@@ -118,8 +118,8 @@ Ejemplo de clase sobre **código duplicado dentro de una clase**: dos métodos d
 > end
 > ```
 
-- Ya no tendremos que modificar `BookStore` ni `Book` en caso de añadir más filtros.
-- Solo se crea otra estrategia (clase nueva que hereda de `FilterStrategy`).
+- Para añadir más filtros ya **no hay que modificar `BookStore` ni `Book`**.
+- Solo se crea otra estrategia: una clase nueva que hereda de `FilterStrategy`.
 - Está **"Abierto para Extensiones, Cerrado para Modificaciones"** → [[06 - Principio abierto-cerrado|Principio abierto-cerrado]].
 
 ```mermaid

@@ -8,7 +8,7 @@ prerrequisitos: ["[[02 - Acoplamiento|Acoplamiento]]", "[[04 - Encapsulamiento|E
 
 Ejemplo de clase sobre **métodos y datos entrelazados**: `ShoppingCar` usaba los datos internos de `Item`. Al mover esa lógica a `Item`, baja el acoplamiento y mejora el encapsulamiento.
 
-## Ejemplo 1 (métodos y datos entrelazados)
+## Código original (métodos y datos entrelazados)
 ![Ejemplo carrito de compras - código original](../adjuntos/Ejemplo%20carrito%20de%20compras%20-%20código%20original.png)
 
 > [!note]- Transcripción de la imagen
@@ -60,7 +60,7 @@ Ejemplo de clase sobre **métodos y datos entrelazados**: `ShoppingCar` usaba lo
 **Problemas:**
 - `ShoppingCar` depende de **2 atributos y un método** de otra clase (`Item`).
 - Aumenta el **acoplamiento** entre clases.
-- Rompe el **encapsulamiento** → los datos de los objetos deben estar lo más ocultos posible para evitar dependencias innecesarias.
+- Rompe el **encapsulamiento**: los datos de los objetos deberían estar lo más ocultos posible para evitar dependencias innecesarias.
 
 ## Código mejorado
 ![Ejemplo carrito de compras - código mejorado](../adjuntos/Ejemplo%20carrito%20de%20compras%20-%20código%20mejorado.png)
@@ -105,7 +105,7 @@ Ejemplo de clase sobre **métodos y datos entrelazados**: `ShoppingCar` usaba lo
 
 **Ventajas:**
 - `ShoppingCar` solo depende del método `print` → **disminuyen las dependencias** (acoplamiento).
-- `Item` tiene sus **datos privados** + el método `totalCost` es **privado**.
+- `Item` tiene sus **datos privados**, y el método `totalCost` también es **privado**.
 
 `require_relative` se usa para cargar los archivos: ver [[08 - require_relative en Ruby|require_relative en Ruby]].
 

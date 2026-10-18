@@ -74,7 +74,7 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta.
 ## UML
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
-| 🟡 | [[04 - Relaciones entre clases en UML\|Relaciones entre clases en UML]] | "Composition: … Los objetos de B son creados dentro de B" | Debe ser "dentro de **A**" (así dice la slide). Se explica en [[05 - Agregación vs composición\|Agregación vs composición]]. |
+| ✅ | [[04 - Relaciones entre clases en UML\|Relaciones entre clases en UML]] | "Composition: … Los objetos de B son creados dentro de B" | Debe ser "dentro de **A**" (así dice la slide). Se explica en [[05 - Agregación vs composición\|Agregación vs composición]]. Corregido en el texto de la nota. |
 
 ## Principios de diseño
 | Estado | Nota | Original | Duda / corrección propuesta |

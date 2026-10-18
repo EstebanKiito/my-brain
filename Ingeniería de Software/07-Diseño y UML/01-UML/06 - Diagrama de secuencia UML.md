@@ -9,9 +9,10 @@ prerrequisitos: ["[[01 - Diagrama de clases UML|Diagrama de clases UML]]"]
 El diagrama de secuencia muestra la **dinámica**: qué mensajes (llamadas a métodos) se envían los objetos **a lo largo del tiempo** para realizar una operación.
 
 ## Diagrama de secuencia
-- Cada **caja** es la **instancia** de una clase (objeto).
-- La **línea punteada** es la **línea de vida** de un objeto.
-- Se lee **de arriba hacia abajo**.
+- Cada **caja** de arriba es una **instancia** de una clase (un objeto), no la clase.
+- La **línea punteada** bajo cada caja es la **línea de vida** del objeto.
+- Cada flecha es un **mensaje** (una llamada a un método) de un objeto a otro.
+- Se lee **de arriba hacia abajo**: el tiempo avanza hacia abajo.
 
 ![Diagrama de secuencia - calculatePrice de Order](../adjuntos/Diagrama%20de%20secuencia%20-%20calculatePrice%20de%20Order.png)
 

@@ -9,10 +9,9 @@ prerrequisitos: ["[[01 - Buen diseño de software|Buen diseño de software]]"]
 La cohesión mide **qué tan enfocada está una unidad de código** (clase, método o módulo) en una sola tarea o entidad. Un buen diseño busca **alta cohesión**.
 
 ## Cohesión
-- Se refiere a **qué tan BIEN un código MAPEA a una ENTIDAD**.
-- **+ Diseño → + Cohesión**
-- **Alta cohesión** → cada clase, método o módulo es **responsable de una tarea**.
-- **Buenas clases** → **alto nivel de cohesión**.
+- Mide **qué tan bien un fragmento de código se corresponde con una sola entidad** o tarea.
+- **Mejor diseño → más cohesión.**
+- **Alta cohesión:** cada clase, método o módulo es **responsable de una sola tarea**. Las buenas clases tienen un alto nivel de cohesión.
 
 > [!tip] Complemento (slides "Diseño Orientado al Objeto" y libro del curso, cap. 8.6)
 > - En un sistema con alta cohesión, **cada unidad de código es responsable de una tarea bien definida**. Es el **Principio de Responsabilidad Única** (SRP): una clase debería tener una sola razón para cambiar.

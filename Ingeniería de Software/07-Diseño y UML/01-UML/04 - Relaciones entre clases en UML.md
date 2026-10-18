@@ -11,15 +11,12 @@ UML tiene **6 tipos de relación** entre clases, y cada uno se dibuja con una l�
 ## Relaciones entre clases
 ![Relaciones UML - tipos de flechas](../adjuntos/Relaciones%20UML%20-%20tipos%20de%20flechas.png)
 
-- **Association:** un objeto de la clase tiene una referencia a un objeto de otra clase **por mucho tiempo** (ej.: atributos).
+- **Asociación** (*association*): un objeto guarda una referencia a un objeto de otra clase **por mucho tiempo**; por ejemplo, como atributo.
 - **Herencia:** una clase hereda de otra.
-- **Realization:** una clase implementa una interfaz o módulo.
-- **Dependency:** un objeto de la clase tiene una referencia a otro objeto de otra clase **de forma temporal** (ej.: variables temporales o argumentos).
-- **Aggregation:** un objeto de la clase A (**rombo vacío**) está compuesto por objetos de la clase B. Los objetos de B **no son creados dentro de A**.
-- **Composition:** un objeto de la clase A (**rombo lleno**) está compuesto por objetos de la clase B. Los objetos de B son creados dentro de B, creando dependencia. Un objeto derivado no podría existir sin su principal.
-
-> [!warning] Posible error (registrado en `_meta/DUDAS.md`)
-> En composición dice "los objetos de B son creados dentro de **B**". Debería ser "dentro de **A**": la slide dice *"Los objetos de la clase B son creados dentro de A, causando una dependencia más fuerte"*. Ver [[05 - Agregación vs composición|Agregación vs composición]].
+- **Realización** (*realization*): una clase implementa una interfaz o un módulo.
+- **Dependencia** (*dependency*): un objeto usa a otro de otra clase **de forma temporal**; por ejemplo, como variable local o argumento de un método.
+- **Agregación** (*aggregation*): un objeto de A (**rombo vacío**, del lado de A) está compuesto por objetos de B, pero los objetos de B **no se crean dentro de A**: llegan desde afuera.
+- **Composición** (*composition*): un objeto de A (**rombo lleno**, del lado de A) está compuesto por objetos de B que **se crean dentro de A**. Es una dependencia más fuerte: la parte no puede existir sin el todo. Ver [[05 - Agregación vs composición|Agregación vs composición]].
 
 | Relación | Línea | Punta | Ejemplo en código Ruby |
 |---|---|---|---|

@@ -9,9 +9,9 @@ prerrequisitos: ["[[01 - Buen diseño de software|Buen diseño de software]]"]
 El acoplamiento mide **cuánto dependen unas clases de otras**. Un buen diseño busca **bajo acoplamiento**: clases independientes que se comunican por pocos métodos bien definidos.
 
 ## Acoplamiento
-- Se refiere a la **INTERACCIÓN ENTRE CLASES** → qué tanto están **CONECTADAS**.
-- **+ Diseño → − Acoplamiento**
-- Buscamos tener **clases muy independientes** que se comuniquen a través de **pocos métodos bien definidos**.
+- Mide la **interacción entre clases**: qué tan **conectadas** están.
+- **Mejor diseño → menos acoplamiento.**
+- Se buscan **clases muy independientes** que se comuniquen a través de **pocos métodos bien definidos**. Así, un cambio en una clase no obliga a cambiar las demás.
 
 > [!tip] Complemento (slides "Diseño Orientado al Objeto" y libro del curso, cap. 8.6)
 > - Es la **interconectividad entre clases**. Para un buen diseño hay que **reducir el acoplamiento** del sistema.

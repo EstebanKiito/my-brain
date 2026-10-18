@@ -9,17 +9,18 @@ prerrequisitos: ["[[11 - Polimorfismo y duck typing|Polimorfismo y duck typing]]
 Un buen diseño orientado a objetos es el que hace que el código sea **fácil de entender, cambiar, probar y extender**. En el curso se evalúa con unas pocas heurísticas: sin código duplicado, bajo acoplamiento y alta cohesión.
 
 ## Diseño
-- Un buen diseño es **fácil de entender, modificar, testear y extender**.
-- Se puede **reutilizar**.
-- **Fácil de implementar**.
+Un buen diseño es:
+- **fácil de entender, modificar, testear y extender**;
+- **reutilizable**;
+- **fácil de implementar**.
 
 ## Heurística usada
-- Evitar **código duplicado** (code clones) → [[05 - Código duplicado (code clones)|Código duplicado]]
-- Minimizar las **dependencias entre clases** (acoplamiento) → [[02 - Acoplamiento|Acoplamiento]]
-- **Principio de Simple Responsabilidad** (cohesión) → [[03 - Cohesión|Cohesión]]
-- Facilitar el **mantenimiento y la extensibilidad**.
-- Organizando el código **para el cambio**.
-- **Aislando** para el cambio.
+Para lograrlo se usan tres heurísticas:
+- Evitar el **código duplicado** (*code clones*) → [[05 - Código duplicado (code clones)|Código duplicado]].
+- Minimizar las **dependencias entre clases** (acoplamiento) → [[02 - Acoplamiento|Acoplamiento]].
+- Aplicar el **principio de responsabilidad única** (cohesión) → [[03 - Cohesión|Cohesión]].
+
+El objetivo común es facilitar el **mantenimiento y la extensibilidad**: organizar el código **pensando en el cambio** y **aislar** lo que puede cambiar, para que modificarlo no obligue a tocar el resto.
 
 > [!tip] Complemento — Clean Code (slides "Diseño Orientado al Objeto")
 > *"I like my code to be elegant and efficient. The logic should be straightforward to make it hard for bugs to hide, the dependencies minimal to ease maintenance, error handling complete according to an articulated strategy, and performance close to optimal so as not to tempt people to make the code messy with unprincipled optimizations. Clean code does one thing well."* (Bjarne Stroustrup, creador de C++)

@@ -2,7 +2,7 @@
 
 Rama `fix/software`. Plan: ordenar las notas `origen/apuntes` sin cambiar su estructura (ver la sección "Qué se hace en cada nota" del plan). Un commit por carpeta: `ordena apuntes: <carpeta>`.
 
-Carpetas cerradas: 01, 02, 03, 04, 05, 06.
+Carpetas cerradas: 01, 02, 03, 04, 05, 06, 07.
 
 Estados: pendiente · ordenada · sin cambios.
 
@@ -66,21 +66,21 @@ Estados: pendiente · ordenada · sin cambios.
 | 56 | 06-Testing/06 - Fixtures en Rails.md | ordenada | |
 | 57 | 06-Testing/07 - Integration tests en Rails.md | ordenada | |
 | 58 | 06-Testing/09 - Cobertura de código con SimpleCov.md | ordenada | |
-| 59 | 07-Diseño y UML/01-UML/01 - Diagrama de clases UML.md | pendiente | |
-| 60 | 07-Diseño y UML/01-UML/02 - Visibilidad en UML.md | pendiente | |
-| 61 | 07-Diseño y UML/01-UML/03 - Herencia y realización en UML.md | pendiente | |
-| 62 | 07-Diseño y UML/01-UML/04 - Relaciones entre clases en UML.md | pendiente | |
-| 63 | 07-Diseño y UML/01-UML/06 - Diagrama de secuencia UML.md | pendiente | |
-| 64 | 07-Diseño y UML/01-UML/07 - Fragmentos alt y loop en diagramas de secuencia.md | pendiente | |
-| 65 | 07-Diseño y UML/02-Principios de diseño/01 - Buen diseño de software.md | pendiente | |
-| 66 | 07-Diseño y UML/02-Principios de diseño/02 - Acoplamiento.md | pendiente | |
-| 67 | 07-Diseño y UML/02-Principios de diseño/03 - Cohesión.md | pendiente | |
-| 68 | 07-Diseño y UML/02-Principios de diseño/04 - Encapsulamiento.md | pendiente | |
-| 69 | 07-Diseño y UML/02-Principios de diseño/05 - Código duplicado (code clones).md | pendiente | |
-| 70 | 07-Diseño y UML/02-Principios de diseño/06 - Principio abierto-cerrado.md | pendiente | |
-| 71 | 07-Diseño y UML/02-Principios de diseño/07 - Ejemplo de diseño - Carrito de compras.md | pendiente | |
-| 72 | 07-Diseño y UML/02-Principios de diseño/08 - Ejemplo de diseño - Filtros de libros.md | pendiente | |
-| 73 | 07-Diseño y UML/02-Principios de diseño/09 - Ejemplo de diseño - Bebidas con cafeína.md | pendiente | |
+| 59 | 07-Diseño y UML/01-UML/01 - Diagrama de clases UML.md | ordenada | |
+| 60 | 07-Diseño y UML/01-UML/02 - Visibilidad en UML.md | ordenada | |
+| 61 | 07-Diseño y UML/01-UML/03 - Herencia y realización en UML.md | ordenada | |
+| 62 | 07-Diseño y UML/01-UML/04 - Relaciones entre clases en UML.md | ordenada | |
+| 63 | 07-Diseño y UML/01-UML/06 - Diagrama de secuencia UML.md | ordenada | |
+| 64 | 07-Diseño y UML/01-UML/07 - Fragmentos alt y loop en diagramas de secuencia.md | ordenada | |
+| 65 | 07-Diseño y UML/02-Principios de diseño/01 - Buen diseño de software.md | ordenada | |
+| 66 | 07-Diseño y UML/02-Principios de diseño/02 - Acoplamiento.md | ordenada | |
+| 67 | 07-Diseño y UML/02-Principios de diseño/03 - Cohesión.md | ordenada | |
+| 68 | 07-Diseño y UML/02-Principios de diseño/04 - Encapsulamiento.md | ordenada | |
+| 69 | 07-Diseño y UML/02-Principios de diseño/05 - Código duplicado (code clones).md | ordenada | |
+| 70 | 07-Diseño y UML/02-Principios de diseño/06 - Principio abierto-cerrado.md | ordenada | |
+| 71 | 07-Diseño y UML/02-Principios de diseño/07 - Ejemplo de diseño - Carrito de compras.md | ordenada | |
+| 72 | 07-Diseño y UML/02-Principios de diseño/08 - Ejemplo de diseño - Filtros de libros.md | ordenada | |
+| 73 | 07-Diseño y UML/02-Principios de diseño/09 - Ejemplo de diseño - Bebidas con cafeína.md | ordenada | |
 | 74 | 08-Patrones de Diseño/01 - Qué es un patrón de diseño.md | pendiente | |
 | 75 | 08-Patrones de Diseño/01-Comportamiento/01 - Patrón Strategy.md | pendiente | |
 | 76 | 08-Patrones de Diseño/01-Comportamiento/02 - Strategy - implementación en Ruby.md | pendiente | |
