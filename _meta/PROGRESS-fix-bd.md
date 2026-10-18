@@ -2,7 +2,7 @@
 
 Rama `fix/bases-de-datos`. Solo se corrige lo que no vale la pena mostrar (marcas personales, Posible error, frases de borrador, ejemplos incorrectos). Un commit por carpeta: `pule apuntes: <carpeta>`.
 
-Carpetas cerradas: 01, 02, 03, 04.
+Carpetas cerradas: 01, 02, 03, 04, 05.
 
 Estados: pendiente · pulida · sin cambios.
 
@@ -37,10 +37,10 @@ Estados: pendiente · pulida · sin cambios.
 | 27 | 04-Agregación y subconsultas/07 - Subconsultas correlacionadas.md | pulida | |
 | 28 | 04-Agregación y subconsultas/08 - Subconsultas en el FROM.md | pulida | |
 | 29 | 04-Agregación y subconsultas/09 - Subconsulta en el FROM - primera película de cada actor.md | pulida | |
-| 30 | 05-Valores nulos/01 - NULL en SQL.md | pendiente | |
-| 31 | 05-Valores nulos/02 - Lógica de tres valores.md | pendiente | |
-| 32 | 05-Valores nulos/03 - NOT IN con nulos.md | pendiente | |
-| 33 | 05-Valores nulos/04 - Agregación con nulos.md | pendiente | |
+| 30 | 05-Valores nulos/01 - NULL en SQL.md | pulida | |
+| 31 | 05-Valores nulos/02 - Lógica de tres valores.md | pulida | |
+| 32 | 05-Valores nulos/03 - NOT IN con nulos.md | pulida | |
+| 33 | 05-Valores nulos/04 - Agregación con nulos.md | pulida | |
 | 34 | 07-Normalización/01 - Dependencias funcionales.md | pendiente | |
 | 35 | 07-Normalización/03 - Primera forma normal.md | pendiente | |
 | 36 | 07-Normalización/04 - Segunda forma normal.md | pendiente | |
