@@ -2,7 +2,7 @@
 
 Rama `fix/software`. Plan: ordenar las notas `origen/apuntes` sin cambiar su estructura (ver la sección "Qué se hace en cada nota" del plan). Un commit por carpeta: `ordena apuntes: <carpeta>`.
 
-Carpetas cerradas: 01, 02, 03, 04, 05, 06, 07, 08.
+Carpetas cerradas: 01, 02, 03, 04, 05, 06, 07, 08, 11.
 
 Estados: pendiente · ordenada · sin cambios.
 
@@ -105,8 +105,8 @@ Estados: pendiente · ordenada · sin cambios.
 | 95 | 08-Patrones de Diseño/04-Ejercicios de prueba/02 - Ejercicio - Observer de empleados con diagrama de secuencia.md | ordenada | |
 | 96 | 08-Patrones de Diseño/04-Ejercicios de prueba/03 - Ejercicio - Decorator de ropa y temperatura corporal.md | ordenada | |
 | 97 | 08-Patrones de Diseño/04-Ejercicios de prueba/04 - Ejercicio - Proxy y Adapter en mensajería.md | ordenada | |
-| 98 | 11-Gestión del curso/01 - Evaluación y calendario de IIC2143.md | pendiente | |
-| 99 | 11-Gestión del curso/02 - Checklist de la prueba práctica.md | pendiente | |
-| 100 | 11-Gestión del curso/03 - Proyecto del curso.md | pendiente | |
-| 101 | 11-Gestión del curso/04 - Material del curso.md | pendiente | |
-| 102 | 11-Gestión del curso/05 - Contenidos de las evaluaciones.md | pendiente | |
+| 98 | 11-Gestión del curso/01 - Evaluación y calendario de IIC2143.md | ordenada | |
+| 99 | 11-Gestión del curso/02 - Checklist de la prueba práctica.md | ordenada | |
+| 100 | 11-Gestión del curso/03 - Proyecto del curso.md | ordenada | |
+| 101 | 11-Gestión del curso/04 - Material del curso.md | ordenada | |
+| 102 | 11-Gestión del curso/05 - Contenidos de las evaluaciones.md | ordenada | |

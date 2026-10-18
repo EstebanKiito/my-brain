@@ -8,19 +8,17 @@ prerrequisitos: ["[[01 - Historias de usuario|Historias de usuario]]", "[[01 - S
 
 El proyecto semestral era una aplicación web en Ruby on Rails, desarrollada en equipo con Scrum (sprints con entregas parciales). Aquí van mis historias de usuario y su estructura.
 
-## Historias de usuario (mías)
-- Obtener/Modificar Info Personal
-- Mandar mensajes en un chat
-- Dejar Reseñas
-- Ver sus solicitudes
+## Historias de usuario a cargo
+- Obtener y modificar la información personal.
+- Mandar mensajes en un chat.
+- Dejar reseñas.
+- Ver las solicitudes propias.
 
 ## Estructura del proyecto
 - **4 sprints** → entregas parciales (40% del proyecto).
 - **Entrega final** → 20%.
 - **Presentación final** → 20%.
-- En mi calendario: Sprint 0 (5 de abril), Sprint 1 (26 de abril), Sprint 2 (26 de mayo).
-
-*(Las páginas "Proyecto - Software" e "Interrogaciones - Examenes - Software" de mi Notion estaban vacías.)*
+- Fechas 2024: Sprint 0 (5 de abril), Sprint 1 (26 de abril), Sprint 2 (26 de mayo).
 
 > [!tip] Complemento — mis historias escritas completas
 > Así quedarían con la [[02 - Estructura de una historia de usuario|estructura del curso]] (los roles son una suposición: ajústalos a tu app):

@@ -4,8 +4,8 @@ Vault de estudio del ramo. Cada nota cubre **un concepto**: no hace falta saber 
 
 ## Cómo están hechas las notas
 - **Frontmatter:** `tema`, `tags` (`origen/apuntes` = parte de mis apuntes; `origen/complemento` = nota nueva) y `prerrequisitos` (lo que conviene leer antes).
-- **Cuerpo:** primero mis apuntes; los complementos (slides, libro del curso, conocimiento general) siempre van en callouts `[!tip] Complemento` o `[!example]`.
-- **Errores detectados:** van en callouts `[!warning] Posible error` y quedan registrados en `_meta/DUDAS.md`.
+- **Cuerpo:** primero los apuntes, redactados y ordenados; los complementos (slides, libro del curso, conocimiento general) siempre van en callouts `[!tip] Complemento` o `[!example]`.
+- **Errores detectados:** se corrigen directamente en el texto y quedan registrados en `_meta/DUDAS.md`. Las dudas que siguen abiertas se marcan con un callout `[!warning]`.
 - **Cierre:** cada nota termina con **Preguntas de repaso**, con la respuesta oculta.
 
 ## Temas
@@ -27,9 +27,9 @@ Vault de estudio del ramo. Cada nota cubre **un concepto**: no hace falta saber 
 1. **Fundamentos:** por qué existe la ingeniería de software.
 2. **Procesos de desarrollo:** qué modelos existen; es la base para entender Scrum.
 3. **Scrum y gestión ágil:** Scrum → historias de usuario → planificación y estimación.
-4. **Ruby → Programación orientada a objetos:** el lenguaje y luego POO (lookup y self vs super salen en la prueba).
+4. **Ruby → Programación orientada a objetos:** el lenguaje y luego POO (method lookup y self vs super).
 5. **Desarrollo web con Rails → Testing:** fundamentos web, Rails y cómo probarlo.
-6. **Diseño y UML → Patrones de Diseño:** UML, principios de diseño, patrones (comportamiento → estructurales → creacionales) y ejercicios de prueba.
+6. **Diseño y UML → Patrones de Diseño:** UML, principios de diseño, patrones (comportamiento → estructurales → creacionales) y ejercicios resueltos.
 7. **Arquitectura de software:** la mirada de alto nivel.
 
-**Para la prueba práctica:** sigue el [[02 - Checklist de la prueba práctica|checklist]] y repasa los [[Ingeniería de Software/08-Patrones de Diseño/04-Ejercicios de prueba/_Índice|ejercicios de prueba]].
+**Para la prueba práctica:** sigue el [[02 - Checklist de la prueba práctica|checklist]] y repasa los [[Ingeniería de Software/08-Patrones de Diseño/04-Ejercicios de prueba/_Índice|ejercicios resueltos]].
