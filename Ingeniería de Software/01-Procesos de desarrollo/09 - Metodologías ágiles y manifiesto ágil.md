@@ -9,10 +9,10 @@ prerrequisitos: ["[[08 - Procesos iterativos e incrementales|Procesos iterativos
 Las metodologías ágiles son procesos **iterativos e incrementales** que priorizan a las personas, el software funcionando, la colaboración con el cliente y la flexibilidad ante el cambio. Sus valores y principios están en el **Manifiesto Ágil**.
 
 ## Modelo ágil (agile)
-- Se valora más a **individuos e interacciones** que procesos y herramientas.
-- **+ Software funcional − Documentación exhaustiva**
-- **Colaboración con clientes**
-- **Flexibilidad**
+- Se valoran más los **individuos y las interacciones** que los procesos y las herramientas.
+- Se valora más el **software funcionando** que la documentación exhaustiva.
+- Se valora más la **colaboración con el cliente** que la negociación de contratos.
+- Se valora más la **flexibilidad** (responder al cambio) que seguir un plan.
 
 ![Metodología ágil - ciclo](adjuntos/Metodología%20ágil%20-%20ciclo.png)
 
@@ -20,8 +20,9 @@ Las metodologías ágiles son procesos **iterativos e incrementales** que priori
 > Ciclo "Metodología AGILE": 1. Evaluación de procesos y estructura actual de la empresa → 2. Sugerencias de mejora y optimización de procesos → 3. Diseño de la aplicación en conjunto con el cliente → 4. Construcción e implementación de la aplicación → 5. Evaluación y monitoreo → (vuelve a 1).
 
 ## Manifiesto Ágil
-- *"Nuestra mayor prioridad es satisfacer al cliente a través de una entrega temprana y continua de software valioso para él"*.
-- *"Abrazamos los cambios en los requerimientos, incluso si llegan tarde en el proceso"*.
+Dos de sus principios:
+- **Primer principio:** la mayor prioridad es satisfacer al cliente mediante la **entrega temprana y continua** de software valioso.
+- Se **aceptan los cambios en los requisitos**, incluso si llegan tarde en el desarrollo.
 
 > [!tip] Complemento — los 4 valores completos (slides "Procesos de Desarrollo de Software")
 > Dar más valor a…

@@ -9,16 +9,12 @@ prerrequisitos: ["[[03 - Procesos iterativos|Procesos iterativos]]"]
 El Proceso Unificado es un proceso **iterativo** muy completo y formal, organizado en **4 fases** y guiado por casos de uso, arquitectura y riesgos.
 
 ## Características
-- ¡Tiene su propio lenguaje! → (**UML**)
-
-> [!warning] Posible error / precisión
-> UML (*Unified Modeling Language*) **no es exclusivo** del Proceso Unificado. Es un lenguaje de modelado de propósito general, estandarizado por el OMG, que se usa con cualquier proceso. Lo crearon los mismos autores (Booch, Rumbaugh y Jacobson, en Rational), y por eso ambos aparecen juntos en las slides ("Lenguaje del Modelo Unificado"). Registrado en `_meta/DUDAS.md`.
-
+- Usa **UML** (*Unified Modeling Language*) como notación para sus modelos. UML no es exclusivo del Proceso Unificado: es un lenguaje de modelado general, estandarizado por el OMG. Aparecen juntos porque los crearon los mismos autores (Booch, Rumbaugh y Jacobson, en Rational).
 - Contempla **cuatro fases**:
-  1. **Inicio:** establecimiento de casos, viabilidad.
-  2. **Elaboración:** verificación de la capacidad para construir el sistema.
-  3. **Construcción:** edificación de un sistema que funcione (**VERSIÓN BETA**).
-  4. **Transición:** entrega de un sistema completamente funcional a los usuarios.
+  1. **Inicio:** se establece el caso de negocio y se evalúa la viabilidad.
+  2. **Elaboración:** se verifica que el equipo es capaz de construir el sistema (arquitectura y riesgos principales).
+  3. **Construcción:** se construye un sistema que funcione, una **versión beta**.
+  4. **Transición:** se entrega a los usuarios un sistema completamente funcional.
 
 ![Proceso unificado - fases y disciplinas](adjuntos/Proceso%20unificado%20-%20fases%20y%20disciplinas.png)
 
@@ -28,15 +24,15 @@ flowchart LR
 ```
 
 ## Ventajas
-- Dirigido a **casos de uso**
-- Centrado en la **arquitectura**
-- Enfocado a **riesgos críticos** del proyecto
+- **Dirigido por casos de uso:** el trabajo se organiza en torno a lo que el usuario necesita hacer con el sistema.
+- **Centrado en la arquitectura:** la estructura del sistema se define y valida temprano, en la Elaboración.
+- **Enfocado en los riesgos críticos:** lo más riesgoso se aborda primero.
 
 ## Desventajas
-- Mucho **énfasis en documentación**
-- **Costoso** de implementar
-- **Gestión y supervisión** alta
-- **Iterativo pero no siempre incremental** → limita la adaptabilidad
+- Pone mucho **énfasis en la documentación**.
+- Es **costoso** de implementar.
+- Exige mucha **gestión y supervisión**.
+- Es **iterativo, pero no siempre incremental**: las iteraciones no siempre entregan funcionalidad nueva y usable, lo que limita su adaptabilidad.
 
 > [!tip] Complemento (libro del curso, cap. 2.3)
 > - Antes se llamaba **RUP** (*Rational Unified Process*).

@@ -9,8 +9,8 @@ prerrequisitos: ["[[03 - Procesos iterativos|Procesos iterativos]]", "[[07 - Pro
 Un proceso iterativo e incremental combina los dos enfoques: cada entrega **agrega funcionalidades nuevas** y **mejora las que ya existen**. Así el usuario recibe valor desde temprano y el producto se adapta al feedback.
 
 ## Características
-- Con cada entrega **añadimos funcionalidades nuevas** (**INCREMENTAL**).
-- Cada incremento incluye **mejoras sobre funcionalidades ya existentes** (**ITERATIVO**).
+- Cada entrega **agrega funcionalidades nuevas**: esa es la parte **incremental**.
+- Cada incremento también **mejora funcionalidades ya existentes**: esa es la parte **iterativa**.
 
 ![Procesos iterativos e incrementales - analogía de la Mona Lisa](adjuntos/Procesos%20iterativos%20e%20incrementales%20-%20analogía%20de%20la%20Mona%20Lisa.png)
 
@@ -18,8 +18,8 @@ Un proceso iterativo e incremental combina los dos enfoques: cada entrega **agre
 > Se combinan los dos enfoques. En cada paso se agrega una parte nueva del cuadro (incremental) y se refinan las ya pintadas (iterativo), pasando por seis estados hasta la obra terminada.
 
 ## Ventajas
-- **Adaptación**, evitando hacer cosas que no se deban hacer.
-- **¡Entrega de valor al usuario antes de acabar el desarrollo!**
+- **Adaptación:** el feedback evita construir cosas que no se necesitan.
+- **Entrega valor al usuario antes de terminar el desarrollo**, porque cada incremento ya es usable.
 
 ![Procesos iterativos e incrementales - del skate al auto](adjuntos/Procesos%20iterativos%20e%20incrementales%20-%20del%20skate%20al%20auto.png)
 
@@ -28,8 +28,8 @@ Un proceso iterativo e incremental combina los dos enfoques: cada entrega **agre
 > - **"Like this!":** skate → scooter → bicicleta → moto → auto. **Cada entrega ya le sirve al usuario para moverse** y su satisfacción crece en cada paso.
 
 ## Desventajas
-- Pudiera ser que, en función del feedback recibido, tuviéramos que **deshacer algo ya construido**, con el consiguiente **sobrecoste**.
-- Como queremos entregar incrementos de software frecuentemente, **o automatizamos también nuestro proceso** para poner el software funcionando a disposición de los usuarios, **o vamos a incurrir en otro importante sobrecoste** (no sólo en tiempo, sino también en errores provocados por las personas, que no somos tan buenos como las máquinas para hacer tareas repetitivas).
+- **Rehacer trabajo:** según el feedback recibido, puede ser necesario **deshacer algo ya construido**, con el **sobrecosto** que eso implica.
+- **Costo de entregar seguido:** como se entregan incrementos con frecuencia, hay que **automatizar el proceso** de poner el software en manos de los usuarios. Si no, aparece otro sobrecosto importante: tiempo y errores humanos, porque las personas no son tan buenas como las máquinas en tareas repetitivas.
 
 > [!tip] Complemento (libro del curso, cap. 2.4, y slides "Procesos de Desarrollo de Software")
 > - Cada iteración genera un **aumento de valor tangible** para el cliente, con funcionalidades **listas para usar**. El producto está completo con el último incremento.
@@ -40,7 +40,7 @@ Un proceso iterativo e incremental combina los dos enfoques: cada entrega **agre
 > *Analogía de las slides: la zanja se rellena con ladrillos (incrementos) y cada ladrillo se ajusta con el cincel (iteraciones).*
 
 > [!tip] Complemento — cómo se mitiga la segunda desventaja
-> La automatización que mencionan los apuntes corresponde, en la práctica, a la **integración continua** (compilar y correr las pruebas automáticamente en cada cambio) y al **despliegue continuo** (publicar automáticamente cada versión que pasa las pruebas). Por eso las pruebas automatizadas son tan importantes en los procesos ágiles. Ver también [[10 - Programación extrema (XP)|Programación extrema (XP)]].
+> La automatización mencionada en las desventajas corresponde, en la práctica, a la **integración continua** (compilar y correr las pruebas automáticamente en cada cambio) y al **despliegue continuo** (publicar automáticamente cada versión que pasa las pruebas). Por eso las pruebas automatizadas son tan importantes en los procesos ágiles. Ver también [[10 - Programación extrema (XP)|Programación extrema (XP)]].
 
 ## Preguntas de repaso
 
