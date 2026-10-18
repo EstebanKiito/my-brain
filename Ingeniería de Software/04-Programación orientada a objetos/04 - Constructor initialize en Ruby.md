@@ -8,31 +8,22 @@ prerrequisitos: ["[[01 - Clases y objetos en Ruby|Clases y objetos en Ruby]]"]
 
 En Ruby el constructor es el método `initialize`. `Clase.new(...)` crea el objeto y luego llama automáticamente a `initialize` con esos argumentos.
 
-## Constructor 👷🏻‍♂️
-- El `new` es un **método de clase** que se ejecuta sobre la clase `Person`.
+## Constructor
+- `new` es un **método de clase**: se ejecuta sobre la clase (`Persona.new`).
 - Crea una **instancia** de la clase.
-- Posteriormente llama al método **`initialize`** sobre el objeto recién creado.
+- Después llama automáticamente al método **`initialize`** sobre el objeto recién creado.
 
 ```ruby
 class Persona
-
-	def initialize
-		puts "Creando Persona Nueva"
-	end
+  def initialize
+    puts "Creando Persona Nueva"
+  end
 end
-Person.new # Imprimira lo del metodo -> "Creando Persona Nueva"
+
+Persona.new  # imprime "Creando Persona Nueva"
 ```
 
-> [!warning] Posible error (registrado en `_meta/DUDAS.md`)
-> La clase se llama `Persona`, pero se instancia `Person.new`. Así daría `NameError: uninitialized constant Person`. Versión corregida:
-> ```ruby
-> class Persona
->   def initialize
->     puts "Creando Persona Nueva"
->   end
-> end
-> Persona.new # imprime "Creando Persona Nueva"
-> ```
+El nombre en `new` tiene que coincidir con el de la clase: `Person.new` daría `NameError: uninitialized constant Person`.
 
 > [!tip] Complemento — constructor con parámetros
 > ```ruby

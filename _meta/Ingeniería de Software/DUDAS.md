@@ -42,14 +42,14 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta.
 ## Programación orientada a objetos
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
-| 🟡 | [[05 - Atributos y accesores en Ruby\|Atributos y accesores]] | "Por default los metodos son PRIVADOS…" | La slide dice que son los **atributos** los privados por defecto; en Ruby los métodos son públicos por defecto. |
-| 🟡 | [[03 - Visibilidad de métodos en Ruby\|Visibilidad de métodos]] | "Public: - - -", "Protected: - - -" | Incompletos; se completaron en un complemento. |
-| 🟡 | [[04 - Constructor initialize en Ruby\|Constructor initialize]] | `class Persona … Person.new` | El nombre de la clase no coincide (NameError). Se agregó la versión corregida. |
-| 🟡 | [[05 - Atributos y accesores en Ruby\|Atributos y accesores]] | `attr_accesor :name, :gender # Crea los metodos name= y gender=` | Es `attr_accessor`, y crea además los getters `name` y `gender`. Falta `end`. |
-| 🟡 | [[06 - Variables de clase en Ruby\|Variables de clase]] | `ass Person` | Debe ser `class Person`. |
-| 🟡 | [[07 - Herencia en Ruby\|Herencia]] | `attr_accessor: :stroke :fill`, `attr_accesor: :radius`, `:lenght` | Sintaxis: `attr_accessor :stroke, :fill`; faltan los `end`. |
-| 🟡 | [[08 - super en Ruby\|super]] | `class Hijo` (sin `< Padre`) | Sin herencia, `super` no llama a `Padre#initialize`. Faltan los `end`. |
-| 🟡 | [[11 - Polimorfismo y duck typing\|Polimorfismo]] | `attr_accessor :base :altura`, sin `end` | Falta la coma y los `end`; la idea es correcta. |
+| ✅ | [[05 - Atributos y accesores en Ruby\|Atributos y accesores]] | "Por default los metodos son PRIVADOS…" | La slide dice que son los **atributos** los privados por defecto; en Ruby los métodos son públicos por defecto. Corregido en el texto de la nota. |
+| ✅ | [[03 - Visibilidad de métodos en Ruby\|Visibilidad de métodos]] | "Public: - - -", "Protected: - - -" | Incompletos; se completaron en un complemento. Corregido en el texto de la nota. |
+| ✅ | [[04 - Constructor initialize en Ruby\|Constructor initialize]] | `class Persona … Person.new` | El nombre de la clase no coincide (NameError). Corregido en el texto de la nota. |
+| ✅ | [[05 - Atributos y accesores en Ruby\|Atributos y accesores]] | `attr_accesor :name, :gender # Crea los metodos name= y gender=` | Es `attr_accessor`, y crea además los getters `name` y `gender`. Falta `end`. Corregido en el texto de la nota. |
+| ✅ | [[06 - Variables de clase en Ruby\|Variables de clase]] | `ass Person` | Debe ser `class Person`. Corregido en el texto de la nota. |
+| ✅ | [[07 - Herencia en Ruby\|Herencia]] | `attr_accessor: :stroke :fill`, `attr_accesor: :radius`, `:lenght` | Sintaxis: `attr_accessor :stroke, :fill`; faltan los `end`. Corregido en el texto de la nota. |
+| ✅ | [[08 - super en Ruby\|super]] | `class Hijo` (sin `< Padre`) | Sin herencia, `super` no llama a `Padre#initialize`. Faltan los `end`. Corregido en el texto de la nota. |
+| ✅ | [[11 - Polimorfismo y duck typing\|Polimorfismo]] | `attr_accessor :base :altura`, sin `end` | Falta la coma y los `end`; la idea es correcta. Corregido en el texto de la nota. |
 | ℹ️ | [[06 - Variables de clase en Ruby\|Variables de clase]] | *(slides)* `Song.new` sin argumentos | El `initialize` pide 3 argumentos; en el complemento se agregaron. |
 
 ## Rails

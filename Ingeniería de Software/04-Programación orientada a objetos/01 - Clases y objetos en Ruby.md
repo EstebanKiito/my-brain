@@ -9,14 +9,14 @@ prerrequisitos: ["[[01 - Introducción a Ruby|Introducción a Ruby]]"]
 Una **clase** es el molde que define atributos y comportamiento; un **objeto** es una instancia concreta de esa clase. En Ruby **casi todo es un objeto**.
 
 ## En Ruby casi todo es objeto
-- En Ruby casi todo es **objeto** → tienen **métodos** con los cuales interactuar.
+Casi todo en Ruby es un **objeto**, y por eso todo tiene **métodos** con los que interactuar. Incluso las clases de la biblioteca estándar se instancian con `new`:
 
 ```ruby
-	s = String.new("Hola") # => "Hola"
-	s.length
-	a = Array.new # => []
-	a.push(s)
-	a.reverse
+s = String.new("Hola")  # => "Hola"
+s.length                # => 4
+a = Array.new           # => []
+a.push(s)               # => ["Hola"]
+a.reverse               # => ["Hola"]
 ```
 
 > [!tip] Complemento — definir una clase y crear objetos (slides "Ruby" y "Object Oriented Programming")

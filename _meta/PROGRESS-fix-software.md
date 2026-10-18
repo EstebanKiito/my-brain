@@ -2,7 +2,7 @@
 
 Rama `fix/software`. Plan: ordenar las notas `origen/apuntes` sin cambiar su estructura (ver la sección "Qué se hace en cada nota" del plan). Un commit por carpeta: `ordena apuntes: <carpeta>`.
 
-Carpetas cerradas: 01, 02, 03.
+Carpetas cerradas: 01, 02, 03, 04.
 
 Estados: pendiente · ordenada · sin cambios.
 
@@ -32,19 +32,19 @@ Estados: pendiente · ordenada · sin cambios.
 | 22 | 03-Ruby/02 - Convenciones de estilo en Ruby.md | ordenada | |
 | 23 | 03-Ruby/03 - Métodos y retorno implícito en Ruby.md | ordenada | |
 | 24 | 03-Ruby/08 - require_relative en Ruby.md | ordenada | |
-| 25 | 04-Programación orientada a objetos/01 - Clases y objetos en Ruby.md | pendiente | |
-| 26 | 04-Programación orientada a objetos/02 - Métodos de instancia y métodos de clase.md | pendiente | |
-| 27 | 04-Programación orientada a objetos/03 - Visibilidad de métodos en Ruby.md | pendiente | |
-| 28 | 04-Programación orientada a objetos/04 - Constructor initialize en Ruby.md | pendiente | |
-| 29 | 04-Programación orientada a objetos/05 - Atributos y accesores en Ruby.md | pendiente | |
-| 30 | 04-Programación orientada a objetos/06 - Variables de clase en Ruby.md | pendiente | |
-| 31 | 04-Programación orientada a objetos/07 - Herencia en Ruby.md | pendiente | |
-| 32 | 04-Programación orientada a objetos/08 - super en Ruby.md | pendiente | |
-| 33 | 04-Programación orientada a objetos/09 - Sobrescritura de métodos (override).md | pendiente | |
-| 34 | 04-Programación orientada a objetos/10 - Clases abstractas en Ruby.md | pendiente | |
-| 35 | 04-Programación orientada a objetos/11 - Polimorfismo y duck typing.md | pendiente | |
-| 36 | 04-Programación orientada a objetos/12 - Method lookup en Ruby.md | pendiente | |
-| 37 | 04-Programación orientada a objetos/13 - self vs super.md | pendiente | |
+| 25 | 04-Programación orientada a objetos/01 - Clases y objetos en Ruby.md | ordenada | |
+| 26 | 04-Programación orientada a objetos/02 - Métodos de instancia y métodos de clase.md | ordenada | |
+| 27 | 04-Programación orientada a objetos/03 - Visibilidad de métodos en Ruby.md | ordenada | |
+| 28 | 04-Programación orientada a objetos/04 - Constructor initialize en Ruby.md | ordenada | |
+| 29 | 04-Programación orientada a objetos/05 - Atributos y accesores en Ruby.md | ordenada | |
+| 30 | 04-Programación orientada a objetos/06 - Variables de clase en Ruby.md | ordenada | |
+| 31 | 04-Programación orientada a objetos/07 - Herencia en Ruby.md | ordenada | |
+| 32 | 04-Programación orientada a objetos/08 - super en Ruby.md | ordenada | |
+| 33 | 04-Programación orientada a objetos/09 - Sobrescritura de métodos (override).md | ordenada | |
+| 34 | 04-Programación orientada a objetos/10 - Clases abstractas en Ruby.md | ordenada | |
+| 35 | 04-Programación orientada a objetos/11 - Polimorfismo y duck typing.md | ordenada | |
+| 36 | 04-Programación orientada a objetos/12 - Method lookup en Ruby.md | ordenada | |
+| 37 | 04-Programación orientada a objetos/13 - self vs super.md | ordenada | |
 | 38 | 05-Desarrollo web con Rails/01-Fundamentos web/02 - HTML.md | pendiente | |
 | 39 | 05-Desarrollo web con Rails/01-Fundamentos web/03 - CSS.md | pendiente | |
 | 40 | 05-Desarrollo web con Rails/01-Fundamentos web/04 - Formularios HTML.md | pendiente | |

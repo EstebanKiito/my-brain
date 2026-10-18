@@ -6,75 +6,75 @@ prerrequisitos: ["[[12 - Method lookup en Ruby|Method lookup en Ruby]]", "[[08 -
 ---
 # self vs super
 
-`self` y `super` cambian **desde dónde empieza el method lookup**. `self` parte desde la clase **del objeto real**; `super` parte desde la clase **padre de donde está escrito el código**. Es una pregunta clásica de prueba.
+`self` y `super` cambian **desde dónde empieza el method lookup**. `self` parte desde la clase **del objeto real**; `super` parte desde la clase **padre de donde está escrito el código**.
 
 ## Definición
-- **SELF:** busca el método **desde la clase del objeto** que recibe el mensaje.
-- **SUPER:** busca el método **desde la clase padre** de donde se encuentra la llamada a "super".
+- **`self`:** la búsqueda del método parte desde la **clase del objeto** que recibe el mensaje.
+- **`super`:** la búsqueda parte desde la **clase padre** de la clase donde está escrita la llamada a `super`.
 
 ## Ejemplo 1
 ```ruby
 class A
-	def foo
-		1
-	end
+  def foo
+    1
+  end
 
-	def bar
-		3
-	end
+  def bar
+    3
+  end
 end
 
 class B < A
-	def bar
-		foo + super
-	end
+  def bar
+    foo + super
+  end
 end
 
-puts B.new.bar
-# Imprimira -> 4
+puts B.new.bar  # 4
 ```
-**Explicación:**
-- Se crea la instancia y se llama a `bar`.
-- `bar` llama a `foo` → como no está en la clase, busca en su clase **padre**.
-- Suma "super" → definición de `bar` en la clase **padre**.
-- 1 + 3 = **4**
+
+**Traza:**
+1. Se crea un `B` y se llama a `bar`; `B` tiene su propio `bar`, así que se usa ese.
+2. `foo` no está en `B`, así que la búsqueda sube a la clase padre: `A#foo` devuelve 1.
+3. `super` ejecuta el `bar` de la clase padre: `A#bar` devuelve 3.
+4. Resultado: 1 + 3 = **4**.
 
 ## Ejemplo 2
 ```ruby
 class S
-	def foo
-		self.bar
-		puts "S>>foo"
-	end
+  def foo
+    self.bar
+    puts "S>>foo"
+  end
 
-	def bar
-		puts "S>>bar"
-	end
+  def bar
+    puts "S>>bar"
+  end
 end
 
 class A < S
-	def foo
-		super
-		puts "A>>foo"
-	end
+  def foo
+    super
+    puts "A>>foo"
+  end
 end
 
 class B < S
-	def bar
-	 puts "B>>bar"
-	end
+  def bar
+    puts "B>>bar"
+  end
 end
 
 class C < S
-	def foo
-		puts "C>>foo"
-	end
+  def foo
+    puts "C>>foo"
+  end
 end
 
-S.new.foo # "S>>bar" "S>>foo"
-A.new.foo # "S>>bar" "S>>foo" "A>>foo"
-B.new.foo # "B>>bar" "S>>foo"
-C.new.foo # "C>>foo"
+S.new.foo  # S>>bar, S>>foo
+A.new.foo  # S>>bar, S>>foo, A>>foo
+B.new.foo  # B>>bar, S>>foo
+C.new.foo  # C>>foo
 ```
 
 > [!tip] Complemento — traza paso a paso del ejemplo 2

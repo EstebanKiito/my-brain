@@ -9,12 +9,9 @@ prerrequisitos: ["[[02 - Métodos de instancia y métodos de clase|Métodos de i
 La visibilidad define **desde dónde se puede llamar** a un método: `public` (desde cualquier lado), `protected` y `private` (solo desde dentro de la clase).
 
 ## Visibilidad de métodos
-- **Privados:** solo se acceden desde la misma clase.
-- **Public:** - - -
-- **Protected:** - - -
-
-> [!warning] Apunte incompleto (registrado en `_meta/DUDAS.md`)
-> "Public" y "Protected" quedaron sin descripción. Se completan abajo.
+- **Públicos** (`public`): se llaman desde cualquier lugar. Es la visibilidad por defecto.
+- **Protegidos** (`protected`): se llaman desde la clase y sus subclases, incluso sobre otra instancia de la misma familia.
+- **Privados** (`private`): solo se llaman desde la misma clase, sin receptor explícito.
 
 > [!tip] Complemento — los tres niveles (slides "Object Oriented Programming" y conocimiento general de Ruby)
 > | Visibilidad | ¿Desde dónde se puede llamar? |
