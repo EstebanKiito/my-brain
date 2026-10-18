@@ -71,7 +71,7 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 ## Almacenamiento e índices
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
-| 🟡 | [[08 - Tablas de hash\|Tablas de hash]] | "Una función de hash no necesariamente es inyectiva," + ítem vacío | La sección quedó inconclusa. Se completó en un complemento: colisiones y cómo se resuelven, con el ejemplo de la clase (aid mod 5). |
+| ✅ | [[08 - Tablas de hash\|Tablas de hash]] | "Una función de hash no necesariamente es inyectiva," + ítem vacío | La sección quedó inconclusa. Se completó en un complemento: colisiones y cómo se resuelven, con el ejemplo de la clase (aid mod 5). Corregido en el texto de la nota. |
 | ℹ️ | [[02 - Disco duro y páginas\|Disco duro y páginas]] | "Página: … que el sistema operativo gestiona, generalmente de 4 KB" | Precisión: la slide dice que la página la define el SO **o el DBMS**. En PostgreSQL mide 8 KB. |
 | ✅ | [[06 - Arreglos y listas ligadas\|Arreglos y listas ligadas]] | "alteatoria", "utlizando", "lecutras" | Erratas; se dejaron en el texto original y se anotaron. |
 

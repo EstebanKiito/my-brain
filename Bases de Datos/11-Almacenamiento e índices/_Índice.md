@@ -5,7 +5,7 @@ Cómo guarda los datos un DBMS (disco, páginas, buffer), cómo se mide el costo
 Volver al [[Bases de Datos/_Índice|mapa del ramo]].
 
 > [!note] Origen
-> Mis apuntes de la I2: «Almacenamiento y Jerarquía de Memoria» y «6. EDD y Almacenamiento e Indices», con 10 imágenes transcritas. La parte de índices (09 a 13) y la nota 01 son complemento de las slides de la clase 9 (Almacenamiento y Índices), con 7 slides.
+> Las notas 02 a 08 parten de los apuntes del ramo («Almacenamiento y Jerarquía de Memoria» y «EDD y Almacenamiento e Índices»), con 10 imágenes transcritas. La parte de índices (09 a 13) y la nota 01 son complemento de las slides de la clase 9 (Almacenamiento y Índices), con 7 slides.
 
 ## Orden de estudio
 1. [[01 - Arquitectura de un DBMS|Arquitectura de un DBMS]]: módulos y ciclo de vida de una consulta.

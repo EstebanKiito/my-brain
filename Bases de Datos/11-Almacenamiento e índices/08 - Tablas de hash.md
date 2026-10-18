@@ -8,15 +8,12 @@ prerrequisitos: ["[[07 - Diccionarios|Diccionarios]]"]
 
 Una tabla de hash implementa un diccionario usando una **función de hash** $h$, que lleva cada llave a uno de $m$ casilleros (*buckets*). Buscar una llave es calcular $h(k)$ e ir directo a su casillero: en promedio $O(1)$.
 
-## Tablas hash (mis apuntes)
+## Tablas de hash
 - Dado un espacio de llaves K y un natural m > 0, una función de hash se define como
     - `h ∶ K → {0, . . . , m − 1}`
-- Dado k ∈ K , llamaremos valor de hash de k a la evaluación h(k). Notemos que:
-    - Una función de hash nos permite mapear un espacio de llaves a otro mas pequeño (con m razonable)
-    - Una función de hash no necesariamente es inyectiva,
-
-> [!warning] Posible error / inconcluso (registrado en `_meta/Bases de Datos/DUDAS.md`)
-> La sección quedó cortada después de "no necesariamente es inyectiva,", con un ítem vacío. La idea que seguía: como $h$ no es inyectiva, **dos llaves distintas pueden tener el mismo valor de hash** (una **colisión**), y la tabla tiene que manejarlas.
+- Dado $k \in K$, se llama **valor de hash** de $k$ a la evaluación $h(k)$. Hay que notar que:
+    - una función de hash permite mapear un espacio de llaves a otro más pequeño (con $m$ razonable);
+    - una función de hash no necesariamente es inyectiva: **dos llaves distintas pueden tener el mismo valor de hash** (una **colisión**), y la tabla tiene que manejarlas.
 
 > [!tip] Complemento — cómo funciona (slides "Clase 9", "Repaso (o spoiler) de EDD")
 > - Se inicia un número **fijo** de casilleros (*buckets*). Cada tupla va a parar a un casillero según su llave, usando la función de hash.
