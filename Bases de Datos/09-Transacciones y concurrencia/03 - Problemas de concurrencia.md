@@ -8,8 +8,8 @@ prerrequisitos: ["[[02 - Propiedades ACID|Propiedades ACID]]"]
 
 Cuando dos transacciones leen y escriben **el mismo dato al mismo tiempo**, sus operaciones se pueden intercalar de forma que el resultado sea incorrecto, por ejemplo perdiendo dinero.
 
-## Problemas de concurrencia (mis apuntes)
-Problemas de Concurrencia (Acceder al mismo atributo simultaneamente):
+## Problemas de concurrencia
+Los problemas aparecen cuando dos transacciones acceden simultáneamente al mismo atributo. Ejemplo de una transferencia doble con acceso concurrente:
 
 ![Transferencia doble - acceso concurrente opción 1](adjuntos/Transferencia%20doble%20-%20acceso%20concurrente%20opción%201.png)
 

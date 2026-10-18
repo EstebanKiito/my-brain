@@ -5,7 +5,7 @@ Cómo garantiza un DBMS que muchas transacciones corran a la vez sin corromper l
 Volver al [[Bases de Datos/_Índice|mapa del ramo]].
 
 > [!note] Origen
-> Mis apuntes de la I2, «4. ACID, Transacciones y Locks», con 20 imágenes de slides (todas transcritas). Complementos de las slides de la clase 11 (Transacciones y Recuperación de Fallas). La parte de recuperación está en «Recuperación de fallas».
+> Las notas parten de los apuntes del ramo, sección «ACID, Transacciones y Locks», con 20 imágenes de slides (todas transcritas). Complementos de las slides de la clase 11 (Transacciones y Recuperación de Fallas). La parte de recuperación está en «Recuperación de fallas».
 
 ## Orden de estudio
 1. [[01 - Transacciones|Transacciones]]: qué son, ventajas y desventajas, START TRANSACTION/COMMIT.

@@ -8,11 +8,11 @@ prerrequisitos: ["[[08 - Strict 2PL|Strict 2PL]]"]
 
 Un lock puede tomar una tabla entera o solo algunas tuplas (**granularidad**). Si solo bloquea las tuplas existentes, otra transacción puede **insertar** una tupla nueva que cumpla la condición: un **fantasma**.
 
-## 4. Locks en SQL (mis apuntes)
+## Locks en SQL
 
 ![Locks y registro fantasma - Sailors](adjuntos/Locks%20y%20registro%20fantasma%20-%20Sailors.png)
 
-T2 :
+T2 debe esperar a que T1 libere el lock:
 
 ![T2 espera a T1](adjuntos/T2%20espera%20a%20T1.png)
 

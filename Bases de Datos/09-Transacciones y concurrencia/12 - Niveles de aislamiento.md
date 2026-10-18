@@ -8,7 +8,7 @@ prerrequisitos: ["[[04 - Lecturas sucias, no repetibles y actualización perdida
 
 SQL deja elegir **cuánto aislamiento** tiene una transacción. A más aislamiento hay menos anomalías, pero también menos concurrencia. Los cuatro niveles estándar se definen por qué anomalías permiten: lecturas sucias, no repetibles y fantasmas.
 
-## Nivel de aislamiento (granularidad) (mis apuntes)
+## Niveles de aislamiento
 
 ![Niveles de aislamiento](adjuntos/Niveles%20de%20aislamiento.png)
 
@@ -24,15 +24,13 @@ SQL deja elegir **cuánto aislamiento** tiene una transacción. A más aislamien
 > | READ COMMITED | No | Maybe | Maybe |
 > | READ UNCOMMITED | Maybe | Maybe | Maybe |
 
-Por defecto:
+Según el estándar SQL (y la slide), el nivel por defecto es `SERIALIZABLE`. En PostgreSQL, en cambio, es `READ COMMITTED`, y en MySQL/InnoDB, `REPEATABLE READ`. Para fijarlo explícitamente:
 
 ```sql
-SET TRANSACTION ISOLATION LEVEL SERIALIZABLE 
-READ WRITE
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE, READ WRITE;
 ```
 
-> [!warning] Posible error (registrado en `_meta/Bases de Datos/DUDAS.md`)
-> "Por defecto SERIALIZABLE" es lo que dice el **estándar SQL** (y la slide). Pero **en PostgreSQL el nivel por defecto es READ COMMITTED**, y en MySQL/InnoDB es REPEATABLE READ. Además, en la sintaxis real `READ WRITE` / `READ ONLY` es el **modo de acceso**, no un nivel. La forma correcta es `SET TRANSACTION ISOLATION LEVEL SERIALIZABLE, READ WRITE;` (también vale sin coma). El nombre correcto es READ COMMI**TT**ED.
+`READ WRITE` (o `READ ONLY`) es el **modo de acceso** de la transacción, no un nivel de aislamiento.
 
 > [!tip] Complemento
 > - **READ ONLY / READ WRITE** responde a la pregunta de la slide: ¿qué puedo hacer sobre las tablas en mi transacción?

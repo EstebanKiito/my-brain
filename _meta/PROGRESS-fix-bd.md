@@ -2,7 +2,7 @@
 
 Rama `fix/bases-de-datos`. Solo se corrige lo que no vale la pena mostrar (marcas personales, Posible error, frases de borrador, ejemplos incorrectos). Un commit por carpeta: `pule apuntes: <carpeta>`.
 
-Carpetas cerradas: 01, 02, 03, 04, 05, 07, 08.
+Carpetas cerradas: 01, 02, 03, 04, 05, 07, 08, 09.
 
 Estados: pendiente · pulida · sin cambios.
 
@@ -52,17 +52,17 @@ Estados: pendiente · pulida · sin cambios.
 | 42 | 08-Lógica en la base de datos/03 - Triggers.md | pulida | |
 | 43 | 08-Lógica en la base de datos/04 - Trigger para descontar stock en PLpgSQL.md | pulida | |
 | 44 | 08-Lógica en la base de datos/05 - Stored procedures.md | pulida | |
-| 45 | 09-Transacciones y concurrencia/01 - Transacciones.md | pendiente | |
-| 46 | 09-Transacciones y concurrencia/02 - Propiedades ACID.md | pendiente | |
-| 47 | 09-Transacciones y concurrencia/03 - Problemas de concurrencia.md | pendiente | |
-| 48 | 09-Transacciones y concurrencia/04 - Lecturas sucias, no repetibles y actualización perdida.md | pendiente | |
-| 49 | 09-Transacciones y concurrencia/05 - Schedules serial y serializable.md | pendiente | |
-| 50 | 09-Transacciones y concurrencia/06 - Acciones conflictivas y conflict serializability.md | pendiente | |
-| 51 | 09-Transacciones y concurrencia/08 - Strict 2PL.md | pendiente | |
-| 52 | 09-Transacciones y concurrencia/09 - Deadlocks.md | pendiente | |
-| 53 | 09-Transacciones y concurrencia/10 - COMMIT, ROLLBACK y SAVEPOINT.md | pendiente | |
-| 54 | 09-Transacciones y concurrencia/11 - Locks y registros fantasma.md | pendiente | |
-| 55 | 09-Transacciones y concurrencia/12 - Niveles de aislamiento.md | pendiente | |
+| 45 | 09-Transacciones y concurrencia/01 - Transacciones.md | pulida | |
+| 46 | 09-Transacciones y concurrencia/02 - Propiedades ACID.md | pulida | |
+| 47 | 09-Transacciones y concurrencia/03 - Problemas de concurrencia.md | pulida | |
+| 48 | 09-Transacciones y concurrencia/04 - Lecturas sucias, no repetibles y actualización perdida.md | pulida | |
+| 49 | 09-Transacciones y concurrencia/05 - Schedules serial y serializable.md | pulida | |
+| 50 | 09-Transacciones y concurrencia/06 - Acciones conflictivas y conflict serializability.md | pulida | |
+| 51 | 09-Transacciones y concurrencia/08 - Strict 2PL.md | pulida | |
+| 52 | 09-Transacciones y concurrencia/09 - Deadlocks.md | pulida | |
+| 53 | 09-Transacciones y concurrencia/10 - COMMIT, ROLLBACK y SAVEPOINT.md | pulida | |
+| 54 | 09-Transacciones y concurrencia/11 - Locks y registros fantasma.md | pulida | |
+| 55 | 09-Transacciones y concurrencia/12 - Niveles de aislamiento.md | pulida | |
 | 56 | 10-Recuperación de fallas/01 - Tipos de fallas.md | pendiente | |
 | 57 | 11-Almacenamiento e índices/02 - Disco duro y páginas.md | pendiente | |
 | 58 | 11-Almacenamiento e índices/03 - Disco, RAM y buffer pool.md | pendiente | |
