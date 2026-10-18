@@ -8,11 +8,11 @@ prerrequisitos: ["[[01 - Evaluación y calendario de IIC2413|Evaluación y calen
 
 Mi plan de estudio para el examen y lo que dijo la clase de repaso sobre su formato y contenidos.
 
-## Estudio para el examen (mis apuntes)
-- [x] 1 Hr → SQL
-- [x] 1 Hr → PPTS ANTIGUOS
-- [x] 1 Hr → PPTS FALTANTES
-- [x] 1 Hr → Resumen Hoja (2 paginas) → Sugerencia incluya sentencias SQL mas comunes (utilizadas en clases, talleres, proyecto)
+## Plan de estudio para el examen
+- [x] 1 hora: SQL.
+- [x] 1 hora: slides antiguas (de años anteriores).
+- [x] 1 hora: slides que faltaban por repasar.
+- [x] 1 hora: hoja resumen (2 páginas). Sugerencia: incluir las sentencias SQL más comunes (las usadas en clases, talleres y proyecto).
 
 > [!tip] Complemento — clase de repaso del examen (PDF "clase_de_repaso")
 > **Formato:**
@@ -35,7 +35,7 @@ Mi plan de estudio para el examen y lo que dijo la clase de repaso sobre su form
 > | Transacciones y recuperación ante fallas | [[Bases de Datos/09-Transacciones y concurrencia/_Índice\|Transacciones]], [[Bases de Datos/10-Recuperación de fallas/_Índice\|Recuperación]] |
 > | Privacidad | [[Bases de Datos/15-Privacidad de datos/_Índice\|Privacidad de datos]] |
 >
-> **Repositorios con material de años anteriores** (sirven como los "PPTS antiguos"):
+> **Repositorios con material de años anteriores** (sirven como las "slides antiguas"):
 > - https://github.com/alanezz/Syllabus-2019-1
 > - https://github.com/IIC2413/Syllabus-2020-1
 > - https://github.com/IIC2413/Syllabus-2020-2

@@ -8,7 +8,7 @@ prerrequisitos: []
 
 Cómo se evaluaba Bases de Datos (IIC2413), las fechas de mis evaluaciones y los contenidos que entraban en cada una.
 
-## Fechas (mi calendario)
+## Fechas (2024-1)
 
 | Evaluación | Fecha |
 |---|---|
@@ -24,12 +24,12 @@ Cómo se evaluaba Bases de Datos (IIC2413), las fechas de mis evaluaciones y los
 
 T = talleres, I = interrogaciones, E = entregas del [[03 - Proyecto de Bases de Datos|proyecto]], EX = examen.
 
-## Temario de la I2 (mis apuntes)
-- Clase 5 y 6 - SQL desde Inner Joins
-- Clase 7 - Dependencias
-- Clase 8 - Lógica en la Base de Datos
-- Clase 9 - ACID, Transacciones y Locks
-- Clase 10 - Arquitectura de Sistemas y Recuperación de fallas
+## Temario de la I2
+- Clases 5 y 6: SQL, desde INNER JOIN.
+- Clase 7: dependencias.
+- Clase 8: lógica en la base de datos.
+- Clase 9: ACID, transacciones y locks.
+- Clase 10: arquitectura de sistemas y recuperación de fallas.
 
 | Evaluación | Contenidos (carpetas del vault) |
 |---|---|
@@ -43,7 +43,7 @@ T = talleres, I = interrogaciones, E = entregas del [[03 - Proyecto de Bases de 
 > - **Para aprobar:** $NC > 3{,}95$ y $NP > 3{,}95$.
 > - Clases: miércoles módulo 5; talleres: miércoles módulo 6; ayudantías: viernes módulo 5 (se avisan los lunes). Syllabus en GitHub.
 
-> [!warning] Ojo con las versiones (registrado en `_meta/Bases de Datos/DUDAS.md`)
+> [!warning] Dos versiones del curso
 > Las slides son de **2023-2** y mi calendario es de **2024-1**: no calzan. Las slides hablan de 3 controles y 3 entregas; mi calendario tiene I1, I2, examen, 2 entregas (E1, E2) y 4 talleres. Se dejan ambas versiones.
 
 ## Preguntas de repaso

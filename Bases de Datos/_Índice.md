@@ -4,9 +4,9 @@ Vault de estudio del ramo. Cada nota cubre **un concepto**: no hace falta saber 
 
 ## Cómo están hechas las notas
 - **Frontmatter:** `tema`, `tags` (`origen/apuntes` = parte de mis apuntes; `origen/complemento` = nota nueva) y `prerrequisitos` (lo que conviene leer antes).
-- **Cuerpo:** primero mis apuntes; los complementos (slides de las clases 2023-2, documentación de PostgreSQL, libro de Ramakrishnan y Gehrke) siempre van en callouts `[!tip] Complemento` o `[!example]`.
-- **Imágenes:** las de mis apuntes y algunas slides en PNG, todas con su transcripción en un callout plegable.
-- **Errores detectados:** van en callouts `[!warning] Posible error` y quedan registrados en `_meta/Bases de Datos/DUDAS.md`.
+- **Cuerpo:** primero los apuntes; los complementos (slides de las clases 2023-2, documentación de PostgreSQL, libro de Ramakrishnan y Gehrke) siempre van en callouts `[!tip] Complemento` o `[!example]`.
+- **Imágenes:** las de los apuntes y algunas slides en PNG, todas con su transcripción en un callout plegable.
+- **Errores detectados:** se corrigen directamente en el texto y quedan registrados en `_meta/Bases de Datos/DUDAS.md`. Las dudas que siguen abiertas se marcan con un callout `[!warning]`.
 - **Cierre:** cada nota termina con **Preguntas de repaso**, con la respuesta oculta.
 
 ## Temas
@@ -31,10 +31,10 @@ Vault de estudio del ramo. Cada nota cubre **un concepto**: no hace falta saber 
 
 ## Ruta de estudio sugerida
 1. **Modelo relacional:** qué es un DBMS, cómo se guardan los datos en tablas, las llaves y el álgebra relacional.
-2. **Definición de datos en SQL → Consultas SQL → Agregación y subconsultas → Valores nulos:** todo SQL, de crear tablas a consultas anidadas (materia de la I1).
+2. **Definición de datos en SQL → Consultas SQL → Agregación y subconsultas → Valores nulos:** todo SQL, de crear tablas a consultas anidadas.
 3. **Diseño entidad-relación → Normalización:** modelar un problema y quitar la redundancia.
 4. **Lógica en la base de datos:** vistas, triggers y procedimientos.
-5. **Transacciones y concurrencia → Recuperación de fallas:** cómo se garantiza ACID (materia de la I2).
+5. **Transacciones y concurrencia → Recuperación de fallas:** cómo se garantiza ACID.
 6. **Almacenamiento e índices → Evaluación de consultas:** cómo funciona el DBMS por dentro y cuánto cuesta cada consulta.
 7. **Bases de datos en aplicaciones → NoSQL → Privacidad de datos:** la base de datos en el mundo real.
 

@@ -2,7 +2,7 @@
 
 Rama `fix/bases-de-datos`. Solo se corrige lo que no vale la pena mostrar (marcas personales, Posible error, frases de borrador, ejemplos incorrectos). Un commit por carpeta: `pule apuntes: <carpeta>`.
 
-Carpetas cerradas: 01, 02, 03, 04, 05, 07, 08, 09, 10, 11.
+Carpetas cerradas: 01, 02, 03, 04, 05, 07, 08, 09, 10, 11, 16.
 
 Estados: pendiente · pulida · sin cambios.
 
@@ -71,6 +71,6 @@ Estados: pendiente · pulida · sin cambios.
 | 61 | 11-Almacenamiento e índices/06 - Arreglos y listas ligadas.md | pulida | |
 | 62 | 11-Almacenamiento e índices/07 - Diccionarios.md | pulida | |
 | 63 | 11-Almacenamiento e índices/08 - Tablas de hash.md | pulida | |
-| 64 | 16-Gestión del curso/01 - Evaluación y calendario de IIC2413.md | pendiente | |
-| 65 | 16-Gestión del curso/02 - Preparación del examen de Bases de Datos.md | pendiente | |
-| 66 | 16-Gestión del curso/03 - Proyecto de Bases de Datos.md | pendiente | |
+| 64 | 16-Gestión del curso/01 - Evaluación y calendario de IIC2413.md | pulida | |
+| 65 | 16-Gestión del curso/02 - Preparación del examen de Bases de Datos.md | pulida | |
+| 66 | 16-Gestión del curso/03 - Proyecto de Bases de Datos.md | pulida | |

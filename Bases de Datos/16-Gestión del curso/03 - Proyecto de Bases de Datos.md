@@ -8,45 +8,35 @@ prerrequisitos: ["[[01 - SQL desde Python con cursores|SQL desde Python con curs
 
 Notas del proyecto semestral: una aplicación web en Flask conectada a PostgreSQL (grupo 73), con un esquema de restaurantes, platos y clientes.
 
-## Comandos de terminal (mis apuntes)
+## Comandos de terminal
 ```bash
 python3.11 -m flask --app app run
 ```
 
-(en el server):
+En el servidor:
 
 ```bash
 python3.11 -m flask --app app run --port=8073 --host=0.0.0.0
 ```
 
-- puerto = 8073 → Grupo 73
-- host = 0.0.0.0 → Cualquier ip que este disponible
+- `--port=8073`: cada grupo usa su puerto (8073 → grupo 73).
+- `--host=0.0.0.0`: escucha en todas las IP disponibles, para que se pueda acceder desde fuera del servidor.
 
 ```bash
 flask --app app run
 ```
 
-http://127.0.0.1:5000/select
-
-Ruta para query select
-
-> [!tip] Complemento
-> - `--port=8073`: cada grupo tenía su puerto en el servidor del curso (grupo 73 → 8073). `--host=0.0.0.0` hace que Flask escuche en todas las interfaces de red, no solo en `localhost`, para poder abrirlo desde fuera del servidor.
-> - En local Flask usa el puerto 5000 por defecto: http://127.0.0.1:5000/select es la ruta `/select` de la app, que ejecutaba las consultas.
-> - La conexión a la base de datos desde Python se ve en [[01 - SQL desde Python con cursores|SQL desde Python con cursores]]; si la consulta lleva parámetros del usuario, hay que parametrizarla ([[02 - SQL injection y consultas parametrizadas|SQL injection]]).
+La ruta `http://127.0.0.1:5000/select` ejecuta las consultas SELECT.
 
 ## Consideraciones informe entrega 2
-1. Cambiamos el largo de Email en Subs Clientes y Direcciones a 100 varchar
-2. Cambiamos el largo de las direcciones a 100 varchar
-3. Cambiemos el largo de telefonos.
-
-Para acordarme después:
-1. Al hacer cdeldes sobrescribir clientes
+1. Se cambió el largo del email en Subs, Clientes y Direcciones a `varchar(100)`.
+2. Se cambió el largo de las direcciones a `varchar(100)`.
+3. Se cambió el largo de los teléfonos.
 
 > [!note] Omitido a propósito
 > Dos recordatorios de esta lista tenían datos personales (un número de teléfono y nombres de compañeros) y no se migraron (ver `aceptados` en `_meta/Bases de Datos/mapeo.json`).
 
-## Querys
+## Consultas
 
 **1**
 
@@ -58,24 +48,15 @@ WHERE platos.nombre = 'Pizza Margarita'
 AND platos.disponibilidad = TRUE
 AND restaurantes.vigente = TRUE;
 
--- Consideramos que se deben mostrar solo aquellos restuarantes que esten vigentes
+-- Se muestran solo los restaurantes vigentes
 ```
 
 **8**
 
 ```sql
-SELECT platos.nombre, plato.nombre_restaurant
-FROM platos
+SELECT platos.nombre, platos.nombre_restaurante
+FROM platos;
 ```
-
-**2**
-
-Input: email y gasto mensual
-
-> [!warning] Posible error / inconcluso (registrado en `_meta/Bases de Datos/DUDAS.md`)
-> - **Query 8:** usa `plato.` (sin s) y `nombre_restaurant`, pero la tabla es `platos` y en la query 1 la columna es `nombre_restaurante`. Además quedó sin `WHERE`. Versión consistente: `SELECT platos.nombre, platos.nombre_restaurante FROM platos;`
-> - **Query 2:** solo está el enunciado ("Input: email y gasto mensual"); falta el SQL.
-> - **"Al hacer cdeldes sobrescribir clientes":** no se entiende "cdeldes" (¿"deletes"?, ¿"CSV"?).
 
 ## Preguntas de repaso
 
