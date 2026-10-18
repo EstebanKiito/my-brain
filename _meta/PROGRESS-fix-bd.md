@@ -2,7 +2,7 @@
 
 Rama `fix/bases-de-datos`. Solo se corrige lo que no vale la pena mostrar (marcas personales, Posible error, frases de borrador, ejemplos incorrectos). Un commit por carpeta: `pule apuntes: <carpeta>`.
 
-Carpetas cerradas: 01.
+Carpetas cerradas: 01, 02.
 
 Estados: pendiente · pulida · sin cambios.
 
@@ -11,12 +11,12 @@ Estados: pendiente · pulida · sin cambios.
 | 1 | 01-Modelo relacional/03 - Superllaves, claves candidatas y clave primaria.md | pulida | |
 | 2 | 01-Modelo relacional/04 - Álgebra relacional.md | pulida | |
 | 3 | 01-Modelo relacional/05 - Join en álgebra relacional.md | pulida | |
-| 4 | 02-Definición de datos en SQL/02 - CREATE TABLE y llave primaria.md | pendiente | |
-| 5 | 02-Definición de datos en SQL/03 - Llaves foráneas.md | pendiente | |
-| 6 | 02-Definición de datos en SQL/04 - Modificar y eliminar tablas.md | pendiente | |
-| 7 | 02-Definición de datos en SQL/05 - INSERT e integridad referencial.md | pendiente | |
-| 8 | 02-Definición de datos en SQL/06 - Eliminación con llaves foráneas.md | pendiente | |
-| 9 | 02-Definición de datos en SQL/07 - Restricciones de integridad y NOT NULL.md | pendiente | |
+| 4 | 02-Definición de datos en SQL/02 - CREATE TABLE y llave primaria.md | pulida | |
+| 5 | 02-Definición de datos en SQL/03 - Llaves foráneas.md | pulida | |
+| 6 | 02-Definición de datos en SQL/04 - Modificar y eliminar tablas.md | pulida | |
+| 7 | 02-Definición de datos en SQL/05 - INSERT e integridad referencial.md | pulida | |
+| 8 | 02-Definición de datos en SQL/06 - Eliminación con llaves foráneas.md | pulida | |
+| 9 | 02-Definición de datos en SQL/07 - Restricciones de integridad y NOT NULL.md | pulida | |
 | 10 | 03-Consultas SQL/01 - SELECT, FROM y WHERE.md | pendiente | |
 | 11 | 03-Consultas SQL/02 - UPDATE y DELETE.md | pendiente | |
 | 12 | 03-Consultas SQL/03 - Producto cruz en SQL.md | pendiente | |

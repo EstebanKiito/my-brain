@@ -8,7 +8,7 @@ prerrequisitos: ["[[01 - SQL y PostgreSQL|SQL y PostgreSQL]]", "[[03 - Superllav
 
 `CREATE TABLE` define una relación: su nombre, sus atributos con su tipo y sus restricciones, entre ellas la **llave primaria** (`PRIMARY KEY`).
 
-## SQL 1 — 1. Crear tabla (mis apuntes)
+## Crear una tabla
 
 ```sql
 CREATE TABLE Personas (

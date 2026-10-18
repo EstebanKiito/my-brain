@@ -5,7 +5,7 @@ La parte DDL de SQL: crear tablas con su llave primaria, enlazarlas con llaves f
 Volver al [[Bases de Datos/_Índice|mapa del ramo]].
 
 > [!note] Origen
-> Mis apuntes de la I1 («SQL 1»: secciones 1 a 3, «Eliminación con llaves foráneas» y «Restricción de nulos»). Complementos de las slides de las clases 3 (SQL) y 6 (Diseño de Bases de Datos II).
+> Las notas 02 a 07 parten de los apuntes del ramo («SQL 1», «Eliminación con llaves foráneas» y «Restricción de nulos»). Complementos de las slides de las clases 3 (SQL) y 6 (Diseño de Bases de Datos II).
 
 ## Orden de estudio
 1. [[01 - SQL y PostgreSQL|SQL y PostgreSQL]]: RDBMS cliente-servidor, SQL declarativo, DDL vs DML, tipos de datos.

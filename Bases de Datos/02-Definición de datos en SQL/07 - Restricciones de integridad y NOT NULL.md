@@ -8,12 +8,12 @@ prerrequisitos: ["[[02 - CREATE TABLE y llave primaria|CREATE TABLE y llave prim
 
 Las restricciones de integridad son condiciones que el esquema impone y que **toda instancia** debe cumplir: no nulos, unicidad, llave, referencia y dominio. En SQL se declaran en el `CREATE TABLE`.
 
-## Restricción de nulos (mis apuntes)
+## Restricción de nulos
 
 ```sql
 CREATE TABLE <Nombre> (
-	id int NOT NULL
-)
+    id int NOT NULL
+);
 ```
 
 > [!tip] Complemento — tipos de restricciones (slides "Clase 6: Diseño de Bases de Datos II")

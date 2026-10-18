@@ -8,18 +8,18 @@ prerrequisitos: ["[[03 - Llaves foráneas|Llaves foráneas]]"]
 
 `INSERT INTO` agrega tuplas a una tabla. Si la tabla tiene una llave foránea, el DBMS rechaza cualquier fila que apunte a un valor inexistente en la tabla referenciada (integridad referencial).
 
-## 3. Insertar datos (mis apuntes)
-1. `INSERT INTO Tabla(at_1,...,at_n) VALUES (v_1,...,v_n)`: Insertar una Tupla a la tabla
-2. `INSERT INTO <Nombre_tabla> VALUES (v_1,...,v_n)`: Manera Resumida de insertar (Se asume el orden)
+## Insertar datos
+1. `INSERT INTO Tabla(at_1,...,at_n) VALUES (v_1,...,v_n)`: inserta una tupla en la tabla.
+2. `INSERT INTO <Nombre_tabla> VALUES (v_1,...,v_n)`: forma resumida; se asume el orden de los atributos de la tabla.
 
-- Observacion: El siguiente codigo dará error: (NO PODEMOS CREAR UNA FILA EN QUE LA LLAVE FORANEA NO EXISTA EN LA OTRA TABLA)
+- **Observación:** el siguiente código da error, porque no se puede crear una fila cuya llave foránea no exista en la otra tabla.
 
 ```sql
 CREATE TABLE R(a int, b int, PRIMARY KEY(a));
-CREATE TABLE S(a int, c int, FOREIGN KEY(a) REFERENCES R, ...);
+CREATE TABLE S(a int, c int, FOREIGN KEY(a) REFERENCES R(a));
 INSERT INTO R VALUES(1, 1);
 INSERT INTO S VALUES(1, 2);
-INSERT INTO S VALUES(2, 3); -- Esto provocará un error  ya que no existe un registro con a=2 en la tabla R.
+INSERT INTO S VALUES(2, 3); -- error: no existe un registro con a=2 en la tabla R.
 ```
 
 | Tabla R | | Tabla S | |
