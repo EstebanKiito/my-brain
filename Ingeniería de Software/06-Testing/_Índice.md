@@ -5,7 +5,7 @@ Pruebas de software: qué son, la terminología error/defecto/falla y cómo se p
 Volver al [[Ingeniería de Software/_Índice|mapa del ramo]].
 
 ## Origen
-La sección **12. Testing** de mis apuntes de la prueba práctica; las notas 01, 02 y 08 son complemento de las slides "Testing".
+Las notas parten de los apuntes de Testing; las notas 01, 02 y 08 son complemento de las slides "Testing".
 
 ## Orden de estudio
 1. [[01 - Qué es el testing de software|Qué es el testing de software]]: por qué probar.

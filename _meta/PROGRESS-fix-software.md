@@ -2,7 +2,7 @@
 
 Rama `fix/software`. Plan: ordenar las notas `origen/apuntes` sin cambiar su estructura (ver la sección "Qué se hace en cada nota" del plan). Un commit por carpeta: `ordena apuntes: <carpeta>`.
 
-Carpetas cerradas: 01, 02, 03, 04, 05.
+Carpetas cerradas: 01, 02, 03, 04, 05, 06.
 
 Estados: pendiente · ordenada · sin cambios.
 
@@ -60,12 +60,12 @@ Estados: pendiente · ordenada · sin cambios.
 | 50 | 05-Desarrollo web con Rails/02-Rails/12 - Parciales en ERB.md | ordenada | |
 | 51 | 05-Desarrollo web con Rails/02-Rails/13 - Form helpers de Rails.md | ordenada | |
 | 52 | 05-Desarrollo web con Rails/02-Rails/14 - render vs redirect_to.md | ordenada | |
-| 53 | 06-Testing/03 - Niveles de testing en Rails.md | pendiente | |
-| 54 | 06-Testing/04 - Unit tests en Rails.md | pendiente | |
-| 55 | 06-Testing/05 - Asserts en Minitest.md | pendiente | |
-| 56 | 06-Testing/06 - Fixtures en Rails.md | pendiente | |
-| 57 | 06-Testing/07 - Integration tests en Rails.md | pendiente | |
-| 58 | 06-Testing/09 - Cobertura de código con SimpleCov.md | pendiente | |
+| 53 | 06-Testing/03 - Niveles de testing en Rails.md | ordenada | |
+| 54 | 06-Testing/04 - Unit tests en Rails.md | ordenada | |
+| 55 | 06-Testing/05 - Asserts en Minitest.md | ordenada | |
+| 56 | 06-Testing/06 - Fixtures en Rails.md | ordenada | |
+| 57 | 06-Testing/07 - Integration tests en Rails.md | ordenada | |
+| 58 | 06-Testing/09 - Cobertura de código con SimpleCov.md | ordenada | |
 | 59 | 07-Diseño y UML/01-UML/01 - Diagrama de clases UML.md | pendiente | |
 | 60 | 07-Diseño y UML/01-UML/02 - Visibilidad en UML.md | pendiente | |
 | 61 | 07-Diseño y UML/01-UML/03 - Herencia y realización en UML.md | pendiente | |

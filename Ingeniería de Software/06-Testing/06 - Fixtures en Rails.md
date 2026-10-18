@@ -9,9 +9,9 @@ prerrequisitos: ["[[04 - Unit tests en Rails|Unit tests en Rails]]"]
 Los fixtures son **datos de ejemplo** definidos en archivos YAML que Rails carga en la base de datos de pruebas, para crear objetos del modelo fácilmente en los tests.
 
 ## Fixture
-- Nos permite hacer **ejemplos de datos**.
-- En Rails nos ayuda a **crear objetos del modelo de manera fácil**.
-- `app/test/fixtures/nombre_del_modelo.yml`
+- Permiten definir **datos de ejemplo** una sola vez y reutilizarlos en todos los tests.
+- En Rails sirven para **crear objetos del modelo de manera fácil**: `books(:jp1)` devuelve el libro definido con la clave `jp1`.
+- Se escriben en `test/fixtures/<tabla>.yml` (por ejemplo, `test/fixtures/books.yml`).
 
 ![Fixtures - books.yml](adjuntos/Fixtures%20-%20books.yml.png)
 
@@ -48,15 +48,15 @@ Los fixtures son **datos de ejemplo** definidos en archivos YAML que Rails carga
 > end
 > ```
 
-> [!warning] Posible error en el ejemplo (viene de la slide; registrado en `_meta/DUDAS.md`)
-> El fixture `jp1` **sí tiene título**, así que `@book.save` devuelve `true` y el `assert_not` **falla**. Para probar "sin título" con fixtures hay que quitarle el título primero:
-> ```ruby
-> test "should not save without title" do
->   @book = books(:jp1)
->   @book.title = ""
->   assert_not @book.save, "saved the book without title"
-> end
-> ```
+El ejemplo de la slide tiene un detalle: el fixture `jp1` **sí tiene título**, así que `@book.save` devuelve `true` y el `assert_not` falla. Para probar "sin título" con fixtures hay que quitarle el título primero:
+
+```ruby
+test "should not save without title" do
+  @book = books(:jp1)
+  @book.title = ""
+  assert_not @book.save, "saved the book without title"
+end
+```
 
 > [!tip] Complemento
 > - La ruta real en un proyecto es `test/fixtures/books.yml` (dentro de `test/`, no de `app/`).
