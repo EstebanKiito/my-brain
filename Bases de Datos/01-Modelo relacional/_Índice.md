@@ -5,7 +5,7 @@ Qué es un DBMS, cómo se organizan los datos en relaciones, qué son las llaves
 Volver al [[Bases de Datos/_Índice|mapa del ramo]].
 
 > [!note] Origen
-> Las llaves vienen de mis apuntes de la I2 y el álgebra relacional, de mis apuntes de la I1. Las notas 01, 02 y 06 son complemento de las slides de las clases 1 a 3.
+> Las notas de llaves y álgebra relacional parten de los apuntes del ramo. Las notas 01, 02 y 06 son complemento de las slides de las clases 1 a 3.
 
 ## Orden de estudio
 1. [[01 - Sistemas de bases de datos y DBMS|Sistemas de bases de datos y DBMS]]: para qué sirve un DBMS y qué ofrece.
