@@ -2,7 +2,7 @@
 
 Rama `fix/bases-de-datos`. Solo se corrige lo que no vale la pena mostrar (marcas personales, Posible error, frases de borrador, ejemplos incorrectos). Un commit por carpeta: `pule apuntes: <carpeta>`.
 
-Carpetas cerradas: 01, 02, 03, 04, 05, 07.
+Carpetas cerradas: 01, 02, 03, 04, 05, 07, 08.
 
 Estados: pendiente · pulida · sin cambios.
 
@@ -47,11 +47,11 @@ Estados: pendiente · pulida · sin cambios.
 | 37 | 07-Normalización/05 - Tercera forma normal.md | pulida | |
 | 38 | 07-Normalización/06 - Forma normal de Boyce-Codd.md | pulida | |
 | 39 | 07-Normalización/07 - Formas normales comparadas.md | pulida | |
-| 40 | 08-Lógica en la base de datos/01 - Vistas.md | pendiente | |
-| 41 | 08-Lógica en la base de datos/02 - Vistas materializadas.md | pendiente | |
-| 42 | 08-Lógica en la base de datos/03 - Triggers.md | pendiente | |
-| 43 | 08-Lógica en la base de datos/04 - Trigger para descontar stock en PLpgSQL.md | pendiente | |
-| 44 | 08-Lógica en la base de datos/05 - Stored procedures.md | pendiente | |
+| 40 | 08-Lógica en la base de datos/01 - Vistas.md | pulida | |
+| 41 | 08-Lógica en la base de datos/02 - Vistas materializadas.md | pulida | |
+| 42 | 08-Lógica en la base de datos/03 - Triggers.md | pulida | |
+| 43 | 08-Lógica en la base de datos/04 - Trigger para descontar stock en PLpgSQL.md | pulida | |
+| 44 | 08-Lógica en la base de datos/05 - Stored procedures.md | pulida | |
 | 45 | 09-Transacciones y concurrencia/01 - Transacciones.md | pendiente | |
 | 46 | 09-Transacciones y concurrencia/02 - Propiedades ACID.md | pendiente | |
 | 47 | 09-Transacciones y concurrencia/03 - Problemas de concurrencia.md | pendiente | |

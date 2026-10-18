@@ -55,8 +55,8 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 ## Lógica en la base de datos
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
-| 🟡 | [[03 - Triggers\|Triggers]] | "Ej: BEFORE CREATE", `AFTER CREATE ON Evaluaciones` | CREATE no es un evento de trigger: son INSERT, UPDATE, DELETE (y TRUNCATE). El error viene de la slide 8. |
-| 🟡 | [[03 - Triggers\|Triggers]] | `CREATE TRIGGER … BEGIN … END` | Sintaxis genérica o MySQL ("más o menos así", dice la slide). En PostgreSQL el trigger ejecuta una función (`EXECUTE FUNCTION`), y falta el `;` tras `REFRESH`. Se agregó la versión PostgreSQL. |
+| ✅ | [[03 - Triggers\|Triggers]] | "Ej: BEFORE CREATE", `AFTER CREATE ON Evaluaciones` | CREATE no es un evento de trigger: son INSERT, UPDATE, DELETE (y TRUNCATE). El error viene de la slide 8. Corregido en el texto de la nota. |
+| ✅ | [[03 - Triggers\|Triggers]] | `CREATE TRIGGER … BEGIN … END` | Sintaxis genérica o MySQL ("más o menos así", dice la slide). En PostgreSQL el trigger ejecuta una función (`EXECUTE FUNCTION`), y falta el `;` tras `REFRESH`. Corregido en el texto de la nota. |
 | ℹ️ | [[05 - Stored procedures\|Stored procedures]] | `SELECT insertar_persona(‘11.111.111-1’, …)` | Comillas tipográficas de la slide; van comillas simples rectas. |
 
 ## Transacciones y concurrencia

@@ -8,7 +8,7 @@ prerrequisitos: ["[[04 - Trigger para descontar stock en PLpgSQL|Trigger para de
 
 Un stored procedure es una **función guardada en el DBMS** (en PostgreSQL, escrita en PL/pgSQL) que agrupa varias sentencias SQL, con variables, IFs y loops, y se ejecuta como una unidad.
 
-## Stored procedures (mis apuntes)
+## Stored procedures
 **Definición y funcionamiento**
 - Los stored procedures son conjuntos de comandos SQL que se almacenan en la base de datos y pueden ser ejecutados como una unidad.
 
@@ -17,10 +17,10 @@ Un stored procedure es una **función guardada en el DBMS** (en PostgreSQL, escr
 - **Seguridad:** Controlan el acceso a datos y lógica.
 - **Reutilizabilidad:** Una vez definidos, pueden ser reutilizados múltiples veces.
 
-**Desventaja principal:**
-- Dificultad o imposibilidad de migrar a otra base de datos
-- El testing sea mucho más difícil
-- hace que sea más difícil mantener el código, porque SQL tiende a ser menos legible a medida que se vuelve más complejo.
+**Desventajas**
+- Es difícil, o imposible, migrar a otra base de datos.
+- El testing se vuelve mucho más difícil.
+- El código es más difícil de mantener, porque SQL tiende a ser menos legible a medida que se vuelve más complejo.
 
 **Ejemplo de Stored Procedure**
 Insertar una nueva persona en la tabla personas.
@@ -29,8 +29,8 @@ Insertar una nueva persona en la tabla personas.
 CREATE OR REPLACE FUNCTION insertar_persona (rut varchar, nombre varchar, apellido varchar)
 RETURNS void AS $$
 
---DECLARE
---  Aqui irian las declaracion de variables
+-- DECLARE
+--   aquí irían las declaraciones de variables
 
 BEGIN
   INSERT INTO personas VALUES (rut, nombre, apellido);
@@ -38,10 +38,10 @@ END;
 $$ LANGUAGE plpgsql;
 ```
 
-### Ahora para usarla:
+### Uso
 
 ```sql
-SELECT insertar_persona(‘11.111.111-1’, ‘pepito’, ‘los palotes’)
+SELECT insertar_persona('11.111.111-1', 'pepito', 'los palotes');
 ```
 
 > [!note] Comillas

@@ -8,9 +8,9 @@ prerrequisitos: ["[[01 - Vistas|Vistas]]"]
 
 Una vista materializada **guarda físicamente** el resultado de su consulta. Es tan rápida como una tabla, pero puede quedar desactualizada: hay que refrescarla con `REFRESH MATERIALIZED VIEW`.
 
-## Vistas materializadas (mis apuntes)
+## Vistas materializadas
 - A diferencia de las vistas estándar, las vistas materializadas almacenan datos físicamente.
-- Requieren espacio adicional y deben mantenerse actualizadas con comandos como REFRESH MATERIALIZED VIEW.
+- Requieren espacio adicional y deben mantenerse actualizadas con comandos como `REFRESH MATERIALIZED VIEW`.
 
 **Ejemplo de vistas materializadas**
 
@@ -27,7 +27,7 @@ GROUP BY pelicula, director;
 REFRESH MATERIALIZED VIEW PelEval;
 ```
 
-- Podemos automatizar el esto en la DB? → Si, con TRIGGERS
+- ¿Se puede automatizar el refresco en la base de datos? Sí, con [[03 - Triggers|triggers]].
 
 > [!tip] Complemento (slides "Clase 8: Lógica en la BDD")
 > | | Vista | Vista materializada | Tabla (`CREATE TABLE … AS SELECT`) |
