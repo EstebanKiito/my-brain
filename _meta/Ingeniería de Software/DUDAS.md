@@ -34,9 +34,9 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta.
 ## Ruby
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
-| 🟡 | [[02 - Convenciones de estilo en Ruby\|Convenciones de estilo en Ruby]] | "lista.reverse → !Cambia definitivamente" | `reverse` no modifica la lista; `reverse!` sí. Se agregó el ejemplo con ambas. |
-| 🟡 | [[02 - Convenciones de estilo en Ruby\|Convenciones de estilo en Ruby]] | "lista = [1,2] → is_even? → true/false" | El método es `even?` y es de Integer, no de Array. La idea correcta: los métodos con `?` devuelven booleanos. |
-| 🟡 | [[02 - Convenciones de estilo en Ruby\|Convenciones de estilo en Ruby]] | "Convenciones → snake_case →PascalCase" | Falta decir a qué se aplica cada una: `snake_case` para variables, métodos y archivos; `PascalCase` para clases y módulos. Se agregó la tabla del libro. |
+| ✅ | [[02 - Convenciones de estilo en Ruby\|Convenciones de estilo en Ruby]] | "lista.reverse → !Cambia definitivamente" | `reverse` no modifica la lista; `reverse!` sí. Corregido en el texto de la nota. |
+| ✅ | [[02 - Convenciones de estilo en Ruby\|Convenciones de estilo en Ruby]] | "lista = [1,2] → is_even? → true/false" | El método es `even?` y es de Integer, no de Array. La idea correcta: los métodos con `?` devuelven booleanos. Corregido en el texto de la nota. |
+| ✅ | [[02 - Convenciones de estilo en Ruby\|Convenciones de estilo en Ruby]] | "Convenciones → snake_case →PascalCase" | Falta decir a qué se aplica cada una: `snake_case` para variables, métodos y archivos; `PascalCase` para clases y módulos. Corregido en el texto de la nota. |
 | ℹ️ | [[05 - Arreglos y hashes en Ruby\|Arreglos y hashes en Ruby]] | *(slides y libro)* `inst["c"] # devuelve 2` | Error de las fuentes, no tuyo: una clave inexistente devuelve `nil`. |
 
 ## Programación orientada a objetos

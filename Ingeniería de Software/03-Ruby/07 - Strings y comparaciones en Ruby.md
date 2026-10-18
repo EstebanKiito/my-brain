@@ -6,7 +6,7 @@ prerrequisitos: ["[[01 - Introducción a Ruby|Introducción a Ruby]]"]
 ---
 # Strings y comparaciones en Ruby
 
-*En mis apuntes solo quedó "Comparaciones / Strings / otros de clase"; el contenido viene de las slides y del conocimiento general de Ruby.*
+Cómo se crean, interpolan y manipulan los strings en Ruby, y cómo se comparan valores.
 
 > [!tip] Complemento — strings (slides "Ruby")
 > ```ruby

@@ -2,7 +2,7 @@
 
 Rama `fix/software`. Plan: ordenar las notas `origen/apuntes` sin cambiar su estructura (ver la sección "Qué se hace en cada nota" del plan). Un commit por carpeta: `ordena apuntes: <carpeta>`.
 
-Carpetas cerradas: 01, 02.
+Carpetas cerradas: 01, 02, 03.
 
 Estados: pendiente · ordenada · sin cambios.
 
@@ -28,10 +28,10 @@ Estados: pendiente · ordenada · sin cambios.
 | 18 | 02-Scrum y gestión ágil/01-Scrum/11 - Sprint Retrospective.md | ordenada | |
 | 19 | 02-Scrum y gestión ágil/02-Historias de usuario/02 - Estructura de una historia de usuario.md | ordenada | |
 | 20 | 02-Scrum y gestión ágil/02-Historias de usuario/03 - Criterios de aceptación (Dado-Cuando-Entonces).md | ordenada | |
-| 21 | 03-Ruby/01 - Introducción a Ruby.md | pendiente | |
-| 22 | 03-Ruby/02 - Convenciones de estilo en Ruby.md | pendiente | |
-| 23 | 03-Ruby/03 - Métodos y retorno implícito en Ruby.md | pendiente | |
-| 24 | 03-Ruby/08 - require_relative en Ruby.md | pendiente | |
+| 21 | 03-Ruby/01 - Introducción a Ruby.md | ordenada | |
+| 22 | 03-Ruby/02 - Convenciones de estilo en Ruby.md | ordenada | |
+| 23 | 03-Ruby/03 - Métodos y retorno implícito en Ruby.md | ordenada | |
+| 24 | 03-Ruby/08 - require_relative en Ruby.md | ordenada | |
 | 25 | 04-Programación orientada a objetos/01 - Clases y objetos en Ruby.md | pendiente | |
 | 26 | 04-Programación orientada a objetos/02 - Métodos de instancia y métodos de clase.md | pendiente | |
 | 27 | 04-Programación orientada a objetos/03 - Visibilidad de métodos en Ruby.md | pendiente | |

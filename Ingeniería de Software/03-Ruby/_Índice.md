@@ -18,5 +18,5 @@ El número de cada archivo indica el orden de lectura.
 
 ## Material adicional (slides "Ruby")
 - Documentación de Ruby: https://www.ruby-lang.org/es/documentation/
-- Prueba Ruby en tu navegador: https://try.ruby-lang.org/
+- Ruby en el navegador: https://try.ruby-lang.org/
 - Aprende a programar: https://pine.fm/LearnToProgram/
