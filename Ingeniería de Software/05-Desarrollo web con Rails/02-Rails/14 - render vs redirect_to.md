@@ -12,24 +12,21 @@ prerrequisitos: ["[[09 - Controladores en Rails|Controladores en Rails]]", "[[11
 ```ruby
 def update
 	if @pokemon.update(pokemon_params)
-		redirect_to @pokemon, notice: 'Pokemon was succesfully update'
+		redirect_to @pokemon, notice: 'Pokemon was successfully updated'
 	else
 		render :edit
 	end
 end
 ```
-- **Renderizar a otra vista** (diferente del nombre del método) → `render :vista`.
-- **`redirect_to`:** no solo renderiza la vista "show", ya que para renderizarla necesitará probablemente la variable `@pokemon`.
-- **`redirect_to`:** hace **REFRESH del browser** en la página "show" usando `@pokemon`, por lo que **se envía otro HTTPRequest**.
+- **`render :vista`** muestra una vista distinta de la que corresponde al nombre del método. En el ejemplo, si `update` falla se vuelve a mostrar el formulario `edit`, con los errores de `@pokemon`.
+- **`redirect_to @pokemon`** no renderiza "show" directamente: le responde al navegador que vaya a la página de ese pokémon. El navegador **envía otro request HTTP** y la acción `show` carga sus propias variables.
 
-Otras formas de usar render:
-- `render: edit`
-- `render action: edit`
+Formas equivalentes de renderizar la vista `edit`:
+- `render :edit`
+- `render action: :edit`
 - `render "edit"`
 - `render "books/edit"`
 - `render template: "books/edit"`
-
-**Todas son equivalentes.**
 
 Más información:
 - https://guides.rubyonrails.org/routing.html
@@ -53,9 +50,8 @@ Más información:
 > | URL del navegador | no cambia | cambia |
 > | Uso típico | mostrar el formulario con errores tras un `save` fallido | después de crear, actualizar o borrar con éxito |
 >
-> - En la lista de los apuntes, `render: edit` se escribe en realidad `render :edit` (con el símbolo `:edit`); las formas exactas de las slides son `render :edit`, `render action: :edit`, `render "edit"`, `render action: "edit"`, `render "books/edit"` y `render template: "books/edit"`.
+> - Las slides agregan una forma más: `render action: "edit"`.
 > - El patrón **"redirect after POST"** evita que, al recargar la página, el navegador reenvíe el formulario.
-> - Detalle: el `notice` dice "succesfully update"; lo correcto es "successfully updated".
 
 ## Preguntas de repaso
 

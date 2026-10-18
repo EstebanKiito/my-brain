@@ -8,9 +8,9 @@ prerrequisitos: ["[[02 - Acoplamiento|Acoplamiento]]", "[[05 - Atributos y acces
 
 El encapsulamiento consiste en **ocultar los datos internos de un objeto** y exponer solo los métodos necesarios. Así otras clases no dependen de cómo está hecho por dentro.
 
-## Mis apuntes (del ejemplo del carrito)
-- Romper el encapsulamiento: los **datos de los objetos deben estar lo más ocultos posible** para evitar dependencias innecesarias.
-- En el código mejorado, **`Item` tiene sus datos privados** y el método `totalCost` también es **privado**.
+## En el ejemplo del carrito
+- Los **datos de los objetos deben estar lo más ocultos posible**, para evitar dependencias innecesarias. Cuando otra clase lee directamente los datos internos de un objeto, se **rompe el encapsulamiento**.
+- En el [[07 - Ejemplo de diseño - Carrito de compras|código mejorado del carrito]], **`Item` tiene sus datos privados** y el método `totalCost` también es **privado**: `ShoppingCar` solo conoce el método público `print`.
 
 > [!tip] Complemento (slides "Diseño Orientado al Objeto")
 > - *"Encapsulamiento se refiere a que los datos de los objetos deben estar lo más ocultos posibles para evitar dependencias innecesarias."*

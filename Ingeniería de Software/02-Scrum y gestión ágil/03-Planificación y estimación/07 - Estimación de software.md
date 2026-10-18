@@ -6,7 +6,7 @@ prerrequisitos: ["[[01 - Story points|Story points]]"]
 ---
 # Estimación de software
 
-*En mis apuntes, la sección "8. Estimaciones" quedó solo con el título; esta nota y las siguientes se arman con las slides y el libro del curso.*
+Estimar es anticipar cuánto **esfuerzo, tiempo y costo** tomará un proyecto, para poder planificarlo y comprometer entregas realistas.
 
 > [!tip] Complemento — qué queremos estimar (slides "Estimaciones" y libro del curso, cap. 7.1–7.2)
 > | Magnitud | Unidad | Por qué importa |

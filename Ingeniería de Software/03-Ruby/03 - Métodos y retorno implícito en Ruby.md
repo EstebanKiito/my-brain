@@ -8,25 +8,25 @@ prerrequisitos: ["[[01 - Introducción a Ruby|Introducción a Ruby]]"]
 
 Los métodos se definen con `def … end`. **Devuelven automáticamente el valor de la última expresión evaluada** (retorno implícito); `return` sale del método en ese mismo momento.
 
-## Retorno de métodos (mis apuntes)
+## Retorno de métodos
 Con `return` explícito, el método **sale en esa línea** y lo que viene después nunca se ejecuta:
 ```ruby
 def nivel
-	return pokemon.nivel
-	pokemon.nivel = 4
-	pokemon.nivel
+  return pokemon.nivel
+  pokemon.nivel = 4   # nunca se ejecuta
+  pokemon.nivel
 end
 
-nivel -> pokemon.nivel
+nivel  # => el valor de pokemon.nivel
 ```
 
 Sin `return`, se devuelve **la última expresión**. Una asignación también es una expresión: vale lo asignado.
 ```ruby
 def nivel
-	variable = 5
+  variable = 5
 end
 
-nivel -> retorna 5 xd
+nivel  # => 5
 ```
 
 > [!tip] Complemento — definir y llamar métodos (slides "Ruby" y libro del curso, cap. 10.4)
@@ -67,7 +67,7 @@ nivel -> retorna 5 xd
 > [!question]- Respuesta
 > El valor de la última expresión evaluada. Si es una asignación como `variable = 5`, devuelve 5.
 
-2. En el primer ejemplo de los apuntes, ¿se ejecuta `pokemon.nivel = 4`?
+2. En el primer ejemplo, ¿se ejecuta `pokemon.nivel = 4`?
 > [!question]- Respuesta
 > No. `return pokemon.nivel` sale del método inmediatamente, así que las líneas siguientes nunca se ejecutan.
 

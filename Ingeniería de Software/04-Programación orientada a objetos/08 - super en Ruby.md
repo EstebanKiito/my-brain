@@ -9,74 +9,65 @@ prerrequisitos: ["[[07 - Herencia en Ruby|Herencia en Ruby]]", "[[04 - Construct
 `super` llama al **método con el mismo nombre en la clase padre**. Se usa sobre todo para reutilizar el constructor del padre y para extender un método sobrescrito.
 
 ## Super
+Dentro de un método, `super` ejecuta el método del **mismo nombre en la clase padre**. En un constructor, ejecuta el `initialize` del padre:
+
 ```ruby
 class Padre
-	def initialize
-		"Soy el padre"
-	end
+  def initialize
+    puts "Soy el padre"
+  end
+end
 
-class Hijo
-	def initialize
-		super         # -> super: ejecutara el Constructor (initialize) del Padre
-	end
+class Hijo < Padre
+  def initialize
+    super          # ejecuta el initialize de Padre
+  end
+end
+
+Hijo.new   # imprime "Soy el padre"
 ```
 
-> [!warning] Posible error (registrado en `_meta/DUDAS.md`)
-> `class Hijo` no hereda de `Padre`: falta `< Padre`. Sin eso, `super` buscaría el `initialize` de `Object`. También faltan los `end` de las clases.
-> ```ruby
-> class Padre
->   def initialize
->     puts "Soy el padre"
->   end
-> end
->
-> class Hijo < Padre
->   def initialize
->     super          # ejecuta el initialize de Padre
->   end
-> end
->
-> Hijo.new   # imprime "Soy el padre"
-> ```
+Sin el `< Padre`, `Hijo` no heredaría de `Padre` y `super` buscaría el `initialize` de `Object`.
 
 ## Herencia y constructor
+Si el constructor del padre recibe argumentos, la hija se los pasa con `super(...)` y luego inicializa lo propio:
+
 ```ruby
-# Este ejemplo: ejecuta el constructor padre mandando atributos necesarios
 class Figure
-	attr_accesor: :stroke, :fill
-	#---------------------------
-	def initialize(stroke, fill)
-		@stroke = stroke
-		@fill = fill
-	end
-	#---------------------------
+  attr_accessor :stroke, :fill
+
+  def initialize(stroke, fill)
+    @stroke = stroke
+    @fill = fill
+  end
 end
 
 class Circle < Figure
-	attr_accesor: :radius
+  attr_accessor :radius
 
-	def initialize(stroke, fill, radius)
-		super(stroke, fill) # -> Constructor del padre con sus respectivos attr
-		@radius = radius
-	end
+  def initialize(stroke, fill, radius)
+    super(stroke, fill)  # constructor del padre con sus atributos
+    @radius = radius
+  end
 end
 ```
-*(`attr_accesor:` debe ser `attr_accessor`; ver [[05 - Atributos y accesores en Ruby|Atributos y accesores]].)*
 
 ## Super y override
-- Con **"super"** podemos llamar al método de la clase padre con el mismo nombre.
+Al sobrescribir un método, `super` permite **reutilizar** la versión del padre y extenderla:
 
 ```ruby
 class Empleado
-	def calcular_salario
-		...
-	end
+  def calcular_salario
+    # ...
+  end
+end
 
 class Manager < Empleado
-	def calcular_salario
-		base_salario = super
-		base_salario + @bonus
-	end
+  def calcular_salario
+    base_salario = super   # resultado del método de Empleado
+    base_salario + @bonus
+  end
+end
 ```
 
 > [!tip] Complemento — `super` vs `super()` (slides "Ruby": Song y KaraokeSong)

@@ -5,7 +5,7 @@ Ruby on Rails, de la instalación a una app CRUD completa: MVC, modelos con Acti
 Volver a [[Ingeniería de Software/05-Desarrollo web con Rails/_Índice|Desarrollo web con Rails]] · [[Ingeniería de Software/_Índice|mapa del ramo]].
 
 ## Origen
-Mis apuntes "2.3 Rails / CRUD" (Pt. 1 y C1), la sección **10. MVC + Routing** de la prueba práctica y los pasos de instalación de la página del ramo.
+Apuntes de Rails / CRUD y de MVC + Routing, slides del curso y los pasos de instalación de la página del ramo.
 
 ## Orden de estudio
 1. [[01 - Instalar Ruby on Rails en Mac M1|Instalar Ruby on Rails en Mac M1]]: RVM, Ruby 3.1, Rails 7.0.4, PostgreSQL.

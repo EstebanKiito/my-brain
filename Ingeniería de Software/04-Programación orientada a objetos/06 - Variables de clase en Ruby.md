@@ -9,30 +9,27 @@ prerrequisitos: ["[[05 - Atributos y accesores en Ruby|Atributos y accesores en 
 Una **variable de clase** (`@@`) es **compartida por todas las instancias** de la clase, a diferencia de un atributo de instancia (`@`), que es propio de cada objeto.
 
 ## Atributos compartidos por instancias distintas
-- `@` → atributo de **instancia**
-- `@@` → atributo de **clase**
+- `@` → atributo de **instancia**: cada objeto tiene el suyo.
+- `@@` → atributo de **clase**: uno solo, compartido por todas las instancias.
 
 ```ruby
-ass Person
-	@@contador_personas = 0
+class Person
+  @@contador_personas = 0
 
-	def initialize
-		@@contador_personas += 1
-		end
+  def initialize
+    @@contador_personas += 1
+  end
 
-	# Metodp para visuializar el atributo
-	def self.contador_personas
-		@@contador_personas
-	end
+  # método de clase para leer el contador
+  def self.contador_personas
+    @@contador_personas
+  end
 end
 
-puts Person.contador_personas # 0
+puts Person.contador_personas  # 0
 Person.new
-puts Person.contador_personas # 1
+puts Person.contador_personas  # 1
 ```
-
-> [!warning] Posible error (registrado en `_meta/DUDAS.md`)
-> La primera línea dice `ass Person`; debe ser `class Person`. El resto del ejemplo está correcto (el `end` de `initialize` solo está mal indentado).
 
 > [!tip] Complemento — ejemplo de las slides "Ruby"
 > ```ruby

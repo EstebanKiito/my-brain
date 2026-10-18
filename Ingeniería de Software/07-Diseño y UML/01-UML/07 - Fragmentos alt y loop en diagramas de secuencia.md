@@ -9,10 +9,10 @@ prerrequisitos: ["[[06 - Diagrama de secuencia UML|Diagrama de secuencia UML]]"]
 Los **fragmentos combinados** (marcos o *frames*) permiten mostrar **condicionales** (`alt`, `opt`) y **ciclos** (`loop`) dentro de un diagrama de secuencia.
 
 ## Iteraciones y condicionales
-- Es posible utilizar las dos notaciones: **"an Order"** o **"order1: Order"**.
-- **Alt** es un **"if-then-else"**, y entre corchetes va la **condición**.
-- **Loop** hace referencia a un **"for loop"**.
-- El **frame (marco)** denota los mensajes que se llaman dentro del "if" o del "for".
+- Un **frame** (marco) encierra los mensajes que se ejecutan dentro de un `if` o de un `for`. Arriba a la izquierda lleva su tipo:
+  - **`alt`** es un *if-then-else*: cada sección lleva su **condición entre corchetes** (`[value > $10000]`, `[else]`).
+  - **`loop`** es un ciclo *for*: se repite para cada elemento indicado.
+- Los objetos se pueden nombrar de dos formas equivalentes: **`an Order`** o **`order1: Order`**.
 
 ![Diagrama de secuencia - fragmentos loop alt opt](../adjuntos/Diagrama%20de%20secuencia%20-%20fragmentos%20loop%20alt%20opt.png)
 

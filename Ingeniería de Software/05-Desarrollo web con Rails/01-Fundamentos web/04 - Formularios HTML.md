@@ -9,6 +9,8 @@ prerrequisitos: ["[[02 - HTML|HTML]]", "[[01 - Protocolo HTTP|Protocolo HTTP]]"]
 Un formulario HTML permite a los usuarios **ingresar y enviar datos** al servidor (en un request HTTP, normalmente `POST`).
 
 ## Formulario
+Cada campo tiene un `<label>` (el texto visible, unido al campo por `for`/`id`) y un `<input>` o `<textarea>` cuyo `name` es la clave con la que viaja el dato. El botón `submit` envía todo a la URL de `action` con el método de `method`:
+
 ```html
 <!DOCTYPE html>
 <html>

@@ -11,7 +11,7 @@ La **herencia** (generalización) se dibuja con una línea continua y una punta 
 ## Herencia
 ![Herencia UML - dos estilos](../adjuntos/Herencia%20UML%20-%20dos%20estilos.png)
 
-Se pueden utilizar **cualquiera de los 2** estilos.
+Los dos estilos de la imagen son equivalentes: una flecha por cada hija, o las flechas unidas en una sola punta hacia el padre.
 
 > [!note]- Transcripción de la imagen
 > `Polygon`, `Ellipse` y `Spline` heredan de `Shape`. **Estilo 1 (separate target):** una flecha de triángulo por cada hija. **Estilo 2 (shared target):** las flechas se juntan en un solo triángulo.
@@ -23,7 +23,9 @@ classDiagram
   Shape <|-- Spline
 ```
 
-## Realización (interfaz) → en Ruby es un módulo
+## Realización (interfaz)
+Una clase **realiza** una interfaz cuando implementa todos sus métodos. Se dibuja con línea punteada y triángulo vacío hacia la interfaz. En Ruby, que no tiene interfaces, el equivalente es un **módulo** o una clase abstracta.
+
 ![Realización UML - interfaz Owner](../adjuntos/Realización%20UML%20-%20interfaz%20Owner.png)
 
 > [!note]- Transcripción de la imagen

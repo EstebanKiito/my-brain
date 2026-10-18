@@ -9,10 +9,10 @@ prerrequisitos: ["[[01 - Buen diseño de software|Buen diseño de software]]", "
 Un patrón de diseño es una **solución habitual y probada a un problema de diseño que se repite**. No es código para copiar, sino un concepto general que se adapta a cada caso.
 
 ## Patrones de diseño
-- **Soluciones habituales a problemas frecuentes** al diseñar software.
-- Es un **concepto general** para resolver un problema particular.
+- Son **soluciones habituales a problemas frecuentes** al diseñar software.
+- Cada patrón es un **concepto general** que se adapta para resolver un problema particular; no es un fragmento de código que se copia tal cual.
 
-**Patrones vistos en el curso:**
+**Patrones del curso**, según su categoría:
 | Comportamiento | Estructurales | Creacionales |
 |---|---|---|
 | [[01 - Patrón Strategy\|Strategy]] | [[01 - Patrón Decorator\|Decorator]] | [[01 - Patrón Abstract Factory\|Abstract Factory]] |

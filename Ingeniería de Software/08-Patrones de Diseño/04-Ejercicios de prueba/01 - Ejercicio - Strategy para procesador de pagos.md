@@ -6,7 +6,7 @@ prerrequisitos: ["[[01 - Patrón Strategy|Patrón Strategy]]", "[[06 - Principio
 ---
 # Ejercicio: Strategy para procesador de pagos
 
-Problema de prueba: un procesador de pagos con un `case` por tipo de pago que hay que rediseñar con el patrón Strategy.
+Un procesador de pagos con un `case` por tipo de pago que hay que rediseñar con el patrón Strategy.
 
 ## Enunciado
 ![Ejercicio Strategy - enunciado procesador de pagos](../adjuntos/Ejercicio%20Strategy%20-%20enunciado%20procesador%20de%20pagos.png)

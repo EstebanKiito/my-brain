@@ -9,8 +9,8 @@ prerrequisitos: ["[[03 - Procesos iterativos|Procesos iterativos]]", "[[02 - Mod
 El modelo en espiral es un proceso **iterativo** que avanza en ciclos y, en cada ciclo, hace un **análisis de riesgo explícito**.
 
 ## Características
-- Opera en **ciclos** y **fases iterativas**.
-- **Consideraciones de riesgo explícitas**.
+- Opera en **ciclos**: cada vuelta de la espiral recorre las mismas fases.
+- Tiene **consideraciones de riesgo explícitas**: cada ciclo termina con un análisis de riesgo que decide cómo seguir.
 
 ### 4 fases (en cada ciclo)
 1. Análisis de requisitos
@@ -29,14 +29,14 @@ flowchart LR
 ```
 
 ## Ventajas
-- **Manejo de riesgo**
-- **Flexibilidad**: se pueden presentar cambios
-- Involucra **retroalimentación del cliente**
+- **Manejo del riesgo:** los riesgos se identifican y se atacan en cada ciclo, no al final.
+- **Flexibilidad:** se pueden incorporar cambios en el ciclo siguiente.
+- Involucra la **retroalimentación del cliente** en cada vuelta.
 
 ## Desventajas
-- **Manejo del tiempo**: el n° de fases es desconocido
-- Difícil de **estimar tiempo** del proyecto
-- **Inversión importante** de planeación y análisis de riesgo
+- **Manejo del tiempo:** el número de ciclos no se conoce de antemano.
+- Por lo mismo, es difícil **estimar la duración** del proyecto.
+- Exige una **inversión importante** en planificación y análisis de riesgo.
 
 > [!tip] Complemento (slides "Procesos de Desarrollo de Software" y libro del curso, cap. 2.3)
 > - Propuesto por **Barry Boehm (1986)**. Las slides lo presentan como *"una mejora al modelo en cascada"*.
@@ -60,7 +60,7 @@ flowchart LR
 > [!question]- Respuesta
 > Introducir consideraciones de riesgo explícitas en cada ciclo, además de trabajar en ciclos iterativos en vez de una sola pasada.
 
-2. ¿Cuáles son las 4 fases de cada ciclo según los apuntes?
+2. ¿Cuáles son las 4 fases de cada ciclo?
 > [!question]- Respuesta
 > Análisis de requisitos, construcción, evaluación y análisis de riesgo.
 

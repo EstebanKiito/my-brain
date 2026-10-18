@@ -9,36 +9,31 @@ prerrequisitos: ["[[09 - Controladores en Rails|Controladores en Rails]]", "[[02
 Las vistas de Rails son archivos `.html.erb`: **HTML con código Ruby incrustado**. Se guardan en `app/views/<recurso>/` y usan las variables `@...` del controlador.
 
 ## Render implícito
-Crea las vistas en `app/views/personas/`:
-- Si en el controlador **no usamos el método "render"** para devolver un HTTPResponse,
-- Rails **buscará un archivo `.erb` con el mismo nombre de la acción** (ej: `index`), generará el HTML y enviará el HTTPResponse.
+Si una acción del controlador **no llama a `render`**, Rails **busca una vista con el mismo nombre de la acción** (por ejemplo, `index`) en `app/views/<recurso>/`, genera el HTML y lo envía como respuesta.
 
-`app/views/pokemons/index.html.erb`
-```erb
-# --- Controlador ---
-class PokemonController < ApplicationController
-	def index
-		@pokemons = Pokemon.all
-	end
+```ruby
+# app/controllers/pokemons_controller.rb
+class PokemonsController < ApplicationController
+  def index
+    @pokemons = Pokemon.all
+  end
 end
-
-# --- index.html.erb ---
-<% @pokemons.each do |pokemon| %>
-	<tr>
-		<td><%= pokemon.name %></td>
-		<td><%= pokemon.pokemon_tupe %></td>
-	<tr>
-<& end %>
 ```
 
-> [!warning] Posible error (registrado en `_meta/DUDAS.md`)
-> - `pokemon_tupe` → `pokemon_type`.
-> - El segundo `<tr>` debe ser `</tr>`.
-> - `<& end %>` → `<% end %>`.
-> - El controlador debería llamarse `PokemonsController` (plural) para que Rails encuentre `app/views/pokemons/index.html.erb`.
+```erb
+<%# app/views/pokemons/index.html.erb %>
+<% @pokemons.each do |pokemon| %>
+  <tr>
+    <td><%= pokemon.name %></td>
+    <td><%= pokemon.pokemon_type %></td>
+  </tr>
+<% end %>
+```
+
+El controlador se llama `PokemonsController`, en plural, para que Rails encuentre la carpeta `app/views/pokemons/`.
 
 ## Ejemplo completo: vistas de Persona
-Volviendo al ejemplo de la clase Persona:
+Las vistas del recurso `Persona`, que usan las variables que prepara [[09 - Controladores en Rails|su controlador]]:
 
 ### index.html.erb
 ```erb
@@ -90,7 +85,7 @@ Los formularios `new` y `edit` usan un parcial: ver [[12 - Parciales en ERB|Parc
 >
 > - Todo lo que está fuera de las etiquetas es HTML. Por ejemplo, `<h1> Hello <%= name %>! </h1>` con `name = "Juan Pablo"` genera `<h1> Hello Juan Pablo! </h1>`.
 > - ERB solo genera la rama del `if` que corresponde.
-> - **Ojo:** el nombre del controlador y de la acción deben calzar exactamente con la carpeta y el archivo: `BooksController#index` → `app/views/books/index.html.erb`.
+> - **Importante:** el nombre del controlador y de la acción deben calzar exactamente con la carpeta y el archivo: `BooksController#index` → `app/views/books/index.html.erb`.
 > - Más: https://guides.rubyonrails.org/layouts_and_rendering.html
 
 ## Preguntas de repaso

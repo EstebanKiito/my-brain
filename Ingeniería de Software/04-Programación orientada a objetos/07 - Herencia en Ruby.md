@@ -8,56 +8,39 @@ prerrequisitos: ["[[05 - Atributos y accesores en Ruby|Atributos y accesores en 
 
 La herencia permite que una **clase hija** reciba los atributos y métodos de una **clase padre** y agregue o cambie los suyos. En Ruby se escribe `class Hija < Padre`.
 
-## Herencia 👨‍👦‍👦
-Clase padre → clase hija
+## Herencia
+La clase hija hereda de la clase padre con `<`, y suma sus propios atributos a los heredados:
 
 ```ruby
 class Figura
-	attr_accessor: :stroke :fill
+  attr_accessor :stroke, :fill
 end
 
 class Circulo < Figura
-	attr_accesor: :radius # Ademas de stroke y fill
+  attr_accessor :radius  # además de stroke y fill
 end
 
 c1 = Circulo.new
-c1.fill = "red"
+c1.fill = "red"          # fill viene de Figura
 ```
 
 ## Jerarquía de clases
+La herencia puede tener varios niveles; cada clase acumula lo de todas sus ancestras:
+
 ```ruby
 # 3 niveles de jerarquía
 class Figure
-	...
+  attr_accessor :stroke, :fill
+end
 
 class Circle < Figure
-	attr_accessor: :radius
-	...
-class Cylinder < Circle
-	attr_accesor: :lenght
-```
+  attr_accessor :radius        # tiene stroke, fill y radius
+end
 
-> [!warning] Posible error de sintaxis (registrado en `_meta/DUDAS.md`)
-> - `attr_accessor: :stroke :fill` → se escribe `attr_accessor :stroke, :fill`: sin `:` después del nombre y con coma entre símbolos.
-> - `attr_accesor:` → `attr_accessor`.
-> - Faltan los `end` de cada clase. Además, `:lenght` probablemente quería ser `:length`.
->
-> ```ruby
-> class Figure
->   attr_accessor :stroke, :fill
-> end
->
-> class Circle < Figure
->   attr_accessor :radius        # además de stroke y fill (heredados)
-> end
->
-> class Cylinder < Circle
->   attr_accessor :length        # tiene stroke, fill, radius y length
-> end
->
-> c1 = Circle.new
-> c1.fill = "red"
-> ```
+class Cylinder < Circle
+  attr_accessor :length        # tiene stroke, fill, radius y length
+end
+```
 
 > [!tip] Complemento (slides "Object Oriented Programming" y "Ruby")
 > - El objeto de la clase `Circle` tiene el atributo `radius` y, **por herencia**, `stroke` y `fill`.

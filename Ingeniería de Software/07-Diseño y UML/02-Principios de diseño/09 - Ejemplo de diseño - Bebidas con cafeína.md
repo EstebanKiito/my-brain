@@ -8,7 +8,7 @@ prerrequisitos: ["[[05 - Código duplicado (code clones)|Código duplicado (code
 
 Ejemplo de clase sobre **código duplicado entre clases**: `Tea` y `Coffee` repiten la receta. Se sube lo común a una clase abstracta y cada hija sobrescribe solo lo que cambia. Es un adelanto del patrón Template Method.
 
-## Ejemplo 3 (código duplicado entre clases)
+## Código original (código duplicado entre clases)
 ![Ejemplo bebidas con cafeína - código original](../adjuntos/Ejemplo%20bebidas%20con%20cafeína%20-%20código%20original.png)
 
 > [!note]- Transcripción de la imagen
@@ -55,7 +55,7 @@ Ejemplo de clase sobre **código duplicado entre clases**: `Tea` y `Coffee` repi
 > end
 > ```
 
-- Otra clase tendría mucho **más código duplicado** (`boilWater` y `pourInCup` ya se repiten).
+- `boilWater` y `pourInCup` ya se repiten en `Tea` y `Coffee`, y cada bebida nueva tendría todavía **más código duplicado**.
 
 ## Solución (abstracta + override en clases separadas)
 ![Ejemplo bebidas con cafeína - código mejorado](../adjuntos/Ejemplo%20bebidas%20con%20cafeína%20-%20código%20mejorado.png)

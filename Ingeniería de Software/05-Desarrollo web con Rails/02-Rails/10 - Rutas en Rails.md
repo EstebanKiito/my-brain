@@ -8,21 +8,13 @@ prerrequisitos: ["[[09 - Controladores en Rails|Controladores en Rails]]", "[[01
 
 Las rutas, en `config/routes.rb`, **conectan una URL y un método HTTP con una acción de un controlador**. `resources` genera de una vez las 7 rutas CRUD.
 
-## Rutas (Pt. 1)
-- **Routes** → rutas para ser usadas por el usuario; se conectan con el controlador.
+## Rutas
+Cada ruta conecta un **método HTTP y una URL** con una **acción de un controlador**:
 
 ```ruby
-post “/pokemon”, to: “pokemons#create”)
-
-“/pokemons” → endpoint // pokemons → controlador // create → metodo
+post "/pokemons", to: "pokemons#create"
+# "/pokemons" → endpoint · pokemons → controlador · create → método (acción)
 ```
-
-> [!warning] Posible error (registrado en `_meta/DUDAS.md`)
-> Sobra el `)` final, las comillas deben ser rectas (`"`) y el endpoint aparece como `/pokemon` en el código y `/pokemons` en la explicación. Versión correcta:
-> ```ruby
-> post "/pokemons", to: "pokemons#create"
-> # "/pokemons" → endpoint · pokemons → controlador · create → método (acción)
-> ```
 
 ## Routing
 ```ruby
@@ -30,8 +22,8 @@ Rails.application.routes.draw do
 	resources :photos
 end
 ```
-- **Resources:** genera las rutas de las fotos de manera automática.
-- Siguen el estándar de la web y de Ruby.
+- `resources :photos` genera de forma automática las **7 rutas CRUD** de las fotos.
+- Las rutas generadas siguen las convenciones REST de la web y de Rails.
 
 ![Rails resources - rutas generadas](../adjuntos/Rails%20resources%20-%20rutas%20generadas.png)
 

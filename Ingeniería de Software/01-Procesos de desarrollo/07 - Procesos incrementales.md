@@ -9,11 +9,8 @@ prerrequisitos: ["[[01 - Proceso de desarrollo de software|Proceso de desarrollo
 En un proceso incremental el sistema se construye **por piezas terminadas**: cada entrega agrega una parte nueva, pero el sistema no está completo hasta la última pieza.
 
 ## Características
-- Con cada entrega tenemos acabada **una pieza más del sistema** (nuevas funcionalidades), pero **no está acabado hasta entregar la última pieza**.
-- ¡**No feedback hasta terminar**!
-
-> [!warning] Posible error / matiz
-> Que no haya feedback es discutible. Cada pieza terminada *puede* mostrarse al usuario. Lo que realmente caracteriza al incremental "puro" es que **las piezas se planifican de antemano y no se vuelven a trabajar** con lo que se aprende: no hay iteración sobre lo ya construido. Registrado en `_meta/DUDAS.md`.
+- Cada entrega deja terminada **una pieza más del sistema** (nuevas funcionalidades), pero el sistema **no está completo hasta entregar la última pieza**.
+- **El feedback no cambia lo ya construido:** cada pieza terminada puede mostrarse al usuario, pero las piezas se planifican de antemano y no se vuelven a trabajar con lo que se aprende. No hay iteración sobre lo que ya se entregó.
 
 ![Procesos incrementales - analogía de la Mona Lisa](adjuntos/Procesos%20incrementales%20-%20analogía%20de%20la%20Mona%20Lisa.png)
 

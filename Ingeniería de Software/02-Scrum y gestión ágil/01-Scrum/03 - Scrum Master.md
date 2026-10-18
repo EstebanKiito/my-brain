@@ -9,10 +9,10 @@ prerrequisitos: ["[[01 - Scrum|Scrum]]"]
 El Scrum Master es el **líder del proceso**: hace de coach del equipo, cuida que Scrum se aplique bien y elimina los obstáculos. **No** es un jefe de proyecto.
 
 ## Responsabilidades
-- **Líder del proceso**, es el **coach**.
-- **Facilita y guía** al equipo en la implementación de Scrum.
-- Promueve el **ambiente propicio para la colaboración**.
-- Asume responsabilidad de **resolver problemas** y el **Scrum adecuado del equipo** (que el equipo aplique Scrum correctamente).
+- Es el **líder del proceso** y actúa como **coach** del equipo.
+- **Facilita y guía** al equipo en la aplicación de Scrum.
+- Promueve un **ambiente propicio para la colaboración**.
+- Se hace responsable de **resolver los problemas** que bloquean al equipo y de que el equipo **aplique Scrum correctamente**.
 
 > [!tip] Complemento (slides "SCRUM - una introducción rápida")
 > Según las slides, el Scrum Master:

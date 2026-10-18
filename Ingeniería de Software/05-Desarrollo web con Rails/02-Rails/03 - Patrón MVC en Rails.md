@@ -9,15 +9,17 @@ prerrequisitos: ["[[02 - CRUD|CRUD]]"]
 MVC (Modelo-Vista-Controlador) es la **arquitectura que estructura una aplicación Rails**: separa los datos (modelo), lo que ve el usuario (vista) y la lógica que los conecta (controlador).
 
 ## MVC
-- **Arquitectura** que estructura la aplicación, permitiendo organizar la lógica, las vistas, etc.
-- **Modelo:** donde haremos todo nuestro manejo de datos con la base de datos.
-- **Controlador:** maneja la lógica de negocio, los requests de usuarios y el flujo de llevar la data desde el modelo a la vista (**intermediario**).
-- **Vista:** responsable de lo que el usuario visualiza.
+Es una **arquitectura** que organiza la aplicación separando los datos, la lógica y la presentación:
+- **Modelo:** maneja los datos y su relación con la base de datos.
+- **Controlador:** es el **intermediario**. Recibe los requests del usuario, aplica la lógica de negocio y lleva los datos del modelo a la vista.
+- **Vista:** se encarga de lo que el usuario ve.
 
-## En Rails (Pt. 1)
-- **Controllers** → clase que controla las interacciones con el usuario, la vista y el modelo.
-- **Models** → permiten interactuar con la **BASE DE DATOS**.
-- **Routes** → rutas para ser usadas por el usuario; se conectan con el controlador.
+## En Rails
+- **Rutas** (*routes*): asocian cada URL que usa el usuario con una acción de un controlador.
+- **Controladores** (*controllers*): clases que coordinan la interacción entre el usuario, la vista y el modelo.
+- **Modelos** (*models*): clases que permiten interactuar con la **base de datos**.
+
+El diagrama muestra el recorrido completo de un request:
 
 ```mermaid
 sequenceDiagram

@@ -9,25 +9,24 @@ prerrequisitos: ["[[07 - Herencia en Ruby|Herencia en Ruby]]"]
 Sobrescribir es **redefinir en la clase hija un método que ya existe en el padre**, con el mismo nombre y argumentos, para cambiar su comportamiento.
 
 ## Override
-- La sobreescritura es escribir un método existente en la clase padre en la clase hija.
-- Tiene **mismo nombre y argumentos** que el método del padre.
-- Ej: **"to_s"**: método de `Object` (propio de Ruby).
+- Sobrescribir es **volver a escribir en la clase hija un método que ya existe en la clase padre**.
+- El método tiene el **mismo nombre y los mismos argumentos** que el del padre.
+- Ejemplo típico: `to_s`, un método de `Object` que todas las clases heredan y que conviene sobrescribir.
 
 ```ruby
 class Circle < Figure
+  def initialize(radius)
+    @radius = radius
+  end
 
-	def initialize(radius)
-		@radius = radius
-	end
-
-	def to_s
-		"Es un circulo de radio #{@radius}"
-	end
+  def to_s
+    "Es un círculo de radio #{@radius}"
+  end
+end
 
 c = Circle.new(5)
-puts c.to_s
+puts c.to_s  # Es un círculo de radio 5
 ```
-*(Falta el `end` de la clase antes de `c = Circle.new(5)`.)*
 
 > [!tip] Complemento (slides "Object Oriented Programming" y "Ruby")
 > - En Ruby **todas las clases heredan de `Object`**, y `to_s` está definido en `Object`. Sin sobrescribirlo, `Song.new(...).to_s` devuelve algo como `#<Song:0xe6c>`.

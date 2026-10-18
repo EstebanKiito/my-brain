@@ -8,8 +8,11 @@ prerrequisitos: ["[[01 - Protocolo HTTP|Protocolo HTTP]]"]
 
 CRUD son las **cuatro operaciones básicas sobre datos persistentes**. Casi toda aplicación web, y todo recurso en Rails, se organiza alrededor de ellas.
 
-## Mis apuntes
-- **CRUD** → **C**reate, **R**ead, **U**pdate, **D**elete
+## Las cuatro operaciones
+- **C**reate: crear un registro.
+- **R**ead: leer uno o varios registros.
+- **U**pdate: modificar un registro existente.
+- **D**elete: eliminar un registro.
 
 > [!tip] Complemento — CRUD en HTTP, SQL y Rails
 > | Operación | HTTP | SQL | Acción del controlador Rails | Active Record |

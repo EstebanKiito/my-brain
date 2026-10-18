@@ -1,6 +1,6 @@
 # Patrones de comportamiento — índice
 
-Patrones que reparten responsabilidades entre objetos y definen cómo se comunican. Corresponde a la sección **15. Patrones de Diseño (comportamiento)** de mis apuntes de la prueba práctica.
+Patrones que reparten responsabilidades entre objetos y definen cómo se comunican.
 
 Volver a [[Ingeniería de Software/08-Patrones de Diseño/_Índice|Patrones de Diseño]] · [[Ingeniería de Software/_Índice|mapa del ramo]].
 

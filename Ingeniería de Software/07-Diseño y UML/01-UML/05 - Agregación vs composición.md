@@ -39,7 +39,7 @@ prerrequisitos: ["[[04 - Relaciones entre clases en UML|Relaciones entre clases 
 >   Casa *-- Habitacion : composición
 > ```
 >
-> **Regla práctica para la prueba:** busca dónde está el `.new` de la parte. Si está **dentro** de la clase contenedora → composición. Si la parte llega por **parámetro** → agregación.
+> **Regla práctica:** busca dónde está el `.new` de la parte. Si está **dentro** de la clase contenedora → composición. Si la parte llega por **parámetro** → agregación.
 
 ## Preguntas de repaso
 

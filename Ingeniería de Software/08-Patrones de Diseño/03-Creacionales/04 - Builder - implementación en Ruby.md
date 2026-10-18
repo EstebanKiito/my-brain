@@ -61,6 +61,8 @@ end
 # 4. Crear el Director
 
 class Director
+  attr_reader :builder  # el cliente usa director.builder para obtener el producto
+
   def initialize(builder)
     @builder = builder
   end
@@ -101,16 +103,7 @@ director = Director.new(builder)
 codigo_cliente(director)
 ```
 
-> [!warning] Posible error (registrado en `_meta/DUDAS.md`)
-> `codigo_cliente` usa `director.builder`, pero `Director` no define ese método: lanza `NoMethodError`. Falta agregar `attr_reader :builder` en `Director`. Otra opción es que el cliente use directamente la variable `builder`.
-> ```ruby
-> class Director
->   attr_reader :builder
->   # ...
-> end
-> ```
-
-> [!tip] Complemento — salida esperada (con el arreglo)
+> [!tip] Complemento — salida esperada
 > ```
 > Producto mínimo estándar:
 > Partes del Producto: Parte A

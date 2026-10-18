@@ -1,6 +1,6 @@
 # Patrones estructurales — índice
 
-Patrones que componen clases y objetos en estructuras mayores: envolver para agregar funcionalidad (Decorator), árboles (Composite), traducir interfaces (Adapter) y controlar el acceso (Proxy). Corresponde a la sección **16. Patrones de Diseño (estructurales)** de mis apuntes de la prueba práctica.
+Patrones que componen clases y objetos en estructuras mayores: envolver para agregar funcionalidad (Decorator), árboles (Composite), traducir interfaces (Adapter) y controlar el acceso (Proxy).
 
 Volver a [[Ingeniería de Software/08-Patrones de Diseño/_Índice|Patrones de Diseño]] · [[Ingeniería de Software/_Índice|mapa del ramo]].
 

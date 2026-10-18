@@ -9,19 +9,21 @@ prerrequisitos: ["[[09 - Sobrescritura de métodos (override)|Sobrescritura de m
 Una clase abstracta es una **clase incompleta**: deja uno o más métodos sin implementar para que las hijas los definan. En Ruby se simula con `raise NotImplementedError`.
 
 ## Clases abstractas
-- Es una **clase incompleta**, que se busca **implementar en la hija**.
+- Es una **clase incompleta**: los métodos que faltan se **implementan en las hijas**.
+- La clase abstracta no está pensada para instanciarse; si se llama a uno de sus métodos sin implementar, falla.
 
 ```ruby
 class Figure
-	def print
-		raise NotImplementedError
-	end
+  def print
+    raise NotImplementedError
+  end
+end
 
 class Square < Figure
 end
 
 f = Figure.new
-f.print # -> Error (No se usa la clase abstracta!)
+f.print  # NotImplementedError: la clase abstracta no se usa directamente
 ```
 
 > [!tip] Complemento (slides "Object Oriented Programming")

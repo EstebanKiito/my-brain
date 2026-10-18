@@ -1,6 +1,6 @@
-# Ejercicios de prueba — índice
+# Ejercicios resueltos — índice
 
-Problemas tipo interrogación sobre patrones de diseño, con enunciado y solución (vienen de capturas de mis apuntes).
+Problemas de diseño con patrones, cada uno con su enunciado y su solución.
 
 Volver a [[Ingeniería de Software/08-Patrones de Diseño/_Índice|Patrones de Diseño]].
 

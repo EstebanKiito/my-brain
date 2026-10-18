@@ -8,24 +8,19 @@ prerrequisitos: ["[[01 - Introducción a Ruby|Introducción a Ruby]]"]
 
 Ruby tiene convenciones fuertes de nombres y formato: `snake_case`, `PascalCase`, indentación de 2 espacios y métodos terminados en `?` o `!`.
 
-## Mis apuntes
-- **Convenciones** → `snake_case` → `PascalCase`
-- `lista = [1,2]` → `is_even?` → true/false
-- `lista.reverse` → `!` cambia definitivamente
-- **Indentación de 2 espacios**
+## Lo esencial
+- **Nombres:** `snake_case` para variables, métodos y archivos; `PascalCase` para clases y módulos.
+- **Métodos con `?`:** devuelven `true` o `false`. Por ejemplo, `even?` es un método de los enteros: `2.even? # => true`. Sobre una lista se combina con otro método: `lista.all?(&:even?)`.
+- **Métodos con `!`:** marcan la versión "peligrosa", la que **modifica el objeto**. `lista.reverse` devuelve una lista nueva y deja la original igual; `lista.reverse!` la cambia definitivamente.
+- **Indentación de 2 espacios.**
 
-> [!warning] Posible error / precisiones (registrado en `_meta/DUDAS.md`)
-> - **`snake_case` y `PascalCase` se usan para cosas distintas:** `snake_case` para variables, métodos y archivos; `PascalCase` para clases y módulos (ver la tabla de abajo).
-> - **`is_even?`:** en Ruby el método se llama `even?` y es de los **enteros**, no de las listas: `2.even? # => true`. Sobre una lista habría que hacer, por ejemplo, `lista.all?(&:even?)` o `lista.select(&:even?)`. La idea correcta del apunte es que **los métodos que terminan en `?` devuelven `true` o `false`**.
-> - **`reverse` vs `reverse!`:** `lista.reverse` **no** modifica la lista; devuelve una nueva. La versión con `!`, `lista.reverse!`, es la que **cambia definitivamente** la lista. Por convención, el `!` marca la versión "peligrosa", la que modifica el objeto.
->
-> ```ruby
-> lista = [1, 2]
-> lista.reverse    # => [2, 1]
-> lista            # => [1, 2]   (no cambió)
-> lista.reverse!   # => [2, 1]
-> lista            # => [2, 1]   (cambió)
-> ```
+```ruby
+lista = [1, 2]
+lista.reverse    # => [2, 1]
+lista            # => [1, 2]   (no cambió)
+lista.reverse!   # => [2, 1]
+lista            # => [2, 1]   (cambió)
+```
 
 > [!tip] Complemento — tabla de convenciones (libro del curso, cap. 10.9)
 > | Elemento | Convención | Ejemplo |

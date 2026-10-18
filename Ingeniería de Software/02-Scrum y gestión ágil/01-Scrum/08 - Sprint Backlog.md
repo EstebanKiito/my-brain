@@ -8,9 +8,8 @@ prerrequisitos: ["[[07 - Sprint Planning|Sprint Planning]]", "[[05 - Product Bac
 
 El Sprint Backlog es el **plan del sprint**: los ítems del Product Backlog que el equipo se comprometió a hacer en el sprint, divididos en tareas y organizados en un tablero.
 
-## En mis apuntes
-Se arma en el [[07 - Sprint Planning|Sprint Planning]] como uno de los objetivos del sprint:
-- **Sprint Backlog:** To do / Doing / Done
+## Tablero del sprint
+Se arma en el [[07 - Sprint Planning|Sprint Planning]] y se organiza en tres columnas: **To do** (por hacer), **Doing** (en curso) y **Done** (terminado). Cada tarea avanza de izquierda a derecha durante el sprint.
 
 ```mermaid
 flowchart LR

@@ -9,20 +9,21 @@ prerrequisitos: ["[[01 - Qué es un patrón de diseño|Qué es un patrón de dis
 Composite permite **componer objetos en estructuras de árbol** y tratar igual a un objeto individual (hoja) y a un grupo de objetos (compuesto).
 
 ## Definición
-- Patrón de diseño estructural que te permite **componer objetos en estructuras de árbol**.
-- Trabaja con esas estructuras **como si fueran objetos individuales**.
+- Es un patrón estructural que permite **componer objetos en estructuras de árbol**.
+- Permite trabajar con esas estructuras **como si fueran objetos individuales**: el cliente no distingue una hoja de un grupo.
 
 ![Composite - línea de mando](../adjuntos/Composite%20-%20línea%20de%20mando.png)
 
-- Este patrón **solo tiene sentido si tenemos una estructura de árbol**.
-- Por ejemplo: un paquete tiene cajas y objetos, y una caja puede tener otra caja hasta llegar a un producto.
+- El patrón **solo tiene sentido si el modelo es un árbol**.
+- Por ejemplo, un pedido contiene productos y cajas, y una caja puede contener otras cajas, hasta llegar a los productos.
 
 ![Composite - pedido complejo](../adjuntos/Composite%20-%20pedido%20complejo.png)
 
 ## Forma de actuar: recursiva
-- Para el **producto**, devuelve el precio.
-- Para una **caja**, recorre cada artículo dentro y devuelve un total por caja.
-- Si uno de estos artículos es una caja, esa caja también repasa su contenido, y así sucesivamente.
+Para calcular el precio total del pedido, cada elemento responde al mismo mensaje:
+- un **producto** devuelve su precio;
+- una **caja** recorre lo que contiene, le pide el precio a cada elemento y devuelve la suma;
+- si uno de esos elementos es otra caja, esa caja hace lo mismo con su contenido, y así recursivamente.
 
 ![Composite - sistema de archivos](../adjuntos/Composite%20-%20sistema%20de%20archivos.png)
 

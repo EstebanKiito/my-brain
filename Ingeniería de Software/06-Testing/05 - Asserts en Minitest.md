@@ -11,15 +11,15 @@ Los *asserts* son las verificaciones de un test: si la condición no se cumple, 
 ## Tipos de asserts
 | Assert | Verifica |
 |---|---|
-| `assert( test, [msg] )` | Ensures that test is true. |
-| `assert_not( test, [msg] )` | Ensures that test is false. |
-| `assert_equal( expected, actual, [msg] )` | Ensures that expected == actual is true. |
-| `assert_not_equal( expected, actual, [msg] )` | Ensures that expected != actual is true. |
-| `assert_same( expected, actual, [msg] )` | Ensures that expected.equal?(actual) is true. |
-| `assert_not_same( expected, actual, [msg] )` | Ensures that expected.equal?(actual) is false. |
-| `assert_nil( obj, [msg] )` | Ensures that obj.nil? is true. |
-| `assert_not_nil( obj, [msg] )` | Ensures that obj.nil? is false. |
-| `assert_empty( obj, [msg] )` | Ensures that obj is empty?. |
+| `assert( test, [msg] )` | que `test` sea verdadero |
+| `assert_not( test, [msg] )` | que `test` sea falso |
+| `assert_equal( expected, actual, [msg] )` | que `expected == actual` (mismo valor) |
+| `assert_not_equal( expected, actual, [msg] )` | que `expected != actual` |
+| `assert_same( expected, actual, [msg] )` | que `expected.equal?(actual)`: que sean **el mismo objeto** |
+| `assert_not_same( expected, actual, [msg] )` | que no sean el mismo objeto |
+| `assert_nil( obj, [msg] )` | que `obj` sea `nil` |
+| `assert_not_nil( obj, [msg] )` | que `obj` no sea `nil` |
+| `assert_empty( obj, [msg] )` | que `obj` esté vacío (`obj.empty?`) |
 
 > [!tip] Complemento — asserts específicos de Rails (slides "Testing")
 > | Assert | Verifica |

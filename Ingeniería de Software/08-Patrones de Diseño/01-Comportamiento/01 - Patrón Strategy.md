@@ -9,35 +9,30 @@ prerrequisitos: ["[[01 - Qué es un patrón de diseño|Qué es un patrón de dis
 Strategy es un patrón de comportamiento que **encapsula cada algoritmo en su propia clase** para poder intercambiarlos. El objeto que los usa (el contexto) no sabe cuál está usando.
 
 ## Definición
-- **Contexto + estrategias.**
-- Patrón de diseño de comportamiento que:
-  - permite definir una **familia de ALGORITMOS**,
-  - colocar cada uno de ellos en una **CLASE SEPARADA**,
-  - y hacer sus objetos **intercambiables**.
+Es un patrón de comportamiento que:
+- define una **familia de algoritmos**,
+- coloca cada uno en una **clase separada** (una **estrategia**),
+- y hace que sus objetos sean **intercambiables** dentro de un **contexto**.
 
 ## Problemas
-- En una app para viajeros con un mapa:
-  - V1: en el mapa se automatizan las rutas sobre la carretera
-  - V2: rutas a pie
-  - V3: rutas en tren
-  - V4: rutas en …
+Una app de viajes con un mapa va sumando formas de calcular rutas en cada versión:
+- V1: rutas en auto por carretera;
+- V2: rutas a pie;
+- V3: rutas en tren;
+- V4: …
 
-La clase **NAVEGADOR** →
-- tiene mucha lógica de fondo,
-- hacer cambios se puede volver insostenible.
+Si todo vive en la clase **`Navegador`**, esta acumula mucha lógica y cada cambio se vuelve insostenible: agregar un tipo de ruta obliga a modificar la misma clase, con riesgo de romper las demás.
 
 ## Solución
-- Tomar la clase y separarla en distintas.
-- Extraer todos los algoritmos y colocarlos en **CLASES SEPARADAS**.
-- Cada clase será una **Estrategia**.
-- La clase original será el **Contexto**.
-- El cliente pasa la estrategia deseada al contexto.
-- El contexto llama a un **MÉTODO COMÚN** en las estrategias.
+1. Se extrae cada algoritmo de la clase original y se coloca en una **clase separada**: cada una es una **estrategia**.
+2. La clase original pasa a ser el **contexto**, que guarda una referencia a una estrategia.
+3. El cliente le entrega al contexto la estrategia que quiere usar.
+4. El contexto llama a un **método común** que todas las estrategias implementan, sin saber cuál de ellas tiene.
 
 ## Ventajas
-- Intercambiar algoritmos **en tiempo de ejecución**.
-- **Principio abierto/cerrado** → añadir nuevas estrategias sin modificar.
-- **Sustituye herencia por composición.**
+- Los algoritmos se pueden **intercambiar en tiempo de ejecución**.
+- Cumple el **principio abierto/cerrado**: se agregan estrategias nuevas sin modificar el contexto.
+- **Sustituye la herencia por composición**: el contexto *tiene* una estrategia en vez de *ser* una variante.
 
 ## Diagrama
 ![Strategy - rutas del navegador](../adjuntos/Strategy%20-%20rutas%20del%20navegador.png)
@@ -62,7 +57,7 @@ classDiagram
   Strategy <|.. ConcreteStrategyB
 ```
 
-La implementación completa está en [[02 - Strategy - implementación en Ruby|Strategy: implementación en Ruby]] y un ejercicio de prueba en [[01 - Ejercicio - Strategy para procesador de pagos|Ejercicio: procesador de pagos]].
+La implementación completa está en [[02 - Strategy - implementación en Ruby|Strategy: implementación en Ruby]] y un ejercicio resuelto en [[01 - Ejercicio - Strategy para procesador de pagos|Ejercicio: procesador de pagos]].
 
 > [!tip] Complemento (slides "Patrones de Diseño: Comportamiento")
 > - Cada algoritmo está en una clase separada, pero todas tienen **uno o más métodos públicos con la misma firma** (nombre y número de argumentos). La clase que usa las estrategias interactúa con ellas mediante esos métodos, sin saber cuál está usando.

@@ -9,28 +9,28 @@ prerrequisitos: ["[[01 - Qué es un patrón de diseño|Qué es un patrón de dis
 Template Method define en una superclase el **esqueleto de un algoritmo** (el método plantilla) y deja que las subclases **sobrescriban algunos pasos** sin cambiar la estructura.
 
 ## Definición
-- Patrón que define el **esqueleto del algoritmo en una superclase**.
-- Permite que las **subclases sobrescriban pasos** del algoritmo (**sin cambiar la estructura**).
+- Define el **esqueleto de un algoritmo en una superclase**.
+- Permite que las **subclases sobrescriban algunos pasos** del algoritmo **sin cambiar su estructura**.
 
 ## Problemas
-- En una app para abrir documentos:
-  - V1: solo archivos DOC
-  - V2: archivos CSV
-  - V3: archivos PDF
-  - etc.
-- **¡TENEMOS MUCHO CÓDIGO DUPLICADO!**
+Una app de minería de datos abre documentos de distintos formatos, y cada versión agrega uno:
+- V1: solo archivos DOC;
+- V2: archivos CSV;
+- V3: archivos PDF; etc.
+
+Cada formato tiene su propia clase, pero los pasos para procesar el archivo son casi iguales en todas: el resultado es **mucho código duplicado**.
 
 ![Template Method - problema de los data miners](../adjuntos/Template%20Method%20-%20problema%20de%20los%20data%20miners.png)
 
 ## Solución
-- Dividir un algoritmo en varios **pasos** → cada paso es un **método**.
-- La serie de llamadas a los métodos va en un **método plantilla**.
-- Los pasos pueden ser **abstractos** o **tener implementación**.
+- El algoritmo se divide en **pasos**, y cada paso es un **método**.
+- Las llamadas a esos métodos, en orden, van en un **método plantilla**.
+- Los pasos pueden ser **abstractos** (cada subclase los implementa) o **tener una implementación por defecto**.
 
-Cliente →
-- crea su subclase,
-- implementa los pasos abstractos y sobrescribe los opcionales,
-- **"NUNCA se sobrescribe el método plantilla"**.
+Para usarlo, el cliente:
+- crea su subclase;
+- implementa los pasos abstractos y, si quiere, sobrescribe los opcionales;
+- **nunca sobrescribe el método plantilla**, porque es lo que fija la estructura del algoritmo.
 
 ![Template Method - DataMiner](../adjuntos/Template%20Method%20-%20DataMiner.png)
 
@@ -43,10 +43,10 @@ Cliente →
 >   1. La **Clase Abstracta** declara los pasos y el método plantilla, que los invoca en un orden específico (por ejemplo, `step1; if step2 then step3 else step4`). Los pasos pueden ser abstractos o tener una implementación por defecto.
 >   2. Las **Clases Concretas** pueden sobrescribir todos los pasos, **pero no el método plantilla**.
 
-## Ejemplo diagrama (ya visto en clase)
+## Ejemplo: bebidas con cafeína
 ![Template Method - ejemplo bebidas](../adjuntos/Template%20Method%20-%20ejemplo%20bebidas.png)
 
-`CafeineBeverage` (`+prepareRecipe()`, `+boilWater()`, `+brew()`, `+pourInCups()`, `+addCondiments()`) con las hijas `Coffe` y `Tea`, que sobrescriben `brew()` y `addCondiments()`. Es el ejemplo de [[09 - Ejemplo de diseño - Bebidas con cafeína|bebidas con cafeína]] de la clase de Diseño.
+`CafeineBeverage` (`+prepareRecipe()`, `+boilWater()`, `+brew()`, `+pourInCups()`, `+addCondiments()`) con las hijas `Coffee` y `Tea`, que sobrescriben `brew()` y `addCondiments()`. Es el ejemplo de [[09 - Ejemplo de diseño - Bebidas con cafeína|bebidas con cafeína]] de Principios de diseño.
 
 ```mermaid
 classDiagram

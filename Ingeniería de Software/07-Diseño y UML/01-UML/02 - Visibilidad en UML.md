@@ -13,9 +13,9 @@ En UML, cada atributo y operación lleva un símbolo que indica **desde dónde s
 > [!note]- Transcripción de la imagen
 > En `MyClassName`: `+attribute : int` es un **atributo público**, `-attribute2 : float` es un **atributo privado** y `#attribute3 : Circle` es un **atributo protegido**.
 
-- **Público (`+`):** puede ser accedido desde **cualquier clase** del sistema.
-- **Protegido (`#`):** solo puede ser accedido desde la **misma clase y clases hijas**.
-- **Privado (`-`):** solo puede ser accedido desde la **misma clase**.
+- **Público (`+`):** se puede acceder desde **cualquier clase** del sistema.
+- **Protegido (`#`):** solo se puede acceder desde la **misma clase y sus clases hijas**.
+- **Privado (`-`):** solo se puede acceder desde la **misma clase**.
 
 > [!tip] Complemento (libro del curso, cap. 8.9)
 > | Símbolo | Visibilidad | Accesible desde |

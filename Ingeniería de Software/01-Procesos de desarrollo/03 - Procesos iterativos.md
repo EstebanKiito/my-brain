@@ -9,16 +9,16 @@ prerrequisitos: ["[[01 - Proceso de desarrollo de software|Proceso de desarrollo
 En un proceso iterativo el software se desarrolla en **ciclos repetidos (iteraciones)** y cada ciclo refina el producto según el feedback del usuario, hasta acercarse gradualmente al objetivo.
 
 ## Características
-- Con cada **entrega**, esperamos el **feedback del usuario** para decidir los siguientes pasos a seguir.
-- Aproximación **gradual** al objetivo.
-- **Desarrollo modificable**.
+- Después de cada **entrega** se espera el **feedback del usuario**, y con él se deciden los pasos siguientes.
+- La aproximación al objetivo es **gradual**: cada iteración refina lo que ya existe.
+- El **desarrollo es modificable**: lo construido puede cambiar a medida que se aprende qué necesita el usuario.
 
 ![Procesos iterativos - analogía de la Mona Lisa](adjuntos/Procesos%20iterativos%20-%20analogía%20de%20la%20Mona%20Lisa.png)
 
 > [!note]- Qué muestra la imagen
 > La persona tiene una idea vaga ("woman in pastoral setting"). Primero hace un boceto completo (1), luego lo colorea a grandes rasgos (2) y finalmente lo refina hasta la obra terminada (3). En **cada iteración está el cuadro completo**, cada vez con más detalle.
 
-## Modelos iterativos que vimos
+## Modelos iterativos del curso
 1. [[04 - Modelo en espiral|Modelo en espiral]]
 2. [[05 - Modelo de prototipos|Modelo de prototipos]]
 3. [[06 - Proceso unificado (RUP)|Proceso unificado (RUP)]]
@@ -44,7 +44,7 @@ En un proceso iterativo el software se desarrolla en **ciclos repetidos (iteraci
 > [!question]- Respuesta
 > El desarrollo avanza en ciclos. Después de cada entrega se usa el feedback del usuario para decidir los siguientes pasos y así se llega gradualmente al objetivo, con un desarrollo modificable.
 
-2. ¿Qué tres modelos iterativos vimos en el curso?
+2. ¿Qué tres modelos iterativos se ven en el curso?
 > [!question]- Respuesta
 > El modelo en espiral, el modelo de prototipos y el Proceso Unificado (RUP).
 

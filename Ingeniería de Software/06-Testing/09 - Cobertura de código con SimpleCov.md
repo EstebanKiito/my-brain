@@ -9,9 +9,12 @@ prerrequisitos: ["[[04 - Unit tests en Rails|Unit tests en Rails]]", "[[07 - Int
 La **cobertura** mide qué porcentaje del código ejecutan los tests. **SimpleCov** es la gema que la calcula en Ruby/Rails y muestra qué líneas quedaron sin probar.
 
 ## SimpleCov
-- Es una **gema** que nos permite ver **cuántas líneas hemos testeado, y cuántas no**.
-- Para instalarlo hay que agregar la gema al archivo **Gemfile** y ejecutar **`bundle install`** para que se instale:
-- `gem 'simplecov', require: false, group: :test`
+- Es una **gema** que muestra **cuántas líneas ejecutan los tests y cuáles no**.
+- Para instalarla, se agrega al **Gemfile** y se ejecuta **`bundle install`**:
+
+```ruby
+gem 'simplecov', require: false, group: :test
+```
 
 ![SimpleCov - líneas no cubiertas](adjuntos/SimpleCov%20-%20líneas%20no%20cubiertas.png)
 
@@ -33,8 +36,7 @@ Documentación: https://guides.rubyonrails.org/
 > 3. Correr `rails test`. SimpleCov crea una carpeta **`coverage/`** con HTML: se abre `coverage/index.html` en el navegador.
 >
 > - Para cubrir la línea roja del ejemplo, falta un test que intente crear un libro **inválido** y verifique que no se creó, por ejemplo con `assert_no_difference("Book.count")`.
-> - **Ojo:** 100% de cobertura no significa que no haya bugs. Solo dice que cada línea se ejecutó al menos una vez, no que se verificó bien su resultado.
-> - Los apuntes escriben la gema con comillas tipográficas (`‘simplecov’`) y `group :test`. En el `Gemfile` van comillas rectas y `group: :test`.
+> - **Importante:** 100% de cobertura no significa que no haya bugs. Solo dice que cada línea se ejecutó al menos una vez, no que se verificó bien su resultado.
 
 ## Preguntas de repaso
 

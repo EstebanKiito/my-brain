@@ -8,9 +8,8 @@ prerrequisitos: ["[[03 - Patrón MVC en Rails|Patrón MVC en Rails]]"]
 
 Un **modelo** en Rails es una clase que hereda de `ApplicationRecord` y representa una tabla de la base de datos. **Active Record** es el ORM que traduce objetos Ruby a filas SQL y al revés.
 
-## Mis apuntes
-- **Models** → permiten interactuar con la **BASE DE DATOS**.
-- El modelo `Persona` generado en `app/models/persona.rb`:
+## Ejemplo: el modelo Persona
+Los modelos son la pieza de MVC que interactúa con la **base de datos**. El modelo `Persona` vive en `app/models/persona.rb`:
 
 ```ruby
 class Persona < ApplicationRecord

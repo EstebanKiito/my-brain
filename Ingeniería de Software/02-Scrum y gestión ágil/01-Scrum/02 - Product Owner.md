@@ -9,15 +9,11 @@ prerrequisitos: ["[[01 - Scrum|Scrum]]"]
 El Product Owner es el rol de Scrum que **representa al cliente y al negocio**: decide **qué** se construye y en qué orden, priorizando el [[05 - Product Backlog|Product Backlog]].
 
 ## Responsabilidades
-- Asume **responsabilidad total del proyecto**: éxito o fracaso.
-- Toma **decisiones clave**.
+- Asume la **responsabilidad total del producto**: responde por su éxito o fracaso. No es un jefe de proyecto tradicional; por ejemplo, no decide cuánto trabajo entra en cada sprint.
+- Toma las **decisiones clave** sobre qué se construye.
 - Trabaja en **estrecha colaboración con los stakeholders**.
 - **Identifica y prioriza** las características esenciales que se incorporarán.
-- Garantiza que el equipo esté construyendo **el producto adecuado**.
-- Y que el **cliente esté satisfecho**.
-
-> [!warning] Posible error / precisión
-> El libro del curso dice "responsabilidad total **del producto**", no "del proyecto". Es un matiz: el PO responde por el valor del producto, pero no gestiona el proyecto como un jefe tradicional; por ejemplo, no decide cuánto trabajo entra en cada sprint. Registrado en `_meta/DUDAS.md`.
+- Garantiza que el equipo construya **el producto adecuado** y que el **cliente quede satisfecho**.
 
 > [!tip] Complemento (slides "SCRUM - una introducción rápida")
 > Según las slides, el Product Owner:

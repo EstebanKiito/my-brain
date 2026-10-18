@@ -1,6 +1,6 @@
 # Principios de diseño — índice
 
-Qué hace bueno a un diseño orientado a objetos (bajo acoplamiento, alta cohesión, encapsulamiento, sin código duplicado, abierto/cerrado) y tres ejemplos de rediseño de la clase. Corresponde a la sección **14. Diseño, acoplamiento y cohesión** de mis apuntes de la prueba práctica.
+Qué hace bueno a un diseño orientado a objetos (bajo acoplamiento, alta cohesión, encapsulamiento, sin código duplicado, abierto/cerrado) y tres ejemplos de rediseño de la clase.
 
 Volver a [[Ingeniería de Software/07-Diseño y UML/_Índice|Diseño y UML]] · [[Ingeniería de Software/_Índice|mapa del ramo]].
 

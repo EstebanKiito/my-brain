@@ -8,10 +8,10 @@ prerrequisitos: ["[[01 - Buen diseño de software|Buen diseño de software]]"]
 
 Los *code clones* son **fragmentos de código repetidos** en varios lugares. Hacen el programa más difícil de mantener, porque cada cambio hay que repetirlo en todas las copias.
 
-## Mis apuntes
-- Heurística: **evitar código duplicado** (code clones).
-- Ejemplo 2: `BookStore` repite código en los métodos `filterByTitle` y `filterByAuthor`; si se quiere añadir otro filtro, habría **más código duplicado** → ver [[08 - Ejemplo de diseño - Filtros de libros|Filtros de libros]].
-- Ejemplo 3: **código duplicado entre clases** (`Tea` y `Coffee`); otra clase tendría mucho más código duplicado → ver [[09 - Ejemplo de diseño - Bebidas con cafeína|Bebidas con cafeína]].
+## Dos formas de duplicación
+La heurística es **evitar el código duplicado**. Hay dos casos típicos:
+- **Dentro de una clase:** `BookStore` repite código en `filterByTitle` y `filterByAuthor`, y cada filtro nuevo agregaría otra copia → [[08 - Ejemplo de diseño - Filtros de libros|Filtros de libros]].
+- **Entre clases:** `Tea` y `Coffee` repiten pasos de la receta, y cada bebida nueva repetiría todavía más → [[09 - Ejemplo de diseño - Bebidas con cafeína|Bebidas con cafeína]].
 
 > [!tip] Complemento (slides "Diseño Orientado al Objeto")
 > - **Hipótesis:** un programa es más difícil de mantener si tiene varios clones.

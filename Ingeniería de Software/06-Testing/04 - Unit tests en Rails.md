@@ -31,28 +31,28 @@ Un unit test de Rails verifica **un modelo de forma aislada**. Tiene tres partes
 > ```
 
 ```ruby
+# test/models/book_test.rb
 class BookTest < ActiveSupport::TestCase
-	test "No deberia guardarse sin titulo" do
-		# Donde se crean objetos y datos necesarios
-		@book = Book.new(title:"", author:"Juan P.", year:2023)
-		# donde se realiza la accion a evaluar
-		result = @book.save
-		# verificacion, donde se evalua si el resultado esperado
-		# assert o assert_not
-		assert_not result, "saved the book without title"
-	end
+  test "no debería guardarse sin título" do
+    # 1. Preparar: se crean los objetos y datos necesarios
+    @book = Book.new(title: "", author: "Juan P.", year: 2023)
+    # 2. Ejecutar: la acción que se evalúa
+    result = @book.save
+    # 3. Verificar: se compara con el resultado esperado (assert o assert_not)
+    assert_not result, "saved the book without title"
+  end
 end
+```
 
-# EJECUCIÓN
+Se ejecuta con:
+
+```bash
 rails test test/models/book_test.rb
 ```
 
 ## Consideraciones
-- Rails tiene **3 bases de datos**:
-  - una para **pruebas**,
-  - otra de **producción**,
-  - y otra para **desarrollo** (esto se puede ver en `config/database.yml`).
-- Rails inicializará una **base de datos dedicada** para ejecutar cada prueba; de esta forma cada test se ejecuta de forma **separada y aislada**.
+- Rails tiene **3 bases de datos**, configuradas en `config/database.yml`: una de **desarrollo**, una de **pruebas** y una de **producción**.
+- Los tests corren sobre la **base de datos de pruebas**, que Rails prepara para que cada test se ejecute de forma **separada y aislada**, sin que los datos de un test afecten a otro.
 
 > [!tip] Complemento — estructura y ejecución (slides "Testing")
 > Las tres partes del test (conocidas como *Arrange–Act–Assert*):

@@ -5,7 +5,7 @@ La estructura de alto nivel de los sistemas: cliente-servidor, capas, SOA, micro
 Volver al [[Ingeniería de Software/_Índice|mapa del ramo]].
 
 > [!note] Origen
-> Mis apuntes solo nombraban "Arquitectura" en la lista de contenidos de la prueba práctica. Todas estas notas son complemento de las slides "Arquitecturas Comunes".
+> Todas estas notas son complemento de las slides "Arquitecturas Comunes".
 
 ## Orden de estudio
 1. [[01 - Arquitectura de software|Arquitectura de software]]: qué es, atributos de calidad, historia (RPC → GraphQL).

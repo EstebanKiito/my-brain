@@ -9,10 +9,10 @@ prerrequisitos: ["[[07 - Herencia en Ruby|Herencia en Ruby]]", "[[09 - Sobrescri
 El *method lookup* es el **algoritmo que decide qué método se ejecuta** cuando un objeto recibe un mensaje: busca en su clase y luego sube por la jerarquía.
 
 ## Lookup
-**Algoritmo básico de búsqueda:**
-1. Buscar el método M en la lista de métodos de instancia dentro de la **clase del objeto**.
-2. Si no lo encuentra, buscar el método M en la **clase padre, recursivamente**.
-3. Si luego de buscar en toda la jerarquía el método no se encuentra, se invoca a **`method_missing`**.
+**Algoritmo básico de búsqueda** de un método M sobre un objeto:
+1. Buscar M entre los métodos de instancia de la **clase del objeto**.
+2. Si no está, buscarlo en la **clase padre**, y así recursivamente hacia arriba.
+3. Si después de recorrer toda la jerarquía no aparece, se invoca **`method_missing`**, que por defecto lanza `NoMethodError`.
 
 ```mermaid
 flowchart TD

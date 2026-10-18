@@ -8,15 +8,15 @@ prerrequisitos: ["[[01 - Evaluación y calendario de IIC2143|Evaluación y calen
 
 Mi lista de lo que había que dominar para la prueba práctica, con cada punto enlazado a la nota donde se estudia.
 
-## Checklist (mis apuntes)
-- [ ] **UML** → saber definir bien los esquemas (atributos privados y públicos, métodos, flechas de relaciones, etc.) → [[01 - Diagrama de clases UML|Diagrama de clases]], [[02 - Visibilidad en UML|Visibilidad]], [[04 - Relaciones entre clases en UML|Relaciones]]
-- [ ] **DIAGRAMA SECUENCIA** → [[06 - Diagrama de secuencia UML|Diagrama de secuencia]], [[07 - Fragmentos alt y loop en diagramas de secuencia|Fragmentos alt y loop]]
-- [ ] **Planificación Tiempo** → saber hacer al menos un ejercicio yo solo → [[03 - Velocidad de desarrollo|Velocidad]], [[05 - Planificación de un release|Release plan]], [[10 - Estimación de esfuerzo|Estimación de esfuerzo]]
-- [ ] **SCRUM** → saber lo básico (no te lo aprendas de memoria) → [[01 - Scrum|Scrum]]
-- [ ] **LOCKUP Y POLIMORFISMO** (method lookup) → [[12 - Method lookup en Ruby|Method lookup]], [[13 - self vs super|self vs super]], [[11 - Polimorfismo y duck typing|Polimorfismo]]
-- [ ] **PATRONES COMPORTAMIENTO** → [[01 - Patrón Strategy|Strategy]], [[03 - Patrón Template Method|Template Method]], [[05 - Patrón Observer|Observer]]
-- [ ] **PATRONES ESTRUCTURALES** → [[01 - Patrón Decorator|Decorator]], [[02 - Patrón Composite|Composite]], [[03 - Patrón Adapter|Adapter]], [[05 - Patrón Proxy|Proxy]]
-- [ ] **PATRONES CREACIONALES** → [[01 - Patrón Abstract Factory|Abstract Factory]], [[03 - Patrón Builder|Builder]], [[05 - Patrón Factory Method|Factory Method]], [[07 - Patrón Singleton|Singleton]]
+## Checklist
+- [ ] **UML:** dibujar bien los diagramas de clases (atributos privados y públicos, métodos, flechas de relaciones, etc.) → [[01 - Diagrama de clases UML|Diagrama de clases]], [[02 - Visibilidad en UML|Visibilidad]], [[04 - Relaciones entre clases en UML|Relaciones]]
+- [ ] **Diagrama de secuencia** → [[06 - Diagrama de secuencia UML|Diagrama de secuencia]], [[07 - Fragmentos alt y loop en diagramas de secuencia|Fragmentos alt y loop]]
+- [ ] **Planificación del tiempo:** poder resolver al menos un ejercicio sin ayuda → [[03 - Velocidad de desarrollo|Velocidad]], [[05 - Planificación de un release|Release plan]], [[10 - Estimación de esfuerzo|Estimación de esfuerzo]]
+- [ ] **Scrum:** entender lo básico; no hace falta memorizarlo → [[01 - Scrum|Scrum]]
+- [ ] **Method lookup y polimorfismo** → [[12 - Method lookup en Ruby|Method lookup]], [[13 - self vs super|self vs super]], [[11 - Polimorfismo y duck typing|Polimorfismo]]
+- [ ] **Patrones de comportamiento** → [[01 - Patrón Strategy|Strategy]], [[03 - Patrón Template Method|Template Method]], [[05 - Patrón Observer|Observer]]
+- [ ] **Patrones estructurales** → [[01 - Patrón Decorator|Decorator]], [[02 - Patrón Composite|Composite]], [[03 - Patrón Adapter|Adapter]], [[05 - Patrón Proxy|Proxy]]
+- [ ] **Patrones creacionales** → [[01 - Patrón Abstract Factory|Abstract Factory]], [[03 - Patrón Builder|Builder]], [[05 - Patrón Factory Method|Factory Method]], [[07 - Patrón Singleton|Singleton]]
 - [ ] **Testing** → [[04 - Unit tests en Rails|Unit tests]], [[07 - Integration tests en Rails|Integration tests]], [[05 - Asserts en Minitest|Asserts]]
 
 > [!tip] Complemento — cómo practicar

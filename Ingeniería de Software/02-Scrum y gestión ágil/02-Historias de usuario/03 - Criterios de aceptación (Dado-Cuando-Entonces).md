@@ -12,10 +12,10 @@ Las condiciones de aceptación son los **escenarios que permiten verificar** que
 **Condiciones de aceptación:**
 - **Escenario 1: Recuperación exitosa (happy path)**
   - **Dado** un usuario que navega a la página de inicio,
-  - **Cuando** el usuario selecciona la opción "recuperar contraseña" e ingresa un email válido,
-  - **Entonces** el sistema debe enviar un enlace al email ingresado.
+  - **cuando** selecciona la opción "recuperar contraseña" e ingresa un email válido,
+  - **entonces** el sistema envía un enlace al email ingresado.
   - **Cuando** el usuario entra al sistema a través del enlace,
-  - **Entonces** el sistema le permite al usuario establecer su nueva contraseña.
+  - **entonces** el sistema le permite establecer una nueva contraseña.
 
 ```mermaid
 flowchart TD

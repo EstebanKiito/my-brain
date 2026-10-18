@@ -8,38 +8,40 @@ prerrequisitos: ["[[01 - Clases y objetos en Ruby|Clases y objetos en Ruby]]"]
 
 Los métodos definen el **comportamiento** de una clase. Los **de instancia** se llaman sobre un objeto; los **de clase** (`def self.nombre`) se llaman sobre la clase misma, sin crear una instancia.
 
-## Métodos
-- Nos permiten **definir comportamientos** de nuestras clases.
+## Métodos de instancia
+Los métodos permiten **definir el comportamiento** de una clase. Un método de instancia se llama sobre un objeto:
 
 ```ruby
 class Person
-	def greet
-		"Hola"
-	end
+  def greet
+    "Hola"
+  end
 end
 
 p1 = Person.new
-puts p1.greet # Imprime Hola
+puts p1.greet          # imprime Hola
 
-# Otra forma sin guardar persona en una variable
-puts Person.new.greet # Tambien imprime hola
+# Sin guardar el objeto en una variable:
+puts Person.new.greet  # también imprime Hola
 ```
 
+## Métodos de clase
+Un método definido con `self.` pertenece a la **clase**, así que se llama **sin crear una instancia**. Un método de instancia, en cambio, no se puede llamar sobre la clase:
+
 ```ruby
-# No es necesario instanciar para llamar a un metodo
-
 class Developer
-	def self.backend
-		" I am a backend developer "
-	end
+  def self.backend
+    "I am a backend developer"
+  end
 
-	def frontend
-		" I am a frontend developer "
-	end
+  def frontend
+    "I am a frontend developer"
+  end
 end
 
-puts Developer.backend # Imprimira
-puts Developer.frontend # dara error -> tuvo que definirse con self
+puts Developer.backend   # imprime "I am a backend developer"
+puts Developer.frontend  # NoMethodError: frontend es de instancia (no tiene self.)
+puts Developer.new.frontend  # así sí funciona
 ```
 
 > [!tip] Complemento (slides "Object Oriented Programming")

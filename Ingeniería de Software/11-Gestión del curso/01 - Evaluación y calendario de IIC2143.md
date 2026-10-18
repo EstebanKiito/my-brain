@@ -8,22 +8,22 @@ prerrequisitos: []
 
 Cómo se evaluaba el ramo cuando lo cursé (2024) y las fechas de cada evaluación. Sirve para ubicar qué contenidos entraban en cada control y en la prueba práctica.
 
-## Evaluación (mis apuntes)
-### CÁTEDRA (50% del ramo)
+## Evaluación
+### Cátedra (50% del ramo)
 **Controles (30% de la nota de cátedra):**
 - 25 de marzo
 - 08 de abril
 - 20 de mayo
 - 05 de junio
-- TAREA → API simple en RubyOnRails (Ruby on Rails; ver [[15 - Construir una API JSON en Rails|API JSON en Rails]])
+- Tarea: una API simple en Ruby on Rails (ver [[15 - Construir una API JSON en Rails|API JSON en Rails]]).
 
-**Prueba Práctica (70%)**
-- Prueba Recuperativa (03 de Julio)
+**Prueba práctica (70% de la nota de cátedra)**
+- Prueba recuperativa: 3 de julio.
 
-### PROYECTO (50% del ramo)
-- 4 sprints → Entregas Parciales (40%)
-- Entrega final → 20%
-- Presentación Final → 20%
+### Proyecto (50% del ramo)
+- 4 sprints con entregas parciales: 40%.
+- Entrega final: 20%.
+- Presentación final: 20%.
 
 ```mermaid
 flowchart TD
@@ -36,7 +36,7 @@ flowchart TD
   P --> PF[Presentación final 20%]
 ```
 
-## Calendario 2024 (de mi calendario de Notion)
+## Calendario 2024
 | Fecha | Evaluación |
 |---|---|
 | 25 de marzo | C1 Software |

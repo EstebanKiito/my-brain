@@ -9,13 +9,13 @@ prerrequisitos: ["[[03 - Procesos iterativos|Procesos iterativos]]"]
 El modelo de prototipos es un proceso **iterativo** en el que se construyen versiones que *se parecen* al producto final, para que el usuario lo vea temprano y aclare lo que realmente quiere.
 
 ## Idea
-- *"Construcción de un producto que luce similar al objetivo principal"*.
-- **Idea central:** que el usuario tenga una vista **temprana y cercana** al producto.
-- *"El usuario solo sabrá lo que quería cuando vea el resultado"*.
+- Se construye un producto que **luce similar al objetivo final**, aunque todavía no lo sea.
+- **Idea central:** que el usuario tenga una vista **temprana y cercana** del producto.
+- La premisa es que *el usuario solo sabrá lo que quería cuando vea el resultado*; el prototipo adelanta ese momento.
 
 ## Tipos de prototipo
 1. **Prototipo evolutivo:** el mismo prototipo evoluciona hasta ser el producto final.
-2. **Prototipo desechable:** solo usado para una vista rápida; se desecha y se empieza el producto desde 0.
+2. **Prototipo desechable:** solo sirve para una vista rápida; después se descarta y el producto se construye desde cero.
 
 ![Modelo de prototipos - flujo](adjuntos/Modelo%20de%20prototipos%20-%20flujo.png)
 
@@ -29,14 +29,14 @@ flowchart LR
 ```
 
 ## Ventajas
-- **Reduce imprevistos** → menor tiempo de desarrollo
-- Menor **frustración y ansiedad**
-- **Satisfacción del usuario**
+- **Reduce los imprevistos:** no hay grandes sorpresas al final, lo que acorta el tiempo de desarrollo.
+- Genera menos **frustración y ansiedad**, porque el usuario ve avances desde el principio.
+- Aumenta la **satisfacción del usuario**.
 
 ## Desventajas
-- **Proyecto sin fin**: usuario nunca satisfecho
-- **Expectativas de un "casi listo"** siempre
-- El **producto final no quedó como el prototipo**
+- **Proyecto sin fin:** el usuario nunca queda satisfecho y siempre pide otra vuelta.
+- **Expectativa de "casi listo":** como el prototipo se ve terminado, el usuario cree que falta poco.
+- El **producto final puede no quedar como el prototipo**, y eso decepciona.
 
 > [!tip] Complemento (slides "Procesos de Desarrollo de Software" y libro del curso, cap. 2.3)
 > El prototipo *"luce"* similar al objetivo, pero en realidad está bastante lejos de serlo.

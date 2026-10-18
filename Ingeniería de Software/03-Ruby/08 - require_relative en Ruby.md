@@ -8,16 +8,19 @@ prerrequisitos: ["[[01 - Introducción a Ruby|Introducción a Ruby]]"]
 
 `require_relative` carga otro archivo `.rb` usando una **ruta relativa al archivo que está ejecutando el código**. Sirve para separar las clases en varios archivos.
 
-## Mis apuntes
-**`require_relative`** se utiliza para cargar archivos desde una ruta relativa al archivo que está ejecutando el código.
+## Ejemplo
+Con esta estructura de carpetas, `main.rb` carga `utilidades.rb` indicando la ruta desde su propia carpeta:
 
 ```
 proyecto/
 ├── main.rb
 └── lib/
     └── utilidades.rb
-#ruby
-require_relative 'lib/utilidades'  # Carga el archivo utilidades.rb relativo al archivo actual
+```
+
+```ruby
+# main.rb
+require_relative 'lib/utilidades'  # carga lib/utilidades.rb, relativo a main.rb
 ```
 
 > [!tip] Complemento — `require` vs `require_relative`

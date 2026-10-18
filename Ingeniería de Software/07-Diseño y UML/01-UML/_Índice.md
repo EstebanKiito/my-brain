@@ -1,6 +1,6 @@
 # UML — índice
 
-El lenguaje visual para modelar software: diagramas de clases (estructura) y de secuencia (comportamiento en el tiempo). Corresponde a la sección **11. Diseño UML** de mis apuntes de la prueba práctica.
+El lenguaje visual para modelar software: diagramas de clases (estructura) y de secuencia (comportamiento en el tiempo).
 
 Volver a [[Ingeniería de Software/07-Diseño y UML/_Índice|Diseño y UML]] · [[Ingeniería de Software/_Índice|mapa del ramo]].
 

@@ -9,15 +9,15 @@ prerrequisitos: ["[[01 - Scrum|Scrum]]"]
 El equipo de desarrollo es el grupo **autónomo y multifuncional** que construye el producto: planifica, diseña, implementa y prueba cada incremento.
 
 ## Características
-- Es el **equipo de desarrollo**.
-- Está compuesto por **individuos altamente colaborativos** y con **habilidades diversas**.
-- Son **autónomos**, de **5 a 8 personas**.
-- **Planifican, diseñan, implementan y prueban** características del producto.
+- Está compuesto por **personas muy colaborativas** y con **habilidades diversas** (es multifuncional).
+- Es **autónomo**: organiza su propio trabajo, sin que nadie le diga cómo hacer las tareas.
+- Es pequeño: de **5 a 8 personas**.
+- **Planifica, diseña, implementa y prueba** las características del producto.
 
 > [!tip] Complemento — tamaño del equipo según cada fuente
 > | Fuente | Tamaño |
 > |---|---|
-> | Tus apuntes y el libro del curso | 5 a 8 personas |
+> | Libro del curso | 5 a 8 personas |
 > | Slides "SCRUM - una introducción rápida" | 4 a 8 personas |
 > | Scrum Guide 2020 | Equipo Scrum completo (PO + SM + desarrolladores) de **10 o menos** |
 >
@@ -40,6 +40,6 @@ El equipo de desarrollo es el grupo **autónomo y multifuncional** que construye
 > [!question]- Respuesta
 > Porque reúne todas las habilidades necesarias (programación, pruebas, diseño, etc.) para planificar, diseñar, implementar y probar el producto sin depender de otros equipos.
 
-3. ¿Qué tamaño de equipo indican tus apuntes y por qué se busca que sea pequeño?
+3. ¿Qué tamaño de equipo indica el libro del curso y por qué se busca que sea pequeño?
 > [!question]- Respuesta
 > 5 a 8 personas. Un equipo pequeño se comunica y coordina mejor; con más personas, los canales de comunicación crecen y el equipo pierde agilidad.

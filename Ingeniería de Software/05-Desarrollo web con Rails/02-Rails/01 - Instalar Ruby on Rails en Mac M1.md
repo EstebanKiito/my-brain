@@ -6,7 +6,7 @@ prerrequisitos: ["[[01 - Introducción a Ruby|Introducción a Ruby]]"]
 ---
 # Instalar Ruby on Rails en Mac M1
 
-Estos son los pasos que usé para instalar las herramientas del curso (Ruby 3.1.0 con RVM, Rails 7.0.4 y PostgreSQL) en un Mac con chip M1, y para crear un proyecto nuevo.
+Estos son los pasos para instalar las herramientas del curso (Ruby 3.1.0 con RVM, Rails 7.0.4 y PostgreSQL) en un Mac con chip M1, y para crear un proyecto nuevo.
 
 ## Pasos para instalar los elementos del curso en Mac M1
 ```bash
@@ -15,7 +15,7 @@ gpg --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D695
 curl -sSL https://get.rvm.io | bash -s stable
 ```
 
-Utilizar **Rosetta** en caso de errores.
+Si la instalación falla en el chip M1, conviene ejecutar la terminal con **Rosetta**.
 
 ```bash
 brew install postgresql

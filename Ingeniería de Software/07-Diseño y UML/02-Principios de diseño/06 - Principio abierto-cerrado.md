@@ -8,10 +8,10 @@ prerrequisitos: ["[[05 - Código duplicado (code clones)|Código duplicado (code
 
 El código debe estar **abierto para extensiones y cerrado para modificaciones**: se agregan funcionalidades creando código nuevo (por ejemplo, una clase nueva), sin modificar el código que ya funciona.
 
-## Mis apuntes (ejemplo de filtros de libros)
-- Ya **no tendremos que modificar `BookStore` ni `Book`** en caso de añadir más filtros.
-- Solo se crea otra estrategia (clase nueva que hereda de `FilterStrategy`).
-- Está **"Abierto para Extensiones, Cerrado para Modificaciones"**.
+## En el ejemplo de los filtros de libros
+- En el [[08 - Ejemplo de diseño - Filtros de libros|diseño mejorado]], para agregar un filtro **ya no hay que modificar `BookStore` ni `Book`**.
+- Basta con crear otra estrategia: una clase nueva que hereda de `FilterStrategy`.
+- Por eso el diseño queda **abierto para extensiones y cerrado para modificaciones**.
 
 > [!tip] Complemento (slides "Diseño Orientado al Objeto")
 > - Para agregar un nuevo tipo de filtro, por ejemplo `FilterByYear`, **no se modifica `Book` ni `BookStore`**: solo se crea un archivo nuevo con una clase que hereda de `FilterStrategy`.

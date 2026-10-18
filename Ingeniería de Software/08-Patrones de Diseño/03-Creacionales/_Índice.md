@@ -1,6 +1,6 @@
 # Patrones creacionales — índice
 
-Patrones que controlan **cómo se crean los objetos**: familias de productos (Abstract Factory), construcción paso a paso (Builder), creación delegada a subclases (Factory Method) e instancia única (Singleton). Corresponde a la sección **17. Patrones de Diseño (creacionales)** de mis apuntes de la prueba práctica.
+Patrones que controlan **cómo se crean los objetos**: familias de productos (Abstract Factory), construcción paso a paso (Builder), creación delegada a subclases (Factory Method) e instancia única (Singleton).
 
 Volver a [[Ingeniería de Software/08-Patrones de Diseño/_Índice|Patrones de Diseño]] · [[Ingeniería de Software/_Índice|mapa del ramo]].
 

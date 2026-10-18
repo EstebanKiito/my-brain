@@ -8,35 +8,33 @@ prerrequisitos: ["[[09 - Sobrescritura de métodos (override)|Sobrescritura de m
 
 El polimorfismo es la capacidad de **tratar objetos distintos de la misma forma**, porque todos responden al mismo mensaje. En Ruby se basa en el **duck typing**: no importa la clase, sino que el objeto tenga el método.
 
-## Polimorfismo 🦆
-Capacidad de un objeto de **tomar otras formas**.
+## Polimorfismo
+Es la capacidad de un objeto de **tomar otras formas**: distintos objetos responden al mismo mensaje, cada uno a su manera.
 
-→ **Duck typing** ("Si camina como pato y hace quack, entonces debe ser un pato") 🦆
+En Ruby se apoya en el **duck typing**: *"si camina como pato y hace cuac, entonces es un pato"*. No importa la clase del objeto, sino que tenga el método que se necesita.
 
 ```ruby
 def pintar(figura, x, y)
-	set_cordenadas(x, y)
-	figura.draw
+  set_coordenadas(x, y)
+  figura.draw
+end
 
 class Circle
-	attr_accessor :radius
-	def draw
-		...
-	end
+  attr_accessor :radius
+  def draw
+    # ...
+  end
+end
 
 class Triangulo
-	attr_accessor :base :altura
-	def draw
-		...
-	end
-
-# Basicamente puedo llamar a pintar
-# Le entrego cualquier clase (que tenga el metodo draw)
-# pintar va a hacer draw del objeto entregado
+  attr_accessor :base, :altura
+  def draw
+    # ...
+  end
+end
 ```
 
-> [!warning] Posible error de sintaxis (registrado en `_meta/DUDAS.md`)
-> Faltan los `end` del método y de las clases, y `attr_accessor :base :altura` necesita coma: `attr_accessor :base, :altura`. La idea es correcta.
+A `pintar` se le puede entregar **cualquier objeto que tenga el método `draw`**: un `Circle`, un `Triangulo` o una clase futura. `pintar` no necesita saber cuál es.
 
 > [!example] Ejemplo extra — versión ejecutable
 > ```ruby

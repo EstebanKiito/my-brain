@@ -40,7 +40,7 @@ Un integration test de Rails **envía requests HTTP a la aplicación** (GET, POS
 > - Hacemos un GET request a `/books/id`, donde id es el del libro recién creado.
 > - Se verifica que el HTTP response sea success.
 
-- También se puede **armar la ruta a mano** → `get "/books/#{@book.id}"`
+En vez de usar un *path helper* (`book_url(@book)`), la ruta también se puede **armar a mano**: `get "/books/#{@book.id}"`.
 
 > [!tip] Complemento — crear y borrar (slides "Testing")
 > ```ruby

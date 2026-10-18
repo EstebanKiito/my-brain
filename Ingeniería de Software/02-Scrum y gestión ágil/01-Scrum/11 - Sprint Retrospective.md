@@ -9,8 +9,8 @@ prerrequisitos: ["[[06 - Sprint|Sprint]]", "[[10 - Sprint Review|Sprint Review]]
 La Sprint Retrospective es la **reunión final del sprint** en la que el equipo reflexiona sobre **su forma de trabajar** y acuerda mejoras para el próximo sprint.
 
 ## En qué consiste
-- Se **reflexiona sobre el proceso**: identificar **qué funcionó bien** y las **áreas de mejora**.
-- En la esencia de [[01 - Scrum|Scrum]]: es una **sesión reflexiva** en la que el equipo analiza y discute **cómo funcionó el proceso** durante el sprint anterior y **cómo se pueden realizar mejoras**.
+- El equipo **reflexiona sobre su proceso**: identifica **qué funcionó bien** y cuáles son las **áreas de mejora**.
+- A diferencia de la [[10 - Sprint Review|Sprint Review]], que mira el **producto**, la retrospectiva mira **cómo trabajó el equipo** durante el sprint y qué mejoras aplicará en el siguiente.
 
 > [!tip] Complemento (slides "SCRUM - una introducción rápida" y libro del curso, cap. 3.6)
 > ![Slide - Sprint Retrospective](../adjuntos/Slide%20-%20Sprint%20Retrospective.png)

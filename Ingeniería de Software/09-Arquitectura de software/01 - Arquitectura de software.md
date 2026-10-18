@@ -6,7 +6,7 @@ prerrequisitos: ["[[01 - Buen diseño de software|Buen diseño de software]]", "
 ---
 # Arquitectura de software
 
-*Mi lista de contenidos de la prueba práctica nombraba "Arquitectura" y "Arquitectura Software", pero sin notas; este tema se arma con las slides "Arquitecturas Comunes".*
+Qué es la arquitectura de un sistema y cuáles son las arquitecturas más comunes, según las slides "Arquitecturas Comunes".
 
 > [!tip] Complemento — nota nueva (fuente: slides "Arquitecturas Comunes")
 > **Qué es:** la arquitectura es la **estructura de alto nivel** de un sistema: qué componentes tiene, cómo se comunican y dónde se ejecutan. Son las decisiones **caras de cambiar después**.
@@ -30,7 +30,7 @@ prerrequisitos: ["[[01 - Buen diseño de software|Buen diseño de software]]", "
 >
 > RPC (*Remote Procedure Call*, 1981) → CORBA (1991) → SOAP (1998) → REST (*Representational State Transfer*, 2000) → GraphQL (2011).
 >
-> **Arquitecturas comunes vistas en clase:**
+> **Arquitecturas comunes del curso:**
 > 1. [[02 - Arquitectura cliente-servidor|Cliente-servidor]] (y arquitecturas de 1, 2 y 3 niveles)
 > 2. [[03 - Arquitectura en capas|En capas]]
 > 3. [[05 - Arquitectura orientada a servicios (SOA)|Orientada a servicios (SOA)]]

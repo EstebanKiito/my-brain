@@ -8,10 +8,10 @@ prerrequisitos: []
 
 Ruby es el lenguaje que se usa en el curso (con el framework Rails). Es interpretado y orientado a objetos: **todo es un objeto**, y se puede probar línea a línea en su consola **irb**.
 
-## Lo esencial (mis apuntes)
-- **Método → todo es un objeto**: incluso los números y los strings tienen métodos.
-- **irb** → consola de Ruby.
-- En clase también se vieron: comparaciones, strings y otros (ver [[07 - Strings y comparaciones en Ruby|Strings y comparaciones en Ruby]]).
+## Lo esencial
+- **Todo es un objeto:** incluso los números y los strings tienen métodos (`5.even?`, `"hola".upcase`).
+- **irb** (*Interactive Ruby*) es la consola de Ruby: permite probar código línea a línea.
+- Las comparaciones y los strings están en [[07 - Strings y comparaciones en Ruby|Strings y comparaciones en Ruby]].
 
 > [!tip] Complemento — primeros pasos (slides "Ruby" y libro del curso, cap. 10)
 > ```ruby

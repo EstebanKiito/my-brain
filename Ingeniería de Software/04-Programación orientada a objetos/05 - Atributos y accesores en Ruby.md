@@ -9,69 +9,57 @@ prerrequisitos: ["[[04 - Constructor initialize en Ruby|Constructor initialize e
 Los atributos (variables de instancia) empiezan con `@` y **no se pueden leer ni modificar desde fuera del objeto**. Para eso se definen **accesores** (getters y setters), a mano o con `attr_accessor` y `attr_reader`.
 
 ## Atributos
-- Los atributos en Ruby empiezan con **"@"**.
+Los atributos (variables de instancia) empiezan con **`@`** y cada objeto tiene los suyos:
 
 ```ruby
 class Persona
-	def initialize(name)
-		@name = name
-	end
+  def initialize(name)
+    @name = name
+  end
 
-	def saludo(otra_persona)
-		puts "Hola #{otra_persona}, me llamo #{@name}"
+  def saludo(otra_persona)
+    puts "Hola #{otra_persona}, me llamo #{@name}"
   end
 end
+
 pedro = Persona.new("Pedro")
-pedro.saludo("Juan") # "Hola Juan, me llamo pedro"
+pedro.saludo("Juan")  # "Hola Juan, me llamo Pedro"
 ```
 
 ## Visibilidad de atributos
-- Por default los métodos son **PRIVADOS**, solo pueden ser accedidos desde la misma clase.
-- Para acceder a ellos se necesitan hacer **"ACCESORES"**.
-
-> [!warning] Posible error (registrado en `_meta/DUDAS.md`)
-> Lo que es privado por defecto son los **atributos** (variables de instancia), no los métodos. Los métodos son **públicos** por defecto (ver [[03 - Visibilidad de métodos en Ruby|Visibilidad de métodos]]). La slide dice: *"Por defecto los atributos en ruby son privados…"*.
+- Por defecto, los **atributos son privados**: solo se acceden desde dentro del objeto. (Los métodos, en cambio, son públicos por defecto; ver [[03 - Visibilidad de métodos en Ruby|Visibilidad de métodos]].)
+- Para leerlos o modificarlos desde fuera hay que definir **accesores**: un *getter* para leer y un *setter* (`nombre=`) para escribir.
 
 ```ruby
 class Persona
-	def initialize(name)
-		@name = name
-	end
+  def initialize(name)
+    @name = name
+  end
 
-	# Este metodo permite leer el atributo
-	def name
-		@name
-	end
+  # getter: permite leer el atributo
+  def name
+    @name
+  end
 
-	# Este metodo permite modificar el atributo
-	def name=(name)
-		@name = name
-	end
+  # setter: permite modificar el atributo
+  def name=(name)
+    @name = name
+  end
 end
 
 pedro = Persona.new("Pedro")
-pedro.name= ("Esteban")
-puts pedro.name
+pedro.name = "Esteban"
+puts pedro.name  # Esteban
 ```
+
+Escribirlos a mano es repetitivo, así que Ruby tiene macros que los generan:
 
 ```ruby
 class Person
-	attr_accesor :name, :gender # Crea los metodos name= y gender=
-	attr_reader :age    # No crea el metodo age=
+  attr_accessor :name, :gender  # crea name, name=, gender y gender=
+  attr_reader :age              # crea solo age (no age=)
+end
 ```
-
-> [!warning] Posible error (registrado en `_meta/DUDAS.md`)
-> - Se escribe `attr_accessor` (con dos "s"); `attr_accesor` da `NoMethodError`.
-> - `attr_accessor :name, :gender` crea **cuatro** métodos: los getters `name` y `gender` y los setters `name=` y `gender=`.
-> - `attr_reader :age` crea solo el getter `age`.
-> - Falta el `end` de la clase.
->
-> ```ruby
-> class Person
->   attr_accessor :name, :gender   # name, name=, gender, gender=
->   attr_reader :age               # solo age (no crea age=)
-> end
-> ```
 
 > [!tip] Complemento — los tres macros
 > | Macro | Crea |

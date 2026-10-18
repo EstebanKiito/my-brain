@@ -1,6 +1,6 @@
 # Programación orientada a objetos — índice
 
-POO aplicada en Ruby: clases, métodos, visibilidad, constructor, atributos, herencia, super, sobrescritura, clases abstractas, polimorfismo, method lookup y self vs super. Corresponde a la sección "Polimorfismo y Lookup" de la prueba práctica.
+POO aplicada en Ruby: clases, métodos, visibilidad, constructor, atributos, herencia, super, sobrescritura, clases abstractas, polimorfismo, method lookup y self vs super.
 
 Volver al [[Ingeniería de Software/_Índice|mapa del ramo]].
 
@@ -19,4 +19,4 @@ El número de cada archivo indica el orden de lectura.
 10. [[10 - Clases abstractas en Ruby|Clases abstractas]]: `raise NotImplementedError`.
 11. [[11 - Polimorfismo y duck typing|Polimorfismo y duck typing]]: "si hace quack…".
 12. [[12 - Method lookup en Ruby|Method lookup]]: clase → padre → … → `method_missing`.
-13. [[13 - self vs super|self vs super]]: ejercicios típicos de prueba.
+13. [[13 - self vs super|self vs super]]: ejercicios de traza con `self` y `super`.

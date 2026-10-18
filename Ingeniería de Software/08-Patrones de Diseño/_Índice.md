@@ -1,6 +1,6 @@
 # Patrones de Diseño — índice
 
-Soluciones probadas a problemas de diseño recurrentes (GoF), agrupadas en comportamiento, estructurales y creacionales, más los ejercicios de prueba resueltos.
+Soluciones probadas a problemas de diseño recurrentes (GoF), agrupadas en comportamiento, estructurales y creacionales, más ejercicios resueltos.
 
 Volver al [[Ingeniería de Software/_Índice|mapa del ramo]].
 
@@ -12,6 +12,6 @@ Volver al [[Ingeniería de Software/_Índice|mapa del ramo]].
 5. [[03 - Adapter vs Proxy vs Decorator|Adapter vs Proxy vs Decorator]]: tres envoltorios con intenciones distintas.
 6. [[Ingeniería de Software/08-Patrones de Diseño/03-Creacionales/_Índice|Patrones creacionales]]: Abstract Factory, Builder, Factory Method, Singleton. ✅
 7. [[04 - Factory Method vs Abstract Factory|Factory Method vs Abstract Factory]].
-8. [[Ingeniería de Software/08-Patrones de Diseño/04-Ejercicios de prueba/_Índice|Ejercicios de prueba]]: problemas de interrogación resueltos.
+8. [[Ingeniería de Software/08-Patrones de Diseño/04-Ejercicios de prueba/_Índice|Ejercicios resueltos]]: problemas completos con enunciado y solución.
 
 Las imágenes de esta carpeta y sus subcarpetas están en `adjuntos/`.

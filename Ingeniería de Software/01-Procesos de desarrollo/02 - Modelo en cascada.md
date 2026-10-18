@@ -9,7 +9,8 @@ prerrequisitos: ["[[01 - Proceso de desarrollo de software|Proceso de desarrollo
 El modelo en cascada es un proceso **secuencial lineal**: cada etapa se hace una sola vez, en orden, y la siguiente parte de lo que entregó la anterior.
 
 ## Idea central
-- Cada etapa se ejecuta **solo una vez** (**SECUENCIA LINEAL**) y son **etapas interdependientes**.
+- Es una **secuencia lineal**: cada etapa se ejecuta **una sola vez** y en orden.
+- Las etapas son **interdependientes**: la salida de una es la entrada de la siguiente, así que no se puede empezar una etapa sin haber cerrado la anterior.
 
 ![Modelo en cascada - etapas](adjuntos/Modelo%20en%20cascada%20-%20etapas.png)
 
@@ -21,14 +22,14 @@ flowchart LR
 ```
 
 ## Ventajas
-- **Simplicidad** conceptual
-- **Claridad** en fases
-- **Seguimiento**
+- **Simplicidad conceptual:** es fácil de entender y de explicar.
+- **Claridad en las fases:** cada etapa tiene un inicio, un fin y entregables definidos.
+- **Seguimiento:** como las fases son secuenciales, se sabe en qué punto está el proyecto y cuánto falta.
 
 ## Desventajas
-- **No Feedback**
-- **Alto Riesgo** hasta etapas avanzadas del proyecto
-- **Cambios Difíciles**, es rígido
+- **No hay feedback:** el usuario no ve software funcionando hasta el final.
+- **Alto riesgo hasta etapas avanzadas:** los errores de requisitos o de diseño aparecen recién al implementar o al verificar.
+- **Cambios difíciles:** es rígido; volver a una etapa ya cerrada obliga a rehacer las siguientes.
 
 > [!tip] Complemento (slides "Procesos de Desarrollo de Software" y libro del curso, cap. 2)
 > - Es el primer modelo de proceso. Se atribuye a **Winston Royce, 1970** (*"Managing the Development of Large Software Systems"*).
@@ -58,7 +59,7 @@ flowchart LR
 > [!question]- Respuesta
 > Es una secuencia lineal de etapas interdependientes en la que cada etapa se ejecuta una sola vez y en orden (requisitos → diseño → implementación → verificación → mantenimiento).
 
-2. Nombra sus ventajas y desventajas según los apuntes.
+2. ¿Cuáles son sus ventajas y desventajas?
 > [!question]- Respuesta
 > Ventajas: simplicidad conceptual, claridad en las fases y seguimiento. Desventajas: no hay feedback, el riesgo es alto hasta etapas avanzadas y los cambios son difíciles (es rígido).
 

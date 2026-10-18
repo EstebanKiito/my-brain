@@ -9,9 +9,9 @@ prerrequisitos: ["[[01 - Qué es el testing de software|Qué es el testing de so
 En Rails se prueba en tres niveles: **unit** (modelos aislados), **integration** (controladores) y **system** (la app completa, como un usuario).
 
 ## Testing con Rails
-- **Unit testing:** en Rails, trata de verificar si las **clases del modelo** que creamos funcionan correctamente **en isolación** (por sí solas, sin interacción de otras).
-- **Integration testing:** en Rails, trata de verificar si los **controladores** creados en el proyecto están funcionando de manera correcta.
-- **System testing:** en Rails, evalúa la funcionalidad del **sistema como un todo**. Es como abrir la página web e interactuar con ella para ver que todo funcione. Se puede hacer **manual o automática**.
+- **Unit testing:** verifica que las **clases del modelo** funcionen correctamente **de forma aislada**, por sí solas y sin interactuar con otras.
+- **Integration testing:** verifica que los **controladores** del proyecto (y sus rutas) funcionen correctamente.
+- **System testing:** evalúa el **sistema como un todo**, como si se abriera la página web y se interactuara con ella. Se puede hacer de forma **manual o automática**.
 
 | Nivel | Qué prueba | Clase base | Carpeta |
 |---|---|---|---|

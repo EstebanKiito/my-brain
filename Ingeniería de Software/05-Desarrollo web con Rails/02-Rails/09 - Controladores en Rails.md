@@ -8,9 +8,8 @@ prerrequisitos: ["[[03 - Patrón MVC en Rails|Patrón MVC en Rails]]", "[[04 - M
 
 Un controlador es una clase que **recibe los requests** (vía las rutas), usa los modelos y decide **qué responder**: renderizar una vista, redirigir o devolver JSON. Cada método público es una **acción**.
 
-## Mis apuntes
-- **Controllers** → clase que controla las interacciones con el usuario, la vista y el modelo.
-- El controlador en `app/controllers/personas_controller.rb` define las **acciones CRUD**:
+## Ejemplo: PersonasController
+El controlador coordina al usuario, la vista y el modelo. `app/controllers/personas_controller.rb` define las siete **acciones CRUD** de `Persona`; `before_action` busca la persona antes de las acciones que la necesitan, y `persona_params` filtra los campos permitidos:
 
 ```ruby
 class PersonasController < ApplicationController

@@ -6,9 +6,9 @@ prerrequisitos: ["[[05 - Patrón Observer|Patrón Observer]]", "[[06 - Diagrama 
 ---
 # Ejercicio: Observer de empleados con diagrama de secuencia
 
-Ejercicio de prueba que combina el **patrón Observer** con un **diagrama de clases** y un **diagrama de secuencia**: un `Employee` observado por `JobsLog` y `SalariesLog`.
+Ejercicio que combina el **patrón Observer** con un **diagrama de clases** y un **diagrama de secuencia**: un `Employee` observado por `JobsLog` y `SalariesLog`.
 
-## Ejercicio de prueba (método observador + diagrama de secuencia): enunciado
+## Enunciado (Observer + diagrama de secuencia)
 ![Ejercicio Observer - enunciado empleados](../adjuntos/Ejercicio%20Observer%20-%20enunciado%20empleados.png)
 
 > [!note]- Transcripción del enunciado
@@ -91,8 +91,9 @@ Ejercicio de prueba que combina el **patrón Observer** con un **diagrama de cla
 >
 > *"Observar que hay 6 veces que se invoca un update: dos para cada uno de los dos observadores primero, y luego dos para el observador de sueldos que queda después de eliminar el de jobs."*
 
-> [!warning] Posible error en la solución (registrado en `_meta/DUDAS.md`)
-> `initialize(name, title, salary)` hace `@job = job`. `job` no es el parámetro (se llama `title`), así que llama al getter `job`, que en ese momento devuelve `nil`. Debería ser `@job = title`. No cambia el output del ejercicio, porque el cargo se imprime solo después de `job=`. La X en la línea de vida de jobslog representa que **deja de observar**, no que el objeto se destruya.
+Dos detalles de la solución:
+- En `initialize(name, title, salary)`, la línea `@job = job` debería ser `@job = title`: `job` no es el parámetro, así que llama al getter, que en ese momento devuelve `nil`. El output del ejercicio no cambia, porque el cargo se imprime solo después de `job=`.
+- La **X** en la línea de vida de `jobslog` indica que **deja de observar** al empleado, no que el objeto se destruya.
 
 > [!tip] Complemento — diagrama de clases (parte a)
 > ```mermaid

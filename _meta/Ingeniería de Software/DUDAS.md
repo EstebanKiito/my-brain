@@ -1,20 +1,20 @@
 # Dudas y posibles errores en los apuntes originales
 
-Criterio: el texto original **se conserva tal cual** en la nota. Al lado va un callout `> [!warning] Posible error` con la precisión o corrección, y se registra aquí para revisarlo.
+Criterio (desde la rama `fix/software`): la corrección se aplica directamente en el texto de la nota, sin callout `Posible error`, y la fila queda ✅. Si la duda no se puede resolver, el callout se mantiene y la fila queda 🟡.
 
 Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta.
 
 ## Procesos de desarrollo
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
-| 🟡 | [[06 - Proceso unificado (RUP)\|Proceso unificado (RUP)]] | "Tiene su propio Lenguaje!!! → (UML)" | UML no es exclusivo de RUP: es un lenguaje de modelado general estandarizado por el OMG. Lo crearon los mismos autores (Rational), por eso aparecen juntos. Se agregó la precisión. |
-| 🟡 | [[07 - Procesos incrementales\|Procesos incrementales]] | "No Feedback hasta terminar!" | Es discutible: cada pieza terminada puede mostrarse al usuario. Lo distintivo del incremental "puro" es que las piezas no se reelaboran con el feedback. Se agregó el matiz. |
+| ✅ | [[06 - Proceso unificado (RUP)\|Proceso unificado (RUP)]] | "Tiene su propio Lenguaje!!! → (UML)" | UML no es exclusivo de RUP: es un lenguaje de modelado general estandarizado por el OMG. Lo crearon los mismos autores (Rational), por eso aparecen juntos. Corregido en el texto de la nota. |
+| ✅ | [[07 - Procesos incrementales\|Procesos incrementales]] | "No Feedback hasta terminar!" | Es discutible: cada pieza terminada puede mostrarse al usuario. Lo distintivo del incremental "puro" es que las piezas no se reelaboran con el feedback. Corregido en el texto de la nota. |
 | ✅ | [[05 - Modelo de prototipos\|Modelo de prototipos]] | "Reduce Improvistos → Menor tiempo de desarrollo" | Lo había marcado como dudoso, pero el libro del curso lo afirma ("menor tiempo de desarrollo porque no hay grandes sorpresas al final"). Sin cambios, solo se corrigió la errata "Improvistos" → "imprevistos". |
 
 ## Scrum
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
-| 🟡 | [[02 - Product Owner\|Product Owner]] | "Asume Responsabilidad total del proyecto" | El libro dice "del **producto**". El PO responde por el valor del producto, pero no gestiona el proyecto ni decide cuánto trabajo entra en cada sprint. Se agregó la precisión. |
+| ✅ | [[02 - Product Owner\|Product Owner]] | "Asume Responsabilidad total del proyecto" | El libro dice "del **producto**". El PO responde por el valor del producto, pero no gestiona el proyecto ni decide cuánto trabajo entra en cada sprint. Corregido en el texto de la nota. |
 | 🟡 | [[08 - Sprint Backlog\|Sprint Backlog]] | *(contradicción entre fuentes, no en tus apuntes)* | El libro dice que una vez iniciado el sprint no se agregan ni quitan tareas; las slides dicen que cualquier miembro puede agregar, borrar o cambiar el sprint backlog. Según la Scrum Guide 2020, lo fijo es el **objetivo del sprint**; las tareas se ajustan. Se muestran ambas versiones. |
 | ✅ | [[04 - Equipo de desarrollo Scrum\|Equipo de desarrollo Scrum]] | "Son autónomos, 5-8 personas" | Coincide con el libro. Las slides dicen 4–8 y la Scrum Guide 2020, 10 o menos (equipo completo). Se muestran las tres fuentes en una tabla. |
 | ✅ | [[06 - Sprint\|Sprint]] | Imagen: "Sprint 1-4 weeks" | Las slides y el libro dicen 2–4 semanas y la Scrum Guide, un mes o menos. Se muestran todas. |
@@ -34,31 +34,31 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta.
 ## Ruby
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
-| 🟡 | [[02 - Convenciones de estilo en Ruby\|Convenciones de estilo en Ruby]] | "lista.reverse → !Cambia definitivamente" | `reverse` no modifica la lista; `reverse!` sí. Se agregó el ejemplo con ambas. |
-| 🟡 | [[02 - Convenciones de estilo en Ruby\|Convenciones de estilo en Ruby]] | "lista = [1,2] → is_even? → true/false" | El método es `even?` y es de Integer, no de Array. La idea correcta: los métodos con `?` devuelven booleanos. |
-| 🟡 | [[02 - Convenciones de estilo en Ruby\|Convenciones de estilo en Ruby]] | "Convenciones → snake_case →PascalCase" | Falta decir a qué se aplica cada una: `snake_case` para variables, métodos y archivos; `PascalCase` para clases y módulos. Se agregó la tabla del libro. |
+| ✅ | [[02 - Convenciones de estilo en Ruby\|Convenciones de estilo en Ruby]] | "lista.reverse → !Cambia definitivamente" | `reverse` no modifica la lista; `reverse!` sí. Corregido en el texto de la nota. |
+| ✅ | [[02 - Convenciones de estilo en Ruby\|Convenciones de estilo en Ruby]] | "lista = [1,2] → is_even? → true/false" | El método es `even?` y es de Integer, no de Array. La idea correcta: los métodos con `?` devuelven booleanos. Corregido en el texto de la nota. |
+| ✅ | [[02 - Convenciones de estilo en Ruby\|Convenciones de estilo en Ruby]] | "Convenciones → snake_case →PascalCase" | Falta decir a qué se aplica cada una: `snake_case` para variables, métodos y archivos; `PascalCase` para clases y módulos. Corregido en el texto de la nota. |
 | ℹ️ | [[05 - Arreglos y hashes en Ruby\|Arreglos y hashes en Ruby]] | *(slides y libro)* `inst["c"] # devuelve 2` | Error de las fuentes, no tuyo: una clave inexistente devuelve `nil`. |
 
 ## Programación orientada a objetos
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
-| 🟡 | [[05 - Atributos y accesores en Ruby\|Atributos y accesores]] | "Por default los metodos son PRIVADOS…" | La slide dice que son los **atributos** los privados por defecto; en Ruby los métodos son públicos por defecto. |
-| 🟡 | [[03 - Visibilidad de métodos en Ruby\|Visibilidad de métodos]] | "Public: - - -", "Protected: - - -" | Incompletos; se completaron en un complemento. |
-| 🟡 | [[04 - Constructor initialize en Ruby\|Constructor initialize]] | `class Persona … Person.new` | El nombre de la clase no coincide (NameError). Se agregó la versión corregida. |
-| 🟡 | [[05 - Atributos y accesores en Ruby\|Atributos y accesores]] | `attr_accesor :name, :gender # Crea los metodos name= y gender=` | Es `attr_accessor`, y crea además los getters `name` y `gender`. Falta `end`. |
-| 🟡 | [[06 - Variables de clase en Ruby\|Variables de clase]] | `ass Person` | Debe ser `class Person`. |
-| 🟡 | [[07 - Herencia en Ruby\|Herencia]] | `attr_accessor: :stroke :fill`, `attr_accesor: :radius`, `:lenght` | Sintaxis: `attr_accessor :stroke, :fill`; faltan los `end`. |
-| 🟡 | [[08 - super en Ruby\|super]] | `class Hijo` (sin `< Padre`) | Sin herencia, `super` no llama a `Padre#initialize`. Faltan los `end`. |
-| 🟡 | [[11 - Polimorfismo y duck typing\|Polimorfismo]] | `attr_accessor :base :altura`, sin `end` | Falta la coma y los `end`; la idea es correcta. |
+| ✅ | [[05 - Atributos y accesores en Ruby\|Atributos y accesores]] | "Por default los metodos son PRIVADOS…" | La slide dice que son los **atributos** los privados por defecto; en Ruby los métodos son públicos por defecto. Corregido en el texto de la nota. |
+| ✅ | [[03 - Visibilidad de métodos en Ruby\|Visibilidad de métodos]] | "Public: - - -", "Protected: - - -" | Incompletos; se completaron en un complemento. Corregido en el texto de la nota. |
+| ✅ | [[04 - Constructor initialize en Ruby\|Constructor initialize]] | `class Persona … Person.new` | El nombre de la clase no coincide (NameError). Corregido en el texto de la nota. |
+| ✅ | [[05 - Atributos y accesores en Ruby\|Atributos y accesores]] | `attr_accesor :name, :gender # Crea los metodos name= y gender=` | Es `attr_accessor`, y crea además los getters `name` y `gender`. Falta `end`. Corregido en el texto de la nota. |
+| ✅ | [[06 - Variables de clase en Ruby\|Variables de clase]] | `ass Person` | Debe ser `class Person`. Corregido en el texto de la nota. |
+| ✅ | [[07 - Herencia en Ruby\|Herencia]] | `attr_accessor: :stroke :fill`, `attr_accesor: :radius`, `:lenght` | Sintaxis: `attr_accessor :stroke, :fill`; faltan los `end`. Corregido en el texto de la nota. |
+| ✅ | [[08 - super en Ruby\|super]] | `class Hijo` (sin `< Padre`) | Sin herencia, `super` no llama a `Padre#initialize`. Faltan los `end`. Corregido en el texto de la nota. |
+| ✅ | [[11 - Polimorfismo y duck typing\|Polimorfismo]] | `attr_accessor :base :altura`, sin `end` | Falta la coma y los `end`; la idea es correcta. Corregido en el texto de la nota. |
 | ℹ️ | [[06 - Variables de clase en Ruby\|Variables de clase]] | *(slides)* `Song.new` sin argumentos | El `initialize` pide 3 argumentos; en el complemento se agregaron. |
 
 ## Rails
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
-| 🟡 | [[10 - Rutas en Rails\|Rutas en Rails]] | `post “/pokemon”, to: “pokemons#create”)` | Sobra `)`, las comillas deben ser rectas y el endpoint es `/pokemons` (como dice la explicación). |
-| 🟡 | [[05 - Migraciones en Rails\|Migraciones en Rails]] | `create_table: pokemons do \|t\|` | Es `create_table :pokemons do \|t\|` y faltan los `end`. |
-| 🟡 | [[05 - Migraciones en Rails\|Migraciones en Rails]] | "rails generate migration CreatePokemon … (tiene que ser en singular)" | Lo singular es el nombre del **modelo**; la tabla queda en plural. Las migraciones se nombran como acción (`CreatePokemons`). |
-| 🟡 | [[11 - Vistas ERB\|Vistas ERB]] | `pokemon_tupe`, `<tr>` sin cerrar, `<& end %>` | `pokemon_type`, `</tr>`, `<% end %>`. El controlador debería ser `PokemonsController`. |
+| ✅ | [[10 - Rutas en Rails\|Rutas en Rails]] | `post “/pokemon”, to: “pokemons#create”)` | Sobra `)`, las comillas deben ser rectas y el endpoint es `/pokemons` (como dice la explicación). Corregido en el texto de la nota. |
+| ✅ | [[05 - Migraciones en Rails\|Migraciones en Rails]] | `create_table: pokemons do \|t\|` | Es `create_table :pokemons do \|t\|` y faltan los `end`. Corregido en el texto de la nota. |
+| ✅ | [[05 - Migraciones en Rails\|Migraciones en Rails]] | "rails generate migration CreatePokemon … (tiene que ser en singular)" | Lo singular es el nombre del **modelo**; la tabla queda en plural. Las migraciones se nombran como acción (`CreatePokemons`). Corregido en el texto de la nota. |
+| ✅ | [[11 - Vistas ERB\|Vistas ERB]] | `pokemon_tupe`, `<tr>` sin cerrar, `<& end %>` | `pokemon_type`, `</tr>`, `<% end %>`. El controlador debería ser `PokemonsController`. Corregido en el texto de la nota. |
 | ℹ️ | [[14 - render vs redirect_to\|render vs redirect_to]] | "render: edit" | Se escribe `render :edit`. Las demás formas de la lista son correctas. |
 | ℹ️ | [[06 - Comandos de Rails\|Comandos de Rails]] | "sudo service postgresql start" | Es para Linux/WSL; en Mac con Homebrew se usa `brew services start postgresql`. |
 | ✅ | [[13 - Form helpers de Rails\|Form helpers]] | Link `https://app.notion.comundefined` | Link roto de Notion: no se migra (aceptado en `mapeo.json`). |
@@ -74,7 +74,7 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta.
 ## UML
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
-| 🟡 | [[04 - Relaciones entre clases en UML\|Relaciones entre clases en UML]] | "Composition: … Los objetos de B son creados dentro de B" | Debe ser "dentro de **A**" (así dice la slide). Se explica en [[05 - Agregación vs composición\|Agregación vs composición]]. |
+| ✅ | [[04 - Relaciones entre clases en UML\|Relaciones entre clases en UML]] | "Composition: … Los objetos de B son creados dentro de B" | Debe ser "dentro de **A**" (así dice la slide). Se explica en [[05 - Agregación vs composición\|Agregación vs composición]]. Corregido en el texto de la nota. |
 
 ## Principios de diseño
 | Estado | Nota | Original | Duda / corrección propuesta |
@@ -93,7 +93,7 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta.
 ## Patrones estructurales
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
-| 🟡 | [[01 - Patrón Decorator\|Patrón Decorator]] | "Solución: Herencia y Dependencia" | Los decoradores heredan de `Pizza` **y la contienen** como atributo: es composición o agregación, no dependencia temporal. |
+| ✅ | [[01 - Patrón Decorator\|Patrón Decorator]] | "Solución: Herencia y Dependencia" | Los decoradores heredan de `Pizza` **y la contienen** como atributo: es composición o agregación, no dependencia temporal. Corregido en el texto de la nota. |
 | ℹ️ | [[04 - Ejercicio - Proxy y Adapter en mensajería\|Ejercicio Proxy y Adapter]] | Solución: `msg.replace("F","@#@$")` | `String#replace` recibe un argumento y reemplaza todo el string; lo correcto es `msg.gsub("F", '@#@$')`. La pauta lo acepta igual. |
 | ℹ️ | [[02 - Patrón Composite\|Patrón Composite]] | Imagen FileSystem: `Folder` con `+cost()` | Debería ser `+size()`, como en `FileElement`. |
 | ✅ | [[01 - Patrón Decorator\|Patrón Decorator]] | "piza", "Problematica" | Solo erratas. |
@@ -101,8 +101,8 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta.
 ## Patrones creacionales
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
-| 🟡 | [[04 - Builder - implementación en Ruby\|Builder: implementación]] | `director.builder.obtener_producto` | `Director` no expone `builder`: hay que agregar `attr_reader :builder` o lanza NoMethodError. |
-| 🟡 | [[07 - Patrón Singleton\|Patrón Singleton]] | "11. SINGLETON (YO)" | No queda claro qué significa "(YO)". |
+| ✅ | [[04 - Builder - implementación en Ruby\|Builder: implementación]] | `director.builder.obtener_producto` | `Director` no expone `builder`: hay que agregar `attr_reader :builder` o lanza NoMethodError. Corregido en el texto de la nota. |
+| ✅ | [[07 - Patrón Singleton\|Patrón Singleton]] | "11. SINGLETON (YO)" | Era una marca personal; se quitó del título. |
 | ✅ | [[01 - Patrón Abstract Factory\|Abstract Factory]] | "Nos permote", "Instania" | Solo erratas. |
 
 ## Fundamentos y gestión del curso
