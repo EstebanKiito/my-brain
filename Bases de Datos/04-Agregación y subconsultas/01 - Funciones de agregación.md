@@ -8,7 +8,7 @@ prerrequisitos: ["[[01 - SELECT, FROM y WHERE|SELECT, FROM y WHERE]]"]
 
 Las funciones de agregación (`AVG`, `MIN`, `MAX`, `COUNT`, `SUM`) resumen una columna completa (o cada grupo) en **un solo valor**.
 
-## SQL 2 (mis apuntes)
+## Ejemplo: precio promedio
 
 | id | nombre | precio | fabricante |
 |---|---|---|---|
@@ -19,24 +19,24 @@ Las funciones de agregación (`AVG`, `MIN`, `MAX`, `COUNT`, `SUM`) resumen una c
 | 5 | Civic | 22000 | Honda |
 
 ```sql
-SELECT AVG(precio) as promedio
+SELECT AVG(precio) AS promedio
 FROM Productos
-WHERE fabricante = ‘Toyota’
+WHERE fabricante = 'Toyota';
 ```
 
-Entrega el precio promedio de los productos marca Toyota
+Entrega el precio promedio de los productos marca Toyota:
 
 | promedio |
 |---|
 | 27666.67 |
 
-1. **AVG:** Promedio de una columna
-2. **MIN:** Minimo de una columna
-3. **MAX:** Maximo de una columna
-4. **COUNT:** Cuenta el numero de filas
+1. **AVG:** promedio de una columna.
+2. **MIN:** mínimo de una columna.
+3. **MAX:** máximo de una columna.
+4. **COUNT:** cuenta el número de filas.
 
-> [!note] Comillas
-> `‘Toyota’` tiene comillas tipográficas copiadas de la slide. En PostgreSQL va `'Toyota'` (ver DUDAS, Consultas SQL). El cálculo: $(25000 + 30000 + 28000)/3 = 27666.67$.
+> [!note] El cálculo
+> $(25000 + 30000 + 28000)/3 = 27666.67$.
 
 > [!tip] Complemento — forma general de una consulta con agregación (slides "Clase 4: SQL Avanzado")
 > ```sql

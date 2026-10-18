@@ -8,10 +8,9 @@ prerrequisitos: ["[[06 - Consultas en álgebra relacional|Consultas en álgebra 
 
 Una consulta es **monótona** si agregar datos nunca reduce su resultado. Las consultas `SELECT-FROM-WHERE` lo son; las que usan `ALL` (o `EXCEPT`, `NOT IN`, `NOT EXISTS`) no.
 
-## Consultas monótonas (mis apuntes)
-→ SELECT, FROM, WHERE: Son consultas monótonas: Es una consulta que al agregar mas datos nunca reduce el conjunto de resultados que produce
-
-→ All No es monotona!
+## Consultas monótonas
+- Las consultas `SELECT-FROM-WHERE` son **monótonas**: al agregar más datos, el conjunto de resultados nunca se reduce.
+- Las consultas con `ALL` **no son monótonas**: agregar una fila a la subconsulta puede hacer que una fila que antes cumplía la condición deje de cumplirla.
 
 > [!tip] Complemento (slides "Clase 2" y "Clase 4: SQL Avanzado")
 > - Definición formal en [[06 - Consultas en álgebra relacional|Consultas en álgebra relacional]]: $E$ es monótona si $I \subseteq J \Rightarrow E(I) \subseteq E(J)$.

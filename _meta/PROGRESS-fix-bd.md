@@ -2,7 +2,7 @@
 
 Rama `fix/bases-de-datos`. Solo se corrige lo que no vale la pena mostrar (marcas personales, Posible error, frases de borrador, ejemplos incorrectos). Un commit por carpeta: `pule apuntes: <carpeta>`.
 
-Carpetas cerradas: 01, 02, 03.
+Carpetas cerradas: 01, 02, 03, 04.
 
 Estados: pendiente · pulida · sin cambios.
 
@@ -28,15 +28,15 @@ Estados: pendiente · pulida · sin cambios.
 | 18 | 03-Consultas SQL/09 - DISTINCT.md | pulida | |
 | 19 | 03-Consultas SQL/10 - INNER JOIN.md | pulida | |
 | 20 | 03-Consultas SQL/11 - Outer joins (LEFT, RIGHT, FULL).md | pulida | |
-| 21 | 04-Agregación y subconsultas/01 - Funciones de agregación.md | pendiente | |
-| 22 | 04-Agregación y subconsultas/02 - COUNT y DISTINCT.md | pendiente | |
-| 23 | 04-Agregación y subconsultas/03 - GROUP BY.md | pendiente | |
-| 24 | 04-Agregación y subconsultas/04 - HAVING.md | pendiente | |
-| 25 | 04-Agregación y subconsultas/05 - Consultas anidadas (IN, ALL, ANY, EXISTS).md | pendiente | |
-| 26 | 04-Agregación y subconsultas/06 - Consultas monótonas en SQL.md | pendiente | |
-| 27 | 04-Agregación y subconsultas/07 - Subconsultas correlacionadas.md | pendiente | |
-| 28 | 04-Agregación y subconsultas/08 - Subconsultas en el FROM.md | pendiente | |
-| 29 | 04-Agregación y subconsultas/09 - Subconsulta en el FROM - primera película de cada actor.md | pendiente | |
+| 21 | 04-Agregación y subconsultas/01 - Funciones de agregación.md | pulida | |
+| 22 | 04-Agregación y subconsultas/02 - COUNT y DISTINCT.md | pulida | |
+| 23 | 04-Agregación y subconsultas/03 - GROUP BY.md | pulida | |
+| 24 | 04-Agregación y subconsultas/04 - HAVING.md | pulida | |
+| 25 | 04-Agregación y subconsultas/05 - Consultas anidadas (IN, ALL, ANY, EXISTS).md | pulida | |
+| 26 | 04-Agregación y subconsultas/06 - Consultas monótonas en SQL.md | pulida | |
+| 27 | 04-Agregación y subconsultas/07 - Subconsultas correlacionadas.md | pulida | |
+| 28 | 04-Agregación y subconsultas/08 - Subconsultas en el FROM.md | pulida | |
+| 29 | 04-Agregación y subconsultas/09 - Subconsulta en el FROM - primera película de cada actor.md | pulida | |
 | 30 | 05-Valores nulos/01 - NULL en SQL.md | pendiente | |
 | 31 | 05-Valores nulos/02 - Lógica de tres valores.md | pendiente | |
 | 32 | 05-Valores nulos/03 - NOT IN con nulos.md | pendiente | |
