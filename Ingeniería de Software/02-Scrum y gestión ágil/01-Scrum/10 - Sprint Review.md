@@ -9,9 +9,9 @@ prerrequisitos: ["[[06 - Sprint|Sprint]]"]
 La Sprint Review es la **reunión al final del sprint** donde se muestra el incremento del producto a los stakeholders para recibir su feedback.
 
 ## En qué consiste
-- **Al final de cada sprint**, se lleva a cabo una reunión.
-- Se **revisa el incremento del producto** y los **stakeholders proporcionan retroalimentación**.
-- En la esencia de [[01 - Scrum|Scrum]]: implica **evaluar y presentar lo que se ha logrado** durante el sprint, así como **identificar lo que aún debe abordarse**.
+- Es una reunión **al final de cada sprint**.
+- Se **revisa el incremento del producto** y los **stakeholders dan su retroalimentación**.
+- Como dice la esencia de [[01 - Scrum|Scrum]], consiste en **evaluar y presentar lo logrado** en el sprint e **identificar lo que aún falta por abordar**.
 
 > [!tip] Complemento (slides "SCRUM - una introducción rápida" y libro del curso, cap. 3.6)
 > ![Slide - Sprint Review](../adjuntos/Slide%20-%20Sprint%20Review.png)

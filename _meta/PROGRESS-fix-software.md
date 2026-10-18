@@ -2,7 +2,7 @@
 
 Rama `fix/software`. Plan: ordenar las notas `origen/apuntes` sin cambiar su estructura (ver la sección "Qué se hace en cada nota" del plan). Un commit por carpeta: `ordena apuntes: <carpeta>`.
 
-Carpetas cerradas: 01.
+Carpetas cerradas: 01, 02.
 
 Estados: pendiente · ordenada · sin cambios.
 
@@ -16,18 +16,18 @@ Estados: pendiente · ordenada · sin cambios.
 | 6 | 01-Procesos de desarrollo/07 - Procesos incrementales.md | ordenada | piloto: matiz de feedback en texto; callout quitado |
 | 7 | 01-Procesos de desarrollo/08 - Procesos iterativos e incrementales.md | ordenada | viñetas redactadas |
 | 8 | 01-Procesos de desarrollo/09 - Metodologías ágiles y manifiesto ágil.md | ordenada | viñetas redactadas |
-| 9 | 02-Scrum y gestión ágil/01-Scrum/01 - Scrum.md | pendiente | |
-| 10 | 02-Scrum y gestión ágil/01-Scrum/02 - Product Owner.md | pendiente | |
-| 11 | 02-Scrum y gestión ágil/01-Scrum/03 - Scrum Master.md | pendiente | |
-| 12 | 02-Scrum y gestión ágil/01-Scrum/04 - Equipo de desarrollo Scrum.md | pendiente | |
-| 13 | 02-Scrum y gestión ágil/01-Scrum/06 - Sprint.md | pendiente | |
-| 14 | 02-Scrum y gestión ágil/01-Scrum/07 - Sprint Planning.md | pendiente | |
-| 15 | 02-Scrum y gestión ágil/01-Scrum/08 - Sprint Backlog.md | pendiente | |
-| 16 | 02-Scrum y gestión ágil/01-Scrum/09 - Daily Scrum.md | pendiente | |
-| 17 | 02-Scrum y gestión ágil/01-Scrum/10 - Sprint Review.md | pendiente | |
-| 18 | 02-Scrum y gestión ágil/01-Scrum/11 - Sprint Retrospective.md | pendiente | |
-| 19 | 02-Scrum y gestión ágil/02-Historias de usuario/02 - Estructura de una historia de usuario.md | pendiente | |
-| 20 | 02-Scrum y gestión ágil/02-Historias de usuario/03 - Criterios de aceptación (Dado-Cuando-Entonces).md | pendiente | |
+| 9 | 02-Scrum y gestión ágil/01-Scrum/01 - Scrum.md | ordenada | |
+| 10 | 02-Scrum y gestión ágil/01-Scrum/02 - Product Owner.md | ordenada | |
+| 11 | 02-Scrum y gestión ágil/01-Scrum/03 - Scrum Master.md | ordenada | |
+| 12 | 02-Scrum y gestión ágil/01-Scrum/04 - Equipo de desarrollo Scrum.md | ordenada | |
+| 13 | 02-Scrum y gestión ágil/01-Scrum/06 - Sprint.md | ordenada | |
+| 14 | 02-Scrum y gestión ágil/01-Scrum/07 - Sprint Planning.md | ordenada | |
+| 15 | 02-Scrum y gestión ágil/01-Scrum/08 - Sprint Backlog.md | ordenada | |
+| 16 | 02-Scrum y gestión ágil/01-Scrum/09 - Daily Scrum.md | ordenada | |
+| 17 | 02-Scrum y gestión ágil/01-Scrum/10 - Sprint Review.md | ordenada | |
+| 18 | 02-Scrum y gestión ágil/01-Scrum/11 - Sprint Retrospective.md | ordenada | |
+| 19 | 02-Scrum y gestión ágil/02-Historias de usuario/02 - Estructura de una historia de usuario.md | ordenada | |
+| 20 | 02-Scrum y gestión ágil/02-Historias de usuario/03 - Criterios de aceptación (Dado-Cuando-Entonces).md | ordenada | |
 | 21 | 03-Ruby/01 - Introducción a Ruby.md | pendiente | |
 | 22 | 03-Ruby/02 - Convenciones de estilo en Ruby.md | pendiente | |
 | 23 | 03-Ruby/03 - Métodos y retorno implícito en Ruby.md | pendiente | |

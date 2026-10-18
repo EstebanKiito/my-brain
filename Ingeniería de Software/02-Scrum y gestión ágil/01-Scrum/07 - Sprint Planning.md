@@ -9,10 +9,10 @@ prerrequisitos: ["[[06 - Sprint|Sprint]]", "[[05 - Product Backlog|Product Backl
 El Sprint Planning es la **reunión al inicio de cada sprint** en la que se decide **qué** ítems del backlog se trabajarán y **cómo**.
 
 ## En qué consiste
-- **Reunión al comienzo de cada sprint**, donde el **Equipo (+ Scrum Master)** y el **Product Owner** definen **qué elementos del Backlog se trabajarán y cómo** durante el sprint.
-- **Objetivos del Sprint:**
-  - **Sprint Backlog:** To do / Doing / Done
-  - **Elaboran el plan**
+- Es una **reunión al comienzo de cada sprint** en la que el **equipo** (con el **Scrum Master**) y el **Product Owner** definen **qué elementos del backlog se trabajarán y cómo** durante el sprint.
+- Produce dos resultados:
+  - el **[[08 - Sprint Backlog|Sprint Backlog]]**, organizado en las columnas *To do / Doing / Done*;
+  - el **plan** del sprint: cómo se va a hacer el trabajo.
 
 > [!tip] Complemento — los 3 pasos del Sprint Planning (slides "SCRUM - una introducción rápida")
 > ![Slide - pasos del Sprint Planning](../adjuntos/Slide%20-%20pasos%20del%20Sprint%20Planning.png)

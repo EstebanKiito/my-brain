@@ -5,7 +5,7 @@ Cómo planificar y estimar en un proyecto ágil (story points, Scrum Poker, velo
 Volver a [[Ingeniería de Software/02-Scrum y gestión ágil/_Índice|Scrum y gestión ágil]] · [[Ingeniería de Software/_Índice|mapa del ramo]].
 
 > [!note] Origen
-> Mis apuntes solo tenían el título "8. Estimaciones", así que todas estas notas son complementos (slides "SCRUM - Planificación y Estimación", slides "Estimaciones" y libro del curso, cap. 5 y 7).
+> Todas estas notas son complementos (slides "SCRUM - Planificación y Estimación", slides "Estimaciones" y libro del curso, cap. 5 y 7).
 
 ## Orden de estudio
 El número de cada archivo indica el orden de lectura: primero la planificación ágil (01–06) y luego la estimación en general (07–10).

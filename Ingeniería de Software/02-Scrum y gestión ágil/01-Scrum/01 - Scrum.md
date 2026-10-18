@@ -9,17 +9,17 @@ prerrequisitos: ["[[09 - Metodologías ágiles y manifiesto ágil|Metodologías 
 Scrum es el marco ágil más usado: el producto se desarrolla en **sprints** (iteraciones cortas de duración fija) y cada sprint entrega un incremento de software funcional, con 3 roles y un conjunto fijo de reuniones.
 
 ## Para qué sirve
-- Es útil para **ambientes complejos o caóticos**.
+- Es útil en **ambientes complejos o caóticos**, donde los requisitos cambian y no se puede planificar todo de antemano.
 - Promueve la **flexibilidad** y la **colaboración** en el desarrollo de software.
 
 ## La esencia de Scrum
-La esencia de Scrum se reduce a los siguientes puntos:
-- El desarrollo de software se lleva a cabo en **ciclos repetitivos llamados "sprints"**, que representan períodos de tiempo específicos.
-- Cada sprint agrega un **incremento de funcionalidad** al producto y genera un resultado **"potencialmente entregable"**, es decir, un incremento de software funcional.
-- El contenido del sprint se define en gran medida mediante una **negociación activa con el representante del cliente**, conocido como **"product owner"**.
-- Al concluir cada sprint, se realizan **dos reuniones esenciales** antes de embarcarse en el siguiente ciclo:
-  - La reunión de **"review"**, que implica evaluar y presentar lo que se ha logrado durante el sprint, así como identificar lo que aún debe abordarse.
-  - La **"retrospectiva"**, una sesión reflexiva en la que el equipo analiza y discute cómo funcionó el proceso durante el sprint anterior y cómo se pueden realizar mejoras.
+La esencia de Scrum se reduce a cuatro puntos:
+- El software se desarrolla en **ciclos repetitivos llamados *sprints***, de duración fija.
+- Cada sprint agrega un **incremento de funcionalidad** y produce un resultado **potencialmente entregable**: software que funciona.
+- El contenido de cada sprint se define en una **negociación activa con el representante del cliente**, el **Product Owner**.
+- Al cerrar cada sprint, antes de empezar el siguiente, hay **dos reuniones**:
+  - **Review:** se presenta lo logrado en el sprint y se identifica lo que falta por abordar.
+  - **Retrospectiva:** el equipo analiza cómo funcionó su proceso de trabajo y acuerda mejoras.
 
 ![Scrum - proceso completo](../adjuntos/Scrum%20-%20proceso%20completo.png)
 

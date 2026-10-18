@@ -14,7 +14,7 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta.
 ## Scrum
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
-| 🟡 | [[02 - Product Owner\|Product Owner]] | "Asume Responsabilidad total del proyecto" | El libro dice "del **producto**". El PO responde por el valor del producto, pero no gestiona el proyecto ni decide cuánto trabajo entra en cada sprint. Se agregó la precisión. |
+| ✅ | [[02 - Product Owner\|Product Owner]] | "Asume Responsabilidad total del proyecto" | El libro dice "del **producto**". El PO responde por el valor del producto, pero no gestiona el proyecto ni decide cuánto trabajo entra en cada sprint. Corregido en el texto de la nota. |
 | 🟡 | [[08 - Sprint Backlog\|Sprint Backlog]] | *(contradicción entre fuentes, no en tus apuntes)* | El libro dice que una vez iniciado el sprint no se agregan ni quitan tareas; las slides dicen que cualquier miembro puede agregar, borrar o cambiar el sprint backlog. Según la Scrum Guide 2020, lo fijo es el **objetivo del sprint**; las tareas se ajustan. Se muestran ambas versiones. |
 | ✅ | [[04 - Equipo de desarrollo Scrum\|Equipo de desarrollo Scrum]] | "Son autónomos, 5-8 personas" | Coincide con el libro. Las slides dicen 4–8 y la Scrum Guide 2020, 10 o menos (equipo completo). Se muestran las tres fuentes en una tabla. |
 | ✅ | [[06 - Sprint\|Sprint]] | Imagen: "Sprint 1-4 weeks" | Las slides y el libro dicen 2–4 semanas y la Scrum Guide, un mes o menos. Se muestran todas. |

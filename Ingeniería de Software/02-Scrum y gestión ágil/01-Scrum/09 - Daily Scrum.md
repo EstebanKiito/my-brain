@@ -9,8 +9,8 @@ prerrequisitos: ["[[06 - Sprint|Sprint]]", "[[08 - Sprint Backlog|Sprint Backlog
 El Daily Scrum es la **reunión diaria y corta** en la que el equipo se sincroniza durante el sprint.
 
 ## En qué consiste
-- **Reunión diaria y corta**, donde el equipo **sincroniza sus actividades**.
-- Se **revisa el progreso** y se **discuten los obstáculos**.
+- Es una **reunión diaria y corta** en la que el equipo **sincroniza sus actividades**.
+- Se **revisa el progreso** hacia el objetivo del sprint y se **discuten los obstáculos**.
 
 > [!tip] Complemento — las 3 preguntas (slides "SCRUM - una introducción rápida")
 > Normalmente, cada integrante del equipo responde:

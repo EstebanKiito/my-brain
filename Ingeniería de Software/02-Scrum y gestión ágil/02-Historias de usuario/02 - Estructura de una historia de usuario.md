@@ -11,7 +11,7 @@ Toda historia de usuario tiene **3 partes**: un título con verbo, una descripci
 ## Estructura
 - **Título:** empieza con un **verbo** y describe el **objetivo** claramente.
 - **Descripción:** *Yo, como (tipo de usuario) necesito (tarea) para (objetivo).*
-- **Condiciones de aceptación:** **pruebas para validar que se cumple la historia**; entregan **información adicional al desarrollador**.
+- **Condiciones de aceptación:** escenarios que sirven como **pruebas para validar que la historia se cumple**, y que además entregan **información adicional al desarrollador**.
 
 ```mermaid
 flowchart LR
@@ -20,7 +20,7 @@ flowchart LR
 
 ## Ejemplo 1
 - **Título:** Recuperar contraseña.
-- **Descripción:** Como usuario necesito recuperar mi contraseña para poder ingresar al sistema en caso de olvidar mi contraseña.
+- **Descripción:** Como usuario, necesito recuperar mi contraseña para poder ingresar al sistema si la olvido.
 - **Condiciones de aceptación:** ver el escenario completo en [[03 - Criterios de aceptación (Dado-Cuando-Entonces)|Criterios de aceptación]].
 
 > [!tip] Complemento — cada parte en detalle (libro del curso, cap. 4.3)

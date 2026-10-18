@@ -9,17 +9,15 @@ prerrequisitos: ["[[01 - Scrum|Scrum]]"]
 El sprint es la **iteración de Scrum**: un período fijo y corto en el que el equipo desarrolla y produce un incremento del producto.
 
 ## Características
-- **Período de tiempo fijo y corto**, en el que se lleva a cabo el desarrollo.
-- Se crea un **incremento del producto**.
+- Es un **período de tiempo fijo y corto** en el que se lleva a cabo el desarrollo.
+- Al terminar, deja un **incremento del producto**.
 
 ## Sprint Execution
-*(En tus apuntes es la actividad 4, solo con el título.)*
-
 > [!tip] Complemento — Sprint Execution (libro del curso, cap. 3.5 y 3.6)
 > Es la ejecución de las tareas del [[08 - Sprint Backlog|Sprint Backlog]] **en el orden que el equipo decida**. Nadie le dice al equipo cómo hacer las tareas, y **no existen cosas "casi hechas"**: está hecho o no está hecho. El [[03 - Scrum Master|Scrum Master]] está disponible para guiar y resolver dudas del proceso.
 
 > [!tip] Complemento — qué es un sprint (slides "SCRUM - una introducción rápida" y libro)
-> - Es un **"evento de longitud fija"** de **2 a 4 semanas**. Tu imagen de [[01 - Scrum|Scrum]] dice 1 a 4 semanas; la Scrum Guide 2020 dice **un mes o menos**.
+> - Es un **"evento de longitud fija"** de **2 a 4 semanas**. La imagen de [[01 - Scrum|Scrum]] dice 1 a 4 semanas; la Scrum Guide 2020 dice **un mes o menos**.
 > - **Todas las iteraciones tienen el mismo largo.**
 > - **Input:**
 >   - el **objetivo del sprint**;
