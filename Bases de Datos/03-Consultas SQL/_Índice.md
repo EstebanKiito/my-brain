@@ -5,7 +5,7 @@ La parte DML de SQL para leer y modificar datos: SELECT-FROM-WHERE, UPDATE/DELET
 Volver al [[Bases de Datos/_Índice|mapa del ramo]].
 
 > [!note] Origen
-> Mis apuntes de la I1 («4. Consultas SQL + CRUD» y de «Producto cruz» a «DISTINCT») y de la I2 («1. SQL Avanzado»: joins). Complementos de las slides de las clases 3 (SQL) y 4 (SQL Avanzado).
+> Las notas parten de los apuntes del ramo («Consultas SQL + CRUD», de «Producto cruz» a «DISTINCT» y «SQL Avanzado»: joins). Complementos de las slides de las clases 3 (SQL) y 4 (SQL Avanzado).
 
 ## Orden de estudio
 1. [[01 - SELECT, FROM y WHERE|SELECT, FROM y WHERE]]: la forma básica y los operadores del WHERE.

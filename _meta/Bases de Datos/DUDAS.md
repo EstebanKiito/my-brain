@@ -19,9 +19,9 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 ## Consultas SQL
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
-| 🟡 | [[06 - ORDER BY\|ORDER BY]] | "(Order by resuelve un empate por el ultimo atributo entregado)" | Se resuelve con el **siguiente** atributo de la lista. Slide: "El i-ésimo atributo del ORDER BY resuelve un empate en el atributo i-1". Con dos atributos coincide con el último. |
-| 🟡 | [[08 - LIKE y NOT LIKE\|LIKE y NOT LIKE]] | `WHERE name LIKE ‘%Potter%'`, `# BUSCA TODAS…` | Comillas tipográficas (‘ ’) y comentario con `#`: no corren en PostgreSQL. Se agregó la versión con `'…'` y `--`. |
-| 🟡 | [[08 - LIKE y NOT LIKE\|LIKE y NOT LIKE]] | "  : No otro caracter → ( correo Like ‘%@gmail.com’ )" | Ambiguo. Se interpretó así: un patrón que no termina en `%` no admite más caracteres después (el correo **termina** en @gmail.com). |
+| ✅ | [[06 - ORDER BY\|ORDER BY]] | "(Order by resuelve un empate por el ultimo atributo entregado)" | Se resuelve con el **siguiente** atributo de la lista. Slide: "El i-ésimo atributo del ORDER BY resuelve un empate en el atributo i-1". Con dos atributos coincide con el último. Corregido en el texto de la nota. |
+| ✅ | [[08 - LIKE y NOT LIKE\|LIKE y NOT LIKE]] | `WHERE name LIKE ‘%Potter%'`, `# BUSCA TODAS…` | Comillas tipográficas (‘ ’) y comentario con `#`: no corren en PostgreSQL. Corregido en el texto de la nota. |
+| ✅ | [[08 - LIKE y NOT LIKE\|LIKE y NOT LIKE]] | "  : No otro caracter → ( correo Like ‘%@gmail.com’ )" | Ambiguo. Se interpretó así: un patrón que no termina en `%` no admite más caracteres después (el correo **termina** en @gmail.com). Corregido en el texto de la nota. |
 | ℹ️ | [[05 - Alias y expresiones en SELECT\|Alias y expresiones en SELECT]] | "Interestellar" | Errata de "Interstellar"; se dejó tal cual en la tabla de ejemplo. |
 
 ## Agregación y subconsultas

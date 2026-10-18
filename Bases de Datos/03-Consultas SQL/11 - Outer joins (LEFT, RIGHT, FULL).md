@@ -10,7 +10,7 @@ Los outer joins hacen lo mismo que un INNER JOIN, pero además **conservan las f
 
 Tablas de ejemplo: `employees` y `departments` de [[10 - INNER JOIN|INNER JOIN]] (Eve no tiene departamento y Sales no tiene empleados).
 
-## LEFT JOIN (mis apuntes)
+## LEFT JOIN
 **Definición:** Un LEFT JOIN devuelve todas las filas de la tabla de la izquierda (table1) y las filas coincidentes de la tabla de la derecha (table2). Si no hay coincidencia, se llenan con NULL.
 
 **Ejemplo:**
@@ -51,7 +51,7 @@ ON employees.department_id = departments.department_id;
 | NULL | Sales |
 
 ## FULL JOIN
-**Definición:** Un FULL JOIN devuelve todas las filas cuando hay una coincidencia en una de las tablas. Devuelve NULL para las filas sin coincidencia en la otra tabla.
+**Definición:** Un FULL JOIN devuelve todas las filas de ambas tablas: empareja las que coinciden y, para las que no tienen pareja, completa con NULL las columnas de la otra tabla.
 
 **Ejemplo:**
 

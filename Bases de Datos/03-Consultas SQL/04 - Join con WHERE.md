@@ -8,7 +8,7 @@ prerrequisitos: ["[[03 - Producto cruz en SQL|Producto cruz en SQL]]", "[[05 - J
 
 Un join implícito: se ponen varias tablas en el `FROM` (producto cruz) y en el `WHERE` la condición que las relaciona, normalmente llave foránea = llave primaria.
 
-## JOIN: (FROM Tabla1, Tabla2 + WHERE) (mis apuntes)
+## Join: `FROM Tabla1, Tabla2` + `WHERE`
 Un JOIN en SQL se puede realizar utilizando la cláusula WHERE para indicar la condición de coincidencia entre las tablas. Aunque actualmente es más común utilizar la cláusula JOIN para realizar estas operaciones, la cláusula WHERE puede ser utilizada para obtener el mismo resultado.
 
 Por ejemplo, si tenemos dos tablas, 'Pedidos' y 'Clientes':
@@ -34,10 +34,10 @@ El resultado de esta consulta sería una nueva tabla que combina el producto de 
 | Bananas | Ana |
 | Naranjas | Pedro |
 
-- Ejemplo de consulta interesante:
+- **Join de tres tablas:**
 
 ```sql
-SELECT Peliculas.nombre,Actores.nombre
+SELECT Peliculas.nombre, Actores.nombre
 FROM Peliculas, Actuo_en, Actores
 WHERE Peliculas.id = Actuo_en.id_pelicula
 AND Actores.id = Actuo_en.id_actor;

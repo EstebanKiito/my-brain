@@ -2,7 +2,7 @@
 
 Rama `fix/bases-de-datos`. Solo se corrige lo que no vale la pena mostrar (marcas personales, Posible error, frases de borrador, ejemplos incorrectos). Un commit por carpeta: `pule apuntes: <carpeta>`.
 
-Carpetas cerradas: 01, 02.
+Carpetas cerradas: 01, 02, 03.
 
 Estados: pendiente · pulida · sin cambios.
 
@@ -17,17 +17,17 @@ Estados: pendiente · pulida · sin cambios.
 | 7 | 02-Definición de datos en SQL/05 - INSERT e integridad referencial.md | pulida | |
 | 8 | 02-Definición de datos en SQL/06 - Eliminación con llaves foráneas.md | pulida | |
 | 9 | 02-Definición de datos en SQL/07 - Restricciones de integridad y NOT NULL.md | pulida | |
-| 10 | 03-Consultas SQL/01 - SELECT, FROM y WHERE.md | pendiente | |
-| 11 | 03-Consultas SQL/02 - UPDATE y DELETE.md | pendiente | |
-| 12 | 03-Consultas SQL/03 - Producto cruz en SQL.md | pendiente | |
-| 13 | 03-Consultas SQL/04 - Join con WHERE.md | pendiente | |
-| 14 | 03-Consultas SQL/05 - Alias y expresiones en SELECT.md | pendiente | |
-| 15 | 03-Consultas SQL/06 - ORDER BY.md | pendiente | |
-| 16 | 03-Consultas SQL/07 - Operaciones de conjuntos en SQL.md | pendiente | |
-| 17 | 03-Consultas SQL/08 - LIKE y NOT LIKE.md | pendiente | |
-| 18 | 03-Consultas SQL/09 - DISTINCT.md | pendiente | |
-| 19 | 03-Consultas SQL/10 - INNER JOIN.md | pendiente | |
-| 20 | 03-Consultas SQL/11 - Outer joins (LEFT, RIGHT, FULL).md | pendiente | |
+| 10 | 03-Consultas SQL/01 - SELECT, FROM y WHERE.md | pulida | |
+| 11 | 03-Consultas SQL/02 - UPDATE y DELETE.md | pulida | |
+| 12 | 03-Consultas SQL/03 - Producto cruz en SQL.md | pulida | |
+| 13 | 03-Consultas SQL/04 - Join con WHERE.md | pulida | |
+| 14 | 03-Consultas SQL/05 - Alias y expresiones en SELECT.md | pulida | |
+| 15 | 03-Consultas SQL/06 - ORDER BY.md | pulida | |
+| 16 | 03-Consultas SQL/07 - Operaciones de conjuntos en SQL.md | pulida | |
+| 17 | 03-Consultas SQL/08 - LIKE y NOT LIKE.md | pulida | |
+| 18 | 03-Consultas SQL/09 - DISTINCT.md | pulida | |
+| 19 | 03-Consultas SQL/10 - INNER JOIN.md | pulida | |
+| 20 | 03-Consultas SQL/11 - Outer joins (LEFT, RIGHT, FULL).md | pulida | |
 | 21 | 04-Agregación y subconsultas/01 - Funciones de agregación.md | pendiente | |
 | 22 | 04-Agregación y subconsultas/02 - COUNT y DISTINCT.md | pendiente | |
 | 23 | 04-Agregación y subconsultas/03 - GROUP BY.md | pendiente | |

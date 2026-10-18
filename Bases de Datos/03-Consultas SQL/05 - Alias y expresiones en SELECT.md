@@ -8,11 +8,11 @@ prerrequisitos: ["[[04 - Join con WHERE|Join con WHERE]]"]
 
 `AS` da un nombre corto a una tabla dentro de la consulta o un nombre a una columna calculada. En el `SELECT` también se pueden hacer operaciones, como concatenar strings con `||`.
 
-## ALIAS: (AS) (mis apuntes)
+## Alias: `AS`
 
 ```sql
 SELECT P.nombre, A.nombre
-FROM Peliculas as P, Actuo_en as Ae, Actores as A
+FROM Peliculas AS P, Actuo_en AS Ae, Actores AS A
 WHERE P.id = Ae.id_pelicula
 AND A.id = Ae.id_actor;
 ```
@@ -20,18 +20,18 @@ AND A.id = Ae.id_actor;
 ## Nombramiento y operaciones
 
 ```sql
-SELECT (nombre || ' dirigida por ' || director) as creditos, año 
-FROM Peliculas
+SELECT (nombre || ' dirigida por ' || director) AS creditos, año
+FROM Peliculas;
 ```
 
 | id | nombre | director | año |
 |---|---|---|---|
-| 1 | Interestellar | C.Nolan | 2014 |
+| 1 | Interstellar | C. Nolan | 2014 |
 | 2 | ... | ... | |
 
 | creditos | año |
 |---|---|
-| Interestellar dirigida por C.Nolan | 2014 |
+| Interstellar dirigida por C. Nolan | 2014 |
 
 > [!tip] Complemento (slides "Clase 3")
 > - El alias de tabla abrevia la consulta de [[04 - Join con WHERE|Join con WHERE]]. La slide advierte que alias de una letra como `p`, `ae`, `a` **no son muy recomendables**, porque restan legibilidad.

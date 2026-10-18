@@ -8,14 +8,14 @@ prerrequisitos: ["[[04 - Join con WHERE|Join con WHERE]]"]
 
 `INNER JOIN … ON` es la sintaxis explícita del join: deja solo las filas que tienen pareja en ambas tablas según la condición del `ON`. Es equivalente al join con `WHERE`, pero separa la condición de unión de los filtros.
 
-## 1. SQL avanzado — INNER JOIN (mis apuntes)
+## INNER JOIN
 **Definición:** Un INNER JOIN devuelve solo las filas que tienen coincidencias en ambas tablas.
 
 **Sintaxis:**
 
 ```sql
 SELECT columns
-FROM table1  INNER JOIN table2
+FROM table1 INNER JOIN table2
 ON table1.common_column = table2.common_column;
 ```
 
