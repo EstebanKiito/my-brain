@@ -2,7 +2,7 @@
 
 Rama `fix/bases-de-datos`. Solo se corrige lo que no vale la pena mostrar (marcas personales, Posible error, frases de borrador, ejemplos incorrectos). Un commit por carpeta: `pule apuntes: <carpeta>`.
 
-Carpetas cerradas: 01, 02, 03, 04, 05.
+Carpetas cerradas: 01, 02, 03, 04, 05, 07.
 
 Estados: pendiente · pulida · sin cambios.
 
@@ -41,12 +41,12 @@ Estados: pendiente · pulida · sin cambios.
 | 31 | 05-Valores nulos/02 - Lógica de tres valores.md | pulida | |
 | 32 | 05-Valores nulos/03 - NOT IN con nulos.md | pulida | |
 | 33 | 05-Valores nulos/04 - Agregación con nulos.md | pulida | |
-| 34 | 07-Normalización/01 - Dependencias funcionales.md | pendiente | |
-| 35 | 07-Normalización/03 - Primera forma normal.md | pendiente | |
-| 36 | 07-Normalización/04 - Segunda forma normal.md | pendiente | |
-| 37 | 07-Normalización/05 - Tercera forma normal.md | pendiente | |
-| 38 | 07-Normalización/06 - Forma normal de Boyce-Codd.md | pendiente | |
-| 39 | 07-Normalización/07 - Formas normales comparadas.md | pendiente | |
+| 34 | 07-Normalización/01 - Dependencias funcionales.md | pulida | |
+| 35 | 07-Normalización/03 - Primera forma normal.md | pulida | |
+| 36 | 07-Normalización/04 - Segunda forma normal.md | pulida | |
+| 37 | 07-Normalización/05 - Tercera forma normal.md | pulida | |
+| 38 | 07-Normalización/06 - Forma normal de Boyce-Codd.md | pulida | |
+| 39 | 07-Normalización/07 - Formas normales comparadas.md | pulida | |
 | 40 | 08-Lógica en la base de datos/01 - Vistas.md | pendiente | |
 | 41 | 08-Lógica en la base de datos/02 - Vistas materializadas.md | pendiente | |
 | 42 | 08-Lógica en la base de datos/03 - Triggers.md | pendiente | |

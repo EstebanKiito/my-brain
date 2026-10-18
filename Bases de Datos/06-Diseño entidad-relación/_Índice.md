@@ -5,7 +5,7 @@ Cómo pasar de los requisitos a un esquema: el modelo E/R (entidades, atributos,
 Volver al [[Bases de Datos/_Índice|mapa del ramo]].
 
 > [!note] Origen
-> Mis apuntes no cubren el modelo E/R. Todas estas notas son complemento de las slides de las clases 5 y 6 (Diseño de Bases de Datos I y II), con 9 diagramas.
+> Todas estas notas son complemento de las slides de las clases 5 y 6 (Diseño de Bases de Datos I y II), con 9 diagramas.
 
 ## Orden de estudio
 1. [[01 - Diseño de una base de datos|Diseño de una base de datos]]: requisitos → E/R → relacional.

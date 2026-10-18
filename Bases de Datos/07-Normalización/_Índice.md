@@ -5,7 +5,7 @@ Cómo detectar y eliminar la redundancia de un esquema: dependencias funcionales
 Volver al [[Bases de Datos/_Índice|mapa del ramo]].
 
 > [!note] Origen
-> Mis apuntes de la I2, «2. Formas Normales y Dependencias». Las llaves de esa misma sección están en [[03 - Superllaves, claves candidatas y clave primaria|Superllaves, claves candidatas y clave primaria]]. Complementos de las slides de la clase 7 (Dependencias y Formas Normales).
+> Las notas parten de los apuntes del ramo, sección «Formas Normales y Dependencias». Las llaves de esa misma sección están en [[03 - Superllaves, claves candidatas y clave primaria|Superllaves, claves candidatas y clave primaria]]. Complementos de las slides de la clase 7 (Dependencias y Formas Normales).
 
 ## Orden de estudio
 1. [[01 - Dependencias funcionales|Dependencias funcionales]]: definición, ejemplo Guías y anomalías.

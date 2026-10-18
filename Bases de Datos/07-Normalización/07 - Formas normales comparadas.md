@@ -8,7 +8,7 @@ prerrequisitos: ["[[03 - Primera forma normal|Primera forma normal]]", "[[04 - S
 
 Tabla para repasar qué exige cada forma normal, de la más débil (1NF) a la más fuerte (BCNF).
 
-## Resumen de dependencias y formas normales (mis apuntes)
+## Resumen de dependencias y formas normales
 
 | Forma Normal | Condiciones |
 |---|---|
@@ -18,11 +18,11 @@ Tabla para repasar qué exige cada forma normal, de la más débil (1NF) a la m�
 | BCNF | En 3NF y cada determinante es una superllave |
 
 > [!tip] Complemento — qué elimina cada una y con qué ejemplo
-> | Forma | Prohíbe | Ejemplo de violación (mis apuntes) | Arreglo |
+> | Forma | Prohíbe | Ejemplo de violación | Arreglo |
 > |---|---|---|---|
 > | 1NF | listas o grupos en una celda | Transacciones de Isaac en una celda | una fila por transacción |
 > | 2NF | atributo no clave que depende de **parte** de la llave | Fabricante → País con llave (Fabricante, Modelo) | separar (Fabricante, País) |
-> | 3NF | atributo no clave que depende de **otro no clave** | País → Continente | separar (País, Continente) |
+> | 3NF | atributo no clave que depende de **otro no clave** | País → Continente con llave Fabricante | separar (País, Continente) |
 > | BCNF | **cualquier** X → Y con X no superllave | Profesor → Aula | separar (Profesor, Aula) |
 >
 > **En la práctica (slides "Clase 7"):** se parte de tablas posiblemente mal diseñadas, se identifican las dependencias funcionales y se intenta descomponer en **BCNF**. Si con eso se pierden dependencias, se usa **3NF**. El algoritmo está en [[08 - Descomposición en BCNF y 3NF|Descomposición en BCNF y 3NF]].
