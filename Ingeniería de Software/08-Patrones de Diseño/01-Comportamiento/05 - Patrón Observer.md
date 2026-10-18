@@ -9,25 +9,24 @@ prerrequisitos: ["[[01 - Qué es un patrón de diseño|Qué es un patrón de dis
 Observer define un **mecanismo de suscripción**: un objeto (el sujeto o publicador) avisa automáticamente a todos sus suscriptores cuando cambia su estado, sin necesidad de conocer sus clases.
 
 ## Definición
-- Patrón que permite definir un **mecanismo de suscripción** para **notificar a varios objetos**
-- sobre un **evento** que le ocurre a algún objeto.
+Define un **mecanismo de suscripción** para **notificar a varios objetos** sobre un **evento** que le ocurre a otro objeto.
 
 ## Problemas
-- Tienda con clientes que quieren saber cuándo llegó un producto.
-- El cliente puede visitar la tienda todos los días.
-- La tienda podría enviar cientos de correos cada vez que haya un producto disponible.
+Una tienda tiene clientes que quieren saber cuándo llega un producto. Sin el patrón hay dos malas opciones:
+- el cliente **visita la tienda todos los días** para revisar, y la mayoría de las visitas son inútiles;
+- la tienda **envía correos a todos** cada vez que llega algo, y llena de spam a quienes no les interesa.
 
 ![Observer - visitas a la tienda vs spam](../adjuntos/Observer%20-%20visitas%20a%20la%20tienda%20vs%20spam.png)
 
 ## Participantes
-- **SUJETO:** el objeto el cual tiene el estado interesante para otros.
-- **NOTIFICADOR:** o publicador.
-- **SUSCRIPTORES:** objetos que quieren conocer los cambios de estado del notificador.
-- El patrón sugiere: **añadir un método de suscripción** a la clase notificadora.
+- **Sujeto**, también llamado **notificador** o **publicador**: el objeto cuyo estado le interesa a otros.
+- **Suscriptores**: los objetos que quieren enterarse de los cambios de estado del sujeto.
+
+El patrón propone **agregar al sujeto métodos de suscripción**, para que cada objeto se suscriba o se desuscriba, y avisar solo a los suscritos cuando ocurre el evento.
 
 ## Ventajas
-- **Principio abierto/cerrado** → introducir nuevas clases suscriptoras sin modificar código.
-- Se pueden establecer relaciones entre objetos **durante el tiempo de ejecución**.
+- Cumple el **principio abierto/cerrado**: se pueden agregar clases suscriptoras nuevas sin modificar el sujeto.
+- Las relaciones entre objetos se establecen **en tiempo de ejecución**.
 
 ![Observer - mecanismo de suscripción](../adjuntos/Observer%20-%20mecanismo%20de%20suscripción.png)
 
@@ -51,7 +50,7 @@ sequenceDiagram
   S->>B: update(self)
 ```
 
-Código completo: [[06 - Observer - implementación en Ruby|Observer: implementación en Ruby]]. Ejercicio de prueba: [[02 - Ejercicio - Observer de empleados con diagrama de secuencia|Observer de empleados]].
+Código completo: [[06 - Observer - implementación en Ruby|Observer: implementación en Ruby]]. Ejercicio resuelto: [[02 - Ejercicio - Observer de empleados con diagrama de secuencia|Observer de empleados]].
 
 > [!tip] Complemento (slides "Patrones de Diseño: Comportamiento")
 > - Cada vez que cambia el estado observado, se notifica a **todos los observadores sin importar su tipo**, mandándoles la información que necesiten. Cada observador decide qué hacer con ella.

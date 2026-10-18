@@ -7,7 +7,7 @@ prerrequisitos: ["[[01 - Patrón Strategy|Patrón Strategy]]", "[[03 - Patrón T
 # Strategy vs Template Method
 
 > [!tip] Complemento — nota nueva (comparación a partir de las notas de cada patrón)
-> **Qué es:** los dos patrones permiten variar un algoritmo y suelen confundirse en la prueba. Esta tabla muestra sus diferencias.
+> **Qué es:** los dos patrones permiten variar un algoritmo y suelen confundirse. Esta tabla muestra sus diferencias.
 >
 > | | [[01 - Patrón Strategy\|Strategy]] | [[03 - Patrón Template Method\|Template Method]] |
 > |---|---|---|

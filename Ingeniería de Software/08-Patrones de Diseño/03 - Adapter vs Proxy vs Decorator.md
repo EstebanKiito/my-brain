@@ -18,7 +18,7 @@ prerrequisitos: ["[[03 - Patrón Adapter|Patrón Adapter]]", "[[05 - Patrón Pro
 > | ¿Quién crea al envuelto? | se lo pasan | a menudo lo crea o controla el proxy (lazy loading) | se lo pasan |
 > | Ejemplo del curso | RUT con puntos → `login_user` sin puntos | log de logins fallidos | pizza con toppings, abrigos |
 >
-> **Pregunta clave en la prueba:**
+> **Pregunta clave para distinguirlos:**
 > - ¿El cliente y el servicio "hablan idiomas distintos"? → **Adapter**.
 > - ¿Mismo idioma, pero quiero vigilar, filtrar o retrasar el acceso? → **Proxy**.
 > - ¿Mismo idioma y quiero sumar funcionalidad combinable? → **Decorator**.

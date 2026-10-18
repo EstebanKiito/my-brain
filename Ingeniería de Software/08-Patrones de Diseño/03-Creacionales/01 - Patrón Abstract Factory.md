@@ -9,17 +9,17 @@ prerrequisitos: ["[[01 - Qué es un patrón de diseño|Qué es un patrón de dis
 Abstract Factory permite **crear familias de objetos relacionados** (por ejemplo, silla + sofá + mesa de un mismo estilo) **sin especificar sus clases concretas**: el cliente pide los productos a una fábrica y la fábrica concreta decide la variante.
 
 ## Definición
-- Nos permite producir **familias de objetos relacionados sin especificar clases concretas**.
-- Ej.: familia de productos: **silla + sofá + mesa**.
-- **REQUISITO:** no cambiar código existente al añadir productos o familias.
+- Permite producir **familias de objetos relacionados sin especificar sus clases concretas**.
+- Ejemplo de familia: **silla + sofá + mesa de centro**, cada una en variantes de estilo (victoriano, moderno…). Los muebles de un pedido deben ser del mismo estilo.
+- **Requisito:** no cambiar el código existente al añadir productos o familias nuevas.
 
 ![Abstract Factory - interfaz Chair](../adjuntos/Abstract%20Factory%20-%20interfaz%20Chair.png)
 
 ## Mecanismo
-- Crear una **interfaz para cada producto** diferente de la familia de productos.
-- Todas las variantes del producto seguirán esa interfaz.
-- Declaramos la **FÁBRICA ABSTRACTA**: interfaz de métodos de creación para todos los productos de una familia.
-- Los métodos devuelven **productos abstractos**.
+1. Se crea una **interfaz para cada producto** de la familia (`Chair`, `Sofa`, `CoffeeTable`), y todas las variantes la implementan.
+2. Se declara la **fábrica abstracta**: una interfaz con un método de creación por cada producto de la familia.
+3. Esos métodos devuelven **productos abstractos**, así que el cliente no sabe qué variante recibe.
+4. Cada variante tiene su **fábrica concreta** (`VictorianFurnitureFactory`, `ModernFurnitureFactory`), que crea solo productos de su estilo.
 
 ![Abstract Factory - fábricas de muebles](../adjuntos/Abstract%20Factory%20-%20fábricas%20de%20muebles.png)
 

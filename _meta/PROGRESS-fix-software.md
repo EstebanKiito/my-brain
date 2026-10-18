@@ -2,7 +2,7 @@
 
 Rama `fix/software`. Plan: ordenar las notas `origen/apuntes` sin cambiar su estructura (ver la sección "Qué se hace en cada nota" del plan). Un commit por carpeta: `ordena apuntes: <carpeta>`.
 
-Carpetas cerradas: 01, 02, 03, 04, 05, 06, 07.
+Carpetas cerradas: 01, 02, 03, 04, 05, 06, 07, 08.
 
 Estados: pendiente · ordenada · sin cambios.
 
@@ -81,30 +81,30 @@ Estados: pendiente · ordenada · sin cambios.
 | 71 | 07-Diseño y UML/02-Principios de diseño/07 - Ejemplo de diseño - Carrito de compras.md | ordenada | |
 | 72 | 07-Diseño y UML/02-Principios de diseño/08 - Ejemplo de diseño - Filtros de libros.md | ordenada | |
 | 73 | 07-Diseño y UML/02-Principios de diseño/09 - Ejemplo de diseño - Bebidas con cafeína.md | ordenada | |
-| 74 | 08-Patrones de Diseño/01 - Qué es un patrón de diseño.md | pendiente | |
-| 75 | 08-Patrones de Diseño/01-Comportamiento/01 - Patrón Strategy.md | pendiente | |
-| 76 | 08-Patrones de Diseño/01-Comportamiento/02 - Strategy - implementación en Ruby.md | pendiente | |
-| 77 | 08-Patrones de Diseño/01-Comportamiento/03 - Patrón Template Method.md | pendiente | |
-| 78 | 08-Patrones de Diseño/01-Comportamiento/04 - Template Method - implementación en Ruby.md | pendiente | |
-| 79 | 08-Patrones de Diseño/01-Comportamiento/05 - Patrón Observer.md | pendiente | |
-| 80 | 08-Patrones de Diseño/01-Comportamiento/06 - Observer - implementación en Ruby.md | pendiente | |
-| 81 | 08-Patrones de Diseño/02-Estructurales/01 - Patrón Decorator.md | pendiente | |
-| 82 | 08-Patrones de Diseño/02-Estructurales/02 - Patrón Composite.md | pendiente | |
-| 83 | 08-Patrones de Diseño/02-Estructurales/03 - Patrón Adapter.md | pendiente | |
-| 84 | 08-Patrones de Diseño/02-Estructurales/04 - Adapter - implementación en Ruby.md | pendiente | |
-| 85 | 08-Patrones de Diseño/02-Estructurales/05 - Patrón Proxy.md | pendiente | |
-| 86 | 08-Patrones de Diseño/02-Estructurales/06 - Proxy - implementación en Ruby.md | pendiente | |
-| 87 | 08-Patrones de Diseño/03-Creacionales/01 - Patrón Abstract Factory.md | pendiente | |
-| 88 | 08-Patrones de Diseño/03-Creacionales/02 - Abstract Factory - implementación en Ruby.md | pendiente | |
-| 89 | 08-Patrones de Diseño/03-Creacionales/03 - Patrón Builder.md | pendiente | |
-| 90 | 08-Patrones de Diseño/03-Creacionales/04 - Builder - implementación en Ruby.md | pendiente | |
-| 91 | 08-Patrones de Diseño/03-Creacionales/05 - Patrón Factory Method.md | pendiente | |
-| 92 | 08-Patrones de Diseño/03-Creacionales/06 - Factory Method - implementación en Ruby.md | pendiente | |
-| 93 | 08-Patrones de Diseño/03-Creacionales/07 - Patrón Singleton.md | pendiente | |
-| 94 | 08-Patrones de Diseño/04-Ejercicios de prueba/01 - Ejercicio - Strategy para procesador de pagos.md | pendiente | |
-| 95 | 08-Patrones de Diseño/04-Ejercicios de prueba/02 - Ejercicio - Observer de empleados con diagrama de secuencia.md | pendiente | |
-| 96 | 08-Patrones de Diseño/04-Ejercicios de prueba/03 - Ejercicio - Decorator de ropa y temperatura corporal.md | pendiente | |
-| 97 | 08-Patrones de Diseño/04-Ejercicios de prueba/04 - Ejercicio - Proxy y Adapter en mensajería.md | pendiente | |
+| 74 | 08-Patrones de Diseño/01 - Qué es un patrón de diseño.md | ordenada | |
+| 75 | 08-Patrones de Diseño/01-Comportamiento/01 - Patrón Strategy.md | ordenada | |
+| 76 | 08-Patrones de Diseño/01-Comportamiento/02 - Strategy - implementación en Ruby.md | ordenada | |
+| 77 | 08-Patrones de Diseño/01-Comportamiento/03 - Patrón Template Method.md | ordenada | |
+| 78 | 08-Patrones de Diseño/01-Comportamiento/04 - Template Method - implementación en Ruby.md | ordenada | |
+| 79 | 08-Patrones de Diseño/01-Comportamiento/05 - Patrón Observer.md | ordenada | |
+| 80 | 08-Patrones de Diseño/01-Comportamiento/06 - Observer - implementación en Ruby.md | ordenada | |
+| 81 | 08-Patrones de Diseño/02-Estructurales/01 - Patrón Decorator.md | ordenada | |
+| 82 | 08-Patrones de Diseño/02-Estructurales/02 - Patrón Composite.md | ordenada | |
+| 83 | 08-Patrones de Diseño/02-Estructurales/03 - Patrón Adapter.md | ordenada | |
+| 84 | 08-Patrones de Diseño/02-Estructurales/04 - Adapter - implementación en Ruby.md | ordenada | |
+| 85 | 08-Patrones de Diseño/02-Estructurales/05 - Patrón Proxy.md | ordenada | |
+| 86 | 08-Patrones de Diseño/02-Estructurales/06 - Proxy - implementación en Ruby.md | ordenada | |
+| 87 | 08-Patrones de Diseño/03-Creacionales/01 - Patrón Abstract Factory.md | ordenada | |
+| 88 | 08-Patrones de Diseño/03-Creacionales/02 - Abstract Factory - implementación en Ruby.md | ordenada | |
+| 89 | 08-Patrones de Diseño/03-Creacionales/03 - Patrón Builder.md | ordenada | |
+| 90 | 08-Patrones de Diseño/03-Creacionales/04 - Builder - implementación en Ruby.md | ordenada | |
+| 91 | 08-Patrones de Diseño/03-Creacionales/05 - Patrón Factory Method.md | ordenada | |
+| 92 | 08-Patrones de Diseño/03-Creacionales/06 - Factory Method - implementación en Ruby.md | ordenada | |
+| 93 | 08-Patrones de Diseño/03-Creacionales/07 - Patrón Singleton.md | ordenada | |
+| 94 | 08-Patrones de Diseño/04-Ejercicios de prueba/01 - Ejercicio - Strategy para procesador de pagos.md | ordenada | |
+| 95 | 08-Patrones de Diseño/04-Ejercicios de prueba/02 - Ejercicio - Observer de empleados con diagrama de secuencia.md | ordenada | |
+| 96 | 08-Patrones de Diseño/04-Ejercicios de prueba/03 - Ejercicio - Decorator de ropa y temperatura corporal.md | ordenada | |
+| 97 | 08-Patrones de Diseño/04-Ejercicios de prueba/04 - Ejercicio - Proxy y Adapter en mensajería.md | ordenada | |
 | 98 | 11-Gestión del curso/01 - Evaluación y calendario de IIC2143.md | pendiente | |
 | 99 | 11-Gestión del curso/02 - Checklist de la prueba práctica.md | pendiente | |
 | 100 | 11-Gestión del curso/03 - Proyecto del curso.md | pendiente | |

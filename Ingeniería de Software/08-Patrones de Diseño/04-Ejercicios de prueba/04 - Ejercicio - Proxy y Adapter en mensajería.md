@@ -6,9 +6,9 @@ prerrequisitos: ["[[05 - Patrón Proxy|Patrón Proxy]]", "[[03 - Patrón Adapter
 ---
 # Ejercicio: Proxy y Adapter en mensajería
 
-Ejemplo de prueba (Pregunta 4): sobre un código de mensajería (WeChat), implementar un **Proxy** que vigila los mensajes y un **Adapter** que los transforma.
+Ejercicio: sobre un código de mensajería (WeChat), implementar un **Proxy** que vigila los mensajes y un **Adapter** que los transforma.
 
-## Ejemplo de prueba (Adapter + Proxy)
+## Enunciado (Adapter + Proxy)
 ![Ejercicio Proxy y Adapter - enunciado WeChat](../adjuntos/Ejercicio%20Proxy%20y%20Adapter%20-%20enunciado%20WeChat.png)
 
 > [!note]- Transcripción del enunciado
@@ -64,8 +64,8 @@ Ejemplo de prueba (Pregunta 4): sobre un código de mensajería (WeChat), implem
 > ```
 > Criterios de corrección: la parte que busca "Trump" o reemplaza "F" puede variar (por ejemplo, con un igual). La idea es que el código dé a entender esa búsqueda o reemplazo. **No importa si no se recuerda el nombre exacto de la función.** También es válido comparar mensajes iguales a "F" (`msg == "F"`).
 
-> [!warning] Detalle de Ruby (registrado en `_meta/DUDAS.md`)
-> `String#replace` **reemplaza todo el contenido** del string y recibe **un solo argumento**: `msg.replace("F","@#@$")` lanza `ArgumentError`. Lo correcto es `msg.gsub("F", '@#@$')`. Conviene usar comillas simples para que `#@` no se confunda con una interpolación. La pauta acepta el error porque no exige el nombre exacto de la función.
+> [!warning] Detalle de Ruby
+> `String#replace` **reemplaza todo el contenido** del string y recibe **un solo argumento**: `msg.replace("F","@#@$")` lanza `ArgumentError`. Lo correcto es `msg.gsub("F", '@#@$')`. Conviene usar comillas simples para que `#@` no se confunda con una interpolación.
 
 > [!tip] Complemento — uso
 > ```ruby

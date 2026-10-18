@@ -9,15 +9,15 @@ prerrequisitos: ["[[01 - Qué es un patrón de diseño|Qué es un patrón de dis
 Builder permite **construir objetos complejos paso a paso**, separando el código de construcción del objeto en sí. Con el mismo proceso se obtienen distintas representaciones.
 
 ## Definición
-- Nos permite construir **objetos complejos paso a paso**.
-- Nos permite producir **distintos tipos y representaciones** de un objeto.
-- Ej.: queremos diferentes tipos de casas con atributos distintos → **¡muchas subclases!**
+- Permite construir **objetos complejos paso a paso**.
+- Con el mismo proceso de construcción se producen **distintos tipos y representaciones** de un objeto.
+- Ejemplo: se quieren distintos tipos de casas (con garaje, con piscina, con jardín…). Si cada combinación es una subclase de `House`, aparecen **demasiadas subclases**.
 
 ![Builder - explosión de subclases de House](../adjuntos/Builder%20-%20explosión%20de%20subclases%20de%20House.png)
 
 ## Solución
-- Sacar el código de construcción del objeto de su propia clase.
-- Colocarlo dentro de **objetos independientes** → los llamaremos **CONSTRUCTORES**.
+- Se saca el código de construcción del objeto de su propia clase.
+- Ese código se coloca en **objetos independientes** llamados **constructores** (*builders*), con un método por cada paso.
 
 ![Builder - estructura](../adjuntos/Builder%20-%20estructura.png)
 

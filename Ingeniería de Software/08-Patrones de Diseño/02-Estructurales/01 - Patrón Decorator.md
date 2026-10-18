@@ -9,21 +9,19 @@ prerrequisitos: ["[[01 - Qué es un patrón de diseño|Qué es un patrón de dis
 Decorator **agrega funcionalidades a un objeto envolviéndolo** en otros objetos (decoradores) que tienen la misma interfaz. Cada decorador delega en el objeto envuelto y suma su propio comportamiento.
 
 ## Definición
-- Permite **AÑADIR FUNCIONALIDADES** a objetos,
-- colocando estos dentro de otros **objetos encapsuladores** que contienen esas funcionalidades.
+Permite **añadir funcionalidades** a un objeto colocándolo dentro de otros **objetos encapsuladores** (decoradores) que aportan esas funcionalidades. Como en la imagen: una persona con frío se pone un suéter y, si llueve, encima una parca; cada prenda envuelve a la anterior y agrega algo sin cambiar a la persona.
 
 ![Decorator - persona con suéter y abrigo](../adjuntos/Decorator%20-%20persona%20con%20suéter%20y%20abrigo.png)
 
 ## Problemática
-- App de notificaciones: solo se envían por un canal.
-- ¿Qué pasa si quiero recibir en **varios canales**?
+Una app envía notificaciones por un solo canal (correo). Luego se quiere recibir por **varios canales a la vez** (SMS, Facebook, Slack…). Si cada combinación es una subclase, el número de subclases explota: una para SMS + Facebook, otra para SMS + Slack, otra para las tres, etc.
 
 ![Decorator - explosión combinatoria de subclases](../adjuntos/Decorator%20-%20explosión%20combinatoria%20de%20subclases.png)
 
 ## Solución
-- Añadir **composición**: un objeto tiene referencia a otro y le **delega** trabajo.
-- El **objeto decorador** tiene como atributo al **objeto decorado**.
-- Cuando un método del objeto decorado es llamado, el decorador **llama al método del decorado y luego realiza acciones adicionales**.
+- Se usa **composición** en vez de herencia: un objeto guarda una referencia a otro y le **delega** trabajo.
+- El **decorador** tiene como atributo al **objeto decorado**, y ambos tienen la misma interfaz.
+- Cuando se llama a un método, el decorador **llama al mismo método del decorado y luego agrega su propio comportamiento**. Como un decorador puede envolver a otro, las funcionalidades se apilan.
 
 ![Decorator - notificadores como decoradores](../adjuntos/Decorator%20-%20notificadores%20como%20decoradores.png)
 
@@ -37,23 +35,20 @@ Decorator **agrega funcionalidades a un objeto envolviéndolo** en otros objetos
 > - **Contras:** es difícil quitar un wrapper específico de la pila; es difícil que el comportamiento no dependa del orden de la pila; el código de configuración inicial puede verse feo.
 
 ## Ejemplo
-Supongamos que quiero vender una pizza y tenemos el código:
+Una pizzería modela sus pizzas con clases. Este es el código original:
 
 ![Decorator - pizza con toppings estáticos](../adjuntos/Decorator%20-%20pizza%20con%20toppings%20estáticos.png)
 
 ![Decorator - problema de la pizza](../adjuntos/Decorator%20-%20problema%20de%20la%20pizza.png)
 
-## Solución
-- Herencia y dependencia.
+## Solución con decoradores
+Cada topping pasa a ser un decorador. Los decoradores **heredan** de `Pizza`, para tener su misma interfaz, y además **contienen** una `Pizza` (`decoratedPizza`), a la que le suman su costo y su descripción. Así, una pizza de doble queso es `CheesePizza.new(CheesePizza.new(PizzaBase.new))`, sin crear una clase nueva.
 
 ![Decorator - pizza con decoradores](../adjuntos/Decorator%20-%20pizza%20con%20decoradores.png)
 
 > [!note]- Transcripción del ejemplo de la pizza
 > - **Antes:** `Pizza` abstracta (`print` y `cost` lanzan `NotImplementedError`). `PineableHamCheesePizza < Pizza` imprime "normal bred, cheese, ham, pineapple" y su costo es `(20 + 5 + 5) * 2` (cada porción de piña duplica el costo). *Los toppings se agregan de manera estática: para una pizza de doble queso hay que crear otra clase, y hay código duplicado entre los tipos de pizza.*
 > - **Después (UML):** `<<abstract>> Pizza` (`+cost(): double`, `+asString(): String`) ← `PizzaBase` y ← `ToppingPizzaDecorator` (`-decoratedPizza`, que apunta a `Pizza`) ← `CheesePizza`, `HamPizza` y `PinneapplePizza`.
-
-> [!warning] Posible imprecisión (registrado en `_meta/DUDAS.md`)
-> "Herencia y dependencia": en el diagrama, los decoradores **heredan** de `Pizza` (para tener su misma interfaz) y además **contienen** una `Pizza` (`decoratedPizza`). Esa segunda relación es **composición/agregación** (un atributo), no una dependencia temporal.
 
 ```mermaid
 classDiagram
@@ -66,7 +61,7 @@ classDiagram
   ToppingPizzaDecorator <|-- PinneapplePizza
 ```
 
-Ejercicio de prueba: [[03 - Ejercicio - Decorator de ropa y temperatura corporal|Decorator de ropa y temperatura]].
+Ejercicio resuelto: [[03 - Ejercicio - Decorator de ropa y temperatura corporal|Decorator de ropa y temperatura]].
 
 > [!tip] Complemento (slides "Patrones de Diseño: Estructurales")
 > - El decorador tiene **los mismos métodos** que el decorado, así que el cliente no distingue si habla con el objeto original o con uno decorado.

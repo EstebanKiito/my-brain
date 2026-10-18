@@ -18,7 +18,7 @@ class Context
     @strategy = strategy
   end
 
-	# provides a setter to change it at runtime.
+  # provides a setter to change it at runtime.
   def strategy=(strategy)
     @strategy = strategy
   end

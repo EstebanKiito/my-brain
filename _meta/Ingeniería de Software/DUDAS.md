@@ -93,7 +93,7 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta.
 ## Patrones estructurales
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
-| 🟡 | [[01 - Patrón Decorator\|Patrón Decorator]] | "Solución: Herencia y Dependencia" | Los decoradores heredan de `Pizza` **y la contienen** como atributo: es composición o agregación, no dependencia temporal. |
+| ✅ | [[01 - Patrón Decorator\|Patrón Decorator]] | "Solución: Herencia y Dependencia" | Los decoradores heredan de `Pizza` **y la contienen** como atributo: es composición o agregación, no dependencia temporal. Corregido en el texto de la nota. |
 | ℹ️ | [[04 - Ejercicio - Proxy y Adapter en mensajería\|Ejercicio Proxy y Adapter]] | Solución: `msg.replace("F","@#@$")` | `String#replace` recibe un argumento y reemplaza todo el string; lo correcto es `msg.gsub("F", '@#@$')`. La pauta lo acepta igual. |
 | ℹ️ | [[02 - Patrón Composite\|Patrón Composite]] | Imagen FileSystem: `Folder` con `+cost()` | Debería ser `+size()`, como en `FileElement`. |
 | ✅ | [[01 - Patrón Decorator\|Patrón Decorator]] | "piza", "Problematica" | Solo erratas. |
@@ -101,8 +101,8 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta.
 ## Patrones creacionales
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
-| 🟡 | [[04 - Builder - implementación en Ruby\|Builder: implementación]] | `director.builder.obtener_producto` | `Director` no expone `builder`: hay que agregar `attr_reader :builder` o lanza NoMethodError. |
-| 🟡 | [[07 - Patrón Singleton\|Patrón Singleton]] | "11. SINGLETON (YO)" | No queda claro qué significa "(YO)". |
+| ✅ | [[04 - Builder - implementación en Ruby\|Builder: implementación]] | `director.builder.obtener_producto` | `Director` no expone `builder`: hay que agregar `attr_reader :builder` o lanza NoMethodError. Corregido en el texto de la nota. |
+| ✅ | [[07 - Patrón Singleton\|Patrón Singleton]] | "11. SINGLETON (YO)" | Era una marca personal; se quitó del título. |
 | ✅ | [[01 - Patrón Abstract Factory\|Abstract Factory]] | "Nos permote", "Instania" | Solo erratas. |
 
 ## Fundamentos y gestión del curso

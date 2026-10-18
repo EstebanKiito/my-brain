@@ -11,7 +11,7 @@ Implementación de referencia de [[05 - Patrón Observer|Observer]]: un sujeto c
 ## Código
 ```ruby
 # The Subject interface declares a set of methods for managing subscribers.
-# @abtracta
+# @abstract
 class Subject
   # Attach an observer to the subject.
   def attach(observer)
@@ -39,13 +39,13 @@ class ConcreteSubject < Subject
     @observers = []
   end
 
-  # @param [Obserser] observer
+  # @param [Observer] observer
   def attach(observer)
     puts 'Subject: Attached an observer.'
     @observers << observer
   end
 
-  # @param [Obserser] observer
+  # @param [Observer] observer
   def detach(observer)
     @observers.delete(observer)
   end

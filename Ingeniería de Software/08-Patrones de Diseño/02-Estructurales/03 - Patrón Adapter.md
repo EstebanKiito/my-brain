@@ -9,23 +9,22 @@ prerrequisitos: ["[[01 - Qué es un patrón de diseño|Qué es un patrón de dis
 Adapter permite que **colaboren objetos con interfaces incompatibles**: una clase intermedia (el adaptador) traduce las llamadas de uno al formato que espera el otro.
 
 ## Definición
-- Permite la **colaboración entre objetos con interfaces incompatibles**.
+- Permite la **colaboración entre objetos con interfaces incompatibles**, como un adaptador de enchufe que permite conectar un laptop de EE. UU. a un enchufe británico.
 
 ![Adapter - enchufe británico](../adjuntos/Adapter%20-%20enchufe%20británico.png)
 
 ## Problemas
-- **Incompatibilidad de formatos.**
-- Ej.: app de monitoreo que descarga información en **XML**.
-- V2: integración con una biblioteca que solo funciona con **JSON**.
+El problema es una **incompatibilidad de formatos**. Por ejemplo, una app de monitoreo de bolsa descarga datos en **XML**, y en la versión 2 se quiere integrar una biblioteca de análisis que solo trabaja con **JSON**. No se puede modificar la biblioteca, y cambiar toda la app a JSON rompería el resto.
 
 ## Solución
-- Crear un **adaptador** para convertir la interfaz de un objeto → así otro podrá entenderla.
+- Se crea un **adaptador** que convierte la interfaz de un objeto para que otro pueda entenderla.
 
 ![Adapter - de XML a JSON](../adjuntos/Adapter%20-%20de%20XML%20a%20JSON.png)
 
-- El adaptador obtiene una **interfaz compatible** con uno de los objetos existentes.
-- El objeto existente puede invocar con esa interfaz los métodos del adaptador.
-- Al recibir una llamada, el adaptador pasa la solicitud al segundo objeto, pero **en el formato que este objeto espera**.
+Funciona así:
+1. El adaptador implementa una **interfaz compatible** con uno de los objetos existentes.
+2. Ese objeto llama a los métodos del adaptador a través de esa interfaz, como si fuera cualquier otro.
+3. Al recibir la llamada, el adaptador la reenvía al segundo objeto, pero **en el formato que este espera**.
 
 ![Adapter - estructura](../adjuntos/Adapter%20-%20estructura.png)
 
@@ -34,10 +33,10 @@ Adapter permite que **colaboren objetos con interfaces incompatibles**: una clas
 > - **XML a JSON:** el "Proveedor de información de bolsa" entrega XML a las "Clases centrales" de la aplicación; un "Adaptador XML a JSON" lo convierte para la "Biblioteca de análisis", que solo entiende JSON.
 > - **Estructura (variante de clase):** `Client` → `Existing Class` (`+method(data)`) y `Service` (`+serviceMethod(specialData)`); `Adapter` hereda de ambas y su `method(data)` hace `specialData = convertToServiceFormat(data); return serviceMethod(specialData)`. *"La clase adaptadora no necesita envolver objetos porque hereda comportamientos tanto de la clase cliente como de la clase de servicio."*
 
-## Problema ejemplo (RUT)
+## Ejemplo: el RUT
 ![Adapter - problema del RUT](../adjuntos/Adapter%20-%20problema%20del%20RUT.png)
 
-## Solución ejemplo
+## Solución del ejemplo
 ![Adapter - solución del RUT](../adjuntos/Adapter%20-%20solución%20del%20RUT.png)
 
 > [!note]- Transcripción del ejemplo del RUT

@@ -9,18 +9,17 @@ prerrequisitos: ["[[01 - Qué es un patrón de diseño|Qué es un patrón de dis
 Proxy es un **sustituto de otro objeto con su misma interfaz**: recibe las llamadas, puede hacer algo antes o después (controlar el acceso, registrar, usar caché, crear el objeto real recién cuando se necesita) y delega en el objeto real.
 
 ## Definición
-- Proporciona un **sustituto o marcador de posición** para otro objeto.
+- Proporciona un **sustituto** (o marcador de posición) para otro objeto.
 - **Controla el acceso** al objeto original.
-- Permite hacer algo **antes o después** de que la solicitud llegue al objeto principal.
+- Permite hacer algo **antes o después** de que la solicitud llegue al objeto original.
 
 ## Problema
-- Un objeto enorme que consume muchos recursos y se utiliza a veces, no siempre.
-- Podemos crear el objeto solo cuando sea necesario → genera mucho código.
+Un objeto enorme, como una conexión a base de datos, consume muchos recursos y solo se usa de vez en cuando. Se podría crear recién cuando se necesite (inicialización diferida), pero entonces cada cliente tendría que repetir ese código, y quedaría mucho código duplicado.
 
 ## Solución
-- Crear la clase **"Proxy" con la misma interfaz** del objeto original.
-- Se actualiza la app para **pasar el proxy** a todos los clientes del objeto original.
-- Si necesitamos ejecutar algo entremedio, **no necesitamos cambiar la clase**.
+- Se crea una clase **`Proxy` con la misma interfaz** que el objeto original.
+- La app **le entrega el proxy** a todos los clientes que antes usaban el objeto original; los clientes no notan la diferencia.
+- Si hay que ejecutar algo entremedio (crear el objeto recién al primer uso, registrar, controlar el acceso), se hace en el proxy, **sin cambiar la clase original**.
 
 ![Proxy - proxy de base de datos](../adjuntos/Proxy%20-%20proxy%20de%20base%20de%20datos.png)
 
@@ -30,10 +29,10 @@ Proxy es un **sustituto de otro objeto con su misma interfaz**: recibe las llama
 > - *"El proxy se camufla como objeto de la base de datos. Puede gestionar la inicialización diferida y el caché de resultados sin que el cliente o el objeto real de la base de datos lo sepan."*
 > - **Estructura:** `Client` → `«interface» ServiceInterface` (`+operation()`), implementada por `Service` (`+operation()`) y por `Proxy` (`-realService: Service`, `+Proxy(s: Service)`, `+checkAccess()`, `+operation()`, que hace `if (checkAccess()) { realService.operation() }`).
 
-## Problema (log de login)
+## Ejemplo: log del login
 ![Proxy - problema del log de login](../adjuntos/Proxy%20-%20problema%20del%20log%20de%20login.png)
 
-## Solución
+## Solución del ejemplo
 ![Proxy - solución LoginProxy](../adjuntos/Proxy%20-%20solución%20LoginProxy.png)
 
 > [!note]- Transcripción del ejemplo

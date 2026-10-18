@@ -6,9 +6,9 @@ prerrequisitos: ["[[01 - Patrón Decorator|Patrón Decorator]]"]
 ---
 # Ejercicio: Decorator de ropa y temperatura corporal
 
-Problema de prueba (Pregunta 5): modelar con el patrón Decorator a una persona que se pone abrigos uno encima de otro y calcular su temperatura corporal.
+Ejercicio: modelar con el patrón Decorator a una persona que se pone abrigos uno encima de otro y calcular su temperatura corporal.
 
-## Ejercicio prueba
+## Enunciado
 ![Ejercicio Decorator - enunciado abrigos](../adjuntos/Ejercicio%20Decorator%20-%20enunciado%20abrigos.png)
 
 > [!note]- Transcripción del enunciado
@@ -20,41 +20,43 @@ Problema de prueba (Pregunta 5): modelar con el patrón Decorator a una persona 
 >   - una parca la aumenta en 5 grados;
 >   - por ejemplo, una persona con dos suéteres y una parca debe tener 47 grados (37 + 2 + 2 + 5).
 
-## Solución (mis apuntes)
+## Solución
+`Person` es el componente concreto (37 grados). `PersonDecorator` recibe en su constructor el objeto que decora y delega en él; cada prenda llama a `super` y suma su aporte.
+
 ```ruby
 class PersonInterface
-	def temperatura_corporal
-		raise NotImplementedError
-	end
+  def temperatura_corporal
+    raise NotImplementedError
+  end
 end
 
 class Person < PersonInterface
-	def temperatura_corporal
-		37
-	end
+  def temperatura_corporal
+    37
+  end
 end
 
-# Aqui Estamos entregando el Objeto Decorado al Decorador
+# El decorador recibe el objeto decorado y le delega la llamada
 class PersonDecorator < PersonInterface
-	def initialize(person)
-		@person = person
-	end
+  def initialize(person)
+    @person = person
+  end
 
-	def temperatura_corporal
-		@person.temperatura_corporal
-	end
+  def temperatura_corporal
+    @person.temperatura_corporal
+  end
 end
 
 class Sweater < PersonDecorator
-	def temperatura_corporal
-		super + 2
-	end
+  def temperatura_corporal
+    super + 2
+  end
 end
 
 class Coat < PersonDecorator
-	def temperatura_corporal
-		super + 5
-	end
+  def temperatura_corporal
+    super + 5
+  end
 end
 ```
 

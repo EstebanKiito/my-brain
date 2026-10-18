@@ -10,8 +10,8 @@ Factory Method define en una superclase un **método que crea objetos** (el mét
 
 ## Definición
 - Proporciona una **interfaz para crear objetos en una superclase**,
-- mientras permite a las **subclases alterar el tipo de objetos** que se crearán.
-- En vez de utilizar **"new"** para construir objetos, utilizamos el **método "Fábrica"**.
+- y permite que las **subclases cambien el tipo de objetos** que se crean.
+- En vez de construir los objetos con `new` directamente, se llama al **método fábrica**, que cada subclase redefine.
 
 ![Factory Method - estructura](../adjuntos/Factory%20Method%20-%20estructura.png)
 
