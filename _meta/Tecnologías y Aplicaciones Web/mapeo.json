@@ -78,8 +78,14 @@
     },
     "APIs web y REST": {
       "carpeta": "Tecnologías y Aplicaciones Web/07-APIs web y REST",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "Clase 6",
+          "hasta": "Clase 7"
+        }
+      ]
     },
     "Node.js": {
       "carpeta": "Tecnologías y Aplicaciones Web/08-Node.js",
