@@ -5,3 +5,4 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: basta con b
 ## Temas
 | Tema | Qué cubre |
 |---|---|
+| [[Tecnologías y Aplicaciones Web/01-Fundamentos de la web/_Índice\|Fundamentos de la web]] | Internet e ISPs, URLs, IP y DNS, HTTP (mensajes, métodos y códigos), TCP, UDP y TLS |

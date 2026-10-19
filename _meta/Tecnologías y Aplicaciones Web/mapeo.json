@@ -12,8 +12,14 @@
   "temas": {
     "Fundamentos de la web": {
       "carpeta": "Tecnologías y Aplicaciones Web/01-Fundamentos de la web",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "Clase 1",
+          "hasta": "Clase 2"
+        }
+      ]
     },
     "HTML y CSS": {
       "carpeta": "Tecnologías y Aplicaciones Web/02-HTML y CSS",
@@ -121,5 +127,11 @@
       "secciones": []
     }
   },
-  "aceptados": []
+  "aceptados": [
+    {
+      "fuente": "apuntes",
+      "link": "http://Uc.cl",
+      "motivo": "Autolink de Notion sobre el texto 'Uc.cl' (ejemplo de host); no es un recurso."
+    }
+  ]
 }

@@ -1,1 +1,72 @@
-[]
+[
+  {
+    "tema": "Fundamentos de la web",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image.png",
+    "destino": "Tecnologías y Aplicaciones Web/01-Fundamentos de la web/adjuntos/Redes domésticas conectadas mediante ISPs.png",
+    "sha256": "94af70704654c172d5e5fc2cdb3e61f73a9df0f0f450d2d7baa3f6526189800d"
+  },
+  {
+    "tema": "Fundamentos de la web",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 1.png",
+    "destino": "Tecnologías y Aplicaciones Web/01-Fundamentos de la web/adjuntos/Estructura de una HTTP request.png",
+    "sha256": "3bb908368c2bab7478d3e1720c352fbf7f2d8f25de1e2dd28dee7c7b9442b3ab"
+  },
+  {
+    "tema": "Fundamentos de la web",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 2.png",
+    "destino": "Tecnologías y Aplicaciones Web/01-Fundamentos de la web/adjuntos/Estructura de una HTTP response.png",
+    "sha256": "023fdbfcfd3259875401496bdb73017c77a0a204e2f74f2de3a863bba93b24b7"
+  },
+  {
+    "tema": "Fundamentos de la web",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 3.png",
+    "destino": "Tecnologías y Aplicaciones Web/01-Fundamentos de la web/adjuntos/Métodos HTTP principales.png",
+    "sha256": "77d30727e3a14752de2966404df630fab2cb3b06a2fce08227d5ab651a188477"
+  },
+  {
+    "tema": "Fundamentos de la web",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 4.png",
+    "destino": "Tecnologías y Aplicaciones Web/01-Fundamentos de la web/adjuntos/Capas del Internet protocol.png",
+    "sha256": "4adb4e42ebbc44622378e6241a1da3a8306417a6b51788ad02192cad9ceec44b"
+  },
+  {
+    "tema": "Fundamentos de la web",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 5.png",
+    "destino": "Tecnologías y Aplicaciones Web/01-Fundamentos de la web/adjuntos/Comparación entre TCP y UDP.png",
+    "sha256": "d3550fd8000e57af8ce5cd45530563a3183c167f3717731b87d1b058c1c7a02b"
+  },
+  {
+    "tema": "Fundamentos de la web",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 6.png",
+    "destino": "Tecnologías y Aplicaciones Web/01-Fundamentos de la web/adjuntos/Tecnologías de la web por capa.png",
+    "sha256": "c06cec9a498c96e10f31a7ebb2e87c517df90679bd10d9fd87fa1b33b35467cd"
+  },
+  {
+    "tema": "Fundamentos de la web",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 1 - De la URL al servidor.pdf#page=31",
+    "destino": "Tecnologías y Aplicaciones Web/01-Fundamentos de la web/adjuntos/Sintaxis de una URL.png",
+    "sha256": "5cfbb93886e8fb7385242362a56fd3401ced12514acb4d520049c1b30c3e8e47"
+  },
+  {
+    "tema": "Fundamentos de la web",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 1 - De la URL al servidor.pdf#page=89",
+    "destino": "Tecnologías y Aplicaciones Web/01-Fundamentos de la web/adjuntos/Resolución DNS antes de la request HTTP.png",
+    "sha256": "68c7a72ae7d71c8158421b9124df9997c92e43336acac8a1787431ed2d27d047"
+  },
+  {
+    "tema": "Fundamentos de la web",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 1 - De la URL al servidor.pdf#page=61",
+    "destino": "Tecnologías y Aplicaciones Web/01-Fundamentos de la web/adjuntos/Establecimiento de una sesión TLS.png",
+    "sha256": "5518275ecc0b43de5ca486001f2f1618f801768dcfd0225d731775094eb6b353"
+  }
+]
