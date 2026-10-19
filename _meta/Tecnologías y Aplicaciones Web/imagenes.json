@@ -369,5 +369,26 @@
     "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 8 - Desarrollando servidores.pdf#page=79",
     "destino": "Tecnologías y Aplicaciones Web/09-Servidores y aplicaciones web/adjuntos/Aplicación, ORM, driver y base de datos.png",
     "sha256": "7e814ff0a073ac5fa7d48f5b8dedf98d86fbf0b52ca49dc0156f507beac4f137"
+  },
+  {
+    "tema": "Diseño web",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 12 - Diseño Frontend.pdf#page=9",
+    "destino": "Tecnologías y Aplicaciones Web/12-Diseño web/adjuntos/Tareas de UX designers y UI designers.png",
+    "sha256": "f34842ffe0be3946f2767ab5f0fe6472cccc05ebf0e3e77fe8356c597a4e6fe5"
+  },
+  {
+    "tema": "Diseño web",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 12 - Diseño Frontend.pdf#page=16",
+    "destino": "Tecnologías y Aplicaciones Web/12-Diseño web/adjuntos/Patrón de medidor de seguridad de contraseñas.png",
+    "sha256": "4dd8629a3f82c2458514740b57e15fa35484ff939ee37af68757c3fb4de3e472"
+  },
+  {
+    "tema": "Diseño web",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 12 - Diseño Frontend.pdf#page=21",
+    "destino": "Tecnologías y Aplicaciones Web/12-Diseño web/adjuntos/Rangos de resolución en diseño responsivo.png",
+    "sha256": "6179a334cee44522425b5fba75cb252c75a5545397434e60d7da8d6f19843414"
   }
 ]

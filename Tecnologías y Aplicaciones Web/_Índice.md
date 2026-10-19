@@ -16,3 +16,4 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: basta con b
 | [[Tecnologías y Aplicaciones Web/09-Servidores y aplicaciones web/_Índice\|Servidores y aplicaciones web]] | Servidor web y aplicación web, frontend y backend, MVC, CSR/SSR/SSG/ISR, middleware y ORM |
 | [[Tecnologías y Aplicaciones Web/10-Construir una API con Express/_Índice\|Construir una API con Express]] | Proyecto Node, routers, Sequelize con PostgreSQL, modelos, migraciones, seeds y CRUD |
 | [[Tecnologías y Aplicaciones Web/11-Calidad, CI y CD/_Índice\|Calidad, CI y CD]] | Calidad y QA, análisis estático con ESLint, code review, GitHub flow, commits, CI con GitHub Actions y CD |
+| [[Tecnologías y Aplicaciones Web/12-Diseño web/_Índice\|Diseño web]] | UI y UX, prototipado, jerarquía visual, patrones, identidad visual, responsivo, accesibilidad e impacto ambiental |
