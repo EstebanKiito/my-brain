@@ -411,5 +411,40 @@
     "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 13 - Diseño web en la práctica.pdf#page=44",
     "destino": "Tecnologías y Aplicaciones Web/13-CSS moderno/adjuntos/Contenedor e items en Flexbox.png",
     "sha256": "1dc4e0112f58ad2cf67bbb0a4c26b3dd246ba8182dd7d12d5858eeb21d9ccbce"
+  },
+  {
+    "tema": "Autenticación y autorización",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 15 - Autenticación y autorización.pdf#page=24",
+    "destino": "Tecnologías y Aplicaciones Web/15-Autenticación y autorización/adjuntos/Mismo hash para la misma contraseña sin salt.png",
+    "sha256": "28cfc15413ecd929f3ced1ca5a12a87a9d8005b0b96709c85ef14b4ef0115cda"
+  },
+  {
+    "tema": "Autenticación y autorización",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 15 - Autenticación y autorización.pdf#page=38",
+    "destino": "Tecnologías y Aplicaciones Web/15-Autenticación y autorización/adjuntos/Estructura de un JWT.png",
+    "sha256": "6834f7db68a308c659001e8dabe1edb7c2b7518a0ccb5fe7f41b3f28cfa65ef9"
+  },
+  {
+    "tema": "Autenticación y autorización",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 15 - Autenticación y autorización.pdf#page=57",
+    "destino": "Tecnologías y Aplicaciones Web/15-Autenticación y autorización/adjuntos/Flujo de autorización OAuth 2.0.png",
+    "sha256": "6b07e3df0f4e6ee5714aed1ba352cb39fbf8facec907500b99c548cbaadecaac"
+  },
+  {
+    "tema": "Autenticación y autorización",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 15 - Autenticación y autorización.pdf#page=60",
+    "destino": "Tecnologías y Aplicaciones Web/15-Autenticación y autorización/adjuntos/Login por dominio sin SSO.png",
+    "sha256": "02101168bd51e0f41d7d17070af2745808dc368b23a45df8d8b207ca35af7f77"
+  },
+  {
+    "tema": "Autenticación y autorización",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 15 - Autenticación y autorización.pdf#page=62",
+    "destino": "Tecnologías y Aplicaciones Web/15-Autenticación y autorización/adjuntos/Same origin policy impide compartir la cookie.png",
+    "sha256": "414327f5f0e4c26460a0e56fcff959f11efb26a129f0fd5b53cb9d0220975c46"
   }
 ]

@@ -19,3 +19,4 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: basta con b
 | [[Tecnologías y Aplicaciones Web/12-Diseño web/_Índice\|Diseño web]] | UI y UX, prototipado, jerarquía visual, patrones, identidad visual, responsivo, accesibilidad e impacto ambiental |
 | [[Tecnologías y Aplicaciones Web/13-CSS moderno/_Índice\|CSS moderno]] | Rendering entre navegadores, unidades, variables, nesting, selectores, Flexbox, Grid, animaciones, frameworks y design systems |
 | [[Tecnologías y Aplicaciones Web/14-Cookies y sesiones/_Índice\|Cookies y sesiones]] | Cookies y Set-Cookie, sesiones con session id, Express y abusos (tracking, CSRF, robo de sesión) |
+| [[Tecnologías y Aplicaciones Web/15-Autenticación y autorización/_Índice\|Autenticación y autorización]] | Autenticación frente a autorización, contraseñas, hashing con bcrypt, JWT, OAuth y SSO |

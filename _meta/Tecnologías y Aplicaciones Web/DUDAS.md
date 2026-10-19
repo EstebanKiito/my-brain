@@ -38,3 +38,9 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
 | ℹ️ | [[04 - Integración y despliegue continuos\|Integración y despliegue continuos]] | Slides de hosting: Render y Netlify aparecen ambos como "recomendación para el backend de su proyecto" | Netlify está orientado sobre todo a frontends y sitios estáticos (los backends van como funciones serverless). Parece un texto duplicado de la slide de Render. La nota deja Render como la recomendación para el backend y Netlify para frontends. |
+
+## Autenticación y autorización
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ℹ️ | [[02 - Hashing de contraseñas con bcrypt\|Hashing de contraseñas con bcrypt]] | Slide titulada "(Agregando salt)" | La figura muestra el caso **sin** salt: la misma contraseña produce el mismo hash con SHA-256. La nota la usa para motivar el salt y lo dice en la transcripción. |
+| ℹ️ | [[03 - JSON Web Tokens\|JSON Web Tokens]] | Figura de la estructura de un JWT: la firma usa `secret_salt` | En un JWT con HS256 es un **secreto** del servidor, no un salt (un salt es público y distinto por dato). La nota lo llama secreto y aclara el rótulo de la figura. |
