@@ -67,8 +67,14 @@
     },
     "React": {
       "carpeta": "Tecnologías y Aplicaciones Web/06-React",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "Clase 5: React",
+          "hasta": "Clase 6"
+        }
+      ]
     },
     "APIs web y REST": {
       "carpeta": "Tecnologías y Aplicaciones Web/07-APIs web y REST",
@@ -156,6 +162,26 @@
       "fuente": "apuntes",
       "link": "http://Uc.cl",
       "motivo": "Autolink de Notion sobre el texto 'Uc.cl' (ejemplo de host); no es un recurso."
+    },
+    {
+      "fuente": "apuntes",
+      "texto": "En el curso tenemos 2 tareas",
+      "motivo": "Organización del curso (tareas y alcance de la clase); se resume en Gestión del curso."
+    },
+    {
+      "fuente": "apuntes",
+      "texto": "T1: Construir frontend con React",
+      "motivo": "Organización del curso (tareas y alcance de la clase); se resume en Gestión del curso."
+    },
+    {
+      "fuente": "apuntes",
+      "texto": "T2: Nos dan un frontend, y tenemos que construir el backend usando express",
+      "motivo": "Organización del curso (tareas y alcance de la clase); se resume en Gestión del curso."
+    },
+    {
+      "fuente": "apuntes",
+      "texto": "Esta clase es una introduccion a REACT: No un master en React",
+      "motivo": "Organización del curso (tareas y alcance de la clase); se resume en Gestión del curso."
     }
   ]
 }

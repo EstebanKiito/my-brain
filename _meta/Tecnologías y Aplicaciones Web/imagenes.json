@@ -236,5 +236,96 @@
     "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 4 - JavaScript parte 2.pdf#page=71",
     "destino": "Tecnologías y Aplicaciones Web/05-DOM y eventos/adjuntos/target y currentTarget en capturing y bubbling.png",
     "sha256": "32a8bfe12457e3074d1dbaf843591e56ae78631e2e2537e30a9f2b0b61dd779b"
+  },
+  {
+    "tema": "React",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 27.png",
+    "destino": "Tecnologías y Aplicaciones Web/06-React/adjuntos/App de tareas dividida en componentes.png",
+    "sha256": "9e64978a50c1592d02cd7f121c62db656dda236286b91fb0c819435474d38038"
+  },
+  {
+    "tema": "React",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 28.png",
+    "destino": "Tecnologías y Aplicaciones Web/06-React/adjuntos/createElement frente a JSX y su HTML resultante.png",
+    "sha256": "a888e98d5e8c48ca58ce9f17ac0121f5ad42b3bd0a3257baa211feea8bb55f06"
+  },
+  {
+    "tema": "React",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 29.png",
+    "destino": "Tecnologías y Aplicaciones Web/06-React/adjuntos/Sintaxis regular frente a JSX.png",
+    "sha256": "5f84d348fe5e0a7e9ef0392b43c51ef4b9911c058b9345a53f23aee7e7d7adb2"
+  },
+  {
+    "tema": "React",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 30.png",
+    "destino": "Tecnologías y Aplicaciones Web/06-React/adjuntos/Diff del Virtual DOM aplicado al DOM real.png",
+    "sha256": "e387ed4ac92d34bc092631d493dda2e67c451dbc21e6b65ff2b70bd4b8dcd213"
+  },
+  {
+    "tema": "React",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 31.png",
+    "destino": "Tecnologías y Aplicaciones Web/06-React/adjuntos/Componente funcional frente a componente de clase.png",
+    "sha256": "85260e66af14aa4b996491b1ff24bfe0a6694f9273c5d8fc0f3d3b9d492e1294"
+  },
+  {
+    "tema": "React",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 32.png",
+    "destino": "Tecnologías y Aplicaciones Web/06-React/adjuntos/Props de Avatar desde Profile.png",
+    "sha256": "ee76bfc6026b2c1d904d5b23b16205f2ca3f9a570f3ffe4f22137740f5ba7601"
+  },
+  {
+    "tema": "React",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 33.png",
+    "destino": "Tecnologías y Aplicaciones Web/06-React/adjuntos/Contador con useState.png",
+    "sha256": "225819528814fdb8aa63a4e09615b93434e45ebeb1571a4ceb8115de44005548"
+  },
+  {
+    "tema": "React",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 34.png",
+    "destino": "Tecnologías y Aplicaciones Web/06-React/adjuntos/Evento inline en el DOM.png",
+    "sha256": "13c2d759854928a514faa6d5ab9f0aba56c8bccf1b0bcd726ad5eb9d47daceb9"
+  },
+  {
+    "tema": "React",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 35.png",
+    "destino": "Tecnologías y Aplicaciones Web/06-React/adjuntos/Ciclo de vida de un componente de clase.png",
+    "sha256": "b916ab8f21e46e91a739e22b9662cf23fd155d89ff7ecb078341d78df56cedde"
+  },
+  {
+    "tema": "React",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 36.png",
+    "destino": "Tecnologías y Aplicaciones Web/06-React/adjuntos/useState con dos variables de estado.png",
+    "sha256": "10d04b7cb1e2c0ca2845e78669723a0d6d03e3b88eeae14e0fe2a887aed9d2c7"
+  },
+  {
+    "tema": "React",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 37.png",
+    "destino": "Tecnologías y Aplicaciones Web/06-React/adjuntos/Declaración y suscripción a un contexto.png",
+    "sha256": "079f07c3496fb83f23d8bed530bd4035d1eecdbd618e201f2dc07ea88cd932f9"
+  },
+  {
+    "tema": "React",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 38.png",
+    "destino": "Tecnologías y Aplicaciones Web/06-React/adjuntos/Variantes de useEffect según dependencias.png",
+    "sha256": "e17f12246a0de9afddf47f00005813efb6cf3bbe20163d8c83060109d9596783"
+  },
+  {
+    "tema": "React",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 39.png",
+    "destino": "Tecnologías y Aplicaciones Web/06-React/adjuntos/useEffect que conecta y desconecta un chat.png",
+    "sha256": "e91f1aae0860651669611e94aa8b4187e422342fa0f45dc0cd2865c067db1c87"
   }
 ]

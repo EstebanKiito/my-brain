@@ -10,3 +10,4 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: basta con b
 | [[Tecnologías y Aplicaciones Web/03-JavaScript como lenguaje/_Índice\|JavaScript como lenguaje]] | Historia y ECMAScript, TypeScript, variables y scope, tipos, operadores, control de flujo, funciones, clases y módulos |
 | [[Tecnologías y Aplicaciones Web/04-Asincronía en JavaScript/_Índice\|Asincronía en JavaScript]] | Callbacks, callback hell, promesas y sus estados, encadenamiento, manejo de errores y async/await |
 | [[Tecnologías y Aplicaciones Web/05-DOM y eventos/_Índice\|DOM y eventos]] | Búsqueda y recorrido de nodos, creación de elementos, eventos y propagación |
+| [[Tecnologías y Aplicaciones Web/06-React/_Índice\|React]] | JSX y Virtual DOM, componentes, props y state, eventos, ciclo de vida, hooks y proyecto con Vite |
