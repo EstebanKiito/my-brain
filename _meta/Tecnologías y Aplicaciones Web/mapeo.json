@@ -104,8 +104,13 @@
     },
     "Construir una API con Express": {
       "carpeta": "Tecnologías y Aplicaciones Web/10-Construir una API con Express",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "tareas",
+          "desde": "T2"
+        }
+      ]
     },
     "Calidad, CI y CD": {
       "carpeta": "Tecnologías y Aplicaciones Web/11-Calidad, CI y CD",
@@ -193,6 +198,46 @@
       "fuente": "apuntes",
       "texto": "Esta clase es una introduccion a REACT: No un master en React",
       "motivo": "Organización del curso (tareas y alcance de la clase); se resume en Gestión del curso."
+    },
+    {
+      "fuente": "tareas",
+      "texto": "T2",
+      "motivo": "Nombre de la tarea personal; el contenido técnico se reescribió en el tema."
+    },
+    {
+      "fuente": "tareas",
+      "texto": "Tarea-2-Respaldo $ brew services start postgresql",
+      "motivo": "Log de terminal personal (usuario, contraseña y bases propias); se reescribió como setup genérico de Postgres con Homebrew."
+    },
+    {
+      "fuente": "tareas",
+      "texto": "# Genera User",
+      "motivo": "Modelos específicos de la tarea; el flujo de model:generate se reescribió con el modelo neutro Movie."
+    },
+    {
+      "fuente": "tareas",
+      "texto": "Proyecto",
+      "motivo": "Encabezado del proyecto personal."
+    },
+    {
+      "fuente": "tareas",
+      "texto": "Generacion de Modelos",
+      "motivo": "Encabezado del proyecto personal."
+    },
+    {
+      "fuente": "tareas",
+      "texto": "Javier-Lopez_backend_25-2 $ yarn sequelize-cli model:generate",
+      "motivo": "Log de terminal del proyecto (rutas y modelos personales); el flujo se reescribió con un ejemplo neutro."
+    },
+    {
+      "fuente": "tareas",
+      "texto": "A copiar en develop backend",
+      "motivo": "Recordatorio personal del proyecto."
+    },
+    {
+      "fuente": "tareas",
+      "texto": "if (!reviews || reviews.length === 0) {",
+      "motivo": "Fragmento del proyecto; la idea (lista vacía responde 200 con []) quedó en Rutas y routers en Express."
     }
   ]
 }

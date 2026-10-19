@@ -14,3 +14,4 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: basta con b
 | [[Tecnologías y Aplicaciones Web/07-APIs web y REST/_Índice\|APIs web y REST]] | APIs web, CRUD, principios REST, autenticación con tokens, documentación y consumo con fetch y Axios |
 | [[Tecnologías y Aplicaciones Web/08-Node.js/_Índice\|Node.js]] | Runtime y arquitectura de Node, call stack y event loop, scripts, módulos y servidor HTTP |
 | [[Tecnologías y Aplicaciones Web/09-Servidores y aplicaciones web/_Índice\|Servidores y aplicaciones web]] | Servidor web y aplicación web, frontend y backend, MVC, CSR/SSR/SSG/ISR, middleware y ORM |
+| [[Tecnologías y Aplicaciones Web/10-Construir una API con Express/_Índice\|Construir una API con Express]] | Proyecto Node, routers, Sequelize con PostgreSQL, modelos, migraciones, seeds y CRUD |
