@@ -1,0 +1,125 @@
+{
+  "_descripcion": "Mapeo de las fuentes originales (rutas relativas a _raw/) a los temas del vault. Cada sección va desde el bloque 'desde' (incluido) hasta 'hasta' (excluido); con 'por_texto' los límites pueden ser cualquier bloque. Las notas se reescriben según _meta/ESTANDAR-NOTAS.md, por eso 'cobertura' es 'reescrita' (la cobertura textual es advertencia). Los apuntes cubren las clases 0-6; desde la clase 7 la fuente es el PDF de slides de 'TECNOLOGIAS Y APPS WEB/Clases/' (sin licencia: entra solo como PNG, registrado en imagenes.json con tipo 'slide'). De 'Tareas Web' y 'Proyecto' solo entra lo genérico (flujo de sequelize-cli, setup de Postgres, router de Express) reescrito con modelos neutros; lo personal queda en 'aceptados'.",
+  "carpeta_ramo": "Tecnologías y Aplicaciones Web",
+  "cobertura": "reescrita",
+  "fuentes": {
+    "ramo": "Semestre 6/TECNOLOGIAS Y APPS WEB 22760dd6de8180b599adfb918ff34981.html",
+    "apuntes": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases 24460dd6de818036b622d97fa98a73d6.html",
+    "tareas": "Semestre 6/TECNOLOGIAS Y APPS WEB/Tareas Web 24460dd6de8180109c8edeb263bba0e4.html",
+    "proyecto": "Semestre 6/TECNOLOGIAS Y APPS WEB/Proyecto 29f60dd6de8180c09f2fc49ffec37606.html",
+    "trucos": "Semestre 6/TECNOLOGIAS Y APPS WEB/Investigaciones + Trucos 24460dd6de81801199b8e995963e802c.html"
+  },
+  "temas": {
+    "Fundamentos de la web": {
+      "carpeta": "Tecnologías y Aplicaciones Web/01-Fundamentos de la web",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "HTML y CSS": {
+      "carpeta": "Tecnologías y Aplicaciones Web/02-HTML y CSS",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "JavaScript como lenguaje": {
+      "carpeta": "Tecnologías y Aplicaciones Web/03-JavaScript como lenguaje",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Asincronía en JavaScript": {
+      "carpeta": "Tecnologías y Aplicaciones Web/04-Asincronía en JavaScript",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "DOM y eventos": {
+      "carpeta": "Tecnologías y Aplicaciones Web/05-DOM y eventos",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "React": {
+      "carpeta": "Tecnologías y Aplicaciones Web/06-React",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "APIs web y REST": {
+      "carpeta": "Tecnologías y Aplicaciones Web/07-APIs web y REST",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Node.js": {
+      "carpeta": "Tecnologías y Aplicaciones Web/08-Node.js",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Servidores y aplicaciones web": {
+      "carpeta": "Tecnologías y Aplicaciones Web/09-Servidores y aplicaciones web",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Construir una API con Express": {
+      "carpeta": "Tecnologías y Aplicaciones Web/10-Construir una API con Express",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Calidad, CI y CD": {
+      "carpeta": "Tecnologías y Aplicaciones Web/11-Calidad, CI y CD",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Diseño web": {
+      "carpeta": "Tecnologías y Aplicaciones Web/12-Diseño web",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "CSS moderno": {
+      "carpeta": "Tecnologías y Aplicaciones Web/13-CSS moderno",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Cookies y sesiones": {
+      "carpeta": "Tecnologías y Aplicaciones Web/14-Cookies y sesiones",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Autenticación y autorización": {
+      "carpeta": "Tecnologías y Aplicaciones Web/15-Autenticación y autorización",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Almacenamiento en el cliente": {
+      "carpeta": "Tecnologías y Aplicaciones Web/16-Almacenamiento en el cliente",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Tecnologías web adicionales": {
+      "carpeta": "Tecnologías y Aplicaciones Web/17-Tecnologías web adicionales",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Testing en la web": {
+      "carpeta": "Tecnologías y Aplicaciones Web/18-Testing en la web",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Escala e ingeniería inversa": {
+      "carpeta": "Tecnologías y Aplicaciones Web/19-Escala e ingeniería inversa",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "IA para desarrolladores": {
+      "carpeta": "Tecnologías y Aplicaciones Web/20-IA para desarrolladores",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Privacidad y ética": {
+      "carpeta": "Tecnologías y Aplicaciones Web/21-Privacidad y ética",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Gestión del curso": {
+      "carpeta": "Tecnologías y Aplicaciones Web/22-Gestión del curso",
+      "estado": "pendiente",
+      "secciones": []
+    }
+  },
+  "aceptados": []
+}
