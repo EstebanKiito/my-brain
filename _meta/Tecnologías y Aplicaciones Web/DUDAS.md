@@ -33,3 +33,8 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
 | ℹ️ | [[04 - Documentar y consumir APIs\|Documentar y consumir APIs]] | Slide "Ejemplo de POST request a API de GitHub" con Axios: usa `axios.get(query_url, data, …)` sobre `…/commits` | Crear una issue es `axios.post` sobre `…/issues` (además, `get` no recibe body). La nota usa `axios.post(url, data, config)`, verificado contra la API (sin token responde 401). |
+
+## Calidad, CI y CD
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ℹ️ | [[04 - Integración y despliegue continuos\|Integración y despliegue continuos]] | Slides de hosting: Render y Netlify aparecen ambos como "recomendación para el backend de su proyecto" | Netlify está orientado sobre todo a frontends y sitios estáticos (los backends van como funciones serverless). Parece un texto duplicado de la slide de Render. La nota deja Render como la recomendación para el backend y Netlify para frontends. |
