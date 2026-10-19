@@ -99,7 +99,7 @@
     },
     "Servidores y aplicaciones web": {
       "carpeta": "Tecnologías y Aplicaciones Web/09-Servidores y aplicaciones web",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": []
     },
     "Construir una API con Express": {

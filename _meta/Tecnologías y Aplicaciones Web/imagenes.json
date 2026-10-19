@@ -355,5 +355,19 @@
     "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 7 - Node.js.pdf#page=76",
     "destino": "Tecnologías y Aplicaciones Web/08-Node.js/adjuntos/Event loop de Node.js con libuv.png",
     "sha256": "4043de30ab633a3aec9fece1f10925f3c3024ee1ac333907ee873b2d7e690069"
+  },
+  {
+    "tema": "Servidores y aplicaciones web",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 8 - Desarrollando servidores.pdf#page=54",
+    "destino": "Tecnologías y Aplicaciones Web/09-Servidores y aplicaciones web/adjuntos/Client side rendering del build al navegador.png",
+    "sha256": "77ca6635b8c2c90ce6422eba472a7dfe13c48f2a0b1f8ad946fa007faaa8ba2d"
+  },
+  {
+    "tema": "Servidores y aplicaciones web",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 8 - Desarrollando servidores.pdf#page=79",
+    "destino": "Tecnologías y Aplicaciones Web/09-Servidores y aplicaciones web/adjuntos/Aplicación, ORM, driver y base de datos.png",
+    "sha256": "7e814ff0a073ac5fa7d48f5b8dedf98d86fbf0b52ca49dc0156f507beac4f137"
   }
 ]
