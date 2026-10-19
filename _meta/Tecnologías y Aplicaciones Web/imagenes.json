@@ -159,5 +159,82 @@
     "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 17.png",
     "destino": "Tecnologías y Aplicaciones Web/04-Asincronía en JavaScript/adjuntos/Fetch con promesas frente a async await.png",
     "sha256": "80fe0b01b34e0a1fe129bfc73f4431ad81f706198aa632278bda1995b56bee5e"
+  },
+  {
+    "tema": "DOM y eventos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 18.png",
+    "destino": "Tecnologías y Aplicaciones Web/05-DOM y eventos/adjuntos/Árbol DOM con nodos de texto y comentario.png",
+    "sha256": "593cf5a1e1e9bd4acd95d552de96548c1877ce29aa6efd8459ef220dc74ffc37"
+  },
+  {
+    "tema": "DOM y eventos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 19.png",
+    "destino": "Tecnologías y Aplicaciones Web/05-DOM y eventos/adjuntos/Buscar un elemento con getElementById.png",
+    "sha256": "2a5214e71c5a8a272943f0b662ac5bada66c8692485b4506e077fc90fb988ac8"
+  },
+  {
+    "tema": "DOM y eventos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 20.png",
+    "destino": "Tecnologías y Aplicaciones Web/05-DOM y eventos/adjuntos/Buscar elementos con querySelectorAll.png",
+    "sha256": "b7c0a95369050f5fc49b644419b419216a178ef1d7f1becb27224dcaf98acea9"
+  },
+  {
+    "tema": "DOM y eventos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 21.png",
+    "destino": "Tecnologías y Aplicaciones Web/05-DOM y eventos/adjuntos/Comparación de métodos de búsqueda en el DOM.png",
+    "sha256": "d89a085f8026e45c280696362dc34dab7ccd91c0c48ebde4804a8f897aca7a60"
+  },
+  {
+    "tema": "DOM y eventos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 22.png",
+    "destino": "Tecnologías y Aplicaciones Web/05-DOM y eventos/adjuntos/Acceder al documento desde JavaScript.png",
+    "sha256": "14c568670ff2881dd3dd97eb272f52ea643e7fd2c4c76baa4fe81df94c3f915d"
+  },
+  {
+    "tema": "DOM y eventos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 23.png",
+    "destino": "Tecnologías y Aplicaciones Web/05-DOM y eventos/adjuntos/Crear un párrafo con un nodo de texto.png",
+    "sha256": "2d3f1c7adad1e5874d5e9713e785e98e86c4b13f6a6385d2be5392ad25c8ec23"
+  },
+  {
+    "tema": "DOM y eventos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 24.png",
+    "destino": "Tecnologías y Aplicaciones Web/05-DOM y eventos/adjuntos/Crear una imagen con clase, id y atributo.png",
+    "sha256": "429830cc921fc2e2ba1e4acdfa50692314eacaa22abdf9fe7563043cba70c3c4"
+  },
+  {
+    "tema": "DOM y eventos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 25.png",
+    "destino": "Tecnologías y Aplicaciones Web/05-DOM y eventos/adjuntos/Event listener que cambia el color de fondo.png",
+    "sha256": "3f5a40b7de63fbec7ed05093ad2fb75d984fe78a4ae0558dcdb1459b52ebb0c7"
+  },
+  {
+    "tema": "DOM y eventos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 26.png",
+    "destino": "Tecnologías y Aplicaciones Web/05-DOM y eventos/adjuntos/Dos formas de definir un event listener.png",
+    "sha256": "9c0343968c15764e0bc0b8084def2cceb5bd5b5fe74573b7e07647339beca3f4"
+  },
+  {
+    "tema": "DOM y eventos",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 4 - JavaScript parte 2.pdf#page=60",
+    "destino": "Tecnologías y Aplicaciones Web/05-DOM y eventos/adjuntos/Hijos de un nodo p con texto y negrita.png",
+    "sha256": "182e41d9a9acda9daf2cd445ab15f1b6fb18dcbf177f2462496ce565fff1c45d"
+  },
+  {
+    "tema": "DOM y eventos",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 4 - JavaScript parte 2.pdf#page=71",
+    "destino": "Tecnologías y Aplicaciones Web/05-DOM y eventos/adjuntos/target y currentTarget en capturing y bubbling.png",
+    "sha256": "32a8bfe12457e3074d1dbaf843591e56ae78631e2e2537e30a9f2b0b61dd779b"
   }
 ]

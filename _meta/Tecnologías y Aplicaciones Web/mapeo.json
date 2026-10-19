@@ -56,8 +56,14 @@
     },
     "DOM y eventos": {
       "carpeta": "Tecnologías y Aplicaciones Web/05-DOM y eventos",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "Manejo del DOM",
+          "hasta": "Clase 5: React"
+        }
+      ]
     },
     "React": {
       "carpeta": "Tecnologías y Aplicaciones Web/06-React",
