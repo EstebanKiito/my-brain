@@ -327,5 +327,33 @@
     "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 39.png",
     "destino": "Tecnologías y Aplicaciones Web/06-React/adjuntos/useEffect que conecta y desconecta un chat.png",
     "sha256": "e91f1aae0860651669611e94aa8b4187e422342fa0f45dc0cd2865c067db1c87"
+  },
+  {
+    "tema": "Node.js",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 7 - Node.js.pdf#page=30",
+    "destino": "Tecnologías y Aplicaciones Web/08-Node.js/adjuntos/Capas de la arquitectura de Node.js.png",
+    "sha256": "51614681f00534ad59ac12a64d30a82e6f565c68165180bcbf5d836c5cd99b8b"
+  },
+  {
+    "tema": "Node.js",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 7 - Node.js.pdf#page=39",
+    "destino": "Tecnologías y Aplicaciones Web/08-Node.js/adjuntos/Componentes de un runtime de JavaScript.png",
+    "sha256": "0b1c2a8e0f0f52480e7a5d333c3e4f5e5d05affc02ce5a1d30c40eb1a7039586"
+  },
+  {
+    "tema": "Node.js",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 7 - Node.js.pdf#page=68",
+    "destino": "Tecnologías y Aplicaciones Web/08-Node.js/adjuntos/Call stack, cola de mensajes y event loop.png",
+    "sha256": "ca4ca05de9e1d84def5e7019d4e2668ea350bb7fa9d7c5e0f0cc75c8feb798ba"
+  },
+  {
+    "tema": "Node.js",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 7 - Node.js.pdf#page=76",
+    "destino": "Tecnologías y Aplicaciones Web/08-Node.js/adjuntos/Event loop de Node.js con libuv.png",
+    "sha256": "4043de30ab633a3aec9fece1f10925f3c3024ee1ac333907ee873b2d7e690069"
   }
 ]

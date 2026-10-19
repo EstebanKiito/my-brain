@@ -89,8 +89,13 @@
     },
     "Node.js": {
       "carpeta": "Tecnologías y Aplicaciones Web/08-Node.js",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "Clase 7"
+        }
+      ]
     },
     "Servidores y aplicaciones web": {
       "carpeta": "Tecnologías y Aplicaciones Web/09-Servidores y aplicaciones web",

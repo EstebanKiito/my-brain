@@ -12,3 +12,4 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: basta con b
 | [[Tecnologías y Aplicaciones Web/05-DOM y eventos/_Índice\|DOM y eventos]] | Búsqueda y recorrido de nodos, creación de elementos, eventos y propagación |
 | [[Tecnologías y Aplicaciones Web/06-React/_Índice\|React]] | JSX y Virtual DOM, componentes, props y state, eventos, ciclo de vida, hooks y proyecto con Vite |
 | [[Tecnologías y Aplicaciones Web/07-APIs web y REST/_Índice\|APIs web y REST]] | APIs web, CRUD, principios REST, autenticación con tokens, documentación y consumo con fetch y Axios |
+| [[Tecnologías y Aplicaciones Web/08-Node.js/_Índice\|Node.js]] | Runtime y arquitectura de Node, call stack y event loop, scripts, módulos y servidor HTTP |
