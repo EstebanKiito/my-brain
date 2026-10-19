@@ -34,8 +34,14 @@
     },
     "JavaScript como lenguaje": {
       "carpeta": "Tecnologías y Aplicaciones Web/03-JavaScript como lenguaje",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "Clase 3: Javascript",
+          "hasta": "Clase 4"
+        }
+      ]
     },
     "Asincronía en JavaScript": {
       "carpeta": "Tecnologías y Aplicaciones Web/04-Asincronía en JavaScript",
