@@ -390,5 +390,26 @@
     "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 12 - Diseño Frontend.pdf#page=21",
     "destino": "Tecnologías y Aplicaciones Web/12-Diseño web/adjuntos/Rangos de resolución en diseño responsivo.png",
     "sha256": "6179a334cee44522425b5fba75cb252c75a5545397434e60d7da8d6f19843414"
+  },
+  {
+    "tema": "CSS moderno",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 13 - Diseño web en la práctica.pdf#page=32",
+    "destino": "Tecnologías y Aplicaciones Web/13-CSS moderno/adjuntos/Escala tipográfica en rem y px.png",
+    "sha256": "5fc9e53c60839d83023f87598714d1cba8a2de062f7a0dd1b6cca658e46b3079"
+  },
+  {
+    "tema": "CSS moderno",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 13 - Diseño web en la práctica.pdf#page=43",
+    "destino": "Tecnologías y Aplicaciones Web/13-CSS moderno/adjuntos/Flexbox en una dimensión y Grid en dos.png",
+    "sha256": "4ab1ca1295a0cd62fa63f621f4b5297b9616cd4a4d4ce937a3f6d31eb799f809"
+  },
+  {
+    "tema": "CSS moderno",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 13 - Diseño web en la práctica.pdf#page=44",
+    "destino": "Tecnologías y Aplicaciones Web/13-CSS moderno/adjuntos/Contenedor e items en Flexbox.png",
+    "sha256": "1dc4e0112f58ad2cf67bbb0a4c26b3dd246ba8182dd7d12d5858eeb21d9ccbce"
   }
 ]
