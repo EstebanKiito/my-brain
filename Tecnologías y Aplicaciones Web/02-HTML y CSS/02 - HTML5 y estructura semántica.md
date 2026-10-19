@@ -66,7 +66,7 @@ Antes de HTML5, casi toda página se armaba con `div`: un `div id="header"`, un 
 </svg>
 ```
 
-- **Almacenamiento en el cliente** con `localStorage` y `sessionStorage` (se detalla en el tema de almacenamiento en el cliente).
+- **Almacenamiento en el cliente** con `localStorage` y `sessionStorage` (se detalla en [[02 - localStorage y sessionStorage|localStorage y sessionStorage]]).
 - La **API de WebSockets**, para comunicación bidireccional con el servidor.
 
 Estas capacidades nativas son parte de por qué desaparecieron los plugins como Flash: casi todo lo que ofrecían ahora lo hace HTML5 de forma estándar, con un modelo de seguridad que controlan los propios navegadores.

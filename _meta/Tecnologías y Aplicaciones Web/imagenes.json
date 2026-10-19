@@ -446,5 +446,19 @@
     "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 15 - Autenticación y autorización.pdf#page=62",
     "destino": "Tecnologías y Aplicaciones Web/15-Autenticación y autorización/adjuntos/Same origin policy impide compartir la cookie.png",
     "sha256": "414327f5f0e4c26460a0e56fcff959f11efb26a129f0fd5b53cb9d0220975c46"
+  },
+  {
+    "tema": "Almacenamiento en el cliente",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 16 - Almacenes de información.pdf#page=34",
+    "destino": "Tecnologías y Aplicaciones Web/16-Almacenamiento en el cliente/adjuntos/Comparación de localStorage, sessionStorage, cookies e IndexedDB.png",
+    "sha256": "4f863c3fb7a7e188889304d4e00e19e1b1f03bedc7168dc90cbe0551bc707e87"
+  },
+  {
+    "tema": "Almacenamiento en el cliente",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 16 - Almacenes de información.pdf#page=47",
+    "destino": "Tecnologías y Aplicaciones Web/16-Almacenamiento en el cliente/adjuntos/Servidores CDN frente al servidor de origen.png",
+    "sha256": "5e889f318034cefa7a3cae47eb6b0041fec8755cc3487fc82c7a733a47902096"
   }
 ]

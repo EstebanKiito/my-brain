@@ -44,3 +44,10 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 |---|---|---|---|
 | ℹ️ | [[02 - Hashing de contraseñas con bcrypt\|Hashing de contraseñas con bcrypt]] | Slide titulada "(Agregando salt)" | La figura muestra el caso **sin** salt: la misma contraseña produce el mismo hash con SHA-256. La nota la usa para motivar el salt y lo dice en la transcripción. |
 | ℹ️ | [[03 - JSON Web Tokens\|JSON Web Tokens]] | Figura de la estructura de un JWT: la firma usa `secret_salt` | En un JWT con HS256 es un **secreto** del servidor, no un salt (un salt es público y distinto por dato). La nota lo llama secreto y aclara el rótulo de la figura. |
+
+## Almacenamiento en el cliente
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ℹ️ | [[01 - Cookies desde JavaScript y Cookie Store API\|Cookies desde JavaScript y Cookie Store API]] | Slide de cookies desde JS: `const themeCookie = cookies['theme'];` | `cookies` nunca se define: `document.cookie` es un string que hay que parsear. La nota construye el objeto con `split` (probado con jsdom). |
+| ℹ️ | [[02 - localStorage y sessionStorage\|localStorage y sessionStorage]] | Slide de sessionStorage: tras cerrar la pestaña, `getItem` devuelve `undefined` | `getItem` devuelve `null` cuando la llave no existe. La nota dice `null`. |
+| ℹ️ | [[03 - IndexedDB\|IndexedDB]] | Slides de IndexedDB: store con `keyPath: "id"` y luego `store.add({ title, author })` sin `id` | Sin `autoIncrement`, agregar un objeto sin la llave lanza `DataError` (probado con fake-indexeddb). La nota crea el store con `autoIncrement: true`. |
