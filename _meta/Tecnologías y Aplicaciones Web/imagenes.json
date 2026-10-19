@@ -68,5 +68,40 @@
     "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 1 - De la URL al servidor.pdf#page=61",
     "destino": "Tecnologías y Aplicaciones Web/01-Fundamentos de la web/adjuntos/Establecimiento de una sesión TLS.png",
     "sha256": "5518275ecc0b43de5ca486001f2f1618f801768dcfd0225d731775094eb6b353"
+  },
+  {
+    "tema": "HTML y CSS",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 7.png",
+    "destino": "Tecnologías y Aplicaciones Web/02-HTML y CSS/adjuntos/Modelo de caja en DevTools.png",
+    "sha256": "35da832d191e8bac69bbced783b7e2051a4afe6e55c9036f1b2fbdcba0126715"
+  },
+  {
+    "tema": "HTML y CSS",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 8.png",
+    "destino": "Tecnologías y Aplicaciones Web/02-HTML y CSS/adjuntos/Construcción del DOM desde los bytes.png",
+    "sha256": "82b830e2e4bceb3c70ae3ca4a9c422800f56f9eb7ba9c95c9b299cb4a44d9aff"
+  },
+  {
+    "tema": "HTML y CSS",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 9.png",
+    "destino": "Tecnologías y Aplicaciones Web/02-HTML y CSS/adjuntos/Árbol CSSOM con propiedades heredadas.png",
+    "sha256": "fb90075769742025e363ded0e81f6490d65d6aee76a885d0f40026416b6ce55b"
+  },
+  {
+    "tema": "HTML y CSS",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 2 - HTML y CSS.pdf#page=36",
+    "destino": "Tecnologías y Aplicaciones Web/02-HTML y CSS/adjuntos/Estructura HTML4 frente a HTML5 semántico.png",
+    "sha256": "4c36aaa391b26f9aa2cfaab623ab7da3ceb458c043eab3aa3215fef8a27e8a8c"
+  },
+  {
+    "tema": "HTML y CSS",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 2 - HTML y CSS.pdf#page=59",
+    "destino": "Tecnologías y Aplicaciones Web/02-HTML y CSS/adjuntos/Critical rendering path.png",
+    "sha256": "9fe9ae55bd2e25b1b054a2c9275306b5dc4daffc58f24515c5b4ac601d55348e"
   }
 ]

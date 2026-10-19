@@ -23,8 +23,14 @@
     },
     "HTML y CSS": {
       "carpeta": "Tecnologías y Aplicaciones Web/02-HTML y CSS",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "Clase 2",
+          "hasta": "Clase 3: Javascript"
+        }
+      ]
     },
     "JavaScript como lenguaje": {
       "carpeta": "Tecnologías y Aplicaciones Web/03-JavaScript como lenguaje",
