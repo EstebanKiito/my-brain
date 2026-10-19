@@ -16,3 +16,8 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | ℹ️ | [[03 - Tipos de datos en JavaScript\|Tipos de datos en JavaScript]] | Slide de números: `const octal = 0x237;` imprime `567` | `0x237` es hexadecimal (567 en decimal); el octal se escribe `0o237` (159), como dice el mismo texto de la slide. La nota usa `0o237` y la salida verificada con Node. |
 | ℹ️ | [[04 - Operadores y control de flujo en JavaScript\|Operadores y control de flujo en JavaScript]] | Slide de control de flujo: `if !(variable > 5) { … }` | Es un error de sintaxis: la condición de un `if` siempre va entre paréntesis. La nota usa `if (!(variable > 5))`. |
 | ℹ️ | [[01 - Origen de JavaScript, ECMAScript y TypeScript\|Origen de JavaScript, ECMAScript y TypeScript]] | Slide de versiones: "ECMAScript 2016: await y async (para ES2017)" y "ECMAScript 2017: generadores y promesas para programación asíncrona" | Las promesas y los generadores llegaron en ES2015; `async`/`await`, en ES2017. La nota usa esas fechas. |
+
+## Asincronía en JavaScript
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ℹ️ | [[01 - Código asíncrono y callbacks\|Código asíncrono y callbacks]] | Apuntes: "Asíncrono: Ejecución paralela del código" | El código JavaScript corre en un solo hilo; lo que ocurre en paralelo es la espera (temporizador, red, disco). La nota define asíncrono como "no espera a las instrucciones diferidas", que es lo que dice la slide, y lo aclara en un `[!warning]`. |

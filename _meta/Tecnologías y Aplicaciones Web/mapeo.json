@@ -45,8 +45,14 @@
     },
     "Asincronía en JavaScript": {
       "carpeta": "Tecnologías y Aplicaciones Web/04-Asincronía en JavaScript",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "Clase 4",
+          "hasta": "Manejo del DOM"
+        }
+      ]
     },
     "DOM y eventos": {
       "carpeta": "Tecnologías y Aplicaciones Web/05-DOM y eventos",

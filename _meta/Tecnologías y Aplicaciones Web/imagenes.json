@@ -103,5 +103,61 @@
     "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 2 - HTML y CSS.pdf#page=59",
     "destino": "Tecnologías y Aplicaciones Web/02-HTML y CSS/adjuntos/Critical rendering path.png",
     "sha256": "9fe9ae55bd2e25b1b054a2c9275306b5dc4daffc58f24515c5b4ac601d55348e"
+  },
+  {
+    "tema": "Asincronía en JavaScript",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 10.png",
+    "destino": "Tecnologías y Aplicaciones Web/04-Asincronía en JavaScript/adjuntos/Estructura general de un callback.png",
+    "sha256": "08abc80fe493c3371c5ec1a190dec2668412c78ff873f4e5e5a7e7240b96c124"
+  },
+  {
+    "tema": "Asincronía en JavaScript",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 11.png",
+    "destino": "Tecnologías y Aplicaciones Web/04-Asincronía en JavaScript/adjuntos/Promesa recién creada en estado pending.png",
+    "sha256": "90859d78c4200ea678c5055e3cac928689bed5e47438a281cc3c9c2352399838"
+  },
+  {
+    "tema": "Asincronía en JavaScript",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 12.png",
+    "destino": "Tecnologías y Aplicaciones Web/04-Asincronía en JavaScript/adjuntos/Estados de una promesa y sus métodos.png",
+    "sha256": "dce28425812e47a1d77e306629db1cacf619a31a0cf35b091445321ebff27849"
+  },
+  {
+    "tema": "Asincronía en JavaScript",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 13.png",
+    "destino": "Tecnologías y Aplicaciones Web/04-Asincronía en JavaScript/adjuntos/Obtener el valor prometido con then.png",
+    "sha256": "8a22a468f09a6580b25aff919b4bcd3d2b69b4b37d808042b86f70b12cf43d49"
+  },
+  {
+    "tema": "Asincronía en JavaScript",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 14.png",
+    "destino": "Tecnologías y Aplicaciones Web/04-Asincronía en JavaScript/adjuntos/Resumen de estados y métodos de promesas.png",
+    "sha256": "d749b28e6bc76cef00d1243ff73da1205c94b89de25158c0eeedfd75607eea4e"
+  },
+  {
+    "tema": "Asincronía en JavaScript",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 15.png",
+    "destino": "Tecnologías y Aplicaciones Web/04-Asincronía en JavaScript/adjuntos/Receta como cadena de callbacks.png",
+    "sha256": "5df2a5e0a7bb8bae2b9d6e537dd0a80f259e3f835212c6b8e4a3696cbab0a1e6"
+  },
+  {
+    "tema": "Asincronía en JavaScript",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 16.png",
+    "destino": "Tecnologías y Aplicaciones Web/04-Asincronía en JavaScript/adjuntos/Receta como cadena de promesas.png",
+    "sha256": "9b9d60b79c91ffebb379567b5ee95d9ad8ea42fcd4a857b39627e315ef5dcc35"
+  },
+  {
+    "tema": "Asincronía en JavaScript",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 17.png",
+    "destino": "Tecnologías y Aplicaciones Web/04-Asincronía en JavaScript/adjuntos/Fetch con promesas frente a async await.png",
+    "sha256": "80fe0b01b34e0a1fe129bfc73f4431ad81f706198aa632278bda1995b56bee5e"
   }
 ]
