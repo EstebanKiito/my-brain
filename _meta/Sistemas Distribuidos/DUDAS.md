@@ -29,3 +29,8 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
 | ℹ️ | [[04 - Casos de votación en Raft\|Casos de votación en Raft]] | Imágenes de los casos 2 y 4: el votante dice "Tu term actual es menor al mío. ¡Rechazado!" | Tras postularse, el candidato sube su term: en el caso 4 queda en 2, igual al del votante, así que la regla 1 no aplica. El rechazo se justifica por la regla 3c (el último log del candidato es de un term menor). En el caso 2 pasa lo mismo con el votante de term 1. El resultado no cambia; la nota explica ambas reglas. |
+
+## Exclusión mutua distribuida
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ℹ️ | [[03 - Multicast de Ricart y Agrawala\|Multicast de Ricart y Agrawala]] | Apuntes, bajo "Algoritmo 3: Ricart y Agrawala": "Todavia no se creaban los relojes logicos" | Los relojes lógicos de Lamport son de 1978 y el algoritmo de Ricart y Agrawala, de 1981; además, las slides indican que usa relojes lógicos para el orden total. La nota sigue a las slides. |

@@ -126,8 +126,14 @@
     },
     "Exclusión mutua distribuida": {
       "carpeta": "Sistemas Distribuidos/10-Exclusión mutua distribuida",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Clase 9",
+          "hasta": null
+        }
+      ]
     },
     "Tolerancia a fallos": {
       "carpeta": "Sistemas Distribuidos/11-Tolerancia a fallos",
@@ -280,6 +286,11 @@
       "fuente": "apuntes_i1",
       "texto": "IIC2523 - Clase 08 - Elección de líder.pdf",
       "motivo": "Link al PDF adjunto de la clase 8, sin licencia; su contenido está cubierto desde Clases-I1.pdf."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "Todavia no se creaban los relojes logiocs",
+      "motivo": "Comentario incompleto y erróneo sobre Ricart y Agrawala (ver DUDAS); el algoritmo se construyó con las slides."
     }
   ]
 }

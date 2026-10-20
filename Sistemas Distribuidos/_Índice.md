@@ -14,3 +14,4 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: basta con b
 | [[Sistemas Distribuidos/07-Relojes lógicos y estados globales/_Índice\|Relojes lógicos y estados globales]] | Lamport, relojes vectoriales, estados globales, cortes consistentes y Chandy-Lamport |
 | [[Sistemas Distribuidos/08-Consenso/_Índice\|Consenso]] | Propiedades del consenso, Paxos (fases, casos borde y garantías) y generales bizantinos |
 | [[Sistemas Distribuidos/09-Elección de líder/_Índice\|Elección de líder]] | Safety y liveness, Bully, Ring-based y Raft (elección, votación, replicación y consolidación) |
+| [[Sistemas Distribuidos/10-Exclusión mutua distribuida/_Índice\|Exclusión mutua distribuida]] | Safety, liveness y ordering; servidor central, Token Ring y Ricart y Agrawala |

@@ -656,5 +656,26 @@
     "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=484",
     "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Ring-based Election da la vuelta.png",
     "sha256": "09951b76e99e3315b23728e036d2373f1497339d6159feabc2b9a6505f061282"
+  },
+  {
+    "tema": "Exclusión mutua distribuida",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 84.png",
+    "destino": "Sistemas Distribuidos/10-Exclusión mutua distribuida/adjuntos/Token Ring con seis nodos.png",
+    "sha256": "9d3dd1ca752614a800e05d033332c08691d1b492c8bc8efb04f612b944f6f4a0"
+  },
+  {
+    "tema": "Exclusión mutua distribuida",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=516",
+    "destino": "Sistemas Distribuidos/10-Exclusión mutua distribuida/adjuntos/Ricart y Agrawala en cuatro pasos.png",
+    "sha256": "8efc6dc20139190daeebe5702dc10aaaa1a1e29a24345710af62a196ca48dae0"
+  },
+  {
+    "tema": "Exclusión mutua distribuida",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=503",
+    "destino": "Sistemas Distribuidos/10-Exclusión mutua distribuida/adjuntos/Servidor central con cola de peticiones.png",
+    "sha256": "8dba511faeefe42d3759b93c5fafb4187f0dd2b2ef4f0664b9dc13a5db5aa4ea"
   }
 ]
