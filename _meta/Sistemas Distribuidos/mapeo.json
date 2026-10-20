@@ -137,8 +137,14 @@
     },
     "Tolerancia a fallos": {
       "carpeta": "Sistemas Distribuidos/11-Tolerancia a fallos",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i2",
+          "desde": "Clase 11: Tolerancia A Fallos",
+          "hasta": "Clase 12: Replicación de Datos"
+        }
+      ]
     },
     "Replicación y modelos de consistencia": {
       "carpeta": "Sistemas Distribuidos/12-Replicación y modelos de consistencia",
@@ -291,6 +297,11 @@
       "fuente": "apuntes_i1",
       "texto": "Todavia no se creaban los relojes logiocs",
       "motivo": "Comentario incompleto y erróneo sobre Ricart y Agrawala (ver DUDAS); el algoritmo se construyó con las slides."
+    },
+    {
+      "fuente": "apuntes_i2",
+      "texto": "Clase intermedia: Revisamos la T2",
+      "motivo": "Organización del curso (sesión de la tarea 2); se resume en Gestión del curso."
     }
   ]
 }

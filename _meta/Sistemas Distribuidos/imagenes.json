@@ -677,5 +677,26 @@
     "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=503",
     "destino": "Sistemas Distribuidos/10-Exclusión mutua distribuida/adjuntos/Servidor central con cola de peticiones.png",
     "sha256": "8dba511faeefe42d3759b93c5fafb4187f0dd2b2ef4f0664b9dc13a5db5aa4ea"
+  },
+  {
+    "tema": "Tolerancia a fallos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image.png",
+    "destino": "Sistemas Distribuidos/11-Tolerancia a fallos/adjuntos/Ejemplos de propiedades de confiabilidad.png",
+    "sha256": "47a4b72928c735694a7cad7e3f1ef75460b96bb09c87530b1fe97849d2f63597"
+  },
+  {
+    "tema": "Tolerancia a fallos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 1.png",
+    "destino": "Sistemas Distribuidos/11-Tolerancia a fallos/adjuntos/Desafíos de la detección de fallos.png",
+    "sha256": "7509c8a516a51e6b8db8f1f745282ff447e38a2c984eb8b9a7ff4fd6dd2a49a7"
+  },
+  {
+    "tema": "Tolerancia a fallos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 2.png",
+    "destino": "Sistemas Distribuidos/11-Tolerancia a fallos/adjuntos/Semánticas de llamada RPC.png",
+    "sha256": "b120e982490aeeaa7c3331ef910bc07ea980f841ef5f400faf91564fd17cbc4b"
   }
 ]
