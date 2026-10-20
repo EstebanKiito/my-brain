@@ -145,5 +145,40 @@
     "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 12.png",
     "destino": "Sistemas Distribuidos/02-Procesos e hilos en Python/adjuntos/Thread que crea otro thread.png",
     "sha256": "c04869e8f9599423053b58021a2a768f3d6fe426e069dd95ebf6c0d53ae86486"
+  },
+  {
+    "tema": "Comunicación directa y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 19.png",
+    "destino": "Sistemas Distribuidos/03-Comunicación directa y sockets/adjuntos/Paradigmas de comunicación directa, indirecta y remota.png",
+    "sha256": "7d2d5fbc2b536153f61ce07fd5495a8f5febd5ecfbbed2425ef2df3f879bd25d"
+  },
+  {
+    "tema": "Comunicación directa y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 20.png",
+    "destino": "Sistemas Distribuidos/03-Comunicación directa y sockets/adjuntos/Resolución DNS en ocho pasos.png",
+    "sha256": "1f8d1dffb0568e71d1a04620a2c867c0e6d9923ce8bc9acd068aa42d1c79db51"
+  },
+  {
+    "tema": "Comunicación directa y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 21.png",
+    "destino": "Sistemas Distribuidos/03-Comunicación directa y sockets/adjuntos/Llamadas de un socket TCP cliente y servidor.png",
+    "sha256": "2f08b712b4dae364e552fd7d71ca23872729ce174b2df0f851863b20b214aa0b"
+  },
+  {
+    "tema": "Comunicación directa y sockets",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=162",
+    "destino": "Sistemas Distribuidos/03-Comunicación directa y sockets/adjuntos/Handshake y retransmisión en TCP.png",
+    "sha256": "e41a00c741c309ed7ec8fefe403f123bf06476c00c08a714ac1b13aa46b16abe"
+  },
+  {
+    "tema": "Comunicación directa y sockets",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=165",
+    "destino": "Sistemas Distribuidos/03-Comunicación directa y sockets/adjuntos/Datagramas UDP perdidos y desordenados.png",
+    "sha256": "dd46682096e71b7f8ddb5161b02e2fdcabf395a9d146260efeadd61d0f28e005"
   }
 ]

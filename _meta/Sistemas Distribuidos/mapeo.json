@@ -39,8 +39,14 @@
     },
     "Comunicación directa y sockets": {
       "carpeta": "Sistemas Distribuidos/03-Comunicación directa y sockets",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Clase 3",
+          "hasta": "Clase 4"
+        }
+      ]
     },
     "Comunicación indirecta": {
       "carpeta": "Sistemas Distribuidos/04-Comunicación indirecta",
