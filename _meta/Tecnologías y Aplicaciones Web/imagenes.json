@@ -481,5 +481,26 @@
     "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 17 - Tecnologías adicionales.pdf#page=114",
     "destino": "Tecnologías y Aplicaciones Web/17-Tecnologías web adicionales/adjuntos/Ciclo de vida de un service worker.png",
     "sha256": "c6f1f8556a69cf90460dfa39a31c2f2dfec777408b682dcd16849f482d00dd36"
+  },
+  {
+    "tema": "Escala e ingeniería inversa",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 19 - Ingeniería inversa.pdf#page=12",
+    "destino": "Tecnologías y Aplicaciones Web/19-Escala e ingeniería inversa/adjuntos/Muchos clientes, servidores y bases de datos.png",
+    "sha256": "1111fd702f354feb7fd24b83502a0e102d723f9fe6e8d16e9f11cd5800905de2"
+  },
+  {
+    "tema": "Escala e ingeniería inversa",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 19 - Ingeniería inversa.pdf#page=13",
+    "destino": "Tecnologías y Aplicaciones Web/19-Escala e ingeniería inversa/adjuntos/Cola de mensajes entre productor y consumidores.png",
+    "sha256": "868cdd45ae894642b9568e7c5af772c0a4b70fa70411ba36cbf0222bb627430a"
+  },
+  {
+    "tema": "Escala e ingeniería inversa",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 19 - Ingeniería inversa.pdf#page=15",
+    "destino": "Tecnologías y Aplicaciones Web/19-Escala e ingeniería inversa/adjuntos/Balanceador de carga frente a varios servidores.png",
+    "sha256": "193780d58086220d98f11f46dd35fa0e792d349780126320b42962bb359e4dfd"
   }
 ]

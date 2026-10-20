@@ -23,3 +23,4 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: basta con b
 | [[Tecnologías y Aplicaciones Web/16-Almacenamiento en el cliente/_Índice\|Almacenamiento en el cliente]] | Cookies desde JS, localStorage y sessionStorage, IndexedDB, Cache API, CDN y bases SQL y NoSQL |
 | [[Tecnologías y Aplicaciones Web/17-Tecnologías web adicionales/_Índice\|Tecnologías web adicionales]] | TypeScript, WebAssembly, WebSockets y Progressive Web Apps |
 | [[Tecnologías y Aplicaciones Web/18-Testing en la web/_Índice\|Testing en la web]] | Niveles de testing, TDD, mocks y stubs, Jest, CI y tests de front-end |
+| [[Tecnologías y Aplicaciones Web/19-Escala e ingeniería inversa/_Índice\|Escala e ingeniería inversa]] | Colas, balanceadores y bases en tiempo real; ingeniería inversa y tipos de hackers |
