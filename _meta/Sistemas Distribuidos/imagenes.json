@@ -243,5 +243,61 @@
     "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 30.png",
     "destino": "Sistemas Distribuidos/05-Invocación remota/adjuntos/Arquitectura de gRPC entre dos servicios.png",
     "sha256": "19d5c8f9c5fe856b59bc00f4d327dd6bf3e230b1cd46c7251a94089bc4b9af7a"
+  },
+  {
+    "tema": "Sincronización de relojes físicos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 33.png",
+    "destino": "Sistemas Distribuidos/06-Sincronización de relojes físicos/adjuntos/Método de Cristian.png",
+    "sha256": "48afacee79b4f9740cdb731db6e93866254bda228ac497840d01e93c888e9c03"
+  },
+  {
+    "tema": "Sincronización de relojes físicos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 34.png",
+    "destino": "Sistemas Distribuidos/06-Sincronización de relojes físicos/adjuntos/Ejemplo del método de Cristian.png",
+    "sha256": "10d4b999def0691d5189bcdb6d8ffc7a33b2b28955c217b0ba8e57127cd433c0"
+  },
+  {
+    "tema": "Sincronización de relojes físicos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 35.png",
+    "destino": "Sistemas Distribuidos/06-Sincronización de relojes físicos/adjuntos/Berkeley estima la hora de cada seguidor.png",
+    "sha256": "8282d23b56c78e69f975a7a0a5d85cba6bff23a3ad5b1e24cfa1e0eaaa1f4cee"
+  },
+  {
+    "tema": "Sincronización de relojes físicos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 36.png",
+    "destino": "Sistemas Distribuidos/06-Sincronización de relojes físicos/adjuntos/Berkeley envía la diferencia a cada nodo.png",
+    "sha256": "7d2e6cfbc59ba5251a57eefeafb15e878972a3b7c345cc3c178e96c6c0116204"
+  },
+  {
+    "tema": "Sincronización de relojes físicos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 37.png",
+    "destino": "Sistemas Distribuidos/06-Sincronización de relojes físicos/adjuntos/Estratos de NTP.png",
+    "sha256": "dfb8e2e51e9626edbc9eae9397a8764d07ed337bf061c4f187202f6306364deb"
+  },
+  {
+    "tema": "Sincronización de relojes físicos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 38.png",
+    "destino": "Sistemas Distribuidos/06-Sincronización de relojes físicos/adjuntos/Retraso y desfase en NTP.png",
+    "sha256": "d31cd5f1191a15c559a8aa2150d6fea2f4963f2c35d2fe7c2431610a771edb2f"
+  },
+  {
+    "tema": "Sincronización de relojes físicos",
+    "tipo": "editada",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 39.png",
+    "destino": "Sistemas Distribuidos/06-Sincronización de relojes físicos/adjuntos/Ejemplo de NTP con desfase de cinco minutos.png",
+    "sha256": "0fba6a5ed05f3428a5f614b9be7040b44a66c3f5c285f5814381a68a7628379f"
+  },
+  {
+    "tema": "Sincronización de relojes físicos",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=285",
+    "destino": "Sistemas Distribuidos/06-Sincronización de relojes físicos/adjuntos/Ejemplo numérico de Berkeley.png",
+    "sha256": "5f1f887931e3a759fb5b568e62f87318fa1f2a8b7756150e3025648b269d0ac2"
   }
 ]

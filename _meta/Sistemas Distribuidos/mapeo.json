@@ -72,8 +72,19 @@
     },
     "Sincronización de relojes físicos": {
       "carpeta": "Sistemas Distribuidos/06-Sincronización de relojes físicos",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Clase 5: Coordinacion y Sincronizacion",
+          "hasta": "Reloj Logico"
+        },
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Algoritmos Para Relojes fisicos",
+          "hasta": "Clase 6"
+        }
+      ]
     },
     "Relojes lógicos y estados globales": {
       "carpeta": "Sistemas Distribuidos/07-Relojes lógicos y estados globales",
@@ -206,6 +217,21 @@
       "fuente": "apuntes_i1",
       "texto": "Para nosotros es: Tengo un archivo externo que hace muchas cosas por mi, pero no esta en mi computadora",
       "motivo": "Analogía personal; la idea (importar el servidor) está en la nota de RPC."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "→ Posible tarea 2",
+      "motivo": "Comentario sobre evaluaciones; se resume en Gestión del curso."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "LA I1 va a evaluar hasta acá.",
+      "motivo": "Alcance de la interrogación; se resume en Gestión del curso."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "Typo: 05:08 - 00:07 → 07 debio ser 13",
+      "motivo": "Errata de la imagen del ejemplo 1 de NTP; la imagen se reemplazó por la versión corregida de las slides (tipo 'editada')."
     }
   ]
 }
