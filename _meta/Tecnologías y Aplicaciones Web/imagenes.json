@@ -460,5 +460,26 @@
     "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 16 - Almacenes de información.pdf#page=47",
     "destino": "Tecnologías y Aplicaciones Web/16-Almacenamiento en el cliente/adjuntos/Servidores CDN frente al servidor de origen.png",
     "sha256": "5e889f318034cefa7a3cae47eb6b0041fec8755cc3487fc82c7a733a47902096"
+  },
+  {
+    "tema": "Tecnologías web adicionales",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 17 - Tecnologías adicionales.pdf#page=62",
+    "destino": "Tecnologías y Aplicaciones Web/17-Tecnologías web adicionales/adjuntos/Compilación de C a WebAssembly con Emscripten.png",
+    "sha256": "6b94a4407c60dcd4d1ffbd60f20d83888b5e5bdca01b5494a1c05a3548ef7a94"
+  },
+  {
+    "tema": "Tecnologías web adicionales",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 17 - Tecnologías adicionales.pdf#page=106",
+    "destino": "Tecnologías y Aplicaciones Web/17-Tecnologías web adicionales/adjuntos/Service worker entre la PWA y la red.png",
+    "sha256": "0a80737dc6475f60adc8722974cb44b2ab79141fce812223da9fdc488aa540bb"
+  },
+  {
+    "tema": "Tecnologías web adicionales",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 17 - Tecnologías adicionales.pdf#page=114",
+    "destino": "Tecnologías y Aplicaciones Web/17-Tecnologías web adicionales/adjuntos/Ciclo de vida de un service worker.png",
+    "sha256": "c6f1f8556a69cf90460dfa39a31c2f2dfec777408b682dcd16849f482d00dd36"
   }
 ]
