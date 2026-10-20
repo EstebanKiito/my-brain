@@ -259,12 +259,12 @@
       "secciones": [
         {
           "fuente": "ramo",
-          "desde": "SISTEMAS DISTRIBUIDOS",
+          "desde": "Programa",
           "hasta": null
         },
         {
           "fuente": "tareas",
-          "desde": "Tareas",
+          "desde": "Tarea 1",
           "hasta": null
         },
         {

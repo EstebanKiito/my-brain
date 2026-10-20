@@ -2,6 +2,13 @@
 
 Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: basta con buscar el concepto, sin saber en qué clase se vio. Dentro de cada carpeta, el número del archivo indica el orden de lectura.
 
+## Cómo están hechas las notas
+- **Frontmatter:** `ramo`, `tema`, `tags` y `prerrequisitos` (conceptos que conviene leer antes).
+- **Cuerpo:** prosa explicativa que parte por el problema que resuelve cada mecanismo, con diagramas Mermaid, tablas comparativas y ejemplos. El código Python (procesos, threads, sockets, RPC, MPI, Protocol Buffers) se ejecutó, y los ejemplos de algoritmos (relojes, Paxos, Raft, consistencia, quórum, Chord) se verificaron con simulaciones.
+- **Otros ramos:** lo que ya está en otro ramo se enlaza en vez de repetirse: hilos, semáforos, sockets, TCP, DNS y P2P en [[Sistemas Operativos y Redes/_Índice|Sistemas Operativos y Redes]]; ACID, locks y NoSQL en [[Bases de Datos/_Índice|Bases de Datos]]; el teorema CAP en [[Ingeniería de Software/_Índice|Ingeniería de Software]]; REST, autenticación, OAuth y TLS en [[Tecnologías y Aplicaciones Web/_Índice|Tecnologías y Aplicaciones Web]]; tablas de hash en [[Estructuras de Datos/_Índice|Estructuras de Datos]].
+- **Imágenes:** capturas de los apuntes y figuras de las slides en PNG, con su transcripción en un callout plegable.
+- **Cierre:** cada nota termina con preguntas de repaso con la respuesta oculta en un callout plegable.
+
 ## Temas
 | Tema | Qué cubre |
 |---|---|
@@ -29,3 +36,14 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: basta con b
 | [[Sistemas Distribuidos/22-Arquitecturas peer-to-peer/_Índice\|Arquitecturas peer-to-peer]] | P2P no estructurado, búsqueda, ataques Sybil y Eclipse, DHT, hash consistente y Chord |
 | [[Sistemas Distribuidos/23-Casos aplicados/_Índice\|Casos aplicados]] | VPN, Tor, Eduroam y BitTorrent como sistemas distribuidos |
 | [[Sistemas Distribuidos/24-Gestión del curso/_Índice\|Gestión del curso]] | Metodología, evaluaciones, fórmulas de nota y síntesis de fiabilidad y seguridad |
+
+## Ruta de estudio sugerida
+1. **Fundamentos → Procesos e hilos:** qué es un sistema distribuido y cómo trabaja cada nodo por dentro.
+2. **Comunicación directa → indirecta → invocación remota:** cómo se hablan los nodos, de los sockets a RPC.
+3. **Relojes físicos → relojes lógicos y estados globales:** ordenar eventos sin un reloj común.
+4. **Consenso → Elección de líder → Exclusión mutua:** los algoritmos de coordinación (Paxos, Raft, Ricart y Agrawala).
+5. **Tolerancia a fallos → Replicación y consistencia → Protocolos de replicación:** seguir funcionando con nodos caídos y copias de los datos.
+6. **Transacciones distribuidas → Control de concurrencia → CAP y PACELC → Consistencia en el cliente:** los compromisos de un sistema de datos distribuido.
+7. **Ataques → Criptografía → Autenticación → Monitoreo:** proteger el sistema.
+8. **P2P → Casos aplicados:** sistemas sin servidor y ejemplos reales (VPN, Tor, Eduroam, BitTorrent).
+9. **Gestión del curso:** evaluaciones y síntesis de la segunda unidad.
