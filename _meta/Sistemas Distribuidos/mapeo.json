@@ -1,0 +1,135 @@
+{
+  "_descripcion": "Mapeo de las fuentes originales (rutas relativas a _raw/) a los temas del vault. Cada sección va desde el bloque 'desde' (incluido) hasta 'hasta' (excluido); con 'por_texto' los límites pueden ser cualquier bloque. Las notas se reescriben según _meta/ESTANDAR-NOTAS.md, por eso 'cobertura' es 'reescrita' (la cobertura textual es advertencia). Los apuntes cubren las clases 0-9, 11, 12, 14, 15 y 18; las clases 10, 13, 16, 17 y toda la unidad del examen se construyen con los PDF de slides de 'SISTEMAS DISTRIBUIDOS/Clases/' (sin licencia: entran solo como PNG, registrados en imagenes.json con tipo 'slide'). 'Apuntes Ex' está vacío y 'Tareas' solo trae la política del formulario de parejas: ambos quedan en 'aceptados'.",
+  "carpeta_ramo": "Sistemas Distribuidos",
+  "cobertura": "reescrita",
+  "fuentes": {
+    "ramo": "Semestre 6/SISTEMAS DISTRIBUIDOS 22760dd6de81808c9065e0e1f312e6ec.html",
+    "apuntes_i1": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1 24460dd6de8180cbb260ebd542ec35a9.html",
+    "apuntes_i2": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2 24560dd6de8180adba03fd1499038200.html",
+    "apuntes_ex": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes Ex 24560dd6de818051b714d3bb3d5f6c4d.html",
+    "tareas": "Semestre 6/SISTEMAS DISTRIBUIDOS/Tareas 25c60dd6de8180729483ed02c66a38ff.html"
+  },
+  "temas": {
+    "Fundamentos de sistemas distribuidos": {
+      "carpeta": "Sistemas Distribuidos/01-Fundamentos de sistemas distribuidos",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Procesos e hilos en Python": {
+      "carpeta": "Sistemas Distribuidos/02-Procesos e hilos en Python",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Comunicación directa y sockets": {
+      "carpeta": "Sistemas Distribuidos/03-Comunicación directa y sockets",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Comunicación indirecta": {
+      "carpeta": "Sistemas Distribuidos/04-Comunicación indirecta",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Invocación remota": {
+      "carpeta": "Sistemas Distribuidos/05-Invocación remota",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Sincronización de relojes físicos": {
+      "carpeta": "Sistemas Distribuidos/06-Sincronización de relojes físicos",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Relojes lógicos y estados globales": {
+      "carpeta": "Sistemas Distribuidos/07-Relojes lógicos y estados globales",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Consenso": {
+      "carpeta": "Sistemas Distribuidos/08-Consenso",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Elección de líder": {
+      "carpeta": "Sistemas Distribuidos/09-Elección de líder",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Exclusión mutua distribuida": {
+      "carpeta": "Sistemas Distribuidos/10-Exclusión mutua distribuida",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Tolerancia a fallos": {
+      "carpeta": "Sistemas Distribuidos/11-Tolerancia a fallos",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Replicación y modelos de consistencia": {
+      "carpeta": "Sistemas Distribuidos/12-Replicación y modelos de consistencia",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Protocolos de replicación": {
+      "carpeta": "Sistemas Distribuidos/13-Protocolos de replicación",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Transacciones distribuidas": {
+      "carpeta": "Sistemas Distribuidos/14-Transacciones distribuidas",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Control de concurrencia distribuido": {
+      "carpeta": "Sistemas Distribuidos/15-Control de concurrencia distribuido",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Teoremas CAP y PACELC": {
+      "carpeta": "Sistemas Distribuidos/16-Teoremas CAP y PACELC",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Consistencia centrada en el cliente": {
+      "carpeta": "Sistemas Distribuidos/17-Consistencia centrada en el cliente",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Ataques a sistemas distribuidos": {
+      "carpeta": "Sistemas Distribuidos/18-Ataques a sistemas distribuidos",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Criptografía": {
+      "carpeta": "Sistemas Distribuidos/19-Criptografía",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Autenticación y control de acceso": {
+      "carpeta": "Sistemas Distribuidos/20-Autenticación y control de acceso",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Monitoreo de seguridad": {
+      "carpeta": "Sistemas Distribuidos/21-Monitoreo de seguridad",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Arquitecturas peer-to-peer": {
+      "carpeta": "Sistemas Distribuidos/22-Arquitecturas peer-to-peer",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Casos aplicados": {
+      "carpeta": "Sistemas Distribuidos/23-Casos aplicados",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Gestión del curso": {
+      "carpeta": "Sistemas Distribuidos/24-Gestión del curso",
+      "estado": "pendiente",
+      "secciones": []
+    }
+  },
+  "aceptados": []
+}
