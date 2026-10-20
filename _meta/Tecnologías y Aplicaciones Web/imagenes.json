@@ -502,5 +502,19 @@
     "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 19 - Ingeniería inversa.pdf#page=15",
     "destino": "Tecnologías y Aplicaciones Web/19-Escala e ingeniería inversa/adjuntos/Balanceador de carga frente a varios servidores.png",
     "sha256": "193780d58086220d98f11f46dd35fa0e792d349780126320b42962bb359e4dfd"
+  },
+  {
+    "tema": "IA para desarrolladores",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 20 - IAs para SWEs.pdf#page=34",
+    "destino": "Tecnologías y Aplicaciones Web/20-IA para desarrolladores/adjuntos/Un LLM predice el siguiente token.png",
+    "sha256": "169681d9495b9a0d79bd52811b68596636b9483d010ed432698b8e9ab6093fc1"
+  },
+  {
+    "tema": "IA para desarrolladores",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 20 - IAs para SWEs.pdf#page=40",
+    "destino": "Tecnologías y Aplicaciones Web/20-IA para desarrolladores/adjuntos/Flujo de generación aumentada por recuperación.png",
+    "sha256": "06611ab75f09d4ac044ecf6714ab6e67b351b0a518007d65157efa0035fb508b"
   }
 ]
