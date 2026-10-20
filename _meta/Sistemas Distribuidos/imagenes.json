@@ -936,5 +936,33 @@
     "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 14.png",
     "destino": "Sistemas Distribuidos/18-Ataques a sistemas distribuidos/adjuntos/Compromisos entre seguridad y otras propiedades.png",
     "sha256": "552cdf041c1e4a6b2d28402348deebddaecfa4b4ddba7e3f2fd481dc72ec4a72"
+  },
+  {
+    "tema": "Criptografía",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=58",
+    "destino": "Sistemas Distribuidos/19-Criptografía/adjuntos/Diffie-Hellman con colores.png",
+    "sha256": "4ad7f0fff24b8809d1591a899a60abf507076d2efe4b35e6ba85e1b43ef6e59b"
+  },
+  {
+    "tema": "Criptografía",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=60",
+    "destino": "Sistemas Distribuidos/19-Criptografía/adjuntos/Man-in-the-middle en Diffie-Hellman.png",
+    "sha256": "0dc50b5379bd95a10ed753781918365818fe87b3cf86169b1c7d71cbcfccc69c"
+  },
+  {
+    "tema": "Criptografía",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=78",
+    "destino": "Sistemas Distribuidos/19-Criptografía/adjuntos/Firma digital con hash.png",
+    "sha256": "0143d18844f00a7daccfe320cc26124d722d4202e0685b451ff0b1a286ac461c"
+  },
+  {
+    "tema": "Criptografía",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=87",
+    "destino": "Sistemas Distribuidos/19-Criptografía/adjuntos/Handshake de TLS 1.3.png",
+    "sha256": "5b2d4a61c22ce0b9a167dc1fd47f6897139dcfa7880e923cccc1eabe4cedf3d5"
   }
 ]
