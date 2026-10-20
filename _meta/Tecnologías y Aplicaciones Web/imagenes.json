@@ -1,0 +1,520 @@
+[
+  {
+    "tema": "Fundamentos de la web",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image.png",
+    "destino": "Tecnologías y Aplicaciones Web/01-Fundamentos de la web/adjuntos/Redes domésticas conectadas mediante ISPs.png",
+    "sha256": "94af70704654c172d5e5fc2cdb3e61f73a9df0f0f450d2d7baa3f6526189800d"
+  },
+  {
+    "tema": "Fundamentos de la web",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 1.png",
+    "destino": "Tecnologías y Aplicaciones Web/01-Fundamentos de la web/adjuntos/Estructura de una HTTP request.png",
+    "sha256": "3bb908368c2bab7478d3e1720c352fbf7f2d8f25de1e2dd28dee7c7b9442b3ab"
+  },
+  {
+    "tema": "Fundamentos de la web",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 2.png",
+    "destino": "Tecnologías y Aplicaciones Web/01-Fundamentos de la web/adjuntos/Estructura de una HTTP response.png",
+    "sha256": "023fdbfcfd3259875401496bdb73017c77a0a204e2f74f2de3a863bba93b24b7"
+  },
+  {
+    "tema": "Fundamentos de la web",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 3.png",
+    "destino": "Tecnologías y Aplicaciones Web/01-Fundamentos de la web/adjuntos/Métodos HTTP principales.png",
+    "sha256": "77d30727e3a14752de2966404df630fab2cb3b06a2fce08227d5ab651a188477"
+  },
+  {
+    "tema": "Fundamentos de la web",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 4.png",
+    "destino": "Tecnologías y Aplicaciones Web/01-Fundamentos de la web/adjuntos/Capas del Internet protocol.png",
+    "sha256": "4adb4e42ebbc44622378e6241a1da3a8306417a6b51788ad02192cad9ceec44b"
+  },
+  {
+    "tema": "Fundamentos de la web",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 5.png",
+    "destino": "Tecnologías y Aplicaciones Web/01-Fundamentos de la web/adjuntos/Comparación entre TCP y UDP.png",
+    "sha256": "d3550fd8000e57af8ce5cd45530563a3183c167f3717731b87d1b058c1c7a02b"
+  },
+  {
+    "tema": "Fundamentos de la web",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 6.png",
+    "destino": "Tecnologías y Aplicaciones Web/01-Fundamentos de la web/adjuntos/Tecnologías de la web por capa.png",
+    "sha256": "c06cec9a498c96e10f31a7ebb2e87c517df90679bd10d9fd87fa1b33b35467cd"
+  },
+  {
+    "tema": "Fundamentos de la web",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 1 - De la URL al servidor.pdf#page=31",
+    "destino": "Tecnologías y Aplicaciones Web/01-Fundamentos de la web/adjuntos/Sintaxis de una URL.png",
+    "sha256": "5cfbb93886e8fb7385242362a56fd3401ced12514acb4d520049c1b30c3e8e47"
+  },
+  {
+    "tema": "Fundamentos de la web",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 1 - De la URL al servidor.pdf#page=89",
+    "destino": "Tecnologías y Aplicaciones Web/01-Fundamentos de la web/adjuntos/Resolución DNS antes de la request HTTP.png",
+    "sha256": "68c7a72ae7d71c8158421b9124df9997c92e43336acac8a1787431ed2d27d047"
+  },
+  {
+    "tema": "Fundamentos de la web",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 1 - De la URL al servidor.pdf#page=61",
+    "destino": "Tecnologías y Aplicaciones Web/01-Fundamentos de la web/adjuntos/Establecimiento de una sesión TLS.png",
+    "sha256": "5518275ecc0b43de5ca486001f2f1618f801768dcfd0225d731775094eb6b353"
+  },
+  {
+    "tema": "HTML y CSS",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 7.png",
+    "destino": "Tecnologías y Aplicaciones Web/02-HTML y CSS/adjuntos/Modelo de caja en DevTools.png",
+    "sha256": "35da832d191e8bac69bbced783b7e2051a4afe6e55c9036f1b2fbdcba0126715"
+  },
+  {
+    "tema": "HTML y CSS",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 8.png",
+    "destino": "Tecnologías y Aplicaciones Web/02-HTML y CSS/adjuntos/Construcción del DOM desde los bytes.png",
+    "sha256": "82b830e2e4bceb3c70ae3ca4a9c422800f56f9eb7ba9c95c9b299cb4a44d9aff"
+  },
+  {
+    "tema": "HTML y CSS",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 9.png",
+    "destino": "Tecnologías y Aplicaciones Web/02-HTML y CSS/adjuntos/Árbol CSSOM con propiedades heredadas.png",
+    "sha256": "fb90075769742025e363ded0e81f6490d65d6aee76a885d0f40026416b6ce55b"
+  },
+  {
+    "tema": "HTML y CSS",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 2 - HTML y CSS.pdf#page=36",
+    "destino": "Tecnologías y Aplicaciones Web/02-HTML y CSS/adjuntos/Estructura HTML4 frente a HTML5 semántico.png",
+    "sha256": "4c36aaa391b26f9aa2cfaab623ab7da3ceb458c043eab3aa3215fef8a27e8a8c"
+  },
+  {
+    "tema": "HTML y CSS",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 2 - HTML y CSS.pdf#page=59",
+    "destino": "Tecnologías y Aplicaciones Web/02-HTML y CSS/adjuntos/Critical rendering path.png",
+    "sha256": "9fe9ae55bd2e25b1b054a2c9275306b5dc4daffc58f24515c5b4ac601d55348e"
+  },
+  {
+    "tema": "Asincronía en JavaScript",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 10.png",
+    "destino": "Tecnologías y Aplicaciones Web/04-Asincronía en JavaScript/adjuntos/Estructura general de un callback.png",
+    "sha256": "08abc80fe493c3371c5ec1a190dec2668412c78ff873f4e5e5a7e7240b96c124"
+  },
+  {
+    "tema": "Asincronía en JavaScript",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 11.png",
+    "destino": "Tecnologías y Aplicaciones Web/04-Asincronía en JavaScript/adjuntos/Promesa recién creada en estado pending.png",
+    "sha256": "90859d78c4200ea678c5055e3cac928689bed5e47438a281cc3c9c2352399838"
+  },
+  {
+    "tema": "Asincronía en JavaScript",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 12.png",
+    "destino": "Tecnologías y Aplicaciones Web/04-Asincronía en JavaScript/adjuntos/Estados de una promesa y sus métodos.png",
+    "sha256": "dce28425812e47a1d77e306629db1cacf619a31a0cf35b091445321ebff27849"
+  },
+  {
+    "tema": "Asincronía en JavaScript",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 13.png",
+    "destino": "Tecnologías y Aplicaciones Web/04-Asincronía en JavaScript/adjuntos/Obtener el valor prometido con then.png",
+    "sha256": "8a22a468f09a6580b25aff919b4bcd3d2b69b4b37d808042b86f70b12cf43d49"
+  },
+  {
+    "tema": "Asincronía en JavaScript",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 14.png",
+    "destino": "Tecnologías y Aplicaciones Web/04-Asincronía en JavaScript/adjuntos/Resumen de estados y métodos de promesas.png",
+    "sha256": "d749b28e6bc76cef00d1243ff73da1205c94b89de25158c0eeedfd75607eea4e"
+  },
+  {
+    "tema": "Asincronía en JavaScript",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 15.png",
+    "destino": "Tecnologías y Aplicaciones Web/04-Asincronía en JavaScript/adjuntos/Receta como cadena de callbacks.png",
+    "sha256": "5df2a5e0a7bb8bae2b9d6e537dd0a80f259e3f835212c6b8e4a3696cbab0a1e6"
+  },
+  {
+    "tema": "Asincronía en JavaScript",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 16.png",
+    "destino": "Tecnologías y Aplicaciones Web/04-Asincronía en JavaScript/adjuntos/Receta como cadena de promesas.png",
+    "sha256": "9b9d60b79c91ffebb379567b5ee95d9ad8ea42fcd4a857b39627e315ef5dcc35"
+  },
+  {
+    "tema": "Asincronía en JavaScript",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 17.png",
+    "destino": "Tecnologías y Aplicaciones Web/04-Asincronía en JavaScript/adjuntos/Fetch con promesas frente a async await.png",
+    "sha256": "80fe0b01b34e0a1fe129bfc73f4431ad81f706198aa632278bda1995b56bee5e"
+  },
+  {
+    "tema": "DOM y eventos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 18.png",
+    "destino": "Tecnologías y Aplicaciones Web/05-DOM y eventos/adjuntos/Árbol DOM con nodos de texto y comentario.png",
+    "sha256": "593cf5a1e1e9bd4acd95d552de96548c1877ce29aa6efd8459ef220dc74ffc37"
+  },
+  {
+    "tema": "DOM y eventos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 19.png",
+    "destino": "Tecnologías y Aplicaciones Web/05-DOM y eventos/adjuntos/Buscar un elemento con getElementById.png",
+    "sha256": "2a5214e71c5a8a272943f0b662ac5bada66c8692485b4506e077fc90fb988ac8"
+  },
+  {
+    "tema": "DOM y eventos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 20.png",
+    "destino": "Tecnologías y Aplicaciones Web/05-DOM y eventos/adjuntos/Buscar elementos con querySelectorAll.png",
+    "sha256": "b7c0a95369050f5fc49b644419b419216a178ef1d7f1becb27224dcaf98acea9"
+  },
+  {
+    "tema": "DOM y eventos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 21.png",
+    "destino": "Tecnologías y Aplicaciones Web/05-DOM y eventos/adjuntos/Comparación de métodos de búsqueda en el DOM.png",
+    "sha256": "d89a085f8026e45c280696362dc34dab7ccd91c0c48ebde4804a8f897aca7a60"
+  },
+  {
+    "tema": "DOM y eventos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 22.png",
+    "destino": "Tecnologías y Aplicaciones Web/05-DOM y eventos/adjuntos/Acceder al documento desde JavaScript.png",
+    "sha256": "14c568670ff2881dd3dd97eb272f52ea643e7fd2c4c76baa4fe81df94c3f915d"
+  },
+  {
+    "tema": "DOM y eventos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 23.png",
+    "destino": "Tecnologías y Aplicaciones Web/05-DOM y eventos/adjuntos/Crear un párrafo con un nodo de texto.png",
+    "sha256": "2d3f1c7adad1e5874d5e9713e785e98e86c4b13f6a6385d2be5392ad25c8ec23"
+  },
+  {
+    "tema": "DOM y eventos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 24.png",
+    "destino": "Tecnologías y Aplicaciones Web/05-DOM y eventos/adjuntos/Crear una imagen con clase, id y atributo.png",
+    "sha256": "429830cc921fc2e2ba1e4acdfa50692314eacaa22abdf9fe7563043cba70c3c4"
+  },
+  {
+    "tema": "DOM y eventos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 25.png",
+    "destino": "Tecnologías y Aplicaciones Web/05-DOM y eventos/adjuntos/Event listener que cambia el color de fondo.png",
+    "sha256": "3f5a40b7de63fbec7ed05093ad2fb75d984fe78a4ae0558dcdb1459b52ebb0c7"
+  },
+  {
+    "tema": "DOM y eventos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 26.png",
+    "destino": "Tecnologías y Aplicaciones Web/05-DOM y eventos/adjuntos/Dos formas de definir un event listener.png",
+    "sha256": "9c0343968c15764e0bc0b8084def2cceb5bd5b5fe74573b7e07647339beca3f4"
+  },
+  {
+    "tema": "DOM y eventos",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 4 - JavaScript parte 2.pdf#page=60",
+    "destino": "Tecnologías y Aplicaciones Web/05-DOM y eventos/adjuntos/Hijos de un nodo p con texto y negrita.png",
+    "sha256": "182e41d9a9acda9daf2cd445ab15f1b6fb18dcbf177f2462496ce565fff1c45d"
+  },
+  {
+    "tema": "DOM y eventos",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 4 - JavaScript parte 2.pdf#page=71",
+    "destino": "Tecnologías y Aplicaciones Web/05-DOM y eventos/adjuntos/target y currentTarget en capturing y bubbling.png",
+    "sha256": "32a8bfe12457e3074d1dbaf843591e56ae78631e2e2537e30a9f2b0b61dd779b"
+  },
+  {
+    "tema": "React",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 27.png",
+    "destino": "Tecnologías y Aplicaciones Web/06-React/adjuntos/App de tareas dividida en componentes.png",
+    "sha256": "9e64978a50c1592d02cd7f121c62db656dda236286b91fb0c819435474d38038"
+  },
+  {
+    "tema": "React",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 28.png",
+    "destino": "Tecnologías y Aplicaciones Web/06-React/adjuntos/createElement frente a JSX y su HTML resultante.png",
+    "sha256": "a888e98d5e8c48ca58ce9f17ac0121f5ad42b3bd0a3257baa211feea8bb55f06"
+  },
+  {
+    "tema": "React",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 29.png",
+    "destino": "Tecnologías y Aplicaciones Web/06-React/adjuntos/Sintaxis regular frente a JSX.png",
+    "sha256": "5f84d348fe5e0a7e9ef0392b43c51ef4b9911c058b9345a53f23aee7e7d7adb2"
+  },
+  {
+    "tema": "React",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 30.png",
+    "destino": "Tecnologías y Aplicaciones Web/06-React/adjuntos/Diff del Virtual DOM aplicado al DOM real.png",
+    "sha256": "e387ed4ac92d34bc092631d493dda2e67c451dbc21e6b65ff2b70bd4b8dcd213"
+  },
+  {
+    "tema": "React",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 31.png",
+    "destino": "Tecnologías y Aplicaciones Web/06-React/adjuntos/Componente funcional frente a componente de clase.png",
+    "sha256": "85260e66af14aa4b996491b1ff24bfe0a6694f9273c5d8fc0f3d3b9d492e1294"
+  },
+  {
+    "tema": "React",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 32.png",
+    "destino": "Tecnologías y Aplicaciones Web/06-React/adjuntos/Props de Avatar desde Profile.png",
+    "sha256": "ee76bfc6026b2c1d904d5b23b16205f2ca3f9a570f3ffe4f22137740f5ba7601"
+  },
+  {
+    "tema": "React",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 33.png",
+    "destino": "Tecnologías y Aplicaciones Web/06-React/adjuntos/Contador con useState.png",
+    "sha256": "225819528814fdb8aa63a4e09615b93434e45ebeb1571a4ceb8115de44005548"
+  },
+  {
+    "tema": "React",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 34.png",
+    "destino": "Tecnologías y Aplicaciones Web/06-React/adjuntos/Evento inline en el DOM.png",
+    "sha256": "13c2d759854928a514faa6d5ab9f0aba56c8bccf1b0bcd726ad5eb9d47daceb9"
+  },
+  {
+    "tema": "React",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 35.png",
+    "destino": "Tecnologías y Aplicaciones Web/06-React/adjuntos/Ciclo de vida de un componente de clase.png",
+    "sha256": "b916ab8f21e46e91a739e22b9662cf23fd155d89ff7ecb078341d78df56cedde"
+  },
+  {
+    "tema": "React",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 36.png",
+    "destino": "Tecnologías y Aplicaciones Web/06-React/adjuntos/useState con dos variables de estado.png",
+    "sha256": "10d04b7cb1e2c0ca2845e78669723a0d6d03e3b88eeae14e0fe2a887aed9d2c7"
+  },
+  {
+    "tema": "React",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 37.png",
+    "destino": "Tecnologías y Aplicaciones Web/06-React/adjuntos/Declaración y suscripción a un contexto.png",
+    "sha256": "079f07c3496fb83f23d8bed530bd4035d1eecdbd618e201f2dc07ea88cd932f9"
+  },
+  {
+    "tema": "React",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 38.png",
+    "destino": "Tecnologías y Aplicaciones Web/06-React/adjuntos/Variantes de useEffect según dependencias.png",
+    "sha256": "e17f12246a0de9afddf47f00005813efb6cf3bbe20163d8c83060109d9596783"
+  },
+  {
+    "tema": "React",
+    "tipo": "apuntes",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases/image 39.png",
+    "destino": "Tecnologías y Aplicaciones Web/06-React/adjuntos/useEffect que conecta y desconecta un chat.png",
+    "sha256": "e91f1aae0860651669611e94aa8b4187e422342fa0f45dc0cd2865c067db1c87"
+  },
+  {
+    "tema": "Node.js",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 7 - Node.js.pdf#page=30",
+    "destino": "Tecnologías y Aplicaciones Web/08-Node.js/adjuntos/Capas de la arquitectura de Node.js.png",
+    "sha256": "51614681f00534ad59ac12a64d30a82e6f565c68165180bcbf5d836c5cd99b8b"
+  },
+  {
+    "tema": "Node.js",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 7 - Node.js.pdf#page=39",
+    "destino": "Tecnologías y Aplicaciones Web/08-Node.js/adjuntos/Componentes de un runtime de JavaScript.png",
+    "sha256": "0b1c2a8e0f0f52480e7a5d333c3e4f5e5d05affc02ce5a1d30c40eb1a7039586"
+  },
+  {
+    "tema": "Node.js",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 7 - Node.js.pdf#page=68",
+    "destino": "Tecnologías y Aplicaciones Web/08-Node.js/adjuntos/Call stack, cola de mensajes y event loop.png",
+    "sha256": "ca4ca05de9e1d84def5e7019d4e2668ea350bb7fa9d7c5e0f0cc75c8feb798ba"
+  },
+  {
+    "tema": "Node.js",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 7 - Node.js.pdf#page=76",
+    "destino": "Tecnologías y Aplicaciones Web/08-Node.js/adjuntos/Event loop de Node.js con libuv.png",
+    "sha256": "4043de30ab633a3aec9fece1f10925f3c3024ee1ac333907ee873b2d7e690069"
+  },
+  {
+    "tema": "Servidores y aplicaciones web",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 8 - Desarrollando servidores.pdf#page=54",
+    "destino": "Tecnologías y Aplicaciones Web/09-Servidores y aplicaciones web/adjuntos/Client side rendering del build al navegador.png",
+    "sha256": "77ca6635b8c2c90ce6422eba472a7dfe13c48f2a0b1f8ad946fa007faaa8ba2d"
+  },
+  {
+    "tema": "Servidores y aplicaciones web",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 8 - Desarrollando servidores.pdf#page=79",
+    "destino": "Tecnologías y Aplicaciones Web/09-Servidores y aplicaciones web/adjuntos/Aplicación, ORM, driver y base de datos.png",
+    "sha256": "7e814ff0a073ac5fa7d48f5b8dedf98d86fbf0b52ca49dc0156f507beac4f137"
+  },
+  {
+    "tema": "Diseño web",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 12 - Diseño Frontend.pdf#page=9",
+    "destino": "Tecnologías y Aplicaciones Web/12-Diseño web/adjuntos/Tareas de UX designers y UI designers.png",
+    "sha256": "f34842ffe0be3946f2767ab5f0fe6472cccc05ebf0e3e77fe8356c597a4e6fe5"
+  },
+  {
+    "tema": "Diseño web",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 12 - Diseño Frontend.pdf#page=16",
+    "destino": "Tecnologías y Aplicaciones Web/12-Diseño web/adjuntos/Patrón de medidor de seguridad de contraseñas.png",
+    "sha256": "4dd8629a3f82c2458514740b57e15fa35484ff939ee37af68757c3fb4de3e472"
+  },
+  {
+    "tema": "Diseño web",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 12 - Diseño Frontend.pdf#page=21",
+    "destino": "Tecnologías y Aplicaciones Web/12-Diseño web/adjuntos/Rangos de resolución en diseño responsivo.png",
+    "sha256": "6179a334cee44522425b5fba75cb252c75a5545397434e60d7da8d6f19843414"
+  },
+  {
+    "tema": "CSS moderno",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 13 - Diseño web en la práctica.pdf#page=32",
+    "destino": "Tecnologías y Aplicaciones Web/13-CSS moderno/adjuntos/Escala tipográfica en rem y px.png",
+    "sha256": "5fc9e53c60839d83023f87598714d1cba8a2de062f7a0dd1b6cca658e46b3079"
+  },
+  {
+    "tema": "CSS moderno",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 13 - Diseño web en la práctica.pdf#page=43",
+    "destino": "Tecnologías y Aplicaciones Web/13-CSS moderno/adjuntos/Flexbox en una dimensión y Grid en dos.png",
+    "sha256": "4ab1ca1295a0cd62fa63f621f4b5297b9616cd4a4d4ce937a3f6d31eb799f809"
+  },
+  {
+    "tema": "CSS moderno",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 13 - Diseño web en la práctica.pdf#page=44",
+    "destino": "Tecnologías y Aplicaciones Web/13-CSS moderno/adjuntos/Contenedor e items en Flexbox.png",
+    "sha256": "1dc4e0112f58ad2cf67bbb0a4c26b3dd246ba8182dd7d12d5858eeb21d9ccbce"
+  },
+  {
+    "tema": "Autenticación y autorización",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 15 - Autenticación y autorización.pdf#page=24",
+    "destino": "Tecnologías y Aplicaciones Web/15-Autenticación y autorización/adjuntos/Mismo hash para la misma contraseña sin salt.png",
+    "sha256": "28cfc15413ecd929f3ced1ca5a12a87a9d8005b0b96709c85ef14b4ef0115cda"
+  },
+  {
+    "tema": "Autenticación y autorización",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 15 - Autenticación y autorización.pdf#page=38",
+    "destino": "Tecnologías y Aplicaciones Web/15-Autenticación y autorización/adjuntos/Estructura de un JWT.png",
+    "sha256": "6834f7db68a308c659001e8dabe1edb7c2b7518a0ccb5fe7f41b3f28cfa65ef9"
+  },
+  {
+    "tema": "Autenticación y autorización",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 15 - Autenticación y autorización.pdf#page=57",
+    "destino": "Tecnologías y Aplicaciones Web/15-Autenticación y autorización/adjuntos/Flujo de autorización OAuth 2.0.png",
+    "sha256": "6b07e3df0f4e6ee5714aed1ba352cb39fbf8facec907500b99c548cbaadecaac"
+  },
+  {
+    "tema": "Autenticación y autorización",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 15 - Autenticación y autorización.pdf#page=60",
+    "destino": "Tecnologías y Aplicaciones Web/15-Autenticación y autorización/adjuntos/Login por dominio sin SSO.png",
+    "sha256": "02101168bd51e0f41d7d17070af2745808dc368b23a45df8d8b207ca35af7f77"
+  },
+  {
+    "tema": "Autenticación y autorización",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 15 - Autenticación y autorización.pdf#page=62",
+    "destino": "Tecnologías y Aplicaciones Web/15-Autenticación y autorización/adjuntos/Same origin policy impide compartir la cookie.png",
+    "sha256": "414327f5f0e4c26460a0e56fcff959f11efb26a129f0fd5b53cb9d0220975c46"
+  },
+  {
+    "tema": "Almacenamiento en el cliente",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 16 - Almacenes de información.pdf#page=34",
+    "destino": "Tecnologías y Aplicaciones Web/16-Almacenamiento en el cliente/adjuntos/Comparación de localStorage, sessionStorage, cookies e IndexedDB.png",
+    "sha256": "4f863c3fb7a7e188889304d4e00e19e1b1f03bedc7168dc90cbe0551bc707e87"
+  },
+  {
+    "tema": "Almacenamiento en el cliente",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 16 - Almacenes de información.pdf#page=47",
+    "destino": "Tecnologías y Aplicaciones Web/16-Almacenamiento en el cliente/adjuntos/Servidores CDN frente al servidor de origen.png",
+    "sha256": "5e889f318034cefa7a3cae47eb6b0041fec8755cc3487fc82c7a733a47902096"
+  },
+  {
+    "tema": "Tecnologías web adicionales",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 17 - Tecnologías adicionales.pdf#page=62",
+    "destino": "Tecnologías y Aplicaciones Web/17-Tecnologías web adicionales/adjuntos/Compilación de C a WebAssembly con Emscripten.png",
+    "sha256": "6b94a4407c60dcd4d1ffbd60f20d83888b5e5bdca01b5494a1c05a3548ef7a94"
+  },
+  {
+    "tema": "Tecnologías web adicionales",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 17 - Tecnologías adicionales.pdf#page=106",
+    "destino": "Tecnologías y Aplicaciones Web/17-Tecnologías web adicionales/adjuntos/Service worker entre la PWA y la red.png",
+    "sha256": "0a80737dc6475f60adc8722974cb44b2ab79141fce812223da9fdc488aa540bb"
+  },
+  {
+    "tema": "Tecnologías web adicionales",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 17 - Tecnologías adicionales.pdf#page=114",
+    "destino": "Tecnologías y Aplicaciones Web/17-Tecnologías web adicionales/adjuntos/Ciclo de vida de un service worker.png",
+    "sha256": "c6f1f8556a69cf90460dfa39a31c2f2dfec777408b682dcd16849f482d00dd36"
+  },
+  {
+    "tema": "Escala e ingeniería inversa",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 19 - Ingeniería inversa.pdf#page=12",
+    "destino": "Tecnologías y Aplicaciones Web/19-Escala e ingeniería inversa/adjuntos/Muchos clientes, servidores y bases de datos.png",
+    "sha256": "1111fd702f354feb7fd24b83502a0e102d723f9fe6e8d16e9f11cd5800905de2"
+  },
+  {
+    "tema": "Escala e ingeniería inversa",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 19 - Ingeniería inversa.pdf#page=13",
+    "destino": "Tecnologías y Aplicaciones Web/19-Escala e ingeniería inversa/adjuntos/Cola de mensajes entre productor y consumidores.png",
+    "sha256": "868cdd45ae894642b9568e7c5af772c0a4b70fa70411ba36cbf0222bb627430a"
+  },
+  {
+    "tema": "Escala e ingeniería inversa",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 19 - Ingeniería inversa.pdf#page=15",
+    "destino": "Tecnologías y Aplicaciones Web/19-Escala e ingeniería inversa/adjuntos/Balanceador de carga frente a varios servidores.png",
+    "sha256": "193780d58086220d98f11f46dd35fa0e792d349780126320b42962bb359e4dfd"
+  },
+  {
+    "tema": "IA para desarrolladores",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 20 - IAs para SWEs.pdf#page=34",
+    "destino": "Tecnologías y Aplicaciones Web/20-IA para desarrolladores/adjuntos/Un LLM predice el siguiente token.png",
+    "sha256": "169681d9495b9a0d79bd52811b68596636b9483d010ed432698b8e9ab6093fc1"
+  },
+  {
+    "tema": "IA para desarrolladores",
+    "tipo": "slide",
+    "original": "Semestre 6/TECNOLOGIAS Y APPS WEB/Clases/Clase 20 - IAs para SWEs.pdf#page=40",
+    "destino": "Tecnologías y Aplicaciones Web/20-IA para desarrolladores/adjuntos/Flujo de generación aumentada por recuperación.png",
+    "sha256": "06611ab75f09d4ac044ecf6714ab6e67b351b0a518007d65157efa0035fb508b"
+  }
+]

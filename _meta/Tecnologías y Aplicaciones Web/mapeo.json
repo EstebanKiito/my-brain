@@ -1,0 +1,313 @@
+{
+  "_descripcion": "Mapeo de las fuentes originales (rutas relativas a _raw/) a los temas del vault. Cada sección va desde el bloque 'desde' (incluido) hasta 'hasta' (excluido); con 'por_texto' los límites pueden ser cualquier bloque. Las notas se reescriben según _meta/ESTANDAR-NOTAS.md, por eso 'cobertura' es 'reescrita' (la cobertura textual es advertencia). Los apuntes cubren las clases 0-6; desde la clase 7 la fuente es el PDF de slides de 'TECNOLOGIAS Y APPS WEB/Clases/' (sin licencia: entra solo como PNG, registrado en imagenes.json con tipo 'slide'). De 'Tareas Web' y 'Proyecto' solo entra lo genérico (flujo de sequelize-cli, setup de Postgres, router de Express) reescrito con modelos neutros; lo personal queda en 'aceptados'.",
+  "carpeta_ramo": "Tecnologías y Aplicaciones Web",
+  "cobertura": "reescrita",
+  "fuentes": {
+    "ramo": "Semestre 6/TECNOLOGIAS Y APPS WEB 22760dd6de8180b599adfb918ff34981.html",
+    "apuntes": "Semestre 6/TECNOLOGIAS Y APPS WEB/Apuntes Clases 24460dd6de818036b622d97fa98a73d6.html",
+    "tareas": "Semestre 6/TECNOLOGIAS Y APPS WEB/Tareas Web 24460dd6de8180109c8edeb263bba0e4.html",
+    "proyecto": "Semestre 6/TECNOLOGIAS Y APPS WEB/Proyecto 29f60dd6de8180c09f2fc49ffec37606.html",
+    "trucos": "Semestre 6/TECNOLOGIAS Y APPS WEB/Investigaciones + Trucos 24460dd6de81801199b8e995963e802c.html"
+  },
+  "temas": {
+    "Fundamentos de la web": {
+      "carpeta": "Tecnologías y Aplicaciones Web/01-Fundamentos de la web",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "Clase 1",
+          "hasta": "Clase 2"
+        }
+      ]
+    },
+    "HTML y CSS": {
+      "carpeta": "Tecnologías y Aplicaciones Web/02-HTML y CSS",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "Clase 2",
+          "hasta": "Clase 3: Javascript"
+        }
+      ]
+    },
+    "JavaScript como lenguaje": {
+      "carpeta": "Tecnologías y Aplicaciones Web/03-JavaScript como lenguaje",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "Clase 3: Javascript",
+          "hasta": "Clase 4"
+        }
+      ]
+    },
+    "Asincronía en JavaScript": {
+      "carpeta": "Tecnologías y Aplicaciones Web/04-Asincronía en JavaScript",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "Clase 4",
+          "hasta": "Manejo del DOM"
+        }
+      ]
+    },
+    "DOM y eventos": {
+      "carpeta": "Tecnologías y Aplicaciones Web/05-DOM y eventos",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "Manejo del DOM",
+          "hasta": "Clase 5: React"
+        }
+      ]
+    },
+    "React": {
+      "carpeta": "Tecnologías y Aplicaciones Web/06-React",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "Clase 5: React",
+          "hasta": "Clase 6"
+        }
+      ]
+    },
+    "APIs web y REST": {
+      "carpeta": "Tecnologías y Aplicaciones Web/07-APIs web y REST",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "Clase 6",
+          "hasta": "Clase 7"
+        }
+      ]
+    },
+    "Node.js": {
+      "carpeta": "Tecnologías y Aplicaciones Web/08-Node.js",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "Clase 7"
+        }
+      ]
+    },
+    "Servidores y aplicaciones web": {
+      "carpeta": "Tecnologías y Aplicaciones Web/09-Servidores y aplicaciones web",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "Construir una API con Express": {
+      "carpeta": "Tecnologías y Aplicaciones Web/10-Construir una API con Express",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "tareas",
+          "desde": "T2"
+        }
+      ]
+    },
+    "Calidad, CI y CD": {
+      "carpeta": "Tecnologías y Aplicaciones Web/11-Calidad, CI y CD",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "Diseño web": {
+      "carpeta": "Tecnologías y Aplicaciones Web/12-Diseño web",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "CSS moderno": {
+      "carpeta": "Tecnologías y Aplicaciones Web/13-CSS moderno",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "Cookies y sesiones": {
+      "carpeta": "Tecnologías y Aplicaciones Web/14-Cookies y sesiones",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "Autenticación y autorización": {
+      "carpeta": "Tecnologías y Aplicaciones Web/15-Autenticación y autorización",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "Almacenamiento en el cliente": {
+      "carpeta": "Tecnologías y Aplicaciones Web/16-Almacenamiento en el cliente",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "Tecnologías web adicionales": {
+      "carpeta": "Tecnologías y Aplicaciones Web/17-Tecnologías web adicionales",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "Testing en la web": {
+      "carpeta": "Tecnologías y Aplicaciones Web/18-Testing en la web",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "Escala e ingeniería inversa": {
+      "carpeta": "Tecnologías y Aplicaciones Web/19-Escala e ingeniería inversa",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "IA para desarrolladores": {
+      "carpeta": "Tecnologías y Aplicaciones Web/20-IA para desarrolladores",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "Privacidad y ética": {
+      "carpeta": "Tecnologías y Aplicaciones Web/21-Privacidad y ética",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "Gestión del curso": {
+      "carpeta": "Tecnologías y Aplicaciones Web/22-Gestión del curso",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "Tecnologías y Aplicaciones Web - IIC2513",
+          "hasta": "Clase 0"
+        },
+        {
+          "fuente": "apuntes",
+          "desde": "Clase 0",
+          "hasta": "Clase 1"
+        },
+        {
+          "fuente": "proyecto",
+          "desde": "Cosas a arreglar E2"
+        },
+        {
+          "fuente": "trucos",
+          "desde": "Esto es para añadir codigos",
+          "por_texto": true
+        }
+      ]
+    }
+  },
+  "aceptados": [
+    {
+      "fuente": "apuntes",
+      "link": "http://Uc.cl",
+      "motivo": "Autolink de Notion sobre el texto 'Uc.cl' (ejemplo de host); no es un recurso."
+    },
+    {
+      "fuente": "apuntes",
+      "texto": "En el curso tenemos 2 tareas",
+      "motivo": "Organización del curso (tareas y alcance de la clase); se resume en Gestión del curso."
+    },
+    {
+      "fuente": "apuntes",
+      "texto": "T1: Construir frontend con React",
+      "motivo": "Organización del curso (tareas y alcance de la clase); se resume en Gestión del curso."
+    },
+    {
+      "fuente": "apuntes",
+      "texto": "T2: Nos dan un frontend, y tenemos que construir el backend usando express",
+      "motivo": "Organización del curso (tareas y alcance de la clase); se resume en Gestión del curso."
+    },
+    {
+      "fuente": "apuntes",
+      "texto": "Esta clase es una introduccion a REACT: No un master en React",
+      "motivo": "Organización del curso (tareas y alcance de la clase); se resume en Gestión del curso."
+    },
+    {
+      "fuente": "tareas",
+      "texto": "T2",
+      "motivo": "Nombre de la tarea personal; el contenido técnico se reescribió en el tema."
+    },
+    {
+      "fuente": "tareas",
+      "texto": "Tarea-2-Respaldo $ brew services start postgresql",
+      "motivo": "Log de terminal personal (usuario, contraseña y bases propias); se reescribió como setup genérico de Postgres con Homebrew."
+    },
+    {
+      "fuente": "tareas",
+      "texto": "# Genera User",
+      "motivo": "Modelos específicos de la tarea; el flujo de model:generate se reescribió con el modelo neutro Movie."
+    },
+    {
+      "fuente": "tareas",
+      "texto": "Proyecto",
+      "motivo": "Encabezado del proyecto personal."
+    },
+    {
+      "fuente": "tareas",
+      "texto": "Generacion de Modelos",
+      "motivo": "Encabezado del proyecto personal."
+    },
+    {
+      "fuente": "tareas",
+      "texto": "Javier-Lopez_backend_25-2 $ yarn sequelize-cli model:generate",
+      "motivo": "Log de terminal del proyecto (rutas y modelos personales); el flujo se reescribió con un ejemplo neutro."
+    },
+    {
+      "fuente": "tareas",
+      "texto": "A copiar en develop backend",
+      "motivo": "Recordatorio personal del proyecto."
+    },
+    {
+      "fuente": "tareas",
+      "texto": "if (!reviews || reviews.length === 0) {",
+      "motivo": "Fragmento del proyecto; la idea (lista vacía responde 200 con []) quedó en Rutas y routers en Express."
+    },
+    {
+      "fuente": "proyecto",
+      "texto": "Cosas a arreglar E2",
+      "motivo": "Página personal de seguimiento del proyecto (pendientes de una entrega); no es contenido del ramo."
+    },
+    {
+      "fuente": "proyecto",
+      "texto": "Detalles:",
+      "motivo": "Página personal de seguimiento del proyecto (pendientes de una entrega); no es contenido del ramo."
+    },
+    {
+      "fuente": "proyecto",
+      "texto": "Preguntas",
+      "motivo": "Página personal de seguimiento del proyecto (pendientes de una entrega); no es contenido del ramo."
+    },
+    {
+      "fuente": "proyecto",
+      "texto": "a",
+      "motivo": "Ítems vacíos de una lista personal del proyecto."
+    },
+    {
+      "fuente": "trucos",
+      "texto": "Esto es para añadir codigos de Componentes, Hooks, Conceptos, Etc… Que sirva aprender",
+      "motivo": "Página plantilla vacía (solo la descripción de lo que iba a contener)."
+    },
+    {
+      "fuente": "trucos",
+      "texto": "Buenas Practicas",
+      "motivo": "Página plantilla vacía (títulos sin contenido)."
+    },
+    {
+      "fuente": "trucos",
+      "texto": "Ejemplos de Uso",
+      "motivo": "Página plantilla vacía (títulos sin contenido)."
+    },
+    {
+      "fuente": "trucos",
+      "texto": "Links de Stack Overflow",
+      "motivo": "Página plantilla vacía (títulos sin contenido)."
+    },
+    {
+      "fuente": "trucos",
+      "texto": "Conceptos",
+      "motivo": "Página plantilla vacía (títulos sin contenido)."
+    },
+    {
+      "fuente": "trucos",
+      "texto": "etc",
+      "motivo": "Página plantilla vacía (títulos sin contenido)."
+    }
+  ]
+}
