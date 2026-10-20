@@ -104,8 +104,14 @@
     },
     "Consenso": {
       "carpeta": "Sistemas Distribuidos/08-Consenso",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Clase 7",
+          "hasta": "Clase 8"
+        }
+      ]
     },
     "Elección de líder": {
       "carpeta": "Sistemas Distribuidos/09-Elección de líder",

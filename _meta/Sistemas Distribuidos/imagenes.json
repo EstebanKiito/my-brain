@@ -439,5 +439,117 @@
     "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 57.png",
     "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Estado global final de Chandy-Lamport.png",
     "sha256": "dd19215b729abe80895937f8c46f2e90541bc594a3761912859d1b71a60d80d6"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 58.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Consenso fallido entre tres proponentes.png",
+    "sha256": "0437da7560e817e90920f491195faec421fa976167436f53051456f018460c2c"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 59.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Respuestas de los aceptantes a prepare.png",
+    "sha256": "ae68c1d3608e2b553f57d63dc82e564c1a7cd13fc75ca33bafdff71c232feaf0"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 60.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Aceptante que comparte una operación previa.png",
+    "sha256": "cb4289b2393a27cf1b09f2c41ad0fcb64f54e13104a8780e2fe36cf0aaac66be"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 61.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Propuesta rechazada por falta de mayoría.png",
+    "sha256": "d8757b48cb5f5acc10e99c0876a3a97cfa942dca3ac2bbdde45057e3b8835cd8"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 62.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Accept con la operación del proponente.png",
+    "sha256": "812a05e781d45ae7c9aafaae43db040380368356ea9109c2cd4435d294b57b1e"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 63.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Accept con la operación previa de mayor identificador.png",
+    "sha256": "14b0d2632d7a6d60b3f208762ab498ae5679ad64747c463cd45ee55914587e09"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 64.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/El aprendiz consolida la operación de la mayoría.png",
+    "sha256": "2e4034629b1c4dad8469504fb312d6fe8ac33369a87568f735282e3290cb1ecf"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 65.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Paxos interrumpe a un proponente.png",
+    "sha256": "c9ef63cedfa703acb69ee3a6575cac7b0cac5218fc849b26d8062f2332840fb1"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 66.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Paxos sobrescribe una acción aceptada.png",
+    "sha256": "66c87d2272cb0a7357354d445b9ca0014936edc6f2840e65845ea047693b3c24"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 67.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Livelock en Paxos.png",
+    "sha256": "dea506e2db628b33ac24673f53e7a31b2007b8e2fbcfa95a99534af323e7fd47"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 68.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Partición de la red en dos grupos.png",
+    "sha256": "cba3c477f2d1076e97069f91530d144d5eb5f1da00dd6542b27c5fa67b507eed"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 69.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Seguidor traidor y coordinador traidor.png",
+    "sha256": "90c09cf12e7e4e865d253ae67ceb234a27a6e279f26f98f9724e1aece787939d"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 70.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Mensajes orales con un seguidor traidor.png",
+    "sha256": "1cc20c3c9627bb6103066148cbddc7f436229564a11d2c01ad6624cd1a9a0e9c"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 71.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Mensajes orales con el líder traidor.png",
+    "sha256": "99d4b3bb7bf54aca74dadcc6763fd8056faa22ca03307ded581242ebf8075c78"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 72.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Mensajes firmados con un seguidor traidor.png",
+    "sha256": "76a0472a1a251088aafd6ee8bf6dfd659931d39b1de1212000519551c4bfeb42"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 73.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Mensajes firmados con el líder traidor.png",
+    "sha256": "d7b4aa014689ff53ccac5fce5ba6c669147f4f4903faf4cada6626ced35ca855"
   }
 ]

@@ -19,3 +19,8 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
 | ℹ️ | [[04 - gRPC y Protocol Buffers\|gRPC y Protocol Buffers]] | Slide de Protocol Buffers: esquema `message Character { string username = ""; string phase = ""; }` e `import character_pb3` | En proto3 cada campo lleva un número de campo (`string username = 1;`); con `= ""` `protoc` falla con "Expected field number". Además, el módulo generado para Python se llama `character_pb2` aunque el esquema sea proto3. La nota usa la versión que compila (y `phrase` en vez de `phase`). |
+
+## Consenso
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ℹ️ | [[04 - Casos borde y garantías de Paxos\|Casos borde y garantías de Paxos]] | Slide "Ejemplo 2. Sobreescribir acción que tenía consenso" | Lo que tuvo consenso fue el `prepare(1)` (los tres aceptantes prometieron), pero la operación $A_1$ solo la aceptó un nodo y nunca alcanzó mayoría. La nota lo explica así, en línea con la observación de las slides: un prepare con consenso no asegura que su operación sea la final. |

@@ -12,3 +12,4 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: basta con b
 | [[Sistemas Distribuidos/05-Invocación remota/_Índice\|Invocación remota]] | Request-reply, REST, RPC y stubs, RPC y RMI con xmlrpc, gRPC y Protocol Buffers |
 | [[Sistemas Distribuidos/06-Sincronización de relojes físicos/_Índice\|Sincronización de relojes físicos]] | Coordinación y sus tipos, deriva de los relojes, Cristian, Berkeley y NTP |
 | [[Sistemas Distribuidos/07-Relojes lógicos y estados globales/_Índice\|Relojes lógicos y estados globales]] | Lamport, relojes vectoriales, estados globales, cortes consistentes y Chandy-Lamport |
+| [[Sistemas Distribuidos/08-Consenso/_Índice\|Consenso]] | Propiedades del consenso, Paxos (fases, casos borde y garantías) y generales bizantinos |
