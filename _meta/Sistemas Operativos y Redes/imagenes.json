@@ -1293,5 +1293,37 @@
     "destino": "Sistemas Operativos y Redes/17-Capa de enlace y seguridad/adjuntos/Diagrama de capa de enlace, switches, LANs, VLANs y protocolos de acceso al medio.png",
     "sha256": "51870da600b2948d31c9900b78695aba985eeb4b71515c6ff0553e5ccb95f15a",
     "tema": "Capa de enlace y seguridad"
+  },
+  {
+    "tema": "Gestión del curso",
+    "tipo": "convertida",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/RESUMEN MIDTERM SSOO/IMG_1083.heic",
+    "destino": "Sistemas Operativos y Redes/18-Gestión del curso/adjuntos/Pizarra de repaso 1 - kernel, syscalls y procesos.png",
+    "sha256": "7a59c89dedf3702c6d17ed4e00d1499949c556db4339d382593a219cb1084511",
+    "motivo": "HEIC convertido a PNG con sips y reducido a 1400 px (Obsidian no muestra HEIC en todas las plataformas)."
+  },
+  {
+    "tema": "Gestión del curso",
+    "tipo": "convertida",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/RESUMEN MIDTERM SSOO/IMG_1084.heic",
+    "destino": "Sistemas Operativos y Redes/18-Gestión del curso/adjuntos/Pizarra de repaso 2 - fork, señales y scheduling.png",
+    "sha256": "e986e394b359f1f60b9bc874ece96e291a37269fef7f9a0893e999392d75a173",
+    "motivo": "HEIC convertido a PNG con sips y reducido a 1400 px (Obsidian no muestra HEIC en todas las plataformas)."
+  },
+  {
+    "tema": "Gestión del curso",
+    "tipo": "convertida",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/RESUMEN MIDTERM SSOO/IMG_1085.heic",
+    "destino": "Sistemas Operativos y Redes/18-Gestión del curso/adjuntos/Pizarra de repaso 3 - sincronización y memoria.png",
+    "sha256": "244cbd4a75447153dc744d29c629d53d12aa7c233096297644b40fba9a8e42af",
+    "motivo": "HEIC convertido a PNG con sips y reducido a 1400 px (Obsidian no muestra HEIC en todas las plataformas)."
+  },
+  {
+    "tema": "Gestión del curso",
+    "tipo": "convertida",
+    "original": "Semestre 4/Sistemas Operativos & Redes - IIC2333/RESUMEN MIDTERM SSOO/IMG_1086.heic",
+    "destino": "Sistemas Operativos y Redes/18-Gestión del curso/adjuntos/Pizarra de repaso 4 - memoria, TLB y archivos.png",
+    "sha256": "ad173323839c147bb483b91b4933e8783e1665d2ebd7ce49992827187320763d",
+    "motivo": "HEIC convertido a PNG con sips y reducido a 1400 px (Obsidian no muestra HEIC en todas las plataformas)."
   }
 ]

@@ -59,14 +59,15 @@ Algoritmo de Reemplazo de Paginas :
 - RANDOM
 - LRU → Aproximaciones: CLOCK/ AGING / DIRTY BIT
 
-![Pizarra de repaso 3: Sincronización clásica, memoria virtual y TLB](adjuntos/IMG_1085.heic)
+![Pizarra de repaso 3: sincronización y memoria](adjuntos/Pizarra%20de%20repaso%203%20-%20sincronizaci%C3%B3n%20y%20memoria.png)
 
 > [!example]- Transcripción de la imagen
-> Registro fotográfico del pizarrón de repaso (panel derecho - memoria y sincronización):
-> - **Sección Crítica**: Requisitos de exclusión mutua, progreso y espera acotada. Primitivas atómicas por hardware (*Compare-and-Swap*).
-> - **Mecanismos de sincronización**: Mutex locks (`acquire` y `release`), semáforos contadores de Dijkstra ($V$ incrementa, $P$ decrementa y bloquea), y variables de condición (`wait` libera la CPU, `signal` despierta).
-> - **Gestión de memoria**: Desafíos de relocalización y protección. Estrategias: segmentación pura, paginación, esquemas combinados, tablas multinivel e invertidas.
-> - **TLB y reemplazo**: Traducción virtual-física, TLB Hit (inmediato) vs TLB Miss (acceso a memoria principal). Algoritmos de reemplazo FIFO, Random, LRU (aproximaciones Clock, Aging y Dirty Bit).
+> Pizarra del repaso, tercera parte:
+> - Scheduling (continuación): long, medium (swapping) y short term; FCFS, SJF y RR; expropiativo; por lotes; I/O burst.
+> - Sincronización: solución al problema de la sección crítica → exclusión mutua, tiempo acotado (espera), progreso. "¿Qué es una instrucción atómica?" → se ejecuta una sola a la vez.
+> - Mutex lock: bloquea la sección de código (SC) con acquire(), la libera con release(); solo 1 thread en la SC. Semáforos: N procesos en la SC con un contador; V() lo aumenta; P() lo disminuye y, si está en 0, se bloquea.
+> - Variables de condición: bloquean la SC con una condición arbitraria; wait() → el thread libera la ejecución; signal() → intento de despertar un thread. Link simbólico → apunta a un path; link hard → apunta a un inode.
+> - Memoria: problemas (relocalización, protección); estrategias (segmentación, paginación "¡importante!", segmentos paginados, paginación multinivel, paginación invertida).
 
 ARCHIVOS
 Disco Duro v/s SSD:
@@ -86,14 +87,15 @@ Estrategias:
 - Asignacion indexada multinivel
 Estas ultimas 2 son importantes → Entraran si o si en la prueba
 
-![Pizarra de repaso 4: Memoria, HDD vs SSD y asignación de bloques e inodos](adjuntos/IMG_1086.heic)
+![Pizarra de repaso 4: memoria, TLB y archivos](adjuntos/Pizarra%20de%20repaso%204%20-%20memoria%2C%20TLB%20y%20archivos.png)
 
 > [!example]- Transcripción de la imagen
-> Registro fotográfico del pizarrón de repaso (panel extremo derecho - sistemas de archivos):
-> - **Tecnologías de disco**: Discos mecánicos HDD (platos giratorios, cabezal/aguja física móvil, latencia rotacional y búsqueda) vs discos de estado sólido SSD (chips flash sin partes mecánicas móviles, mayor velocidad y resistencia a impactos).
-> - **Organización en bloques**: Bloques de datos, bloques de índices e indirecciones simples/dobles/triples en esquemas tipo inodo UNIX.
-> - **Estrategias de asignación de bloques**: Contigua, enlazada, tabla FAT, indexada simple e indexada multinivel (pregunta segura de examen).
-> - **Enlaces de archivos**: Soft links (simbólicos, apuntan a una ruta/path) vs Hard links (apuntan directamente al número de inodo en el sistema de archivos).
+> Pizarra del repaso, cuarta parte:
+> - Memoria: problemas (relocalización, protección) y estrategias (segmentación, paginación "¡importante!", segmentos paginados, paginación multinivel, paginación invertida).
+> - TLB: caché que almacena traducciones de página a frame. TLB hit → traducción encontrada. TLB miss → traducción no encontrada: requiere ir a memoria a buscar la traducción.
+> - Algoritmos de reemplazo de páginas: FIFO, random, LRU → aproximaciones: clock, aging, dirty bit.
+> - Link simbólico → apunta a un path. Link hard → apunta a un inode.
+> - Archivos: disco duro vs SSD (SSD más rápido, sin partes móviles, etc.). Capa de bloques, tipos: bloque de datos, bloque índice, bloque de indirección simple/doble. Estrategias: asignación contigua, asignación enlazada, FAT, asignación indexada y asignación indexada multinivel (marcadas como "¡importante!").
 
 Si o si pregunta de sincronización
 Aprenderse las formas de resolver una sección critica

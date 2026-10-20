@@ -1,6 +1,7 @@
 {
-  "_descripcion": "Mapeo de las fuentes originales (rutas relativas a _raw/) a los temas del vault para Sistemas Operativos y Redes (IIC2333). Cada sección va desde el encabezado 'desde' (incluido) hasta 'hasta' (excluido). 'aceptados' lista bloques originales que se omiten a propósito con su motivo.",
+  "_descripcion": "Mapeo de las fuentes originales (rutas relativas a _raw/) a los temas del vault para Sistemas Operativos y Redes (IIC2333). Cada sección va desde el encabezado 'desde' (incluido) hasta 'hasta' (excluido). 'aceptados' lista bloques originales que se omiten a propósito con su motivo. Desde fix/ssoo-redes las notas están reescritas según _meta/ESTANDAR-NOTAS.md, por eso 'cobertura' es 'reescrita' (la cobertura textual es advertencia).",
   "carpeta_ramo": "Sistemas Operativos y Redes",
+  "cobertura": "reescrita",
   "fuentes": {
     "ssoo": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - SSOO IIC2333 2ff038030e7442e7bfb7b8e38ae90bf8.html",
     "redes": "Semestre 4/Sistemas Operativos & Redes - IIC2333/Apuntes - Redes IIC2333 11a60dd6de8180989081c3a2f6037b76.html",
@@ -269,6 +270,11 @@
       "texto": "RESUMEN MIDTERM SSOO",
       "motivo": "Enlace/título de subpágina en Notion",
       "fuente": "ramo"
+    },
+    {
+      "fuente": "ssoo",
+      "link": "http://python.py",
+      "motivo": "Autolink de Notion sobre el texto 'python.py' (nombre de un archivo de ejemplo en '(Codigo) + (Recursos) python.py → CPU'); no es un recurso."
     }
   ]
 }

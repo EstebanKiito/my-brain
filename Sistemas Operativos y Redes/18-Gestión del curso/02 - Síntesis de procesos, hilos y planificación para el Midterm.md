@@ -62,10 +62,10 @@ Context Switch
 Espacio de Swap
 Threads = Procesos mas livianos
 
-![Pizarra de repaso 1: Arquitectura del núcleo, llamadas al sistema y modelo de procesos](adjuntos/IMG_1083.heic)
+![Pizarra de repaso 1: kernel, syscalls y procesos](adjuntos/Pizarra%20de%20repaso%201%20-%20kernel%2C%20syscalls%20y%20procesos.png)
 
 > [!example]- Transcripción de la imagen
-> Registro de pizarra (panel izquierdo): SO = kernel + programas; kernel permanente que abstrae hardware, ofrece servicios y comparte recursos. Subsistemas: archivos, protección, I/O y drivers. Kernels monolíticos (grandes, rápidos) vs microkernels (modulares, aislados a fallos). Modo Kernel vs Usuario. Procesos (código, datos, heap, stack), PCB (estado, PID, PC), estados (New, Running, Ready, Waiting, Terminated), context switch, swap y threads como procesos livianos.
+> Pizarra del repaso, primera parte, de izquierda a derecha: "Repaso Midterm"; SO ⇒ kernel + programas, y el kernel siempre está ejecutando y provee lo mínimo. SO: 1) abstrae del hardware, 2) permite compartir recursos, 3) ofrece servicios; compuesto por sistema de archivos, protección/seguridad, control de I/O y drivers. Recuadro aparte: CPU burst. Kernels: monolítico (complejo/grande, rápido) y microkernel (pequeño/modularizado, aislado a fallos). Acceso: kernel mode y user mode; las syscalls llaman al SO. Proceso = código + recursos (memoria y archivos, sockets, bibliotecas); "CPU atiende 'simultáneamente' más de un proceso": multitasking. Proceso: código, datos, heap, stack. PCB → estado, ID. Estados → New / Running / … Context switch, espacio de swap, threads = procesos más livianos. Al borde derecho empieza "Sys calls" (fork, exec).
 
 Syscalls
 - Fork: Creacion de nuevo proceso
@@ -85,10 +85,11 @@ Long Term (cola Ready) / Medium term (Swapping) / Short Term (selecciona ejecuta
 - SJF
 - RR (round robin)
 
-![Pizarra de repaso 2: Llamadas fork/exec/wait, estados de procesos y niveles de scheduling](adjuntos/IMG_1084.heic)
+![Pizarra de repaso 2: fork, señales y scheduling](adjuntos/Pizarra%20de%20repaso%202%20-%20fork%2C%20se%C3%B1ales%20y%20scheduling.png)
 
 > [!example]- Transcripción de la imagen
-> Registro de pizarra (panel central): Syscalls fork() (creación de hijo), exec() (reemplazo de código y carga de binario) y wait() (espera del hijo). Procesos huérfanos (padre muere antes; adoptado por PID 1) y zombies (hijo termina y padre no hace wait). Señales SIGTERM, SIGKILL y SIGINT. Planificadores Long-Term (cola ready), Medium-Term (swapping) y Short-Term (despacho a CPU). Algoritmos cooperativos vs expropiativos, batch vs interactivos, y FCFS, SJF y Round Robin.
+> Pizarra del repaso, segunda parte (a la izquierda repite los kernels, el acceso y el proceso). Sys calls: fork → creación de nuevo proceso; exec → carga el binario en memoria y reemplaza el código de quien lo llamó. Estados → New / Running / Waiting / Ready / Terminated. Señales: SIGTERM / SIGKILL / SIGINT. Wait → espera el término del hijo. Huérfano: el padre termina o muere y sus hijos quedan huérfanos. Zombie: el proceso termina y su padre no hace wait.
+> - Scheduling: long / medium / short term. Preemptive (expropiativo): saca al proceso de ejecución; batch: por lotes; interactivo: minimiza el tiempo de respuesta. CPU burst frente a I/O burst; al borde derecho, FCFS, SJF y el inicio de "Sincronización".
 
 Proceso:
 - Codigo
