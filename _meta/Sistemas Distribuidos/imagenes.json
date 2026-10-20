@@ -1006,5 +1006,47 @@
     "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=188",
     "destino": "Sistemas Distribuidos/21-Monitoreo de seguridad/adjuntos/Firewall frente a IDS e IPS.png",
     "sha256": "874ef237fa5a94a669e6b271c7fe4d6f35b7cd9beddb8df8f1f11466ba132135"
+  },
+  {
+    "tema": "Arquitecturas peer-to-peer",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=207",
+    "destino": "Sistemas Distribuidos/22-Arquitecturas peer-to-peer/adjuntos/Búsqueda por inundación.png",
+    "sha256": "c8e0b75b5c4fe5e5539420597f43ce782242cf05ad2e9c998e05e008faa9a3d3"
+  },
+  {
+    "tema": "Arquitecturas peer-to-peer",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=242",
+    "destino": "Sistemas Distribuidos/22-Arquitecturas peer-to-peer/adjuntos/Búsquedas en el anillo de Chord.png",
+    "sha256": "6c5c5549da63589bf2f9a7456f65c655915e16dcedb41483aa5f12b07260fb49"
+  },
+  {
+    "tema": "Arquitecturas peer-to-peer",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=246",
+    "destino": "Sistemas Distribuidos/22-Arquitecturas peer-to-peer/adjuntos/Llegada de un nodo en Chord.png",
+    "sha256": "b7bd28038141406fddbba5cc3057587e6c35032ed1cb30dcd4a46dfd36f90dfd"
+  },
+  {
+    "tema": "Casos aplicados",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=270",
+    "destino": "Sistemas Distribuidos/23-Casos aplicados/adjuntos/Onion routing en Tor.png",
+    "sha256": "a01b70fe620c01626e0a71eacd0ac6e3733f684b19dcc1cccd1948a2b758d64b"
+  },
+  {
+    "tema": "Casos aplicados",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=278",
+    "destino": "Sistemas Distribuidos/23-Casos aplicados/adjuntos/Jerarquía RADIUS de Eduroam.png",
+    "sha256": "d0ef775d943009e6103a11cbe47f0ade93dba4aa3b4a63184153ed8d4fe29039"
+  },
+  {
+    "tema": "Casos aplicados",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=299",
+    "destino": "Sistemas Distribuidos/23-Casos aplicados/adjuntos/Comparación de VPN, Tor, Eduroam y BitTorrent.png",
+    "sha256": "8ab97ad39fbb5af3c3a6209506cd16a3bc59720833964efe64eb2aed8fc7d127"
   }
 ]
