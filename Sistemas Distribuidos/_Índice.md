@@ -28,3 +28,4 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: basta con b
 | [[Sistemas Distribuidos/21-Monitoreo de seguridad/_Índice\|Monitoreo de seguridad]] | Objetivos y desafíos, ciclo de vida, tipos de análisis, IDS, IPS, firewalls y GDPR |
 | [[Sistemas Distribuidos/22-Arquitecturas peer-to-peer/_Índice\|Arquitecturas peer-to-peer]] | P2P no estructurado, búsqueda, ataques Sybil y Eclipse, DHT, hash consistente y Chord |
 | [[Sistemas Distribuidos/23-Casos aplicados/_Índice\|Casos aplicados]] | VPN, Tor, Eduroam y BitTorrent como sistemas distribuidos |
+| [[Sistemas Distribuidos/24-Gestión del curso/_Índice\|Gestión del curso]] | Metodología, evaluaciones, fórmulas de nota y síntesis de fiabilidad y seguridad |

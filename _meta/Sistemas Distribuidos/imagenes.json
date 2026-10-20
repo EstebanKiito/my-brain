@@ -1048,5 +1048,75 @@
     "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=299",
     "destino": "Sistemas Distribuidos/23-Casos aplicados/adjuntos/Comparación de VPN, Tor, Eduroam y BitTorrent.png",
     "sha256": "8ab97ad39fbb5af3c3a6209506cd16a3bc59720833964efe64eb2aed8fc7d127"
+  },
+  {
+    "tema": "Gestión del curso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 15.png",
+    "destino": "Sistemas Distribuidos/24-Gestión del curso/adjuntos/Síntesis de consistencia secuencial.png",
+    "sha256": "4e7a96bbae6154c0084e399a037730c50659073aebb911e1681a4c9a4c32eed5"
+  },
+  {
+    "tema": "Gestión del curso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 16.png",
+    "destino": "Sistemas Distribuidos/24-Gestión del curso/adjuntos/Síntesis de consistencia fuerte.png",
+    "sha256": "75b453ddf52f64b4fe71b64d46bf4ef2bbd29ef72f3af6d32d3ccfa38ffc029e"
+  },
+  {
+    "tema": "Gestión del curso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 17.png",
+    "destino": "Sistemas Distribuidos/24-Gestión del curso/adjuntos/Síntesis de consistencia causal.png",
+    "sha256": "7719056ed7422b0ae428d260ac7eb9d1759aade8baf26b8458e9fdb4cf15b6ac"
+  },
+  {
+    "tema": "Gestión del curso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 18.png",
+    "destino": "Sistemas Distribuidos/24-Gestión del curso/adjuntos/Síntesis de consistencia eventual.png",
+    "sha256": "dc741be5d28b36b745a1e3fba8214cf02443f7c81d11c238da7ed83abcaebd7d"
+  },
+  {
+    "tema": "Gestión del curso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 25.png",
+    "destino": "Sistemas Distribuidos/24-Gestión del curso/adjuntos/Síntesis de gossip.png",
+    "sha256": "f7e7caa86b2b36474e00effd3984b4f14e2aa04c2017ff00229b94ed1fb204a5"
+  },
+  {
+    "tema": "Gestión del curso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 26.png",
+    "destino": "Sistemas Distribuidos/24-Gestión del curso/adjuntos/Síntesis de replicación con primario.png",
+    "sha256": "8418d07b52e62de696d0f9ba29bfe3368d52f780df1cf89ddc03b63d20e9aeb4"
+  },
+  {
+    "tema": "Gestión del curso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 27.png",
+    "destino": "Sistemas Distribuidos/24-Gestión del curso/adjuntos/Síntesis de replicación activa.png",
+    "sha256": "0edc3624b874793785424a0236aedd5b07ea6dab11035669b2e43874b121b80a"
+  },
+  {
+    "tema": "Gestión del curso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 28.png",
+    "destino": "Sistemas Distribuidos/24-Gestión del curso/adjuntos/Síntesis de validación forward y backward.png",
+    "sha256": "6011fb316f69d8220befb92cad7164d41290b5a26a079b153f76937db2e48fdc"
+  },
+  {
+    "tema": "Gestión del curso",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=42",
+    "destino": "Sistemas Distribuidos/24-Gestión del curso/adjuntos/Fórmula de evaluaciones escritas.png",
+    "sha256": "680662bd8e2da4f4f07932f09a788db98dd679d3f6b88cdf3adfb0d622d0501d"
+  },
+  {
+    "tema": "Gestión del curso",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=47",
+    "destino": "Sistemas Distribuidos/24-Gestión del curso/adjuntos/Condiciones de aprobación.png",
+    "sha256": "d95bb7705848ca6b1965c53e4078f6e92d9418321057f3dc193b7d75bbabbf9f"
   }
 ]

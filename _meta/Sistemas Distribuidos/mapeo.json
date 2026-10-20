@@ -255,8 +255,29 @@
     },
     "Gestión del curso": {
       "carpeta": "Sistemas Distribuidos/24-Gestión del curso",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "ramo",
+          "desde": "SISTEMAS DISTRIBUIDOS",
+          "hasta": null
+        },
+        {
+          "fuente": "tareas",
+          "desde": "Tareas",
+          "hasta": null
+        },
+        {
+          "fuente": "apuntes_i2",
+          "desde": "Resumen IIC2523 - I2",
+          "hasta": "Consistencia en el Cliente"
+        },
+        {
+          "fuente": "apuntes_i2",
+          "desde": "Replicacion de Datos",
+          "hasta": null
+        }
+      ]
     }
   },
   "aceptados": [
@@ -369,6 +390,41 @@
       "fuente": "apuntes_i2",
       "texto": "Tarea 3: Se tratará sobre transacciones distribuidas",
       "motivo": "Organización del curso; se resume en Gestión del curso."
+    },
+    {
+      "fuente": "ramo",
+      "texto": "[ terminar esto ]",
+      "motivo": "Recordatorio personal incompleto."
+    },
+    {
+      "fuente": "ramo",
+      "texto": "ET :",
+      "motivo": "Fórmula sin terminar en los apuntes; la fórmula completa de la parte práctica viene de las slides."
+    },
+    {
+      "fuente": "tareas",
+      "texto": "Rellenar Form",
+      "motivo": "Trámite de inscripción de parejas de la Tarea 1; no es contenido del ramo."
+    },
+    {
+      "fuente": "tareas",
+      "texto": "Al responder este formulario, acepto que la nota final obtenida en la tarea será la misma para mi pareja y para mí",
+      "motivo": "Política del formulario de parejas; no es contenido del ramo."
+    },
+    {
+      "fuente": "tareas",
+      "texto": "Asimismo, declaro solemnemente",
+      "motivo": "Política del formulario de parejas; no es contenido del ramo."
+    },
+    {
+      "fuente": "tareas",
+      "texto": "Finalmente, en caso de disolución",
+      "motivo": "Política del formulario de parejas; no es contenido del ramo."
+    },
+    {
+      "fuente": "tareas",
+      "texto": "Politicas:",
+      "motivo": "Encabezado de la política del formulario de parejas."
     }
   ]
 }
