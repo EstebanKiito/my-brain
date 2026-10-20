@@ -16,3 +16,4 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: basta con b
 | [[Sistemas Distribuidos/09-Elección de líder/_Índice\|Elección de líder]] | Safety y liveness, Bully, Ring-based y Raft (elección, votación, replicación y consolidación) |
 | [[Sistemas Distribuidos/10-Exclusión mutua distribuida/_Índice\|Exclusión mutua distribuida]] | Safety, liveness y ordering; servidor central, Token Ring y Ricart y Agrawala |
 | [[Sistemas Distribuidos/11-Tolerancia a fallos/_Índice\|Tolerancia a fallos]] | Confiabilidad, fallo, error y fracaso, detección y redundancia, teorema FLP y semánticas de RPC |
+| [[Sistemas Distribuidos/12-Replicación y modelos de consistencia/_Índice\|Replicación y modelos de consistencia]] | Por qué replicar y consistencia fuerte, secuencial, causal y eventual |

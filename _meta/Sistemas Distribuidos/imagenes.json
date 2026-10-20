@@ -698,5 +698,75 @@
     "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 2.png",
     "destino": "Sistemas Distribuidos/11-Tolerancia a fallos/adjuntos/Semánticas de llamada RPC.png",
     "sha256": "b120e982490aeeaa7c3331ef910bc07ea980f841ef5f400faf91564fd17cbc4b"
+  },
+  {
+    "tema": "Replicación y modelos de consistencia",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 3.png",
+    "destino": "Sistemas Distribuidos/12-Replicación y modelos de consistencia/adjuntos/Dos ejecuciones secuencialmente consistentes.png",
+    "sha256": "9afaa3ea12966e2602dbab11e060f4583a197f060daf0791dc53e80bc8b45622"
+  },
+  {
+    "tema": "Replicación y modelos de consistencia",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 4.png",
+    "destino": "Sistemas Distribuidos/12-Replicación y modelos de consistencia/adjuntos/Ejecución no consistente secuencialmente.png",
+    "sha256": "116b4d7cc1850806f72cb56c2dd0b3ff8175b3f756d4350d82fb5cb29dda741a"
+  },
+  {
+    "tema": "Replicación y modelos de consistencia",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 5.png",
+    "destino": "Sistemas Distribuidos/12-Replicación y modelos de consistencia/adjuntos/Seis órdenes válidos de escrituras.png",
+    "sha256": "9170980b18e94630e5e1f8d82c9c5254795e806533b5214512b1610d2f82d5fe"
+  },
+  {
+    "tema": "Replicación y modelos de consistencia",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 6.png",
+    "destino": "Sistemas Distribuidos/12-Replicación y modelos de consistencia/adjuntos/Consistencia fuerte con una sola secuencia válida.png",
+    "sha256": "71be0a62354b26feca54270a6fcdbbc8b01b83c1291e23ebb172d20aa99ea7d9"
+  },
+  {
+    "tema": "Replicación y modelos de consistencia",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 7.png",
+    "destino": "Sistemas Distribuidos/12-Replicación y modelos de consistencia/adjuntos/Consistencia fuerte con dos secuencias válidas.png",
+    "sha256": "46b1ce839c14bc82aba382a3ae1838f680927d2b2835ffb4b69abf4b7413f20c"
+  },
+  {
+    "tema": "Replicación y modelos de consistencia",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 8.png",
+    "destino": "Sistemas Distribuidos/12-Replicación y modelos de consistencia/adjuntos/Secuencial pero no linealizable.png",
+    "sha256": "867cf0fdd60af470ea1217ae7a2817ca23831938620d14531a95ccf027fbc59d"
+  },
+  {
+    "tema": "Replicación y modelos de consistencia",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 9.png",
+    "destino": "Sistemas Distribuidos/12-Replicación y modelos de consistencia/adjuntos/Ejecución causal pero no secuencial.png",
+    "sha256": "d3ca37b033bcdc1707f6ba93bc5eb1e6407b191ff9c89a086493a3d691326c92"
+  },
+  {
+    "tema": "Replicación y modelos de consistencia",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=88",
+    "destino": "Sistemas Distribuidos/12-Replicación y modelos de consistencia/adjuntos/Valores posibles bajo consistencia causal.png",
+    "sha256": "efc9579b8a9cb298e4ec0d4c49303141a50fc9aadb025fc67dca2b4dc51a23be"
+  },
+  {
+    "tema": "Replicación y modelos de consistencia",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=92",
+    "destino": "Sistemas Distribuidos/12-Replicación y modelos de consistencia/adjuntos/Ejecución eventual pero no causal.png",
+    "sha256": "586365662474e511df5e292b6953297d74dc0d62a9352474a3e003863a218fea"
+  },
+  {
+    "tema": "Replicación y modelos de consistencia",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=94",
+    "destino": "Sistemas Distribuidos/12-Replicación y modelos de consistencia/adjuntos/Pregunta de modelos de consistencia.png",
+    "sha256": "822f72b88aa6f8df1632e7be1a0fb408ab8b993f6f8cc0fc5de4b2fc2aa4af35"
   }
 ]

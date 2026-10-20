@@ -148,8 +148,14 @@
     },
     "Replicación y modelos de consistencia": {
       "carpeta": "Sistemas Distribuidos/12-Replicación y modelos de consistencia",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i2",
+          "desde": "Clase 12: Replicación de Datos",
+          "hasta": "Clase 13: Replicación de Datos II"
+        }
+      ]
     },
     "Protocolos de replicación": {
       "carpeta": "Sistemas Distribuidos/13-Protocolos de replicación",
@@ -302,6 +308,11 @@
       "fuente": "apuntes_i2",
       "texto": "Clase intermedia: Revisamos la T2",
       "motivo": "Organización del curso (sesión de la tarea 2); se resume en Gestión del curso."
+    },
+    {
+      "fuente": "apuntes_i2",
+      "texto": "[Estudiar esto]",
+      "motivo": "Recordatorio personal."
     }
   ]
 }

@@ -34,3 +34,8 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
 | ℹ️ | [[03 - Multicast de Ricart y Agrawala\|Multicast de Ricart y Agrawala]] | Apuntes, bajo "Algoritmo 3: Ricart y Agrawala": "Todavia no se creaban los relojes logicos" | Los relojes lógicos de Lamport son de 1978 y el algoritmo de Ricart y Agrawala, de 1981; además, las slides indican que usa relojes lógicos para el orden total. La nota sigue a las slides. |
+
+## Replicación y modelos de consistencia
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ℹ️ | [[02 - Consistencia secuencial\|Consistencia secuencial]] | Apuntes: "Propuesta por Chandy Lamport (otra vez xD)" | La consistencia secuencial la definió Leslie Lamport en 1979, como indican las slides; Chandy no participó (con Lamport firmó el algoritmo de snapshots). La nota dice Lamport, 1979. |
