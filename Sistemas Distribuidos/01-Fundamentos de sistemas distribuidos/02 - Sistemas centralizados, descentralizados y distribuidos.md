@@ -14,7 +14,7 @@ Si un sistema tiene varios servidores, ¿es distribuido o descentralizado? No ha
 
 ## Tres topologías
 
-![Topologías centralizada, descentralizada y distribuida](adjuntos/Topolog%C3%ADas%20centralizada%2C%20descentralizada%20y%20distribuida.png)
+![Topologías centralizada, descentralizada y distribuida](adjuntos/Topolog%C3%ADas%20centralizada,%20descentralizada%20y%20distribuida.png)
 
 > [!example]- Transcripción de la imagen
 > Leyenda: nodos azules son clientes y nodos amarillos son servidores.
