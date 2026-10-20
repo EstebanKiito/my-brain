@@ -51,3 +51,10 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | ℹ️ | [[01 - Cookies desde JavaScript y Cookie Store API\|Cookies desde JavaScript y Cookie Store API]] | Slide de cookies desde JS: `const themeCookie = cookies['theme'];` | `cookies` nunca se define: `document.cookie` es un string que hay que parsear. La nota construye el objeto con `split` (probado con jsdom). |
 | ℹ️ | [[02 - localStorage y sessionStorage\|localStorage y sessionStorage]] | Slide de sessionStorage: tras cerrar la pestaña, `getItem` devuelve `undefined` | `getItem` devuelve `null` cuando la llave no existe. La nota dice `null`. |
 | ℹ️ | [[03 - IndexedDB\|IndexedDB]] | Slides de IndexedDB: store con `keyPath: "id"` y luego `store.add({ title, author })` sin `id` | Sin `autoIncrement`, agregar un objeto sin la llave lanza `DataError` (probado con fake-indexeddb). La nota crea el store con `autoIncrement: true`. |
+
+## Testing en la web
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ℹ️ | [[02 - Tests unitarios, mocks y stubs\|Tests unitarios, mocks y stubs]] | Slide de test unitario: `validatePhoneNumber` aplica `/^(\+1)?\d{10}$/` al input, y el test espera `true` para `'+1 (123) 456-7890'` | Ese test **falla** (verificado con Jest): la regex no admite espacios, paréntesis ni guiones. La nota quita los separadores antes de aplicar la regex, y usa el caso como ejemplo de un test que encuentra un error. |
+| ℹ️ | [[03 - Testing con Jest\|Testing con Jest]] | Workflow `jest.yml`: `timeout-minutes: 5 // Siempre usar` | En YAML los comentarios se escriben con `#`; `//` rompe el archivo. La nota usa `# siempre poner un límite`. También se corrigieron las erratas `toBeGreatherThan` y `"jest –verbose"` (con guion largo). |
+| ℹ️ | [[04 - Tests de front-end\|Tests de front-end]] | Ejemplo de Selenium: `webdriver.y.css('button[type=submit]')` | Errata por `webdriver.By.css`. La nota la corrige. |
