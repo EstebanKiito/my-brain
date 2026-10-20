@@ -24,3 +24,4 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: basta con b
 | [[Sistemas Distribuidos/17-Consistencia centrada en el cliente/_Índice\|Consistencia centrada en el cliente]] | Garantías de sesión: monotonic reads y writes, read your writes y writes follow reads |
 | [[Sistemas Distribuidos/18-Ataques a sistemas distribuidos/_Índice\|Ataques a sistemas distribuidos]] | Pilares de la seguridad, modelo del enemigo, amenazas, métodos de ataque y medidas |
 | [[Sistemas Distribuidos/19-Criptografía/_Índice\|Criptografía]] | Cifrado simétrico, Diffie-Hellman, cifrado asimétrico, hash, firmas digitales y TLS 1.3 |
+| [[Sistemas Distribuidos/20-Autenticación y control de acceso/_Índice\|Autenticación y control de acceso]] | Desafío-respuesta, PKI, Kerberos, MAC, DAC, RBAC y ABAC, OAuth y canales seguros |

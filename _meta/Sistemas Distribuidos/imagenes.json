@@ -964,5 +964,33 @@
     "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=87",
     "destino": "Sistemas Distribuidos/19-Criptografía/adjuntos/Handshake de TLS 1.3.png",
     "sha256": "5b2d4a61c22ce0b9a167dc1fd47f6897139dcfa7880e923cccc1eabe4cedf3d5"
+  },
+  {
+    "tema": "Autenticación y control de acceso",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=118",
+    "destino": "Sistemas Distribuidos/20-Autenticación y control de acceso/adjuntos/Cliente verifica un certificado de la CA.png",
+    "sha256": "637f4b5baec0b0050dce39d22ea8591ebd13d81b92452c8de2ff3c963f9a96e6"
+  },
+  {
+    "tema": "Autenticación y control de acceso",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=140",
+    "destino": "Sistemas Distribuidos/20-Autenticación y control de acceso/adjuntos/Flujo de OAuth.png",
+    "sha256": "68d90de68eb778d126880b618afe338ed5cba9b383e443eb28572859a5773fc3"
+  },
+  {
+    "tema": "Autenticación y control de acceso",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=106",
+    "destino": "Sistemas Distribuidos/20-Autenticación y control de acceso/adjuntos/Desafío-respuesta con llave simétrica.png",
+    "sha256": "334cce4083d520152c9793848e173ca79853975a62feb8e98b8dd9f999cd202e"
+  },
+  {
+    "tema": "Autenticación y control de acceso",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=122",
+    "destino": "Sistemas Distribuidos/20-Autenticación y control de acceso/adjuntos/Flujo completo de Kerberos.png",
+    "sha256": "1fe9153b964453110d6c667822ddf472f2f7f56e13decca601d29d3ca3d7ff02"
   }
 ]
