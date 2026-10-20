@@ -219,8 +219,14 @@
     },
     "Ataques a sistemas distribuidos": {
       "carpeta": "Sistemas Distribuidos/18-Ataques a sistemas distribuidos",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i2",
+          "desde": "Clase 18",
+          "hasta": "Resumen IIC2523 - I2"
+        }
+      ]
     },
     "Criptografía": {
       "carpeta": "Sistemas Distribuidos/19-Criptografía",

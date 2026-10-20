@@ -22,3 +22,4 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: basta con b
 | [[Sistemas Distribuidos/15-Control de concurrencia distribuido/_Índice\|Control de concurrencia distribuido]] | Conflictos, control pesimista y optimista, y políticas de resolución de conflictos |
 | [[Sistemas Distribuidos/16-Teoremas CAP y PACELC/_Índice\|Teoremas CAP y PACELC]] | Consistencia o disponibilidad ante particiones, críticas a CAP, latencia frente a consistencia y casos reales |
 | [[Sistemas Distribuidos/17-Consistencia centrada en el cliente/_Índice\|Consistencia centrada en el cliente]] | Garantías de sesión: monotonic reads y writes, read your writes y writes follow reads |
+| [[Sistemas Distribuidos/18-Ataques a sistemas distribuidos/_Índice\|Ataques a sistemas distribuidos]] | Pilares de la seguridad, modelo del enemigo, amenazas, métodos de ataque y medidas |

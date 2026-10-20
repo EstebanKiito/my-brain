@@ -929,5 +929,12 @@
     "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=300",
     "destino": "Sistemas Distribuidos/17-Consistencia centrada en el cliente/adjuntos/Pregunta de garantías de sesión del cliente A.png",
     "sha256": "c9ca0e3dad0a777e45d39600b068669affcebcc9d11efa2434a6532bcd57828d"
+  },
+  {
+    "tema": "Ataques a sistemas distribuidos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 14.png",
+    "destino": "Sistemas Distribuidos/18-Ataques a sistemas distribuidos/adjuntos/Compromisos entre seguridad y otras propiedades.png",
+    "sha256": "552cdf041c1e4a6b2d28402348deebddaecfa4b4ddba7e3f2fd481dc72ec4a72"
   }
 ]
