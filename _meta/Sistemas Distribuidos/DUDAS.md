@@ -39,3 +39,8 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
 | ℹ️ | [[02 - Consistencia secuencial\|Consistencia secuencial]] | Apuntes: "Propuesta por Chandy Lamport (otra vez xD)" | La consistencia secuencial la definió Leslie Lamport en 1979, como indican las slides; Chandy no participó (con Lamport firmó el algoritmo de snapshots). La nota dice Lamport, 1979. |
+
+## Transacciones distribuidas
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ℹ️ | [[04 - Commit de tres fases\|Commit de tres fases]] | Pregunta de las slides: "IV. El protocolo 3PC garantiza la atomicidad" marcada como correcta | Es cierto bajo los supuestos del protocolo (fallas por caída, red sin particiones). En la literatura se señala que, con particiones de red, 3PC puede dejar a dos grupos con decisiones distintas. La nota respeta la respuesta del curso y menciona la limitación. |

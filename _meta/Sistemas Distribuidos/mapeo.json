@@ -170,8 +170,14 @@
     },
     "Transacciones distribuidas": {
       "carpeta": "Sistemas Distribuidos/14-Transacciones distribuidas",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i2",
+          "desde": "Clase 14: Transacciones Distribuidas",
+          "hasta": "Clase 15"
+        }
+      ]
     },
     "Control de concurrencia distribuido": {
       "carpeta": "Sistemas Distribuidos/15-Control de concurrencia distribuido",
@@ -324,6 +330,16 @@
       "fuente": "apuntes_i2",
       "texto": "[Copiar]",
       "motivo": "Recordatorio personal de completar los apuntes; el tema se construyó con las slides."
+    },
+    {
+      "fuente": "apuntes_i2",
+      "texto": "[Copiar lo que falta]",
+      "motivo": "Recordatorio personal; lo faltante se tomó de las slides."
+    },
+    {
+      "fuente": "apuntes_i2",
+      "texto": "Tarea 3: Se tratará sobre transacciones distribuidas",
+      "motivo": "Organización del curso; se resume en Gestión del curso."
     }
   ]
 }

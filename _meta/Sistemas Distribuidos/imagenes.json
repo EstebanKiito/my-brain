@@ -796,5 +796,33 @@
     "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=120",
     "destino": "Sistemas Distribuidos/13-Protocolos de replicación/adjuntos/Replicación activa entre todos los nodos.png",
     "sha256": "d891a940545d8a6c4e3cada65a0ed1a9851bcb41f394e9ad6d3c699863189c0b"
+  },
+  {
+    "tema": "Transacciones distribuidas",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=148",
+    "destino": "Sistemas Distribuidos/14-Transacciones distribuidas/adjuntos/Transacción plana y anidada de un viaje.png",
+    "sha256": "ebe397df5c532fc15a3f69503396903c137dcca3d9bb42a98a9153da9a76f6c9"
+  },
+  {
+    "tema": "Transacciones distribuidas",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=164",
+    "destino": "Sistemas Distribuidos/14-Transacciones distribuidas/adjuntos/Commit de dos fases exitoso.png",
+    "sha256": "988e060c1e1a2d16ceb5f3c0fc88ef1cec1f2f63fe3417cfac2a25eaa2fa4f33"
+  },
+  {
+    "tema": "Transacciones distribuidas",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=166",
+    "destino": "Sistemas Distribuidos/14-Transacciones distribuidas/adjuntos/Commit de dos fases con un participante que rechaza.png",
+    "sha256": "a20a171b5a003c604e6dd0964d4cf4e5029a11ae8e3eda400f46d6167a48d819"
+  },
+  {
+    "tema": "Transacciones distribuidas",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=173",
+    "destino": "Sistemas Distribuidos/14-Transacciones distribuidas/adjuntos/Commit de tres fases.png",
+    "sha256": "29a7721893cec784b4a11cbdf682f5ef053fcccae079c989fc63857ad7f55ecd"
   }
 ]
