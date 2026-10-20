@@ -768,5 +768,33 @@
     "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=94",
     "destino": "Sistemas Distribuidos/12-Replicación y modelos de consistencia/adjuntos/Pregunta de modelos de consistencia.png",
     "sha256": "822f72b88aa6f8df1632e7be1a0fb408ab8b993f6f8cc0fc5de4b2fc2aa4af35"
+  },
+  {
+    "tema": "Protocolos de replicación",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=104",
+    "destino": "Sistemas Distribuidos/13-Protocolos de replicación/adjuntos/Gossip propaga una escritura entre vecinos.png",
+    "sha256": "de5eea0a7243ff67a17057430d6d7f3d12fe4fa4a8909f1abcdb9902e2643a49"
+  },
+  {
+    "tema": "Protocolos de replicación",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=111",
+    "destino": "Sistemas Distribuidos/13-Protocolos de replicación/adjuntos/Escritura y lectura con quórum.png",
+    "sha256": "5ea3416bb3bf09bd3fe7150168798d754f45fbafea23a4302a939ce03b715f6e"
+  },
+  {
+    "tema": "Protocolos de replicación",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=116",
+    "destino": "Sistemas Distribuidos/13-Protocolos de replicación/adjuntos/Replicación basada en un primario.png",
+    "sha256": "b9b210b9cd6c2f01fe486971d62fb300bf02bac5202dcd9f51397c7c3c78a0c6"
+  },
+  {
+    "tema": "Protocolos de replicación",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=120",
+    "destino": "Sistemas Distribuidos/13-Protocolos de replicación/adjuntos/Replicación activa entre todos los nodos.png",
+    "sha256": "d891a940545d8a6c4e3cada65a0ed1a9851bcb41f394e9ad6d3c699863189c0b"
   }
 ]

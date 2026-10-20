@@ -159,8 +159,14 @@
     },
     "Protocolos de replicación": {
       "carpeta": "Sistemas Distribuidos/13-Protocolos de replicación",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i2",
+          "desde": "Clase 13: Replicación de Datos II",
+          "hasta": "Clase 14: Transacciones Distribuidas"
+        }
+      ]
     },
     "Transacciones distribuidas": {
       "carpeta": "Sistemas Distribuidos/14-Transacciones distribuidas",
@@ -313,6 +319,11 @@
       "fuente": "apuntes_i2",
       "texto": "[Estudiar esto]",
       "motivo": "Recordatorio personal."
+    },
+    {
+      "fuente": "apuntes_i2",
+      "texto": "[Copiar]",
+      "motivo": "Recordatorio personal de completar los apuntes; el tema se construyó con las slides."
     }
   ]
 }
