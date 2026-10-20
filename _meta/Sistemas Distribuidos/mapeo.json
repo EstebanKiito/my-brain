@@ -1,0 +1,430 @@
+{
+  "_descripcion": "Mapeo de las fuentes originales (rutas relativas a _raw/) a los temas del vault. Cada sección va desde el bloque 'desde' (incluido) hasta 'hasta' (excluido); con 'por_texto' los límites pueden ser cualquier bloque. Las notas se reescriben según _meta/ESTANDAR-NOTAS.md, por eso 'cobertura' es 'reescrita' (la cobertura textual es advertencia). Los apuntes cubren las clases 0-9, 11, 12, 14, 15 y 18; las clases 10, 13, 16, 17 y toda la unidad del examen se construyen con los PDF de slides de 'SISTEMAS DISTRIBUIDOS/Clases/' (sin licencia: entran solo como PNG, registrados en imagenes.json con tipo 'slide'). 'Apuntes Ex' está vacío y 'Tareas' solo trae la política del formulario de parejas: ambos quedan en 'aceptados'.",
+  "carpeta_ramo": "Sistemas Distribuidos",
+  "cobertura": "reescrita",
+  "fuentes": {
+    "ramo": "Semestre 6/SISTEMAS DISTRIBUIDOS 22760dd6de81808c9065e0e1f312e6ec.html",
+    "apuntes_i1": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1 24460dd6de8180cbb260ebd542ec35a9.html",
+    "apuntes_i2": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2 24560dd6de8180adba03fd1499038200.html",
+    "apuntes_ex": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes Ex 24560dd6de818051b714d3bb3d5f6c4d.html",
+    "tareas": "Semestre 6/SISTEMAS DISTRIBUIDOS/Tareas 25c60dd6de8180729483ed02c66a38ff.html"
+  },
+  "temas": {
+    "Fundamentos de sistemas distribuidos": {
+      "carpeta": "Sistemas Distribuidos/01-Fundamentos de sistemas distribuidos",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Sistemas Distribuidos - IIC2523: Hernan Valdivieso",
+          "hasta": "Clase 1"
+        },
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Clase 2",
+          "hasta": "Clase 3"
+        }
+      ]
+    },
+    "Procesos e hilos en Python": {
+      "carpeta": "Sistemas Distribuidos/02-Procesos e hilos en Python",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Clase 1",
+          "hasta": "Clase 2"
+        }
+      ]
+    },
+    "Comunicación directa y sockets": {
+      "carpeta": "Sistemas Distribuidos/03-Comunicación directa y sockets",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Clase 3",
+          "hasta": "Clase 4"
+        }
+      ]
+    },
+    "Comunicación indirecta": {
+      "carpeta": "Sistemas Distribuidos/04-Comunicación indirecta",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Clase 4",
+          "hasta": "Invocacion Remota"
+        }
+      ]
+    },
+    "Invocación remota": {
+      "carpeta": "Sistemas Distribuidos/05-Invocación remota",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Invocacion Remota",
+          "hasta": "Clase 5: Coordinacion y Sincronizacion"
+        }
+      ]
+    },
+    "Sincronización de relojes físicos": {
+      "carpeta": "Sistemas Distribuidos/06-Sincronización de relojes físicos",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Clase 5: Coordinacion y Sincronizacion",
+          "hasta": "Reloj Logico"
+        },
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Algoritmos Para Relojes fisicos",
+          "hasta": "Clase 6"
+        }
+      ]
+    },
+    "Relojes lógicos y estados globales": {
+      "carpeta": "Sistemas Distribuidos/07-Relojes lógicos y estados globales",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Reloj Logico",
+          "hasta": "Algoritmos Para Relojes fisicos"
+        },
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Clase 6",
+          "hasta": "Clase 7"
+        }
+      ]
+    },
+    "Consenso": {
+      "carpeta": "Sistemas Distribuidos/08-Consenso",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Clase 7",
+          "hasta": "Clase 8"
+        }
+      ]
+    },
+    "Elección de líder": {
+      "carpeta": "Sistemas Distribuidos/09-Elección de líder",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Clase 8",
+          "hasta": "Clase 9"
+        }
+      ]
+    },
+    "Exclusión mutua distribuida": {
+      "carpeta": "Sistemas Distribuidos/10-Exclusión mutua distribuida",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Clase 9",
+          "hasta": null
+        }
+      ]
+    },
+    "Tolerancia a fallos": {
+      "carpeta": "Sistemas Distribuidos/11-Tolerancia a fallos",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i2",
+          "desde": "Clase 11: Tolerancia A Fallos",
+          "hasta": "Clase 12: Replicación de Datos"
+        }
+      ]
+    },
+    "Replicación y modelos de consistencia": {
+      "carpeta": "Sistemas Distribuidos/12-Replicación y modelos de consistencia",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i2",
+          "desde": "Clase 12: Replicación de Datos",
+          "hasta": "Clase 13: Replicación de Datos II"
+        }
+      ]
+    },
+    "Protocolos de replicación": {
+      "carpeta": "Sistemas Distribuidos/13-Protocolos de replicación",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i2",
+          "desde": "Clase 13: Replicación de Datos II",
+          "hasta": "Clase 14: Transacciones Distribuidas"
+        }
+      ]
+    },
+    "Transacciones distribuidas": {
+      "carpeta": "Sistemas Distribuidos/14-Transacciones distribuidas",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i2",
+          "desde": "Clase 14: Transacciones Distribuidas",
+          "hasta": "Clase 15"
+        }
+      ]
+    },
+    "Control de concurrencia distribuido": {
+      "carpeta": "Sistemas Distribuidos/15-Control de concurrencia distribuido",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i2",
+          "desde": "Clase 15",
+          "hasta": "Clase 16"
+        }
+      ]
+    },
+    "Teoremas CAP y PACELC": {
+      "carpeta": "Sistemas Distribuidos/16-Teoremas CAP y PACELC",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i2",
+          "desde": "Clase 16",
+          "hasta": "Clase 17"
+        }
+      ]
+    },
+    "Consistencia centrada en el cliente": {
+      "carpeta": "Sistemas Distribuidos/17-Consistencia centrada en el cliente",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i2",
+          "desde": "Clase 17",
+          "hasta": "Clase 18"
+        },
+        {
+          "fuente": "apuntes_i2",
+          "desde": "Consistencia en el Cliente",
+          "hasta": "Replicacion de Datos"
+        }
+      ]
+    },
+    "Ataques a sistemas distribuidos": {
+      "carpeta": "Sistemas Distribuidos/18-Ataques a sistemas distribuidos",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i2",
+          "desde": "Clase 18",
+          "hasta": "Resumen IIC2523 - I2"
+        }
+      ]
+    },
+    "Criptografía": {
+      "carpeta": "Sistemas Distribuidos/19-Criptografía",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "Autenticación y control de acceso": {
+      "carpeta": "Sistemas Distribuidos/20-Autenticación y control de acceso",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "Monitoreo de seguridad": {
+      "carpeta": "Sistemas Distribuidos/21-Monitoreo de seguridad",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "Arquitecturas peer-to-peer": {
+      "carpeta": "Sistemas Distribuidos/22-Arquitecturas peer-to-peer",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "Casos aplicados": {
+      "carpeta": "Sistemas Distribuidos/23-Casos aplicados",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "Gestión del curso": {
+      "carpeta": "Sistemas Distribuidos/24-Gestión del curso",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "ramo",
+          "desde": "Programa",
+          "hasta": null
+        },
+        {
+          "fuente": "tareas",
+          "desde": "Tarea 1",
+          "hasta": null
+        },
+        {
+          "fuente": "apuntes_i2",
+          "desde": "Resumen IIC2523 - I2",
+          "hasta": "Consistencia en el Cliente"
+        },
+        {
+          "fuente": "apuntes_i2",
+          "desde": "Replicacion de Datos",
+          "hasta": null
+        }
+      ]
+    }
+  },
+  "aceptados": [
+    {
+      "fuente": "apuntes_i1",
+      "texto": "[copiar materia]",
+      "motivo": "Recordatorio personal de completar los apuntes; el contenido se tomó de las slides."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "[Copiar materia]",
+      "motivo": "Recordatorio personal de completar los apuntes; el contenido se tomó de las slides."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "Vamos a pasar por Threads, Multiprocesos, …",
+      "motivo": "Organización del curso (temario); se resume en Gestión del curso."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "[Modificar foto]",
+      "motivo": "Nota personal sobre la imagen de join con etiquetas equivocadas; la imagen se reemplazó por la versión corregida de las slides (tipo 'editada')."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "T1.join() debio decir T2.join",
+      "motivo": "Corrección de la imagen de join, aplicada en la copia editada."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "y T2.join(timeout=N) debio ser T3",
+      "motivo": "Corrección de la imagen de join, aplicada en la copia editada."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "Lo vimos en progra Avanzada",
+      "motivo": "Comentario personal sobre otro ramo."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "Para nosotros es: Tengo un archivo externo que hace muchas cosas por mi, pero no esta en mi computadora",
+      "motivo": "Analogía personal; la idea (importar el servidor) está en la nota de RPC."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "→ Posible tarea 2",
+      "motivo": "Comentario sobre evaluaciones; se resume en Gestión del curso."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "LA I1 va a evaluar hasta acá.",
+      "motivo": "Alcance de la interrogación; se resume en Gestión del curso."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "Typo: 05:08 - 00:07 → 07 debio ser 13",
+      "motivo": "Errata de la imagen del ejemplo 1 de NTP; la imagen se reemplazó por la versión corregida de las slides (tipo 'editada')."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "Materia extra que por culpa de Cristian Ruz se agrego al ramo jijiji!",
+      "motivo": "Comentario personal sobre el programa del curso."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "En la tarea usaremos reloj logico! Que implicancias debe tener → Los test automaticos notaran eso",
+      "motivo": "Comentario sobre la tarea; se resume en Gestión del curso."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "Ring-Based Election → Si nos da tiempo, sino, lo vemos el lunes",
+      "motivo": "Organización de la clase."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "Estudiar Ejemplo:",
+      "motivo": "Recordatorio personal; el PDF adjunto de la clase 8 duplica las slides de Clases-I1.pdf (páginas 407-491), que se usaron como fuente."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "IIC2523 - Clase 08 - Elección de líder.pdf",
+      "motivo": "Link al PDF adjunto de la clase 8, sin licencia; su contenido está cubierto desde Clases-I1.pdf."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "Todavia no se creaban los relojes logiocs",
+      "motivo": "Comentario incompleto y erróneo sobre Ricart y Agrawala (ver DUDAS); el algoritmo se construyó con las slides."
+    },
+    {
+      "fuente": "apuntes_i2",
+      "texto": "Clase intermedia: Revisamos la T2",
+      "motivo": "Organización del curso (sesión de la tarea 2); se resume en Gestión del curso."
+    },
+    {
+      "fuente": "apuntes_i2",
+      "texto": "[Estudiar esto]",
+      "motivo": "Recordatorio personal."
+    },
+    {
+      "fuente": "apuntes_i2",
+      "texto": "[Copiar]",
+      "motivo": "Recordatorio personal de completar los apuntes; el tema se construyó con las slides."
+    },
+    {
+      "fuente": "apuntes_i2",
+      "texto": "[Copiar lo que falta]",
+      "motivo": "Recordatorio personal; lo faltante se tomó de las slides."
+    },
+    {
+      "fuente": "apuntes_i2",
+      "texto": "Tarea 3: Se tratará sobre transacciones distribuidas",
+      "motivo": "Organización del curso; se resume en Gestión del curso."
+    },
+    {
+      "fuente": "ramo",
+      "texto": "[ terminar esto ]",
+      "motivo": "Recordatorio personal incompleto."
+    },
+    {
+      "fuente": "ramo",
+      "texto": "ET :",
+      "motivo": "Fórmula sin terminar en los apuntes; la fórmula completa de la parte práctica viene de las slides."
+    },
+    {
+      "fuente": "tareas",
+      "texto": "Rellenar Form",
+      "motivo": "Trámite de inscripción de parejas de la Tarea 1; no es contenido del ramo."
+    },
+    {
+      "fuente": "tareas",
+      "texto": "Al responder este formulario, acepto que la nota final obtenida en la tarea será la misma para mi pareja y para mí",
+      "motivo": "Política del formulario de parejas; no es contenido del ramo."
+    },
+    {
+      "fuente": "tareas",
+      "texto": "Asimismo, declaro solemnemente",
+      "motivo": "Política del formulario de parejas; no es contenido del ramo."
+    },
+    {
+      "fuente": "tareas",
+      "texto": "Finalmente, en caso de disolución",
+      "motivo": "Política del formulario de parejas; no es contenido del ramo."
+    },
+    {
+      "fuente": "tareas",
+      "texto": "Politicas:",
+      "motivo": "Encabezado de la política del formulario de parejas."
+    }
+  ]
+}

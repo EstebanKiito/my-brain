@@ -1,0 +1,1122 @@
+[
+  {
+    "tema": "Fundamentos de sistemas distribuidos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 13.png",
+    "destino": "Sistemas Distribuidos/01-Fundamentos de sistemas distribuidos/adjuntos/Topologías centralizada, descentralizada y distribuida.png",
+    "sha256": "e6e306ae9b7251e1b538d18ce3c8aadf709acd0d13acfcd9422e917aa844df5e"
+  },
+  {
+    "tema": "Fundamentos de sistemas distribuidos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 14.png",
+    "destino": "Sistemas Distribuidos/01-Fundamentos de sistemas distribuidos/adjuntos/Nodo con autoridad dentro de un sistema distribuido.png",
+    "sha256": "a70f167a5e43fe07d887958223b392a49cdd4313d106f7b17452fe7d0e47aa77"
+  },
+  {
+    "tema": "Fundamentos de sistemas distribuidos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 15.png",
+    "destino": "Sistemas Distribuidos/01-Fundamentos de sistemas distribuidos/adjuntos/Aprendizaje federado entre hospitales.png",
+    "sha256": "6baa515d14a47bc2f29c613d695e89ded381e567047068d2a895c2e35652eb8b"
+  },
+  {
+    "tema": "Fundamentos de sistemas distribuidos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 16.png",
+    "destino": "Sistemas Distribuidos/01-Fundamentos de sistemas distribuidos/adjuntos/Data centers de Google en el mundo.png",
+    "sha256": "1388940d613f41d0acc0582f742e5c9761fac4e5753522980e6853a8812f6701"
+  },
+  {
+    "tema": "Fundamentos de sistemas distribuidos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 17.png",
+    "destino": "Sistemas Distribuidos/01-Fundamentos de sistemas distribuidos/adjuntos/Clúster con scheduler y nodos de ejecución.png",
+    "sha256": "403a40bf3b5ccedb46b3706b74bcbad3df2f0eba1c5bfbf1bb9cbdddcb60756d"
+  },
+  {
+    "tema": "Fundamentos de sistemas distribuidos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 18.png",
+    "destino": "Sistemas Distribuidos/01-Fundamentos de sistemas distribuidos/adjuntos/Gestores de correo que interoperan.png",
+    "sha256": "b7367d52b3e5f106d083cb92705ecdd6a483ba9a0b66de01f11f0917bb8f8813"
+  },
+  {
+    "tema": "Fundamentos de sistemas distribuidos",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=29",
+    "destino": "Sistemas Distribuidos/01-Fundamentos de sistemas distribuidos/adjuntos/Data centers frente a edge nodes de Google.png",
+    "sha256": "2beefb07724f56000d24a45e50761185ecc7b01b890aa0501f332ed7dda40bc0"
+  },
+  {
+    "tema": "Fundamentos de sistemas distribuidos",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=131",
+    "destino": "Sistemas Distribuidos/01-Fundamentos de sistemas distribuidos/adjuntos/Grid como capa sobre varios clústeres.png",
+    "sha256": "400884bf2f19f7dbd329287412f11ca327146853459b9e853bcd640ea0919e81"
+  },
+  {
+    "tema": "Procesos e hilos en Python",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image.png",
+    "destino": "Sistemas Distribuidos/02-Procesos e hilos en Python/adjuntos/Combinaciones de procesos y threads.png",
+    "sha256": "9811945221f30d3917faa2e2f1c5a1f2c2dd93446ea6388b14d5f852fe4fa313"
+  },
+  {
+    "tema": "Procesos e hilos en Python",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 1.png",
+    "destino": "Sistemas Distribuidos/02-Procesos e hilos en Python/adjuntos/Ejemplos de combinaciones de procesos y threads.png",
+    "sha256": "9a57af2ef7aeaf28260a9ecede9659020a7540158082989f5ed8c67c524cd8df"
+  },
+  {
+    "tema": "Procesos e hilos en Python",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 2.png",
+    "destino": "Sistemas Distribuidos/02-Procesos e hilos en Python/adjuntos/Mecanismos de coordinación que estudia el curso.png",
+    "sha256": "8f3fc6c9d202714601e45dc6694db016de374f4f5bc2c3a081f6132f33c259f4"
+  },
+  {
+    "tema": "Procesos e hilos en Python",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 3.png",
+    "destino": "Sistemas Distribuidos/02-Procesos e hilos en Python/adjuntos/Crear un proceso con multiprocessing.png",
+    "sha256": "f80765219e57b0e18d9130e5300e5ee8371e7394f3612d995220cf3aac19a990"
+  },
+  {
+    "tema": "Procesos e hilos en Python",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 4.png",
+    "destino": "Sistemas Distribuidos/02-Procesos e hilos en Python/adjuntos/Ejecutar un script con subprocess.run.png",
+    "sha256": "82fd01275f4c7ab7f9dd4052d4d8217d1c12c7308bc8c04f6d524d44a62d3fd7"
+  },
+  {
+    "tema": "Procesos e hilos en Python",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 5.png",
+    "destino": "Sistemas Distribuidos/02-Procesos e hilos en Python/adjuntos/Lanzar un script con subprocess.Popen.png",
+    "sha256": "cb8dc51f35a4aede377a2da294f9cbbd868d65b0a68fd536d764b39f7f15f1b1"
+  },
+  {
+    "tema": "Procesos e hilos en Python",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 6.png",
+    "destino": "Sistemas Distribuidos/02-Procesos e hilos en Python/adjuntos/Reglas del algoritmo de la panadería.png",
+    "sha256": "955862ddd2b8e705c8429cbceffaf145bed28d1877545b38502e7d0370024a85"
+  },
+  {
+    "tema": "Procesos e hilos en Python",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 7.png",
+    "destino": "Sistemas Distribuidos/02-Procesos e hilos en Python/adjuntos/Semáforo con cuatro threads y recursos compartidos.png",
+    "sha256": "f8785a62844378c91aeb73d60ef8789b59bcf0ed2301c25af5c978b9fefc2af6"
+  },
+  {
+    "tema": "Procesos e hilos en Python",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 8.png",
+    "destino": "Sistemas Distribuidos/02-Procesos e hilos en Python/adjuntos/Evento que libera a los threads que esperan.png",
+    "sha256": "b70e86808601a7d8b29e7701b33c7243b015fd314ed67e552a3b5b220aeedd0f"
+  },
+  {
+    "tema": "Procesos e hilos en Python",
+    "tipo": "editada",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 9.png",
+    "destino": "Sistemas Distribuidos/02-Procesos e hilos en Python/adjuntos/Join con y sin timeout.png",
+    "sha256": "367ecba01fa2525469548ecd2903b1ff11c2c8811df4e19c1b646e95511e32b8"
+  },
+  {
+    "tema": "Procesos e hilos en Python",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 10.png",
+    "destino": "Sistemas Distribuidos/02-Procesos e hilos en Python/adjuntos/Crear threads con threading.Thread.png",
+    "sha256": "87b2440c16d1d83223167ea4c030f4b333e3d1ab8c2c91c4eea1e541f3ea067a"
+  },
+  {
+    "tema": "Procesos e hilos en Python",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 11.png",
+    "destino": "Sistemas Distribuidos/02-Procesos e hilos en Python/adjuntos/Thread como subclase de threading.Thread.png",
+    "sha256": "c838b744f89290a9fd39713c177084d174fdb1036ccc3cd96d8b98482a23c8df"
+  },
+  {
+    "tema": "Procesos e hilos en Python",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 12.png",
+    "destino": "Sistemas Distribuidos/02-Procesos e hilos en Python/adjuntos/Thread que crea otro thread.png",
+    "sha256": "c04869e8f9599423053b58021a2a768f3d6fe426e069dd95ebf6c0d53ae86486"
+  },
+  {
+    "tema": "Comunicación directa y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 19.png",
+    "destino": "Sistemas Distribuidos/03-Comunicación directa y sockets/adjuntos/Paradigmas de comunicación directa, indirecta y remota.png",
+    "sha256": "7d2d5fbc2b536153f61ce07fd5495a8f5febd5ecfbbed2425ef2df3f879bd25d"
+  },
+  {
+    "tema": "Comunicación directa y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 20.png",
+    "destino": "Sistemas Distribuidos/03-Comunicación directa y sockets/adjuntos/Resolución DNS en ocho pasos.png",
+    "sha256": "1f8d1dffb0568e71d1a04620a2c867c0e6d9923ce8bc9acd068aa42d1c79db51"
+  },
+  {
+    "tema": "Comunicación directa y sockets",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 21.png",
+    "destino": "Sistemas Distribuidos/03-Comunicación directa y sockets/adjuntos/Llamadas de un socket TCP cliente y servidor.png",
+    "sha256": "2f08b712b4dae364e552fd7d71ca23872729ce174b2df0f851863b20b214aa0b"
+  },
+  {
+    "tema": "Comunicación directa y sockets",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=162",
+    "destino": "Sistemas Distribuidos/03-Comunicación directa y sockets/adjuntos/Handshake y retransmisión en TCP.png",
+    "sha256": "e41a00c741c309ed7ec8fefe403f123bf06476c00c08a714ac1b13aa46b16abe"
+  },
+  {
+    "tema": "Comunicación directa y sockets",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=165",
+    "destino": "Sistemas Distribuidos/03-Comunicación directa y sockets/adjuntos/Datagramas UDP perdidos y desordenados.png",
+    "sha256": "dd46682096e71b7f8ddb5161b02e2fdcabf395a9d146260efeadd61d0f28e005"
+  },
+  {
+    "tema": "Comunicación indirecta",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 22.png",
+    "destino": "Sistemas Distribuidos/04-Comunicación indirecta/adjuntos/Cola de mensajes con send, receive, poll y notify.png",
+    "sha256": "947b102ef7f0b4840b0008361db56f03dd69f7db48b7536ae2cd9439d1991ba7"
+  },
+  {
+    "tema": "Comunicación indirecta",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 23.png",
+    "destino": "Sistemas Distribuidos/04-Comunicación indirecta/adjuntos/Colas de WebSphere MQ con proxy y stub.png",
+    "sha256": "e84fc0e4399bdcfadfe4a339609d3c5cfbccaf44e52c8b22910efabbe3e071d6"
+  },
+  {
+    "tema": "Comunicación indirecta",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 24.png",
+    "destino": "Sistemas Distribuidos/04-Comunicación indirecta/adjuntos/Sistema publish-subscribe con publicadores y suscriptores.png",
+    "sha256": "7c57b1974a52cc03c0892934d55ac8aefa4ba663ee3d0773074a8ffa835ac131"
+  },
+  {
+    "tema": "Invocación remota",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 25.png",
+    "destino": "Sistemas Distribuidos/05-Invocación remota/adjuntos/Protocolo request-reply.png",
+    "sha256": "2df49065933896ed8a267f25a2b2d338de99d35ca906c0346e83057ee8911c84"
+  },
+  {
+    "tema": "Invocación remota",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 26.png",
+    "destino": "Sistemas Distribuidos/05-Invocación remota/adjuntos/Mecanismo RPC con stubs y runtime.png",
+    "sha256": "85b306e1570f6ec89490703537ef2c0bbc56d02c2eea00fded47e2ce30fc803c"
+  },
+  {
+    "tema": "Invocación remota",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 27.png",
+    "destino": "Sistemas Distribuidos/05-Invocación remota/adjuntos/La misma consulta con REST y con RPC.png",
+    "sha256": "c30398e8f19d42372880b260d4cca20091e5117858633763d5884ffb76926cb0"
+  },
+  {
+    "tema": "Invocación remota",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 28.png",
+    "destino": "Sistemas Distribuidos/05-Invocación remota/adjuntos/Servidor RPC con SimpleXMLRPCServer.png",
+    "sha256": "a5574117cc55407eb1a1b79e57d093321838a0628a5144033ed6f81d576c3be4"
+  },
+  {
+    "tema": "Invocación remota",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 29.png",
+    "destino": "Sistemas Distribuidos/05-Invocación remota/adjuntos/Cliente RPC con ServerProxy.png",
+    "sha256": "128bfe0c5826c71ed2590dfd93c0ed59add7d2d2ed90f5de282924b25ca862bc"
+  },
+  {
+    "tema": "Invocación remota",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 30.png",
+    "destino": "Sistemas Distribuidos/05-Invocación remota/adjuntos/Arquitectura de gRPC entre dos servicios.png",
+    "sha256": "19d5c8f9c5fe856b59bc00f4d327dd6bf3e230b1cd46c7251a94089bc4b9af7a"
+  },
+  {
+    "tema": "Sincronización de relojes físicos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 33.png",
+    "destino": "Sistemas Distribuidos/06-Sincronización de relojes físicos/adjuntos/Método de Cristian.png",
+    "sha256": "48afacee79b4f9740cdb731db6e93866254bda228ac497840d01e93c888e9c03"
+  },
+  {
+    "tema": "Sincronización de relojes físicos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 34.png",
+    "destino": "Sistemas Distribuidos/06-Sincronización de relojes físicos/adjuntos/Ejemplo del método de Cristian.png",
+    "sha256": "10d4b999def0691d5189bcdb6d8ffc7a33b2b28955c217b0ba8e57127cd433c0"
+  },
+  {
+    "tema": "Sincronización de relojes físicos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 35.png",
+    "destino": "Sistemas Distribuidos/06-Sincronización de relojes físicos/adjuntos/Berkeley estima la hora de cada seguidor.png",
+    "sha256": "8282d23b56c78e69f975a7a0a5d85cba6bff23a3ad5b1e24cfa1e0eaaa1f4cee"
+  },
+  {
+    "tema": "Sincronización de relojes físicos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 36.png",
+    "destino": "Sistemas Distribuidos/06-Sincronización de relojes físicos/adjuntos/Berkeley envía la diferencia a cada nodo.png",
+    "sha256": "7d2e6cfbc59ba5251a57eefeafb15e878972a3b7c345cc3c178e96c6c0116204"
+  },
+  {
+    "tema": "Sincronización de relojes físicos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 37.png",
+    "destino": "Sistemas Distribuidos/06-Sincronización de relojes físicos/adjuntos/Estratos de NTP.png",
+    "sha256": "dfb8e2e51e9626edbc9eae9397a8764d07ed337bf061c4f187202f6306364deb"
+  },
+  {
+    "tema": "Sincronización de relojes físicos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 38.png",
+    "destino": "Sistemas Distribuidos/06-Sincronización de relojes físicos/adjuntos/Retraso y desfase en NTP.png",
+    "sha256": "d31cd5f1191a15c559a8aa2150d6fea2f4963f2c35d2fe7c2431610a771edb2f"
+  },
+  {
+    "tema": "Sincronización de relojes físicos",
+    "tipo": "editada",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 39.png",
+    "destino": "Sistemas Distribuidos/06-Sincronización de relojes físicos/adjuntos/Ejemplo de NTP con desfase de cinco minutos.png",
+    "sha256": "0fba6a5ed05f3428a5f614b9be7040b44a66c3f5c285f5814381a68a7628379f"
+  },
+  {
+    "tema": "Sincronización de relojes físicos",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=285",
+    "destino": "Sistemas Distribuidos/06-Sincronización de relojes físicos/adjuntos/Ejemplo numérico de Berkeley.png",
+    "sha256": "5f1f887931e3a759fb5b568e62f87318fa1f2a8b7756150e3025648b269d0ac2"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 31.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Eventos de tres procesos antes de Lamport.png",
+    "sha256": "75176c730ba85eb66ad8a1c852e10c3cd8aef31fd5961c22cdae191ab118554b"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 32.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Contadores de Lamport en tres procesos.png",
+    "sha256": "e1d97f0e6cdc49a685e867971b7f5825d55c6401081378bd4933f03c37d6e121"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 40.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Lamport no permite inferir causalidad.png",
+    "sha256": "1f7aab044d4014ce176770c97c44e47f9f99f9e30f8316871592e4e8eea5a846"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 41.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Definición de reloj vectorial.png",
+    "sha256": "287fd60bcfa33d468877d35b71e31405ee9f6e452ef3ffae72e5069130a51b6b"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 42.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Reglas del reloj vectorial.png",
+    "sha256": "80edf2e29df31962e69c6739982c516e789866d1b1a4e2915351379335500466"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 43.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Comparar eventos con relojes vectoriales.png",
+    "sha256": "6acfaf8847d8d3796b8139033b497162b8b221044c32232ddc9794db41dce697"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 44.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Primeros vectores del ejemplo.png",
+    "sha256": "8bc59aa08a018a35f3ac3342c12fc58272d779895d4cca7e810d632a3b54e477"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 45.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Vectores completos del ejemplo.png",
+    "sha256": "6fda259164e197e235d7156cd5fe3d630f7c1960a460a0050717115875d2ab50"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 46.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Concurrencia y causalidad con vectores.png",
+    "sha256": "9fbb562366b59c7aa71af6f366e8d479ea342e4466081e85a285ca39e1c53b97"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 47.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Usos de un estado global.png",
+    "sha256": "84ff93bd93400c482c8c44cfa2b3f31010056eee123befac29a87895c86ab87e"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 48.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Corte consistente e inconsistente.png",
+    "sha256": "0377a84cc660123a2fa9f622aca91d36c95fc581adb910386fb195bd53e16df2"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 49.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Idea del algoritmo de Chandy-Lamport.png",
+    "sha256": "e8a6c6c0531471fdba5dcbca1d554cb490f775c64f6d05c583eb8818406f8c8b"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 50.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Casos de propagación del marcador.png",
+    "sha256": "2cae7e3409c798c667b1ba25f4ca81b62feef552dfefc2252f2d560d4500acca"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 51.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Finalización de Chandy-Lamport.png",
+    "sha256": "b5a9130461d91c1f2a4bf198a811a0b15dbfbb26ed1f454afe979c839631e714"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 52.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Chandy-Lamport tras el primer marcador.png",
+    "sha256": "21f73197a1f4bb8a18b21e8516bc22e1ad318fbc4471255ffeb6bc8068adb878"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 53.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Chandy-Lamport con los tres estados guardados.png",
+    "sha256": "c4a7adda166dab8a8e44206314340909de62b3adff3c107b23b33ff19b50b955"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 54.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Canal de Y a K con un mensaje grabado.png",
+    "sha256": "d4574546c41f6c00181715ac5073a47d277550048b4288179c048bb2581d1208"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 55.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Canal de K a Y vacío.png",
+    "sha256": "dc8a4fceb100de28156de9758e10df526a56af2c0955149813bf2c6cc6a9bab0"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 56.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Canal de Y a S con un mensaje grabado.png",
+    "sha256": "ab3228877ae9f508e294fd1b0b1e8e54ac9ec8985f1086e2e01c6dbde0a29466"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 57.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Estado global final de Chandy-Lamport.png",
+    "sha256": "dd19215b729abe80895937f8c46f2e90541bc594a3761912859d1b71a60d80d6"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 58.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Consenso fallido entre tres proponentes.png",
+    "sha256": "0437da7560e817e90920f491195faec421fa976167436f53051456f018460c2c"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 59.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Respuestas de los aceptantes a prepare.png",
+    "sha256": "ae68c1d3608e2b553f57d63dc82e564c1a7cd13fc75ca33bafdff71c232feaf0"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 60.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Aceptante que comparte una operación previa.png",
+    "sha256": "cb4289b2393a27cf1b09f2c41ad0fcb64f54e13104a8780e2fe36cf0aaac66be"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 61.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Propuesta rechazada por falta de mayoría.png",
+    "sha256": "d8757b48cb5f5acc10e99c0876a3a97cfa942dca3ac2bbdde45057e3b8835cd8"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 62.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Accept con la operación del proponente.png",
+    "sha256": "812a05e781d45ae7c9aafaae43db040380368356ea9109c2cd4435d294b57b1e"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 63.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Accept con la operación previa de mayor identificador.png",
+    "sha256": "14b0d2632d7a6d60b3f208762ab498ae5679ad64747c463cd45ee55914587e09"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 64.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/El aprendiz consolida la operación de la mayoría.png",
+    "sha256": "2e4034629b1c4dad8469504fb312d6fe8ac33369a87568f735282e3290cb1ecf"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 65.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Paxos interrumpe a un proponente.png",
+    "sha256": "c9ef63cedfa703acb69ee3a6575cac7b0cac5218fc849b26d8062f2332840fb1"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 66.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Paxos sobrescribe una acción aceptada.png",
+    "sha256": "66c87d2272cb0a7357354d445b9ca0014936edc6f2840e65845ea047693b3c24"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 67.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Livelock en Paxos.png",
+    "sha256": "dea506e2db628b33ac24673f53e7a31b2007b8e2fbcfa95a99534af323e7fd47"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 68.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Partición de la red en dos grupos.png",
+    "sha256": "cba3c477f2d1076e97069f91530d144d5eb5f1da00dd6542b27c5fa67b507eed"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 69.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Seguidor traidor y coordinador traidor.png",
+    "sha256": "90c09cf12e7e4e865d253ae67ceb234a27a6e279f26f98f9724e1aece787939d"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 70.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Mensajes orales con un seguidor traidor.png",
+    "sha256": "1cc20c3c9627bb6103066148cbddc7f436229564a11d2c01ad6624cd1a9a0e9c"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 71.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Mensajes orales con el líder traidor.png",
+    "sha256": "99d4b3bb7bf54aca74dadcc6763fd8056faa22ca03307ded581242ebf8075c78"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 72.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Mensajes firmados con un seguidor traidor.png",
+    "sha256": "76a0472a1a251088aafd6ee8bf6dfd659931d39b1de1212000519551c4bfeb42"
+  },
+  {
+    "tema": "Consenso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 73.png",
+    "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Mensajes firmados con el líder traidor.png",
+    "sha256": "d7b4aa014689ff53ccac5fce5ba6c669147f4f4903faf4cada6626ced35ca855"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 74.png",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Bully envía Election a los de mayor ID.png",
+    "sha256": "ec77bdcd4a32a9edb82dbfdee776c44fd26c519b9a31d1c93a315bcd7736f9da"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 75.png",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Bully responde Ok al nodo menor.png",
+    "sha256": "457c4e51b14bbc95ac64f65cdf128d0e87a87b8e9e751172e5a9dd292d966bb0"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 76.png",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Bully proclama al siguiente mayor vivo.png",
+    "sha256": "bc36781a5db8af06d2317659fb15da86c1d4214e05d2796f4a4950fad0fbab25"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 77.png",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Election timeout y postulación en Raft.png",
+    "sha256": "d2c23c978d5076ba3d514234de009ea7f55afee64576ba1dfa9f114fc7c10d94"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 78.png",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Reglas de votación en Raft.png",
+    "sha256": "a13af4d75d690c0c521b57c3033225f6bbbdaf6499116f3ee29d7aaa720b75a3"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 79.png",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Raft caso 1 con el candidato más actualizado.png",
+    "sha256": "a9fd26f4dc4154376920f0140227071e519961d41dd4fc318bcd59154bbf5ed1"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 80.png",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Raft caso 2 con el candidato menos actualizado.png",
+    "sha256": "2391c9725f60c55b8228c48fa6d36c909a37667f25353223f551b6e5ccf3d076"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 81.png",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Raft caso 3 con solo el term actualizado.png",
+    "sha256": "b8b4ed0f8734a79aeb40cb1458ffc8edb94d201bf838c35be072e5ee587b1ad0"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 82.png",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Raft caso 4 con term y logs no tan actualizados.png",
+    "sha256": "00f55a672f994f5bbc0a1931ad06a18757a3584335f7ae4104d471643d0b3b17"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 83.png",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Raft replica el log del líder.png",
+    "sha256": "d8e19419f8d1c3bf27c71a8608b4ebb8bba420bce31ee055daba9dfd9916e182"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=420",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Bully caso inicial.png",
+    "sha256": "3fcc695028670dafd79aa8ca483fddc3110c9526fafb1a7c48191db0538c039b"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=463",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Raft A2 en mayoría pero no consolidada.png",
+    "sha256": "3d3ae30e9eb537187a6f3e9d6ac364d71dde03fa32adf63205ec2359b931aa10"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=468",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Raft puede sobrescribir A2.png",
+    "sha256": "7d94e91b41ca3f3a55f99030299427a5602fbb6eeaa9744dec03e2ccd038e395"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=473",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Raft consolidación indirecta.png",
+    "sha256": "b52a57deb6b9669aef2c5ce237938ce23c52aa8959708729c0f13d09ea37d5aa"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=484",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Ring-based Election da la vuelta.png",
+    "sha256": "09951b76e99e3315b23728e036d2373f1497339d6159feabc2b9a6505f061282"
+  },
+  {
+    "tema": "Exclusión mutua distribuida",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 84.png",
+    "destino": "Sistemas Distribuidos/10-Exclusión mutua distribuida/adjuntos/Token Ring con seis nodos.png",
+    "sha256": "9d3dd1ca752614a800e05d033332c08691d1b492c8bc8efb04f612b944f6f4a0"
+  },
+  {
+    "tema": "Exclusión mutua distribuida",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=516",
+    "destino": "Sistemas Distribuidos/10-Exclusión mutua distribuida/adjuntos/Ricart y Agrawala en cuatro pasos.png",
+    "sha256": "8efc6dc20139190daeebe5702dc10aaaa1a1e29a24345710af62a196ca48dae0"
+  },
+  {
+    "tema": "Exclusión mutua distribuida",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=503",
+    "destino": "Sistemas Distribuidos/10-Exclusión mutua distribuida/adjuntos/Servidor central con cola de peticiones.png",
+    "sha256": "8dba511faeefe42d3759b93c5fafb4187f0dd2b2ef4f0664b9dc13a5db5aa4ea"
+  },
+  {
+    "tema": "Tolerancia a fallos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image.png",
+    "destino": "Sistemas Distribuidos/11-Tolerancia a fallos/adjuntos/Ejemplos de propiedades de confiabilidad.png",
+    "sha256": "47a4b72928c735694a7cad7e3f1ef75460b96bb09c87530b1fe97849d2f63597"
+  },
+  {
+    "tema": "Tolerancia a fallos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 1.png",
+    "destino": "Sistemas Distribuidos/11-Tolerancia a fallos/adjuntos/Desafíos de la detección de fallos.png",
+    "sha256": "7509c8a516a51e6b8db8f1f745282ff447e38a2c984eb8b9a7ff4fd6dd2a49a7"
+  },
+  {
+    "tema": "Tolerancia a fallos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 2.png",
+    "destino": "Sistemas Distribuidos/11-Tolerancia a fallos/adjuntos/Semánticas de llamada RPC.png",
+    "sha256": "b120e982490aeeaa7c3331ef910bc07ea980f841ef5f400faf91564fd17cbc4b"
+  },
+  {
+    "tema": "Replicación y modelos de consistencia",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 3.png",
+    "destino": "Sistemas Distribuidos/12-Replicación y modelos de consistencia/adjuntos/Dos ejecuciones secuencialmente consistentes.png",
+    "sha256": "9afaa3ea12966e2602dbab11e060f4583a197f060daf0791dc53e80bc8b45622"
+  },
+  {
+    "tema": "Replicación y modelos de consistencia",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 4.png",
+    "destino": "Sistemas Distribuidos/12-Replicación y modelos de consistencia/adjuntos/Ejecución no consistente secuencialmente.png",
+    "sha256": "116b4d7cc1850806f72cb56c2dd0b3ff8175b3f756d4350d82fb5cb29dda741a"
+  },
+  {
+    "tema": "Replicación y modelos de consistencia",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 5.png",
+    "destino": "Sistemas Distribuidos/12-Replicación y modelos de consistencia/adjuntos/Seis órdenes válidos de escrituras.png",
+    "sha256": "9170980b18e94630e5e1f8d82c9c5254795e806533b5214512b1610d2f82d5fe"
+  },
+  {
+    "tema": "Replicación y modelos de consistencia",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 6.png",
+    "destino": "Sistemas Distribuidos/12-Replicación y modelos de consistencia/adjuntos/Consistencia fuerte con una sola secuencia válida.png",
+    "sha256": "71be0a62354b26feca54270a6fcdbbc8b01b83c1291e23ebb172d20aa99ea7d9"
+  },
+  {
+    "tema": "Replicación y modelos de consistencia",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 7.png",
+    "destino": "Sistemas Distribuidos/12-Replicación y modelos de consistencia/adjuntos/Consistencia fuerte con dos secuencias válidas.png",
+    "sha256": "46b1ce839c14bc82aba382a3ae1838f680927d2b2835ffb4b69abf4b7413f20c"
+  },
+  {
+    "tema": "Replicación y modelos de consistencia",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 8.png",
+    "destino": "Sistemas Distribuidos/12-Replicación y modelos de consistencia/adjuntos/Secuencial pero no linealizable.png",
+    "sha256": "867cf0fdd60af470ea1217ae7a2817ca23831938620d14531a95ccf027fbc59d"
+  },
+  {
+    "tema": "Replicación y modelos de consistencia",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 9.png",
+    "destino": "Sistemas Distribuidos/12-Replicación y modelos de consistencia/adjuntos/Ejecución causal pero no secuencial.png",
+    "sha256": "d3ca37b033bcdc1707f6ba93bc5eb1e6407b191ff9c89a086493a3d691326c92"
+  },
+  {
+    "tema": "Replicación y modelos de consistencia",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=88",
+    "destino": "Sistemas Distribuidos/12-Replicación y modelos de consistencia/adjuntos/Valores posibles bajo consistencia causal.png",
+    "sha256": "efc9579b8a9cb298e4ec0d4c49303141a50fc9aadb025fc67dca2b4dc51a23be"
+  },
+  {
+    "tema": "Replicación y modelos de consistencia",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=92",
+    "destino": "Sistemas Distribuidos/12-Replicación y modelos de consistencia/adjuntos/Ejecución eventual pero no causal.png",
+    "sha256": "586365662474e511df5e292b6953297d74dc0d62a9352474a3e003863a218fea"
+  },
+  {
+    "tema": "Replicación y modelos de consistencia",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=94",
+    "destino": "Sistemas Distribuidos/12-Replicación y modelos de consistencia/adjuntos/Pregunta de modelos de consistencia.png",
+    "sha256": "822f72b88aa6f8df1632e7be1a0fb408ab8b993f6f8cc0fc5de4b2fc2aa4af35"
+  },
+  {
+    "tema": "Protocolos de replicación",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=104",
+    "destino": "Sistemas Distribuidos/13-Protocolos de replicación/adjuntos/Gossip propaga una escritura entre vecinos.png",
+    "sha256": "de5eea0a7243ff67a17057430d6d7f3d12fe4fa4a8909f1abcdb9902e2643a49"
+  },
+  {
+    "tema": "Protocolos de replicación",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=111",
+    "destino": "Sistemas Distribuidos/13-Protocolos de replicación/adjuntos/Escritura y lectura con quórum.png",
+    "sha256": "5ea3416bb3bf09bd3fe7150168798d754f45fbafea23a4302a939ce03b715f6e"
+  },
+  {
+    "tema": "Protocolos de replicación",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=116",
+    "destino": "Sistemas Distribuidos/13-Protocolos de replicación/adjuntos/Replicación basada en un primario.png",
+    "sha256": "b9b210b9cd6c2f01fe486971d62fb300bf02bac5202dcd9f51397c7c3c78a0c6"
+  },
+  {
+    "tema": "Protocolos de replicación",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=120",
+    "destino": "Sistemas Distribuidos/13-Protocolos de replicación/adjuntos/Replicación activa entre todos los nodos.png",
+    "sha256": "d891a940545d8a6c4e3cada65a0ed1a9851bcb41f394e9ad6d3c699863189c0b"
+  },
+  {
+    "tema": "Transacciones distribuidas",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=148",
+    "destino": "Sistemas Distribuidos/14-Transacciones distribuidas/adjuntos/Transacción plana y anidada de un viaje.png",
+    "sha256": "ebe397df5c532fc15a3f69503396903c137dcca3d9bb42a98a9153da9a76f6c9"
+  },
+  {
+    "tema": "Transacciones distribuidas",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=164",
+    "destino": "Sistemas Distribuidos/14-Transacciones distribuidas/adjuntos/Commit de dos fases exitoso.png",
+    "sha256": "988e060c1e1a2d16ceb5f3c0fc88ef1cec1f2f63fe3417cfac2a25eaa2fa4f33"
+  },
+  {
+    "tema": "Transacciones distribuidas",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=166",
+    "destino": "Sistemas Distribuidos/14-Transacciones distribuidas/adjuntos/Commit de dos fases con un participante que rechaza.png",
+    "sha256": "a20a171b5a003c604e6dd0964d4cf4e5029a11ae8e3eda400f46d6167a48d819"
+  },
+  {
+    "tema": "Transacciones distribuidas",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=173",
+    "destino": "Sistemas Distribuidos/14-Transacciones distribuidas/adjuntos/Commit de tres fases.png",
+    "sha256": "29a7721893cec784b4a11cbdf682f5ef053fcccae079c989fc63857ad7f55ecd"
+  },
+  {
+    "tema": "Control de concurrencia distribuido",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 10.png",
+    "destino": "Sistemas Distribuidos/15-Control de concurrencia distribuido/adjuntos/Problema de la actualización perdida.png",
+    "sha256": "8625fd7bd010e25a01173172697f4e4b809c24a8cd00df2878d8a867b919bdfe"
+  },
+  {
+    "tema": "Control de concurrencia distribuido",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 11.png",
+    "destino": "Sistemas Distribuidos/15-Control de concurrencia distribuido/adjuntos/Problema de lecturas inconsistentes.png",
+    "sha256": "4935174dfbb4f1cfc2c6c84a78cbd5c033136b7e7b343053bbbdb0edfd8639fb"
+  },
+  {
+    "tema": "Control de concurrencia distribuido",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 12.png",
+    "destino": "Sistemas Distribuidos/15-Control de concurrencia distribuido/adjuntos/Ejemplo de control pesimista con locks.png",
+    "sha256": "daf6d7bd78f6b7bcd47c5e2d52c519f8c30be463557970f78deebe702b4086bf"
+  },
+  {
+    "tema": "Control de concurrencia distribuido",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 13.png",
+    "destino": "Sistemas Distribuidos/15-Control de concurrencia distribuido/adjuntos/Control optimista con validación al commit.png",
+    "sha256": "3639bf7ad70ee10e9e7f67092065ec2d7da5f5fadde96af90926e249de5efdf8"
+  },
+  {
+    "tema": "Control de concurrencia distribuido",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=222",
+    "destino": "Sistemas Distribuidos/15-Control de concurrencia distribuido/adjuntos/Comparación de políticas de resolución de conflictos.png",
+    "sha256": "54b5adb17931ee8b29429dfa8e865ff3fc48a4c2123f98d66c29fee237106091"
+  },
+  {
+    "tema": "Teoremas CAP y PACELC",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=237",
+    "destino": "Sistemas Distribuidos/16-Teoremas CAP y PACELC/adjuntos/Sistema CP ante una partición.png",
+    "sha256": "d3acbd3504254b85962297754bb60b6ea0f93441cea414d6a20e66eb6d70217e"
+  },
+  {
+    "tema": "Teoremas CAP y PACELC",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=238",
+    "destino": "Sistemas Distribuidos/16-Teoremas CAP y PACELC/adjuntos/Sistema AP ante una partición.png",
+    "sha256": "3438a146b36d3dcd95166273c56128ec3d61ead096d7161ac16c109c5cc13e92"
+  },
+  {
+    "tema": "Teoremas CAP y PACELC",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=247",
+    "destino": "Sistemas Distribuidos/16-Teoremas CAP y PACELC/adjuntos/Árbol de decisión de PACELC.png",
+    "sha256": "50223f048a5e6e7203404b2e146a51da7f0aa15c11a4c41774c1da8f3b199ab3"
+  },
+  {
+    "tema": "Consistencia centrada en el cliente",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 19.png",
+    "destino": "Sistemas Distribuidos/17-Consistencia centrada en el cliente/adjuntos/Las cuatro garantías de sesión.png",
+    "sha256": "cca849b002e6326dc4986a767114796612ba2dd909e5f643714430b4fc576b57"
+  },
+  {
+    "tema": "Consistencia centrada en el cliente",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 20.png",
+    "destino": "Sistemas Distribuidos/17-Consistencia centrada en el cliente/adjuntos/Monotonic reads cumplido y violado.png",
+    "sha256": "07645dc754ffcf3eaa26a34e62c581917034ca50250af72796fe001148cbb31b"
+  },
+  {
+    "tema": "Consistencia centrada en el cliente",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 21.png",
+    "destino": "Sistemas Distribuidos/17-Consistencia centrada en el cliente/adjuntos/Monotonic reads con dos réplicas.png",
+    "sha256": "6f7e0119e6b38bee568764b1b91e1c078bb3b0758e5cc5f38555846aa7c25199"
+  },
+  {
+    "tema": "Consistencia centrada en el cliente",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 22.png",
+    "destino": "Sistemas Distribuidos/17-Consistencia centrada en el cliente/adjuntos/Monotonic writes en cuatro casos.png",
+    "sha256": "7202eaa399d2227f133feefc9af3c05b9a25d2bf01b94f63721dde2ef0ee041f"
+  },
+  {
+    "tema": "Consistencia centrada en el cliente",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 23.png",
+    "destino": "Sistemas Distribuidos/17-Consistencia centrada en el cliente/adjuntos/Read your writes cumplido y violado.png",
+    "sha256": "639abbc8b94651a998988dd034190bb6304df962eaeabe8ae34f2caf733b930e"
+  },
+  {
+    "tema": "Consistencia centrada en el cliente",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 24.png",
+    "destino": "Sistemas Distribuidos/17-Consistencia centrada en el cliente/adjuntos/Writes follow reads cumplido y violado.png",
+    "sha256": "b4129e29333d3b556e31a69f60c84c84619c276196477ea96c6dd7d5c4d52ea1"
+  },
+  {
+    "tema": "Consistencia centrada en el cliente",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=300",
+    "destino": "Sistemas Distribuidos/17-Consistencia centrada en el cliente/adjuntos/Pregunta de garantías de sesión del cliente A.png",
+    "sha256": "c9ca0e3dad0a777e45d39600b068669affcebcc9d11efa2434a6532bcd57828d"
+  },
+  {
+    "tema": "Ataques a sistemas distribuidos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 14.png",
+    "destino": "Sistemas Distribuidos/18-Ataques a sistemas distribuidos/adjuntos/Compromisos entre seguridad y otras propiedades.png",
+    "sha256": "552cdf041c1e4a6b2d28402348deebddaecfa4b4ddba7e3f2fd481dc72ec4a72"
+  },
+  {
+    "tema": "Criptografía",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=58",
+    "destino": "Sistemas Distribuidos/19-Criptografía/adjuntos/Diffie-Hellman con colores.png",
+    "sha256": "4ad7f0fff24b8809d1591a899a60abf507076d2efe4b35e6ba85e1b43ef6e59b"
+  },
+  {
+    "tema": "Criptografía",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=60",
+    "destino": "Sistemas Distribuidos/19-Criptografía/adjuntos/Man-in-the-middle en Diffie-Hellman.png",
+    "sha256": "0dc50b5379bd95a10ed753781918365818fe87b3cf86169b1c7d71cbcfccc69c"
+  },
+  {
+    "tema": "Criptografía",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=78",
+    "destino": "Sistemas Distribuidos/19-Criptografía/adjuntos/Firma digital con hash.png",
+    "sha256": "0143d18844f00a7daccfe320cc26124d722d4202e0685b451ff0b1a286ac461c"
+  },
+  {
+    "tema": "Criptografía",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=87",
+    "destino": "Sistemas Distribuidos/19-Criptografía/adjuntos/Handshake de TLS 1.3.png",
+    "sha256": "5b2d4a61c22ce0b9a167dc1fd47f6897139dcfa7880e923cccc1eabe4cedf3d5"
+  },
+  {
+    "tema": "Autenticación y control de acceso",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=118",
+    "destino": "Sistemas Distribuidos/20-Autenticación y control de acceso/adjuntos/Cliente verifica un certificado de la CA.png",
+    "sha256": "637f4b5baec0b0050dce39d22ea8591ebd13d81b92452c8de2ff3c963f9a96e6"
+  },
+  {
+    "tema": "Autenticación y control de acceso",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=140",
+    "destino": "Sistemas Distribuidos/20-Autenticación y control de acceso/adjuntos/Flujo de OAuth.png",
+    "sha256": "68d90de68eb778d126880b618afe338ed5cba9b383e443eb28572859a5773fc3"
+  },
+  {
+    "tema": "Autenticación y control de acceso",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=106",
+    "destino": "Sistemas Distribuidos/20-Autenticación y control de acceso/adjuntos/Desafío-respuesta con llave simétrica.png",
+    "sha256": "334cce4083d520152c9793848e173ca79853975a62feb8e98b8dd9f999cd202e"
+  },
+  {
+    "tema": "Autenticación y control de acceso",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=122",
+    "destino": "Sistemas Distribuidos/20-Autenticación y control de acceso/adjuntos/Flujo completo de Kerberos.png",
+    "sha256": "1fe9153b964453110d6c667822ddf472f2f7f56e13decca601d29d3ca3d7ff02"
+  },
+  {
+    "tema": "Monitoreo de seguridad",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=165",
+    "destino": "Sistemas Distribuidos/21-Monitoreo de seguridad/adjuntos/Ciclo de vida del monitoreo.png",
+    "sha256": "8090546d725664c07c0482823c770bafecb8611aedfec9a49f8f9379e893768c"
+  },
+  {
+    "tema": "Monitoreo de seguridad",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=188",
+    "destino": "Sistemas Distribuidos/21-Monitoreo de seguridad/adjuntos/Firewall frente a IDS e IPS.png",
+    "sha256": "874ef237fa5a94a669e6b271c7fe4d6f35b7cd9beddb8df8f1f11466ba132135"
+  },
+  {
+    "tema": "Arquitecturas peer-to-peer",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=207",
+    "destino": "Sistemas Distribuidos/22-Arquitecturas peer-to-peer/adjuntos/Búsqueda por inundación.png",
+    "sha256": "c8e0b75b5c4fe5e5539420597f43ce782242cf05ad2e9c998e05e008faa9a3d3"
+  },
+  {
+    "tema": "Arquitecturas peer-to-peer",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=242",
+    "destino": "Sistemas Distribuidos/22-Arquitecturas peer-to-peer/adjuntos/Búsquedas en el anillo de Chord.png",
+    "sha256": "6c5c5549da63589bf2f9a7456f65c655915e16dcedb41483aa5f12b07260fb49"
+  },
+  {
+    "tema": "Arquitecturas peer-to-peer",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=246",
+    "destino": "Sistemas Distribuidos/22-Arquitecturas peer-to-peer/adjuntos/Llegada de un nodo en Chord.png",
+    "sha256": "b7bd28038141406fddbba5cc3057587e6c35032ed1cb30dcd4a46dfd36f90dfd"
+  },
+  {
+    "tema": "Casos aplicados",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=270",
+    "destino": "Sistemas Distribuidos/23-Casos aplicados/adjuntos/Onion routing en Tor.png",
+    "sha256": "a01b70fe620c01626e0a71eacd0ac6e3733f684b19dcc1cccd1948a2b758d64b"
+  },
+  {
+    "tema": "Casos aplicados",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=278",
+    "destino": "Sistemas Distribuidos/23-Casos aplicados/adjuntos/Jerarquía RADIUS de Eduroam.png",
+    "sha256": "d0ef775d943009e6103a11cbe47f0ade93dba4aa3b4a63184153ed8d4fe29039"
+  },
+  {
+    "tema": "Casos aplicados",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=299",
+    "destino": "Sistemas Distribuidos/23-Casos aplicados/adjuntos/Comparación de VPN, Tor, Eduroam y BitTorrent.png",
+    "sha256": "8ab97ad39fbb5af3c3a6209506cd16a3bc59720833964efe64eb2aed8fc7d127"
+  },
+  {
+    "tema": "Gestión del curso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 15.png",
+    "destino": "Sistemas Distribuidos/24-Gestión del curso/adjuntos/Síntesis de consistencia secuencial.png",
+    "sha256": "4e7a96bbae6154c0084e399a037730c50659073aebb911e1681a4c9a4c32eed5"
+  },
+  {
+    "tema": "Gestión del curso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 16.png",
+    "destino": "Sistemas Distribuidos/24-Gestión del curso/adjuntos/Síntesis de consistencia fuerte.png",
+    "sha256": "75b453ddf52f64b4fe71b64d46bf4ef2bbd29ef72f3af6d32d3ccfa38ffc029e"
+  },
+  {
+    "tema": "Gestión del curso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 17.png",
+    "destino": "Sistemas Distribuidos/24-Gestión del curso/adjuntos/Síntesis de consistencia causal.png",
+    "sha256": "7719056ed7422b0ae428d260ac7eb9d1759aade8baf26b8458e9fdb4cf15b6ac"
+  },
+  {
+    "tema": "Gestión del curso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 18.png",
+    "destino": "Sistemas Distribuidos/24-Gestión del curso/adjuntos/Síntesis de consistencia eventual.png",
+    "sha256": "dc741be5d28b36b745a1e3fba8214cf02443f7c81d11c238da7ed83abcaebd7d"
+  },
+  {
+    "tema": "Gestión del curso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 25.png",
+    "destino": "Sistemas Distribuidos/24-Gestión del curso/adjuntos/Síntesis de gossip.png",
+    "sha256": "f7e7caa86b2b36474e00effd3984b4f14e2aa04c2017ff00229b94ed1fb204a5"
+  },
+  {
+    "tema": "Gestión del curso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 26.png",
+    "destino": "Sistemas Distribuidos/24-Gestión del curso/adjuntos/Síntesis de replicación con primario.png",
+    "sha256": "8418d07b52e62de696d0f9ba29bfe3368d52f780df1cf89ddc03b63d20e9aeb4"
+  },
+  {
+    "tema": "Gestión del curso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 27.png",
+    "destino": "Sistemas Distribuidos/24-Gestión del curso/adjuntos/Síntesis de replicación activa.png",
+    "sha256": "0edc3624b874793785424a0236aedd5b07ea6dab11035669b2e43874b121b80a"
+  },
+  {
+    "tema": "Gestión del curso",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 28.png",
+    "destino": "Sistemas Distribuidos/24-Gestión del curso/adjuntos/Síntesis de validación forward y backward.png",
+    "sha256": "6011fb316f69d8220befb92cad7164d41290b5a26a079b153f76937db2e48fdc"
+  },
+  {
+    "tema": "Gestión del curso",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=42",
+    "destino": "Sistemas Distribuidos/24-Gestión del curso/adjuntos/Fórmula de evaluaciones escritas.png",
+    "sha256": "680662bd8e2da4f4f07932f09a788db98dd679d3f6b88cdf3adfb0d622d0501d"
+  },
+  {
+    "tema": "Gestión del curso",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=47",
+    "destino": "Sistemas Distribuidos/24-Gestión del curso/adjuntos/Condiciones de aprobación.png",
+    "sha256": "d95bb7705848ca6b1965c53e4078f6e92d9418321057f3dc193b7d75bbabbf9f"
+  }
+]
