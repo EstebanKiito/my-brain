@@ -50,8 +50,14 @@
     },
     "Comunicación indirecta": {
       "carpeta": "Sistemas Distribuidos/04-Comunicación indirecta",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Clase 4",
+          "hasta": "Invocacion Remota"
+        }
+      ]
     },
     "Invocación remota": {
       "carpeta": "Sistemas Distribuidos/05-Invocación remota",

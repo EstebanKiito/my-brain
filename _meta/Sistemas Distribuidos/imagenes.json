@@ -180,5 +180,26 @@
     "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=165",
     "destino": "Sistemas Distribuidos/03-Comunicación directa y sockets/adjuntos/Datagramas UDP perdidos y desordenados.png",
     "sha256": "dd46682096e71b7f8ddb5161b02e2fdcabf395a9d146260efeadd61d0f28e005"
+  },
+  {
+    "tema": "Comunicación indirecta",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 22.png",
+    "destino": "Sistemas Distribuidos/04-Comunicación indirecta/adjuntos/Cola de mensajes con send, receive, poll y notify.png",
+    "sha256": "947b102ef7f0b4840b0008361db56f03dd69f7db48b7536ae2cd9439d1991ba7"
+  },
+  {
+    "tema": "Comunicación indirecta",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 23.png",
+    "destino": "Sistemas Distribuidos/04-Comunicación indirecta/adjuntos/Colas de WebSphere MQ con proxy y stub.png",
+    "sha256": "e84fc0e4399bdcfadfe4a339609d3c5cfbccaf44e52c8b22910efabbe3e071d6"
+  },
+  {
+    "tema": "Comunicación indirecta",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 24.png",
+    "destino": "Sistemas Distribuidos/04-Comunicación indirecta/adjuntos/Sistema publish-subscribe con publicadores y suscriptores.png",
+    "sha256": "7c57b1974a52cc03c0892934d55ac8aefa4ba663ee3d0773074a8ffa835ac131"
   }
 ]
