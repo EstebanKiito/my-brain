@@ -8,7 +8,7 @@ prerrequisitos: ["[[02 - Disco duro y páginas|Disco duro y páginas]]"]
 
 El DBMS trae las páginas que necesita desde el disco a un área de RAM llamada **buffer pool**. Si la página ya está ahí, no hace falta volver a leer del disco.
 
-## Relación entre disco y RAM (mis apuntes)
+## Relación entre disco y RAM
 - **Operación del DBMS:**
     - El sistema de gestión de bases de datos (DBMS) trabaja a nivel de página.
     - Utiliza la RAM para almacenar temporalmente las páginas cargadas desde el disco.

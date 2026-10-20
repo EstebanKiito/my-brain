@@ -8,14 +8,14 @@ prerrequisitos: ["[[06 - Arreglos y listas ligadas|Arreglos y listas ligadas]]"]
 
 Un diccionario es una estructura que guarda pares **llave → valor** y permite insertar, actualizar, buscar y borrar por llave de forma eficiente, sin importar el orden de las llaves. Es lo que hace un índice de una base de datos.
 
-## Diccionarios (mis apuntes)
-- Estructura de datos que cumple con:
-    - Asociar un valor a una llave
-    - Actualiza el valor asociado a una llave
-    - Obtiene el valor asociado a una llave
-    - Elimina de la estructura la asociacion llave-valor
-- Es eficiente al buscar con llaves
-- El orden de las llaves NO es relevante
+## Diccionarios
+- Es una estructura de datos que permite:
+    - asociar un valor a una llave;
+    - actualizar el valor asociado a una llave;
+    - obtener el valor asociado a una llave;
+    - eliminar de la estructura la asociación llave-valor.
+- Es eficiente al buscar por llave.
+- El orden de las llaves **no** es relevante.
 
 ### Ejemplo
 
@@ -24,10 +24,10 @@ Un diccionario es una estructura que guarda pares **llave → valor** y permite 
 > [!note]- Transcripción de la imagen
 > **Ejemplo:** En la universidad hay aproximadamente 25.000 estudiantes este año. Asignamos un k ∈ {0, …, 24.999} a cada estudiante y usamos cada natural como índice del arreglo A.
 
-- Rango de rut: hasta el 25.000.000
-- Cantidad estudiantes: 25.000 (Mucho menos)
-- Problema: Solo 1/1000 celdas del arreglo A indexado por Rut estaran ocupadas
-- Nos acercamos a un conjunto de llaves K razonable con Tablas Hash
+- Rango de RUT: hasta 25.000.000.
+- Cantidad de estudiantes: 25.000, muchos menos.
+- Problema: en un arreglo indexado por RUT, solo 1 de cada 1000 celdas estaría ocupada.
+- Las [[08 - Tablas de hash|tablas de hash]] reducen el espacio de llaves a un tamaño razonable.
 
 > [!tip] Complemento — por qué no basta un arreglo
 > - Si la llave fuera un número pequeño y denso (0…24.999), un arreglo sería un diccionario perfecto: buscar = `A[k]`, en $O(1)$.

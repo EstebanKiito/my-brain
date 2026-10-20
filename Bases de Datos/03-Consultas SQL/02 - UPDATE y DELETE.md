@@ -8,10 +8,10 @@ prerrequisitos: ["[[01 - SELECT, FROM y WHERE|SELECT, FROM y WHERE]]"]
 
 `UPDATE` modifica valores de filas existentes y `DELETE` borra filas. Ambos usan un `WHERE` para elegir qué filas afectar. Junto con `INSERT` y `SELECT`, completan el CRUD.
 
-## Mis apuntes
-4. **UPDATE:** Modifica los datos existentes en una tabla. Por ejemplo, `UPDATE Personas SET edad = 30 WHERE nombre = 'Esteban';` actualizará la edad de Esteban a 30 en la tabla Personas.
-5. **DELETE:** Elimina registros existentes en una tabla. Por ejemplo, `DELETE FROM Personas WHERE nombre = 'Esteban';` eliminará todos los registros de la tabla Personas donde el nombre sea 'Esteban'.
-    - Es importante tener cuidado al usar el comando DELETE, ya que si se omite la cláusula WHERE, se eliminarán todos los registros de la tabla.
+## UPDATE y DELETE
+- **UPDATE:** Modifica los datos existentes en una tabla. Por ejemplo, `UPDATE Personas SET edad = 30 WHERE nombre = 'Esteban';` actualizará la edad de Esteban a 30 en la tabla Personas.
+- **DELETE:** Elimina registros existentes en una tabla. Por ejemplo, `DELETE FROM Personas WHERE nombre = 'Esteban';` eliminará todos los registros de la tabla Personas donde el nombre sea 'Esteban'.
+  - Hay que tener cuidado al usar el comando DELETE, ya que si se omite la cláusula WHERE, se eliminarán todos los registros de la tabla.
 
 - **UPDATE:**
 

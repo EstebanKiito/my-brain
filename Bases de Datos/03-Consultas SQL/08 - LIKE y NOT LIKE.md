@@ -8,38 +8,25 @@ prerrequisitos: ["[[01 - SELECT, FROM y WHERE|SELECT, FROM y WHERE]]"]
 
 `s LIKE p` compara un string con un patrón: `%` reemplaza cualquier secuencia de caracteres y `_` exactamente uno. `NOT LIKE` deja los que **no** calzan.
 
-## LIKE: (REGEX) (mis apuntes)
+## LIKE: patrones de texto
 
 ```sql
 SELECT *
 FROM Peliculas
-WHERE name LIKE ‘%Potter%'
+WHERE name LIKE '%Potter%';
 ```
 
-1. `%` : Cualquier otra secuencia de caracteres
-2. `_` : Cualquier otro caracter (1 solamente)
-3. `  ` : No otro caracter → ( correo Like ‘%@gmail.com’ )
+1. `%`: cualquier secuencia de caracteres (incluso vacía).
+2. `_`: exactamente un carácter cualquiera.
+3. Sin comodín al final: después del texto no puede venir ningún otro carácter. Por ejemplo, `correo LIKE '%@gmail.com'` calza con los correos que **terminan** en `@gmail.com`.
 
 ## NOT LIKE
 
 ```sql
 SELECT *
 FROM Peliculas
-WHERE name NOT LIKE ‘%a%'
-
-# BUSCA TODAS LAS PELICULAS QUE NO TENGAN 'a' EN EL name
+WHERE name NOT LIKE '%a%';  -- películas sin 'a' en el nombre
 ```
-
-> [!warning] Posible error (registrado en `_meta/Bases de Datos/DUDAS.md`)
-> - **Comillas:** `‘%Potter%'` y `‘%@gmail.com’` usan comillas tipográficas (‘ ’), que vienen de copiar desde la slide. PostgreSQL solo acepta comillas simples rectas: `'%Potter%'`.
-> - **Comentarios:** en SQL los comentarios se escriben `-- …` (o `/* … */`), no `# …`.
-> - **El punto 3** es ambiguo. Se interpreta así: si el patrón **no** termina en `%`, después del texto no puede venir ningún otro carácter. `'%@gmail.com'` calza con correos que *terminan* en `@gmail.com`.
->
-> Versión que corre:
-> ```sql
-> SELECT * FROM Peliculas WHERE name LIKE '%Potter%';
-> SELECT * FROM Peliculas WHERE name NOT LIKE '%a%';  -- películas sin 'a' en el nombre
-> ```
 
 > [!tip] Complemento (slides "Clase 3" y documentación de PostgreSQL)
 > | Patrón | Calza con | No calza con |
@@ -50,7 +37,7 @@ WHERE name NOT LIKE ‘%a%'
 > | `'_a%'` | "Batman", "Matrix" (segunda letra a) | "Avatar" |
 >
 > - `LIKE` distingue mayúsculas de minúsculas. En PostgreSQL existe `ILIKE` para ignorarlas.
-> - No son expresiones regulares completas, aunque el título de mis apuntes diga "REGEX". Para regex, PostgreSQL ofrece `~` y `SIMILAR TO`.
+> - No son expresiones regulares completas. Para regex, PostgreSQL ofrece `~` y `SIMILAR TO`.
 
 ## Preguntas de repaso
 
@@ -66,6 +53,6 @@ WHERE name NOT LIKE ‘%a%'
 > [!question]- Respuesta
 > `SELECT * FROM Peliculas WHERE name NOT LIKE '%a%';`
 
-4. ¿Por qué la consulta de mis apuntes con `‘%Potter%'` falla en PostgreSQL?
+4. ¿Por qué `WHERE name LIKE ‘%Potter%'` (copiado de una slide) falla en PostgreSQL?
 > [!question]- Respuesta
 > Porque usa una comilla tipográfica (‘) en vez de la comilla simple recta ('), que es la única que delimita strings en SQL.

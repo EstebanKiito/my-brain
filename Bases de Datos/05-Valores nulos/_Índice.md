@@ -5,7 +5,7 @@ Cómo representa SQL la información faltante y qué comportamientos raros produ
 Volver al [[Bases de Datos/_Índice|mapa del ramo]].
 
 > [!note] Origen
-> Mis apuntes de la I1, sección «NULL». La restricción `NOT NULL` está en [[07 - Restricciones de integridad y NOT NULL|Restricciones de integridad y NOT NULL]]. Complementos de las slides de la clase 4 (SQL Avanzado).
+> Las notas parten de los apuntes del ramo, sección «NULL». La restricción `NOT NULL` está en [[07 - Restricciones de integridad y NOT NULL|Restricciones de integridad y NOT NULL]]. Complementos de las slides de la clase 4 (SQL Avanzado).
 
 ## Orden de estudio
 1. [[01 - NULL en SQL|NULL en SQL]]: significados, `IS NULL` / `IS NOT NULL`.

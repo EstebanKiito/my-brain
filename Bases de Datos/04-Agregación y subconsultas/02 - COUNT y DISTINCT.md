@@ -8,7 +8,7 @@ prerrequisitos: ["[[01 - Funciones de agregación|Funciones de agregación]]", "
 
 `COUNT(*)` cuenta filas, `COUNT(columna)` cuenta solo los valores no nulos y `COUNT(DISTINCT columna)` cuenta los valores distintos. No hay que confundirlo con `SELECT DISTINCT COUNT(…)`.
 
-## COUNT (mis apuntes)
+## COUNT
 
 | producto | fecha | precio | cantidad |
 |---|---|---|---|
@@ -19,33 +19,24 @@ prerrequisitos: ["[[01 - Funciones de agregación|Funciones de agregación]]", "
 | zapallo | 01/01 | 600 | 1 |
 
 ```sql
-SELECT COUNT(*) 
-FROM Compra
-# 5
-# contara todas las filas!
+SELECT COUNT(*)
+FROM Compra;
+-- 5: cuenta todas las filas
 ```
 
 ```sql
-SELECT COUNT(cantidad) 
-FROM Compra
-# 3
-# contara solo las con info
+SELECT COUNT(cantidad)
+FROM Compra;
+-- 3: cuenta solo las filas con cantidad no nula
 ```
 
-### Observación!
+### Observación
 SELECT DISTINCT COUNT(cantidad) = 3  ≠  SELECT COUNT( DISTINCT cantidad ) = 2
 
 1. **SELECT DISTINCT COUNT(cantidad):**
-   Esta consulta primero cuenta el número de filas que tienen valores en la columna "cantidad" y luego cuenta el número de resultados únicos obtenidos. Esto significa que si hay filas con el mismo valor de cantidad, se cuentan solo una vez.
+   Esta consulta primero cuenta **todos** los valores no nulos de la columna "cantidad", con repetidos (6, 1, 1 → 3). Después, el `DISTINCT` se aplica a las filas del resultado, que es una sola (`3`), así que no cambia nada.
 2. **SELECT COUNT(DISTINCT cantidad):**
-   Esta consulta primero encuentra todos los valores únicos en la columna "cantidad" y luego cuenta el número total de valores encontrados. Esto significa que si hay filas con el mismo valor de cantidad, cada uno de esos valores se cuenta solo una vez
-
-> [!warning] Posible error (registrado en `_meta/Bases de Datos/DUDAS.md`)
-> La explicación del punto 1 no corresponde a lo que pasa (aunque el número 3 sí es correcto). En `SELECT DISTINCT COUNT(cantidad)`:
-> 1. `COUNT(cantidad)` cuenta **todos** los valores no nulos, **con repetidos**: 6, 1, 1 → **3**.
-> 2. El `DISTINCT` se aplica después, a las **filas del resultado**, que es una sola (`3`), así que no cambia nada.
->
-> Los repetidos **no** se cuentan una vez: eso solo pasa en el punto 2, `COUNT(DISTINCT cantidad)`, donde los valores distintos {6, 1} dan **2**.
+   Esta consulta primero encuentra todos los valores únicos en la columna "cantidad" y luego cuenta el número total de valores encontrados. Esto significa que si hay filas con el mismo valor de cantidad, ese valor se cuenta solo una vez: {6, 1} → 2.
 
 > [!tip] Complemento (slides "Clase 4: SQL Avanzado")
 > | Expresión | Cuenta | Resultado en `Compra` |

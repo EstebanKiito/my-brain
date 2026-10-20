@@ -8,8 +8,8 @@ prerrequisitos: ["[[03 - GROUP BY|GROUP BY]]", "[[04 - Join con WHERE|Join con W
 
 Una subconsulta en el `FROM` funciona como una **tabla temporal** con alias, que luego se une con otras tablas. Sirve sobre todo para cruzar un resultado agregado con los datos de detalle.
 
-## Join anidado — Ejemplo 1 (mis apuntes)
-“El nombre de cada actor junto con el total de películas en las que ha actuado.”
+## Join anidado: total de películas por actor
+Se busca el nombre de cada actor junto con el total de películas en las que ha actuado.
 
 ```sql
 SELECT Actores.nombre, agg.cuenta 
@@ -31,7 +31,7 @@ WHERE Actores.id = agg.id
 
 | Actuo_en | |
 |---|---|
-| id_actor | pelicula_id |
+| id_actor | id_pelicula |
 | 1 | 1 |
 | 1 | 2 |
 | 1 | 3 |
@@ -39,7 +39,7 @@ WHERE Actores.id = agg.id
 | 3 | 2 |
 | 4 | 3 |
 
-**SUB-CONSULTA:**
+**Subconsulta:**
 
 ```sql
 SELECT id_actor as id, COUNT(*) as cuenta
@@ -47,9 +47,9 @@ FROM Actuo_en
 GROUP BY id_actor;
 ```
 
-→ Cuenta el número de películas en las que cada actor ha actuado. Devuelve dos columnas: "id" (el id del actor) y "cuenta" (el número de películas en las que ha actuado cada actor).
+Cuenta el número de películas en las que cada actor ha actuado. Devuelve dos columnas: "id" (el id del actor) y "cuenta" (el número de películas en las que ha actuado cada actor).
 
-**RESULTADO:**
+**Resultado:**
 
 | nombre | cuenta |
 |---|---|

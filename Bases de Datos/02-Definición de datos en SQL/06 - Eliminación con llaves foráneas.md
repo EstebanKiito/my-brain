@@ -8,7 +8,7 @@ prerrequisitos: ["[[03 - Llaves foráneas|Llaves foráneas]]", "[[05 - INSERT e 
 
 Al borrar una fila referenciada por una llave foránea hay que decidir qué pasa con las filas que apuntan a ella: impedir el borrado (lo que SQL hace por defecto), borrarlas en cascada (`ON DELETE CASCADE`) o dejarlas en nulo (`ON DELETE SET NULL`).
 
-## Eliminación con llaves foráneas (mis apuntes)
+## Ejemplo con autores y libros
 Supongamos que tenemos las siguientes tablas de 'Autores' y 'Libros':
 
 ```sql

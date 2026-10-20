@@ -9,17 +9,14 @@ prerrequisitos: ["[[02 - Modelo relacional|Modelo relacional]]"]
 Las llaves son conjuntos de atributos que **identifican de manera única** cada tupla de una relación. Distinguir superllave, clave candidata y clave primaria es la base de las restricciones de integridad y de la normalización.
 
 ## Explicación de llaves
-- “Una superllave es cualquier conjunto de uno o más atributos que identifica de manera única una tupla en una relación. En otras palabras:
-  - “No puede haber dos filas en la tabla que tengan los mismos valores para los atributos de la superllave.”
+- Una **superllave** es cualquier conjunto de uno o más atributos que identifica de manera única una tupla en una relación. En otras palabras:
+  - no puede haber dos filas en la tabla que tengan los mismos valores en los atributos de la superllave.
 
 ### Clave primaria y clave candidata
 - **Clave candidata:** Es un conjunto mínimo de atributos que puede identificar de manera única una tupla en una relación. Una relación puede tener múltiples claves candidatas.
 - **Clave primaria:** Es una clave candidata elegida por el diseñador de la base de datos para identificar de manera única las tuplas de una relación. Solo puede haber una clave primaria por tabla.
-- **Superllave:** Cualquier combinación de atributos que incluya una clave candidata. Por lo tanto.
-  - “Todas las claves candidatas son superllaves, pero no todas las superllaves son claves candidatas.”
-
-> [!warning] Posible error (registrado en `_meta/Bases de Datos/DUDAS.md`)
-> La frase "Por lo tanto." quedó sin terminar. Por la cita que viene después, la idea completa sería: *por lo tanto, toda clave candidata es una superllave (la mínima), pero no toda superllave es clave candidata*.
+- **Superllave:** Cualquier combinación de atributos que incluya una clave candidata. Por lo tanto:
+  - todas las claves candidatas son superllaves (las mínimas), pero no todas las superllaves son claves candidatas.
 
 ```mermaid
 flowchart LR

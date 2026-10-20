@@ -8,7 +8,7 @@ prerrequisitos: ["[[04 - Álgebra relacional|Álgebra relacional]]"]
 
 El join ⨝ combina las tuplas de dos relaciones que cumplen una condición, por ejemplo que un atributo común sea igual. Es la operación para cruzar información entre tablas.
 
-## Ejemplo (mis apuntes)
+## Ejemplo
 Si tenemos dos relaciones R1(A, B) y R2(B, C) con los siguientes datos:
 
 | R1 | | R2 | |
@@ -45,7 +45,7 @@ Esto nos devolvería la siguiente relación:
 >   X["R1 × R2<br/>5 · 6 = 30 tuplas"] -->|"σ R1.B = R2.B"| S["5 tuplas que calzan"] -->|"una sola columna B"| J["resultado A, B, C"]
 > ```
 >
-> - Con un θ-join "puro" el resultado tiene las dos columnas `R1.B` y `R2.B`, con valores iguales. La tabla de mis apuntes muestra una sola columna B, que es lo que hace el **natural join** $R1 \bowtie R2$: como el atributo común se llama igual, se omite la condición y se deja una sola copia.
+> - Con un θ-join "puro" el resultado tiene las dos columnas `R1.B` y `R2.B`, con valores iguales. La tabla de arriba muestra una sola columna B, que es lo que hace el **natural join** $R1 \bowtie R2$: como el atributo común se llama igual, se omite la condición y se deja una sola copia.
 > - La tupla `(12, 120)` de R2 **no aparece**, porque ninguna tupla de R1 tiene B = 12. Si se quisiera conservarla con A nulo, haría falta un *right outer join*.
 
 > [!example] Ejemplo extra — el join del curso

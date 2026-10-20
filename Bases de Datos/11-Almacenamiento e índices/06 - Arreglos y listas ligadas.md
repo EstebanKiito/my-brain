@@ -8,10 +8,10 @@ prerrequisitos: ["[[05 - Memoria RAM y punteros|Memoria RAM y punteros]]"]
 
 Dos formas de guardar una secuencia en memoria. El **arreglo** usa celdas contiguas de tamaño fijo, con acceso directo por índice. La **lista ligada** usa celdas dispersas unidas por punteros, crece sin límite, pero hay que recorrerla.
 
-## Arreglo (mis apuntes)
-- Un arreglo es una secuencia de celdas de largo fijo
-- Almacenan valores del mismo tipo
-- Es una particion de la memoria RAM
+## Arreglo
+- Un arreglo es una secuencia de celdas de **largo fijo**.
+- Almacena valores del mismo tipo.
+- Ocupa un bloque **contiguo** de la memoria RAM.
 
 ![Arreglo A en memoria](adjuntos/Arreglo%20A%20en%20memoria.png)
 
@@ -19,9 +19,9 @@ Dos formas de guardar una secuencia en memoria. El **arreglo** usa celdas contig
 > Un bloque de memoria donde **A** apunta al inicio del arreglo: $A_0 = 2.47$, $A_1 = 3.76$, $A_2 = 0.35$, $A_3 = -2.0$, en celdas contiguas.
 
 ## Listas ligadas
-- Secuencia de celdas que tienen largo variable
-- Cada celda es del mismo tamaño
-- Se almacena en memoria de manera alteatoria, utlizando PUNTEROS
+- Es una secuencia de celdas de **largo variable**: puede crecer o achicarse.
+- Cada celda es del mismo tamaño.
+- Las celdas quedan dispersas en la memoria y se unen con **punteros**: cada una apunta a la siguiente.
 
 > [!note] Erratas
 > "alteatoria" → aleatoria; "utlizando" → utilizando. "Largo variable" se refiere a la **lista** (puede crecer); cada celda tiene tamaño fijo.

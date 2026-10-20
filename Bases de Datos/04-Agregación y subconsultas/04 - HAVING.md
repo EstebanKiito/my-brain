@@ -8,13 +8,13 @@ prerrequisitos: ["[[03 - GROUP BY|GROUP BY]]"]
 
 `HAVING` filtra **grupos** después de agregar, usando condiciones sobre funciones de agregación. `WHERE`, en cambio, filtra **filas** antes de agrupar.
 
-## HAVING (mis apuntes)
-(Para la misma consulta anterior, pero solo para vendidos mas de 100 veces)
+## HAVING
+La misma consulta de [[03 - GROUP BY|GROUP BY]], pero solo para los productos vendidos más de 100 veces:
 
 ```sql
 SELECT producto, SUM(precio*cantidad) as ventaTotal
 FROM Compra
-WHERE fecha > '10/01'
+WHERE fecha > DATE '2024-01-10'
 GROUP BY producto
 HAVING SUM(cantidad) > 100
 ```
@@ -22,7 +22,7 @@ HAVING SUM(cantidad) > 100
 La cláusula WHERE se utiliza para filtrar filas antes de que se realice la agregación y el agrupamiento, mientras que la cláusula HAVING se utiliza para filtrar resultados después de que se han realizado las operaciones de agregación y agrupamiento.
 
 En este caso específico:
-- La cláusula WHERE fecha > '10/01' filtra las filas de la tabla "Compra" para incluir solo aquellas con fechas posteriores al 10 de enero.
+- La cláusula `WHERE fecha > DATE '2024-01-10'` filtra las filas de la tabla "Compra" para incluir solo aquellas con fechas posteriores al 10 de enero.
 - La cláusula GROUP BY producto agrupa las filas resultantes según el campo "producto".
 - La función de agregación SUM se usa para calcular la suma del producto del precio y la cantidad para cada grupo de productos.
 
@@ -32,7 +32,7 @@ Si intentáramos incluir SUM(cantidad) > 100 en la cláusula WHERE, SQL intentar
 
 ```mermaid
 flowchart LR
-  F[FROM Compra] --> W["WHERE fecha > '10/01'<br/>filtra filas"] --> G[GROUP BY producto] --> H["HAVING SUM(cantidad) > 100<br/>filtra grupos"] --> S[SELECT producto, ventaTotal]
+  F[FROM Compra] --> W["WHERE fecha > 2024-01-10<br/>filtra filas"] --> G[GROUP BY producto] --> H["HAVING SUM(cantidad) > 100<br/>filtra grupos"] --> S[SELECT producto, ventaTotal]
 ```
 
 > [!tip] Complemento

@@ -8,14 +8,13 @@ prerrequisitos: ["[[06 - Acciones conflictivas y conflict serializability|Accion
 
 **Strict Two-Phase Locking** es el protocolo de control de concurrencia más usado: antes de leer o escribir hay que pedir un lock (compartido o exclusivo), y los locks se liberan todos juntos **al terminar** la transacción. Así solo se generan schedules conflict serializables.
 
-## Strict 2PL (Locked Protocols) (mis apuntes)
-- **Regla 1:** Si una Transacción T quiere leer/modificar un objeto
-    - Primero pide un shared lock / exclusive lock sobre el objeto
-    - La Transacción se suspende hasta que consigue el lock
-    - Si una transacción mantiene un exclusive lock de un objeto, ninguna otra transacción puede mantener un shared o exclusive lock sobre el objeto
-    - Para obtener el exclusive lock, no debe haber ningún lock sobre el objeto
-- **Regla 2:**
-    - Cuando la transacción se completa, libera todos los locks que mantenía
+## Strict 2PL (protocolo de locks)
+- **Regla 1:** si una transacción T quiere leer o modificar un objeto:
+    - primero pide un *shared lock* (para leer) o un *exclusive lock* (para modificar) sobre el objeto;
+    - la transacción se suspende hasta que consigue el lock;
+    - si una transacción mantiene un exclusive lock sobre un objeto, ninguna otra puede tener un shared ni un exclusive lock sobre él;
+    - para obtener el exclusive lock, no debe haber ningún otro lock sobre el objeto.
+- **Regla 2:** cuando la transacción se completa, libera todos los locks que mantenía.
 
 ![Strict 2PL - fase de locks](adjuntos/Strict%202PL%20-%20fase%20de%20locks.png)
 

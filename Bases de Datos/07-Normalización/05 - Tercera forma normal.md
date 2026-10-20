@@ -8,26 +8,26 @@ prerrequisitos: ["[[04 - Segunda forma normal|Segunda forma normal]]"]
 
 Una tabla está en **3NF** si está en 2NF y ningún atributo no clave depende de la llave **a través de otro atributo no clave** (no hay dependencias transitivas).
 
-## Tercera forma normal (3NF) (mis apuntes)
+## Tercera forma normal (3NF)
 Una relación está en 3NF si está en 2NF y ningún atributo no clave es transitivamente dependiente de la clave primaria.
 
-Ejemplo de relación NO en 3NF:
+Ejemplo de relación que **no** está en 3NF. Es la tabla de fabricantes que resultó de la [[04 - Segunda forma normal|2NF]], ahora con el continente; su llave es **Fabricante**:
 
-| Fabricante | Modelo | País Fabricante | Continente |
-|---|---|---|---|
-| Forte | X-Prime | Italia | Europa |
-| Hoch | Toothmaster | Alemania | Europa |
+| Fabricante | País Fabricante | Continente |
+|---|---|---|
+| Forte | Italia | Europa |
+| Hoch | Alemania | Europa |
 
-Dependencia transitiva: País Fabricante → Continente
+Dependencia transitiva: Fabricante → País Fabricante → Continente. El continente depende de la llave **a través** del país, que no es llave.
 
 Descomposición para lograr 3NF:
 
 Tabla 1:
 
-| Fabricante | Modelo | País Fabricante |
-|---|---|---|
-| Forte | X-Prime | Italia |
-| Hoch | Toothmaster | Alemania |
+| Fabricante | País Fabricante |
+|---|---|
+| Forte | Italia |
+| Hoch | Alemania |
 
 Tabla 2:
 
@@ -35,11 +35,6 @@ Tabla 2:
 |---|---|
 | Italia | Europa |
 | Alemania | Europa |
-
-> [!warning] Posible error (registrado en `_meta/Bases de Datos/DUDAS.md`)
-> El ejemplo parte de la tabla de [[04 - Segunda forma normal|2NF]] con llave (Fabricante, Modelo), donde Fabricante → País Fabricante es **parcial**. Entonces la tabla original (y también la "Tabla 1" resultante) **no está ni siquiera en 2NF**, y la 3NF exige estar en 2NF.
->
-> Para que el ejemplo sea solo de 3NF, la llave debería ser un solo atributo. Por ejemplo, `Modelo(modelo, fabricante, país, continente)` con llave `modelo` y la cadena modelo → fabricante → país → continente. La descomposición completa sería `(Fabricante, Modelo)`, `(Fabricante, País)` y `(País, Continente)`.
 
 > [!tip] Complemento — definición de la clase (slides "Clase 7")
 > Una relación R está en 3NF si para toda dependencia funcional **no trivial** X → Y:
@@ -60,9 +55,9 @@ Tabla 2:
 > [!question]- Respuesta
 > Para toda dependencia no trivial X → Y, X es superllave o Y es parte de alguna llave minimal.
 
-3. ¿Por qué el ejemplo de mis apuntes no es un buen ejemplo de "2NF pero no 3NF"?
+3. ¿Por qué en el ejemplo la llave es solo Fabricante y no (Fabricante, Modelo)?
 > [!question]- Respuesta
-> Porque con llave (Fabricante, Modelo), Fabricante → País es una dependencia parcial: la tabla no está en 2NF.
+> Porque con llave (Fabricante, Modelo), Fabricante → País sería una dependencia parcial y la tabla ni siquiera estaría en 2NF. Para mostrar una dependencia transitiva hace falta una tabla que ya esté en 2NF.
 
 4. ¿Cómo se descompone una tabla para eliminar la dependencia País → Continente?
 > [!question]- Respuesta

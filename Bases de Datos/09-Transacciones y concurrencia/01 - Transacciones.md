@@ -8,17 +8,17 @@ prerrequisitos: ["[[02 - UPDATE y DELETE|UPDATE y DELETE]]"]
 
 Una transacción es un grupo de operaciones sobre la base de datos que se trata **como una unidad**: o se aplican todas o ninguna, aunque haya fallas o accesos concurrentes. En SQL se delimita con `START TRANSACTION … COMMIT`.
 
-## 4. ACID, transacciones y locks — Transacciones (mis apuntes)
+## Transacciones
 - Una transacción es una secuencia de operaciones que modifican o consultan la base de datos.
 - Su principal objetivo es garantizar la integridad de los datos y la consistencia del estado de la base de datos, incluso en presencia de fallos y errores.
 - Las transacciones tienen varias ventajas, como:
-    - la integridad de los datos
-    - la consistencia
-    - el aislamiento
+    - la integridad de los datos,
+    - la consistencia,
+    - el aislamiento,
     - la durabilidad.
 - Sin embargo, también tienen desventajas, como:
     - la complejidad en el manejo,
-    - el rendimiento
+    - el costo en rendimiento,
     - el uso de recursos.
 
 ![Transacciones - ventajas y desventajas](adjuntos/Transacciones%20-%20ventajas%20y%20desventajas.png)
@@ -35,27 +35,26 @@ Una transacción es un grupo de operaciones sobre la base de datos que se trata 
 ## Transacciones en SQL
 
 ```sql
-START TRANSACTION
+START TRANSACTION;
 
-UPDATE cuentas 
-SET saldo = saldo - v 
-WHERE cid = 1
+UPDATE cuentas
+SET saldo = saldo - v
+WHERE cid = 1;
 
-UPDATE cuentas 
-SET saldo = saldo + v 
-WHERE cid = 2
+UPDATE cuentas
+SET saldo = saldo + v
+WHERE cid = 2;
 
-COMMIT
+COMMIT;
 ```
 
-Transacciones en SQL:
-- START TRANSACTION y COMMIT nos permiten agrupar operaciones en una sola transacción
+`START TRANSACTION` y `COMMIT` agrupan las operaciones en una sola transacción: la transferencia de `v` de la cuenta 1 a la 2 se aplica completa o no se aplica.
 
 **Operaciones:**
 1. **Read(x):** Lectura del elemento x
 2. **Write(x):** Escritura del elemento x
-3. **Abort:** Abortar Transacción
-4. **Commit:** Finalizar Transacción
+3. **Abort:** abortar la transacción.
+4. **Commit:** confirmar y finalizar la transacción.
 
 > [!tip] Complemento (slides "Clase 11: Transacciones y Recuperación de Fallas")
 > - Una transacción es una secuencia de **1 o más** operaciones. Ejemplos: transferencias de dinero entre cuentas, una compra por internet, inscribir un curso…

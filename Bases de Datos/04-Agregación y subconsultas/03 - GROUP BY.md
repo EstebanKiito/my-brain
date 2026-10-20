@@ -8,7 +8,7 @@ prerrequisitos: ["[[01 - Funciones de agregación|Funciones de agregación]]"]
 
 `GROUP BY` separa las filas en grupos que comparten los mismos valores de ciertos atributos y aplica la agregación **a cada grupo por separado**, dejando una fila por grupo.
 
-## GROUP BY (mis apuntes)
+## GROUP BY
 
 | producto | fecha | precio | cantidad |
 |---|---|---|---|
@@ -21,8 +21,8 @@ prerrequisitos: ["[[01 - Funciones de agregación|Funciones de agregación]]"]
 ```sql
 SELECT producto, SUM(precio*cantidad) as ventaTotal
 FROM Compra
-WHERE fecha > '10/01'
-GROUP BY producto
+WHERE fecha > DATE '2024-01-10'  -- fecha es de tipo date
+GROUP BY producto;
 ```
 
 1) **FROM y WHERE:**
@@ -49,9 +49,6 @@ GROUP BY producto
 |---|---|
 | tomates | 1200 |
 | zapallo | 2800 |
-
-> [!warning] Posible error (registrado en `_meta/Bases de Datos/DUDAS.md`)
-> `fecha > '10/01'` compara **strings**, no fechas. Como texto, `'07/02' > '10/01'` es **falso** (`'0' < '1'`), así que en PostgreSQL el `WHERE` no dejaría ninguna fila. El ejemplo (copiado de la slide) supone fechas dd/mm reales "posteriores al 10 de enero". Para que funcione, `fecha` debe ser de tipo `date`: `WHERE fecha > DATE '2024-01-10'`.
 
 > [!tip] Complemento — las cuentas y la regla (slides "Clase 4")
 > - tomates: $100 \cdot 6 + 150 \cdot 4 = 600 + 600 = 1200$; zapallo: $800 \cdot 1 + 1000 \cdot 2 = 2800$. La fila (zapallo, 01/01) queda fuera por el `WHERE`.

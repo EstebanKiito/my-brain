@@ -8,7 +8,7 @@ prerrequisitos: ["[[03 - GROUP BY|GROUP BY]]", "[[08 - Subconsultas en el FROM|S
 
 Una vista (`CREATE VIEW`) es una **consulta guardada con nombre** que se usa como si fuera una tabla. No guarda datos: cada vez que se consulta, se ejecuta la consulta original sobre las tablas base.
 
-## 3. Lógica en base de datos — Vistas (mis apuntes)
+## Vistas
 **Definición y funcionamiento**
 - Las vistas son consultas guardadas en la base de datos que pueden ser reutilizadas.
 - No almacenan datos físicamente; se reescriben las consultas reemplazando la vista por la consulta original.

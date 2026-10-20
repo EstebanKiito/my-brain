@@ -8,14 +8,14 @@ prerrequisitos: ["[[01 - SELECT, FROM y WHERE|SELECT, FROM y WHERE]]", "[[06 - C
 
 `UNION`, `INTERSECT` y `EXCEPT` combinan los resultados de dos consultas como conjuntos, igual que ∪, ∩ y − del álgebra relacional. `UNION ALL` mantiene los duplicados.
 
-## UNION (mis apuntes)
+## UNION
 
 ```sql
-SELECT nombre 
-FROM Actores 
+SELECT nombre
+FROM Actores
 UNION
-SELECT director 
-FROM Peliculas
+SELECT director
+FROM Peliculas;
 ```
 
 | nombre |

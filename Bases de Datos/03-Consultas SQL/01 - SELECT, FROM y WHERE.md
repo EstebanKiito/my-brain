@@ -8,13 +8,14 @@ prerrequisitos: ["[[02 - CREATE TABLE y llave primaria|CREATE TABLE y llave prim
 
 La forma básica de toda consulta SQL: `SELECT` elige las columnas, `FROM` indica las tablas y `WHERE` filtra las filas que cumplen una condición.
 
-## 4. Consultas SQL (Query) + CRUD (mis apuntes)
+## Cláusulas básicas
 1. **SELECT:** Selecciona datos de una base de datos. Los datos devueltos se almacenan en una tabla de resultados, llamada conjunto de resultados. Por ejemplo, `SELECT nombre FROM Personas;` seleccionará todos los nombres de la tabla Personas.
 2. **FROM:** Se utiliza para especificar la tabla de la que se obtendrán los datos. Por ejemplo, en la consulta anterior, Personas es la tabla especificada con FROM.
 3. **WHERE:** Filtra registros. Extrae solo aquellos registros que cumplen una condición especificada. Por ejemplo, `SELECT * FROM Personas WHERE edad > 20;`
     - WHERE en SQL permite el uso de los siguientes operadores:
         - `=`: Igual que.
         - `<>` o `!=`: Diferente que.
+        - `<` y `>`: Menor que y mayor que.
         - `<=`: Menor o igual que.
         - `>=`: Mayor o igual que.
         - **AND:** Operador lógico AND. Selecciona registros donde dos o más condiciones deben ser verdaderas.
@@ -23,7 +24,7 @@ La forma básica de toda consulta SQL: `SELECT` elige las columnas, `FROM` indic
         - **IN:** Permite especificar múltiples valores en una cláusula WHERE.
         - **BETWEEN:** Selecciona valores dentro de un rango. Los valores pueden ser números, texto o fechas.
 
-Los comandos UPDATE y DELETE (los puntos 4 y 5) están en [[02 - UPDATE y DELETE|UPDATE y DELETE]].
+Los comandos UPDATE y DELETE están en [[02 - UPDATE y DELETE|UPDATE y DELETE]].
 
 ### Ejemplos sobre `Personas`
 - **SELECT:**

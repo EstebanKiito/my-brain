@@ -8,7 +8,7 @@ prerrequisitos: ["[[03 - Triggers|Triggers]]"]
 
 Ejemplo completo en PostgreSQL: una **función** en PL/pgSQL que descuenta el stock (y valida que no quede negativo) y un **trigger** que la llama después de cada venta.
 
-## Ejemplo más completo (mis apuntes)
+## Ejemplo completo en PostgreSQL
 Supongamos que tenemos dos tablas: Productos y Ventas.
 - **Productos:** Almacena información sobre los productos y su stock disponible.
 - **Ventas:** Almacena información sobre las ventas realizadas.
@@ -47,7 +47,7 @@ BEGIN
     SET stock = stock - NEW.cantidad
     WHERE id_producto = NEW.id_producto;
     
-    -- Validacion de stock > 0:
+    -- Validación: el stock no puede quedar negativo
     IF (SELECT stock FROM Productos WHERE id_producto=NEW.id_producto) < 0 THEN
         RAISE EXCEPTION 'Stock insuficiente %', NEW.id_producto;
     END IF;
@@ -73,14 +73,14 @@ EXECUTE FUNCTION reducir_stock();
 ```
 
 ### Ejemplo de uso
-1. Insertar Productos
+1. Insertar productos:
 
 ```sql
 INSERT INTO Productos (nombre, precio, stock) VALUES ('Producto A', 100.00, 50);
 INSERT INTO Productos (nombre, precio, stock) VALUES ('Producto B', 200.00, 30);
 ```
 
-2. Insertar una Venta y Activar el Trigger
+2. Insertar una venta, que activa el trigger:
 
 ```sql
 INSERT INTO Ventas (id_producto, cantidad, fecha) VALUES (1, 5, '2024-05-28');

@@ -8,14 +8,11 @@ prerrequisitos: ["[[01 - NULL en SQL|NULL en SQL]]", "[[02 - COUNT y DISTINCT|CO
 
 Las funciones de agregación **ignoran los nulos**. La única excepción es `COUNT(*)`, que cuenta filas aunque tengan nulos.
 
-## COUNT (mis apuntes)
-R | A: {1,null}
-
-SELECT COUNT(*) FROM R = 2
-
-SELECT COUNT(R.A) FROM R = 1
-
-- ojo!: SELECT SUM(R.A) FROM R = 1
+## COUNT
+Si la columna `A` de `R` tiene los valores {1, NULL}:
+- `SELECT COUNT(*) FROM R` → 2: cuenta filas, aunque tengan nulos.
+- `SELECT COUNT(R.A) FROM R` → 1: ignora el nulo.
+- `SELECT SUM(R.A) FROM R` → 1, no NULL: la suma también ignora el nulo.
 
 > [!tip] Complemento (slides "Clase 4: SQL Avanzado")
 > Para funciones de agregación:

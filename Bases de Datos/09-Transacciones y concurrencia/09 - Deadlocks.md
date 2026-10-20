@@ -8,8 +8,8 @@ prerrequisitos: ["[[08 - Strict 2PL|Strict 2PL]]"]
 
 Un deadlock pasa cuando dos (o más) transacciones se esperan **mutuamente**: cada una tiene un lock que la otra necesita, y ninguna puede avanzar. Con 2PL puede ocurrir.
 
-## Deadlocks en 2PL (mis apuntes)
-- Deadlocks: en 2PL
+## Deadlocks en 2PL
+Con 2PL puede producirse un deadlock: cada transacción espera un lock que tiene la otra.
 
 ![Deadlock en 2PL](adjuntos/Deadlock%20en%202PL.png)
 

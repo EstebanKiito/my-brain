@@ -8,8 +8,8 @@ prerrequisitos: ["[[08 - Subconsultas en el FROM|Subconsultas en el FROM]]"]
 
 Segundo ejemplo de join anidado: la subconsulta une `Actuo_en` con `Peliculas` y calcula con `MIN` el año de la primera película de cada actor. Después se une con `Actores` para mostrar el nombre.
 
-## Join anidado — Ejemplo 2 (mis apuntes)
-“El nombre de cada actor junto con el año de la primera película que actuó”
+## Join anidado: primera película de cada actor
+Se busca el nombre de cada actor junto con el año de la primera película en que actuó.
 
 ```sql
 SELECT Actores.nombre, agg.año 
@@ -31,7 +31,7 @@ Tablas `Actores` y `Actuo_en`: las mismas del [[08 - Subconsultas en el FROM|Eje
 | 2 | Interstellar | 2014 |
 | 3 | Harry Potter and the Sorcerer's Stone | 2001 |
 
-**SUB-CONSULTA:**
+**Subconsulta:**
 
 ```sql
 SELECT Actuo_en.id_actor as id, MIN(Peliculas.año) as año 
@@ -45,29 +45,18 @@ Esta subconsulta une las tablas "Actuo_en" y "Peliculas" utilizando la condició
 | id | año |
 |---|---|
 | 1 | 1997 |
-| 2 | 2014 |
-| 3 | 2001 |
+| 2 | 1997 |
+| 3 | 2014 |
 | 4 | 2001 |
 
-**RESULTADO FINAL:**
+**Resultado final:**
 
 | nombre | año |
 |---|---|
 | Leonardo DiCaprio | 1997 |
-| Matthew McConaughey | 2014 |
-| Daniel Radcliffe | 2001 |
+| Matthew McConaughey | 1997 |
+| Daniel Radcliffe | 2014 |
 | Jessica Chastain | 2001 |
-
-> [!warning] Posible error (registrado en `_meta/Bases de Datos/DUDAS.md`)
-> Con la tabla `Actuo_en` del ejemplo (1→1,2,3 · 2→1 · 3→2 · 4→3), los años mínimos serían:
-> | id | películas | año mínimo |
-> |---|---|---|
-> | 1 | Titanic, Interstellar, Harry Potter | 1997 ✅ |
-> | 2 | Titanic | **1997** (no 2014) |
-> | 3 | Interstellar | **2014** (no 2001) |
-> | 4 | Harry Potter | 2001 ✅ |
->
-> Las filas de McConaughey y Radcliffe no calzan con los datos, salvo que `Actuo_en` fuera distinta. Además, la columna se llama `pelicula_id` en la tabla y `id_pelicula` en la consulta.
 
 > [!tip] Complemento (slides "Clase 4")
 > Pregunta de la slide: **"¿Qué pasa si queremos el nombre de la película además del año?"** No se puede agregar `Peliculas.nombre` a la subconsulta, porque no está en el `GROUP BY`. Una solución es volver a unir con `Peliculas`:
@@ -92,7 +81,7 @@ Esta subconsulta une las tablas "Actuo_en" y "Peliculas" utilizando la condició
 
 2. Según los datos de `Actuo_en`, ¿cuál debería ser el primer año de Matthew McConaughey?
 > [!question]- Respuesta
-> 1997, porque su única película es la 1 (Titanic). La tabla de mis apuntes dice 2014, lo que es inconsistente.
+> 1997, porque su única película es la 1 (Titanic).
 
 3. ¿Por qué no basta con agregar `Peliculas.nombre` al `SELECT` de la subconsulta?
 > [!question]- Respuesta

@@ -8,7 +8,7 @@ prerrequisitos: ["[[01 - NULL en SQL|NULL en SQL]]"]
 
 Con nulos, SQL no usa solo verdadero/falso: toda comparación con `NULL` da **UNKNOWN**. Las operaciones aritméticas con `NULL` dan `NULL`, y el `WHERE` deja pasar **solo** las filas con condición `TRUE`.
 
-## Operaciones con nulos (mis apuntes)
+## Operaciones con nulos
 
 | R | S |
 |---|---|
@@ -21,19 +21,16 @@ SELECT R.A + S.B
 FROM R, S
 ```
 
-| R.A + R.S |
+| R.A + S.B |
 |---|
 | 3 |
 | 4 |
-| Null |
-| Null |
+| NULL |
+| NULL |
 
-Si tenemos R.A = S.B
-1. R.A = 1 y S.B = 2 → FALSE
-2. R.A = Null S.B= 2 → UNKWNOWN
-
-> [!warning] Posible error (registrado en `_meta/Bases de Datos/DUDAS.md`)
-> El encabezado del resultado debería ser **R.A + S.B** (no "R.A + R.S"), y "UNKWNOWN" es **UNKNOWN**. Los valores son correctos: el producto cruz da 4 filas, $1+2=3$, $1+3=4$ y las dos filas con `R.A` nulo dan `null`.
+Con la condición `R.A = S.B`:
+1. `R.A = 1` y `S.B = 2` → FALSE.
+2. `R.A = NULL` y `S.B = 2` → UNKNOWN.
 
 > [!tip] Complemento — tablas de verdad (slides "Clase 4: SQL Avanzado")
 > "Si algún argumento de una operación aritmética es nulo, el resultado es nulo." Las comparaciones con nulo dan **unknown**, que se combina así:

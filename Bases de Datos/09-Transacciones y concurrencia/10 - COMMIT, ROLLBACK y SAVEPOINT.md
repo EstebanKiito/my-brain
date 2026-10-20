@@ -8,7 +8,7 @@ prerrequisitos: ["[[01 - Transacciones|Transacciones]]"]
 
 Los comandos SQL para controlar una transacción: `COMMIT` la confirma, `ROLLBACK` la deshace completa y `SAVEPOINT` marca un punto intermedio al que se puede volver con `ROLLBACK TO SAVEPOINT`.
 
-## Transacciones en SQL (mis apuntes)
+## Transacciones en SQL
 1. **Commit**
 
 ```sql
@@ -17,8 +17,8 @@ START TRANSACTION;
 	FROM Actores; 
 COMMIT;
 
--- Se hace autom. cuando se ejecuta una consulta --
--- O cuando se conecta a la DB --
+-- Fuera de un bloque de transacción, cada consulta
+-- se confirma automáticamente (autocommit)
 ```
 
 2. **Rollback**
@@ -30,7 +30,7 @@ START TRANSACTION;
 	WHERE nombre = 'Adrian Soto'; 
 ROLLBACK;
 
--- Rollback -> Deshace una transaccion
+-- ROLLBACK deshace toda la transacción
 ```
 
 3. **SavePoints**
@@ -46,15 +46,15 @@ START TRANSACTION;
 		WHERE nombre = 'Juan Reutter';
 ROLLBACK TO SAVEPOINT MejorActor;
 
--- Al ejecutar "ROLLBACK TO SAVEPOINT" se borra el SAVEPOINT
-
--- Muy util para hacer varias transaciones y verificar condiciones
+-- Se deshace solo lo posterior al SAVEPOINT (la bio de Juan Reutter);
+-- el cambio a Adrian Soto sigue pendiente de COMMIT.
+-- Útil para probar varios pasos y verificar condiciones.
 ```
 
 > [!tip] Complemento (slides "Clase 11" y documentación de PostgreSQL)
 > - **Autocommit:** si no se escribe `START TRANSACTION`, cada sentencia es su propia transacción y se confirma sola. Lo mismo ocurre al conectarse con un lenguaje de programación, según la librería.
 > - **Tras `ROLLBACK TO SAVEPOINT MejorActor`:** se deshace solo el cambio a 'El peor actor'. La bio de Adrian Soto **sigue cambiada**, y la transacción sigue abierta: hay que terminarla con `COMMIT` (para guardar 'El mejor actor') o con `ROLLBACK`.
-> - En PostgreSQL, el savepoint **no se borra** con `ROLLBACK TO` (sí con `RELEASE SAVEPOINT`), así que se puede volver a él varias veces. Que "se borra" vale para otros motores o para los savepoints creados después de él.
+> - En PostgreSQL, el savepoint **no se borra** con `ROLLBACK TO` (sí con `RELEASE SAVEPOINT`), así que se puede volver a él varias veces. Los que sí se borran son los savepoints creados después de él.
 > - Si una sentencia falla dentro de una transacción, PostgreSQL la marca como abortada y rechaza todo hasta el `ROLLBACK`.
 >
 > ```mermaid

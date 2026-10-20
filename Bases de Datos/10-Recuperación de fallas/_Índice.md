@@ -5,7 +5,7 @@ Qué puede fallar en una base de datos y cómo el log permite recuperar un estad
 Volver al [[Bases de Datos/_Índice|mapa del ramo]].
 
 > [!note] Origen
-> Mis apuntes de la I2, «Tipos de Fallas en Transacciones y Soluciones», que quedaron inconclusos («Seguir escribiendo este resumen…»). Las notas 02 a 05 son complemento de las slides de la clase 11 (Transacciones y Recuperación de Fallas).
+> La nota 01 parte de los apuntes del ramo («Tipos de Fallas en Transacciones y Soluciones»). Las notas 02 a 05 son complemento de las slides de la clase 11 (Transacciones y Recuperación de Fallas).
 
 ## Orden de estudio
 1. [[01 - Tipos de fallas|Tipos de fallas]]: datos erróneos, almacenamiento, catástrofes, sistema.

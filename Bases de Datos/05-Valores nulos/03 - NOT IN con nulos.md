@@ -8,7 +8,7 @@ prerrequisitos: ["[[02 - Lógica de tres valores|Lógica de tres valores]]", "[[
 
 Si la subconsulta de un `NOT IN` devuelve **algún NULL**, la condición nunca puede ser verdadera y el resultado queda **vacío**. Es la trampa más famosa de los nulos.
 
-## Ejemplos (mis apuntes)
+## Ejemplos
 
 | R | S |
 |---|---|
@@ -27,7 +27,7 @@ WHERE S.A NOT IN (
 )
 ```
 
-RESULTADO: {3,4}
+Resultado: {3, 4}.
 
 | R | S |
 |---|---|
@@ -46,11 +46,11 @@ WHERE S.A NOT IN (
 )
 ```
 
-RESULTADO: TABLA VACIA!!!
+Resultado: **tabla vacía**.
 
-Cuando intentas hacer la comparación S.A NOT IN (SELECT R.A FROM R), el valor NULL se maneja de manera especial. La comparación NULL NOT IN (...) se comporta como si la condición fuera desconocida. Por lo tanto, no se puede determinar si el valor NULL está presente o no en el conjunto resultante de la subconsulta. Como resultado, se devuelve una tabla vacía debido a que el resultado de la subconsulta no se puede determinar en presencia de valores NULL.
+El NULL está **dentro** del conjunto que devuelve la subconsulta. Al evaluar `S.A NOT IN (SELECT R.A FROM R)`, cada comparación con ese NULL da UNKNOWN, así que para 3 y 4 la condición no llega a ser verdadera, y para 1 y 2 es falsa. Ninguna fila cumple la condición y el resultado queda vacío.
 
-**EXPLICACION:**
+**Explicación:**
 
 ```sql
 3 NOT IN {1,2,null}
@@ -58,15 +58,13 @@ Cuando intentas hacer la comparación S.A NOT IN (SELECT R.A FROM R), el valor N
 = NOT (3=1 OR 3=2 OR 3 = null) 
 = NOT (FALSE OR FALSE OR UNKNOWN) 
 = NOT (UNKNOWN)
-= UNKWNOWN
-
-# MISMO RAZONAMIENTO PARA 4 NOT IN {1,2,null}
+= UNKNOWN
+-- mismo razonamiento para 4 NOT IN {1,2,null}
 ```
 
 > [!tip] Complemento (slides "Clase 4: SQL Avanzado")
 > - "El resultado puede ser contraintuitivo pero es correcto."
 > - Para los otros valores de S: `1 NOT IN (SELECT R.A FROM R)` es **FALSE** (1 sí está), lo mismo para 2. Para 3 y 4 el resultado es **UNKNOWN**. Ninguna fila da TRUE, así que la tabla queda vacía.
-> - Precisión sobre el párrafo de mis apuntes: el problema no es "NULL NOT IN (…)". Es que el NULL está **dentro** del conjunto de la subconsulta, y entonces cada comparación `3 = null` da UNKNOWN.
 >
 > **Cómo evitarlo:**
 > ```sql

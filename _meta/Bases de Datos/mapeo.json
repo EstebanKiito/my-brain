@@ -1,4 +1,5 @@
 {
+  "cobertura": "reescrita",
   "_descripcion": "Mapeo de las fuentes originales (rutas relativas a _raw/) a los temas del vault. Cada sección va desde el encabezado 'desde' (incluido) hasta 'hasta' (excluido). 'aceptados' lista bloques originales que no tienen destino a propósito, con su motivo. Las clases (PDF/PPTX de 'CLASES (2023 2°)- Base Datos/') son fuente de complementos y no se verifican por bloques.",
   "carpeta_ramo": "Bases de Datos",
   "fuentes": {

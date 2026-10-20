@@ -8,14 +8,13 @@ prerrequisitos: ["[[03 - Disco, RAM y buffer pool|Disco, RAM y buffer pool]]"]
 
 El costo de una consulta se mide en **I/O**: cuántas páginas hay que traer del disco a la RAM. Una tabla de $|R|$ tuplas con $B$ tuplas por página ocupa $\lceil |R|/B \rceil$ páginas, y recorrerla entera cuesta eso.
 
-## 6. EDD y almacenamiento e índices (mis apuntes)
+## Costo de una consulta
 
 ![Cómo se guarda una tabla - 9 tuplas en 3 páginas](adjuntos/Cómo%20se%20guarda%20una%20tabla%20-%209%20tuplas%20en%203%20páginas.png)
 
-- El costo mas grande en una base de datos es:
-    - Traer las paginas del disco duro a la RAM
-    - Objetivo: Responder las consultas haciendo la menor cantidad de lecutras al disco
-- **Costo I/O:** Numero de paginas llevadas a la memoria para responder consulta
+- El costo más grande en una base de datos es **traer las páginas del disco duro a la RAM**.
+- Objetivo: responder las consultas haciendo la menor cantidad posible de lecturas al disco.
+- **Costo I/O:** número de páginas llevadas a memoria para responder una consulta.
 
 ### Memorias
 

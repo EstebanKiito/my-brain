@@ -8,10 +8,10 @@ prerrequisitos: ["[[03 - Primera forma normal|Primera forma normal]]"]
 
 Una tabla está en **2NF** si está en 1NF y ningún atributo no clave depende de **solo una parte** de una llave compuesta (no hay dependencias parciales).
 
-## Segunda forma normal (2NF) (mis apuntes)
+## Segunda forma normal (2NF)
 Una relación está en 2NF si está en 1NF y todos los atributos no clave son completamente dependientes de la clave primaria, es decir, no hay dependencias parciales.
 
-Ejemplo de relación NO en 2NF:
+Ejemplo de relación que **no** está en 2NF, con llave (Fabricante, Modelo):
 
 | Fabricante | Modelo | País Fabricante |
 |---|---|---|
@@ -19,7 +19,7 @@ Ejemplo de relación NO en 2NF:
 | Forte | Ultraclean | Italia |
 | Hoch | Toothmaster | Alemania |
 
-Dependencia funcional parcial: Fabricante → País Fabricante
+Dependencia funcional parcial: Fabricante → País Fabricante. El país depende solo de una parte de la llave.
 
 Descomposición para lograr 2NF:
 

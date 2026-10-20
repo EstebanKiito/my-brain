@@ -8,20 +8,19 @@ prerrequisitos: ["[[01 - SELECT, FROM y WHERE|SELECT, FROM y WHERE]]"]
 
 `NULL` es como SQL representa la **falta de información**. No es un valor como 0 o `''`: cualquier comparación con él da *desconocido*, por eso se pregunta con `IS NULL` y no con `= NULL`.
 
-## NULL (mis apuntes)
-En sql se modela la falta de informacion mediante nulos (NULL)
+## NULL
+En SQL, la falta de información se modela con nulos (`NULL`).
 
-En general los nulos pueden significar:
-- Valor existe, pero no tengo la información
-- Valor no existe (si nombre = null la información no existe)
-- Ni siquiera sé si el valor existe o no
+En general, un nulo puede significar que:
+- el valor existe, pero no se tiene la información;
+- el valor no existe (por ejemplo, alguien sin segundo nombre);
+- ni siquiera se sabe si el valor existe o no.
 
-- SELECT * FROM R ≠ SELECT * FROM R WHERE R.b=3 OR R.b<>3 → (Que no sea ni 3 ni distinto a 3 NO ES NULO!!!)
+`SELECT * FROM R` **no** equivale a `SELECT * FROM R WHERE R.b = 3 OR R.b <> 3`: si `R.b` es nulo, ni `R.b = 3` ni `R.b <> 3` son verdaderos (ambos dan *unknown*), así que esas filas se pierden. Para recuperarlas hay que agregar las filas con `R.b IS NULL`:
 
 ```sql
-SELECT * FROM R 
-# <=>
-
+SELECT * FROM R
+-- equivale a:
 SELECT * FROM R WHERE R.b = 3
 UNION
 SELECT * FROM R WHERE R.b <> 3
@@ -29,12 +28,8 @@ UNION
 SELECT * FROM R WHERE R.b IS NULL
 ```
 
-- **IS NULL:** True si es nulo
-- **IS NOT NULL:** True si no es nulo
-
-> [!warning] Posible error (registrado en `_meta/Bases de Datos/DUDAS.md`)
-> - La frase "(Que no sea ni 3 ni distinto a 3 NO ES NULO!!!)" se presta a confusión. La idea de la slide es la contraria: **si `R.b` es nulo**, ni `R.b = 3` ni `R.b <> 3` son verdaderos (ambos dan *unknown*). Por eso `WHERE R.b = 3 OR R.b <> 3` **pierde las filas con `b` nulo**, y hay que agregar `UNION … WHERE R.b IS NULL` para recuperar `SELECT * FROM R`.
-> - `# <=>` es una anotación ("equivale a"), no SQL: en SQL los comentarios son `--`.
+- **IS NULL:** verdadero si el valor es nulo.
+- **IS NOT NULL:** verdadero si el valor no es nulo.
 
 > [!tip] Complemento (slides "Clase 4: SQL Avanzado")
 > - **Información incompleta:** en una base de datos real, muchas veces no tenemos los datos para llenar todas las columnas al agregar una fila. Otras veces, por la lógica del problema, que un campo esté vacío tiene un significado relevante (por ejemplo, "sin premios").

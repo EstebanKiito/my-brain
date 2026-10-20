@@ -8,23 +8,23 @@ prerrequisitos: ["[[02 - Vistas materializadas|Vistas materializadas]]", "[[02 -
 
 Un trigger es un procedimiento que la base de datos ejecuta **automáticamente** cuando ocurre un evento (`INSERT`, `UPDATE` o `DELETE`) en una tabla: antes, después o en lugar de la operación.
 
-## Triggers (mis apuntes)
+## Triggers
 **Definición y funcionamiento**
 - Los triggers son procedimientos que se ejecutan automáticamente en respuesta a ciertos eventos en la base de datos.
-- Pueden ser ejecutados antes o después de eventos como INSERT, UPDATE, DELETE.
+- Se pueden ejecutar antes o después de eventos como `INSERT`, `UPDATE` o `DELETE`.
 
 **Tipos de triggers**
 - **BEFORE:** Antes de la operación.
 - **AFTER:** Después de la operación.
 - **INSTEAD OF:** En lugar de la operación.
-- Ej: BEFORE CREATE
+- Ejemplo: `BEFORE INSERT`, `AFTER UPDATE`. (`CREATE` no es un evento de trigger.)
 
-Observacion: Se ejecuta el trigger por
-1. cada FILA afectada por el evento: FOR EACH ROW
-2. 1 vez por evento: FOR EACH STATEMENT
+**Observación:** el trigger se ejecuta:
+1. una vez por cada **fila** afectada por el evento: `FOR EACH ROW`;
+2. una sola vez por evento: `FOR EACH STATEMENT`.
 
 **Ejemplo de Trigger**
-Reducir el stock de un producto cada vez que se crea una venta.
+Reducir el stock de un producto cada vez que se crea una venta. Esta es la sintaxis genérica de la slide; en PostgreSQL el trigger llama a una función (ver [[04 - Trigger para descontar stock en PLpgSQL|la versión completa]]).
 
 ```sql
 CREATE TRIGGER reducir_stock
@@ -33,39 +33,27 @@ FOR EACH ROW
 BEGIN
   UPDATE Productos
   SET stock = Productos.stock - 1
-  WHERE NEW.id_productos = Productos.id;
+  WHERE NEW.id_producto = Productos.id;
 END;
 ```
 
 ### Ejemplo de actualizar vistas materializadas
 
-```sql
-CREATE TRIGGER refresh_eval 
-AFTER CREATE ON Evaluaciones 
-FOR EACH STATEMENT
-BEGIN
-	REFRESH MATERIALIZED VIEW PelEval 
-END
-```
+En PostgreSQL, el trigger llama a una función que hace el refresco. El evento es cualquier cambio en `Evaluaciones`:
 
-> [!warning] Posible error (registrado en `_meta/Bases de Datos/DUDAS.md`)
-> - **`BEFORE CREATE` / `AFTER CREATE ON Evaluaciones`:** `CREATE` no es un evento de trigger. Los eventos son `INSERT`, `UPDATE`, `DELETE` (y `TRUNCATE` en PostgreSQL). El error viene de la slide, que dice `{CREATE | DELETE | UPDATE}`; el primer ejemplo de mis apuntes sí usa `AFTER INSERT`.
-> - **Sintaxis:** la forma `BEGIN … END` dentro del `CREATE TRIGGER` es "más o menos así" (MySQL/genérica), como advierte la slide. En PostgreSQL el trigger **llama a una función**. Además falta el `;` después de `REFRESH MATERIALIZED VIEW PelEval`.
->
-> Versión PostgreSQL del refresco:
-> ```sql
-> CREATE OR REPLACE FUNCTION refrescar_peleval() RETURNS TRIGGER AS $$
-> BEGIN
->   REFRESH MATERIALIZED VIEW PelEval;
->   RETURN NULL;   -- en triggers FOR EACH STATEMENT el valor de retorno se ignora
-> END;
-> $$ LANGUAGE plpgsql;
->
-> CREATE TRIGGER refresh_eval
-> AFTER INSERT OR UPDATE OR DELETE ON Evaluaciones
-> FOR EACH STATEMENT
-> EXECUTE FUNCTION refrescar_peleval();
-> ```
+```sql
+CREATE OR REPLACE FUNCTION refrescar_peleval() RETURNS TRIGGER AS $$
+BEGIN
+  REFRESH MATERIALIZED VIEW PelEval;
+  RETURN NULL;   -- en triggers FOR EACH STATEMENT el valor de retorno se ignora
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER refresh_eval
+AFTER INSERT OR UPDATE OR DELETE ON Evaluaciones
+FOR EACH STATEMENT
+EXECUTE FUNCTION refrescar_peleval();
+```
 
 > [!tip] Complemento (slides "Clase 8" y documentación de PostgreSQL)
 > - Los triggers ayudan a **forzar restricciones más complejas** que un `CHECK` y a mantener la consistencia de la BD (como stock o vistas materializadas al día).

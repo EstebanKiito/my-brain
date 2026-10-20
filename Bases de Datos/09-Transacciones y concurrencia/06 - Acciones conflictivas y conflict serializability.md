@@ -8,9 +8,10 @@ prerrequisitos: ["[[05 - Schedules serial y serializable|Schedules serial y seri
 
 Dos operaciones de transacciones distintas **conflictúan** si usan el mismo dato y al menos una escribe. Las no conflictivas se pueden intercambiar. Un schedule es **conflict serializable** si, intercambiándolas, se puede llevar a uno serial.
 
-## Transacciones no conflictivas (mis apuntes)
-- Transaccion i ejecuta Read(X,t) → Ri(x)
-- Transaccion i ejecuta Write(X,t) → Wi(x)
+## Acciones no conflictivas
+Notación:
+- si la transacción i ejecuta `Read(X,t)`, se escribe $R_i(X)$;
+- si la transacción i ejecuta `Write(X,t)`, se escribe $W_i(X)$.
 
 ![Acciones no conflictivas](adjuntos/Acciones%20no%20conflictivas.png)
 
@@ -36,10 +37,11 @@ Dos operaciones de transacciones distintas **conflictúan** si usan el mismo dat
 > **Permutaciones no permitidas:** T2 WRITE(A) · T1 READ(A) (marcado con ✗: no se pueden intercambiar) · T2 WRITE(C) · T1 WRITE(C) · T1 WRITE(A) · T2 READ(A) · T1 READ(D).
 
 ## Se pueden permutar operaciones consecutivas
-1. Par de operaciones que NO USEN EL MISMO RECURSO
-2. Par de operaciones que USAN EL MISMO RECURSO PERO AMBAS DE LECTURA
+Se pueden intercambiar dos operaciones consecutivas de transacciones distintas si:
+1. no usan el mismo recurso, o
+2. usan el mismo recurso, pero **ambas son lecturas**.
 
-Schedule es “CONFLICT SERIALIZABLE” → Si se puede transformar en uno serial usando permutaciones.
+Un schedule es **conflict serializable** si se puede transformar en uno serial usando estas permutaciones.
 
 > [!tip] Complemento (slides "Clase 11")
 > - Las operaciones **de una misma transacción** tampoco se pueden reordenar: $P_i(X), Q_i(Y)$ es conflictivo para P, Q en {R, W}.

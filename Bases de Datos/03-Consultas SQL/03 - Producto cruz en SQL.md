@@ -8,9 +8,7 @@ prerrequisitos: ["[[01 - SELECT, FROM y WHERE|SELECT, FROM y WHERE]]", "[[04 - �
 
 Cuando el `FROM` tiene varias tablas, SQL calcula su producto cartesiano: cada fila de la primera tabla combinada con cada fila de la segunda. Equivale al operador × del álgebra.
 
-> [!note] En mis apuntes de la sección 4 había un ítem «Producto Cruz:» vacío; el contenido está en esta nota.
-
-## PRODUCTO CRUZ: (FROM Tabla1, Tabla2) (mis apuntes)
+## Producto cruz: `FROM Tabla1, Tabla2`
 El producto cruz (o producto cartesiano) en SQL se realiza implícitamente mediante el operador FROM cuando se especifican varias tablas. Esto genera una nueva tabla que combina cada fila de la primera tabla con cada fila de la segunda tabla.
 
 Por ejemplo, si tenemos dos tablas, R y S:

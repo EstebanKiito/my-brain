@@ -5,7 +5,7 @@ Cómo ejecuta el DBMS los operadores del álgebra relacional: iteradores, selecc
 Volver al [[Bases de Datos/_Índice|mapa del ramo]].
 
 > [!note] Origen
-> Mis apuntes no cubren este tema. Todas las notas son complemento de las slides de la clase 10 (Evaluación de consultas); el costo del external merge sort viene del libro de Ramakrishnan y Gehrke.
+> Todas las notas son complemento de las slides de la clase 10 (Evaluación de consultas); el costo del external merge sort viene del libro de Ramakrishnan y Gehrke.
 
 ## Orden de estudio
 1. [[01 - Algoritmos en un DBMS e iteradores|Algoritmos en un DBMS e iteradores]]: open/next/close y costo en I/O.

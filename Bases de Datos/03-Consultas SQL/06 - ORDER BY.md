@@ -8,7 +8,7 @@ prerrequisitos: ["[[01 - SELECT, FROM y WHERE|SELECT, FROM y WHERE]]"]
 
 `ORDER BY` ordena el resultado de una consulta por uno o más atributos, de forma ascendente (por defecto) o descendente (`DESC`).
 
-## Ordenamiento (mis apuntes)
+## Ordenamiento
 
 ```sql
 SELECT nombre, calificacion
@@ -16,12 +16,8 @@ FROM Peliculas
 ORDER BY nombre, calificacion
 ```
 
-→ Orden Ascendente por nombre (alfabéticamente), el desempate seria por calificación
-
-→ (Order by resuelve un empate por el ultimo atributo entregado)
-
-> [!warning] Posible error (registrado en `_meta/Bases de Datos/DUDAS.md`)
-> No es "por el último atributo", sino **por el siguiente de la lista**. La slide dice: *"El i-ésimo atributo del ORDER BY resuelve un empate en el atributo i-1"*. Con `ORDER BY a, b, c`, un empate en `a` se resuelve con `b` y, si sigue empatado, con `c`. Con dos atributos, el siguiente coincide con el último, por eso el ejemplo funciona.
+- Ordena de forma ascendente por `nombre` (alfabéticamente); si hay empate, desempata por `calificacion`.
+- En general, cada atributo del `ORDER BY` **resuelve los empates del anterior**: con `ORDER BY a, b, c`, un empate en `a` se resuelve con `b` y, si sigue empatado, con `c`.
 
 | nombre | calificacion |
 |---|---|

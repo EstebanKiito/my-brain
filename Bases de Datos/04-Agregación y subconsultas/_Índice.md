@@ -5,7 +5,7 @@ Resumir datos con funciones de agregación y GROUP BY / HAVING, y anidar consult
 Volver al [[Bases de Datos/_Índice|mapa del ramo]].
 
 > [!note] Origen
-> Mis apuntes de la I1, sección «SQL 2» (de agregación a join anidado). Complementos de las slides de la clase 4 (SQL Avanzado).
+> Las notas parten de los apuntes del ramo, sección «SQL 2» (de agregación a join anidado). Complementos de las slides de la clase 4 (SQL Avanzado).
 
 ## Orden de estudio
 1. [[01 - Funciones de agregación|Funciones de agregación]]: AVG, MIN, MAX, COUNT, SUM y la forma general.

@@ -8,10 +8,10 @@ prerrequisitos: ["[[02 - Disco duro y páginas|Disco duro y páginas]]"]
 
 La RAM es una gran matriz de bits a la que se accede por **direcciones**. Un **puntero** es una variable cuyo valor es la dirección de otra. Son la base de las estructuras de datos que usan los índices.
 
-## Memoria RAM (mis apuntes)
-- La memoria ram es una gran matriz donde se guardan 0 y 1 (Bits)
-- Se pueden acceder a esos datos mediante direcciones
-- Cada fila tiene una direccion unica
+## Memoria RAM
+- La memoria RAM es una gran matriz donde se guardan ceros y unos (bits).
+- A esos datos se accede mediante **direcciones**.
+- Cada fila tiene una dirección única.
 
 ![Memoria RAM de 1 GB - direcciones](adjuntos/Memoria%20RAM%20de%201%20GB%20-%20direcciones.png)
 
@@ -19,7 +19,7 @@ La RAM es una gran matriz de bits a la que se accede por **direcciones**. Un **p
 > **RAM de 1 GB**: una matriz de 32 columnas (bits) con direcciones 0, 4, 8, 12, 16, 20, 24, 28, …, 1073741816, 1073741820. Una fila es una **palabra de 32 bits o 4 bytes**; por ejemplo, la de la dirección 24 ocupa las direcciones 24, 25, 26 y 27. Cada bit solo puede valer 0 o 1.
 
 ## Puntero
-- Es la variable cuyo valor es la DIRECCION de memoria de otra variable
+- Es una variable cuyo valor es la **dirección de memoria** de otra variable.
 
 ![Puntero - celdas de memoria](adjuntos/Puntero%20-%20celdas%20de%20memoria.png)
 

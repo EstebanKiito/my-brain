@@ -8,10 +8,10 @@ prerrequisitos: ["[[02 - CREATE TABLE y llave primaria|CREATE TABLE y llave prim
 
 Una vez creada, una tabla se puede eliminar entera con `DROP TABLE` o cambiar su estructura con `ALTER TABLE`, agregando o quitando atributos.
 
-## 2. Modificar tabla (mis apuntes)
-1. `DROP TABLE <Nombre_tabla>`: Eliminar la Tabla
-2. `ALTER TABLE <Nombre_tabla> DROP COLUMN <Atributo>`: Eliminar Atributo de la Tabla
-3. `ALTER TABLE <Nombre_tabla> ADD COLUMN <Atributo> <varchar(255)>`: Añadir Atributo a la Tabla
+## Modificar una tabla
+1. `DROP TABLE <Nombre_tabla>`: elimina la tabla.
+2. `ALTER TABLE <Nombre_tabla> DROP COLUMN <Atributo>`: elimina un atributo de la tabla.
+3. `ALTER TABLE <Nombre_tabla> ADD COLUMN <Atributo> <tipo>`: añade un atributo a la tabla (por ejemplo, de tipo `varchar(255)`).
 
 > [!tip] Complemento — ejemplos de la clase (slides "Clase 3")
 > ```sql

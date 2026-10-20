@@ -8,15 +8,11 @@ prerrequisitos: ["[[03 - Superllaves, claves candidatas y clave primaria|Superll
 
 Una dependencia funcional X → Y dice que los valores de X **determinan** los de Y. Es la herramienta para detectar redundancia y anomalías, y la base de las formas normales.
 
-## 2. Formas normales y dependencias — Dependencias funcionales (mis apuntes)
-Una dependencia funcional en una relación R es una restricción entre dos conjuntos de atributos.
+## Dependencias funcionales
+Una dependencia funcional en una relación R es una restricción entre dos conjuntos de atributos. Si X e Y son conjuntos de atributos de R, **X determina Y** (se escribe X → Y) si para todo par de tuplas $t_1$ y $t_2$ de R se cumple: si $t_1[X] = t_2[X]$, entonces $t_1[Y] = t_2[Y]$.
 
-Si X y Y son conjuntos de atributos de R, X determina Y (denotado X→Y)
-
-Si para cada par de tuplas t1 y t2 en R, si t1[X] = t2[X], entonces t1[Y]=t2[Y]
-
-### Dependencias funcionales - Ejemplo
-Considera la tabla Guías:
+### Ejemplo
+Se considera la tabla `Guías`:
 
 | gid | nombre | score | horas | valorHora |
 |---|---|---|---|---|
@@ -25,9 +21,7 @@ Considera la tabla Guías:
 | 3 | Cristian | 5 | 30 | 15000 |
 | 4 | Pedro | 8 | 32 | 18000 |
 
-Dependencia funcional: score → valorHora
-
-Esto indica que el valor de valorHora está determinado por score.
+Dependencia funcional: **score → valorHora**. El valor de `valorHora` está determinado por `score`: todas las filas con score 8 tienen valorHora 18000.
 
 > [!tip] Complemento — por qué importan: redundancia y anomalías (slides "Clase 7: Dependencias y Formas Normales")
 > En `Guías(gid, nombre, score, horas, valorHora)` el pago por hora depende del score, y eso causa:

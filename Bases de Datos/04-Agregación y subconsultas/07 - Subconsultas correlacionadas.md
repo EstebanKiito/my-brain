@@ -8,8 +8,8 @@ prerrequisitos: ["[[05 - Consultas anidadas (IN, ALL, ANY, EXISTS)|Consultas ani
 
 Una subconsulta correlacionada **usa atributos de la consulta externa**, así que se evalúa de nuevo para cada fila de afuera.
 
-## Subconsultas relacionadas (mis apuntes)
-Las sub-consultas dependen de la externa!
+## Subconsultas correlacionadas
+La subconsulta depende de la consulta externa: usa `p.nombre`, que cambia con cada fila de afuera.
 
 ```sql
 SELECT p.nombre 
@@ -51,7 +51,7 @@ WHERE p.año <> ANY (
 > [!question]- Respuesta
 > Que hace referencia a un atributo de la consulta externa (aquí, `p.nombre`), así que su resultado depende de la fila externa que se esté evaluando.
 
-2. ¿Qué devuelve la consulta de mis apuntes?
+2. ¿Qué devuelve la consulta de esta nota?
 > [!question]- Respuesta
 > Los nombres de las películas que existen con el mismo nombre en más de un año distinto.
 

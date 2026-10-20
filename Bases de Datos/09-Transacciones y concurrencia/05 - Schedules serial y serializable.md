@@ -8,14 +8,14 @@ prerrequisitos: ["[[04 - Lecturas sucias, no repetibles y actualización perdida
 
 Un **schedule** es el orden en que el DBMS intercala las operaciones de varias transacciones. Es **serial** si no intercala nada y **serializable** si, aunque intercale, siempre da el mismo resultado que algún orden serial.
 
-## Schedules (S) (mis apuntes)
+## Schedules
 - Un schedule (programa de ejecución) es una secuencia de operaciones primitivas de una o más transacciones.
 - Las operaciones pueden ser de lectura (R) o escritura (W).
-- Un schedule es **Serial** si no hay intercalación entre las acciones.
+- Un schedule es **serial** si no hay intercalación entre las acciones.
 
 ![Schedule serial - T1 y T2](adjuntos/Schedule%20serial%20-%20T1%20y%20T2.png)
 
-- Un schedule es **Serializable** si existe algún schedule serial con las mismas transacciones, tal que el resultado de S y S' es el mismo para todo estado inicial de la BD.
+- Un schedule S es **serializable** si existe algún schedule serial S' con las mismas transacciones, tal que el resultado de S y S' es el mismo para todo estado inicial de la BD.
 
 ![Schedule serializable - T1 y T2](adjuntos/Schedule%20serializable%20-%20T1%20y%20T2.png)
 
@@ -30,37 +30,41 @@ Un **schedule** es el orden en que el DBMS intercala las operaciones de varias t
 > | **No serializable** | T1 sobre A → T2 sobre A → T2 sobre B → T1 sobre B. "En T2, la transacción de WRITE(B, y) realiza cambios que afectan a READ(B,x), por lo que el orden sí cambia los resultados y por lo mismo el schedule No es serializable." |
 
 ## Ejemplos de schedules
-- Schedule Serial:
+- **Schedule serial:** todo T1 (A + 100, B + 200) y después todo T2 (A · 2, B · 3).
 
 ```sql
+-- T1
 READ(A,x)
 x = x + 100
 WRITE(A,x)
-
 READ(B,x)
 x = x + 200
 WRITE(B,x)
-```
-
-- Schedule No Serializable:
-
-```sql
-READ(A,x)
-x = x + 100
-WRITE(A,x)
-
+-- T2
+READ(A,y)
+y = y * 2
+WRITE(A,y)
 READ(B,y)
 y = y * 3
 WRITE(B,y)
+```
 
-READ(B,x)
+- **Schedule no serializable:** T1 hace A, T2 hace A, T2 hace B y recién después T1 hace B. En A, T1 va antes que T2; en B, T2 va antes que T1. Ningún orden serial produce ese resultado.
+
+```sql
+READ(A,x)    -- T1
+x = x + 100
+WRITE(A,x)
+READ(A,y)    -- T2
+y = y * 2
+WRITE(A,y)
+READ(B,y)    -- T2
+y = y * 3
+WRITE(B,y)
+READ(B,x)    -- T1
 x = x + 200
 WRITE(B,x)
 ```
-
-> [!warning] Posible error (registrado en `_meta/Bases de Datos/DUDAS.md`)
-> - El "Schedule Serial" de mis apuntes muestra **solo T1**. El serial completo agrega después todo T2 (A·2, B·3).
-> - En el "Schedule No Serializable" falta la parte de T2 sobre A (`READ(A,y); y = y * 2; WRITE(A,y)`) entre `WRITE(A,x)` y `READ(B,y)`. Sin ella, el código no muestra por qué no es serializable. Con la imagen: T1 hace A → T2 hace A → T2 hace B → T1 hace B.
 
 > [!tip] Complemento — por qué el último no es serializable (slides "Clase 11")
 > Con $A = B = 100$ al inicio:

@@ -8,7 +8,7 @@ prerrequisitos: ["[[01 - Dependencias funcionales|Dependencias funcionales]]"]
 
 Una tabla está en **1NF** si cada celda tiene un valor **atómico** (no una lista ni un grupo de valores) y no hay filas repetidas. Es el requisito mínimo del modelo relacional.
 
-## Formas normales — Primera forma normal (1NF) (mis apuntes)
+## Primera forma normal (1NF)
 Una relación está en 1NF si y solo si todos los atributos son atómicos (no divisibles) y cada registro es único.
 
 Ejemplo de relación NO en 1NF:

@@ -8,14 +8,14 @@ prerrequisitos: ["[[01 - SELECT, FROM y WHERE|SELECT, FROM y WHERE]]"]
 
 `SELECT DISTINCT` elimina las filas repetidas del resultado. Hace falta porque SQL, a diferencia del álgebra relacional, trabaja con **multiconjuntos**: no quita duplicados por sí solo.
 
-## DISTINCT: (Elimina repetidos) (mis apuntes)
+## DISTINCT: elimina repetidos
 
 ```sql
-SELECT DISTINCT nombre 
-FROM Peliculas
+SELECT DISTINCT nombre
+FROM Peliculas;
 ```
 
-En esta tabla, se muestran los nombres únicos de las películas presentes en la tabla "Peliculas", sin ningún nombre repetido.
+El resultado muestra los nombres únicos de las películas presentes en la tabla "Peliculas", sin ningún nombre repetido.
 
 | nombre |
 |---|

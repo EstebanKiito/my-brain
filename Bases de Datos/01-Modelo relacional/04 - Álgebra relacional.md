@@ -8,18 +8,14 @@ prerrequisitos: ["[[02 - Modelo relacional|Modelo relacional]]"]
 
 El álgebra relacional es el **lenguaje teórico** del modelo relacional: un conjunto de operadores que reciben tablas y devuelven tablas. Sobre ella se construyen SQL y la forma en que el DBMS ejecuta las consultas.
 
-## Operadores (mis apuntes)
+## Operadores
 1. **Select (σ):** El operador Select se utiliza para seleccionar tuplas de una relación que satisfacen una condición dada. La condición se puede especificar utilizando operadores de comparación como =, <>, <, <=, >, >=.
 2. **Project (π):** El operador Project se utiliza para seleccionar ciertos atributos (columnas) de una relación.
 3. **Union (∪):** El operador Union combina las tuplas de dos relaciones y elimina las duplicadas. Las dos relaciones deben ser compatibles con la unión, es decir, deben tener el mismo número de atributos y los atributos correspondientes deben tener el mismo dominio.
 4. **Set Difference (-):** El operador Set Difference elimina las tuplas de una relación que también aparecen en otra.
 5. **Cartesian Product (x):** El operador Cartesian Product combina tuplas de dos relaciones.
 6. **Rename (ρ):** El operador Rename cambia los nombres de las relaciones o los atributos.
-7. **Join (⨝):** El operador Join combina tuplas de dos relaciones basándose en una condición de igualdad. Hay varios tipos de Join, incluyendo Inner Join, Left Outer Join, Right Outer Join y Full Outer Join.
-
-> [!warning] Posible error (registrado en `_meta/Bases de Datos/DUDAS.md`)
-> - **"basándose en una condición de igualdad":** eso describe el *equi-join*. En la clase el join se define con **cualquier condición** (θ-join): $R_1 \bowtie_{condición} R_2 = \sigma_{condición}(R_1 \times R_2)$. La igualdad es solo el caso más común.
-> - **Tipos de join:** en el álgebra relacional de la clase solo está el join interno. Los *outer joins* (LEFT, RIGHT, FULL) son una extensión que se usa sobre todo en SQL.
+7. **Join (⨝):** El operador Join combina las tuplas de dos relaciones que cumplen una condición (θ-join): $R_1 \bowtie_{condición} R_2 = \sigma_{condición}(R_1 \times R_2)$. El caso más común es una condición de igualdad (*equi-join*). Los *outer joins* (LEFT, RIGHT, FULL) son una extensión que se usa sobre todo en SQL.
 
 ## Notación formal
 

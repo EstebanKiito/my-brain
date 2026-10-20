@@ -8,7 +8,7 @@ prerrequisitos: ["[[02 - CREATE TABLE y llave primaria|CREATE TABLE y llave prim
 
 Una llave foránea (`FOREIGN KEY … REFERENCES`) obliga a que el valor de una columna exista como llave en otra tabla. Así se enlazan las tablas y se mantiene la integridad referencial.
 
-## 1.1 Llaves foráneas (mis apuntes)
+## Llaves foráneas
 Una llave foránea establece un enlace entre los datos en dos tablas, y lo hace con el propósito de asociar los datos que se encuentran en las tablas.
 
 ```sql

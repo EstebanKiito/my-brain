@@ -8,12 +8,12 @@ prerrequisitos: ["[[01 - Arquitectura de un DBMS|Arquitectura de un DBMS]]"]
 
 Las tablas viven en disco, que se lee por **páginas** (bloques de varios KB). Leer del disco es órdenes de magnitud más lento que leer de RAM, así que todo el diseño del almacenamiento busca minimizar las páginas leídas.
 
-## 5. Arquitectura de sistemas y recuperación de fallas — almacenamiento y jerarquía de memoria (mis apuntes)
+## Almacenamiento y jerarquía de memoria
 ### Disco duro
 - **Sector:** Es la unidad física mínima de almacenamiento en un disco duro, generalmente de 512 bytes o 4096 bytes en discos más modernos.
 - **Página:** Unidad lógica mínima de almacenamiento que el sistema operativo gestiona, generalmente de 4 KB.
 - **Clúster:** Conjunto de sectores agrupados para mejorar la eficiencia de la gestión de archivos.
-- **Estructura del Disco:**
+- **Estructura del disco:**
     - **Pistas:** Anillos concéntricos en el disco.
     - **Sectores:** Divisiones de las pistas.
     - **Cilindros:** Conjunto de pistas alineadas verticalmente a través de los platos del disco.

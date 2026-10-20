@@ -5,7 +5,7 @@ Lógica de negocio que puede vivir dentro del DBMS: vistas, vistas materializada
 Volver al [[Bases de Datos/_Índice|mapa del ramo]].
 
 > [!note] Origen
-> Mis apuntes de la I2, «3. Lógica en Base de Datos». Complementos de las slides de la clase 8 (Lógica en la BDD). La parte de la clase sobre programar con SQL (Python, SQL injection, ORM) está en el tema «Bases de datos en aplicaciones».
+> Las notas parten de los apuntes del ramo, sección «Lógica en Base de Datos». Complementos de las slides de la clase 8 (Lógica en la BDD). La parte de la clase sobre programar con SQL (Python, SQL injection, ORM) está en el tema «Bases de datos en aplicaciones».
 
 ## Orden de estudio
 1. [[01 - Vistas|Vistas]]: consultas guardadas, cómo se reescriben.
