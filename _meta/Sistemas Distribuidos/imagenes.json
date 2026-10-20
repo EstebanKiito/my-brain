@@ -880,5 +880,54 @@
     "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=247",
     "destino": "Sistemas Distribuidos/16-Teoremas CAP y PACELC/adjuntos/Árbol de decisión de PACELC.png",
     "sha256": "50223f048a5e6e7203404b2e146a51da7f0aa15c11a4c41774c1da8f3b199ab3"
+  },
+  {
+    "tema": "Consistencia centrada en el cliente",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 19.png",
+    "destino": "Sistemas Distribuidos/17-Consistencia centrada en el cliente/adjuntos/Las cuatro garantías de sesión.png",
+    "sha256": "cca849b002e6326dc4986a767114796612ba2dd909e5f643714430b4fc576b57"
+  },
+  {
+    "tema": "Consistencia centrada en el cliente",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 20.png",
+    "destino": "Sistemas Distribuidos/17-Consistencia centrada en el cliente/adjuntos/Monotonic reads cumplido y violado.png",
+    "sha256": "07645dc754ffcf3eaa26a34e62c581917034ca50250af72796fe001148cbb31b"
+  },
+  {
+    "tema": "Consistencia centrada en el cliente",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 21.png",
+    "destino": "Sistemas Distribuidos/17-Consistencia centrada en el cliente/adjuntos/Monotonic reads con dos réplicas.png",
+    "sha256": "6f7e0119e6b38bee568764b1b91e1c078bb3b0758e5cc5f38555846aa7c25199"
+  },
+  {
+    "tema": "Consistencia centrada en el cliente",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 22.png",
+    "destino": "Sistemas Distribuidos/17-Consistencia centrada en el cliente/adjuntos/Monotonic writes en cuatro casos.png",
+    "sha256": "7202eaa399d2227f133feefc9af3c05b9a25d2bf01b94f63721dde2ef0ee041f"
+  },
+  {
+    "tema": "Consistencia centrada en el cliente",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 23.png",
+    "destino": "Sistemas Distribuidos/17-Consistencia centrada en el cliente/adjuntos/Read your writes cumplido y violado.png",
+    "sha256": "639abbc8b94651a998988dd034190bb6304df962eaeabe8ae34f2caf733b930e"
+  },
+  {
+    "tema": "Consistencia centrada en el cliente",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 24.png",
+    "destino": "Sistemas Distribuidos/17-Consistencia centrada en el cliente/adjuntos/Writes follow reads cumplido y violado.png",
+    "sha256": "b4129e29333d3b556e31a69f60c84c84619c276196477ea96c6dd7d5c4d52ea1"
+  },
+  {
+    "tema": "Consistencia centrada en el cliente",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=300",
+    "destino": "Sistemas Distribuidos/17-Consistencia centrada en el cliente/adjuntos/Pregunta de garantías de sesión del cliente A.png",
+    "sha256": "c9ca0e3dad0a777e45d39600b068669affcebcc9d11efa2434a6532bcd57828d"
   }
 ]

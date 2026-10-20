@@ -203,8 +203,19 @@
     },
     "Consistencia centrada en el cliente": {
       "carpeta": "Sistemas Distribuidos/17-Consistencia centrada en el cliente",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i2",
+          "desde": "Clase 17",
+          "hasta": "Clase 18"
+        },
+        {
+          "fuente": "apuntes_i2",
+          "desde": "Consistencia en el Cliente",
+          "hasta": "Replicacion de Datos"
+        }
+      ]
     },
     "Ataques a sistemas distribuidos": {
       "carpeta": "Sistemas Distribuidos/18-Ataques a sistemas distribuidos",
