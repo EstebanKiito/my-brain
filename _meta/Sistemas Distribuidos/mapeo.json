@@ -88,8 +88,19 @@
     },
     "Relojes lógicos y estados globales": {
       "carpeta": "Sistemas Distribuidos/07-Relojes lógicos y estados globales",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Reloj Logico",
+          "hasta": "Algoritmos Para Relojes fisicos"
+        },
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Clase 6",
+          "hasta": "Clase 7"
+        }
+      ]
     },
     "Consenso": {
       "carpeta": "Sistemas Distribuidos/08-Consenso",
@@ -232,6 +243,16 @@
       "fuente": "apuntes_i1",
       "texto": "Typo: 05:08 - 00:07 → 07 debio ser 13",
       "motivo": "Errata de la imagen del ejemplo 1 de NTP; la imagen se reemplazó por la versión corregida de las slides (tipo 'editada')."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "Materia extra que por culpa de Cristian Ruz se agrego al ramo jijiji!",
+      "motivo": "Comentario personal sobre el programa del curso."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "En la tarea usaremos reloj logico! Que implicancias debe tener → Los test automaticos notaran eso",
+      "motivo": "Comentario sobre la tarea; se resume en Gestión del curso."
     }
   ]
 }

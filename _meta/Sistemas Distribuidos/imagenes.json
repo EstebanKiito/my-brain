@@ -299,5 +299,145 @@
     "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=285",
     "destino": "Sistemas Distribuidos/06-Sincronización de relojes físicos/adjuntos/Ejemplo numérico de Berkeley.png",
     "sha256": "5f1f887931e3a759fb5b568e62f87318fa1f2a8b7756150e3025648b269d0ac2"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 31.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Eventos de tres procesos antes de Lamport.png",
+    "sha256": "75176c730ba85eb66ad8a1c852e10c3cd8aef31fd5961c22cdae191ab118554b"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 32.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Contadores de Lamport en tres procesos.png",
+    "sha256": "e1d97f0e6cdc49a685e867971b7f5825d55c6401081378bd4933f03c37d6e121"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 40.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Lamport no permite inferir causalidad.png",
+    "sha256": "1f7aab044d4014ce176770c97c44e47f9f99f9e30f8316871592e4e8eea5a846"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 41.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Definición de reloj vectorial.png",
+    "sha256": "287fd60bcfa33d468877d35b71e31405ee9f6e452ef3ffae72e5069130a51b6b"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 42.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Reglas del reloj vectorial.png",
+    "sha256": "80edf2e29df31962e69c6739982c516e789866d1b1a4e2915351379335500466"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 43.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Comparar eventos con relojes vectoriales.png",
+    "sha256": "6acfaf8847d8d3796b8139033b497162b8b221044c32232ddc9794db41dce697"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 44.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Primeros vectores del ejemplo.png",
+    "sha256": "8bc59aa08a018a35f3ac3342c12fc58272d779895d4cca7e810d632a3b54e477"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 45.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Vectores completos del ejemplo.png",
+    "sha256": "6fda259164e197e235d7156cd5fe3d630f7c1960a460a0050717115875d2ab50"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 46.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Concurrencia y causalidad con vectores.png",
+    "sha256": "9fbb562366b59c7aa71af6f366e8d479ea342e4466081e85a285ca39e1c53b97"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 47.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Usos de un estado global.png",
+    "sha256": "84ff93bd93400c482c8c44cfa2b3f31010056eee123befac29a87895c86ab87e"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 48.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Corte consistente e inconsistente.png",
+    "sha256": "0377a84cc660123a2fa9f622aca91d36c95fc581adb910386fb195bd53e16df2"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 49.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Idea del algoritmo de Chandy-Lamport.png",
+    "sha256": "e8a6c6c0531471fdba5dcbca1d554cb490f775c64f6d05c583eb8818406f8c8b"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 50.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Casos de propagación del marcador.png",
+    "sha256": "2cae7e3409c798c667b1ba25f4ca81b62feef552dfefc2252f2d560d4500acca"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 51.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Finalización de Chandy-Lamport.png",
+    "sha256": "b5a9130461d91c1f2a4bf198a811a0b15dbfbb26ed1f454afe979c839631e714"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 52.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Chandy-Lamport tras el primer marcador.png",
+    "sha256": "21f73197a1f4bb8a18b21e8516bc22e1ad318fbc4471255ffeb6bc8068adb878"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 53.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Chandy-Lamport con los tres estados guardados.png",
+    "sha256": "c4a7adda166dab8a8e44206314340909de62b3adff3c107b23b33ff19b50b955"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 54.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Canal de Y a K con un mensaje grabado.png",
+    "sha256": "d4574546c41f6c00181715ac5073a47d277550048b4288179c048bb2581d1208"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 55.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Canal de K a Y vacío.png",
+    "sha256": "dc8a4fceb100de28156de9758e10df526a56af2c0955149813bf2c6cc6a9bab0"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 56.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Canal de Y a S con un mensaje grabado.png",
+    "sha256": "ab3228877ae9f508e294fd1b0b1e8e54ac9ec8985f1086e2e01c6dbde0a29466"
+  },
+  {
+    "tema": "Relojes lógicos y estados globales",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 57.png",
+    "destino": "Sistemas Distribuidos/07-Relojes lógicos y estados globales/adjuntos/Estado global final de Chandy-Lamport.png",
+    "sha256": "dd19215b729abe80895937f8c46f2e90541bc594a3761912859d1b71a60d80d6"
   }
 ]
