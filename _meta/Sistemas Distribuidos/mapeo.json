@@ -192,8 +192,14 @@
     },
     "Teoremas CAP y PACELC": {
       "carpeta": "Sistemas Distribuidos/16-Teoremas CAP y PACELC",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i2",
+          "desde": "Clase 16",
+          "hasta": "Clase 17"
+        }
+      ]
     },
     "Consistencia centrada en el cliente": {
       "carpeta": "Sistemas Distribuidos/17-Consistencia centrada en el cliente",

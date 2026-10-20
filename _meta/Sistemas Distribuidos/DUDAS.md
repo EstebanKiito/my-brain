@@ -49,3 +49,8 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
 | ℹ️ | [[02 - Control pesimista y optimista\|Control pesimista y optimista]] | Ejemplo de control pesimista, paso 5: "T2 hace commit y 'Lock' Z" | Por el paso siguiente (T3 puede tomar Z), al hacer commit T2 **libera** el lock de Z. La transcripción y la nota dicen "libera". |
+
+## Teoremas CAP y PACELC
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| 🟡 | [[02 - Teorema PACELC\|Teorema PACELC]] | Pregunta del banco global: la slide marca **PC/EC** | El enunciado dice que, sin partición, la réplica local responde con saldos posiblemente atrasados por la sincronización periódica: eso prioriza la latencia (EL), no la consistencia. La respuesta coherente parece PC/EL. La nota explica ambas y menciona la discrepancia. Conviene confirmarlo con el material o el equipo docente. |

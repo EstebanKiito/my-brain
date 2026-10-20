@@ -859,5 +859,26 @@
     "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=222",
     "destino": "Sistemas Distribuidos/15-Control de concurrencia distribuido/adjuntos/Comparación de políticas de resolución de conflictos.png",
     "sha256": "54b5adb17931ee8b29429dfa8e865ff3fc48a4c2123f98d66c29fee237106091"
+  },
+  {
+    "tema": "Teoremas CAP y PACELC",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=237",
+    "destino": "Sistemas Distribuidos/16-Teoremas CAP y PACELC/adjuntos/Sistema CP ante una partición.png",
+    "sha256": "d3acbd3504254b85962297754bb60b6ea0f93441cea414d6a20e66eb6d70217e"
+  },
+  {
+    "tema": "Teoremas CAP y PACELC",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=238",
+    "destino": "Sistemas Distribuidos/16-Teoremas CAP y PACELC/adjuntos/Sistema AP ante una partición.png",
+    "sha256": "3438a146b36d3dcd95166273c56128ec3d61ead096d7161ac16c109c5cc13e92"
+  },
+  {
+    "tema": "Teoremas CAP y PACELC",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=247",
+    "destino": "Sistemas Distribuidos/16-Teoremas CAP y PACELC/adjuntos/Árbol de decisión de PACELC.png",
+    "sha256": "50223f048a5e6e7203404b2e146a51da7f0aa15c11a4c41774c1da8f3b199ab3"
   }
 ]
