@@ -17,13 +17,7 @@ prerrequisitos:
 
 ## La estructura de un test
 
-Todo test sigue el mismo esquema:
-
-- **Dado** un conjunto de condiciones iniciales (*dado que hoy hace frío*),
-- **cuando** se ejecutan ciertas acciones (*cuando salgo con poco abrigo*),
-- **entonces** se cumplen las expectativas (*entonces me da frío*).
-
-En Jest, `describe` agrupa y `test` (o `it`) define cada caso:
+Todo test sigue el mismo esquema: **dado** un conjunto de condiciones iniciales (*dado que hoy hace frío*), **cuando** se ejecutan ciertas acciones (*cuando salgo con poco abrigo*), **entonces** se cumplen las expectativas (*entonces me da frío*). En Jest, `describe` agrupa y `test` (o `it`) define cada caso:
 
 ```javascript
 describe('Dado que hoy hace frío', () => {
@@ -142,7 +136,7 @@ jobs:
 Si un test falla, Jest termina con un código distinto de 0 y el workflow queda en rojo en el commit y en el PR.
 
 > [!tip] `timeout-minutes` siempre
-> Un test que se queda esperando (una promesa que nunca se resuelve, un servidor que no se cierra) puede dejar el job corriendo hasta el límite por defecto de GitHub, que es de horas. Un timeout corto corta el problema.
+> Un test que se queda esperando (una promesa que nunca se resuelve, un servidor sin cerrar) dejaría el job corriendo hasta el límite por defecto de GitHub, que es de horas.
 
 ## Preguntas de repaso
 
