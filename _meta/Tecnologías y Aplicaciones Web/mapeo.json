@@ -169,8 +169,28 @@
     },
     "Gestión del curso": {
       "carpeta": "Tecnologías y Aplicaciones Web/22-Gestión del curso",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes",
+          "desde": "Tecnologías y Aplicaciones Web - IIC2513",
+          "hasta": "Clase 0"
+        },
+        {
+          "fuente": "apuntes",
+          "desde": "Clase 0",
+          "hasta": "Clase 1"
+        },
+        {
+          "fuente": "proyecto",
+          "desde": "Cosas a arreglar E2"
+        },
+        {
+          "fuente": "trucos",
+          "desde": "Esto es para añadir codigos",
+          "por_texto": true
+        }
+      ]
     }
   },
   "aceptados": [
@@ -238,6 +258,56 @@
       "fuente": "tareas",
       "texto": "if (!reviews || reviews.length === 0) {",
       "motivo": "Fragmento del proyecto; la idea (lista vacía responde 200 con []) quedó en Rutas y routers en Express."
+    },
+    {
+      "fuente": "proyecto",
+      "texto": "Cosas a arreglar E2",
+      "motivo": "Página personal de seguimiento del proyecto (pendientes de una entrega); no es contenido del ramo."
+    },
+    {
+      "fuente": "proyecto",
+      "texto": "Detalles:",
+      "motivo": "Página personal de seguimiento del proyecto (pendientes de una entrega); no es contenido del ramo."
+    },
+    {
+      "fuente": "proyecto",
+      "texto": "Preguntas",
+      "motivo": "Página personal de seguimiento del proyecto (pendientes de una entrega); no es contenido del ramo."
+    },
+    {
+      "fuente": "proyecto",
+      "texto": "a",
+      "motivo": "Ítems vacíos de una lista personal del proyecto."
+    },
+    {
+      "fuente": "trucos",
+      "texto": "Esto es para añadir codigos de Componentes, Hooks, Conceptos, Etc… Que sirva aprender",
+      "motivo": "Página plantilla vacía (solo la descripción de lo que iba a contener)."
+    },
+    {
+      "fuente": "trucos",
+      "texto": "Buenas Practicas",
+      "motivo": "Página plantilla vacía (títulos sin contenido)."
+    },
+    {
+      "fuente": "trucos",
+      "texto": "Ejemplos de Uso",
+      "motivo": "Página plantilla vacía (títulos sin contenido)."
+    },
+    {
+      "fuente": "trucos",
+      "texto": "Links de Stack Overflow",
+      "motivo": "Página plantilla vacía (títulos sin contenido)."
+    },
+    {
+      "fuente": "trucos",
+      "texto": "Conceptos",
+      "motivo": "Página plantilla vacía (títulos sin contenido)."
+    },
+    {
+      "fuente": "trucos",
+      "texto": "etc",
+      "motivo": "Página plantilla vacía (títulos sin contenido)."
     }
   ]
 }

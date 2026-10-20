@@ -105,7 +105,6 @@ test('(async/await) adds 2 + 3 to equal 5', async () => {
 ```javascript
 const myFn = jest.fn();
 const myImplementedFn = jest.fn(() => 'return value');
-
 myFn();
 myFn();
 myImplementedFn();
