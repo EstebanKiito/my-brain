@@ -61,8 +61,14 @@
     },
     "Invocación remota": {
       "carpeta": "Sistemas Distribuidos/05-Invocación remota",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Invocacion Remota",
+          "hasta": "Clase 5: Coordinacion y Sincronizacion"
+        }
+      ]
     },
     "Sincronización de relojes físicos": {
       "carpeta": "Sistemas Distribuidos/06-Sincronización de relojes físicos",
@@ -195,6 +201,11 @@
       "fuente": "apuntes_i1",
       "texto": "Lo vimos en progra Avanzada",
       "motivo": "Comentario personal sobre otro ramo."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "Para nosotros es: Tengo un archivo externo que hace muchas cosas por mi, pero no esta en mi computadora",
+      "motivo": "Analogía personal; la idea (importar el servidor) está en la nota de RPC."
     }
   ]
 }

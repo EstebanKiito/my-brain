@@ -201,5 +201,47 @@
     "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 24.png",
     "destino": "Sistemas Distribuidos/04-Comunicación indirecta/adjuntos/Sistema publish-subscribe con publicadores y suscriptores.png",
     "sha256": "7c57b1974a52cc03c0892934d55ac8aefa4ba663ee3d0773074a8ffa835ac131"
+  },
+  {
+    "tema": "Invocación remota",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 25.png",
+    "destino": "Sistemas Distribuidos/05-Invocación remota/adjuntos/Protocolo request-reply.png",
+    "sha256": "2df49065933896ed8a267f25a2b2d338de99d35ca906c0346e83057ee8911c84"
+  },
+  {
+    "tema": "Invocación remota",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 26.png",
+    "destino": "Sistemas Distribuidos/05-Invocación remota/adjuntos/Mecanismo RPC con stubs y runtime.png",
+    "sha256": "85b306e1570f6ec89490703537ef2c0bbc56d02c2eea00fded47e2ce30fc803c"
+  },
+  {
+    "tema": "Invocación remota",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 27.png",
+    "destino": "Sistemas Distribuidos/05-Invocación remota/adjuntos/La misma consulta con REST y con RPC.png",
+    "sha256": "c30398e8f19d42372880b260d4cca20091e5117858633763d5884ffb76926cb0"
+  },
+  {
+    "tema": "Invocación remota",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 28.png",
+    "destino": "Sistemas Distribuidos/05-Invocación remota/adjuntos/Servidor RPC con SimpleXMLRPCServer.png",
+    "sha256": "a5574117cc55407eb1a1b79e57d093321838a0628a5144033ed6f81d576c3be4"
+  },
+  {
+    "tema": "Invocación remota",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 29.png",
+    "destino": "Sistemas Distribuidos/05-Invocación remota/adjuntos/Cliente RPC con ServerProxy.png",
+    "sha256": "128bfe0c5826c71ed2590dfd93c0ed59add7d2d2ed90f5de282924b25ca862bc"
+  },
+  {
+    "tema": "Invocación remota",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 30.png",
+    "destino": "Sistemas Distribuidos/05-Invocación remota/adjuntos/Arquitectura de gRPC entre dos servicios.png",
+    "sha256": "19d5c8f9c5fe856b59bc00f4d327dd6bf3e230b1cd46c7251a94089bc4b9af7a"
   }
 ]

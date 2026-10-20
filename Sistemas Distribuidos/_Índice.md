@@ -9,3 +9,4 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: basta con b
 | [[Sistemas Distribuidos/02-Procesos e hilos en Python/_Índice\|Procesos e hilos en Python]] | Nodo, paralelismo y concurrencia, IPC, procesos y threads en Python, locks, semáforos, eventos, join, panadería y deadlock |
 | [[Sistemas Distribuidos/03-Comunicación directa y sockets/_Índice\|Comunicación directa y sockets]] | Persistencia, sincronía y acoplamiento, paradigmas, TCP y UDP, DNS y HTTP, sockets en Python y MPI |
 | [[Sistemas Distribuidos/04-Comunicación indirecta/_Índice\|Comunicación indirecta]] | Intermediarios, grupos y memoria compartida, colas de mensajes y sistemas publish-subscribe |
+| [[Sistemas Distribuidos/05-Invocación remota/_Índice\|Invocación remota]] | Request-reply, REST, RPC y stubs, RPC y RMI con xmlrpc, gRPC y Protocol Buffers |

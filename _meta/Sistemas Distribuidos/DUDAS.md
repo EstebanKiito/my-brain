@@ -14,3 +14,8 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 |---|---|---|---|
 | ℹ️ | [[03 - Protocolos de transporte TCP y UDP\|Protocolos de transporte TCP y UDP]] | Apuntes y slides: UDP "manda paquetes de máximo 64Kb" | El límite es de 64 KB (kilobytes: 65 535 bytes de datagrama, unos 65 507 de datos), no de 64 kilobits. La nota dice 64 KB. |
 | ℹ️ | [[04 - Protocolos de aplicación DNS y HTTP\|Protocolos de aplicación DNS y HTTP]] | Petición HTTP de ejemplo con la línea `Remote Address: 185.178.208.140:443` | `Remote Address` lo muestran las herramientas del navegador, pero no es una cabecera HTTP: es la IP y el puerto de la conexión TCP. La nota lo saca del mensaje y lo explica aparte. |
+
+## Invocación remota
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ℹ️ | [[04 - gRPC y Protocol Buffers\|gRPC y Protocol Buffers]] | Slide de Protocol Buffers: esquema `message Character { string username = ""; string phase = ""; }` e `import character_pb3` | En proto3 cada campo lleva un número de campo (`string username = 1;`); con `= ""` `protoc` falla con "Expected field number". Además, el módulo generado para Python se llama `character_pb2` aunque el esquema sea proto3. La nota usa la versión que compila (y `phrase` en vez de `phase`). |
