@@ -551,5 +551,110 @@
     "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 73.png",
     "destino": "Sistemas Distribuidos/08-Consenso/adjuntos/Mensajes firmados con el líder traidor.png",
     "sha256": "d7b4aa014689ff53ccac5fce5ba6c669147f4f4903faf4cada6626ced35ca855"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 74.png",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Bully envía Election a los de mayor ID.png",
+    "sha256": "ec77bdcd4a32a9edb82dbfdee776c44fd26c519b9a31d1c93a315bcd7736f9da"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 75.png",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Bully responde Ok al nodo menor.png",
+    "sha256": "457c4e51b14bbc95ac64f65cdf128d0e87a87b8e9e751172e5a9dd292d966bb0"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 76.png",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Bully proclama al siguiente mayor vivo.png",
+    "sha256": "bc36781a5db8af06d2317659fb15da86c1d4214e05d2796f4a4950fad0fbab25"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 77.png",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Election timeout y postulación en Raft.png",
+    "sha256": "d2c23c978d5076ba3d514234de009ea7f55afee64576ba1dfa9f114fc7c10d94"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 78.png",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Reglas de votación en Raft.png",
+    "sha256": "a13af4d75d690c0c521b57c3033225f6bbbdaf6499116f3ee29d7aaa720b75a3"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 79.png",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Raft caso 1 con el candidato más actualizado.png",
+    "sha256": "a9fd26f4dc4154376920f0140227071e519961d41dd4fc318bcd59154bbf5ed1"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 80.png",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Raft caso 2 con el candidato menos actualizado.png",
+    "sha256": "2391c9725f60c55b8228c48fa6d36c909a37667f25353223f551b6e5ccf3d076"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 81.png",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Raft caso 3 con solo el term actualizado.png",
+    "sha256": "b8b4ed0f8734a79aeb40cb1458ffc8edb94d201bf838c35be072e5ee587b1ad0"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 82.png",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Raft caso 4 con term y logs no tan actualizados.png",
+    "sha256": "00f55a672f994f5bbc0a1931ad06a18757a3584335f7ae4104d471643d0b3b17"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 83.png",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Raft replica el log del líder.png",
+    "sha256": "d8e19419f8d1c3bf27c71a8608b4ebb8bba420bce31ee055daba9dfd9916e182"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=420",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Bully caso inicial.png",
+    "sha256": "3fcc695028670dafd79aa8ca483fddc3110c9526fafb1a7c48191db0538c039b"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=463",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Raft A2 en mayoría pero no consolidada.png",
+    "sha256": "3d3ae30e9eb537187a6f3e9d6ac364d71dde03fa32adf63205ec2359b931aa10"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=468",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Raft puede sobrescribir A2.png",
+    "sha256": "7d94e91b41ca3f3a55f99030299427a5602fbb6eeaa9744dec03e2ccd038e395"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=473",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Raft consolidación indirecta.png",
+    "sha256": "b52a57deb6b9669aef2c5ce237938ce23c52aa8959708729c0f13d09ea37d5aa"
+  },
+  {
+    "tema": "Elección de líder",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=484",
+    "destino": "Sistemas Distribuidos/09-Elección de líder/adjuntos/Ring-based Election da la vuelta.png",
+    "sha256": "09951b76e99e3315b23728e036d2373f1497339d6159feabc2b9a6505f061282"
   }
 ]

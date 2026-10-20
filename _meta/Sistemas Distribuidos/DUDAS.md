@@ -24,3 +24,8 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
 | ℹ️ | [[04 - Casos borde y garantías de Paxos\|Casos borde y garantías de Paxos]] | Slide "Ejemplo 2. Sobreescribir acción que tenía consenso" | Lo que tuvo consenso fue el `prepare(1)` (los tres aceptantes prometieron), pero la operación $A_1$ solo la aceptó un nodo y nunca alcanzó mayoría. La nota lo explica así, en línea con la observación de las slides: un prepare con consenso no asegura que su operación sea la final. |
+
+## Elección de líder
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ℹ️ | [[04 - Casos de votación en Raft\|Casos de votación en Raft]] | Imágenes de los casos 2 y 4: el votante dice "Tu term actual es menor al mío. ¡Rechazado!" | Tras postularse, el candidato sube su term: en el caso 4 queda en 2, igual al del votante, así que la regla 1 no aplica. El rechazo se justifica por la regla 3c (el último log del candidato es de un term menor). En el caso 2 pasa lo mismo con el votante de term 1. El resultado no cambia; la nota explica ambas reglas. |

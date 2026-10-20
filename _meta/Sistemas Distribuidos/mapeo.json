@@ -115,8 +115,14 @@
     },
     "Elección de líder": {
       "carpeta": "Sistemas Distribuidos/09-Elección de líder",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Clase 8",
+          "hasta": "Clase 9"
+        }
+      ]
     },
     "Exclusión mutua distribuida": {
       "carpeta": "Sistemas Distribuidos/10-Exclusión mutua distribuida",
@@ -259,6 +265,21 @@
       "fuente": "apuntes_i1",
       "texto": "En la tarea usaremos reloj logico! Que implicancias debe tener → Los test automaticos notaran eso",
       "motivo": "Comentario sobre la tarea; se resume en Gestión del curso."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "Ring-Based Election → Si nos da tiempo, sino, lo vemos el lunes",
+      "motivo": "Organización de la clase."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "Estudiar Ejemplo:",
+      "motivo": "Recordatorio personal; el PDF adjunto de la clase 8 duplica las slides de Clases-I1.pdf (páginas 407-491), que se usaron como fuente."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "IIC2523 - Clase 08 - Elección de líder.pdf",
+      "motivo": "Link al PDF adjunto de la clase 8, sin licencia; su contenido está cubierto desde Clases-I1.pdf."
     }
   ]
 }
