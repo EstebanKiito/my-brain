@@ -824,5 +824,40 @@
     "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=173",
     "destino": "Sistemas Distribuidos/14-Transacciones distribuidas/adjuntos/Commit de tres fases.png",
     "sha256": "29a7721893cec784b4a11cbdf682f5ef053fcccae079c989fc63857ad7f55ecd"
+  },
+  {
+    "tema": "Control de concurrencia distribuido",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 10.png",
+    "destino": "Sistemas Distribuidos/15-Control de concurrencia distribuido/adjuntos/Problema de la actualización perdida.png",
+    "sha256": "8625fd7bd010e25a01173172697f4e4b809c24a8cd00df2878d8a867b919bdfe"
+  },
+  {
+    "tema": "Control de concurrencia distribuido",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 11.png",
+    "destino": "Sistemas Distribuidos/15-Control de concurrencia distribuido/adjuntos/Problema de lecturas inconsistentes.png",
+    "sha256": "4935174dfbb4f1cfc2c6c84a78cbd5c033136b7e7b343053bbbdb0edfd8639fb"
+  },
+  {
+    "tema": "Control de concurrencia distribuido",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 12.png",
+    "destino": "Sistemas Distribuidos/15-Control de concurrencia distribuido/adjuntos/Ejemplo de control pesimista con locks.png",
+    "sha256": "daf6d7bd78f6b7bcd47c5e2d52c519f8c30be463557970f78deebe702b4086bf"
+  },
+  {
+    "tema": "Control de concurrencia distribuido",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I2/image 13.png",
+    "destino": "Sistemas Distribuidos/15-Control de concurrencia distribuido/adjuntos/Control optimista con validación al commit.png",
+    "sha256": "3639bf7ad70ee10e9e7f67092065ec2d7da5f5fadde96af90926e249de5efdf8"
+  },
+  {
+    "tema": "Control de concurrencia distribuido",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I2.pdf#page=222",
+    "destino": "Sistemas Distribuidos/15-Control de concurrencia distribuido/adjuntos/Comparación de políticas de resolución de conflictos.png",
+    "sha256": "54b5adb17931ee8b29429dfa8e865ff3fc48a4c2123f98d66c29fee237106091"
   }
 ]

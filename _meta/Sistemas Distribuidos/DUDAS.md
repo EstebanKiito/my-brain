@@ -44,3 +44,8 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
 | ℹ️ | [[04 - Commit de tres fases\|Commit de tres fases]] | Pregunta de las slides: "IV. El protocolo 3PC garantiza la atomicidad" marcada como correcta | Es cierto bajo los supuestos del protocolo (fallas por caída, red sin particiones). En la literatura se señala que, con particiones de red, 3PC puede dejar a dos grupos con decisiones distintas. La nota respeta la respuesta del curso y menciona la limitación. |
+
+## Control de concurrencia distribuido
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ℹ️ | [[02 - Control pesimista y optimista\|Control pesimista y optimista]] | Ejemplo de control pesimista, paso 5: "T2 hace commit y 'Lock' Z" | Por el paso siguiente (T3 puede tomar Z), al hacer commit T2 **libera** el lock de Z. La transcripción y la nota dicen "libera". |

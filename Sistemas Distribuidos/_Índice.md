@@ -19,3 +19,4 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: basta con b
 | [[Sistemas Distribuidos/12-Replicación y modelos de consistencia/_Índice\|Replicación y modelos de consistencia]] | Por qué replicar y consistencia fuerte, secuencial, causal y eventual |
 | [[Sistemas Distribuidos/13-Protocolos de replicación/_Índice\|Protocolos de replicación]] | Gossip, quórum, replicación basada en primario y replicación activa |
 | [[Sistemas Distribuidos/14-Transacciones distribuidas/_Índice\|Transacciones distribuidas]] | Desafíos, serializabilidad de una copia, ACID entre nodos, commit de dos y tres fases |
+| [[Sistemas Distribuidos/15-Control de concurrencia distribuido/_Índice\|Control de concurrencia distribuido]] | Conflictos, control pesimista y optimista, y políticas de resolución de conflictos |

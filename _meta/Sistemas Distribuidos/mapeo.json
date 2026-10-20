@@ -181,8 +181,14 @@
     },
     "Control de concurrencia distribuido": {
       "carpeta": "Sistemas Distribuidos/15-Control de concurrencia distribuido",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i2",
+          "desde": "Clase 15",
+          "hasta": "Clase 16"
+        }
+      ]
     },
     "Teoremas CAP y PACELC": {
       "carpeta": "Sistemas Distribuidos/16-Teoremas CAP y PACELC",
