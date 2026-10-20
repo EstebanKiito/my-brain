@@ -28,8 +28,14 @@
     },
     "Procesos e hilos en Python": {
       "carpeta": "Sistemas Distribuidos/02-Procesos e hilos en Python",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Clase 1",
+          "hasta": "Clase 2"
+        }
+      ]
     },
     "Comunicación directa y sockets": {
       "carpeta": "Sistemas Distribuidos/03-Comunicación directa y sockets",
@@ -157,6 +163,26 @@
       "fuente": "apuntes_i1",
       "texto": "Vamos a pasar por Threads, Multiprocesos, …",
       "motivo": "Organización del curso (temario); se resume en Gestión del curso."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "[Modificar foto]",
+      "motivo": "Nota personal sobre la imagen de join con etiquetas equivocadas; la imagen se reemplazó por la versión corregida de las slides (tipo 'editada')."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "T1.join() debio decir T2.join",
+      "motivo": "Corrección de la imagen de join, aplicada en la copia editada."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "y T2.join(timeout=N) debio ser T3",
+      "motivo": "Corrección de la imagen de join, aplicada en la copia editada."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "Lo vimos en progra Avanzada",
+      "motivo": "Comentario personal sobre otro ramo."
     }
   ]
 }

@@ -54,5 +54,96 @@
     "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=131",
     "destino": "Sistemas Distribuidos/01-Fundamentos de sistemas distribuidos/adjuntos/Grid como capa sobre varios clústeres.png",
     "sha256": "400884bf2f19f7dbd329287412f11ca327146853459b9e853bcd640ea0919e81"
+  },
+  {
+    "tema": "Procesos e hilos en Python",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image.png",
+    "destino": "Sistemas Distribuidos/02-Procesos e hilos en Python/adjuntos/Combinaciones de procesos y threads.png",
+    "sha256": "9811945221f30d3917faa2e2f1c5a1f2c2dd93446ea6388b14d5f852fe4fa313"
+  },
+  {
+    "tema": "Procesos e hilos en Python",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 1.png",
+    "destino": "Sistemas Distribuidos/02-Procesos e hilos en Python/adjuntos/Ejemplos de combinaciones de procesos y threads.png",
+    "sha256": "9a57af2ef7aeaf28260a9ecede9659020a7540158082989f5ed8c67c524cd8df"
+  },
+  {
+    "tema": "Procesos e hilos en Python",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 2.png",
+    "destino": "Sistemas Distribuidos/02-Procesos e hilos en Python/adjuntos/Mecanismos de coordinación que estudia el curso.png",
+    "sha256": "8f3fc6c9d202714601e45dc6694db016de374f4f5bc2c3a081f6132f33c259f4"
+  },
+  {
+    "tema": "Procesos e hilos en Python",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 3.png",
+    "destino": "Sistemas Distribuidos/02-Procesos e hilos en Python/adjuntos/Crear un proceso con multiprocessing.png",
+    "sha256": "f80765219e57b0e18d9130e5300e5ee8371e7394f3612d995220cf3aac19a990"
+  },
+  {
+    "tema": "Procesos e hilos en Python",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 4.png",
+    "destino": "Sistemas Distribuidos/02-Procesos e hilos en Python/adjuntos/Ejecutar un script con subprocess.run.png",
+    "sha256": "82fd01275f4c7ab7f9dd4052d4d8217d1c12c7308bc8c04f6d524d44a62d3fd7"
+  },
+  {
+    "tema": "Procesos e hilos en Python",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 5.png",
+    "destino": "Sistemas Distribuidos/02-Procesos e hilos en Python/adjuntos/Lanzar un script con subprocess.Popen.png",
+    "sha256": "cb8dc51f35a4aede377a2da294f9cbbd868d65b0a68fd536d764b39f7f15f1b1"
+  },
+  {
+    "tema": "Procesos e hilos en Python",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 6.png",
+    "destino": "Sistemas Distribuidos/02-Procesos e hilos en Python/adjuntos/Reglas del algoritmo de la panadería.png",
+    "sha256": "955862ddd2b8e705c8429cbceffaf145bed28d1877545b38502e7d0370024a85"
+  },
+  {
+    "tema": "Procesos e hilos en Python",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 7.png",
+    "destino": "Sistemas Distribuidos/02-Procesos e hilos en Python/adjuntos/Semáforo con cuatro threads y recursos compartidos.png",
+    "sha256": "f8785a62844378c91aeb73d60ef8789b59bcf0ed2301c25af5c978b9fefc2af6"
+  },
+  {
+    "tema": "Procesos e hilos en Python",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 8.png",
+    "destino": "Sistemas Distribuidos/02-Procesos e hilos en Python/adjuntos/Evento que libera a los threads que esperan.png",
+    "sha256": "b70e86808601a7d8b29e7701b33c7243b015fd314ed67e552a3b5b220aeedd0f"
+  },
+  {
+    "tema": "Procesos e hilos en Python",
+    "tipo": "editada",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 9.png",
+    "destino": "Sistemas Distribuidos/02-Procesos e hilos en Python/adjuntos/Join con y sin timeout.png",
+    "sha256": "367ecba01fa2525469548ecd2903b1ff11c2c8811df4e19c1b646e95511e32b8"
+  },
+  {
+    "tema": "Procesos e hilos en Python",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 10.png",
+    "destino": "Sistemas Distribuidos/02-Procesos e hilos en Python/adjuntos/Crear threads con threading.Thread.png",
+    "sha256": "87b2440c16d1d83223167ea4c030f4b333e3d1ab8c2c91c4eea1e541f3ea067a"
+  },
+  {
+    "tema": "Procesos e hilos en Python",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 11.png",
+    "destino": "Sistemas Distribuidos/02-Procesos e hilos en Python/adjuntos/Thread como subclase de threading.Thread.png",
+    "sha256": "c838b744f89290a9fd39713c177084d174fdb1036ccc3cd96d8b98482a23c8df"
+  },
+  {
+    "tema": "Procesos e hilos en Python",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 12.png",
+    "destino": "Sistemas Distribuidos/02-Procesos e hilos en Python/adjuntos/Thread que crea otro thread.png",
+    "sha256": "c04869e8f9599423053b58021a2a768f3d6fe426e069dd95ebf6c0d53ae86486"
   }
 ]
