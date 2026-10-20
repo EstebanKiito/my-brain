@@ -992,5 +992,19 @@
     "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=122",
     "destino": "Sistemas Distribuidos/20-Autenticación y control de acceso/adjuntos/Flujo completo de Kerberos.png",
     "sha256": "1fe9153b964453110d6c667822ddf472f2f7f56e13decca601d29d3ca3d7ff02"
+  },
+  {
+    "tema": "Monitoreo de seguridad",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=165",
+    "destino": "Sistemas Distribuidos/21-Monitoreo de seguridad/adjuntos/Ciclo de vida del monitoreo.png",
+    "sha256": "8090546d725664c07c0482823c770bafecb8611aedfec9a49f8f9379e893768c"
+  },
+  {
+    "tema": "Monitoreo de seguridad",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-Examen.pdf#page=188",
+    "destino": "Sistemas Distribuidos/21-Monitoreo de seguridad/adjuntos/Firewall frente a IDS e IPS.png",
+    "sha256": "874ef237fa5a94a669e6b271c7fe4d6f35b7cd9beddb8df8f1f11466ba132135"
   }
 ]
