@@ -12,8 +12,19 @@
   "temas": {
     "Fundamentos de sistemas distribuidos": {
       "carpeta": "Sistemas Distribuidos/01-Fundamentos de sistemas distribuidos",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Sistemas Distribuidos - IIC2523: Hernan Valdivieso",
+          "hasta": "Clase 1"
+        },
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Clase 2",
+          "hasta": "Clase 3"
+        }
+      ]
     },
     "Procesos e hilos en Python": {
       "carpeta": "Sistemas Distribuidos/02-Procesos e hilos en Python",
@@ -131,5 +142,21 @@
       "secciones": []
     }
   },
-  "aceptados": []
+  "aceptados": [
+    {
+      "fuente": "apuntes_i1",
+      "texto": "[copiar materia]",
+      "motivo": "Recordatorio personal de completar los apuntes; el contenido se tomó de las slides."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "[Copiar materia]",
+      "motivo": "Recordatorio personal de completar los apuntes; el contenido se tomó de las slides."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "Vamos a pasar por Threads, Multiprocesos, …",
+      "motivo": "Organización del curso (temario); se resume en Gestión del curso."
+    }
+  ]
 }

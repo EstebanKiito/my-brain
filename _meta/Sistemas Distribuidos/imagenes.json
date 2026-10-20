@@ -1,1 +1,58 @@
-[]
+[
+  {
+    "tema": "Fundamentos de sistemas distribuidos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 13.png",
+    "destino": "Sistemas Distribuidos/01-Fundamentos de sistemas distribuidos/adjuntos/Topologías centralizada, descentralizada y distribuida.png",
+    "sha256": "e6e306ae9b7251e1b538d18ce3c8aadf709acd0d13acfcd9422e917aa844df5e"
+  },
+  {
+    "tema": "Fundamentos de sistemas distribuidos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 14.png",
+    "destino": "Sistemas Distribuidos/01-Fundamentos de sistemas distribuidos/adjuntos/Nodo con autoridad dentro de un sistema distribuido.png",
+    "sha256": "a70f167a5e43fe07d887958223b392a49cdd4313d106f7b17452fe7d0e47aa77"
+  },
+  {
+    "tema": "Fundamentos de sistemas distribuidos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 15.png",
+    "destino": "Sistemas Distribuidos/01-Fundamentos de sistemas distribuidos/adjuntos/Aprendizaje federado entre hospitales.png",
+    "sha256": "6baa515d14a47bc2f29c613d695e89ded381e567047068d2a895c2e35652eb8b"
+  },
+  {
+    "tema": "Fundamentos de sistemas distribuidos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 16.png",
+    "destino": "Sistemas Distribuidos/01-Fundamentos de sistemas distribuidos/adjuntos/Data centers de Google en el mundo.png",
+    "sha256": "1388940d613f41d0acc0582f742e5c9761fac4e5753522980e6853a8812f6701"
+  },
+  {
+    "tema": "Fundamentos de sistemas distribuidos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 17.png",
+    "destino": "Sistemas Distribuidos/01-Fundamentos de sistemas distribuidos/adjuntos/Clúster con scheduler y nodos de ejecución.png",
+    "sha256": "403a40bf3b5ccedb46b3706b74bcbad3df2f0eba1c5bfbf1bb9cbdddcb60756d"
+  },
+  {
+    "tema": "Fundamentos de sistemas distribuidos",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Apuntes I1/image 18.png",
+    "destino": "Sistemas Distribuidos/01-Fundamentos de sistemas distribuidos/adjuntos/Gestores de correo que interoperan.png",
+    "sha256": "b7367d52b3e5f106d083cb92705ecdd6a483ba9a0b66de01f11f0917bb8f8813"
+  },
+  {
+    "tema": "Fundamentos de sistemas distribuidos",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=29",
+    "destino": "Sistemas Distribuidos/01-Fundamentos de sistemas distribuidos/adjuntos/Data centers frente a edge nodes de Google.png",
+    "sha256": "2beefb07724f56000d24a45e50761185ecc7b01b890aa0501f332ed7dda40bc0"
+  },
+  {
+    "tema": "Fundamentos de sistemas distribuidos",
+    "tipo": "slide",
+    "original": "Semestre 6/SISTEMAS DISTRIBUIDOS/Clases/Clases-I1.pdf#page=131",
+    "destino": "Sistemas Distribuidos/01-Fundamentos de sistemas distribuidos/adjuntos/Grid como capa sobre varios clústeres.png",
+    "sha256": "400884bf2f19f7dbd329287412f11ca327146853459b9e853bcd640ea0919e81"
+  }
+]

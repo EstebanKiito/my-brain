@@ -5,7 +5,7 @@ Rama: `migrar/sistemas-distribuidos`. Un commit por tema. Antes de cada commit s
 | # | Tema | Carpeta | Estado | Notas | Imágenes (apuntes + slides) |
 |---|---|---|---|---|---|
 | 0 | Infraestructura (`_meta/Sistemas Distribuidos/`) | `_meta/` | ✅ hecho | – | – |
-| 1 | Fundamentos de sistemas distribuidos | `01-Fundamentos de sistemas distribuidos/` | ⬜ pendiente | – | – |
+| 1 | Fundamentos de sistemas distribuidos | `01-Fundamentos de sistemas distribuidos/` | ✅ hecho | 5 + índice | 6 + 2 |
 | 2 | Procesos e hilos en Python | `02-Procesos e hilos en Python/` | ⬜ pendiente | – | – |
 | 3 | Comunicación directa y sockets | `03-Comunicación directa y sockets/` | ⬜ pendiente | – | – |
 | 4 | Comunicación indirecta | `04-Comunicación indirecta/` | ⬜ pendiente | – | – |
@@ -40,3 +40,5 @@ Rama: `migrar/sistemas-distribuidos`. Un commit por tema. Antes de cada commit s
 - **Otros ramos:** se enlazan en vez de duplicar (hilos, semáforos, sockets, TCP/UDP, P2P y seguridad en Sistemas Operativos y Redes; ACID, 2PL, deadlocks y NoSQL en Bases de Datos; teorema CAP en Ingeniería de Software; REST, autenticación, OAuth y TLS en Tecnologías y Aplicaciones Web).
 
 ## Registro
+
+- **2026-10-20 · Fundamentos de sistemas distribuidos** (tema piloto, queda para revisión manual del usuario). Fuentes: `apuntes_i1` clase 0 (definición, objetivo de orden interno, desafíos, ejemplos de Google, IA, Cloudflare y AWS, casos de Instagram, el banco y Buscacursos) y clase 2 completa (definición, centralizado, descentralizado y distribuido, criterio de la necesidad, seis objetivos con los tipos de transparencia y de escalabilidad, HPC con clúster y grid, sistemas de información y pervasivos). Complementos: slides de las clases 0 y 2 (ejemplo de las fotos de viaje, data centers frente a edge nodes, enfoques de autoridad y robustez, ejemplos de cada objetivo, ubicua, móvil y redes de sensores, y la pregunta del *streaming* de conciertos). Se agregó como conocimiento general la lista completa de las falacias de la computación distribuida. 5 notas de 69 a 84 líneas; 6 imágenes de apuntes y 2 recortes de slides. Los "[copiar materia]" y el temario quedan en `aceptados`. Cobertura [3]: 112 bloques sin coincidencia textual, revisados a mano: todos los conceptos están reescritos. Sin dudas nuevas.

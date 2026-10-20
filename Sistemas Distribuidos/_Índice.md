@@ -5,3 +5,4 @@ Vault de estudio del ramo. Cada nota cubre **un concepto atómico**: basta con b
 ## Temas
 | Tema | Qué cubre |
 |---|---|
+| [[Sistemas Distribuidos/01-Fundamentos de sistemas distribuidos/_Índice\|Fundamentos de sistemas distribuidos]] | Definición, centralizado frente a descentralizado y distribuido, desafíos, objetivos y tipos de sistemas distribuidos |
