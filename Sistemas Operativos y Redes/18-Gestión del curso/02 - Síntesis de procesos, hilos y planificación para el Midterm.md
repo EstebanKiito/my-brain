@@ -62,7 +62,7 @@ Context Switch
 Espacio de Swap
 Threads = Procesos mas livianos
 
-![Pizarra de repaso 1: kernel, syscalls y procesos](adjuntos/Pizarra%20de%20repaso%201%20-%20kernel%2C%20syscalls%20y%20procesos.png)
+![Pizarra de repaso 1: kernel, syscalls y procesos](adjuntos/Pizarra%20de%20repaso%201%20-%20kernel,%20syscalls%20y%20procesos.png)
 
 > [!example]- Transcripción de la imagen
 > Pizarra del repaso, primera parte, de izquierda a derecha: "Repaso Midterm"; SO ⇒ kernel + programas, y el kernel siempre está ejecutando y provee lo mínimo. SO: 1) abstrae del hardware, 2) permite compartir recursos, 3) ofrece servicios; compuesto por sistema de archivos, protección/seguridad, control de I/O y drivers. Recuadro aparte: CPU burst. Kernels: monolítico (complejo/grande, rápido) y microkernel (pequeño/modularizado, aislado a fallos). Acceso: kernel mode y user mode; las syscalls llaman al SO. Proceso = código + recursos (memoria y archivos, sockets, bibliotecas); "CPU atiende 'simultáneamente' más de un proceso": multitasking. Proceso: código, datos, heap, stack. PCB → estado, ID. Estados → New / Running / … Context switch, espacio de swap, threads = procesos más livianos. Al borde derecho empieza "Sys calls" (fork, exec).
@@ -85,7 +85,7 @@ Long Term (cola Ready) / Medium term (Swapping) / Short Term (selecciona ejecuta
 - SJF
 - RR (round robin)
 
-![Pizarra de repaso 2: fork, señales y scheduling](adjuntos/Pizarra%20de%20repaso%202%20-%20fork%2C%20se%C3%B1ales%20y%20scheduling.png)
+![Pizarra de repaso 2: fork, señales y scheduling](adjuntos/Pizarra%20de%20repaso%202%20-%20fork,%20se%C3%B1ales%20y%20scheduling.png)
 
 > [!example]- Transcripción de la imagen
 > Pizarra del repaso, segunda parte (a la izquierda repite los kernels, el acceso y el proceso). Sys calls: fork → creación de nuevo proceso; exec → carga el binario en memoria y reemplaza el código de quien lo llamó. Estados → New / Running / Waiting / Ready / Terminated. Señales: SIGTERM / SIGKILL / SIGINT. Wait → espera el término del hijo. Huérfano: el padre termina o muere y sus hijos quedan huérfanos. Zombie: el proceso termina y su padre no hace wait.

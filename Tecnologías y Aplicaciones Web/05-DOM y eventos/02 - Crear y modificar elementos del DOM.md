@@ -56,7 +56,7 @@ El tag `<script>` con el atributo `src` indica la ruta (URL o archivo) del códi
 
 ## Clases, id y atributos
 
-![Crear una imagen con clase, id y atributo](adjuntos/Crear%20una%20imagen%20con%20clase%2C%20id%20y%20atributo.png)
+![Crear una imagen con clase, id y atributo](adjuntos/Crear%20una%20imagen%20con%20clase,%20id%20y%20atributo.png)
 
 > [!example]- Transcripción de la imagen
 > `const elemento = document.createElement("img");` crea una imagen. `elemento.className = "importante";` le define la clase. `elemento.id = "principal";` le da un id único. `elemento.setAttribute("width", 200);` le define un atributo.

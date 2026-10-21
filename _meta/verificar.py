@@ -254,6 +254,12 @@ def prueba_autocontencion(notas):
             if destino.startswith("/"):
                 error(f"{rel}: link con ruta absoluta '{destino}'")
                 continue
+            # Obsidian decodifica como decodeURI: deja codificados los caracteres reservados
+            reservado = re.search(r"%(2C|3A|3B|2F|3F|23|26|3D|2B|24|40)", destino, re.I)
+            if reservado:
+                error(f"{rel}: link con '{reservado.group(0)}' (Obsidian no lo decodifica; "
+                      f"escribir el carácter literal) '{destino}'")
+                continue
             objetivo = os.path.normpath(os.path.join(os.path.dirname(ruta), unquote(destino.split("#")[0])))
             if not objetivo.startswith(RAIZ):
                 error(f"{rel}: link fuera del vault '{destino}'")

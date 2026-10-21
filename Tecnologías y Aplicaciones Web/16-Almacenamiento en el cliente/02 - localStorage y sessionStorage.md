@@ -60,7 +60,7 @@ La diferencia es cuánto sobreviven los datos: una recarga (`sessionStorage`) o 
 
 ## Cuándo usar cada uno
 
-![Comparación de localStorage, sessionStorage, cookies e IndexedDB](adjuntos/Comparaci%C3%B3n%20de%20localStorage%2C%20sessionStorage%2C%20cookies%20e%20IndexedDB.png)
+![Comparación de localStorage, sessionStorage, cookies e IndexedDB](adjuntos/Comparaci%C3%B3n%20de%20localStorage,%20sessionStorage,%20cookies%20e%20IndexedDB.png)
 
 > [!example]- Transcripción de la imagen
 > Tabla con criterios para Local Storage, Session Storage y Cookies:

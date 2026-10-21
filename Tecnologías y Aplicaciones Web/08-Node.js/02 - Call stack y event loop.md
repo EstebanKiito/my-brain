@@ -61,7 +61,7 @@ setTimeout(() => {
 
 ## Event loop
 
-![Call stack, cola de mensajes y event loop](adjuntos/Call%20stack%2C%20cola%20de%20mensajes%20y%20event%20loop.png)
+![Call stack, cola de mensajes y event loop](adjuntos/Call%20stack,%20cola%20de%20mensajes%20y%20event%20loop.png)
 
 > [!example]- Transcripción de la imagen
 > Tres cajas: *Call stack* (con `main()`), *External* (con un `timeout`) y *Message queue* (con `callback()`). Unas flechas circulares (el event loop) mueven elementos de la cola a la pila. Los pasos:

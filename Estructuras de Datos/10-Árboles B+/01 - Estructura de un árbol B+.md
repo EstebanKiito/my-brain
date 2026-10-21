@@ -37,7 +37,7 @@ Cuando los datos viven en **disco**, el costo que importa es cuántas veces se l
 
 Un **índice** es un método de acceso que optimiza la búsqueda de datos para cierto tipo de consultas, como el índice alfabético de un libro o las secciones de un diario. En el directorio, cada separador $k_i$ indica si hay que bajar por la izquierda (llaves menores) o por la derecha (mayores o iguales).
 
-![Árbol B+ de orden 2 con hojas ligadas](adjuntos/%C3%81rbol%20B%2B%20de%20orden%202%20con%20hojas%20ligadas.png)
+![Árbol B+ de orden 2 con hojas ligadas](adjuntos/%C3%81rbol%20B+%20de%20orden%202%20con%20hojas%20ligadas.png)
 
 > [!example]- Transcripción de la imagen
 > Árbol B+ de orden $d = 2$. Raíz con la llave 17; hijos con 5 y 13, y con 20, 22 y 30. Hojas: 2* 3* | 5* 7* 8* | 14* 16* | 17* 18* | 20* 21* | 22* 27* 29* | 33* 34* 38* 39*, unidas con flechas dobles. "La lista ligada permite moverse desde un punto de interés". El asterisco indica que la hoja guarda la llave junto con su valor (o un puntero a él).

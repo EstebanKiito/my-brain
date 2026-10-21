@@ -17,7 +17,7 @@ La aplicación del curso tiene un frontend en React, una API en Express y una ba
 
 ## De un servidor a muchos
 
-![Muchos clientes, servidores y bases de datos](adjuntos/Muchos%20clientes%2C%20servidores%20y%20bases%20de%20datos.png)
+![Muchos clientes, servidores y bases de datos](adjuntos/Muchos%20clientes,%20servidores%20y%20bases%20de%20datos.png)
 
 > [!example]- Transcripción de la imagen
 > Tres columnas: **Client** (muchos computadores, notebooks y celulares), **Server/App** (muchas copias apiladas de *Web Server / Web App*) y **Storage** (varias bases de datos, BD). Flechas en ambos sentidos entre cada columna.

@@ -68,7 +68,7 @@ El objetivo es conectar la aplicación a la base de datos sin tener que lidiar c
 2. **Query builder**: una capa intermedia que permite construir consultas con métodos de JavaScript, con una sintaxis parecida a SQL. Un ejemplo es **Knex**, opcional en el proyecto.
 3. **ORM** (*Object-Relational Mapping*): separa el lenguaje de programación del trabajo directo con la base de datos. Las tablas se manejan como clases y las filas como objetos, y la librería encapsula el SQL. En el curso se usa **Sequelize**.
 
-![Aplicación, ORM, driver y base de datos](adjuntos/Aplicaci%C3%B3n%2C%20ORM%2C%20driver%20y%20base%20de%20datos.png)
+![Aplicación, ORM, driver y base de datos](adjuntos/Aplicaci%C3%B3n,%20ORM,%20driver%20y%20base%20de%20datos.png)
 
 > [!example]- Transcripción de la imagen
 > "Lo que no queremos es tener que lidiar con SQL". De izquierda a derecha: **Application** ↔ **ORM** ↔ **database driver** ↔ **Database**, con flechas bidireccionales entre cada par.
