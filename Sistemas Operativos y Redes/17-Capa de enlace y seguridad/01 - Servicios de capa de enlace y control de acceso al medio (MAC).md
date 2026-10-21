@@ -17,7 +17,7 @@ prerrequisitos:
 
 La capa de red decide la ruta completa; la **capa de enlace** se encarga de cada tramo. Transmite **frames** (su unidad de transmisión) a través de **un** enlace, alámbrico o inalámbrico, y controla quién puede usar el medio cuando varios lo comparten. Su dispositivo característico es el **switch**.
 
-![Diagrama de capa de enlace, switches, LANs, VLANs y protocolos de acceso al medio](adjuntos/Diagrama%20de%20capa%20de%20enlace%2c%20switches%2c%20LANs%2c%20VLANs%20y%20protocolos%20de%20acceso%20al%20medio.png)
+![Diagrama de capa de enlace, switches, LANs, VLANs y protocolos de acceso al medio](adjuntos/Diagrama%20de%20capa%20de%20enlace,%20switches,%20LANs,%20VLANs%20y%20protocolos%20de%20acceso%20al%20medio.png)
 
 > [!example]- Transcripción de la imagen
 > Apunte a mano: "Capa de enlace: controlar el acceso al medio; envío de información a través. Dispositivo: Switch. Conceptos: LAN → Local Area network; VLAN → Virtual LAN. Acceso al medio: aleatorio, turnos, frecuencias, tiempos, virtual circuit switching. Protocolo IMPORTANTE: ALOHA → acceso aleatorio. Concepto: Direcciones MAC" (con una flecha roja). A la derecha, un router conectado a un switch que reparte hacia tres equipos, con dos grupos encerrados en rojo.

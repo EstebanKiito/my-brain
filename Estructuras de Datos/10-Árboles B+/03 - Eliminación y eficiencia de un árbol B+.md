@@ -77,7 +77,7 @@ Eliminar(k):
 
 ## Eficiencia
 
-![Costo de las operaciones en un árbol B+](adjuntos/Costo%20de%20las%20operaciones%20en%20un%20%C3%A1rbol%20B%2B.png)
+![Costo de las operaciones en un árbol B+](adjuntos/Costo%20de%20las%20operaciones%20en%20un%20%C3%A1rbol%20B+.png)
 
 > [!example]- Transcripción de la imagen
 > Sean $n$ el número de nodos y $2d$ la cantidad máxima de datos en una hoja. El costo de cada operación, medido en I/O: búsqueda, inserción y eliminación son $\mathcal{O}(\log_{2d}(n))$. "Costo depende logarítmicamente en base $d$".
