@@ -39,7 +39,7 @@ El **árbol binario de búsqueda** (ABB) combina lo mejor de ambos mundos. Lleva
 
 El puntero al **padre** no es imprescindible, pero facilita insertar y eliminar, y es una buena práctica de implementación.
 
-![Anatomía de un árbol binario](adjuntos/Anatom%C3%ADa%20de%20un%20%C3%A1rbol%20binario%20-%20ra%C3%ADz%2C%20niveles%20y%20altura.png)
+![Anatomía de un árbol binario](adjuntos/Anatom%C3%ADa%20de%20un%20%C3%A1rbol%20binario%20-%20ra%C3%ADz,%20niveles%20y%20altura.png)
 
 > [!example]- Transcripción de la imagen
 > Árbol con raíz M en el nivel 0; I y T en el nivel 1; D, K, Q y Z en el nivel 2; A y G (hijos de D) en el nivel 3. Una llave al costado indica "Altura = 4": aquí la altura se cuenta como número de niveles.

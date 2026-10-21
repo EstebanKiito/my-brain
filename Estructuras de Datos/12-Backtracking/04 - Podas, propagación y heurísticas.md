@@ -27,7 +27,7 @@ El [[02 - Algoritmo de backtracking|backtracking básico]] tiene tres ineficienc
 
 ## La plantilla mejorada
 
-![isSolvable con heurísticas, poda y propagación](adjuntos/isSolvable%20con%20heur%C3%ADsticas%2C%20poda%20y%20propagaci%C3%B3n.png)
+![isSolvable con heurísticas, poda y propagación](adjuntos/isSolvable%20con%20heur%C3%ADsticas,%20poda%20y%20propagaci%C3%B3n.png)
 
 > [!example]- Transcripción de la imagen
 > "Podemos incorporar estas mejoras según convenga en un problema particular". `isSolvable(X, D, R)`: 1. `if X = ∅: return true`; 2. `x ← la mejor variable de X`; 3. `for v ∈ D_x de mejor a peor:`; 4. `if x = v no rompe R:` (con R ampliado por las podas); 5. `x ← v, propagar`; 6. `if isSolvable(X − {x}, D, R):`; 7. `return true`; 8. `x ← ∅, propagar` (deshacer la propagación); 9. `return false`. Las partes nuevas aparecen en rojo.

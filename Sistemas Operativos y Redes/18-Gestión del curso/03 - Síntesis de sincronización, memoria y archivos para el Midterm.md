@@ -87,7 +87,7 @@ Estrategias:
 - Asignacion indexada multinivel
 Estas ultimas 2 son importantes → Entraran si o si en la prueba
 
-![Pizarra de repaso 4: memoria, TLB y archivos](adjuntos/Pizarra%20de%20repaso%204%20-%20memoria%2C%20TLB%20y%20archivos.png)
+![Pizarra de repaso 4: memoria, TLB y archivos](adjuntos/Pizarra%20de%20repaso%204%20-%20memoria,%20TLB%20y%20archivos.png)
 
 > [!example]- Transcripción de la imagen
 > Pizarra del repaso, cuarta parte:

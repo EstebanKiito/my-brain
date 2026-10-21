@@ -26,7 +26,7 @@ RadixSort(A, d):
 // total O(d (n + k)); con d constante y k en O(n), O(n)
 ```
 
-![Radix sort LSD por unidad, decena y centena](adjuntos/Radix%20sort%20LSD%20por%20unidad%2C%20decena%20y%20centena.png)
+![Radix sort LSD por unidad, decena y centena](adjuntos/Radix%20sort%20LSD%20por%20unidad,%20decena%20y%20centena.png)
 
 > [!example]- Transcripción de la imagen
 > Cuatro columnas. "Arreglo inicial": 064, 008, 216, 512, 027, 729, 000, 001, 343, 125. "Ordenado por unidad": 000, 001, 512, 343, 064, 125, 216, 027, 008, 729. "Ordenado por decena": 000, 001, 008, 512, 216, 125, 027, 729, 343, 064. "Ordenado por centena": 000, 001, 008, 027, 064, 125, 216, 343, 512, 729. En cada columna, el dígito por el que se ordenó está en negrita.

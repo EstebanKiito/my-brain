@@ -57,7 +57,7 @@ La propiedad 4 es la que balancea. Los nodos negros corresponden a los nodos del
 > [!example]- Transcripción de la imagen
 > Árbol rojo-negro grande: raíz M (negra); E y R (rojos); A, J, P y S (negros); C, H, L y V (rojos).
 
-![equivalencias de nodos 2, 3 y 4](adjuntos/Rojo-negro%20-%20equivalencias%20de%20nodos%202%2C%203%20y%204.png)
+![equivalencias de nodos 2, 3 y 4](adjuntos/Rojo-negro%20-%20equivalencias%20de%20nodos%202,%203%20y%204.png)
 
 > [!example]- Transcripción de la imagen
 > "Con este nuevo modelo, podemos tener árboles equivalentes según": un 2-nodo P equivale a un P negro; un 3-nodo P R equivale a R negro con P rojo a la izquierda, o a P negro con R rojo a la derecha; un 4-nodo P R S equivale a R negro con P y S rojos.
