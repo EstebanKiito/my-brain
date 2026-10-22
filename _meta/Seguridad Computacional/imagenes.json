@@ -54,5 +54,12 @@
     "original": "Semestre 6/SEGURIDAD COMPUTACIONAL/Classes/Clase05/OK_arch.png",
     "destino": "Seguridad Computacional/05-Separación de privilegios con OKWS/adjuntos/Arquitectura de OKWS.png",
     "sha256": "1838472eda9f5c4115295e07814d5960c82d0303442987e6e444120b8ae8a1fe"
+  },
+  {
+    "tema": "Contenedores y microVMs",
+    "tipo": "clase",
+    "original": "Semestre 6/SEGURIDAD COMPUTACIONAL/Classes/Clase06/vm_vs_containers.png",
+    "destino": "Seguridad Computacional/06-Contenedores y microVMs/adjuntos/Máquina virtual frente a contenedor LXC.png",
+    "sha256": "479420ca288f892e4457261c309488c824e52424466b87402d77b24008335c71"
   }
 ]

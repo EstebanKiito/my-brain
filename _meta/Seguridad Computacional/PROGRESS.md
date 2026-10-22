@@ -10,7 +10,7 @@ Rama: `migrar/seguridad-computacional`. Un commit por tema. Antes de cada commit
 | 3 | Autenticación de usuarios | `03-Autenticación de usuarios/` | ✅ hecho | 2 + índice | 0 + 0 |
 | 4 | Arquitectura de seguridad de Google | `04-Arquitectura de seguridad de Google/` | ✅ hecho | 2 + índice | 2 + 0 |
 | 5 | Separación de privilegios con OKWS | `05-Separación de privilegios con OKWS/` | ✅ hecho | 1 + índice | 0 + 1 |
-| 6 | Contenedores y microVMs | `06-Contenedores y microVMs/` | ⏳ pendiente | – | – |
+| 6 | Contenedores y microVMs | `06-Contenedores y microVMs/` | ✅ hecho | 2 + índice | 0 + 1 |
 | 7 | Sandboxing de software | `07-Sandboxing de software/` | ⏳ pendiente | – | – |
 | 8 | Seguridad móvil | `08-Seguridad móvil/` | ⏳ pendiente | – | – |
 | 9 | Ejecución simbólica | `09-Ejecución simbólica/` | ⏳ pendiente | – | – |
@@ -34,3 +34,4 @@ Rama: `migrar/seguridad-computacional`. Un commit por tema. Antes de cada commit
 - **2026-10-21 · Autenticación de usuarios.** Sin apuntes propios (solo menciones en la clase 1). Construido con el texto de la clase de autenticación (`I03-aut-es.md`): guardia, tres partes, contraseñas y entropía, gestores, límite de intentos, hash, salt, KDF, SMS, TOTP y U2F con sus dos problemas. Se omitió la lista de referencias. 2 notas; sin imágenes. Sin dudas.
 - **2026-10-21 · Arquitectura de seguridad de Google.** Fuentes: `apuntes_i1` clases 3 y 4 (arquitectura de seguridad, aislamiento, VM, guardia, ACL y capacidades, monitor de referencia, canales seguros) y el texto de la clase 3 (`l02-google-es.md`) para el arranque seguro, DoS y defensa perimetral. Se mantuvo la observación del profesor sobre el detalle del diagrama del entorno. 2 notas; 2 imágenes de apuntes. Sin dudas.
 - **2026-10-21 · Separación de privilegios con OKWS.** Sin apuntes propios. Construido con el texto de la clase de OKWS (`I05-okws-es.md`): plan B, componentes, daño y superficie de ataque, `dbproxy` con tokens, aislamiento con UID, GID y `chroot`, límites de UNIX y vigencia. Se dejaron fuera los detalles de la tabla de chroot y el orquestado por usuario. 1 nota; 1 figura de clase. Sin dudas.
+- **2026-10-21 · Contenedores y microVMs.** Sin apuntes propios. Construido con los textos de las clases de contenedores Linux (`I06-linux-containers.md`) y Firecracker (`I06-firecracker-es.md`): VM frente a contenedor, namespaces, cgroups, capabilities con el ejemplo de `ping`, seccomp-bpf, Lambda, diseño de Firecracker, resultados y gVisor. 2 notas; 1 figura de clase. Sin dudas.
