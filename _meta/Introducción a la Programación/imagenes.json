@@ -12,5 +12,19 @@
     "original": "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase2_Blockly.pdf#page=18",
     "destino": "Introducción a la Programación/01-Algoritmos y pensamiento computacional/adjuntos/Blockly dos círculos con función dibujar circulo.png",
     "sha256": "d93c4047394cae06373845f74ce44330a1eb2a6036d6cfa10dbb9468100bf160"
+  },
+  {
+    "tema": "Recursión",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase12_Funciones_Recurrsivas.pdf#page=23",
+    "destino": "Introducción a la Programación/06-Recursión/adjuntos/Conejos de Fibonacci mes a mes.png",
+    "sha256": "40154e6631d1f88739b2e7246fe9e24a373e9ccfe5492452a139d5ac81c04395"
+  },
+  {
+    "tema": "Recursión",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase12_Funciones_Recurrsivas.pdf#page=30",
+    "destino": "Introducción a la Programación/06-Recursión/adjuntos/Árbol fractal dibujado con recursión.png",
+    "sha256": "a8e9673bbbcdcc7f981f49b31fc223daab3bd91a5203f6fc5a7c3e9dd5cba2c5"
   }
 ]

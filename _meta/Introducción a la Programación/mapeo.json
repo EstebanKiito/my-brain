@@ -69,6 +69,17 @@
         "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase10",
         "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase11"
       ]
+    },
+    "Recursión": {
+      "carpeta": "Introducción a la Programación/06-Recursión",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase12_Funciones_Recurrsivas.pdf"
+      ],
+      "codigos": [
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase20"
+      ]
     }
   },
   "aceptados": []

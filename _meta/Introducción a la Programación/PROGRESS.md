@@ -10,7 +10,7 @@ Rama: `migrar/introduccion-programacion`. Un commit por tema. Antes de cada comm
 | 3 | Condicionales | `03-Condicionales/` | ✅ hecho | 3 + índice | 0 |
 | 4 | Ciclos | `04-Ciclos/` | ✅ hecho | 4 + índice | 0 |
 | 5 | Funciones y módulos | `05-Funciones y módulos/` | ✅ hecho | 4 + índice | 0 |
-| 6 | Recursión | `06-Recursión/` | ⏳ pendiente | – | – |
+| 6 | Recursión | `06-Recursión/` | ✅ hecho | 2 + índice | 2 |
 | 7 | Strings | `07-Strings/` | ⏳ pendiente | – | – |
 | 8 | Listas | `08-Listas/` | ⏳ pendiente | – | – |
 | 9 | Listas de listas | `09-Listas de listas/` | ⏳ pendiente | – | – |
@@ -31,3 +31,4 @@ Rama: `migrar/introduccion-programacion`. Un commit por tema. Antes de cada comm
 - **2026-10-22 · Condicionales.** Fuentes: slides de if/else y elif, y los códigos `lanzar dado`, `cachipun`, `chocolates` y las seis versiones de `monitoreo`. Se corrigió sin comentar una errata en la condición de alerta (un umbral 300 donde iba 200). El `main.py` de plantilla de PyCharm se omite (el patrón `__name__` se ve con módulos). 3 notas; 0 imágenes.
 - **2026-10-22 · Ciclos.** Fuentes: slides de while/for y de while 2 (mejor nota, RUT), y los códigos de cuadrados, notas (cuatro versiones), `que pasa`, `pig`, `rut` y `carrera1`-`carrera2`. El `pig` se resume en prosa; `dccamaradas` depende de un módulo externo y se deja para Funciones. 4 notas; 0 imágenes.
 - **2026-10-22 · Funciones y módulos.** Fuentes: slides de funciones (tres clases: funciones existentes y por otros, funciones propias, return/print e import), y los códigos `carrera3`, `funcion factorial`/`factorialp`, `numero primo`, `primos relativos`, `lagartijas` y `dccamaradas`. El primo de los códigos fallaba con 2 (lo daba como no primo); la nota usa una versión corregida. Se agregó el ejemplo de combinaciones para mostrar por qué retornar. 4 notas; 0 imágenes.
+- **2026-10-22 · Recursión.** Fuentes: slides de funciones recursivas (factorial, traza, conejos de Fibonacci, árbol con turtle, ventajas y desventajas, ejercicios de potencia) y los códigos `funcion factorial`, `func fibonacci` y `tortuga`. La recursión sobre listas (`definir largo de lista`) y los vuelos con escala se dejan para Listas y Listas de listas. Se agregaron suma de dígitos y Fibonacci con ciclo. 2 notas; 2 imágenes.
