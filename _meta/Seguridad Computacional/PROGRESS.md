@@ -6,7 +6,7 @@ Rama: `migrar/seguridad-computacional`. Un commit por tema. Antes de cada commit
 |---|---|---|---|---|---|
 | 0 | Infraestructura (`_meta/Seguridad Computacional/`) | `_meta/` | ✅ hecho | – | – |
 | 1 | Fundamentos de seguridad | `01-Fundamentos de seguridad/` | ✅ hecho | 3 + índice | 0 + 1 |
-| 2 | Buffer overflows y baggy bounds | `02-Buffer overflows y baggy bounds/` | ⏳ pendiente | – | – |
+| 2 | Buffer overflows y baggy bounds | `02-Buffer overflows y baggy bounds/` | ✅ hecho | 2 + índice | 3 + 1 |
 | 3 | Autenticación de usuarios | `03-Autenticación de usuarios/` | ⏳ pendiente | – | – |
 | 4 | Arquitectura de seguridad de Google | `04-Arquitectura de seguridad de Google/` | ⏳ pendiente | – | – |
 | 5 | Separación de privilegios con OKWS | `05-Separación de privilegios con OKWS/` | ⏳ pendiente | – | – |
@@ -30,3 +30,4 @@ Rama: `migrar/seguridad-computacional`. Un commit por tema. Antes de cada commit
 
 ## Registro
 - **2026-10-21 · Fundamentos de seguridad.** Fuentes: `apuntes_i1` clase 1 completa y `resumen_i1` (objetivo, amenaza, política, mecanismo, CIA, defensa en profundidad, ejemplos de política, modelo y bugs) complementados con el texto de la clase 1 (`I01-intro-es.md`): Fairfax, Mat Honan, Palin, CAPTCHA, XcodeGhost, DES en Kerberos, iCloud, Citigroup y Debian. Se omitieron las presentaciones del equipo docente. 3 notas; 1 figura de clase. Sin dudas.
+- **2026-10-21 · Buffer overflows y baggy bounds.** Fuentes: `apuntes_i1` clases 2 y 6 (recordatorios de C, stack y heap, gdb, NX, canarios, ASLR, ataque al heap) con el texto de la clase 2 (`I02-baggy-es.md`) para baggy bounds y punteros gordos. Se resumió el recorrido con gdb. 2 notas; 3 imágenes de apuntes y 1 figura de clase. Sin dudas.

@@ -28,8 +28,18 @@
     },
     "Buffer overflows y baggy bounds": {
       "carpeta": "Seguridad Computacional/02-Buffer overflows y baggy bounds",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Clase 2",
+          "hasta": "Clase 4: Charla"
+        },
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Clase 6"
+        }
+      ]
     },
     "Autenticación de usuarios": {
       "carpeta": "Seguridad Computacional/03-Autenticación de usuarios",
