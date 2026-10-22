@@ -13,7 +13,7 @@ Rama: `migrar/introduccion-programacion`. Un commit por tema. Antes de cada comm
 | 6 | Recursión | `06-Recursión/` | ✅ hecho | 2 + índice | 2 |
 | 7 | Strings | `07-Strings/` | ✅ hecho | 3 + índice | 0 |
 | 8 | Listas | `08-Listas/` | ✅ hecho | 4 + índice | 0 |
-| 9 | Listas de listas | `09-Listas de listas/` | ⏳ pendiente | – | – |
+| 9 | Listas de listas | `09-Listas de listas/` | ✅ hecho | 2 + índice | 0 |
 | 10 | Archivos | `10-Archivos/` | ⏳ pendiente | – | – |
 | 11 | Programación orientada a objetos | `11-Programación orientada a objetos/` | ⏳ pendiente | – | – |
 | 12 | Ordenamiento | `12-Ordenamiento/` | ⏳ pendiente | – | – |
@@ -34,3 +34,4 @@ Rama: `migrar/introduccion-programacion`. Un commit por tema. Antes de cada comm
 - **2026-10-22 · Recursión.** Fuentes: slides de funciones recursivas (factorial, traza, conejos de Fibonacci, árbol con turtle, ventajas y desventajas, ejercicios de potencia) y los códigos `funcion factorial`, `func fibonacci` y `tortuga`. La recursión sobre listas (`definir largo de lista`) y los vuelos con escala se dejan para Listas y Listas de listas. Se agregaron suma de dígitos y Fibonacci con ciclo. 2 notas; 2 imágenes.
 - **2026-10-22 · Strings.** Fuentes: slides de strings (índices, slicing, palíndromo iterativo y recursivo) y de métodos de strings (count, find, lower/upper, strip, in, métodos is*, orden alfabético), y los códigos `funcion palindrome`, `palabra mas larga`, `definir buscar`, `definir contar`, `funcion ordenar` y `problema corregir`. El `ordenar` de los códigos solo pasaba a minúsculas la primera comparación; la nota lo hace al inicio. 3 notas; 0 imágenes.
 - **2026-10-22 · Listas.** Fuentes: slides de listas (votación, métodos, slices, split/join, listas como parámetro, criba, eliminar duplicados) y de los repasos de la I1 (solo logística), y los códigos `votos0`-`votos2`, `demos`-`demos5`, `eliminar duplicados` (ambas versiones), `eratostenes` y `definir largo de lista`. Los ejercicios de evaluación (pizzas, wakanda, dccolumnas, dccompletos, sueños repetidos) usan módulos externos y no se transcriben. 4 notas; 0 imágenes.
+- **2026-10-22 · Listas de listas.** Fuentes: slides de listas de listas (amigos, M[i][j], tamaño, creación con comprensión, recorrer, buscar, vecinos) y los códigos `lista de listas recorrer y buscar`, `simpsons`, `cumples` y `vuelos ejercicio`. Se agregó la trampa de `[[0]*c]*f`. Los vuelos con escala se describen en prosa y se enlazan a grafos de Estructuras de Datos. 2 notas; 0 imágenes.

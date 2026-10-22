@@ -112,6 +112,20 @@
         "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase18",
         "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase21"
       ]
+    },
+    "Listas de listas": {
+      "carpeta": "Introducción a la Programación/09-Listas de listas",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I2/Clase19_Listas.pdf",
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I2/Clase20_ListasdeListas2.pdf"
+      ],
+      "codigos": [
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase18",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase19",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase21"
+      ]
     }
   },
   "aceptados": []
