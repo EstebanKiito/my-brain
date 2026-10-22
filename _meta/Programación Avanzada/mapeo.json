@@ -170,7 +170,7 @@
     },
     "Tópicos avanzados": {
       "carpeta": "Programación Avanzada/12-Tópicos avanzados",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [],
       "notebooks": [
         "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-15-topicos-avanzados/1-expresiones-regulares.ipynb",

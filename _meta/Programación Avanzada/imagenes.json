@@ -516,5 +516,26 @@
     "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-14-interfaces_graficas_2/img/pyqt-mainwindow-mac.png",
     "destino": "Programación Avanzada/11-PyQt avanzado/adjuntos/Aspecto de QMainWindow con menús y barras en macOS.png",
     "sha256": "414c1e66edfcf582fe33f6e0cdd90765b169f81ede3f0f2193a49b93fbe3cbdc"
+  },
+  {
+    "tema": "Tópicos avanzados",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-15-topicos-avanzados/imgs/partes_correo_electronico.png",
+    "destino": "Programación Avanzada/12-Tópicos avanzados/adjuntos/Anatomía de una dirección de correo y patrón regex.png",
+    "sha256": "8becf5f05d09895018fbf7b6e05cd28ec360e897207cc5b0a93b236ebc500aaf"
+  },
+  {
+    "tema": "Tópicos avanzados",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-15-topicos-avanzados/imgs/grafos.png",
+    "destino": "Programación Avanzada/12-Tópicos avanzados/adjuntos/Estructura topológica de un grafo no dirigido.png",
+    "sha256": "0dc8f1fa98e1854e060d6fc29c6e103a5031187afe7f23743a017fd4a1e7a022"
+  },
+  {
+    "tema": "Tópicos avanzados",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-15-topicos-avanzados/imgs/grafos_y_pesos.png",
+    "destino": "Programación Avanzada/12-Tópicos avanzados/adjuntos/Grafo ponderado con pesos en aristas y etiquetas.png",
+    "sha256": "5fddd2974b035c21e249efaf1ed86dc15a667b3d981af78394a26ed970a89a52"
   }
 ]
