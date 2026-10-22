@@ -20,7 +20,7 @@ Rama: `migrar/seguridad-computacional`. Un commit por tema. Antes de cada commit
 | 13 | Mensajería segura | `13-Mensajería segura/` | ✅ hecho | 1 + índice | 0 + 0 |
 | 14 | DDoS y cadena de suministro | `14-DDoS y cadena de suministro/` | ✅ hecho | 2 + índice | 0 + 0 |
 | 15 | SDLC seguro | `15-SDLC seguro/` | ✅ hecho | 2 + índice | 0 + 0 |
-| 16 | Gestión del curso | `16-Gestión del curso/` | ⏳ pendiente | – | – |
+| 16 | Gestión del curso | `16-Gestión del curso/` | ✅ hecho | 1 + índice | 0 + 0 |
 
 ## Convenciones
 - Notas según [`_meta/ESTANDAR-NOTAS.md`](../ESTANDAR-NOTAS.md), pero **cortas y concisas** por pedido del usuario: de 30 a 70 líneas, solo lo necesario para entender cada concepto, con 3 preguntas de repaso plegables.
@@ -45,3 +45,5 @@ Rama: `migrar/seguridad-computacional`. Un commit por tema. Antes de cada commit
 - **2026-10-21 · Mensajería segura.** Sin apuntes propios. Construido con el texto de seguridad en mensajería (`I17-messaging-es.md`). 1 nota; sin imágenes. Sin dudas.
 - **2026-10-21 · DDoS y cadena de suministro.** Sin apuntes propios. Construido con los PDF de las charlas invitadas de DDoS y botnets (`ddos-botnet-lecture.pdf`) y de ataques a la cadena de suministro en npm (`npm-supply-chain-attacks-marp.pdf`). Se omitieron los datos personales del expositor. 2 notas; sin imágenes. Sin dudas.
 - **2026-10-21 · SDLC seguro.** Fuentes: `apuntes_i1` de la charla invitada (clases 4 y 5: SDLC seguro, vulnerabilidades, gobernanza, shift left, DevSecOps, modelado de amenazas y STRIDE) y las slides de la charla (`Clase Ciberseguridad PUC.pdf`) para respuesta a incidentes y metodologías. Se omitieron el correo del expositor. 2 notas; sin imágenes. Sin dudas.
+- **2026-10-21 · Gestión del curso.** Fuentes: página `ramo` (contenidos, evaluaciones, laboratorios, proyecto y docente). `apuntes_i2`, `apuntes_ex` e `investigaciones` están vacíos. Los resúmenes de las interrogaciones delimitan qué materia entra en la I1 y la I2; las clases 17 a 20 (mensajería, DDoS, npm) no aparecen en ellos, por lo que se asignan al examen (supuesto, ver DUDAS). Se omitieron los correos del docente. 1 nota; sin imágenes.
+- **2026-10-21 · Cierre del ramo.** 16 temas, 31 notas más 16 índices de tema y el mapa del ramo; 13 imágenes. Todas las fuentes quedan asignadas o aceptadas; `apuntes_i2`, `apuntes_ex` e `investigaciones` están vacías. `verificar.py` termina con 0 errores; las advertencias son solo de cobertura textual (ramo reescrito). 1 duda abierta sobre qué materia entra en cada evaluación.

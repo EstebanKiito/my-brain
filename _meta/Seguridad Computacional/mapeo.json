@@ -120,8 +120,13 @@
     },
     "Gestión del curso": {
       "carpeta": "Seguridad Computacional/16-Gestión del curso",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "ramo",
+          "desde": "Contenidos"
+        }
+      ]
     }
   },
   "aceptados": [
@@ -139,6 +144,21 @@
       "fuente": "apuntes_i1",
       "link": "http://g00gle.com",
       "motivo": "Dominio falso usado como ejemplo de phishing; no es un recurso. Se explica con prosa en la nota de autenticación."
+    },
+    {
+      "fuente": "ramo",
+      "texto": "Correo profe: ignacio@magnet.cl",
+      "motivo": "Dato personal de contacto; se omite."
+    },
+    {
+      "fuente": "ramo",
+      "texto": "yo@ignacioparada.cl",
+      "motivo": "Dato personal de contacto; se omite."
+    },
+    {
+      "fuente": "ramo",
+      "texto": "PROFE",
+      "motivo": "Encabezado de la sección de contacto; el nombre del docente está en la nota."
     }
   ]
 }
