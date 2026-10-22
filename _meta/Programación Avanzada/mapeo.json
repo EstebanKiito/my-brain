@@ -21,7 +21,7 @@
     },
     "Entorno de trabajo": {
       "carpeta": "Programación Avanzada/02-Entorno de trabajo",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [],
       "notebooks": [
         "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-02-entorno_de_trabajo/1-guía-de-estilo.ipynb",

@@ -6,7 +6,7 @@ Rama: `migrar/programacion-avanzada`. Un commit por tema. Antes de cada commit s
 |---|---|---|---|---|---|
 | 0 | Infraestructura (`_meta/Programación Avanzada/`) | `_meta/` | ✅ hecho | – | – |
 | 1 | Repaso y POO básica | `01-Repaso y POO básica/` | ✅ hecho | 10 + índice | 2 |
-| 2 | Entorno de trabajo | `02-Entorno de trabajo/` | ⏳ pendiente | – | – |
+| 2 | Entorno de trabajo | `02-Entorno de trabajo/` | ✅ hecho | 11 + índice | 8 |
 | 3 | Estructuras de datos de Python | `03-Estructuras de datos de Python/` | ⏳ pendiente | – | – |
 | 4 | POO avanzada | `04-POO avanzada/` | ⏳ pendiente | – | – |
 | 5 | Excepciones e iterables | `05-Excepciones e iterables/` | ⏳ pendiente | – | – |
@@ -26,5 +26,8 @@ Rama: `migrar/programacion-avanzada`. Un commit por tema. Antes de cada commit s
 - Sin comas en los nombres de carpetas ni de notas.
 - Otros ramos: se enlaza en vez de duplicar (estructuras lineales y grafos en Estructuras de Datos; hilos y sockets en Sistemas Distribuidos; POO en Ruby y UML en Ingeniería de Software; TLS en Seguridad Computacional; recursión y strings en Introducción a la Programación).
 
+- **Nivel de detalle aprobado y flujo de trabajo:** ver [`NIVEL-DETALLE.md`](NIVEL-DETALLE.md).
+
 ## Registro
 - **2026-10-22 · Repaso y POO básica.** Fuentes: los cuatro notebooks de la primera semana (contenidos mínimos, atributos y encapsulamiento, I/O y typing) y las diapositivas de OOP 1 (ejemplo Planta/Huerto). El notebook de contenidos mínimos se dividió en cinco notas (repaso, dos de listas, dos de strings), el de atributos en dos (clases y variables de clase; encapsulamiento) y el de I/O en dos (archivos y bytes; context manager) para respetar el largo máximo. Se omiten los anuncios y las reglas de issues de las slides. Las properties de las slides se tratan en POO avanzada. 10 notas; 2 imágenes de notebook. Sin dudas.
+- **2026-10-22 · Entorno de trabajo.** Fuentes: los cinco notebooks de la segunda semana (guía de estilo, modularización, paths, terminal y git) y las diapositivas de GitHub y Git. Guía de estilo se dividió en dos notas (por qué y cómo nombrar; PEP8 y reglas de formato); modularización en dos notas (fundamentos y cómo se ejecuta; formas de importar y __name__); paths en dos notas (rutas absolutas/relativas y os.path; navegación y pathlib); terminal en dos notas (comandos básicos y navegación; ejecución en consola y conflicto de CWD); y git en tres notas (conceptos básicos y las cuatro áreas con add/commit/push; commits como versiones completas con la analogía de las muñecas rusas; tokens de acceso personal y problemas frecuentes). 11 notas; 8 imágenes de notebook. Sin dudas.

@@ -18,3 +18,4 @@ Volver al [[Programación Avanzada/_Índice|mapa del ramo]].
 8. [[08 - Archivos, encoding y bytes|Archivos, encoding y bytes]]: modos de apertura, encoding y archivos binarios.
 9. [[09 - Context manager y archivos en memoria|Context manager]]: `with`, `__enter__`/`__exit__` y `StringIO`.
 10. [[10 - Anotaciones de tipo y el módulo typing|Anotaciones de tipo]]: `:` y `->`, `Union`, `Optional`, `Callable` y autorreferencia.
+

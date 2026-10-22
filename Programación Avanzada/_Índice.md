@@ -12,3 +12,4 @@ Vault de estudio del ramo. Las notas están escritas para alguien que ya sabe pr
 | Tema | Qué cubre |
 |---|---|
 | [[Programación Avanzada/01-Repaso y POO básica/_Índice\|Repaso y POO básica]] | Tipos, funciones, listas, strings, clases y objetos, encapsulamiento, archivos y anotaciones de tipo |
+| [[Programación Avanzada/02-Entorno de trabajo/_Índice\|Entorno de trabajo]] | Guías de estilo, PEP8, modularización, manejo de rutas con os y pathlib, terminal y control de versiones con Git |

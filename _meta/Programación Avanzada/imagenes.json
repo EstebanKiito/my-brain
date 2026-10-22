@@ -12,5 +12,61 @@
     "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-01-introduccion/data/OOP_interfaz.png",
     "destino": "Programación Avanzada/01-Repaso y POO básica/adjuntos/Interfaz de la clase Auto.png",
     "sha256": "a0a88134795fbecaee7fff3cc0b56dcbe0e515ba9b9d67ed5b5078e65257fb75"
+  },
+  {
+    "tema": "Entorno de trabajo",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-02-entorno_de_trabajo/data/files.png",
+    "destino": "Programación Avanzada/02-Entorno de trabajo/adjuntos/Jerarquía de carpetas del ejemplo de Pedro.png",
+    "sha256": "32c945150d31c4ef7aeca17c0dfb95fdd3a402d2547b7178b7451ffd86707875"
+  },
+  {
+    "tema": "Entorno de trabajo",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-02-entorno_de_trabajo/data/screenshot_1.png",
+    "destino": "Programación Avanzada/02-Entorno de trabajo/adjuntos/Consola de Python abierta en la terminal.png",
+    "sha256": "11c88aae60e2ed3f52074f85179d3c298bd55b79d59f089ed27ab561dd6774d0"
+  },
+  {
+    "tema": "Entorno de trabajo",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-02-entorno_de_trabajo/5-git.ipynb#attachment=image.png",
+    "destino": "Programación Avanzada/02-Entorno de trabajo/adjuntos/Git - archivo nuevo solo en mi computador.png",
+    "sha256": "75bdf841839294ccd4c5ca3084484463a01b0c54eec64d19c367e7173b64d5ab"
+  },
+  {
+    "tema": "Entorno de trabajo",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-02-entorno_de_trabajo/5-git.ipynb#attachment=image-2.png",
+    "destino": "Programación Avanzada/02-Entorno de trabajo/adjuntos/Git - archivo en la lista de cambios.png",
+    "sha256": "b204f63aa4abe7ae56a3605c7ce8c54ea6699091bf27d1201d254d0400491402"
+  },
+  {
+    "tema": "Entorno de trabajo",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-02-entorno_de_trabajo/5-git.ipynb#attachment=image-3.png",
+    "destino": "Programación Avanzada/02-Entorno de trabajo/adjuntos/Git - archivo en el repositorio local.png",
+    "sha256": "fb434f1c3aadac587277d0bc28b2b26d538b67df097de95d6f6ce76ec8ccdeb6"
+  },
+  {
+    "tema": "Entorno de trabajo",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-02-entorno_de_trabajo/5-git.ipynb#attachment=image-4.png",
+    "destino": "Programación Avanzada/02-Entorno de trabajo/adjuntos/Git - archivo en el repositorio remoto.png",
+    "sha256": "4a917dec10ead7afbd7843cb8362307d2e129e6e7ece4c8288ef2ddae9279302"
+  },
+  {
+    "tema": "Entorno de trabajo",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-02-entorno_de_trabajo/data/1.png",
+    "destino": "Programación Avanzada/02-Entorno de trabajo/adjuntos/Commits como muñecas rusas.png",
+    "sha256": "869837e02f331d5eaac57fe7d1dc7c16916de239f68b63f9f54199450dcaf711"
+  },
+  {
+    "tema": "Entorno de trabajo",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-02-entorno_de_trabajo/data/2.png",
+    "destino": "Programación Avanzada/02-Entorno de trabajo/adjuntos/El último commit contiene todo el proyecto.png",
+    "sha256": "cbd9cc85a3f71d554e9abc746350899441f8fa047bc298d321808dd4e9f402e5"
   }
 ]
