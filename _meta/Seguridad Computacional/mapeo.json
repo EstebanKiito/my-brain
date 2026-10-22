@@ -13,8 +13,18 @@
   "temas": {
     "Fundamentos de seguridad": {
       "carpeta": "Seguridad Computacional/01-Fundamentos de seguridad",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i1",
+          "desde": "CLASE 1 : Construir Sistemas Seguros",
+          "hasta": "Clase 3"
+        },
+        {
+          "fuente": "resumen_i1",
+          "desde": "Construir Sistemas Seguros : Es Dificil"
+        }
+      ]
     },
     "Buffer overflows y baggy bounds": {
       "carpeta": "Seguridad Computacional/02-Buffer overflows y baggy bounds",
@@ -92,5 +102,16 @@
       "secciones": []
     }
   },
-  "aceptados": []
+  "aceptados": [
+    {
+      "fuente": "apuntes_i1",
+      "texto": "Capas: [ copiar aqui lo que falto de la diapo ]",
+      "motivo": "Recordatorio personal; las capas se explican en la nota 01 con el material de clase."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "[Copiar este ejemplo]",
+      "motivo": "Recordatorio personal; el ejemplo de Debian está en la nota 02."
+    }
+  ]
 }

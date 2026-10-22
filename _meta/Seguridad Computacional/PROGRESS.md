@@ -5,7 +5,7 @@ Rama: `migrar/seguridad-computacional`. Un commit por tema. Antes de cada commit
 | # | Tema | Carpeta | Estado | Notas | Imágenes (apuntes + clases) |
 |---|---|---|---|---|---|
 | 0 | Infraestructura (`_meta/Seguridad Computacional/`) | `_meta/` | ✅ hecho | – | – |
-| 1 | Fundamentos de seguridad | `01-Fundamentos de seguridad/` | ⏳ pendiente | – | – |
+| 1 | Fundamentos de seguridad | `01-Fundamentos de seguridad/` | ✅ hecho | 3 + índice | 0 + 1 |
 | 2 | Buffer overflows y baggy bounds | `02-Buffer overflows y baggy bounds/` | ⏳ pendiente | – | – |
 | 3 | Autenticación de usuarios | `03-Autenticación de usuarios/` | ⏳ pendiente | – | – |
 | 4 | Arquitectura de seguridad de Google | `04-Arquitectura de seguridad de Google/` | ⏳ pendiente | – | – |
@@ -29,3 +29,4 @@ Rama: `migrar/seguridad-computacional`. Un commit por tema. Antes de cada commit
 - Otros ramos: se enlaza en vez de duplicar (criptografía, TLS y Kerberos en Sistemas Distribuidos; HTTP, XSS, CSRF y SQL injection en Tecnologías y Aplicaciones Web y Bases de Datos; TCP, DNS, contenedores y VM en Sistemas Operativos y Redes).
 
 ## Registro
+- **2026-10-21 · Fundamentos de seguridad.** Fuentes: `apuntes_i1` clase 1 completa y `resumen_i1` (objetivo, amenaza, política, mecanismo, CIA, defensa en profundidad, ejemplos de política, modelo y bugs) complementados con el texto de la clase 1 (`I01-intro-es.md`): Fairfax, Mat Honan, Palin, CAPTCHA, XcodeGhost, DES en Kerberos, iCloud, Citigroup y Debian. Se omitieron las presentaciones del equipo docente. 3 notas; 1 figura de clase. Sin dudas.
