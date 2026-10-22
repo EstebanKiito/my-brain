@@ -48,8 +48,14 @@
     },
     "Arquitectura de seguridad de Google": {
       "carpeta": "Seguridad Computacional/04-Arquitectura de seguridad de Google",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Clase 3",
+          "hasta": "Clase 2"
+        }
+      ]
     },
     "Separación de privilegios con OKWS": {
       "carpeta": "Seguridad Computacional/05-Separación de privilegios con OKWS",
@@ -122,6 +128,11 @@
       "fuente": "apuntes_i1",
       "texto": "[Copiar este ejemplo]",
       "motivo": "Recordatorio personal; el ejemplo de Debian está en la nota 02."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "link": "http://g00gle.com",
+      "motivo": "Dominio falso usado como ejemplo de phishing; no es un recurso. Se explica con prosa en la nota de autenticación."
     }
   ]
 }

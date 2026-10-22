@@ -8,7 +8,7 @@ Rama: `migrar/seguridad-computacional`. Un commit por tema. Antes de cada commit
 | 1 | Fundamentos de seguridad | `01-Fundamentos de seguridad/` | ✅ hecho | 3 + índice | 0 + 1 |
 | 2 | Buffer overflows y baggy bounds | `02-Buffer overflows y baggy bounds/` | ✅ hecho | 2 + índice | 3 + 1 |
 | 3 | Autenticación de usuarios | `03-Autenticación de usuarios/` | ✅ hecho | 2 + índice | 0 + 0 |
-| 4 | Arquitectura de seguridad de Google | `04-Arquitectura de seguridad de Google/` | ⏳ pendiente | – | – |
+| 4 | Arquitectura de seguridad de Google | `04-Arquitectura de seguridad de Google/` | ✅ hecho | 2 + índice | 2 + 0 |
 | 5 | Separación de privilegios con OKWS | `05-Separación de privilegios con OKWS/` | ⏳ pendiente | – | – |
 | 6 | Contenedores y microVMs | `06-Contenedores y microVMs/` | ⏳ pendiente | – | – |
 | 7 | Sandboxing de software | `07-Sandboxing de software/` | ⏳ pendiente | – | – |
@@ -32,3 +32,4 @@ Rama: `migrar/seguridad-computacional`. Un commit por tema. Antes de cada commit
 - **2026-10-21 · Fundamentos de seguridad.** Fuentes: `apuntes_i1` clase 1 completa y `resumen_i1` (objetivo, amenaza, política, mecanismo, CIA, defensa en profundidad, ejemplos de política, modelo y bugs) complementados con el texto de la clase 1 (`I01-intro-es.md`): Fairfax, Mat Honan, Palin, CAPTCHA, XcodeGhost, DES en Kerberos, iCloud, Citigroup y Debian. Se omitieron las presentaciones del equipo docente. 3 notas; 1 figura de clase. Sin dudas.
 - **2026-10-21 · Buffer overflows y baggy bounds.** Fuentes: `apuntes_i1` clases 2 y 6 (recordatorios de C, stack y heap, gdb, NX, canarios, ASLR, ataque al heap) con el texto de la clase 2 (`I02-baggy-es.md`) para baggy bounds y punteros gordos. Se resumió el recorrido con gdb. 2 notas; 3 imágenes de apuntes y 1 figura de clase. Sin dudas.
 - **2026-10-21 · Autenticación de usuarios.** Sin apuntes propios (solo menciones en la clase 1). Construido con el texto de la clase de autenticación (`I03-aut-es.md`): guardia, tres partes, contraseñas y entropía, gestores, límite de intentos, hash, salt, KDF, SMS, TOTP y U2F con sus dos problemas. Se omitió la lista de referencias. 2 notas; sin imágenes. Sin dudas.
+- **2026-10-21 · Arquitectura de seguridad de Google.** Fuentes: `apuntes_i1` clases 3 y 4 (arquitectura de seguridad, aislamiento, VM, guardia, ACL y capacidades, monitor de referencia, canales seguros) y el texto de la clase 3 (`l02-google-es.md`) para el arranque seguro, DoS y defensa perimetral. Se mantuvo la observación del profesor sobre el detalle del diagrama del entorno. 2 notas; 2 imágenes de apuntes. Sin dudas.

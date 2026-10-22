@@ -33,5 +33,19 @@
     "original": "Semestre 6/SEGURIDAD COMPUTACIONAL/Classes/Clase02/program_layout_in_memory.png",
     "destino": "Seguridad Computacional/02-Buffer overflows y baggy bounds/adjuntos/Layout de un programa en memoria.png",
     "sha256": "91c18b44ae2e8e791e515a57b67eb04baaa567eb27bb97c151ad7d35a631fb8c"
+  },
+  {
+    "tema": "Arquitectura de seguridad de Google",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SEGURIDAD COMPUTACIONAL/Apuntes I1/image.png",
+    "destino": "Seguridad Computacional/04-Arquitectura de seguridad de Google/adjuntos/Entorno de servidor de Google.png",
+    "sha256": "9403abd565d8b3370f46a7d681047612123f51e0166a23b221c64ea9cf063ec9"
+  },
+  {
+    "tema": "Arquitectura de seguridad de Google",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SEGURIDAD COMPUTACIONAL/Apuntes I1/image 1.png",
+    "destino": "Seguridad Computacional/04-Arquitectura de seguridad de Google/adjuntos/Modelo de referencia para compartir.png",
+    "sha256": "2f85759e6bcb2da8a2e76ff3a459b42ffac25e7999934868d61d9c149c906190"
   }
 ]
