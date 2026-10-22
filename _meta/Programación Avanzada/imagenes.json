@@ -201,5 +201,33 @@
     "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-06-excepciones_iterables_e_iteradores/img/linkedlist-insertion.gif",
     "destino": "Programación Avanzada/05-Excepciones e iterables/adjuntos/Inserción de un nodo en lista ligada.gif",
     "sha256": "d23241266a92be937ced302645b3328ad205608ef5811b76a40c3f67abed2015"
+  },
+  {
+    "tema": "Programación funcional",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-07-programacion_funcional/img/pureza.png",
+    "destino": "Programación Avanzada/06-Programación funcional/adjuntos/Funciones puras y efectos colaterales.png",
+    "sha256": "fa33077274912a5d9ccadd27b04af9b94b15d668b1ad7f538da109162967076e"
+  },
+  {
+    "tema": "Programación funcional",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-07-programacion_funcional/img/data_flow.png",
+    "destino": "Programación Avanzada/06-Programación funcional/adjuntos/Flujo de datos en programación funcional.png",
+    "sha256": "163d5a28e088b86067379952edb0fb83518964e341ea061c018d289fd623e70c"
+  },
+  {
+    "tema": "Programación funcional",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-07-programacion_funcional/img/map.png",
+    "destino": "Programación Avanzada/06-Programación funcional/adjuntos/Operación de mapeo con map.png",
+    "sha256": "11248aacd47db2c4fd3bb7f319c58560b3cdb03578eed8e56fbe7a5bdf9d1aab"
+  },
+  {
+    "tema": "Programación funcional",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-07-programacion_funcional/img/reduce.png",
+    "destino": "Programación Avanzada/06-Programación funcional/adjuntos/Operación de reducción acumulada con reduce.png",
+    "sha256": "c3aba2ed7d67958c9823ebda620692421baf7d44ff841195d1e99bd081144ba1"
   }
 ]

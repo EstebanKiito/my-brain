@@ -84,7 +84,7 @@
     },
     "Programación funcional": {
       "carpeta": "Programación Avanzada/06-Programación funcional",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [],
       "notebooks": [
         "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-07-programacion_funcional/1-paradigma_funcional.ipynb",
