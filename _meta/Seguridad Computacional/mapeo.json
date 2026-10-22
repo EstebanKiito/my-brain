@@ -89,12 +89,12 @@
     },
     "Seguridad TCP-IP": {
       "carpeta": "Seguridad Computacional/11-Seguridad TCP-IP",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": []
     },
     "TLS y certificados": {
       "carpeta": "Seguridad Computacional/12-TLS y certificados",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": []
     },
     "Mensajería segura": {

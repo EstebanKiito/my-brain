@@ -15,8 +15,8 @@ Rama: `migrar/seguridad-computacional`. Un commit por tema. Antes de cada commit
 | 8 | Seguridad móvil | `08-Seguridad móvil/` | ✅ hecho | 2 + índice | 0 + 1 |
 | 9 | Ejecución simbólica | `09-Ejecución simbólica/` | ✅ hecho | 1 + índice | 0 + 1 |
 | 10 | Seguridad web | `10-Seguridad web/` | ✅ hecho | 3 + índice | 0 + 1 |
-| 11 | Seguridad TCP-IP | `11-Seguridad TCP-IP/` | ⏳ pendiente | – | – |
-| 12 | TLS y certificados | `12-TLS y certificados/` | ⏳ pendiente | – | – |
+| 11 | Seguridad TCP-IP | `11-Seguridad TCP-IP/` | ✅ hecho | 2 + índice | 0 + 0 |
+| 12 | TLS y certificados | `12-TLS y certificados/` | ✅ hecho | 2 + índice | 0 + 0 |
 | 13 | Mensajería segura | `13-Mensajería segura/` | ⏳ pendiente | – | – |
 | 14 | DDoS y cadena de suministro | `14-DDoS y cadena de suministro/` | ⏳ pendiente | – | – |
 | 15 | SDLC seguro | `15-SDLC seguro/` | ⏳ pendiente | – | – |
@@ -39,3 +39,5 @@ Rama: `migrar/seguridad-computacional`. Un commit por tema. Antes de cada commit
 - **2026-10-21 · Seguridad móvil.** Sin apuntes propios. Construido con los textos de iOS (`I09-ios-es.md`) y Android (`I10-android-es.md`). Se resumieron las clases de protección, los permisos y las delegaciones. 2 notas; 1 figura de clase. Sin dudas.
 - **2026-10-21 · Ejecución simbólica.** Sin apuntes propios. Construido con el texto de la clase de bugs y ejecución simbólica (`I11-exe-es.md`). 1 nota; 1 figura de clase. Sin dudas.
 - **2026-10-21 · Seguridad web.** Sin apuntes propios. Construido con los textos de seguridad web (`l12-web-security-es.md`) y ataques web más comunes (`l13-top-web-attacks-es.md`). Se resumieron las categorías de OWASP en una tabla. 3 notas; 1 figura de clase. Sin dudas.
+- **2026-10-21 · Seguridad TCP-IP.** Sin apuntes propios. Construido con el texto de seguridad TCP/IP (`I13-tcpip-es.md`). 2 notas; sin imágenes. Sin dudas.
+- **2026-10-21 · TLS y certificados.** Sin apuntes propios. Construido con los textos de canal seguro (`I14-tls-es.md`) y certificados (`I15-certs-es.md`). Se resumió el análisis de ataques a SSL. 2 notas; sin imágenes. Sin dudas.
