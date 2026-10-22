@@ -82,5 +82,12 @@
     "original": "Semestre 6/SEGURIDAD COMPUTACIONAL/Classes/Clase12/exe.png",
     "destino": "Seguridad Computacional/09-Ejecución simbólica/adjuntos/Componentes de EXE en tiempo de ejecución.png",
     "sha256": "6c42e4075a907a579fac88654039bb71733e4a0daa7109503fb6c9da7faa14f6"
+  },
+  {
+    "tema": "Seguridad web",
+    "tipo": "clase",
+    "original": "Semestre 6/SEGURIDAD COMPUTACIONAL/Classes/Clase13/exploits_of_a_mom.png",
+    "destino": "Seguridad Computacional/10-Seguridad web/adjuntos/Tira Exploits of a Mom sobre inyección SQL.png",
+    "sha256": "0c7b09d66d4dcf0b315bab40833a8b876702bec2d15c826b86c351a7b4fe1c50"
   }
 ]

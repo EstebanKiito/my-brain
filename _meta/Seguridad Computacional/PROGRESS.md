@@ -14,7 +14,7 @@ Rama: `migrar/seguridad-computacional`. Un commit por tema. Antes de cada commit
 | 7 | Sandboxing de software | `07-Sandboxing de software/` | ✅ hecho | 2 + índice | 0 + 1 |
 | 8 | Seguridad móvil | `08-Seguridad móvil/` | ✅ hecho | 2 + índice | 0 + 1 |
 | 9 | Ejecución simbólica | `09-Ejecución simbólica/` | ✅ hecho | 1 + índice | 0 + 1 |
-| 10 | Seguridad web | `10-Seguridad web/` | ⏳ pendiente | – | – |
+| 10 | Seguridad web | `10-Seguridad web/` | ✅ hecho | 3 + índice | 0 + 1 |
 | 11 | Seguridad TCP-IP | `11-Seguridad TCP-IP/` | ⏳ pendiente | – | – |
 | 12 | TLS y certificados | `12-TLS y certificados/` | ⏳ pendiente | – | – |
 | 13 | Mensajería segura | `13-Mensajería segura/` | ⏳ pendiente | – | – |
@@ -38,3 +38,4 @@ Rama: `migrar/seguridad-computacional`. Un commit por tema. Antes de cada commit
 - **2026-10-21 · Sandboxing de software.** Sin apuntes propios. Construido con los textos de WebAssembly (`I07-wasm-es.md`) y RLBox (`I08-rlbox-es.md`). La figura `sfi.png` es una versión parcial de `sfi_wasm.png` y no se usa. 2 notas; 1 figura de clase. Sin dudas.
 - **2026-10-21 · Seguridad móvil.** Sin apuntes propios. Construido con los textos de iOS (`I09-ios-es.md`) y Android (`I10-android-es.md`). Se resumieron las clases de protección, los permisos y las delegaciones. 2 notas; 1 figura de clase. Sin dudas.
 - **2026-10-21 · Ejecución simbólica.** Sin apuntes propios. Construido con el texto de la clase de bugs y ejecución simbólica (`I11-exe-es.md`). 1 nota; 1 figura de clase. Sin dudas.
+- **2026-10-21 · Seguridad web.** Sin apuntes propios. Construido con los textos de seguridad web (`l12-web-security-es.md`) y ataques web más comunes (`l13-top-web-attacks-es.md`). Se resumieron las categorías de OWASP en una tabla. 3 notas; 1 figura de clase. Sin dudas.
