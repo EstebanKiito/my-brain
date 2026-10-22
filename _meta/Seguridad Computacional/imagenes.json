@@ -1,0 +1,93 @@
+[
+  {
+    "tema": "Fundamentos de seguridad",
+    "tipo": "clase",
+    "original": "Semestre 6/SEGURIDAD COMPUTACIONAL/Classes/Clase01/gmailExample.png",
+    "destino": "Seguridad Computacional/01-Fundamentos de seguridad/adjuntos/Cadena de restablecimientos Amazon, Apple y Gmail.png",
+    "sha256": "4e806f369828ea69089c82caba4b91227e159ce979ec83d86db2a55249e4a43e"
+  },
+  {
+    "tema": "Buffer overflows y baggy bounds",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SEGURIDAD COMPUTACIONAL/Apuntes I1/image 2.png",
+    "destino": "Seguridad Computacional/02-Buffer overflows y baggy bounds/adjuntos/Stack de read_req con buf, i y dirección de retorno.png",
+    "sha256": "de6264b601ddbcb7048436a3af226029007cd7c7de2980ab5a099135b70892a7"
+  },
+  {
+    "tema": "Buffer overflows y baggy bounds",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SEGURIDAD COMPUTACIONAL/Apuntes I1/image 3.png",
+    "destino": "Seguridad Computacional/02-Buffer overflows y baggy bounds/adjuntos/Stack con canario entre buf y dirección de retorno.png",
+    "sha256": "71d26f5dc3bfe66ac3fd0d15b4256149ec6400ca4d592bbf8c9a9e8151bfb753"
+  },
+  {
+    "tema": "Buffer overflows y baggy bounds",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SEGURIDAD COMPUTACIONAL/Apuntes I1/image 4.png",
+    "destino": "Seguridad Computacional/02-Buffer overflows y baggy bounds/adjuntos/Ataque al heap con la lista de bloques libres.png",
+    "sha256": "01edaaff26815ca2bd85018838c551700efc727bc0b234c67b0ae6614f8ef996"
+  },
+  {
+    "tema": "Buffer overflows y baggy bounds",
+    "tipo": "clase",
+    "original": "Semestre 6/SEGURIDAD COMPUTACIONAL/Classes/Clase02/program_layout_in_memory.png",
+    "destino": "Seguridad Computacional/02-Buffer overflows y baggy bounds/adjuntos/Layout de un programa en memoria.png",
+    "sha256": "91c18b44ae2e8e791e515a57b67eb04baaa567eb27bb97c151ad7d35a631fb8c"
+  },
+  {
+    "tema": "Arquitectura de seguridad de Google",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SEGURIDAD COMPUTACIONAL/Apuntes I1/image.png",
+    "destino": "Seguridad Computacional/04-Arquitectura de seguridad de Google/adjuntos/Entorno de servidor de Google.png",
+    "sha256": "9403abd565d8b3370f46a7d681047612123f51e0166a23b221c64ea9cf063ec9"
+  },
+  {
+    "tema": "Arquitectura de seguridad de Google",
+    "tipo": "apuntes",
+    "original": "Semestre 6/SEGURIDAD COMPUTACIONAL/Apuntes I1/image 1.png",
+    "destino": "Seguridad Computacional/04-Arquitectura de seguridad de Google/adjuntos/Modelo de referencia para compartir.png",
+    "sha256": "2f85759e6bcb2da8a2e76ff3a459b42ffac25e7999934868d61d9c149c906190"
+  },
+  {
+    "tema": "Separación de privilegios con OKWS",
+    "tipo": "clase",
+    "original": "Semestre 6/SEGURIDAD COMPUTACIONAL/Classes/Clase05/OK_arch.png",
+    "destino": "Seguridad Computacional/05-Separación de privilegios con OKWS/adjuntos/Arquitectura de OKWS.png",
+    "sha256": "1838472eda9f5c4115295e07814d5960c82d0303442987e6e444120b8ae8a1fe"
+  },
+  {
+    "tema": "Contenedores y microVMs",
+    "tipo": "clase",
+    "original": "Semestre 6/SEGURIDAD COMPUTACIONAL/Classes/Clase06/vm_vs_containers.png",
+    "destino": "Seguridad Computacional/06-Contenedores y microVMs/adjuntos/Máquina virtual frente a contenedor LXC.png",
+    "sha256": "479420ca288f892e4457261c309488c824e52424466b87402d77b24008335c71"
+  },
+  {
+    "tema": "Sandboxing de software",
+    "tipo": "clase",
+    "original": "Semestre 6/SEGURIDAD COMPUTACIONAL/Classes/Clase08/sfi_wasm.png",
+    "destino": "Seguridad Computacional/07-Sandboxing de software/adjuntos/SFI y su aplicación en WebAssembly.png",
+    "sha256": "a34f4af750afebfa0f27b88def8d6b3d43991dcf040681dde9ce7d07de5d84dd"
+  },
+  {
+    "tema": "Seguridad móvil",
+    "tipo": "clase",
+    "original": "Semestre 6/SEGURIDAD COMPUTACIONAL/Classes/Clase10/arch.png",
+    "destino": "Seguridad Computacional/08-Seguridad móvil/adjuntos/Arquitectura del enclave seguro de iOS.png",
+    "sha256": "e035d5c4f7736b57ef0c52dba7fb9fe0b74a6df7572d51ce32ddb1b289301992"
+  },
+  {
+    "tema": "Ejecución simbólica",
+    "tipo": "clase",
+    "original": "Semestre 6/SEGURIDAD COMPUTACIONAL/Classes/Clase12/exe.png",
+    "destino": "Seguridad Computacional/09-Ejecución simbólica/adjuntos/Componentes de EXE en tiempo de ejecución.png",
+    "sha256": "6c42e4075a907a579fac88654039bb71733e4a0daa7109503fb6c9da7faa14f6"
+  },
+  {
+    "tema": "Seguridad web",
+    "tipo": "clase",
+    "original": "Semestre 6/SEGURIDAD COMPUTACIONAL/Classes/Clase13/exploits_of_a_mom.png",
+    "destino": "Seguridad Computacional/10-Seguridad web/adjuntos/Tira Exploits of a Mom sobre inyección SQL.png",
+    "sha256": "0c7b09d66d4dcf0b315bab40833a8b876702bec2d15c826b86c351a7b4fe1c50"
+  }
+]

@@ -1,0 +1,164 @@
+{
+  "_descripcion": "Mapeo de las fuentes originales (rutas relativas a _raw/) a los temas del vault. Cada sección va desde el bloque 'desde' (incluido) hasta 'hasta' (excluido). Las notas son breves y se reescriben según _meta/ESTANDAR-NOTAS.md (el usuario pidió notas cortas y concisas), por eso 'cobertura' es 'reescrita'. Los apuntes propios son mínimos (Apuntes I1 cubre las clases 1-6; Apuntes I2, Apuntes Ex e Investigaciones + Tips están vacíos); el grueso sale de los textos de Classes/ y de los resúmenes de Skibidi-Seguridad. Las figuras de Classes/ entran como PNG con tipo 'clase'.",
+  "carpeta_ramo": "Seguridad Computacional",
+  "cobertura": "reescrita",
+  "fuentes": {
+    "ramo": "Semestre 6/SEGURIDAD COMPUTACIONAL 22760dd6de8180d0804bea1b99eb2cfe.html",
+    "apuntes_i1": "Semestre 6/SEGURIDAD COMPUTACIONAL/Apuntes I1 24460dd6de8180a0a6a6fdd2ace322f0.html",
+    "apuntes_i2": "Semestre 6/SEGURIDAD COMPUTACIONAL/Apuntes I2 24460dd6de818039b60ece997809abe0.html",
+    "apuntes_ex": "Semestre 6/SEGURIDAD COMPUTACIONAL/Apuntes Ex 24460dd6de81803c8953eba54671a553.html",
+    "resumen_i1": "Semestre 6/SEGURIDAD COMPUTACIONAL/Resumen I1 - IIC2531 27e60dd6de8180a2a22eef4cbb35eb68.html",
+    "investigaciones": "Semestre 6/SEGURIDAD COMPUTACIONAL/Investigaciones + Tips 24460dd6de81809bafdef5749ae3c07d.html"
+  },
+  "temas": {
+    "Fundamentos de seguridad": {
+      "carpeta": "Seguridad Computacional/01-Fundamentos de seguridad",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i1",
+          "desde": "CLASE 1 : Construir Sistemas Seguros",
+          "hasta": "Clase 3"
+        },
+        {
+          "fuente": "resumen_i1",
+          "desde": "Construir Sistemas Seguros : Es Dificil"
+        }
+      ]
+    },
+    "Buffer overflows y baggy bounds": {
+      "carpeta": "Seguridad Computacional/02-Buffer overflows y baggy bounds",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Clase 2",
+          "hasta": "Clase 4: Charla"
+        },
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Clase 6"
+        }
+      ]
+    },
+    "Autenticación de usuarios": {
+      "carpeta": "Seguridad Computacional/03-Autenticación de usuarios",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "Arquitectura de seguridad de Google": {
+      "carpeta": "Seguridad Computacional/04-Arquitectura de seguridad de Google",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Clase 3",
+          "hasta": "Clase 2"
+        }
+      ]
+    },
+    "Separación de privilegios con OKWS": {
+      "carpeta": "Seguridad Computacional/05-Separación de privilegios con OKWS",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "Contenedores y microVMs": {
+      "carpeta": "Seguridad Computacional/06-Contenedores y microVMs",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "Sandboxing de software": {
+      "carpeta": "Seguridad Computacional/07-Sandboxing de software",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "Seguridad móvil": {
+      "carpeta": "Seguridad Computacional/08-Seguridad móvil",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "Ejecución simbólica": {
+      "carpeta": "Seguridad Computacional/09-Ejecución simbólica",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "Seguridad web": {
+      "carpeta": "Seguridad Computacional/10-Seguridad web",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "Seguridad TCP-IP": {
+      "carpeta": "Seguridad Computacional/11-Seguridad TCP-IP",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "TLS y certificados": {
+      "carpeta": "Seguridad Computacional/12-TLS y certificados",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "Mensajería segura": {
+      "carpeta": "Seguridad Computacional/13-Mensajería segura",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "DDoS y cadena de suministro": {
+      "carpeta": "Seguridad Computacional/14-DDoS y cadena de suministro",
+      "estado": "hecho",
+      "secciones": []
+    },
+    "SDLC seguro": {
+      "carpeta": "Seguridad Computacional/15-SDLC seguro",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Clase 4: Charla",
+          "hasta": "Clase 6"
+        }
+      ]
+    },
+    "Gestión del curso": {
+      "carpeta": "Seguridad Computacional/16-Gestión del curso",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "ramo",
+          "desde": "Contenidos"
+        }
+      ]
+    }
+  },
+  "aceptados": [
+    {
+      "fuente": "apuntes_i1",
+      "texto": "Capas: [ copiar aqui lo que falto de la diapo ]",
+      "motivo": "Recordatorio personal; las capas se explican en la nota 01 con el material de clase."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "texto": "[Copiar este ejemplo]",
+      "motivo": "Recordatorio personal; el ejemplo de Debian está en la nota 02."
+    },
+    {
+      "fuente": "apuntes_i1",
+      "link": "http://g00gle.com",
+      "motivo": "Dominio falso usado como ejemplo de phishing; no es un recurso. Se explica con prosa en la nota de autenticación."
+    },
+    {
+      "fuente": "ramo",
+      "texto": "Correo profe: ignacio@magnet.cl",
+      "motivo": "Dato personal de contacto; se omite."
+    },
+    {
+      "fuente": "ramo",
+      "texto": "yo@ignacioparada.cl",
+      "motivo": "Dato personal de contacto; se omite."
+    },
+    {
+      "fuente": "ramo",
+      "texto": "PROFE",
+      "motivo": "Encabezado de la sección de contacto; el nombre del docente está en la nota."
+    }
+  ]
+}
