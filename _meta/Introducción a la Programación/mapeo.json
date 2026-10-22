@@ -54,6 +54,21 @@
         "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase09",
         "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase10"
       ]
+    },
+    "Funciones y módulos": {
+      "carpeta": "Introducción a la Programación/05-Funciones y módulos",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase9-Funciones.pdf",
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase10_Funciones_.pdf",
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase11_Funciones_.pdf"
+      ],
+      "codigos": [
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase09",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase10",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase11"
+      ]
     }
   },
   "aceptados": []
