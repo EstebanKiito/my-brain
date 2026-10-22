@@ -16,7 +16,7 @@ Rama: `migrar/introduccion-programacion`. Un commit por tema. Antes de cada comm
 | 9 | Listas de listas | `09-Listas de listas/` | ✅ hecho | 2 + índice | 0 |
 | 10 | Archivos | `10-Archivos/` | ✅ hecho | 3 + índice | 0 |
 | 11 | Programación orientada a objetos | `11-Programación orientada a objetos/` | ✅ hecho | 3 + índice | 0 |
-| 12 | Ordenamiento | `12-Ordenamiento/` | ⏳ pendiente | – | – |
+| 12 | Ordenamiento | `12-Ordenamiento/` | ✅ hecho | 3 + índice | 0 |
 | 13 | Gestión del curso | `13-Gestión del curso/` | ⏳ pendiente | – | – |
 
 ## Convenciones
@@ -37,3 +37,4 @@ Rama: `migrar/introduccion-programacion`. Un commit por tema. Antes de cada comm
 - **2026-10-22 · Listas de listas.** Fuentes: slides de listas de listas (amigos, M[i][j], tamaño, creación con comprensión, recorrer, buscar, vecinos) y los códigos `lista de listas recorrer y buscar`, `simpsons`, `cumples` y `vuelos ejercicio`. Se agregó la trampa de `[[0]*c]*f`. Los vuelos con escala se describen en prosa y se enlazan a grafos de Estructuras de Datos. 2 notas; 0 imágenes.
 - **2026-10-22 · Archivos.** Fuentes: slides de archivos (RAM y disco, readlines, palabra al azar, traductor, modos, errores comunes) y de archivos parte 2 (repaso y ejercicios), y los códigos `contador`, `palabra azar`, `traductor`, `programamalo`, `catalan 12`, `dccarcadeA` y `procesar datos excel`. Los snippets crean sus propios archivos de ejemplo para poder ejecutarse. Se agregó `with`. 3 notas; 0 imágenes.
 - **2026-10-22 · Programación orientada a objetos.** Fuentes: slides de objetos (tipos propios, clase e instancia, Perro, Punto2D, constructor, self, __str__) y objetos parte 2 (Película, Fracción, Carta, Mazo), y los códigos `clase Punto2d`, `clase Fraccion`, `cartas` y `clase Gato` (este último se usa en Ordenamiento). La suma de fracciones de las slides tenía el denominador mal (`n*n` en vez de `d*d`) y un `def str`; la nota usa la versión correcta. 3 notas; 0 imágenes.
+- **2026-10-22 · Ordenamiento.** Sin slides propias (los PDF terminan en POO): fuentes son los códigos `ordenar`, `clase Gato`, `catalan`, `selection sort` y `ordenamiento- metro A`, más la sección de ordenamiento de `pythonbook.pdf` (sort y sorted). La red de metro del ejemplo integrador es inventada para que el código corra solo. 3 notas; 0 imágenes.
