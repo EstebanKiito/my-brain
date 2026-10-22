@@ -68,5 +68,12 @@
     "original": "Semestre 6/SEGURIDAD COMPUTACIONAL/Classes/Clase08/sfi_wasm.png",
     "destino": "Seguridad Computacional/07-Sandboxing de software/adjuntos/SFI y su aplicación en WebAssembly.png",
     "sha256": "a34f4af750afebfa0f27b88def8d6b3d43991dcf040681dde9ce7d07de5d84dd"
+  },
+  {
+    "tema": "Seguridad móvil",
+    "tipo": "clase",
+    "original": "Semestre 6/SEGURIDAD COMPUTACIONAL/Classes/Clase10/arch.png",
+    "destino": "Seguridad Computacional/08-Seguridad móvil/adjuntos/Arquitectura del enclave seguro de iOS.png",
+    "sha256": "e035d5c4f7736b57ef0c52dba7fb9fe0b74a6df7572d51ce32ddb1b289301992"
   }
 ]
