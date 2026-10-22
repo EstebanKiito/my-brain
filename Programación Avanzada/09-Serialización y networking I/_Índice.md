@@ -1,0 +1,19 @@
+# Serialización y networking I — índice
+
+Conceptos y herramientas para la persistencia, transmisión y consumo de información en aplicaciones distribuidas sobre redes de datos: serialización textual estructurada con JSON y codificadores personalizados (`JSONEncoder` y `object_hook`), arquitectura cliente-servidor, direcciones IP, resolución DNS, puertos y sockets, modelos de capas (OSI y TCP/IP) con encapsulamiento, protocolos de transporte confiables frente a datagramas veloces (TCP vs UDP), el protocolo HTTP con su anatomía de mensajes, verbos y códigos de estado, seguridad web con cifrado híbrido TLS y HTTPS, consumo de APIs mediante la biblioteca `requests`, construcción de servidores y microservicios REST con Flask, y sincronización ante peticiones concurrentes y condiciones de carrera web.
+
+Volver al [[Programación Avanzada/_Índice|mapa del ramo]].
+
+> [!note] Origen
+> Reescrito a partir de los seis notebooks de la décima semana del curso (serialización JSON, networking básico, webservices básicos y bonus TLS, cliente requests, servidor Flask, y bonus de condiciones de carrera web), complementado con las diapositivas de clases.
+
+## Orden de estudio
+1. [[01 - Serialización con JSON: dumps, loads y personalización|Serialización con JSON: dumps, loads y personalización]]: persistencia e interoperabilidad de datos, métodos `dump`/`dumps` y `load`/`loads`, serialización de clases propias con `JSONEncoder` y reconstrucción con `object_hook`.
+2. [[02 - Fundamentos de redes: arquitectura cliente-servidor, sockets y puertos|Fundamentos de redes: arquitectura cliente-servidor, sockets y puertos]]: roles de cliente y servidor, direccionamiento IP (IPv4, IPv6, localhost `127.0.0.1`), resolución DNS, puertos bien conocidos y definición de sockets.
+3. [[03 - Modelo de capas y protocolos de transporte: TCP frente a UDP|Modelo de capas y protocolos de transporte: TCP frente a UDP]]: abstracción por capas y encapsulamiento de cabeceras, sesión confiable y ordenada con TCP (*three-way handshake*) frente a datagramas veloces y ligeros con UDP.
+4. [[04 - Protocolo HTTP: estructura de mensajes, métodos y códigos de estado|Protocolo HTTP: estructura de mensajes, métodos y códigos de estado]]: anatomía de URLs, ciclo petición-respuesta sin estado, cabeceras y cuerpo, semántica de métodos (GET, POST, PUT, DELETE) y familias de códigos de estado (2xx a 5xx).
+5. [[05 - Seguridad en la web: TLS, HTTPS y certificados digitales|Seguridad en la web: TLS, HTTPS y certificados digitales]]: amenazas de espionaje e intermediario (MITM), pilares de TLS (privacidad, integridad, autenticación), arquitectura criptográfica híbrida y certificados digitales X.509.
+6. [[06 - Consumo de APIs web con requests en Python|Consumo de APIs web con requests en Python]]: cliente HTTP idiomático, peticiones GET y parámetros de consulta, peticiones POST con payloads JSON, cabeceras de autorización, control de timeouts y excepciones de red.
+7. [[07 - Creación de servicios web con Flask: rutas, parámetros y JSON|Creación de servicios web con Flask: rutas, parámetros y JSON]]: microframework Flask, decorador `@app.route`, rutas dinámicas tipadas, argumentos con `request.args`, lectura de cuerpos con `request.get_json()` y respuestas con `jsonify()`.
+8. [[08 - Concurrencia en servicios web: peticiones paralelas y condiciones de carrera|Concurrencia en servicios web: peticiones paralelas y condiciones de carrera]]: peticiones paralelas con `ThreadPoolExecutor`, mitigación de rate limits (código 429) con retroceso exponencial (*exponential backoff*), y exclusión mutua con cerrojos en servidores con estado compartido.
+

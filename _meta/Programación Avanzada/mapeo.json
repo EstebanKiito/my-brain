@@ -1,0 +1,198 @@
+{
+  "_descripcion": "Este ramo no tiene export de Notion ni apuntes propios. Las fuentes son los notebooks de Clases/Contenidos (definen el orden y los temas), los PDF de Clases/2023 (contenido extra) y el libro (apoyo). Como verificar.py solo procesa fuentes HTML, 'fuentes' queda vacío y cada tema lleva 'secciones' vacías; 'notebooks' y 'pdfs' son informativos. Las notas se reescriben según _meta/ESTANDAR-NOTAS.md para estudiantes, por eso 'cobertura' es 'reescrita'.",
+  "carpeta_ramo": "Programación Avanzada",
+  "cobertura": "reescrita",
+  "fuentes": {},
+  "temas": {
+    "Repaso y POO básica": {
+      "carpeta": "Programación Avanzada/01-Repaso y POO básica",
+      "estado": "hecho",
+      "secciones": [],
+      "notebooks": [
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-01-introduccion/0-contenidos-minimos.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-01-introduccion/1-atributos_y_encapsulamiento_OOP.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-01-introduccion/2-I_O.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-01-introduccion/bonus-annotations-typing.ipynb"
+      ],
+      "pdfs": [
+        "Semestre 2/PROGRA-AVANZADA/Clases/2023/Semana 1 - OOP 1.pdf",
+        "Semestre 2/PROGRA-AVANZADA/Clases/2023/Semana 11 - IO, Strings, Regex.pdf"
+      ]
+    },
+    "Entorno de trabajo": {
+      "carpeta": "Programación Avanzada/02-Entorno de trabajo",
+      "estado": "hecho",
+      "secciones": [],
+      "notebooks": [
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-02-entorno_de_trabajo/1-guía-de-estilo.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-02-entorno_de_trabajo/2-modularización.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-02-entorno_de_trabajo/3-paths.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-02-entorno_de_trabajo/4-terminal.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-02-entorno_de_trabajo/5-git.ipynb"
+      ],
+      "pdfs": [
+        "Semestre 2/PROGRA-AVANZADA/Clases/2023/Semana 1 - GitHub y Git.pdf"
+      ]
+    },
+    "Estructuras de datos de Python": {
+      "carpeta": "Programación Avanzada/03-Estructuras de datos de Python",
+      "estado": "hecho",
+      "secciones": [],
+      "notebooks": [
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-03-estructuras_de_datos/1-introducción-y-tuplas.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-03-estructuras_de_datos/2-stacks-y-colas.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-03-estructuras_de_datos/3-diccionarios.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-03-estructuras_de_datos/4-sets.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-03-estructuras_de_datos/5-args-kwargs.ipynb"
+      ],
+      "pdfs": [
+        "Semestre 2/PROGRA-AVANZADA/Clases/2023/Semana 3 - Estructuras built-in, Iterables y Generadores (Repaso).pdf"
+      ]
+    },
+    "POO avanzada": {
+      "carpeta": "Programación Avanzada/04-POO avanzada",
+      "estado": "hecho",
+      "secciones": [],
+      "notebooks": [
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/1-herencia.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/2-polimorfismo.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/3-multiherencia.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/4-clases-abstractas.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/5-decoradores.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/6-diagrama-de-clases.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/bonus-metaclases.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/bonus-multiherencia-en-python.ipynb"
+      ],
+      "pdfs": [
+        "Semestre 2/PROGRA-AVANZADA/Clases/2023/Semana 2 - OOP 2 (Repaso).pdf"
+      ]
+    },
+    "Excepciones e iterables": {
+      "carpeta": "Programación Avanzada/05-Excepciones e iterables",
+      "estado": "hecho",
+      "secciones": [],
+      "notebooks": [
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-06-excepciones_iterables_e_iteradores/1-excepciones-intro.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-06-excepciones_iterables_e_iteradores/2-levantamiento-y-manejo-excepciones.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-06-excepciones_iterables_e_iteradores/3-iterables-generadores.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-06-excepciones_iterables_e_iteradores/4-listas-ligadas.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-06-excepciones_iterables_e_iteradores/bonus-excepciones-personalizadas.ipynb"
+      ],
+      "pdfs": [
+        "Semestre 2/PROGRA-AVANZADA/Clases/2023/Semana 7 - Serializacion y Excepciones.pdf"
+      ]
+    },
+    "Programación funcional": {
+      "carpeta": "Programación Avanzada/06-Programación funcional",
+      "estado": "hecho",
+      "secciones": [],
+      "notebooks": [
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-07-programacion_funcional/1-paradigma_funcional.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-07-programacion_funcional/2-funciones_generadoras.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-07-programacion_funcional/3-funciones_usan_iterables.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-07-programacion_funcional/4-aplicaciones.ipynb"
+      ],
+      "pdfs": []
+    },
+    "Threading": {
+      "carpeta": "Programación Avanzada/07-Threading",
+      "estado": "hecho",
+      "secciones": [],
+      "notebooks": [
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-08-threading/1-threading.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-08-threading/2-concurrencia-y-consecuencias.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-08-threading/3-ejemplos-y-aplicaciones.ipynb"
+      ],
+      "pdfs": [
+        "Semestre 2/PROGRA-AVANZADA/Clases/2023/Semana 5 - Threading.pdf"
+      ]
+    },
+    "Interfaces gráficas con PyQt": {
+      "carpeta": "Programación Avanzada/08-Interfaces gráficas con PyQt",
+      "estado": "hecho",
+      "secciones": [],
+      "notebooks": [
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/1-interfaces-graficas.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/2-elementos-graficos-basicos.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/3-eventos-y-señales.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/4-diseño-front-back.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/5-ejemplo-conexion-entre-ventanas.ipynb"
+      ],
+      "pdfs": [
+        "Semestre 2/PROGRA-AVANZADA/Clases/2023/Semana 4 - Interfaces Gráficas.pdf"
+      ]
+    },
+    "Serialización y networking I": {
+      "carpeta": "Programación Avanzada/09-Serialización y networking I",
+      "estado": "hecho",
+      "secciones": [],
+      "notebooks": [
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-10-serializacion_y_networkin_1/1-serializacion_json.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-10-serializacion_y_networkin_1/2-networking_conceptos_básicos.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-10-serializacion_y_networkin_1/3-webservices_conceptos_básicos.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-10-serializacion_y_networkin_1/4-webservices_client_side.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-10-serializacion_y_networkin_1/5-webservices_server_side.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-10-serializacion_y_networkin_1/6-bonus_race_conditions.ipynb"
+      ],
+      "pdfs": [
+        "Semestre 2/PROGRA-AVANZADA/Clases/2023/Semana 9 - Networking.pdf",
+        "Semestre 2/PROGRA-AVANZADA/Clases/2023/Semana 13 - Webservices.pdf"
+      ]
+    },
+    "Serialización y networking II": {
+      "carpeta": "Programación Avanzada/10-Serialización y networking II",
+      "estado": "hecho",
+      "secciones": [],
+      "notebooks": [
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-11-serializacion_y_networking_2/1-serializacion_pickle.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-11-serializacion_y_networking_2/2-manejo-de-bytes.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-11-serializacion_y_networking_2/3-networking-con-python.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-11-serializacion_y_networking_2/4-networking-ejemplos.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-11-serializacion_y_networking_2/bonus-networking-con-python-UDP.ipynb"
+      ],
+      "pdfs": [
+        "Semestre 2/PROGRA-AVANZADA/Clases/2023/Semana 9 - Networking.pdf"
+      ]
+    },
+    "PyQt avanzado": {
+      "carpeta": "Programación Avanzada/11-PyQt avanzado",
+      "estado": "hecho",
+      "secciones": [],
+      "notebooks": [
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-14-interfaces_graficas_2/1-pyqt-qthreads.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-14-interfaces_graficas_2/2-integracion_networking.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-14-interfaces_graficas_2/3-pyqt-miscelaneo.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-14-interfaces_graficas_2/bonus-qtimer-y-main-window.ipynb"
+      ],
+      "pdfs": [
+        "Semestre 2/PROGRA-AVANZADA/Clases/2023/Semana 6 - Interfaces Graficas 2.pdf"
+      ]
+    },
+    "Tópicos avanzados": {
+      "carpeta": "Programación Avanzada/12-Tópicos avanzados",
+      "estado": "hecho",
+      "secciones": [],
+      "notebooks": [
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-15-topicos-avanzados/1-expresiones-regulares.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-15-topicos-avanzados/2-grafos-y-representacion.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-15-topicos-avanzados/3-busqueda-en-grafos.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-15-topicos-avanzados/4-numpy.ipynb",
+        "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-15-topicos-avanzados/5-pandas.ipynb"
+      ],
+      "pdfs": [
+        "Semestre 2/PROGRA-AVANZADA/Clases/2023/Semana 15 - Nodales (Repaso).pdf",
+        "Semestre 2/PROGRA-AVANZADA/Clases/2023/Semana 11 - IO, Strings, Regex.pdf"
+      ]
+    },
+    "Gestión del curso": {
+      "carpeta": "Programación Avanzada/13-Gestión del curso",
+      "estado": "hecho",
+      "secciones": [],
+      "notebooks": [],
+      "pdfs": [
+        "Semestre 2/PROGRA-AVANZADA/Clases/2023/Semana 0 - Bienvenida.pdf",
+        "Semestre 2/PROGRA-AVANZADA/Libros y Resumenes/Advanced Computer Programming in Python.pdf"
+      ]
+    }
+  }
+}

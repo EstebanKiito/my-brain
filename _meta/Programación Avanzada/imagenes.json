@@ -1,0 +1,541 @@
+[
+  {
+    "tema": "Repaso y POO básica",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-01-introduccion/data/indices_slicing.png",
+    "destino": "Programación Avanzada/01-Repaso y POO básica/adjuntos/Índices para slicing de una lista.png",
+    "sha256": "138b9d4e6d62f16269bcee2ba52f4c8a0081853c5ff5b11f269fe08c21660e19"
+  },
+  {
+    "tema": "Repaso y POO básica",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-01-introduccion/data/OOP_interfaz.png",
+    "destino": "Programación Avanzada/01-Repaso y POO básica/adjuntos/Interfaz de la clase Auto.png",
+    "sha256": "a0a88134795fbecaee7fff3cc0b56dcbe0e515ba9b9d67ed5b5078e65257fb75"
+  },
+  {
+    "tema": "Entorno de trabajo",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-02-entorno_de_trabajo/data/files.png",
+    "destino": "Programación Avanzada/02-Entorno de trabajo/adjuntos/Jerarquía de carpetas del ejemplo de Pedro.png",
+    "sha256": "32c945150d31c4ef7aeca17c0dfb95fdd3a402d2547b7178b7451ffd86707875"
+  },
+  {
+    "tema": "Entorno de trabajo",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-02-entorno_de_trabajo/data/screenshot_1.png",
+    "destino": "Programación Avanzada/02-Entorno de trabajo/adjuntos/Consola de Python abierta en la terminal.png",
+    "sha256": "11c88aae60e2ed3f52074f85179d3c298bd55b79d59f089ed27ab561dd6774d0"
+  },
+  {
+    "tema": "Entorno de trabajo",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-02-entorno_de_trabajo/5-git.ipynb#attachment=image.png",
+    "destino": "Programación Avanzada/02-Entorno de trabajo/adjuntos/Git - archivo nuevo solo en mi computador.png",
+    "sha256": "75bdf841839294ccd4c5ca3084484463a01b0c54eec64d19c367e7173b64d5ab"
+  },
+  {
+    "tema": "Entorno de trabajo",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-02-entorno_de_trabajo/5-git.ipynb#attachment=image-2.png",
+    "destino": "Programación Avanzada/02-Entorno de trabajo/adjuntos/Git - archivo en la lista de cambios.png",
+    "sha256": "b204f63aa4abe7ae56a3605c7ce8c54ea6699091bf27d1201d254d0400491402"
+  },
+  {
+    "tema": "Entorno de trabajo",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-02-entorno_de_trabajo/5-git.ipynb#attachment=image-3.png",
+    "destino": "Programación Avanzada/02-Entorno de trabajo/adjuntos/Git - archivo en el repositorio local.png",
+    "sha256": "fb434f1c3aadac587277d0bc28b2b26d538b67df097de95d6f6ce76ec8ccdeb6"
+  },
+  {
+    "tema": "Entorno de trabajo",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-02-entorno_de_trabajo/5-git.ipynb#attachment=image-4.png",
+    "destino": "Programación Avanzada/02-Entorno de trabajo/adjuntos/Git - archivo en el repositorio remoto.png",
+    "sha256": "4a917dec10ead7afbd7843cb8362307d2e129e6e7ece4c8288ef2ddae9279302"
+  },
+  {
+    "tema": "Entorno de trabajo",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-02-entorno_de_trabajo/data/1.png",
+    "destino": "Programación Avanzada/02-Entorno de trabajo/adjuntos/Commits como muñecas rusas.png",
+    "sha256": "869837e02f331d5eaac57fe7d1dc7c16916de239f68b63f9f54199450dcaf711"
+  },
+  {
+    "tema": "Entorno de trabajo",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-02-entorno_de_trabajo/data/2.png",
+    "destino": "Programación Avanzada/02-Entorno de trabajo/adjuntos/El último commit contiene todo el proyecto.png",
+    "sha256": "cbd9cc85a3f71d554e9abc746350899441f8fa047bc298d321808dd4e9f402e5"
+  },
+  {
+    "tema": "Estructuras de datos de Python",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-03-estructuras_de_datos/img/indices_secuencia.png",
+    "destino": "Programación Avanzada/03-Estructuras de datos de Python/adjuntos/Índices en una tupla o secuencia.png",
+    "sha256": "0d3f2954c57186e0f1ef5d4d50f9ec2f1fed0a8d601c7fe25408a94819f69a66"
+  },
+  {
+    "tema": "Estructuras de datos de Python",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-03-estructuras_de_datos/img/stacks.png",
+    "destino": "Programación Avanzada/03-Estructuras de datos de Python/adjuntos/Operaciones en un stack o pila.png",
+    "sha256": "c6cf3aaf9d057e93d68b6d9da833dd0dc5970317b4e309d8ef32631f17872de6"
+  },
+  {
+    "tema": "Estructuras de datos de Python",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-03-estructuras_de_datos/img/back-button-stacks.png",
+    "destino": "Programación Avanzada/03-Estructuras de datos de Python/adjuntos/Historial de navegación con stack.png",
+    "sha256": "cd1feb04a70ec5c5ae6767f3c21d555327e2ac61dfd1c1109dbb42ef248c7aa5"
+  },
+  {
+    "tema": "Estructuras de datos de Python",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-03-estructuras_de_datos/img/queues.png",
+    "destino": "Programación Avanzada/03-Estructuras de datos de Python/adjuntos/Operaciones en una cola FIFO.png",
+    "sha256": "65a88e03c9b6a6ddca032db33bdc0bf3debb2ccfe3c3976bc4cf7f12d7fd428d"
+  },
+  {
+    "tema": "Estructuras de datos de Python",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-03-estructuras_de_datos/img/hash-table.png",
+    "destino": "Programación Avanzada/03-Estructuras de datos de Python/adjuntos/Estructura de tabla hash en diccionarios.png",
+    "sha256": "1965c77cd550f8a697bba574d10a8f95905f8e0af10e55b8f4923669499812c1"
+  },
+  {
+    "tema": "POO avanzada",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/img/diagrama_herencia.jpeg",
+    "destino": "Programación Avanzada/04-POO avanzada/adjuntos/Jerarquía de herencia simple.jpeg",
+    "sha256": "e7f44e87c44064cbf68c87a1abfbcc700724cc5b16410f983f10ad3d3503944a"
+  },
+  {
+    "tema": "POO avanzada",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/img/diagrama_multiherencia.jpeg",
+    "destino": "Programación Avanzada/04-POO avanzada/adjuntos/Jerarquía de multiherencia.jpeg",
+    "sha256": "3f66e104c4e7418691e2d088185f38ddda1f841c434c12d5ea5c848a2f8a28d1"
+  },
+  {
+    "tema": "POO avanzada",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/img/diagrama_diamante.jpeg",
+    "destino": "Programación Avanzada/04-POO avanzada/adjuntos/Problema del diamante en multiherencia.jpeg",
+    "sha256": "6b49707e535545f7d30b5cfa80fbf4ad839ab49ff57b9a3e5e2cccc920750818"
+  },
+  {
+    "tema": "POO avanzada",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/img/diamante_2_small.png",
+    "destino": "Programación Avanzada/04-POO avanzada/adjuntos/Resolución del diamante con orden MRO.png",
+    "sha256": "cba12c343757932b07009e5ad0e380e35fe013313dd3b43f21925768bd3bec4a"
+  },
+  {
+    "tema": "POO avanzada",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/img/UML_class.png",
+    "destino": "Programación Avanzada/04-POO avanzada/adjuntos/Estructura de clase en diagrama UML.png",
+    "sha256": "d0a702d3b703960e9951ac04fed2991a9a45b10572f957830fd619a439b19d9b"
+  },
+  {
+    "tema": "POO avanzada",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/img/UML_class_ejemplo.png",
+    "destino": "Programación Avanzada/04-POO avanzada/adjuntos/Ejemplo de clase Auto en UML.png",
+    "sha256": "ac2ceceea96abc46d6ead390cab62c595a4a5df15cc62b9337d77e323e91891d"
+  },
+  {
+    "tema": "POO avanzada",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/img/OOP_mario.png",
+    "destino": "Programación Avanzada/04-POO avanzada/adjuntos/Modelo conceptual de objetos en Mario.png",
+    "sha256": "eddd0ce94d301b05326fd6b368780dca745ff08bd7e2c8f3e7d337d39d8bcc74"
+  },
+  {
+    "tema": "POO avanzada",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/img/UML_mario_03.png",
+    "destino": "Programación Avanzada/04-POO avanzada/adjuntos/Relación de contención o composición en UML.png",
+    "sha256": "d17216d2816714a5cc36bc233cb7a6be819d2cf0077c11f817a352071b23422b"
+  },
+  {
+    "tema": "POO avanzada",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/img/UML_mario_05.png",
+    "destino": "Programación Avanzada/04-POO avanzada/adjuntos/Relación de herencia en UML.png",
+    "sha256": "5724488ddd1794b0bb002d571ae7e57d7991690b98caa8416bae4994a3ca6b80"
+  },
+  {
+    "tema": "POO avanzada",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/img/UML_mario_final.png",
+    "destino": "Programación Avanzada/04-POO avanzada/adjuntos/Diagrama de clases UML completo de Mario.png",
+    "sha256": "de3229b16018fd97c2cf95462b42af11a600eb6869d4417a92b9fa34eb300a8f"
+  },
+  {
+    "tema": "Excepciones e iterables",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-06-excepciones_iterables_e_iteradores/img/jerarquia-excepciones.png",
+    "destino": "Programación Avanzada/05-Excepciones e iterables/adjuntos/Jerarquía de excepciones en Python.png",
+    "sha256": "88e6c3222fa80a8bda9ce1c98a380ab55816415a0742f0c3c01ea89d5c76b337"
+  },
+  {
+    "tema": "Excepciones e iterables",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-06-excepciones_iterables_e_iteradores/img/node.png",
+    "destino": "Programación Avanzada/05-Excepciones e iterables/adjuntos/Estructura de un nodo en lista ligada.png",
+    "sha256": "31f1d832c0be0be4fe253aa3dbfc371b250e101df589e4936bff46185c734e7c"
+  },
+  {
+    "tema": "Excepciones e iterables",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-06-excepciones_iterables_e_iteradores/img/linkedlist.png",
+    "destino": "Programación Avanzada/05-Excepciones e iterables/adjuntos/Estructura general de una lista ligada.png",
+    "sha256": "9a639b7d475e87339a3b8148867decbe165c7c082d6a37ed3cb9e4a35a22c823"
+  },
+  {
+    "tema": "Excepciones e iterables",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-06-excepciones_iterables_e_iteradores/img/linkedlist-insertion.gif",
+    "destino": "Programación Avanzada/05-Excepciones e iterables/adjuntos/Inserción de un nodo en lista ligada.gif",
+    "sha256": "d23241266a92be937ced302645b3328ad205608ef5811b76a40c3f67abed2015"
+  },
+  {
+    "tema": "Programación funcional",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-07-programacion_funcional/img/pureza.png",
+    "destino": "Programación Avanzada/06-Programación funcional/adjuntos/Funciones puras y efectos colaterales.png",
+    "sha256": "fa33077274912a5d9ccadd27b04af9b94b15d668b1ad7f538da109162967076e"
+  },
+  {
+    "tema": "Programación funcional",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-07-programacion_funcional/img/data_flow.png",
+    "destino": "Programación Avanzada/06-Programación funcional/adjuntos/Flujo de datos en programación funcional.png",
+    "sha256": "163d5a28e088b86067379952edb0fb83518964e341ea061c018d289fd623e70c"
+  },
+  {
+    "tema": "Programación funcional",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-07-programacion_funcional/img/map.png",
+    "destino": "Programación Avanzada/06-Programación funcional/adjuntos/Operación de mapeo con map.png",
+    "sha256": "11248aacd47db2c4fd3bb7f319c58560b3cdb03578eed8e56fbe7a5bdf9d1aab"
+  },
+  {
+    "tema": "Programación funcional",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-07-programacion_funcional/img/reduce.png",
+    "destino": "Programación Avanzada/06-Programación funcional/adjuntos/Operación de reducción acumulada con reduce.png",
+    "sha256": "c3aba2ed7d67958c9823ebda620692421baf7d44ff841195d1e99bd081144ba1"
+  },
+  {
+    "tema": "Threading",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-08-threading/imgs/thread.png",
+    "destino": "Programación Avanzada/07-Threading/adjuntos/Ejecución con hilos paralelos.png",
+    "sha256": "9fd02e3f6a5b40ae91dd998dd4b1371bd845acc68e152ad1cae1e2500a00063b"
+  },
+  {
+    "tema": "Threading",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-08-threading/imgs/join.png",
+    "destino": "Programación Avanzada/07-Threading/adjuntos/Sincronización de hilos con join.png",
+    "sha256": "b8a5793853850216a389f4293e9f77544a6ddd19d93f67af9c366c1a53462031"
+  },
+  {
+    "tema": "Threading",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-08-threading/imgs/daemon.png",
+    "destino": "Programación Avanzada/07-Threading/adjuntos/Ciclo de vida de hilos daemon.png",
+    "sha256": "8f69b1e94c10fab8513b1f61132446766e23094ca7934a03777342500fe63069"
+  },
+  {
+    "tema": "Threading",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-08-threading/imgs/non-daemon.png",
+    "destino": "Programación Avanzada/07-Threading/adjuntos/Ciclo de vida de hilos no daemon.png",
+    "sha256": "abe188ca568273968da5bd72f50b840583c26ba61ea2da591f132b6a2b338227"
+  },
+  {
+    "tema": "Threading",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-08-threading/imgs/daemon_error.png",
+    "destino": "Programación Avanzada/07-Threading/adjuntos/Terminación abrupta de hilos daemon.png",
+    "sha256": "9c12b8e6d9d8cf316dc25b5933eb550de16970b7ed9d820339306e1ccd2e2dd1"
+  },
+  {
+    "tema": "Threading",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-08-threading/imgs/lock.png",
+    "destino": "Programación Avanzada/07-Threading/adjuntos/Exclusión mutua con Lock.png",
+    "sha256": "f45fa0869a678a1e624d5f061085cd10353bc5a7b94aa13b7e832f129cd55b65"
+  },
+  {
+    "tema": "Threading",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-08-threading/imgs/abrazo-mortal.png",
+    "destino": "Programación Avanzada/07-Threading/adjuntos/Condición de interbloqueo o abrazo mortal.png",
+    "sha256": "12bed6f60ff797efe149ca0d8994c5e91149a6d24e695f634f30fbc381b3166e"
+  },
+  {
+    "tema": "Threading",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-08-threading/imgs/traffic-deadlock.jpg",
+    "destino": "Programación Avanzada/07-Threading/adjuntos/Analogía de tráfico vehicular para deadlock.jpg",
+    "sha256": "1195ea5bf8bfafe192cb618f907767a6a5126f4e7914284a48f6ede642bdad31"
+  },
+  {
+    "tema": "Threading",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-08-threading/imgs/event.png",
+    "destino": "Programación Avanzada/07-Threading/adjuntos/Coordinación entre hilos mediante Event.png",
+    "sha256": "62c34097eabaf3c52279b5b6f81e19aca7e53f50b32d6ea2e6b0771131aa5593"
+  },
+  {
+    "tema": "Threading",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-08-threading/imgs/threading_deque_lock.png",
+    "destino": "Programación Avanzada/07-Threading/adjuntos/Estructura deque protegida con Lock.png",
+    "sha256": "5b30d4d197ebf367f00ae1a228e6fc0568710229c52255b28e7d4afddee47363"
+  },
+  {
+    "tema": "Threading",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-08-threading/imgs/threading_sync_queue.png",
+    "destino": "Programación Avanzada/07-Threading/adjuntos/Cola sincronizada thread-safe con queue.png",
+    "sha256": "4275f31ef0895a2c6c8ab4d5e05ba27104b35356a4073df9eb68673a9785016d"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/PyQt-empty-window-generico.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Ventana vacía genérica en PyQt.png",
+    "sha256": "0195d5c33f5f07e15a9a404cc49adaf4f26e7ee178fb1ff77db0f774e6dab8a9"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/PyQt-empty-window-mac.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Ventana vacía de PyQt en macOS.png",
+    "sha256": "ff135ac21e03ac16cd6c3062becdcb2010fcf65c20fcbcb758686a6d0edea330"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/PyQt-empty-window-windows.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Ventana vacía de PyQt en Windows.png",
+    "sha256": "246c2177d4e65575e466daf32a32e3273ff76e2f9e333f7a75cfca9d74a1ddd1"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/PyQt-empty-window-linux.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Ventana vacía de PyQt en Linux.png",
+    "sha256": "ab4867f1ebed024bc726b96e821a622e81026fdb46e057c603e21f87ae9473a5"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/PyQt-coordinates.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Sistema de coordenadas bidimensional en PyQt.png",
+    "sha256": "e777e9bb34c6cb1be81d0d9a6d5dea228bc0e9cafc734df24d37881c2716a345"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/PyQt-windows-labels.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Ventana con etiquetas de texto en PyQt.png",
+    "sha256": "f26af3299c2dd343ceaf866e817a30360e033ea179166bb97b3891035a8aa058"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/PyQt-window-image.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Visualización de imagen en QLabel con QPixmap.png",
+    "sha256": "c15058c4adafbe11a7fbf93043e50536e4a912ca21c12c843621e5e4b0da4761"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/PyQt-window-button.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Ventana básica con botón QPushButton.png",
+    "sha256": "4bf547b4305f317df5e4535147bb2e281a21cc2d6fe3821590ca9f59fb0b8a2e"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/expl-layouts.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Estructura y alineación de layouts verticales y horizontales.png",
+    "sha256": "7b6917db1b3da501d26ba8fb3923553a7de165ae00a0e8c17e61c63a823894f4"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/PyQt-mainwindow-layouts-a.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Distribución de widgets con ajuste horizontal QHBoxLayout.png",
+    "sha256": "1fc3fa1a8195e14cc3311c5cf17bca5828ed4d96dd8012bb3194508e6d66cba8"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/PyQt-mainwindow-layouts-b.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Combinación anidada de layouts horizontal y vertical.png",
+    "sha256": "336a12c3db896df01487bbf7082a2c7be4036a22f67d9603c3c295dd6dfaa404"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/expl-grid.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Esquema de distribución espacial en QGridLayout.png",
+    "sha256": "9992405fca831a481ee6b1406c18ed0a720034dc2bfdb657b7602c2379270f8f"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/PyQt-mainwindow-grid-layout.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Distribución de widgets en cuadrícula con QGridLayout.png",
+    "sha256": "7902bf62c9630047c52e6bf8fd07f44b0eb74049249d14d3627876e13d9d330d"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/PyQt-mi-boton.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Ventana con botones contadores independientes personalizados.png",
+    "sha256": "a16ee9df5f8943f2ef12d42efa555fa4b315e481722b26ea5087b75f8db01345"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/PyQt-mi-form.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Formulario compuesto modular con widgets y layouts.png",
+    "sha256": "e64f260bf1dda3731c5a753e976a24cb8f41ab8fa07d02e409045132322db8cc"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/gui-flowchart.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Flujo de interacción y bucle de eventos en PyQt.png",
+    "sha256": "daba973ec44cb9c70b8cd06efe6eabb4e0626bf0b5bc4fb4c0750bbff68a0ce2"
+  },
+  {
+    "tema": "Serialización y networking I",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-10-serializacion_y_networkin_1/img/client-server-model.png",
+    "destino": "Programación Avanzada/09-Serialización y networking I/adjuntos/Arquitectura cliente-servidor en redes de datos.png",
+    "sha256": "aacdd9d57fe030d663c32dca43c0c7a2436159fbb7215f2aa3ce2237b7cee7ff"
+  },
+  {
+    "tema": "Serialización y networking I",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-10-serializacion_y_networkin_1/img/ports.png",
+    "destino": "Programación Avanzada/09-Serialización y networking I/adjuntos/Distribución de puertos y sockets en un host.png",
+    "sha256": "e5e7410b7f8776ee6dd9247f4dd11bf2cc0504acc053efdbdb9e607fa70b71d9"
+  },
+  {
+    "tema": "Serialización y networking I",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-10-serializacion_y_networkin_1/img/osi.png",
+    "destino": "Programación Avanzada/09-Serialización y networking I/adjuntos/Modelo de capas OSI y encapsulamiento de datos.png",
+    "sha256": "3eae338ec2223f790d28ecdb3ed87138edce83cd0953f5d5d081add5b6aaadc2"
+  },
+  {
+    "tema": "Serialización y networking I",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-10-serializacion_y_networkin_1/img/http_message.png",
+    "destino": "Programación Avanzada/09-Serialización y networking I/adjuntos/Estructura de un mensaje de petición y respuesta HTTP.png",
+    "sha256": "7da5d2c6442528e1c56ddc8345211914885604e797c78720d42d450357846dc2"
+  },
+  {
+    "tema": "Serialización y networking II",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-11-serializacion_y_networking_2/imgs/ascii.jpg",
+    "destino": "Programación Avanzada/10-Serialización y networking II/adjuntos/Tabla de caracteres ASCII y representación en bytes.jpg",
+    "sha256": "b537fc6de9495a1c6a98c0510f26350ffc177394997205fddf96b85ff0d532df"
+  },
+  {
+    "tema": "Serialización y networking II",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-11-serializacion_y_networking_2/imgs/socket.jpg",
+    "destino": "Programación Avanzada/10-Serialización y networking II/adjuntos/Analogía física de conexión de un socket de red.jpg",
+    "sha256": "8a42dfc4816ea63ab7f6dc8a1b937ae3c62be4a452b79ac069380564d8dadd61"
+  },
+  {
+    "tema": "Serialización y networking II",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-11-serializacion_y_networking_2/imgs/send-large-file.png",
+    "destino": "Programación Avanzada/10-Serialización y networking II/adjuntos/Pérdida de datos en transmisión de archivo sin control de chunks.png",
+    "sha256": "079127b38b901ba64e078858bdc63f2344c63ac9bbd812c614c15875005e6c45"
+  },
+  {
+    "tema": "Serialización y networking II",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-11-serializacion_y_networking_2/imgs/compare-large-files.png",
+    "destino": "Programación Avanzada/10-Serialización y networking II/adjuntos/Comparación y truncamiento de archivo recibido incompleto.png",
+    "sha256": "914476b8120a5973e9b9961868a516071e51d0504251a2cfd88f90963ce2a85b"
+  },
+  {
+    "tema": "Serialización y networking II",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-11-serializacion_y_networking_2/imgs/send-large-file-improved.png",
+    "destino": "Programación Avanzada/10-Serialización y networking II/adjuntos/Transmisión robusta de archivo con protocolo de longitud fija.png",
+    "sha256": "5b616f56b8df50c8b6f231d009488ecc7ac9ede1e557670b6d713b1eaceff586"
+  },
+  {
+    "tema": "Serialización y networking II",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-11-serializacion_y_networking_2/imgs/compare-large-files-improved.png",
+    "destino": "Programación Avanzada/10-Serialización y networking II/adjuntos/Integridad verificada de archivo recibido con protocolo por chunks.png",
+    "sha256": "2e86533f4a8969dca8eac41fd56fe2f440d34ce97cc7861e3c0708333e35ccb5"
+  },
+  {
+    "tema": "PyQt avanzado",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-14-interfaces_graficas_2/img/ejemplo_aplicado.gif",
+    "destino": "Programación Avanzada/11-PyQt avanzado/adjuntos/Animación de ejecución concurrente con QThread en PyQt.gif",
+    "sha256": "3451fd5398bb1aa47aae17ab51767387372aa24dd97accdd8ed3da92c16d5f6c"
+  },
+  {
+    "tema": "PyQt avanzado",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-14-interfaces_graficas_2/img/networking-interfaces.png",
+    "destino": "Programación Avanzada/11-PyQt avanzado/adjuntos/Arquitectura de integración entre networking y PyQt.png",
+    "sha256": "5a27e3a0ecf3df38251831d9a4d5eb88353840ad0d7e75de0612f7428f7ec20b"
+  },
+  {
+    "tema": "PyQt avanzado",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-14-interfaces_graficas_2/img/pyqt-mainwindow-layout.png",
+    "destino": "Programación Avanzada/11-PyQt avanzado/adjuntos/Estructura de componentes en QMainWindow.png",
+    "sha256": "eddcdd22ef41f40dc877eada7ae6f79300d2176785894d0f6eb058b5fa17d25f"
+  },
+  {
+    "tema": "PyQt avanzado",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-14-interfaces_graficas_2/img/pyqt-mainwindow-mac.png",
+    "destino": "Programación Avanzada/11-PyQt avanzado/adjuntos/Aspecto de QMainWindow con menús y barras en macOS.png",
+    "sha256": "414c1e66edfcf582fe33f6e0cdd90765b169f81ede3f0f2193a49b93fbe3cbdc"
+  },
+  {
+    "tema": "Tópicos avanzados",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-15-topicos-avanzados/imgs/partes_correo_electronico.png",
+    "destino": "Programación Avanzada/12-Tópicos avanzados/adjuntos/Anatomía de una dirección de correo y patrón regex.png",
+    "sha256": "8becf5f05d09895018fbf7b6e05cd28ec360e897207cc5b0a93b236ebc500aaf"
+  },
+  {
+    "tema": "Tópicos avanzados",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-15-topicos-avanzados/imgs/grafos.png",
+    "destino": "Programación Avanzada/12-Tópicos avanzados/adjuntos/Estructura topológica de un grafo no dirigido.png",
+    "sha256": "0dc8f1fa98e1854e060d6fc29c6e103a5031187afe7f23743a017fd4a1e7a022"
+  },
+  {
+    "tema": "Tópicos avanzados",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-15-topicos-avanzados/imgs/grafos_y_pesos.png",
+    "destino": "Programación Avanzada/12-Tópicos avanzados/adjuntos/Grafo ponderado con pesos en aristas y etiquetas.png",
+    "sha256": "5fddd2974b035c21e249efaf1ed86dc15a667b3d981af78394a26ed970a89a52"
+  }
+]
