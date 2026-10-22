@@ -69,7 +69,7 @@
     },
     "Excepciones e iterables": {
       "carpeta": "Programación Avanzada/05-Excepciones e iterables",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [],
       "notebooks": [
         "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-06-excepciones_iterables_e_iteradores/1-excepciones-intro.ipynb",

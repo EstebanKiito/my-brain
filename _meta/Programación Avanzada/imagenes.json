@@ -173,5 +173,33 @@
     "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/img/UML_mario_final.png",
     "destino": "Programación Avanzada/04-POO avanzada/adjuntos/Diagrama de clases UML completo de Mario.png",
     "sha256": "de3229b16018fd97c2cf95462b42af11a600eb6869d4417a92b9fa34eb300a8f"
+  },
+  {
+    "tema": "Excepciones e iterables",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-06-excepciones_iterables_e_iteradores/img/jerarquia-excepciones.png",
+    "destino": "Programación Avanzada/05-Excepciones e iterables/adjuntos/Jerarquía de excepciones en Python.png",
+    "sha256": "88e6c3222fa80a8bda9ce1c98a380ab55816415a0742f0c3c01ea89d5c76b337"
+  },
+  {
+    "tema": "Excepciones e iterables",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-06-excepciones_iterables_e_iteradores/img/node.png",
+    "destino": "Programación Avanzada/05-Excepciones e iterables/adjuntos/Estructura de un nodo en lista ligada.png",
+    "sha256": "31f1d832c0be0be4fe253aa3dbfc371b250e101df589e4936bff46185c734e7c"
+  },
+  {
+    "tema": "Excepciones e iterables",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-06-excepciones_iterables_e_iteradores/img/linkedlist.png",
+    "destino": "Programación Avanzada/05-Excepciones e iterables/adjuntos/Estructura general de una lista ligada.png",
+    "sha256": "9a639b7d475e87339a3b8148867decbe165c7c082d6a37ed3cb9e4a35a22c823"
+  },
+  {
+    "tema": "Excepciones e iterables",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-06-excepciones_iterables_e_iteradores/img/linkedlist-insertion.gif",
+    "destino": "Programación Avanzada/05-Excepciones e iterables/adjuntos/Inserción de un nodo en lista ligada.gif",
+    "sha256": "d23241266a92be937ced302645b3328ad205608ef5811b76a40c3f67abed2015"
   }
 ]
