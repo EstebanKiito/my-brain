@@ -1,0 +1,179 @@
+{
+  "_descripcion": "Mapeo de las fuentes originales (rutas relativas a _raw/) a los temas del vault. Este ramo no tiene export de Notion ni apuntes propios: las fuentes son los PDF de clase (CLASES/), los códigos de la profesora (Codigos/, con otra numeración de clases, asignados por contenido) y pythonbook.pdf como apoyo. Como verificar.py solo procesa fuentes HTML, 'fuentes' queda vacío y cada tema lleva 'secciones' vacías; los campos 'pdfs' y 'codigos' son informativos. Las notas se reescriben según _meta/ESTANDAR-NOTAS.md para estudiantes de primer año, por eso 'cobertura' es 'reescrita'.",
+  "carpeta_ramo": "Introducción a la Programación",
+  "cobertura": "reescrita",
+  "fuentes": {},
+  "temas": {
+    "Algoritmos y pensamiento computacional": {
+      "carpeta": "Introducción a la Programación/01-Algoritmos y pensamiento computacional",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase1_Intro_y_Reglas_.pdf",
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase2_Blockly.pdf"
+      ],
+      "codigos": []
+    },
+    "Primeros pasos en Python": {
+      "carpeta": "Introducción a la Programación/02-Primeros pasos en Python",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase3_IntroPython.pdf",
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase4_Variables_Operadores_.pdf"
+      ],
+      "codigos": [
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase03",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase04"
+      ]
+    },
+    "Condicionales": {
+      "carpeta": "Introducción a la Programación/03-Condicionales",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase5_if.pdf",
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase6_elif.pdf"
+      ],
+      "codigos": [
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase05online",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase06"
+      ]
+    },
+    "Ciclos": {
+      "carpeta": "Introducción a la Programación/04-Ciclos",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase7_while.pdf",
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase8_while2-1.pdf"
+      ],
+      "codigos": [
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase07",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase08",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase09",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase10"
+      ]
+    },
+    "Funciones y módulos": {
+      "carpeta": "Introducción a la Programación/05-Funciones y módulos",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase9-Funciones.pdf",
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase10_Funciones_.pdf",
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase11_Funciones_.pdf"
+      ],
+      "codigos": [
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase09",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase10",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase11"
+      ]
+    },
+    "Recursión": {
+      "carpeta": "Introducción a la Programación/06-Recursión",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase12_Funciones_Recurrsivas.pdf"
+      ],
+      "codigos": [
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase20"
+      ]
+    },
+    "Strings": {
+      "carpeta": "Introducción a la Programación/07-Strings",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase13_Strings_.pdf",
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase14_Strings_2.pdf"
+      ],
+      "codigos": [
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase12",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase13"
+      ]
+    },
+    "Listas": {
+      "carpeta": "Introducción a la Programación/08-Listas",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I2/Clase15_Listas1.pdf",
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I2/Clase16_Listas2.pdf",
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I2/Clase17_Repaso_ .pdf",
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I2/Clase18_Repaso_ .pdf",
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I2/Clase19_Listas.pdf"
+      ],
+      "codigos": [
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase15",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase16",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase17",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase18",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase21"
+      ]
+    },
+    "Listas de listas": {
+      "carpeta": "Introducción a la Programación/09-Listas de listas",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I2/Clase19_Listas.pdf",
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I2/Clase20_ListasdeListas2.pdf"
+      ],
+      "codigos": [
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase18",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase19",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase21"
+      ]
+    },
+    "Archivos": {
+      "carpeta": "Introducción a la Programación/10-Archivos",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I2/Clase21_Archivos-1.pdf",
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I2/Clase22-Archivos_parte2.pdf"
+      ],
+      "codigos": [
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase24",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase25b"
+      ]
+    },
+    "Programación orientada a objetos": {
+      "carpeta": "Introducción a la Programación/11-Programación orientada a objetos",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/Examen/Clase23_OOP.pdf",
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/Examen/Clase24_OOP2.pdf"
+      ],
+      "codigos": [
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase26",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase27",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase28"
+      ]
+    },
+    "Ordenamiento": {
+      "carpeta": "Introducción a la Programación/12-Ordenamiento",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [],
+      "codigos": [
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase28",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase29",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase30"
+      ]
+    },
+    "Gestión del curso": {
+      "carpeta": "Introducción a la Programación/13-Gestión del curso",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase1_Intro_y_Reglas_.pdf"
+      ],
+      "codigos": []
+    }
+  },
+  "aceptados": []
+}
