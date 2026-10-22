@@ -17,7 +17,7 @@ Rama: `migrar/introduccion-programacion`. Un commit por tema. Antes de cada comm
 | 10 | Archivos | `10-Archivos/` | ✅ hecho | 3 + índice | 0 |
 | 11 | Programación orientada a objetos | `11-Programación orientada a objetos/` | ✅ hecho | 3 + índice | 0 |
 | 12 | Ordenamiento | `12-Ordenamiento/` | ✅ hecho | 3 + índice | 0 |
-| 13 | Gestión del curso | `13-Gestión del curso/` | ⏳ pendiente | – | – |
+| 13 | Gestión del curso | `13-Gestión del curso/` | ✅ hecho | 1 + índice | 0 |
 
 ## Convenciones
 - Notas según [`_meta/ESTANDAR-NOTAS.md`](../ESTANDAR-NOTAS.md), con detalle medio-alto y lenguaje para primer año: cada concepto parte de un problema cotidiano, el código es corto, corre con `python3` y va con su salida esperada.
@@ -38,3 +38,4 @@ Rama: `migrar/introduccion-programacion`. Un commit por tema. Antes de cada comm
 - **2026-10-22 · Archivos.** Fuentes: slides de archivos (RAM y disco, readlines, palabra al azar, traductor, modos, errores comunes) y de archivos parte 2 (repaso y ejercicios), y los códigos `contador`, `palabra azar`, `traductor`, `programamalo`, `catalan 12`, `dccarcadeA` y `procesar datos excel`. Los snippets crean sus propios archivos de ejemplo para poder ejecutarse. Se agregó `with`. 3 notas; 0 imágenes.
 - **2026-10-22 · Programación orientada a objetos.** Fuentes: slides de objetos (tipos propios, clase e instancia, Perro, Punto2D, constructor, self, __str__) y objetos parte 2 (Película, Fracción, Carta, Mazo), y los códigos `clase Punto2d`, `clase Fraccion`, `cartas` y `clase Gato` (este último se usa en Ordenamiento). La suma de fracciones de las slides tenía el denominador mal (`n*n` en vez de `d*d`) y un `def str`; la nota usa la versión correcta. 3 notas; 0 imágenes.
 - **2026-10-22 · Ordenamiento.** Sin slides propias (los PDF terminan en POO): fuentes son los códigos `ordenar`, `clase Gato`, `catalan`, `selection sort` y `ordenamiento- metro A`, más la sección de ordenamiento de `pythonbook.pdf` (sort y sorted). La red de metro del ejemplo integrador es inventada para que el código corra solo. 3 notas; 0 imágenes.
+- **2026-10-22 · Gestión del curso.** Fuentes: presentación del curso (objetivos, contenidos, tareas, interrogaciones, participación, fórmula de nota, salas de ayudantía, consejos de semestres anteriores e integridad académica). La materia por evaluación se dedujo de cómo están agrupadas las clases (carpetas I1, I2 y Examen). Se omitieron fechas, correo y datos de la docente, encuestas y memes. 1 notas; 0 imágenes.

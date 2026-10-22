@@ -164,6 +164,15 @@
         "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase29",
         "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase30"
       ]
+    },
+    "Gestión del curso": {
+      "carpeta": "Introducción a la Programación/13-Gestión del curso",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase1_Intro_y_Reglas_.pdf"
+      ],
+      "codigos": []
     }
   },
   "aceptados": []

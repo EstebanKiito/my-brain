@@ -23,9 +23,15 @@ Vault de estudio del ramo. Las notas están escritas para alguien que parte desd
 | [[Introducción a la Programación/10-Archivos/_Índice\|Archivos]] | Leer y escribir archivos de texto, modos `r`/`w`/`a`, separadores y CSV |
 | [[Introducción a la Programación/11-Programación orientada a objetos/_Índice\|Programación orientada a objetos]] | Clases y objetos, atributos, métodos, `self`, `__str__`, `__add__` y composición (cartas y mazo) |
 | [[Introducción a la Programación/12-Ordenamiento/_Índice\|Ordenamiento]] | `sort`, `sorted`, criterios con `key`, selection sort y problema integrador |
+| [[Introducción a la Programación/13-Gestión del curso/_Índice\|Gestión del curso]] | Objetivos, contenidos, evaluaciones, materia por evaluación e integridad académica |
 
 ## Ruta de estudio sugerida
 1. **Algoritmos → Primeros pasos en Python:** la idea de algoritmo y cómo escribir los primeros programas.
 2. **Condicionales → Ciclos:** tomar decisiones y repetir; con esto ya se resuelve la mayoría de los problemas simples.
 3. **Funciones y módulos → Recursión:** organizar el código en piezas reutilizables y funciones que se llaman a sí mismas.
-4. **Strings:** trabajar con texto por dentro.
+4. **Strings → Listas → Listas de listas:** trabajar con texto y con colecciones de datos.
+5. **Archivos:** guardar y procesar datos que sobreviven al programa.
+6. **Programación orientada a objetos → Ordenamiento:** tipos propios, ordenar con criterio y el problema integrador.
+7. **Gestión del curso:** evaluaciones y materia de cada una.
+
+Lo que sigue después de este ramo: [[Estructuras de Datos/_Índice|Estructuras de Datos]] (algoritmos y su eficiencia), [[Programación en C/_Índice|Programación en C]] e [[Ingeniería de Software/_Índice|Ingeniería de Software]] (POO y diseño).
