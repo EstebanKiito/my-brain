@@ -103,14 +103,6 @@ for carta in mano:
 print()
 ```
 
-```mermaid
-flowchart LR
-    M["Mazo<br/>cartas = [ ... ]"] --> C1["Carta 1C"]
-    M --> C2["Carta 2C"]
-    M --> C3["…"]
-    M --> C4["Carta 13P"]
-```
-
 El programa principal no necesita saber cómo está hecho el mazo por dentro: solo usa `sacar()` y `quedan_cartas()`. Si mañana se cambiara la forma de guardar las cartas, el resto del programa seguiría funcionando.
 
 > [!tip] Idea clave
