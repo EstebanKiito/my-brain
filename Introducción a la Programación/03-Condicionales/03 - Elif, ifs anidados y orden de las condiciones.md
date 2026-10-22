@@ -121,7 +121,7 @@ El año 2000 es bisiesto (divisible por 400), 1900 no lo es (divisible por 100 p
 Con tres estaciones, se decreta un estado si **al menos dos** estaciones superan el umbral. Cada `elif` combina `and` y `or`:
 
 ```python
-e1, e2, e3 = 124, 333, 201
+e1, e2, e3 = 124, 333, 201   # muestra: Alerta
 if (e1 >= 500 and e2 >= 500) or (e1 >= 500 and e3 >= 500) or (e2 >= 500 and e3 >= 500):
     print("EMERGENCIA")
 elif (e1 >= 300 and e2 >= 300) or (e1 >= 300 and e3 >= 300) or (e2 >= 300 and e3 >= 300):
@@ -130,10 +130,6 @@ elif (e1 >= 200 and e2 >= 200) or (e1 >= 200 and e3 >= 200) or (e2 >= 200 and e3
     print("Alerta")
 else:
     print("No hay situacion de excepcion")
-```
-
-```
-Alerta
 ```
 
 Gracias al orden, si hay emergencia no se revisa la preemergencia.
