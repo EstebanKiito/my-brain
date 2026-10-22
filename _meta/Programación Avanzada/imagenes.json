@@ -418,5 +418,33 @@
     "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/gui-flowchart.png",
     "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Flujo de interacción y bucle de eventos en PyQt.png",
     "sha256": "daba973ec44cb9c70b8cd06efe6eabb4e0626bf0b5bc4fb4c0750bbff68a0ce2"
+  },
+  {
+    "tema": "Serialización y networking I",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-10-serializacion_y_networkin_1/img/client-server-model.png",
+    "destino": "Programación Avanzada/09-Serialización y networking I/adjuntos/Arquitectura cliente-servidor en redes de datos.png",
+    "sha256": "aacdd9d57fe030d663c32dca43c0c7a2436159fbb7215f2aa3ce2237b7cee7ff"
+  },
+  {
+    "tema": "Serialización y networking I",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-10-serializacion_y_networkin_1/img/ports.png",
+    "destino": "Programación Avanzada/09-Serialización y networking I/adjuntos/Distribución de puertos y sockets en un host.png",
+    "sha256": "e5e7410b7f8776ee6dd9247f4dd11bf2cc0504acc053efdbdb9e607fa70b71d9"
+  },
+  {
+    "tema": "Serialización y networking I",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-10-serializacion_y_networkin_1/img/osi.png",
+    "destino": "Programación Avanzada/09-Serialización y networking I/adjuntos/Modelo de capas OSI y encapsulamiento de datos.png",
+    "sha256": "3eae338ec2223f790d28ecdb3ed87138edce83cd0953f5d5d081add5b6aaadc2"
+  },
+  {
+    "tema": "Serialización y networking I",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-10-serializacion_y_networkin_1/img/http_message.png",
+    "destino": "Programación Avanzada/09-Serialización y networking I/adjuntos/Estructura de un mensaje de petición y respuesta HTTP.png",
+    "sha256": "7da5d2c6442528e1c56ddc8345211914885604e797c78720d42d450357846dc2"
   }
 ]

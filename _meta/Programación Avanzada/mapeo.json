@@ -124,7 +124,7 @@
     },
     "Serialización y networking I": {
       "carpeta": "Programación Avanzada/09-Serialización y networking I",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [],
       "notebooks": [
         "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-10-serializacion_y_networkin_1/1-serializacion_json.ipynb",
