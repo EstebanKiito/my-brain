@@ -1,0 +1,96 @@
+{
+  "_descripcion": "Mapeo de las fuentes originales (rutas relativas a _raw/) a los temas del vault. Cada sección va desde el bloque 'desde' (incluido) hasta 'hasta' (excluido). Las notas son breves y se reescriben según _meta/ESTANDAR-NOTAS.md (el usuario pidió notas cortas y concisas), por eso 'cobertura' es 'reescrita'. Los apuntes propios son mínimos (Apuntes I1 cubre las clases 1-6; Apuntes I2, Apuntes Ex e Investigaciones + Tips están vacíos); el grueso sale de los textos de Classes/ y de los resúmenes de Skibidi-Seguridad. Las figuras de Classes/ entran como PNG con tipo 'clase'.",
+  "carpeta_ramo": "Seguridad Computacional",
+  "cobertura": "reescrita",
+  "fuentes": {
+    "ramo": "Semestre 6/SEGURIDAD COMPUTACIONAL 22760dd6de8180d0804bea1b99eb2cfe.html",
+    "apuntes_i1": "Semestre 6/SEGURIDAD COMPUTACIONAL/Apuntes I1 24460dd6de8180a0a6a6fdd2ace322f0.html",
+    "apuntes_i2": "Semestre 6/SEGURIDAD COMPUTACIONAL/Apuntes I2 24460dd6de818039b60ece997809abe0.html",
+    "apuntes_ex": "Semestre 6/SEGURIDAD COMPUTACIONAL/Apuntes Ex 24460dd6de81803c8953eba54671a553.html",
+    "resumen_i1": "Semestre 6/SEGURIDAD COMPUTACIONAL/Resumen I1 - IIC2531 27e60dd6de8180a2a22eef4cbb35eb68.html",
+    "investigaciones": "Semestre 6/SEGURIDAD COMPUTACIONAL/Investigaciones + Tips 24460dd6de81809bafdef5749ae3c07d.html"
+  },
+  "temas": {
+    "Fundamentos de seguridad": {
+      "carpeta": "Seguridad Computacional/01-Fundamentos de seguridad",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Buffer overflows y baggy bounds": {
+      "carpeta": "Seguridad Computacional/02-Buffer overflows y baggy bounds",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Autenticación de usuarios": {
+      "carpeta": "Seguridad Computacional/03-Autenticación de usuarios",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Arquitectura de seguridad de Google": {
+      "carpeta": "Seguridad Computacional/04-Arquitectura de seguridad de Google",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Separación de privilegios con OKWS": {
+      "carpeta": "Seguridad Computacional/05-Separación de privilegios con OKWS",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Contenedores y microVMs": {
+      "carpeta": "Seguridad Computacional/06-Contenedores y microVMs",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Sandboxing de software": {
+      "carpeta": "Seguridad Computacional/07-Sandboxing de software",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Seguridad móvil": {
+      "carpeta": "Seguridad Computacional/08-Seguridad móvil",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Ejecución simbólica": {
+      "carpeta": "Seguridad Computacional/09-Ejecución simbólica",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Seguridad web": {
+      "carpeta": "Seguridad Computacional/10-Seguridad web",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Seguridad TCP-IP": {
+      "carpeta": "Seguridad Computacional/11-Seguridad TCP-IP",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "TLS y certificados": {
+      "carpeta": "Seguridad Computacional/12-TLS y certificados",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Mensajería segura": {
+      "carpeta": "Seguridad Computacional/13-Mensajería segura",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "DDoS y cadena de suministro": {
+      "carpeta": "Seguridad Computacional/14-DDoS y cadena de suministro",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "SDLC seguro": {
+      "carpeta": "Seguridad Computacional/15-SDLC seguro",
+      "estado": "pendiente",
+      "secciones": []
+    },
+    "Gestión del curso": {
+      "carpeta": "Seguridad Computacional/16-Gestión del curso",
+      "estado": "pendiente",
+      "secciones": []
+    }
+  },
+  "aceptados": []
+}
