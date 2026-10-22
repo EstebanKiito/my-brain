@@ -18,6 +18,7 @@ Vault de estudio del ramo. Las notas están escritas para alguien que parte desd
 | [[Introducción a la Programación/05-Funciones y módulos/_Índice\|Funciones y módulos]] | Funciones existentes, `math`, `def` y `return`, `return` frente a `print`, funciones booleanas e `import` |
 | [[Introducción a la Programación/06-Recursión/_Índice\|Recursión]] | Caso base, caso recursivo, factorial, Fibonacci, árbol fractal y recursión frente a ciclos |
 | [[Introducción a la Programación/07-Strings/_Índice\|Strings]] | Índices, `len`, recorridos, slicing, palíndromos y métodos de strings |
+| [[Introducción a la Programación/08-Listas/_Índice\|Listas]] | Crear y recorrer listas, métodos, `split`/`join`, mutabilidad, criba de Eratóstenes y recursión sobre listas |
 
 ## Ruta de estudio sugerida
 1. **Algoritmos → Primeros pasos en Python:** la idea de algoritmo y cómo escribir los primeros programas.

@@ -12,7 +12,7 @@ Rama: `migrar/introduccion-programacion`. Un commit por tema. Antes de cada comm
 | 5 | Funciones y módulos | `05-Funciones y módulos/` | ✅ hecho | 4 + índice | 0 |
 | 6 | Recursión | `06-Recursión/` | ✅ hecho | 2 + índice | 2 |
 | 7 | Strings | `07-Strings/` | ✅ hecho | 3 + índice | 0 |
-| 8 | Listas | `08-Listas/` | ⏳ pendiente | – | – |
+| 8 | Listas | `08-Listas/` | ✅ hecho | 4 + índice | 0 |
 | 9 | Listas de listas | `09-Listas de listas/` | ⏳ pendiente | – | – |
 | 10 | Archivos | `10-Archivos/` | ⏳ pendiente | – | – |
 | 11 | Programación orientada a objetos | `11-Programación orientada a objetos/` | ⏳ pendiente | – | – |
@@ -33,3 +33,4 @@ Rama: `migrar/introduccion-programacion`. Un commit por tema. Antes de cada comm
 - **2026-10-22 · Funciones y módulos.** Fuentes: slides de funciones (tres clases: funciones existentes y por otros, funciones propias, return/print e import), y los códigos `carrera3`, `funcion factorial`/`factorialp`, `numero primo`, `primos relativos`, `lagartijas` y `dccamaradas`. El primo de los códigos fallaba con 2 (lo daba como no primo); la nota usa una versión corregida. Se agregó el ejemplo de combinaciones para mostrar por qué retornar. 4 notas; 0 imágenes.
 - **2026-10-22 · Recursión.** Fuentes: slides de funciones recursivas (factorial, traza, conejos de Fibonacci, árbol con turtle, ventajas y desventajas, ejercicios de potencia) y los códigos `funcion factorial`, `func fibonacci` y `tortuga`. La recursión sobre listas (`definir largo de lista`) y los vuelos con escala se dejan para Listas y Listas de listas. Se agregaron suma de dígitos y Fibonacci con ciclo. 2 notas; 2 imágenes.
 - **2026-10-22 · Strings.** Fuentes: slides de strings (índices, slicing, palíndromo iterativo y recursivo) y de métodos de strings (count, find, lower/upper, strip, in, métodos is*, orden alfabético), y los códigos `funcion palindrome`, `palabra mas larga`, `definir buscar`, `definir contar`, `funcion ordenar` y `problema corregir`. El `ordenar` de los códigos solo pasaba a minúsculas la primera comparación; la nota lo hace al inicio. 3 notas; 0 imágenes.
+- **2026-10-22 · Listas.** Fuentes: slides de listas (votación, métodos, slices, split/join, listas como parámetro, criba, eliminar duplicados) y de los repasos de la I1 (solo logística), y los códigos `votos0`-`votos2`, `demos`-`demos5`, `eliminar duplicados` (ambas versiones), `eratostenes` y `definir largo de lista`. Los ejercicios de evaluación (pizzas, wakanda, dccolumnas, dccompletos, sueños repetidos) usan módulos externos y no se transcriben. 4 notas; 0 imágenes.

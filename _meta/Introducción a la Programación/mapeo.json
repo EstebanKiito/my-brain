@@ -93,6 +93,25 @@
         "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase12",
         "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase13"
       ]
+    },
+    "Listas": {
+      "carpeta": "Introducción a la Programación/08-Listas",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I2/Clase15_Listas1.pdf",
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I2/Clase16_Listas2.pdf",
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I2/Clase17_Repaso_ .pdf",
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I2/Clase18_Repaso_ .pdf",
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I2/Clase19_Listas.pdf"
+      ],
+      "codigos": [
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase15",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase16",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase17",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase18",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase21"
+      ]
     }
   },
   "aceptados": []
