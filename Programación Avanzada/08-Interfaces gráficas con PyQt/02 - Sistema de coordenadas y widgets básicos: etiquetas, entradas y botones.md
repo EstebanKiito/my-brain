@@ -114,3 +114,4 @@ class VentanaRegistro(QWidget):
 
 > [!question]- ¿Cuál es la principal desventaja de organizar una ventana usando únicamente `move(x, y)`?
 > La interfaz no es responsiva: si la ventana cambia de tamaño o se ejecuta en una pantalla con distinta resolución o densidad de píxeles, los widgets quedan desalineados o cortados.
+

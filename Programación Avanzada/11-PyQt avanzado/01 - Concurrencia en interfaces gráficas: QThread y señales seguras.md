@@ -103,3 +103,4 @@ class Ventana(QWidget):
 
 > [!question]- ¿Qué causa el error `QThread: Destroyed while thread is still running`?
 > Ocurre cuando la instancia del `QThread` se asigna a una variable local de un método; al terminar la función, Python elimina la referencia y recolecta el objeto mientras el hilo del sistema operativo sigue activo.
+

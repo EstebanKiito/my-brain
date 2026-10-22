@@ -113,3 +113,4 @@ def comprar_producto():
 
 > [!question]- ¿Qué problema resuelve el uso de claves de idempotencia en peticiones POST críticas (como pagos)?
 > Asegura que si una petición se envía dos veces debido a reintentos de red o clics repetidos, el servidor reconozca el identificador único y solo procese la transacción financiera una sola vez.
+

@@ -98,3 +98,4 @@ En los sistemas P2P (como redes de intercambio de archivos o nodos de blockchain
 
 > [!question]- ¿Por qué es fundamental incluir un bloque `try ... finally` al atender un socket en un hilo secundario?
 > Para asegurar que el método `conexion.close()` se ejecute siempre y libere el descriptor de archivo en el sistema operativo, incluso si ocurre una excepción no controlada durante la comunicación.
+

@@ -73,3 +73,4 @@ El uso de generadores automáticos de código basados en inteligencia artificial
 
 > [!question]- ¿Cuál es el canal oficial para formular dudas técnicas sobre los enunciados de las tareas?
 > El sistema de *Issues* del repositorio público `IIC2233/Syllabus` en GitHub.
+

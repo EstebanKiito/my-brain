@@ -95,3 +95,4 @@ Usuario: valdivieso, Conexión: None
 
 > [!question]- ¿Qué ocurre si intentas abrir y deserializar con `pickle` un archivo generado en un programa que utiliza Java o C++?
 > Fallará; el formato binario de `pickle` es un protocolo interno dependiente de la implementación del intérprete de Python y no es interoperable con otros lenguajes.
+

@@ -114,3 +114,4 @@ ventana_juego.senal_volver_login.connect(procesar_cierre_sesion)
 
 > [!question]- ¿Qué ocurre con la aplicación de PyQt si se llama a `self.close()` en la única ventana que estaba visible en pantalla?
 > Si la propiedad `quitOnLastWindowClosed` está activa (comportamiento por defecto), PyQt interpreta que la interfaz terminó y finaliza automáticamente el proceso de la aplicación.
+

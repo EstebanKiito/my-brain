@@ -67,3 +67,4 @@ UDP envía datagramas individuales como cartas en el buzón: no establece conexi
 
 > [!question]- ¿Qué ocurre durante el saludo de tres vías (*three-way handshake*) de TCP?
 > El cliente envía un paquete `SYN`, el servidor responde confirmando con `SYN-ACK`, y el cliente finaliza con un `ACK`, acordando números de secuencia iniciales antes de enviar datos reales.
+

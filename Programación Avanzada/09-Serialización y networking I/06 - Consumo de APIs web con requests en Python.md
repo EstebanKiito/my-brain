@@ -89,3 +89,4 @@ respuesta = requests.get("https://api.github.com/user", headers=headers)
 
 > [!question]- ¿Cómo se entregan parámetros de búsqueda para que se añadan automáticamente a la URL con el formato `?clave=valor`?
 > Se entregan en un diccionario de Python pasado al argumento `params` de la función `requests.get()`.
+

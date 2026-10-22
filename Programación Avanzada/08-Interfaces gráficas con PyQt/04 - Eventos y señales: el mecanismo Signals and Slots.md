@@ -91,3 +91,4 @@ class VentanaContador(QWidget):
 
 > [!question]- ¿Para qué sirve el método `self.sender()` dentro de un slot en PyQt?
 > Retorna una referencia directa al widget u objeto específico que emitió la señal que acaba de detonar la ejecución del slot, permitiendo reutilizar el mismo método con múltiples emisores.
+

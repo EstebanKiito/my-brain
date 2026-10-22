@@ -101,3 +101,4 @@ media_filas = tabla.mean(axis=1)     # [15., 35.] (colapsa columnas)
 
 > [!question]- ¿Cuál es la diferencia entre calcular la media con `axis=0` versus `axis=1` en una matriz 2D?
 > `axis=0` opera verticalmente calculando la media de cada columna (colapsando las filas), mientras que `axis=1` opera horizontalmente calculando la media de cada fila (colapsando las columnas).
+

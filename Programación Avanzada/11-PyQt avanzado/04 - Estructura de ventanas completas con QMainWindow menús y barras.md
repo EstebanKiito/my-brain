@@ -113,3 +113,4 @@ class EditorTexto(QMainWindow):
 
 > [!question]- ¿Cómo se muestra un mensaje informativo que desaparezca automáticamente tras 5 segundos en la barra inferior?
 > Mediante la llamada `self.statusBar().showMessage("Texto informativo", 5000)`, indicando el tiempo de expiración en milisegundos como segundo parámetro.
+

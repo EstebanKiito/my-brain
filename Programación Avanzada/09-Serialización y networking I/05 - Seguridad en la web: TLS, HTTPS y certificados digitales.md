@@ -59,3 +59,4 @@ $$\text{Criptografía Asimétrica (Autenticación)} \longrightarrow \text{Cripto
 
 > [!question]- ¿En qué consiste un ataque de Hombre en el Medio (*Man-in-the-Middle*) y cómo lo previene TLS?
 > Consiste en un atacante que intercepta y altera los mensajes entre cliente y servidor sin que lo noten; TLS lo previene exigiendo certificados digitales autenticados y firmas de integridad criptográfica por paquete.
+

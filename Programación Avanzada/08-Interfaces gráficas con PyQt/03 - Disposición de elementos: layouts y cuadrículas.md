@@ -111,3 +111,4 @@ class FormularioLogin(QWidget):
 
 > [!question]- ¿Cómo se inserta un layout secundario dentro de otro layout en PyQt?
 > Se utiliza el método `addLayout(layout_hijo)` sobre el layout contenedor padre (por ejemplo `vbox.addLayout(hbox)`).
+

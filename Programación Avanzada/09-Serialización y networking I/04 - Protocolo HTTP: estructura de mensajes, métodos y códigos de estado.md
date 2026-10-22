@@ -84,3 +84,4 @@ La respuesta del servidor incluye un código numérico de 3 dígitos agrupado po
 
 > [!question]- ¿En qué se diferencian conceptualmente los errores de la familia 4xx frente a los de la familia 5xx?
 > Los errores 4xx indican que la causa del problema provino del cliente (ruta errónea, falta de permisos o datos inválidos), mientras que los 5xx indican que el servidor falló internamente al procesar una petición válida.
+

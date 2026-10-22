@@ -100,3 +100,4 @@ Tramo millones: 19, Dígito Verificador: k
 
 > [!question]- ¿Cómo se accede al texto capturado por el segundo paréntesis `(...)` en un objeto `Match`?
 > Invocando el método `coincidencia.group(2)` (donde `group(0)` corresponde a la coincidencia total completa).
+

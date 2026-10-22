@@ -100,3 +100,4 @@ def dfs_recursivo(grafo: dict, nodo: str, visitados: set = None) -> list:
 
 > [!question]- ¿Cuál es la complejidad temporal de recorrer un grafo con listas de adyacencia usando BFS o DFS?
 > Es $O(|V| + |E|)$, ya que cada vértice se encola/visita a lo sumo una vez y cada arista se examina un número constante de veces.
+

@@ -112,3 +112,4 @@ back.senal_resultado.connect(front.mostrar_total)
 
 > [!question]- ¿Cuál es la única responsabilidad que debe tener el Front-End al recibir la interacción de un usuario?
 > Capturar el evento visual (como el clic o texto ingresado) y emitir una señal personalizada con los parámetros necesarios hacia el Back-End.
+

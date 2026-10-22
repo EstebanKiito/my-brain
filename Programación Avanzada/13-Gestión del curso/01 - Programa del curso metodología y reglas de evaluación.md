@@ -78,3 +78,4 @@ Cada estudiante dispone de **2 cupones** en el semestre: cada cupón anula la pe
 
 > [!question]- ¿Cuál es el rol de las cátedras bajo la metodología de aula invertida (*flipped classroom*)?
 > Resolver dudas puntuales y realizar actividades prácticas aplicadas, dado que los conceptos teóricos son estudiados previamente por el alumno en los notebooks de GitHub.
+

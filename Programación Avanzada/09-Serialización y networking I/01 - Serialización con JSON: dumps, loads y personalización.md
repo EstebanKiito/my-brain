@@ -103,3 +103,4 @@ Tipo: Mascota, Nombre: Michi
 
 > [!question]- ¿Cómo opera el parámetro `object_hook` en la función `json.loads()`?
 > Es una función callback que se ejecuta sobre cada diccionario decodificado del JSON antes de devolverlo, permitiendo interceptarlo e instanciar la clase original si detecta las claves esperadas.
+

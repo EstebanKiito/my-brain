@@ -13,3 +13,4 @@ Volver al [[Programación Avanzada/_Índice|mapa del ramo]].
 3. [[03 - Búsqueda en grafos BFS en anchura y DFS en profundidad|Búsqueda en grafos: BFS en anchura y DFS en profundidad]]: prevención de ciclos con conjuntos `visitados`, búsqueda en anchura con colas (BFS y camino más corto) frente a búsqueda en profundidad con pilas o recursión (DFS).
 4. [[04 - Computación numérica con NumPy ndarrays vectorización y broadcasting|Computación numérica con NumPy: ndarrays, vectorización y broadcasting]]: memoria contigua en C, tipo `ndarray`, operaciones aritméticas vectorizadas sin bucles, reglas de compatibilidad de broadcasting y reducción por ejes.
 5. [[05 - Análisis y manipulación tabular de datos con Pandas|Análisis y manipulación tabular de datos con Pandas]]: estructuras `Series` y `DataFrame`, indexación con `loc` e `iloc`, filtrado booleano compuesto, transformaciones, agregaciones con `groupby()` y persistencia CSV.
+

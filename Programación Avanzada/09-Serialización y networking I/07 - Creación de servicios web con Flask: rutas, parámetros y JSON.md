@@ -98,3 +98,4 @@ En Flask, una función manejadora puede retornar una tupla con dos elementos: `(
 
 > [!question]- ¿Cómo se retorna un código de error 404 personalizado desde una función de Flask?
 > Retornando una tupla con la respuesta y el número de código entero: `return jsonify({"error": "No encontrado"}), 404`.
+

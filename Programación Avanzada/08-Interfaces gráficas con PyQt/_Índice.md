@@ -15,3 +15,4 @@ Volver al [[Programación Avanzada/_Índice|mapa del ramo]].
 5. [[05 - Eventos de mouse teclado y señales personalizadas|Eventos de mouse, teclado y señales personalizadas]]: sobreescritura de `mousePressEvent` y `keyPressEvent`, definición de `pyqtSignal` como atributos de clase, tipado de señales y emisión con `.emit()`.
 6. [[06 - Arquitectura de software: separación Front-End y Back-End|Arquitectura de software: separación Front-End y Back-End]]: principios de alta cohesión y bajo acoplamiento, responsabilidades de la vista frente a la lógica del modelo, y comunicación simétrica desacoplada mediante señales.
 7. [[07 - Coordinación de múltiples ventanas mediante señales|Coordinación de múltiples ventanas mediante señales]]: navegación entre pantallas, transición de login a juego principal, métodos `show()` y `hide()`, y prevención de dependencias circulares.
+

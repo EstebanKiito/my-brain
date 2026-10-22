@@ -102,3 +102,4 @@ finally:
 
 > [!question]- ¿Por qué es fundamental utilizar `sock.settimeout()` al esperar respuestas con sockets UDP?
 > Porque ante la pérdida de un paquete el socket quedaría bloqueado indefinidamente esperando una respuesta que nunca llegará, congelando el flujo de la aplicación.
+

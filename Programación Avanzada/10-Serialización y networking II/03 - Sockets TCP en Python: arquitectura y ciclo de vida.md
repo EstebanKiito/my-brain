@@ -108,3 +108,4 @@ cliente.close()
 
 > [!question]- ¿Para qué sirve configurar la opción `SO_REUSEADDR` en el socket del servidor?
 > Permite volver a enlazar (*bind*) el mismo puerto de red inmediatamente después de detener el programa, sorteando el tiempo de espera de seguridad del sistema operativo.
+

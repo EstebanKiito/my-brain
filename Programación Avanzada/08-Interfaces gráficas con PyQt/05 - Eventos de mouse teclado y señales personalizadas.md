@@ -97,3 +97,4 @@ class SensorTemperatura(QObject):
 
 > [!question]- ¿Qué ocurre cuando una señal definida como `pyqtSignal(int)` invoca `.emit("Hola")`?
 > Arroja un error de tipado (`TypeError`) porque el argumento entregado en `.emit()` no coincide con la firma de tipos declarada para la señal.
+

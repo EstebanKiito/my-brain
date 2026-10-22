@@ -132,3 +132,4 @@ class VentanaChat(QWidget):
 
 > [!question]- ¿Qué ocurre si el usuario cierra la ventana gráfica pero no se detiene el hilo del socket de red?
 > El hilo secundario permanecerá activo en segundo plano en el sistema operativo, impidiendo que el proceso de Python termine por completo al salir.
+

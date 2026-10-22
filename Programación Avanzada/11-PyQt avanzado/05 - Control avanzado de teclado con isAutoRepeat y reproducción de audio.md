@@ -120,3 +120,4 @@ reproductor_musica.play()
 
 > [!question]- ¿Cómo deben formatearse las rutas de archivos de audio al asignarlas a un `QSoundEffect`?
 > No se pueden entregar como strings planos; deben envolverse en una URL de archivo local mediante `QUrl.fromLocalFile("ruta/al/archivo.wav")`.
+

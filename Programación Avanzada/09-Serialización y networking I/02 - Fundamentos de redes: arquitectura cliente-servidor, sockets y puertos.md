@@ -66,3 +66,4 @@ Un **socket** es el punto final de comunicación bidireccional (*endpoint*) form
 
 > [!question]- ¿Qué elementos constituyen formalmente un socket de red?
 > La combinación única de una dirección IP (que identifica al host) y un número de puerto (que identifica al proceso de software dentro del host).
+

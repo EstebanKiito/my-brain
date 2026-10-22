@@ -100,3 +100,4 @@ Al utilizar este protocolo por bloques (*chunks*), se garantiza la recepción í
 
 > [!question]- ¿Cómo resuelve el protocolo de longitud prefijada el problema de recibir dos mensajes consecutivos pegados?
 > Al conocer la longitud exacta del primer mensaje, el receptor solo extrae esa cantidad de bytes del búfer, dejando el resto para que la siguiente lectura procese el segundo mensaje limpiamente.
+

@@ -99,3 +99,4 @@ def mostrar_notificacion_temporal(self):
 
 > [!question]- ¿Qué ocurre si se llama a `timer.setInterval(2)` en lugar de `timer.setInterval(2000)`?
 > El temporizador se ejecutará a una velocidad vertiginosa cada 2 milisegundos (500 veces por segundo) en lugar de cada 2 segundos, saturando innecesariamente el procesador.
+

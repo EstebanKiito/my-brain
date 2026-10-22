@@ -95,3 +95,4 @@ Consiste en una matriz cuadrada de tamaño $|V| \times |V|$ donde la celda en la
 
 > [!question]- ¿Qué ventaja específica ofrece una matriz de adyacencia por sobre una lista de adyacencia?
 > Permite verificar si existe una arista directa entre dos nodos cualesquiera en tiempo constante $O(1)$ accediendo directamente a la celda `M[u][v]`.
+
