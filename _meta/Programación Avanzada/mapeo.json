@@ -6,7 +6,7 @@
   "temas": {
     "Repaso y POO básica": {
       "carpeta": "Programación Avanzada/01-Repaso y POO básica",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [],
       "notebooks": [
         "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-01-introduccion/0-contenidos-minimos.ipynb",

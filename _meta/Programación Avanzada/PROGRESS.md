@@ -5,7 +5,7 @@ Rama: `migrar/programacion-avanzada`. Un commit por tema. Antes de cada commit s
 | # | Tema | Carpeta | Estado | Notas | Imágenes |
 |---|---|---|---|---|---|
 | 0 | Infraestructura (`_meta/Programación Avanzada/`) | `_meta/` | ✅ hecho | – | – |
-| 1 | Repaso y POO básica | `01-Repaso y POO básica/` | ⏳ pendiente | – | – |
+| 1 | Repaso y POO básica | `01-Repaso y POO básica/` | ✅ hecho | 10 + índice | 2 |
 | 2 | Entorno de trabajo | `02-Entorno de trabajo/` | ⏳ pendiente | – | – |
 | 3 | Estructuras de datos de Python | `03-Estructuras de datos de Python/` | ⏳ pendiente | – | – |
 | 4 | POO avanzada | `04-POO avanzada/` | ⏳ pendiente | – | – |
@@ -27,3 +27,4 @@ Rama: `migrar/programacion-avanzada`. Un commit por tema. Antes de cada commit s
 - Otros ramos: se enlaza en vez de duplicar (estructuras lineales y grafos en Estructuras de Datos; hilos y sockets en Sistemas Distribuidos; POO en Ruby y UML en Ingeniería de Software; TLS en Seguridad Computacional; recursión y strings en Introducción a la Programación).
 
 ## Registro
+- **2026-10-22 · Repaso y POO básica.** Fuentes: los cuatro notebooks de la primera semana (contenidos mínimos, atributos y encapsulamiento, I/O y typing) y las diapositivas de OOP 1 (ejemplo Planta/Huerto). El notebook de contenidos mínimos se dividió en cinco notas (repaso, dos de listas, dos de strings), el de atributos en dos (clases y variables de clase; encapsulamiento) y el de I/O en dos (archivos y bytes; context manager) para respetar el largo máximo. Se omiten los anuncios y las reglas de issues de las slides. Las properties de las slides se tratan en POO avanzada. 10 notas; 2 imágenes de notebook. Sin dudas.

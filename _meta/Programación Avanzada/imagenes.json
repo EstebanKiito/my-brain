@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "tema": "Repaso y POO básica",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-01-introduccion/data/indices_slicing.png",
+    "destino": "Programación Avanzada/01-Repaso y POO básica/adjuntos/Índices para slicing de una lista.png",
+    "sha256": "138b9d4e6d62f16269bcee2ba52f4c8a0081853c5ff5b11f269fe08c21660e19"
+  },
+  {
+    "tema": "Repaso y POO básica",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-01-introduccion/data/OOP_interfaz.png",
+    "destino": "Programación Avanzada/01-Repaso y POO básica/adjuntos/Interfaz de la clase Auto.png",
+    "sha256": "a0a88134795fbecaee7fff3cc0b56dcbe0e515ba9b9d67ed5b5078e65257fb75"
+  }
+]
