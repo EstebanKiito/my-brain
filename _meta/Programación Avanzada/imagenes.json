@@ -103,5 +103,75 @@
     "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-03-estructuras_de_datos/img/hash-table.png",
     "destino": "Programación Avanzada/03-Estructuras de datos de Python/adjuntos/Estructura de tabla hash en diccionarios.png",
     "sha256": "1965c77cd550f8a697bba574d10a8f95905f8e0af10e55b8f4923669499812c1"
+  },
+  {
+    "tema": "POO avanzada",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/img/diagrama_herencia.jpeg",
+    "destino": "Programación Avanzada/04-POO avanzada/adjuntos/Jerarquía de herencia simple.jpeg",
+    "sha256": "e7f44e87c44064cbf68c87a1abfbcc700724cc5b16410f983f10ad3d3503944a"
+  },
+  {
+    "tema": "POO avanzada",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/img/diagrama_multiherencia.jpeg",
+    "destino": "Programación Avanzada/04-POO avanzada/adjuntos/Jerarquía de multiherencia.jpeg",
+    "sha256": "3f66e104c4e7418691e2d088185f38ddda1f841c434c12d5ea5c848a2f8a28d1"
+  },
+  {
+    "tema": "POO avanzada",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/img/diagrama_diamante.jpeg",
+    "destino": "Programación Avanzada/04-POO avanzada/adjuntos/Problema del diamante en multiherencia.jpeg",
+    "sha256": "6b49707e535545f7d30b5cfa80fbf4ad839ab49ff57b9a3e5e2cccc920750818"
+  },
+  {
+    "tema": "POO avanzada",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/img/diamante_2_small.png",
+    "destino": "Programación Avanzada/04-POO avanzada/adjuntos/Resolución del diamante con orden MRO.png",
+    "sha256": "cba12c343757932b07009e5ad0e380e35fe013313dd3b43f21925768bd3bec4a"
+  },
+  {
+    "tema": "POO avanzada",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/img/UML_class.png",
+    "destino": "Programación Avanzada/04-POO avanzada/adjuntos/Estructura de clase en diagrama UML.png",
+    "sha256": "d0a702d3b703960e9951ac04fed2991a9a45b10572f957830fd619a439b19d9b"
+  },
+  {
+    "tema": "POO avanzada",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/img/UML_class_ejemplo.png",
+    "destino": "Programación Avanzada/04-POO avanzada/adjuntos/Ejemplo de clase Auto en UML.png",
+    "sha256": "ac2ceceea96abc46d6ead390cab62c595a4a5df15cc62b9337d77e323e91891d"
+  },
+  {
+    "tema": "POO avanzada",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/img/OOP_mario.png",
+    "destino": "Programación Avanzada/04-POO avanzada/adjuntos/Modelo conceptual de objetos en Mario.png",
+    "sha256": "eddd0ce94d301b05326fd6b368780dca745ff08bd7e2c8f3e7d337d39d8bcc74"
+  },
+  {
+    "tema": "POO avanzada",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/img/UML_mario_03.png",
+    "destino": "Programación Avanzada/04-POO avanzada/adjuntos/Relación de contención o composición en UML.png",
+    "sha256": "d17216d2816714a5cc36bc233cb7a6be819d2cf0077c11f817a352071b23422b"
+  },
+  {
+    "tema": "POO avanzada",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/img/UML_mario_05.png",
+    "destino": "Programación Avanzada/04-POO avanzada/adjuntos/Relación de herencia en UML.png",
+    "sha256": "5724488ddd1794b0bb002d571ae7e57d7991690b98caa8416bae4994a3ca6b80"
+  },
+  {
+    "tema": "POO avanzada",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/img/UML_mario_final.png",
+    "destino": "Programación Avanzada/04-POO avanzada/adjuntos/Diagrama de clases UML completo de Mario.png",
+    "sha256": "de3229b16018fd97c2cf95462b42af11a600eb6869d4417a92b9fa34eb300a8f"
   }
 ]

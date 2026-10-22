@@ -51,7 +51,7 @@
     },
     "POO avanzada": {
       "carpeta": "Programación Avanzada/04-POO avanzada",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [],
       "notebooks": [
         "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-04-oop_avanzado/1-herencia.ipynb",
