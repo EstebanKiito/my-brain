@@ -119,3 +119,4 @@ Prioridad 3: MAT1610
 
 > [!question]- ¿Qué ventaja ofrece `enumerate(lista, start=1)` frente a declarar una variable manual `i = 1` y hacer `i += 1` en cada vuelta?
 > Es más limpio, evita errores humanos de actualización u omisión del contador y mantiene el código alineado con los estándares idiomáticos de Python.
+

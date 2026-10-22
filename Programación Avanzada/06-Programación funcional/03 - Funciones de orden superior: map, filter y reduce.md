@@ -134,3 +134,4 @@ Factorial acumulado con reduce: 120
 
 > [!question]- ¿Qué ocurre en `reduce(f, [10, 20, 30])` si no se entrega un valor inicial?
 > Python toma los dos primeros elementos (`10` y `20`) como argumentos para la primera llamada de `f`, y utiliza el resultado para combinarlo con el tercer elemento (`30`).
+

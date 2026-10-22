@@ -119,3 +119,4 @@ Perímetro rectángulo: 20.00
 
 > [!question]- ¿Puede una clase abstracta contener métodos normales y atributos concretos no abstractos?
 > Sí. Una clase abstracta puede mezclar métodos abstractos con métodos completamente implementados y atributos regulares que son heredados de forma estándar por sus subclases.
+

@@ -19,3 +19,4 @@ Volver al [[Programación Avanzada/_Índice|mapa del ramo]].
 9. [[09 - Diagramas de clases UML y relaciones|Diagramas de clases UML y relaciones]]: compartimentos de clase, visibilidad (`+`, `-`, `#`), relaciones de asociación, composición y generalización.
 10. [[10 - MRO y multiherencia cooperativa en Python|MRO y multiherencia cooperativa en Python]]: algoritmo C3 Linearization, orden de resolución de métodos, `super()` cooperativo y propagación de argumentos con `*args` y `**kwargs`.
 11. [[11 - Metaclases: la clase de una clase y el comando type|Metaclases: la clase de una clase y el comando type]]: creación dinámica de clases con `type(name, bases, dict)`, intercepción en `__new__` y patrón Singleton.
+

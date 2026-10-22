@@ -109,3 +109,4 @@ c.start()
 
 > [!question]- ¿Cómo se entregan argumentos a la función objetivo en `Thread(target=f, args=...)`?
 > Se deben entregar dentro de una tupla en el parámetro `args` (por ejemplo `args=("dato",)` con coma final si es un solo elemento).
+

@@ -108,3 +108,4 @@ t_carga.join()
 
 > [!question]- ¿Por qué `evento.wait()` es superior a un bucle `while not bandera: time.sleep(0.1)`?
 > Porque `wait()` pone al hilo en estado de suspensión gestionado por el sistema operativo, liberando por completo el procesador y despertando en el instante exacto en que se emite la señal.
+

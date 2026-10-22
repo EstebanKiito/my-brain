@@ -116,3 +116,4 @@ Convertida a list: ['Santiago', 'Valparaíso', 'Concepción']
 
 > [!question]- ¿Puede una lista ligada iterable ser convertida directamente a una lista común con `list(mi_lista_ligada)`?
 > Sí, porque el constructor `list()` acepta cualquier objeto que implemente el protocolo de iteración (`__iter__`), consumiendo sus elementos hasta que la secuencia finaliza.
+

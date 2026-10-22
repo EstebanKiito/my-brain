@@ -119,3 +119,4 @@ Segundo valor: 1
 
 > [!question]- ¿Qué ocurre cuando una función generadora llega al final de su cuerpo sin encontrar más sentencias `yield`?
 > El intérprete de Python finaliza el generador y levanta automáticamente una excepción `StopIteration` para avisar al consumidor que la secuencia ha concluido.
+

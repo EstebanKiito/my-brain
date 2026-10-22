@@ -118,3 +118,4 @@ Déficit: $700.00
 
 > [!question]- ¿Cómo se puede re-lanzar una excepción capturada para que siga propagándose hacia capas superiores?
 > Se escribe la instrucción `raise` en solitario (sin argumentos) dentro del bloque `except`, lo que vuelve a lanzar exactamente la misma excepción capturada conservando su traceback original.
+

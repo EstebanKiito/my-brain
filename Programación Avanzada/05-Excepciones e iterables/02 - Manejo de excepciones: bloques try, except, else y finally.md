@@ -111,3 +111,4 @@ No se encontró el archivo: archivo_inexistente.txt
 
 > [!question]- ¿Cuál es el orden cronológico estricto de evaluación de una estructura `try-except-else-finally`?
 > Primero se ejecuta `try`; si ocurre un error va a `except`; si no hay error va a `else`; y finalmente, en todos los casos y sin excepción, concluye ejecutando `finally`.
+

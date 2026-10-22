@@ -100,3 +100,4 @@ Total de palabras procesadas: 6
 
 > [!question]- ¿Por qué las funciones puras eliminan las condiciones de carrera (*race conditions*) en entornos concurrentes?
 > Porque al no modificar memoria ni variables compartidas y basarse en datos inmutables, múltiples hilos pueden ejecutarlas en paralelo sin riesgo de sobrescribir el estado de otro hilo.
+

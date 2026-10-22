@@ -14,3 +14,4 @@ Volver al [[Programación Avanzada/_Índice|mapa del ramo]].
 4. [[04 - Deadlocks y coordinación de hilos con Event|Deadlocks y coordinación de hilos con Event]]: causas y prevención de interbloqueos (*deadlocks*), ruptura de dependencias circulares, y señalización eficiente entre hilos con `threading.Event`.
 5. [[05 - Colas sincronizadas y el patrón productor-consumidor|Colas sincronizadas y el patrón productor-consumidor]]: desacoplamiento con el patrón productor-consumidor, estructura `queue.Queue` thread-safe nativa sin espera activa (*busy waiting*), y temporizadores asíncronos con `threading.Timer`.
 6. [[06 - El GIL de Python: concurrencia IO-bound frente a CPU-bound|El GIL de Python: concurrencia IO-bound frente a CPU-bound]]: el cerrojo global del intérprete (GIL) de CPython, diferencias entre concurrencia y paralelismo, rendimiento en tareas I/O-bound vs CPU-bound, y cuándo recurrir a `multiprocessing`.
+

@@ -125,3 +125,4 @@ Si antes de que expire el tiempo se invoca **`temporizador.cancel()`**, el tempo
 
 > [!question]- ¿Qué utilidad práctica ofrece el método `cancel()` de la clase `threading.Timer`?
 > Permite abortar la ejecución de una tarea diferida si el suceso detonante fue resuelto o anulado antes de que transcurriera el tiempo de espera programado.
+

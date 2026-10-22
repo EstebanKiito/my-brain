@@ -140,3 +140,4 @@ La inicialización de `Dispositivo` ocurrió dos veces. Si esa clase abriera una
 
 > [!question]- ¿Qué ventaja ofrece Python frente a lenguajes como Java en cuanto al soporte de clases base?
 > Python permite multiherencia completa de clases concretas, mientras que Java solo admite herencia simple de una clase y exige el uso de interfaces separadas para capacidades múltiples.
+

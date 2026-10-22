@@ -108,3 +108,4 @@ Categoría Hogar: $35000
 
 > [!question]- ¿Cómo se estructuran modularmente las distintas etapas de un pipeline funcional en Python?
 > Se diseñan como funciones generadoras puras o llamadas a `map`/`filter`, donde cada etapa recibe un iterable de entrada y retorna un nuevo iterador de salida, permitiendo encadenarlas mediante composición.
+

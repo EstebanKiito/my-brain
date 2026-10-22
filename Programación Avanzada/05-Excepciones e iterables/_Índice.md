@@ -15,3 +15,4 @@ Volver al [[Programación Avanzada/_Índice|mapa del ramo]].
 5. [[05 - Generadores y la palabra clave yield|Generadores y la palabra clave yield]]: evaluación perezosa (*lazy evaluation*), suspensión de funciones con `yield`, secuencias infinitas y expresiones generadoras.
 6. [[06 - Listas ligadas: nodos y operaciones fundamentales|Listas ligadas: nodos y operaciones]]: estructura encadenada en memoria, clase `Nodo`, puntero `head`, e inserción y obtención de elementos.
 7. [[07 - Listas ligadas iterables: integrando __iter__ y generadores|Listas ligadas iterables]]: integración del método `__iter__` con `yield`, recorrido en tiempo $O(N)$ y compatibilidad con `in`, `for` y `list()`.
+

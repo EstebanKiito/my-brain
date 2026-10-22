@@ -116,3 +116,4 @@ Hilo principal terminando...
 
 > [!question]- ¿Cuál es la diferencia entre el comportamiento de un hilo normal y uno daemon al finalizar el hilo principal?
 > El hilo normal mantiene el programa Python vivo hasta que termine su función objetivo; el hilo daemon es terminado abruptamente por el intérprete en el instante en que no quedan hilos normales activos.
+

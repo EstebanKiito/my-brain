@@ -86,3 +86,4 @@ Capturado TypeError: can only concatenate str (not "int") to str
 
 > [!question]- ¿Qué excepción se produce al intentar ejecutar `int([1, 2, 3])` frente a `int("10.5")`?
 > `int([1, 2, 3])` produce un `TypeError` porque `int()` no acepta listas como argumento; mientras que `int("10.5")` produce un `ValueError` porque acepta cadenas de texto pero esa cadena contiene caracteres incompatibles con una representación entera.
+

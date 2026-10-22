@@ -123,3 +123,4 @@ for n in ContadorDescendente(3):
 
 > [!question]- ¿Qué diferencia a un iterador de un iterable en términos de métodos implementados?
 > Un iterable solo requiere implementar `__iter__()`, mientras que un iterador debe implementar obligatoriamente tanto `__next__()` (para avanzar) como `__iter__()` (que se retorna a sí mismo).
+

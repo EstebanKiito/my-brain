@@ -95,3 +95,4 @@ Para que un decorador pueda aplicarse a cualquier función sin importar cuántos
 
 > [!question]- ¿Por qué una función decorada debe retornar el valor devuelto por `funcion_original(*args, **kwargs)`?
 > Porque si la envoltura no retorna explícitamente ese resultado, la llamada a la función decorada devolverá siempre `None`, perdiendo el valor calculado por la función original.
+

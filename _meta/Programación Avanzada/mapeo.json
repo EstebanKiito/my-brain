@@ -109,7 +109,7 @@
     },
     "Interfaces gráficas con PyQt": {
       "carpeta": "Programación Avanzada/08-Interfaces gráficas con PyQt",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [],
       "notebooks": [
         "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/1-interfaces-graficas.ipynb",

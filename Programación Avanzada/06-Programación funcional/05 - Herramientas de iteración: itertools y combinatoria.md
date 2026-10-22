@@ -134,3 +134,4 @@ print(f"¿Hay alguien sobre 6.5?: {algun_distinguido}")
 
 > [!question]- ¿Cómo opera el mecanismo de cortocircuito en la función `all()`?
 > Evalúa los elementos secuencialmente y, en el instante en que un solo elemento resulta ser falso (`False`), retorna `False` de inmediato sin evaluar los elementos restantes del iterable.
+

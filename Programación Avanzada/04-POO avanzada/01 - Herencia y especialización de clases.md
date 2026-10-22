@@ -112,3 +112,4 @@ Al heredar de `list`, `ListaOrdenada` conserva automáticamente toda la interfaz
 
 > [!question]- ¿Qué ocurre si una instancia de `FurgonEscolar` invoca un método que no está definido en `FurgonEscolar` pero sí en `Auto`?
 > Python busca el método primero en la clase del objeto (`FurgonEscolar`); al no encontrarlo, sube por la jerarquía de herencia y lo ejecuta desde `Auto`.
+

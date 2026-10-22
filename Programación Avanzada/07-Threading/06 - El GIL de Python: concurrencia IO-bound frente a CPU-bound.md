@@ -96,3 +96,4 @@ Consisten en cálculos matemáticos continuos en bucles de Python sin pausas de 
 
 > [!question]- ¿Cómo logra el módulo `multiprocessing` sortear la limitación del GIL para tareas CPU-bound?
 > Crea procesos del sistema operativo independientes en lugar de hilos. Cada proceso posee su propia instancia aislada del intérprete de Python y su propio GIL, ejecutándose de forma verdaderamente paralela en núcleos físicos separados.
+

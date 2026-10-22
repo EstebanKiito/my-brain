@@ -126,3 +126,4 @@ Hago como que grazno: ¡Cuac!
 
 > [!question]- ¿Cómo se recomienda diseñar un método en Python que deba aceptar tanto 2 como 3 argumentos?
 > Asignando un valor por defecto al tercer parámetro (por ejemplo `def calcular(self, a, b, c=None):`) y evaluando dentro del cuerpo si `c` fue provisto por el usuario.
+

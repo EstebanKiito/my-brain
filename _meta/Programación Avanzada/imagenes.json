@@ -306,5 +306,117 @@
     "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-08-threading/imgs/threading_sync_queue.png",
     "destino": "Programación Avanzada/07-Threading/adjuntos/Cola sincronizada thread-safe con queue.png",
     "sha256": "4275f31ef0895a2c6c8ab4d5e05ba27104b35356a4073df9eb68673a9785016d"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/PyQt-empty-window-generico.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Ventana vacía genérica en PyQt.png",
+    "sha256": "0195d5c33f5f07e15a9a404cc49adaf4f26e7ee178fb1ff77db0f774e6dab8a9"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/PyQt-empty-window-mac.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Ventana vacía de PyQt en macOS.png",
+    "sha256": "ff135ac21e03ac16cd6c3062becdcb2010fcf65c20fcbcb758686a6d0edea330"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/PyQt-empty-window-windows.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Ventana vacía de PyQt en Windows.png",
+    "sha256": "246c2177d4e65575e466daf32a32e3273ff76e2f9e333f7a75cfca9d74a1ddd1"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/PyQt-empty-window-linux.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Ventana vacía de PyQt en Linux.png",
+    "sha256": "ab4867f1ebed024bc726b96e821a622e81026fdb46e057c603e21f87ae9473a5"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/PyQt-coordinates.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Sistema de coordenadas bidimensional en PyQt.png",
+    "sha256": "e777e9bb34c6cb1be81d0d9a6d5dea228bc0e9cafc734df24d37881c2716a345"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/PyQt-windows-labels.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Ventana con etiquetas de texto en PyQt.png",
+    "sha256": "f26af3299c2dd343ceaf866e817a30360e033ea179166bb97b3891035a8aa058"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/PyQt-window-image.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Visualización de imagen en QLabel con QPixmap.png",
+    "sha256": "c15058c4adafbe11a7fbf93043e50536e4a912ca21c12c843621e5e4b0da4761"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/PyQt-window-button.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Ventana básica con botón QPushButton.png",
+    "sha256": "4bf547b4305f317df5e4535147bb2e281a21cc2d6fe3821590ca9f59fb0b8a2e"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/expl-layouts.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Estructura y alineación de layouts verticales y horizontales.png",
+    "sha256": "7b6917db1b3da501d26ba8fb3923553a7de165ae00a0e8c17e61c63a823894f4"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/PyQt-mainwindow-layouts-a.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Distribución de widgets con ajuste horizontal QHBoxLayout.png",
+    "sha256": "1fc3fa1a8195e14cc3311c5cf17bca5828ed4d96dd8012bb3194508e6d66cba8"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/PyQt-mainwindow-layouts-b.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Combinación anidada de layouts horizontal y vertical.png",
+    "sha256": "336a12c3db896df01487bbf7082a2c7be4036a22f67d9603c3c295dd6dfaa404"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/expl-grid.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Esquema de distribución espacial en QGridLayout.png",
+    "sha256": "9992405fca831a481ee6b1406c18ed0a720034dc2bfdb657b7602c2379270f8f"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/PyQt-mainwindow-grid-layout.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Distribución de widgets en cuadrícula con QGridLayout.png",
+    "sha256": "7902bf62c9630047c52e6bf8fd07f44b0eb74049249d14d3627876e13d9d330d"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/PyQt-mi-boton.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Ventana con botones contadores independientes personalizados.png",
+    "sha256": "a16ee9df5f8943f2ef12d42efa555fa4b315e481722b26ea5087b75f8db01345"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/PyQt-mi-form.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Formulario compuesto modular con widgets y layouts.png",
+    "sha256": "e64f260bf1dda3731c5a753e976a24cb8f41ab8fa07d02e409045132322db8cc"
+  },
+  {
+    "tema": "Interfaces gráficas con PyQt",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-09-interfaces_graficas_1/img/gui-flowchart.png",
+    "destino": "Programación Avanzada/08-Interfaces gráficas con PyQt/adjuntos/Flujo de interacción y bucle de eventos en PyQt.png",
+    "sha256": "daba973ec44cb9c70b8cd06efe6eabb4e0626bf0b5bc4fb4c0750bbff68a0ce2"
   }
 ]

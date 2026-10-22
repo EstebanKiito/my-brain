@@ -107,3 +107,4 @@ Depósito de $150.00. Saldo: $1150.00
 
 > [!question]- ¿Por qué no es necesario pasar `self` como argumento al llamar a `super().metodo()`?
 > Porque `super()` retorna automáticamente un objeto proxy vinculado a la instancia actual (`self`), inyectándola implícitamente en la llamada al método de la superclase.
+

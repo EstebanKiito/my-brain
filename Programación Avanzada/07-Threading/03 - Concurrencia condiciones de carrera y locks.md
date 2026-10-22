@@ -90,3 +90,4 @@ Saldo final garantizado: 2100
 
 > [!question]- ¿Cuál es la consecuencia de incluir operaciones lentas (como descargas de archivos) dentro de un bloque `with lock:`?
 > Todos los demás hilos que necesiten acceder a ese lock quedarán suspendidos esperando, eliminando la concurrencia y degradando severamente el rendimiento general.
+

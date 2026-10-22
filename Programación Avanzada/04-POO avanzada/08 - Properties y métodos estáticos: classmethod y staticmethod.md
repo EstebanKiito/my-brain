@@ -118,3 +118,4 @@ Fecha creada: 22/10/2026
 
 > [!question]- ¿Por qué se utiliza frecuentemente `@classmethod` para implementar el patrón de diseño Factory Method?
 > Porque permite ofrecer métodos alternativos para construir objetos a partir de distintos formatos (cadenas, archivos JSON o diccionarios) retornando siempre una instancia del tipo dinámico `cls`.
+

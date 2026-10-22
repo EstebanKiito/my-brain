@@ -108,3 +108,4 @@ Salida de repr: datetime.date(2026, 10, 22)
 
 > [!question]- ¿Qué método dunder debe implementarse para que una clase responda a la función `len(mi_objeto)`?
 > Se debe implementar el método `__len__(self)`, el cual debe retornar obligatoriamente un número entero mayor o igual a cero.
+
