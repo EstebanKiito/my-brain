@@ -36,7 +36,7 @@
     },
     "Estructuras de datos de Python": {
       "carpeta": "Programación Avanzada/03-Estructuras de datos de Python",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [],
       "notebooks": [
         "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-03-estructuras_de_datos/1-introducción-y-tuplas.ipynb",

@@ -68,5 +68,40 @@
     "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-02-entorno_de_trabajo/data/2.png",
     "destino": "Programación Avanzada/02-Entorno de trabajo/adjuntos/El último commit contiene todo el proyecto.png",
     "sha256": "cbd9cc85a3f71d554e9abc746350899441f8fa047bc298d321808dd4e9f402e5"
+  },
+  {
+    "tema": "Estructuras de datos de Python",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-03-estructuras_de_datos/img/indices_secuencia.png",
+    "destino": "Programación Avanzada/03-Estructuras de datos de Python/adjuntos/Índices en una tupla o secuencia.png",
+    "sha256": "0d3f2954c57186e0f1ef5d4d50f9ec2f1fed0a8d601c7fe25408a94819f69a66"
+  },
+  {
+    "tema": "Estructuras de datos de Python",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-03-estructuras_de_datos/img/stacks.png",
+    "destino": "Programación Avanzada/03-Estructuras de datos de Python/adjuntos/Operaciones en un stack o pila.png",
+    "sha256": "c6cf3aaf9d057e93d68b6d9da833dd0dc5970317b4e309d8ef32631f17872de6"
+  },
+  {
+    "tema": "Estructuras de datos de Python",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-03-estructuras_de_datos/img/back-button-stacks.png",
+    "destino": "Programación Avanzada/03-Estructuras de datos de Python/adjuntos/Historial de navegación con stack.png",
+    "sha256": "cd1feb04a70ec5c5ae6767f3c21d555327e2ac61dfd1c1109dbb42ef248c7aa5"
+  },
+  {
+    "tema": "Estructuras de datos de Python",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-03-estructuras_de_datos/img/queues.png",
+    "destino": "Programación Avanzada/03-Estructuras de datos de Python/adjuntos/Operaciones en una cola FIFO.png",
+    "sha256": "65a88e03c9b6a6ddca032db33bdc0bf3debb2ccfe3c3976bc4cf7f12d7fd428d"
+  },
+  {
+    "tema": "Estructuras de datos de Python",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-03-estructuras_de_datos/img/hash-table.png",
+    "destino": "Programación Avanzada/03-Estructuras de datos de Python/adjuntos/Estructura de tabla hash en diccionarios.png",
+    "sha256": "1965c77cd550f8a697bba574d10a8f95905f8e0af10e55b8f4923669499812c1"
   }
 ]
