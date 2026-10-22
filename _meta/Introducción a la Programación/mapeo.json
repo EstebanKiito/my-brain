@@ -139,6 +139,20 @@
         "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase24",
         "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase25b"
       ]
+    },
+    "Programación orientada a objetos": {
+      "carpeta": "Introducción a la Programación/11-Programación orientada a objetos",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/Examen/Clase23_OOP.pdf",
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/Examen/Clase24_OOP2.pdf"
+      ],
+      "codigos": [
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase26",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase27",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase28"
+      ]
     }
   },
   "aceptados": []
