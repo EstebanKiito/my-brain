@@ -126,6 +126,19 @@
         "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase19",
         "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase21"
       ]
+    },
+    "Archivos": {
+      "carpeta": "Introducción a la Programación/10-Archivos",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I2/Clase21_Archivos-1.pdf",
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I2/Clase22-Archivos_parte2.pdf"
+      ],
+      "codigos": [
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase24",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase25b"
+      ]
     }
   },
   "aceptados": []

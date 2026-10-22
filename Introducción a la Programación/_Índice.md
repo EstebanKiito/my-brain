@@ -20,6 +20,7 @@ Vault de estudio del ramo. Las notas están escritas para alguien que parte desd
 | [[Introducción a la Programación/07-Strings/_Índice\|Strings]] | Índices, `len`, recorridos, slicing, palíndromos y métodos de strings |
 | [[Introducción a la Programación/08-Listas/_Índice\|Listas]] | Crear y recorrer listas, métodos, `split`/`join`, mutabilidad, criba de Eratóstenes y recursión sobre listas |
 | [[Introducción a la Programación/09-Listas de listas/_Índice\|Listas de listas]] | Matrices, doble `for`, búsqueda, vecinos y modelar datos (contactos, árbol genealógico, rutas) |
+| [[Introducción a la Programación/10-Archivos/_Índice\|Archivos]] | Leer y escribir archivos de texto, modos `r`/`w`/`a`, separadores y CSV |
 
 ## Ruta de estudio sugerida
 1. **Algoritmos → Primeros pasos en Python:** la idea de algoritmo y cómo escribir los primeros programas.
