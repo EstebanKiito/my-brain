@@ -26,6 +26,19 @@
         "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase03",
         "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase04"
       ]
+    },
+    "Condicionales": {
+      "carpeta": "Introducción a la Programación/03-Condicionales",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase5_if.pdf",
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase6_elif.pdf"
+      ],
+      "codigos": [
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase05online",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase06"
+      ]
     }
   },
   "aceptados": []

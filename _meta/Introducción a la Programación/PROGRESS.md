@@ -7,7 +7,7 @@ Rama: `migrar/introduccion-programacion`. Un commit por tema. Antes de cada comm
 | 0 | Infraestructura (`_meta/Introducción a la Programación/`) | `_meta/` | ✅ hecho | – | – |
 | 1 | Algoritmos y pensamiento computacional | `01-Algoritmos y pensamiento computacional/` | ✅ hecho | 2 + índice | 2 |
 | 2 | Primeros pasos en Python | `02-Primeros pasos en Python/` | ✅ hecho | 4 + índice | 0 |
-| 3 | Condicionales | `03-Condicionales/` | ⏳ pendiente | – | – |
+| 3 | Condicionales | `03-Condicionales/` | ✅ hecho | 3 + índice | 0 |
 | 4 | Ciclos | `04-Ciclos/` | ⏳ pendiente | – | – |
 | 5 | Funciones y módulos | `05-Funciones y módulos/` | ⏳ pendiente | – | – |
 | 6 | Recursión | `06-Recursión/` | ⏳ pendiente | – | – |
@@ -28,3 +28,4 @@ Rama: `migrar/introduccion-programacion`. Un commit por tema. Antes de cada comm
 ## Registro
 - **2026-10-22 · Algoritmos y pensamiento computacional.** Fuentes: slides de la bienvenida (objetivos y etapas de resolución de problemas) y de Blockly (receta de pizza, definición de algoritmo, formas de comunicarlo, Turtle y Maze). Se omitieron presentaciones del equipo, encuestas y la actividad de participación; las reglas y la evaluación quedan para Gestión del curso. 2 notas; 2 figuras de clase. Sin dudas.
 - **2026-10-22 · Primeros pasos en Python.** Fuentes: slides de introducción a Python y de variables/operadores/bool, más los códigos `holamundo`, `dimetunombre`, `jalisco`, `millas a kms`, `chocolates repartir` y `dados`. Se agregaron la tabla de errores frecuentes y el ejemplo de prioridad con Fahrenheit (ejercicio propuesto). 4 notas; sin imágenes (las slides son texto). Sin dudas.
+- **2026-10-22 · Condicionales.** Fuentes: slides de if/else y elif, y los códigos `lanzar dado`, `cachipun`, `chocolates` y las seis versiones de `monitoreo`. Se corrigió sin comentar una errata en la condición de alerta (un umbral 300 donde iba 200). El `main.py` de plantilla de PyCharm se omite (el patrón `__name__` se ve con módulos). 3 notas; 0 imágenes.
