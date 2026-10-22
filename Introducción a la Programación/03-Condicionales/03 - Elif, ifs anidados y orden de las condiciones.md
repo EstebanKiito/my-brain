@@ -38,27 +38,14 @@ else:
     if 100 <= valor <= 199:
         print("regular")
     else:
-        if 200 <= valor <= 299:
-            print("alerta")
-        else:
-            print("otro caso...")
+        print("alerta, preemergencia, ...")  # y así sigue anidando
 ```
 
 Funciona, pero con cinco casos el código se va corriendo hacia la derecha y se vuelve difícil de leer.
 
 ## Forma 2: solo ifs sueltos
 
-```python
-valor = int(input("Ingresar valor estacion: "))
-if 0 <= valor <= 99:
-    print("bueno")
-if 100 <= valor <= 199:
-    print("regular")
-if valor >= 500:
-    print("emergencia")
-```
-
-Cada `if` es independiente, así que Python **evalúa todos**, aunque ya haya encontrado el caso correcto. Aquí funciona porque los rangos no se pisan, pero si dos condiciones se cumplieran a la vez se mostrarían dos mensajes, y no hay forma cómoda de escribir el "en cualquier otro caso".
+Otra opción es escribir cinco `if` independientes, uno por rango, sin `else`. Python **evalúa todos**, aunque ya haya encontrado el caso correcto. Funciona solo si los rangos no se pisan; si dos condiciones se cumplieran a la vez se mostrarían dos mensajes, y no hay forma cómoda de escribir "en cualquier otro caso".
 
 ## Forma 3: `elif` (la recomendada)
 
@@ -79,16 +66,6 @@ elif valor >= 500:
 else:
     print("fuera de rango")
 print("fin")
-```
-
-```mermaid
-flowchart TD
-    A{cond1} -- True --> B[bloque 1]
-    A -- False --> C{cond2}
-    C -- True --> D[bloque 2]
-    C -- False --> E{cond3}
-    E -- True --> G[bloque 3]
-    E -- False --> H[bloque del else]
 ```
 
 > [!tip] Regla de `elif`
