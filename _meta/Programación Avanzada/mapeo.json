@@ -156,7 +156,7 @@
     },
     "PyQt avanzado": {
       "carpeta": "Programación Avanzada/11-PyQt avanzado",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [],
       "notebooks": [
         "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-14-interfaces_graficas_2/1-pyqt-qthreads.ipynb",

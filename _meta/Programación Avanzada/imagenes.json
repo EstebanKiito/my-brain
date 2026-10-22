@@ -488,5 +488,33 @@
     "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-11-serializacion_y_networking_2/imgs/compare-large-files-improved.png",
     "destino": "Programación Avanzada/10-Serialización y networking II/adjuntos/Integridad verificada de archivo recibido con protocolo por chunks.png",
     "sha256": "2e86533f4a8969dca8eac41fd56fe2f440d34ce97cc7861e3c0708333e35ccb5"
+  },
+  {
+    "tema": "PyQt avanzado",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-14-interfaces_graficas_2/img/ejemplo_aplicado.gif",
+    "destino": "Programación Avanzada/11-PyQt avanzado/adjuntos/Animación de ejecución concurrente con QThread en PyQt.gif",
+    "sha256": "3451fd5398bb1aa47aae17ab51767387372aa24dd97accdd8ed3da92c16d5f6c"
+  },
+  {
+    "tema": "PyQt avanzado",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-14-interfaces_graficas_2/img/networking-interfaces.png",
+    "destino": "Programación Avanzada/11-PyQt avanzado/adjuntos/Arquitectura de integración entre networking y PyQt.png",
+    "sha256": "5a27e3a0ecf3df38251831d9a4d5eb88353840ad0d7e75de0612f7428f7ec20b"
+  },
+  {
+    "tema": "PyQt avanzado",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-14-interfaces_graficas_2/img/pyqt-mainwindow-layout.png",
+    "destino": "Programación Avanzada/11-PyQt avanzado/adjuntos/Estructura de componentes en QMainWindow.png",
+    "sha256": "eddcdd22ef41f40dc877eada7ae6f79300d2176785894d0f6eb058b5fa17d25f"
+  },
+  {
+    "tema": "PyQt avanzado",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-14-interfaces_graficas_2/img/pyqt-mainwindow-mac.png",
+    "destino": "Programación Avanzada/11-PyQt avanzado/adjuntos/Aspecto de QMainWindow con menús y barras en macOS.png",
+    "sha256": "414c1e66edfcf582fe33f6e0cdd90765b169f81ede3f0f2193a49b93fbe3cbdc"
   }
 ]
