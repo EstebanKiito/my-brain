@@ -80,6 +80,19 @@
       "codigos": [
         "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase20"
       ]
+    },
+    "Strings": {
+      "carpeta": "Introducción a la Programación/07-Strings",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase13_Strings_.pdf",
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase14_Strings_2.pdf"
+      ],
+      "codigos": [
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase12",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase13"
+      ]
     }
   },
   "aceptados": []
