@@ -21,3 +21,6 @@ Vault de estudio del ramo. Las notas están escritas para alguien que parte desd
 
 ## Ruta de estudio sugerida
 1. **Algoritmos → Primeros pasos en Python:** la idea de algoritmo y cómo escribir los primeros programas.
+2. **Condicionales → Ciclos:** tomar decisiones y repetir; con esto ya se resuelve la mayoría de los problemas simples.
+3. **Funciones y módulos → Recursión:** organizar el código en piezas reutilizables y funciones que se llaman a sí mismas.
+4. **Strings:** trabajar con texto por dentro.
