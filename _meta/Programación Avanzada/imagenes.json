@@ -446,5 +446,47 @@
     "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-10-serializacion_y_networkin_1/img/http_message.png",
     "destino": "Programación Avanzada/09-Serialización y networking I/adjuntos/Estructura de un mensaje de petición y respuesta HTTP.png",
     "sha256": "7da5d2c6442528e1c56ddc8345211914885604e797c78720d42d450357846dc2"
+  },
+  {
+    "tema": "Serialización y networking II",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-11-serializacion_y_networking_2/imgs/ascii.jpg",
+    "destino": "Programación Avanzada/10-Serialización y networking II/adjuntos/Tabla de caracteres ASCII y representación en bytes.jpg",
+    "sha256": "b537fc6de9495a1c6a98c0510f26350ffc177394997205fddf96b85ff0d532df"
+  },
+  {
+    "tema": "Serialización y networking II",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-11-serializacion_y_networking_2/imgs/socket.jpg",
+    "destino": "Programación Avanzada/10-Serialización y networking II/adjuntos/Analogía física de conexión de un socket de red.jpg",
+    "sha256": "8a42dfc4816ea63ab7f6dc8a1b937ae3c62be4a452b79ac069380564d8dadd61"
+  },
+  {
+    "tema": "Serialización y networking II",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-11-serializacion_y_networking_2/imgs/send-large-file.png",
+    "destino": "Programación Avanzada/10-Serialización y networking II/adjuntos/Pérdida de datos en transmisión de archivo sin control de chunks.png",
+    "sha256": "079127b38b901ba64e078858bdc63f2344c63ac9bbd812c614c15875005e6c45"
+  },
+  {
+    "tema": "Serialización y networking II",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-11-serializacion_y_networking_2/imgs/compare-large-files.png",
+    "destino": "Programación Avanzada/10-Serialización y networking II/adjuntos/Comparación y truncamiento de archivo recibido incompleto.png",
+    "sha256": "914476b8120a5973e9b9961868a516071e51d0504251a2cfd88f90963ce2a85b"
+  },
+  {
+    "tema": "Serialización y networking II",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-11-serializacion_y_networking_2/imgs/send-large-file-improved.png",
+    "destino": "Programación Avanzada/10-Serialización y networking II/adjuntos/Transmisión robusta de archivo con protocolo de longitud fija.png",
+    "sha256": "5b616f56b8df50c8b6f231d009488ecc7ac9ede1e557670b6d713b1eaceff586"
+  },
+  {
+    "tema": "Serialización y networking II",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-11-serializacion_y_networking_2/imgs/compare-large-files-improved.png",
+    "destino": "Programación Avanzada/10-Serialización y networking II/adjuntos/Integridad verificada de archivo recibido con protocolo por chunks.png",
+    "sha256": "2e86533f4a8969dca8eac41fd56fe2f440d34ce97cc7861e3c0708333e35ccb5"
   }
 ]

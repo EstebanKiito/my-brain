@@ -141,7 +141,7 @@
     },
     "Serialización y networking II": {
       "carpeta": "Programación Avanzada/10-Serialización y networking II",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [],
       "notebooks": [
         "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-11-serializacion_y_networking_2/1-serializacion_pickle.ipynb",
