@@ -1,0 +1,18 @@
+# Introducción a la Programación (IIC1103) — mapa del curso
+
+Vault de estudio del ramo. Las notas están escritas para alguien que parte desde cero: cada concepto empieza por el problema que resuelve, sigue con ejemplos cortos en Python que se pueden copiar y ejecutar, y termina con las trampas típicas de principiante. Dentro de cada carpeta, el número del archivo indica el orden de lectura.
+
+## Cómo están hechas las notas
+- **Frontmatter:** `ramo`, `tema`, `tags` y `prerrequisitos` (notas que conviene leer antes).
+- **Cuerpo:** explicación paso a paso, tablas para comparar y código Python 3 con su salida esperada.
+- **Imágenes:** figuras del material del curso en PNG, con su transcripción en un callout plegable.
+- **Cierre:** cada nota termina con preguntas de repaso con la respuesta oculta.
+
+## Temas
+| Tema | Qué cubre |
+|---|---|
+| [[Introducción a la Programación/01-Algoritmos y pensamiento computacional/_Índice\|Algoritmos y pensamiento computacional]] | Qué es un algoritmo, entradas y salidas, y conceptos básicos con Blockly |
+| [[Introducción a la Programación/02-Primeros pasos en Python/_Índice\|Primeros pasos en Python]] | `print`, `input`, variables, tipos, operadores, `random` y `bool` |
+
+## Ruta de estudio sugerida
+1. **Algoritmos → Primeros pasos en Python:** la idea de algoritmo y cómo escribir los primeros programas.

@@ -1,0 +1,16 @@
+[
+  {
+    "tema": "Algoritmos y pensamiento computacional",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase2_Blockly.pdf#page=15",
+    "destino": "Introducción a la Programación/01-Algoritmos y pensamiento computacional/adjuntos/Blockly cuadrado con instrucciones en orden.png",
+    "sha256": "54a5cab80765637a635cb536841d878008669e54a52ec793527c8bd33f2827e0"
+  },
+  {
+    "tema": "Algoritmos y pensamiento computacional",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase2_Blockly.pdf#page=18",
+    "destino": "Introducción a la Programación/01-Algoritmos y pensamiento computacional/adjuntos/Blockly dos círculos con función dibujar circulo.png",
+    "sha256": "d93c4047394cae06373845f74ce44330a1eb2a6036d6cfa10dbb9468100bf160"
+  }
+]

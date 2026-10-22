@@ -1,0 +1,32 @@
+{
+  "_descripcion": "Mapeo de las fuentes originales (rutas relativas a _raw/) a los temas del vault. Este ramo no tiene export de Notion ni apuntes propios: las fuentes son los PDF de clase (CLASES/), los códigos de la profesora (Codigos/, con otra numeración de clases, asignados por contenido) y pythonbook.pdf como apoyo. Como verificar.py solo procesa fuentes HTML, 'fuentes' queda vacío y cada tema lleva 'secciones' vacías; los campos 'pdfs' y 'codigos' son informativos. Las notas se reescriben según _meta/ESTANDAR-NOTAS.md para estudiantes de primer año, por eso 'cobertura' es 'reescrita'.",
+  "carpeta_ramo": "Introducción a la Programación",
+  "cobertura": "reescrita",
+  "fuentes": {},
+  "temas": {
+    "Algoritmos y pensamiento computacional": {
+      "carpeta": "Introducción a la Programación/01-Algoritmos y pensamiento computacional",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase1_Intro_y_Reglas_.pdf",
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase2_Blockly.pdf"
+      ],
+      "codigos": []
+    },
+    "Primeros pasos en Python": {
+      "carpeta": "Introducción a la Programación/02-Primeros pasos en Python",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase3_IntroPython.pdf",
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase4_Variables_Operadores_.pdf"
+      ],
+      "codigos": [
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase03",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase04"
+      ]
+    }
+  },
+  "aceptados": []
+}
