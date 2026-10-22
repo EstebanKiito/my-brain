@@ -13,7 +13,7 @@ Rama: `migrar/seguridad-computacional`. Un commit por tema. Antes de cada commit
 | 6 | Contenedores y microVMs | `06-Contenedores y microVMs/` | ✅ hecho | 2 + índice | 0 + 1 |
 | 7 | Sandboxing de software | `07-Sandboxing de software/` | ✅ hecho | 2 + índice | 0 + 1 |
 | 8 | Seguridad móvil | `08-Seguridad móvil/` | ✅ hecho | 2 + índice | 0 + 1 |
-| 9 | Ejecución simbólica | `09-Ejecución simbólica/` | ⏳ pendiente | – | – |
+| 9 | Ejecución simbólica | `09-Ejecución simbólica/` | ✅ hecho | 1 + índice | 0 + 1 |
 | 10 | Seguridad web | `10-Seguridad web/` | ⏳ pendiente | – | – |
 | 11 | Seguridad TCP-IP | `11-Seguridad TCP-IP/` | ⏳ pendiente | – | – |
 | 12 | TLS y certificados | `12-TLS y certificados/` | ⏳ pendiente | – | – |
@@ -37,3 +37,4 @@ Rama: `migrar/seguridad-computacional`. Un commit por tema. Antes de cada commit
 - **2026-10-21 · Contenedores y microVMs.** Sin apuntes propios. Construido con los textos de las clases de contenedores Linux (`I06-linux-containers.md`) y Firecracker (`I06-firecracker-es.md`): VM frente a contenedor, namespaces, cgroups, capabilities con el ejemplo de `ping`, seccomp-bpf, Lambda, diseño de Firecracker, resultados y gVisor. 2 notas; 1 figura de clase. Sin dudas.
 - **2026-10-21 · Sandboxing de software.** Sin apuntes propios. Construido con los textos de WebAssembly (`I07-wasm-es.md`) y RLBox (`I08-rlbox-es.md`). La figura `sfi.png` es una versión parcial de `sfi_wasm.png` y no se usa. 2 notas; 1 figura de clase. Sin dudas.
 - **2026-10-21 · Seguridad móvil.** Sin apuntes propios. Construido con los textos de iOS (`I09-ios-es.md`) y Android (`I10-android-es.md`). Se resumieron las clases de protección, los permisos y las delegaciones. 2 notas; 1 figura de clase. Sin dudas.
+- **2026-10-21 · Ejecución simbólica.** Sin apuntes propios. Construido con el texto de la clase de bugs y ejecución simbólica (`I11-exe-es.md`). 1 nota; 1 figura de clase. Sin dudas.
