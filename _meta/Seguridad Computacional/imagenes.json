@@ -61,5 +61,12 @@
     "original": "Semestre 6/SEGURIDAD COMPUTACIONAL/Classes/Clase06/vm_vs_containers.png",
     "destino": "Seguridad Computacional/06-Contenedores y microVMs/adjuntos/Máquina virtual frente a contenedor LXC.png",
     "sha256": "479420ca288f892e4457261c309488c824e52424466b87402d77b24008335c71"
+  },
+  {
+    "tema": "Sandboxing de software",
+    "tipo": "clase",
+    "original": "Semestre 6/SEGURIDAD COMPUTACIONAL/Classes/Clase08/sfi_wasm.png",
+    "destino": "Seguridad Computacional/07-Sandboxing de software/adjuntos/SFI y su aplicación en WebAssembly.png",
+    "sha256": "a34f4af750afebfa0f27b88def8d6b3d43991dcf040681dde9ce7d07de5d84dd"
   }
 ]
