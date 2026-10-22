@@ -59,7 +59,7 @@
     },
     "Separación de privilegios con OKWS": {
       "carpeta": "Seguridad Computacional/05-Separación de privilegios con OKWS",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": []
     },
     "Contenedores y microVMs": {

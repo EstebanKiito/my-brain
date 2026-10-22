@@ -47,5 +47,12 @@
     "original": "Semestre 6/SEGURIDAD COMPUTACIONAL/Apuntes I1/image 1.png",
     "destino": "Seguridad Computacional/04-Arquitectura de seguridad de Google/adjuntos/Modelo de referencia para compartir.png",
     "sha256": "2f85759e6bcb2da8a2e76ff3a459b42ffac25e7999934868d61d9c149c906190"
+  },
+  {
+    "tema": "Separación de privilegios con OKWS",
+    "tipo": "clase",
+    "original": "Semestre 6/SEGURIDAD COMPUTACIONAL/Classes/Clase05/OK_arch.png",
+    "destino": "Seguridad Computacional/05-Separación de privilegios con OKWS/adjuntos/Arquitectura de OKWS.png",
+    "sha256": "1838472eda9f5c4115295e07814d5960c82d0303442987e6e444120b8ae8a1fe"
   }
 ]

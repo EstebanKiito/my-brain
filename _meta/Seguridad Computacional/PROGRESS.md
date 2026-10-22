@@ -9,7 +9,7 @@ Rama: `migrar/seguridad-computacional`. Un commit por tema. Antes de cada commit
 | 2 | Buffer overflows y baggy bounds | `02-Buffer overflows y baggy bounds/` | ✅ hecho | 2 + índice | 3 + 1 |
 | 3 | Autenticación de usuarios | `03-Autenticación de usuarios/` | ✅ hecho | 2 + índice | 0 + 0 |
 | 4 | Arquitectura de seguridad de Google | `04-Arquitectura de seguridad de Google/` | ✅ hecho | 2 + índice | 2 + 0 |
-| 5 | Separación de privilegios con OKWS | `05-Separación de privilegios con OKWS/` | ⏳ pendiente | – | – |
+| 5 | Separación de privilegios con OKWS | `05-Separación de privilegios con OKWS/` | ✅ hecho | 1 + índice | 0 + 1 |
 | 6 | Contenedores y microVMs | `06-Contenedores y microVMs/` | ⏳ pendiente | – | – |
 | 7 | Sandboxing de software | `07-Sandboxing de software/` | ⏳ pendiente | – | – |
 | 8 | Seguridad móvil | `08-Seguridad móvil/` | ⏳ pendiente | – | – |
@@ -33,3 +33,4 @@ Rama: `migrar/seguridad-computacional`. Un commit por tema. Antes de cada commit
 - **2026-10-21 · Buffer overflows y baggy bounds.** Fuentes: `apuntes_i1` clases 2 y 6 (recordatorios de C, stack y heap, gdb, NX, canarios, ASLR, ataque al heap) con el texto de la clase 2 (`I02-baggy-es.md`) para baggy bounds y punteros gordos. Se resumió el recorrido con gdb. 2 notas; 3 imágenes de apuntes y 1 figura de clase. Sin dudas.
 - **2026-10-21 · Autenticación de usuarios.** Sin apuntes propios (solo menciones en la clase 1). Construido con el texto de la clase de autenticación (`I03-aut-es.md`): guardia, tres partes, contraseñas y entropía, gestores, límite de intentos, hash, salt, KDF, SMS, TOTP y U2F con sus dos problemas. Se omitió la lista de referencias. 2 notas; sin imágenes. Sin dudas.
 - **2026-10-21 · Arquitectura de seguridad de Google.** Fuentes: `apuntes_i1` clases 3 y 4 (arquitectura de seguridad, aislamiento, VM, guardia, ACL y capacidades, monitor de referencia, canales seguros) y el texto de la clase 3 (`l02-google-es.md`) para el arranque seguro, DoS y defensa perimetral. Se mantuvo la observación del profesor sobre el detalle del diagrama del entorno. 2 notas; 2 imágenes de apuntes. Sin dudas.
+- **2026-10-21 · Separación de privilegios con OKWS.** Sin apuntes propios. Construido con el texto de la clase de OKWS (`I05-okws-es.md`): plan B, componentes, daño y superficie de ataque, `dbproxy` con tokens, aislamiento con UID, GID y `chroot`, límites de UNIX y vigencia. Se dejaron fuera los detalles de la tabla de chroot y el orquestado por usuario. 1 nota; 1 figura de clase. Sin dudas.
