@@ -229,5 +229,82 @@
     "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-07-programacion_funcional/img/reduce.png",
     "destino": "Programación Avanzada/06-Programación funcional/adjuntos/Operación de reducción acumulada con reduce.png",
     "sha256": "c3aba2ed7d67958c9823ebda620692421baf7d44ff841195d1e99bd081144ba1"
+  },
+  {
+    "tema": "Threading",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-08-threading/imgs/thread.png",
+    "destino": "Programación Avanzada/07-Threading/adjuntos/Ejecución con hilos paralelos.png",
+    "sha256": "9fd02e3f6a5b40ae91dd998dd4b1371bd845acc68e152ad1cae1e2500a00063b"
+  },
+  {
+    "tema": "Threading",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-08-threading/imgs/join.png",
+    "destino": "Programación Avanzada/07-Threading/adjuntos/Sincronización de hilos con join.png",
+    "sha256": "b8a5793853850216a389f4293e9f77544a6ddd19d93f67af9c366c1a53462031"
+  },
+  {
+    "tema": "Threading",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-08-threading/imgs/daemon.png",
+    "destino": "Programación Avanzada/07-Threading/adjuntos/Ciclo de vida de hilos daemon.png",
+    "sha256": "8f69b1e94c10fab8513b1f61132446766e23094ca7934a03777342500fe63069"
+  },
+  {
+    "tema": "Threading",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-08-threading/imgs/non-daemon.png",
+    "destino": "Programación Avanzada/07-Threading/adjuntos/Ciclo de vida de hilos no daemon.png",
+    "sha256": "abe188ca568273968da5bd72f50b840583c26ba61ea2da591f132b6a2b338227"
+  },
+  {
+    "tema": "Threading",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-08-threading/imgs/daemon_error.png",
+    "destino": "Programación Avanzada/07-Threading/adjuntos/Terminación abrupta de hilos daemon.png",
+    "sha256": "9c12b8e6d9d8cf316dc25b5933eb550de16970b7ed9d820339306e1ccd2e2dd1"
+  },
+  {
+    "tema": "Threading",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-08-threading/imgs/lock.png",
+    "destino": "Programación Avanzada/07-Threading/adjuntos/Exclusión mutua con Lock.png",
+    "sha256": "f45fa0869a678a1e624d5f061085cd10353bc5a7b94aa13b7e832f129cd55b65"
+  },
+  {
+    "tema": "Threading",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-08-threading/imgs/abrazo-mortal.png",
+    "destino": "Programación Avanzada/07-Threading/adjuntos/Condición de interbloqueo o abrazo mortal.png",
+    "sha256": "12bed6f60ff797efe149ca0d8994c5e91149a6d24e695f634f30fbc381b3166e"
+  },
+  {
+    "tema": "Threading",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-08-threading/imgs/traffic-deadlock.jpg",
+    "destino": "Programación Avanzada/07-Threading/adjuntos/Analogía de tráfico vehicular para deadlock.jpg",
+    "sha256": "1195ea5bf8bfafe192cb618f907767a6a5126f4e7914284a48f6ede642bdad31"
+  },
+  {
+    "tema": "Threading",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-08-threading/imgs/event.png",
+    "destino": "Programación Avanzada/07-Threading/adjuntos/Coordinación entre hilos mediante Event.png",
+    "sha256": "62c34097eabaf3c52279b5b6f81e19aca7e53f50b32d6ea2e6b0771131aa5593"
+  },
+  {
+    "tema": "Threading",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-08-threading/imgs/threading_deque_lock.png",
+    "destino": "Programación Avanzada/07-Threading/adjuntos/Estructura deque protegida con Lock.png",
+    "sha256": "5b30d4d197ebf367f00ae1a228e6fc0568710229c52255b28e7d4afddee47363"
+  },
+  {
+    "tema": "Threading",
+    "tipo": "notebook",
+    "original": "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-08-threading/imgs/threading_sync_queue.png",
+    "destino": "Programación Avanzada/07-Threading/adjuntos/Cola sincronizada thread-safe con queue.png",
+    "sha256": "4275f31ef0895a2c6c8ab4d5e05ba27104b35356a4073df9eb68673a9785016d"
   }
 ]

@@ -96,7 +96,7 @@
     },
     "Threading": {
       "carpeta": "Programación Avanzada/07-Threading",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [],
       "notebooks": [
         "Semestre 2/PROGRA-AVANZADA/Clases/Contenidos/semana-08-threading/1-threading.ipynb",
