@@ -14,6 +14,7 @@ Vault de estudio del ramo. Las notas están escritas para alguien que parte desd
 | [[Introducción a la Programación/01-Algoritmos y pensamiento computacional/_Índice\|Algoritmos y pensamiento computacional]] | Qué es un algoritmo, entradas y salidas, y conceptos básicos con Blockly |
 | [[Introducción a la Programación/02-Primeros pasos en Python/_Índice\|Primeros pasos en Python]] | `print`, `input`, variables, tipos, operadores, `random` y `bool` |
 | [[Introducción a la Programación/03-Condicionales/_Índice\|Condicionales]] | `if`/`else`, indentación, `and`/`or`/`not` y cadenas con `elif` |
+| [[Introducción a la Programación/04-Ciclos/_Índice\|Ciclos]] | `while`, `for` y `range`, centinela, `break`, máximo, mínimo y dígitos |
 
 ## Ruta de estudio sugerida
 1. **Algoritmos → Primeros pasos en Python:** la idea de algoritmo y cómo escribir los primeros programas.

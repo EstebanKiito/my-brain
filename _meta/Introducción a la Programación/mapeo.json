@@ -39,6 +39,21 @@
         "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase05online",
         "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase06"
       ]
+    },
+    "Ciclos": {
+      "carpeta": "Introducción a la Programación/04-Ciclos",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase7_while.pdf",
+        "Semestre 1/INTRO-A-LA-PROGRA/CLASES/I1/Clase8_while2-1.pdf"
+      ],
+      "codigos": [
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase07",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase08",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase09",
+        "Semestre 1/INTRO-A-LA-PROGRA/Codigos/clase10"
+      ]
     }
   },
   "aceptados": []
