@@ -99,18 +99,24 @@
     },
     "Mensajería segura": {
       "carpeta": "Seguridad Computacional/13-Mensajería segura",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": []
     },
     "DDoS y cadena de suministro": {
       "carpeta": "Seguridad Computacional/14-DDoS y cadena de suministro",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": []
     },
     "SDLC seguro": {
       "carpeta": "Seguridad Computacional/15-SDLC seguro",
-      "estado": "pendiente",
-      "secciones": []
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "apuntes_i1",
+          "desde": "Clase 4: Charla",
+          "hasta": "Clase 6"
+        }
+      ]
     },
     "Gestión del curso": {
       "carpeta": "Seguridad Computacional/16-Gestión del curso",

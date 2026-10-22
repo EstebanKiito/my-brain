@@ -17,9 +17,9 @@ Rama: `migrar/seguridad-computacional`. Un commit por tema. Antes de cada commit
 | 10 | Seguridad web | `10-Seguridad web/` | ✅ hecho | 3 + índice | 0 + 1 |
 | 11 | Seguridad TCP-IP | `11-Seguridad TCP-IP/` | ✅ hecho | 2 + índice | 0 + 0 |
 | 12 | TLS y certificados | `12-TLS y certificados/` | ✅ hecho | 2 + índice | 0 + 0 |
-| 13 | Mensajería segura | `13-Mensajería segura/` | ⏳ pendiente | – | – |
-| 14 | DDoS y cadena de suministro | `14-DDoS y cadena de suministro/` | ⏳ pendiente | – | – |
-| 15 | SDLC seguro | `15-SDLC seguro/` | ⏳ pendiente | – | – |
+| 13 | Mensajería segura | `13-Mensajería segura/` | ✅ hecho | 1 + índice | 0 + 0 |
+| 14 | DDoS y cadena de suministro | `14-DDoS y cadena de suministro/` | ✅ hecho | 2 + índice | 0 + 0 |
+| 15 | SDLC seguro | `15-SDLC seguro/` | ✅ hecho | 2 + índice | 0 + 0 |
 | 16 | Gestión del curso | `16-Gestión del curso/` | ⏳ pendiente | – | – |
 
 ## Convenciones
@@ -41,3 +41,7 @@ Rama: `migrar/seguridad-computacional`. Un commit por tema. Antes de cada commit
 - **2026-10-21 · Seguridad web.** Sin apuntes propios. Construido con los textos de seguridad web (`l12-web-security-es.md`) y ataques web más comunes (`l13-top-web-attacks-es.md`). Se resumieron las categorías de OWASP en una tabla. 3 notas; 1 figura de clase. Sin dudas.
 - **2026-10-21 · Seguridad TCP-IP.** Sin apuntes propios. Construido con el texto de seguridad TCP/IP (`I13-tcpip-es.md`). 2 notas; sin imágenes. Sin dudas.
 - **2026-10-21 · TLS y certificados.** Sin apuntes propios. Construido con los textos de canal seguro (`I14-tls-es.md`) y certificados (`I15-certs-es.md`). Se resumió el análisis de ataques a SSL. 2 notas; sin imágenes. Sin dudas.
+- **2026-10-21 · Mensajería segura.** Sin apuntes propios. Construido con el texto de seguridad en mensajería (`I17-messaging-es.md`). 1 nota; sin imágenes. Sin dudas.
+- **2026-10-21 · Mensajería segura.** Sin apuntes propios. Construido con el texto de seguridad en mensajería (`I17-messaging-es.md`). 1 nota; sin imágenes. Sin dudas.
+- **2026-10-21 · DDoS y cadena de suministro.** Sin apuntes propios. Construido con los PDF de las charlas invitadas de DDoS y botnets (`ddos-botnet-lecture.pdf`) y de ataques a la cadena de suministro en npm (`npm-supply-chain-attacks-marp.pdf`). Se omitieron los datos personales del expositor. 2 notas; sin imágenes. Sin dudas.
+- **2026-10-21 · SDLC seguro.** Fuentes: `apuntes_i1` de la charla invitada (clases 4 y 5: SDLC seguro, vulnerabilidades, gobernanza, shift left, DevSecOps, modelado de amenazas y STRIDE) y las slides de la charla (`Clase Ciberseguridad PUC.pdf`) para respuesta a incidentes y metodologías. Se omitieron el correo del expositor. 2 notas; sin imágenes. Sin dudas.
