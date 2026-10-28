@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "tema": "Introducción a los sistemas computacionales",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase01.pdf#page=15",
+    "destino": "Algoritmos y Sistemas Computacionales/01-Introducción a los sistemas computacionales/adjuntos/Programa en caracteres.png",
+    "sha256": "6d49b91031e9fc615da99caaeddbd3d156a6e7540434474335459c9f037e87e0"
+  },
+  {
+    "tema": "Introducción a los sistemas computacionales",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase01.pdf#page=17",
+    "destino": "Algoritmos y Sistemas Computacionales/01-Introducción a los sistemas computacionales/adjuntos/Arquitectura de un computador.png",
+    "sha256": "80691b013a1d7c488949d6bc37fb9f6ac9d6a676bd5b9b9b66f93727c20accdf"
+  }
+]

@@ -5,7 +5,7 @@ Rama: `migrar/algoritmos-sistemas-computacionales`. Un commit por tema. Antes de
 | # | Tema | Carpeta | Estado | Notas | Imágenes |
 |---|---|---|---|---|---|
 | 0 | Infraestructura (`_meta/Algoritmos y Sistemas Computacionales/`) | `_meta/` | ✅ hecho | – | – |
-| 1 | Introducción a los sistemas computacionales | `01-Introducción a los sistemas computacionales/` | ⬜ pendiente | – | – |
+| 1 | Introducción a los sistemas computacionales | `01-Introducción a los sistemas computacionales/` | ✅ hecho | 3 + índice | 2 |
 | 2 | Representación numérica | `02-Representación numérica/` | ⬜ pendiente | – | – |
 | 3 | Operaciones binarias y complemento a dos | `03-Operaciones binarias y complemento a dos/` | ⬜ pendiente | – | – |
 | 4 | Codificación de caracteres | `04-Codificación de caracteres/` | ⬜ pendiente | – | – |
@@ -36,3 +36,5 @@ Si más adelante aparecen esos PDFs, se agregan al `mapeo.json` y se migran como
 
 ## Registro
 - **2026-10-28 · Infraestructura.** Se crea la rama `migrar/algoritmos-sistemas-computacionales` y `_meta/Algoritmos y Sistemas Computacionales/` (`mapeo.json` con 12 temas y `pdfs` informativos, `imagenes.json` vacío, `PROGRESS.md` y `DUDAS.md`). Se verifican los 21 PDF de clase, las 5 actividades con solución, las 2 pruebas con solución y la ayudantía. Temario aprobado por el usuario. Sin dudas.
+- **2026-10-28 · Introducción a los sistemas computacionales.** Fuentes: clase01 (algoritmo Stock Span, programa en C, representaciones en bits y caracteres, compilación y arquitectura). Se omitieron la presentación del profesor, los contactos de ayudantes y los datos personales. Se escribieron 3 notas: qué es un programa (con la descomposición en caracteres ASCII), el proceso de compilación (preprocesador, compilador, assembler y linker) y la arquitectura (CPU, memoria, buses e I/O). 2 figuras de clase. Sin dudas.
+
