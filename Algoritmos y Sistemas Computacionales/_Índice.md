@@ -12,7 +12,7 @@ Vault de estudio del ramo. Las notas están escritas para alguien que llega desd
 | Tema | Qué cubre |
 |---|---|
 | [[Algoritmos y Sistemas Computacionales/01-Introducción a los sistemas computacionales/_Índice\|Introducción a los sistemas computacionales]] | Qué es un programa, compilación y arquitectura del computador |
-| Representación numérica | Bits, bases 2/10/16 y conversiones |
+| [[Algoritmos y Sistemas Computacionales/02-Representación numérica/_Índice\|Representación numérica]] | Bits, bases 2/10/16 y conversiones |
 | Operaciones binarias y complemento a dos | Suma binaria, números negativos y complemento a dos |
 | Codificación de caracteres | ASCII, UTF-8 y otras codificaciones |
 | Compuertas lógicas y lógica proposicional | NOT, AND, OR, XOR, tablas de verdad y circuitos |
