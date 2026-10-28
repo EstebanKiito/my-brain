@@ -9,7 +9,7 @@ Rama: `migrar/algoritmos-sistemas-computacionales`. Un commit por tema. Antes de
 | 2 | Representación numérica | `02-Representación numérica/` | ✅ hecho | 4 + índice | 0 |
 | 3 | Operaciones binarias y complemento a dos | `03-Operaciones binarias y complemento a dos/` | ✅ hecho | 4 + índice | 0 |
 | 4 | Codificación de caracteres | `04-Codificación de caracteres/` | ✅ hecho | 2 + índice | 1 |
-| 5 | Compuertas lógicas y lógica proposicional | `05-Compuertas lógicas y lógica proposicional/` | ⬜ pendiente | – | – |
+| 5 | Compuertas lógicas y lógica proposicional | `05-Compuertas lógicas y lógica proposicional/` | ✅ hecho | 4 + índice | 1 |
 | 6 | Circuitos sumadores | `06-Circuitos sumadores/` | ⬜ pendiente | – | – |
 | 7 | Multiplexores y demultiplexores | `07-Multiplexores y demultiplexores/` | ⬜ pendiente | – | – |
 | 8 | Programabilidad de circuitos digitales | `08-Programabilidad de circuitos digitales/` | ⬜ pendiente | – | – |
@@ -40,6 +40,8 @@ Si más adelante aparecen esos PDFs, se agregan al `mapeo.json` y se migran como
 - **2026-10-28 · Representación numérica.** Fuentes: clases 02, 03 y 04 (bits, sistemas posicionales, binario↔decimal, hexadecimal), más la tabla de conversiones de la actividad 1 y la ayudantía 1. La clase 03 repite el contenido de la 02; los ejemplos nuevos son los de la 04 (hexadecimal). Se escribieron 4 notas: bits y sistemas posicionales, binario→decimal, decimal→binario (divisiones sucesivas) y hexadecimal. Sin imágenes: el contenido es texto y tablas. Sin dudas.
 - **2026-10-28 · Operaciones binarias y complemento a dos.** Fuentes: clase05 (suma binaria, acarreo, signo y magnitud, complemento de uno y dos), clase06 (repaso de complemento a dos y rango) y la actividad 2 (negativos y restas en 8 bits). Se escribieron 4 notas: suma binaria, representación de negativos, complemento a dos (con el caso límite de $-128$) y resta como suma del negativo (con acarreo y desbordamiento). Sin imágenes. Sin dudas.
 - **2026-10-28 · Codificación de caracteres.** Fuentes: clase06 (ASCII, limitaciones y UTF-8) y la tabla ASCII de `Extra/`. Se escribieron 2 notas: ASCII (tabla de códigos, conversión y decodificación) y UTF-8 (largo variable, bytes de continuación y comparación con ASCII). 1 imagen (tabla ASCII). Sin dudas.
+- **2026-10-28 · Compuertas lógicas y lógica proposicional.** Fuentes: clases 07, 08 y 09 (transistores, Boole y Shannon, compuertas NOT/AND/OR/XOR, circuitos, tablas de verdad y álgebra booleana). Las clases 07 y 08 repiten el mismo contenido; la 09 agrega la parte de lógica proposicional y simplificación. Se escribieron 4 notas: del transistor a las compuertas, las cuatro compuertas, circuitos y tablas de verdad, y álgebra booleana. 1 figura compuesta con los símbolos de las cuatro compuertas (páginas 13-16 de la clase 07). Sin dudas.
+
 
 
 

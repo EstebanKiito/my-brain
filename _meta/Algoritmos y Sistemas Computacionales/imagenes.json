@@ -19,5 +19,12 @@
     "original": "Semestre 1/ALGORITMOS/2026-1/Extra/Tabla-ASCII.jpg",
     "destino": "Algoritmos y Sistemas Computacionales/04-Codificación de caracteres/adjuntos/Tabla ASCII.png",
     "sha256": "6810bfdda50185966c2ec549359e763cbd59cdbde37116255e08dfc98e13e8d8"
+  },
+  {
+    "tema": "Compuertas lógicas y lógica proposicional",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase07.pdf#page=13",
+    "destino": "Algoritmos y Sistemas Computacionales/05-Compuertas lógicas y lógica proposicional/adjuntos/Símbolos de compuertas lógicas.png",
+    "sha256": "ec651d7cda3ac33b7122b19d1f6c76932492853407bdad904f92527c3ea27c76"
   }
 ]

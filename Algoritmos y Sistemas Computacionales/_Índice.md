@@ -15,7 +15,7 @@ Vault de estudio del ramo. Las notas están escritas para alguien que llega desd
 | [[Algoritmos y Sistemas Computacionales/02-Representación numérica/_Índice\|Representación numérica]] | Bits, bases 2/10/16 y conversiones |
 | [[Algoritmos y Sistemas Computacionales/03-Operaciones binarias y complemento a dos/_Índice\|Operaciones binarias y complemento a dos]] | Suma binaria, números negativos y complemento a dos |
 | [[Algoritmos y Sistemas Computacionales/04-Codificación de caracteres/_Índice\|Codificación de caracteres]] | ASCII, UTF-8 y otras codificaciones |
-| Compuertas lógicas y lógica proposicional | NOT, AND, OR, XOR, tablas de verdad y circuitos |
+| [[Algoritmos y Sistemas Computacionales/05-Compuertas lógicas y lógica proposicional/_Índice\|Compuertas lógicas y lógica proposicional]] | NOT, AND, OR, XOR, tablas de verdad y circuitos |
 | Circuitos sumadores | Medio sumador, sumador completo y comparadores |
 | Multiplexores y demultiplexores | MUX, DEMUX y unidades de selección |
 | Programabilidad de circuitos digitales | Registros, ALU, memoria de instrucciones, clock y assembler |
