@@ -1,0 +1,124 @@
+{
+  "_descripcion": "Mapeo de las fuentes originales (rutas relativas a _raw/) a los temas del vault. Este ramo no tiene export de Notion ni apuntes propios: las fuentes son los PDF de clase (Clases/), las pruebas y actividades con sus soluciones (Pruebas/, Actividades/) y la ayudantía (Extra/). Como verificar.py solo procesa fuentes HTML, 'fuentes' queda vacío y cada tema lleva 'secciones' vacías; el campo 'pdfs' es informativo. Las notas se reescriben según _meta/ESTANDAR-NOTAS.md para estudiantes de primer año, por eso 'cobertura' es 'reescrita'. Faltan las clases 10, 11, 13, 19-22 y 24-26 del curso original: Internet, GitHub/LaTeX, estructuras secuenciales, ordenamiento y árboles quedan sin material (ver PROGRESS.md).",
+  "carpeta_ramo": "Algoritmos y Sistemas Computacionales",
+  "cobertura": "reescrita",
+  "fuentes": {},
+  "temas": {
+    "Introducción a los sistemas computacionales": {
+      "carpeta": "Algoritmos y Sistemas Computacionales/01-Introducción a los sistemas computacionales",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/ALGORITMOS/2026-1/Clases/clase01.pdf"
+      ]
+    },
+    "Representación numérica": {
+      "carpeta": "Algoritmos y Sistemas Computacionales/02-Representación numérica",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/ALGORITMOS/2026-1/Clases/clase02.pdf",
+        "Semestre 1/ALGORITMOS/2026-1/Clases/clase03.pdf",
+        "Semestre 1/ALGORITMOS/2026-1/Clases/clase04.pdf"
+      ]
+    },
+    "Operaciones binarias y complemento a dos": {
+      "carpeta": "Algoritmos y Sistemas Computacionales/03-Operaciones binarias y complemento a dos",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/ALGORITMOS/2026-1/Clases/clase05.pdf",
+        "Semestre 1/ALGORITMOS/2026-1/Clases/clase06.pdf"
+      ]
+    },
+    "Codificación de caracteres": {
+      "carpeta": "Algoritmos y Sistemas Computacionales/04-Codificación de caracteres",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/ALGORITMOS/2026-1/Clases/clase06.pdf"
+      ]
+    },
+    "Compuertas lógicas y lógica proposicional": {
+      "carpeta": "Algoritmos y Sistemas Computacionales/05-Compuertas lógicas y lógica proposicional",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/ALGORITMOS/2026-1/Clases/clase07.pdf",
+        "Semestre 1/ALGORITMOS/2026-1/Clases/clase08.pdf",
+        "Semestre 1/ALGORITMOS/2026-1/Clases/clase09.pdf"
+      ]
+    },
+    "Circuitos sumadores": {
+      "carpeta": "Algoritmos y Sistemas Computacionales/06-Circuitos sumadores",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/ALGORITMOS/2026-1/Clases/clase07.pdf",
+        "Semestre 1/ALGORITMOS/2026-1/Clases/clase08.pdf"
+      ]
+    },
+    "Multiplexores y demultiplexores": {
+      "carpeta": "Algoritmos y Sistemas Computacionales/07-Multiplexores y demultiplexores",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/ALGORITMOS/2026-1/Clases/clase12.pdf"
+      ]
+    },
+    "Programabilidad de circuitos digitales": {
+      "carpeta": "Algoritmos y Sistemas Computacionales/08-Programabilidad de circuitos digitales",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/ALGORITMOS/2026-1/Clases/clase14.pdf",
+        "Semestre 1/ALGORITMOS/2026-1/Clases/clase15.pdf",
+        "Semestre 1/ALGORITMOS/2026-1/Clases/clase16.pdf",
+        "Semestre 1/ALGORITMOS/2026-1/Clases/clase17.pdf"
+      ]
+    },
+    "Sistemas operativos": {
+      "carpeta": "Algoritmos y Sistemas Computacionales/09-Sistemas operativos",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/ALGORITMOS/2026-1/Clases/clase18.pdf"
+      ]
+    },
+    "Complejidad algorítmica": {
+      "carpeta": "Algoritmos y Sistemas Computacionales/10-Complejidad algorítmica",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/ALGORITMOS/2026-1/Clases/clase23.pdf"
+      ]
+    },
+    "Grafos": {
+      "carpeta": "Algoritmos y Sistemas Computacionales/11-Grafos",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/ALGORITMOS/2026-1/Clases/clase27.pdf"
+      ]
+    },
+    "Gestión del curso": {
+      "carpeta": "Algoritmos y Sistemas Computacionales/12-Gestión del curso",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/ALGORITMOS/2026-1/Clases/clase01.pdf",
+        "Semestre 1/ALGORITMOS/2026-1/Pruebas/I1.pdf",
+        "Semestre 1/ALGORITMOS/2026-1/Pruebas/I1-2026-1-IIC1001-sol.pdf",
+        "Semestre 1/ALGORITMOS/2026-1/Pruebas/I2.pdf",
+        "Semestre 1/ALGORITMOS/2026-1/Pruebas/I2-2026-1-IIC1001-sol.pdf",
+        "Semestre 1/ALGORITMOS/2026-1/Actividades/AC1-sol.pdf",
+        "Semestre 1/ALGORITMOS/2026-1/Actividades/AC2-sol.pdf",
+        "Semestre 1/ALGORITMOS/2026-1/Actividades/AC3-sol.pdf",
+        "Semestre 1/ALGORITMOS/2026-1/Actividades/AC4-sol.pdf",
+        "Semestre 1/ALGORITMOS/2026-1/Actividades/AC5-sol.pdf",
+        "Semestre 1/ALGORITMOS/2026-1/Extra/IIC1001___2026_1___Ayudantía_1.pdf"
+      ]
+    }
+  },
+  "aceptados": []
+}
