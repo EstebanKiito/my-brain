@@ -15,7 +15,7 @@ Rama: `migrar/algoritmos-sistemas-computacionales`. Un commit por tema. Antes de
 | 8 | Programabilidad de circuitos digitales | `08-Programabilidad de circuitos digitales/` | ✅ hecho | 5 + índice | 3 |
 | 9 | Sistemas operativos | `09-Sistemas operativos/` | ✅ hecho | 5 + índice | 3 |
 | 10 | Complejidad algorítmica | `10-Complejidad algorítmica/` | ✅ hecho | 3 + índice | 1 |
-| 11 | Grafos | `11-Grafos/` | ⬜ pendiente | – | – |
+| 11 | Grafos | `11-Grafos/` | ✅ hecho | 4 + índice | 1 |
 | 12 | Gestión del curso | `12-Gestión del curso/` | ⬜ pendiente | – | – |
 
 ## Convenciones
@@ -46,6 +46,8 @@ Si más adelante aparecen esos PDFs, se agregan al `mapeo.json` y se migran como
 - **2026-10-28 · Programabilidad de circuitos digitales.** Fuentes: clases 14, 15, 16 y 17 (calculadora con registros, señales de carga, memoria de instrucciones, PC, clock, literales, OPCODE, unidad de control y computador básico), más la actividad 5 (ALU con registros y señales de carga) y la interrogación 2 (ejecución de instrucciones y OPCODE nuevo). Se escribieron 5 notas: calculadora con registros, memoria de instrucciones y PC, clock, literales/OPCODE/unidad de control, y el computador básico con su set de 28 instrucciones. 3 figuras. Sin dudas.
 - **2026-10-28 · Sistemas operativos.** Fuentes: clase18 (qué es un SO, llamadas al sistema, procesos, scheduling, memoria y paginación, memoria virtual, archivos, directorios, sistemas de archivos y asignación de bloques) y la interrogación 2 (roles del SO, GHz y núcleos, syscalls). Se escribieron 5 notas: qué es un SO, procesos y planificación, memoria y paginación, archivos y directorios, y asignación de bloques. 3 figuras. Se enlaza a Sistemas Operativos y Redes para profundizar. Sin dudas.
 - **2026-10-28 · Complejidad algorítmica.** Fuentes: clase23 (conteo de operaciones, ejemplos de ciclos, notación asintótica, gráfico de $20n+1000$ frente a $n^2$ y tabla de crecimiento). Se escribieron 3 notas: contar operaciones, crecimiento/notación asintótica y búsqueda lineal frente a binaria (con código Python). 1 figura. Se enlaza a Estructuras de Datos para la definición formal. Sin dudas.
+- **2026-10-28 · Grafos.** Fuentes: clase27 (motivación, definición, tipos, representación, BFS, DFS, componentes conexas, ciclos y Dijkstra). Se escribieron 4 notas: qué es un grafo, representación, recorridos BFS/DFS y camino más corto con Dijkstra. 1 figura (grafo de ejemplo para BFS); el grafo de Dijkstra se dibujó con Mermaid. Se enlaza a Estructuras de Datos para profundizar. Sin dudas.
+
 
 
 

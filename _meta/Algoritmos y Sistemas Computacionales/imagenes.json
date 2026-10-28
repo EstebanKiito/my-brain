@@ -96,5 +96,12 @@
     "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase23.pdf#page=24",
     "destino": "Algoritmos y Sistemas Computacionales/10-Complejidad algorítmica/adjuntos/Crecimiento de las funciones.png",
     "sha256": "bd6e96fd3f53589391c92f3a7c45eada1c26734c63c981b98605d5b2a7be77bb"
+  },
+  {
+    "tema": "Grafos",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase27.pdf#page=22",
+    "destino": "Algoritmos y Sistemas Computacionales/11-Grafos/adjuntos/Grafo de ejemplo para BFS.png",
+    "sha256": "d91639b07b43503abce20aef953c66d2d318ce9d5d6eed15a76aa52c87ea25d7"
   }
 ]
