@@ -89,5 +89,12 @@
     "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase18.pdf#page=28",
     "destino": "Algoritmos y Sistemas Computacionales/09-Sistemas operativos/adjuntos/Paginación.png",
     "sha256": "c2c235114e883a97baf00a59bb21654618967d1c18f66f1abbe5f081cee5d998"
+  },
+  {
+    "tema": "Complejidad algorítmica",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase23.pdf#page=24",
+    "destino": "Algoritmos y Sistemas Computacionales/10-Complejidad algorítmica/adjuntos/Crecimiento de las funciones.png",
+    "sha256": "bd6e96fd3f53589391c92f3a7c45eada1c26734c63c981b98605d5b2a7be77bb"
   }
 ]
