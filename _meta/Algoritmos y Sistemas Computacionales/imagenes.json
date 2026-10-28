@@ -12,5 +12,12 @@
     "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase01.pdf#page=17",
     "destino": "Algoritmos y Sistemas Computacionales/01-Introducción a los sistemas computacionales/adjuntos/Arquitectura de un computador.png",
     "sha256": "80691b013a1d7c488949d6bc37fb9f6ac9d6a676bd5b9b9b66f93727c20accdf"
+  },
+  {
+    "tema": "Codificación de caracteres",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Extra/Tabla-ASCII.jpg",
+    "destino": "Algoritmos y Sistemas Computacionales/04-Codificación de caracteres/adjuntos/Tabla ASCII.png",
+    "sha256": "6810bfdda50185966c2ec549359e763cbd59cdbde37116255e08dfc98e13e8d8"
   }
 ]
