@@ -7,7 +7,7 @@ Rama: `migrar/algoritmos-sistemas-computacionales`. Un commit por tema. Antes de
 | 0 | Infraestructura (`_meta/Algoritmos y Sistemas Computacionales/`) | `_meta/` | ✅ hecho | – | – |
 | 1 | Introducción a los sistemas computacionales | `01-Introducción a los sistemas computacionales/` | ✅ hecho | 3 + índice | 2 |
 | 2 | Representación numérica | `02-Representación numérica/` | ✅ hecho | 4 + índice | 0 |
-| 3 | Operaciones binarias y complemento a dos | `03-Operaciones binarias y complemento a dos/` | ⬜ pendiente | – | – |
+| 3 | Operaciones binarias y complemento a dos | `03-Operaciones binarias y complemento a dos/` | ✅ hecho | 4 + índice | 0 |
 | 4 | Codificación de caracteres | `04-Codificación de caracteres/` | ⬜ pendiente | – | – |
 | 5 | Compuertas lógicas y lógica proposicional | `05-Compuertas lógicas y lógica proposicional/` | ⬜ pendiente | – | – |
 | 6 | Circuitos sumadores | `06-Circuitos sumadores/` | ⬜ pendiente | – | – |
@@ -38,5 +38,7 @@ Si más adelante aparecen esos PDFs, se agregan al `mapeo.json` y se migran como
 - **2026-10-28 · Infraestructura.** Se crea la rama `migrar/algoritmos-sistemas-computacionales` y `_meta/Algoritmos y Sistemas Computacionales/` (`mapeo.json` con 12 temas y `pdfs` informativos, `imagenes.json` vacío, `PROGRESS.md` y `DUDAS.md`). Se verifican los 21 PDF de clase, las 5 actividades con solución, las 2 pruebas con solución y la ayudantía. Temario aprobado por el usuario. Sin dudas.
 - **2026-10-28 · Introducción a los sistemas computacionales.** Fuentes: clase01 (algoritmo Stock Span, programa en C, representaciones en bits y caracteres, compilación y arquitectura). Se omitieron la presentación del profesor, los contactos de ayudantes y los datos personales. Se escribieron 3 notas: qué es un programa (con la descomposición en caracteres ASCII), el proceso de compilación (preprocesador, compilador, assembler y linker) y la arquitectura (CPU, memoria, buses e I/O). 2 figuras de clase. Sin dudas.
 - **2026-10-28 · Representación numérica.** Fuentes: clases 02, 03 y 04 (bits, sistemas posicionales, binario↔decimal, hexadecimal), más la tabla de conversiones de la actividad 1 y la ayudantía 1. La clase 03 repite el contenido de la 02; los ejemplos nuevos son los de la 04 (hexadecimal). Se escribieron 4 notas: bits y sistemas posicionales, binario→decimal, decimal→binario (divisiones sucesivas) y hexadecimal. Sin imágenes: el contenido es texto y tablas. Sin dudas.
+- **2026-10-28 · Operaciones binarias y complemento a dos.** Fuentes: clase05 (suma binaria, acarreo, signo y magnitud, complemento de uno y dos), clase06 (repaso de complemento a dos y rango) y la actividad 2 (negativos y restas en 8 bits). Se escribieron 4 notas: suma binaria, representación de negativos, complemento a dos (con el caso límite de $-128$) y resta como suma del negativo (con acarreo y desbordamiento). Sin imágenes. Sin dudas.
+
 
 
