@@ -13,7 +13,7 @@ Rama: `migrar/algoritmos-sistemas-computacionales`. Un commit por tema. Antes de
 | 6 | Circuitos sumadores | `06-Circuitos sumadores/` | ✅ hecho | 3 + índice | 1 |
 | 7 | Multiplexores y demultiplexores | `07-Multiplexores y demultiplexores/` | ✅ hecho | 3 + índice | 2 |
 | 8 | Programabilidad de circuitos digitales | `08-Programabilidad de circuitos digitales/` | ✅ hecho | 5 + índice | 3 |
-| 9 | Sistemas operativos | `09-Sistemas operativos/` | ⬜ pendiente | – | – |
+| 9 | Sistemas operativos | `09-Sistemas operativos/` | ✅ hecho | 5 + índice | 3 |
 | 10 | Complejidad algorítmica | `10-Complejidad algorítmica/` | ⬜ pendiente | – | – |
 | 11 | Grafos | `11-Grafos/` | ⬜ pendiente | – | – |
 | 12 | Gestión del curso | `12-Gestión del curso/` | ⬜ pendiente | – | – |
@@ -44,6 +44,8 @@ Si más adelante aparecen esos PDFs, se agregan al `mapeo.json` y se migran como
 - **2026-10-28 · Circuitos sumadores.** Fuentes: clases 07 y 08 (medio sumador, sumador completo, sumador de 4 bits, restador, buses, enabler y comparadores), más la ayudantía 1 y la interrogación 1 (sumador de 4 bits). Se corrigió sin comentar la expresión del acarreo del sumador completo (el material usa $\land$ donde corresponde $\lor$). Se escribieron 3 notas: medio sumador y sumador completo, sumador de varios bits y restador, y comparadores y enabler. 1 figura del restador de 4 bits. Sin dudas.
 - **2026-10-28 · Multiplexores y demultiplexores.** Fuentes: clase12 (enabler, MUX, DEMUX y unidad de selección), más la actividad 4 (preguntas conceptuales y simulación de MUX/DEMUX) y la interrogación 2 (MUX de 6 entradas, DEMUX de 7 salidas y ALU). Se escribieron 3 notas: multiplexor, demultiplexor y unidad de selección/ALU. 2 figuras (MUX de 2 entradas y DEMUX de 1 a 4). Sin dudas.
 - **2026-10-28 · Programabilidad de circuitos digitales.** Fuentes: clases 14, 15, 16 y 17 (calculadora con registros, señales de carga, memoria de instrucciones, PC, clock, literales, OPCODE, unidad de control y computador básico), más la actividad 5 (ALU con registros y señales de carga) y la interrogación 2 (ejecución de instrucciones y OPCODE nuevo). Se escribieron 5 notas: calculadora con registros, memoria de instrucciones y PC, clock, literales/OPCODE/unidad de control, y el computador básico con su set de 28 instrucciones. 3 figuras. Sin dudas.
+- **2026-10-28 · Sistemas operativos.** Fuentes: clase18 (qué es un SO, llamadas al sistema, procesos, scheduling, memoria y paginación, memoria virtual, archivos, directorios, sistemas de archivos y asignación de bloques) y la interrogación 2 (roles del SO, GHz y núcleos, syscalls). Se escribieron 5 notas: qué es un SO, procesos y planificación, memoria y paginación, archivos y directorios, y asignación de bloques. 3 figuras. Se enlaza a Sistemas Operativos y Redes para profundizar. Sin dudas.
+
 
 
 

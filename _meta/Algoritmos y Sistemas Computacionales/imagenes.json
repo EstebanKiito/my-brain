@@ -68,5 +68,26 @@
     "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase17.pdf#page=9",
     "destino": "Algoritmos y Sistemas Computacionales/08-Programabilidad de circuitos digitales/adjuntos/Computador básico.png",
     "sha256": "271bcc63ccc79856d9cc3d33687b6fa1a45ec62efe806de3ca12aa7621dcfabb"
+  },
+  {
+    "tema": "Sistemas operativos",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase18.pdf#page=22",
+    "destino": "Algoritmos y Sistemas Computacionales/09-Sistemas operativos/adjuntos/Llamada al sistema.png",
+    "sha256": "45e4b640ff31536c972a01e2beaa4518b882d2794db873abebf7e8821bfdc0dd"
+  },
+  {
+    "tema": "Sistemas operativos",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase18.pdf#page=23",
+    "destino": "Algoritmos y Sistemas Computacionales/09-Sistemas operativos/adjuntos/Diseño de la memoria de un proceso.png",
+    "sha256": "5d6ce1e1a3ee3c56af3051c9695991180f606ff1023e52291c6424e45088202b"
+  },
+  {
+    "tema": "Sistemas operativos",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase18.pdf#page=28",
+    "destino": "Algoritmos y Sistemas Computacionales/09-Sistemas operativos/adjuntos/Paginación.png",
+    "sha256": "c2c235114e883a97baf00a59bb21654618967d1c18f66f1abbe5f081cee5d998"
   }
 ]

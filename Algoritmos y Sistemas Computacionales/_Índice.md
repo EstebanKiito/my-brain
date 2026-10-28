@@ -19,7 +19,7 @@ Vault de estudio del ramo. Las notas están escritas para alguien que llega desd
 | [[Algoritmos y Sistemas Computacionales/06-Circuitos sumadores/_Índice\|Circuitos sumadores]] | Medio sumador, sumador completo y comparadores |
 | [[Algoritmos y Sistemas Computacionales/07-Multiplexores y demultiplexores/_Índice\|Multiplexores y demultiplexores]] | MUX, DEMUX y unidades de selección |
 | [[Algoritmos y Sistemas Computacionales/08-Programabilidad de circuitos digitales/_Índice\|Programabilidad de circuitos digitales]] | Registros, ALU, memoria de instrucciones, clock y assembler |
-| Sistemas operativos | Procesos, scheduling, memoria y archivos |
+| [[Algoritmos y Sistemas Computacionales/09-Sistemas operativos/_Índice\|Sistemas operativos]] | Procesos, scheduling, memoria y archivos |
 | Complejidad algorítmica | Notación asintótica y análisis de algoritmos |
 | Grafos | Representación, BFS, DFS y Dijkstra |
 | Gestión del curso | Evaluaciones, actividades y materia por prueba |
