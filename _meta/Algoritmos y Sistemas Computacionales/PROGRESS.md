@@ -12,7 +12,7 @@ Rama: `migrar/algoritmos-sistemas-computacionales`. Un commit por tema. Antes de
 | 5 | Compuertas lógicas y lógica proposicional | `05-Compuertas lógicas y lógica proposicional/` | ✅ hecho | 4 + índice | 1 |
 | 6 | Circuitos sumadores | `06-Circuitos sumadores/` | ✅ hecho | 3 + índice | 1 |
 | 7 | Multiplexores y demultiplexores | `07-Multiplexores y demultiplexores/` | ✅ hecho | 3 + índice | 2 |
-| 8 | Programabilidad de circuitos digitales | `08-Programabilidad de circuitos digitales/` | ⬜ pendiente | – | – |
+| 8 | Programabilidad de circuitos digitales | `08-Programabilidad de circuitos digitales/` | ✅ hecho | 5 + índice | 3 |
 | 9 | Sistemas operativos | `09-Sistemas operativos/` | ⬜ pendiente | – | – |
 | 10 | Complejidad algorítmica | `10-Complejidad algorítmica/` | ⬜ pendiente | – | – |
 | 11 | Grafos | `11-Grafos/` | ⬜ pendiente | – | – |
@@ -43,6 +43,8 @@ Si más adelante aparecen esos PDFs, se agregan al `mapeo.json` y se migran como
 - **2026-10-28 · Compuertas lógicas y lógica proposicional.** Fuentes: clases 07, 08 y 09 (transistores, Boole y Shannon, compuertas NOT/AND/OR/XOR, circuitos, tablas de verdad y álgebra booleana). Las clases 07 y 08 repiten el mismo contenido; la 09 agrega la parte de lógica proposicional y simplificación. Se escribieron 4 notas: del transistor a las compuertas, las cuatro compuertas, circuitos y tablas de verdad, y álgebra booleana. 1 figura compuesta con los símbolos de las cuatro compuertas (páginas 13-16 de la clase 07). Sin dudas.
 - **2026-10-28 · Circuitos sumadores.** Fuentes: clases 07 y 08 (medio sumador, sumador completo, sumador de 4 bits, restador, buses, enabler y comparadores), más la ayudantía 1 y la interrogación 1 (sumador de 4 bits). Se corrigió sin comentar la expresión del acarreo del sumador completo (el material usa $\land$ donde corresponde $\lor$). Se escribieron 3 notas: medio sumador y sumador completo, sumador de varios bits y restador, y comparadores y enabler. 1 figura del restador de 4 bits. Sin dudas.
 - **2026-10-28 · Multiplexores y demultiplexores.** Fuentes: clase12 (enabler, MUX, DEMUX y unidad de selección), más la actividad 4 (preguntas conceptuales y simulación de MUX/DEMUX) y la interrogación 2 (MUX de 6 entradas, DEMUX de 7 salidas y ALU). Se escribieron 3 notas: multiplexor, demultiplexor y unidad de selección/ALU. 2 figuras (MUX de 2 entradas y DEMUX de 1 a 4). Sin dudas.
+- **2026-10-28 · Programabilidad de circuitos digitales.** Fuentes: clases 14, 15, 16 y 17 (calculadora con registros, señales de carga, memoria de instrucciones, PC, clock, literales, OPCODE, unidad de control y computador básico), más la actividad 5 (ALU con registros y señales de carga) y la interrogación 2 (ejecución de instrucciones y OPCODE nuevo). Se escribieron 5 notas: calculadora con registros, memoria de instrucciones y PC, clock, literales/OPCODE/unidad de control, y el computador básico con su set de 28 instrucciones. 3 figuras. Sin dudas.
+
 
 
 

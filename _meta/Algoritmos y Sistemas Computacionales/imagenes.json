@@ -47,5 +47,26 @@
     "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase12.pdf#page=20",
     "destino": "Algoritmos y Sistemas Computacionales/07-Multiplexores y demultiplexores/adjuntos/Demultiplexor 1 a 4.png",
     "sha256": "620241ac363342870d38cc0bf8fea0d4472229eff0771f6ecb0cb40232f294f1"
+  },
+  {
+    "tema": "Programabilidad de circuitos digitales",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase15.pdf#page=10",
+    "destino": "Algoritmos y Sistemas Computacionales/08-Programabilidad de circuitos digitales/adjuntos/Calculadora de 4 bits.png",
+    "sha256": "d0775f4a84d0e6ea31b048c147ee9bda3df00ef4f67281208feb1a8e2aebcffc"
+  },
+  {
+    "tema": "Programabilidad de circuitos digitales",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase15.pdf#page=14",
+    "destino": "Algoritmos y Sistemas Computacionales/08-Programabilidad de circuitos digitales/adjuntos/Memoria de instrucciones.png",
+    "sha256": "ff77dc4ce35b62cd2be5b40c90f45ca12d080243d00e8fff09071ebf13e4ede7"
+  },
+  {
+    "tema": "Programabilidad de circuitos digitales",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase17.pdf#page=9",
+    "destino": "Algoritmos y Sistemas Computacionales/08-Programabilidad de circuitos digitales/adjuntos/Computador básico.png",
+    "sha256": "271bcc63ccc79856d9cc3d33687b6fa1a45ec62efe806de3ca12aa7621dcfabb"
   }
 ]
