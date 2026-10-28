@@ -16,7 +16,7 @@ Rama: `migrar/algoritmos-sistemas-computacionales`. Un commit por tema. Antes de
 | 9 | Sistemas operativos | `09-Sistemas operativos/` | ✅ hecho | 5 + índice | 3 |
 | 10 | Complejidad algorítmica | `10-Complejidad algorítmica/` | ✅ hecho | 3 + índice | 1 |
 | 11 | Grafos | `11-Grafos/` | ✅ hecho | 4 + índice | 1 |
-| 12 | Gestión del curso | `12-Gestión del curso/` | ⬜ pendiente | – | – |
+| 12 | Gestión del curso | `12-Gestión del curso/` | ✅ hecho | 2 + índice | 0 |
 
 ## Convenciones
 - Notas según [`_meta/ESTANDAR-NOTAS.md`](../ESTANDAR-NOTAS.md), con detalle medio-alto y lenguaje para primer año: cada concepto parte de un problema concreto, sin tecnicismo elevado.
@@ -47,6 +47,9 @@ Si más adelante aparecen esos PDFs, se agregan al `mapeo.json` y se migran como
 - **2026-10-28 · Sistemas operativos.** Fuentes: clase18 (qué es un SO, llamadas al sistema, procesos, scheduling, memoria y paginación, memoria virtual, archivos, directorios, sistemas de archivos y asignación de bloques) y la interrogación 2 (roles del SO, GHz y núcleos, syscalls). Se escribieron 5 notas: qué es un SO, procesos y planificación, memoria y paginación, archivos y directorios, y asignación de bloques. 3 figuras. Se enlaza a Sistemas Operativos y Redes para profundizar. Sin dudas.
 - **2026-10-28 · Complejidad algorítmica.** Fuentes: clase23 (conteo de operaciones, ejemplos de ciclos, notación asintótica, gráfico de $20n+1000$ frente a $n^2$ y tabla de crecimiento). Se escribieron 3 notas: contar operaciones, crecimiento/notación asintótica y búsqueda lineal frente a binaria (con código Python). 1 figura. Se enlaza a Estructuras de Datos para la definición formal. Sin dudas.
 - **2026-10-28 · Grafos.** Fuentes: clase27 (motivación, definición, tipos, representación, BFS, DFS, componentes conexas, ciclos y Dijkstra). Se escribieron 4 notas: qué es un grafo, representación, recorridos BFS/DFS y camino más corto con Dijkstra. 1 figura (grafo de ejemplo para BFS); el grafo de Dijkstra se dibujó con Mermaid. Se enlaza a Estructuras de Datos para profundizar. Sin dudas.
+- **2026-10-28 · Gestión del curso.** Fuentes: presentación del curso (temas, fechas y actividades), reglas de las interrogaciones I1/I2, actividades AC1-AC5 y ayudantía 1. Se escribieron 2 notas: organización y evaluaciones, y materia por evaluación con una ruta de estudio. Se omitieron correos y datos personales. Sin imágenes. Sin dudas.
+- **2026-10-28 · Cierre del ramo.** 12 temas, 42 notas más 12 índices de tema y el mapa del ramo; 15 imágenes. Todos los PDF de clase disponibles (21), las 5 actividades con solución, las 2 pruebas con solución y la ayudantía están asignados a un tema. Los temas sin PDF (Internet, GitHub/LaTeX, estructuras secuenciales, ordenamiento y árboles) quedan registrados como pendientes por falta de material. `verificar.py` termina con 0 errores y 0 advertencias. Sin dudas abiertas.
+
 
 
 

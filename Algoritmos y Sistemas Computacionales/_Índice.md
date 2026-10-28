@@ -22,7 +22,7 @@ Vault de estudio del ramo. Las notas están escritas para alguien que llega desd
 | [[Algoritmos y Sistemas Computacionales/09-Sistemas operativos/_Índice\|Sistemas operativos]] | Procesos, scheduling, memoria y archivos |
 | [[Algoritmos y Sistemas Computacionales/10-Complejidad algorítmica/_Índice\|Complejidad algorítmica]] | Notación asintótica y análisis de algoritmos |
 | [[Algoritmos y Sistemas Computacionales/11-Grafos/_Índice\|Grafos]] | Representación, BFS, DFS y Dijkstra |
-| Gestión del curso | Evaluaciones, actividades y materia por prueba |
+| [[Algoritmos y Sistemas Computacionales/12-Gestión del curso/_Índice\|Gestión del curso]] | Evaluaciones, actividades y materia por prueba |
 
 ## Ruta de estudio sugerida
 1. **Introducción → Representación numérica:** cómo se guarda la información y cómo se traduce a bits.
