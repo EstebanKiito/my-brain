@@ -17,7 +17,7 @@ Vault de estudio del ramo. Las notas están escritas para alguien que llega desd
 | [[Algoritmos y Sistemas Computacionales/04-Codificación de caracteres/_Índice\|Codificación de caracteres]] | ASCII, UTF-8 y otras codificaciones |
 | [[Algoritmos y Sistemas Computacionales/05-Compuertas lógicas y lógica proposicional/_Índice\|Compuertas lógicas y lógica proposicional]] | NOT, AND, OR, XOR, tablas de verdad y circuitos |
 | [[Algoritmos y Sistemas Computacionales/06-Circuitos sumadores/_Índice\|Circuitos sumadores]] | Medio sumador, sumador completo y comparadores |
-| Multiplexores y demultiplexores | MUX, DEMUX y unidades de selección |
+| [[Algoritmos y Sistemas Computacionales/07-Multiplexores y demultiplexores/_Índice\|Multiplexores y demultiplexores]] | MUX, DEMUX y unidades de selección |
 | Programabilidad de circuitos digitales | Registros, ALU, memoria de instrucciones, clock y assembler |
 | Sistemas operativos | Procesos, scheduling, memoria y archivos |
 | Complejidad algorítmica | Notación asintótica y análisis de algoritmos |

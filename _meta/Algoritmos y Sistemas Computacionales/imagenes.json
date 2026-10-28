@@ -33,5 +33,19 @@
     "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase08.pdf#page=28",
     "destino": "Algoritmos y Sistemas Computacionales/06-Circuitos sumadores/adjuntos/Restador de 4 bits.png",
     "sha256": "20fba9ec2373072981bfcd9840b06d0593155ce79f2472e98640de327b555784"
+  },
+  {
+    "tema": "Multiplexores y demultiplexores",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase12.pdf#page=13",
+    "destino": "Algoritmos y Sistemas Computacionales/07-Multiplexores y demultiplexores/adjuntos/Multiplexor de 2 entradas.png",
+    "sha256": "9df276d2ed438b22cc839b49acf70df9617b88889772dd7a89d27e7a07ffd341"
+  },
+  {
+    "tema": "Multiplexores y demultiplexores",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase12.pdf#page=20",
+    "destino": "Algoritmos y Sistemas Computacionales/07-Multiplexores y demultiplexores/adjuntos/Demultiplexor 1 a 4.png",
+    "sha256": "620241ac363342870d38cc0bf8fea0d4472229eff0771f6ecb0cb40232f294f1"
   }
 ]
