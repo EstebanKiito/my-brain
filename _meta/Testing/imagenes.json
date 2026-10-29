@@ -12,5 +12,26 @@
     "original": "Semestre 8/Testing/Clases/image 1.png",
     "destino": "Testing/01-Fundamentos del testing de software/adjuntos/Desarrollo de software antes y ahora con IA.png",
     "sha256": "c48ca730f4500068bc5e1e087981849615fc7539b32452b4db3f6dc4942093a6"
+  },
+  {
+    "tema": "Pruebas unitarias dobles de prueba y test smells",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Testing/Clases/image 2.png",
+    "destino": "Testing/02-Pruebas unitarias dobles de prueba y test smells/adjuntos/Definiciones de estado e invariante en Wallet.png",
+    "sha256": "3281132b00aaaa0ebc142b1b0bbaacfb27a90553e2d67a8659440c192172e6b2"
+  },
+  {
+    "tema": "Pruebas unitarias dobles de prueba y test smells",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Testing/Clases/image 3.png",
+    "destino": "Testing/02-Pruebas unitarias dobles de prueba y test smells/adjuntos/Clase bajo prueba frente a clase de test en unittest.png",
+    "sha256": "21b913e39f5023720a55d4ba6e89c0122c3f62a35f683df65e93d038602e6740"
+  },
+  {
+    "tema": "Pruebas unitarias dobles de prueba y test smells",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Testing/Clases/image 4.png",
+    "destino": "Testing/02-Pruebas unitarias dobles de prueba y test smells/adjuntos/Ejecución de TestSuite y TestRunner en unittest.png",
+    "sha256": "734e6e5708df52f89ac076ef9554bfdb7c12b22bb3de559ae4e46b21035744af"
   }
 ]

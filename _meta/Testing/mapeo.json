@@ -29,7 +29,7 @@
     },
     "Pruebas unitarias dobles de prueba y test smells": {
       "carpeta": "Testing/02-Pruebas unitarias dobles de prueba y test smells",
-      "estado": "pendiente",
+      "estado": "migrado",
       "secciones": [
         {
           "fuente": "clases_i1",
