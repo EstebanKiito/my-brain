@@ -247,7 +247,7 @@
     },
     "Ejecución simbólica y fuzzing concólico": {
       "carpeta": "Testing/11-Ejecución simbólica y fuzzing concólico",
-      "estado": "pendiente",
+      "estado": "migrado",
       "secciones": [
         {
           "fuente": "clases_i2",
