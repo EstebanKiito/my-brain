@@ -58,7 +58,7 @@
     },
     "Cobertura de código e instrumentación con settrace": {
       "carpeta": "Testing/03-Cobertura de código e instrumentación con settrace",
-      "estado": "pendiente",
+      "estado": "migrado",
       "secciones": [
         {
           "fuente": "clases_i1",

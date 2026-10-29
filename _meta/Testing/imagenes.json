@@ -33,5 +33,54 @@
     "original": "Semestre 8/Testing/Clases/image 4.png",
     "destino": "Testing/02-Pruebas unitarias dobles de prueba y test smells/adjuntos/Ejecución de TestSuite y TestRunner en unittest.png",
     "sha256": "734e6e5708df52f89ac076ef9554bfdb7c12b22bb3de559ae4e46b21035744af"
+  },
+  {
+    "tema": "Cobertura de código e instrumentación con settrace",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Testing/Clases/image 5.png",
+    "destino": "Testing/03-Cobertura de código e instrumentación con settrace/adjuntos/Ejemplo básico de trace_func con sys settrace.png",
+    "sha256": "f940bff7f4d92f32a90e66a898a2a68689c7e97cba7d66eaf1d315d33f14c6a4"
+  },
+  {
+    "tema": "Cobertura de código e instrumentación con settrace",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Testing/Clases/image 6.png",
+    "destino": "Testing/03-Cobertura de código e instrumentación con settrace/adjuntos/Registro de líneas ejecutadas en traceit.png",
+    "sha256": "4b409c68c214a6aafc8d7c8b02f79d866766ad8f97ff734cb78f1a4a45ed8ea3"
+  },
+  {
+    "tema": "Cobertura de código e instrumentación con settrace",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Testing/Clases/image 7.png",
+    "destino": "Testing/03-Cobertura de código e instrumentación con settrace/adjuntos/Activación y desactivación de settrace en cgi_decode.png",
+    "sha256": "5e2dec4480ba0394fc17e488a4bed4da8128d6c864d8f0c84dfeab165cab170e"
+  },
+  {
+    "tema": "Cobertura de código e instrumentación con settrace",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Testing/Clases/image 8.png",
+    "destino": "Testing/03-Cobertura de código e instrumentación con settrace/adjuntos/Inspección del código fuente con inspect getsource.png",
+    "sha256": "4b300d7bbcce5497fa81e3530979d0fc62cf90af10f82c27d5139e7e4dfd53da"
+  },
+  {
+    "tema": "Cobertura de código e instrumentación con settrace",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Testing/Clases/image 9.png",
+    "destino": "Testing/03-Cobertura de código e instrumentación con settrace/adjuntos/Visualización de líneas no cubiertas con numeral.png",
+    "sha256": "6a3b5b2f4e09203e3ed31b2419966fc92441ff911d8098f36887db07ccaf410d"
+  },
+  {
+    "tema": "Cobertura de código e instrumentación con settrace",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Testing/Clases/image 10.png",
+    "destino": "Testing/03-Cobertura de código e instrumentación con settrace/adjuntos/Diferencia de cobertura entre dos casos de prueba.png",
+    "sha256": "b347e03534c523dd46b51ea26941259fc0b963bfbe7797121dfe92a13bed80ce"
+  },
+  {
+    "tema": "Cobertura de código e instrumentación con settrace",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Testing/Clases/image 11.png",
+    "destino": "Testing/03-Cobertura de código e instrumentación con settrace/adjuntos/Diferencia contra la cobertura máxima en cgi_decode.png",
+    "sha256": "a2a80135ea7b4caf1ccdcf1a062f7f1ded3cce3222b37e1b0da9e3370d39a2eb"
   }
 ]

@@ -7,7 +7,7 @@ Rama: `migrar/testing`. Un commit por tema. Antes de cada commit se corre `pytho
 | 0 | Infraestructura (`_meta/Testing/`) | `_meta/Testing/` | ✅ hecho | – | – |
 | 1 | Fundamentos del testing de software | `01-Fundamentos del testing de software/` | ✅ hecho | 4 + `_Índice` | 2 + 0 |
 | 2 | Pruebas unitarias dobles de prueba y test smells | `02-Pruebas unitarias dobles de prueba y test smells/` | ✅ hecho | 5 + `_Índice` | 3 + 0 |
-| 3 | Cobertura de código e instrumentación con settrace | `03-Cobertura de código e instrumentación con settrace/` | ⏳ pendiente | – | – |
+| 3 | Cobertura de código e instrumentación con settrace | `03-Cobertura de código e instrumentación con settrace/` | ✅ hecho | 4 + `_Índice` | 7 + 0 |
 | 4 | Fuzzing aleatorio y fuzzing basado en mutación | `04-Fuzzing aleatorio y fuzzing basado en mutación/` | ⏳ pendiente | – | – |
 | 5 | Fuzzing basado en búsqueda | `05-Fuzzing basado en búsqueda/` | ⏳ pendiente | – | – |
 | 6 | Análisis de mutación y diseño de pruebas de caja negra | `06-Análisis de mutación y diseño de pruebas de caja negra/` | ⏳ pendiente | – | – |
