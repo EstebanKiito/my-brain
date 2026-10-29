@@ -226,7 +226,7 @@
     },
     "Análisis de flujo de información y taint analysis": {
       "carpeta": "Testing/10-Análisis de flujo de información y taint analysis",
-      "estado": "pendiente",
+      "estado": "migrado",
       "secciones": [
         {
           "fuente": "clases_i2",

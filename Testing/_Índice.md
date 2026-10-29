@@ -20,3 +20,4 @@ Curso de pruebas de software, verificación automatizada y análisis de programa
 7. [[07-Análisis estático y árboles de sintaxis abstracta/_Índice|Análisis estático y árboles de sintaxis abstracta]]
 8. [[08-Reglas de código automáticas y linters/_Índice|Reglas de código automáticas y linters]]
 9. [[09-Transformaciones de código con AST/_Índice|Transformaciones de código con AST]]
+10. [[10-Análisis de flujo de información y taint analysis/_Índice|Análisis de flujo de información y taint analysis]]
