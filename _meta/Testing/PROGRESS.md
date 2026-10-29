@@ -5,7 +5,7 @@ Rama: `migrar/testing`. Un commit por tema. Antes de cada commit se corre `pytho
 | # | Tema | Carpeta | Estado | Notas | Imágenes (apuntes + slides) |
 |---|---|---|---|---|---|
 | 0 | Infraestructura (`_meta/Testing/`) | `_meta/Testing/` | ✅ hecho | – | – |
-| 1 | Fundamentos del testing de software | `01-Fundamentos del testing de software/` | ⏳ pendiente | – | – |
+| 1 | Fundamentos del testing de software | `01-Fundamentos del testing de software/` | ✅ hecho | 4 + `_Índice` | 2 + 0 |
 | 2 | Pruebas unitarias dobles de prueba y test smells | `02-Pruebas unitarias dobles de prueba y test smells/` | ⏳ pendiente | – | – |
 | 3 | Cobertura de código e instrumentación con settrace | `03-Cobertura de código e instrumentación con settrace/` | ⏳ pendiente | – | – |
 | 4 | Fuzzing aleatorio y fuzzing basado en mutación | `04-Fuzzing aleatorio y fuzzing basado en mutación/` | ⏳ pendiente | – | – |

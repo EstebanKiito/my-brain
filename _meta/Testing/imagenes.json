@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "tema": "Fundamentos del testing de software",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Testing/Clases/image.png",
+    "destino": "Testing/01-Fundamentos del testing de software/adjuntos/Cadena error defecto y falla.png",
+    "sha256": "3235cab8b9c5bd75217d630f5c38417609a0381f41e202b4a3e3b04362f5b8c0"
+  },
+  {
+    "tema": "Fundamentos del testing de software",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Testing/Clases/image 1.png",
+    "destino": "Testing/01-Fundamentos del testing de software/adjuntos/Desarrollo de software antes y ahora con IA.png",
+    "sha256": "c48ca730f4500068bc5e1e087981849615fc7539b32452b4db3f6dc4942093a6"
+  }
+]

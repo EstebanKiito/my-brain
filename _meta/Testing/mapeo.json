@@ -11,7 +11,7 @@
   "temas": {
     "Fundamentos del testing de software": {
       "carpeta": "Testing/01-Fundamentos del testing de software",
-      "estado": "pendiente",
+      "estado": "migrado",
       "secciones": [
         {
           "fuente": "clases_i1",
