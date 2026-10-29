@@ -180,7 +180,7 @@
         {
           "fuente": "clases_i2",
           "desde": "Clase 13",
-          "hasta": "Pregunta de Prueba",
+          "hasta": "ast.fix_missing_locations",
           "por_texto": true
         }
       ],
@@ -197,11 +197,11 @@
     },
     "Transformaciones de código con AST": {
       "carpeta": "Testing/09-Transformaciones de código con AST",
-      "estado": "pendiente",
+      "estado": "migrado",
       "secciones": [
         {
           "fuente": "clases_i2",
-          "desde": "Pregunta de Prueba",
+          "desde": "ast.fix_missing_locations",
           "hasta": "Clase 14",
           "por_texto": true
         },

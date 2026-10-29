@@ -124,5 +124,26 @@
     "original": "Semestre 8/Testing/Clases I2/image 2.png",
     "destino": "Testing/07-Análisis estático y árboles de sintaxis abstracta/adjuntos/DemoVisitor con generic_visit contando tres llamadas.png",
     "sha256": "050d22cbbabe2ab2c7ab47cc6c7e0ad5d40ca98a1f3d4c405df75a6c67838f9b"
+  },
+  {
+    "tema": "Transformaciones de código con AST",
+    "tipo": "convertida",
+    "original": "Semestre 8/Testing/Clases I2/IMG_8069.heic",
+    "destino": "Testing/09-Transformaciones de código con AST/adjuntos/Pizarra de transformacion de suma a resta en AST.png",
+    "sha256": "21af2f3295d0b3eadcf8a66d766361a77e77220b02a6938da784844e9dd2cad4"
+  },
+  {
+    "tema": "Transformaciones de código con AST",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Testing/Clases I2/5767393f-fdd0-4fb2-bc7c-634f8a43f267.png",
+    "destino": "Testing/09-Transformaciones de código con AST/adjuntos/Ejemplo de CambiarSumaPorResta con NodeTransformer.png",
+    "sha256": "b44640ea75c9ab441514f52b0c1e4436dd5402ef2c5116311b06c9b7517bf053"
+  },
+  {
+    "tema": "Transformaciones de código con AST",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Testing/Clases I2/d3cfa28e-87c8-48d6-8e6e-4df60c56e0c5.png",
+    "destino": "Testing/09-Transformaciones de código con AST/adjuntos/Ejemplo de SimplificarSumaCero con NodeTransformer.png",
+    "sha256": "bb0626b2762473340a7c6faa889f760af048c60fa1611be5b55d285fb3ee9155"
   }
 ]
