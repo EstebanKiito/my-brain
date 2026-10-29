@@ -102,7 +102,7 @@
     },
     "Fuzzing basado en búsqueda": {
       "carpeta": "Testing/05-Fuzzing basado en búsqueda",
-      "estado": "pendiente",
+      "estado": "migrado",
       "secciones": [
         {
           "fuente": "clases_i1",

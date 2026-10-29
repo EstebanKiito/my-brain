@@ -9,7 +9,7 @@ Rama: `migrar/testing`. Un commit por tema. Antes de cada commit se corre `pytho
 | 2 | Pruebas unitarias dobles de prueba y test smells | `02-Pruebas unitarias dobles de prueba y test smells/` | ✅ hecho | 5 + `_Índice` | 3 + 0 |
 | 3 | Cobertura de código e instrumentación con settrace | `03-Cobertura de código e instrumentación con settrace/` | ✅ hecho | 4 + `_Índice` | 7 + 0 |
 | 4 | Fuzzing aleatorio y fuzzing basado en mutación | `04-Fuzzing aleatorio y fuzzing basado en mutación/` | ✅ hecho | 3 + `_Índice` | 0 + 0 |
-| 5 | Fuzzing basado en búsqueda | `05-Fuzzing basado en búsqueda/` | ⏳ pendiente | – | – |
+| 5 | Fuzzing basado en búsqueda | `05-Fuzzing basado en búsqueda/` | ✅ hecho | 3 + `_Índice` | 0 + 0 |
 | 6 | Análisis de mutación y diseño de pruebas de caja negra | `06-Análisis de mutación y diseño de pruebas de caja negra/` | ⏳ pendiente | – | – |
 | 7 | Análisis estático y árboles de sintaxis abstracta | `07-Análisis estático y árboles de sintaxis abstracta/` | ⏳ pendiente | – | – |
 | 8 | Reglas de código automáticas y linters | `08-Reglas de código automáticas y linters/` | ⏳ pendiente | – | – |
