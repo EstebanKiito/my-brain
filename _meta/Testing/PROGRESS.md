@@ -16,7 +16,7 @@ Rama: `migrar/testing`. Un commit por tema. Antes de cada commit se corre `pytho
 | 9 | Transformaciones de código con AST | `09-Transformaciones de código con AST/` | ✅ hecho | 5 + `_Índice` | 3 + 0 |
 | 10 | Análisis de flujo de información y taint analysis | `10-Análisis de flujo de información y taint analysis/` | ✅ hecho | 3 + `_Índice` | 0 + 0 |
 | 11 | Ejecución simbólica y fuzzing concólico | `11-Ejecución simbólica y fuzzing concólico/` | ✅ hecho | 5 + `_Índice` | 0 + 0 |
-| 12 | Análisis dinámico y perfilado de ejecución | `12-Análisis dinámico y perfilado de ejecución/` | ⏳ pendiente | – | – |
+| 12 | Análisis dinámico y perfilado de ejecución | `12-Análisis dinámico y perfilado de ejecución/` | ✅ hecho | 4 + `_Índice` | 0 + 0 |
 | 13 | Gestión del curso | `13-Gestión del curso/` | ⏳ pendiente | – | – |
 
 ## Convenciones

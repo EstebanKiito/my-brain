@@ -22,3 +22,4 @@ Curso de pruebas de software, verificación automatizada y análisis de programa
 9. [[09-Transformaciones de código con AST/_Índice|Transformaciones de código con AST]]
 10. [[10-Análisis de flujo de información y taint analysis/_Índice|Análisis de flujo de información y taint analysis]]
 11. [[11-Ejecución simbólica y fuzzing concólico/_Índice|Ejecución simbólica y fuzzing concólico]]
+12. [[12-Análisis dinámico y perfilado de ejecución/_Índice|Análisis dinámico y perfilado de ejecución]]
