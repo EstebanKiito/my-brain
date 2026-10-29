@@ -18,3 +18,4 @@ Curso de pruebas de software, verificación automatizada y análisis de programa
 5. [[05-Fuzzing basado en búsqueda/_Índice|Fuzzing basado en búsqueda]]
 6. [[06-Análisis de mutación y diseño de pruebas de caja negra/_Índice|Análisis de mutación y diseño de pruebas de caja negra]]
 7. [[07-Análisis estático y árboles de sintaxis abstracta/_Índice|Análisis estático y árboles de sintaxis abstracta]]
+8. [[08-Reglas de código automáticas y linters/_Índice|Reglas de código automáticas y linters]]

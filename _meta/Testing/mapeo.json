@@ -175,7 +175,7 @@
     },
     "Reglas de código automáticas y linters": {
       "carpeta": "Testing/08-Reglas de código automáticas y linters",
-      "estado": "pendiente",
+      "estado": "migrado",
       "secciones": [
         {
           "fuente": "clases_i2",
