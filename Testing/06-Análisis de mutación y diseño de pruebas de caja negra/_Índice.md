@@ -17,3 +17,4 @@ Evaluación de la efectividad real de una batería de pruebas mediante **Mutatio
 3. [[03 - Pruebas de caja negra partición de equivalencia y valores límite]] — Clases de equivalencia válidas e inválidas, por qué probar inválidas por separado, y análisis de valores límite de $2$ puntos (*two-point*) y $3$ puntos (*three-point*) con ejercicios resueltos.
 4. [[04 - Tablas de decisión combinaciones de reglas y colapso de tablas]] — Construcción de matrices de $2^n$ reglas, colapso de condiciones indiferentes (`—`) en préstamos bancarios y manejo de combinaciones imposibles (`X`) en descuentos.
 5. [[05 - Pruebas de transición de estados cobertura 0-switch y 1-switch]] — Modelado con máquinas de estados finitas, diagrama de estados frente a tabla Estado $\times$ Evento para cazar transiciones inválidas, y cálculo de cobertura *0-switch* y *1-switch*.
+

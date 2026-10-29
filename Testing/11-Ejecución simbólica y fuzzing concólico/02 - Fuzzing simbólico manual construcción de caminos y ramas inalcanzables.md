@@ -109,3 +109,4 @@ Cuando ejecutamos `z3.solve(a == b, a == c, z3.Not(b == c))`, Z3 responde **`no 
 
 > [!question]- ¿Qué significa que para un camino de un programa el *SMT Solver* responda `unsat` (`no solution`), y por qué un *fuzzer* aleatorio jamás podría llegar a esa conclusión con certeza?
 > Significa que las condiciones acumuladas a lo largo de ese camino son **mutuamente contradictorias**, demostrando formalmente que se trata de una **rama inalcanzable (código muerto)** para cualquier entrada posible. Un *fuzzer* aleatorio solo muestrea entradas concretas: aunque falle millones de veces en entrar a la rama, nunca puede distinguir entre una condición muy estrecha (como `x == 918273645`) y una condición lógicamente imposible.
+

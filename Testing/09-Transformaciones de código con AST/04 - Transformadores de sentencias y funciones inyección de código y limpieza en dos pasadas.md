@@ -125,3 +125,4 @@ Esta es una pregunta crítica de diseño del Capítulo 11:
 > [!question]- Da dos ejemplos concretos en los que `RemoveUnusedArgumentsTransformer` rompa el comportamiento de un programa aunque el argumento eliminado realmente no se lea dentro del cuerpo de la función.
 > 1. **Llamadas existentes:** cualquier llamada existente `combine(1, 2, 3)` lanzará un `TypeError` por exceso de argumentos.
 > 2. **Polimorfismo / firmas de interfaz:** si el método implementa una firma requerida por una superclase, un *framework* o `sys.settrace(frame, event, arg)` (donde `arg` debe recibirse por contrato aunque no se use), quitarlo rompe la interfaz.
+

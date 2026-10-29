@@ -78,3 +78,4 @@ Al unir y eliminar duplicados, el conjunto final de **Two-Point BVA** consta exa
 
 > [!question]- Un requisito de trenes dice: «Se cobra tarifa completa antes de las 9:30 AM y entre las 4:00 PM y las 7:30 PM; el boleto *saver* está disponible entre las 9:30 AM y las 4:00 PM, y después de las 7:30 PM». ¿Qué ambigüedad de borde revela aplicar BVA sobre este enunciado?
 > Revela que los bordes exactos **$4:00\text{ PM}$** y **$7:30\text{ PM}$** están mal especificados o solapados: a las $4:00\text{ PM}$ («entre 9:30 AM y 4:00 PM» vs. «después de las 4:00 PM») y a las $7:30\text{ PM}$ («hasta las 7:30 PM» vs. «después de las 7:30 PM») no queda claro en el lenguaje natural si el minuto exacto incluye o excluye la tarifa *saver*. Aplicar BVA obliga a aclarar la especificación antes de programar.
+

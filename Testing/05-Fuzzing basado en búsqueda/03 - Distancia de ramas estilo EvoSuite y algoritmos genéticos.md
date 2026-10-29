@@ -94,3 +94,4 @@ En lugar de mover un único individuo como hace *Hill Climbing*, un **algoritmo 
 
 > [!question]- ¿Qué papel cumple el operador de cruce (*crossover*) en un algoritmo genético y por qué le da ventaja frente a un *hill climber* con reinicios cuando buscamos una cadena como `"PASSWORD"`?
 > Un *hill climber* con reinicios desecha todo lo aprendido cada vez que se atasca y empieza desde cero con un solo individuo. En cambio, en un algoritmo genético un individuo de la población puede haber descubierto los primeros caracteres `"PASSxxxx"` y otro individuo los últimos `"xxxxWORD"`; el **cruce de un punto** combina ambos segmentos en una sola generación produciendo directamente `"PASSWORD"`.
+

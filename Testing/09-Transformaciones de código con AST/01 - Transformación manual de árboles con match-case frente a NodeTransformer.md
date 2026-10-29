@@ -109,3 +109,4 @@ Si ejecutamos `CambiarSumaPorResta().visit(ast.parse("(1 + eval(2 + 3)) + (3 + 4
 
 > [!question]- Al usar `match nodo:` en Python 3.10+, ¿qué diferencia hay entre escribir `case ast.BinOp(left=izq, op=ast.Add(), right=der):` y usar `isinstance` tradicional?
 > El patrón `case` no solo comprueba que `nodo` sea un `ast.BinOp` y que su atributo `op` sea una instancia de `ast.Add`, sino que además **desestructura** el objeto en el mismo paso, asignando automáticamente `nodo.left` a la variable `izq` y `nodo.right` a la variable `der`.
+

@@ -110,3 +110,4 @@ class MissingReturnVisitor(WarningNodeVisitor):
 
 > [!question]- Si combinas `[EvalUsedRule, AlwaysTrueIfRule, ManyArgumentsRule]` con `Linter.analyze_all` sobre una función `def foo(a, b, c, d, e, f, g):` (línea 1) que adentro tiene `if True:` (línea 2) y adentro `eval('x')` (línea 3), ¿por qué se detectan las tres advertencias si una está anidada dentro de la otra?
 > Porque cada visitante es independiente y, además, en cada uno de sus métodos (`visit_FunctionDef`, `visit_If`, `visit_Call`) se invoca `self.generic_visit(node)`, permitiendo que el recorrido siga descendiendo hacia el interior de la función y del condicional.
+

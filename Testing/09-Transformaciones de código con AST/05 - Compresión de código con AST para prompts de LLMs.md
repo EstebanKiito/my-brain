@@ -103,3 +103,4 @@ De este experimento se extraen cuatro lecciones clave:
 
 > [!question]- ¿Por qué el porcentaje de tokens ahorrados al aplicar tres transformaciones en cadena (`c4`) es menor que la suma de los porcentajes ahorrados por cada transformación por separado (`c1 + c2 + c3`)?
 > Porque las transformaciones tienen **intersección en los nodos que eliminan**: por ejemplo, cuando `TrivialRemover` (`c3`) borra un método *getter* completo, borra también su *docstring* (que contaba en `c1`) y las anotaciones de tipo de su firma (que contaban en `c2`).
+

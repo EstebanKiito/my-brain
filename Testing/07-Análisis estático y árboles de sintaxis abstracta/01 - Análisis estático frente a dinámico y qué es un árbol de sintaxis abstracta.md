@@ -74,3 +74,4 @@ Analizar el AST en lugar de ejecutar el programa tiene tres consecuencias fundam
 
 > [!question]- ¿Qué establece el Teorema de Rice y qué compromiso práctico obliga a tomar al diseñar herramientas de análisis estático?
 > Establece que toda propiedad semántica no trivial sobre lo que calcula un programa es indecidible en el caso general. En la práctica, esto obliga a los analizadores estáticos a verificar aproximaciones sintácticas sobre el AST, asumiendo un compromiso (*trade-off*) entre **falsos positivos** (advertir de un posible error que en ejecución nunca ocurre) y **falsos negativos** (dejar pasar un bug camuflado con otra forma sintáctica).
+

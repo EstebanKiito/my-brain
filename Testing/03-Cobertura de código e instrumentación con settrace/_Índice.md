@@ -16,3 +16,4 @@ Fundamentos del testing de caja blanca y medición automática de cobertura estr
 2. [[02 - Cobertura de sentencias frente a cobertura de ramas]] — Por qué el $100\%$ de *statement coverage* puede ocultar decisiones al $50\%$ en condicionales sin `else`, y cálculo manual paso a paso sobre `clasificar_impuesto`.
 3. [[03 - Rastreo de ejecución en Python con sys settrace y frames de pila]] — Funcionamiento de `sys.settrace(trace_func)`, anatomía de `frame`, `event` y `arg`, importancia de retornar el callback y visualización línea por línea con `inspect.getsource`.
 4. [[04 - La clase Coverage diferencias de conjuntos y límites de la cobertura]] — Implementación de `Coverage` con `__enter__` y `__exit__`, resta de conjuntos ($A - B$) para aislar líneas exclusivas o pendientes, límites de la cobertura sin oráculo (`dias_en_mes`) y predicción estática con LLMs.
+

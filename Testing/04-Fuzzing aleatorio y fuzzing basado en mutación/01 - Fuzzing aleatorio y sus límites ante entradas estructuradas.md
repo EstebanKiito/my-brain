@@ -91,3 +91,4 @@ Y si además exigimos que tenga un punto en el dominio, la subcadena `"/api/"` e
 
 > [!question]- Si una función comienza con la guarda `if codigo == "SECRETO_2026":`, ¿cuál es la probabilidad de que un `RandomFuzzer` que genera cadenas de largo $12$ sobre un alfabeto de $95$ caracteres imprimibles entre al `if` en un intento?
 > Como cada uno de los $12$ caracteres debe coincidir exactamente de forma independiente, la probabilidad es $(1/95)^{12} \approx 1.85 \times 10^{-24}$, lo que hace imposible cubrir esa rama mediante fuerza bruta aleatoria.
+

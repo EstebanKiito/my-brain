@@ -80,3 +80,4 @@ Así vemos de un vistazo que la entrada `"a+b"` cubrió el ciclo y la rama del `
 
 > [!question]- ¿Por qué la lista cruda `coverage` recolectada por `traceit` al correr `cgi_decode("a+b")` contiene números de línea repetidos, y por qué la convertimos en un `set`?
 > Contiene números repetidos porque `traceit` hace `coverage.append(lineno)` cada vez que el intérprete pasa por una línea, y las líneas de inicialización del diccionario o del ciclo `while i < len(s):` se ejecutan múltiples veces en una misma llamada. La convertimos en un `set` porque para calcular cobertura solo nos importa saber si cada línea fue ejecutada **al menos una vez** (además de habilitar operaciones de conjuntos como unión, intersección y resta).
+

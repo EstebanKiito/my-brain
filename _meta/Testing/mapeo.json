@@ -11,7 +11,7 @@
   "temas": {
     "Fundamentos del testing de software": {
       "carpeta": "Testing/01-Fundamentos del testing de software",
-      "estado": "migrado",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "clases_i1",
@@ -29,7 +29,7 @@
     },
     "Pruebas unitarias dobles de prueba y test smells": {
       "carpeta": "Testing/02-Pruebas unitarias dobles de prueba y test smells",
-      "estado": "migrado",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "clases_i1",
@@ -58,7 +58,7 @@
     },
     "Cobertura de código e instrumentación con settrace": {
       "carpeta": "Testing/03-Cobertura de código e instrumentación con settrace",
-      "estado": "migrado",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "clases_i1",
@@ -79,7 +79,7 @@
     },
     "Fuzzing aleatorio y fuzzing basado en mutación": {
       "carpeta": "Testing/04-Fuzzing aleatorio y fuzzing basado en mutación",
-      "estado": "migrado",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "clases_i1",
@@ -102,7 +102,7 @@
     },
     "Fuzzing basado en búsqueda": {
       "carpeta": "Testing/05-Fuzzing basado en búsqueda",
-      "estado": "migrado",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "clases_i1",
@@ -123,7 +123,7 @@
     },
     "Análisis de mutación y diseño de pruebas de caja negra": {
       "carpeta": "Testing/06-Análisis de mutación y diseño de pruebas de caja negra",
-      "estado": "migrado",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "clases_i1",
@@ -151,7 +151,7 @@
     },
     "Análisis estático y árboles de sintaxis abstracta": {
       "carpeta": "Testing/07-Análisis estático y árboles de sintaxis abstracta",
-      "estado": "migrado",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "clases_i2",
@@ -175,7 +175,7 @@
     },
     "Reglas de código automáticas y linters": {
       "carpeta": "Testing/08-Reglas de código automáticas y linters",
-      "estado": "migrado",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "clases_i2",
@@ -197,7 +197,7 @@
     },
     "Transformaciones de código con AST": {
       "carpeta": "Testing/09-Transformaciones de código con AST",
-      "estado": "migrado",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "clases_i2",
@@ -226,7 +226,7 @@
     },
     "Análisis de flujo de información y taint analysis": {
       "carpeta": "Testing/10-Análisis de flujo de información y taint analysis",
-      "estado": "migrado",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "clases_i2",
@@ -247,7 +247,7 @@
     },
     "Ejecución simbólica y fuzzing concólico": {
       "carpeta": "Testing/11-Ejecución simbólica y fuzzing concólico",
-      "estado": "migrado",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "clases_i2",
@@ -273,7 +273,7 @@
     },
     "Análisis dinámico y perfilado de ejecución": {
       "carpeta": "Testing/12-Análisis dinámico y perfilado de ejecución",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [],
       "pdfs": [
         "Semestre 8/Testing/Syllabus/Clases-i2/preparacion I2/C14_InstrumentationProfilingExecutionSampling.pdf",
@@ -285,7 +285,7 @@
     },
     "Gestión del curso": {
       "carpeta": "Testing/13-Gestión del curso",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "ramo",

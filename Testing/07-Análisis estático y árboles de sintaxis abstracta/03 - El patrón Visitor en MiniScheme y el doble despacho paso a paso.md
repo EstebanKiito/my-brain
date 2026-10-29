@@ -127,3 +127,4 @@ class DepthVisitor(CodeVisitor):
 
 > [!question]- Además de contar la primera instancia en `(if0 0 2 3)`, ¿por qué `If0ZeroVisitor` logra encontrar ese nodo si se encuentra dentro de la rama `thenNode` de un `if0` exterior cuya condición `(+ 1 1)` jamás sería `0` al ejecutarse?
 > Porque `CodeVisitor.visit_if0` recorre **todas las ramas sintácticas del árbol** (`condNode`, `thenNode` y `elseNode`) sin importar qué valor tomaría la condición en tiempo de ejecución. Esa es justamente una ventaja clave del análisis estático: inspecciona ramas que en una prueba dinámica podrían no ejecutarse.
+

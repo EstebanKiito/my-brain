@@ -96,3 +96,4 @@ Con solo $6$ candidatos conservados de $100$ intentos, la suite alcanza las **$1
 
 > [!question]- ¿Por qué `MutationCoverageFuzzer` sigue teniendo dificultades para cubrir una rama protegida por `if clave == "X9#kL2!p":` aunque registre la cobertura en cada intento?
 > Porque la cobertura de líneas solo ofrece retroalimentación **cuando ya lograste entrar a la ramanueva**. Mientras `clave` difiera aunque sea en un carácter de `"X9#kL2!p"`, todas las mutaciones fallidas ejecutan exactamente la misma línea del `if` (rama falsa), por lo que ninguna aporta cobertura nueva ni le indica al fuzzer que tener $7$ de los $8$ caracteres correctos está «más cerca» que tener $0$.
+

@@ -100,3 +100,4 @@ print(s.check())
 > 1. `x1 == x0 * 2`
 > 2. `x1 == 10`
 > Al resolver `[x1 == x0 * 2, x1 == 10]`, Z3 sustituye `x0 * 2 == 10` y obtiene el valor inicial exacto de entrada: **`x0 = 5`**.
+

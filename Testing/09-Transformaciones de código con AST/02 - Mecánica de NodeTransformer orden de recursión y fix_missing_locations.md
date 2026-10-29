@@ -71,3 +71,4 @@ codigo = compile(arbol, "<string>", "eval")
 
 > [!question]- ¿Cómo permite `ast.NodeTransformer` reemplazar una única sentencia (como `if True:`) por múltiples sentencias (todas las instrucciones que estaban dentro de su bloque `body`)?
 > Retornando directamente una **lista de nodos** (`return node.body`). Cuando `NodeTransformer.generic_visit` recorre una lista de sentencias del padre (como `Module.body` o `FunctionDef.body`) y un método `visit_*` devuelve una `list`, extiende la lista nueva con todos sus elementos en vez de insertar una lista anidada.
+

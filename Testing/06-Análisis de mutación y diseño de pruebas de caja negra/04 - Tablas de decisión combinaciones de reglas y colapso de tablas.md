@@ -76,3 +76,4 @@ Ainsi, cubrir la tabla completa exige **$8$ casos de prueba**, mientras que cubr
 
 > [!question]- Además de diseñar casos de prueba, ¿por qué construir una tabla de decisión sirve como herramienta de verificación temprana (*shift-left*) sobre los requerimientos?
 > Porque al enumerar sistemáticamente las $2^n$ columnas, obliga a preguntarse qué debe hacer el sistema en combinaciones que el autor de la especificación olvidó mencionar (como en el ejemplo de solicitud de préstamo donde nadie había definido qué ocurría en la Regla 4 cuando no se ingresaba ni monto ni plazo, o qué pasa cuando un cliente nuevo usa un cupón de $20\%$).
+

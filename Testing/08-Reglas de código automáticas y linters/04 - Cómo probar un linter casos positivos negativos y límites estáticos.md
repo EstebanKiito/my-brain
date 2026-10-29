@@ -81,3 +81,4 @@ El problema opuesto ocurre cuando queremos hacer una regla «demasiado inteligen
 
 > [!question]- ¿Qué es la «fatiga de alertas» (*alert fatigue*) en herramientas de análisis estático y por qué un exceso de falsos positivos termina reduciendo la detección de defectos reales?
 > Es el fenómeno psicológico y operativo donde los desarrolladores reciben tantas advertencias falsas o triviales del linter que pierden la confianza en la herramienta, optando por ignorar su salida o silenciarla globalmente (`# noqa`), lo que provoca que las advertencias verdaderas pasen desapercibidas.
+

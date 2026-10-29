@@ -83,3 +83,4 @@ Por ejemplo, para `values = (5, 100)`, `bounds = [(-10, 20), (0, 200)]` y `steps
 > 1. Una **representación** de las soluciones candidatas dentro del espacio de búsqueda.
 > 2. Un operador de **vecindad** (o de variación genética) que genere nuevas candidatas a partir de las actuales.
 > 3. Una **función de fitness** que asigne un puntaje numérico a cada candidata estimando su cercanía al objetivo.
+

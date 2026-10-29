@@ -12,3 +12,4 @@ tags:
 2. [[02 - Implementación de reglas AST eval condiciones constantes y exceso de argumentos]]
 3. [[03 - Reglas sobre comparaciones y detección automática de test smells con AST]]
 4. [[04 - Cómo probar un linter casos positivos negativos y límites estáticos]]
+

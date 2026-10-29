@@ -13,3 +13,4 @@ tags:
 3. [[03 - El patrón Visitor en MiniScheme y el doble despacho paso a paso]]
 4. [[04 - El módulo ast de Python anatomía de nodos y visualización con dump]]
 5. [[05 - Recorrido del AST con NodeVisitor y la importancia de generic_visit]]
+

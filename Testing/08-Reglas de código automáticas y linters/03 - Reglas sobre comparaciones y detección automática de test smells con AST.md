@@ -104,3 +104,4 @@ Con la misma lógica se detecta un **test sin aserciones** (cuando el conteo tot
 
 > [!question]- En un nodo `ast.Assert` (correspondiente a la instrucción nativa `assert x > 0, "x debe ser positivo"`), ¿en qué atributos del nodo se almacenan la condición evaluada y el mensaje de error?
 > La condición (`x > 0`) se almacena en **`node.test`** y el mensaje opcional (`"x debe ser positivo"`) se almacena en **`node.msg`** (que vale `None` cuando el programador escribió solo `assert x > 0` sin mensaje).
+

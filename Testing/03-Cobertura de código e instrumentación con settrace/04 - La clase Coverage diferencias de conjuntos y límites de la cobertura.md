@@ -97,3 +97,4 @@ En el cierre de la unidad analizamos tres estudios recientes sobre predicción e
 
 > [!question]- En la función `dias_en_mes(mes, anio)`, ¿qué conjunto mínimo de llamadas necesitas para cubrir el $100\%$ de las líneas ejecutables, y por qué cubrirlas todas sin `assert` no detectaría si la línea del año divisible por $400$ devolviera `28` en vez de `29`?
 > Se necesitan $7$ llamadas que ejerciten cada `return` y el `raise`: por ejemplo `(0, 2020)` para el `ValueError`, `(2, 2000)` para `anio % 400 == 0`, `(2, 1900)` para `anio % 100 == 0`, `(2, 2020)` para `anio % 4 == 0`, `(2, 2021)` para febrero no bisiesto, `(4, 2021)` para meses de $30$ días y `(1, 2021)` para meses de $31$ días. Si solo ejecutamos esas llamadas sin comparar su retorno contra un oráculo (`assertEqual`), `sys.settrace` registrará que la línea del `return` se ejecutó ($100\%$ de cobertura), pero nadie verificará que el número retornado era incorrecto.
+

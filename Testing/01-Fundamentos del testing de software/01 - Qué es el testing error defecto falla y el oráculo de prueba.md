@@ -85,3 +85,4 @@ Si la especificación clínica (nuestro oráculo) exige `"fiebre"` para temperat
 
 > [!question]- Explica con un ejemplo la diferencia entre un fallo de verificación y un fallo de validación.
 > Si la especificación pide ordenar una lista de menor a mayor y el algoritmo devuelve los elementos desordenados, hay un **fallo de verificación** (no construimos el sistema según su especificación). Si en cambio el algoritmo ordena perfectamente de menor a mayor sin ningún bug, pero el usuario final necesitaba ver primero las transacciones más recientes (orden descendente), hay un **fallo de validación** (construimos el sistema equivocado para la necesidad real).
+

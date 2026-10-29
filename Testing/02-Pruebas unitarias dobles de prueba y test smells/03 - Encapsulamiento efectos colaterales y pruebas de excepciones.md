@@ -90,3 +90,4 @@ En `unittest` existe el decorador `@unittest.expectedFailure` sobre un método `
 
 > [!question]- ¿Qué ocurre exactamente cuando se ejecuta un bloque `with self.assertRaises(ValueError):` si el código dentro del bloque termina normalmente sin lanzar ninguna excepción?
 > Al salir del bloque `with`, el administrador de contexto de `assertRaises` detecta que no se lanzó `ValueError` y lanza internamente un `AssertionError("ValueError not raised")`, haciendo que la prueba unitaria **falle**.
+

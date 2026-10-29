@@ -124,3 +124,4 @@ class Linter:
 
 > [!question]- ¿Qué responsabilidades separa el diseño entre `Rule` y `WarningNodeVisitor`?
 > `WarningNodeVisitor` se encarga específicamente del **recorrido del AST** (sobrescribiendo los métodos `visit_*` y llamando a `add_warning`), mientras que `Rule` actúa como la **fachada pública de la regla** ante el `Linter` (exponiendo `name()` y `analyze(tree)`), lo que permite incluso que una regla combine más de un visitante si lo necesita.
+

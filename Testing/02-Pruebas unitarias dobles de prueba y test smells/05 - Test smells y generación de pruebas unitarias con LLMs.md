@@ -81,3 +81,4 @@ La literatura reciente estudiada en el curso (sobre más de $216\,300$ tests gen
 
 > [!question]- ¿Por qué un test generado por IA que ejecuta un método complejo y verifica únicamente `self.assertIsNotNone(resultado)` demuestra que el porcentaje de cobertura no basta para medir la calidad de una suite?
 > Porque la cobertura solo mide qué líneas de código fueron **ejecutadas** durante la fase *Act*, pero no evalúa la fuerza del **oráculo** en la fase *Assert*. Verificar `assertIsNotNone` pasa siempre que la función devuelva cualquier objeto distinto de `None` (incluso un monto negativo o erróneo), dando un $100\%$ de cobertura con casi $0\%$ de capacidad real para detectar defectos.
+

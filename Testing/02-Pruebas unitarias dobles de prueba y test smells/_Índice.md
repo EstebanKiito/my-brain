@@ -17,3 +17,4 @@ Diseño, implementación y evaluación de pruebas unitarias en aislamiento utili
 3. [[03 - Encapsulamiento efectos colaterales y pruebas de excepciones]] — Tensión entre encapsulamiento y verificabilidad, separación de efectos colaterales (`print`) y verificación de errores con `with self.assertRaises(...)` y `@unittest.expectedFailure`.
 4. [[04 - Dobles de prueba dummies stubs spies mocks y fakes]] — Taxonomía de Meszaros y distinción de Fowler entre verificación de estado (*Stub*) y verificación de comportamiento (*Mock*) con `unittest.mock.MagicMock`.
 5. [[05 - Test smells y generación de pruebas unitarias con LLMs]] — *Indirect Testing*, *Flaky Tests*, *Assertion Roulette*, *Eager Test*, *Mystery Guest* y *Conditional Test Logic*, junto con el impacto del contexto ($S_1$–$S_4$) y de la instrucción ($P_1$–$P_4$) al generar pruebas con LLMs.
+

@@ -13,3 +13,4 @@ tags:
 3. [[03 - Transformadores de expresiones operadores llamadas y la trampa de RenameTransformer]]
 4. [[04 - Transformadores de sentencias y funciones inyección de código y limpieza en dos pasadas]]
 5. [[05 - Compresión de código con AST para prompts de LLMs]]
+

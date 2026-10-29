@@ -85,3 +85,4 @@ En las pruebas escritas y de programación de reglas o transformaciones, casi to
 
 > [!question]- ¿Qué diferencia hay en el AST de Python entre cómo se representa el parámetro `x` en la firma `def f(x):` y cómo se representa `x` en la línea `return x + 1` dentro de esa función?
 > En la firma `def f(x):`, `x` se representa como un nodo **`ast.arg(arg='x')`** dentro de la lista `node.args.args` del `FunctionDef`. En cambio, dentro del cuerpo (`return x + 1`), `x` se representa como un nodo **`ast.Name(id='x', ctx=Load())`**.
+

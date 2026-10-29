@@ -93,3 +93,4 @@ class WalletPrintTest(unittest.TestCase):
 
 > [!question]- ¿Qué significa la frase «los mocks pueden mentir» y qué riesgo introduce abusar de ellos (*over-mocking*)?
 > Significa que un *mock* o *stub* no ejecuta el código real de la dependencia, sino lo que el programador le programó en `return_value`. Si el contrato real del colaborador cambia (por ejemplo, cambia el formato del JSON o lanza una excepción nueva), los tests unitarios con mocks seguirán pasando en verde validando una fantasía que ya no coincide con la realidad.
+

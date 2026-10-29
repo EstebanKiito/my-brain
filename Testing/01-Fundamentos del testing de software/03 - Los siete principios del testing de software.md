@@ -79,3 +79,4 @@ Encontrar y corregir hasta el último defecto técnico del código no sirve de n
 
 > [!question]- ¿Cómo se complementan el principio de «testing exhaustivo es imposible» y el principio de «agrupación de defectos» al planificar las pruebas de un sistema operativo?
 > Como es matemáticamente imposible probar todas las entradas posibles del sistema operativo (principio 2), estamos obligados a muestrear y priorizar. El principio de agrupación de defectos (principio 4) nos guía sobre *dónde* concentrar ese muestreo: en los componentes más complejos y riesgosos (como el planificador de procesos, drivers de red o manejo de memoria concurrente) en lugar de utilidades triviales.
+

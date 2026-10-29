@@ -78,3 +78,4 @@ Que una suite pase en verde no significa que sea una buena suite. Robert C. Mart
 > 1. **Fast:** la conexión por red a un servidor PostgreSQL introduce latencia de entrada/salida.
 > 2. **Independent:** al escribir en una base de datos compartida de producción, ensucia el estado para otras pruebas o ejecuciones concurrentes.
 > 3. **Repeatable:** el resultado depende de la hora del reloj del sistema (`tm_hour < 12`), por lo que el mismo código puede pasar a las 10:00 AM y fallar a las 3:00 PM.
+

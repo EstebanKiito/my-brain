@@ -19,3 +19,4 @@ Estados: 🟡 abierta · ✅ resuelta · ℹ️ informativa.
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
 | ℹ️ informativa | `03 - Transformadores de expresiones operadores llamadas y la trampa de RenameTransformer.md` | `17-EjerciciosI2.pdf` p. 13: *"Detecta si hay una suma de valores donde un operando es 0, reduce la expresión quitando la suma ya que es redudanten. Por ejemplo, x+2 , resulta en solo x."* | Errata tipográfica en el ejemplo final de la slide: donde dice `x+2 , resulta en solo x` quiso decir `x + 0 , resulta en solo x` (como indica la frase inmediatamente anterior sobre el operando `0`). Se corrige en la nota. |
+

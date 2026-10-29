@@ -119,3 +119,4 @@ class MutationFuzzer:
 
 > [!question]- ¿Por qué el método `fuzz()` de `MutationFuzzer` devuelve primero los elementos de `self.seed` sin mutar antes de empezar a llamar a `create_candidate()`?
 > Porque las semillas originales son entradas válidas conocidas que ya atraviesan el camino feliz del programa. Devolverlas intactas en las primeras llamadas garantiza que la suite cubra primero el comportamiento base válido antes de explorar variaciones deformadas alrededor de él.
+

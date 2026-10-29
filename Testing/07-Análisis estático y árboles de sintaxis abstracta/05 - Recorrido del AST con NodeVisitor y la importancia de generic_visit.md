@@ -114,3 +114,4 @@ A veces queremos controlar manualmente qué hijos visitar. Por ejemplo, en `Audi
 
 > [!question]- Si quieres escribir un visitante `NombresLeidos(ast.NodeVisitor)` que guarde en `self.nombres` únicamente las variables cuyo valor se lee en `resultado = precio * cantidad` (ignorando la variable asignada `resultado`), ¿qué condición debes verificar dentro de `visit_Name(self, node)`?
 > Debes verificar que el contexto del nodo sea de carga: `if isinstance(node.ctx, ast.Load): self.nombres.append(node.id)`. Así ignoras `resultado` (que tiene `ctx=ast.Store()`) y guardas `['precio', 'cantidad']`.
+

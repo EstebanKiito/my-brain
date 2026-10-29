@@ -108,3 +108,4 @@ El método `self.create(s)` parece diminuto, pero es la pieza arquitectónica m�
 
 > [!question]- ¿Qué devuelve `repr(tstr('hola', taint='HIGH')).taint` y por qué `__repr__` está diseñado de esa forma?
 > Devuelve `'HIGH'`, porque `tstr.__repr__` envuelve el resultado de `str.__repr__(self)` dentro de un nuevo `tstr(..., taint=self.taint)`. Está diseñado así para que el rastro de contaminación no se pierda cuando un programa formatea o serializa cadenas usando `repr(x)` o `f"{x!r}"`.
+

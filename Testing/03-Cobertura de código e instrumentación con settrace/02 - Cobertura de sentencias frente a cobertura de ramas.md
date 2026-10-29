@@ -105,3 +105,4 @@ Para alcanzar el $100\%$ en ambas métricas bastaría añadir dos entradas que a
 >     return nota
 > ```
 > El único caso `normalizar_nota(8.5)` ejecuta las $3$ sentencias ($100\%$ *Statement Coverage*), pero evalúa `nota > 7.0` únicamente como `True` ($1$ de $2$ ramas $= 50\%$ *Decision Coverage*).
+

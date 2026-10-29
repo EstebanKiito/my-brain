@@ -76,3 +76,4 @@ El `SimpleSymbolicFuzzer` del curso es rígido sintácticamente: se cae con `Z3E
 
 > [!question]- ¿Cómo se utiliza Z3 para comprobar automáticamente si una condición de camino escrita por un alumno o un LLM ($C_{\text{LLM}}$) es lógicamente equivalente a la condición de referencia ($C_{\text{ref}}$) aunque estén escritas con distinta sintaxis?
 > Se construye en Z3 la negación de la bicondicional entre ambas fórmulas: **`solver.add(z3.Not(C_LLM == C_ref))`** (es decir, se busca un contraejemplo que satisfaga una fórmula y viole la otra). Si `solver.check()` devuelve **`z3.unsat`**, no existe ningún contraejemplo posible y ambas condiciones son lógicamente equivalentes.
+

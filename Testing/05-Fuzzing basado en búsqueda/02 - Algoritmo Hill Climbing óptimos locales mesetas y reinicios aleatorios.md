@@ -101,3 +101,4 @@ Evaluemos ambas funciones en el punto actual `(50, 50)` y en sus $8$ vecinos inm
 
 > [!question]- En la función `fitness_a(x, y) = max(0, 100 - x) + max(0, 100 - y)`, ¿qué pequeño defecto de borde tiene respecto a la condición estricta `x > 100 and y > 100` (con enteros) y cómo se corrige con la constante $K = 1$?
 > En `(100, 100)`, `fitness_a(100, 100)` ya devuelve $0 + 0 = 0$, deteniendo el *hill climber*, pero `100 > 100` es `False` (se necesitaba al menos `(101, 101)`). Para una desigualdad estricta `x > 100` sobre enteros, debemos sumar la constante de penalización $K = 1$: `max(0, (100 - x) + 1) = max(0, 101 - x)`, que recién se hace $0$ cuando $x \ge 101$.
+

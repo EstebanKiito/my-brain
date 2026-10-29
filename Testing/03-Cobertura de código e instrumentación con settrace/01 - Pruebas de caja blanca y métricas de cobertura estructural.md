@@ -90,3 +90,4 @@ Observa la riqueza estructural de `cgi_decode`: tiene un ciclo `while`, tres cam
 
 > [!question]- ¿Cuál es la diferencia entre usar la cobertura como «detector de huecos» frente a usarla como «certificado de calidad»?
 > Como **detector de huecos**, una cobertura baja (o la lista de líneas no ejecutadas) es información valiosísima: nos garantiza con certeza qué partes del código jamás han sido probadas. En cambio, como **certificado de calidad** es engañosa: tener $100\%$ de cobertura solo significa que las líneas se ejecutaron, pero no garantiza que las aserciones hayan verificado que el resultado fuera correcto.
+

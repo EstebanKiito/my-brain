@@ -58,3 +58,4 @@ Al comparar mutantes generados por operadores mecánicos clásicos (`generar_cla
 
 > [!question]- En una evaluación comparativa sobre una batería con $100\%$ de cobertura, los $20$ mutantes propuestos por un LLM mueren todos ($\text{score} = 100\%$), pero los mutantes mecánicos clásicos dejan un $18\%$ de sobrevivientes no equivalentes ($\text{score} = 82\%$). ¿Significa esto que el LLM es mejor evaluador?
 > Al contrario: el objetivo de un generador de mutantes es poner en jaque a la batería de pruebas encontrando sus puntos ciegos (sobrevivientes no equivalentes). Que todos los mutantes del LLM mueran mientras varios mutantes clásicos de borde sobreviven demuestra que el LLM propuso mutaciones demasiado obvias o drásticas que las aserciones existentes atraparon fácilmente.
+

@@ -64,3 +64,4 @@ Frente a la generación masiva de código, el testing manual y artesanal ya no d
 
 > [!question]- ¿Cómo cambia la cadena causal $\text{Error} \to \text{Defecto} \to \text{Falla}$ cuando el código lo escribe un modelo de lenguaje en lugar de una persona?
 > El marco conceptual se mantiene intacto: aunque no haya habido un «error de razonamiento humano» explícito al teclear la línea (sino una predicción estadística defectuosa del modelo o una ambigüedad en el *prompt*), el **defecto** sigue quedando escrito estáticamente en el código fuente y seguirá provocando una **falla** observable cuando un usuario ejecute ese camino en producción.
+

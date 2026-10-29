@@ -120,3 +120,4 @@ class tstr(tstr):
 
 > [!question]- Explica qué es un «flujo de información implícito» (*implicit flow*) con un ejemplo breve en Python y por qué logra burlar el seguimiento dinámico de `tstr`.
 > Un flujo implícito ocurre cuando el valor de una variable contaminada determina el camino de control (`if`/`elif`) en lugar de fluir directamente como operando de una expresión, por ejemplo: `if pin_tainted == "1234": salida = "1234"`. Como a `salida` se le asigna un literal constante nuevo dentro del bloque `if` sin invocar métodos de `pin_tainted`, `salida` nace sin marca de `taint` aunque revela el valor del dato contaminado.
+

@@ -90,3 +90,4 @@ En total existen exactamente **$2 + 2 + 2 + 1 + 1 = \mathbf{8}\text{ pares de tr
 
 > [!question]- Al construir la tabla de transición de estados de un cajero automático (ATM), en la fila del estado `S6: Acceso a cuenta` aparecen signos de interrogación `?` bajo las columnas `PIN válido` y `PIN inválido`. ¿Qué representa ese `?` y por qué es valioso encontrarlo durante el diseño de pruebas?
 > Representa una **ambigüedad u omisión en la especificación**: los requerimientos definieron cómo pedir el PIN antes de entrar a la cuenta, pero nunca especificaron si la pantalla o el teclado numérico permite volver a enviar un evento de PIN una vez que el cliente ya está dentro de `S6`. Descubrirlo al armar la matriz Estado $\times$ Evento permite corregir el diseño o crear pruebas de seguridad específicas.
+

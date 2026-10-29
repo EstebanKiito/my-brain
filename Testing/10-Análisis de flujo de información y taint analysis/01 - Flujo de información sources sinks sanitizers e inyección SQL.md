@@ -80,3 +80,4 @@ def sink_ejecutar_sql(query):
 
 > [!question]- Además de detectar vulnerabilidades de seguridad (como SQLi o Command Injection), ¿qué utilidad tiene *Taint Analysis* dentro del *fuzzing* y la inferencia de gramáticas?
 > Permite saber **qué bytes o caracteres específicos de la entrada llegaron hasta qué comparación del parser**. Así, un *fuzzer* no muta la cadena a ciegas, sino que muta específicamente los caracteres cuya marca de *taint* alcanzó el condicional de la rama que se desea destrabar.
+

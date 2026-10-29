@@ -121,3 +121,4 @@ Supongamos que a partir de la traza de `triangle(1, 2, 3)` (donde `_.path` tiene
 
 > [!question]- ¿Cómo logra `ConcolicTracer` interceptar las comparaciones (`==`, `<`, `>`) dentro de una función normal de Python sin reescribir su AST?
 > Al invocar `_[funcion](arg1, arg2)`, `ConcolicTracer` envuelve cada argumento concreto (`int`, `str`, `bool`) en un objeto *proxy* subclase (`zint`, `zstr`, `zbool`) que sobrecarga los métodos mágicos de comparación (`__eq__`, `__lt__`, `__gt__`, etc.) y el método `__bool__`: cuando el `if` de Python consulta el valor de verdad de la comparación, el *proxy* devuelve el booleano concreto real y simultáneamente registra la fórmula simbólica Z3 en `self.path`.
+

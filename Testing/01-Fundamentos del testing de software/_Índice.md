@@ -16,3 +16,4 @@ Introducción conceptual al testing de software: por qué necesitamos convertir 
 2. [[02 - El proceso de testing niveles de prueba y psicología del tester]] — Las seis actividades del proceso ISTQB, niveles de prueba (unidad, integración, sistema, aceptación), pirámide de pruebas, costo exponencial de los defectos y sesgo de confirmación.
 3. [[03 - Los siete principios del testing de software]] — Presencia frente a ausencia de defectos, imposibilidad del testing exhaustivo ($5^{15}$ combinaciones), *shift-left*, agrupación de defectos (Pareto), paradoja del pesticida, dependencia del contexto y falacia de la ausencia de errores.
 4. [[04 - El testing en la era de la inteligencia artificial]] — Cambio de cuello de botella hacia la verificación, deuda de verificación (*verification debt*), errores correlacionados al generar código y tests con LLMs, y automatización de pruebas como freno de seguridad.
+
