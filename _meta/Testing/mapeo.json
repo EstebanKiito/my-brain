@@ -1,0 +1,322 @@
+{
+  "_descripcion": "Mapeo de las fuentes originales (rutas relativas a _raw/) a los temas del vault para Testing (IIC3745). Combina el export de Notion ('ramo', 'clases_i1', 'clases_i2', 'actividades') con los capítulos del libro de apuntes del profesor (C0-C14), las slides de clases (00-17, incluyendo 10_EjerciciosI1.pdf y 17-EjerciciosI2.pdf), los notebooks .ipynb de clases y décimas, las actividades semanales (Ac-1 a Ac-4) y los módulos Python de instrumentor/ y sampler/. Las notas se reescriben según _meta/ESTANDAR-NOTAS.md con nivel explicativo para un estudiante de 2° año de Ciencia de la Computación, por eso 'cobertura' es 'reescrita'.",
+  "carpeta_ramo": "Testing",
+  "cobertura": "reescrita",
+  "fuentes": {
+    "ramo": "Semestre 8/Testing 3b460dd6de8180a0b52afd74e3b2eb72.html",
+    "clases_i1": "Semestre 8/Testing/Clases 3b460dd6de8180199bb6f7125ad12be7.html",
+    "clases_i2": "Semestre 8/Testing/Clases I2 3e560dd6de818060a7f3fdc2c70260d5.html",
+    "actividades": "Semestre 8/Testing/Actividades 3bd60dd6de818058a0b0db36ae70dc7f.html"
+  },
+  "temas": {
+    "Fundamentos del testing de software": {
+      "carpeta": "Testing/01-Fundamentos del testing de software",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Clase 1",
+          "hasta": "Clase 2: Unit Testing"
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Testing/Syllabus/Apuntes/I1/C0-Prefacio.pdf",
+        "Semestre 8/Testing/Syllabus/Apuntes/I1/C1-Introduccion.pdf",
+        "Semestre 8/Testing/Syllabus/Clases-i1/01_ConceptosBasicos.pdf",
+        "Semestre 8/Testing/Syllabus/Clases-i1/10_EjerciciosI1.pdf"
+      ],
+      "notebooks": []
+    },
+    "Pruebas unitarias dobles de prueba y test smells": {
+      "carpeta": "Testing/02-Pruebas unitarias dobles de prueba y test smells",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Clase 2: Unit Testing",
+          "hasta": "Code Coverage"
+        },
+        {
+          "fuente": "actividades",
+          "desde": "Actividad 1",
+          "hasta": null
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Testing/Syllabus/Apuntes/I1/C2-UnitTesting.pdf",
+        "Semestre 8/Testing/Syllabus/Clases-i1/03_UnitTesting.pdf",
+        "Semestre 8/Testing/Syllabus/Actividades-decimas/D01_DecimaUnitTest.pdf",
+        "Semestre 8/Testing/Syllabus/Actividades-semanales/Ac-1/A1_2026_2_Testing.pdf",
+        "Semestre 8/Testing/Syllabus/Clases-i1/10_EjerciciosI1.pdf"
+      ],
+      "notebooks": [
+        "Semestre 8/Testing/Syllabus/Ejercicios_Clases_Jupyter/02-unit-testing.ipynb",
+        "Semestre 8/Testing/Syllabus/Actividades-decimas/D01_DecimaUnitTest-sol.ipynb",
+        "Semestre 8/Testing/Syllabus/Actividades-decimas/D01_DecimaUnitTest.ipynb",
+        "Semestre 8/Testing/Syllabus/Actividades-semanales/Ac-1/actividad1_repo_1/Actividad1.ipynb"
+      ]
+    },
+    "Cobertura de código e instrumentación con settrace": {
+      "carpeta": "Testing/03-Cobertura de código e instrumentación con settrace",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Code Coverage",
+          "hasta": "Clase 4"
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Testing/Syllabus/Apuntes/I1/C3-Coverage.pdf",
+        "Semestre 8/Testing/Syllabus/Clases-i1/04_Coverage.pdf",
+        "Semestre 8/Testing/Syllabus/Clases-i1/10_EjerciciosI1.pdf"
+      ],
+      "notebooks": [
+        "Semestre 8/Testing/Syllabus/Ejercicios_Clases_Jupyter/03-coverage.ipynb",
+        "Semestre 8/Testing/Syllabus/Actividades-decimas/D03_Coverage-sol.ipynb",
+        "Semestre 8/Testing/Syllabus/Actividades-decimas/D03_Coverage.ipynb"
+      ]
+    },
+    "Fuzzing aleatorio y fuzzing basado en mutación": {
+      "carpeta": "Testing/04-Fuzzing aleatorio y fuzzing basado en mutación",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Clase 4",
+          "hasta": "Clase 5"
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Testing/Syllabus/Apuntes/I1/C4-MutationBased-Fuzzing.pdf",
+        "Semestre 8/Testing/Syllabus/Clases-i1/05_RandomMutationFuzzing.pdf",
+        "Semestre 8/Testing/Syllabus/Clases-i1/10_EjerciciosI1.pdf",
+        "Semestre 8/Testing/Syllabus/Clases-i2/17-EjerciciosI2.pdf"
+      ],
+      "notebooks": [
+        "Semestre 8/Testing/Syllabus/Ejercicios_Clases_Jupyter/03.5-random-fuzzing.ipynb",
+        "Semestre 8/Testing/Syllabus/Ejercicios_Clases_Jupyter/04-mutation-fuzzing.ipynb",
+        "Semestre 8/Testing/Syllabus/Ejercicios_Clases_Jupyter/04.5-mutation-based-fuzzing.ipynb",
+        "Semestre 8/Testing/Syllabus/Actividades-decimas/D03-2-MutationBasedFuzzing.ipynb"
+      ]
+    },
+    "Fuzzing basado en búsqueda": {
+      "carpeta": "Testing/05-Fuzzing basado en búsqueda",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Clase 5",
+          "hasta": "Clase 6"
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Testing/Syllabus/Apuntes/I1/C5-SearchBased-Fuzzing.pdf",
+        "Semestre 8/Testing/Syllabus/Clases-i1/06_SearchBasedFuzzing.pdf",
+        "Semestre 8/Testing/Syllabus/Clases-i1/10_EjerciciosI1.pdf"
+      ],
+      "notebooks": [
+        "Semestre 8/Testing/Syllabus/Ejercicios_Clases_Jupyter/05-search-based-fuzzing.ipynb",
+        "Semestre 8/Testing/Syllabus/Ejercicios_Clases_Jupyter/05.5_searchbased_fuzzing.ipynb",
+        "Semestre 8/Testing/Syllabus/Actividades-decimas/D04_SearchFuzzing.ipynb"
+      ]
+    },
+    "Análisis de mutación y diseño de pruebas de caja negra": {
+      "carpeta": "Testing/06-Análisis de mutación y diseño de pruebas de caja negra",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Clase 6",
+          "hasta": null
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Testing/Syllabus/Apuntes/I1/C6-MutationAnalysis.pdf",
+        "Semestre 8/Testing/Syllabus/Apuntes/I1/C7-BlackBoxAnalysis.pdf",
+        "Semestre 8/Testing/Syllabus/Clases-i1/07_MutationAnalysis.pdf",
+        "Semestre 8/Testing/Syllabus/Clases-i1/08_EqPartitioningBAnalaysis.pdf",
+        "Semestre 8/Testing/Syllabus/Clases-i1/09_DecisionTransitioning.pdf",
+        "Semestre 8/Testing/Syllabus/Actividades-semanales/Ac-2/A2_2026_2_Testing.pdf",
+        "Semestre 8/Testing/Syllabus/Clases-i1/10_EjerciciosI1.pdf"
+      ],
+      "notebooks": [
+        "Semestre 8/Testing/Syllabus/Ejercicios_Clases_Jupyter/06-mutation-testing.ipynb",
+        "Semestre 8/Testing/Syllabus/Ejercicios_Clases_Jupyter/06.5_MutationAnalysis.ipynb",
+        "Semestre 8/Testing/Syllabus/Actividades-decimas/D05_MutationTesting.ipynb",
+        "Semestre 8/Testing/Syllabus/Actividades-decimas/D05_MutationTesting-unsolved.ipynb",
+        "Semestre 8/Testing/Syllabus/Actividades-decimas/D06_LLMutationDecima.ipynb",
+        "Semestre 8/Testing/Syllabus/Actividades-semanales/Ac-2/actividad2_repo/23662670.ipynb"
+      ]
+    },
+    "Análisis estático y árboles de sintaxis abstracta": {
+      "carpeta": "Testing/07-Análisis estático y árboles de sintaxis abstracta",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "clases_i2",
+          "desde": "Clase 11",
+          "hasta": "Clase 13"
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Testing/Syllabus/Clases-i2/preparacion I2/C8-AnalisisEstatico.pdf",
+        "Semestre 8/Testing/Syllabus/Clases-i2/11_MiniScheme.pdf",
+        "Semestre 8/Testing/Syllabus/Clases-i2/17-EjerciciosI2.pdf"
+      ],
+      "notebooks": [
+        "Semestre 8/Testing/Syllabus/Clases-i2/preparacion I2/09.5_MiniScheme.ipynb",
+        "Semestre 8/Testing/Syllabus/Ejercicios_Clases_Jupyter/09_5_MiniScheme.ipynb",
+        "Semestre 8/Testing/Syllabus/Clases-i2/preparacion I2/D10_MiniScheme.ipynb",
+        "Semestre 8/Testing/Syllabus/Actividades-decimas/10_2_PythonAST.ipynb",
+        "Semestre 8/Testing/Syllabus/Ejercicios_Clases_Jupyter/10.2-PythonAST.ipynb",
+        "Semestre 8/Testing/Syllabus/Clases-i2/preparacion I2/10.5_Python_AST.ipynb"
+      ]
+    },
+    "Reglas de código automáticas y linters": {
+      "carpeta": "Testing/08-Reglas de código automáticas y linters",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "clases_i2",
+          "desde": "Clase 13",
+          "hasta": "Pregunta de Prueba",
+          "por_texto": true
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Testing/Syllabus/Clases-i2/preparacion I2/C9-LinterRules.pdf",
+        "Semestre 8/Testing/Syllabus/Clases-i2/preparacion I2/C10-Transformation.pdf",
+        "Semestre 8/Testing/Syllabus/Clases-i2/17-EjerciciosI2.pdf"
+      ],
+      "notebooks": [
+        "Semestre 8/Testing/Syllabus/Clases-i2/preparacion I2/10.7-reglas-codigo.ipynb",
+        "Semestre 8/Testing/Syllabus/Clases-i2/preparacion I2/11_transformaciones_test_smells.ipynb",
+        "Semestre 8/Testing/Syllabus/Actividades-decimas/D01_DecimaUnitTest-sol.ipynb"
+      ]
+    },
+    "Transformaciones de código con AST": {
+      "carpeta": "Testing/09-Transformaciones de código con AST",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "clases_i2",
+          "desde": "Pregunta de Prueba",
+          "hasta": "Clase 14",
+          "por_texto": true
+        },
+        {
+          "fuente": "clases_i2",
+          "desde": "Transformadores",
+          "hasta": "Clase 15"
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Testing/Syllabus/Clases-i2/preparacion I2/C10-Transformation.pdf",
+        "Semestre 8/Testing/Syllabus/Actividades-semanales/Ac-3/A3_2026_2_Testing.pdf",
+        "Semestre 8/Testing/Syllabus/Clases-i2/17-EjerciciosI2.pdf"
+      ],
+      "notebooks": [
+        "Semestre 8/Testing/Syllabus/Clases-i2/Clase-13/11.5.TransformationsEjemplosBasicos.ipynb",
+        "Semestre 8/Testing/Syllabus/Clases-i2/Clase-13/11_5_TransformationsEjemplosBasicos.ipynb",
+        "Semestre 8/Testing/Syllabus/Clases-i2/preparacion I2/11_transformaciones_test_smells.ipynb",
+        "Semestre 8/Testing/Syllabus/Ejercicios_Clases_Jupyter/11_transformaciones_test_smells (1).ipynb",
+        "Semestre 8/Testing/Syllabus/Actividades-semanales/Ac-3/Entrega/23662670.ipynb"
+      ]
+    },
+    "Análisis de flujo de información y taint analysis": {
+      "carpeta": "Testing/10-Análisis de flujo de información y taint analysis",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "clases_i2",
+          "desde": "Clase 14",
+          "hasta": "Transformadores"
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Testing/Syllabus/Clases-i2/preparacion I2/C11-TainConcolicSymbolic.pdf",
+        "Semestre 8/Testing/Syllabus/Clases-i2/17-EjerciciosI2.pdf"
+      ],
+      "notebooks": [
+        "Semestre 8/Testing/Syllabus/Clases-i2/Clase-13/12.2.DB_Example.ipynb",
+        "Semestre 8/Testing/Syllabus/Clases-i2/Clase-13/12_2_DB_Example.ipynb",
+        "Semestre 8/Testing/Syllabus/Clases-i2/Clase-13/12.taintAnalysis.ipynb",
+        "Semestre 8/Testing/Syllabus/Clases-i2/Clase-13/12_taintAnalysis.ipynb"
+      ]
+    },
+    "Ejecución simbólica y fuzzing concólico": {
+      "carpeta": "Testing/11-Ejecución simbólica y fuzzing concólico",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "clases_i2",
+          "desde": "Clase 15",
+          "hasta": null
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Testing/Syllabus/Clases-i2/preparacion I2/C11-TainConcolicSymbolic.pdf",
+        "Semestre 8/Testing/Syllabus/Actividades-semanales/Ac-4/A4_2026_2_Testing.pdf",
+        "Semestre 8/Testing/Syllabus/Clases-i2/17-EjerciciosI2.pdf"
+      ],
+      "notebooks": [
+        "Semestre 8/Testing/Syllabus/Clases-i2/Clase-15/13.5.SymbolicFuzzing.ipynb",
+        "Semestre 8/Testing/Syllabus/Clases-i2/Clase-15/13.7.Manual_SymbolicFuzzing.ipynb",
+        "Semestre 8/Testing/Syllabus/Clases-i2/Clase-15/Z3_Decima-lista.ipynb",
+        "Semestre 8/Testing/Syllabus/Clases-i2/Clase-15/Z3_Decima.ipynb",
+        "Semestre 8/Testing/Syllabus/Clases-i2/preparacion I2/14.ConcolicFuzzing.ipynb",
+        "Semestre 8/Testing/Syllabus/Clases-i2/preparacion I2/14.5.EjemploClase.ipynb",
+        "Semestre 8/Testing/Syllabus/Clases-i2/preparacion I2/14.7.ConcolicDecima.ipynb",
+        "Semestre 8/Testing/Syllabus/Actividades-semanales/Ac-4/actividad4_symbolic/23662670.ipynb"
+      ]
+    },
+    "Análisis dinámico y perfilado de ejecución": {
+      "carpeta": "Testing/12-Análisis dinámico y perfilado de ejecución",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 8/Testing/Syllabus/Clases-i2/preparacion I2/C14_InstrumentationProfilingExecutionSampling.pdf",
+        "Semestre 8/Testing/Syllabus/Clases-i2/preparacion I2/12-InstrumentationProfiling.pdf",
+        "Semestre 8/Testing/Syllabus/Clases-i2/preparacion I2/13-ExecutionSampling.pdf",
+        "Semestre 8/Testing/Syllabus/Clases-i2/17-EjerciciosI2.pdf"
+      ],
+      "notebooks": []
+    },
+    "Gestión del curso": {
+      "carpeta": "Testing/13-Gestión del curso",
+      "estado": "pendiente",
+      "secciones": [
+        {
+          "fuente": "ramo",
+          "desde": "Clases",
+          "hasta": null
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Testing/Syllabus/Actividades-semanales/Ac-3/IIC3745_202602_Programa.pdf",
+        "Semestre 8/Testing/Syllabus/Clases-i1/00_Presentacion.pdf",
+        "Semestre 8/Testing/Syllabus/Clases-i1/10_EjerciciosI1.pdf",
+        "Semestre 8/Testing/Syllabus/Clases-i2/17-EjerciciosI2.pdf"
+      ],
+      "notebooks": []
+    }
+  },
+  "aceptados": [
+    {
+      "fuente": "clases_i1",
+      "texto": "[Copiar]",
+      "motivo": "Recordatorio personal de completar los apuntes; el contenido se tomó de los capítulos del libro del profesor, slides y notebooks."
+    },
+    {
+      "fuente": "clases_i1",
+      "texto": "[COPIAR LA MATERIA DE LOS VIDEOS]",
+      "motivo": "Recordatorio personal; la materia de fuzzing se tomó de C4-MutationBased-Fuzzing.pdf, 05_RandomMutationFuzzing.pdf y los notebooks 03.5 y 04.5."
+    },
+    {
+      "fuente": "clases_i1",
+      "texto": "[Copiar lo que dijo el profe]",
+      "motivo": "Recordatorio personal en Clase 7; el contenido se tomó de C6-MutationAnalysis.pdf y 07_MutationAnalysis.pdf."
+    }
+  ]
+}
