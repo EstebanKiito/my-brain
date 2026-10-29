@@ -79,7 +79,7 @@
     },
     "Fuzzing aleatorio y fuzzing basado en mutación": {
       "carpeta": "Testing/04-Fuzzing aleatorio y fuzzing basado en mutación",
-      "estado": "pendiente",
+      "estado": "migrado",
       "secciones": [
         {
           "fuente": "clases_i1",
