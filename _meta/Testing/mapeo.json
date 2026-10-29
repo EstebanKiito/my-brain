@@ -123,7 +123,7 @@
     },
     "Análisis de mutación y diseño de pruebas de caja negra": {
       "carpeta": "Testing/06-Análisis de mutación y diseño de pruebas de caja negra",
-      "estado": "pendiente",
+      "estado": "migrado",
       "secciones": [
         {
           "fuente": "clases_i1",

@@ -82,5 +82,12 @@
     "original": "Semestre 8/Testing/Clases/image 11.png",
     "destino": "Testing/03-Cobertura de código e instrumentación con settrace/adjuntos/Diferencia contra la cobertura máxima en cgi_decode.png",
     "sha256": "a2a80135ea7b4caf1ccdcf1a062f7f1ded3cce3222b37e1b0da9e3370d39a2eb"
+  },
+  {
+    "tema": "Análisis de mutación y diseño de pruebas de caja negra",
+    "tipo": "convertida",
+    "original": "Semestre 8/Testing/Clases/IMG_7696.heic",
+    "destino": "Testing/06-Análisis de mutación y diseño de pruebas de caja negra/adjuntos/Pizarra de mutation testing en clase.png",
+    "sha256": "af73eb7b46ed580587b9056348e63d837422df86ac73b7b5b0b966480ba81c82"
   }
 ]
