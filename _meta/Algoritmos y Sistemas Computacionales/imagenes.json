@@ -1,0 +1,107 @@
+[
+  {
+    "tema": "Introducción a los sistemas computacionales",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase01.pdf#page=15",
+    "destino": "Algoritmos y Sistemas Computacionales/01-Introducción a los sistemas computacionales/adjuntos/Programa en caracteres.png",
+    "sha256": "6d49b91031e9fc615da99caaeddbd3d156a6e7540434474335459c9f037e87e0"
+  },
+  {
+    "tema": "Introducción a los sistemas computacionales",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase01.pdf#page=17",
+    "destino": "Algoritmos y Sistemas Computacionales/01-Introducción a los sistemas computacionales/adjuntos/Arquitectura de un computador.png",
+    "sha256": "80691b013a1d7c488949d6bc37fb9f6ac9d6a676bd5b9b9b66f93727c20accdf"
+  },
+  {
+    "tema": "Codificación de caracteres",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Extra/Tabla-ASCII.jpg",
+    "destino": "Algoritmos y Sistemas Computacionales/04-Codificación de caracteres/adjuntos/Tabla ASCII.png",
+    "sha256": "6810bfdda50185966c2ec549359e763cbd59cdbde37116255e08dfc98e13e8d8"
+  },
+  {
+    "tema": "Compuertas lógicas y lógica proposicional",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase07.pdf#page=13",
+    "destino": "Algoritmos y Sistemas Computacionales/05-Compuertas lógicas y lógica proposicional/adjuntos/Símbolos de compuertas lógicas.png",
+    "sha256": "ec651d7cda3ac33b7122b19d1f6c76932492853407bdad904f92527c3ea27c76"
+  },
+  {
+    "tema": "Circuitos sumadores",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase08.pdf#page=28",
+    "destino": "Algoritmos y Sistemas Computacionales/06-Circuitos sumadores/adjuntos/Restador de 4 bits.png",
+    "sha256": "20fba9ec2373072981bfcd9840b06d0593155ce79f2472e98640de327b555784"
+  },
+  {
+    "tema": "Multiplexores y demultiplexores",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase12.pdf#page=13",
+    "destino": "Algoritmos y Sistemas Computacionales/07-Multiplexores y demultiplexores/adjuntos/Multiplexor de 2 entradas.png",
+    "sha256": "9df276d2ed438b22cc839b49acf70df9617b88889772dd7a89d27e7a07ffd341"
+  },
+  {
+    "tema": "Multiplexores y demultiplexores",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase12.pdf#page=20",
+    "destino": "Algoritmos y Sistemas Computacionales/07-Multiplexores y demultiplexores/adjuntos/Demultiplexor 1 a 4.png",
+    "sha256": "620241ac363342870d38cc0bf8fea0d4472229eff0771f6ecb0cb40232f294f1"
+  },
+  {
+    "tema": "Programabilidad de circuitos digitales",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase15.pdf#page=10",
+    "destino": "Algoritmos y Sistemas Computacionales/08-Programabilidad de circuitos digitales/adjuntos/Calculadora de 4 bits.png",
+    "sha256": "d0775f4a84d0e6ea31b048c147ee9bda3df00ef4f67281208feb1a8e2aebcffc"
+  },
+  {
+    "tema": "Programabilidad de circuitos digitales",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase15.pdf#page=14",
+    "destino": "Algoritmos y Sistemas Computacionales/08-Programabilidad de circuitos digitales/adjuntos/Memoria de instrucciones.png",
+    "sha256": "ff77dc4ce35b62cd2be5b40c90f45ca12d080243d00e8fff09071ebf13e4ede7"
+  },
+  {
+    "tema": "Programabilidad de circuitos digitales",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase17.pdf#page=9",
+    "destino": "Algoritmos y Sistemas Computacionales/08-Programabilidad de circuitos digitales/adjuntos/Computador básico.png",
+    "sha256": "271bcc63ccc79856d9cc3d33687b6fa1a45ec62efe806de3ca12aa7621dcfabb"
+  },
+  {
+    "tema": "Sistemas operativos",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase18.pdf#page=22",
+    "destino": "Algoritmos y Sistemas Computacionales/09-Sistemas operativos/adjuntos/Llamada al sistema.png",
+    "sha256": "45e4b640ff31536c972a01e2beaa4518b882d2794db873abebf7e8821bfdc0dd"
+  },
+  {
+    "tema": "Sistemas operativos",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase18.pdf#page=23",
+    "destino": "Algoritmos y Sistemas Computacionales/09-Sistemas operativos/adjuntos/Diseño de la memoria de un proceso.png",
+    "sha256": "5d6ce1e1a3ee3c56af3051c9695991180f606ff1023e52291c6424e45088202b"
+  },
+  {
+    "tema": "Sistemas operativos",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase18.pdf#page=28",
+    "destino": "Algoritmos y Sistemas Computacionales/09-Sistemas operativos/adjuntos/Paginación.png",
+    "sha256": "c2c235114e883a97baf00a59bb21654618967d1c18f66f1abbe5f081cee5d998"
+  },
+  {
+    "tema": "Complejidad algorítmica",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase23.pdf#page=24",
+    "destino": "Algoritmos y Sistemas Computacionales/10-Complejidad algorítmica/adjuntos/Crecimiento de las funciones.png",
+    "sha256": "bd6e96fd3f53589391c92f3a7c45eada1c26734c63c981b98605d5b2a7be77bb"
+  },
+  {
+    "tema": "Grafos",
+    "tipo": "clase",
+    "original": "Semestre 1/ALGORITMOS/2026-1/Clases/clase27.pdf#page=22",
+    "destino": "Algoritmos y Sistemas Computacionales/11-Grafos/adjuntos/Grafo de ejemplo para BFS.png",
+    "sha256": "d91639b07b43503abce20aef953c66d2d318ce9d5d6eed15a76aa52c87ea25d7"
+  }
+]

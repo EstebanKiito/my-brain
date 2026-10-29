@@ -1,0 +1,63 @@
+# Progreso de la migración — Algoritmos y Sistemas Computacionales (IIC1001)
+
+Rama: `migrar/algoritmos-sistemas-computacionales`. Un commit por tema. Antes de cada commit se corre `python3 _meta/verificar.py --ramo "Algoritmos y Sistemas Computacionales" --tema "<Tema>"` revisando el código de salida, y también se verifican los demás ramos porque el grafo es del vault completo. Pausas de revisión: después del tema 2 (piloto), del tema 6 y al cierre.
+
+| # | Tema | Carpeta | Estado | Notas | Imágenes |
+|---|---|---|---|---|---|
+| 0 | Infraestructura (`_meta/Algoritmos y Sistemas Computacionales/`) | `_meta/` | ✅ hecho | – | – |
+| 1 | Introducción a los sistemas computacionales | `01-Introducción a los sistemas computacionales/` | ✅ hecho | 3 + índice | 2 |
+| 2 | Representación numérica | `02-Representación numérica/` | ✅ hecho | 4 + índice | 0 |
+| 3 | Operaciones binarias y complemento a dos | `03-Operaciones binarias y complemento a dos/` | ✅ hecho | 4 + índice | 0 |
+| 4 | Codificación de caracteres | `04-Codificación de caracteres/` | ✅ hecho | 2 + índice | 1 |
+| 5 | Compuertas lógicas y lógica proposicional | `05-Compuertas lógicas y lógica proposicional/` | ✅ hecho | 4 + índice | 1 |
+| 6 | Circuitos sumadores | `06-Circuitos sumadores/` | ✅ hecho | 3 + índice | 1 |
+| 7 | Multiplexores y demultiplexores | `07-Multiplexores y demultiplexores/` | ✅ hecho | 3 + índice | 2 |
+| 8 | Programabilidad de circuitos digitales | `08-Programabilidad de circuitos digitales/` | ✅ hecho | 5 + índice | 3 |
+| 9 | Sistemas operativos | `09-Sistemas operativos/` | ✅ hecho | 5 + índice | 3 |
+| 10 | Complejidad algorítmica | `10-Complejidad algorítmica/` | ✅ hecho | 3 + índice | 1 |
+| 11 | Grafos | `11-Grafos/` | ✅ hecho | 4 + índice | 1 |
+| 12 | Gestión del curso | `12-Gestión del curso/` | ✅ hecho | 2 + índice | 0 |
+
+## Convenciones
+- Notas según [`_meta/ESTANDAR-NOTAS.md`](../ESTANDAR-NOTAS.md), con detalle medio-alto y lenguaje para primer año: cada concepto parte de un problema concreto, sin tecnicismo elevado.
+- No hay export de Notion ni apuntes propios. Fuentes: PDF de clase (`Clases/`), pruebas y actividades con sus soluciones (`Pruebas/`, `Actividades/`) y ayudantía (`Extra/`).
+- Los contenidos de los PDF se reescriben dentro de las notas; los PDF y las slides no se suben al repo. Solo las figuras útiles van como PNG en `adjuntos/`, registradas con `tipo: "clase"`.
+- Solape con otros ramos: se escribe la versión de primer año y se enlaza la nota avanzada en vez de duplicar. Sistemas operativos → `Sistemas Operativos y Redes`; complejidad → `Estructuras de Datos/01-Análisis de algoritmos`; grafos → `Estructuras de Datos/15-Grafos y DFS` y `17-Caminos más cortos`; algoritmo → `Introducción a la Programación/01-Algoritmos y pensamiento computacional`.
+
+## Pendientes por falta de material
+El curso original tiene clases que no vienen en el export de PDFs (faltan las clases 10, 11, 13, 19, 20, 21, 22, 24, 25 y 26). Por eso **no se migran** los siguientes temas del programa, y quedan registrados aquí y en `DUDAS.md`:
+- Funcionamiento de Internet.
+- Herramientas computacionales: GitHub y LaTeX.
+- Estructuras secuenciales.
+- Algoritmos de ordenamiento (la clase 23 anuncia "Martes 9-junio: algoritmos de ordenamiento", pero el PDF no está).
+- Árboles (el programa menciona "grafos y árboles"; solo hay PDF de grafos).
+
+Si más adelante aparecen esos PDFs, se agregan al `mapeo.json` y se migran como temas nuevos.
+
+## Registro
+- **2026-10-28 · Infraestructura.** Se crea la rama `migrar/algoritmos-sistemas-computacionales` y `_meta/Algoritmos y Sistemas Computacionales/` (`mapeo.json` con 12 temas y `pdfs` informativos, `imagenes.json` vacío, `PROGRESS.md` y `DUDAS.md`). Se verifican los 21 PDF de clase, las 5 actividades con solución, las 2 pruebas con solución y la ayudantía. Temario aprobado por el usuario. Sin dudas.
+- **2026-10-28 · Introducción a los sistemas computacionales.** Fuentes: clase01 (algoritmo Stock Span, programa en C, representaciones en bits y caracteres, compilación y arquitectura). Se omitieron la presentación del profesor, los contactos de ayudantes y los datos personales. Se escribieron 3 notas: qué es un programa (con la descomposición en caracteres ASCII), el proceso de compilación (preprocesador, compilador, assembler y linker) y la arquitectura (CPU, memoria, buses e I/O). 2 figuras de clase. Sin dudas.
+- **2026-10-28 · Representación numérica.** Fuentes: clases 02, 03 y 04 (bits, sistemas posicionales, binario↔decimal, hexadecimal), más la tabla de conversiones de la actividad 1 y la ayudantía 1. La clase 03 repite el contenido de la 02; los ejemplos nuevos son los de la 04 (hexadecimal). Se escribieron 4 notas: bits y sistemas posicionales, binario→decimal, decimal→binario (divisiones sucesivas) y hexadecimal. Sin imágenes: el contenido es texto y tablas. Sin dudas.
+- **2026-10-28 · Operaciones binarias y complemento a dos.** Fuentes: clase05 (suma binaria, acarreo, signo y magnitud, complemento de uno y dos), clase06 (repaso de complemento a dos y rango) y la actividad 2 (negativos y restas en 8 bits). Se escribieron 4 notas: suma binaria, representación de negativos, complemento a dos (con el caso límite de $-128$) y resta como suma del negativo (con acarreo y desbordamiento). Sin imágenes. Sin dudas.
+- **2026-10-28 · Codificación de caracteres.** Fuentes: clase06 (ASCII, limitaciones y UTF-8) y la tabla ASCII de `Extra/`. Se escribieron 2 notas: ASCII (tabla de códigos, conversión y decodificación) y UTF-8 (largo variable, bytes de continuación y comparación con ASCII). 1 imagen (tabla ASCII). Sin dudas.
+- **2026-10-28 · Compuertas lógicas y lógica proposicional.** Fuentes: clases 07, 08 y 09 (transistores, Boole y Shannon, compuertas NOT/AND/OR/XOR, circuitos, tablas de verdad y álgebra booleana). Las clases 07 y 08 repiten el mismo contenido; la 09 agrega la parte de lógica proposicional y simplificación. Se escribieron 4 notas: del transistor a las compuertas, las cuatro compuertas, circuitos y tablas de verdad, y álgebra booleana. 1 figura compuesta con los símbolos de las cuatro compuertas (páginas 13-16 de la clase 07). Sin dudas.
+- **2026-10-28 · Circuitos sumadores.** Fuentes: clases 07 y 08 (medio sumador, sumador completo, sumador de 4 bits, restador, buses, enabler y comparadores), más la ayudantía 1 y la interrogación 1 (sumador de 4 bits). Se corrigió sin comentar la expresión del acarreo del sumador completo (el material usa $\land$ donde corresponde $\lor$). Se escribieron 3 notas: medio sumador y sumador completo, sumador de varios bits y restador, y comparadores y enabler. 1 figura del restador de 4 bits. Sin dudas.
+- **2026-10-28 · Multiplexores y demultiplexores.** Fuentes: clase12 (enabler, MUX, DEMUX y unidad de selección), más la actividad 4 (preguntas conceptuales y simulación de MUX/DEMUX) y la interrogación 2 (MUX de 6 entradas, DEMUX de 7 salidas y ALU). Se escribieron 3 notas: multiplexor, demultiplexor y unidad de selección/ALU. 2 figuras (MUX de 2 entradas y DEMUX de 1 a 4). Sin dudas.
+- **2026-10-28 · Programabilidad de circuitos digitales.** Fuentes: clases 14, 15, 16 y 17 (calculadora con registros, señales de carga, memoria de instrucciones, PC, clock, literales, OPCODE, unidad de control y computador básico), más la actividad 5 (ALU con registros y señales de carga) y la interrogación 2 (ejecución de instrucciones y OPCODE nuevo). Se escribieron 5 notas: calculadora con registros, memoria de instrucciones y PC, clock, literales/OPCODE/unidad de control, y el computador básico con su set de 28 instrucciones. 3 figuras. Sin dudas.
+- **2026-10-28 · Sistemas operativos.** Fuentes: clase18 (qué es un SO, llamadas al sistema, procesos, scheduling, memoria y paginación, memoria virtual, archivos, directorios, sistemas de archivos y asignación de bloques) y la interrogación 2 (roles del SO, GHz y núcleos, syscalls). Se escribieron 5 notas: qué es un SO, procesos y planificación, memoria y paginación, archivos y directorios, y asignación de bloques. 3 figuras. Se enlaza a Sistemas Operativos y Redes para profundizar. Sin dudas.
+- **2026-10-28 · Complejidad algorítmica.** Fuentes: clase23 (conteo de operaciones, ejemplos de ciclos, notación asintótica, gráfico de $20n+1000$ frente a $n^2$ y tabla de crecimiento). Se escribieron 3 notas: contar operaciones, crecimiento/notación asintótica y búsqueda lineal frente a binaria (con código Python). 1 figura. Se enlaza a Estructuras de Datos para la definición formal. Sin dudas.
+- **2026-10-28 · Grafos.** Fuentes: clase27 (motivación, definición, tipos, representación, BFS, DFS, componentes conexas, ciclos y Dijkstra). Se escribieron 4 notas: qué es un grafo, representación, recorridos BFS/DFS y camino más corto con Dijkstra. 1 figura (grafo de ejemplo para BFS); el grafo de Dijkstra se dibujó con Mermaid. Se enlaza a Estructuras de Datos para profundizar. Sin dudas.
+- **2026-10-28 · Gestión del curso.** Fuentes: presentación del curso (temas, fechas y actividades), reglas de las interrogaciones I1/I2, actividades AC1-AC5 y ayudantía 1. Se escribieron 2 notas: organización y evaluaciones, y materia por evaluación con una ruta de estudio. Se omitieron correos y datos personales. Sin imágenes. Sin dudas.
+- **2026-10-28 · Cierre del ramo.** 12 temas, 42 notas más 12 índices de tema y el mapa del ramo; 15 imágenes. Todos los PDF de clase disponibles (21), las 5 actividades con solución, las 2 pruebas con solución y la ayudantía están asignados a un tema. Los temas sin PDF (Internet, GitHub/LaTeX, estructuras secuenciales, ordenamiento y árboles) quedan registrados como pendientes por falta de material. `verificar.py` termina con 0 errores y 0 advertencias. Sin dudas abiertas.
+
+
+
+
+
+
+
+
+
+
+
+
