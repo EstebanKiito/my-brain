@@ -151,7 +151,7 @@
     },
     "Análisis estático y árboles de sintaxis abstracta": {
       "carpeta": "Testing/07-Análisis estático y árboles de sintaxis abstracta",
-      "estado": "pendiente",
+      "estado": "migrado",
       "secciones": [
         {
           "fuente": "clases_i2",

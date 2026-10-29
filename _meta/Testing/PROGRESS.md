@@ -11,7 +11,7 @@ Rama: `migrar/testing`. Un commit por tema. Antes de cada commit se corre `pytho
 | 4 | Fuzzing aleatorio y fuzzing basado en mutación | `04-Fuzzing aleatorio y fuzzing basado en mutación/` | ✅ hecho | 3 + `_Índice` | 0 + 0 |
 | 5 | Fuzzing basado en búsqueda | `05-Fuzzing basado en búsqueda/` | ✅ hecho | 3 + `_Índice` | 0 + 0 |
 | 6 | Análisis de mutación y diseño de pruebas de caja negra | `06-Análisis de mutación y diseño de pruebas de caja negra/` | ✅ hecho | 5 + `_Índice` | 1 + 0 |
-| 7 | Análisis estático y árboles de sintaxis abstracta | `07-Análisis estático y árboles de sintaxis abstracta/` | ⏳ pendiente | – | – |
+| 7 | Análisis estático y árboles de sintaxis abstracta | `07-Análisis estático y árboles de sintaxis abstracta/` | ✅ hecho | 5 + `_Índice` | 5 + 0 |
 | 8 | Reglas de código automáticas y linters | `08-Reglas de código automáticas y linters/` | ⏳ pendiente | – | – |
 | 9 | Transformaciones de código con AST | `09-Transformaciones de código con AST/` | ⏳ pendiente | – | – |
 | 10 | Análisis de flujo de información y taint analysis | `10-Análisis de flujo de información y taint analysis/` | ⏳ pendiente | – | – |

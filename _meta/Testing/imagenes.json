@@ -89,5 +89,40 @@
     "original": "Semestre 8/Testing/Clases/IMG_7696.heic",
     "destino": "Testing/06-Análisis de mutación y diseño de pruebas de caja negra/adjuntos/Pizarra de mutation testing en clase.png",
     "sha256": "af73eb7b46ed580587b9056348e63d837422df86ac73b7b5b0b966480ba81c82"
+  },
+  {
+    "tema": "Análisis estático y árboles de sintaxis abstracta",
+    "tipo": "convertida",
+    "original": "Semestre 8/Testing/Clases I2/IMG_7992.heic",
+    "destino": "Testing/07-Análisis estático y árboles de sintaxis abstracta/adjuntos/Esquema de parser y arbol recursivo en MiniScheme.png",
+    "sha256": "e58e9ba12d082385a2c30a406ec33712253cc8a6d4523844ad5d192ccbef1af9"
+  },
+  {
+    "tema": "Análisis estático y árboles de sintaxis abstracta",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Testing/Clases I2/image.png",
+    "destino": "Testing/07-Análisis estático y árboles de sintaxis abstracta/adjuntos/Implementacion de AdditionCounterVisitor en MiniScheme.png",
+    "sha256": "ea5d22b72326aafc58ae67a288c3950060a7892209037128acefa1d41b7fc03b"
+  },
+  {
+    "tema": "Análisis estático y árboles de sintaxis abstracta",
+    "tipo": "convertida",
+    "original": "Semestre 8/Testing/Clases I2/IMG_7993.heic",
+    "destino": "Testing/07-Análisis estático y árboles de sintaxis abstracta/adjuntos/Recorrido de accept y visitor en MiniScheme.png",
+    "sha256": "5302148e923c879a939d1ac4f8c1558a46fb0f47b5f54da2591ce5a9de314737"
+  },
+  {
+    "tema": "Análisis estático y árboles de sintaxis abstracta",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Testing/Clases I2/image 1.png",
+    "destino": "Testing/07-Análisis estático y árboles de sintaxis abstracta/adjuntos/DemoVisitor sin generic_visit en llamadas anidadas.png",
+    "sha256": "8d0f30920e0cb3d4fecd47f231c1d590002ca7358781d28ab12a0e57045801aa"
+  },
+  {
+    "tema": "Análisis estático y árboles de sintaxis abstracta",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Testing/Clases I2/image 2.png",
+    "destino": "Testing/07-Análisis estático y árboles de sintaxis abstracta/adjuntos/DemoVisitor con generic_visit contando tres llamadas.png",
+    "sha256": "050d22cbbabe2ab2c7ab47cc6c7e0ad5d40ca98a1f3d4c405df75a6c67838f9b"
   }
 ]

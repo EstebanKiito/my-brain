@@ -17,3 +17,4 @@ Curso de pruebas de software, verificación automatizada y análisis de programa
 4. [[04-Fuzzing aleatorio y fuzzing basado en mutación/_Índice|Fuzzing aleatorio y fuzzing basado en mutación]]
 5. [[05-Fuzzing basado en búsqueda/_Índice|Fuzzing basado en búsqueda]]
 6. [[06-Análisis de mutación y diseño de pruebas de caja negra/_Índice|Análisis de mutación y diseño de pruebas de caja negra]]
+7. [[07-Análisis estático y árboles de sintaxis abstracta/_Índice|Análisis estático y árboles de sintaxis abstracta]]
