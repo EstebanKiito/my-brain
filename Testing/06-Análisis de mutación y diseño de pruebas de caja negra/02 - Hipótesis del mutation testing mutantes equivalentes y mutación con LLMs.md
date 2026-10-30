@@ -48,6 +48,52 @@ Al comparar mutantes generados por operadores mecánicos clásicos (`generar_cla
 
 ---
 
+---
+
+## Ejemplo práctico: sembrar mutantes sobre `precio_final`
+
+Programa original y una suite con tres tests:
+
+```python
+def precio_final(total, cliente_vip):
+    if total < 0:
+        total = 0
+    tasa = 0.10 if cliente_vip else 0.0
+    return total * (1 - tasa)
+```
+
+```python
+import unittest
+
+class PrecioFinalTest(unittest.TestCase):
+    def test_vip(self):
+        self.assertEqual(precio_final(1000, True), 900.0)
+
+    def test_cliente_normal(self):
+        self.assertEqual(precio_final(1000, False), 1000.0)
+
+    def test_total_negativo_se_trunca(self):
+        self.assertEqual(precio_final(-5, False), 0)
+```
+
+Generamos cuatro mutantes de primer orden (un solo cambio cada uno) y corremos la suite contra cada uno:
+
+| Mutante | Cambio | ¿Qué test lo mata? | Estado |
+| :--- | :--- | :--- | :---: |
+| **M1** | `total < 0` → `total <= 0` | Ninguno: si `total == 0`, reasignar `0` no cambia nada | **Equivalente** (sobrevive) |
+| **M2** | `0.10` → `0.20` | `test_vip` (devuelve $800$) | Muerto |
+| **M3** | `1 - tasa` → `1 + tasa` | `test_vip` (devuelve $1100$) | Muerto |
+| **M4** | se elimina el bloque `if total < 0` | `test_total_negativo_se_trunca` (devuelve $-5$) | Muerto |
+
+Cálculo del *mutation score*:
+
+* **Sin ajustar:** $\dfrac{3\text{ muertos}}{4\text{ mutantes}} = 75\%$.
+* **Ajustado** (descontando el equivalente M1 del denominador): $\dfrac{3}{4-1} = 100\%$.
+
+La suite es perfecta aunque el score sin ajustar diga $75\%$. Mira qué pasa si borramos `test_total_negativo_se_trunca`: **M4 sobrevive**, el score ajustado baja a $\frac{2}{3} = 67\%$ y la herramienta nos está diciendo exactamente qué test falta. Esa es la utilidad de la técnica: cada sobreviviente no equivalente es un test pendiente.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- Un compañero corre una herramienta de *Mutation Testing*, obtiene un *Mutation Score* sin ajustar del $85\%$ y afirma: «Mis pruebas dejan pasar el $15\%$ de los bugs». ¿Por qué su conclusión puede ser equivocada?
@@ -59,3 +105,8 @@ Al comparar mutantes generados por operadores mecánicos clásicos (`generar_cla
 > [!question]- En una evaluación comparativa sobre una batería con $100\%$ de cobertura, los $20$ mutantes propuestos por un LLM mueren todos ($\text{score} = 100\%$), pero los mutantes mecánicos clásicos dejan un $18\%$ de sobrevivientes no equivalentes ($\text{score} = 82\%$). ¿Significa esto que el LLM es mejor evaluador?
 > Al contrario: el objetivo de un generador de mutantes es poner en jaque a la batería de pruebas encontrando sus puntos ciegos (sobrevivientes no equivalentes). Que todos los mutantes del LLM mueran mientras varios mutantes clásicos de borde sobreviven demuestra que el LLM propuso mutaciones demasiado obvias o drásticas que las aserciones existentes atraparon fácilmente.
 
+> [!question]- Dado `def es_mayor(a, b): return a > b`, el mutante cambia `>` por `>=`. ¿Qué test lo mata y cuándo sería equivalente?
+> Lo mata cualquier test con `a == b`, por ejemplo `assertFalse(es_mayor(3, 3))` (el original da `False` y el mutante da `True`). Sería equivalente solo si el programa garantizara que `a` y `b` nunca pueden ser iguales, porque entonces ninguna entrada válida distinguiría ambas versiones.
+
+> [!question]- Una suite mata $9$ de $12$ mutantes y, tras inspección manual, $2$ de los $3$ sobrevivientes son equivalentes. ¿Cuál es el score sin ajustar y el ajustado? ¿Qué debes hacer con el sobreviviente restante?
+> Sin ajustar: $9/12 = 75\%$. Ajustado: $9/(12-2) = 9/10 = 90\%$. El sobreviviente restante es un mutante no equivalente: revela una conducta que ningún test verifica, así que hay que escribir un test (normalmente un caso borde) que lo mate.

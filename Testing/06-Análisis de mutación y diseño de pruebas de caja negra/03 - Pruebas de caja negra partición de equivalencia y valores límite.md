@@ -68,6 +68,63 @@ Al unir y eliminar duplicados, el conjunto final de **Two-Point BVA** consta exa
 
 ---
 
+---
+
+## Del análisis al código: tests con `subTest` para EP y BVA
+
+Para el ejercicio de la plataforma de streaming, implementamos la regla y volcamos las particiones y los límites a tests de `unittest`:
+
+```python
+def clasificar(edad):
+    if not isinstance(edad, int) or isinstance(edad, bool):
+        raise TypeError("la edad debe ser entera")
+    if edad < 0:
+        raise ValueError("la edad no puede ser negativa")
+    if edad < 13:
+        return "familiar"
+    if edad < 18:
+        return "junior"
+    if edad < 65:
+        return "estándar"
+    return "senior"
+```
+
+```python
+import unittest
+
+class ClasificarTest(unittest.TestCase):
+    def test_representantes_de_cada_particion_valida(self):
+        casos = [(7, "familiar"), (15, "junior"), (30, "estándar"), (70, "senior")]
+        for edad, esperado in casos:
+            with self.subTest(edad=edad):
+                self.assertEqual(clasificar(edad), esperado)
+
+    def test_valores_limite_two_point(self):
+        casos = [(0, "familiar"), (12, "familiar"), (13, "junior"), (17, "junior"),
+                 (18, "estándar"), (64, "estándar"), (65, "senior")]
+        for edad, esperado in casos:
+            with self.subTest(edad=edad):
+                self.assertEqual(clasificar(edad), esperado)
+
+    def test_particion_invalida_negativa(self):
+        with self.assertRaises(ValueError):
+            clasificar(-1)
+
+    def test_particion_invalida_de_tipo_se_prueba_de_a_una(self):
+        for entrada in ["abc", 12.5, None]:
+            with self.subTest(entrada=entrada):
+                with self.assertRaises(TypeError):
+                    clasificar(entrada)
+```
+
+Observa tres cosas:
+
+* `subTest` hace que cada valor sea un caso independiente en el reporte: si falla `13`, igual se ejecutan los demás.
+* El límite `-1` está en la partición inválida y `0` en la válida, así que el par `(-1, 0)` cubre esa frontera.
+* **¿Para qué sirven los límites?** Si un programador escribe `edad <= 13` en vez de `edad < 13`, el representante `15` y el `7` siguen pasando. Solo el caso `13` (esperaba `"junior"` y devuelve `"familiar"`) revela el *off-by-one*.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- Si al aplicar Análisis de Valores Límite (AVL) ya estamos probando extremos que pertenecen a cada partición, ¿por qué se recomienda probar igualmente un representante central de cada Partición de Equivalencia (PE) por separado?
@@ -79,3 +136,8 @@ Al unir y eliminar duplicados, el conjunto final de **Two-Point BVA** consta exa
 > [!question]- Un requisito de trenes dice: «Se cobra tarifa completa antes de las 9:30 AM y entre las 4:00 PM y las 7:30 PM; el boleto *saver* está disponible entre las 9:30 AM y las 4:00 PM, y después de las 7:30 PM». ¿Qué ambigüedad de borde revela aplicar BVA sobre este enunciado?
 > Revela que los bordes exactos **$4:00\text{ PM}$** y **$7:30\text{ PM}$** están mal especificados o solapados: a las $4:00\text{ PM}$ («entre 9:30 AM y 4:00 PM» vs. «después de las 4:00 PM») y a las $7:30\text{ PM}$ («hasta las 7:30 PM» vs. «después de las 7:30 PM») no queda claro en el lenguaje natural si el minuto exacto incluye o excluye la tarifa *saver*. Aplicar BVA obliga a aclarar la especificación antes de programar.
 
+> [!question]- Una tarifa de estacionamiento cobra $\$500$ si se está entre $0$ y $60$ minutos (inclusive), $\$1\,000$ entre $61$ y $180$, y $\$2\,000$ desde $181$. Indica las particiones y el conjunto Two-Point BVA (con minutos enteros).
+> Particiones: inválida ($<0$), $[0,60]$, $[61,180]$ y $[181,+\infty)$. Two-Point BVA (sin duplicados): $\{-1, 0, 60, 61, 180, 181\}$ ($6$ valores); más un representante por partición válida si se quiere, por ejemplo $30$, $120$ y $300$.
+
+> [!question]- Para la misma tarifa, ¿qué valores extra agrega Three-Point BVA y por qué suman más casos?
+> Por cada límite agrega el vecino que falta (antes, en, después): quedan $\{-2,-1,0,1,\ 59,60,61,62,\ 179,180,181,182\}$ ($12$ valores). Cuesta más casos, pero detecta errores en ambos lados de cada frontera y gaps entre particiones contiguas.

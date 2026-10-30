@@ -56,13 +56,63 @@ Observa las columnas `R5`, `R6`, `R7` y `R8`: en las cuatro se cumple `C1 = N` (
 | **C3:** Empleo estable | S | N | S | N | **—** |
 | **Resultado: ¿Aprobado?** | **Sí** | **Sí** | **Sí** | **No** | **No** |
 
-Ainsi, cubrir la tabla completa exige **$8$ casos de prueba**, mientras que cubrir la tabla reducida exige un mínimo de **$5$ casos de prueba**.
+Así, cubrir la tabla completa exige **$8$ casos de prueba**, mientras que cubrir la tabla reducida exige un mínimo de **$5$ casos de prueba**.
 
 ### 2. Reglas inválidas por negocio (`X`) — Ejemplo de descuentos
 
 * **Reglas:** Cliente nuevo $\to 15\%$; Cliente antiguo con tarjeta de fidelidad $\to 10\%$; Cupón $\to 20\%$ (acumulable con fidelidad $\to 30\%$, pero **no combinable** con cliente nuevo $\to$ queda en $20\%$).
 * En las reglas `R1` (`T, T, T`) y `R2` (`T, T, F`), el cliente aparece simultáneamente como «Nuevo» y con «Tarjeta de fidelidad de cliente antiguo». Esa combinación se marca con **`X`** (inválida por regla de negocio, colapsable como `T, T, —`).
 * **¿Debemos probar `R1` y `R2`?** En las láminas se destaca un matiz práctico crucial: si la combinación es físicamente imposible en la interfaz no se puede probar, pero si un bug en la base de datos pudiera marcar ambas banderas en `True`, conviene incluir los tests (`6 válidos + 2 inválidos = 8 tests`) para verificar que el sistema rechace el estado inconsistente en vez de regalar un $45\%$ de descuento.
+
+---
+
+---
+
+## Del análisis al código: la tabla de préstamos como tests
+
+Implementamos la regla de negocio del banco y una prueba por cada columna de la tabla completa:
+
+```python
+def aprobar(historial_limpio, monto_bajo, empleo_estable):
+    return historial_limpio and (monto_bajo or empleo_estable)
+```
+
+```python
+import unittest
+
+class TablaCompletaTest(unittest.TestCase):
+    def test_las_ocho_reglas(self):
+        #  C1     C2     C3     ¿Aprobado?
+        reglas = [
+            (True,  True,  True,  True),    # R1
+            (True,  True,  False, True),    # R2
+            (True,  False, True,  True),    # R3
+            (True,  False, False, False),   # R4
+            (False, True,  True,  False),   # R5
+            (False, True,  False, False),   # R6
+            (False, False, True,  False),   # R7
+            (False, False, False, False),   # R8
+        ]
+        for c1, c2, c3, esperado in reglas:
+            with self.subTest(c1=c1, c2=c2, c3=c3):
+                self.assertEqual(aprobar(c1, c2, c3), esperado)
+```
+
+Cobertura de la tabla: $8/8 = 100\%$. Con la **tabla colapsada** quedan $5$ tests: R1–R4 y **uno solo** para `C1 = N`.
+
+### El riesgo de colapsar: elegir bien el representante
+
+Para la regla colapsada `(N, —, —)` hay que escoger qué valores concretos de `C2` y `C3` usar. Supón que un programador escribió por error `(historial_limpio and monto_bajo) or empleo_estable`:
+
+```python
+def aprobar_defectuoso(c1, c2, c3):
+    return (c1 and c2) or c3
+```
+
+* Si el representante es `(False, False, False)`, ambas versiones devuelven `False`: **no detecta el bug**.
+* Si el representante es `(False, True, True)` (o `(False, False, True)`), la versión defectuosa devuelve `True` y la correcta `False`: **lo detecta**.
+
+Moraleja: colapsar reduce casos *asumiendo que la implementación respeta la especificación*. Si desconfiamos del código, conviene probar más de un representante por regla colapsada, sobre todo los que combinan condiciones en `True`.
 
 ---
 
@@ -77,3 +127,8 @@ Ainsi, cubrir la tabla completa exige **$8$ casos de prueba**, mientras que cubr
 > [!question]- Además de diseñar casos de prueba, ¿por qué construir una tabla de decisión sirve como herramienta de verificación temprana (*shift-left*) sobre los requerimientos?
 > Porque al enumerar sistemáticamente las $2^n$ columnas, obliga a preguntarse qué debe hacer el sistema en combinaciones que el autor de la especificación olvidó mencionar (como en el ejemplo de solicitud de préstamo donde nadie había definido qué ocurría en la Regla 4 cuando no se ingresaba ni monto ni plazo, o qué pasa cuando un cliente nuevo usa un cupón de $20\%$).
 
+> [!question]- Una promoción exige: cliente registrado (C1), compra mayor a $\$50\,000$ (C2) y día de semana (C3). Se aplica descuento solo si se cumplen **las tres**. Arma la tabla colapsada mínima.
+> La tabla completa tiene $8$ reglas y solo `(S, S, S)` da descuento. Colapsando: si `C1 = N`, no importa el resto; si `C1 = S` y `C2 = N`, tampoco; si `C1 = S, C2 = S, C3 = N`, no hay descuento. Quedan $4$ reglas: `(N, —, —) → No`, `(S, N, —) → No`, `(S, S, N) → No` y `(S, S, S) → Sí`.
+
+> [!question]- ¿Cuándo conviene incluir en los tests una combinación marcada con `X` (inválida por negocio)?
+> Cuando existe alguna vía por la que el sistema pueda llegar a ese estado (por ejemplo, datos corruptos en la base de datos o una API que no valida). El test verifica que el sistema rechace o maneje el estado inconsistente en vez de aplicar una regla absurda; si la combinación es físicamente imposible por diseño, no vale la pena probarla.
