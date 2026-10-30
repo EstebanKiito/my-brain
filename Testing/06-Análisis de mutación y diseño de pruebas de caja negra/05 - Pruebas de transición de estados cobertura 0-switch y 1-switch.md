@@ -56,7 +56,7 @@ Mientras el **diagrama de estados** muestra visualmente las **$5$ transiciones v
 
 Exige ejercitar **cada transición válida individual del diagrama al menos una vez** (es el mínimo recomendado para cualquier sistema). En el reproductor hay **$5$ transiciones válidas**:
 * Si escribimos **un test independiente por transición**, necesitamos **$5$ casos de prueba**.
-* Si encadenamos los eventos en **una sola secuencia continua** que recorra todas las flechas, basta **$1$ caso de prueba de $6$ pasos**:
+* Si encadenamos los eventos en **una sola secuencia continua** que recorra todas las flechas, basta **$1$ caso de prueba de $7$ eventos**:
   $$S_1 \xrightarrow{\text{Play}} S_2 \xrightarrow{\text{Pause}} S_3 \xrightarrow{\text{Play}} S_2 \xrightarrow{\text{Stop}} S_1 \xrightarrow{\text{Play}} S_2 \xrightarrow{\text{Pause}} S_3 \xrightarrow{\text{Stop}} S_1$$
   *(Nota: el tramo inicial $S_1 \to S_2$ se repite solo para poder salir de $S_1$ y alcanzar la última transición pendiente $S_3 \xrightarrow{\text{Stop}} S_1$).*
 
@@ -79,6 +79,70 @@ En total existen exactamente **$2 + 2 + 2 + 1 + 1 = \mathbf{8}\text{ pares de tr
 
 ---
 
+---
+
+## Ejemplo práctico: el reproductor como código y sus tests
+
+Modelamos la tabla de transiciones directamente como un diccionario; los pares no definidos significan «sin efecto».
+
+```python
+class Reproductor:
+    TRANSICIONES = {
+        ("Detenido", "Play"): "Reproduciendo",
+        ("Reproduciendo", "Pause"): "Pausado",
+        ("Reproduciendo", "Stop"): "Detenido",
+        ("Pausado", "Play"): "Reproduciendo",
+        ("Pausado", "Stop"): "Detenido",
+    }
+
+    def __init__(self):
+        self.estado = "Detenido"
+
+    def evento(self, e):
+        self.estado = self.TRANSICIONES.get((self.estado, e), self.estado)
+        return self.estado
+```
+
+**0-switch:** una sola secuencia de $7$ eventos recorre las $5$ transiciones válidas.
+
+```python
+import unittest
+
+class ReproductorTest(unittest.TestCase):
+    def test_0_switch_recorre_las_cinco_transiciones(self):
+        r = Reproductor()
+        secuencia = [("Play", "Reproduciendo"), ("Pause", "Pausado"),
+                     ("Play", "Reproduciendo"), ("Stop", "Detenido"),
+                     ("Play", "Reproduciendo"), ("Pause", "Pausado"),
+                     ("Stop", "Detenido")]
+        for evento, esperado in secuencia:
+            with self.subTest(evento=evento):
+                self.assertEqual(esperado, r.evento(evento))
+```
+
+**Celdas inválidas (`—`):** cuando el entorno puede enviar el evento, verificamos que el estado no cambie:
+
+```python
+    def test_eventos_sin_efecto_no_cambian_el_estado(self):
+        casos = [("Detenido", "Pause"), ("Detenido", "Stop"),
+                 ("Reproduciendo", "Play"), ("Pausado", "Pause")]
+        for estado, evento in casos:
+            with self.subTest(estado=estado, evento=evento):
+                r = Reproductor()
+                r.estado = estado
+                self.assertEqual(estado, r.evento(evento))
+```
+
+**1-switch:** hay $8$ pares de transiciones consecutivas y una secuencia de $11$ eventos los recorre todos:
+
+```
+Play, Pause, Play, Pause, Stop, Play, Stop, Play, Pause, Play, Stop
+```
+
+La secuencia pasa por los estados `S1 → S2 → S3 → S2 → S3 → S1 → S2 → S1 → S2 → S3 → S2 → S1`. Se puede comprobar que el conjunto de pares de transiciones consecutivas abarca los $8$ de la lista (por ejemplo, `S2→S3→S2` aparece entre el segundo y el tercer evento, y `S3→S1→S2` en el quinto y sexto). Frente a $5$ tests aislados de 0-switch, 1-switch exige más eventos pero detecta defectos que dependen del historial, como un `Play` tras `Stop` desde `Pausado` que olvide reiniciar la posición.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- ¿Cuál es la diferencia entre alcanzar *100% de cobertura de estados* y alcanzar *100% de cobertura de transiciones (0-switch coverage)*?
@@ -91,3 +155,8 @@ En total existen exactamente **$2 + 2 + 2 + 1 + 1 = \mathbf{8}\text{ pares de tr
 > [!question]- Al construir la tabla de transición de estados de un cajero automático (ATM), en la fila del estado `S6: Acceso a cuenta` aparecen signos de interrogación `?` bajo las columnas `PIN válido` y `PIN inválido`. ¿Qué representa ese `?` y por qué es valioso encontrarlo durante el diseño de pruebas?
 > Representa una **ambigüedad u omisión en la especificación**: los requerimientos definieron cómo pedir el PIN antes de entrar a la cuenta, pero nunca especificaron si la pantalla o el teclado numérico permite volver a enviar un evento de PIN una vez que el cliente ya está dentro de `S6`. Descubrirlo al armar la matriz Estado $\times$ Evento permite corregir el diseño o crear pruebas de seguridad específicas.
 
+> [!question]- Añade un estado `S4 — Grabando` al que se llega con `Record` desde `Detenido` y que sale con `Stop` a `Detenido`. ¿Cuántas transiciones válidas, celdas de la tabla y pares 1-switch tiene ahora el sistema?
+> Transiciones válidas: $5 + 2 = 7$. La tabla pasa a ser de $4$ estados × $4$ eventos $= 16$ celdas. Pares 1-switch: los $8$ anteriores más los nuevos: `S1→S4→S1` ($1$ par), `S2→S1→S4` y `S3→S1→S4` ($2$ pares más, porque desde `S1` ahora hay dos salidas), y `S4→S1→S2` y `S4→S1→S4` ($2$ pares), para un total de $8 + 1 + 2 + 2 = 13$.
+
+> [!question]- ¿Cuándo es preferible 1-switch a 0-switch y qué costo tiene?
+> Cuando el comportamiento puede depender del camino recorrido (sistemas críticos, protocolos, interfaces con memoria): hay defectos que solo se manifiestan tras dos transiciones consecutivas específicas. El costo es el crecimiento rápido del número de casos (pares de transiciones frente a transiciones individuales).

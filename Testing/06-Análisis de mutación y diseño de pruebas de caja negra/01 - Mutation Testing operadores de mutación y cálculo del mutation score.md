@@ -79,6 +79,54 @@ Un mutador cambia el primer `*` por `+`, produciendo el mutante `math.sqrt(dx + 
 
 ---
 
+---
+
+## Ejemplo práctico: ejecutar la mutación a mano sobre `triangle`
+
+Para ver mutation testing sin herramientas, escribimos el programa, un mutante y las dos suites de la nota:
+
+```python
+def triangle(a, b, c):
+    if a == b:
+        if b == c:
+            return "Equilateral"
+        return "Isosceles"
+    if b == c or a == c:
+        return "Isosceles"
+    return "Scalene"
+
+def triangle_m1(a, b, c):             # mutante: 'Isosceles' → None cuando a == b != c
+    if a == b:
+        if b == c:
+            return "Equilateral"
+        return None
+    if b == c or a == c:
+        return "Isosceles"
+    return "Scalene"
+```
+
+Corremos cada suite contra el original y contra el mutante:
+
+| Suite | Contra `triangle` | Contra `triangle_m1` | Conclusión |
+| :--- | :---: | :---: | :--- |
+| `strong_suite` | pasa | **falla** (`None == 'Isosceles'` es falso) | mutante **muerto** |
+| `weak_suite` | pasa | pasa (`None != 'Equilateral'` es verdadero) | mutante **sobrevive** |
+
+Ambas suites tienen el mismo $100\%$ de cobertura, y solo la que tiene un oráculo fuerte detecta el defecto. Esa es la utilidad de la técnica: medir la calidad de los *asserts*, no solo cuántas líneas se ejecutan.
+
+### Mutantes típicos de `triangle` y quién los mata
+
+| Mutante | Cambio | ¿Lo mata `strong_suite`? |
+| :--- | :--- | :---: |
+| M1 | `return "Isosceles"` → `return None` (rama `a == b`) | Sí, con `fn(2, 2, 1)` |
+| M2 | `if a == b` → `if a != b` | Sí, con `fn(1, 1, 1)` |
+| M3 | `b == c or a == c` → `b == c and a == c` | Sí, con `fn(1, 2, 1)` |
+| M4 | `return "Scalene"` → `return "Isosceles"` | Sí, con `fn(1, 2, 3)` |
+
+La suite fuerte mata los $4$: $\text{score} = 4/4 = 100\%$. Con `weak_suite` el score sería muy inferior, porque solo detecta mutantes que provoquen `'Equilateral'` donde no corresponde.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- ¿Qué propiedad fundamental de una batería de pruebas mide el *Mutation Score* que el *Statement* y el *Branch Coverage* ignoran por completo?
@@ -89,3 +137,9 @@ Un mutador cambia el primer `*` por `+`, produciendo el mutante `math.sqrt(dx + 
 
 > [!question]- Al ejecutar un experimento de *Mutation Testing*, ¿por qué es obligatorio verificar primero que la batería de pruebas original pasa al $100\%$ sobre el código sin mutar antes de evaluar los mutantes?
 > Porque un mutante se clasifica como *killed* en cuanto **al menos un test falla**. Si la batería base ya tenía un test roto sobre el código original, ese test fallará también en todas las corridas mutadas, marcando artificialmente el $100\%$ de los mutantes como *killed* sin haber evaluado nada.
+
+> [!question]- Dado `def es_par(n): return n % 2 == 0`, el mutante cambia `==` por `!=`. Escribe un test mínimo que lo mate y uno que lo deje sobrevivir.
+> Lo mata cualquier test con oráculo sobre un valor concreto, por ejemplo `assertTrue(es_par(4))` (el mutante devuelve `False`). Lo deja sobrevivir un test como `es_par(4) is not None`, que pasa con ambos programas: eso ilustra un oráculo débil.
+
+> [!question]- Un mutante cambia `x * 2` por `x + 2` en una función. ¿Con qué entradas sobrevive?
+> Solo con $x = 2$, porque $2 \cdot 2 = 4 = 2 + 2$. Para cualquier otra entrada ($x = 3$ da $6$ frente a $5$) el resultado difiere. Es el mismo fenómeno de `distance(0, 2)`: una coincidencia aritmética que se resuelve añadiendo un caso distinto.
