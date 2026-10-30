@@ -60,6 +60,82 @@ El problema es el **sesgo de sincronización (*synchronization bias* o *aliasing
 
 ---
 
+---
+
+## Ejemplo práctico: medir el efecto del observador y ver el aliasing
+
+### 1. Cuánto pesa una sonda sobre una función diminuta
+
+Envolvemos `trivial(x)` con una sonda que mide y registra cada llamada, igual que haría un profiler por instrumentación:
+
+```python
+import time
+
+registro = []
+
+def con_sonda(f):
+    def envuelta(*args):
+        t0 = time.perf_counter()
+        resultado = f(*args)
+        registro.append((f.__name__, time.perf_counter() - t0))
+        return resultado
+    return envuelta
+
+def trivial(x):
+    return x + 1
+
+trivial_instrumentada = con_sonda(trivial)
+
+N = 200_000
+t0 = time.perf_counter()
+for i in range(N):
+    trivial(i)
+sin_sonda = time.perf_counter() - t0
+
+t0 = time.perf_counter()
+for i in range(N):
+    trivial_instrumentada(i)
+con_sonda_t = time.perf_counter() - t0
+
+print(f"sin sonda: {sin_sonda:.3f} s | con sonda: {con_sonda_t:.3f} s | factor: {con_sonda_t / sin_sonda:.1f}x")
+```
+
+En una máquina de prueba el factor fue de alrededor de $3\times$ (los números exactos dependen del equipo). La función no cambió: lo que creció es el costo de observarla, y el profiler la mostraría mucho más lenta de lo que es en producción.
+
+### 2. Simular el sesgo de sincronización con período constante
+
+Un programa repite un ciclo de $T = 10\text{ ms}$: $9\text{ ms}$ en `procesar()` y $1\text{ ms}$ en `limpiar()`. Simulamos un sampler que mira qué función está activa en cada instante:
+
+```python
+import random
+
+T = 10.0   # ms por ciclo: 9 ms procesar() + 1 ms limpiar()
+
+def funcion_activa(t):
+    return "procesar" if (t % T) < 9.0 else "limpiar"
+
+def muestrear(proximo_intervalo, n=1000, t0=9.5):
+    t, cuenta = t0, {"procesar": 0, "limpiar": 0}
+    for _ in range(n):
+        cuenta[funcion_activa(t)] += 1
+        t += proximo_intervalo()
+    return cuenta
+
+print(muestrear(lambda: 10.0))                         # K constante
+print(muestrear(lambda: random.uniform(8.0, 12.0)))    # K con jitter
+```
+
+Resultado:
+
+```
+{'procesar': 0, 'limpiar': 1000}      # K = 10 ms constante
+{'procesar': 902, 'limpiar': 98}      # jitter entre 8 y 12 ms
+```
+
+Con período constante el sampler cae siempre en la misma fase y concluye que **el programa pasa el $100\%$ del tiempo en `limpiar()`** (en realidad es el $10\%$). Con *jitter* las muestras recorren todas las fases y la estimación ($\approx 9.8\%$) se acerca al valor real. Fíjate que en una máquina real el sleep tiene deriva propia y el efecto no siempre es tan limpio; la simulación aísla el fenómeno.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- ¿Por qué el perfilado por instrumentación puede señalar como el mayor cuello de botella a una función diminuta que en realidad consume muy poco tiempo en producción?
@@ -70,3 +146,9 @@ El problema es el **sesgo de sincronización (*synchronization bias* o *aliasing
 
 > [!question]- Explica con un ejemplo concreto cómo un período de muestreo constante $K = 100\text{ ms}$ puede producir un perfil completamente falso, y cómo se corrige en la práctica.
 > Si un programa ejecuta un ciclo repetitivo que dura exactamente $100\text{ ms}$ (por ejemplo, $95\text{ ms}$ en `calcular()` y los últimos $5\text{ ms}$ en `guardar_log()`) y el sampler toma muestras exactamente en $t = 98, 198, 298\text{ ms}\dots$, el 100% de las muestras capturarán a `guardar_log()` por estar en fase con el ciclo. Se corrige introduciendo una perturbación aleatoria (*jitter*) en el tiempo de espera entre muestras (`sleep(random.uniform(0.8 * K, 1.2 * K))`).
+
+> [!question]- Debes decidir qué usar en cada caso: (a) verificar en un test que una función de caché se llama exactamente $3$ veces; (b) encontrar por qué un servicio en producción usa mucha CPU. ¿Instrumentación o muestreo?
+> (a) **Instrumentación**: necesitas conteos exactos y el overhead es aceptable en un entorno de pruebas. (b) **Muestreo**: el overhead es bajo y controlable, no modifica el código en producción y basta con una estimación estadística de dónde se va el tiempo (hotspots).
+
+> [!question]- En el experimento de la sonda, `trivial` tardó $3\times$ más con instrumentación. Si `pesada()` tarda $100\text{ ms}$ y se llama una vez, ¿cambia el ranking de funciones más lentas? ¿Por qué?
+> Sí, puede cambiar: la sonda suma un costo fijo por **llamada**, así que `pesada()` casi no se distorsiona (una llamada), mientras que `trivial` paga el costo $200\,000$ veces y podría pasar a parecer un falso hotspot. El perfil refleja entonces el costo del profiler, no el del programa.
