@@ -87,6 +87,61 @@ En el cierre de la unidad analizamos tres estudios recientes sobre predicción e
 
 ---
 
+---
+
+## Ejemplo práctico: usar `Coverage` para decidir el siguiente test
+
+Con la clase `Coverage` sin filtro por nombre (guarda tuplas `(función, línea)`), el flujo de trabajo es el siguiente:
+
+```python
+with Coverage() as cov_plus:
+    cgi_decode("a+b")
+
+with Coverage() as cov_abc:
+    cgi_decode("abc")
+
+# ¿Qué línea cubre "a+b" que "abc" no cubre?
+print(cov_plus.coverage() - cov_abc.coverage())     # la línea de t += ' ' (rama '+')
+
+# ¿Qué cubre "abc" que "a+b" no cubre?
+print(cov_abc.coverage() - cov_plus.coverage())     # la línea de t += c (rama normal)
+```
+
+Al restar los conjuntos aparece solo **una** línea en cada dirección: la que corresponde a la rama propia de cada entrada. Todo el resto (el ciclo, la lectura de `c`, el `return`) es compartido.
+
+### Calcular qué falta para el máximo
+
+```python
+cov_max = Coverage()
+for entrada in ["a+b", "abc", "%41", "%zz"]:
+    with Coverage() as c:
+        try:
+            cgi_decode(entrada)
+        except ValueError:
+            pass
+    cov_max._trace.extend(c._trace)
+
+pendientes = cov_max.coverage() - cov_plus.coverage()
+print(sorted(pendientes))
+```
+
+`pendientes` lista las líneas del bloque `elif c == '%':` y su validación: es la lista de tareas para la suite. Con `"a+b"` quedan sin cubrir aproximadamente $6$ de las $17$ líneas ejecutables de la función, es decir, una cobertura cercana a $65\%$ (el número exacto depende de cómo se cuenten las líneas de la función).
+
+### Cobertura alta no es suficiente: `dias_en_mes`
+
+```python
+def dias_en_mes(mes, anio):
+    if mes == 2:
+        if anio % 4 == 0:             # defecto: ignora los siglos
+            return 29
+        return 28
+    return 30 if mes in (4, 6, 9, 11) else 31
+```
+
+Ejecutar `dias_en_mes(2, 2020)`, `(2, 2021)`, `(4, 2021)` y `(1, 2021)` da $100\%$ de cobertura de ramas. Pero `dias_en_mes(2, 1900)` devuelve `29` (debería ser `28`). Los tests que ejecutan el código sin aserciones fuertes no lo habrían notado, y los que sí tienen oráculo solo lo habrían detectado si alguien pensó en el año `1900`.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- Se ejecuta `with Coverage("cgi_decode") as cov_1: cgi_decode("a+b")` y luego `with Coverage("cgi_decode") as cov_2: cgi_decode("abc")`. Si `cov_1.coverage() - cov_2.coverage()` entrega `{11}`, ¿qué significa exactamente ese resultado?
@@ -98,3 +153,8 @@ En el cierre de la unidad analizamos tres estudios recientes sobre predicción e
 > [!question]- En la función `dias_en_mes(mes, anio)`, ¿qué conjunto mínimo de llamadas necesitas para cubrir el $100\%$ de las líneas ejecutables, y por qué cubrirlas todas sin `assert` no detectaría si la línea del año divisible por $400$ devolviera `28` en vez de `29`?
 > Se necesitan $7$ llamadas que ejerciten cada `return` y el `raise`: por ejemplo `(0, 2020)` para el `ValueError`, `(2, 2000)` para `anio % 400 == 0`, `(2, 1900)` para `anio % 100 == 0`, `(2, 2020)` para `anio % 4 == 0`, `(2, 2021)` para febrero no bisiesto, `(4, 2021)` para meses de $30$ días y `(1, 2021)` para meses de $31$ días. Si solo ejecutamos esas llamadas sin comparar su retorno contra un oráculo (`assertEqual`), `sys.settrace` registrará que la línea del `return` se ejecutó ($100\%$ de cobertura), pero nadie verificará que el número retornado era incorrecto.
 
+> [!question]- Si `cov_a - cov_b` da el conjunto vacío, ¿qué significa? ¿Implica que `a` y `b` son equivalentes?
+> Significa que `a` no cubrió ninguna línea que `b` no cubriera, es decir, `cov_a ⊆ cov_b`. No son necesariamente equivalentes: `b` podría cubrir más (lo que se vería en `cov_b - cov_a`). Solo si ambas diferencias son vacías las dos cubren exactamente lo mismo, y aun así podrían tener valores de entrada y oráculos distintos.
+
+> [!question]- Un equipo exige $90\%$ de cobertura para fusionar código y los desarrolladores empiezan a agregar tests sin aserciones. ¿Qué principio ilustra y cómo lo mitigarías?
+> Ilustra la ley de Goodhart: cuando una métrica se vuelve meta, deja de ser una buena métrica. Se mitiga complementando cobertura con una medida de la calidad del oráculo, como el *mutation score*, y con revisión de los tests.

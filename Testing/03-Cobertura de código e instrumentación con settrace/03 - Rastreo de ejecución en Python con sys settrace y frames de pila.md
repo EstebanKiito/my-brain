@@ -68,6 +68,68 @@ Así vemos de un vistazo que la entrada `"a+b"` cubrió el ciclo y la rama del `
 
 ---
 
+---
+
+## Ejemplo práctico: ver los eventos de `sys.settrace` uno por uno
+
+Con una función minúscula se ve claramente qué recibe el *callback* en cada evento:
+
+```python
+import sys
+
+def signo(x):
+    if x > 0:
+        return "positivo"
+    return "no positivo"
+
+def trace_func(frame, event, arg):
+    print(f"{event:9} línea {frame.f_lineno:2} en {frame.f_code.co_name} locals={frame.f_locals} arg={arg!r}")
+    return trace_func            # importante: sigue rastreando dentro de la función
+
+sys.settrace(trace_func)
+signo(5)
+sys.settrace(None)
+```
+
+Salida (los números de línea dependen de dónde esté escrita la función en tu archivo):
+
+```
+call      línea  2 en signo locals={'x': 5} arg=None
+line      línea  3 en signo locals={'x': 5} arg=None
+line      línea  4 en signo locals={'x': 5} arg=None
+return    línea  4 en signo locals={'x': 5} arg='positivo'
+```
+
+Cómo leerla:
+
+* `call` ocurre al entrar a `signo`, antes de ejecutar su primera línea.
+* Hay solo **dos** eventos `line` (el `if` y el `return "positivo"`): el `return "no positivo"` **nunca** aparece porque con `x = 5` esa línea no se ejecutó. Es exactamente la información que usa un reporte de cobertura.
+* En `return`, `arg` contiene el valor devuelto (`'positivo'`).
+
+### ¿Y si olvidamos `return trace_func`?
+
+Si el callback no devuelve nada, Python deja de rastrear líneas dentro de la función: solo verías el evento `call` y ningún `line`. Es el error más común al escribir un tracer.
+
+### Filtrar para no registrar ruido
+
+```python
+lineas = []
+
+def traceit(frame, event, arg):
+    if event == "line" and frame.f_code.co_name == "signo":
+        lineas.append(frame.f_lineno)
+    return traceit
+
+sys.settrace(traceit)
+signo(-3)
+sys.settrace(None)
+print(lineas)      # ahora aparece la línea del segundo return, no la del primero
+```
+
+Con `signo(5)` obtendrías las líneas del `if` y del primer `return`; con `signo(-3)`, las del `if` y del segundo `return`. Dos entradas distintas dejan huellas distintas.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- ¿Qué ocurre si en una función `trace_func(frame, event, arg)` pasada a `sys.settrace` olvidamos escribir la línea `return trace_func` al final?
@@ -81,3 +143,8 @@ Así vemos de un vistazo que la entrada `"a+b"` cubrió el ciclo y la rama del `
 > [!question]- ¿Por qué la lista cruda `coverage` recolectada por `traceit` al correr `cgi_decode("a+b")` contiene números de línea repetidos, y por qué la convertimos en un `set`?
 > Contiene números repetidos porque `traceit` hace `coverage.append(lineno)` cada vez que el intérprete pasa por una línea, y las líneas de inicialización del diccionario o del ciclo `while i < len(s):` se ejecutan múltiples veces en una misma llamada. La convertimos en un `set` porque para calcular cobertura solo nos importa saber si cada línea fue ejecutada **al menos una vez** (además de habilitar operaciones de conjuntos como unión, intersección y resta).
 
+> [!question]- Ejecutas `sys.settrace(traceit)` y luego una función con un `for` de $4$ iteraciones. El cuerpo del `for` es una línea. ¿Cuántas veces aparece esa línea en la lista de líneas ejecutadas?
+> $4$ veces (una por iteración). Por eso al calcular cobertura se convierte la lista a `set`: nos interesa qué líneas se ejecutaron, no cuántas veces.
+
+> [!question]- ¿Qué pasaría si después de la prueba no llamamos a `sys.settrace(None)`?
+> El *callback* seguiría disparándose para todo el código que se ejecute después (incluso `print` y otras funciones), ralentizando el programa y llenando la lista de líneas con eventos que no pertenecen a la prueba. Por eso la clase `Coverage` lo encapsula en `__exit__`, que se ejecuta incluso si la función lanza una excepción.

@@ -89,6 +89,56 @@ Para alcanzar el $100\%$ en ambas métricas bastaría añadir dos entradas que a
 
 ---
 
+---
+
+## Ejemplo práctico: la suite que engaña y cómo se completa
+
+Escribimos tests para `aplicar_descuento` y miramos qué cubren:
+
+```python
+import unittest
+
+class DescuentoCoberturaTest(unittest.TestCase):
+    def test_socio_recibe_descuento(self):
+        self.assertEqual(80, aplicar_descuento(100, True))
+```
+
+* **Statement Coverage:** $3/3 = 100\%$ (las tres sentencias se ejecutaron).
+* **Branch Coverage:** $1/2 = 50\%$ (nunca se tomó la rama `es_socio = False`).
+
+El defecto escondido sale a la luz con el test que falta:
+
+```python
+    def test_no_socio_paga_precio_completo(self):
+        self.assertEqual(100, aplicar_descuento(100, False))
+```
+
+Con este test la rama `False` queda cubierta ($2/2 = 100\%$). Pensemos ahora en una versión defectuosa donde el programador olvidó que el `if` no tiene `else` y escribió el `return` dentro del bloque:
+
+```python
+def aplicar_descuento(precio, es_socio):
+    if es_socio:
+        precio = precio * 0.8
+        return precio           # el return quedó dentro del if
+```
+
+Con solo `test_socio_recibe_descuento` el *Statement Coverage* seguiría en $100\%$ y el test en verde. Con `test_no_socio_paga_precio_completo` el programa devuelve `None` en vez de `100`: **solo el criterio de ramas obligó a escribir el test que destapa el bug**.
+
+### Cómo elegir entradas para cubrir todas las ramas de `clasificar_impuesto`
+
+Hay $3$ decisiones (`edad < 18`, `ingresos < 50000`, `ingresos < 30000`) y $4$ hojas. Una suite mínima que cubre las $6$ ramas y las $8$ sentencias:
+
+| Caso | `(edad, ingresos)` | Hoja alcanzada |
+| :--- | :--- | :--- |
+| 1 | `(15, 40000)` | L4: `impuesto = 0` |
+| 2 | `(16, 60000)` | L5: `impuesto = ingresos * 0.1` |
+| 3 | `(30, 25000)` | L7: `impuesto = ingresos * 0.05` |
+| 4 | `(25, 60000)` | L8: `impuesto = ingresos * 0.15` |
+
+Hay una hoja por cada combinación de decisiones, así que con $4$ casos se logra $100\%$ de sentencias y $100\%$ de ramas.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- ¿Por qué lograr $100\%$ de *Branch / Decision Coverage* garantiza siempre $100\%$ de *Statement Coverage* (en código sin código muerto inalcanzable), pero el recíproco es falso?
@@ -106,3 +156,8 @@ Para alcanzar el $100\%$ en ambas métricas bastaría añadir dos entradas que a
 > ```
 > El único caso `normalizar_nota(8.5)` ejecuta las $3$ sentencias ($100\%$ *Statement Coverage*), pero evalúa `nota > 7.0` únicamente como `True` ($1$ de $2$ ramas $= 50\%$ *Decision Coverage*).
 
+> [!question]- Dada `def f(x): if x > 10: y = 1 \n else: y = 2 \n return y`, ¿puede un solo test lograr $100\%$ de branch coverage? ¿Y $100\%$ de statement coverage?
+> No puede lograr $100\%$ de branch coverage con un solo test, porque la decisión `x > 10` necesita evaluarse `True` y `False` y un test solo toma una de las dos. Tampoco puede lograr $100\%$ de statement coverage, porque cada rama tiene su propia sentencia (`y = 1` y `y = 2`) y un test ejecuta solo una. Hacen falta al menos dos tests, por ejemplo `f(11)` y `f(5)`.
+
+> [!question]- Una función tiene un `if a and b:` sin `else`. Con los tests `(a=True, b=True)` y `(a=False, b=False)`, ¿cuál es el branch coverage y qué le falta a la suite?
+> La decisión `a and b` se evaluó `True` y `False`, así que el branch coverage es $100\%$ aunque la condición compuesta no se haya probado en todas sus combinaciones (falta, por ejemplo, `a=True, b=False`). Eso muestra el límite del criterio de ramas: para cubrir las condiciones individuales haría falta cobertura de condición/MC-DC.

@@ -77,6 +77,56 @@ Observa la riqueza estructural de `cgi_decode`: tiene un ciclo `while`, tres cam
 
 ---
 
+---
+
+## Ejemplo práctico: qué casos necesita `cgi_decode` para cubrir todo
+
+Para cubrir cada rama de `cgi_decode` pensamos qué hace cada camino y elegimos una entrada que lo active:
+
+| Camino a cubrir | Entrada | Resultado esperado |
+| :--- | :--- | :--- |
+| Carácter normal (rama `else` del ciclo) | `"abc"` | `"abc"` |
+| `'+'` → espacio | `"a+b"` | `"a b"` |
+| `'%'` con dígitos hexadecimales válidos | `"%41"` | `"A"` (porque `0x41 = 65`) |
+| `'%'` con dígitos inválidos → `ValueError` | `"%zz"` | lanza `ValueError` |
+
+```python
+import unittest
+
+class CgiDecodeTest(unittest.TestCase):
+    def test_caracteres_normales(self):
+        self.assertEqual("abc", cgi_decode("abc"))
+
+    def test_mas_se_convierte_en_espacio(self):
+        self.assertEqual("a b", cgi_decode("a+b"))
+
+    def test_secuencia_hexadecimal_valida(self):
+        self.assertEqual("A", cgi_decode("%41"))
+
+    def test_secuencia_hexadecimal_invalida(self):
+        with self.assertRaises(ValueError):
+            cgi_decode("%zz")
+```
+
+Cada test activa un camino distinto, y juntos recorren todas las líneas y ramas. Si borráramos `test_secuencia_hexadecimal_invalida`, las líneas del `raise ValueError` quedarían sin cubrir, y es justo lo que una herramienta de cobertura nos señalaría.
+
+### Medir cobertura con `coverage.py`
+
+Desde la terminal (si tienes instalado el paquete `coverage`):
+
+```bash
+coverage run -m unittest test_cgi_decode.py
+coverage report -m
+```
+
+La columna `Miss` y `Missing` de `coverage report -m` lista las líneas que ningún test ejecutó. Es la versión profesional de lo que construiremos a mano con `sys.settrace`.
+
+### La caja blanca no ve lo que falta
+
+Supón que la especificación decía que `cgi_decode` también debía convertir `"%20"` a espacio **pero rechazar** secuencias `%` incompletas al final (como `"abc%4"`). La función actual haría `s[i + 2]` y lanzaría `IndexError` en vez de `ValueError`. Con los 4 tests de arriba la cobertura es $100\%$ y ese defecto sigue ahí: la cobertura mide el código que existe, no los requisitos que se olvidaron.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- ¿Por qué el testing de caja blanca es incapaz de detectar por sí solo los «errores de omisión» (requerimientos que nunca se programaron)?
@@ -91,3 +141,8 @@ Observa la riqueza estructural de `cgi_decode`: tiene un ciclo `while`, tres cam
 > [!question]- ¿Cuál es la diferencia entre usar la cobertura como «detector de huecos» frente a usarla como «certificado de calidad»?
 > Como **detector de huecos**, una cobertura baja (o la lista de líneas no ejecutadas) es información valiosísima: nos garantiza con certeza qué partes del código jamás han sido probadas. En cambio, como **certificado de calidad** es engañosa: tener $100\%$ de cobertura solo significa que las líneas se ejecutaron, pero no garantiza que las aserciones hayan verificado que el resultado fuera correcto.
 
+> [!question]- Un compañero dice «tenemos $92\%$ de cobertura, así que casi no hay bugs». Da dos razones por las que esa conclusión no se sostiene.
+> (1) Cobertura mide **ejecución**, no verificación: sin aserciones sólidas, el $92\%$ puede lograrse sin detectar nada. (2) La caja blanca solo ve el código que existe, por lo que no detecta requisitos olvidados; además el $8\%$ restante puede contener justo la lógica crítica.
+
+> [!question]- ¿Qué entrada agregarías a `["abc", "a+b", "%41"]` para alcanzar $100\%$ de cobertura de ramas en `cgi_decode` y por qué esa?
+> Una entrada con `'%'` seguido de dígitos no hexadecimales, por ejemplo `"%zz"`, que activa la rama `else` interna y la línea `raise ValueError`. Las otras tres entradas ya cubren los caminos de carácter normal, `'+'` y `'%'` válido.
