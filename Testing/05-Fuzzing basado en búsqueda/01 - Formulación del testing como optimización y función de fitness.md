@@ -71,6 +71,40 @@ Por ejemplo, para `values = (5, 100)`, `bounds = [(-10, 20), (0, 200)]` y `steps
 
 ---
 
+---
+
+## Ejemplo práctico: descenso paso a paso sobre `test_me`
+
+Partimos de `(x, y) = (100, 3)` con `get_fitness(x, y) = abs(x - 2 * (y + 1))` y el vecindario de Moore (paso $1$). En cada iteración elegimos el vecino con menor fitness:
+
+| Iteración | Punto actual $(x, y)$ | Fitness | Mejor vecino |
+| :---: | :---: | :---: | :---: |
+| 0 | $(100, 3)$ | $\lvert 100 - 8 \rvert = 92$ | $(99, 4)$ |
+| 1 | $(99, 4)$ | $\lvert 99 - 10 \rvert = 89$ | $(98, 5)$ |
+| 2 | $(98, 5)$ | $\lvert 98 - 12 \rvert = 86$ | $(97, 6)$ |
+| 3 | $(97, 6)$ | $83$ | $(96, 7)$ |
+| $\vdots$ | $\vdots$ | baja de a $3$ por paso | $\vdots$ |
+| 31 | $(70, 34)$ | $\lvert 70 - 70 \rvert = 0$ | solución |
+
+Cada paso mueve $x$ hacia abajo en $1$ y $y$ hacia arriba en $1$, así que el fitness baja $1 + 2 = 3$ por iteración. Tras $31$ iteraciones llegamos a $(70, 34)$, y se verifica que $70 = 2 \cdot (34 + 1)$. Un fuzzer por mutación, en cambio, tendría una probabilidad de acertar del orden de $1/2000$ por intento en el dominio $[-1000, 1000]^2$ y sin ninguna pista de si va acercándose.
+
+```python
+def vecinos(x, y):
+    return [(x + dx, y + dy) for dx in (-1, 0, 1) for dy in (-1, 0, 1) if (dx, dy) != (0, 0)]
+
+actual = (100, 3)
+while get_fitness(*actual) > 0:
+    mejor = min(vecinos(*actual), key=lambda p: get_fitness(*p))
+    if get_fitness(*mejor) >= get_fitness(*actual):
+        break                      # sin mejora: óptimo local o meseta
+    actual = mejor
+print(actual)                      # (70, 34)
+```
+
+Ese `if ... break` es exactamente la condición donde las trampas topográficas de la siguiente nota harán que el algoritmo se detenga.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- Explica por qué una función de fitness gradual hace posible el *search-based fuzzing*, mientras que una función de fitness binaria (`0` si entra al `if`, `1` si no entra) lo vuelve inútil. Ilustra con la condición `if x == 42:`.
@@ -84,3 +118,8 @@ Por ejemplo, para `values = (5, 100)`, `bounds = [(-10, 20), (0, 200)]` y `steps
 > 2. Un operador de **vecindad** (o de variación genética) que genere nuevas candidatas a partir de las actuales.
 > 3. Una **función de fitness** que asigne un puntaje numérico a cada candidata estimando su cercanía al objetivo.
 
+> [!question]- Con el vecindario de Moore y paso $1$, ¿cuántos vecinos tiene un punto interior de un espacio de $3$ dimensiones? ¿Y uno en la esquina del dominio en $2$ dimensiones?
+> En $3$ dimensiones, un punto interior tiene $3^3 - 1 = 26$ vecinos. En una esquina de un dominio de $2$ dimensiones, los vecinos que caen fuera de los límites se descartan (`minimum <= c <= maximum`), así que quedan $3$ de los $8$.
+
+> [!question]- Propón una función de fitness para cubrir `if len(s) == 5 and s[0] == 'A':` con un string `s`. ¿Cumple las propiedades de un buen fitness?
+> `abs(len(s) - 5) + (0 if s[:1] == 'A' else abs(ord(s[0]) - ord('A')) if s else 65)`. Vale $0$ solo cuando ambas condiciones se cumplen (la suma representa la conjunción), crece suavemente a medida que el largo o el primer carácter se alejan del objetivo y ofrece un gradiente para cada componente.

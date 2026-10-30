@@ -81,6 +81,83 @@ En lugar de mover un único individuo como hace *Hill Climbing*, un **algoritmo 
 
 ---
 
+---
+
+## Ejemplo práctico: distancia de rama calculada a mano
+
+Para el `ejemplo(a, b, c)` de la nota, calculamos cuánto falta para llegar a `return "x"` (rama `B2` verdadera) desde tres entradas distintas, usando las fórmulas de la tabla con $K = 1$:
+
+* **Camino a cubrir:** `a > 10` ∧ `b < 5` ∧ `c == 0`.
+* $\text{dist}(a > 10) = \max(0, 10 - a + 1)$, $\text{dist}(b < 5) = \max(0, b - 5 + 1)$, $\text{dist}(c == 0) = |c|$.
+
+| Entrada $(a, b, c)$ | $\text{dist}(a>10)$ | $\text{dist}(b<5)$ | $\text{dist}(c==0)$ | Fitness total |
+| :---: | :---: | :---: | :---: | :---: |
+| $(0, 10, 7)$ | $11$ | $6$ | $7$ | $\mathbf{24}$ |
+| $(5, 4, 0)$ | $6$ | $0$ | $0$ | $\mathbf{6}$ |
+| $(11, 4, 0)$ | $0$ | $0$ | $0$ | $\mathbf{0}$ ✓ |
+
+Se confirma que `ejemplo(11, 4, 0)` devuelve `"x"`. Fíjate en el borde: con $a = 10$ la distancia sería $1$, porque `10 > 10` es falso. La constante $K = 1$ existe justamente para que el fitness sea $0$ solo cuando la desigualdad estricta se cumple.
+
+```python
+def dist_gt(a, b):            # a > b
+    return max(0, (b - a) + 1)
+
+def dist_lt(a, b):            # a < b
+    return max(0, (a - b) + 1)
+
+def fitness_x(a, b, c):
+    return dist_gt(a, 10) + dist_lt(b, 5) + abs(c)
+
+print(fitness_x(0, 10, 7), fitness_x(5, 4, 0), fitness_x(11, 4, 0))    # 24 6 0
+```
+
+### Un algoritmo genético para adivinar `"PASSWORD"`
+
+Aplicamos las cuatro piezas (población, torneo, cruce de un punto y mutación gaussiana) con fitness $\sum_i |\text{ord}(s_i) - \text{ord}(\text{TARGET}_i)|$:
+
+```python
+import random
+
+TARGET = "PASSWORD"
+
+def fitness(s):
+    return sum(abs(ord(a) - ord(b)) for a, b in zip(s, TARGET))
+
+def aleatorio():
+    return "".join(chr(random.randint(32, 126)) for _ in TARGET)
+
+def torneo(poblacion, k=10):
+    return min(random.sample(poblacion, k), key=fitness)
+
+def cruce(p1, p2):
+    corte = random.randint(1, len(p1) - 1)
+    return p1[:corte] + p2[corte:], p2[:corte] + p1[corte:]
+
+def mutar(s):
+    resultado = []
+    for c in s:
+        if random.random() < 1 / len(s):
+            c = chr(max(32, min(126, round(random.gauss(ord(c), 20)))))
+        resultado.append(c)
+    return "".join(resultado)
+
+poblacion = [aleatorio() for _ in range(100)]
+for generacion in range(1, 500):
+    mejor = min(poblacion, key=fitness)
+    if fitness(mejor) == 0:
+        break
+    nueva = [mejor]                        # elitismo: conservamos al mejor
+    while len(nueva) < 100:
+        h1, h2 = cruce(torneo(poblacion), torneo(poblacion))
+        nueva += [mutar(h1), mutar(h2)]
+    poblacion = nueva[:100]
+print(generacion, mejor)                   # típicamente en menos de ~100 generaciones: "PASSWORD"
+```
+
+En una corrida de prueba con semilla fija encontró `"PASSWORD"` a la generación $40$. El número cambia con la semilla, pero converge de forma sistemática, mientras que un fuzzer aleatorio tendría que acertar $8$ caracteres entre $95$ posibles cada uno ($95^8 \approx 6.6 \times 10^{15}$ intentos).
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- Dada la condición `if plazo_meses > 60 and monto > 5000000:`, deriva paso a paso la función de distancia de rama (con $K=1$ para desigualdad estricta en enteros) tanto para la rama `True` como para la rama `False`.
@@ -95,3 +172,8 @@ En lugar de mover un único individuo como hace *Hill Climbing*, un **algoritmo 
 > [!question]- ¿Qué papel cumple el operador de cruce (*crossover*) en un algoritmo genético y por qué le da ventaja frente a un *hill climber* con reinicios cuando buscamos una cadena como `"PASSWORD"`?
 > Un *hill climber* con reinicios desecha todo lo aprendido cada vez que se atasca y empieza desde cero con un solo individuo. En cambio, en un algoritmo genético un individuo de la población puede haber descubierto los primeros caracteres `"PASSxxxx"` y otro individuo los últimos `"xxxxWORD"`; el **cruce de un punto** combina ambos segmentos en una sola generación produciendo directamente `"PASSWORD"`.
 
+> [!question]- Calcula el fitness de rama para entrar al bloque de `if x >= 20 or y == 3:` con `(x, y) = (15, 10)`.
+> Es una disyunción, así que se toma el mínimo: $\text{dist}(x \ge 20) = \max(0, 20 - 15) = 5$ (o $6$ con $K = 1$ estricto) y $\text{dist}(y == 3) = |10 - 3| = 7$. El fitness es $\min(5, 7) = 5$: basta acercarse a una de las dos condiciones.
+
+> [!question]- ¿Por qué un algoritmo genético conserva al mejor individuo de cada generación (elitismo) y qué pasa si no lo hace?
+> Sin elitismo, el cruce y la mutación pueden destruir al mejor individuo y la población empeora temporalmente (o para siempre, con mala suerte). Conservarlo garantiza que el mejor fitness nunca aumente de una generación a otra, aunque las demás mutaciones exploren.

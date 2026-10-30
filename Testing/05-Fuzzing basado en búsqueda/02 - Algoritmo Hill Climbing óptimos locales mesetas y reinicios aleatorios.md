@@ -91,6 +91,53 @@ Evaluemos ambas funciones en el punto actual `(50, 50)` y en sus $8$ vecinos inm
 
 ---
 
+---
+
+## Ejemplo práctico: corriendo los dos fitness del ejercicio
+
+Ejecutamos el escalador de máxima pendiente sobre ambas funciones desde `(50, 50)`:
+
+```python
+def vecinos(x, y):
+    return [(x + dx, y + dy) for dx in (-1, 0, 1) for dy in (-1, 0, 1) if (dx, dy) != (0, 0)]
+
+def escalar(fitness, inicio, max_iter=1000):
+    actual, f, it = inicio, fitness(*inicio), 0
+    while f > 0 and it < max_iter:
+        mejor = min(vecinos(*actual), key=lambda p: fitness(*p))
+        if fitness(*mejor) >= f:
+            return actual, f, it          # atascado
+        actual, f, it = mejor, fitness(*mejor), it + 1
+    return actual, f, it
+
+print(escalar(fitness_a, (50, 50)))   # ((100, 100), 0, 50)
+print(escalar(fitness_b, (50, 50)))   # ((50, 50), 1000, 0)
+```
+
+* Con `fitness_a` el escalador baja $2$ unidades por paso y llega a fitness $0$ en **$50$ iteraciones**.
+* Con `fitness_b` se detiene en la iteración $0$ con fitness $1000$: los $8$ vecinos tienen exactamente el mismo valor, no hay dirección que seguir.
+
+> [!warning] Cuidado con el borde: `fitness_a` llega a $0$ en $(100, 100)$, y ahí `x > 100` es **falso**
+> La condición es `x > 100 and y > 100`, o sea, se necesita $x \ge 101$ e $y \ge 101$. Con `fitness_a` tal como está escrito, el fitness vale $0$ ya en $(100, 100)$, que **no** entra al `if`. Una versión correcta usa `max(0, 101 - x) + max(0, 101 - y)`. La idea del ejercicio (gradiente claro frente a meseta) no cambia, pero es el mismo tipo de *off-by-one* que vimos en valores límite: la función de fitness también necesita probarse en el borde.
+
+### Escapar de una meseta con reinicios
+
+```python
+import random
+
+def escalar_con_reinicios(fitness, limites, intentos=20):
+    for _ in range(intentos):
+        inicio = tuple(random.randint(lo, hi) for lo, hi in limites)
+        punto, f, _ = escalar(fitness, inicio)
+        if f == 0:
+            return punto
+    return None
+```
+
+Con `fitness_b`, desde un inicio con $x \le 100$ no hay gradiente, pero un reinicio que caiga en $x > 100$ sí tiene pendiente (`max(0, 100 - y)`) y llega a la meta. Los reinicios convierten una trampa en un problema de probabilidad: $P(\text{éxito})$ crece con el número de intentos.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- ¿Cuál es el *trade-off* computacional entre *Simple Hill Climbing* (moverse al primer vecino que mejore) y *Steepest Ascent Hill Climbing* (moverse al mejor de todos los vecinos)?
@@ -102,3 +149,8 @@ Evaluemos ambas funciones en el punto actual `(50, 50)` y en sus $8$ vecinos inm
 > [!question]- En la función `fitness_a(x, y) = max(0, 100 - x) + max(0, 100 - y)`, ¿qué pequeño defecto de borde tiene respecto a la condición estricta `x > 100 and y > 100` (con enteros) y cómo se corrige con la constante $K = 1$?
 > En `(100, 100)`, `fitness_a(100, 100)` ya devuelve $0 + 0 = 0$, deteniendo el *hill climber*, pero `100 > 100` es `False` (se necesitaba al menos `(101, 101)`). Para una desigualdad estricta `x > 100` sobre enteros, debemos sumar la constante de penalización $K = 1$: `max(0, (100 - x) + 1) = max(0, 101 - x)`, que recién se hace $0$ cuando $x \ge 101$.
 
+> [!question]- Una función de fitness devuelve $0$ si `x > 100` se cumple y $1$ si no. ¿Por qué es mala para guiar la búsqueda?
+> Porque no tiene gradiente: todos los puntos que no cumplen la condición valen igual ($1$), así que ningún vecino parece mejor y el algoritmo queda atrapado en una meseta. Es el mismo caso que `fitness_b`: indica *si* se cumple, pero no *qué tan cerca* está.
+
+> [!question]- Diferencia práctica entre Simple Hill Climbing y Steepest Descent: ¿cuál hace menos evaluaciones por iteración y cuál suele necesitar menos iteraciones?
+> Simple Hill Climbing hace menos evaluaciones por iteración (se detiene en el primer vecino que mejora); Steepest Descent evalúa todos los vecinos en cada iteración, pero elige el mejor y normalmente necesita menos iteraciones totales. El balance depende del costo de evaluar el fitness.
