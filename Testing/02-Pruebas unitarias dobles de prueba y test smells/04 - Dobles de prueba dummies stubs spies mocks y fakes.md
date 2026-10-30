@@ -83,6 +83,77 @@ class WalletPrintTest(unittest.TestCase):
 
 ---
 
+---
+
+## Ejemplo práctico: Dummy, Spy y Fake escritos a mano
+
+Probamos un carrito que cobra a través de un servicio de pago. Con clases simples (sin `MagicMock`) se ve con claridad qué hace cada doble:
+
+```python
+class Carrito:
+    def __init__(self):
+        self.items = []
+
+    def agregar(self, precio):
+        self.items.append(precio)
+
+    def checkout(self, pago):
+        if not self.items:
+            raise ValueError("carrito vacío")
+        total = sum(self.items)
+        pago.pay(total)
+        return total
+```
+
+```python
+import unittest
+
+class DummyPago:                        # nunca debería usarse
+    def pay(self, amount):
+        raise AssertionError("no debe llamarse")
+
+class SpyPago:                          # graba cómo lo llamaron
+    def __init__(self):
+        self.received_amount = None
+        self.calls = 0
+
+    def pay(self, amount):
+        self.received_amount = amount
+        self.calls += 1
+
+class CarritoTest(unittest.TestCase):
+    def test_checkout_vacio_no_toca_el_pago(self):          # Dummy
+        with self.assertRaises(ValueError):
+            Carrito().checkout(DummyPago())
+
+    def test_checkout_cobra_el_total_una_sola_vez(self):    # Spy
+        carrito = Carrito()
+        carrito.agregar(1000)
+        carrito.agregar(500)
+        spy = SpyPago()
+        carrito.checkout(spy)
+        self.assertEqual(1500, spy.received_amount)
+        self.assertEqual(1, spy.calls)
+```
+
+Un **Fake** es distinto: tiene lógica real pero simplificada. Por ejemplo, un repositorio en memoria que reemplaza a la base de datos:
+
+```python
+class FakeRepo:
+    def __init__(self):
+        self.data = {}
+
+    def save(self, clave, valor):
+        self.data[clave] = valor
+
+    def get(self, clave):
+        return self.data[clave]
+```
+
+El test guarda y luego lee, comprobando el resultado como si fuera la base real, pero sin red ni disco.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- Una clase `CalculadorEnvio` necesita consultar la tarifa por kilómetro a un `ServicioTarifas` externo para devolver el precio final de un despacho. ¿Qué tipo de test double elegirías para reemplazar a `ServicioTarifas` y por qué?
@@ -94,3 +165,8 @@ class WalletPrintTest(unittest.TestCase):
 > [!question]- ¿Qué significa la frase «los mocks pueden mentir» y qué riesgo introduce abusar de ellos (*over-mocking*)?
 > Significa que un *mock* o *stub* no ejecuta el código real de la dependencia, sino lo que el programador le programó en `return_value`. Si el contrato real del colaborador cambia (por ejemplo, cambia el formato del JSON o lanza una excepción nueva), los tests unitarios con mocks seguirán pasando en verde validando una fantasía que ya no coincide con la realidad.
 
+> [!question]- ¿Cuál es la diferencia práctica entre un Spy escrito a mano (`SpyPago`) y un `MagicMock`?
+> Ambos registran cómo fueron llamados. El Spy manual es una clase explícita cuyo registro (`received_amount`, `calls`) se consulta con asserts normales; el `MagicMock` genera ese registro automáticamente y ofrece métodos como `assert_called_once_with`. Con `MagicMock` se escribe menos código, pero el Spy manual deja el comportamiento más visible y legible.
+
+> [!question]- Para cada caso elige el doble: (a) un `ServicioHora` que siempre debe devolver las 10:00; (b) verificar que se llamó a `notificar()` exactamente dos veces; (c) una base de datos en memoria. 
+> (a) **Stub**: respuesta fija preprogramada. (b) **Mock** (o Spy): verificación de comportamiento sobre cuántas veces se llamó. (c) **Fake**: implementación funcional liviana, no apta para producción.
