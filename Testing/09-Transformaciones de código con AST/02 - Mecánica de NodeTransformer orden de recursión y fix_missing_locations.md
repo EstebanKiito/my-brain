@@ -61,6 +61,81 @@ codigo = compile(arbol, "<string>", "eval")
 
 ---
 
+---
+
+## Ejemplo práctico: los cuatro retornos en acción
+
+Probamos cada posibilidad sobre un mismo programa:
+
+```python
+fuente = """def f(x):
+    print('entrando')
+    y = x + 1
+    print('saliendo')
+    return y
+"""
+```
+
+**Retornar `None` elimina el nodo.** Quitamos las sentencias `print`:
+
+```python
+class QuitarPrints(ast.NodeTransformer):
+    def visit_Expr(self, node):
+        if (isinstance(node.value, ast.Call)
+                and isinstance(node.value.func, ast.Name)
+                and node.value.func.id == "print"):
+            return None            # se borra de la lista 'body'
+        return node
+
+print(ast.unparse(QuitarPrints().visit(ast.parse(fuente))))
+```
+
+```
+def f(x):
+    y = x + 1
+    return y
+```
+
+**Retornar una lista inserta varias sentencias en el lugar de una.** Después de cada asignación agregamos un `log(...)`:
+
+```python
+class LogDespuesDeAsignar(ast.NodeTransformer):
+    def visit_Assign(self, node):
+        aviso = ast.Expr(value=ast.Call(
+            func=ast.Name(id="log", ctx=ast.Load()),
+            args=[ast.Constant(value="asignado")], keywords=[]))
+        return [node, aviso]
+
+arbol = LogDespuesDeAsignar().visit(ast.parse("x = 1\ny = 2"))
+ast.fix_missing_locations(arbol)
+print(ast.unparse(arbol))
+```
+
+```
+x = 1
+log('asignado')
+y = 2
+log('asignado')
+```
+
+**Olvidar el `return` rompe el árbol.** Un transformador con `self.generic_visit(node)` pero sin `return node`:
+
+```python
+class Olvido(ast.NodeTransformer):
+    def visit_BinOp(self, node):
+        self.generic_visit(node)       # falta: return node
+
+print(ast.unparse(Olvido().visit(ast.parse("def f(x):\n    y = x + 1\n    return y"))))
+```
+
+```
+AttributeError: 'Assign' object has no attribute 'value'
+```
+
+Como `visit_BinOp` devuelve `None`, el `BinOp` (`x + 1`) se **elimina** del atributo `value` del `Assign`, que queda sin valor y hace fallar a `ast.unparse`. El error aparece lejos de su causa, por eso hay que revisar el `return` primero.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- ¿Qué ocurre si en un método `visit_If(self, node)` de un `ast.NodeTransformer` modificas `node.test`, pero olvidas escribir `return node` al final del método?
@@ -72,3 +147,8 @@ codigo = compile(arbol, "<string>", "eval")
 > [!question]- ¿Cómo permite `ast.NodeTransformer` reemplazar una única sentencia (como `if True:`) por múltiples sentencias (todas las instrucciones que estaban dentro de su bloque `body`)?
 > Retornando directamente una **lista de nodos** (`return node.body`). Cuando `NodeTransformer.generic_visit` recorre una lista de sentencias del padre (como `Module.body` o `FunctionDef.body`) y un método `visit_*` devuelve una `list`, extiende la lista nueva con todos sus elementos en vez de insertar una lista anidada.
 
+> [!question]- Un transformador define `visit_Return(self, node)` y termina con `return None` explícito. ¿Qué le pasa a la función `def f(): return 5`?
+> El nodo `Return` se elimina del cuerpo de la función, por lo que queda `def f():` sin sentencias, que `ast.unparse` imprime como un cuerpo vacío (código inválido que no se puede compilar). Si se quería quitar el `return` conviene reemplazarlo por `ast.Pass()`.
+
+> [!question]- ¿En qué casos se necesita `fix_missing_locations` y en cuáles no?
+> Se necesita cuando el transformador **crea nodos nuevos** (`ast.Call`, `ast.Expr`...), porque no tienen `lineno` ni `col_offset` y `compile` los exige. No hace falta si solo se **mutan atributos** de nodos existentes (como `node.op = ast.Sub()`) o se reutilizan nodos que ya traían posiciones.

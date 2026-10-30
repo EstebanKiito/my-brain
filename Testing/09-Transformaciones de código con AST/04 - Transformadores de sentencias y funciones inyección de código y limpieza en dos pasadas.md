@@ -114,6 +114,53 @@ Esta es una pregunta crítica de diseño del Capítulo 11:
 
 ---
 
+---
+
+## Ejemplo práctico: inyectar y aplanar, con resultados reales
+
+**Inyección de una traza al entrar a la función:**
+
+```python
+arbol = XTransformer().visit(ast.parse("def foo(x):\n    return x + 1"))
+ast.fix_missing_locations(arbol)
+print(ast.unparse(arbol))
+```
+
+```
+def foo(x):
+    print('foo')
+    return x + 1
+```
+
+Se puede compilar y ejecutar el resultado para comprobar que funciona:
+
+```python
+namespace = {}
+exec(compile(arbol, "<instrumentado>", "exec"), namespace)
+print(namespace["foo"](4))     # imprime 'foo' y luego devuelve 5
+```
+
+**Aplanar `if True` anidados:**
+
+```python
+arbol = IfTrueTransformer().visit(ast.parse("if True:\n    a = 1\n    if True:\n        b = 2\nc = 3"))
+print(ast.unparse(arbol))
+```
+
+```
+a = 1
+b = 2
+c = 3
+```
+
+Los dos `if True` desaparecen, y sus cuerpos pasan al nivel superior. Esto funciona porque `visit_If` devuelve **una lista** (`node.body`), que `NodeTransformer` expande dentro del `body` del padre. Por eso el `self.generic_visit(node)` al principio es clave: simplifica primero el `if True` interior, y recién después el exterior retorna su cuerpo ya simplificado.
+
+### Cuidado con las variables que cambian de alcance
+
+`IfTrueTransformer` es seguro porque `if` en Python **no crea un ámbito nuevo**: las variables definidas dentro del `if` ya eran visibles fuera. En otros lenguajes (con alcance de bloque) aplanar así cambiaría el significado.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- En `XTransformer` y `PrintArgumentsTransformer`, ¿por qué la llamada `ast.Call(func=Name(id='print', ...), ...)` debe envolverse dentro de un nodo `ast.Expr(value=...)` antes de insertarse en `node.body`?
@@ -126,3 +173,8 @@ Esta es una pregunta crítica de diseño del Capítulo 11:
 > 1. **Llamadas existentes:** cualquier llamada existente `combine(1, 2, 3)` lanzará un `TypeError` por exceso de argumentos.
 > 2. **Polimorfismo / firmas de interfaz:** si el método implementa una firma requerida por una superclase, un *framework* o `sys.settrace(frame, event, arg)` (donde `arg` debe recibirse por contrato aunque no se use), quitarlo rompe la interfaz.
 
+> [!question]- ¿Qué obtendrías con `XTransformer` sobre una clase con dos métodos `a` y `b`? ¿Y si además hay una función anidada dentro de `a`?
+> Cada `FunctionDef` recibe un `print('<nombre>')` como primera sentencia: `a`, `b` y también la función anidada, porque `generic_visit` baja hasta ella. Si solo se quisieran las funciones de primer nivel habría que evitar descender en el cuerpo con `generic_visit`.
+
+> [!question]- Un transformador de dos pasadas primero recolecta variables asignadas y luego elimina las que nunca se usan. ¿Qué riesgo tiene esa eliminación?
+> Que la variable se use de forma dinámica (por `globals()`, `eval`, `getattr`) o que su asignación tenga efectos secundarios (`x = abrir_archivo()`). Eliminar una asignación porque «nunca se lee» puede cambiar el comportamiento del programa; hay que aplicarla solo cuando el lado derecho no tiene efectos.

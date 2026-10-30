@@ -93,6 +93,50 @@ De este experimento se extraen cuatro lecciones clave:
 
 ---
 
+---
+
+## Ejemplo práctico: comprimir una clase pequeña y medir
+
+Tomamos una clase con docstrings y tipos, y aplicamos `DocstringRemover` y `TypeRemover` en cadena:
+
+```python
+codigo = """class Factura:
+    \"\"\"Representa una factura.\"\"\"
+    def total(self, impuesto: float) -> float:
+        \"\"\"Calcula el total con impuesto.\"\"\"
+        return self.monto * (1 + impuesto)
+"""
+
+arbol = ast.parse(codigo)
+arbol = DocstringRemover().visit(arbol)
+arbol = TypeRemover().visit(arbol)
+print(ast.unparse(arbol))
+```
+
+```
+class Factura:
+
+    def total(self, impuesto):
+        return self.monto * (1 + impuesto)
+```
+
+Medimos el largo en caracteres como aproximación al número de tokens:
+
+| Variante | Caracteres | Ahorro |
+| :--- | :---: | :---: |
+| Original (tras `unparse`) | $184$ | $0\%$ |
+| Sin docstrings (`c1`) | $105$ | $43\%$ |
+| Sin tipos (`c2`) | $168$ | $9\%$ |
+| `c1` + `c2` | $89$ | $52\%$ |
+
+En esta clase minúscula, quitar docstrings ahorra más que quitar tipos, igual que en el estudio sobre `BillingService`. Los números exactos dependen del código, pero la jerarquía se repite: los docstrings son texto largo, mientras que los tipos son pocas palabras por firma.
+
+### ¿Qué estamos perdiendo?
+
+Con el docstring `"Calcula el total con impuesto."` el LLM sabe que `impuesto` es una fracción (por ejemplo, `0.19`) y no un porcentaje (`19`). Sin él debe inferirlo del código: `(1 + impuesto)` sugiere una fracción, pero en casos ambiguos podría inventar la regla de negocio. Es el mismo riesgo de «semántica inventada» que vimos con $S_2$ en el Tema 02.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- ¿Cómo se representa un *docstring* dentro del AST de Python y por qué es distinto de un comentario con `#`?
@@ -104,3 +148,8 @@ De este experimento se extraen cuatro lecciones clave:
 > [!question]- ¿Por qué el porcentaje de tokens ahorrados al aplicar tres transformaciones en cadena (`c4`) es menor que la suma de los porcentajes ahorrados por cada transformación por separado (`c1 + c2 + c3`)?
 > Porque las transformaciones tienen **intersección en los nodos que eliminan**: por ejemplo, cuando `TrivialRemover` (`c3`) borra un método *getter* completo, borra también su *docstring* (que contaba en `c1`) y las anotaciones de tipo de su firma (que contaban en `c2`).
 
+> [!question]- Un equipo quiere reducir tokens antes de pedirle tests a un LLM, pero necesita que los tests respeten reglas de negocio documentadas en docstrings. ¿Qué compresión elegirías primero y cuál evitarías?
+> Empezaría por quitar anotaciones de tipo y `getters`/`setters` triviales, que casi no contienen reglas de negocio, y evitaría `DocstringRemover` justamente porque los docstrings documentan esas reglas. Después mediría cobertura y *mutation score* del resultado para confirmar que no se perdió calidad.
+
+> [!question]- ¿Por qué el ahorro de `c4` (todas las podas) es menor que la suma de los ahorros individuales?
+> Porque las podas se solapan: al quitar docstrings ya se eliminó parte del texto de los métodos triviales que luego `TrivialRemover` elimina, así que ese mismo texto no puede ahorrarse dos veces. Los porcentajes se calculan sobre el código original de cada variante, no sobre el resultado de aplicar la anterior.

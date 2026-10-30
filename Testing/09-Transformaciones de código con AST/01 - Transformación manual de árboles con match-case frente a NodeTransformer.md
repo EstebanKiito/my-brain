@@ -99,6 +99,47 @@ Si ejecutamos `CambiarSumaPorResta().visit(ast.parse("(1 + eval(2 + 3)) + (3 + 4
 
 ---
 
+---
+
+## Ejemplo práctico: transformar una expresión con una llamada adentro
+
+Aplicamos `CambiarSumaPorResta` (la versión con `NodeTransformer`) a la expresión que rompía la versión manual:
+
+```python
+import ast
+
+class CambiarSumaPorResta(ast.NodeTransformer):
+    def visit_BinOp(self, nodo):
+        nodo = self.generic_visit(nodo)        # baja primero por los hijos
+        if isinstance(nodo.op, ast.Add):
+            nodo.op = ast.Sub()
+        return nodo
+
+arbol = ast.parse("(1 + eval(2 + 3)) + (3 + 4)", mode="eval")
+nuevo = CambiarSumaPorResta().visit(arbol)
+print(ast.unparse(nuevo))
+```
+
+Salida:
+
+```
+1 - eval(2 - 3) - (3 - 4)
+```
+
+* La suma que está **dentro de `eval(...)`** (`2 + 3`) también se transformó: `generic_visit` bajó por el nodo `Call` sin que escribiéramos un `case` para él.
+* `ast.unparse` quitó los paréntesis de `(1 - eval(...)) - (3 - 4)` porque la resta es asociativa por la izquierda y no son necesarios. El árbol sigue siendo el mismo.
+* No hizo falta `fix_missing_locations` porque solo **mutamos** un nodo existente (`nodo.op`), que ya tenía posiciones; esa función es necesaria cuando **creamos** nodos nuevos.
+
+### Comparación directa
+
+| Aspecto | `match-case` manual | `NodeTransformer` |
+| :--- | :--- | :--- |
+| Nodos que hay que tratar | Todos los que puedan aparecer (más de $100$) | Solo `visit_BinOp` |
+| Qué pasa con `Call`, `If`, `FunctionDef`... | Se pierden o falla (`None`) | `generic_visit` los recorre solos |
+| Útil para | Entender la idea en expresiones pequeñas | Cualquier programa real |
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- ¿Qué ventaja fundamental ofrece heredar de `ast.NodeTransformer` frente a escribir una función recursiva propia con `match-case` para transformar un programa Python?
@@ -110,3 +151,8 @@ Si ejecutamos `CambiarSumaPorResta().visit(ast.parse("(1 + eval(2 + 3)) + (3 + 4
 > [!question]- Al usar `match nodo:` en Python 3.10+, ¿qué diferencia hay entre escribir `case ast.BinOp(left=izq, op=ast.Add(), right=der):` y usar `isinstance` tradicional?
 > El patrón `case` no solo comprueba que `nodo` sea un `ast.BinOp` y que su atributo `op` sea una instancia de `ast.Add`, sino que además **desestructura** el objeto en el mismo paso, asignando automáticamente `nodo.left` a la variable `izq` y `nodo.right` a la variable `der`.
 
+> [!question]- ¿Qué imprime `ast.unparse(CambiarSumaPorResta().visit(ast.parse("a + b * c", mode="eval")))`?
+> `a - b * c`. Solo se transforma el `Add` de la raíz; el `Mult` interno no tiene un `visit_` propio (usa `generic_visit`) y se queda igual. El `*` tiene mayor precedencia, así que `b * c` sigue siendo un subárbol de la resta.
+
+> [!question]- ¿Por qué el ejemplo con `match-case` devuelve el mismo nodo (`return nodo`) en `ast.Constant`?
+> Porque una constante es una hoja: no tiene hijos que transformar ni nada que reescribir. Si el `match` no tuviera ese caso, la función devolvería `None` (ningún `case` coincide) y el padre quedaría con un hijo vacío.

@@ -131,6 +131,68 @@ new_tree = RenameTransformer().visit(tree)
 
 ---
 
+---
+
+## Ejemplo práctico: tres transformadores sobre un mismo archivo
+
+Aplicamos `SimplificarSumaCero`, `CompareNoneToIsTransformer` y `SimplificarBooleanos` en cadena, sobre un código con varios casos:
+
+```python
+fuente = """r = (x + 0) + 0
+s = 0 + y
+t = a + 1
+if x == None:
+    pass
+if activo == True:
+    pass
+if listo == False:
+    pass
+if y == 0:
+    pass
+"""
+
+arbol = ast.parse(fuente)
+for transformador in (SimplificarSumaCero(), CompareNoneToIsTransformer(), SimplificarBooleanos()):
+    arbol = transformador.visit(arbol)
+ast.fix_missing_locations(arbol)
+print(ast.unparse(arbol))
+```
+
+Resultado:
+
+```
+r = x
+s = y
+t = a + 1
+if x is None:
+    pass
+if activo:
+    pass
+if not listo:
+    pass
+if y == 0:
+    pass
+```
+
+Qué pasó con cada línea:
+
+* `(x + 0) + 0` → `x`: gracias a `generic_visit` primero, la suma interior se simplifica antes de evaluar la exterior.
+* `0 + y` → `y`: el cero a la izquierda.
+* `a + 1` queda igual: ningún operando es cero.
+* `x == None` → `x is None`, `activo == True` → `activo`, `listo == False` → `not listo`.
+* `y == 0` **no se toca**: comparar con `0` no es un caso de los tres transformadores. Es un recordatorio de que cada regla tiene que ser lo bastante específica.
+
+### Por qué `type(valor) is int` y no `valor == 0`
+
+```python
+0 == 0        # True
+False == 0    # True   ← cuidado
+```
+
+Si la regla usara `node.right.value == 0`, también transformaría `x + False` en `x`, y eso es un cambio de significado cuando `x` no es numérico. Comprobar `type(valor) is int` limita la regla a los enteros reales.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- En `SimplificarSumaCero`, ¿qué devolvería el transformador para la expresión anidada `(x + 0) + 0` si olvidáramos escribir `node = self.generic_visit(node)` al inicio de `visit_BinOp`?
@@ -141,3 +203,9 @@ new_tree = RenameTransformer().visit(tree)
 
 > [!question]- Explica por qué un `NodeTransformer` que solo implementa `visit_Name` para renombrar `x` a `y` rompe la función `def f(x): return x + 1` produciendo un `NameError` en tiempo de ejecución.
 > Porque en el AST de Python los parámetros declarados en la firma de una función (`def f(x):`) se representan mediante nodos **`ast.arg`** (con atributo `.arg`), no mediante `ast.Name`. En consecuencia, `visit_Name` renombra el uso de `x` a `y` en el `return`, pero deja el parámetro como `x` en la firma, haciendo que `y` no esté definida al llamar a `f`.
+
+> [!question]- ¿Qué devuelve `SimplificarSumaCero` para `x + 0.0` y `x + False`? ¿Es correcto?
+> Devuelve ambos sin cambios, porque `0.0` es `float` y `False` es `bool` (el chequeo exige `type(...) is int`). Es un comportamiento conservador y correcto: simplificar podría cambiar el tipo del resultado (por ejemplo, `5 + 0.0` es `5.0`, no `5`).
+
+> [!question]- Escribe el resultado de aplicar `LiteralEvalTransformer` a `resultado = eval(texto)` y explica el riesgo que reduce.
+> Queda `resultado = ast.literal_eval(texto)`. `eval` ejecuta cualquier expresión (incluyendo `__import__('os').system(...)`), mientras que `ast.literal_eval` solo acepta literales (números, strings, listas, diccionarios...), por lo que una entrada maliciosa lanza `ValueError` en vez de ejecutarse.
