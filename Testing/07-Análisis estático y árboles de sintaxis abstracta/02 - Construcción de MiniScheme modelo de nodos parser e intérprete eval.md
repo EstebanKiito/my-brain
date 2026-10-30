@@ -126,6 +126,53 @@ Observa cómo `If0Node.eval()` se comporta con pereza (*lazy evaluation*): eval�
 
 ---
 
+---
+
+## Ejemplo práctico: construir, imprimir y evaluar un árbol a mano
+
+Armamos con nuestras clases la expresión `(if0 (- 2 2) (+ 1 1) 9)` sin pasar por el parser:
+
+```python
+arbol = If0Node(
+    SubtractionNode(NumberNode(2), NumberNode(2)),    # condición: (- 2 2)
+    AdditionNode(NumberNode(1), NumberNode(1)),       # rama 'then': (+ 1 1)
+    NumberNode(9),                                    # rama 'else': 9
+)
+arbol.pretty_print()
+print(arbol.eval())
+```
+
+Salida:
+
+```
+if0
+ -
+  2
+  2
+ +
+  1
+  1
+ 9
+2
+```
+
+### Cómo se evalúa (de abajo hacia arriba)
+
+1. `SubtractionNode.eval()` calcula `2 - 2 = 0`.
+2. `If0Node.eval()` compara la condición con `0`: es cierto, así que evalúa la rama `then`.
+3. `AdditionNode.eval()` calcula `1 + 1 = 2`.
+4. La rama `else` (`9`) **no se evalúa**: es un `if` de verdad, no una función que evalúe sus tres argumentos.
+
+El `pretty_print` usa un espacio por nivel de profundidad, así que la sangría de cada línea es el nivel del nodo en el árbol: `if0` en el nivel $0$, `-` y `+` en el nivel $1$, y sus números en el nivel $2$.
+
+### Ejercicios para hacer a mano
+
+* `(+ (+ 1 2) (- 5 3))` → árbol con raíz `+`, hijos `+(1,2)` y `-(5,3)`; evalúa a $3 + 2 = 5$.
+* `(if0 1 100 (+ 2 2))` → la condición vale $1 \ne 0$, así que se evalúa la rama `else` y resulta $4$.
+* ¿Cuántos nodos tiene `(+ 2 (+ 3 1))`? $5$: dos `+` y tres números.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- ¿Por qué la función `splitArgs` en el parser de MiniScheme mantiene una variable `open_counter` en lugar de usar `string.split(' ')`?
@@ -136,3 +183,9 @@ Observa cómo `If0Node.eval()` se comporta con pereza (*lazy evaluation*): eval�
 
 > [!question]- ¿Qué ventaja de diseño ofrece que cada subclase (`NumberNode`, `AdditionNode`, `EqualNode`) implemente su propio método `eval()` frente a tener una única función global con múltiples `if isinstance(node, ...)`?
 > Cumple el principio Abierto/Cerrado (polimorfismo): para agregar un nuevo operador al lenguaje (como `SubtractionNode` o `If0Node`) basta con crear una nueva subclase con su propio `eval()` y registrarla en el parser, sin modificar ni arriesgar romper la lógica de evaluación de los nodos existentes.
+
+> [!question]- Dibuja el árbol de `(- (+ 4 1) (if0 0 3 7))` y evalúalo.
+> Raíz `-` con hijos `+(4, 1)` e `if0(0, 3, 7)`. El primero vale $5$; el `if0` tiene condición $0$, así que evalúa la rama `then` y vale $3$. Resultado: $5 - 3 = 2$.
+
+> [!question]- ¿Por qué `splitArgs` cuenta paréntesis abiertos en lugar de usar `split(" ")`?
+> Porque un espacio solo separa argumentos cuando está **fuera** de cualquier paréntesis. En `+ 2 (+ 3 1)` hay un espacio dentro del segundo argumento, y un `split(" ")` ingenuo lo partiría en `"(+"`, `"3"` y `"1)"`. El contador `open_counter` lleva la cuenta de la profundidad para separar solo en el nivel $0$.

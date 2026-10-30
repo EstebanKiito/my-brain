@@ -104,6 +104,50 @@ A veces queremos controlar manualmente qué hijos visitar. Por ejemplo, en `Audi
 
 ---
 
+---
+
+## Ejemplo práctico: un visitante que reúne información de un módulo
+
+Queremos listar las funciones llamadas y las variables asignadas de un programa:
+
+```python
+import ast
+
+class Resumen(ast.NodeVisitor):
+    def __init__(self):
+        self.llamadas, self.asignadas = [], []
+
+    def visit_Call(self, node):
+        if isinstance(node.func, ast.Name):
+            self.llamadas.append(node.func.id)
+        self.generic_visit(node)               # para ver llamadas anidadas como f(g(x))
+
+    def visit_Assign(self, node):
+        for destino in node.targets:
+            if isinstance(destino, ast.Name):
+                self.asignadas.append(destino.id)
+        self.generic_visit(node)               # el valor puede contener más llamadas
+
+programa = """
+total = 0
+for i in range(3):
+    total = total + helper(i)
+print(total)
+"""
+r = Resumen()
+r.visit(ast.parse(programa))
+print(r.llamadas)     # ['range', 'helper', 'print']
+print(r.asignadas)    # ['total', 'total']
+```
+
+Observa que `visit_Assign` **no** captura a `i` (la variable del `for` no pertenece a un `Assign`) y que la llamada a `helper` solo se encuentra porque `visit_Assign` y `visit_For` (el heredado, que usa `generic_visit`) bajan hasta ella.
+
+### Qué pasa al borrar `self.generic_visit(node)` de `visit_Assign`
+
+Sin esa línea, `visit_Assign` registra `total` pero no examina el valor `total + helper(i)`, así que `helper` desaparece del resultado y `llamadas` queda como `['range', 'print']`. Es silencioso: no hay error, solo un resultado incompleto. Por eso la regla práctica es *toda `visit_X` llama a `generic_visit` salvo que haya una razón explícita para cortar el recorrido*.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- ¿Qué método ejecuta internamente `ast.NodeVisitor.visit(node)` cuando la subclase NO define un método `visit_<ClaseDelNodo>`, y qué ocurre cuando SÍ lo define?
@@ -115,3 +159,8 @@ A veces queremos controlar manualmente qué hijos visitar. Por ejemplo, en `Audi
 > [!question]- Si quieres escribir un visitante `NombresLeidos(ast.NodeVisitor)` que guarde en `self.nombres` únicamente las variables cuyo valor se lee en `resultado = precio * cantidad` (ignorando la variable asignada `resultado`), ¿qué condición debes verificar dentro de `visit_Name(self, node)`?
 > Debes verificar que el contexto del nodo sea de carga: `if isinstance(node.ctx, ast.Load): self.nombres.append(node.id)`. Así ignoras `resultado` (que tiene `ctx=ast.Store()`) y guardas `['precio', 'cantidad']`.
 
+> [!question]- En el visitante `Resumen`, ¿qué devuelve `llamadas` para `"f(g(h(1)))"` con y sin `generic_visit` en `visit_Call`?
+> Con `generic_visit`: `['f', 'g', 'h']` (recorre las tres llamadas anidadas). Sin `generic_visit`: `['f']`, porque al registrar la llamada exterior no baja a sus argumentos donde están `g(...)` y `h(...)`.
+
+> [!question]- Quieres contar los `return` de una función **sin** contar los de las funciones anidadas dentro de ella. ¿Qué debes hacer en `visit_FunctionDef`?
+> Visitar manualmente solo el cuerpo de la función exterior y no llamar a `generic_visit` sobre las `FunctionDef` anidadas, o bien detectar que un `FunctionDef` hijo no es el nodo raíz de interés y no descender en él. Es uno de los casos en que *no* usar `generic_visit` es la decisión correcta.

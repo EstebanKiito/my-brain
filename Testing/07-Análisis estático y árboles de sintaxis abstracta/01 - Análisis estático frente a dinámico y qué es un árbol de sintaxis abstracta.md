@@ -63,6 +63,61 @@ Analizar el AST en lugar de ejecutar el programa tiene tres consecuencias fundam
 
 ---
 
+---
+
+## Ejemplo práctico: por qué una expresión regular no basta para encontrar `eval`
+
+Queremos contar las llamadas reales a `eval(...)` en este archivo:
+
+```python
+fuente = """# nunca uses eval(x)
+print("no llames eval(x)")
+resultado = eval(entrada)
+evaluador = 5
+"""
+```
+
+**Con una expresión regular:**
+
+```python
+import re
+print(len(re.findall(r"eval\(", fuente)))      # 3
+```
+
+Encuentra $3$ coincidencias: el comentario, el texto dentro del `print` y la llamada real. Dos son **falsos positivos**.
+
+**Con el AST:**
+
+```python
+import ast
+
+class ContarEval(ast.NodeVisitor):
+    def __init__(self):
+        self.n = 0
+
+    def visit_Call(self, node):
+        if isinstance(node.func, ast.Name) and node.func.id == "eval":
+            self.n += 1
+        self.generic_visit(node)
+
+v = ContarEval()
+v.visit(ast.parse(fuente))
+print(v.n)                                      # 1
+```
+
+El parser ya descartó comentarios y entiende que lo que va entre comillas es un `Constant`, no una llamada. Solo queda una `Call` cuyo `func` es `Name(id='eval')`. Ese es el valor de pasar de la sintaxis concreta a la estructura.
+
+### Mismo resultado, distinto árbol
+
+```python
+ast.dump(ast.parse("2 + 3 + 4"))
+ast.dump(ast.parse("2 + (3 + 4)"))
+```
+
+Ambos evalúan a $9$, pero el primero es `BinOp(BinOp(2, +, 3), +, 4)` (asociativo a la izquierda) y el segundo `BinOp(2, +, BinOp(3, +, 4))`. Un analizador que cuenta la forma del árbol los ve distintos aunque su significado sea el mismo.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- Da un ejemplo concreto de un defecto que el análisis estático detecta trivialmente pero el análisis dinámico no puede detectar, y otro ejemplo del caso inverso.
@@ -75,3 +130,8 @@ Analizar el AST en lugar de ejecutar el programa tiene tres consecuencias fundam
 > [!question]- ¿Qué establece el Teorema de Rice y qué compromiso práctico obliga a tomar al diseñar herramientas de análisis estático?
 > Establece que toda propiedad semántica no trivial sobre lo que calcula un programa es indecidible en el caso general. En la práctica, esto obliga a los analizadores estáticos a verificar aproximaciones sintácticas sobre el AST, asumiendo un compromiso (*trade-off*) entre **falsos positivos** (advertir de un posible error que en ejecución nunca ocurre) y **falsos negativos** (dejar pasar un bug camuflado con otra forma sintáctica).
 
+> [!question]- Un analizador estático avisa de una posible división por cero en `x / (a - b)`, pero en tu programa `a` y `b` nunca son iguales. ¿Qué tipo de resultado es y por qué ocurre?
+> Es un **falso positivo**. El análisis estático ve solo la estructura (una división cuyo divisor es una resta) y no conoce los valores reales en ejecución, así que debe asumir que `a == b` es posible. Para evitar perder defectos reales, estas herramientas aceptan emitir avisos que a veces son infundados.
+
+> [!question]- Menciona una ventaja y una limitación del análisis estático frente al dinámico, con un ejemplo de cada una.
+> Ventaja: revisa **todas** las ramas del archivo sin ejecutarlas (por ejemplo, un `eval` dentro de un `else` que nunca se ejecuta en las pruebas). Limitación: no conoce los valores en tiempo de ejecución, por lo que no puede decidir con certeza si, por ejemplo, un índice quedará fuera de rango cuando depende de la entrada del usuario.

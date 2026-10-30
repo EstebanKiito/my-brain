@@ -117,6 +117,57 @@ class DepthVisitor(CodeVisitor):
 
 ---
 
+---
+
+## Ejemplo práctico: tres visitantes sobre el mismo árbol
+
+Reutilizamos el árbol `(if0 (- 2 2) (+ 1 1) 9)` y aplicamos distintos visitantes, sin tocar las clases de los nodos:
+
+```python
+class SubtractionCounterVisitor(CodeVisitor):
+    def __init__(self):
+        self.counter = 0
+
+    def visit_subtraction(self, node):
+        super().visit_subtraction(node)
+        self.counter += 1
+
+for Visitante in (SubtractionCounterVisitor, NumberCounterVisitor):
+    v = Visitante()
+    arbol.accept(v)
+    print(Visitante.__name__, v.counter)
+```
+
+Resultado:
+
+```
+SubtractionCounterVisitor 1
+NumberCounterVisitor 5
+```
+
+* Hay una sola resta, `(- 2 2)`.
+* Los números del árbol son $2, 2, 1, 1$ y $9$: cinco.
+
+Nótese el beneficio del patrón: para agregar un análisis nuevo (contar restas) solo escribimos una clase, sin modificar `NumberNode` ni `AdditionNode`.
+
+### Traza del doble despacho para `DepthVisitor`
+
+Sobre `(+ 2 (+ 3 1))`:
+
+1. `arbol.accept(visitor)` → `AdditionNode.accept` llama a `visitor.visit_addition(arbol)`.
+2. `visit_addition` llama a `node.leftNode.accept(self)`: el nodo `2` responde `visit_number` y devuelve $1$.
+3. Luego `node.rightNode.accept(self)`: es otro `AdditionNode`, que a su vez llama a `visit_number` en `3` y en `1` (ambos $1$) y devuelve $1 + \max(1, 1) = 2$.
+4. La raíz devuelve $1 + \max(1, 2) = 3$.
+
+```python
+profundidad = AdditionNode(NumberNode(2), AdditionNode(NumberNode(3), NumberNode(1))).accept(DepthVisitor())
+print(profundidad)     # 3
+```
+
+Observa que `DepthVisitor` **retorna valores** en vez de acumularlos en un contador: los visitantes pueden hacer ambas cosas, y por eso `DepthVisitor` sobrescribe tanto `visit_number` como `visit_addition` sin heredar el recorrido de `CodeVisitor`.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- En `AdditionCounterVisitor`, ¿qué ocurriría al analizar `"(+ 2 (+ 3 (+ 1 2)))"` si dentro de `visit_addition(self, node)` escribimos únicamente `self.counter += 1` y olvidamos llamar a `super().visit_addition(node)`?
@@ -128,3 +179,8 @@ class DepthVisitor(CodeVisitor):
 > [!question]- Además de contar la primera instancia en `(if0 0 2 3)`, ¿por qué `If0ZeroVisitor` logra encontrar ese nodo si se encuentra dentro de la rama `thenNode` de un `if0` exterior cuya condición `(+ 1 1)` jamás sería `0` al ejecutarse?
 > Porque `CodeVisitor.visit_if0` recorre **todas las ramas sintácticas del árbol** (`condNode`, `thenNode` y `elseNode`) sin importar qué valor tomaría la condición en tiempo de ejecución. Esa es justamente una ventaja clave del análisis estático: inspecciona ramas que en una prueba dinámica podrían no ejecutarse.
 
+> [!question]- ¿Qué ocurre si en `AdditionCounterVisitor.visit_addition` olvidas llamar a `super().visit_addition(node)` y evalúas `(+ 1 (+ 2 3))`?
+> Cuenta solo $1$ en vez de $2$: el visitante entra en la suma exterior, incrementa el contador y, al no propagar la visita a los hijos, nunca llega a la suma interior. Es el equivalente en MiniScheme del olvido de `generic_visit` en `ast.NodeVisitor`.
+
+> [!question]- Escribe un visitante `MaxLiteralVisitor` que devuelva el mayor número literal del árbol. ¿Qué método debes sobrescribir y qué estado necesitas?
+> Basta con sobrescribir `visit_number` y guardar el máximo visto en un atributo (`self.maximo = max(self.maximo, node.value)`), inicializado a `-inf` en el constructor. Los demás nodos usan el recorrido heredado de `CodeVisitor`, que baja por los hijos.

@@ -72,6 +72,86 @@ En las pruebas escritas y de programación de reglas o transformaciones, casi to
 
 ---
 
+---
+
+## Ejemplo práctico: leer el AST de una función completa
+
+Veamos el árbol de una función con asignación, condicional y retornos:
+
+```python
+import ast
+
+codigo = """
+def sumar(x, y):
+    total = x + y
+    if total > 10:
+        return total
+    return 0
+"""
+print(ast.dump(ast.parse(codigo), indent=2))
+```
+
+(En versiones recientes de Python `ast.dump` omite campos vacíos como `decorator_list=[]`; en versiones anteriores verás algunos más.)
+
+```
+Module(
+  body=[
+    FunctionDef(
+      name='sumar',
+      args=arguments(
+        args=[
+          arg(arg='x'),
+          arg(arg='y')]),
+      body=[
+        Assign(
+          targets=[
+            Name(id='total', ctx=Store())],
+          value=BinOp(
+            left=Name(id='x', ctx=Load()),
+            op=Add(),
+            right=Name(id='y', ctx=Load()))),
+        If(
+          test=Compare(
+            left=Name(id='total', ctx=Load()),
+            ops=[
+              Gt()],
+            comparators=[
+              Constant(value=10)]),
+          body=[
+            Return(
+              value=Name(id='total', ctx=Load()))]),
+        Return(
+          value=Constant(value=0))])])
+```
+
+### Cómo leerlo
+
+* `FunctionDef` tiene `name='sumar'` y sus parámetros son `arg(arg='x')` y `arg(arg='y')`, **no** `Name`.
+* `total = x + y`: el destino `total` es `Name(..., ctx=Store())`, y `x`, `y` dentro del `BinOp` son `Load()`.
+* `total > 10` es un `Compare` con `left=Name(total)`, `ops=[Gt()]` y `comparators=[Constant(10)]`: por eso la comparación guarda *listas*, para soportar `a < b < c`.
+* El `if` no tiene `else`, así que `orelse` está vacío (y no aparece en el dump abreviado). El segundo `Return` es una sentencia del cuerpo de la función, **no** del `If`.
+
+### Distinguir `Store` de `Load` en la práctica
+
+```python
+class Nombres(ast.NodeVisitor):
+    def __init__(self):
+        self.escritos, self.leidos = [], []
+
+    def visit_Name(self, node):
+        destino = self.escritos if isinstance(node.ctx, ast.Store) else self.leidos
+        destino.append(node.id)
+
+n = Nombres()
+n.visit(ast.parse("total = 0\nfor i in range(3):\n    total = total + helper(i)\nprint(total)"))
+print(n.escritos)     # ['total', 'i', 'total']
+print(n.leidos)       # ['range', 'total', 'helper', 'i', 'print', 'total']
+```
+
+Fíjate en dos cosas: `range`, `helper` y `print` aparecen como `Name` leídos (en una llamada, `func` es un `Name` con `Load`), y la variable del `for` (`i`) cuenta como `Store`.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- En el AST de Python, ¿por qué en un nodo `ast.Compare` (como `a < b < c` o `x == 5`) los atributos `ops` y `comparators` son listas en lugar de un único operador y un único operando derecho?
@@ -86,3 +166,8 @@ En las pruebas escritas y de programación de reglas o transformaciones, casi to
 > [!question]- ¿Qué diferencia hay en el AST de Python entre cómo se representa el parámetro `x` en la firma `def f(x):` y cómo se representa `x` en la línea `return x + 1` dentro de esa función?
 > En la firma `def f(x):`, `x` se representa como un nodo **`ast.arg(arg='x')`** dentro de la lista `node.args.args` del `FunctionDef`. En cambio, dentro del cuerpo (`return x + 1`), `x` se representa como un nodo **`ast.Name(id='x', ctx=Load())`**.
 
+> [!question]- ¿Cómo se representa `a < b < c` en el AST y por qué `Compare` usa listas?
+> Es un único nodo `Compare(left=a, ops=[Lt(), Lt()], comparators=[b, c])`. Las listas existen porque Python permite encadenar comparaciones y cada operador se aplica entre el operando anterior y el siguiente; con una sola comparación (`x == 10`) las listas tienen un elemento.
+
+> [!question]- Dado `self.balance += 5`, ¿qué nodo `ast` lo representa y con qué `ctx` aparece `balance`?
+> Es un `AugAssign` cuyo `target` es `Attribute(value=Name(id='self'), attr='balance', ctx=Store())`, con `op=Add()` y `value=Constant(5)`. El `ctx` de `balance` es `Store` porque se está escribiendo (aunque, semánticamente, también se lee antes de sumar).
