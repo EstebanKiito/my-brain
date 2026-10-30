@@ -109,6 +109,56 @@ class MutationFuzzer:
 
 ---
 
+---
+
+## Ejemplo práctico: qué hace cada mutador sobre un PIN
+
+```python
+def validar_pin(pin):
+    if len(pin) != 4:
+        return "largo inválido"
+    if not pin.isdigit():
+        return "solo dígitos"
+    if pin == pin[0] * 4:
+        return "pin débil"
+    return "ok"
+```
+
+Aplicamos cada operador sobre la semilla `"1234"` $3\,000$ veces y contamos las respuestas:
+
+```python
+from collections import Counter
+
+for operador in (delete_random_character, insert_random_character, flip_random_character):
+    cuenta = Counter(validar_pin(operador("1234")) for _ in range(3000))
+    print(operador.__name__, dict(cuenta))
+```
+
+Resultado típico:
+
+```
+delete_random_character {'largo inválido': 3000}
+insert_random_character {'largo inválido': 3000}
+flip_random_character   {'ok': 1376, 'solo dígitos': 1624}
+```
+
+Es lo que predice la teoría: borrar o insertar **siempre** rompe el largo, mientras que `flip` lo mantiene y llega a las guardas siguientes. Además `flip` genera tanto `"ok"` como `"solo dígitos"`, por lo que explora dos caminos distintos desde una sola semilla.
+
+### Cuántas mutaciones apilar
+
+Aplicamos $k$ mutaciones consecutivas (`mutate` repetido $k$ veces) y vemos cuántas entradas siguen siendo un PIN válido:
+
+| $k$ (mutaciones apiladas) | `"largo inválido"` | `"solo dígitos"` | `"ok"` |
+| :---: | :---: | :---: | :---: |
+| 1 | $\approx 67\%$ | $\approx 18\%$ | $\approx 15\%$ |
+| 3 | $\approx 74\%$ | $\approx 23\%$ | $\approx 3\%$ |
+| 10 | $\approx 85\%$ | $\approx 15\%$ | $\approx 0.1\%$ |
+| 30 | $\approx 90\%$ | $\approx 10\%$ | $0\%$ |
+
+(sobre $3\,000$ intentos por fila). A medida que $k$ crece, la entrada se aleja de la semilla y casi todo termina rechazado en el primer `if`. Esto muestra el compromiso que controlan `min_mutations` y `max_mutations`: pocas mutaciones se quedan cerca de la semilla; muchas la destruyen.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- En la clase `MutationFuzzer(seed, min_mutations=2, max_mutations=10)`, explica con precisión cómo utiliza el algoritmo los atributos `min_mutations` y `max_mutations` al generar un nuevo input.
@@ -120,3 +170,8 @@ class MutationFuzzer:
 > [!question]- ¿Por qué el método `fuzz()` de `MutationFuzzer` devuelve primero los elementos de `self.seed` sin mutar antes de empezar a llamar a `create_candidate()`?
 > Porque las semillas originales son entradas válidas conocidas que ya atraviesan el camino feliz del programa. Devolverlas intactas en las primeras llamadas garantiza que la suite cubra primero el comportamiento base válido antes de explorar variaciones deformadas alrededor de él.
 
+> [!question]- Con `seed = ["abc"]` y `min_mutations = max_mutations = 2`, ¿puede `create_candidate()` devolver exactamente `"abc"`? ¿Y devolver una cadena de largo $3$?
+> Sí a ambas. Dos mutaciones pueden deshacerse una a otra (por ejemplo, insertar un carácter y luego borrarlo, o voltear el mismo bit dos veces) y devolver la semilla. Y dos mutaciones pueden dejar el largo en $3$ (un `flip` más otro `flip`, o `insert` más `delete`).
+
+> [!question]- Explica por qué `flip_random_character` es el único de los tres operadores que sirve para mutar un PIN de $4$ dígitos sin romper la primera guarda.
+> Porque conserva el largo (reemplaza un carácter por otro cambiando un bit), mientras que `delete` lo reduce a $3$ e `insert` lo aumenta a $5$ y ambos fallan en `len(pin) != 4`. Si se aplicaran varias mutaciones, `delete` seguido de `insert` también podría restaurar el largo, pero solo por combinación.

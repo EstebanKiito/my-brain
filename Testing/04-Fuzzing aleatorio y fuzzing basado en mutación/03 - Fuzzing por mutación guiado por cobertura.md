@@ -83,6 +83,70 @@ Con solo $6$ candidatos conservados de $100$ intentos, la suite alcanza las **$1
 
 ---
 
+---
+
+## Ejemplo práctico: un mini fuzzer guiado por cobertura sobre `validar_pin`
+
+```python
+def validar_pin(pin):
+    if len(pin) != 4:
+        return "largo inválido"
+    if not pin.isdigit():
+        return "solo dígitos"
+    if pin == pin[0] * 4:
+        return "pin débil"
+    return "ok"
+```
+
+Implementamos las ideas de la nota en unas pocas líneas: medimos las líneas ejecutadas con `sys.settrace` y solo conservamos los candidatos que aportan una huella nueva.
+
+```python
+import random, sys
+
+def lineas(func, entrada):
+    vistas = set()
+    def tracer(frame, event, arg):
+        if event == "line" and frame.f_code.co_name == func.__name__:
+            vistas.add(frame.f_lineno)
+        return tracer
+    sys.settrace(tracer)
+    try:
+        func(entrada)
+    finally:
+        sys.settrace(None)
+    return frozenset(vistas)
+
+poblacion = ["1234"]
+vistas = {lineas(validar_pin, "1234")}
+
+for i in range(200):
+    candidato = random.choice(poblacion)
+    for _ in range(random.randint(1, 3)):
+        candidato = mutate(candidato)
+    huella = lineas(validar_pin, candidato)
+    if huella not in vistas:                      # camino nuevo → conservar
+        vistas.add(huella)
+        poblacion.append(candidato)
+        print(i, repr(candidato), validar_pin(candidato))
+```
+
+Una corrida típica imprime:
+
+```
+0 ')1234' largo inválido
+2 '>123' solo dígitos
+```
+
+y termina con `poblacion = ['1234', ')1234', '>123']`:
+
+* La semilla `"1234"` cubre el camino completo (hasta `"ok"`).
+* `')1234'` abre la rama del largo inválido.
+* `'>123'` mantiene el largo $4$ pero rompe `isdigit()`, abriendo la rama `"solo dígitos"`.
+
+**Pero el fuzzer nunca encuentra `"pin débil"`**, aun con $200$ intentos. Para llegar ahí se necesitan cuatro dígitos *iguales*, una comparación exacta que a nivel de «líneas ejecutadas» no ofrece ninguna pista intermedia. Es el límite de los *magic values* de la nota: la cobertura de líneas es binaria, no distingue un candidato «casi igual» de uno totalmente distinto.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- ¿Qué ventaja fundamental aporta conservar en `self.population` las entradas mutadas que descubren cobertura nueva, en lugar de mutar siempre únicamente la semilla original?
@@ -97,3 +161,8 @@ Con solo $6$ candidatos conservados de $100$ intentos, la suite alcanza las **$1
 > [!question]- ¿Por qué `MutationCoverageFuzzer` sigue teniendo dificultades para cubrir una rama protegida por `if clave == "X9#kL2!p":` aunque registre la cobertura en cada intento?
 > Porque la cobertura de líneas solo ofrece retroalimentación **cuando ya lograste entrar a la ramanueva**. Mientras `clave` difiera aunque sea en un carácter de `"X9#kL2!p"`, todas las mutaciones fallidas ejecutan exactamente la misma línea del `if` (rama falsa), por lo que ninguna aporta cobertura nueva ni le indica al fuzzer que tener $7$ de los $8$ caracteres correctos está «más cerca» que tener $0$.
 
+> [!question]- En el mini fuzzer, ¿por qué se guarda `frozenset(vistas)` y no el `set` directamente en `vistas`?
+> Porque los elementos de un `set` deben ser *hashables*, y un `set` normal no lo es (es mutable). `frozenset` es la versión inmutable y hashable, y permite guardar conjuntos de líneas dentro de otro conjunto y preguntar en $O(1)$ si esa huella ya se vio.
+
+> [!question]- Propón un cambio mínimo a la semilla del mini fuzzer para que encuentre `"pin débil"` con facilidad.
+> Agregar a la población inicial una semilla como `"1111"` (que ya es un pin débil) o `"1110"` (a un `flip` de distancia: `"1"` y `"0"` difieren en un solo bit). Con una semilla cercana a la condición exacta, una sola mutación basta. Es la ilustración de que la calidad de las semillas condiciona lo que puede descubrir un fuzzer de mutación.

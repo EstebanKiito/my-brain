@@ -81,6 +81,48 @@ Y si además exigimos que tenga un punto en el dominio, la subcadena `"/api/"` e
 
 ---
 
+---
+
+## Ejemplo práctico: contar a dónde llegan $10\,000$ entradas aleatorias
+
+Usamos una función pequeña con tres guardas encadenadas:
+
+```python
+def validar_pin(pin):
+    if len(pin) != 4:
+        return "largo inválido"
+    if not pin.isdigit():
+        return "solo dígitos"
+    if pin == pin[0] * 4:
+        return "pin débil"
+    return "ok"
+```
+
+Y la alimentamos con $10\,000$ cadenas de `RandomFuzzer` (largo entre $2$ y $10$, alfabeto `string.printable`), contando qué respuesta devuelve cada una:
+
+```python
+from collections import Counter
+
+resultados = Counter(validar_pin(RandomFuzzer().create_candidate()) for _ in range(10_000))
+print(resultados)
+```
+
+Una corrida típica (los números varían un poco entre ejecuciones):
+
+```
+Counter({'largo inválido': 8893, 'solo dígitos': 1107})
+```
+
+Lectura del resultado:
+
+* Cerca del $89\%$ muere en la primera guarda: solo hay $1$ de $9$ largos posibles que sirve ($4$ de $2..10$).
+* Las que pasan el largo ($\approx 11\%$) casi nunca son todo dígitos, así que todas terminan en `"solo dígitos"`.
+* **Ninguna** llega a `"pin débil"` ni a `"ok"`. Para que ocurra, deben coincidir largo $4$ (prob. $\approx 1/9$), cuatro dígitos (prob. $(10/100)^4 = 10^{-4}$), y además en `"ok"` que no sean los cuatro iguales. La probabilidad conjunta ronda $10^{-5}$, y $10\,000$ intentos no alcanzan para verlo.
+
+El fuzzer aleatorio es ciego al *orden* de las guardas: gasta todo su presupuesto en la primera.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- ¿Qué tipo de oráculo de prueba utiliza el fuzzing cuando genera miles de entradas automáticas sin saber qué valor exacto debería retornar la función para cada una?
@@ -92,3 +134,8 @@ Y si además exigimos que tenga un punto en el dominio, la subcadena `"/api/"` e
 > [!question]- Si una función comienza con la guarda `if codigo == "SECRETO_2026":`, ¿cuál es la probabilidad de que un `RandomFuzzer` que genera cadenas de largo $12$ sobre un alfabeto de $95$ caracteres imprimibles entre al `if` en un intento?
 > Como cada uno de los $12$ caracteres debe coincidir exactamente de forma independiente, la probabilidad es $(1/95)^{12} \approx 1.85 \times 10^{-24}$, lo que hace imposible cubrir esa rama mediante fuerza bruta aleatoria.
 
+> [!question]- Con el `RandomFuzzer` de arriba, ¿cuál es la probabilidad aproximada de que un candidato pase la primera guarda de `validar_pin` y por qué es un problema para la cobertura?
+> El largo se elige uniformemente entre $2$ y $10$, así que la probabilidad de largo $4$ es $1/9 \approx 11\%$. Esto significa que $\approx 89\%$ de los intentos se gastan en la primera guarda, y las guardas siguientes (que son más difíciles) reciben muy pocas entradas, por lo que no se cubren con un presupuesto razonable.
+
+> [!question]- ¿Por qué el fuzzing aleatorio puro sirve para programas que aceptan cualquier cadena (por ejemplo, un `strip()` o un codificador) pero no para un parser de URLs?
+> Si casi cualquier entrada es aceptada, el fuzzer exploraría el programa sin choques. Un parser de URLs, en cambio, exige un formato (`http://`, dominio, `/api/`, `?id=`) cuya probabilidad de generarse al azar es del orden de $10^{-14}$ o menos, de modo que el 100 % de los candidatos muere en el primer chequeo.
