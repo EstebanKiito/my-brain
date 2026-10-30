@@ -87,6 +87,59 @@ print(s.check())
 
 ---
 
+---
+
+## Ejemplo práctico: comparar el error ingenuo con SSA
+
+Resolvemos `process_values(a, b)` de las dos formas y comparamos:
+
+```python
+import z3
+
+# Traducción INGENUA: 'a' y 'b' como única variable por nombre
+a, b = z3.Ints("a b")
+ingenuo = z3.Solver()
+ingenuo.add(a == a + b, b == a - 2, a > 10, b < 5)
+print(ingenuo.check())            # unsat  ← conclusión falsa
+```
+
+Z3 responde `unsat` porque `a == a + b` obliga a `b == 0`. Pero eso no dice nada sobre el programa real: está tratando una **actualización** como una **igualdad eterna**.
+
+```python
+# Traducción con SSA: una variable por cada versión
+a0, b0, a1, b1 = z3.Ints("a0 b0 a1 b1")
+for limite in (5, 15):
+    ssa = z3.Solver()
+    ssa.add(a1 == a0 + b0, b1 == a1 - 2, a1 > 10, b1 < limite)
+    print(limite, ssa.check())
+```
+
+```
+5  unsat
+15 sat
+```
+
+Con la condición real del programa, `b < 5`, la respuesta `unsat` **sí es correcta** (ninguna suma puede ser a la vez mayor que $10$ y menor que $7$). La diferencia con la versión ingenua es que ahora el `unsat` es una conclusión legítima y no un error de modelado. Para mostrar un caso con solución, cambiamos la condición a `b < 15` y Z3 responde `sat`, con un modelo como `a0 = 11, b0 = 0` (donde `a1 = 11` y `b1 = 9`).
+
+### Cómo versionar paso a paso otro ejemplo
+
+```python
+def f(x):
+    x = x + 1          # x1 = x0 + 1
+    x = x * 2          # x2 = x1 * 2
+    if x == 10:        # x2 == 10
+        return "meta"
+    return "otro"
+```
+
+Cada asignación crea una versión nueva y los usos posteriores leen la **versión vigente**:
+
+$$x_1 = x_0 + 1, \qquad x_2 = x_1 \cdot 2, \qquad x_2 = 10$$
+
+Sustituyendo hacia atrás: $(x_0 + 1) \cdot 2 = 10 \Rightarrow x_0 = 4$. Si pasamos `f(4)`, el programa devuelve `"meta"`, con lo que la traducción SSA coincide con la ejecución real.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- En `process_values(a, b)`, ¿qué error matemático comete un analizador simbólico si traduce la instrucción `a = a + b` como la restricción `a == a + b` usando la misma variable simbólica `a` en ambos lados?
@@ -101,3 +154,8 @@ print(s.check())
 > 2. `x1 == 10`
 > Al resolver `[x1 == x0 * 2, x1 == 10]`, Z3 sustituye `x0 * 2 == 10` y obtiene el valor inicial exacto de entrada: **`x0 = 5`**.
 
+> [!question]- Aplica SSA a: `x = 3; x = x * x; if x > 8: ...`. ¿Cuál es el valor de `x` en la condición y es satisfacible?
+> `x1 = 3`, `x2 = x1 * x1 = 9`, y la condición es `x2 > 8`, que es verdadera ($9 > 8$). Es satisfacible sin importar la entrada porque no depende de parámetros: ese camino siempre se toma.
+
+> [!question]- ¿Cuántas versiones de `s` hay en `s = 0; for i in range(3): s = s + i` si desenrollamos el bucle?
+> Cuatro: `s0 = 0`, `s1 = s0 + 0`, `s2 = s1 + 1`, `s3 = s2 + 2`. El desenrollado convierte un bucle en una secuencia lineal de asignaciones versionadas; con un bucle cuyo número de iteraciones depende de la entrada, el número de versiones (y de caminos) crece sin límite, y por eso se acota con `max_depth`.

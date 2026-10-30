@@ -96,6 +96,81 @@ Cuando ejecutamos `z3.solve(a == b, a == c, z3.Not(b == c))`, Z3 responde **`no 
 
 ---
 
+---
+
+## Ejemplo práctico: de los caminos a los tests con Z3
+
+### 1. `tarifa_envio`: generar el test y comprobar con el programa real
+
+```python
+import z3
+
+peso, distancia = z3.Ints("peso distancia")
+tarifa_base, tarifa = z3.Ints("tarifa_base tarifa")
+
+L1 = tarifa_base == 10 + 2 * peso
+L2, L3 = peso > 5, distancia > 100
+L4 = tarifa == tarifa_base + 30
+L5 = tarifa == tarifa_base + 10
+L6 = tarifa == tarifa_base + distancia
+
+caminos = {"P1": [L1, L2, L3, L4],
+           "P2": [L1, L2, z3.Not(L3), L5],
+           "P3": [L1, z3.Not(L2), L6]}
+
+for nombre, restricciones in caminos.items():
+    s = z3.Solver()
+    s.add(*restricciones)
+    assert s.check() == z3.sat
+    m = s.model()
+    p, d = m[peso].as_long(), m[distancia].as_long()
+    print(nombre, (p, d), "->", tarifa_envio(p, d))
+```
+
+Una salida posible (Z3 puede elegir otros valores igualmente válidos):
+
+```
+P1 (6, 101) -> 52
+P2 (6, 100) -> 32
+P3 (5, 0)   -> 20
+```
+
+Cada entrada recorre exactamente su camino: `(6, 101)` cumple `peso > 5` y `distancia > 100`, y la tarifa $22 + 30 = 52$ lo confirma. Con estos $3$ tests obtenemos $100\%$ de cobertura de ramas **sin elegir ningún número a mano**. Para mayor rigor se pueden agregar los límites de cada camino con el bucle de la nota anterior.
+
+### 2. `check_triangle`: los $6$ caminos de la tabla
+
+```python
+a, b, c = z3.Ints("a b c")
+caminos = {
+    "P1": [a == b, a == c, b == c],
+    "P2": [a == b, a == c, b != c],      # ← inalcanzable
+    "P3": [a == b, a != c],
+    "P4": [a != b, b != c, a == c],
+    "P5": [a != b, b != c, a != c],
+    "P6": [a != b, b == c],
+}
+for nombre, P in caminos.items():
+    s = z3.Solver()
+    s.add(*P)
+    print(nombre, s.check())
+```
+
+```
+P1 sat
+P2 unsat      ← código muerto
+P3 sat
+P4 sat
+P5 sat
+P6 sat
+```
+
+Solo `P2` es `unsat`: pide $a = b$, $a = c$ y a la vez $b \ne c$, que es una contradicción lógica (por transitividad de la igualdad). Para cada camino `sat` se puede extraer el modelo y ejecutar la función real para comprobar el resultado esperado (`Equilateral`, `Isosceles`, `Scalene`).
+
+> [!tip] Lo que esto significa para el testing
+> Si un camino es `unsat`, **no se puede escribir un test que lo cubra**. El $100\%$ de cobertura de ramas es imposible en `check_triangle`, y la conclusión útil no es «escribir más tests» sino «eliminar el código muerto o corregir la lógica».
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- Explica detalladamente cómo funciona la técnica de *Symbolic Fuzzing* para generar entradas de prueba sin ejecutar previamente el programa.
@@ -110,3 +185,8 @@ Cuando ejecutamos `z3.solve(a == b, a == c, z3.Not(b == c))`, Z3 responde **`no 
 > [!question]- ¿Qué significa que para un camino de un programa el *SMT Solver* responda `unsat` (`no solution`), y por qué un *fuzzer* aleatorio jamás podría llegar a esa conclusión con certeza?
 > Significa que las condiciones acumuladas a lo largo de ese camino son **mutuamente contradictorias**, demostrando formalmente que se trata de una **rama inalcanzable (código muerto)** para cualquier entrada posible. Un *fuzzer* aleatorio solo muestrea entradas concretas: aunque falle millones de veces en entrar a la rama, nunca puede distinguir entre una condición muy estrecha (como `x == 918273645`) y una condición lógicamente imposible.
 
+> [!question]- En `tarifa_envio`, ¿qué restricciones tendría un camino adicional si se añadiera `elif peso == 5:` antes del `else`?
+> El camino sería `[L1, Not(peso > 5), peso == 5, tarifa == ...]`. Al ser `peso == 5` una subcondición de `Not(peso > 5)` (es decir, `peso <= 5`), el camino restante (`peso < 5`) se acota a `[L1, Not(peso > 5), Not(peso == 5), L6]`. Cada nuevo `elif` suma una restricción negada a los caminos que lo siguen.
+
+> [!question]- ¿Por qué los caminos de la ejecución simbólica incluyen la condición negada de los `if` anteriores y no solo la del `if` que se alcanza?
+> Porque para llegar a un punto del programa hay que haber tomado *todas* las decisiones previas del recorrido. Si se omitiera la negación de un `if` anterior que debe ser falso, Z3 podría devolver una entrada que en realidad toma otra rama antes y nunca llega al objetivo (la solución satisface la fórmula pero no alcanza el camino).

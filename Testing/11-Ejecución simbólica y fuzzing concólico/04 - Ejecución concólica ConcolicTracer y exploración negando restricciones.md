@@ -109,6 +109,63 @@ Supongamos que a partir de la traza de `triangle(1, 2, 3)` (donde `_.path` tiene
 
 ---
 
+---
+
+## Ejemplo práctico: un mini motor concólico con Z3
+
+Sin depender de `fuzzingbook`, se puede reproducir la lógica: partimos de una traza conocida y **negamos una condición a la vez**, manteniendo las anteriores.
+
+```python
+import z3
+
+def triangle(a, b, c):
+    if a == b:
+        if b == c: return "equilateral"
+        else:      return "isosceles #1"
+    else:
+        if b == c: return "isosceles #2"
+        elif a == c: return "isosceles #3"
+        else:      return "scalene"
+
+A, B, C = z3.Ints("a b c")
+path = [A != B, B != C, A != C]          # traza de la semilla (1, 2, 3)
+print("semilla:", triangle(1, 2, 3))     # scalene
+
+for i in range(len(path)):
+    restricciones = path[:i] + [z3.Not(path[i])]
+    s = z3.Solver()
+    s.add(*restricciones)
+    if s.check() == z3.sat:
+        m = s.model()
+        v = tuple(m.eval(x, model_completion=True).as_long() for x in (A, B, C))
+        print(i, v, "->", triangle(*v))
+```
+
+Una salida posible:
+
+```
+semilla: scalene
+0 (0, 0, 0) -> equilateral
+1 (1, 0, 0) -> isosceles #2
+2 (1, 0, 1) -> isosceles #3
+```
+
+Cada iteración conserva las decisiones previas y **invierte solo la actual**:
+
+| Negación | Restricciones enviadas a Z3 | Rama alcanzada |
+| :---: | :--- | :--- |
+| índice $0$ | $\neg(a \ne b)$ es decir $a = b$ | mitad `a == b` (aquí cayó en `equilateral`) |
+| índice $1$ | $a \ne b \land b = c$ | `isosceles #2` |
+| índice $2$ | $a \ne b \land b \ne c \land a = c$ | `isosceles #3` |
+
+Con la semilla y estas tres entradas se cubren $4$ de los $5$ retornos. Falta `isosceles #1` ($a = b$, $b \ne c$): para alcanzarlo hay que **iterar**, usando como nueva semilla alguna de las entradas generadas (por ejemplo `(0, 0, 0)`), cuya traza es `[a == b, b == c]`, y negar su último predicado: `a == b ∧ ¬(b == c)`. Es el ciclo completo del fuzzing concólico: ejecutar, registrar, negar, resolver, repetir.
+
+### Qué pasa con una condición no simbolizable
+
+Supón una rama `if hash(x) == 0xCAFE:`. En ejecución concólica, `hash(x)` se evalúa con el valor **concreto** de `x`; si no podemos traducir `hash` a Z3, se omite esa condición del `path` y seguimos con el resto. Se pierde completitud (no llegamos a esa rama), pero la ejecución sigue siendo válida y no se bloquea.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- ¿Por qué para desviar la ejecución hacia la rama verdadera de la decisión $k$-ésima de `_.path` debemos mantener iguales las restricciones $0, 1, \dots, k-1$, invertir únicamente la restricción $k$ (`z3.Not(_.path[k])`) y descartar las restricciones posteriores $k+1, \dots$?
@@ -122,3 +179,8 @@ Supongamos que a partir de la traza de `triangle(1, 2, 3)` (donde `_.path` tiene
 > [!question]- ¿Cómo logra `ConcolicTracer` interceptar las comparaciones (`==`, `<`, `>`) dentro de una función normal de Python sin reescribir su AST?
 > Al invocar `_[funcion](arg1, arg2)`, `ConcolicTracer` envuelve cada argumento concreto (`int`, `str`, `bool`) en un objeto *proxy* subclase (`zint`, `zstr`, `zbool`) que sobrecarga los métodos mágicos de comparación (`__eq__`, `__lt__`, `__gt__`, etc.) y el método `__bool__`: cuando el `if` de Python consulta el valor de verdad de la comparación, el *proxy* devuelve el booleano concreto real y simultáneamente registra la fórmula simbólica Z3 en `self.path`.
 
+> [!question]- ¿Por qué se descartan las decisiones posteriores al índice negado (`path[:i] + [Not(path[i])]`) y no se mantienen?
+> Porque tras invertir la decisión $i$ el programa toma otra rama y las decisiones posteriores de la traza original ya no se evalúan (no pertenecen al nuevo camino). Mantenerlas agregaría restricciones sobre condiciones que ni siquiera se ejecutan, y podría volver `unsat` un camino alcanzable.
+
+> [!question]- Dada la traza de `factorial(5)` con predicados $[\neg(n<0),\ \neg(n=0),\ \neg(n=1)]$, ¿qué restricciones envías a Z3 para llegar a `return 1` por la rama `n == 0`?
+> Mantienes el primer predicado y niegas el segundo: $[\neg(n<0),\ n=0]$. Z3 entrega $n = 0$, y `factorial(0)` devuelve `1` por esa rama, que no se había cubierto con la semilla $n = 5$.

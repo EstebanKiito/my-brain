@@ -85,6 +85,55 @@ Si una función tiene varios parámetros `(a, b)`, para obtener un vector de ent
 
 ---
 
+---
+
+## Ejemplo práctico: sacar *todas* las soluciones de un camino con un bucle
+
+En lugar de ir agregando `!=` a mano, se puede automatizar la técnica de «prohibir la solución anterior»:
+
+```python
+import z3
+
+x, y = z3.Ints("x y")
+solver = z3.Solver()
+solver.add(x + y == 10, x > y, y > 0)
+
+soluciones = []
+while solver.check() == z3.sat:
+    m = solver.model()
+    soluciones.append((m[x].as_long(), m[y].as_long()))
+    solver.add(z3.Or(x != m[x], y != m[y]))     # prohíbe repetir este par exacto
+
+print(soluciones)
+```
+
+Resultado (el orden puede variar según la versión de Z3):
+
+```
+[(9, 1), (8, 2), (7, 3), (6, 4)]
+```
+
+El bucle termina porque el espacio tiene solo $4$ soluciones: cuando ya prohibimos las cuatro, Z3 responde `unsat`. Este patrón sirve para generar **varios casos de prueba por camino** (por ejemplo, para los valores límite de cada camino).
+
+### Detectar contradicciones: `unsat`
+
+```python
+s = z3.Solver()
+s.add(x > 10, x < 5)
+print(s.check())          # unsat → ningún entero cumple ambas
+```
+
+Cuando las restricciones de un camino son `unsat`, la rama correspondiente es **inalcanzable**: ningún test, aleatorio ni humano, podrá cubrirla.
+
+### Por qué usar `z3.Or` y no `or`
+
+```python
+# MAL:   solver.add(x != m[x] or y != m[y])      # 'or' de Python evalúa a bool al instante
+# BIEN:  solver.add(z3.Or(x != m[x], y != m[y]))  # construye la fórmula simbólica
+```
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- ¿Cuál es la diferencia fundamental entre un *SAT Solver* y un *SMT Solver* como Z3?
@@ -95,3 +144,9 @@ Si una función tiene varios parámetros `(a, b)`, para obtener un vector de ent
 
 > [!question]- Si al resolver la ecuación cuadrática `2*x*x - 11*x + 5 == 0` con `z3.solve(eqn)` Z3 te entrega la solución `x = 5`, ¿qué instrucción exacta debes ejecutar para que Z3 encuentre la otra raíz sin repetir `5`?
 > Debes añadir la restricción de desigualdad contra la solución ya conocida: **`z3.solve(eqn, x != 5)`**, con lo cual Z3 devolverá la segunda raíz (`x = 1/2` si `x = z3.Real('x')`).
+
+> [!question]- Usa Z3 mentalmente: ¿es satisfacible `x > 3 ∧ x < 5 ∧ x != 4` sobre enteros? ¿Y sobre reales?
+> Sobre enteros es `unsat`: el único entero entre $3$ y $5$ es $4$, y está prohibido. Sobre reales sería `sat` (por ejemplo, $x = 3.5$). El tipo de las variables (`Int` vs. `Real`) cambia el resultado, por lo que hay que declararlas igual que el tipo del programa.
+
+> [!question]- ¿Cuántas soluciones tiene `x + y == 10 ∧ x > y ∧ y > 0`? Enuméralas.
+> $4$: $(9,1), (8,2), (7,3), (6,4)$. Con $y > 0$ el mínimo es $y = 1$; con $x > y$ y $x + y = 10$ debe cumplirse $y < 5$, por lo que $y \in \{1, 2, 3, 4\}$.
