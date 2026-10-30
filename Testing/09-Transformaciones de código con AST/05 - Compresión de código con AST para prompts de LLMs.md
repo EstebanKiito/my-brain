@@ -101,9 +101,9 @@ Tomamos una clase con docstrings y tipos, y aplicamos `DocstringRemover` y `Type
 
 ```python
 codigo = """class Factura:
-    \"\"\"Representa una factura.\"\"\"
+    """Representa una factura."""
     def total(self, impuesto: float) -> float:
-        \"\"\"Calcula el total con impuesto.\"\"\"
+        """Calcula el total con impuesto."""
         return self.monto * (1 + impuesto)
 """
 
