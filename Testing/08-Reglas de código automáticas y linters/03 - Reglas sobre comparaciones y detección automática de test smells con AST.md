@@ -94,6 +94,52 @@ Con la misma lógica se detecta un **test sin aserciones** (cuando el conteo tot
 
 ---
 
+---
+
+## Ejemplo práctico: auditar una clase de tests con los detectores
+
+Pasamos por los detectores esta clase de tests:
+
+```python
+codigo_tests = """class T(unittest.TestCase):
+    def test_a(self):
+        for x in [1, 2, 3]:
+            self.assertEqual(x, x)
+
+    def test_b(self):
+        w = Wallet("j")
+        self.assertEqual(0, w.total_balance())
+        w.deposit(5)
+        self.assertEqual(5, w.total_balance())
+
+    def test_c(self):
+        w = Wallet("j")
+        w.deposit(5)
+        self.assertEqual(5, w.total_balance(), msg="saldo tras depósito")
+"""
+
+arbol = ast.parse(codigo_tests)
+for Detector in (ConditionalLogicDetector, AssertionRouletteDetector):
+    d = Detector()
+    d.visit(arbol)
+    print(Detector.__name__, d.smelly_tests)
+```
+
+Resultado:
+
+```
+ConditionalLogicDetector ['test_a']
+AssertionRouletteDetector ['test_b']
+```
+
+* `test_a` tiene un `for`: es *Conditional Test Logic* (y de paso, solo prueba que `x == x`).
+* `test_b` tiene **dos** aserciones sin mensaje: *Assertion Roulette*.
+* `test_c` queda limpio: una sola aserción, y además con `msg`.
+
+Es la misma auditoría que haría un humano revisando el código, pero se puede correr sobre cientos de archivos y en cada *commit*. Una regla análoga detecta **tests sin aserciones**: se cuentan los `Assert` y las llamadas `self.assert*` dentro de cada `test_...` y se avisa si el total es cero.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- En el AST de Python, ¿qué diferencia exacta hay entre los nodos generados por `x == None` y por `x is None`, y cómo los distingue `CompareNoneVisitor`?
@@ -105,3 +151,8 @@ Con la misma lógica se detecta un **test sin aserciones** (cuando el conteo tot
 > [!question]- En un nodo `ast.Assert` (correspondiente a la instrucción nativa `assert x > 0, "x debe ser positivo"`), ¿en qué atributos del nodo se almacenan la condición evaluada y el mensaje de error?
 > La condición (`x > 0`) se almacena en **`node.test`** y el mensaje opcional (`"x debe ser positivo"`) se almacena en **`node.msg`** (que vale `None` cuando el programador escribió solo `assert x > 0` sin mensaje).
 
+> [!question]- ¿Por qué `ConditionalLogicDetector` usa `walk(node)` y no solo mira `node.body`?
+> Porque el `if`, `for` o `while` puede estar anidado en cualquier profundidad (dentro de un `with`, de otro `if`, etc.). `walk` recorre todos los descendientes del `FunctionDef`, mientras que `node.body` solo contiene las sentencias del primer nivel.
+
+> [!question]- Escribe (en pseudocódigo AST) la regla que detecta `assertTrue(True)` como aserción tautológica.
+> Visitar `Call` con `func` de tipo `Attribute` cuyo `attr == "assertTrue"` y cuyo primer argumento es un `Constant` con valor `True`; si se cumple, emitir una advertencia. Es un test que siempre pasa y no verifica nada.

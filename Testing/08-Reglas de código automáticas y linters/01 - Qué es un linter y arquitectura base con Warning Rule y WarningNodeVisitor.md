@@ -114,6 +114,45 @@ class Linter:
 
 ---
 
+---
+
+## Ejemplo práctico: correr cuatro reglas sobre un mismo archivo
+
+Con las piezas de la arquitectura, analizamos un programa con varios problemas a la vez. El `Linter` parsea una sola vez, ejecuta cada regla y ordena por línea:
+
+```python
+fuente = """def procesar(a, b, c, d, e, f, g):
+    if True:
+        resultado = eval(a)
+    print(resultado)
+
+def sumar(x, y):
+    return x + y
+"""
+
+reglas = [EvalUsedRule, AlwaysTrueIfRule, ManyArgumentsRule, MissingReturnRule]
+for advertencia in Linter.analyze_all(reglas, fuente):
+    print(advertencia)
+```
+
+Salida:
+
+```
+[ Line 1 ] ManyArgumentsWarning - function procesar defined with many arguments!
+[ Line 1 ] MissingReturnWarning - function procesar has no return statement
+[ Line 2 ] AlwaysTrueIfWarning - this if does not have any sense!
+[ Line 3 ] EvalWarning - eval should not be used!!
+```
+
+Puntos para fijarse:
+
+* `sumar` no genera advertencias: tiene $2$ parámetros y un `return`.
+* Las dos advertencias de la línea $1$ conservan el orden en que se ejecutaron las reglas: `sort()` es estable y `__lt__` solo compara números de línea.
+* **Agregar una regla nueva no obliga a tocar ni `Linter` ni las demás reglas**: basta una clase `Rule` más en la lista. Ese es el principio Abierto/Cerrado de la arquitectura.
+* Cada regla recorre el **mismo** árbol ya parseado; parsear de nuevo por cada regla desperdiciaría tiempo.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- ¿Por qué `Linter.analyze_all(rules, source)` invoca `ast.parse(source)` afuera del bucle `for ruleClass in rules:` y qué ventaja tiene esto cuando un linter industrial aplica 200 reglas?
@@ -125,3 +164,8 @@ class Linter:
 > [!question]- ¿Qué responsabilidades separa el diseño entre `Rule` y `WarningNodeVisitor`?
 > `WarningNodeVisitor` se encarga específicamente del **recorrido del AST** (sobrescribiendo los métodos `visit_*` y llamando a `add_warning`), mientras que `Rule` actúa como la **fachada pública de la regla** ante el `Linter` (exponiendo `name()` y `analyze(tree)`), lo que permite incluso que una regla combine más de un visitante si lo necesita.
 
+> [!question]- ¿Por qué `Warning` implementa `__lt__` y `__eq__`? ¿Para qué se usa cada uno?
+> `__lt__` permite que `warnings.sort()` ordene los hallazgos por número de línea para mostrárselos al usuario en orden de lectura. `__eq__` compara dos advertencias por su texto formateado, lo que simplifica los tests unitarios del linter (`assertEqual` entre advertencias esperadas y obtenidas).
+
+> [!question]- Quieres agregar la regla «prohibir `print`». ¿Qué clases debes crear y cuál nodo del AST buscas?
+> Un `PrintVisitor(WarningNodeVisitor)` con `visit_Call` que compare `node.func.id == "print"` (previa verificación `isinstance(node.func, Name)`) y llame a `generic_visit`, más una `PrintUsedRule(Rule)` con `analyze` y `name`. No hace falta modificar `Linter` ni las demás reglas.

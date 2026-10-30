@@ -71,6 +71,49 @@ El problema opuesto ocurre cuando queremos hacer una regla «demasiado inteligen
 
 ---
 
+---
+
+## Ejemplo práctico: una suite completa para `ManyArgumentsRule`
+
+Aplicamos la estructura positivo/negativo y la técnica de valores límite del Tema 06:
+
+```python
+class TestManyArgumentsRule(LinterTest):
+    def test_siete_parametros_es_positivo(self):
+        resultado = Linter.analyze(ManyArgumentsRule, "def f(a, b, c, d, e, f, g): pass")
+        self.assertWarnings(resultado, [
+            Warning("ManyArgumentsWarning", 1, "function f defined with many arguments!")
+        ])
+
+    def test_seis_parametros_es_el_limite_y_no_avisa(self):
+        resultado = Linter.analyze(ManyArgumentsRule, "def f(a, b, c, d, e, f): pass")
+        self.assertWarnings(resultado, [])
+
+    def test_funcion_sin_parametros_no_avisa(self):
+        self.assertWarnings(Linter.analyze(ManyArgumentsRule, "def f(): pass"), [])
+
+    def test_funcion_anidada_con_muchos_parametros_se_detecta(self):
+        fuente = "def externa():\n    def interna(a, b, c, d, e, f, g): pass"
+        resultado = Linter.analyze(ManyArgumentsRule, fuente)
+        self.assertWarnings(resultado, [
+            Warning("ManyArgumentsWarning", 2, "function interna defined with many arguments!")
+        ])
+```
+
+El último test comprueba que `generic_visit` funciona: sin esa línea en el visitante, `interna` no se encontraría. Observa que probamos **tres cosas distintas**: el caso defectuoso, el valor límite exacto y la estructura anidada.
+
+### Mapa de falsos positivos y falsos negativos
+
+| Situación | Tipo de error | Ejemplo |
+| :--- | :--- | :--- |
+| Código malo que la regla no ve | **Falso negativo** (baja sensibilidad) | `e = eval; e("x")` con `EvalUsedRule` |
+| Código correcto que la regla marca | **Falso positivo** (baja especificidad) | `if DEBUG:` marcado por una regla demasiado ambiciosa de «condiciones constantes» |
+| Muchos avisos irrelevantes | **Fatiga de alertas** | el equipo empieza a ignorar todas las advertencias, incluso las reales |
+
+Un buen linter equilibra ambos: una regla muy estricta produce falsos positivos y destruye la confianza; una regla muy laxa deja pasar los defectos.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- Explica en términos de los nodos del AST por qué `EvalUsedRule` detecta `eval('2 + 2')` pero no detecta `f = eval; f('2 + 2')`.
@@ -82,3 +125,8 @@ El problema opuesto ocurre cuando queremos hacer una regla «demasiado inteligen
 > [!question]- ¿Qué es la «fatiga de alertas» (*alert fatigue*) en herramientas de análisis estático y por qué un exceso de falsos positivos termina reduciendo la detección de defectos reales?
 > Es el fenómeno psicológico y operativo donde los desarrolladores reciben tantas advertencias falsas o triviales del linter que pierden la confianza en la herramienta, optando por ignorar su salida o silenciarla globalmente (`# noqa`), lo que provoca que las advertencias verdaderas pasen desapercibidas.
 
+> [!question]- Explica por qué el linter no puede detectar `getattr(__builtins__, "ev" + "al")("2")` como uso de `eval`.
+> Porque el nombre `eval` se construye en **tiempo de ejecución** (concatenación de strings), y el análisis estático solo ve la estructura del código: un `Call` cuyo `func` es otra `Call` a `getattr`. Saber qué función se invoca requeriría ejecutar el programa o razonar sobre valores, lo que en general es indecidible.
+
+> [!question]- Un equipo reporta que su linter «es inútil porque avisa de cientos de cosas». Menciona dos acciones concretas para recuperar su utilidad.
+> (1) Medir y reducir los falsos positivos: revisar las reglas más ruidosas, afinar sus condiciones o desactivarlas. (2) Priorizar por severidad y permitir excepciones explícitas (por ejemplo, comentarios de supresión justificados), de modo que cada advertencia visible merezca atención.
