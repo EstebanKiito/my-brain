@@ -67,6 +67,32 @@ Se evalúa mediante dos interrogaciones escritas individuales ($I_1$ e $I_2$) y 
 
 ---
 
+---
+
+## Ejemplo práctico: calcular la nota final en tres escenarios
+
+Fórmulas: $\text{NF} = 0.6\,\text{NC} + 0.3\,\text{NT} + 0.1\,\text{NA}$, con $\text{NC}$ dependiendo de la eximición.
+
+**Escenario A: eximición del examen.** $I_1 = 5.8$, $I_2 = 5.6$, $\text{NT} = 5.0$, $\text{NA} = 6.0$.
+
+* Promedio de interrogaciones: $\frac{5.8 + 5.6}{2} = 5.7 \ge 5.5$ y ambas $\ge 3.95$ → **eximido**, $\text{NC} = 5.7$.
+* $\text{NF} = 0.6 \cdot 5.7 + 0.3 \cdot 5.0 + 0.1 \cdot 6.0 = 3.42 + 1.50 + 0.60 = \mathbf{5.52}$.
+
+**Escenario B: no se exime y rinde el examen.** $I_1 = 6.5$, $I_2 = 4.0$, $E = 5.0$, $\text{NT} = 4.5$, $\text{NA} = 5.0$.
+
+* Promedio: $\frac{6.5 + 4.0}{2} = 5.25 < 5.5$ → **no se exime**.
+* $\text{NC} = 0.3 \cdot 6.5 + 0.3 \cdot 4.0 + 0.4 \cdot 5.0 = 1.95 + 1.20 + 2.00 = 5.15$.
+* $\text{NF} = 0.6 \cdot 5.15 + 0.3 \cdot 4.5 + 0.1 \cdot 5.0 = 3.09 + 1.35 + 0.50 = \mathbf{4.94}$ (aprueba: $\text{NC} \ge 3.95$ y $\text{NT} \ge 3.95$).
+
+**Escenario C: el promedio alcanza, pero una interrogación no.** $I_1 = 3.9$, $I_2 = 7.1$, $E = 4.0$.
+
+* Promedio: $\frac{3.9 + 7.1}{2} = 5.5$ cumple el umbral, pero $I_1 = 3.9 < 3.95$ → **no se exime**.
+* $\text{NC} = 0.3 \cdot 3.9 + 0.3 \cdot 7.1 + 0.4 \cdot 4.0 = 1.17 + 2.13 + 1.60 = \mathbf{4.90}$.
+
+La condición de eximición exige **las tres cosas a la vez** (promedio y cada interrogación sobre el mínimo), y por eso un promedio alto no basta si una nota queda bajo $3.95$.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- ¿Qué requisitos deben cumplirse simultáneamente para eximirse del examen final del curso?
@@ -78,3 +104,8 @@ Se evalúa mediante dos interrogaciones escritas individuales ($I_1$ e $I_2$) y 
 > [!question]- ¿Cómo funcionan las reglas de entrega tardía para las Actividades en comparación con las Tareas?
 > En las Actividades se permiten hasta 2 días de atraso con descuento directo de 1 punto por el primer día y 2 puntos por el segundo; en las Tareas no hay descuento gradual, sino que cada estudiante cuenta con un único cupón semestral para entregar una tarea hasta 2 días tarde sin penalización.
 
+> [!question]- Un estudiante tiene $\text{NC} = 5.0$, $\text{NT} = 3.8$ y $\text{NA} = 7.0$. ¿Aprueba? ¿Cuál sería su promedio ponderado?
+> No aprueba: la nota de tareas está bajo $3.95$ y se exige aprobar $\text{NC}$ y $\text{NT}$ por separado, sin que $\text{NA}$ lo compense. El promedio ponderado sería $0.6 \cdot 5.0 + 0.3 \cdot 3.8 + 0.1 \cdot 7.0 = 3.0 + 1.14 + 0.7 = 4.84$, pero la regla de aprobación por separado prima sobre ese número.
+
+> [!question]- Un equipo entrega la Tarea 2 con $1$ día de atraso y no ha usado su cupón. ¿Qué ocurre?
+> Puede usar su cupón (uno por semestre), que permite entregar una tarea con hasta $2$ días de atraso sin penalización. Si ya lo hubiera usado, se aplicaría la política de atrasos sin cupón.

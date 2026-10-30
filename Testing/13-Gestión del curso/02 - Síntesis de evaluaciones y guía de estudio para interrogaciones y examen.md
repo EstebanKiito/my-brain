@@ -75,6 +75,47 @@ El segundo bloque evalúa con especial profundidad la capacidad de **leer, dise�
 
 ---
 
+---
+
+## Autoevaluación: seis ejercicios tipo prueba con solución
+
+Intenta resolverlos antes de abrir la respuesta. Cada uno remite a la nota donde se explica la técnica.
+
+> [!question]- **1. Cobertura.** Para `clasificar_impuesto(edad, ingresos)` de [[03 - Cobertura de código e instrumentación con settrace/02 - Cobertura de sentencias frente a cobertura de ramas|Cobertura de sentencias frente a ramas]], la suite es `(15, 40000)` y `(30, 25000)`. Calcula la cobertura de sentencias y de ramas.
+> Sentencias cubiertas: `L2, L3, L4, L6, L7, L9` = $6$ de $8$ → **$75\%$**. Ramas: `L2` $2/2$, `L3` $1/2$, `L6` $1/2$ → $4/6 \approx$ **$66.7\%$**. Para llegar al $100\%$ faltan `(16, 60000)` y `(25, 60000)`.
+
+> [!question]- **2. Mutación.** Se generaron $12$ mutantes: $8$ muertos, $2$ equivalentes y $2$ sobrevivientes no equivalentes. Calcula el mutation score y di qué harías con los sobrevivientes.
+> $\text{score} = \frac{8}{12 - 2} = 80\%$. Cada sobreviviente no equivalente indica un test faltante: hay que escribir un caso (normalmente un valor límite) que lo mate. Ver [[06-Análisis de mutación y diseño de pruebas de caja negra/_Índice|Tema 06]].
+
+> [!question]- **3. Caja negra.** Una tarifa cobra $\$500$ de $0$ a $60$ min, $\$1\,000$ de $61$ a $180$ y $\$2\,000$ desde $181$. Entrega el conjunto Two-Point BVA.
+> $\{-1, 0, 60, 61, 180, 181\}$ (seis valores). Con Three-Point agregarías los vecinos que faltan de cada borde.
+
+> [!question]- **4. NodeVisitor.** ¿Qué imprime este visitante sobre `if x > 0: print(x)` y por qué?
+> ```python
+> class V(ast.NodeVisitor):
+>     def visit_If(self, node): print("If")
+>     def visit_Call(self, node): print("Call")
+> ```
+> Imprime solo `If`. `visit_If` no llama a `generic_visit`, así que el visitante nunca baja a `print(x)` y no ve el `Call`. Con `self.generic_visit(node)` dentro de `visit_If` imprimiría `If` y luego `Call`.
+
+> [!question]- **5. Z3 y SSA.** Para `a = a + b; b = a - 2; if a > 10: if b < 5: return 1`, ¿es alcanzable `return 1`? Plantea las restricciones.
+> Con SSA: $a_1 = a_0 + b_0$, $b_1 = a_1 - 2$, $a_1 > 10$, $b_1 < 5$. Sustituyendo, $a_0 + b_0 > 10$ y $a_0 + b_0 < 7$: contradicción, así que Z3 responde `unsat` y `return 1` es **inalcanzable**. Ver [[11-Ejecución simbólica y fuzzing concólico/03 - El problema de la reasignación de variables en ejecución simbólica y forma SSA|Forma SSA]].
+
+> [!question]- **6. Profiling.** Con las muestras `[main,parse,scan]` ×3, `[main,parse,build]`, `[main,render,scan]` y `[main,render]`, ¿cuáles son los contadores inclusivo y exclusivo de `render`?
+> `render` está en $2$ de las $6$ muestras (inclusivo $= 2$, el $33\%$). Termina exactamente en él una de ellas, `[main, render]`, así que el exclusivo es $1$. La otra muestra pasa a `scan`.
+
+### Errores típicos que hacen perder puntos
+
+| Error | Dónde aparece | Cómo evitarlo |
+| :--- | :--- | :--- |
+| Confundir cobertura de líneas con cobertura de ramas | Tema 03 | Dibujar las decisiones y contar sus dos salidas |
+| Olvidar descontar equivalentes del denominador | Tema 06 | Escribir la fórmula completa antes de reemplazar |
+| Olvidar `generic_visit` / `return node` | Temas 07 a 09 | Revisar las dos líneas antes de entregar |
+| Traducir `=` como `==` sin versionar | Tema 11 | Numerar cada versión: $x_0, x_1, x_2$ |
+| Mezclar inclusivo y exclusivo en el CCT | Tema 12 | Inclusivo = exclusivo + suma de hijos |
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- ¿Qué tienen en común la instrumentación de cobertura del Tema 09, el rastreo concólico del Tema 11 y el perfilador por instrumentación del Tema 12?
@@ -86,3 +127,5 @@ El segundo bloque evalúa con especial profundidad la capacidad de **leer, dise�
 > [!question]- Antes de entregar cualquier pregunta de código que implemente un `ast.NodeVisitor` o un `ast.NodeTransformer` en una prueba escrita, ¿cuáles son las 3 verificaciones obligatorias que debes revisar en tu respuesta?
 > 1) Haber llamado a `self.generic_visit(node)` para no dejar subárboles sin visitar; 2) en `NodeTransformer`, haber retornado explícitamente `node` (o el nuevo nodo) en cada método `visit_*` para no borrar el subárbol devolviendo `None` por accidente; y 3) haber ejecutado `ast.fix_missing_locations(tree)` sobre el árbol transformado antes de compilarlo o desparsearlo.
 
+> [!question]- Arma un plan de estudio de una semana para la Interrogación 2 (temas 07 a 12) priorizando la práctica de código.
+> Una distribución razonable: días 1–2, AST y `NodeVisitor` (temas 07–08) escribiendo a mano reglas y trazando qué imprimen; día 3, `NodeTransformer` (tema 09) con las cuatro formas de retorno de `visit_*`; día 4, taint analysis (tema 10) trazando propagación y fugas; día 5, Z3, SSA y concólico (tema 11) planteando restricciones de caminos; día 6, profiling y CCT (tema 12); día 7, ejercicios mixtos como los de la autoevaluación sin mirar apuntes.
