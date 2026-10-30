@@ -68,6 +68,68 @@ def sink_ejecutar_sql(query):
 
 ---
 
+---
+
+## Ejemplo práctico: el recorrido completo source → sanitizer → sink
+
+Usando `tstr` (que implementamos en la siguiente nota), seguimos tres versiones de la misma consulta:
+
+```python
+class SecurityError(Exception):
+    pass
+
+def sink_sql(query):
+    if getattr(query, "taint", None) in ("INSECURE", "HIGH"):
+        raise SecurityError(f"BLOQUEADO: {query!r}")
+    return "ejecutado"
+
+def escapar(s):
+    """Sanitizer: duplica las comillas simples y declara el dato como limpio."""
+    return s.replace("'", "''").clear_taint()
+```
+
+**1. Dato contaminado sin sanitizar → el sink lo bloquea.**
+
+```python
+nombre = tstr("Mario", taint="INSECURE")                      # source: viene del usuario
+consulta = "SELECT * FROM Customers WHERE name ='" + nombre + "'"
+print(type(consulta).__name__, consulta.taint)                # tstr INSECURE (la mancha se propagó)
+sink_sql(consulta)                                            # SecurityError: BLOQUEADO
+```
+
+Notar que `"Mario"` es un nombre perfectamente inocente: el análisis **no mira el contenido**, solo el origen. Bloquea todo dato no confiable que llegue sin pasar por un sanitizer.
+
+**2. Ataque pasando por el sanitizer → el sink acepta.**
+
+```python
+ataque = tstr("'; DROP TABLE Customers --", taint="INSECURE")
+limpio = escapar(ataque)
+print(limpio, limpio.taint)                                   # ''; DROP TABLE Customers --   None
+sink_sql("SELECT ... '" + limpio + "'")                       # "ejecutado"
+```
+
+Con la comilla duplicada, el motor SQL interpreta el contenido como texto, no como una consulta nueva. El sanitizer hizo dos cosas: **arregló el dato** (escapar) y **declaró que ya es seguro** (`clear_taint`).
+
+**3. El error silencioso: sanitizer incorrecto.**
+
+```python
+def mal_sanitizer(s):
+    return s.clear_taint()        # limpia la marca sin escapar nada
+```
+
+El sink aceptaría el ataque original porque la etiqueta dice «limpio». El análisis confía en que los sanitizers hacen bien su trabajo: si alguien llama a `clear_taint()` sin sanear, se produce un **falso negativo** peligroso (el ataque pasa).
+
+### Resumen de decisiones
+
+| Situación | Resultado | Tipo de error si es incorrecto |
+| :--- | :--- | :--- |
+| Dato sin sanear llega al sink | Se bloquea | — |
+| Dato correctamente sanitizado | Se acepta | — |
+| Dato seguro pero el análisis no reconoce el sanitizer | Se bloquea | **Falso positivo** (molesta al desarrollador) |
+| Dato inseguro limpiado por un sanitizer defectuoso | Se acepta | **Falso negativo** (deja pasar el ataque) |
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- Define qué son un *Source*, un *Sink* y un *Sanitizer* en *Taint Analysis* e identifica cuál es cuál en un servidor web que recibe un nombre de archivo por URL, verifica que sea alfanumérico y lo abre con `open(ruta)`.
@@ -81,3 +143,8 @@ def sink_ejecutar_sql(query):
 > [!question]- Además de detectar vulnerabilidades de seguridad (como SQLi o Command Injection), ¿qué utilidad tiene *Taint Analysis* dentro del *fuzzing* y la inferencia de gramáticas?
 > Permite saber **qué bytes o caracteres específicos de la entrada llegaron hasta qué comparación del parser**. Así, un *fuzzer* no muta la cadena a ciegas, sino que muta específicamente los caracteres cuya marca de *taint* alcanzó el condicional de la rama que se desea destrabar.
 
+> [!question]- ¿Por qué el taint analysis bloquea `"Mario"` aunque sea un nombre inocente?
+> Porque el análisis rastrea el **origen** del dato, no su contenido. Todo lo que viene de una fuente no confiable se considera contaminado hasta que pase por un sanitizer; juzgar el contenido caso a caso sería tan difícil como detectar ataques con filtros, y es justamente lo que el taint analysis busca evitar.
+
+> [!question]- Identifica source, propagación, sanitizer y sink en: `n = request.args["id"]; q = "DELETE FROM t WHERE id=" + n; db.execute(q)`.
+> Source: `request.args["id"]` (dato del usuario). Propagación: la concatenación `"DELETE ..." + n` produce un `q` contaminado. Sanitizer: no hay ninguno (convendría `int(n)` o una consulta parametrizada). Sink: `db.execute(q)`, que recibe una consulta contaminada.

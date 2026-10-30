@@ -98,6 +98,47 @@ El método `self.create(s)` parece diminuto, pero es la pieza arquitectónica m�
 
 ---
 
+---
+
+## Ejemplo práctico: qué pasa sin y con los wrappers
+
+Antes de instalar los wrappers, la mancha se pierde apenas operamos con el string:
+
+```python
+thello = tstr("hello", taint="LOW")
+
+mayus = thello.upper()
+print(type(mayus).__name__)             # str   ← ya no es un tstr
+print(hasattr(mayus, "taint"))          # False
+
+suma = thello + " world"
+print(type(suma).__name__)              # str
+
+derecha = "SELECT '" + thello
+print(type(derecha).__name__)           # str
+```
+
+`str.upper`, `str.__add__` y compañía devuelven objetos `str` comunes, y desde ese momento no hay nada que consultar. Con los métodos auxiliares, en cambio, sí podemos mantener la etiqueta de forma explícita:
+
+```python
+mayus = thello.create(thello.upper())   # envolvemos el resultado a mano
+print(mayus.taint)                      # LOW
+```
+
+Es exactamente lo que hará `make_str_wrapper` para los $25$ métodos sin que tengamos que acordarnos: el resultado de cada operación se envuelve con `self.create(...)`.
+
+### Sobre `__repr__` y `__str__`
+
+```python
+thello = tstr("hello", taint="LOW")
+print(repr(thello).taint)        # LOW      (repr devuelve otro tstr con la mancha)
+print(type(str(thello)).__name__)  # str      (str() limpia: devuelve un str nativo)
+```
+
+`str(x)` es una vía de escape: un programa que haga `str(secreto)` antes de enviar el dato a un sink lo estaría «lavando» sin querer. Es uno de los límites del modelo de la siguiente nota.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- ¿Por qué al heredar de `str` para construir `tstr` es obligatorio definir `__new__(cls, value, *args, **kw)` además de `__init__(self, value, taint=None)`?
@@ -109,3 +150,8 @@ El método `self.create(s)` parece diminuto, pero es la pieza arquitectónica m�
 > [!question]- ¿Qué devuelve `repr(tstr('hola', taint='HIGH')).taint` y por qué `__repr__` está diseñado de esa forma?
 > Devuelve `'HIGH'`, porque `tstr.__repr__` envuelve el resultado de `str.__repr__(self)` dentro de un nuevo `tstr(..., taint=self.taint)`. Está diseñado así para que el rastro de contaminación no se pierda cuando un programa formatea o serializa cadenas usando `repr(x)` o `f"{x!r}"`.
 
+> [!question]- ¿Qué devuelve `tstr("abc", taint="X")[0]` antes y después de instalar los wrappers de `__getitem__`?
+> Antes, un `str` común (`'a'`) sin atributo `taint`. Después, un `tstr` (`'a'`) con `taint == "X"`, porque el proxy llama a `str.__getitem__(self, 0)` y envuelve el resultado con `self.create(...)`, que hereda la mancha del original.
+
+> [!question]- ¿Por qué `__init__` recibe `taint` pero `__new__` no lo usa?
+> Porque `str` es inmutable: el contenido se fija en `__new__`, que solo necesita el texto. `__init__` corre después sobre la instancia ya creada y es el lugar natural para adjuntar atributos mutables como `taint`. Si no sobrescribiéramos `__new__`, `str.__new__` rechazaría el argumento `taint`.

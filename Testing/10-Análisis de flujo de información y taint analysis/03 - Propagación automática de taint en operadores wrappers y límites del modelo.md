@@ -110,6 +110,65 @@ class tstr(tstr):
 
 ---
 
+---
+
+## Ejemplo práctico: propagación, mezclas y fugas
+
+Con la clase completa (wrappers + `__add__`/`__radd__`), comprobamos qué sobrevive y qué no.
+
+**Cadena de operaciones: la mancha sobrevive a todas.**
+
+```python
+t = tstr("  Hola Mundo  ", taint="LOW")
+r = t.strip().upper()[0:4].replace("O", "0")
+print(r, type(r).__name__, r.taint)       # H0LA tstr LOW
+```
+
+**Formateo con `%`: sobrevive** (gracias a `__mod__`):
+
+```python
+"%s!" % tstr("x", taint="HIGH")           # tstr con taint == "HIGH"
+```
+
+**Mezcla de dos manchas distintas:** gana la del operando izquierdo si tiene una; si no, se usa la derecha (según nuestra implementación de `__add__`):
+
+```python
+print((tstr("a", taint="HIGH") + tstr("b", taint="LOW")).taint)     # HIGH
+print((tstr("a", taint=None)   + tstr("b", taint="LOW")).taint)     # LOW
+```
+
+**Fugas que nuestro modelo no ve:**
+
+```python
+# 1. f-strings: se evalúan sin pasar por nuestros métodos
+x = tstr("x", taint="HIGH")
+print(type(f"{x}!").__name__)             # str  ← mancha perdida
+
+# 2. Conversión de tipo
+n = int(tstr("42", taint="HIGH"))
+lavado = str(n)
+print(type(lavado).__name__, hasattr(lavado, "taint"))   # str False
+
+# 3. Flujo implícito: el secreto decide una rama, pero se copian literales
+copia = ""
+for c in tstr("abc", taint="HIGH"):
+    if c == "a":
+        copia += "a"                       # 'a' es un literal limpio
+print(type(copia).__name__, copia)         # str a
+```
+
+En los tres casos la información del dato original llegó a la salida, pero `copia`, `lavado` y el f-string son `str` sin etiqueta. Por eso el taint analysis dinámico basado en wrappers es una **aproximación**: detecta los flujos explícitos que pasan por operaciones envueltas y no garantiza detectar todos.
+
+### Qué haría falta para cerrar cada fuga
+
+| Fuga | Posible mejora | Costo |
+| :--- | :--- | :--- |
+| f-strings | Instrumentar el AST para reescribirlos como `.format` | Una transformación (Tema 09) |
+| Conversión de tipo (`int`, `float`) | Clases `tint`, `tfloat` análogas a `tstr` | Más clases y wrappers |
+| Flujo implícito | Seguir el taint también de las **condiciones** de `if` y `while` | Mucho más complejo, aumenta los falsos positivos |
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- ¿Por qué es necesario definir el método `__radd__(self, value)` en `tstr` si ya habíamos definido `__add__(self, other)`?
@@ -121,3 +180,8 @@ class tstr(tstr):
 > [!question]- Explica qué es un «flujo de información implícito» (*implicit flow*) con un ejemplo breve en Python y por qué logra burlar el seguimiento dinámico de `tstr`.
 > Un flujo implícito ocurre cuando el valor de una variable contaminada determina el camino de control (`if`/`elif`) en lugar de fluir directamente como operando de una expresión, por ejemplo: `if pin_tainted == "1234": salida = "1234"`. Como a `salida` se le asigna un literal constante nuevo dentro del bloque `if` sin invocar métodos de `pin_tainted`, `salida` nace sin marca de `taint` aunque revela el valor del dato contaminado.
 
+> [!question]- ¿Por qué hay que implementar `__radd__` si `__add__` ya está envuelto?
+> Porque en `"texto" + tstr_obj` Python intenta primero `str.__add__("texto", tstr_obj)`, que devuelve un `str` normal. Al implementar `__radd__` en `tstr` (y ser subclase de `str`), Python le da prioridad al método del operando derecho, de modo que el resultado es un `tstr` con la mancha preservada. Sin él, la concatenación típica de una consulta SQL perdería el taint.
+
+> [!question]- Un atacante controla `s` (un `tstr` con taint). El programa hace `t = "".join(str(c) for c in s)` y luego usa `t` en un sink. ¿Lo detecta el modelo? ¿Por qué?
+> No: `str(c)` llama a `__str__`, que devuelve un `str` nativo sin etiqueta, así que `"".join(...)` junta strings limpios. Es una fuga por conversión. El dato real del atacante llega al sink con taint `None`, produciendo un falso negativo.
