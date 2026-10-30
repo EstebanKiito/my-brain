@@ -100,12 +100,12 @@ De este experimento se extraen cuatro lecciones clave:
 Tomamos una clase con docstrings y tipos, y aplicamos `DocstringRemover` y `TypeRemover` en cadena:
 
 ```python
-codigo = """class Factura:
+codigo = '''class Factura:
     """Representa una factura."""
     def total(self, impuesto: float) -> float:
         """Calcula el total con impuesto."""
         return self.monto * (1 + impuesto)
-"""
+'''
 
 arbol = ast.parse(codigo)
 arbol = DocstringRemover().visit(arbol)
