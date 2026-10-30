@@ -77,6 +77,55 @@ class WalletTest(unittest.TestCase):
 
 ---
 
+---
+
+## Ejemplo práctico: verificar el invariante después de cada operación
+
+Para `Wallet` el invariante es `balance >= 0`. Una buena prueba no solo mira el resultado de una operación: también comprueba que el invariante sigue vigente, incluso tras una operación **rechazada**.
+
+```python
+class Wallet:
+    def __init__(self, owner):
+        self.balance = 0
+        self.owner_name = owner
+
+    def deposit(self, amount):
+        if amount <= 0:
+            raise ValueError("Amount must be positive")
+        self.balance += amount
+
+    def withdraw(self, amount):
+        if amount > self.balance:
+            raise ValueError("Not enough money")
+        self.balance -= amount
+
+    def total_balance(self):
+        return self.balance
+```
+
+```python
+import unittest
+
+class WalletInvarianteTest(unittest.TestCase):
+    def test_retiro_exacto_deja_saldo_en_cero(self):
+        wallet = Wallet("Lili")                   # Arrange
+        wallet.deposit(50)
+        wallet.withdraw(50)                       # Act
+        self.assertEqual(0, wallet.total_balance())             # Assert (resultado)
+        self.assertGreaterEqual(wallet.total_balance(), 0)      # Assert (invariante)
+
+    def test_retiro_rechazado_no_altera_el_estado(self):
+        wallet = Wallet("Lili")
+        wallet.deposit(100)
+        with self.assertRaises(ValueError):
+            wallet.withdraw(110)
+        self.assertEqual(100, wallet.total_balance())           # el estado quedó intacto
+```
+
+El segundo test ilustra una idea importante: cuando una operación falla, el objeto debe seguir en un **estado válido**. Si `withdraw` hubiera restado antes de validar, el saldo quedaría en $-10$ y el invariante se rompería aunque la excepción se lanzara correctamente.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- ¿Qué es el invariante de un objeto (*Object Invariant*) y cómo se diferencia del estado de un objeto (*Object State*)?
@@ -87,3 +136,9 @@ class WalletTest(unittest.TestCase):
 
 > [!question]- ¿Por qué todos los métodos de prueba en una clase que hereda de `unittest.TestCase` deben comenzar obligatoriamente con el prefijo `test_`?
 > Porque el recolector automático de pruebas (`unittest.TestLoader`) inspecciona la clase buscando métodos cuyo nombre empiece por `test_` para distinguirlos de métodos auxiliares o de configuración. Si escribes `def check_deposit(self):` sin el prefijo `test_`, el *runner* lo ignorará silenciosamente y nunca se ejecutará.
+
+> [!question]- Define el estado, el invariante y el oráculo del test `deposit(20)` sobre una `Wallet("Lili")` recién creada.
+> **Estado inicial:** `balance = 0`, `owner_name = "Lili"`. **Estado final:** `balance = 20`. **Invariante:** `balance >= 0` (se cumple antes y después). **Oráculo:** el valor esperado `20`, derivado de la especificación («depositar suma al saldo»), contra el que `assertEqual` compara `total_balance()`.
+
+> [!question]- Un test hace `wallet.deposit(10); wallet.deposit(20); wallet.withdraw(5); self.assertEqual(25, wallet.total_balance())`. ¿Qué problema de diseño tiene respecto a AAA y cómo lo mejorarías?
+> Mezcla varias acciones (*Act*) y deja poco claro qué comportamiento se está verificando. Es preferible un test por escenario: uno para «depositar suma», otro para «retirar resta» (partiendo de un saldo inicial armado en *Arrange*), de modo que si falla se sepa exactamente qué operación está mal.

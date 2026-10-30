@@ -67,6 +67,66 @@ La literatura reciente estudiada en el curso (sobre más de $216\,300$ tests gen
 
 ---
 
+---
+
+## Ejemplo práctico: reescribir una *Assertion Roulette* y un *Mystery Guest*
+
+### Antes (con smells)
+
+```python
+class WalletFlowTest(unittest.TestCase):
+    def test_wallet_flow(self):                 # Eager Test + Assertion Roulette
+        wallet = Wallet("juampi")
+        wallet.deposit(100)
+        self.assertEqual(100, wallet.total_balance())
+        wallet.withdraw(30)
+        self.assertEqual(70, wallet.total_balance())
+        wallet.deposit(50)
+        self.assertEqual(121, wallet.total_balance())   # ¿qué etapa falló? además, 121 es un Magic Number
+```
+
+### Después (un escenario por test, con `setUp` y valores explicados)
+
+```python
+class WalletTest(unittest.TestCase):
+    def setUp(self):
+        self.wallet = Wallet("juampi")
+        self.wallet.deposit(100)                 # saldo inicial conocido
+
+    def test_retiro_descuenta_el_monto(self):
+        self.wallet.withdraw(30)
+        self.assertEqual(100 - 30, self.wallet.total_balance())
+
+    def test_deposito_suma_el_monto(self):
+        self.wallet.deposit(50)
+        self.assertEqual(100 + 50, self.wallet.total_balance())
+```
+
+Cada test tiene una sola razón para fallar, un nombre que dice qué verifica, y los números se escriben como la operación que representan (`100 - 30`) en lugar de un `70` misterioso.
+
+### *Mystery Guest* → doble de prueba controlado en el propio test
+
+```python
+# Antes: depende de una base remota cuyas filas no vemos
+db = Database("postgresql://prod-server:5432/orders")
+self.assertEqual(0.1, db.get_orders()[0].discount)
+```
+
+```python
+# Después: el fake vive en el test y sus datos son visibles
+class FakeOrders:
+    def get_orders(self):
+        return [Order(id=1, total=20000, discount=0.1)]
+
+def test_primera_orden_tiene_descuento_de_diez_por_ciento(self):
+    orders = FakeOrders().get_orders()
+    self.assertEqual(0.1, orders[0].discount)
+```
+
+Los datos relevantes quedan a la vista, el test es rápido y repetible, y no depende de lo que alguien haya modificado en el servidor.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- Observa el siguiente fragmento dentro de un método de prueba: `db = Database("postgresql://prod-server:5432/orders")` seguido más abajo de `if time.localtime().tm_hour < 12: assert orders[0].discount == 0.1 else: assert orders[0].discount == 0.0`. Identifica y explica tres *test smells* presentes.
@@ -82,3 +142,8 @@ La literatura reciente estudiada en el curso (sobre más de $216\,300$ tests gen
 > [!question]- ¿Por qué un test generado por IA que ejecuta un método complejo y verifica únicamente `self.assertIsNotNone(resultado)` demuestra que el porcentaje de cobertura no basta para medir la calidad de una suite?
 > Porque la cobertura solo mide qué líneas de código fueron **ejecutadas** durante la fase *Act*, pero no evalúa la fuerza del **oráculo** en la fase *Assert*. Verificar `assertIsNotNone` pasa siempre que la función devuelva cualquier objeto distinto de `None` (incluso un monto negativo o erróneo), dando un $100\%$ de cobertura con casi $0\%$ de capacidad real para detectar defectos.
 
+> [!question]- ¿Cuál es la diferencia entre *Eager Test* y *Assertion Roulette*? ¿Pueden aparecer juntos?
+> *Eager Test*: el test ejercita demasiada funcionalidad a la vez (muchas operaciones distintas). *Assertion Roulette*: hay muchas aserciones sin mensaje, de modo que un fallo no dice cuál se rompió. Suelen aparecer juntos (como en `test_wallet_flow`), y se corrigen dividiendo en varios tests con una sola razón de fallo.
+
+> [!question]- Un LLM generó $30$ tests que alcanzan $100\%$ de cobertura, pero todos terminan en `assertIsNotNone` o `assertTrue(True)`. ¿Qué técnica del curso usarías para comprobar su calidad real y qué esperarías ver?
+> **Mutation testing**: sembrar mutantes (cambiar `+` por `-`, `>=` por `>`) y ver cuántos matan los tests. Esperaría un *mutation score* muy bajo, porque aserciones tan débiles no detectan que el cálculo cambió, pese a la cobertura total.

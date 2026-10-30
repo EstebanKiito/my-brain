@@ -65,6 +65,60 @@ Que una suite pase en verde no significa que sea una buena suite. Robert C. Mart
 
 ---
 
+---
+
+## Ejemplo práctico: ver el orden de `setUp` y `tearDown` en acción
+
+Para comprobar con tus propios ojos que `setUp` y `tearDown` envuelven a **cada** test, imprime un mensaje en cada método:
+
+```python
+import unittest
+
+class Demo(unittest.TestCase):
+    def setUp(self):
+        print("setUp")
+
+    def tearDown(self):
+        print("tearDown")
+
+    def test_a(self):
+        print("test_a")
+
+    def test_b(self):
+        print("test_b")
+
+unittest.main()
+```
+
+La salida (en orden alfabético de los tests) es:
+
+```
+setUp
+test_a
+tearDown
+setUp
+test_b
+tearDown
+```
+
+### Cómo se rompe la independencia (FIRST) con una variable de clase
+
+```python
+class CarritoMalTest(unittest.TestCase):
+    items = []                      # compartida por TODAS las instancias de la clase
+
+    def test_agregar(self):
+        self.items.append("manzana")
+        self.assertEqual(1, len(self.items))
+
+    def test_vacio_al_inicio(self):
+        self.assertEqual(0, len(self.items))    # pasa o falla según cuál corrió primero
+```
+
+`test_agregar` corre antes que `test_vacio_al_inicio` (orden alfabético) y deja `"manzana"` en la lista compartida, así que el segundo falla aunque el código sea correcto. La solución es crear la lista en `setUp` (`self.items = []`), de modo que cada test reciba una lista nueva.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- En una clase `WalletTest` con tres métodos (`test_a`, `test_b` y `test_c`), ¿cuántas instancias de `WalletTest` crea `unittest.TestLoader` dentro de la `TestSuite` y cuántas veces en total se ejecuta `setUp()`?
@@ -79,3 +133,8 @@ Que una suite pase en verde no significa que sea una buena suite. Robert C. Mart
 > 2. **Independent:** al escribir en una base de datos compartida de producción, ensucia el estado para otras pruebas o ejecuciones concurrentes.
 > 3. **Repeatable:** el resultado depende de la hora del reloj del sistema (`tm_hour < 12`), por lo que el mismo código puede pasar a las 10:00 AM y fallar a las 3:00 PM.
 
+> [!question]- Una clase tiene `setUp` que abre un archivo temporal y `tearDown` que lo cierra. Un test lanza una excepción a mitad de ejecución. ¿Se ejecuta `tearDown`? ¿Y si la excepción ocurre dentro de `setUp`?
+> Si la excepción ocurre en el cuerpo del test, `tearDown` **sí** se ejecuta. Si ocurre dentro de `setUp`, `tearDown` **no** se ejecuta (el test ni siquiera comenzó), por lo que conviene que `setUp` sea simple o que use `addCleanup` para registrar la limpieza justo después de adquirir cada recurso.
+
+> [!question]- Un test unitario tarda $4$ segundos porque llama a una API de pagos real, y a veces falla por timeout. ¿Qué principios FIRST viola y cómo lo corriges?
+> Viola **Fast** (latencia de red) y **Repeatable** (depende de la disponibilidad de la API externa). Se corrige reemplazando la API por un doble de prueba (stub o fake) que devuelva respuestas fijas, y dejando las llamadas reales para un nivel de integración.

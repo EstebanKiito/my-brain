@@ -80,6 +80,63 @@ En `unittest` existe el decorador `@unittest.expectedFailure` sobre un método `
 
 ---
 
+---
+
+## Ejemplo práctico: de `print` a una API testeable
+
+Partimos de un método difícil de probar, porque solo escribe en consola:
+
+```python
+class Wallet:
+    def print_info(self):
+        print(self.owner_name, self.balance)       # efecto colateral: no hay nada que verificar
+```
+
+**Refactor:** separar el **cálculo** del **efecto colateral**.
+
+```python
+class Wallet:
+    def print_string(self):
+        return f"{self.owner_name} {self.balance}"  # puro: devuelve un valor
+
+    def print_info(self):
+        print(self.print_string())                  # el print queda como capa delgada
+```
+
+Ahora el test es trivial y no necesita capturar la consola:
+
+```python
+import unittest
+
+class WalletFormatoTest(unittest.TestCase):
+    def test_print_string_incluye_dueno_y_saldo(self):
+        wallet = Wallet("Lili")
+        wallet.deposit(30)
+        self.assertEqual("Lili 30", wallet.print_string())
+```
+
+### Verificar también el mensaje de la excepción
+
+`assertRaises` como administrador de contexto entrega la excepción capturada, lo que permite revisar su mensaje:
+
+```python
+class WalletErroresTest(unittest.TestCase):
+    def test_retiro_excesivo_informa_el_motivo(self):
+        wallet = Wallet("Lili")
+        with self.assertRaises(ValueError) as ctx:
+            wallet.withdraw(1)
+        self.assertEqual("Not enough money", str(ctx.exception))
+
+    def test_deposito_negativo_se_rechaza(self):
+        wallet = Wallet("Lili")
+        with self.assertRaises(ValueError):
+            wallet.deposit(-5)
+```
+
+Probar el **tipo** de excepción es lo básico; probar el **mensaje** es útil cuando una misma clase de excepción puede significar causas distintas.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- ¿Por qué un método que ante un error solo ejecuta `print("Error")` sin retornar nada ni lanzar excepciones dificulta el testing unitario?
@@ -91,3 +148,8 @@ En `unittest` existe el decorador `@unittest.expectedFailure` sobre un método `
 > [!question]- ¿Qué ocurre exactamente cuando se ejecuta un bloque `with self.assertRaises(ValueError):` si el código dentro del bloque termina normalmente sin lanzar ninguna excepción?
 > Al salir del bloque `with`, el administrador de contexto de `assertRaises` detecta que no se lanzó `ValueError` y lanza internamente un `AssertionError("ValueError not raised")`, haciendo que la prueba unitaria **falle**.
 
+> [!question]- Compara las dos alternativas de diseño para `withdraw` (retornar `False` o lanzar excepción) desde el punto de vista del test.
+> Con `False`, el test es `self.assertFalse(wallet.withdraw(110))`: simple, pero el llamador puede ignorar el retorno y el error pasa desapercibido, y no se distingue la causa. Con excepción, el test usa `assertRaises`: el error no puede ignorarse silenciosamente y se pueden distinguir causas con tipos o mensajes distintos, a costa de un poco más de código en el test.
+
+> [!question]- ¿Por qué se recomienda verificar con `assertRaises` y no con `@unittest.expectedFailure` que una función rechaza una entrada inválida?
+> `expectedFailure` marca como «fallo esperado» cualquier error del test, incluso uno accidental (un `NameError` por una errata), y solo avisa si el test pasa inesperadamente. `assertRaises(TipoEspecifico)` verifica que se lance **exactamente** la excepción prevista, por lo que la prueba falla si el comportamiento cambia o si aparece otro error.
