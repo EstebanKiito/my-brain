@@ -81,7 +81,7 @@ El segundo bloque evalúa con especial profundidad la capacidad de **leer, dise�
 
 Intenta resolverlos antes de abrir la respuesta. Cada uno remite a la nota donde se explica la técnica.
 
-> [!question]- **1. Cobertura.** Para `clasificar_impuesto(edad, ingresos)` de [[03 - Cobertura de código e instrumentación con settrace/02 - Cobertura de sentencias frente a cobertura de ramas|Cobertura de sentencias frente a ramas]], la suite es `(15, 40000)` y `(30, 25000)`. Calcula la cobertura de sentencias y de ramas.
+> [!question]- **1. Cobertura.** Para `clasificar_impuesto(edad, ingresos)` de [[03-Cobertura de código e instrumentación con settrace/02 - Cobertura de sentencias frente a cobertura de ramas|Cobertura de sentencias frente a ramas]], la suite es `(15, 40000)` y `(30, 25000)`. Calcula la cobertura de sentencias y de ramas.
 > Sentencias cubiertas: `L2, L3, L4, L6, L7, L9` = $6$ de $8$ → **$75\%$**. Ramas: `L2` $2/2$, `L3` $1/2$, `L6` $1/2$ → $4/6 \approx$ **$66.7\%$**. Para llegar al $100\%$ faltan `(16, 60000)` y `(25, 60000)`.
 
 > [!question]- **2. Mutación.** Se generaron $12$ mutantes: $8$ muertos, $2$ equivalentes y $2$ sobrevivientes no equivalentes. Calcula el mutation score y di qué harías con los sobrevivientes.
