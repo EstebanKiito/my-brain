@@ -54,6 +54,85 @@ Esta tensión psicológica tiene tres consecuencias prácticas directas:
 
 ---
 
+---
+
+## Ejemplo práctico: la misma lógica probada en dos niveles y con dos mentalidades
+
+Partimos de una función de descuento y de un carrito que la usa:
+
+```python
+def aplicar_descuento(precio, porcentaje):
+    return round(precio * (1 - porcentaje / 100), 2)
+
+class Carrito:
+    def __init__(self, catalogo):
+        self.catalogo = catalogo
+        self.items = []
+
+    def agregar(self, sku):
+        self.items.append(sku)
+
+    def total(self, porcentaje=0):
+        bruto = sum(self.catalogo.precio(sku) for sku in self.items)
+        return aplicar_descuento(bruto, porcentaje)
+```
+
+**Nivel unidad:** probamos `aplicar_descuento` sola, sin carrito ni catálogo. Es rápida y señala exactamente dónde está el problema si falla.
+
+```python
+import unittest
+
+class DescuentoUnitTest(unittest.TestCase):
+    def test_descuento_veinte_por_ciento(self):
+        self.assertEqual(aplicar_descuento(10000, 20), 8000)
+```
+
+**Nivel integración:** probamos que `Carrito` y el catálogo se entienden entre sí (suman precios por SKU y luego aplican el descuento). Aquí usamos un catálogo falso en memoria para no depender de una base de datos real, pero lo que verificamos es la **colaboración** entre módulos.
+
+```python
+class CatalogoFake:
+    def precio(self, sku):
+        return {"A": 1000, "B": 2500}[sku]
+
+class CarritoIntegracionTest(unittest.TestCase):
+    def test_total_suma_items_y_aplica_descuento(self):
+        carrito = Carrito(CatalogoFake())
+        carrito.agregar("A")
+        carrito.agregar("B")
+        # (1000 + 2500) con 10% de descuento
+        self.assertEqual(carrito.total(porcentaje=10), 3150)
+```
+
+**Nivel sistema / aceptación (descripción, sin código):** un tester abre la tienda web, agrega dos productos, ingresa el cupón y comprueba que el total mostrado y el cobro en la pasarela de pago coinciden. Es más lento, más caro y más frágil, por eso hay pocos.
+
+### Mentalidad «amable» frente a mentalidad «destructiva»
+
+El test amable de arriba pasa en verde. Ahora pensemos como Myers: ¿cómo podemos *romper* `aplicar_descuento`?
+
+```python
+class DescuentoDestructivoTest(unittest.TestCase):
+    def test_cien_por_ciento_deja_precio_en_cero(self):
+        self.assertEqual(aplicar_descuento(10000, 100), 0)
+
+    def test_cero_por_ciento_no_cambia_el_precio(self):
+        self.assertEqual(aplicar_descuento(10000, 0), 10000)
+
+    def test_porcentaje_mayor_a_cien_es_invalido(self):
+        with self.assertRaises(ValueError):
+            aplicar_descuento(10000, 101)   # FALLA: devuelve -100.0
+```
+
+El último test **falla**, y por eso es la prueba «exitosa»: destapó un defecto que el test amable jamás habría encontrado (un descuento de 101 % nos haría *pagarle* al cliente). La corrección es validar el rango:
+
+```python
+def aplicar_descuento(precio, porcentaje):
+    if not 0 <= porcentaje <= 100:
+        raise ValueError("porcentaje fuera de rango")
+    return round(precio * (1 - porcentaje / 100), 2)
+```
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- ¿Por qué la pirámide de pruebas propone tener muchas más pruebas unitarias en la base que pruebas de sistema en la cúspide?
@@ -64,3 +143,9 @@ Esta tensión psicológica tiene tres consecuencias prácticas directas:
 
 > [!question]- ¿En qué consiste el sesgo de confirmación al escribir pruebas sobre nuestro propio código y cómo se mitiga en la práctica?
 > Es la tendencia humana inconsciente a elegir entradas de prueba que confirman nuestra propia hipótesis de que el código está bien hecho, pasando por alto los supuestos erróneos que ya teníamos al programarlo. Se mitiga aplicando técnicas sistemáticas de diseño de casos (como valores límite o análisis de mutación) y aumentando la independencia mediante revisión entre pares o pruebas escritas por otra persona.
+
+> [!question]- En el ejemplo del carrito, el test de integración usa un `CatalogoFake` en memoria. ¿Sigue siendo una prueba de integración o se volvió una prueba unitaria?
+> Sigue siendo de integración, porque lo que verifica es la **colaboración** entre `Carrito`, `aplicar_descuento` y la interfaz del catálogo (que los precios se sumen y luego se descuenten). El fake solo reemplaza el recurso externo costoso (la base de datos); el nivel lo define lo que se prueba (la interacción entre módulos), no si algún componente es falso.
+
+> [!question]- Un compañero escribe `aplicar_descuento` y también sus tests, y todos pasan. Menciona dos acciones concretas para reducir el sesgo de confirmación.
+> (1) Que otra persona (compañero o QA) diseñe o revise los casos, aumentando la independencia entre quien programa y quien prueba. (2) Escribir deliberadamente casos «destructivos»: valores en los bordes (0 %, 100 %), fuera de rango (101 %, −5 %) y tipos inválidos, en vez de solo el camino feliz.

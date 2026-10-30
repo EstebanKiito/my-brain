@@ -54,6 +54,47 @@ Frente a la generación masiva de código, el testing manual y artesanal ya no d
 
 ---
 
+---
+
+## Ejemplo práctico: el test «espejo» generado por la misma IA
+
+Imagina que le pedimos a un asistente: *«escribe una función que calcule el promedio de notas ignorando la peor nota, y sus tests»*. Entrega algo que se ve impecable:
+
+```python
+def promedio_sin_peor(notas):
+    return sum(sorted(notas)[1:]) / len(notas)      # bug: divide por len(notas)
+```
+
+```python
+import unittest
+
+class PromedioGeneradoTest(unittest.TestCase):
+    def test_promedio_sin_peor(self):
+        notas = [4.0, 5.0, 6.0]
+        esperado = sum(sorted(notas)[1:]) / len(notas)   # copia la lógica del código
+        self.assertEqual(promedio_sin_peor(notas), esperado)
+```
+
+El test pasa en verde, pero es un **espejo**: repite la misma fórmula defectuosa, así que no es un oráculo independiente (riesgo 3). La función promedia $5.0$ y $6.0$ dividiendo por $3$ en vez de por $2$, y devuelve $3.67$.
+
+Un oráculo independiente se calcula **a mano, desde la especificación**:
+
+```python
+class PromedioIndependienteTest(unittest.TestCase):
+    def test_promedio_calculado_a_mano(self):
+        # sin la peor (4.0): (5.0 + 6.0) / 2 = 5.5
+        self.assertEqual(promedio_sin_peor([4.0, 5.0, 6.0]), 5.5)   # FALLA: 3.666...
+
+    def test_lista_de_una_nota(self):
+        # ¿qué debería pasar? la especificación no lo dice → hay que decidirlo
+        with self.assertRaises(ValueError):
+            promedio_sin_peor([5.0])         # FALLA: devuelve 0.0
+```
+
+Esto resume la idea del curso: **no confiar en que el código «se vea bien»**, sino generar verificación independiente. El segundo test además muestra que la IA no preguntó por el caso borde de la lista corta, y esa es justo la **deuda de verificación** que nos toca pagar.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- ¿Qué es la deuda de verificación (*verification debt*) y por qué se dispara con el uso de asistentes de IA?
@@ -65,3 +106,8 @@ Frente a la generación masiva de código, el testing manual y artesanal ya no d
 > [!question]- ¿Cómo cambia la cadena causal $\text{Error} \to \text{Defecto} \to \text{Falla}$ cuando el código lo escribe un modelo de lenguaje en lugar de una persona?
 > El marco conceptual se mantiene intacto: aunque no haya habido un «error de razonamiento humano» explícito al teclear la línea (sino una predicción estadística defectuosa del modelo o una ambigüedad en el *prompt*), el **defecto** sigue quedando escrito estáticamente en el código fuente y seguirá provocando una **falla** observable cuando un usuario ejecute ese camino en producción.
 
+> [!question]- Un agente de IA genera una función y sus tests, y todo pasa. Da dos razones por las que eso no basta como evidencia de corrección.
+> (1) Los errores están **correlacionados**: el mismo modelo suele repetir el mismo malentendido en el código y en los tests, así que el test no es un oráculo independiente (test espejo). (2) La plausibilidad engañosa: el código se ve bien y acierta el caso obvio, pero puede fallar en bordes que ni el modelo ni el revisor apurado consideraron.
+
+> [!question]- ¿Qué significa «deuda de verificación» y cómo la reduce automatizar la generación y evaluación de pruebas?
+> Es la brecha entre la velocidad a la que se genera código y la capacidad humana de comprender y verificarlo; el código acumulado sin evidencia de correctitud es deuda. Automatizar la verificación (cobertura, fuzzing, mutation testing, análisis estático) entrega evidencia sistemática e independiente a la misma velocidad que la generación, en lugar de depender de revisión manual que no escala.

@@ -69,6 +69,57 @@ Encontrar y corregir hasta el último defecto técnico del código no sirve de n
 
 ---
 
+---
+
+## Ejemplo práctico: los principios en acción con un solo bug
+
+Una función `es_bisiesto` escrita con una regla incompleta:
+
+```python
+def es_bisiesto(anio):
+    return anio % 4 == 0      # defectuosa: ignora la regla de los siglos
+```
+
+Y una suite que parece razonable:
+
+```python
+import unittest
+
+class BisiestoTest(unittest.TestCase):
+    def test_anio_bisiesto(self):
+        self.assertTrue(es_bisiesto(2024))
+
+    def test_anio_comun(self):
+        self.assertFalse(es_bisiesto(2023))
+```
+
+**Principio 1 (presencia, no ausencia):** la suite pasa en verde, pero eso solo prueba que `2024` y `2023` no activan el defecto. `1900` y `2100` **no** son bisiestos y la función dice que sí.
+
+**Principio 5 (paradoja del pesticida):** si seguimos ejecutando siempre estos mismos dos tests, nunca encontrarán el bug. Hay que *diversificar* la suite añadiendo casos nuevos:
+
+```python
+    def test_siglo_no_divisible_por_400_no_es_bisiesto(self):
+        self.assertFalse(es_bisiesto(1900))   # FALLA → destapa el defecto
+
+    def test_siglo_divisible_por_400_es_bisiesto(self):
+        self.assertTrue(es_bisiesto(2000))
+```
+
+Con la corrección `anio % 4 == 0 and (anio % 100 != 0 or anio % 400 == 0)` los cuatro tests pasan.
+
+**Principio 2 (exhaustivo es imposible):** ¿y si quisiéramos probar el formulario de $15$ campos con $5$ valores cada uno, a $1\,000$ tests por segundo?
+
+```python
+campos, valores = 15, 5
+combinaciones = valores ** campos
+print(combinaciones)                         # 30517578125
+print(combinaciones / 1000 / 3600 / 24)      # ≈ 353 días de ejecución continua
+```
+
+Casi un año para un solo formulario: por eso muestreamos con partición de equivalencia y valores límite en vez de probar todo.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- Tras el accidente del Therac-25, los ingenieros argumentaron que la máquina ya había funcionado sin fallas en miles de pacientes previos, por lo que el software estaba probado. ¿Qué principio del testing contradice directamente ese argumento y por qué?
@@ -80,3 +131,8 @@ Encontrar y corregir hasta el último defecto técnico del código no sirve de n
 > [!question]- ¿Cómo se complementan el principio de «testing exhaustivo es imposible» y el principio de «agrupación de defectos» al planificar las pruebas de un sistema operativo?
 > Como es matemáticamente imposible probar todas las entradas posibles del sistema operativo (principio 2), estamos obligados a muestrear y priorizar. El principio de agrupación de defectos (principio 4) nos guía sobre *dónde* concentrar ese muestreo: en los componentes más complejos y riesgosos (como el planificador de procesos, drivers de red o manejo de memoria concurrente) en lugar de utilidades triviales.
 
+> [!question]- Una suite tiene $100\%$ de cobertura de líneas y todos sus tests pasan. Según los principios 1 y 5, ¿por qué no podemos asegurar que el programa esté libre de defectos?
+> Porque (principio 1) los tests solo muestran que **esas entradas** no revelaron fallas, no que no existan fallas para el resto del dominio; y la cobertura mide qué líneas se ejecutaron, no si se verificó el valor correcto en cada una. Además (principio 5), si la suite no se renueva con casos nuevos, deja de encontrar defectos: el ejemplo de `es_bisiesto` pasa con $100\%$ de cobertura usando solo `2023` y `2024`.
+
+> [!question]- Calcula cuántos casos requeriría probar exhaustivamente un formulario con $8$ campos de $10$ valores posibles cada uno, y explica qué principio ilustra.
+> $10^8 = 100\,000\,000$ casos. Ilustra el principio 2 (el testing exhaustivo es imposible): con $8$ campos modestos ya tenemos cien millones de combinaciones, así que se debe muestrear con técnicas como partición de equivalencia, valores límite o pruebas combinatorias priorizadas por riesgo.
