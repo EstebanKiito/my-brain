@@ -89,6 +89,67 @@ Al instrumentar un programa donde `cube(x)` llama a `square(x)` y `multiply(x, y
 
 ---
 
+---
+
+## Ejemplo práctico: perfilar `cube` y descubrir un error del inyector básico
+
+Programa de ejemplo:
+
+```python
+fuente = """def square(x):
+    return x * x
+
+def multiply(x, y):
+    return x * y
+
+def cube(x):
+    return multiply(square(x), x)
+
+cube(3)
+cube(4)
+"""
+```
+
+Lo instrumentamos con `BasicFunctionInstrumentor` y lo ejecutamos:
+
+```python
+arbol = BasicFunctionInstrumentor().visit(ast.parse(fuente))
+ast.fix_missing_locations(arbol)
+
+FunctionProfiler.reset()
+exec(compile(arbol, "<instrumentado>", "exec"), {"FunctionProfiler": FunctionProfiler})
+
+for nombre, r in FunctionProfiler.records.items():
+    print(nombre, r["freq"], r["args"], sorted(r["callers"]))
+```
+
+Resultado:
+
+```
+cube     2 [[3], [4]]          ['multiply']
+square   2 [[3], [4]]          ['cube']
+multiply 2 [[9, 3], [16, 4]]   ['square']
+```
+
+* **Frecuencia y argumentos: correctos.** Cada función se llamó $2$ veces y vemos los argumentos exactos (por ejemplo, `multiply(9, 3)`, donde $9 = \text{square}(3)$).
+* **Llamadores: incorrectos para `cube` y `multiply`.** `cube` figura como llamada por `multiply` y `multiply` por `square`, lo cual es falso: `multiply` y `square` las llama `cube`, y a `cube` nadie la llama desde otra función.
+
+### ¿Por qué falla el grafo de llamadas?
+
+El inyector básico solo registra la **entrada** (`record_start`) y nunca el **fin**, así que la pila de llamadas no se vacía:
+
+```python
+print(FunctionProfiler.call_stack)
+# ['cube', 'square', 'multiply', 'cube', 'square', 'multiply']
+```
+
+Tras `cube(3)` la pila debería estar vacía, pero queda llena de funciones ya terminadas. En la segunda llamada, `cube` ve a `multiply` en el tope de la pila y cree que `multiply` la llamó. Es la razón por la que la siguiente nota agrega un `record_end` en **cada** punto de salida.
+
+> [!tip] Lección general
+> Un contador de entradas es fácil; mantener un **estado correcto entre entrada y salida** (pila, tiempos) requiere cubrir todas las salidas de la función, incluidos los `return` múltiples y las funciones sin `return`.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- ¿Qué diferencia hay entre buscar bugs con un test funcional y hacer profiling de un programa?
@@ -99,3 +160,9 @@ Al instrumentar un programa donde `cube(x)` llama a `square(x)` y `multiply(x, y
 
 > [!question]- ¿Qué propiedad fundamental debe verificarse al testear un instrumentador de código antes de confiar en sus métricas?
 > Además de comprobar que el AST resultante sea sintácticamente válido y que las métricas coincidan con las llamadas reales, es indispensable verificar la **preservación del comportamiento**: que el programa instrumentado produzca exactamente los mismos valores de retorno y efectos observables que el programa original.
+
+> [!question]- Un profiler por instrumentación reporta que `helper()` se llamó $1\,000\,000$ veces y `main()` una vez. ¿Qué información da el conteo y qué no da?
+> El conteo exacto de llamadas es fiable, pero no dice cuánto tiempo toma cada una. Si `helper` dura $0.1\ \mu s$, el total es $0.1$ s; si `main` dura $5$ s, el cuello de botella no es `helper` por frecuente que sea. Para decidir qué optimizar se necesitan **tiempos** (y, por la regla del 90/10, un porcentaje del total).
+
+> [!question]- ¿Qué cambiarías en `FunctionProfiler` para que `record_end` tuviera sentido si `record_start` no devuelve nada?
+> Que cada función instrumentada llame a `record_end(nombre)` justo antes de terminar (en cada `return`), y que `record_end` desapile el nombre de `call_stack`. Si hay funciones recursivas conviene devolver un identificador de la llamada desde `record_start` para emparejar cada inicio con su fin, como hace la implementación del curso.

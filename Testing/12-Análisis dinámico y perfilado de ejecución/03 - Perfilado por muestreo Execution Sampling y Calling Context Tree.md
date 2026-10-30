@@ -81,6 +81,70 @@ flowchart TD
 
 ---
 
+---
+
+## Ejemplo práctico: construir el CCT en código
+
+Construimos el árbol de las $6$ muestras de la nota para comprobar los contadores:
+
+```python
+muestras = [
+    ["main", "parse", "scan"],
+    ["main", "parse", "scan"],
+    ["main", "parse", "build"],
+    ["main", "render", "scan"],
+    ["main", "render"],
+    ["main", "parse", "scan"],
+]
+
+class Nodo:
+    def __init__(self, nombre):
+        self.nombre = nombre
+        self.inclusivo = 0
+        self.exclusivo = 0
+        self.hijos = {}
+
+raiz = Nodo("<raiz>")
+for pila in muestras:
+    actual = raiz
+    for funcion in pila:
+        actual = actual.hijos.setdefault(funcion, Nodo(funcion))
+        actual.inclusivo += 1           # la muestra pasa por este nodo
+    actual.exclusivo += 1               # y termina exactamente en el último
+
+def mostrar(nodo, nivel=0):
+    for h in nodo.hijos.values():
+        print("  " * nivel + f"{h.nombre} incl={h.inclusivo} excl={h.exclusivo}")
+        mostrar(h, nivel + 1)
+
+mostrar(raiz)
+```
+
+Salida:
+
+```
+main incl=6 excl=0
+  parse incl=4 excl=0
+    scan incl=3 excl=3
+    build incl=1 excl=1
+  render incl=2 excl=1
+    scan incl=1 excl=1
+```
+
+Coincide con el diagrama de la nota. Lo valioso del CCT es lo que **no** se ve en un perfil plano:
+
+| Pregunta | Perfil plano (solo el tope de la pila) | CCT |
+| :--- | :--- | :--- |
+| ¿Cuánto consume `scan`? | $4/6 \approx 67\%$ | $67\%$, pero separado por contexto |
+| ¿Quién llama a `scan` cuando es costoso? | No se sabe | `parse` aporta $3$ de las $4$ muestras ($75\%$) |
+| ¿`render` hace trabajo propio? | No | Sí: $\text{excl} = 1$ (su muestra S5 termina en él) |
+
+### Efecto del intervalo de muestreo
+
+Con solo $6$ muestras, cada una pesa $1/6 \approx 17\%$ del total, así que la estimación es muy gruesa: una sola muestra de más o de menos mueve el resultado $17$ puntos porcentuales. Con intervalos más pequeños (o ejecuciones más largas) el error baja, a costa de más overhead. Es el compromiso exactitud/sobrecarga del muestreo.
+
+---
+
 ## Preguntas de repaso
 
 > [!question]- ¿Cuál es la diferencia estructural entre un Call Graph y un Calling Context Tree (CCT)?
@@ -91,3 +155,9 @@ flowchart TD
 
 > [!question]- Si en la muestra S1 la pila es `main -> parse -> scan` y en la muestra S6 una **segunda invocación distinta** a `parse` vuelve a tener la pila `main -> parse -> scan`, ¿el CCT estándar crea otro nodo `parse` o acumula sobre la misma ruta?
 > El CCT agregado estándar reutiliza la ruta `main -> parse -> scan` y suma al mismo nodo (pasando de 2 a 3), porque agrupa por contexto de llamada (prefijo de nombres de función), sin conservar el orden cronológico de invocaciones separadas.
+
+> [!question]- En el CCT, ¿qué relación cumplen los contadores inclusivo y exclusivo de un nodo con los de sus hijos?
+> El inclusivo de un nodo es su exclusivo más la suma de los inclusivos de sus hijos. Por ejemplo, `parse`: $0 + 3 + 1 = 4$ y `render`: $1 + 1 = 2$. Si esa igualdad no se cumple, hay un error en la construcción del árbol.
+
+> [!question]- Añade una séptima muestra `main -> render -> scan`. ¿Qué contadores cambian y qué porcentaje pasa a representar `scan` en total?
+> Cambian `main` (incl $7$), `render` (incl $3$, excl $1$) y `scan` bajo `render` (incl $2$, excl $2$). En total `scan` aparece en $3 + 2 = 5$ de $7$ muestras, es decir, $\approx 71\%$, y el contexto `render → scan` pasa a ser el $40\%$ de su costo ($2/5$).
