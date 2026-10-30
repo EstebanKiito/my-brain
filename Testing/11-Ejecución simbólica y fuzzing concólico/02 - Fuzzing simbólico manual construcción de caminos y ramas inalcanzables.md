@@ -185,8 +185,8 @@ Solo `P2` es `unsat`: pide $a = b$, $a = c$ y a la vez $b \ne c$, que es una con
 > [!question]- ¿Qué significa que para un camino de un programa el *SMT Solver* responda `unsat` (`no solution`), y por qué un *fuzzer* aleatorio jamás podría llegar a esa conclusión con certeza?
 > Significa que las condiciones acumuladas a lo largo de ese camino son **mutuamente contradictorias**, demostrando formalmente que se trata de una **rama inalcanzable (código muerto)** para cualquier entrada posible. Un *fuzzer* aleatorio solo muestrea entradas concretas: aunque falle millones de veces en entrar a la rama, nunca puede distinguir entre una condición muy estrecha (como `x == 918273645`) y una condición lógicamente imposible.
 
-> [!question]- En `tarifa_envio`, ¿qué restricciones tendría un camino adicional si se añadiera `elif peso == 5:` antes del `else`?
-> El camino sería `[L1, Not(peso > 5), peso == 5, tarifa == ...]`. Al ser `peso == 5` una subcondición de `Not(peso > 5)` (es decir, `peso <= 5`), el camino restante (`peso < 5`) se acota a `[L1, Not(peso > 5), Not(peso == 5), L6]`. Cada nuevo `elif` suma una restricción negada a los caminos que lo siguen.
+> [!question]- En `tarifa_envio`, ¿cómo cambian las restricciones si se agrega `elif peso == 5:` (con su propia fórmula de tarifa) antes del `else`?
+> Aparece un camino nuevo `[L1, Not(peso > 5), peso == 5, <fórmula del elif>]`, y el camino del `else` pasa a ser `[L1, Not(peso > 5), Not(peso == 5), L6]`. Cada nuevo `elif` agrega una restricción negada a todos los caminos que lo siguen.
 
 > [!question]- ¿Por qué los caminos de la ejecución simbólica incluyen la condición negada de los `if` anteriores y no solo la del `if` que se alcanza?
 > Porque para llegar a un punto del programa hay que haber tomado *todas* las decisiones previas del recorrido. Si se omitiera la negación de un `if` anterior que debe ser falso, Z3 podría devolver una entrada que en realidad toma otra rama antes y nunca llega al objetivo (la solución satisface la fórmula pero no alcanza el camino).
