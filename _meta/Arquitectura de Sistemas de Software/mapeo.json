@@ -434,6 +434,11 @@
       "fuente": "ayudantias",
       "texto": "[Copiar]",
       "motivo": "Recordatorio personal en la sección 'Pregunta I1 - 2025-2' de la ayudantía de UML; los casos de pruebas se resuelven en el tema Resolución de casos de diseño."
+    },
+    {
+      "fuente": "clases_i1",
+      "link": "http://Readme.md",
+      "motivo": "Autolink que Notion generó a partir del nombre de archivo en el comando `cat Readme.md`; no es un enlace real."
     }
   ]
 }
