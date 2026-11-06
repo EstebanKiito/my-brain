@@ -139,7 +139,7 @@
     },
     "Middleware orientado a mensajes": {
       "carpeta": "Arquitectura de Sistemas de Software/15-Middleware orientado a mensajes",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "clases_i2",

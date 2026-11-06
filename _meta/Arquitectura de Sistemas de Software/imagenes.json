@@ -26,5 +26,26 @@
     "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/11,12,13,14. Integración v2.pdf#page=20",
     "destino": "Arquitectura de Sistemas de Software/14-Integración y relaciones entre contextos/adjuntos/Niveles comunes de integración.png",
     "sha256": "f338ab15e3514100187ae3db85b2f8f0539278ffb3733bd83df663edada1f132"
+  },
+  {
+    "tema": "Middleware orientado a mensajes",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases I2/image 2.png",
+    "destino": "Arquitectura de Sistemas de Software/15-Middleware orientado a mensajes/adjuntos/Particiones de un tópico replicadas entre tres brokers.png",
+    "sha256": "e5cec55697c6a017dbe2eeaad0264fea641116314361b89dbe4596e47537ad91"
+  },
+  {
+    "tema": "Middleware orientado a mensajes",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/11,12,13,14. Integración v2.pdf#page=29",
+    "destino": "Arquitectura de Sistemas de Software/15-Middleware orientado a mensajes/adjuntos/Servidor MOM entre emisores y receptores.png",
+    "sha256": "1b97b750ec640a72cacd12d9d0972df4066d6cbde35c65e4a76cd55537803c8b"
+  },
+  {
+    "tema": "Middleware orientado a mensajes",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/11,12,13,14. Integración v2.pdf#page=30",
+    "destino": "Arquitectura de Sistemas de Software/15-Middleware orientado a mensajes/adjuntos/Quorum queues de RabbitMQ ante una partición de red.png",
+    "sha256": "82dda194b21971d15a776a812cb48d45e7039783ac7050354c250cc155151b32"
   }
 ]
