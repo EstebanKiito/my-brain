@@ -16,3 +16,4 @@ Curso sobre cómo tomar decisiones de arquitectura: qué características necesi
 16. [[16-REST y contratos de API/_Índice|REST y contratos de API]] — REST como estilo, árbol de derivación, componentes y conectores, interfaz uniforme, madurez de Richardson y OpenAPI.
 17. [[17-gRPC GraphQL y MCP/_Índice|gRPC GraphQL y MCP]] — gRPC, GraphQL, MCP, evolución de contratos, outbox y cómo elegir el mecanismo de integración.
 18. [[18-DDD táctico/_Índice|DDD táctico]] — Entidades, objetos de valor, agregados, repositorios, servicios, eventos de dominio e integración y arquitectura hexagonal.
+19. [[19-Fundamentos de performance/_Índice|Fundamentos de performance]] — Definición y métricas de performance, percentiles, escenarios, medición experimental y teórica, y tácticas de Bass y Kazman.

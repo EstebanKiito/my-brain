@@ -191,10 +191,11 @@
     },
     "Fundamentos de performance": {
       "carpeta": "Arquitectura de Sistemas de Software/19-Fundamentos de performance",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [],
       "pdfs": [
-        "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf"
+        "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf",
+        "Semestre 8/Arquisis/Syllabus/I2/Apuntes_I2.pdf"
       ]
     },
     "Hardware red y performance": {
@@ -202,7 +203,8 @@
       "estado": "pendiente",
       "secciones": [],
       "pdfs": [
-        "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf"
+        "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf",
+        "Semestre 8/Arquisis/Syllabus/I2/Apuntes_I2.pdf"
       ]
     },
     "Caché y protocolos web": {
@@ -210,7 +212,8 @@
       "estado": "pendiente",
       "secciones": [],
       "pdfs": [
-        "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf"
+        "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf",
+        "Semestre 8/Arquisis/Syllabus/I2/Apuntes_I2.pdf"
       ]
     },
     "Asincronía y control de demanda": {
@@ -218,7 +221,8 @@
       "estado": "pendiente",
       "secciones": [],
       "pdfs": [
-        "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf"
+        "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf",
+        "Semestre 8/Arquisis/Syllabus/I2/Apuntes_I2.pdf"
       ]
     },
     "Medición de escalabilidad": {
@@ -226,7 +230,8 @@
       "estado": "pendiente",
       "secciones": [],
       "pdfs": [
-        "Semestre 8/Arquisis/Syllabus/Clases/I2/19,20,21. Escalabilidad.pdf"
+        "Semestre 8/Arquisis/Syllabus/Clases/I2/19,20,21. Escalabilidad.pdf",
+        "Semestre 8/Arquisis/Syllabus/I2/Apuntes_I2.pdf"
       ]
     },
     "Métodos de escalabilidad": {
@@ -234,7 +239,8 @@
       "estado": "pendiente",
       "secciones": [],
       "pdfs": [
-        "Semestre 8/Arquisis/Syllabus/Clases/I2/19,20,21. Escalabilidad.pdf"
+        "Semestre 8/Arquisis/Syllabus/Clases/I2/19,20,21. Escalabilidad.pdf",
+        "Semestre 8/Arquisis/Syllabus/I2/Apuntes_I2.pdf"
       ]
     },
     "Escalabilidad de datos": {
@@ -242,7 +248,8 @@
       "estado": "pendiente",
       "secciones": [],
       "pdfs": [
-        "Semestre 8/Arquisis/Syllabus/Clases/I2/19,20,21. Escalabilidad.pdf"
+        "Semestre 8/Arquisis/Syllabus/Clases/I2/19,20,21. Escalabilidad.pdf",
+        "Semestre 8/Arquisis/Syllabus/I2/Apuntes_I2.pdf"
       ]
     },
     "Resolución de casos de diseño": {
