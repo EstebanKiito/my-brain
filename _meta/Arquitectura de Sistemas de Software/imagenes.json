@@ -467,5 +467,75 @@
     "original": "Semestre 8/Arquisis/Clases i1/IMG_7677.heic",
     "destino": "Arquitectura de Sistemas de Software/08-DDD estratégico/adjuntos/Context map entre catálogo facturación envíos y atención al cliente.png",
     "sha256": "1b713ea0751ad9016208970783704748d44c915cdf55d6b42c9523d40a46ad31"
+  },
+  {
+    "tema": "Diagramación y UML de componentes",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 13.png",
+    "destino": "Arquitectura de Sistemas de Software/09-Diagramación y UML de componentes/adjuntos/Variantes de diagramas UML.png",
+    "sha256": "26527d67a60b661895b3e55ba7d3b783c74f688285da9f53f37624bb13a0d305"
+  },
+  {
+    "tema": "Diagramación y UML de componentes",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 14.png",
+    "destino": "Arquitectura de Sistemas de Software/09-Diagramación y UML de componentes/adjuntos/Notación de componente con estereotipo e interfaces.png",
+    "sha256": "f26627623e751d7c4e06d467e61d4432756059f9598130a2b4c3aeb2d36bd757"
+  },
+  {
+    "tema": "Diagramación y UML de componentes",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 15.png",
+    "destino": "Arquitectura de Sistemas de Software/09-Diagramación y UML de componentes/adjuntos/Métodos inductivo deductivo y por referencia.png",
+    "sha256": "43fe508a28cecba2c7beb1a427889d566fa50162d6f2bdf9f4f6f4a59d442d59"
+  },
+  {
+    "tema": "Diagramación y UML de componentes",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7767.heic",
+    "destino": "Arquitectura de Sistemas de Software/09-Diagramación y UML de componentes/adjuntos/Proxy Nginx que provee a una API.png",
+    "sha256": "d2fd1bc89e1868527c3e9a977f65cbb347baf11ad753c6500a21703bbfaf09dd"
+  },
+  {
+    "tema": "Diagramación y UML de componentes",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7767_2.heic",
+    "destino": "Arquitectura de Sistemas de Software/09-Diagramación y UML de componentes/adjuntos/Interfaces provistas y requeridas.png",
+    "sha256": "d2fd1bc89e1868527c3e9a977f65cbb347baf11ad753c6500a21703bbfaf09dd"
+  },
+  {
+    "tema": "Diagramación y UML de componentes",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7769.heic",
+    "destino": "Arquitectura de Sistemas de Software/09-Diagramación y UML de componentes/adjuntos/Reverse proxy Nginx dentro de una EC2.png",
+    "sha256": "c6ca1d01e52d10de5950009cdffe658a6698545eb9d7bcc6aa9c22f3cc0ff8df"
+  },
+  {
+    "tema": "Diagramación y UML de componentes",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7771_2.heic",
+    "destino": "Arquitectura de Sistemas de Software/09-Diagramación y UML de componentes/adjuntos/Reverse proxy con balanceo de carga y broker.png",
+    "sha256": "40d42c15ddc10e4236183fe2b2c7df5b55b997b85ba62fd25d7d1c2e32ae1bfb"
+  },
+  {
+    "tema": "Diagramación y UML de componentes",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Ayudantías/image 10.png",
+    "destino": "Arquitectura de Sistemas de Software/09-Diagramación y UML de componentes/adjuntos/Diagramas de pipe and filter y peer to peer.png",
+    "sha256": "8f5b701cc32c5ccac0f6de2ade3498d969da06c8192a6dd20eb6a6282af014ef"
+  },
+  {
+    "tema": "Diagramación y UML de componentes",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Ayudantías/image 11.png",
+    "destino": "Arquitectura de Sistemas de Software/09-Diagramación y UML de componentes/adjuntos/Diagramas de pub sub y basado en eventos.png",
+    "sha256": "e6cf9ab0f40c2e6dea790d444d71e91e89119be36c9efa5e0286f1abaa956398"
+  },
+  {
+    "tema": "Diagramación y UML de componentes",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Ayudantías/image 12.png",
+    "destino": "Arquitectura de Sistemas de Software/09-Diagramación y UML de componentes/adjuntos/Diagrama de componentes de una plataforma de telemedicina.png",
+    "sha256": "e6dc08e41fb4a52565dafe55694f9a1ccbd8b67d72e6699bd1256cce70681b0b"
   }
 ]

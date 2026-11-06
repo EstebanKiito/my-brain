@@ -136,7 +136,7 @@
     },
     "Diagramación y UML de componentes": {
       "carpeta": "Arquitectura de Sistemas de Software/09-Diagramación y UML de componentes",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "clases_i1",
@@ -429,6 +429,11 @@
       "fuente": "clases_i1",
       "texto": "[Copiar últimos 10 minutos]",
       "motivo": "Recordatorio personal en EDA; las topologías se tomaron de las slides de Estilos y patrones."
+    },
+    {
+      "fuente": "ayudantias",
+      "texto": "[Copiar]",
+      "motivo": "Recordatorio personal en la sección 'Pregunta I1 - 2025-2' de la ayudantía de UML; los casos de pruebas se resuelven en el tema Resolución de casos de diseño."
     }
   ]
 }
