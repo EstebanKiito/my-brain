@@ -7,9 +7,9 @@ Orden de trabajo (pedido del usuario, que prepara la I2): primero los temas 14 a
 | # | Tema | Carpeta | Estado | Notas | Imágenes (apuntes + slides) |
 |---|---|---|---|---|---|
 | 0 | Infraestructura (`_meta/Arquitectura de Sistemas de Software/`) | `_meta/Arquitectura de Sistemas de Software/` | ✅ hecho | – | – |
-| 1 | Fundamentos de la arquitectura de software | `01-Fundamentos de la arquitectura de software/` | ⏳ pendiente | – | – |
-| 2 | Cohesión acoplamiento y connascence | `02-Cohesión acoplamiento y connascence/` | ⏳ pendiente | – | – |
-| 3 | Componentes quanta y documentación | `03-Componentes quanta y documentación/` | ⏳ pendiente | – | – |
+| 1 | Fundamentos de la arquitectura de software | `01-Fundamentos de la arquitectura de software/` | ✅ hecho | 3 + `_Índice` | 4 apuntes + 0 slide |
+| 2 | Cohesión acoplamiento y connascence | `02-Cohesión acoplamiento y connascence/` | ✅ hecho | 3 + `_Índice` | 4 apuntes + 3 convertida + 0 slide |
+| 3 | Componentes quanta y documentación | `03-Componentes quanta y documentación/` | ✅ hecho | 2 + `_Índice` | 1 apuntes + 2 convertida + 0 slide |
 | 4 | Características arquitectónicas y escenarios | `04-Características arquitectónicas y escenarios/` | ⏳ pendiente | – | – |
 | 5 | Atributos estructurales | `05-Atributos estructurales/` | ⏳ pendiente | – | – |
 | 6 | Atributos operacionales | `06-Atributos operacionales/` | ⏳ pendiente | – | – |
@@ -57,3 +57,6 @@ Orden de trabajo (pedido del usuario, que prepara la I2): primero los temas 14 a
 - **2026-11-06 · Tema 23.** `23-Medición de escalabilidad`: 3 notas + `_Índice`. Fuentes: slides 1-16 de Escalabilidad. Ejemplos numéricos de Little, Amdahl (tabla para p = 50, 75, 90 y 95%) y Gustafson comprobados con python3. Imágenes: slides 14 y 15 recortadas.
 - **2026-11-06 · Tema 24.** `24-Métodos de escalabilidad`: 3 notas + `_Índice`. Fuentes: slides 17-39 de Escalabilidad y la sección de horizontal vs vertical de `Apuntes_I2.pdf`. Imágenes: slides 22, 23 y 33.
 - **2026-11-06 · Tema 25.** `25-Escalabilidad de datos`: 5 notas + `_Índice`. Fuentes: slides 40-77 de Escalabilidad; pregunta 1.b y alternativas 2.a de la I2 2026-1 (CAP en una mina, leader-follower, sharding y particionado vertical), 1.b de la pauta I2 2025-2 (relacional frente a NoSQL) y 1.a y 1.c de la pauta I2 2024-2 (bases por sección y sharding). Imágenes: slides 46, 61 y 65. **Cierre del bloque I2 (temas 14-25)**: pausa para que el usuario revise.
+- **2026-11-06 · Tema 01.** `01-Fundamentos de la arquitectura de software`: 3 notas + `_Índice`. Fuentes: `Clases i1` (Clase 1 hasta "Plan del Curso" y de "Facts clave" a "Cohesión"), slides 1-34 y 50-56 de Introducción, alternativa 2.a del examen 2025-2. Imágenes: 4 PNG de Notion.
+- **2026-11-06 · Tema 02.** `02-Cohesión acoplamiento y connascence`: 3 notas + `_Índice`. Fuentes: `Clases i1` desde "Cohesión" hasta "Clase 3", slides 57-66 de Introducción, pregunta 1.a del examen 2025-1 (big ball of mud). Imágenes: 4 PNG de Notion y 3 fotos convertidas.
+- **2026-11-06 · Tema 03.** `03-Componentes quanta y documentación`: 2 notas + `_Índice`. Fuentes: `Clases i1` desde "Clase 3" hasta "Clase 4" y slides 67-78 de Introducción. Imágenes: 1 PNG de Notion y 2 fotos convertidas.

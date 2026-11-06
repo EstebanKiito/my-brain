@@ -14,24 +14,47 @@
   "temas": {
     "Fundamentos de la arquitectura de software": {
       "carpeta": "Arquitectura de Sistemas de Software/01-Fundamentos de la arquitectura de software",
-      "estado": "pendiente",
-      "secciones": [],
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Clase 1",
+          "hasta": "Plan del Curso"
+        },
+        {
+          "fuente": "clases_i1",
+          "desde": "Facts clave en arquitectura",
+          "hasta": "Cohesión"
+        }
+      ],
       "pdfs": [
         "Semestre 8/Arquisis/Syllabus/Clases/I1/00,01. Introducción - Definiciones.pdf"
       ]
     },
     "Cohesión acoplamiento y connascence": {
       "carpeta": "Arquitectura de Sistemas de Software/02-Cohesión acoplamiento y connascence",
-      "estado": "pendiente",
-      "secciones": [],
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Cohesión",
+          "hasta": "Clase 3"
+        }
+      ],
       "pdfs": [
         "Semestre 8/Arquisis/Syllabus/Clases/I1/00,01. Introducción - Definiciones.pdf"
       ]
     },
     "Componentes quanta y documentación": {
       "carpeta": "Arquitectura de Sistemas de Software/03-Componentes quanta y documentación",
-      "estado": "pendiente",
-      "secciones": [],
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Clase 3",
+          "hasta": "Clase 4"
+        }
+      ],
       "pdfs": [
         "Semestre 8/Arquisis/Syllabus/Clases/I1/00,01. Introducción - Definiciones.pdf"
       ]
@@ -39,7 +62,13 @@
     "Características arquitectónicas y escenarios": {
       "carpeta": "Arquitectura de Sistemas de Software/04-Características arquitectónicas y escenarios",
       "estado": "pendiente",
-      "secciones": [],
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Clase 4",
+          "hasta": "Requisitos Estructurales"
+        }
+      ],
       "pdfs": [
         "Semestre 8/Arquisis/Syllabus/Clases/I1/02,03. Atributos de calidad.pdf"
       ]
@@ -47,7 +76,13 @@
     "Atributos estructurales": {
       "carpeta": "Arquitectura de Sistemas de Software/05-Atributos estructurales",
       "estado": "pendiente",
-      "secciones": [],
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Requisitos Estructurales",
+          "hasta": "Requisitos Operacionales"
+        }
+      ],
       "pdfs": [
         "Semestre 8/Arquisis/Syllabus/Clases/I1/02,03. Atributos de calidad.pdf"
       ]
@@ -55,7 +90,18 @@
     "Atributos operacionales": {
       "carpeta": "Arquitectura de Sistemas de Software/06-Atributos operacionales",
       "estado": "pendiente",
-      "secciones": [],
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Requisitos Operacionales",
+          "hasta": "Clase 6"
+        },
+        {
+          "fuente": "clases_i1",
+          "desde": "Escalabilidad",
+          "hasta": "DDD: Diseño por Dominio"
+        }
+      ],
       "pdfs": [
         "Semestre 8/Arquisis/Syllabus/Clases/I1/02,03. Atributos de calidad.pdf"
       ]
@@ -63,7 +109,13 @@
     "Atributos transversales": {
       "carpeta": "Arquitectura de Sistemas de Software/07-Atributos transversales",
       "estado": "pendiente",
-      "secciones": [],
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Clase 7",
+          "hasta": "Clase 8"
+        }
+      ],
       "pdfs": [
         "Semestre 8/Arquisis/Syllabus/Clases/I1/04,05. NFR,UML.pdf"
       ]
@@ -71,7 +123,13 @@
     "DDD estratégico": {
       "carpeta": "Arquitectura de Sistemas de Software/08-DDD estratégico",
       "estado": "pendiente",
-      "secciones": [],
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "DDD: Diseño por Dominio",
+          "hasta": "Clase 7"
+        }
+      ],
       "pdfs": [
         "Semestre 8/Arquisis/Syllabus/Clases/I1/04,05. NFR,UML.pdf"
       ]
@@ -79,7 +137,18 @@
     "Diagramación y UML de componentes": {
       "carpeta": "Arquitectura de Sistemas de Software/09-Diagramación y UML de componentes",
       "estado": "pendiente",
-      "secciones": [],
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Clase 8",
+          "hasta": "Clase 9"
+        },
+        {
+          "fuente": "ayudantias",
+          "desde": "Ayudantía 4: UML",
+          "hasta": "Ayudantía 5: Cloud y S3"
+        }
+      ],
       "pdfs": [
         "Semestre 8/Arquisis/Syllabus/Clases/I1/04,05. NFR,UML.pdf",
         "Semestre 8/Arquisis/Syllabus/I1/AY04 - UML I.pdf",
@@ -89,7 +158,13 @@
     "Estilos jerárquicos y de capas": {
       "carpeta": "Arquitectura de Sistemas de Software/10-Estilos jerárquicos y de capas",
       "estado": "pendiente",
-      "secciones": [],
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Clase 9",
+          "hasta": "Clase 11"
+        }
+      ],
       "pdfs": [
         "Semestre 8/Arquisis/Syllabus/Clases/I1/06,07. E&P,E&P.pdf"
       ]
@@ -97,7 +172,13 @@
     "Flujo de datos e invocación implícita": {
       "carpeta": "Arquitectura de Sistemas de Software/11-Flujo de datos e invocación implícita",
       "estado": "pendiente",
-      "secciones": [],
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Clase 11",
+          "hasta": "Retomando Historia"
+        }
+      ],
       "pdfs": [
         "Semestre 8/Arquisis/Syllabus/Clases/I1/06,07. E&P,E&P.pdf",
         "Semestre 8/Arquisis/Syllabus/Clases/I1/08,09. E&P,E&P.pdf"
@@ -106,7 +187,13 @@
     "Arquitecturas orientadas a servicios": {
       "carpeta": "Arquitectura de Sistemas de Software/12-Arquitecturas orientadas a servicios",
       "estado": "pendiente",
-      "secciones": [],
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Retomando Historia",
+          "hasta": "Interprete"
+        }
+      ],
       "pdfs": [
         "Semestre 8/Arquisis/Syllabus/Clases/I1/08,09. E&P,E&P.pdf"
       ]
@@ -114,7 +201,13 @@
     "Otros estilos arquitectónicos": {
       "carpeta": "Arquitectura de Sistemas de Software/13-Otros estilos arquitectónicos",
       "estado": "pendiente",
-      "secciones": [],
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Interprete",
+          "hasta": null
+        }
+      ],
       "pdfs": [
         "Semestre 8/Arquisis/Syllabus/Clases/I1/08,09. E&P,E&P.pdf"
       ]
@@ -264,13 +357,35 @@
     "Infraestructura y despliegue en la nube": {
       "carpeta": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube",
       "estado": "pendiente",
-      "secciones": [],
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Clase 6",
+          "hasta": "Escalabilidad"
+        },
+        {
+          "fuente": "ayudantias",
+          "desde": "Ayudantía 1: Cloud y AWS",
+          "hasta": "Ayudantía 4: UML"
+        },
+        {
+          "fuente": "ayudantias",
+          "desde": "Ayudantía 5: Cloud y S3",
+          "hasta": null
+        }
+      ],
       "pdfs": []
     },
     "Gestión del curso": {
       "carpeta": "Arquitectura de Sistemas de Software/28-Gestión del curso",
       "estado": "pendiente",
-      "secciones": [],
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Plan del Curso",
+          "hasta": "Facts clave en arquitectura"
+        }
+      ],
       "pdfs": []
     }
   },

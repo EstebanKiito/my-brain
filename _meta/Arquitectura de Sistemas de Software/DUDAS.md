@@ -20,3 +20,9 @@ Estados: 🟡 abierta · ✅ resuelta · ℹ️ informativa.
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
 | ✅ resuelta | `02 - Asincronía y el modelo de NodeJS.md` | Slide "NodeJS: Arquitectura" (Performance, p. 72): "Pool de threads (libelo)" y "Loop de eventos (libdev)" | Son erratas de **libeio** y **libev**, las librerías originales de Node para el pool de hilos y el loop de eventos, hoy reemplazadas por **libuv**. La transcripción de la imagen no repite los nombres y la nota menciona libuv. |
+
+## Cohesión acoplamiento y connascence
+
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ℹ️ informativa | `03 - Connascence dinámica y reglas de grado y localidad.md` | Slide "Connascence: Ejemplo en Aplicación de recetas" (Introducción, p. 64) | La slide pregunta "¿De qué tipo es su connascence?" sin dar la respuesta, y los apuntes solo registran que un cambio en Ingredientes obliga a cambiar Recetas. La nota responde con la dependencia circular (nombre y tipo estáticos, ejecución dinámica) y la mejora de la slide siguiente (servicio RecipeIngredient). Confirmar con el equipo docente si la respuesta esperada es otra. |

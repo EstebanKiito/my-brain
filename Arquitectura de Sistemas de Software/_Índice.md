@@ -17,6 +17,12 @@ Curso sobre cómo tomar decisiones de arquitectura: qué características necesi
 > 4. **Escalabilidad** (23 → 25). Practicar los cálculos de [[03 - Leyes de Little Amdahl y Gustafson]] y no confundir sharding, partitioning y leader-follower.
 > 5. Repasar las preguntas de repaso de cada nota y, al final, los casos resueltos.
 
+## Fundamentos características DDD estratégico UML y estilos
+
+01. [[01-Fundamentos de la arquitectura de software/_Índice|Fundamentos de la arquitectura de software]] — Definiciones, analogía con la construcción, el rol del arquitecto, tradeoffs, ley de Conway y conocimiento de dominio.
+02. [[02-Cohesión acoplamiento y connascence/_Índice|Cohesión acoplamiento y connascence]] — Cohesión, tipos de acoplamiento, connascence estática y dinámica, reglas de grado y localidad.
+03. [[03-Componentes quanta y documentación/_Índice|Componentes quanta y documentación]] — Componente, quanta arquitectónica, vistas y ADR.
+
 ## Integración DDD táctico performance y escalabilidad
 
 14. [[14-Integración y relaciones entre contextos/_Índice|Integración y relaciones entre contextos]] — Integrabilidad, context map, las siete relaciones de DDD y tácticas básicas de integración.

@@ -278,5 +278,103 @@
     "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/19,20,21. Escalabilidad.pdf#page=65",
     "destino": "Arquitectura de Sistemas de Software/25-Escalabilidad de datos/adjuntos/Tablets de Bigtable sobre chunkservers de GFS.png",
     "sha256": "0d0dc7ed9704845bd2f5207fde936dcf45b45bdd19135298522efeed13f97f20"
+  },
+  {
+    "tema": "Fundamentos de la arquitectura de software",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image.png",
+    "destino": "Arquitectura de Sistemas de Software/01-Fundamentos de la arquitectura de software/adjuntos/Comparación entre arquitectura de construcción y de software.png",
+    "sha256": "c2ae3cb3bde81518f4043300505152e1f3f41795a0a8c64090f8fbf7acdaf400"
+  },
+  {
+    "tema": "Fundamentos de la arquitectura de software",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 1.png",
+    "destino": "Arquitectura de Sistemas de Software/01-Fundamentos de la arquitectura de software/adjuntos/Diferencias entre construcción y software fuera de la analogía.png",
+    "sha256": "a96213ce92fe3f8edb760a72e4a6565aa9410b8f9abe15bbac82a3c5b92cd3a1"
+  },
+  {
+    "tema": "Fundamentos de la arquitectura de software",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 2.png",
+    "destino": "Arquitectura de Sistemas de Software/01-Fundamentos de la arquitectura de software/adjuntos/Saber técnico de un desarrollador frente a un arquitecto.png",
+    "sha256": "ef3cfb2ab68a981d32dcaba933da4c7652e6a860d2c82c6a435d587a77e832ae"
+  },
+  {
+    "tema": "Fundamentos de la arquitectura de software",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 3.png",
+    "destino": "Arquitectura de Sistemas de Software/01-Fundamentos de la arquitectura de software/adjuntos/El arquitecto debe hablar.png",
+    "sha256": "46738f270c2c1357147b3870b77488e2474fc04e0a611df1235628046c3947ee"
+  },
+  {
+    "tema": "Cohesión acoplamiento y connascence",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 5.png",
+    "destino": "Arquitectura de Sistemas de Software/02-Cohesión acoplamiento y connascence/adjuntos/Tipos de connascence de menor a mayor fuerza.png",
+    "sha256": "fe8c1cdcb7e86f97bb44f607865f20f5aa1d5df6480b244ec8f39fb1fab44203"
+  },
+  {
+    "tema": "Cohesión acoplamiento y connascence",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7527.heic",
+    "destino": "Arquitectura de Sistemas de Software/02-Cohesión acoplamiento y connascence/adjuntos/Connascence de algoritmo con un componente común.png",
+    "sha256": "7162f57215f9cb1f2156555a40b1eb186c692ad4e9726ac6eceb6198de9a8d7b"
+  },
+  {
+    "tema": "Cohesión acoplamiento y connascence",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7528.heic",
+    "destino": "Arquitectura de Sistemas de Software/02-Cohesión acoplamiento y connascence/adjuntos/Connascence de ejecución en lecturas y escrituras.png",
+    "sha256": "ac561edcd68ccb0d97d3a600a68b472a1efbdc3d247235ba76f4f09c828ce625"
+  },
+  {
+    "tema": "Cohesión acoplamiento y connascence",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7530.heic",
+    "destino": "Arquitectura de Sistemas de Software/02-Cohesión acoplamiento y connascence/adjuntos/Connascence de valor en las esquinas de un rectángulo.png",
+    "sha256": "5e4481a50891e9b3f8424b2407e23eb1b9be005db95459dd937fbf6526fd141b"
+  },
+  {
+    "tema": "Cohesión acoplamiento y connascence",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/da1342e5-4e76-46ad-bf2f-43b88fb0c9d4.png",
+    "destino": "Arquitectura de Sistemas de Software/02-Cohesión acoplamiento y connascence/adjuntos/Connascence de identidad con broker o base compartida.png",
+    "sha256": "bd9d7eb9dfc0d3c3537c06182d957026025a1e573efe6d1e3c379f72269784ef"
+  },
+  {
+    "tema": "Cohesión acoplamiento y connascence",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 6.png",
+    "destino": "Arquitectura de Sistemas de Software/02-Cohesión acoplamiento y connascence/adjuntos/Ejemplo de connascence entre recetas e ingredientes.png",
+    "sha256": "ccffcc3a6e6779f3c90485cdfd5323e42c07eaaf0c92dbaf0ba8b701d55397fd"
+  },
+  {
+    "tema": "Cohesión acoplamiento y connascence",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 7.png",
+    "destino": "Arquitectura de Sistemas de Software/02-Cohesión acoplamiento y connascence/adjuntos/Servicio RecipeIngredient que reduce la connascence.png",
+    "sha256": "683020a9df1853efb5d9a070455b2470767954153207e5ce36930a88a13d18fc"
+  },
+  {
+    "tema": "Componentes quanta y documentación",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7555.heic",
+    "destino": "Arquitectura de Sistemas de Software/03-Componentes quanta y documentación/adjuntos/Componente E0 con API conector y base de datos.png",
+    "sha256": "71a11d551ad508fb2f1104f7128d5c346fdae425a946696f8cd23e94fddd0ddc"
+  },
+  {
+    "tema": "Componentes quanta y documentación",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7556.heic",
+    "destino": "Arquitectura de Sistemas de Software/03-Componentes quanta y documentación/adjuntos/Una sola quanta cuando todo depende de la base.png",
+    "sha256": "6731ef99d130df1f1d6281e273c9fbea4d8fb31e463b284f22ad2e67e2707c72"
+  },
+  {
+    "tema": "Componentes quanta y documentación",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 8.png",
+    "destino": "Arquitectura de Sistemas de Software/03-Componentes quanta y documentación/adjuntos/Vistas como colecciones de decisiones.png",
+    "sha256": "d61957f9e0e2ec1e42f45d73c12e948311c553f0b520040bcf4c0f72c9808a53"
   }
 ]
