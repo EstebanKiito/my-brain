@@ -10,10 +10,10 @@ Orden de trabajo (pedido del usuario, que prepara la I2): primero los temas 14 a
 | 1 | Fundamentos de la arquitectura de software | `01-Fundamentos de la arquitectura de software/` | ✅ hecho | 3 + `_Índice` | 4 apuntes + 0 slide |
 | 2 | Cohesión acoplamiento y connascence | `02-Cohesión acoplamiento y connascence/` | ✅ hecho | 3 + `_Índice` | 4 apuntes + 3 convertida + 0 slide |
 | 3 | Componentes quanta y documentación | `03-Componentes quanta y documentación/` | ✅ hecho | 2 + `_Índice` | 1 apuntes + 2 convertida + 0 slide |
-| 4 | Características arquitectónicas y escenarios | `04-Características arquitectónicas y escenarios/` | ⏳ pendiente | – | – |
-| 5 | Atributos estructurales | `05-Atributos estructurales/` | ⏳ pendiente | – | – |
-| 6 | Atributos operacionales | `06-Atributos operacionales/` | ⏳ pendiente | – | – |
-| 7 | Atributos transversales | `07-Atributos transversales/` | ⏳ pendiente | – | – |
+| 4 | Características arquitectónicas y escenarios | `04-Características arquitectónicas y escenarios/` | ✅ hecho | 3 + `_Índice` | 1 apuntes + 2 slide |
+| 5 | Atributos estructurales | `05-Atributos estructurales/` | ✅ hecho | 2 + `_Índice` | 2 apuntes + 0 slide |
+| 6 | Atributos operacionales | `06-Atributos operacionales/` | ✅ hecho | 3 + `_Índice` | 1 apuntes + 2 slide |
+| 7 | Atributos transversales | `07-Atributos transversales/` | ✅ hecho | 3 + `_Índice` | 0 apuntes + 3 convertida + 1 slide |
 | 8 | DDD estratégico | `08-DDD estratégico/` | ⏳ pendiente | – | – |
 | 9 | Diagramación y UML de componentes | `09-Diagramación y UML de componentes/` | ⏳ pendiente | – | – |
 | 10 | Estilos jerárquicos y de capas | `10-Estilos jerárquicos y de capas/` | ⏳ pendiente | – | – |
@@ -60,3 +60,7 @@ Orden de trabajo (pedido del usuario, que prepara la I2): primero los temas 14 a
 - **2026-11-06 · Tema 01.** `01-Fundamentos de la arquitectura de software`: 3 notas + `_Índice`. Fuentes: `Clases i1` (Clase 1 hasta "Plan del Curso" y de "Facts clave" a "Cohesión"), slides 1-34 y 50-56 de Introducción, alternativa 2.a del examen 2025-2. Imágenes: 4 PNG de Notion.
 - **2026-11-06 · Tema 02.** `02-Cohesión acoplamiento y connascence`: 3 notas + `_Índice`. Fuentes: `Clases i1` desde "Cohesión" hasta "Clase 3", slides 57-66 de Introducción, pregunta 1.a del examen 2025-1 (big ball of mud). Imágenes: 4 PNG de Notion y 3 fotos convertidas.
 - **2026-11-06 · Tema 03.** `03-Componentes quanta y documentación`: 2 notas + `_Índice`. Fuentes: `Clases i1` desde "Clase 3" hasta "Clase 4" y slides 67-78 de Introducción. Imágenes: 1 PNG de Notion y 2 fotos convertidas.
+- **2026-11-06 · Tema 04.** `04-Características arquitectónicas y escenarios`: 3 notas + `_Índice`. Fuentes: `Clases i1` desde "Clase 4" hasta "Requisitos Estructurales", slides 1-19 y 32 y 61 de Atributos de calidad, y los casos Comisaría Virtual y MichiGuardian del compilado I1. Imágenes: 1 PNG de Notion y 2 slides.
+- **2026-11-06 · Tema 05.** `05-Atributos estructurales`: 2 notas + `_Índice`. Fuentes: `Clases i1` desde "Requisitos Estructurales" hasta "Requisitos Operacionales" (incluye el caso de capas) y slides 20-35 de Atributos de calidad. Imágenes: 2 PNG de Notion. El placeholder "[Copiar del video]" de interoperabilidad se completó con las slides 27-31.
+- **2026-11-06 · Tema 06.** `06-Atributos operacionales`: 3 notas + `_Índice`. Fuentes: `Clases i1` desde "Requisitos Operacionales" hasta "Clase 6" y desde "Escalabilidad" hasta "DDD", y slides 36-54 de Atributos de calidad. Cálculos de nueves y de disponibilidad en serie y en paralelo comprobados con python3. Imágenes: 1 PNG de Notion y 2 slides.
+- **2026-11-06 · Tema 07.** `07-Atributos transversales`: 3 notas + `_Índice`. Fuentes: `Clases i1` desde "Clase 7" hasta "Clase 8", slides 1-11 de NFR y 55-60 de Atributos de calidad, y la pregunta 4.a del examen 2024-2 (datos faciales). El placeholder de los últimos 10 minutos (reusabilidad a usabilidad) se completó con las slides 7-10. Imágenes: 3 fotos recortadas y 1 slide.

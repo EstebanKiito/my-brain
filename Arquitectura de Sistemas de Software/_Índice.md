@@ -22,6 +22,10 @@ Curso sobre cómo tomar decisiones de arquitectura: qué características necesi
 01. [[01-Fundamentos de la arquitectura de software/_Índice|Fundamentos de la arquitectura de software]] — Definiciones, analogía con la construcción, el rol del arquitecto, tradeoffs, ley de Conway y conocimiento de dominio.
 02. [[02-Cohesión acoplamiento y connascence/_Índice|Cohesión acoplamiento y connascence]] — Cohesión, tipos de acoplamiento, connascence estática y dinámica, reglas de grado y localidad.
 03. [[03-Componentes quanta y documentación/_Índice|Componentes quanta y documentación]] — Componente, quanta arquitectónica, vistas y ADR.
+04. [[04-Características arquitectónicas y escenarios/_Índice|Características arquitectónicas y escenarios]] — Stakeholders, tipos de NFR, cómo priorizar, escenarios de seis partes, decisiones relevantes y tácticas.
+05. [[05-Atributos estructurales/_Índice|Atributos estructurales]] — Mantenibilidad, flexibilidad, inyección de dependencias, portabilidad e interoperabilidad.
+06. [[06-Atributos operacionales/_Índice|Atributos operacionales]] — Performance y escalabilidad como requisitos, confiabilidad y disponibilidad con cálculo de nueves.
+07. [[07-Atributos transversales/_Índice|Atributos transversales]] — Elasticidad, seguridad, reusabilidad, soporte, eficiencia, usabilidad y McCall.
 
 ## Integración DDD táctico performance y escalabilidad
 

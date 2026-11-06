@@ -376,5 +376,89 @@
     "original": "Semestre 8/Arquisis/Clases i1/image 8.png",
     "destino": "Arquitectura de Sistemas de Software/03-Componentes quanta y documentación/adjuntos/Vistas como colecciones de decisiones.png",
     "sha256": "d61957f9e0e2ec1e42f45d73c12e948311c553f0b520040bcf4c0f72c9808a53"
+  },
+  {
+    "tema": "Características arquitectónicas y escenarios",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 9.png",
+    "destino": "Arquitectura de Sistemas de Software/04-Características arquitectónicas y escenarios/adjuntos/Tipos de requisitos no funcionales.png",
+    "sha256": "dac06928bc03be41568a28c34e0c844541bb0800c92ccc7e0ef19daa24b50246"
+  },
+  {
+    "tema": "Características arquitectónicas y escenarios",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I1/02,03. Atributos de calidad.pdf#page=11",
+    "destino": "Arquitectura de Sistemas de Software/04-Características arquitectónicas y escenarios/adjuntos/Seis partes de un escenario de calidad.png",
+    "sha256": "19f567ca026dc10f68aa9a8c12fe26e8e9ee85bb33aaf71747c3cd723852fcff"
+  },
+  {
+    "tema": "Características arquitectónicas y escenarios",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I1/02,03. Atributos de calidad.pdf#page=12",
+    "destino": "Arquitectura de Sistemas de Software/04-Características arquitectónicas y escenarios/adjuntos/Escenario de disponibilidad de ejemplo.png",
+    "sha256": "def084984f9e28709f492f93233964cb9d26498475f2d6a882ee48a36a22e7bc"
+  },
+  {
+    "tema": "Atributos estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 10.png",
+    "destino": "Arquitectura de Sistemas de Software/05-Atributos estructurales/adjuntos/Caso de arquitectura de capas.png",
+    "sha256": "ae1f7d3d4ba5dc85e074f69f8cd4bae8703ea8b337cafc068fa935284d354651"
+  },
+  {
+    "tema": "Atributos estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 11.png",
+    "destino": "Arquitectura de Sistemas de Software/05-Atributos estructurales/adjuntos/Atributos que favorece la arquitectura de capas.png",
+    "sha256": "d3ca01ff80df94d8ff7e1080ee43d84d65d796d51c07db906a0f1c28ed877b10"
+  },
+  {
+    "tema": "Atributos operacionales",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 12.png",
+    "destino": "Arquitectura de Sistemas de Software/06-Atributos operacionales/adjuntos/Región de AWS con tres zonas de disponibilidad.png",
+    "sha256": "e972d4c75cd24864b42aee751fa2fc2faf849cbc80ac776ff9360380b69433c9"
+  },
+  {
+    "tema": "Atributos operacionales",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I1/02,03. Atributos de calidad.pdf#page=50",
+    "destino": "Arquitectura de Sistemas de Software/06-Atributos operacionales/adjuntos/Tabla de nueves de disponibilidad.png",
+    "sha256": "02fb57c4afb84a422c9983ff07bd7834ceb1230fbea02d0e103104e9f79c0694"
+  },
+  {
+    "tema": "Atributos operacionales",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I1/02,03. Atributos de calidad.pdf#page=51",
+    "destino": "Arquitectura de Sistemas de Software/06-Atributos operacionales/adjuntos/Efecto sandía en los indicadores.png",
+    "sha256": "b95cda3912bf89ef5cfc711511b38f3e1b3ce449918a408cdce34f0f9e77a438"
+  },
+  {
+    "tema": "Atributos transversales",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7692.heic",
+    "destino": "Arquitectura de Sistemas de Software/07-Atributos transversales/adjuntos/Escalabilidad frente a elasticidad en el tiempo.png",
+    "sha256": "2b89e7c48a0ede0ff6cbed3ebb55caeee7d345a166bf11970701900342020912"
+  },
+  {
+    "tema": "Atributos transversales",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7693.heic",
+    "destino": "Arquitectura de Sistemas de Software/07-Atributos transversales/adjuntos/Componente elástico que satura a uno limitado.png",
+    "sha256": "955a83ecd0a126a5896149b8d0597e5e74c5e5e711769d37e8a1725e0319ad42"
+  },
+  {
+    "tema": "Atributos transversales",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7694.heic",
+    "destino": "Arquitectura de Sistemas de Software/07-Atributos transversales/adjuntos/Broker con workers que crecen según demanda.png",
+    "sha256": "41bfaf8dede1f7501cf15060f6205688df60b382aa486fffd04cde1d7d53c380"
+  },
+  {
+    "tema": "Atributos transversales",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I1/02,03. Atributos de calidad.pdf#page=55",
+    "destino": "Arquitectura de Sistemas de Software/07-Atributos transversales/adjuntos/Taxonomía de McCall por perspectiva.png",
+    "sha256": "adb62e94a801c302ffec183cd0f294a2f1fca3a4861085af7dbbd9808c1e24e5"
   }
 ]

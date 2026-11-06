@@ -61,7 +61,7 @@
     },
     "Características arquitectónicas y escenarios": {
       "carpeta": "Arquitectura de Sistemas de Software/04-Características arquitectónicas y escenarios",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "clases_i1",
@@ -75,7 +75,7 @@
     },
     "Atributos estructurales": {
       "carpeta": "Arquitectura de Sistemas de Software/05-Atributos estructurales",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "clases_i1",
@@ -89,7 +89,7 @@
     },
     "Atributos operacionales": {
       "carpeta": "Arquitectura de Sistemas de Software/06-Atributos operacionales",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "clases_i1",
@@ -108,7 +108,7 @@
     },
     "Atributos transversales": {
       "carpeta": "Arquitectura de Sistemas de Software/07-Atributos transversales",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "clases_i1",
@@ -394,6 +394,41 @@
       "fuente": "clases_i2",
       "texto": "[Copiar]",
       "motivo": "Recordatorio personal de completar los apuntes sobre SOA; el contenido se toma de las slides de Integración y de Estilos y patrones."
+    },
+    {
+      "fuente": "clases_i1",
+      "texto": "[Copiar del video]",
+      "motivo": "Recordatorio personal en interoperabilidad; el contenido se tomó de las slides 27-31 de Atributos de calidad."
+    },
+    {
+      "fuente": "clases_i1",
+      "texto": "[Copiar del Video: Ultimos 10 minutos] → Reusabilidad hasta Usabilidad",
+      "motivo": "Recordatorio personal; reusabilidad, soporte, eficiencia y usabilidad se tomaron de las slides 7-10 de NFR."
+    },
+    {
+      "fuente": "clases_i1",
+      "texto": "[copiar dudas del compañero]",
+      "motivo": "Recordatorio personal sin contenido."
+    },
+    {
+      "fuente": "clases_i1",
+      "texto": "[Copiar lo que dijo el profe → No le entendí]",
+      "motivo": "Recordatorio personal en UML; el contenido se tomó de las slides 33-44 de NFR,UML."
+    },
+    {
+      "fuente": "clases_i1",
+      "texto": "[COPIAR]",
+      "motivo": "Recordatorio personal en estilo vs patrón; el contenido se tomó de las slides de Estilos y patrones."
+    },
+    {
+      "fuente": "clases_i1",
+      "texto": "[Copiar]",
+      "motivo": "Recordatorio personal en ventajas y desventajas de capas; el contenido se tomó de las slides 26-27 de Estilos y patrones."
+    },
+    {
+      "fuente": "clases_i1",
+      "texto": "[Copiar últimos 10 minutos]",
+      "motivo": "Recordatorio personal en EDA; las topologías se tomaron de las slides de Estilos y patrones."
     }
   ]
 }
