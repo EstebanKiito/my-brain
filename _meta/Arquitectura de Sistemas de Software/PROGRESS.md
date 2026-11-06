@@ -16,7 +16,7 @@ Orden de trabajo (pedido del usuario, que prepara la I2): primero los temas 14 a
 | 7 | Atributos transversales | `07-Atributos transversales/` | ✅ hecho | 3 + `_Índice` | 0 apuntes + 3 convertida + 1 slide |
 | 8 | DDD estratégico | `08-DDD estratégico/` | ✅ hecho | 3 + `_Índice` | 0 apuntes + 1 convertida + 0 slide |
 | 9 | Diagramación y UML de componentes | `09-Diagramación y UML de componentes/` | ✅ hecho | 4 + `_Índice` | 6 apuntes + 4 convertida + 0 slide |
-| 10 | Estilos jerárquicos y de capas | `10-Estilos jerárquicos y de capas/` | ⏳ pendiente | – | – |
+| 10 | Estilos jerárquicos y de capas | `10-Estilos jerárquicos y de capas/` | ✅ hecho | 4 + `_Índice` | 4 apuntes + 4 convertida + 0 slide |
 | 11 | Flujo de datos e invocación implícita | `11-Flujo de datos e invocación implícita/` | ⏳ pendiente | – | – |
 | 12 | Arquitecturas orientadas a servicios | `12-Arquitecturas orientadas a servicios/` | ⏳ pendiente | – | – |
 | 13 | Otros estilos arquitectónicos | `13-Otros estilos arquitectónicos/` | ⏳ pendiente | – | – |
@@ -66,3 +66,4 @@ Orden de trabajo (pedido del usuario, que prepara la I2): primero los temas 14 a
 - **2026-11-06 · Tema 07.** `07-Atributos transversales`: 3 notas + `_Índice`. Fuentes: `Clases i1` desde "Clase 7" hasta "Clase 8", slides 1-11 de NFR y 55-60 de Atributos de calidad, y la pregunta 4.a del examen 2024-2 (datos faciales). El placeholder de los últimos 10 minutos (reusabilidad a usabilidad) se completó con las slides 7-10. Imágenes: 3 fotos recortadas y 1 slide.
 - **2026-11-06 · Tema 08.** `08-DDD estratégico`: 3 notas + `_Índice`. Fuentes: `Clases i1` desde "DDD: Diseño por Dominio" hasta "Clase 7", slides 12-20 de NFR, AY07 (VoltVecino), AY08 (supermarket) y la pregunta 2.d de la pauta I1 2026-2 (subdominios de FreeHelp). Imágenes: 1 foto convertida y recortada.
 - **2026-11-06 · Tema 09.** `09-Diagramación y UML de componentes`: 4 notas + `_Índice`. Fuentes: `Clases i1` desde "Clase 8" hasta "Clase 9", `Ayudantías` desde "Ayudantía 4: UML" hasta "Ayudantía 5", slides 21-49 de NFR,UML, AY04 y las tablas de descuento de los compilados I1 e I2. Imágenes: 6 PNG de Notion y 4 fotos convertidas.
+- **2026-11-06 · Tema 10.** `10-Estilos jerárquicos y de capas`: 4 notas + `_Índice`. Fuentes: `Clases i1` desde "Clase 9" hasta "Clase 11" (incluye la E1 y la API Gateway) y slides 1-46 de Estilos y patrones 06,07. Imágenes: 4 PNG de Notion y 4 fotos convertidas.
