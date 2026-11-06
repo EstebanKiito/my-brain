@@ -29,7 +29,7 @@ Orden de trabajo (pedido del usuario, que prepara la I2): primero los temas 14 a
 | 20 | Hardware red y performance | `20-Hardware red y performance/` | ✅ hecho | 3 + `_Índice` | 0 apuntes + 2 slide |
 | 21 | Caché y protocolos web | `21-Caché y protocolos web/` | ✅ hecho | 3 + `_Índice` | 0 apuntes + 5 slide |
 | 22 | Asincronía y control de demanda | `22-Asincronía y control de demanda/` | ✅ hecho | 3 + `_Índice` | 0 apuntes + 3 slide |
-| 23 | Medición de escalabilidad | `23-Medición de escalabilidad/` | ⏳ pendiente | – | – |
+| 23 | Medición de escalabilidad | `23-Medición de escalabilidad/` | ✅ hecho | 3 + `_Índice` | 0 apuntes + 2 slide |
 | 24 | Métodos de escalabilidad | `24-Métodos de escalabilidad/` | ⏳ pendiente | – | – |
 | 25 | Escalabilidad de datos | `25-Escalabilidad de datos/` | ⏳ pendiente | – | – |
 | 26 | Resolución de casos de diseño | `26-Resolución de casos de diseño/` | ⏳ pendiente | – | – |
@@ -54,3 +54,4 @@ Orden de trabajo (pedido del usuario, que prepara la I2): primero los temas 14 a
 - **2026-11-06 · Tema 20.** `20-Hardware red y performance`: 3 notas + `_Índice`. Fuentes: slides 15-35 de Performance, pregunta 1.a de la pauta I2 2025-2 (combinar dos problemas de la red) y 1.b de la pauta I2 2025-1 (latencia de las sondas). Imágenes: slides 15 y 27 recortadas.
 - **2026-11-06 · Tema 21.** `21-Caché y protocolos web`: 3 notas + `_Índice`. Fuentes: slides 37-54 de Performance; preguntas de caché de la pauta I2 2024-2 (1.a, alternativas y caso News Hunter), examen 2025-1 (2.a), I2 2025-2 (2.c), compilado I2 (caché por tienda y caso 2026-1 donde la caché no conviene). Imágenes: 5 slides recortadas.
 - **2026-11-06 · Tema 22.** `22-Asincronía y control de demanda`: 3 notas + `_Índice`. Fuentes: slides 55-79 de Performance y AY09 (pregunta del robot EVA y la asincronía). Imágenes: slides 58, 65 y 72 recortadas. Errata de la slide de NodeJS registrada en DUDAS.
+- **2026-11-06 · Tema 23.** `23-Medición de escalabilidad`: 3 notas + `_Índice`. Fuentes: slides 1-16 de Escalabilidad. Ejemplos numéricos de Little, Amdahl (tabla para p = 50, 75, 90 y 95%) y Gustafson comprobados con python3. Imágenes: slides 14 y 15 recortadas.

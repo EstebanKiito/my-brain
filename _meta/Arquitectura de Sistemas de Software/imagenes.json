@@ -222,5 +222,19 @@
     "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf#page=72",
     "destino": "Arquitectura de Sistemas de Software/22-Asincronía y control de demanda/adjuntos/Arquitectura de NodeJS.png",
     "sha256": "6562dfa0a4cb64ecb846e1cdb8cf230e90db0ee1d57bbc6fc6cfefa3c7bd2594"
+  },
+  {
+    "tema": "Medición de escalabilidad",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/19,20,21. Escalabilidad.pdf#page=14",
+    "destino": "Arquitectura de Sistemas de Software/23-Medición de escalabilidad/adjuntos/Curva de la ley de Amdahl según la porción paralela.png",
+    "sha256": "76d629c28ed5cca890b72ab9562d431ab4a7c033e47325d3a9cb4c282fc98e7c"
+  },
+  {
+    "tema": "Medición de escalabilidad",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/19,20,21. Escalabilidad.pdf#page=15",
+    "destino": "Arquitectura de Sistemas de Software/23-Medición de escalabilidad/adjuntos/Curvas de la ley de Gustafson.png",
+    "sha256": "a78739ecd98e8b2f69baffd3c2a7a93a8d0547f551f2c20e568ea4b1cebc24b6"
   }
 ]
