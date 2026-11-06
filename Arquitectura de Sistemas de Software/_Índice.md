@@ -26,6 +26,7 @@ Curso sobre cómo tomar decisiones de arquitectura: qué características necesi
 05. [[05-Atributos estructurales/_Índice|Atributos estructurales]] — Mantenibilidad, flexibilidad, inyección de dependencias, portabilidad e interoperabilidad.
 06. [[06-Atributos operacionales/_Índice|Atributos operacionales]] — Performance y escalabilidad como requisitos, confiabilidad y disponibilidad con cálculo de nueves.
 07. [[07-Atributos transversales/_Índice|Atributos transversales]] — Elasticidad, seguridad, reusabilidad, soporte, eficiencia, usabilidad y McCall.
+08. [[08-DDD estratégico/_Índice|DDD estratégico]] — Dominio, subdominios core, support y genéricos, bounded contexts, lenguaje ubicuo, context map y el ejercicio VoltVecino.
 
 ## Integración DDD táctico performance y escalabilidad
 

@@ -460,5 +460,12 @@
     "original": "Semestre 8/Arquisis/Syllabus/Clases/I1/02,03. Atributos de calidad.pdf#page=55",
     "destino": "Arquitectura de Sistemas de Software/07-Atributos transversales/adjuntos/Taxonomía de McCall por perspectiva.png",
     "sha256": "adb62e94a801c302ffec183cd0f294a2f1fca3a4861085af7dbbd9808c1e24e5"
+  },
+  {
+    "tema": "DDD estratégico",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7677.heic",
+    "destino": "Arquitectura de Sistemas de Software/08-DDD estratégico/adjuntos/Context map entre catálogo facturación envíos y atención al cliente.png",
+    "sha256": "1b713ea0751ad9016208970783704748d44c915cdf55d6b42c9523d40a46ad31"
   }
 ]

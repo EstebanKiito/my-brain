@@ -14,7 +14,7 @@ Orden de trabajo (pedido del usuario, que prepara la I2): primero los temas 14 a
 | 5 | Atributos estructurales | `05-Atributos estructurales/` | ✅ hecho | 2 + `_Índice` | 2 apuntes + 0 slide |
 | 6 | Atributos operacionales | `06-Atributos operacionales/` | ✅ hecho | 3 + `_Índice` | 1 apuntes + 2 slide |
 | 7 | Atributos transversales | `07-Atributos transversales/` | ✅ hecho | 3 + `_Índice` | 0 apuntes + 3 convertida + 1 slide |
-| 8 | DDD estratégico | `08-DDD estratégico/` | ⏳ pendiente | – | – |
+| 8 | DDD estratégico | `08-DDD estratégico/` | ✅ hecho | 3 + `_Índice` | 0 apuntes + 1 convertida + 0 slide |
 | 9 | Diagramación y UML de componentes | `09-Diagramación y UML de componentes/` | ⏳ pendiente | – | – |
 | 10 | Estilos jerárquicos y de capas | `10-Estilos jerárquicos y de capas/` | ⏳ pendiente | – | – |
 | 11 | Flujo de datos e invocación implícita | `11-Flujo de datos e invocación implícita/` | ⏳ pendiente | – | – |
@@ -64,3 +64,4 @@ Orden de trabajo (pedido del usuario, que prepara la I2): primero los temas 14 a
 - **2026-11-06 · Tema 05.** `05-Atributos estructurales`: 2 notas + `_Índice`. Fuentes: `Clases i1` desde "Requisitos Estructurales" hasta "Requisitos Operacionales" (incluye el caso de capas) y slides 20-35 de Atributos de calidad. Imágenes: 2 PNG de Notion. El placeholder "[Copiar del video]" de interoperabilidad se completó con las slides 27-31.
 - **2026-11-06 · Tema 06.** `06-Atributos operacionales`: 3 notas + `_Índice`. Fuentes: `Clases i1` desde "Requisitos Operacionales" hasta "Clase 6" y desde "Escalabilidad" hasta "DDD", y slides 36-54 de Atributos de calidad. Cálculos de nueves y de disponibilidad en serie y en paralelo comprobados con python3. Imágenes: 1 PNG de Notion y 2 slides.
 - **2026-11-06 · Tema 07.** `07-Atributos transversales`: 3 notas + `_Índice`. Fuentes: `Clases i1` desde "Clase 7" hasta "Clase 8", slides 1-11 de NFR y 55-60 de Atributos de calidad, y la pregunta 4.a del examen 2024-2 (datos faciales). El placeholder de los últimos 10 minutos (reusabilidad a usabilidad) se completó con las slides 7-10. Imágenes: 3 fotos recortadas y 1 slide.
+- **2026-11-06 · Tema 08.** `08-DDD estratégico`: 3 notas + `_Índice`. Fuentes: `Clases i1` desde "DDD: Diseño por Dominio" hasta "Clase 7", slides 12-20 de NFR, AY07 (VoltVecino), AY08 (supermarket) y la pregunta 2.d de la pauta I1 2026-2 (subdominios de FreeHelp). Imágenes: 1 foto convertida y recortada.
