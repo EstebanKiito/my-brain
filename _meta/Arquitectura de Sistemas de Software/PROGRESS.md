@@ -24,7 +24,7 @@ Orden de trabajo (pedido del usuario, que prepara la I2): primero los temas 14 a
 | 15 | Middleware orientado a mensajes | `15-Middleware orientado a mensajes/` | ✅ hecho | 5 + `_Índice` | 1 apuntes + 2 slide |
 | 16 | REST y contratos de API | `16-REST y contratos de API/` | ✅ hecho | 5 + `_Índice` | 5 apuntes + 1 convertida + 1 slide |
 | 17 | gRPC GraphQL y MCP | `17-gRPC GraphQL y MCP/` | ✅ hecho | 5 + `_Índice` | 1 apuntes + 0 slide |
-| 18 | DDD táctico | `18-DDD táctico/` | ⏳ pendiente | – | – |
+| 18 | DDD táctico | `18-DDD táctico/` | ✅ hecho | 6 + `_Índice` | 0 apuntes + 5 slide |
 | 19 | Fundamentos de performance | `19-Fundamentos de performance/` | ⏳ pendiente | – | – |
 | 20 | Hardware red y performance | `20-Hardware red y performance/` | ⏳ pendiente | – | – |
 | 21 | Caché y protocolos web | `21-Caché y protocolos web/` | ⏳ pendiente | – | – |
@@ -49,3 +49,4 @@ Orden de trabajo (pedido del usuario, que prepara la I2): primero los temas 14 a
 - **2026-11-06 · Tema 15.** `15-Middleware orientado a mensajes`: 5 notas + `_Índice`. Fuentes: `Clases I2` desde "Recordando el Monolito" hasta "Rest", slides 25-37 de Integración v2, pregunta 1 de la I1 2026-2 y 3.a de la I1 2025-2 (orquestación vs coreografía) y 3.2.b del examen 2025-2 (MOM). Imágenes: 1 PNG de Notion y 2 slides recortadas (29 y 30).
 - **2026-11-06 · Tema 16.** `16-REST y contratos de API`: 5 notas + `_Índice`. Fuentes: `Clases I2` desde "Rest" hasta "gRPC" (incluye el flujo de una request y OpenAPI), slides 38-76 de Integración v2, pregunta 4.c del examen 2024-2 y 3.b de la I1 2025-2. Imágenes: 5 PNG de Notion (dos son copias de las slides 58-59), la foto del croquis convertida y la slide 43 (árbol de derivación) recortada.
 - **2026-11-06 · Tema 17.** `17-gRPC GraphQL y MCP`: 5 notas + `_Índice`. Fuentes: `Clases I2` desde "gRPC" hasta el final, slides 77-90 de Integración v2, alternativa 2.b del examen 2025-2, AY09 (caso del satélite del examen 2024-2) y pregunta 2.b de la I2 2026-1. Imágenes: 1 PNG de Notion.
+- **2026-11-06 · Tema 18.** `18-DDD táctico`: 6 notas + `_Índice`. No hay apuntes de Notion de este tema: fuente única las 15 slides de `19ab - bloque-ddd-tactico.pdf` (con el código de Sairyss/domain-driven-hexagon, MIT, reescrito y comentado). AY07 y AY08 tratan DDD estratégico y quedan para el tema 08. Imágenes: 5 slides recortadas (4, 6, 10, 11 y 12).

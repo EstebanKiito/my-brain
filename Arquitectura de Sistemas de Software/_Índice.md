@@ -15,3 +15,4 @@ Curso sobre cómo tomar decisiones de arquitectura: qué características necesi
 15. [[15-Middleware orientado a mensajes/_Índice|Middleware orientado a mensajes]] — Monolito y comunicación indirecta, MOM, colas vs logs, broker, motores de procesos, orquestación vs coreografía.
 16. [[16-REST y contratos de API/_Índice|REST y contratos de API]] — REST como estilo, árbol de derivación, componentes y conectores, interfaz uniforme, madurez de Richardson y OpenAPI.
 17. [[17-gRPC GraphQL y MCP/_Índice|gRPC GraphQL y MCP]] — gRPC, GraphQL, MCP, evolución de contratos, outbox y cómo elegir el mecanismo de integración.
+18. [[18-DDD táctico/_Índice|DDD táctico]] — Entidades, objetos de valor, agregados, repositorios, servicios, eventos de dominio e integración y arquitectura hexagonal.
