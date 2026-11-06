@@ -236,5 +236,26 @@
     "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/19,20,21. Escalabilidad.pdf#page=15",
     "destino": "Arquitectura de Sistemas de Software/23-Medición de escalabilidad/adjuntos/Curvas de la ley de Gustafson.png",
     "sha256": "a78739ecd98e8b2f69baffd3c2a7a93a8d0547f551f2c20e568ea4b1cebc24b6"
+  },
+  {
+    "tema": "Métodos de escalabilidad",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/19,20,21. Escalabilidad.pdf#page=22",
+    "destino": "Arquitectura de Sistemas de Software/24-Métodos de escalabilidad/adjuntos/Responsabilidades del balanceo de carga.png",
+    "sha256": "ab9968b5a8135f8c9fd0faf1c55ed8762c7d0cb7149d4f135daabe608d5288e4"
+  },
+  {
+    "tema": "Métodos de escalabilidad",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/19,20,21. Escalabilidad.pdf#page=23",
+    "destino": "Arquitectura de Sistemas de Software/24-Métodos de escalabilidad/adjuntos/Balanceador de AWS con grupos blue y green en dos zonas.png",
+    "sha256": "2757977523ba7292d2b1cf6da927114dffecdbe57a1c948ddfe7e8a8aaabfd29"
+  },
+  {
+    "tema": "Métodos de escalabilidad",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/19,20,21. Escalabilidad.pdf#page=33",
+    "destino": "Arquitectura de Sistemas de Software/24-Métodos de escalabilidad/adjuntos/API Gateway frente a servicios con distintas bases de datos.png",
+    "sha256": "1a6e46fee7c74c52bd2afe81a071891dd00480134ffe7cfd225bd36e95918d27"
   }
 ]

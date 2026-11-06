@@ -21,3 +21,4 @@ Curso sobre cómo tomar decisiones de arquitectura: qué características necesi
 21. [[21-Caché y protocolos web/_Índice|Caché y protocolos web]] — Caché (desafíos, desalojo, cuándo no usarla), caché web con navegador, proxy y CDN, y HTTP/1 a HTTP/3.
 22. [[22-Asincronía y control de demanda/_Índice|Asincronía y control de demanda]] — Contenedores, caso Twitter, asincronía y NodeJS, rate limiting, circuit breakers, timeouts y priorización.
 23. [[23-Medición de escalabilidad/_Índice|Medición de escalabilidad]] — Definición, escenarios, cuellos de botella, métricas, tipos de pruebas y leyes de Little, Amdahl y Gustafson.
+24. [[24-Métodos de escalabilidad/_Índice|Métodos de escalabilidad]] — Vertical y horizontal, balanceo, modelación de componentes, conectores y configuraciones, Instagram, serverless, frontend y nube.
