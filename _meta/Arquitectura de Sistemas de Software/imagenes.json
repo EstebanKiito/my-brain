@@ -670,5 +670,33 @@
     "original": "Semestre 8/Arquisis/Clases i1/c3da633c-2f43-40f7-be10-f783c967c27c.png",
     "destino": "Arquitectura de Sistemas de Software/12-Arquitecturas orientadas a servicios/adjuntos/Microservicios con base propia detrás de una API Gateway.png",
     "sha256": "aa0ed7fff8c7854c145f31523ceb64f6f7c6052df8ca040aa229d62e97114568"
+  },
+  {
+    "tema": "Otros estilos arquitectónicos",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7987.heic",
+    "destino": "Arquitectura de Sistemas de Software/13-Otros estilos arquitectónicos/adjuntos/Intérprete y código móvil.png",
+    "sha256": "a2d9d14bbd4010f4b68f061ca2a402de7fa185a76b5c49fb694bfb774a7aa146"
+  },
+  {
+    "tema": "Otros estilos arquitectónicos",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7988.heic",
+    "destino": "Arquitectura de Sistemas de Software/13-Otros estilos arquitectónicos/adjuntos/Memoria compartida basada en reglas.png",
+    "sha256": "866bc5e0c60bda8016e059795eb400d2dbc657898d1ad64121d7c4901acc0508"
+  },
+  {
+    "tema": "Otros estilos arquitectónicos",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7989.heic",
+    "destino": "Arquitectura de Sistemas de Software/13-Otros estilos arquitectónicos/adjuntos/Pizarra con fuentes de conocimiento.png",
+    "sha256": "cd15a201b0692a18ecaa847c9c73873e80e5be28b9811cb3780b719f953e2975"
+  },
+  {
+    "tema": "Otros estilos arquitectónicos",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7990.heic",
+    "destino": "Arquitectura de Sistemas de Software/13-Otros estilos arquitectónicos/adjuntos/Cliente servidor frente a P2P.png",
+    "sha256": "aa96bc97976bdaa2b10e7f9d264039bd20219d5f238f4dd73b6e307dd9978915"
   }
 ]

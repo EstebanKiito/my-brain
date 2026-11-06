@@ -200,7 +200,7 @@
     },
     "Otros estilos arquitectónicos": {
       "carpeta": "Arquitectura de Sistemas de Software/13-Otros estilos arquitectónicos",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "clases_i1",
@@ -209,7 +209,8 @@
         }
       ],
       "pdfs": [
-        "Semestre 8/Arquisis/Syllabus/Clases/I1/08,09. E&P,E&P.pdf"
+        "Semestre 8/Arquisis/Syllabus/Clases/I1/08,09. E&P,E&P.pdf",
+        "../LICC-Cursos/Optativos/ARQUISIS-IIC2173/Clases/10. E&P.pdf (fuera de _raw)"
       ]
     },
     "Integración y relaciones entre contextos": {

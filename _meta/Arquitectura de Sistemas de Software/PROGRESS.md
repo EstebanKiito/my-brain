@@ -19,7 +19,7 @@ Orden de trabajo (pedido del usuario, que prepara la I2): primero los temas 14 a
 | 10 | Estilos jerárquicos y de capas | `10-Estilos jerárquicos y de capas/` | ✅ hecho | 4 + `_Índice` | 4 apuntes + 4 convertida + 0 slide |
 | 11 | Flujo de datos e invocación implícita | `11-Flujo de datos e invocación implícita/` | ✅ hecho | 3 + `_Índice` | 3 apuntes + 4 convertida + 0 slide |
 | 12 | Arquitecturas orientadas a servicios | `12-Arquitecturas orientadas a servicios/` | ✅ hecho | 2 + `_Índice` | 2 apuntes + 2 convertida + 0 slide |
-| 13 | Otros estilos arquitectónicos | `13-Otros estilos arquitectónicos/` | ⏳ pendiente | – | – |
+| 13 | Otros estilos arquitectónicos | `13-Otros estilos arquitectónicos/` | ✅ hecho | 4 + `_Índice` | 0 apuntes + 4 convertida + 0 slide |
 | 14 | Integración y relaciones entre contextos | `14-Integración y relaciones entre contextos/` | ✅ hecho | 6 + `_Índice` | 2 + 1 convertida + 1 slide |
 | 15 | Middleware orientado a mensajes | `15-Middleware orientado a mensajes/` | ✅ hecho | 5 + `_Índice` | 1 apuntes + 2 slide |
 | 16 | REST y contratos de API | `16-REST y contratos de API/` | ✅ hecho | 5 + `_Índice` | 5 apuntes + 1 convertida + 1 slide |
@@ -69,3 +69,4 @@ Orden de trabajo (pedido del usuario, que prepara la I2): primero los temas 14 a
 - **2026-11-06 · Tema 10.** `10-Estilos jerárquicos y de capas`: 4 notas + `_Índice`. Fuentes: `Clases i1` desde "Clase 9" hasta "Clase 11" (incluye la E1 y la API Gateway) y slides 1-46 de Estilos y patrones 06,07. Imágenes: 4 PNG de Notion y 4 fotos convertidas.
 - **2026-11-06 · Tema 11.** `11-Flujo de datos e invocación implícita`: 3 notas + `_Índice`. Fuentes: `Clases i1` desde "Clase 11" hasta "Retomando Historia" (incluye orquestación, coreografía, RabbitMQ y pub/sub), slides 47-55 de 06,07 y 2-25 de 08,09, pautas (pipe and filter) y el V/F de pub/sub del compilado I1. Imágenes: 3 PNG de Notion y 4 fotos convertidas. El placeholder de los últimos 10 minutos de EDA se completó con las slides de topologías.
 - **2026-11-06 · Tema 12.** `12-Arquitecturas orientadas a servicios`: 2 notas + `_Índice`. Fuentes: `Clases i1` desde "Retomando Historia" hasta "Interprete" (incluye los tips de diagramación) y slides 26-34 de 08,09. Imágenes: 2 PNG de Notion y 2 fotos convertidas.
+- **2026-11-06 · Tema 13.** `13-Otros estilos arquitectónicos`: 4 notas + `_Índice`. Fuentes: `Clases i1` desde "Interprete" hasta el final, slides 35-62 de 08,09 (incluidas las tablas resumen 56-62) y `10. E&P.pdf` de LICC-Cursos (P2P y cómo elegir un estilo), más las listas de estilos válidos e inválidos de los compilados. Imágenes: 4 fotos convertidas. **Cierre del repaso I1 (temas 01-13).**

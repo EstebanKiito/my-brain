@@ -31,6 +31,7 @@ Curso sobre cómo tomar decisiones de arquitectura: qué características necesi
 10. [[10-Estilos jerárquicos y de capas/_Índice|Estilos jerárquicos y de capas]] — Estilo frente a patrón, monolito, main y subrutinas, capas, máquina virtual, cliente-servidor y microkernel.
 11. [[11-Flujo de datos e invocación implícita/_Índice|Flujo de datos e invocación implícita]] — Lotes secuenciales, pipe and filter, EDA, mediator frente a broker y pub/sub.
 12. [[12-Arquitecturas orientadas a servicios/_Índice|Arquitecturas orientadas a servicios]] — SOA, su historia y el bus, servicio compartido como acoplamiento, microservicios y sus costos.
+13. [[13-Otros estilos arquitectónicos/_Índice|Otros estilos arquitectónicos]] — Intérprete, código móvil, reglas, pizarra, P2P y tabla para elegir estilos.
 
 ## Integración DDD táctico performance y escalabilidad
 
