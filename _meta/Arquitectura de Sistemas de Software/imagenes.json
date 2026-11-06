@@ -166,5 +166,40 @@
     "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf#page=27",
     "destino": "Arquitectura de Sistemas de Software/20-Hardware red y performance/adjuntos/Rendimiento de GPU frente a CPU en inferencia y entrenamiento.png",
     "sha256": "4a2c00ef8541b4aa886e4e82d4679b3ce5eeafedd261706d24a3c5993d07ddb4"
+  },
+  {
+    "tema": "Caché y protocolos web",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf#page=39",
+    "destino": "Arquitectura de Sistemas de Software/21-Caché y protocolos web/adjuntos/Jerarquía de memoria y cachés de CPU.png",
+    "sha256": "56c3a2a773b6ff394440ca32d25cdf4cd67b7f5ec81e45d3933ea8543536a5d0"
+  },
+  {
+    "tema": "Caché y protocolos web",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf#page=41",
+    "destino": "Arquitectura de Sistemas de Software/21-Caché y protocolos web/adjuntos/Caché del navegador entre el cliente y el servidor.png",
+    "sha256": "7007d1c84201c2d29814ac5918640c795fcda3abdf0658108f1f7a16d7a3bf6a"
+  },
+  {
+    "tema": "Caché y protocolos web",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf#page=43",
+    "destino": "Arquitectura de Sistemas de Software/21-Caché y protocolos web/adjuntos/Caché de proxy y caché de proxy inverso.png",
+    "sha256": "7a6114c2b84b2f6066a9de8a144866f23c926f3b00d3f6293b69dd9774c07436"
+  },
+  {
+    "tema": "Caché y protocolos web",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf#page=51",
+    "destino": "Arquitectura de Sistemas de Software/21-Caché y protocolos web/adjuntos/Conexión multiplexada de HTTP 2.png",
+    "sha256": "c9cae4bdd960f25074f6a50236bc318f2a3e439d739d4a4c1512e586b05964d3"
+  },
+  {
+    "tema": "Caché y protocolos web",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf#page=53",
+    "destino": "Arquitectura de Sistemas de Software/21-Caché y protocolos web/adjuntos/Ganancias de HTTP 3 sobre QUIC.png",
+    "sha256": "edc3037427c744a49993d0da61cfce38ba7f75821becf398ce62ff4d266ee5f4"
   }
 ]
