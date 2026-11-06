@@ -257,5 +257,26 @@
     "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/19,20,21. Escalabilidad.pdf#page=33",
     "destino": "Arquitectura de Sistemas de Software/24-Métodos de escalabilidad/adjuntos/API Gateway frente a servicios con distintas bases de datos.png",
     "sha256": "1a6e46fee7c74c52bd2afe81a071891dd00480134ffe7cfd225bd36e95918d27"
+  },
+  {
+    "tema": "Escalabilidad de datos",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/19,20,21. Escalabilidad.pdf#page=46",
+    "destino": "Arquitectura de Sistemas de Software/25-Escalabilidad de datos/adjuntos/Teorema CAP con dos nodos y una partición.png",
+    "sha256": "996136b90793e2c52181b966cc200432b505d0d41cff19c2fad0b7c6d880b907"
+  },
+  {
+    "tema": "Escalabilidad de datos",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/19,20,21. Escalabilidad.pdf#page=61",
+    "destino": "Arquitectura de Sistemas de Software/25-Escalabilidad de datos/adjuntos/Archivos de GFS divididos en chunks replicados.png",
+    "sha256": "d2faad4660797fc6eec9d532c36490d59c470d48f87eb1e0aa8ace0e64b8594a"
+  },
+  {
+    "tema": "Escalabilidad de datos",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/19,20,21. Escalabilidad.pdf#page=65",
+    "destino": "Arquitectura de Sistemas de Software/25-Escalabilidad de datos/adjuntos/Tablets de Bigtable sobre chunkservers de GFS.png",
+    "sha256": "0d0dc7ed9704845bd2f5207fde936dcf45b45bdd19135298522efeed13f97f20"
   }
 ]

@@ -31,7 +31,7 @@ Orden de trabajo (pedido del usuario, que prepara la I2): primero los temas 14 a
 | 22 | Asincronía y control de demanda | `22-Asincronía y control de demanda/` | ✅ hecho | 3 + `_Índice` | 0 apuntes + 3 slide |
 | 23 | Medición de escalabilidad | `23-Medición de escalabilidad/` | ✅ hecho | 3 + `_Índice` | 0 apuntes + 2 slide |
 | 24 | Métodos de escalabilidad | `24-Métodos de escalabilidad/` | ✅ hecho | 3 + `_Índice` | 0 apuntes + 3 slide |
-| 25 | Escalabilidad de datos | `25-Escalabilidad de datos/` | ⏳ pendiente | – | – |
+| 25 | Escalabilidad de datos | `25-Escalabilidad de datos/` | ✅ hecho | 5 + `_Índice` | 0 apuntes + 3 slide |
 | 26 | Resolución de casos de diseño | `26-Resolución de casos de diseño/` | ⏳ pendiente | – | – |
 | 27 | Infraestructura y despliegue en la nube | `27-Infraestructura y despliegue en la nube/` | ⏳ pendiente | – | – |
 | 28 | Gestión del curso | `28-Gestión del curso/` | ⏳ pendiente | – | – |
@@ -56,3 +56,4 @@ Orden de trabajo (pedido del usuario, que prepara la I2): primero los temas 14 a
 - **2026-11-06 · Tema 22.** `22-Asincronía y control de demanda`: 3 notas + `_Índice`. Fuentes: slides 55-79 de Performance y AY09 (pregunta del robot EVA y la asincronía). Imágenes: slides 58, 65 y 72 recortadas. Errata de la slide de NodeJS registrada en DUDAS.
 - **2026-11-06 · Tema 23.** `23-Medición de escalabilidad`: 3 notas + `_Índice`. Fuentes: slides 1-16 de Escalabilidad. Ejemplos numéricos de Little, Amdahl (tabla para p = 50, 75, 90 y 95%) y Gustafson comprobados con python3. Imágenes: slides 14 y 15 recortadas.
 - **2026-11-06 · Tema 24.** `24-Métodos de escalabilidad`: 3 notas + `_Índice`. Fuentes: slides 17-39 de Escalabilidad y la sección de horizontal vs vertical de `Apuntes_I2.pdf`. Imágenes: slides 22, 23 y 33.
+- **2026-11-06 · Tema 25.** `25-Escalabilidad de datos`: 5 notas + `_Índice`. Fuentes: slides 40-77 de Escalabilidad; pregunta 1.b y alternativas 2.a de la I2 2026-1 (CAP en una mina, leader-follower, sharding y particionado vertical), 1.b de la pauta I2 2025-2 (relacional frente a NoSQL) y 1.a y 1.c de la pauta I2 2024-2 (bases por sección y sharding). Imágenes: slides 46, 61 y 65. **Cierre del bloque I2 (temas 14-25)**: pausa para que el usuario revise.

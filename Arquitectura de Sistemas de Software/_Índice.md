@@ -9,6 +9,14 @@ tags:
 
 Curso sobre cómo tomar decisiones de arquitectura: qué características necesita un sistema, qué estilos y patrones las logran, cómo se diagraman y cómo se integran, se aceleran y se escalan. Las notas están escritas para estudiar: cada concepto va con su porqué, su costo, ejemplos y preguntas tipo prueba.
 
+> [!tip] Ruta de estudio para la I2
+> La I2 evalúa todo hasta Escalabilidad, con foco teórico en lo nuevo. Un orden que funciona:
+> 1. **Integración** (14 → 17). Termina en [[05 - Cómo elegir el mecanismo de integración]], que resume todo el bloque en una tabla y un árbol de decisión.
+> 2. **DDD táctico** (18). La pregunta guía es *¿qué debe ser cierto a la vez?*
+> 3. **Performance** (19 → 22). Las tácticas de [[03 - Tácticas de performance de Bass y Kazman]] y la caché son lo más preguntado.
+> 4. **Escalabilidad** (23 → 25). Practicar los cálculos de [[03 - Leyes de Little Amdahl y Gustafson]] y no confundir sharding, partitioning y leader-follower.
+> 5. Repasar las preguntas de repaso de cada nota y, al final, los casos resueltos.
+
 ## Integración DDD táctico performance y escalabilidad
 
 14. [[14-Integración y relaciones entre contextos/_Índice|Integración y relaciones entre contextos]] — Integrabilidad, context map, las siete relaciones de DDD y tácticas básicas de integración.
@@ -22,3 +30,4 @@ Curso sobre cómo tomar decisiones de arquitectura: qué características necesi
 22. [[22-Asincronía y control de demanda/_Índice|Asincronía y control de demanda]] — Contenedores, caso Twitter, asincronía y NodeJS, rate limiting, circuit breakers, timeouts y priorización.
 23. [[23-Medición de escalabilidad/_Índice|Medición de escalabilidad]] — Definición, escenarios, cuellos de botella, métricas, tipos de pruebas y leyes de Little, Amdahl y Gustafson.
 24. [[24-Métodos de escalabilidad/_Índice|Métodos de escalabilidad]] — Vertical y horizontal, balanceo, modelación de componentes, conectores y configuraciones, Instagram, serverless, frontend y nube.
+25. [[25-Escalabilidad de datos/_Índice|Escalabilidad de datos]] — Índices, CAP y BASE, sharding y partitioning, caché y leader-follower, Google, Hadoop y Aurora.
