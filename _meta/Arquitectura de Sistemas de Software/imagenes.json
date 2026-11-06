@@ -593,5 +593,54 @@
     "original": "Semestre 8/Arquisis/Clases i1/99c9b5f4-8641-49c7-b006-e0250f1f935b.png",
     "destino": "Arquitectura de Sistemas de Software/10-Estilos jerárquicos y de capas/adjuntos/Microkernel con plugins frente a main y subrutinas.png",
     "sha256": "100e101c734d46905662282d4b71a59b398d2527600f9d306b1056df96be0170"
+  },
+  {
+    "tema": "Flujo de datos e invocación implícita",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7877.heic",
+    "destino": "Arquitectura de Sistemas de Software/11-Flujo de datos e invocación implícita/adjuntos/Componente de flujo de datos.png",
+    "sha256": "fef99c19cceaf9204a918ed6f04cb411fcad73e3ae415d107dc0d1eb4fa7d19c"
+  },
+  {
+    "tema": "Flujo de datos e invocación implícita",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7878.heic",
+    "destino": "Arquitectura de Sistemas de Software/11-Flujo de datos e invocación implícita/adjuntos/Lotes secuenciales frente a capas.png",
+    "sha256": "05803889e63b5c91aa9a36be6ec03d4501e4b5a6a260d86c50fe868b3c2de9b3"
+  },
+  {
+    "tema": "Flujo de datos e invocación implícita",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7879.heic",
+    "destino": "Arquitectura de Sistemas de Software/11-Flujo de datos e invocación implícita/adjuntos/Pipeline map reduce como pipe and filter.png",
+    "sha256": "8d24696ce9770df3f2d814e637791f4902accc39669742fcf4756bc6a4be5ffa"
+  },
+  {
+    "tema": "Flujo de datos e invocación implícita",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/65dc6081-e448-4112-8715-012846982fae.png",
+    "destino": "Arquitectura de Sistemas de Software/11-Flujo de datos e invocación implícita/adjuntos/Pipe and filter en UML.png",
+    "sha256": "d0971e7cd8ee15ef4ecfd44d5a3917368d4d82c6bb5cc90311683f9136a486ea"
+  },
+  {
+    "tema": "Flujo de datos e invocación implícita",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/793ceee3-3092-4897-816c-50a5582b681e.png",
+    "destino": "Arquitectura de Sistemas de Software/11-Flujo de datos e invocación implícita/adjuntos/Productor manejador de eventos y consumidor.png",
+    "sha256": "cd6c98fedfb4ec487a6e5ec693601c66cbc9415fe5c48430120b1d56fe33ba6b"
+  },
+  {
+    "tema": "Flujo de datos e invocación implícita",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7968.heic",
+    "destino": "Arquitectura de Sistemas de Software/11-Flujo de datos e invocación implícita/adjuntos/Productor cola y workers.png",
+    "sha256": "c16faa0436f12010e3c4c3136ce92f55178d7f9b8488eadb42f11e4e3d88f335"
+  },
+  {
+    "tema": "Flujo de datos e invocación implícita",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 18.png",
+    "destino": "Arquitectura de Sistemas de Software/11-Flujo de datos e invocación implícita/adjuntos/Topología broker de EDA con canales de eventos.png",
+    "sha256": "f9e0c8539f201f4913d8d357cbdc763ebc0a27a63501005d2c124eda01bd37bd"
   }
 ]

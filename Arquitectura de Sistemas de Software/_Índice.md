@@ -29,6 +29,7 @@ Curso sobre cómo tomar decisiones de arquitectura: qué características necesi
 08. [[08-DDD estratégico/_Índice|DDD estratégico]] — Dominio, subdominios core, support y genéricos, bounded contexts, lenguaje ubicuo, context map y el ejercicio VoltVecino.
 09. [[09-Diagramación y UML de componentes/_Índice|Diagramación y UML de componentes]] — ADL, 4+1, C4, variantes UML, notación del diagrama de componentes y método con descuentos de pauta.
 10. [[10-Estilos jerárquicos y de capas/_Índice|Estilos jerárquicos y de capas]] — Estilo frente a patrón, monolito, main y subrutinas, capas, máquina virtual, cliente-servidor y microkernel.
+11. [[11-Flujo de datos e invocación implícita/_Índice|Flujo de datos e invocación implícita]] — Lotes secuenciales, pipe and filter, EDA, mediator frente a broker y pub/sub.
 
 ## Integración DDD táctico performance y escalabilidad
 
