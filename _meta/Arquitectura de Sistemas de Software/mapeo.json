@@ -186,7 +186,7 @@
     },
     "Arquitecturas orientadas a servicios": {
       "carpeta": "Arquitectura de Sistemas de Software/12-Arquitecturas orientadas a servicios",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "clases_i1",

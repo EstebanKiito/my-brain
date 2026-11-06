@@ -30,6 +30,7 @@ Curso sobre cómo tomar decisiones de arquitectura: qué características necesi
 09. [[09-Diagramación y UML de componentes/_Índice|Diagramación y UML de componentes]] — ADL, 4+1, C4, variantes UML, notación del diagrama de componentes y método con descuentos de pauta.
 10. [[10-Estilos jerárquicos y de capas/_Índice|Estilos jerárquicos y de capas]] — Estilo frente a patrón, monolito, main y subrutinas, capas, máquina virtual, cliente-servidor y microkernel.
 11. [[11-Flujo de datos e invocación implícita/_Índice|Flujo de datos e invocación implícita]] — Lotes secuenciales, pipe and filter, EDA, mediator frente a broker y pub/sub.
+12. [[12-Arquitecturas orientadas a servicios/_Índice|Arquitecturas orientadas a servicios]] — SOA, su historia y el bus, servicio compartido como acoplamiento, microservicios y sus costos.
 
 ## Integración DDD táctico performance y escalabilidad
 

@@ -642,5 +642,33 @@
     "original": "Semestre 8/Arquisis/Clases i1/image 18.png",
     "destino": "Arquitectura de Sistemas de Software/11-Flujo de datos e invocación implícita/adjuntos/Topología broker de EDA con canales de eventos.png",
     "sha256": "f9e0c8539f201f4913d8d357cbdc763ebc0a27a63501005d2c124eda01bd37bd"
+  },
+  {
+    "tema": "Arquitecturas orientadas a servicios",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 19.png",
+    "destino": "Arquitectura de Sistemas de Software/12-Arquitecturas orientadas a servicios/adjuntos/SOA con bus de servicios.png",
+    "sha256": "eb9089c5d3364acc1475ee60c1502a91961ec4e3f801b77c976865261bf4020b"
+  },
+  {
+    "tema": "Arquitecturas orientadas a servicios",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7969.heic",
+    "destino": "Arquitectura de Sistemas de Software/12-Arquitecturas orientadas a servicios/adjuntos/Servicios conectados a un bus de servicios.png",
+    "sha256": "91b2434c43937eed8c6153b47d01a2ff09686da655fa5625752b6a581380f20c"
+  },
+  {
+    "tema": "Arquitecturas orientadas a servicios",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7972.heic",
+    "destino": "Arquitectura de Sistemas de Software/12-Arquitecturas orientadas a servicios/adjuntos/Servicio de autenticación compartido y microservicios.png",
+    "sha256": "5c6120e8f6d0acdf6630815d4a43f8b62b0f9e781c628e18d898e7fb91987c02"
+  },
+  {
+    "tema": "Arquitecturas orientadas a servicios",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/c3da633c-2f43-40f7-be10-f783c967c27c.png",
+    "destino": "Arquitectura de Sistemas de Software/12-Arquitecturas orientadas a servicios/adjuntos/Microservicios con base propia detrás de una API Gateway.png",
+    "sha256": "aa0ed7fff8c7854c145f31523ceb64f6f7c6052df8ca040aa229d62e97114568"
   }
 ]
