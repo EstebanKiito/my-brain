@@ -153,7 +153,7 @@
     },
     "REST y contratos de API": {
       "carpeta": "Arquitectura de Sistemas de Software/16-REST y contratos de API",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "clases_i2",

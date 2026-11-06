@@ -47,5 +47,54 @@
     "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/11,12,13,14. Integración v2.pdf#page=30",
     "destino": "Arquitectura de Sistemas de Software/15-Middleware orientado a mensajes/adjuntos/Quorum queues de RabbitMQ ante una partición de red.png",
     "sha256": "82dda194b21971d15a776a812cb48d45e7039783ac7050354c250cc155151b32"
+  },
+  {
+    "tema": "REST y contratos de API",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases I2/image 3.png",
+    "destino": "Arquitectura de Sistemas de Software/16-REST y contratos de API/adjuntos/Cliente con caché frente a servidor stateless.png",
+    "sha256": "2fcfe4fab75ce8d635d57cf765823459baa4642df1a54f5d017df1dcbba0149b"
+  },
+  {
+    "tema": "REST y contratos de API",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases I2/image 4.png",
+    "destino": "Arquitectura de Sistemas de Software/16-REST y contratos de API/adjuntos/Vista de procesos del estilo REST.png",
+    "sha256": "a3a6d90093cbcb8c017b36c12ff8796442f74ef5d67c4126ce61f80df30269fe"
+  },
+  {
+    "tema": "REST y contratos de API",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases I2/image 5.png",
+    "destino": "Arquitectura de Sistemas de Software/16-REST y contratos de API/adjuntos/Elementos de una arquitectura REST del agente al servidor de origen.png",
+    "sha256": "a588a3be485d6e9f3ecf809ea00e321d6df00222c84e6841e6201b6cca3c845e"
+  },
+  {
+    "tema": "REST y contratos de API",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases I2/image 6.png",
+    "destino": "Arquitectura de Sistemas de Software/16-REST y contratos de API/adjuntos/Flujo de una petición web con DNS.png",
+    "sha256": "5025b7bbd61c7bc6f902fc8b1c0d37d9c4a2cb984e6628ea681a8e11fb316d38"
+  },
+  {
+    "tema": "REST y contratos de API",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases I2/image 7.png",
+    "destino": "Arquitectura de Sistemas de Software/16-REST y contratos de API/adjuntos/Flujo de una petición web con proxy y CDN.png",
+    "sha256": "a30f10cb7d1a307dc19fad88dabb44b52ecf1f010dbcb7a021566c8d1cebb969"
+  },
+  {
+    "tema": "REST y contratos de API",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases I2/IMG_8128.heic",
+    "destino": "Arquitectura de Sistemas de Software/16-REST y contratos de API/adjuntos/Croquis de servidor middleware y cliente REST.png",
+    "sha256": "b441911f48531099e71f99e13e0aae6b6306c174049a2729535272e15a7d8a97"
+  },
+  {
+    "tema": "REST y contratos de API",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/11,12,13,14. Integración v2.pdf#page=43",
+    "destino": "Arquitectura de Sistemas de Software/16-REST y contratos de API/adjuntos/Árbol de derivación de REST.png",
+    "sha256": "430924349bd3c5c25f4f96558348f681541a49de1ea2783c9e1897d4edd91100"
   }
 ]

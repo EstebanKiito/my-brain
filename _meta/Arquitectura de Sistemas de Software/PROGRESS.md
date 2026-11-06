@@ -22,7 +22,7 @@ Orden de trabajo (pedido del usuario, que prepara la I2): primero los temas 14 a
 | 13 | Otros estilos arquitectónicos | `13-Otros estilos arquitectónicos/` | ⏳ pendiente | – | – |
 | 14 | Integración y relaciones entre contextos | `14-Integración y relaciones entre contextos/` | ✅ hecho | 6 + `_Índice` | 2 + 1 convertida + 1 slide |
 | 15 | Middleware orientado a mensajes | `15-Middleware orientado a mensajes/` | ✅ hecho | 5 + `_Índice` | 1 apuntes + 2 slide |
-| 16 | REST y contratos de API | `16-REST y contratos de API/` | ⏳ pendiente | – | – |
+| 16 | REST y contratos de API | `16-REST y contratos de API/` | ✅ hecho | 5 + `_Índice` | 5 apuntes + 1 convertida + 1 slide |
 | 17 | gRPC GraphQL y MCP | `17-gRPC GraphQL y MCP/` | ⏳ pendiente | – | – |
 | 18 | DDD táctico | `18-DDD táctico/` | ⏳ pendiente | – | – |
 | 19 | Fundamentos de performance | `19-Fundamentos de performance/` | ⏳ pendiente | – | – |
@@ -47,3 +47,4 @@ Orden de trabajo (pedido del usuario, que prepara la I2): primero los temas 14 a
 - **2026-11-06 · Infraestructura.** Se crea la rama y `_meta/Arquitectura de Sistemas de Software/` (`mapeo.json` con los 28 temas, `imagenes.json` vacío, `PROGRESS.md`, `DUDAS.md` y `NIVEL-DETALLE.md`). `verificar.py` acepta `"preguntas_repaso"` por ramo. Temario aprobado por el usuario.
 - **2026-11-06 · Tema 14 (piloto).** `14-Integración y relaciones entre contextos`: 6 notas + `_Índice`. Fuentes: sección "Clase 13: Integración" de `Clases I2` (hasta "Recordando el Monolito"), slides 1-24 de Integración v2, AY09, pregunta 2.b de la I2 2026-1, pregunta 1.b del examen 2025-2 y 2.a de la I1 2025-2 (convertidas en preguntas de repaso). Imágenes: 2 PNG de Notion, la foto de la pizarra recortada y la slide 20 (niveles de integración). `_Índice.md` del ramo creado con el tema 14. Pausa para que el usuario revise el piloto.
 - **2026-11-06 · Tema 15.** `15-Middleware orientado a mensajes`: 5 notas + `_Índice`. Fuentes: `Clases I2` desde "Recordando el Monolito" hasta "Rest", slides 25-37 de Integración v2, pregunta 1 de la I1 2026-2 y 3.a de la I1 2025-2 (orquestación vs coreografía) y 3.2.b del examen 2025-2 (MOM). Imágenes: 1 PNG de Notion y 2 slides recortadas (29 y 30).
+- **2026-11-06 · Tema 16.** `16-REST y contratos de API`: 5 notas + `_Índice`. Fuentes: `Clases I2` desde "Rest" hasta "gRPC" (incluye el flujo de una request y OpenAPI), slides 38-76 de Integración v2, pregunta 4.c del examen 2024-2 y 3.b de la I1 2025-2. Imágenes: 5 PNG de Notion (dos son copias de las slides 58-59), la foto del croquis convertida y la slide 43 (árbol de derivación) recortada.
