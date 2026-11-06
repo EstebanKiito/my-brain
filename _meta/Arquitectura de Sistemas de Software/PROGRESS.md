@@ -28,7 +28,7 @@ Orden de trabajo (pedido del usuario, que prepara la I2): primero los temas 14 a
 | 19 | Fundamentos de performance | `19-Fundamentos de performance/` | ✅ hecho | 3 + `_Índice` | 0 apuntes + 2 slide |
 | 20 | Hardware red y performance | `20-Hardware red y performance/` | ✅ hecho | 3 + `_Índice` | 0 apuntes + 2 slide |
 | 21 | Caché y protocolos web | `21-Caché y protocolos web/` | ✅ hecho | 3 + `_Índice` | 0 apuntes + 5 slide |
-| 22 | Asincronía y control de demanda | `22-Asincronía y control de demanda/` | ⏳ pendiente | – | – |
+| 22 | Asincronía y control de demanda | `22-Asincronía y control de demanda/` | ✅ hecho | 3 + `_Índice` | 0 apuntes + 3 slide |
 | 23 | Medición de escalabilidad | `23-Medición de escalabilidad/` | ⏳ pendiente | – | – |
 | 24 | Métodos de escalabilidad | `24-Métodos de escalabilidad/` | ⏳ pendiente | – | – |
 | 25 | Escalabilidad de datos | `25-Escalabilidad de datos/` | ⏳ pendiente | – | – |
@@ -53,3 +53,4 @@ Orden de trabajo (pedido del usuario, que prepara la I2): primero los temas 14 a
 - **2026-11-06 · Tema 19.** `19-Fundamentos de performance`: 3 notas + `_Índice`. Fuentes: slides 1-14 y 54 de Performance, la sección "Clase 16: Performance" de `Syllabus/I2/Apuntes_I2.pdf` (export más nuevo que el HTML de Notion, que llega solo hasta MCP), AY09 (escenario del dashboard), pregunta 3.2.b y alternativa 2.a de la pauta I2 2025-2. Cálculos M/M/1 y percentiles comprobados con python3.
 - **2026-11-06 · Tema 20.** `20-Hardware red y performance`: 3 notas + `_Índice`. Fuentes: slides 15-35 de Performance, pregunta 1.a de la pauta I2 2025-2 (combinar dos problemas de la red) y 1.b de la pauta I2 2025-1 (latencia de las sondas). Imágenes: slides 15 y 27 recortadas.
 - **2026-11-06 · Tema 21.** `21-Caché y protocolos web`: 3 notas + `_Índice`. Fuentes: slides 37-54 de Performance; preguntas de caché de la pauta I2 2024-2 (1.a, alternativas y caso News Hunter), examen 2025-1 (2.a), I2 2025-2 (2.c), compilado I2 (caché por tienda y caso 2026-1 donde la caché no conviene). Imágenes: 5 slides recortadas.
+- **2026-11-06 · Tema 22.** `22-Asincronía y control de demanda`: 3 notas + `_Índice`. Fuentes: slides 55-79 de Performance y AY09 (pregunta del robot EVA y la asincronía). Imágenes: slides 58, 65 y 72 recortadas. Errata de la slide de NodeJS registrada en DUDAS.

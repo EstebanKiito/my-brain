@@ -14,3 +14,9 @@ Estados: 🟡 abierta · ✅ resuelta · ℹ️ informativa.
 | Estado | Nota | Original | Duda / corrección propuesta |
 |---|---|---|---|
 | ✅ resuelta | `01 - gRPC y protobuf para comunicación entre módulos.md` | `Clases I2 …html`: *"No uso protocolos HTTP necesariamente, pueden ser otros protocolos entre computadores"* | La slide de gRPC dice "Sobre HTTP/2; en el navegador vía gRPC-Web o Connect". gRPC usa HTTP/2 como transporte; lo que no hace es usar la semántica REST (recursos y verbos) ni ser web-nativo. La nota sigue a la slide. |
+
+## Asincronía y control de demanda
+
+| Estado | Nota | Original | Duda / corrección propuesta |
+|---|---|---|---|
+| ✅ resuelta | `02 - Asincronía y el modelo de NodeJS.md` | Slide "NodeJS: Arquitectura" (Performance, p. 72): "Pool de threads (libelo)" y "Loop de eventos (libdev)" | Son erratas de **libeio** y **libev**, las librerías originales de Node para el pool de hilos y el loop de eventos, hoy reemplazadas por **libuv**. La transcripción de la imagen no repite los nombres y la nota menciona libuv. |

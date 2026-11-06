@@ -19,3 +19,4 @@ Curso sobre cómo tomar decisiones de arquitectura: qué características necesi
 19. [[19-Fundamentos de performance/_Índice|Fundamentos de performance]] — Definición y métricas de performance, percentiles, escenarios, medición experimental y teórica, y tácticas de Bass y Kazman.
 20. [[20-Hardware red y performance/_Índice|Hardware red y performance]] — CPU, RAM, almacenamiento, GPU y TPU, falacias de la red y el caso Amazon Prime Video.
 21. [[21-Caché y protocolos web/_Índice|Caché y protocolos web]] — Caché (desafíos, desalojo, cuándo no usarla), caché web con navegador, proxy y CDN, y HTTP/1 a HTTP/3.
+22. [[22-Asincronía y control de demanda/_Índice|Asincronía y control de demanda]] — Contenedores, caso Twitter, asincronía y NodeJS, rate limiting, circuit breakers, timeouts y priorización.

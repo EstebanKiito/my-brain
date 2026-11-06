@@ -201,5 +201,26 @@
     "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf#page=53",
     "destino": "Arquitectura de Sistemas de Software/21-Caché y protocolos web/adjuntos/Ganancias de HTTP 3 sobre QUIC.png",
     "sha256": "edc3037427c744a49993d0da61cfce38ba7f75821becf398ce62ff4d266ee5f4"
+  },
+  {
+    "tema": "Asincronía y control de demanda",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf#page=58",
+    "destino": "Arquitectura de Sistemas de Software/22-Asincronía y control de demanda/adjuntos/Pageviews diarios de Twitter en 2006 y 2007.png",
+    "sha256": "78e3271f3d793f8b38383fb4a66ed1c02b93d616a5f64a47557bb4b7f71dbcb5"
+  },
+  {
+    "tema": "Asincronía y control de demanda",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf#page=65",
+    "destino": "Arquitectura de Sistemas de Software/22-Asincronía y control de demanda/adjuntos/Tweets sobre microservicios y latencia en Twitter.png",
+    "sha256": "709ffd4525316bd5bdc77c105791701b06b2291fb40259b83f4591af46d84a80"
+  },
+  {
+    "tema": "Asincronía y control de demanda",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf#page=72",
+    "destino": "Arquitectura de Sistemas de Software/22-Asincronía y control de demanda/adjuntos/Arquitectura de NodeJS.png",
+    "sha256": "6562dfa0a4cb64ecb846e1cdb8cf230e90db0ee1d57bbc6fc6cfefa3c7bd2594"
   }
 ]
