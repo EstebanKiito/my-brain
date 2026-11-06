@@ -167,7 +167,7 @@
     },
     "gRPC GraphQL y MCP": {
       "carpeta": "Arquitectura de Sistemas de Software/17-gRPC GraphQL y MCP",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "clases_i2",

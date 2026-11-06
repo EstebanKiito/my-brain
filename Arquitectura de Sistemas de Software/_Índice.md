@@ -14,3 +14,4 @@ Curso sobre cómo tomar decisiones de arquitectura: qué características necesi
 14. [[14-Integración y relaciones entre contextos/_Índice|Integración y relaciones entre contextos]] — Integrabilidad, context map, las siete relaciones de DDD y tácticas básicas de integración.
 15. [[15-Middleware orientado a mensajes/_Índice|Middleware orientado a mensajes]] — Monolito y comunicación indirecta, MOM, colas vs logs, broker, motores de procesos, orquestación vs coreografía.
 16. [[16-REST y contratos de API/_Índice|REST y contratos de API]] — REST como estilo, árbol de derivación, componentes y conectores, interfaz uniforme, madurez de Richardson y OpenAPI.
+17. [[17-gRPC GraphQL y MCP/_Índice|gRPC GraphQL y MCP]] — gRPC, GraphQL, MCP, evolución de contratos, outbox y cómo elegir el mecanismo de integración.

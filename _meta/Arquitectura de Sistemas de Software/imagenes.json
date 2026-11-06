@@ -96,5 +96,12 @@
     "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/11,12,13,14. Integración v2.pdf#page=43",
     "destino": "Arquitectura de Sistemas de Software/16-REST y contratos de API/adjuntos/Árbol de derivación de REST.png",
     "sha256": "430924349bd3c5c25f4f96558348f681541a49de1ea2783c9e1897d4edd91100"
+  },
+  {
+    "tema": "gRPC GraphQL y MCP",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases I2/image 8.png",
+    "destino": "Arquitectura de Sistemas de Software/17-gRPC GraphQL y MCP/adjuntos/Servidor gRPC con clientes en otros lenguajes.png",
+    "sha256": "974fbbc060acf96d9f00feb383e8ef061579da815fef441096c413101c3d8e46"
   }
 ]
