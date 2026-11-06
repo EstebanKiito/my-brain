@@ -26,7 +26,7 @@ Orden de trabajo (pedido del usuario, que prepara la I2): primero los temas 14 a
 | 17 | gRPC GraphQL y MCP | `17-gRPC GraphQL y MCP/` | ✅ hecho | 5 + `_Índice` | 1 apuntes + 0 slide |
 | 18 | DDD táctico | `18-DDD táctico/` | ✅ hecho | 6 + `_Índice` | 0 apuntes + 5 slide |
 | 19 | Fundamentos de performance | `19-Fundamentos de performance/` | ✅ hecho | 3 + `_Índice` | 0 apuntes + 2 slide |
-| 20 | Hardware red y performance | `20-Hardware red y performance/` | ⏳ pendiente | – | – |
+| 20 | Hardware red y performance | `20-Hardware red y performance/` | ✅ hecho | 3 + `_Índice` | 0 apuntes + 2 slide |
 | 21 | Caché y protocolos web | `21-Caché y protocolos web/` | ⏳ pendiente | – | – |
 | 22 | Asincronía y control de demanda | `22-Asincronía y control de demanda/` | ⏳ pendiente | – | – |
 | 23 | Medición de escalabilidad | `23-Medición de escalabilidad/` | ⏳ pendiente | – | – |
@@ -51,3 +51,4 @@ Orden de trabajo (pedido del usuario, que prepara la I2): primero los temas 14 a
 - **2026-11-06 · Tema 17.** `17-gRPC GraphQL y MCP`: 5 notas + `_Índice`. Fuentes: `Clases I2` desde "gRPC" hasta el final, slides 77-90 de Integración v2, alternativa 2.b del examen 2025-2, AY09 (caso del satélite del examen 2024-2) y pregunta 2.b de la I2 2026-1. Imágenes: 1 PNG de Notion.
 - **2026-11-06 · Tema 18.** `18-DDD táctico`: 6 notas + `_Índice`. No hay apuntes de Notion de este tema: fuente única las 15 slides de `19ab - bloque-ddd-tactico.pdf` (con el código de Sairyss/domain-driven-hexagon, MIT, reescrito y comentado). AY07 y AY08 tratan DDD estratégico y quedan para el tema 08. Imágenes: 5 slides recortadas (4, 6, 10, 11 y 12).
 - **2026-11-06 · Tema 19.** `19-Fundamentos de performance`: 3 notas + `_Índice`. Fuentes: slides 1-14 y 54 de Performance, la sección "Clase 16: Performance" de `Syllabus/I2/Apuntes_I2.pdf` (export más nuevo que el HTML de Notion, que llega solo hasta MCP), AY09 (escenario del dashboard), pregunta 3.2.b y alternativa 2.a de la pauta I2 2025-2. Cálculos M/M/1 y percentiles comprobados con python3.
+- **2026-11-06 · Tema 20.** `20-Hardware red y performance`: 3 notas + `_Índice`. Fuentes: slides 15-35 de Performance, pregunta 1.a de la pauta I2 2025-2 (combinar dos problemas de la red) y 1.b de la pauta I2 2025-1 (latencia de las sondas). Imágenes: slides 15 y 27 recortadas.

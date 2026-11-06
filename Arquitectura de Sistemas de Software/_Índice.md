@@ -17,3 +17,4 @@ Curso sobre cómo tomar decisiones de arquitectura: qué características necesi
 17. [[17-gRPC GraphQL y MCP/_Índice|gRPC GraphQL y MCP]] — gRPC, GraphQL, MCP, evolución de contratos, outbox y cómo elegir el mecanismo de integración.
 18. [[18-DDD táctico/_Índice|DDD táctico]] — Entidades, objetos de valor, agregados, repositorios, servicios, eventos de dominio e integración y arquitectura hexagonal.
 19. [[19-Fundamentos de performance/_Índice|Fundamentos de performance]] — Definición y métricas de performance, percentiles, escenarios, medición experimental y teórica, y tácticas de Bass y Kazman.
+20. [[20-Hardware red y performance/_Índice|Hardware red y performance]] — CPU, RAM, almacenamiento, GPU y TPU, falacias de la red y el caso Amazon Prime Video.

@@ -152,5 +152,19 @@
     "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf#page=54",
     "destino": "Arquitectura de Sistemas de Software/19-Fundamentos de performance/adjuntos/Panel de monitoreo de métricas de base de datos.png",
     "sha256": "b9d8e518ca1ea182b0989cdec368ffb20fa8672e793aba425ea6e1ce53baf2de"
+  },
+  {
+    "tema": "Hardware red y performance",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf#page=15",
+    "destino": "Arquitectura de Sistemas de Software/20-Hardware red y performance/adjuntos/Tipos de instancia m6i de AWS.png",
+    "sha256": "6d1566b7272ebe32c91839a4c9faa2ebb0ec28c5de90b755d4e484c5bd46c0bf"
+  },
+  {
+    "tema": "Hardware red y performance",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf#page=27",
+    "destino": "Arquitectura de Sistemas de Software/20-Hardware red y performance/adjuntos/Rendimiento de GPU frente a CPU en inferencia y entrenamiento.png",
+    "sha256": "4a2c00ef8541b4aa886e4e82d4679b3ce5eeafedd261706d24a3c5993d07ddb4"
   }
 ]
