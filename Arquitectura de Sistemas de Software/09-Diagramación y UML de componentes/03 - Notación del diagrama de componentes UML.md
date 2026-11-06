@@ -5,7 +5,7 @@ tags:
   - arquisis/uml
   - origen/complemento
 prerrequisitos:
-  - "[[02 - Vistas 4+1 C4 y variantes de UML]]"
+  - "[[02 - Vistas 4+1 modelo de zoom y variantes de UML]]"
   - "[[01 - Componentes y quanta arquitectónica]]"
 ---
 

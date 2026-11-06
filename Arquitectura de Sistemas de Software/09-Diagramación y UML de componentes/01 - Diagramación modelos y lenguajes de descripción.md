@@ -66,7 +66,7 @@ flowchart LR
 - **Conectores:** cómo interactúan los componentes. Son las líneas.
 - **Configuraciones arquitectónicas:** la estructura completa, es decir, cómo se conectan componentes y conectores.
 
-Existen distintos estándares para dibujarlos: 4+1, C4 y UML, que se ven en [[02 - Vistas 4+1 C4 y variantes de UML]].
+Existen distintos estándares para dibujarlos: 4+1, C4 y UML, que se ven en [[02 - Vistas 4+1 modelo de zoom y variantes de UML]].
 
 ## Preguntas de repaso
 

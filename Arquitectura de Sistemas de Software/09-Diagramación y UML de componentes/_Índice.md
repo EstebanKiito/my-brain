@@ -13,6 +13,6 @@ Cómo diagramar una arquitectura: modelos, metamodelos y ADL, las vistas **4+1**
 ## Contenido
 
 1. [[01 - Diagramación modelos y lenguajes de descripción]] — Relato y audiencia, modelo y metamodelo, ADL, diagramming as code, tipos de diagramación y conceptos principales.
-2. [[02 - Vistas 4+1 C4 y variantes de UML]] — Las vistas del modelo 4+1, los niveles de C4, UML y sus variantes, y por qué el diagrama de componentes no muestra flujo.
+2. [[02 - Vistas 4+1 modelo de zoom y variantes de UML]] — Las vistas del modelo 4+1, los niveles de C4, UML y sus variantes, y por qué el diagrama de componentes no muestra flujo.
 3. [[03 - Notación del diagrama de componentes UML]] — Componentes con sustantivos y estereotipos, interfaces lollipop y socket con prefijo i, puertos, y los croquis del proyecto.
 4. [[04 - Cómo resolver una pregunta de diagrama de componentes]] — Orden de la respuesta, métodos inductivo, deductivo y por referencia, formatos de cada estilo, el caso de telemedicina y la tabla de descuentos.

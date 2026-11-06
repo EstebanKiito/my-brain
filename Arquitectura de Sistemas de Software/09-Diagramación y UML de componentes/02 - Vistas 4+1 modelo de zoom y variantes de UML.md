@@ -9,7 +9,7 @@ prerrequisitos:
   - "[[01 - Diagrama de clases UML]]"
 ---
 
-# Vistas 4+1 C4 y variantes de UML
+# Vistas 4+1 modelo de zoom y variantes de UML
 
 Tres estándares organizan la forma de diagramar. **4+1** dice **qué vistas** hay que mostrar. **C4** propone **niveles de zoom**. **UML** es el **lenguaje** con el que se dibuja cada diagrama. En el curso se usa sobre todo UML, y en particular el diagrama de componentes.
 
