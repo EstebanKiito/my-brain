@@ -49,6 +49,8 @@ VAULT_RAMO = None
 UMBRAL_TOKENS = 0.85
 UMBRAL_SECUENCIA = 0.80
 MAX_LINEAS = 150
+# Rango de preguntas de repaso por nota; un ramo puede fijar otro con "preguntas_repaso" en mapeo.json
+RANGO_PREGUNTAS = (3, 5)
 
 errores = []
 avisos = []
@@ -350,8 +352,9 @@ def prueba_formato(notas):
             aviso(f"{rel}: sin sección '## Preguntas de repaso'")
         else:
             n = texto.split("## Preguntas de repaso", 1)[1].count("[!question]-")
-            if not 3 <= n <= 5:
-                aviso(f"{rel}: {n} preguntas de repaso (se esperan 3 a 5)")
+            lo, hi = RANGO_PREGUNTAS
+            if not lo <= n <= hi:
+                aviso(f"{rel}: {n} preguntas de repaso (se esperan {lo} a {hi})")
     for base, dirs, files in os.walk(VAULT_RAMO):
         dirs[:] = [d for d in dirs if d != "adjuntos"]
         if os.path.basename(base) == "adjuntos":
@@ -626,7 +629,7 @@ def prueba_links_externos(tema, items, notas_todas, aceptados):
 def main():
     global conf_fuentes
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    global RAW, META_RAMO, VAULT_RAMO
+    global RAW, META_RAMO, VAULT_RAMO, RANGO_PREGUNTAS
     ramos = sorted(d for d in os.listdir(META)
                    if os.path.isfile(os.path.join(META, d, "mapeo.json")))
     ramos_nfc = {unicodedata.normalize("NFC", r): r for r in ramos}
@@ -648,6 +651,7 @@ def main():
         imagenes = json.load(f)
     VAULT_RAMO = nfc(os.path.join(RAIZ, mapeo.get("carpeta_ramo", ramo)))
     conf_fuentes = mapeo["fuentes"]
+    RANGO_PREGUNTAS = tuple(mapeo.get("preguntas_repaso", RANGO_PREGUNTAS))
     aceptados = mapeo.get("aceptados", [])
     notas = listar_notas()
 

@@ -1,0 +1,30 @@
+[
+  {
+    "tema": "Integración y relaciones entre contextos",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases I2/image.png",
+    "destino": "Arquitectura de Sistemas de Software/14-Integración y relaciones entre contextos/adjuntos/Relación con capa anticorrupción entre dos equipos.png",
+    "sha256": "7197f26b6bab2e9d79783bac7361c1cf236c0c8c73196280fac1fd115b3d409f"
+  },
+  {
+    "tema": "Integración y relaciones entre contextos",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases I2/image 1.png",
+    "destino": "Arquitectura de Sistemas de Software/14-Integración y relaciones entre contextos/adjuntos/Separate Ways sin integración entre dos equipos.png",
+    "sha256": "2b1e5e400a79d863ade80ba8d382d9574c41e7feb8143cb24ed8cb017d8bdab1"
+  },
+  {
+    "tema": "Integración y relaciones entre contextos",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases I2/IMG_8059.heic",
+    "destino": "Arquitectura de Sistemas de Software/14-Integración y relaciones entre contextos/adjuntos/Pizarra context map de gestión de compras.png",
+    "sha256": "2723d036bd8296196825da3554aba10728dba66a99e8de4ffd39cf4d151e70bd"
+  },
+  {
+    "tema": "Integración y relaciones entre contextos",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/11,12,13,14. Integración v2.pdf#page=20",
+    "destino": "Arquitectura de Sistemas de Software/14-Integración y relaciones entre contextos/adjuntos/Niveles comunes de integración.png",
+    "sha256": "f338ab15e3514100187ae3db85b2f8f0539278ffb3733bd83df663edada1f132"
+  }
+]
