@@ -14,6 +14,7 @@ Vault de estudio del ramo. Cada tema reúne la teoría de las clases y del libro
 | [[Álgebra Lineal/01-Vectores en Rⁿ/_Índice\|Vectores en Rⁿ]] | Operaciones, combinaciones lineales, Gen, producto punto, norma, ángulo y ortogonalidad |
 | [[Álgebra Lineal/02-Rectas, planos e hiperplanos/_Índice\|Rectas, planos e hiperplanos]] | Formas normal, general y vectorial, producto cruz, posición relativa e intersecciones |
 | [[Álgebra Lineal/03-Sistemas de ecuaciones lineales/_Índice\|Sistemas de ecuaciones lineales]] | Sistemas como intersección de planos, matriz ampliada, operaciones de fila y $A\mathbf x = \mathbf b$ |
+| [[Álgebra Lineal/04-Reducción por filas/_Índice\|Reducción por filas]] | Formas escalonadas, pivotes, algoritmo de Gauss-Jordan, variables libres y existencia y unicidad |
 
 ## Ruta de estudio y evaluaciones
 | Evaluación | Temas que entran |
