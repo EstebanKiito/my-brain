@@ -1,0 +1,58 @@
+[
+  {
+    "tema": "Vectores en Rⁿ",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 01 Vectores en R3.pdf#page=5",
+    "destino": "Álgebra Lineal/01-Vectores en Rⁿ/adjuntos/Vector entre dos puntos y vectores en posición estándar.png",
+    "sha256": "6668d400e07992b0d8dbc84ab64316cf75956cecc999c074ff4cedc6487430c1"
+  },
+  {
+    "tema": "Vectores en Rⁿ",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 01 Vectores en R3.pdf#page=9",
+    "destino": "Álgebra Lineal/01-Vectores en Rⁿ/adjuntos/Suma de vectores punta con cola.png",
+    "sha256": "0791cc21385c1b9a62bd123c00f52ca6ac1dd3df4b44650019dba38e0dcf1e7a"
+  },
+  {
+    "tema": "Vectores en Rⁿ",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 01 Vectores en R3.pdf#page=10",
+    "destino": "Álgebra Lineal/01-Vectores en Rⁿ/adjuntos/Múltiplos escalares de un vector.png",
+    "sha256": "fa1dc84e785f0b8fdbb359e46d7bf6003ba07b372485292d451ca76298635f49"
+  },
+  {
+    "tema": "Vectores en Rⁿ",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 02 Combinaciones lineales y producto punto.pdf#page=5",
+    "destino": "Álgebra Lineal/01-Vectores en Rⁿ/adjuntos/Conjunto generado por uno y dos vectores.png",
+    "sha256": "af8b4f774c4a12a1e4e3f3bdf4fd40208937288c740186721689090e666a9f59"
+  },
+  {
+    "tema": "Vectores en Rⁿ",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 02 Combinaciones lineales y producto punto.pdf#page=11",
+    "destino": "Álgebra Lineal/01-Vectores en Rⁿ/adjuntos/Normalización de un vector.png",
+    "sha256": "d8dddb691727d5a2e6bc7d8ece131aa074c4bebe457f9a596bc3e9448e10d6f8"
+  },
+  {
+    "tema": "Rectas, planos e hiperplanos",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 03 Ortogonalidad y rectas en el espacio.pdf#page=8",
+    "destino": "Álgebra Lineal/02-Rectas, planos e hiperplanos/adjuntos/Recta por el origen y su vector normal.png",
+    "sha256": "9e28ea6fc878109e2d2a6ef31cd841f9af25022c491a27f83c22861618cec3a3"
+  },
+  {
+    "tema": "Rectas, planos e hiperplanos",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 04 Planos en el espacio.pdf#page=3",
+    "destino": "Álgebra Lineal/02-Rectas, planos e hiperplanos/adjuntos/Plano determinado por un punto y un vector normal.png",
+    "sha256": "553fa1498f948791b553bcffe5c15c5ec61ed28d981e202e66e012fa42b4d34c"
+  },
+  {
+    "tema": "Rectas, planos e hiperplanos",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 04 Planos en el espacio.pdf#page=6",
+    "destino": "Álgebra Lineal/02-Rectas, planos e hiperplanos/adjuntos/Forma vectorial del plano.png",
+    "sha256": "e1abfa2eeb30c41b5ab5f3d88044173d60fc6fa9a432c015d042144147b7ee1a"
+  }
+]
