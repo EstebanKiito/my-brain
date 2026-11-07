@@ -789,5 +789,26 @@
     "original": "Semestre 8/Arquisis/Ayudantías/image 13.png",
     "destino": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube/adjuntos/Flujo de almacenamiento en Amazon S3.png",
     "sha256": "cb3799ebd430f1f133dd76c0fd9184e2e25268978024c54829b8fd08f45886d6"
+  },
+  {
+    "tema": "Resolución de casos de diseño",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/I1/documentos-del-compilado/P2_I1_2026-1.png",
+    "destino": "Arquitectura de Sistemas de Software/26-Resolución de casos de diseño/adjuntos/Diagrama de referencia de integración bancaria con plugins.png",
+    "sha256": "a53d84cc1f5cc38b00221bb4a355f6b67400263bfa7e87b3ba9363e4afe131cc"
+  },
+  {
+    "tema": "Resolución de casos de diseño",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/I1/documentos-del-compilado/MichiGuardian C.png",
+    "destino": "Arquitectura de Sistemas de Software/26-Resolución de casos de diseño/adjuntos/Diagrama de referencia de MichiGuardian.png",
+    "sha256": "f52413e72d511f094669321fa481ed204e9a9df4be4c92d8fde059926ff7cf7b"
+  },
+  {
+    "tema": "Resolución de casos de diseño",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/I1/documentos-del-compilado/Fundacion SCP.png",
+    "destino": "Arquitectura de Sistemas de Software/26-Resolución de casos de diseño/adjuntos/Diagrama de referencia de Fundación SCP con pipe and filter.png",
+    "sha256": "020fe3c071c5163140a1a75646180757f13b820cd3f68c5c9472780dd4e49305"
   }
 ]

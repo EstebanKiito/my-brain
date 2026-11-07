@@ -50,4 +50,5 @@ Curso sobre cómo tomar decisiones de arquitectura: qué características necesi
 
 ## Práctica infraestructura y gestión
 
+26. [[26-Resolución de casos de diseño/_Índice|Resolución de casos de diseño]] — Método de respuesta y casos resueltos de pruebas pasadas con sus pautas y diagramas de referencia.
 27. [[27-Infraestructura y despliegue en la nube/_Índice|Infraestructura y despliegue en la nube]] — Cloud y AWS, Linux y SSH, Docker y Compose, DNS, nginx y reverse proxy, S3 con CloudFront e IaaC.
