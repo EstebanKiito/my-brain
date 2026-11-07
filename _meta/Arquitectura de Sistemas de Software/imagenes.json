@@ -1,0 +1,821 @@
+[
+  {
+    "tema": "Integración y relaciones entre contextos",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases I2/image.png",
+    "destino": "Arquitectura de Sistemas de Software/14-Integración y relaciones entre contextos/adjuntos/Relación con capa anticorrupción entre dos equipos.png",
+    "sha256": "7197f26b6bab2e9d79783bac7361c1cf236c0c8c73196280fac1fd115b3d409f"
+  },
+  {
+    "tema": "Integración y relaciones entre contextos",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases I2/image 1.png",
+    "destino": "Arquitectura de Sistemas de Software/14-Integración y relaciones entre contextos/adjuntos/Separate Ways sin integración entre dos equipos.png",
+    "sha256": "2b1e5e400a79d863ade80ba8d382d9574c41e7feb8143cb24ed8cb017d8bdab1"
+  },
+  {
+    "tema": "Integración y relaciones entre contextos",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases I2/IMG_8059.heic",
+    "destino": "Arquitectura de Sistemas de Software/14-Integración y relaciones entre contextos/adjuntos/Pizarra context map de gestión de compras.png",
+    "sha256": "2723d036bd8296196825da3554aba10728dba66a99e8de4ffd39cf4d151e70bd"
+  },
+  {
+    "tema": "Integración y relaciones entre contextos",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/11,12,13,14. Integración v2.pdf#page=20",
+    "destino": "Arquitectura de Sistemas de Software/14-Integración y relaciones entre contextos/adjuntos/Niveles comunes de integración.png",
+    "sha256": "f338ab15e3514100187ae3db85b2f8f0539278ffb3733bd83df663edada1f132"
+  },
+  {
+    "tema": "Middleware orientado a mensajes",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases I2/image 2.png",
+    "destino": "Arquitectura de Sistemas de Software/15-Middleware orientado a mensajes/adjuntos/Particiones de un tópico replicadas entre tres brokers.png",
+    "sha256": "e5cec55697c6a017dbe2eeaad0264fea641116314361b89dbe4596e47537ad91"
+  },
+  {
+    "tema": "Middleware orientado a mensajes",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/11,12,13,14. Integración v2.pdf#page=29",
+    "destino": "Arquitectura de Sistemas de Software/15-Middleware orientado a mensajes/adjuntos/Servidor MOM entre emisores y receptores.png",
+    "sha256": "1b97b750ec640a72cacd12d9d0972df4066d6cbde35c65e4a76cd55537803c8b"
+  },
+  {
+    "tema": "Middleware orientado a mensajes",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/11,12,13,14. Integración v2.pdf#page=30",
+    "destino": "Arquitectura de Sistemas de Software/15-Middleware orientado a mensajes/adjuntos/Quorum queues de RabbitMQ ante una partición de red.png",
+    "sha256": "82dda194b21971d15a776a812cb48d45e7039783ac7050354c250cc155151b32"
+  },
+  {
+    "tema": "REST y contratos de API",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases I2/image 3.png",
+    "destino": "Arquitectura de Sistemas de Software/16-REST y contratos de API/adjuntos/Cliente con caché frente a servidor stateless.png",
+    "sha256": "2fcfe4fab75ce8d635d57cf765823459baa4642df1a54f5d017df1dcbba0149b"
+  },
+  {
+    "tema": "REST y contratos de API",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases I2/image 4.png",
+    "destino": "Arquitectura de Sistemas de Software/16-REST y contratos de API/adjuntos/Vista de procesos del estilo REST.png",
+    "sha256": "a3a6d90093cbcb8c017b36c12ff8796442f74ef5d67c4126ce61f80df30269fe"
+  },
+  {
+    "tema": "REST y contratos de API",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases I2/image 5.png",
+    "destino": "Arquitectura de Sistemas de Software/16-REST y contratos de API/adjuntos/Elementos de una arquitectura REST del agente al servidor de origen.png",
+    "sha256": "a588a3be485d6e9f3ecf809ea00e321d6df00222c84e6841e6201b6cca3c845e"
+  },
+  {
+    "tema": "REST y contratos de API",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases I2/image 6.png",
+    "destino": "Arquitectura de Sistemas de Software/16-REST y contratos de API/adjuntos/Flujo de una petición web con DNS.png",
+    "sha256": "5025b7bbd61c7bc6f902fc8b1c0d37d9c4a2cb984e6628ea681a8e11fb316d38"
+  },
+  {
+    "tema": "REST y contratos de API",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases I2/image 7.png",
+    "destino": "Arquitectura de Sistemas de Software/16-REST y contratos de API/adjuntos/Flujo de una petición web con proxy y CDN.png",
+    "sha256": "a30f10cb7d1a307dc19fad88dabb44b52ecf1f010dbcb7a021566c8d1cebb969"
+  },
+  {
+    "tema": "REST y contratos de API",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases I2/IMG_8128.heic",
+    "destino": "Arquitectura de Sistemas de Software/16-REST y contratos de API/adjuntos/Croquis de servidor middleware y cliente REST.png",
+    "sha256": "b441911f48531099e71f99e13e0aae6b6306c174049a2729535272e15a7d8a97"
+  },
+  {
+    "tema": "REST y contratos de API",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/11,12,13,14. Integración v2.pdf#page=43",
+    "destino": "Arquitectura de Sistemas de Software/16-REST y contratos de API/adjuntos/Árbol de derivación de REST.png",
+    "sha256": "430924349bd3c5c25f4f96558348f681541a49de1ea2783c9e1897d4edd91100"
+  },
+  {
+    "tema": "gRPC GraphQL y MCP",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases I2/image 8.png",
+    "destino": "Arquitectura de Sistemas de Software/17-gRPC GraphQL y MCP/adjuntos/Servidor gRPC con clientes en otros lenguajes.png",
+    "sha256": "974fbbc060acf96d9f00feb383e8ef061579da815fef441096c413101c3d8e46"
+  },
+  {
+    "tema": "DDD táctico",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/19ab - bloque-ddd-tactico.pdf#page=4",
+    "destino": "Arquitectura de Sistemas de Software/18-DDD táctico/adjuntos/Agregado Pedido con raíz entidades y objetos de valor.png",
+    "sha256": "5767239f2b59f6e64ef8f447e9535c8fa31fc83f40613230be2305332f29d9f3"
+  },
+  {
+    "tema": "DDD táctico",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/19ab - bloque-ddd-tactico.pdf#page=6",
+    "destino": "Arquitectura de Sistemas de Software/18-DDD táctico/adjuntos/Antipatrones agregado gigante y modelo anémico.png",
+    "sha256": "df08cc246f61c9f003add3077614eda17e2e355a288f31d6b870a94208f3fb90"
+  },
+  {
+    "tema": "DDD táctico",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/19ab - bloque-ddd-tactico.pdf#page=10",
+    "destino": "Arquitectura de Sistemas de Software/18-DDD táctico/adjuntos/Evento de dominio traducido a evento de integración con outbox.png",
+    "sha256": "e4d4ddc1416f0b5d77db26a9795bd07f2a7386bdf567dfcf4d5e481025d8f5a2"
+  },
+  {
+    "tema": "DDD táctico",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/19ab - bloque-ddd-tactico.pdf#page=11",
+    "destino": "Arquitectura de Sistemas de Software/18-DDD táctico/adjuntos/Arquitectura hexagonal con puertos y adaptadores.png",
+    "sha256": "89ad2953afe53e4ad26caa6539ba88be89f2ac281c90c8e27948d647a415ca89"
+  },
+  {
+    "tema": "DDD táctico",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/19ab - bloque-ddd-tactico.pdf#page=12",
+    "destino": "Arquitectura de Sistemas de Software/18-DDD táctico/adjuntos/Capas de domain-driven-hexagon.png",
+    "sha256": "2aba75883a242c67dae285e02029d0e9eb98cccda3a3978b1f344eb0c7c1dfad"
+  },
+  {
+    "tema": "Fundamentos de performance",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf#page=2",
+    "destino": "Arquitectura de Sistemas de Software/19-Fundamentos de performance/adjuntos/Años que tardaron productos en llegar a 50 millones de usuarios.png",
+    "sha256": "1a11aaecaff333b3d8091d4302f252674ac688a45563cfb650ea88a335a2e526"
+  },
+  {
+    "tema": "Fundamentos de performance",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf#page=54",
+    "destino": "Arquitectura de Sistemas de Software/19-Fundamentos de performance/adjuntos/Panel de monitoreo de métricas de base de datos.png",
+    "sha256": "b9d8e518ca1ea182b0989cdec368ffb20fa8672e793aba425ea6e1ce53baf2de"
+  },
+  {
+    "tema": "Hardware red y performance",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf#page=15",
+    "destino": "Arquitectura de Sistemas de Software/20-Hardware red y performance/adjuntos/Tipos de instancia m6i de AWS.png",
+    "sha256": "6d1566b7272ebe32c91839a4c9faa2ebb0ec28c5de90b755d4e484c5bd46c0bf"
+  },
+  {
+    "tema": "Hardware red y performance",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf#page=27",
+    "destino": "Arquitectura de Sistemas de Software/20-Hardware red y performance/adjuntos/Rendimiento de GPU frente a CPU en inferencia y entrenamiento.png",
+    "sha256": "4a2c00ef8541b4aa886e4e82d4679b3ce5eeafedd261706d24a3c5993d07ddb4"
+  },
+  {
+    "tema": "Caché y protocolos web",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf#page=39",
+    "destino": "Arquitectura de Sistemas de Software/21-Caché y protocolos web/adjuntos/Jerarquía de memoria y cachés de CPU.png",
+    "sha256": "56c3a2a773b6ff394440ca32d25cdf4cd67b7f5ec81e45d3933ea8543536a5d0"
+  },
+  {
+    "tema": "Caché y protocolos web",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf#page=41",
+    "destino": "Arquitectura de Sistemas de Software/21-Caché y protocolos web/adjuntos/Caché del navegador entre el cliente y el servidor.png",
+    "sha256": "7007d1c84201c2d29814ac5918640c795fcda3abdf0658108f1f7a16d7a3bf6a"
+  },
+  {
+    "tema": "Caché y protocolos web",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf#page=43",
+    "destino": "Arquitectura de Sistemas de Software/21-Caché y protocolos web/adjuntos/Caché de proxy y caché de proxy inverso.png",
+    "sha256": "7a6114c2b84b2f6066a9de8a144866f23c926f3b00d3f6293b69dd9774c07436"
+  },
+  {
+    "tema": "Caché y protocolos web",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf#page=51",
+    "destino": "Arquitectura de Sistemas de Software/21-Caché y protocolos web/adjuntos/Conexión multiplexada de HTTP 2.png",
+    "sha256": "c9cae4bdd960f25074f6a50236bc318f2a3e439d739d4a4c1512e586b05964d3"
+  },
+  {
+    "tema": "Caché y protocolos web",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf#page=53",
+    "destino": "Arquitectura de Sistemas de Software/21-Caché y protocolos web/adjuntos/Ganancias de HTTP 3 sobre QUIC.png",
+    "sha256": "edc3037427c744a49993d0da61cfce38ba7f75821becf398ce62ff4d266ee5f4"
+  },
+  {
+    "tema": "Asincronía y control de demanda",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf#page=58",
+    "destino": "Arquitectura de Sistemas de Software/22-Asincronía y control de demanda/adjuntos/Pageviews diarios de Twitter en 2006 y 2007.png",
+    "sha256": "78e3271f3d793f8b38383fb4a66ed1c02b93d616a5f64a47557bb4b7f71dbcb5"
+  },
+  {
+    "tema": "Asincronía y control de demanda",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf#page=65",
+    "destino": "Arquitectura de Sistemas de Software/22-Asincronía y control de demanda/adjuntos/Tweets sobre microservicios y latencia en Twitter.png",
+    "sha256": "709ffd4525316bd5bdc77c105791701b06b2291fb40259b83f4591af46d84a80"
+  },
+  {
+    "tema": "Asincronía y control de demanda",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf#page=72",
+    "destino": "Arquitectura de Sistemas de Software/22-Asincronía y control de demanda/adjuntos/Arquitectura de NodeJS.png",
+    "sha256": "6562dfa0a4cb64ecb846e1cdb8cf230e90db0ee1d57bbc6fc6cfefa3c7bd2594"
+  },
+  {
+    "tema": "Medición de escalabilidad",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/19,20,21. Escalabilidad.pdf#page=14",
+    "destino": "Arquitectura de Sistemas de Software/23-Medición de escalabilidad/adjuntos/Curva de la ley de Amdahl según la porción paralela.png",
+    "sha256": "76d629c28ed5cca890b72ab9562d431ab4a7c033e47325d3a9cb4c282fc98e7c"
+  },
+  {
+    "tema": "Medición de escalabilidad",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/19,20,21. Escalabilidad.pdf#page=15",
+    "destino": "Arquitectura de Sistemas de Software/23-Medición de escalabilidad/adjuntos/Curvas de la ley de Gustafson.png",
+    "sha256": "a78739ecd98e8b2f69baffd3c2a7a93a8d0547f551f2c20e568ea4b1cebc24b6"
+  },
+  {
+    "tema": "Métodos de escalabilidad",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/19,20,21. Escalabilidad.pdf#page=22",
+    "destino": "Arquitectura de Sistemas de Software/24-Métodos de escalabilidad/adjuntos/Responsabilidades del balanceo de carga.png",
+    "sha256": "ab9968b5a8135f8c9fd0faf1c55ed8762c7d0cb7149d4f135daabe608d5288e4"
+  },
+  {
+    "tema": "Métodos de escalabilidad",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/19,20,21. Escalabilidad.pdf#page=23",
+    "destino": "Arquitectura de Sistemas de Software/24-Métodos de escalabilidad/adjuntos/Balanceador de AWS con grupos blue y green en dos zonas.png",
+    "sha256": "2757977523ba7292d2b1cf6da927114dffecdbe57a1c948ddfe7e8a8aaabfd29"
+  },
+  {
+    "tema": "Métodos de escalabilidad",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/19,20,21. Escalabilidad.pdf#page=33",
+    "destino": "Arquitectura de Sistemas de Software/24-Métodos de escalabilidad/adjuntos/API Gateway frente a servicios con distintas bases de datos.png",
+    "sha256": "1a6e46fee7c74c52bd2afe81a071891dd00480134ffe7cfd225bd36e95918d27"
+  },
+  {
+    "tema": "Escalabilidad de datos",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/19,20,21. Escalabilidad.pdf#page=46",
+    "destino": "Arquitectura de Sistemas de Software/25-Escalabilidad de datos/adjuntos/Teorema CAP con dos nodos y una partición.png",
+    "sha256": "996136b90793e2c52181b966cc200432b505d0d41cff19c2fad0b7c6d880b907"
+  },
+  {
+    "tema": "Escalabilidad de datos",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/19,20,21. Escalabilidad.pdf#page=61",
+    "destino": "Arquitectura de Sistemas de Software/25-Escalabilidad de datos/adjuntos/Archivos de GFS divididos en chunks replicados.png",
+    "sha256": "d2faad4660797fc6eec9d532c36490d59c470d48f87eb1e0aa8ace0e64b8594a"
+  },
+  {
+    "tema": "Escalabilidad de datos",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I2/19,20,21. Escalabilidad.pdf#page=65",
+    "destino": "Arquitectura de Sistemas de Software/25-Escalabilidad de datos/adjuntos/Tablets de Bigtable sobre chunkservers de GFS.png",
+    "sha256": "0d0dc7ed9704845bd2f5207fde936dcf45b45bdd19135298522efeed13f97f20"
+  },
+  {
+    "tema": "Fundamentos de la arquitectura de software",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image.png",
+    "destino": "Arquitectura de Sistemas de Software/01-Fundamentos de la arquitectura de software/adjuntos/Comparación entre arquitectura de construcción y de software.png",
+    "sha256": "c2ae3cb3bde81518f4043300505152e1f3f41795a0a8c64090f8fbf7acdaf400"
+  },
+  {
+    "tema": "Fundamentos de la arquitectura de software",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 1.png",
+    "destino": "Arquitectura de Sistemas de Software/01-Fundamentos de la arquitectura de software/adjuntos/Diferencias entre construcción y software fuera de la analogía.png",
+    "sha256": "a96213ce92fe3f8edb760a72e4a6565aa9410b8f9abe15bbac82a3c5b92cd3a1"
+  },
+  {
+    "tema": "Fundamentos de la arquitectura de software",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 2.png",
+    "destino": "Arquitectura de Sistemas de Software/01-Fundamentos de la arquitectura de software/adjuntos/Saber técnico de un desarrollador frente a un arquitecto.png",
+    "sha256": "ef3cfb2ab68a981d32dcaba933da4c7652e6a860d2c82c6a435d587a77e832ae"
+  },
+  {
+    "tema": "Fundamentos de la arquitectura de software",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 3.png",
+    "destino": "Arquitectura de Sistemas de Software/01-Fundamentos de la arquitectura de software/adjuntos/El arquitecto debe hablar.png",
+    "sha256": "46738f270c2c1357147b3870b77488e2474fc04e0a611df1235628046c3947ee"
+  },
+  {
+    "tema": "Cohesión acoplamiento y connascence",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 5.png",
+    "destino": "Arquitectura de Sistemas de Software/02-Cohesión acoplamiento y connascence/adjuntos/Tipos de connascence de menor a mayor fuerza.png",
+    "sha256": "fe8c1cdcb7e86f97bb44f607865f20f5aa1d5df6480b244ec8f39fb1fab44203"
+  },
+  {
+    "tema": "Cohesión acoplamiento y connascence",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7527.heic",
+    "destino": "Arquitectura de Sistemas de Software/02-Cohesión acoplamiento y connascence/adjuntos/Connascence de algoritmo con un componente común.png",
+    "sha256": "7162f57215f9cb1f2156555a40b1eb186c692ad4e9726ac6eceb6198de9a8d7b"
+  },
+  {
+    "tema": "Cohesión acoplamiento y connascence",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7528.heic",
+    "destino": "Arquitectura de Sistemas de Software/02-Cohesión acoplamiento y connascence/adjuntos/Connascence de ejecución en lecturas y escrituras.png",
+    "sha256": "ac561edcd68ccb0d97d3a600a68b472a1efbdc3d247235ba76f4f09c828ce625"
+  },
+  {
+    "tema": "Cohesión acoplamiento y connascence",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7530.heic",
+    "destino": "Arquitectura de Sistemas de Software/02-Cohesión acoplamiento y connascence/adjuntos/Connascence de valor en las esquinas de un rectángulo.png",
+    "sha256": "5e4481a50891e9b3f8424b2407e23eb1b9be005db95459dd937fbf6526fd141b"
+  },
+  {
+    "tema": "Cohesión acoplamiento y connascence",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/da1342e5-4e76-46ad-bf2f-43b88fb0c9d4.png",
+    "destino": "Arquitectura de Sistemas de Software/02-Cohesión acoplamiento y connascence/adjuntos/Connascence de identidad con broker o base compartida.png",
+    "sha256": "bd9d7eb9dfc0d3c3537c06182d957026025a1e573efe6d1e3c379f72269784ef"
+  },
+  {
+    "tema": "Cohesión acoplamiento y connascence",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 6.png",
+    "destino": "Arquitectura de Sistemas de Software/02-Cohesión acoplamiento y connascence/adjuntos/Ejemplo de connascence entre recetas e ingredientes.png",
+    "sha256": "ccffcc3a6e6779f3c90485cdfd5323e42c07eaaf0c92dbaf0ba8b701d55397fd"
+  },
+  {
+    "tema": "Cohesión acoplamiento y connascence",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 7.png",
+    "destino": "Arquitectura de Sistemas de Software/02-Cohesión acoplamiento y connascence/adjuntos/Servicio RecipeIngredient que reduce la connascence.png",
+    "sha256": "683020a9df1853efb5d9a070455b2470767954153207e5ce36930a88a13d18fc"
+  },
+  {
+    "tema": "Componentes quanta y documentación",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7555.heic",
+    "destino": "Arquitectura de Sistemas de Software/03-Componentes quanta y documentación/adjuntos/Componente E0 con API conector y base de datos.png",
+    "sha256": "71a11d551ad508fb2f1104f7128d5c346fdae425a946696f8cd23e94fddd0ddc"
+  },
+  {
+    "tema": "Componentes quanta y documentación",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7556.heic",
+    "destino": "Arquitectura de Sistemas de Software/03-Componentes quanta y documentación/adjuntos/Una sola quanta cuando todo depende de la base.png",
+    "sha256": "6731ef99d130df1f1d6281e273c9fbea4d8fb31e463b284f22ad2e67e2707c72"
+  },
+  {
+    "tema": "Componentes quanta y documentación",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 8.png",
+    "destino": "Arquitectura de Sistemas de Software/03-Componentes quanta y documentación/adjuntos/Vistas como colecciones de decisiones.png",
+    "sha256": "d61957f9e0e2ec1e42f45d73c12e948311c553f0b520040bcf4c0f72c9808a53"
+  },
+  {
+    "tema": "Características arquitectónicas y escenarios",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 9.png",
+    "destino": "Arquitectura de Sistemas de Software/04-Características arquitectónicas y escenarios/adjuntos/Tipos de requisitos no funcionales.png",
+    "sha256": "dac06928bc03be41568a28c34e0c844541bb0800c92ccc7e0ef19daa24b50246"
+  },
+  {
+    "tema": "Características arquitectónicas y escenarios",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I1/02,03. Atributos de calidad.pdf#page=11",
+    "destino": "Arquitectura de Sistemas de Software/04-Características arquitectónicas y escenarios/adjuntos/Seis partes de un escenario de calidad.png",
+    "sha256": "19f567ca026dc10f68aa9a8c12fe26e8e9ee85bb33aaf71747c3cd723852fcff"
+  },
+  {
+    "tema": "Características arquitectónicas y escenarios",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I1/02,03. Atributos de calidad.pdf#page=12",
+    "destino": "Arquitectura de Sistemas de Software/04-Características arquitectónicas y escenarios/adjuntos/Escenario de disponibilidad de ejemplo.png",
+    "sha256": "def084984f9e28709f492f93233964cb9d26498475f2d6a882ee48a36a22e7bc"
+  },
+  {
+    "tema": "Atributos estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 10.png",
+    "destino": "Arquitectura de Sistemas de Software/05-Atributos estructurales/adjuntos/Caso de arquitectura de capas.png",
+    "sha256": "ae1f7d3d4ba5dc85e074f69f8cd4bae8703ea8b337cafc068fa935284d354651"
+  },
+  {
+    "tema": "Atributos estructurales",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 11.png",
+    "destino": "Arquitectura de Sistemas de Software/05-Atributos estructurales/adjuntos/Atributos que favorece la arquitectura de capas.png",
+    "sha256": "d3ca01ff80df94d8ff7e1080ee43d84d65d796d51c07db906a0f1c28ed877b10"
+  },
+  {
+    "tema": "Atributos operacionales",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 12.png",
+    "destino": "Arquitectura de Sistemas de Software/06-Atributos operacionales/adjuntos/Región de AWS con tres zonas de disponibilidad.png",
+    "sha256": "e972d4c75cd24864b42aee751fa2fc2faf849cbc80ac776ff9360380b69433c9"
+  },
+  {
+    "tema": "Atributos operacionales",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I1/02,03. Atributos de calidad.pdf#page=50",
+    "destino": "Arquitectura de Sistemas de Software/06-Atributos operacionales/adjuntos/Tabla de nueves de disponibilidad.png",
+    "sha256": "02fb57c4afb84a422c9983ff07bd7834ceb1230fbea02d0e103104e9f79c0694"
+  },
+  {
+    "tema": "Atributos operacionales",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I1/02,03. Atributos de calidad.pdf#page=51",
+    "destino": "Arquitectura de Sistemas de Software/06-Atributos operacionales/adjuntos/Efecto sandía en los indicadores.png",
+    "sha256": "b95cda3912bf89ef5cfc711511b38f3e1b3ce449918a408cdce34f0f9e77a438"
+  },
+  {
+    "tema": "Atributos transversales",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7692.heic",
+    "destino": "Arquitectura de Sistemas de Software/07-Atributos transversales/adjuntos/Escalabilidad frente a elasticidad en el tiempo.png",
+    "sha256": "2b89e7c48a0ede0ff6cbed3ebb55caeee7d345a166bf11970701900342020912"
+  },
+  {
+    "tema": "Atributos transversales",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7693.heic",
+    "destino": "Arquitectura de Sistemas de Software/07-Atributos transversales/adjuntos/Componente elástico que satura a uno limitado.png",
+    "sha256": "955a83ecd0a126a5896149b8d0597e5e74c5e5e711769d37e8a1725e0319ad42"
+  },
+  {
+    "tema": "Atributos transversales",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7694.heic",
+    "destino": "Arquitectura de Sistemas de Software/07-Atributos transversales/adjuntos/Broker con workers que crecen según demanda.png",
+    "sha256": "41bfaf8dede1f7501cf15060f6205688df60b382aa486fffd04cde1d7d53c380"
+  },
+  {
+    "tema": "Atributos transversales",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/Clases/I1/02,03. Atributos de calidad.pdf#page=55",
+    "destino": "Arquitectura de Sistemas de Software/07-Atributos transversales/adjuntos/Taxonomía de McCall por perspectiva.png",
+    "sha256": "adb62e94a801c302ffec183cd0f294a2f1fca3a4861085af7dbbd9808c1e24e5"
+  },
+  {
+    "tema": "DDD estratégico",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7677.heic",
+    "destino": "Arquitectura de Sistemas de Software/08-DDD estratégico/adjuntos/Context map entre catálogo facturación envíos y atención al cliente.png",
+    "sha256": "1b713ea0751ad9016208970783704748d44c915cdf55d6b42c9523d40a46ad31"
+  },
+  {
+    "tema": "Diagramación y UML de componentes",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 13.png",
+    "destino": "Arquitectura de Sistemas de Software/09-Diagramación y UML de componentes/adjuntos/Variantes de diagramas UML.png",
+    "sha256": "26527d67a60b661895b3e55ba7d3b783c74f688285da9f53f37624bb13a0d305"
+  },
+  {
+    "tema": "Diagramación y UML de componentes",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 14.png",
+    "destino": "Arquitectura de Sistemas de Software/09-Diagramación y UML de componentes/adjuntos/Notación de componente con estereotipo e interfaces.png",
+    "sha256": "f26627623e751d7c4e06d467e61d4432756059f9598130a2b4c3aeb2d36bd757"
+  },
+  {
+    "tema": "Diagramación y UML de componentes",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 15.png",
+    "destino": "Arquitectura de Sistemas de Software/09-Diagramación y UML de componentes/adjuntos/Métodos inductivo deductivo y por referencia.png",
+    "sha256": "43fe508a28cecba2c7beb1a427889d566fa50162d6f2bdf9f4f6f4a59d442d59"
+  },
+  {
+    "tema": "Diagramación y UML de componentes",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7767.heic",
+    "destino": "Arquitectura de Sistemas de Software/09-Diagramación y UML de componentes/adjuntos/Proxy Nginx que provee a una API.png",
+    "sha256": "d2fd1bc89e1868527c3e9a977f65cbb347baf11ad753c6500a21703bbfaf09dd"
+  },
+  {
+    "tema": "Diagramación y UML de componentes",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7767_2.heic",
+    "destino": "Arquitectura de Sistemas de Software/09-Diagramación y UML de componentes/adjuntos/Interfaces provistas y requeridas.png",
+    "sha256": "d2fd1bc89e1868527c3e9a977f65cbb347baf11ad753c6500a21703bbfaf09dd"
+  },
+  {
+    "tema": "Diagramación y UML de componentes",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7769.heic",
+    "destino": "Arquitectura de Sistemas de Software/09-Diagramación y UML de componentes/adjuntos/Reverse proxy Nginx dentro de una EC2.png",
+    "sha256": "c6ca1d01e52d10de5950009cdffe658a6698545eb9d7bcc6aa9c22f3cc0ff8df"
+  },
+  {
+    "tema": "Diagramación y UML de componentes",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7771_2.heic",
+    "destino": "Arquitectura de Sistemas de Software/09-Diagramación y UML de componentes/adjuntos/Reverse proxy con balanceo de carga y broker.png",
+    "sha256": "40d42c15ddc10e4236183fe2b2c7df5b55b997b85ba62fd25d7d1c2e32ae1bfb"
+  },
+  {
+    "tema": "Diagramación y UML de componentes",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Ayudantías/image 10.png",
+    "destino": "Arquitectura de Sistemas de Software/09-Diagramación y UML de componentes/adjuntos/Diagramas de pipe and filter y peer to peer.png",
+    "sha256": "8f5b701cc32c5ccac0f6de2ade3498d969da06c8192a6dd20eb6a6282af014ef"
+  },
+  {
+    "tema": "Diagramación y UML de componentes",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Ayudantías/image 11.png",
+    "destino": "Arquitectura de Sistemas de Software/09-Diagramación y UML de componentes/adjuntos/Diagramas de pub sub y basado en eventos.png",
+    "sha256": "e6cf9ab0f40c2e6dea790d444d71e91e89119be36c9efa5e0286f1abaa956398"
+  },
+  {
+    "tema": "Diagramación y UML de componentes",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Ayudantías/image 12.png",
+    "destino": "Arquitectura de Sistemas de Software/09-Diagramación y UML de componentes/adjuntos/Diagrama de componentes de una plataforma de telemedicina.png",
+    "sha256": "e6dc08e41fb4a52565dafe55694f9a1ccbd8b67d72e6699bd1256cce70681b0b"
+  },
+  {
+    "tema": "Estilos jerárquicos y de capas",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 16.png",
+    "destino": "Arquitectura de Sistemas de Software/10-Estilos jerárquicos y de capas/adjuntos/Estilos y patrones según alcance y conocimiento de dominio.png",
+    "sha256": "b3bae1fc2bc7d212ee765254091c183b2fd6e7cbcb0b2eef6ce2477bf61f3d6e"
+  },
+  {
+    "tema": "Estilos jerárquicos y de capas",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/a9e0b2c3-0310-42e7-9240-91bdfa0e39bf.png",
+    "destino": "Arquitectura de Sistemas de Software/10-Estilos jerárquicos y de capas/adjuntos/Monolito frente a main y subrutinas.png",
+    "sha256": "40a5c52208567f8dbce8a1195d601f9ed87f86c58b31781bed150d5a963e9d42"
+  },
+  {
+    "tema": "Estilos jerárquicos y de capas",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7790.heic",
+    "destino": "Arquitectura de Sistemas de Software/10-Estilos jerárquicos y de capas/adjuntos/Capas abiertas y cerradas.png",
+    "sha256": "1635935a90b5a1845ac38305dd0396b1520a377a547d4d960b0cf97272a17c63"
+  },
+  {
+    "tema": "Estilos jerárquicos y de capas",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7864.heic",
+    "destino": "Arquitectura de Sistemas de Software/10-Estilos jerárquicos y de capas/adjuntos/Arquitectura de la E1 con API Gateway.png",
+    "sha256": "d2e510a9873f690743233512cb9bab497d4c11ed358021e5df76640fdde3db9e"
+  },
+  {
+    "tema": "Estilos jerárquicos y de capas",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7865.heic",
+    "destino": "Arquitectura de Sistemas de Software/10-Estilos jerárquicos y de capas/adjuntos/Arquitectura de la E1 leída como capas.png",
+    "sha256": "66d93981681dae712fb1e57e8f522044e0cd7e70657591b9b95ee0b02c9c06eb"
+  },
+  {
+    "tema": "Estilos jerárquicos y de capas",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7867.heic",
+    "destino": "Arquitectura de Sistemas de Software/10-Estilos jerárquicos y de capas/adjuntos/Máquinas virtuales sobre una capa de virtualización.png",
+    "sha256": "a36ee8388fd9ce556b1892797b99d34ff5151e3e14a2f760fc7d8e7cb695ed87"
+  },
+  {
+    "tema": "Estilos jerárquicos y de capas",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 17.png",
+    "destino": "Arquitectura de Sistemas de Software/10-Estilos jerárquicos y de capas/adjuntos/Máquinas virtuales frente a contenedores.png",
+    "sha256": "a4c61ce728398d57a611da47a2559d7073317f8dc0054f1bc5bcc4518e120e59"
+  },
+  {
+    "tema": "Estilos jerárquicos y de capas",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/99c9b5f4-8641-49c7-b006-e0250f1f935b.png",
+    "destino": "Arquitectura de Sistemas de Software/10-Estilos jerárquicos y de capas/adjuntos/Microkernel con plugins frente a main y subrutinas.png",
+    "sha256": "100e101c734d46905662282d4b71a59b398d2527600f9d306b1056df96be0170"
+  },
+  {
+    "tema": "Flujo de datos e invocación implícita",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7877.heic",
+    "destino": "Arquitectura de Sistemas de Software/11-Flujo de datos e invocación implícita/adjuntos/Componente de flujo de datos.png",
+    "sha256": "fef99c19cceaf9204a918ed6f04cb411fcad73e3ae415d107dc0d1eb4fa7d19c"
+  },
+  {
+    "tema": "Flujo de datos e invocación implícita",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7878.heic",
+    "destino": "Arquitectura de Sistemas de Software/11-Flujo de datos e invocación implícita/adjuntos/Lotes secuenciales frente a capas.png",
+    "sha256": "05803889e63b5c91aa9a36be6ec03d4501e4b5a6a260d86c50fe868b3c2de9b3"
+  },
+  {
+    "tema": "Flujo de datos e invocación implícita",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7879.heic",
+    "destino": "Arquitectura de Sistemas de Software/11-Flujo de datos e invocación implícita/adjuntos/Pipeline map reduce como pipe and filter.png",
+    "sha256": "8d24696ce9770df3f2d814e637791f4902accc39669742fcf4756bc6a4be5ffa"
+  },
+  {
+    "tema": "Flujo de datos e invocación implícita",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/65dc6081-e448-4112-8715-012846982fae.png",
+    "destino": "Arquitectura de Sistemas de Software/11-Flujo de datos e invocación implícita/adjuntos/Pipe and filter en UML.png",
+    "sha256": "d0971e7cd8ee15ef4ecfd44d5a3917368d4d82c6bb5cc90311683f9136a486ea"
+  },
+  {
+    "tema": "Flujo de datos e invocación implícita",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/793ceee3-3092-4897-816c-50a5582b681e.png",
+    "destino": "Arquitectura de Sistemas de Software/11-Flujo de datos e invocación implícita/adjuntos/Productor manejador de eventos y consumidor.png",
+    "sha256": "cd6c98fedfb4ec487a6e5ec693601c66cbc9415fe5c48430120b1d56fe33ba6b"
+  },
+  {
+    "tema": "Flujo de datos e invocación implícita",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7968.heic",
+    "destino": "Arquitectura de Sistemas de Software/11-Flujo de datos e invocación implícita/adjuntos/Productor cola y workers.png",
+    "sha256": "c16faa0436f12010e3c4c3136ce92f55178d7f9b8488eadb42f11e4e3d88f335"
+  },
+  {
+    "tema": "Flujo de datos e invocación implícita",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 18.png",
+    "destino": "Arquitectura de Sistemas de Software/11-Flujo de datos e invocación implícita/adjuntos/Topología broker de EDA con canales de eventos.png",
+    "sha256": "f9e0c8539f201f4913d8d357cbdc763ebc0a27a63501005d2c124eda01bd37bd"
+  },
+  {
+    "tema": "Arquitecturas orientadas a servicios",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 19.png",
+    "destino": "Arquitectura de Sistemas de Software/12-Arquitecturas orientadas a servicios/adjuntos/SOA con bus de servicios.png",
+    "sha256": "eb9089c5d3364acc1475ee60c1502a91961ec4e3f801b77c976865261bf4020b"
+  },
+  {
+    "tema": "Arquitecturas orientadas a servicios",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7969.heic",
+    "destino": "Arquitectura de Sistemas de Software/12-Arquitecturas orientadas a servicios/adjuntos/Servicios conectados a un bus de servicios.png",
+    "sha256": "91b2434c43937eed8c6153b47d01a2ff09686da655fa5625752b6a581380f20c"
+  },
+  {
+    "tema": "Arquitecturas orientadas a servicios",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7972.heic",
+    "destino": "Arquitectura de Sistemas de Software/12-Arquitecturas orientadas a servicios/adjuntos/Servicio de autenticación compartido y microservicios.png",
+    "sha256": "5c6120e8f6d0acdf6630815d4a43f8b62b0f9e781c628e18d898e7fb91987c02"
+  },
+  {
+    "tema": "Arquitecturas orientadas a servicios",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/c3da633c-2f43-40f7-be10-f783c967c27c.png",
+    "destino": "Arquitectura de Sistemas de Software/12-Arquitecturas orientadas a servicios/adjuntos/Microservicios con base propia detrás de una API Gateway.png",
+    "sha256": "aa0ed7fff8c7854c145f31523ceb64f6f7c6052df8ca040aa229d62e97114568"
+  },
+  {
+    "tema": "Otros estilos arquitectónicos",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7987.heic",
+    "destino": "Arquitectura de Sistemas de Software/13-Otros estilos arquitectónicos/adjuntos/Intérprete y código móvil.png",
+    "sha256": "a2d9d14bbd4010f4b68f061ca2a402de7fa185a76b5c49fb694bfb774a7aa146"
+  },
+  {
+    "tema": "Otros estilos arquitectónicos",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7988.heic",
+    "destino": "Arquitectura de Sistemas de Software/13-Otros estilos arquitectónicos/adjuntos/Memoria compartida basada en reglas.png",
+    "sha256": "866bc5e0c60bda8016e059795eb400d2dbc657898d1ad64121d7c4901acc0508"
+  },
+  {
+    "tema": "Otros estilos arquitectónicos",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7989.heic",
+    "destino": "Arquitectura de Sistemas de Software/13-Otros estilos arquitectónicos/adjuntos/Pizarra con fuentes de conocimiento.png",
+    "sha256": "cd15a201b0692a18ecaa847c9c73873e80e5be28b9811cb3780b719f953e2975"
+  },
+  {
+    "tema": "Otros estilos arquitectónicos",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7990.heic",
+    "destino": "Arquitectura de Sistemas de Software/13-Otros estilos arquitectónicos/adjuntos/Cliente servidor frente a P2P.png",
+    "sha256": "aa96bc97976bdaa2b10e7f9d264039bd20219d5f238f4dd73b6e307dd9978915"
+  },
+  {
+    "tema": "Infraestructura y despliegue en la nube",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7674.heic",
+    "destino": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube/adjuntos/Croquis de Dockerfile imagen y contenedor.png",
+    "sha256": "1cc0477ff8d0363d64c0b6e446a4c3e17dee2ffc3204dd0c4b9e84e2a196a860"
+  },
+  {
+    "tema": "Infraestructura y despliegue en la nube",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7676.heic",
+    "destino": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube/adjuntos/Croquis de contenedores conectados con Docker Compose.png",
+    "sha256": "c664d80447268184899e94410690a4accde687ccee2478b51ef48f48846973a0"
+  },
+  {
+    "tema": "Infraestructura y despliegue en la nube",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Ayudantías/image.png",
+    "destino": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube/adjuntos/Aplicaciones en el host frente a contenedores.png",
+    "sha256": "4fa5a6046573be3d6a100b50f18974e9c2c25296123612eec382ffa4d8a75190"
+  },
+  {
+    "tema": "Infraestructura y despliegue en la nube",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Ayudantías/image 1.png",
+    "destino": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube/adjuntos/Instrucciones de un Dockerfile.png",
+    "sha256": "aecb84752862a23ffb6f845b341d52b2918c620d0b75b5e74701bd0d61de1f42"
+  },
+  {
+    "tema": "Infraestructura y despliegue en la nube",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Ayudantías/image 2.png",
+    "destino": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube/adjuntos/Comandos de Docker Compose.png",
+    "sha256": "d6ebea00fa7001d26e67acbe63ee806cc2ae3da70d65328920af8aa894ffb4d6"
+  },
+  {
+    "tema": "Infraestructura y despliegue en la nube",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Ayudantías/image 3.png",
+    "destino": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube/adjuntos/Modelo TCP IP por capas.png",
+    "sha256": "3a96c72b7f3742991db51ae49559df5321a7ec7ade2373e62f88cc963209444e"
+  },
+  {
+    "tema": "Infraestructura y despliegue en la nube",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Ayudantías/image 4.png",
+    "destino": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube/adjuntos/Enrutamiento entre redes.png",
+    "sha256": "850f4c8f584c427270ebb3a8347e346123c7e84fa3eef95aa1d7ab6bfb1164f1"
+  },
+  {
+    "tema": "Infraestructura y despliegue en la nube",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Ayudantías/image 5.png",
+    "destino": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube/adjuntos/Resolución DNS paso a paso.png",
+    "sha256": "65906650b35886bdb6263616dcec6ed4af881797fc65619adfeb47816a1c6378"
+  },
+  {
+    "tema": "Infraestructura y despliegue en la nube",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Ayudantías/image 6.png",
+    "destino": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube/adjuntos/Servidor web entre cliente y servidor de aplicación.png",
+    "sha256": "e99e8140b99ff46dfc6fbc78907c1a1ff5ce98d4f1a45ad507e9c9ba0745a69d"
+  },
+  {
+    "tema": "Infraestructura y despliegue en la nube",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Ayudantías/image 7.png",
+    "destino": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube/adjuntos/Forward proxy frente a reverse proxy.png",
+    "sha256": "cdeda96e37b4fe7d1a63272317af3192a138caaeb71007599241ba4d87eb7cd1"
+  },
+  {
+    "tema": "Infraestructura y despliegue en la nube",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Ayudantías/image 8.png",
+    "destino": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube/adjuntos/Flujo de un reverse proxy.png",
+    "sha256": "d8caeaa717ea6250f72047367d2c541285723986ac70e4a76c3c2f677fb4dec5"
+  },
+  {
+    "tema": "Infraestructura y despliegue en la nube",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Ayudantías/image 9.png",
+    "destino": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube/adjuntos/Despliegue básico en una EC2.png",
+    "sha256": "8230da9cfd618560caa0bcd55a2cfab035bcef54fcfee82c8d5adcc13d4fcfe2"
+  },
+  {
+    "tema": "Infraestructura y despliegue en la nube",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Ayudantías/image 13.png",
+    "destino": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube/adjuntos/Flujo de almacenamiento en Amazon S3.png",
+    "sha256": "cb3799ebd430f1f133dd76c0fd9184e2e25268978024c54829b8fd08f45886d6"
+  },
+  {
+    "tema": "Resolución de casos de diseño",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/I1/documentos-del-compilado/P2_I1_2026-1.png",
+    "destino": "Arquitectura de Sistemas de Software/26-Resolución de casos de diseño/adjuntos/Diagrama de referencia de integración bancaria con plugins.png",
+    "sha256": "a53d84cc1f5cc38b00221bb4a355f6b67400263bfa7e87b3ba9363e4afe131cc"
+  },
+  {
+    "tema": "Resolución de casos de diseño",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/I1/documentos-del-compilado/MichiGuardian C.png",
+    "destino": "Arquitectura de Sistemas de Software/26-Resolución de casos de diseño/adjuntos/Diagrama de referencia de MichiGuardian.png",
+    "sha256": "f52413e72d511f094669321fa481ed204e9a9df4be4c92d8fde059926ff7cf7b"
+  },
+  {
+    "tema": "Resolución de casos de diseño",
+    "tipo": "slide",
+    "original": "Semestre 8/Arquisis/Syllabus/I1/documentos-del-compilado/Fundacion SCP.png",
+    "destino": "Arquitectura de Sistemas de Software/26-Resolución de casos de diseño/adjuntos/Diagrama de referencia de Fundación SCP con pipe and filter.png",
+    "sha256": "020fe3c071c5163140a1a75646180757f13b820cd3f68c5c9472780dd4e49305"
+  },
+  {
+    "tema": "Gestión del curso",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 4.png",
+    "destino": "Arquitectura de Sistemas de Software/28-Gestión del curso/adjuntos/Plan del curso entre proyecto y cátedra.png",
+    "sha256": "db220733730674f76dfe441a9ab9237c628e1d6a11853d8a5f864cd8837b346f"
+  }
+]

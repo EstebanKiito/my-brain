@@ -1,0 +1,473 @@
+{
+  "_descripcion": "Mapeo de las fuentes originales (rutas relativas a _raw/) a los temas del vault para Arquitectura de Sistemas de Software (IIC2173). Combina los apuntes de Notion del usuario ('clases_i1', 'clases_i2', 'ayudantias') con las slides del curso 2026-2, las ayudantías en PDF, los compilados de preguntas y las pautas de interrogaciones. Las notas se reescriben según _meta/ESTANDAR-NOTAS.md y NIVEL-DETALLE.md con enfoque de estudio para la prueba, por eso 'cobertura' es 'reescrita' y cada nota lleva de 5 a 8 preguntas de repaso.",
+  "carpeta_ramo": "Arquitectura de Sistemas de Software",
+  "cobertura": "reescrita",
+  "preguntas_repaso": [
+    5,
+    8
+  ],
+  "fuentes": {
+    "clases_i1": "Semestre 8/Arquisis/Clases i1 3b460dd6de818033ad66eba09558cb40.html",
+    "clases_i2": "Semestre 8/Arquisis/Clases I2 3ec60dd6de818085b49ac7740c0e59e4.html",
+    "ayudantias": "Semestre 8/Arquisis/Ayudantías 3bc60dd6de81805d8522f32cfc79b693.html"
+  },
+  "temas": {
+    "Fundamentos de la arquitectura de software": {
+      "carpeta": "Arquitectura de Sistemas de Software/01-Fundamentos de la arquitectura de software",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Clase 1",
+          "hasta": "Plan del Curso"
+        },
+        {
+          "fuente": "clases_i1",
+          "desde": "Facts clave en arquitectura",
+          "hasta": "Cohesión"
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Arquisis/Syllabus/Clases/I1/00,01. Introducción - Definiciones.pdf"
+      ]
+    },
+    "Cohesión acoplamiento y connascence": {
+      "carpeta": "Arquitectura de Sistemas de Software/02-Cohesión acoplamiento y connascence",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Cohesión",
+          "hasta": "Clase 3"
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Arquisis/Syllabus/Clases/I1/00,01. Introducción - Definiciones.pdf"
+      ]
+    },
+    "Componentes quanta y documentación": {
+      "carpeta": "Arquitectura de Sistemas de Software/03-Componentes quanta y documentación",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Clase 3",
+          "hasta": "Clase 4"
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Arquisis/Syllabus/Clases/I1/00,01. Introducción - Definiciones.pdf"
+      ]
+    },
+    "Características arquitectónicas y escenarios": {
+      "carpeta": "Arquitectura de Sistemas de Software/04-Características arquitectónicas y escenarios",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Clase 4",
+          "hasta": "Requisitos Estructurales"
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Arquisis/Syllabus/Clases/I1/02,03. Atributos de calidad.pdf"
+      ]
+    },
+    "Atributos estructurales": {
+      "carpeta": "Arquitectura de Sistemas de Software/05-Atributos estructurales",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Requisitos Estructurales",
+          "hasta": "Requisitos Operacionales"
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Arquisis/Syllabus/Clases/I1/02,03. Atributos de calidad.pdf"
+      ]
+    },
+    "Atributos operacionales": {
+      "carpeta": "Arquitectura de Sistemas de Software/06-Atributos operacionales",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Requisitos Operacionales",
+          "hasta": "Clase 6"
+        },
+        {
+          "fuente": "clases_i1",
+          "desde": "Escalabilidad",
+          "hasta": "DDD: Diseño por Dominio"
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Arquisis/Syllabus/Clases/I1/02,03. Atributos de calidad.pdf"
+      ]
+    },
+    "Atributos transversales": {
+      "carpeta": "Arquitectura de Sistemas de Software/07-Atributos transversales",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Clase 7",
+          "hasta": "Clase 8"
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Arquisis/Syllabus/Clases/I1/04,05. NFR,UML.pdf"
+      ]
+    },
+    "DDD estratégico": {
+      "carpeta": "Arquitectura de Sistemas de Software/08-DDD estratégico",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "DDD: Diseño por Dominio",
+          "hasta": "Clase 7"
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Arquisis/Syllabus/Clases/I1/04,05. NFR,UML.pdf"
+      ]
+    },
+    "Diagramación y UML de componentes": {
+      "carpeta": "Arquitectura de Sistemas de Software/09-Diagramación y UML de componentes",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Clase 8",
+          "hasta": "Clase 9"
+        },
+        {
+          "fuente": "ayudantias",
+          "desde": "Ayudantía 4: UML",
+          "hasta": "Ayudantía 5: Cloud y S3"
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Arquisis/Syllabus/Clases/I1/04,05. NFR,UML.pdf",
+        "Semestre 8/Arquisis/Syllabus/I1/AY04 - UML I.pdf",
+        "Semestre 8/Arquisis/Syllabus/I1/AY06 -UML II.pdf"
+      ]
+    },
+    "Estilos jerárquicos y de capas": {
+      "carpeta": "Arquitectura de Sistemas de Software/10-Estilos jerárquicos y de capas",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Clase 9",
+          "hasta": "Clase 11"
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Arquisis/Syllabus/Clases/I1/06,07. E&P,E&P.pdf"
+      ]
+    },
+    "Flujo de datos e invocación implícita": {
+      "carpeta": "Arquitectura de Sistemas de Software/11-Flujo de datos e invocación implícita",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Clase 11",
+          "hasta": "Retomando Historia"
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Arquisis/Syllabus/Clases/I1/06,07. E&P,E&P.pdf",
+        "Semestre 8/Arquisis/Syllabus/Clases/I1/08,09. E&P,E&P.pdf"
+      ]
+    },
+    "Arquitecturas orientadas a servicios": {
+      "carpeta": "Arquitectura de Sistemas de Software/12-Arquitecturas orientadas a servicios",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Retomando Historia",
+          "hasta": "Interprete"
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Arquisis/Syllabus/Clases/I1/08,09. E&P,E&P.pdf"
+      ]
+    },
+    "Otros estilos arquitectónicos": {
+      "carpeta": "Arquitectura de Sistemas de Software/13-Otros estilos arquitectónicos",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Interprete",
+          "hasta": null
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Arquisis/Syllabus/Clases/I1/08,09. E&P,E&P.pdf",
+        "../LICC-Cursos/Optativos/ARQUISIS-IIC2173/Clases/10. E&P.pdf (fuera de _raw)"
+      ]
+    },
+    "Integración y relaciones entre contextos": {
+      "carpeta": "Arquitectura de Sistemas de Software/14-Integración y relaciones entre contextos",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "clases_i2",
+          "desde": "Clase 13: Integración",
+          "hasta": "Recordando el Monolito"
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Arquisis/Syllabus/Clases/I2/11,12,13,14. Integración v2.pdf",
+        "Semestre 8/Arquisis/Syllabus/Ayudantías/AY09 - UML + Integración + Performance/AY09 UML+Integracion+Performance.pdf",
+        "Semestre 8/Arquisis/Syllabus/Interrogaciones/I2 2026 - 1.pdf",
+        "Semestre 8/Arquisis/Syllabus/Interrogaciones/Pauta Examen - 2025-2.pdf",
+        "Semestre 8/Arquisis/Syllabus/Interrogaciones/Pauta I1 - 2025-2.pdf"
+      ]
+    },
+    "Middleware orientado a mensajes": {
+      "carpeta": "Arquitectura de Sistemas de Software/15-Middleware orientado a mensajes",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "clases_i2",
+          "desde": "Recordando el Monolito",
+          "hasta": "Rest"
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Arquisis/Syllabus/Clases/I2/11,12,13,14. Integración v2.pdf"
+      ]
+    },
+    "REST y contratos de API": {
+      "carpeta": "Arquitectura de Sistemas de Software/16-REST y contratos de API",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "clases_i2",
+          "desde": "Rest",
+          "hasta": "gRPC"
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Arquisis/Syllabus/Clases/I2/11,12,13,14. Integración v2.pdf"
+      ]
+    },
+    "gRPC GraphQL y MCP": {
+      "carpeta": "Arquitectura de Sistemas de Software/17-gRPC GraphQL y MCP",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "clases_i2",
+          "desde": "gRPC",
+          "hasta": null
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Arquisis/Syllabus/Clases/I2/11,12,13,14. Integración v2.pdf"
+      ]
+    },
+    "DDD táctico": {
+      "carpeta": "Arquitectura de Sistemas de Software/18-DDD táctico",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 8/Arquisis/Syllabus/Clases/I2/19ab - bloque-ddd-tactico.pdf",
+        "Semestre 8/Arquisis/Syllabus/I1/AY07 - UML III.pdf",
+        "Semestre 8/Arquisis/Syllabus/Ayudantías/AY08 - UML + DDD/AY08 - UML 4.pdf"
+      ]
+    },
+    "Fundamentos de performance": {
+      "carpeta": "Arquitectura de Sistemas de Software/19-Fundamentos de performance",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf",
+        "Semestre 8/Arquisis/Syllabus/I2/Apuntes_I2.pdf"
+      ]
+    },
+    "Hardware red y performance": {
+      "carpeta": "Arquitectura de Sistemas de Software/20-Hardware red y performance",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf",
+        "Semestre 8/Arquisis/Syllabus/I2/Apuntes_I2.pdf"
+      ]
+    },
+    "Caché y protocolos web": {
+      "carpeta": "Arquitectura de Sistemas de Software/21-Caché y protocolos web",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf",
+        "Semestre 8/Arquisis/Syllabus/I2/Apuntes_I2.pdf"
+      ]
+    },
+    "Asincronía y control de demanda": {
+      "carpeta": "Arquitectura de Sistemas de Software/22-Asincronía y control de demanda",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 8/Arquisis/Syllabus/Clases/I2/15,16,17,18. Performance.pdf",
+        "Semestre 8/Arquisis/Syllabus/I2/Apuntes_I2.pdf"
+      ]
+    },
+    "Medición de escalabilidad": {
+      "carpeta": "Arquitectura de Sistemas de Software/23-Medición de escalabilidad",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 8/Arquisis/Syllabus/Clases/I2/19,20,21. Escalabilidad.pdf",
+        "Semestre 8/Arquisis/Syllabus/I2/Apuntes_I2.pdf"
+      ]
+    },
+    "Métodos de escalabilidad": {
+      "carpeta": "Arquitectura de Sistemas de Software/24-Métodos de escalabilidad",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 8/Arquisis/Syllabus/Clases/I2/19,20,21. Escalabilidad.pdf",
+        "Semestre 8/Arquisis/Syllabus/I2/Apuntes_I2.pdf"
+      ]
+    },
+    "Escalabilidad de datos": {
+      "carpeta": "Arquitectura de Sistemas de Software/25-Escalabilidad de datos",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 8/Arquisis/Syllabus/Clases/I2/19,20,21. Escalabilidad.pdf",
+        "Semestre 8/Arquisis/Syllabus/I2/Apuntes_I2.pdf"
+      ]
+    },
+    "Resolución de casos de diseño": {
+      "carpeta": "Arquitectura de Sistemas de Software/26-Resolución de casos de diseño",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "ayudantias",
+          "desde": "Ayudantía 6",
+          "hasta": null
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Arquisis/Syllabus/I1/Compilado Preguntas I1.pdf",
+        "Semestre 8/Arquisis/Syllabus/I2/Compilado Preguntas I2.pdf"
+      ]
+    },
+    "Infraestructura y despliegue en la nube": {
+      "carpeta": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Clase 6",
+          "hasta": "Escalabilidad"
+        },
+        {
+          "fuente": "ayudantias",
+          "desde": "Ayudantía 1: Cloud y AWS",
+          "hasta": "Ayudantía 4: UML"
+        },
+        {
+          "fuente": "ayudantias",
+          "desde": "Ayudantía 5: Cloud y S3",
+          "hasta": "Ayudantía 6"
+        }
+      ],
+      "pdfs": [
+        "Semestre 8/Arquisis/Ayudantías/Guía Completa de Contenedorización y Docker para A 3c660dd6de81805381d1f1486d60a28b.html",
+        "Semestre 8/Arquisis/Syllabus/Ayudantías/AY01 - Intro a Cloud/AY01 - Intro a Cloud.pdf",
+        "Semestre 8/Arquisis/Syllabus/Ayudantías/AY02 - Docker & Docker-Compose/AY02 - Docker & Docker-Compose.pdf.pdf",
+        "Semestre 8/Arquisis/Syllabus/Ayudantías/AY03 - DNS; Nginx y Deployment/AY03 - DNS; Nginx y Deployment.pdf",
+        "Semestre 8/Arquisis/Syllabus/Ayudantías/AY05 - Cloud Storage & Deploy/AY05 - Cloud Storage & Deploy.pdf",
+        "Semestre 8/Arquisis/Syllabus/Ayudantías/AY10 - IaaC: infrastructure as a code/AY10 Iaac.pdf"
+      ]
+    },
+    "Gestión del curso": {
+      "carpeta": "Arquitectura de Sistemas de Software/28-Gestión del curso",
+      "estado": "hecho",
+      "secciones": [
+        {
+          "fuente": "clases_i1",
+          "desde": "Plan del Curso",
+          "hasta": "Facts clave en arquitectura"
+        }
+      ],
+      "pdfs": []
+    }
+  },
+  "aceptados": [
+    {
+      "fuente": "clases_i2",
+      "texto": "[Copiar]",
+      "motivo": "Recordatorio personal de completar los apuntes sobre SOA; el contenido se toma de las slides de Integración y de Estilos y patrones."
+    },
+    {
+      "fuente": "clases_i1",
+      "texto": "[Copiar del video]",
+      "motivo": "Recordatorio personal en interoperabilidad; el contenido se tomó de las slides 27-31 de Atributos de calidad."
+    },
+    {
+      "fuente": "clases_i1",
+      "texto": "[Copiar del Video: Ultimos 10 minutos] → Reusabilidad hasta Usabilidad",
+      "motivo": "Recordatorio personal; reusabilidad, soporte, eficiencia y usabilidad se tomaron de las slides 7-10 de NFR."
+    },
+    {
+      "fuente": "clases_i1",
+      "texto": "[copiar dudas del compañero]",
+      "motivo": "Recordatorio personal sin contenido."
+    },
+    {
+      "fuente": "clases_i1",
+      "texto": "[Copiar lo que dijo el profe → No le entendí]",
+      "motivo": "Recordatorio personal en UML; el contenido se tomó de las slides 33-44 de NFR,UML."
+    },
+    {
+      "fuente": "clases_i1",
+      "texto": "[COPIAR]",
+      "motivo": "Recordatorio personal en estilo vs patrón; el contenido se tomó de las slides de Estilos y patrones."
+    },
+    {
+      "fuente": "clases_i1",
+      "texto": "[Copiar]",
+      "motivo": "Recordatorio personal en ventajas y desventajas de capas; el contenido se tomó de las slides 26-27 de Estilos y patrones."
+    },
+    {
+      "fuente": "clases_i1",
+      "texto": "[Copiar últimos 10 minutos]",
+      "motivo": "Recordatorio personal en EDA; las topologías se tomaron de las slides de Estilos y patrones."
+    },
+    {
+      "fuente": "ayudantias",
+      "texto": "[Copiar]",
+      "motivo": "Recordatorio personal en la sección 'Pregunta I1 - 2025-2' de la ayudantía de UML; los casos de pruebas se resuelven en el tema Resolución de casos de diseño."
+    },
+    {
+      "fuente": "clases_i1",
+      "link": "http://Readme.md",
+      "motivo": "Autolink que Notion generó a partir del nombre de archivo en el comando `cat Readme.md`; no es un enlace real."
+    },
+    {
+      "fuente": "ayudantias",
+      "texto": "[Copiar de la ayudantia]",
+      "motivo": "Recordatorio personal; los modelos de cloud se completaron con AY01."
+    },
+    {
+      "fuente": "ayudantias",
+      "texto": "[Copiar Word y PPT]",
+      "motivo": "Recordatorio personal; los pasos de la demo de EC2 se completaron con AY01 y el resumen de levantar una instancia."
+    },
+    {
+      "fuente": "ayudantias",
+      "texto": "[Copiar]",
+      "motivo": "Recordatorio personal en la ayudantía de cloud; se completó con AY01."
+    }
+  ]
+}
