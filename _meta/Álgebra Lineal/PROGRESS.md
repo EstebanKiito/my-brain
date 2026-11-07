@@ -11,7 +11,7 @@ Rama: `migrar/algebra-lineal`. Un commit por tema. Antes de cada commit se corre
 | 4 | Reducción por filas | `04-Reducción por filas/` | ✅ hecho | 4 + índice | 0 |
 | 5 | Conjuntos solución e independencia lineal | `05-Conjuntos solución e independencia lineal/` | ✅ hecho | 5 + índice | 4 |
 | 6 | Transformaciones lineales | `06-Transformaciones lineales/` | ✅ hecho | 4 + índice | 4 |
-| 7 | Álgebra de matrices, inversa y LU | `07-Álgebra de matrices, inversa y LU/` | ⏳ pendiente | – | – |
+| 7 | Álgebra de matrices, inversa y LU | `07-Álgebra de matrices, inversa y LU/` | ✅ hecho | 7 + índice | 2 |
 | 8 | Determinantes | `08-Determinantes/` | ⏳ pendiente | – | – |
 | 9 | Espacios y subespacios vectoriales | `09-Espacios y subespacios vectoriales/` | ⏳ pendiente | – | – |
 | 10 | Coordenadas, dimensión y rango | `10-Coordenadas, dimensión y rango/` | ⏳ pendiente | – | – |
@@ -40,3 +40,4 @@ Rama: `migrar/algebra-lineal`. Un commit por tema. Antes de cada commit se corre
 - **2026-11-07 · Conjuntos solución e independencia lineal.** Fuentes: slides 11-12 (sistemas homogéneos, traslación, varios lados derechos, construir un sistema a partir de su solución, independencia lineal y casos simples) y Lay 1.5 y 1.7. Ejercicios: 16 en dos notas (Ejercita). 5 notas; 1 figura de clase.
 - **2026-11-07 · Transformaciones lineales.** Fuentes: slides 13-14 (transformación matricial, linealidad, propiedades, matriz estándar, rotación, sobre e inyectiva) y Lay 1.8-1.9, incluidas las tablas de las págs. 73-75 (escritas como tabla) y los ejercicios 19 (pág. 69) y 35 (pág. 79) del clase a clase. Ejercicios: 8 (Ejercita); se verificó que la respuesta de 2022-1-i1-8 (entrada 11/15) es correcta, aunque no se usó por requerir inversa. 4 notas; 1 figura de clase.
 - **2026-11-07 · Figuras para temas 05 y 06 (a pedido del usuario).** Tema 05: tres figuras de Lay 1.7 (dos vectores LD/LI en R², tres vectores en R³ según si w está en Gen{u, v}, tres vectores en R² siempre LD). Tema 06: lámina del cuadrado unitario bajo ocho transformaciones del catálogo y dos GIF (trasquilado y rotación), generados con `figuras/transformaciones_del_plano.py`.
+- **2026-11-07 · Álgebra de matrices, inversa y LU.** Fuentes: slides 15-17 (operaciones, producto, transpuesta, inversa, matrices elementales, algoritmo de la inversa, teorema de la matriz invertible) y Lay 2.1-2.3; la factorización LU (Lay 2.5) no tiene slide, pero se incluyó porque aparece en casi todas las I2. Ejercicios: 16 en dos notas (Ejercita); el ejercicio LU de 4 × 4 de la I2 2022-1 es el ejemplo 1 de Lay 2.5. 7 notas; 1 figura de clase y 1 del Lay.

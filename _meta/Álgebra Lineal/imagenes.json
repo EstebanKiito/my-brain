@@ -124,5 +124,19 @@
     "original": "_meta/Álgebra Lineal/figuras/transformaciones_del_plano.py",
     "destino": "Álgebra Lineal/06-Transformaciones lineales/adjuntos/Rotación animada.gif",
     "sha256": "2ca14574e58c1ed80f771e9c5df09f35b92e5da8ff629feae31e1a58cf9d196c"
+  },
+  {
+    "tema": "Álgebra de matrices, inversa y LU",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 15 Operaciones de matrices.pdf#page=7",
+    "destino": "Álgebra Lineal/07-Álgebra de matrices, inversa y LU/adjuntos/Multiplicación por B y luego por A.png",
+    "sha256": "70038cba6548a6feb79dfa26faf66f082d59558f00585c5d8bb805bdc05436cd"
+  },
+  {
+    "tema": "Álgebra de matrices, inversa y LU",
+    "tipo": "libro",
+    "original": "Semestre 3/Algebra Lineal/Algebra-Lineal-david-lay.pdf#page=143",
+    "destino": "Álgebra Lineal/07-Álgebra de matrices, inversa y LU/adjuntos/Factorización LU del mapeo x a Ax.png",
+    "sha256": "9e8c4f2a30325fa96cb7aaa94a455a6773051a3a0a46d9a9aea1bb9c91d687fe"
   }
 ]
