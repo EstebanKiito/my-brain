@@ -349,7 +349,13 @@
     "Resolución de casos de diseño": {
       "carpeta": "Arquitectura de Sistemas de Software/26-Resolución de casos de diseño",
       "estado": "pendiente",
-      "secciones": [],
+      "secciones": [
+        {
+          "fuente": "ayudantias",
+          "desde": "Ayudantía 6",
+          "hasta": null
+        }
+      ],
       "pdfs": [
         "Semestre 8/Arquisis/Syllabus/I1/Compilado Preguntas I1.pdf",
         "Semestre 8/Arquisis/Syllabus/I2/Compilado Preguntas I2.pdf"
@@ -357,7 +363,7 @@
     },
     "Infraestructura y despliegue en la nube": {
       "carpeta": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "clases_i1",
@@ -372,10 +378,17 @@
         {
           "fuente": "ayudantias",
           "desde": "Ayudantía 5: Cloud y S3",
-          "hasta": null
+          "hasta": "Ayudantía 6"
         }
       ],
-      "pdfs": []
+      "pdfs": [
+        "Semestre 8/Arquisis/Ayudantías/Guía Completa de Contenedorización y Docker para A 3c660dd6de81805381d1f1486d60a28b.html",
+        "Semestre 8/Arquisis/Syllabus/Ayudantías/AY01 - Intro a Cloud/AY01 - Intro a Cloud.pdf",
+        "Semestre 8/Arquisis/Syllabus/Ayudantías/AY02 - Docker & Docker-Compose/AY02 - Docker & Docker-Compose.pdf.pdf",
+        "Semestre 8/Arquisis/Syllabus/Ayudantías/AY03 - DNS; Nginx y Deployment/AY03 - DNS; Nginx y Deployment.pdf",
+        "Semestre 8/Arquisis/Syllabus/Ayudantías/AY05 - Cloud Storage & Deploy/AY05 - Cloud Storage & Deploy.pdf",
+        "Semestre 8/Arquisis/Syllabus/Ayudantías/AY10 - IaaC: infrastructure as a code/AY10 Iaac.pdf"
+      ]
     },
     "Gestión del curso": {
       "carpeta": "Arquitectura de Sistemas de Software/28-Gestión del curso",
@@ -440,6 +453,21 @@
       "fuente": "clases_i1",
       "link": "http://Readme.md",
       "motivo": "Autolink que Notion generó a partir del nombre de archivo en el comando `cat Readme.md`; no es un enlace real."
+    },
+    {
+      "fuente": "ayudantias",
+      "texto": "[Copiar de la ayudantia]",
+      "motivo": "Recordatorio personal; los modelos de cloud se completaron con AY01."
+    },
+    {
+      "fuente": "ayudantias",
+      "texto": "[Copiar Word y PPT]",
+      "motivo": "Recordatorio personal; los pasos de la demo de EC2 se completaron con AY01 y el resumen de levantar una instancia."
+    },
+    {
+      "fuente": "ayudantias",
+      "texto": "[Copiar]",
+      "motivo": "Recordatorio personal en la ayudantía de cloud; se completó con AY01."
     }
   ]
 }

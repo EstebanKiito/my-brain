@@ -33,7 +33,7 @@ Orden de trabajo (pedido del usuario, que prepara la I2): primero los temas 14 a
 | 24 | Métodos de escalabilidad | `24-Métodos de escalabilidad/` | ✅ hecho | 3 + `_Índice` | 0 apuntes + 3 slide |
 | 25 | Escalabilidad de datos | `25-Escalabilidad de datos/` | ✅ hecho | 5 + `_Índice` | 0 apuntes + 3 slide |
 | 26 | Resolución de casos de diseño | `26-Resolución de casos de diseño/` | ⏳ pendiente | – | – |
-| 27 | Infraestructura y despliegue en la nube | `27-Infraestructura y despliegue en la nube/` | ⏳ pendiente | – | – |
+| 27 | Infraestructura y despliegue en la nube | `27-Infraestructura y despliegue en la nube/` | ✅ hecho | 5 + `_Índice` | 11 apuntes + 2 convertida + 0 slide |
 | 28 | Gestión del curso | `28-Gestión del curso/` | ⏳ pendiente | – | – |
 
 ## Convenciones
@@ -70,3 +70,4 @@ Orden de trabajo (pedido del usuario, que prepara la I2): primero los temas 14 a
 - **2026-11-06 · Tema 11.** `11-Flujo de datos e invocación implícita`: 3 notas + `_Índice`. Fuentes: `Clases i1` desde "Clase 11" hasta "Retomando Historia" (incluye orquestación, coreografía, RabbitMQ y pub/sub), slides 47-55 de 06,07 y 2-25 de 08,09, pautas (pipe and filter) y el V/F de pub/sub del compilado I1. Imágenes: 3 PNG de Notion y 4 fotos convertidas. El placeholder de los últimos 10 minutos de EDA se completó con las slides de topologías.
 - **2026-11-06 · Tema 12.** `12-Arquitecturas orientadas a servicios`: 2 notas + `_Índice`. Fuentes: `Clases i1` desde "Retomando Historia" hasta "Interprete" (incluye los tips de diagramación) y slides 26-34 de 08,09. Imágenes: 2 PNG de Notion y 2 fotos convertidas.
 - **2026-11-06 · Tema 13.** `13-Otros estilos arquitectónicos`: 4 notas + `_Índice`. Fuentes: `Clases i1` desde "Interprete" hasta el final, slides 35-62 de 08,09 (incluidas las tablas resumen 56-62) y `10. E&P.pdf` de LICC-Cursos (P2P y cómo elegir un estilo), más las listas de estilos válidos e inválidos de los compilados. Imágenes: 4 fotos convertidas. **Cierre del repaso I1 (temas 01-13).**
+- **2026-11-07 · Tema 27.** `27-Infraestructura y despliegue en la nube`: 5 notas + `_Índice`. Fuentes: `Clases i1` desde "Clase 6" hasta "Escalabilidad" (dudas de Docker y nginx), `Ayudantías` 1, 2, 3 y 5 (Notion), la guía de contenedorización y Docker, y los PDF AY01, AY02, AY03, AY05 y AY10 (IaaC). Imágenes: 11 PNG de Notion y 2 fotos convertidas.

@@ -698,5 +698,96 @@
     "original": "Semestre 8/Arquisis/Clases i1/IMG_7990.heic",
     "destino": "Arquitectura de Sistemas de Software/13-Otros estilos arquitectónicos/adjuntos/Cliente servidor frente a P2P.png",
     "sha256": "aa96bc97976bdaa2b10e7f9d264039bd20219d5f238f4dd73b6e307dd9978915"
+  },
+  {
+    "tema": "Infraestructura y despliegue en la nube",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7674.heic",
+    "destino": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube/adjuntos/Croquis de Dockerfile imagen y contenedor.png",
+    "sha256": "1cc0477ff8d0363d64c0b6e446a4c3e17dee2ffc3204dd0c4b9e84e2a196a860"
+  },
+  {
+    "tema": "Infraestructura y despliegue en la nube",
+    "tipo": "convertida",
+    "original": "Semestre 8/Arquisis/Clases i1/IMG_7676.heic",
+    "destino": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube/adjuntos/Croquis de contenedores conectados con Docker Compose.png",
+    "sha256": "c664d80447268184899e94410690a4accde687ccee2478b51ef48f48846973a0"
+  },
+  {
+    "tema": "Infraestructura y despliegue en la nube",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Ayudantías/image.png",
+    "destino": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube/adjuntos/Aplicaciones en el host frente a contenedores.png",
+    "sha256": "4fa5a6046573be3d6a100b50f18974e9c2c25296123612eec382ffa4d8a75190"
+  },
+  {
+    "tema": "Infraestructura y despliegue en la nube",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Ayudantías/image 1.png",
+    "destino": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube/adjuntos/Instrucciones de un Dockerfile.png",
+    "sha256": "aecb84752862a23ffb6f845b341d52b2918c620d0b75b5e74701bd0d61de1f42"
+  },
+  {
+    "tema": "Infraestructura y despliegue en la nube",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Ayudantías/image 2.png",
+    "destino": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube/adjuntos/Comandos de Docker Compose.png",
+    "sha256": "d6ebea00fa7001d26e67acbe63ee806cc2ae3da70d65328920af8aa894ffb4d6"
+  },
+  {
+    "tema": "Infraestructura y despliegue en la nube",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Ayudantías/image 3.png",
+    "destino": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube/adjuntos/Modelo TCP IP por capas.png",
+    "sha256": "3a96c72b7f3742991db51ae49559df5321a7ec7ade2373e62f88cc963209444e"
+  },
+  {
+    "tema": "Infraestructura y despliegue en la nube",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Ayudantías/image 4.png",
+    "destino": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube/adjuntos/Enrutamiento entre redes.png",
+    "sha256": "850f4c8f584c427270ebb3a8347e346123c7e84fa3eef95aa1d7ab6bfb1164f1"
+  },
+  {
+    "tema": "Infraestructura y despliegue en la nube",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Ayudantías/image 5.png",
+    "destino": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube/adjuntos/Resolución DNS paso a paso.png",
+    "sha256": "65906650b35886bdb6263616dcec6ed4af881797fc65619adfeb47816a1c6378"
+  },
+  {
+    "tema": "Infraestructura y despliegue en la nube",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Ayudantías/image 6.png",
+    "destino": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube/adjuntos/Servidor web entre cliente y servidor de aplicación.png",
+    "sha256": "e99e8140b99ff46dfc6fbc78907c1a1ff5ce98d4f1a45ad507e9c9ba0745a69d"
+  },
+  {
+    "tema": "Infraestructura y despliegue en la nube",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Ayudantías/image 7.png",
+    "destino": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube/adjuntos/Forward proxy frente a reverse proxy.png",
+    "sha256": "cdeda96e37b4fe7d1a63272317af3192a138caaeb71007599241ba4d87eb7cd1"
+  },
+  {
+    "tema": "Infraestructura y despliegue en la nube",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Ayudantías/image 8.png",
+    "destino": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube/adjuntos/Flujo de un reverse proxy.png",
+    "sha256": "d8caeaa717ea6250f72047367d2c541285723986ac70e4a76c3c2f677fb4dec5"
+  },
+  {
+    "tema": "Infraestructura y despliegue en la nube",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Ayudantías/image 9.png",
+    "destino": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube/adjuntos/Despliegue básico en una EC2.png",
+    "sha256": "8230da9cfd618560caa0bcd55a2cfab035bcef54fcfee82c8d5adcc13d4fcfe2"
+  },
+  {
+    "tema": "Infraestructura y despliegue en la nube",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Ayudantías/image 13.png",
+    "destino": "Arquitectura de Sistemas de Software/27-Infraestructura y despliegue en la nube/adjuntos/Flujo de almacenamiento en Amazon S3.png",
+    "sha256": "cb3799ebd430f1f133dd76c0fd9184e2e25268978024c54829b8fd08f45886d6"
   }
 ]

@@ -47,3 +47,7 @@ Curso sobre cómo tomar decisiones de arquitectura: qué características necesi
 23. [[23-Medición de escalabilidad/_Índice|Medición de escalabilidad]] — Definición, escenarios, cuellos de botella, métricas, tipos de pruebas y leyes de Little, Amdahl y Gustafson.
 24. [[24-Métodos de escalabilidad/_Índice|Métodos de escalabilidad]] — Vertical y horizontal, balanceo, modelación de componentes, conectores y configuraciones, Instagram, serverless, frontend y nube.
 25. [[25-Escalabilidad de datos/_Índice|Escalabilidad de datos]] — Índices, CAP y BASE, sharding y partitioning, caché y leader-follower, Google, Hadoop y Aurora.
+
+## Práctica infraestructura y gestión
+
+27. [[27-Infraestructura y despliegue en la nube/_Índice|Infraestructura y despliegue en la nube]] — Cloud y AWS, Linux y SSH, Docker y Compose, DNS, nginx y reverse proxy, S3 con CloudFront e IaaC.
