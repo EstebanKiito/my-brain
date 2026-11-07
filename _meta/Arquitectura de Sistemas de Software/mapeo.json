@@ -392,7 +392,7 @@
     },
     "Gestión del curso": {
       "carpeta": "Arquitectura de Sistemas de Software/28-Gestión del curso",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [
         {
           "fuente": "clases_i1",

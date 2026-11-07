@@ -52,3 +52,4 @@ Curso sobre cómo tomar decisiones de arquitectura: qué características necesi
 
 26. [[26-Resolución de casos de diseño/_Índice|Resolución de casos de diseño]] — Método de respuesta y casos resueltos de pruebas pasadas con sus pautas y diagramas de referencia.
 27. [[27-Infraestructura y despliegue en la nube/_Índice|Infraestructura y despliegue en la nube]] — Cloud y AWS, Linux y SSH, Docker y Compose, DNS, nginx y reverse proxy, S3 con CloudFront e IaaC.
+28. [[28-Gestión del curso/_Índice|Gestión del curso]] — 2 notas: evaluaciones y cálculo de la nota; qué entra en cada prueba y cómo estudiar.

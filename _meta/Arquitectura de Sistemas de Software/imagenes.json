@@ -810,5 +810,12 @@
     "original": "Semestre 8/Arquisis/Syllabus/I1/documentos-del-compilado/Fundacion SCP.png",
     "destino": "Arquitectura de Sistemas de Software/26-Resolución de casos de diseño/adjuntos/Diagrama de referencia de Fundación SCP con pipe and filter.png",
     "sha256": "020fe3c071c5163140a1a75646180757f13b820cd3f68c5c9472780dd4e49305"
+  },
+  {
+    "tema": "Gestión del curso",
+    "tipo": "apuntes",
+    "original": "Semestre 8/Arquisis/Clases i1/image 4.png",
+    "destino": "Arquitectura de Sistemas de Software/28-Gestión del curso/adjuntos/Plan del curso entre proyecto y cátedra.png",
+    "sha256": "db220733730674f76dfe441a9ab9237c628e1d6a11853d8a5f864cd8837b346f"
   }
 ]

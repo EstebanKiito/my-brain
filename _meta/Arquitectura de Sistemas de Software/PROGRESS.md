@@ -34,7 +34,7 @@ Orden de trabajo (pedido del usuario, que prepara la I2): primero los temas 14 a
 | 25 | Escalabilidad de datos | `25-Escalabilidad de datos/` | ✅ hecho | 5 + `_Índice` | 0 apuntes + 3 slide |
 | 26 | Resolución de casos de diseño | `26-Resolución de casos de diseño/` | ✅ hecho | 6 + `_Índice` | 0 apuntes + 3 slide |
 | 27 | Infraestructura y despliegue en la nube | `27-Infraestructura y despliegue en la nube/` | ✅ hecho | 5 + `_Índice` | 11 apuntes + 2 convertida + 0 slide |
-| 28 | Gestión del curso | `28-Gestión del curso/` | ⏳ pendiente | – | – |
+| 28 | Gestión del curso | `28-Gestión del curso/` | ✅ hecho | 2 + `_Índice` | 1 apuntes + 0 slide |
 
 ## Convenciones
 - Notas según [`_meta/ESTANDAR-NOTAS.md`](../ESTANDAR-NOTAS.md) y [`NIVEL-DETALLE.md`](NIVEL-DETALLE.md): detalle alto (hasta 150 líneas) y de 5 a 8 preguntas de repaso plegables. `mapeo.json` fija `"preguntas_repaso": [5, 8]`, que `verificar.py` usa en lugar del rango 3 a 5 de los otros ramos.
@@ -72,3 +72,4 @@ Orden de trabajo (pedido del usuario, que prepara la I2): primero los temas 14 a
 - **2026-11-06 · Tema 13.** `13-Otros estilos arquitectónicos`: 4 notas + `_Índice`. Fuentes: `Clases i1` desde "Interprete" hasta el final, slides 35-62 de 08,09 (incluidas las tablas resumen 56-62) y `10. E&P.pdf` de LICC-Cursos (P2P y cómo elegir un estilo), más las listas de estilos válidos e inválidos de los compilados. Imágenes: 4 fotos convertidas. **Cierre del repaso I1 (temas 01-13).**
 - **2026-11-07 · Tema 27.** `27-Infraestructura y despliegue en la nube`: 5 notas + `_Índice`. Fuentes: `Clases i1` desde "Clase 6" hasta "Escalabilidad" (dudas de Docker y nginx), `Ayudantías` 1, 2, 3 y 5 (Notion), la guía de contenedorización y Docker, y los PDF AY01, AY02, AY03, AY05 y AY10 (IaaC). Imágenes: 11 PNG de Notion y 2 fotos convertidas.
 - **2026-11-07 · Tema 26.** `26-Resolución de casos de diseño`: 6 notas + `_Índice`. Fuentes: compilados de preguntas I1 e I2 (2026-2), pautas I2 2025-2 e I2 2024-2, I1 2026-1 (LegitBank), `Ayudantías` desde "Ayudantía 6" (consejos para la prueba) y tres diagramas de referencia de `documentos-del-compilado` (redimensionados).
+Tema 28 Gestión del curso: 2 notas con el plan del curso, fórmulas de nota verificadas y ruta de estudio. Cierra la migración.
