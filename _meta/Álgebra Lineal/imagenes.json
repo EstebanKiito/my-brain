@@ -54,5 +54,19 @@
     "original": "Semestre 3/Algebra Lineal/Clases/Clase 04 Planos en el espacio.pdf#page=6",
     "destino": "Álgebra Lineal/02-Rectas, planos e hiperplanos/adjuntos/Forma vectorial del plano.png",
     "sha256": "e1abfa2eeb30c41b5ab5f3d88044173d60fc6fa9a432c015d042144147b7ee1a"
+  },
+  {
+    "tema": "Sistemas de ecuaciones lineales",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 05 Intersecciขn de planos y SEL.pdf#page=8",
+    "destino": "Álgebra Lineal/03-Sistemas de ecuaciones lineales/adjuntos/Posiciones relativas de dos planos.png",
+    "sha256": "2c8669c9f6d17309e364ae246ddafdd6bea69440ebdd5e9c1ccb55ac9ce22349"
+  },
+  {
+    "tema": "Sistemas de ecuaciones lineales",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 05 Intersecciขn de planos y SEL.pdf#page=9",
+    "destino": "Álgebra Lineal/03-Sistemas de ecuaciones lineales/adjuntos/Posiciones relativas de tres planos.png",
+    "sha256": "c4b96e0686113c12fdd0635d66b7eb078bd914cd2a00be786a9267031b651427"
   }
 ]

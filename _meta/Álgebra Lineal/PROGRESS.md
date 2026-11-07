@@ -7,7 +7,7 @@ Rama: `migrar/algebra-lineal`. Un commit por tema. Antes de cada commit se corre
 | 0 | Infraestructura (`_meta/Álgebra Lineal/`) | `_meta/` | ✅ hecho | – | – |
 | 1 | Vectores en Rⁿ | `01-Vectores en Rⁿ/` | ✅ hecho | 5 + índice | 5 |
 | 2 | Rectas, planos e hiperplanos | `02-Rectas, planos e hiperplanos/` | ✅ hecho | 4 + índice | 3 |
-| 3 | Sistemas de ecuaciones lineales | `03-Sistemas de ecuaciones lineales/` | ⏳ pendiente | – | – |
+| 3 | Sistemas de ecuaciones lineales | `03-Sistemas de ecuaciones lineales/` | ✅ hecho | 4 + índice | 2 |
 | 4 | Reducción por filas | `04-Reducción por filas/` | ⏳ pendiente | – | – |
 | 5 | Conjuntos solución e independencia lineal | `05-Conjuntos solución e independencia lineal/` | ⏳ pendiente | – | – |
 | 6 | Transformaciones lineales | `06-Transformaciones lineales/` | ⏳ pendiente | – | – |
@@ -34,3 +34,4 @@ Rama: `migrar/algebra-lineal`. Un commit por tema. Antes de cada commit se corre
 ## Registro
 - **2026-11-07 · Vectores en Rⁿ (piloto).** Fuentes: slides 1-3 (vectores, combinaciones lineales, Gen, producto punto, norma, distancia, Cauchy-Schwarz, ángulo, ortogonalidad, Pitágoras) y Lay 1.3. Se agregaron el patrón de demostración con productos punto, la no linealidad de la norma y la no transitividad de la ortogonalidad. Ejercicios: 7 (Ejercita 2021-2026 y PDF 2018-2019), uno con datos imposibles registrado en DUDAS. 5 notas; 5 figuras de clase.
 - **2026-11-07 · Rectas, planos e hiperplanos (piloto).** Fuentes: slides 3-4 (rectas, planos, ángulo entre planos, hiperplanos, tablas resumen). Se agregaron el producto cruz y la distancia punto-plano (no están en las slides pero se usan en las interrogaciones), el diagrama de posición relativa de dos rectas y las rectas alabeadas. Ejercicios: 8 (Ejercita). 4 notas; 3 figuras de clase.
+- **2026-11-07 · Sistemas de ecuaciones lineales.** Fuentes: slides 5-7 (intersección de planos, SEL, matrices, operaciones de fila, Ax, equivalencias) y Lay 1.1, 1.3 y 1.4 (teorema de existencia con pivote en cada fila). Las dos figuras son composiciones de las figuras de planos de la slide 5 (páginas 3 y 8-10). Ejercicios: 8 (Ejercita). 4 notas; 2 figuras de clase.
