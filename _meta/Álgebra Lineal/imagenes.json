@@ -138,5 +138,33 @@
     "original": "Semestre 3/Algebra Lineal/Algebra-Lineal-david-lay.pdf#page=143",
     "destino": "Álgebra Lineal/07-Álgebra de matrices, inversa y LU/adjuntos/Factorización LU del mapeo x a Ax.png",
     "sha256": "9e8c4f2a30325fa96cb7aaa94a455a6773051a3a0a46d9a9aea1bb9c91d687fe"
+  },
+  {
+    "tema": "Determinantes",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 21 Determinante como  rea o volumen.pdf#page=3",
+    "destino": "Álgebra Lineal/08-Determinantes/adjuntos/Área del paralelogramo de dos vectores.png",
+    "sha256": "641b830835964de6055160244d027f67b2a40cf7bd9cf737d09476e9d7a917b7"
+  },
+  {
+    "tema": "Determinantes",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 21 Determinante como  rea o volumen.pdf#page=3",
+    "destino": "Álgebra Lineal/08-Determinantes/adjuntos/Volumen del paralelepípedo de tres vectores.png",
+    "sha256": "034c04bbd24cd585546482d64b19cd7cb515d8d109575c481453d9572645198f"
+  },
+  {
+    "tema": "Determinantes",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 21 Determinante como  rea o volumen.pdf#page=8",
+    "destino": "Álgebra Lineal/08-Determinantes/adjuntos/Círculo unitario transformado en elipse.png",
+    "sha256": "c9104c88994a8795b0e95ffd7cb9dee30557e7e40016f6491cd65eb7ef576244"
+  },
+  {
+    "tema": "Determinantes",
+    "tipo": "generada",
+    "original": "_meta/Álgebra Lineal/figuras/determinante_area_orientacion.py",
+    "destino": "Álgebra Lineal/08-Determinantes/adjuntos/Determinante como factor de área y orientación.gif",
+    "sha256": "a4766b6edf98c3a56fa7e3dcc2d382592b8cf2dd51d8a4964d01d0032bfec8fd"
   }
 ]
