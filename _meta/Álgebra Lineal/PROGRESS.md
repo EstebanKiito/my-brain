@@ -10,7 +10,7 @@ Rama: `migrar/algebra-lineal`. Un commit por tema. Antes de cada commit se corre
 | 3 | Sistemas de ecuaciones lineales | `03-Sistemas de ecuaciones lineales/` | ✅ hecho | 4 + índice | 2 |
 | 4 | Reducción por filas | `04-Reducción por filas/` | ✅ hecho | 4 + índice | 0 |
 | 5 | Conjuntos solución e independencia lineal | `05-Conjuntos solución e independencia lineal/` | ✅ hecho | 5 + índice | 1 |
-| 6 | Transformaciones lineales | `06-Transformaciones lineales/` | ⏳ pendiente | – | – |
+| 6 | Transformaciones lineales | `06-Transformaciones lineales/` | ✅ hecho | 4 + índice | 1 |
 | 7 | Álgebra de matrices, inversa y LU | `07-Álgebra de matrices, inversa y LU/` | ⏳ pendiente | – | – |
 | 8 | Determinantes | `08-Determinantes/` | ⏳ pendiente | – | – |
 | 9 | Espacios y subespacios vectoriales | `09-Espacios y subespacios vectoriales/` | ⏳ pendiente | – | – |
@@ -37,3 +37,4 @@ Rama: `migrar/algebra-lineal`. Un commit por tema. Antes de cada commit se corre
 - **2026-11-07 · Sistemas de ecuaciones lineales.** Fuentes: slides 5-7 (intersección de planos, SEL, matrices, operaciones de fila, Ax, equivalencias) y Lay 1.1, 1.3 y 1.4 (teorema de existencia con pivote en cada fila). Las dos figuras son composiciones de las figuras de planos de la slide 5 (páginas 3 y 8-10). Ejercicios: 8 (Ejercita). 4 notas; 2 figuras de clase.
 - **2026-11-07 · Reducción por filas.** Fuentes: slides 8-10 (formas escalonadas, pivotes, algoritmo, bacterias, variables libres, criterio de consistencia, sistema con parámetro $a$) y Lay 1.2. Se agregaron el diagrama del algoritmo, la lectura de relaciones entre columnas en la FER y los errores típicos. Ejercicios: 8 (Ejercita). 4 notas; sin imágenes (las slides son texto).
 - **2026-11-07 · Conjuntos solución e independencia lineal.** Fuentes: slides 11-12 (sistemas homogéneos, traslación, varios lados derechos, construir un sistema a partir de su solución, independencia lineal y casos simples) y Lay 1.5 y 1.7. Ejercicios: 16 en dos notas (Ejercita). 5 notas; 1 figura de clase.
+- **2026-11-07 · Transformaciones lineales.** Fuentes: slides 13-14 (transformación matricial, linealidad, propiedades, matriz estándar, rotación, sobre e inyectiva) y Lay 1.8-1.9, incluidas las tablas de las págs. 73-75 (escritas como tabla) y los ejercicios 19 (pág. 69) y 35 (pág. 79) del clase a clase. Ejercicios: 8 (Ejercita); se verificó que la respuesta de 2022-1-i1-8 (entrada 11/15) es correcta, aunque no se usó por requerir inversa. 4 notas; 1 figura de clase.

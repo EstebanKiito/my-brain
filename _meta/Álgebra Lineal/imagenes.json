@@ -75,5 +75,12 @@
     "original": "Semestre 3/Algebra Lineal/Clases/Clase 11 Sistemas homog‚neos y conjunto soluci¢n.pdf#page=9",
     "destino": "Álgebra Lineal/05-Conjuntos solución e independencia lineal/adjuntos/Soluciones no homogéneas como traslación de las homogéneas.png",
     "sha256": "102725bb1da9f777616e6a7ee98240a6b1a49a51d9833e6f6b4003fd342df4e4"
+  },
+  {
+    "tema": "Transformaciones lineales",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 13 Transformaciones lineales.pdf#page=3",
+    "destino": "Álgebra Lineal/06-Transformaciones lineales/adjuntos/Dominio, codominio y rango de una transformación.png",
+    "sha256": "2fa4c12f1785af12dd5a32a89869d57ce22263493d011a42de6444ee50e06d1e"
   }
 ]

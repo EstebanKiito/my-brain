@@ -16,6 +16,7 @@ Vault de estudio del ramo. Cada tema reúne la teoría de las clases y del libro
 | [[Álgebra Lineal/03-Sistemas de ecuaciones lineales/_Índice\|Sistemas de ecuaciones lineales]] | Sistemas como intersección de planos, matriz ampliada, operaciones de fila y $A\mathbf x = \mathbf b$ |
 | [[Álgebra Lineal/04-Reducción por filas/_Índice\|Reducción por filas]] | Formas escalonadas, pivotes, algoritmo de Gauss-Jordan, variables libres y existencia y unicidad |
 | [[Álgebra Lineal/05-Conjuntos solución e independencia lineal/_Índice\|Conjuntos solución e independencia lineal]] | Sistemas homogéneos, solución particular más homogénea e independencia lineal |
+| [[Álgebra Lineal/06-Transformaciones lineales/_Índice\|Transformaciones lineales]] | Linealidad, matriz estándar, transformaciones del plano, inyectivas y sobreyectivas |
 
 ## Ruta de estudio y evaluaciones
 | Evaluación | Temas que entran |
