@@ -22,6 +22,14 @@ Al generar un espacio con varios vectores, algunos pueden sobrar: si uno ya es c
 
 **Ejemplo.** $\mathbf v_1 = \langle 1, 2\rangle$ y $\mathbf v_2 = \langle 3, 6\rangle$ son LD: $3\mathbf v_1 - \mathbf v_2 = \mathbf 0$.
 
+Geométricamente, dos vectores son LD cuando están sobre una misma recta por el origen, y LI cuando apuntan en direcciones distintas.
+
+![Dos vectores en R2 dependientes e independientes](adjuntos/Dos%20vectores%20en%20R2%20dependientes%20e%20independientes.png)
+
+> [!example]- Transcripción de la imagen
+> - Arriba: $\langle 3, 1\rangle$ y $\langle 6, 2\rangle$ quedan sobre la misma recta por el origen ($\langle 6, 2\rangle = 2\langle 3, 1\rangle$): **linealmente dependientes**.
+> - Abajo: $\langle 3, 2\rangle$ y $\langle 6, 2\rangle$ apuntan en direcciones distintas: ninguno es múltiplo del otro, **linealmente independientes**.
+
 ## Cómo decidirlo: un sistema homogéneo
 
 La ecuación de la definición es $A\mathbf c = \mathbf 0$ con $A = [\mathbf v_1 \cdots \mathbf v_p]$. Por el teorema de los sistemas homogéneos:
@@ -54,7 +62,19 @@ $x_3$ es libre: son LD. Con $x_3 = 1$ se obtiene $x_1 = 2$, $x_2 = -1$, es decir
 > 4. Si hay **más vectores que componentes** ($p > n$), el conjunto es LD.
 > 5. $\{\mathbf v_1, \dots, \mathbf v_p\}$ con $\mathbf v_1 \neq \mathbf 0$ es LD si y solo si **algún** $\mathbf v_j$ es combinación lineal de los **anteriores** $\mathbf v_1, \dots, \mathbf v_{j-1}$.
 
-El 4 se debe a que la matriz $n \times p$ tiene a lo más $n$ pivotes para $p > n$ columnas: queda una variable libre. Por ejemplo, cuatro vectores de $\mathbb{R}^3$ siempre son LD, sin importar cuáles sean.
+El 4 se debe a que la matriz $n \times p$ tiene a lo más $n$ pivotes para $p > n$ columnas: queda una variable libre. Por ejemplo, cuatro vectores de $\mathbb{R}^3$ siempre son LD, sin importar cuáles sean, y tres vectores de $\mathbb{R}^2$ también.
+
+El 5 tiene una lectura geométrica clara en $\mathbb{R}^3$: si $\mathbf u$ y $\mathbf v$ son LI, generan un plano, y $\{\mathbf u, \mathbf v, \mathbf w\}$ es LD exactamente cuando $\mathbf w$ cae dentro de ese plano.
+
+![Tres vectores en R3 dependientes e independientes](adjuntos/Tres%20vectores%20en%20R3%20dependientes%20e%20independientes.png)
+
+> [!example]- Transcripción de la imagen
+> Dos paneles en $\mathbb{R}^3$ con $\mathbf u$ y $\mathbf v$ sobre un plano sombreado, $\operatorname{Gen}\{\mathbf u, \mathbf v\}$. A la izquierda, $\mathbf w$ también está en el plano: el conjunto es **LD** y $\mathbf w \in \operatorname{Gen}\{\mathbf u, \mathbf v\}$. A la derecha, $\mathbf w$ sale del plano (una línea punteada marca su altura): el conjunto es **LI** y $\mathbf w \notin \operatorname{Gen}\{\mathbf u, \mathbf v\}$.
+
+![Tres vectores en R2 siempre dependientes](adjuntos/Tres%20vectores%20en%20R2%20siempre%20dependientes.png)
+
+> [!example]- Transcripción de la imagen
+> Tres vectores del plano, $\langle 2, 1\rangle$, $\langle -2, 2\rangle$ y $\langle 4, -1\rangle$, en direcciones distintas: ningún par es paralelo y aun así el conjunto es **LD**, porque son más vectores que componentes. En efecto, $\langle 4, -1\rangle = \langle 2, 1\rangle - \langle -2, 2\rangle$.
 
 **Ejemplos rápidos.**
 

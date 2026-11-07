@@ -82,5 +82,47 @@
     "original": "Semestre 3/Algebra Lineal/Clases/Clase 13 Transformaciones lineales.pdf#page=3",
     "destino": "Álgebra Lineal/06-Transformaciones lineales/adjuntos/Dominio, codominio y rango de una transformación.png",
     "sha256": "2fa4c12f1785af12dd5a32a89869d57ce22263493d011a42de6444ee50e06d1e"
+  },
+  {
+    "tema": "Conjuntos solución e independencia lineal",
+    "tipo": "libro",
+    "original": "Semestre 3/Algebra Lineal/Algebra-Lineal-david-lay.pdf#page=76",
+    "destino": "Álgebra Lineal/05-Conjuntos solución e independencia lineal/adjuntos/Dos vectores en R2 dependientes e independientes.png",
+    "sha256": "45f52bf38e42afa549fd372e5a027ff61e9da408f6f857735b59a34e94b9f0f6"
+  },
+  {
+    "tema": "Conjuntos solución e independencia lineal",
+    "tipo": "libro",
+    "original": "Semestre 3/Algebra Lineal/Algebra-Lineal-david-lay.pdf#page=76",
+    "destino": "Álgebra Lineal/05-Conjuntos solución e independencia lineal/adjuntos/Tres vectores en R3 dependientes e independientes.png",
+    "sha256": "cd773938853786753955d2973b027e56e702f1a3425eb4428b95a29ef8fe9180"
+  },
+  {
+    "tema": "Conjuntos solución e independencia lineal",
+    "tipo": "libro",
+    "original": "Semestre 3/Algebra Lineal/Algebra-Lineal-david-lay.pdf#page=77",
+    "destino": "Álgebra Lineal/05-Conjuntos solución e independencia lineal/adjuntos/Tres vectores en R2 siempre dependientes.png",
+    "sha256": "0574d08099c0f0d2152f358af9f3ebb70021e97b2bda788d273b33d8fdebdf6e"
+  },
+  {
+    "tema": "Transformaciones lineales",
+    "tipo": "generada",
+    "original": "_meta/Álgebra Lineal/figuras/transformaciones_del_plano.py",
+    "destino": "Álgebra Lineal/06-Transformaciones lineales/adjuntos/Cuadrado unitario bajo transformaciones del plano.png",
+    "sha256": "3d769d972ac7b59462e3bc824a2fcd4ecc84ab11ef6807f50ac70d383dd74110"
+  },
+  {
+    "tema": "Transformaciones lineales",
+    "tipo": "generada",
+    "original": "_meta/Álgebra Lineal/figuras/transformaciones_del_plano.py",
+    "destino": "Álgebra Lineal/06-Transformaciones lineales/adjuntos/Trasquilado horizontal animado.gif",
+    "sha256": "af490c8353245c72c0c7944d120f00ab85cc7153ecf30fda321a94ee7354a4fa"
+  },
+  {
+    "tema": "Transformaciones lineales",
+    "tipo": "generada",
+    "original": "_meta/Álgebra Lineal/figuras/transformaciones_del_plano.py",
+    "destino": "Álgebra Lineal/06-Transformaciones lineales/adjuntos/Rotación animada.gif",
+    "sha256": "2ca14574e58c1ed80f771e9c5df09f35b92e5da8ff629feae31e1a58cf9d196c"
   }
 ]

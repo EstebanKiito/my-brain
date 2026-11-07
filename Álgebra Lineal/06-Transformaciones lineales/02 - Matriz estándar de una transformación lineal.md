@@ -35,6 +35,11 @@ $$
 
 Con $\varphi = \tfrac\pi2$ se recupera $\langle x_1, x_2\rangle \mapsto \langle -x_2, x_1\rangle$.
 
+![Rotación animada](adjuntos/Rotaci%C3%B3n%20animada.gif)
+
+> [!example]- Transcripción de la animación
+> El cuadrado unitario con una letra F gira en torno al origen de $0°$ a $350°$, junto con la cuadrícula del plano. La flecha roja es $T(\mathbf e_1) = \langle\cos\varphi, \sin\varphi\rangle$ y la verde $T(\mathbf e_2) = \langle -\sin\varphi, \cos\varphi\rangle$; en la esquina se ve la matriz con esas dos columnas. La F nunca se ve al revés: una rotación conserva la orientación y las longitudes.
+
 ## Catálogo de transformaciones del plano
 
 Para cada una basta ver adónde van $\mathbf e_1$ y $\mathbf e_2$ (imaginando el cuadrado unitario que forman).
@@ -52,6 +57,21 @@ Para cada una basta ver adónde van $\mathbf e_1$ y $\mathbf e_2$ (imaginando el
 | Trasquilado vertical | $\begin{bmatrix} 1 & 0 \\ k & 1 \end{bmatrix}$ | $\mathbf e_1 \mapsto \langle 1, k\rangle$ |
 | Proyección sobre el eje $x_1$ | $\begin{bmatrix} 1 & 0 \\ 0 & 0 \end{bmatrix}$ | $\mathbf e_2 \mapsto \mathbf 0$: el cuadrado se aplasta en un segmento |
 | Proyección sobre el eje $x_2$ | $\begin{bmatrix} 0 & 0 \\ 0 & 1 \end{bmatrix}$ | $\mathbf e_1 \mapsto \mathbf 0$ |
+
+![Cuadrado unitario bajo transformaciones del plano](adjuntos/Cuadrado%20unitario%20bajo%20transformaciones%20del%20plano.png)
+
+> [!example]- Transcripción de la imagen
+> Ocho paneles con el cuadrado unitario y una F en gris, y su imagen en azul. Las flechas son $T(\mathbf e_1)$ (roja) y $T(\mathbf e_2)$ (verde), es decir, las columnas de la matriz que aparece en la esquina.
+> - **Reflexiones** (eje $x_1$, recta $x_2 = x_1$, origen): la F de las dos primeras queda "espejada", señal de que se invirtió la orientación. La del origen es un giro de $180°$ y no se espeja.
+> - **Rotación de $45°$**: el cuadrado gira sin deformarse.
+> - **Contracción horizontal** ($k = 0{,}5$): el cuadrado se angosta a la mitad.
+> - **Trasquilados**: el horizontal ($k = 1{,}5$) desliza el lado de arriba hacia la derecha; el vertical ($k = -1$) baja el lado derecho. El área no cambia.
+> - **Proyección sobre el eje $x_1$**: el cuadrado se aplasta en el segmento $[0, 1]$; la flecha verde desaparece porque $T(\mathbf e_2) = \mathbf 0$.
+
+![Trasquilado horizontal animado](adjuntos/Trasquilado%20horizontal%20animado.gif)
+
+> [!example]- Transcripción de la animación
+> El parámetro $k$ del trasquilado horizontal $\begin{bmatrix} 1 & k \\ 0 & 1 \end{bmatrix}$ va de $0$ a $1{,}5$, luego baja hasta $-1$ y vuelve a $0$. $T(\mathbf e_1)$ (roja) queda fija en $\langle 1, 0\rangle$, mientras $T(\mathbf e_2)$ (verde) se mueve horizontalmente a $\langle k, 1\rangle$. Cada línea horizontal de la cuadrícula se desliza en proporción a su altura, así que el cuadrado se vuelve un paralelogramo de la misma base y altura.
 
 ## Composiciones paso a paso
 
