@@ -13,7 +13,7 @@ Rama: `migrar/algebra-lineal`. Un commit por tema. Antes de cada commit se corre
 | 6 | Transformaciones lineales | `06-Transformaciones lineales/` | ✅ hecho | 4 + índice | 4 |
 | 7 | Álgebra de matrices, inversa y LU | `07-Álgebra de matrices, inversa y LU/` | ✅ hecho | 7 + índice | 2 |
 | 8 | Determinantes | `08-Determinantes/` | ✅ hecho | 6 + índice | 4 |
-| 9 | Espacios y subespacios vectoriales | `09-Espacios y subespacios vectoriales/` | ⏳ pendiente | – | – |
+| 9 | Espacios y subespacios vectoriales | `09-Espacios y subespacios vectoriales/` | ✅ hecho | 6 + índice | 3 |
 | 10 | Coordenadas, dimensión y rango | `10-Coordenadas, dimensión y rango/` | ⏳ pendiente | – | – |
 | 11 | Cambio de base | `11-Cambio de base/` | ⏳ pendiente | – | – |
 | 12 | Valores y vectores propios | `12-Valores y vectores propios/` | ⏳ pendiente | – | – |
@@ -42,3 +42,4 @@ Rama: `migrar/algebra-lineal`. Un commit por tema. Antes de cada commit se corre
 - **2026-11-07 · Figuras para temas 05 y 06 (a pedido del usuario).** Tema 05: tres figuras de Lay 1.7 (dos vectores LD/LI en R², tres vectores en R³ según si w está en Gen{u, v}, tres vectores en R² siempre LD). Tema 06: lámina del cuadrado unitario bajo ocho transformaciones del catálogo y dos GIF (trasquilado y rotación), generados con `figuras/transformaciones_del_plano.py`.
 - **2026-11-07 · Álgebra de matrices, inversa y LU.** Fuentes: slides 15-17 (operaciones, producto, transpuesta, inversa, matrices elementales, algoritmo de la inversa, teorema de la matriz invertible) y Lay 2.1-2.3; la factorización LU (Lay 2.5) no tiene slide, pero se incluyó porque aparece en casi todas las I2. Ejercicios: 16 en dos notas (Ejercita); el ejercicio LU de 4 × 4 de la I2 2022-1 es el ejemplo 1 de Lay 2.5. 7 notas; 1 figura de clase y 1 del Lay.
 - **2026-11-07 · Determinantes.** Fuentes: slides 18-21 (cofactores, propiedades, invertibilidad, det AB, linealidad por columnas, Cramer, adjunta, área y volumen, elipse) y Lay 3.1-3.3. El ejemplo de 5 × 5 de la slide 18 se tomó del Lay (el texto extraído de la slide estaba desordenado). Se agregaron det(adj A) = (det A)^(n-1), que aparece en las pruebas, y un GIF generado sobre área y orientación. Ejercicios: 16 en dos notas (Ejercita). 6 notas; 3 figuras de clase y 1 generada.
+- **2026-11-07 · Espacios y subespacios vectoriales.** Fuentes: slides 22-24 (espacio vectorial, subespacios, Gen, LI y bases, teorema del conjunto generador, Nul, Col, núcleo y rango) y Lay 4.1-4.3. Tres figuras recortadas del Lay (las slides no traen figuras). Ejercicios: 16 en dos notas (Ejercita; las de núcleo y rango en P2 estaban clasificadas como transformaciones). 6 notas; 3 figuras del libro.

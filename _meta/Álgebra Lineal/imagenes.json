@@ -166,5 +166,26 @@
     "original": "_meta/Álgebra Lineal/figuras/determinante_area_orientacion.py",
     "destino": "Álgebra Lineal/08-Determinantes/adjuntos/Determinante como factor de área y orientación.gif",
     "sha256": "a4766b6edf98c3a56fa7e3dcc2d382592b8cf2dd51d8a4964d01d0032bfec8fd"
+  },
+  {
+    "tema": "Espacios y subespacios vectoriales",
+    "tipo": "libro",
+    "original": "Semestre 3/Algebra Lineal/Algebra-Lineal-david-lay.pdf#page=212",
+    "destino": "Álgebra Lineal/09-Espacios y subespacios vectoriales/adjuntos/Recta que no pasa por el origen no es subespacio.png",
+    "sha256": "aa39fc193ec5f540fe7cc509457753b3300d43529dcd038409b019880dfcafb3"
+  },
+  {
+    "tema": "Espacios y subespacios vectoriales",
+    "tipo": "libro",
+    "original": "Semestre 3/Algebra Lineal/Algebra-Lineal-david-lay.pdf#page=217",
+    "destino": "Álgebra Lineal/09-Espacios y subespacios vectoriales/adjuntos/El espacio nulo va al vector cero.png",
+    "sha256": "7440c200a9f16ec5d711da3b9861ea7ed79c39ac576fa510ccc02d4f7fddbab2"
+  },
+  {
+    "tema": "Espacios y subespacios vectoriales",
+    "tipo": "libro",
+    "original": "Semestre 3/Algebra Lineal/Algebra-Lineal-david-lay.pdf#page=222",
+    "destino": "Álgebra Lineal/09-Espacios y subespacios vectoriales/adjuntos/Núcleo y rango de una transformación.png",
+    "sha256": "480ee22bc169b46cd65f99571b92e79495af788ca22dba9cf99847959fd86150"
   }
 ]
