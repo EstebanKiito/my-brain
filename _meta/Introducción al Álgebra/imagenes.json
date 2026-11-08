@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "tema": "Conjuntos y operaciones",
+    "tipo": "generada",
+    "original": "_meta/Introducción al Álgebra/figuras/venn.py",
+    "destino": "Introducción al Álgebra/03-Conjuntos y operaciones/adjuntos/diagrama de Venn de dos conjuntos.png",
+    "sha256": "b0d0305028d7a382c9dfdf9f6afffaedf88d6fa2fa67e2b6a29847843793d8f1"
+  },
+  {
+    "tema": "Conjuntos y operaciones",
+    "tipo": "generada",
+    "original": "_meta/Introducción al Álgebra/figuras/venn.py",
+    "destino": "Introducción al Álgebra/03-Conjuntos y operaciones/adjuntos/diagrama de Venn del problema de los deportistas.png",
+    "sha256": "d60feab2569ee6c17b784ba818c8aa02c4c721b6b356ca0063dd3e5471db52be"
+  }
+]
