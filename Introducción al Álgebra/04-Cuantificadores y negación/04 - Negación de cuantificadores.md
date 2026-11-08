@@ -43,6 +43,23 @@ $$
 > [!warning] Negar el predicado con De Morgan
 > Al llegar al predicado, hay que negarlo bien. La negación de $x < z < y$ (un "y") es un "o": $(x \ge z) \vee (z \ge y)$. Dejar el "y" es el error típico.
 
+Si el predicado es una implicación, se usa $\neg(p \Rightarrow q) \equiv p \wedge \neg q$: la negación de $(\forall x)(x > 2 \Rightarrow x \ge 3)$ es $(\exists x)(x > 2 \wedge x < 3)$. La negación de una implicación **no** es otra implicación.
+
+## "Escriba la negación y demuestre la proposición o su negación"
+
+Es la pregunta de cuantificadores más común en las pruebas. Exactamente una de las dos (la proposición o su negación) es verdadera, y se demuestra esa. La forma de demostrar depende del cuantificador **de afuera** de la que se elija:
+
+| Se quiere demostrar… | Cómo |
+|---|---|
+| $(\exists x)\,p(x)$ | Exhibir un **testigo** concreto y verificar $p$ en él. |
+| $(\forall x)\,p(x)$ | Tomar $x$ **arbitrario** y razonar en general (por casos si hace falta). |
+| $(\forall x)(\exists y)\,p(x, y)$ | Tomar $x$ arbitrario y construir $y$ **en función de $x$** (como $y = x + 1$ o $y = 3/x$). |
+| $(\exists x)(\forall y)\,p(x, y)$ | Elegir un $x$ fijo y probar $p(x, y)$ para todo $y$. |
+
+Con dominios finitos chicos (como $A = \{1, 2, 3, 4\}$) se puede revisar elemento por elemento; con dominios infinitos no.
+
+**Ejemplo.** $(\forall x \in \mathbb{R})\big(x < 3 \vee (\exists y \in \mathbb{R})(xy = 3)\big)$. Negación: $(\exists x \in \mathbb{R})\big(x \ge 3 \wedge (\forall y \in \mathbb{R})(xy \neq 3)\big)$. La original es verdadera: dado $x$, si $x < 3$ ya está; si $x \ge 3$, entonces $x \neq 0$ y $y = 3/x$ cumple $xy = 3$.
+
 ## Preguntas de repaso
 
 > [!question]- ¿Cuál es la negación de $(\forall x)\,p(x)$ y de $(\exists x)\,p(x)$?

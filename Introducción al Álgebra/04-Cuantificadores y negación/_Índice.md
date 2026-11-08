@@ -5,11 +5,12 @@ Funciones proposicionales y cuantificadores universal, existencial y de unicidad
 Volver al [[Introducción al Álgebra/_Índice|mapa del ramo]].
 
 > [!note] Origen
-> Reescrito a partir de la clase de la semana 4; los ejercicios vienen de la guía del curso.
+> Reescrito a partir de la clase de la semana 4; los ejercicios de la guía vienen de la guía del curso, y los de prueba, de interrogaciones y exámenes 2022-2026.
 
 ## Orden de estudio
 1. [[01 - Funciones proposicionales y cuantificadores|Funciones proposicionales y cuantificadores]]: predicados y los cuantificadores $\forall$, $\exists$ y $\exists!$.
 2. [[02 - Demostrar con cuantificadores|Demostrar con cuantificadores]]: probar "para todo" con un elemento arbitrario y "existe" exhibiendo un testigo.
 3. [[03 - Orden de los cuantificadores|Orden de los cuantificadores]]: qué conmuta, la implicación $\exists\forall \Rightarrow \forall\exists$ y por qué el orden importa.
-4. [[04 - Negación de cuantificadores|Negación de cuantificadores]]: las dos reglas de negación y cómo negar proposiciones anidadas.
-5. [[05 - Ejercicios de prueba de cuantificadores|Ejercicios de prueba de cuantificadores]]: cinco preguntas resueltas de valores de verdad, traducción y negación.
+4. [[04 - Negación de cuantificadores|Negación de cuantificadores]]: las dos reglas de negación, cómo negar proposiciones anidadas y el formato "niegue y demuestre la proposición o su negación".
+5. [[05 - Ejercicios de la guía de cuantificadores|Ejercicios de la guía de cuantificadores]]: cinco preguntas resueltas de valores de verdad, traducción y negación.
+6. [[06 - Ejercicios de prueba de cuantificadores|Ejercicios de prueba de cuantificadores]]: siete preguntas de interrogaciones y exámenes: negar y decidir, orden de cuantificadores en dominios finitos y negación con implicaciones.

@@ -9,7 +9,7 @@ prerrequisitos:
   - "[[04 - Negación de cuantificadores]]"
 ---
 
-# Ejercicios de prueba de cuantificadores
+# Ejercicios de la guía de cuantificadores
 
 Preguntas de la guía sobre cuantificadores, orden de cuantificadores, traducción de enunciados y negación. Conviene intentar cada una antes de abrir la solución.
 
