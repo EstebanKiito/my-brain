@@ -45,12 +45,10 @@
     },
     "Sumatorias, progresiones y binomio": {
       "carpeta": "Introducción al Álgebra/05-Sumatorias, progresiones y binomio",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [],
       "pdfs": [
-        "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana2.pdf",
-        "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Mickenberg.pdf",
-        "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Skibidi-IntroAlgebra.pdf"
+        "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Mickenberg.pdf"
       ]
     },
     "Polinomios: división y algoritmo de Euclides": {
