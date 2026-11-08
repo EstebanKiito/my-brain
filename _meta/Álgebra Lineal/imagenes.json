@@ -194,5 +194,19 @@
     "original": "Semestre 3/Algebra Lineal/Clases/Clase 25 Sistemas de coordenadas.pdf#page=5",
     "destino": "Álgebra Lineal/10-Coordenadas, dimensión y rango/adjuntos/Coordenadas de x en la base B.png",
     "sha256": "6d087053cd299ad1bd02ff410af01fd4b23264a3032bb28b3fd4a382d2292883"
+  },
+  {
+    "tema": "Cambio de base",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 27 Matriz de cambio de base.pdf#page=3",
+    "destino": "Álgebra Lineal/11-Cambio de base/adjuntos/Dos sistemas de coordenadas en el mismo espacio.png",
+    "sha256": "fe9b6db843b8cb716947ac3c4e6f1a67cbaa2713ebb5b1c59ff9f6bff475597a"
+  },
+  {
+    "tema": "Cambio de base",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 27 Matriz de cambio de base.pdf#page=5",
+    "destino": "Álgebra Lineal/11-Cambio de base/adjuntos/Diagrama de la matriz de cambio de coordenadas.png",
+    "sha256": "3a4fb8ed54c9a60d9ea93db3821454c02e656612dda420a35e34d9f48fdf88b6"
   }
 ]

@@ -21,6 +21,7 @@ Vault de estudio del ramo. Cada tema reúne la teoría de las clases y del libro
 | [[Álgebra Lineal/08-Determinantes/_Índice\|Determinantes]] | Cofactores, propiedades, invertibilidad, regla de Cramer, adjunta, área, volumen y orientación |
 | [[Álgebra Lineal/09-Espacios y subespacios vectoriales/_Índice\|Espacios y subespacios vectoriales]] | Espacios abstractos, subespacios, bases, Nul A y Col A, núcleo y rango |
 | [[Álgebra Lineal/10-Coordenadas, dimensión y rango/_Índice\|Coordenadas, dimensión y rango]] | Coordenadas e isomorfismo, dimensión, espacio fila y teorema del rango |
+| [[Álgebra Lineal/11-Cambio de base/_Índice\|Cambio de base]] | Matriz de cambio de coordenadas, su cálculo en Rⁿ y polinomios, y recuperar bases |
 
 ## Ruta de estudio y evaluaciones
 | Evaluación | Temas que entran |

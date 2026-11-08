@@ -15,7 +15,7 @@ Rama: `migrar/algebra-lineal`. Un commit por tema. Antes de cada commit se corre
 | 8 | Determinantes | `08-Determinantes/` | ✅ hecho | 6 + índice | 4 |
 | 9 | Espacios y subespacios vectoriales | `09-Espacios y subespacios vectoriales/` | ✅ hecho | 6 + índice | 3 |
 | 10 | Coordenadas, dimensión y rango | `10-Coordenadas, dimensión y rango/` | ✅ hecho | 4 + índice | 1 |
-| 11 | Cambio de base | `11-Cambio de base/` | ⏳ pendiente | – | – |
+| 11 | Cambio de base | `11-Cambio de base/` | ✅ hecho | 3 + índice | 2 |
 | 12 | Valores y vectores propios | `12-Valores y vectores propios/` | ⏳ pendiente | – | – |
 | 13 | Diagonalización | `13-Diagonalización/` | ⏳ pendiente | – | – |
 | 14 | Valores propios complejos | `14-Valores propios complejos/` | ⏳ pendiente | – | – |
@@ -44,3 +44,4 @@ Rama: `migrar/algebra-lineal`. Un commit por tema. Antes de cada commit se corre
 - **2026-11-07 · Determinantes.** Fuentes: slides 18-21 (cofactores, propiedades, invertibilidad, det AB, linealidad por columnas, Cramer, adjunta, área y volumen, elipse) y Lay 3.1-3.3. El ejemplo de 5 × 5 de la slide 18 se tomó del Lay (el texto extraído de la slide estaba desordenado). Se agregaron det(adj A) = (det A)^(n-1), que aparece en las pruebas, y un GIF generado sobre área y orientación. Ejercicios: 16 en dos notas (Ejercita). 6 notas; 3 figuras de clase y 1 generada.
 - **2026-11-07 · Espacios y subespacios vectoriales.** Fuentes: slides 22-24 (espacio vectorial, subespacios, Gen, LI y bases, teorema del conjunto generador, Nul, Col, núcleo y rango) y Lay 4.1-4.3. Tres figuras recortadas del Lay (las slides no traen figuras). Ejercicios: 16 en dos notas (Ejercita; las de núcleo y rango en P2 estaban clasificadas como transformaciones). 6 notas; 3 figuras del libro.
 - **2026-11-07 · Coordenadas, dimensión y rango.** Fuentes: slides 25-26 (coordenadas, isomorfismo, dimensión, teorema de la base, espacio fila, teorema del rango, continuación del teorema de la matriz invertible) y Lay 4.4-4.6. Ejercicios: 8 (Ejercita), algunos agrupando V o F relacionados. 4 notas; 1 figura de clase.
+- **2026-11-07 · Cambio de base.** Fuentes: slide 27 (cambio de base, P C←B, inversa, cambio en Rⁿ y a la base estándar) y Lay 4.7. Ejercicios: 7 (Ejercita). 3 notas; 2 figuras de clase (a la primera se le quitó el pie de figura).
