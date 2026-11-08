@@ -10,7 +10,7 @@ prerrequisitos:
   - "[[03 - Tangentes a una circunferencia]]"
 ---
 
-# Ejercicios de prueba de geometría analítica
+# Ejercicios de la guía de geometría analítica
 
 Preguntas de la guía sobre distancias, circunferencias y tangentes. Conviene intentar cada una antes de abrir la solución.
 

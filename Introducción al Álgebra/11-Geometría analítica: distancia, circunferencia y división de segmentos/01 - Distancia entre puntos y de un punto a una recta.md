@@ -41,6 +41,21 @@ $$
 > [!warning] Distancia a rectas paralelas
 > Para hallar la distancia entre dos rectas paralelas se mide la distancia de un punto de una de ellas a la otra. No hay una fórmula directa que no pase por un punto.
 
+## Área de un triángulo dado por coordenadas
+
+La distancia punto-recta da la **altura**: se toma un lado como base (su largo con la fórmula de distancia entre puntos) y la altura es la distancia del vértice opuesto a la recta que contiene esa base.
+$$\text{Área} = \tfrac{1}{2}\, d(A, B)\cdot d(C, L_{AB}).$$
+
+**Ejemplo.** $A(-3, -2)$, $B(2, 1)$, $C(6, 5)$. La recta $AB$ tiene pendiente $\frac{3}{5}$: $L : 3x - 5y - 1 = 0$. Entonces $d(C, L) = \frac{|18 - 25 - 1|}{\sqrt{34}} = \frac{8}{\sqrt{34}}$, $d(A, B) = \sqrt{34}$ y el área es $\frac{1}{2} \cdot \sqrt{34} \cdot \frac{8}{\sqrt{34}} = 4$.
+
+Si el triángulo viene dado por tres rectas, los vértices son las intersecciones de cada par (tres sistemas de $2 \times 2$).
+
+## Lugares geométricos
+
+Un **lugar geométrico** es el conjunto de puntos que cumplen una condición. Para hallar su ecuación: llamar $P(x, y)$ al punto, escribir la condición con las fórmulas de distancia, elevar al cuadrado para eliminar raíces y valores absolutos, y simplificar hasta reconocer la curva.
+
+**Ejemplo.** Los puntos cuya distancia a $A(5, 0)$ es la mitad de su distancia a la recta $x = 20$: $\sqrt{(x-5)^2 + y^2} = \frac{1}{2}|x - 20|$. Al cuadrado, $4(x-5)^2 + 4y^2 = (x-20)^2$, que se reduce a $3x^2 + 4y^2 = 300$, es decir, $\frac{x^2}{100} + \frac{y^2}{75} = 1$: una elipse.
+
 ## Preguntas de repaso
 
 > [!question]- ¿De dónde sale la fórmula de distancia entre dos puntos?
