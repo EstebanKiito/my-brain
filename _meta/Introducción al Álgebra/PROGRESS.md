@@ -17,7 +17,7 @@ Rama: `migrar/intros-matematicos`. Un commit por tema. Antes de cada commit se c
 | 10 | Geometría analítica: distancia, circunferencia y división de segmentos | `10-Geometría analítica: distancia, circunferencia y división de segmentos/` | ✅ hecho | 6 + índice | 1 |
 | 11 | Cónicas: parábola, elipse e hipérbola | `11-Cónicas: parábola, elipse e hipérbola/` | ✅ hecho | 4 + índice | 1 |
 | 12 | Geometría vectorial: componentes, producto punto y cruz | `12-Geometría vectorial: componentes, producto punto y cruz/` | ✅ hecho | 5 + índice | 0 |
-| 13 | Gestión del curso | `13-Gestión del curso/` | ⏳ pendiente | – | – |
+| 13 | Gestión del curso | `13-Gestión del curso/` | ✅ hecho | 1 + índice | – |
 
 ## Convenciones
 - Notas según [`_meta/ESTANDAR-NOTAS.md`](../ESTANDAR-NOTAS.md): un concepto por nota, de 60 a 120 líneas (máximo 150), prosa explicativa, definiciones y teoremas en `[!tip]`, LaTeX y preguntas de repaso plegables.
@@ -39,3 +39,4 @@ Rama: `migrar/intros-matematicos`. Un commit por tema. Antes de cada commit se c
 - **2026-11-08 · Geometría analítica: distancia, circunferencia y división de segmentos.** Fuentes: clase Semana 10 (distancia entre puntos y punto-recta, circunferencia, tangentes, familias de circunferencias y eje radical) y la división de un segmento de la Semana 13 (vector de posición y razón $\lambda$). La figura de la circunferencia se regeneró con `figuras/geometria.py` (1 PNG, `tipo: "generada"`). Ejercicios: 5 (guía del curso). 6 notas; 1 figura.
 - **2026-11-08 · Cónicas: parábola, elipse e hipérbola.** Fuentes: clase Semana 11 (parábola y elipse) y Semana 12 (hipérbola). La figura de la parábola con foco y directriz se regeneró con `figuras/conicas.py` (1 PNG, `tipo: "generada"`). Ejercicios: 5 (guía del curso y clases). 4 notas; 1 figura.
 - **2026-11-08 · Geometría vectorial: componentes, producto punto y cruz.** Fuentes: clase Semana 14 (componentes y longitud, operaciones, base estándar, producto punto y ángulo, producto cruz y área). Se usaron nombres de nota distintos a los de Álgebra Lineal para evitar colisiones (misma materia, distinta profundidad). Ejercicios: 5 (guía del curso y clases). 5 notas; sin imágenes (las fuentes son texto).
+- **2026-11-08 · Gestión del curso y mapa final del ramo.** Se consolidó el mapa de evaluaciones (tareas, interrogaciones y examen por tema) en `13-Gestión del curso/` y se añadió la ruta de estudio al `_Índice.md` del ramo. Cierre de la migración de Introducción al Álgebra.

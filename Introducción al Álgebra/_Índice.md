@@ -24,4 +24,15 @@ Vault de estudio del ramo. Cada tema reúne la teoría de las clases semanales y
 | [[Introducción al Álgebra/12-Geometría vectorial: componentes, producto punto y cruz/_Índice\|Geometría vectorial: componentes, producto punto y cruz]] | Vectores, componentes, producto punto y producto cruz |
 | [[Introducción al Álgebra/13-Gestión del curso/_Índice\|Gestión del curso]] | Mapa de evaluaciones: qué interrogaciones, tareas y exámenes cubren cada tema |
 
+## Ruta de estudio y evaluaciones
+| Evaluación | Temas que entran |
+|---|---|
+| Tarea 1 | 1 a 2 (lógica y demostraciones) |
+| Tarea 2 | 5 a 6 y 9 (polinomios y complejos) |
+| Tarea 3 | 7 a 9 (trigonometría y complejos) |
+| Interrogación 1 | 1 a 4 (lógica, demostraciones, conjuntos, cuantificadores) |
+| Interrogación 2 | 5 a 9 (polinomios, trigonometría, complejos) |
+| Interrogación 3 | 7 a 9 (trigonometría, inversas, ecuaciones) |
+| Examen | 1 a 12 (todo el curso) |
+
 La materia es acumulativa: cada tema usa los anteriores, así que conviene seguir el orden numérico.
