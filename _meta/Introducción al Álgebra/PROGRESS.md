@@ -5,19 +5,19 @@ Rama: `migrar/intros-matematicos`. Un commit por tema. Antes de cada commit se c
 | # | Tema | Carpeta | Estado | Notas | Imágenes |
 |---|---|---|---|---|---|
 | 0 | Infraestructura (`_meta/Introducción al Álgebra/`) | `_meta/` | ✅ hecho | – | – |
-| 1 | Lógica proposicional | `01-Lógica proposicional/` | ✅ hecho | 7 + índice | 0 |
-| 2 | Técnicas de demostración e inducción | `02-Técnicas de demostración e inducción/` | ✅ hecho | 6 + índice | 0 |
-| 3 | Conjuntos y operaciones | `03-Conjuntos y operaciones/` | ✅ hecho | 8 + índice | 2 |
-| 4 | Cuantificadores y negación | `04-Cuantificadores y negación/` | ✅ hecho | 5 + índice | 0 |
+| 1 | Lógica proposicional | `01-Lógica proposicional/` | ✅ hecho | 8 + índice | 0 |
+| 2 | Técnicas de demostración e inducción | `02-Técnicas de demostración e inducción/` | ✅ hecho | 8 + índice | 0 |
+| 3 | Conjuntos y operaciones | `03-Conjuntos y operaciones/` | ✅ hecho | 9 + índice | 3 |
+| 4 | Cuantificadores y negación | `04-Cuantificadores y negación/` | ✅ hecho | 6 + índice | 0 |
 | 5 | Sumatorias, progresiones y binomio | `05-Sumatorias, progresiones y binomio/` | ✅ hecho | 6 + índice | 0 |
-| 6 | Polinomios: división y algoritmo de Euclides | `06-Polinomios: división y algoritmo de Euclides/` | ✅ hecho | 4 + índice | 0 |
-| 7 | Polinomios: raíces y gráfica | `07-Polinomios: raíces y gráfica/` | ✅ hecho | 6 + índice | 0 |
-| 8 | Trigonometría: razones y resolución de triángulos | `08-Trigonometría: razones y resolución de triángulos/` | ✅ hecho | 5 + índice | 2 |
-| 9 | Funciones trigonométricas e identidades | `09-Funciones trigonométricas e identidades/` | ✅ hecho | 6 + índice | 2 |
-| 10 | Números complejos, inversas y ecuaciones trigonométricas | `10-Números complejos, inversas y ecuaciones trigonométricas/` | ✅ hecho | 5 + índice | 1 |
-| 11 | Geometría analítica: distancia, circunferencia y división de segmentos | `11-Geometría analítica: distancia, circunferencia y división de segmentos/` | ✅ hecho | 6 + índice | 1 |
-| 12 | Cónicas: parábola, elipse e hipérbola | `12-Cónicas: parábola, elipse e hipérbola/` | ✅ hecho | 4 + índice | 1 |
-| 13 | Geometría vectorial: componentes, producto punto y cruz | `13-Geometría vectorial: componentes, producto punto y cruz/` | ✅ hecho | 5 + índice | 0 |
+| 6 | Polinomios: división y algoritmo de Euclides | `06-Polinomios: división y algoritmo de Euclides/` | ✅ hecho | 5 + índice | 0 |
+| 7 | Polinomios: raíces y gráfica | `07-Polinomios: raíces y gráfica/` | ✅ hecho | 7 + índice | 3 |
+| 8 | Trigonometría: razones y resolución de triángulos | `08-Trigonometría: razones y resolución de triángulos/` | ✅ hecho | 6 + índice | 5 |
+| 9 | Funciones trigonométricas e identidades | `09-Funciones trigonométricas e identidades/` | ✅ hecho | 7 + índice | 6 |
+| 10 | Números complejos, inversas y ecuaciones trigonométricas | `10-Números complejos, inversas y ecuaciones trigonométricas/` | ✅ hecho | 6 + índice | 6 |
+| 11 | Geometría analítica: distancia, circunferencia y división de segmentos | `11-Geometría analítica: distancia, circunferencia y división de segmentos/` | ✅ hecho | 7 + índice | 1 |
+| 12 | Cónicas: parábola, elipse e hipérbola | `12-Cónicas: parábola, elipse e hipérbola/` | ✅ hecho | 5 + índice | 5 |
+| 13 | Geometría vectorial: componentes, producto punto y cruz | `13-Geometría vectorial: componentes, producto punto y cruz/` | ✅ hecho | 6 + índice | 1 |
 | 14 | Gestión del curso | `14-Gestión del curso/` | ✅ hecho | 1 + índice | – |
 
 ## Convenciones
@@ -45,3 +45,4 @@ Rama: `migrar/intros-matematicos`. Un commit por tema. Antes de cada commit se c
 - **2026-11-08 · Mejora de contenido, temas 01-02.** Las notas de ejercicios existentes pasan a llamarse "de la guía" y cada tema suma una nota "Ejercicios de prueba" con preguntas reales de interrogaciones y exámenes 2022-2026, verificadas (tablas por fuerza bruta, cuentas con sympy). Tema 01: sección para razonar hacia atrás desde un valor conocido. Tema 02: nota nueva de contrarrecíproca y contradicción, y los tres patrones del paso inductivo. Se insertó el tema 05 (sumatorias, progresiones y binomio), que se evalúa y faltaba; los temas 05-13 pasaron a 06-14.
 - **2026-11-08 · Sumatorias, progresiones y binomio (tema nuevo).** Las clases de 2022 no lo cubren, pero aparece en las interrogaciones 4 de 2025-1 y 2026-1, en la I2 de 2025-2, en la I3 y el examen de 2026-1. Fuente teórica: Mickenberg, cap. 6.1 y 6.3 (págs. 209-240 del libro). Cinco notas de concepto y una de ejercicios de prueba (8 preguntas, verificadas con sympy). El triángulo de Pascal va como tabla, no como figura.
 - **2026-11-08 · Mejora de contenido, temas 03-07.** Conjuntos: uso de hipótesis de contención y doble inclusión, más un Venn recortado de una pauta. Cuantificadores: formato "niegue y demuestre la proposición o su negación". Polinomios (división): Horner y resto con incógnitas. Polinomios (raíces): figuras de la clase de la semana 6 (continuidad y comportamiento final), multiplicidad y gráfica, relaciones entre raíces y coeficientes, y un gráfico recortado de la I7 2026-1. Cada tema suma su nota de ejercicios de prueba.
+- **2026-11-08 · Mejora de contenido, temas 08-14 y cierre.** Triángulos: caso ambiguo y ángulos de elevación. Identidades: producto a suma y estrategia de demostración. Complejos e inversas: gráficas de las inversas y soluciones básicas (clase semana 9), raíces de la unidad y conjugado. Geometría analítica: áreas con coordenadas y lugares geométricos. Cónicas: figuras de elipse e hipérbola (semanas 11-12) y clasificación de la forma general. Vectores: demostraciones con combinaciones lineales. Las figuras de enunciados se recortaron de las pautas (`tipo: "clase"`). Se reescribió el mapa de evaluaciones con lo que toma cada interrogación según el formato del semestre. Erratas de pautas detectadas al verificar: vector unitario de 2022-2 Ex P6 (es $(1/3, -2/3, -2/3)$) y conjunto solución incompleto en 2023-1 I6 P2b (se explica en la nota).
