@@ -9,7 +9,7 @@ Rama: `migrar/intros-matematicos`. Un commit por tema. Antes de cada commit se c
 | 2 | Técnicas de demostración e inducción | `02-Técnicas de demostración e inducción/` | ✅ hecho | 6 + índice | 0 |
 | 3 | Conjuntos y operaciones | `03-Conjuntos y operaciones/` | ✅ hecho | 8 + índice | 2 |
 | 4 | Cuantificadores y negación | `04-Cuantificadores y negación/` | ✅ hecho | 5 + índice | 0 |
-| 5 | Polinomios: división y algoritmo de Euclides | `05-Polinomios: división y algoritmo de Euclides/` | ⏳ pendiente | – | – |
+| 5 | Polinomios: división y algoritmo de Euclides | `05-Polinomios: división y algoritmo de Euclides/` | ✅ hecho | 4 + índice | 0 |
 | 6 | Polinomios: raíces y gráfica | `06-Polinomios: raíces y gráfica/` | ⏳ pendiente | – | – |
 | 7 | Trigonometría: razones y resolución de triángulos | `07-Trigonometría: razones y resolución de triángulos/` | ⏳ pendiente | – | – |
 | 8 | Funciones trigonométricas e identidades | `08-Funciones trigonométricas e identidades/` | ⏳ pendiente | – | – |
@@ -31,3 +31,4 @@ Rama: `migrar/intros-matematicos`. Un commit por tema. Antes de cada commit se c
 - **2026-11-07 · Técnicas de demostración e inducción (piloto).** Fuentes: clase Semana 2 (principio de inducción, plantilla, cambio de caso base, definiciones por inducción) y los apuntes de Linero sobre la demostración (método directo y contraejemplos). Ejercicios: 6 (guía del curso y tarea 1), incluida una suma telescópica con potencias de $2$. 6 notas; sin imágenes (las fuentes son texto).
 - **2026-11-07 · Conjuntos y operaciones.** Fuentes: clase Semana 3 (conjuntos, pertenencia, notación, igualdad, vacío, universo, cardinalidad, subconjuntos, unión, intersección, diferencia, complemento, De Morgan, álgebra de conjuntos y aplicaciones a encuestas). Los diagramas de Venn son vectoriales en la clase y se regeneraron con `figuras/venn.py` (2 PNG, `tipo: "generada"`). Ejercicios: 6 (guía del curso). 8 notas; 2 figuras.
 - **2026-11-07 · Cuantificadores y negación.** Fuentes: clase Semana 4 (funciones proposicionales, cuantificadores $\forall$, $\exists$, $\exists!$, demostración con cuantificadores, orden de cuantificadores y negación). Ejercicios: 5 (guía del curso). 5 notas; sin imágenes (las fuentes son texto).
+- **2026-11-07 · Polinomios: división y algoritmo de Euclides.** Fuentes: clase Semana 5 (funciones polinomiales, grado, coeficientes, $\mathbb{K}[x]$, igualdad, grado de suma y producto, algoritmo de la división y teorema del resto). Ejercicios: 5 (guía del curso y tarea 2), incluido hallar $c$ para que $x^2+c$ divida a $2x^3-x^2+6x-3$. 4 notas; sin imágenes (las fuentes son texto).
