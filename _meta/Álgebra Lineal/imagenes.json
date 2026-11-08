@@ -264,5 +264,19 @@
     "original": "Semestre 3/Algebra Lineal/Clases/Clase 36 Proceso de Gram-Schmidt.pdf#page=4",
     "destino": "Álgebra Lineal/16-Proyecciones y Gram-Schmidt/adjuntos/Primer paso de Gram-Schmidt.png",
     "sha256": "de645ef9a1863b8a03f739ba59aec329f1a93bca8a7d30ce69bcce508d32cf46"
+  },
+  {
+    "tema": "Mínimos cuadrados",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 37 Problemas de m¡nimos cuadrados y recta de m¡nimos cuadrados.pdf#page=4",
+    "destino": "Álgebra Lineal/17-Mínimos cuadrados/adjuntos/Solución de mínimos cuadrados como proyección.png",
+    "sha256": "173e2c246b408468f17fa443de563a5cfce0300a91eb4cdb2b018097a0484e45"
+  },
+  {
+    "tema": "Mínimos cuadrados",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 37 Problemas de m¡nimos cuadrados y recta de m¡nimos cuadrados.pdf#page=12",
+    "destino": "Álgebra Lineal/17-Mínimos cuadrados/adjuntos/Recta de mínimos cuadrados y residuos.png",
+    "sha256": "06cac0d5bc1764a7bebc693480c15edc225d2b54df8328a0e2f1ebcf7df16203"
   }
 ]
