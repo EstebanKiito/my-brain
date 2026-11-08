@@ -1,0 +1,120 @@
+{
+  "_descripcion": "Mapeo de las fuentes originales (rutas relativas a _raw/) a los temas del vault. Introducción al Álgebra no tiene export de Notion con contenido ni apuntes propios: las fuentes son las clases semanales (Clases 2022/), el resumen de apuntes (Skibidi-IntroAlgebra.pdf), el libro de precálculo (Mickenberg.pdf), los apuntes de demostraciones (Linero-DemostracionMatematicas.pdf y Logica_Proposicional..pdf), las ayudantías (Ayudantias/) y las evaluaciones (Pruebas/). Como verificar.py solo procesa fuentes HTML, 'fuentes' queda vacío y cada tema lleva 'secciones' vacías; 'pdfs' es informativo. Las notas se reescriben, por eso 'cobertura' es 'reescrita'.",
+  "carpeta_ramo": "Introducción al Álgebra",
+  "cobertura": "reescrita",
+  "preguntas_repaso": [
+    3,
+    8
+  ],
+  "fuentes": {},
+  "temas": {
+    "Lógica proposicional": {
+      "carpeta": "Introducción al Álgebra/01-Lógica proposicional",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana1.pdf",
+        "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Logica_Proposicional..pdf",
+        "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Linero-DemostracionMatematicas.pdf"
+      ]
+    },
+    "Técnicas de demostración e inducción": {
+      "carpeta": "Introducción al Álgebra/02-Técnicas de demostración e inducción",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana2.pdf",
+        "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Linero-DemostracionMatematicas.pdf"
+      ]
+    },
+    "Conjuntos y operaciones": {
+      "carpeta": "Introducción al Álgebra/03-Conjuntos y operaciones",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana3.pdf"
+      ]
+    },
+    "Cuantificadores y negación": {
+      "carpeta": "Introducción al Álgebra/04-Cuantificadores y negación",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana4.pdf"
+      ]
+    },
+    "Polinomios: división y algoritmo de Euclides": {
+      "carpeta": "Introducción al Álgebra/05-Polinomios: división y algoritmo de Euclides",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana5.pdf",
+        "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Mickenberg.pdf"
+      ]
+    },
+    "Polinomios: raíces y gráfica": {
+      "carpeta": "Introducción al Álgebra/06-Polinomios: raíces y gráfica",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana6.pdf"
+      ]
+    },
+    "Trigonometría: razones y resolución de triángulos": {
+      "carpeta": "Introducción al Álgebra/07-Trigonometría: razones y resolución de triángulos",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana7.pdf"
+      ]
+    },
+    "Funciones trigonométricas e identidades": {
+      "carpeta": "Introducción al Álgebra/08-Funciones trigonométricas e identidades",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana8.pdf"
+      ]
+    },
+    "Números complejos, inversas y ecuaciones trigonométricas": {
+      "carpeta": "Introducción al Álgebra/09-Números complejos, inversas y ecuaciones trigonométricas",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana9.pdf"
+      ]
+    },
+    "Geometría analítica: distancia, circunferencia y división de segmentos": {
+      "carpeta": "Introducción al Álgebra/10-Geometría analítica: distancia, circunferencia y división de segmentos",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana10.pdf",
+        "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana13.pdf"
+      ]
+    },
+    "Cónicas: parábola, elipse e hipérbola": {
+      "carpeta": "Introducción al Álgebra/11-Cónicas: parábola, elipse e hipérbola",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana11.pdf",
+        "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana12.pdf"
+      ]
+    },
+    "Geometría vectorial: componentes, producto punto y cruz": {
+      "carpeta": "Introducción al Álgebra/12-Geometría vectorial: componentes, producto punto y cruz",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana14.pdf"
+      ]
+    },
+    "Gestión del curso": {
+      "carpeta": "Introducción al Álgebra/13-Gestión del curso",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": []
+    }
+  }
+}
