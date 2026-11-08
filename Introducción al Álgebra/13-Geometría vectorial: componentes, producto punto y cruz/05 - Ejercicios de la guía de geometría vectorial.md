@@ -10,7 +10,7 @@ prerrequisitos:
   - "[[04 - Producto cruz, paralelismo y área]]"
 ---
 
-# Ejercicios de prueba de geometría vectorial
+# Ejercicios de la guía de geometría vectorial
 
 Preguntas de la guía y de las clases sobre componentes, producto punto y producto cruz. Conviene intentar cada una antes de abrir la solución.
 

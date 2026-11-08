@@ -49,6 +49,18 @@ $$
 > [!warning] Normalizar no cambia la dirección
 > Dividir por $\|\mathbf a\|$ deja la dirección y el sentido, pero lleva la longitud a $1$. Sirve para aislar la "dirección pura" de un vector.
 
+## Demostraciones geométricas con vectores
+
+Muchas propiedades de triángulos se prueban sin coordenadas: se pone el origen en un vértice y se escriben los demás puntos como combinaciones de dos vectores $\mathbf b$ y $\mathbf c$ que no son paralelos (forman una **base** del plano).
+
+- Si $D$ divide $BC$ en razón $BD : DC = m : n$, entonces $\mathbf d = \frac{n}{m+n}\mathbf b + \frac{m}{m+n}\mathbf c$ (el punto está más cerca del extremo con mayor peso).
+- Dos vectores son **paralelos** si uno es múltiplo escalar del otro.
+- Si $\alpha\mathbf b + \beta\mathbf c = \mathbf 0$ con $\mathbf b, \mathbf c$ no paralelos, entonces $\alpha = \beta = 0$ (independencia lineal). Esto permite **igualar coeficientes** y obtener ecuaciones.
+
+**Ejemplo.** En un triángulo $OAB$, sean $C$ y $D$ los puntos medios de $OA$ y $OB$. Con $\mathbf a$ y $\mathbf b$ las posiciones de $A$ y $B$: $\overrightarrow{CD} = \frac{1}{2}\mathbf b - \frac{1}{2}\mathbf a = \frac{1}{2}\overrightarrow{AB}$. Entonces $CD$ es paralelo a $AB$ y mide la mitad.
+
+Para hallar la intersección de dos segmentos se escribe el punto de dos maneras (una por cada segmento, con parámetros $\lambda$ y $\mu$) y se igualan coeficientes de $\mathbf b$ y $\mathbf c$.
+
 ## Preguntas de repaso
 
 > [!question]- Calcule $\mathbf a + \mathbf b$ con $\mathbf a = (4, 0, 3)$ y $\mathbf b = (-2, 1, 5)$.

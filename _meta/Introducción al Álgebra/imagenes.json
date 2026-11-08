@@ -201,5 +201,12 @@
     "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Pruebas/2023-1/i7-2023-1-pauta.pdf#page=1",
     "destino": "Introducción al Álgebra/12-Cónicas: parábola, elipse e hipérbola/adjuntos/Elipse centrada en -3 2 con sus focos.png",
     "sha256": "07fa4ee25fa5c676a8d2b7fb463f2765745f1af83acda1a8c414b8f7dcb9ad67"
+  },
+  {
+    "tema": "Geometría vectorial: componentes, producto punto y cruz",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Pruebas/2023-1/i8-2023-1-pauta.pdf#page=1",
+    "destino": "Introducción al Álgebra/13-Geometría vectorial: componentes, producto punto y cruz/adjuntos/Triángulo ABC con las cevianas AD y BE.png",
+    "sha256": "fc6dd4a544d12cba1c4af87088c28dca8255d681485be93f3f7a8f6e0fcaffc7"
   }
 ]
