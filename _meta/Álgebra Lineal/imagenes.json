@@ -222,5 +222,12 @@
     "original": "_meta/Álgebra Lineal/figuras/valores_propios.py",
     "destino": "Álgebra Lineal/13-Diagonalización/adjuntos/Acción de una matriz diagonalizable en la base de vectores propios.png",
     "sha256": "61a9ded49f334dad632fe17036d96c97a9d9de0465d68ecc6482a2e09a5e0131"
+  },
+  {
+    "tema": "Valores propios complejos",
+    "tipo": "generada",
+    "original": "_meta/Álgebra Lineal/figuras/valores_propios.py",
+    "destino": "Álgebra Lineal/14-Valores propios complejos/adjuntos/Órbitas de matrices con valores propios complejos.png",
+    "sha256": "bb8253ee3315ca41a2a8739aabfa81c3a79adb6f8af6474a7026098580c125c7"
   }
 ]

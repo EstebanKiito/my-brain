@@ -18,7 +18,7 @@ Rama: `migrar/algebra-lineal`. Un commit por tema. Antes de cada commit se corre
 | 11 | Cambio de base | `11-Cambio de base/` | ✅ hecho | 3 + índice | 2 |
 | 12 | Valores y vectores propios | `12-Valores y vectores propios/` | ✅ hecho | 3 + índice | 1 |
 | 13 | Diagonalización | `13-Diagonalización/` | ✅ hecho | 4 + índice | 1 |
-| 14 | Valores propios complejos | `14-Valores propios complejos/` | ⏳ pendiente | – | – |
+| 14 | Valores propios complejos | `14-Valores propios complejos/` | ✅ hecho | 3 + índice | 1 |
 | 15 | Ortogonalidad y complemento ortogonal | `15-Ortogonalidad y complemento ortogonal/` | ⏳ pendiente | – | – |
 | 16 | Proyecciones y Gram-Schmidt | `16-Proyecciones y Gram-Schmidt/` | ⏳ pendiente | – | – |
 | 17 | Mínimos cuadrados | `17-Mínimos cuadrados/` | ⏳ pendiente | – | – |
@@ -47,3 +47,4 @@ Rama: `migrar/algebra-lineal`. Un commit por tema. Antes de cada commit se corre
 - **2026-11-07 · Cambio de base.** Fuentes: slide 27 (cambio de base, P C←B, inversa, cambio en Rⁿ y a la base estándar) y Lay 4.7. Ejercicios: 7 (Ejercita). 3 notas; 2 figuras de clase (a la primera se le quitó el pie de figura).
 - **2026-11-08 · Valores y vectores propios.** Fuentes: slides 28-29 (definición, espacio propio, triangulares, invertibilidad, independencia, ecuación característica, multiplicidad, similitud) y Lay 5.1-5.2. GIF generado (`figuras/valores_propios.py`): un vector recorre el círculo unitario y se resalta cuando Ax es paralelo a x. Ejercicios: 8 (Ejercita). 3 notas; 1 figura generada.
 - **2026-11-08 · Diagonalización.** Fuentes: slides 30-31 (diagonalización, criterios, matriz de una transformación, B-matriz, representación diagonal) y Lay 5.3-5.4. Figura generada con la acción de una matriz diagonalizable sobre la cuadrícula de vectores propios. Ejercicios: 15 en dos notas (Ejercita; las de matrices de transformaciones estaban clasificadas como transformaciones). 4 notas; 1 figura generada.
+- **2026-11-08 · Valores propios complejos.** Fuentes: slide 32 (complejos, valores propios complejos, pares conjugados, rotación escalada, A = PCP⁻¹) y Lay 5.5. Figura generada con las órbitas x(k+1) = A x(k) para |λ| = 1 y |λ| < 1. Se usa la convención del Lay (λ = a − bi, P = [Re v Im v]), verificada en todos los ejemplos. Ejercicios: 6 (Ejercita). 3 notas; 1 figura generada.
