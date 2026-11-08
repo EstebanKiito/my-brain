@@ -26,5 +26,19 @@
     "original": "_meta/Introducción al Álgebra/figuras/triangulos.py",
     "destino": "Introducción al Álgebra/07-Trigonometría: razones y resolución de triángulos/adjuntos/triangulo 30-60-90.png",
     "sha256": "3403f72e783ce09e0168ac8659132101cfe4d56ebcec757b6b2f53900335105d"
+  },
+  {
+    "tema": "Funciones trigonométricas e identidades",
+    "tipo": "generada",
+    "original": "_meta/Introducción al Álgebra/figuras/trig_graficos.py",
+    "destino": "Introducción al Álgebra/08-Funciones trigonométricas e identidades/adjuntos/grafico de seno y coseno.png",
+    "sha256": "564ca6670a6a4de8402ad781df39f7a23c01b397667fbcdf99633a9f809633b6"
+  },
+  {
+    "tema": "Funciones trigonométricas e identidades",
+    "tipo": "generada",
+    "original": "_meta/Introducción al Álgebra/figuras/trig_graficos.py",
+    "destino": "Introducción al Álgebra/08-Funciones trigonométricas e identidades/adjuntos/grafico de la tangente.png",
+    "sha256": "85d7e68a4a27b886ff52a8fe5024007deaf12c17184891eaab3ce7ba6d83968a"
   }
 ]
