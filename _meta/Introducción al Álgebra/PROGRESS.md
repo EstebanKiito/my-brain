@@ -6,7 +6,7 @@ Rama: `migrar/intros-matematicos`. Un commit por tema. Antes de cada commit se c
 |---|---|---|---|---|---|
 | 0 | Infraestructura (`_meta/Introducción al Álgebra/`) | `_meta/` | ✅ hecho | – | – |
 | 1 | Lógica proposicional | `01-Lógica proposicional/` | ✅ hecho | 7 + índice | 0 |
-| 2 | Técnicas de demostración e inducción | `02-Técnicas de demostración e inducción/` | ⏳ pendiente | – | – |
+| 2 | Técnicas de demostración e inducción | `02-Técnicas de demostración e inducción/` | ✅ hecho | 6 + índice | 0 |
 | 3 | Conjuntos y operaciones | `03-Conjuntos y operaciones/` | ⏳ pendiente | – | – |
 | 4 | Cuantificadores y negación | `04-Cuantificadores y negación/` | ⏳ pendiente | – | – |
 | 5 | Polinomios: división y algoritmo de Euclides | `05-Polinomios: división y algoritmo de Euclides/` | ⏳ pendiente | – | – |
@@ -28,3 +28,4 @@ Rama: `migrar/intros-matematicos`. Un commit por tema. Antes de cada commit se c
 ## Registro
 - **2026-11-07 · Infraestructura.** Se creó `_meta/Introducción al Álgebra/` con `mapeo.json`, `imagenes.json`, `PROGRESS.md` y `DUDAS.md`. Temario de 12 temas de contenido + Gestión del curso, propuesto y aprobado por el usuario.
 - **2026-11-07 · Lógica proposicional (piloto).** Fuentes: clase Semana 1 (proposiciones, conectivos, tautologías, leyes, técnicas de demostración) y los apuntes de lógica proposicional (auxiliar MA1101). Se reconstruyó la negación, que en los PDF se pierde (se usa barra sobre la letra). Ejercicios: 7 (guía del curso y tarea 1), con dos erratas de la guía registradas en DUDAS. 7 notas; sin imágenes (las fuentes son texto).
+- **2026-11-07 · Técnicas de demostración e inducción (piloto).** Fuentes: clase Semana 2 (principio de inducción, plantilla, cambio de caso base, definiciones por inducción) y los apuntes de Linero sobre la demostración (método directo y contraejemplos). Ejercicios: 6 (guía del curso y tarea 1), incluida una suma telescópica con potencias de $2$. 6 notas; sin imágenes (las fuentes son texto).
