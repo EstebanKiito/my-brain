@@ -20,7 +20,7 @@ Rama: `migrar/algebra-lineal`. Un commit por tema. Antes de cada commit se corre
 | 13 | Diagonalización | `13-Diagonalización/` | ✅ hecho | 4 + índice | 1 |
 | 14 | Valores propios complejos | `14-Valores propios complejos/` | ✅ hecho | 3 + índice | 1 |
 | 15 | Ortogonalidad y complemento ortogonal | `15-Ortogonalidad y complemento ortogonal/` | ✅ hecho | 3 + índice | 1 |
-| 16 | Proyecciones y Gram-Schmidt | `16-Proyecciones y Gram-Schmidt/` | ⏳ pendiente | – | – |
+| 16 | Proyecciones y Gram-Schmidt | `16-Proyecciones y Gram-Schmidt/` | ✅ hecho | 3 + índice | 4 |
 | 17 | Mínimos cuadrados | `17-Mínimos cuadrados/` | ⏳ pendiente | – | – |
 | 18 | Matrices simétricas y formas cuadráticas | `18-Matrices simétricas y formas cuadráticas/` | ⏳ pendiente | – | – |
 | 19 | Cholesky y descomposición en valores singulares | `19-Cholesky y descomposición en valores singulares/` | ⏳ pendiente | – | – |
@@ -49,3 +49,4 @@ Rama: `migrar/algebra-lineal`. Un commit por tema. Antes de cada commit se corre
 - **2026-11-08 · Diagonalización.** Fuentes: slides 30-31 (diagonalización, criterios, matriz de una transformación, B-matriz, representación diagonal) y Lay 5.3-5.4. Figura generada con la acción de una matriz diagonalizable sobre la cuadrícula de vectores propios. Ejercicios: 15 en dos notas (Ejercita; las de matrices de transformaciones estaban clasificadas como transformaciones). 4 notas; 1 figura generada.
 - **2026-11-08 · Valores propios complejos.** Fuentes: slide 32 (complejos, valores propios complejos, pares conjugados, rotación escalada, A = PCP⁻¹) y Lay 5.5. Figura generada con las órbitas x(k+1) = A x(k) para |λ| = 1 y |λ| < 1. Se usa la convención del Lay (λ = a − bi, P = [Re v Im v]), verificada en todos los ejemplos. Ejercicios: 6 (Ejercita). 3 notas; 1 figura generada.
 - **2026-11-08 · Ortogonalidad y complemento ortogonal.** Fuentes: slides 33-34 (complemento ortogonal, (Fil A)⊥ y (Col A)⊥, conjuntos ortogonales y ortonormales, UᵀU = I, matrices ortogonales) y Lay 6.1-6.2. Ejercicios: 6 (Ejercita, sobre todo exámenes). 3 notas; 1 figura de clase.
+- **2026-11-08 · Proyecciones y Gram-Schmidt.** Fuentes: slides 35-36 (proyección sobre una recta y sobre W, descomposición ortogonal, mejor aproximación, UUᵀ, Gram-Schmidt, QR) y Lay 6.3-6.4. El ejemplo de proyección sobre un plano se tomó del Lay porque el texto extraído de la slide 35 mezclaba los vectores. Ejercicios: 7 (Ejercita). 3 notas; 4 figuras de clase.

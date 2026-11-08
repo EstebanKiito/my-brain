@@ -236,5 +236,33 @@
     "original": "Semestre 3/Algebra Lineal/Clases/Clase 33 Complemento ortogonal.pdf#page=4",
     "destino": "Álgebra Lineal/15-Ortogonalidad y complemento ortogonal/adjuntos/Complemento ortogonal de un plano.png",
     "sha256": "21caad0b612d0ffab9410ff91b303532a59647aee39079a086f02ccd84f7eca3"
+  },
+  {
+    "tema": "Proyecciones y Gram-Schmidt",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 35 Proyecciขn ortogonal.pdf#page=3",
+    "destino": "Álgebra Lineal/16-Proyecciones y Gram-Schmidt/adjuntos/Proyección sobre una recta.png",
+    "sha256": "c5beb13cccd3b74bcd5a1f2c9345b81489b20780d8e58f6297fb6198ee130ad0"
+  },
+  {
+    "tema": "Proyecciones y Gram-Schmidt",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 35 Proyecciขn ortogonal.pdf#page=3",
+    "destino": "Álgebra Lineal/16-Proyecciones y Gram-Schmidt/adjuntos/Proyección ortogonal sobre un subespacio.png",
+    "sha256": "2c31cde4b5a167fe066e3a21715216b7048167bd852ddc2c55196c92b83bdf05"
+  },
+  {
+    "tema": "Proyecciones y Gram-Schmidt",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 35 Proyecciขn ortogonal.pdf#page=7",
+    "destino": "Álgebra Lineal/16-Proyecciones y Gram-Schmidt/adjuntos/Proyección como suma de proyecciones sobre una base ortogonal.png",
+    "sha256": "f7b0e235dfd6e32bf88dac9e306a32657cda6db567998c804a61d79ea83d40e9"
+  },
+  {
+    "tema": "Proyecciones y Gram-Schmidt",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 36 Proceso de Gram-Schmidt.pdf#page=4",
+    "destino": "Álgebra Lineal/16-Proyecciones y Gram-Schmidt/adjuntos/Primer paso de Gram-Schmidt.png",
+    "sha256": "de645ef9a1863b8a03f739ba59aec329f1a93bca8a7d30ce69bcce508d32cf46"
   }
 ]
