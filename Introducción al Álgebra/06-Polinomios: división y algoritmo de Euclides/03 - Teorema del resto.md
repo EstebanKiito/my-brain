@@ -36,6 +36,28 @@ $$
 > [!warning] Cuidado con el signo de $c$
 > Para dividir entre $x + 1$ se evalúa en $c = -1$, no en $+1$: el teorema usa $x - c$, así que $x + 1 = x - (-1)$.
 
+## División sintética (esquema de Horner)
+
+Para dividir entre $x - c$ y obtener también el **cociente**, hay un atajo que trabaja solo con los coeficientes. Se escriben los coeficientes de $P$ (con ceros para las potencias que faltan), se baja el primero y, en cada paso, se multiplica por $c$ el último número obtenido y se suma al coeficiente siguiente. El último número es el resto; los anteriores, los coeficientes del cociente.
+
+**Ejemplo.** $P(x) = x^4 - 2x^3 - 3x^2 + 8x - 4$ entre $x - 3$:
+
+| | $1$ | $-2$ | $-3$ | $8$ | $-4$ |
+|---|---|---|---|---|---|
+| $\times 3$ | | $3$ | $3$ | $0$ | $24$ |
+| | $1$ | $1$ | $0$ | $8$ | $\mathbf{20}$ |
+
+Cociente $x^3 + x^2 + 8$ y resto $20$, que coincide con $P(3) = 20$.
+
+## Resto de dividir por un polinomio de grado mayor
+
+El teorema del resto solo sirve para divisores lineales. Si el divisor $D$ tiene grado $2$, el resto tiene grado a lo más $1$ y se escribe con incógnitas: $P(x) = D(x)\,Q(x) + Ax + B$. Evaluando en las raíces de $D$ el término $D(x)Q(x)$ se anula, y quedan ecuaciones para $A$ y $B$.
+
+**Ejemplo.** Resto de dividir $x^{100}$ entre $x^2 - 1$. Se escribe $x^{100} = (x^2 - 1)Q(x) + Ax + B$. En $x = 1$: $1 = A + B$; en $x = -1$: $1 = -A + B$. Entonces $A = 0$, $B = 1$ y el resto es $1$, sin hacer ninguna división.
+
+> [!tip] La idea en una línea
+> Escribir $P = D \cdot Q + R$ con $R$ de coeficientes desconocidos y evaluar donde algún factor se anula. Sirve también cuando el dato es el cociente y lo que se conoce son valores de $P$.
+
 ## Preguntas de repaso
 
 > [!question]- ¿Por qué el resto de dividir entre $x - c$ es constante?
@@ -49,3 +71,6 @@ $$
 
 > [!question]- ¿Cuándo es $x - c$ un factor de $P(x)$, es decir, $P(x) = (x - c)Q(x)$?
 > Cuando el resto es cero, o sea, cuando $P(c) = 0$. Es el puente con el concepto de raíz, que se estudia en el tema siguiente.
+
+> [!question]- ¿Qué grado puede tener el resto de dividir por $x^2 + 1$?
+> A lo más $1$: el resto se escribe $Ax + B$ (con $A = 0$ si resulta constante).

@@ -9,7 +9,7 @@ prerrequisitos:
   - "[[03 - Teorema del resto]]"
 ---
 
-# Ejercicios de prueba de división de polinomios
+# Ejercicios de la guía de división de polinomios
 
 Preguntas de la guía del curso y de tareas anteriores sobre división de polinomios y el teorema del resto. Conviene intentar cada una antes de abrir la solución.
 
