@@ -25,6 +25,16 @@ $$
 > - **Focos:** $(\pm c, 0)$, con $c = \sqrt{a^2 + b^2}$.
 > - **Asíntotas:** las rectas $y = \pm \tfrac{b}{a}x$, a las que las ramas se aproximan.
 
+![Hipérbola con focos F1 y F2 y un punto P](adjuntos/Hip%C3%A9rbola%20con%20focos%20F1%20y%20F2%20y%20un%20punto%20P.png)
+
+> [!example]- Transcripción de la figura
+> Hipérbola roja de dos ramas, abiertas a izquierda y derecha, con focos $F_2(-c, 0)$ y $F_1(c, 0)$ sobre el eje $x$. Un punto $P(x, y)$ de la rama derecha está unido a ambos focos con segmentos azules: la diferencia de sus largos es constante, igual a $2a$.
+
+![Hipérbola con su rectángulo y asíntotas](adjuntos/Hip%C3%A9rbola%20con%20su%20rect%C3%A1ngulo%20y%20as%C3%ADntotas.png)
+
+> [!example]- Transcripción de la figura
+> La hipérbola $\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$ con un rectángulo azul de vértices $(\pm a, \pm b)$ centrado en el origen. Las diagonales del rectángulo, prolongadas en líneas discontinuas, son las asíntotas $y = \pm\frac{b}{a}x$. Las ramas tocan el rectángulo en los vértices $(\pm a, 0)$ y se acercan a las asíntotas al alejarse; los focos $(\pm c, 0)$ quedan fuera del rectángulo. Es el método práctico para dibujarla: primero el rectángulo, luego las diagonales, luego las ramas.
+
 Si el eje transverso es vertical, la ecuación es $\frac{y^2}{a^2} - \frac{x^2}{b^2} = 1$, con vértices $(0, \pm a)$ y asíntotas $y = \pm \tfrac{a}{b}x$.
 
 **Ejemplo.** Para $9x^2 - 16y^2 = 144$, dividiendo por $144$ queda $\frac{x^2}{16} - \frac{y^2}{9} = 1$, con $a = 4$, $b = 3$ y $c = 5$. Los vértices son $(\pm 4, 0)$, los focos $(\pm 5, 0)$ y las asíntotas $y = \pm \tfrac34 x$.

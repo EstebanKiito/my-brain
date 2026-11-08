@@ -173,5 +173,33 @@
     "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana9.pdf#page=5",
     "destino": "Introducción al Álgebra/10-Números complejos, inversas y ecuaciones trigonométricas/adjuntos/Soluciones básicas de cos x igual a b.png",
     "sha256": "7906efc35dccc317e375494afe064705fe19043308e67a321e9f29248defd78d"
+  },
+  {
+    "tema": "Cónicas: parábola, elipse e hipérbola",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana11.pdf#page=4",
+    "destino": "Introducción al Álgebra/12-Cónicas: parábola, elipse e hipérbola/adjuntos/Elipse con focos F1 y F2 y un punto P.png",
+    "sha256": "b5fe5155490bbd83bf4199c1bfea98d0c0a4b1d0523ed7fcf512056ec78328ab"
+  },
+  {
+    "tema": "Cónicas: parábola, elipse e hipérbola",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana12.pdf#page=1",
+    "destino": "Introducción al Álgebra/12-Cónicas: parábola, elipse e hipérbola/adjuntos/Hipérbola con focos F1 y F2 y un punto P.png",
+    "sha256": "d8bf7eac1a1c373953435213ecfb7ddde7fc602921aeafe94e336eaa1072206f"
+  },
+  {
+    "tema": "Cónicas: parábola, elipse e hipérbola",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana12.pdf#page=1",
+    "destino": "Introducción al Álgebra/12-Cónicas: parábola, elipse e hipérbola/adjuntos/Hipérbola con su rectángulo y asíntotas.png",
+    "sha256": "18da8491cde8c7871253adccf91fb444cb0c72753542607af26624aa3817bad3"
+  },
+  {
+    "tema": "Cónicas: parábola, elipse e hipérbola",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Pruebas/2023-1/i7-2023-1-pauta.pdf#page=1",
+    "destino": "Introducción al Álgebra/12-Cónicas: parábola, elipse e hipérbola/adjuntos/Elipse centrada en -3 2 con sus focos.png",
+    "sha256": "07fa4ee25fa5c676a8d2b7fb463f2765745f1af83acda1a8c414b8f7dcb9ad67"
   }
 ]

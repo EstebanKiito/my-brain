@@ -26,6 +26,11 @@ $$
 > - **Eje menor:** mide $2b$. **Focos:** a distancia $c$ del centro, con $c = \sqrt{a^2 - b^2}$.
 > - **Excentricidad:** $e = c/a < 1$ (mide cuán "achatada" está).
 
+![Elipse con focos F1 y F2 y un punto P](adjuntos/Elipse%20con%20focos%20F1%20y%20F2%20y%20un%20punto%20P.png)
+
+> [!example]- Transcripción de la figura
+> Elipse roja centrada en el origen, más ancha que alta. Sobre el eje $x$ están los focos $F_1(-c, 0)$ y $F_2(c, 0)$. Un punto $P(x, y)$ de la elipse está unido a ambos focos con segmentos azules: la suma de sus largos es la misma para todo punto de la curva.
+
 **Ejemplo.** Para $16x^2 + 25y^2 = 400$, dividiendo por $400$ queda $\frac{x^2}{25} + \frac{y^2}{16} = 1$, con $a = 5$, $b = 4$ y $c = 3$. Los focos son $(\pm 3, 0)$, los vértices $(\pm 5, 0)$ y la excentricidad $e = 3/5$.
 
 ## Elipse desplazada y forma general
@@ -37,6 +42,10 @@ $$
 $$
 
 La forma general es $Ax^2 + Cy^2 + Dx + Ey + F = 0$ con $AC > 0$ y $A \neq C$, y puede ser una elipse, un punto o el conjunto vacío.
+
+Para decidir cuál, se **completan cuadrados** hasta llegar a $A(x - h)^2 + C(y - k)^2 = K$: si $K > 0$ (con $A, C > 0$) es elipse, si $K = 0$ es el punto $(h, k)$, y si $K < 0$ no hay puntos. Por ejemplo, $x^2 + kx + 4y^2 - 16y + 21 = 0$ queda $\left(x + \frac{k}{2}\right)^2 + 4(y - 2)^2 = \frac{k^2}{4} - 5$, y es elipse solo si $k^2 > 20$.
+
+Si el dato son los focos y el eje mayor, el centro es el punto medio de los focos, $c$ es la mitad de su distancia, $a$ la mitad del eje mayor y $b^2 = a^2 - c^2$; el eje mayor va en la dirección en que están los focos.
 
 > [!warning] El eje mayor va donde está $a$
 > En $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ el eje mayor es horizontal (porque $a > b$). Si el mayor denominador está bajo $y$, el eje mayor es vertical. Los focos van siempre sobre el eje mayor.

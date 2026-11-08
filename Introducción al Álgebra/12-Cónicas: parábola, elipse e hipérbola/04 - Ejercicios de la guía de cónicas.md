@@ -11,7 +11,7 @@ prerrequisitos:
   - "[[03 - La hipérbola]]"
 ---
 
-# Ejercicios de prueba de cónicas
+# Ejercicios de la guía de cónicas
 
 Preguntas de la guía y de las clases sobre parábolas, elipses e hipérbolas. Conviene intentar cada una antes de abrir la solución.
 
