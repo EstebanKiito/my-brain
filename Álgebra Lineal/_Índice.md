@@ -23,6 +23,7 @@ Vault de estudio del ramo. Cada tema reúne la teoría de las clases y del libro
 | [[Álgebra Lineal/10-Coordenadas, dimensión y rango/_Índice\|Coordenadas, dimensión y rango]] | Coordenadas e isomorfismo, dimensión, espacio fila y teorema del rango |
 | [[Álgebra Lineal/11-Cambio de base/_Índice\|Cambio de base]] | Matriz de cambio de coordenadas, su cálculo en Rⁿ y polinomios, y recuperar bases |
 | [[Álgebra Lineal/12-Valores y vectores propios/_Índice\|Valores y vectores propios]] | Vectores y espacios propios, polinomio característico, multiplicidad y similitud |
+| [[Álgebra Lineal/13-Diagonalización/_Índice\|Diagonalización]] | A = PDP⁻¹, criterios, potencias y matriz de una transformación en otras bases |
 
 ## Ruta de estudio y evaluaciones
 | Evaluación | Temas que entran |

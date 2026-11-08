@@ -215,5 +215,12 @@
     "original": "_meta/Álgebra Lineal/figuras/valores_propios.py",
     "destino": "Álgebra Lineal/12-Valores y vectores propios/adjuntos/Vectores propios como direcciones que A no gira.gif",
     "sha256": "4649f1fba04f206ce8a3e434c17b7f6be9f3e26b433b685c111b3b6beee7ce74"
+  },
+  {
+    "tema": "Diagonalización",
+    "tipo": "generada",
+    "original": "_meta/Álgebra Lineal/figuras/valores_propios.py",
+    "destino": "Álgebra Lineal/13-Diagonalización/adjuntos/Acción de una matriz diagonalizable en la base de vectores propios.png",
+    "sha256": "61a9ded49f334dad632fe17036d96c97a9d9de0465d68ecc6482a2e09a5e0131"
   }
 ]
