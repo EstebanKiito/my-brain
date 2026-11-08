@@ -10,7 +10,7 @@ prerrequisitos:
   - "[[05 - Álgebra de proposiciones: De Morgan y equivalencias]]"
 ---
 
-# Ejercicios de prueba de lógica proposicional
+# Ejercicios de la guía de lógica proposicional
 
 Preguntas de la guía del curso y de tareas anteriores sobre proposiciones, tablas de verdad, tautologías y técnicas de demostración. Conviene intentar cada una antes de abrir la solución.
 

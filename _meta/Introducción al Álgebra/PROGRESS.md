@@ -9,15 +9,16 @@ Rama: `migrar/intros-matematicos`. Un commit por tema. Antes de cada commit se c
 | 2 | Técnicas de demostración e inducción | `02-Técnicas de demostración e inducción/` | ✅ hecho | 6 + índice | 0 |
 | 3 | Conjuntos y operaciones | `03-Conjuntos y operaciones/` | ✅ hecho | 8 + índice | 2 |
 | 4 | Cuantificadores y negación | `04-Cuantificadores y negación/` | ✅ hecho | 5 + índice | 0 |
-| 5 | Polinomios: división y algoritmo de Euclides | `05-Polinomios: división y algoritmo de Euclides/` | ✅ hecho | 4 + índice | 0 |
-| 6 | Polinomios: raíces y gráfica | `06-Polinomios: raíces y gráfica/` | ✅ hecho | 6 + índice | 0 |
-| 7 | Trigonometría: razones y resolución de triángulos | `07-Trigonometría: razones y resolución de triángulos/` | ✅ hecho | 5 + índice | 2 |
-| 8 | Funciones trigonométricas e identidades | `08-Funciones trigonométricas e identidades/` | ✅ hecho | 6 + índice | 2 |
-| 9 | Números complejos, inversas y ecuaciones trigonométricas | `09-Números complejos, inversas y ecuaciones trigonométricas/` | ✅ hecho | 5 + índice | 1 |
-| 10 | Geometría analítica: distancia, circunferencia y división de segmentos | `10-Geometría analítica: distancia, circunferencia y división de segmentos/` | ✅ hecho | 6 + índice | 1 |
-| 11 | Cónicas: parábola, elipse e hipérbola | `11-Cónicas: parábola, elipse e hipérbola/` | ✅ hecho | 4 + índice | 1 |
-| 12 | Geometría vectorial: componentes, producto punto y cruz | `12-Geometría vectorial: componentes, producto punto y cruz/` | ✅ hecho | 5 + índice | 0 |
-| 13 | Gestión del curso | `13-Gestión del curso/` | ✅ hecho | 1 + índice | – |
+| 5 | Sumatorias, progresiones y binomio | `05-Sumatorias, progresiones y binomio/` | ⏳ pendiente | – | – |
+| 6 | Polinomios: división y algoritmo de Euclides | `06-Polinomios: división y algoritmo de Euclides/` | ✅ hecho | 4 + índice | 0 |
+| 7 | Polinomios: raíces y gráfica | `07-Polinomios: raíces y gráfica/` | ✅ hecho | 6 + índice | 0 |
+| 8 | Trigonometría: razones y resolución de triángulos | `08-Trigonometría: razones y resolución de triángulos/` | ✅ hecho | 5 + índice | 2 |
+| 9 | Funciones trigonométricas e identidades | `09-Funciones trigonométricas e identidades/` | ✅ hecho | 6 + índice | 2 |
+| 10 | Números complejos, inversas y ecuaciones trigonométricas | `10-Números complejos, inversas y ecuaciones trigonométricas/` | ✅ hecho | 5 + índice | 1 |
+| 11 | Geometría analítica: distancia, circunferencia y división de segmentos | `11-Geometría analítica: distancia, circunferencia y división de segmentos/` | ✅ hecho | 6 + índice | 1 |
+| 12 | Cónicas: parábola, elipse e hipérbola | `12-Cónicas: parábola, elipse e hipérbola/` | ✅ hecho | 4 + índice | 1 |
+| 13 | Geometría vectorial: componentes, producto punto y cruz | `13-Geometría vectorial: componentes, producto punto y cruz/` | ✅ hecho | 5 + índice | 0 |
+| 14 | Gestión del curso | `14-Gestión del curso/` | ✅ hecho | 1 + índice | – |
 
 ## Convenciones
 - Notas según [`_meta/ESTANDAR-NOTAS.md`](../ESTANDAR-NOTAS.md): un concepto por nota, de 60 a 120 líneas (máximo 150), prosa explicativa, definiciones y teoremas en `[!tip]`, LaTeX y preguntas de repaso plegables.
@@ -39,5 +40,5 @@ Rama: `migrar/intros-matematicos`. Un commit por tema. Antes de cada commit se c
 - **2026-11-08 · Geometría analítica: distancia, circunferencia y división de segmentos.** Fuentes: clase Semana 10 (distancia entre puntos y punto-recta, circunferencia, tangentes, familias de circunferencias y eje radical) y la división de un segmento de la Semana 13 (vector de posición y razón $\lambda$). La figura de la circunferencia se recortó de la página 2 de la clase (1 PNG, `tipo: "clase"`). Ejercicios: 5 (guía del curso). 6 notas; 1 figura.
 - **2026-11-08 · Cónicas: parábola, elipse e hipérbola.** Fuentes: clase Semana 11 (parábola y elipse) y Semana 12 (hipérbola). La figura de la parábola con foco y directriz se recortó de la página 1 de la clase (1 PNG, `tipo: "clase"`). Ejercicios: 5 (guía del curso y clases). 4 notas; 1 figura.
 - **2026-11-08 · Geometría vectorial: componentes, producto punto y cruz.** Fuentes: clase Semana 14 (componentes y longitud, operaciones, base estándar, producto punto y ángulo, producto cruz y área). Se usaron nombres de nota distintos a los de Álgebra Lineal para evitar colisiones (misma materia, distinta profundidad). Ejercicios: 5 (guía del curso y clases). 5 notas; sin imágenes (las fuentes son texto).
-- **2026-11-08 · Gestión del curso y mapa final del ramo.** Se consolidó el mapa de evaluaciones (tareas, interrogaciones y examen por tema) en `13-Gestión del curso/` y se añadió la ruta de estudio al `_Índice.md` del ramo. Cierre de la migración de Introducción al Álgebra.
+- **2026-11-08 · Gestión del curso y mapa final del ramo.** Se consolidó el mapa de evaluaciones (tareas, interrogaciones y examen por tema) en `14-Gestión del curso/` y se añadió la ruta de estudio al `_Índice.md` del ramo. Cierre de la migración de Introducción al Álgebra.
 - **2026-11-08 · Corrección de figuras.** Las 9 figuras generadas con matplotlib estaban rotas (gráficas sin curvas, parábola sin curva, rótulos cortados, el símbolo ∩ ausente) y sus transcripciones describían cosas que no aparecían. Se reemplazaron por recortes de las clases (8) y del Mickenberg (1, la clase no dibuja la forma polar), se reescribieron las transcripciones a partir de las figuras reales y se borraron los scripts de `figuras/`.

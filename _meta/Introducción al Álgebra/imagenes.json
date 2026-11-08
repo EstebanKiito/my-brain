@@ -3,7 +3,7 @@
     "tema": "Geometría analítica: distancia, circunferencia y división de segmentos",
     "tipo": "clase",
     "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana10.pdf#page=2",
-    "destino": "Introducción al Álgebra/10-Geometría analítica: distancia, circunferencia y división de segmentos/adjuntos/Circunferencia de centro C y radio r.png",
+    "destino": "Introducción al Álgebra/11-Geometría analítica: distancia, circunferencia y división de segmentos/adjuntos/Circunferencia de centro C y radio r.png",
     "sha256": "6284bfad1ee69d23aede8eb4a5627b95e78ff5af9ce64b76c41278aba843a9d1"
   },
   {
@@ -24,42 +24,42 @@
     "tema": "Números complejos, inversas y ecuaciones trigonométricas",
     "tipo": "libro",
     "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Mickenberg.pdf#page=278",
-    "destino": "Introducción al Álgebra/09-Números complejos, inversas y ecuaciones trigonométricas/adjuntos/Gráfico polar de dos números complejos.png",
+    "destino": "Introducción al Álgebra/10-Números complejos, inversas y ecuaciones trigonométricas/adjuntos/Gráfico polar de dos números complejos.png",
     "sha256": "5a82ed85ee4b6ad8f75de7281a2000f42b6e84ec03649c4ff6d53f2f37b00399"
   },
   {
     "tema": "Trigonometría: razones y resolución de triángulos",
     "tipo": "clase",
     "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana7.pdf#page=1",
-    "destino": "Introducción al Álgebra/07-Trigonometría: razones y resolución de triángulos/adjuntos/Triángulo rectángulo de las razones trigonométricas.png",
+    "destino": "Introducción al Álgebra/08-Trigonometría: razones y resolución de triángulos/adjuntos/Triángulo rectángulo de las razones trigonométricas.png",
     "sha256": "35575598e7c60eec3b5bc95aa462367dc7af73bfbc63f2bd3e1d469a21772dc3"
   },
   {
     "tema": "Trigonometría: razones y resolución de triángulos",
     "tipo": "clase",
     "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana7.pdf#page=2",
-    "destino": "Introducción al Álgebra/07-Trigonometría: razones y resolución de triángulos/adjuntos/Triángulos para los ángulos de 30, 45 y 60 grados.png",
+    "destino": "Introducción al Álgebra/08-Trigonometría: razones y resolución de triángulos/adjuntos/Triángulos para los ángulos de 30, 45 y 60 grados.png",
     "sha256": "164769479b021353118b335548ac82c42838d059e74237ac3cb784399010eba3"
   },
   {
     "tema": "Funciones trigonométricas e identidades",
     "tipo": "clase",
     "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana8.pdf#page=3",
-    "destino": "Introducción al Álgebra/08-Funciones trigonométricas e identidades/adjuntos/Gráficos de seno y coseno.png",
+    "destino": "Introducción al Álgebra/09-Funciones trigonométricas e identidades/adjuntos/Gráficos de seno y coseno.png",
     "sha256": "47919989bdc8ce82e1a9a1de38a8acf324e0b0d22e0223f676b7258229770e8f"
   },
   {
     "tema": "Funciones trigonométricas e identidades",
     "tipo": "clase",
     "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana8.pdf#page=4",
-    "destino": "Introducción al Álgebra/08-Funciones trigonométricas e identidades/adjuntos/Gráficos de la tangente y la cotangente.png",
+    "destino": "Introducción al Álgebra/09-Funciones trigonométricas e identidades/adjuntos/Gráficos de la tangente y la cotangente.png",
     "sha256": "cf85748b0d7adb4db5a16b74341036d2b24517df4ba736630ce860a522467fb4"
   },
   {
     "tema": "Cónicas: parábola, elipse e hipérbola",
     "tipo": "clase",
     "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana11.pdf#page=1",
-    "destino": "Introducción al Álgebra/11-Cónicas: parábola, elipse e hipérbola/adjuntos/Parábola con foco y directriz.png",
+    "destino": "Introducción al Álgebra/12-Cónicas: parábola, elipse e hipérbola/adjuntos/Parábola con foco y directriz.png",
     "sha256": "17a67f9943476b35d813756f23c0e1ed4ef0a91a89f50f92ecc8d38c6f6be2c6"
   }
 ]

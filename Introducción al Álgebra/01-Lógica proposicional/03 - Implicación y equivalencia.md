@@ -50,6 +50,22 @@ La equivalencia es el concepto central en la clasificación y el despeje: decir 
 
 Con estos conectivos se arman fórmulas más complejas, evaluadas con su tabla de verdad. Por ejemplo, para $((p \Rightarrow q) \vee s) \Leftrightarrow (p \wedge q)$ se construye una tabla de $2^3 = 8$ filas y se van calculando las subexpresiones de adentro hacia afuera, primero $p \Rightarrow q$, luego su disyunción con $s$, luego $p \wedge q$, y finalmente la equivalencia.
 
+## Razonar hacia atrás desde un valor conocido
+
+Muchas preguntas de prueba no piden la tabla completa, sino deducir valores a partir de un dato como "la implicación $A \Rightarrow B$ es falsa". Como la implicación tiene **una sola fila falsa**, ese dato fija dos cosas a la vez: $A = V$ y $B = F$. Del mismo modo, una conjunción verdadera obliga a que **todas** sus partes sean V, y una disyunción falsa obliga a que **todas** sus partes sean F.
+
+> [!tip] Lo que fija cada dato
+> | Dato | Consecuencia |
+> |---|---|
+> | $A \Rightarrow B$ es F | $A = V$ y $B = F$ |
+> | $A \wedge B$ es V | $A = V$ y $B = V$ |
+> | $A \vee B$ es F | $A = F$ y $B = F$ |
+> | $A \Leftrightarrow B$ es V y se conoce $A$ | $B$ tiene el mismo valor que $A$ |
+
+**Ejemplo.** Si $[(p \wedge q) \Rightarrow r] \Rightarrow (r \vee s)$ es falsa, entonces $r \vee s$ es F, así que $r = F$ y $s = F$; y $(p \wedge q) \Rightarrow r$ es V con $r = F$, así que $p \wedge q$ es F. Se sabe que $p$ y $q$ no son ambas verdaderas, pero no se puede decir más: la información fija algunas variables y deja otras libres.
+
+Al revés, si el antecedente de una implicación resulta F, la implicación es V **sin importar** el consecuente, y no hace falta evaluarlo.
+
 ## Preguntas de repaso
 
 > [!question]- ¿Cuál es la única fila en que $p \Rightarrow q$ es falsa? ¿Por qué es la que hay que vigilar?

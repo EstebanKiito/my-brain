@@ -43,8 +43,18 @@
         "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana4.pdf"
       ]
     },
+    "Sumatorias, progresiones y binomio": {
+      "carpeta": "Introducción al Álgebra/05-Sumatorias, progresiones y binomio",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana2.pdf",
+        "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Mickenberg.pdf",
+        "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Skibidi-IntroAlgebra.pdf"
+      ]
+    },
     "Polinomios: división y algoritmo de Euclides": {
-      "carpeta": "Introducción al Álgebra/05-Polinomios: división y algoritmo de Euclides",
+      "carpeta": "Introducción al Álgebra/06-Polinomios: división y algoritmo de Euclides",
       "estado": "hecho",
       "secciones": [],
       "pdfs": [
@@ -53,7 +63,7 @@
       ]
     },
     "Polinomios: raíces y gráfica": {
-      "carpeta": "Introducción al Álgebra/06-Polinomios: raíces y gráfica",
+      "carpeta": "Introducción al Álgebra/07-Polinomios: raíces y gráfica",
       "estado": "hecho",
       "secciones": [],
       "pdfs": [
@@ -61,7 +71,7 @@
       ]
     },
     "Trigonometría: razones y resolución de triángulos": {
-      "carpeta": "Introducción al Álgebra/07-Trigonometría: razones y resolución de triángulos",
+      "carpeta": "Introducción al Álgebra/08-Trigonometría: razones y resolución de triángulos",
       "estado": "hecho",
       "secciones": [],
       "pdfs": [
@@ -69,7 +79,7 @@
       ]
     },
     "Funciones trigonométricas e identidades": {
-      "carpeta": "Introducción al Álgebra/08-Funciones trigonométricas e identidades",
+      "carpeta": "Introducción al Álgebra/09-Funciones trigonométricas e identidades",
       "estado": "hecho",
       "secciones": [],
       "pdfs": [
@@ -77,7 +87,7 @@
       ]
     },
     "Números complejos, inversas y ecuaciones trigonométricas": {
-      "carpeta": "Introducción al Álgebra/09-Números complejos, inversas y ecuaciones trigonométricas",
+      "carpeta": "Introducción al Álgebra/10-Números complejos, inversas y ecuaciones trigonométricas",
       "estado": "hecho",
       "secciones": [],
       "pdfs": [
@@ -85,7 +95,7 @@
       ]
     },
     "Geometría analítica: distancia, circunferencia y división de segmentos": {
-      "carpeta": "Introducción al Álgebra/10-Geometría analítica: distancia, circunferencia y división de segmentos",
+      "carpeta": "Introducción al Álgebra/11-Geometría analítica: distancia, circunferencia y división de segmentos",
       "estado": "hecho",
       "secciones": [],
       "pdfs": [
@@ -94,7 +104,7 @@
       ]
     },
     "Cónicas: parábola, elipse e hipérbola": {
-      "carpeta": "Introducción al Álgebra/11-Cónicas: parábola, elipse e hipérbola",
+      "carpeta": "Introducción al Álgebra/12-Cónicas: parábola, elipse e hipérbola",
       "estado": "hecho",
       "secciones": [],
       "pdfs": [
@@ -103,7 +113,7 @@
       ]
     },
     "Geometría vectorial: componentes, producto punto y cruz": {
-      "carpeta": "Introducción al Álgebra/12-Geometría vectorial: componentes, producto punto y cruz",
+      "carpeta": "Introducción al Álgebra/13-Geometría vectorial: componentes, producto punto y cruz",
       "estado": "hecho",
       "secciones": [],
       "pdfs": [
@@ -111,7 +121,7 @@
       ]
     },
     "Gestión del curso": {
-      "carpeta": "Introducción al Álgebra/13-Gestión del curso",
+      "carpeta": "Introducción al Álgebra/14-Gestión del curso",
       "estado": "hecho",
       "secciones": [],
       "pdfs": []
