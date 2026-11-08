@@ -10,7 +10,7 @@ prerrequisitos:
   - "[[05 - Ángulo doble, medio y prostaféresis]]"
 ---
 
-# Ejercicios de prueba de identidades
+# Ejercicios de la guía de identidades
 
 Preguntas de la guía sobre valores exactos, fórmulas de suma, ángulo doble y prostaféresis. Conviene intentar cada una antes de abrir la solución.
 

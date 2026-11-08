@@ -124,5 +124,19 @@
     "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Pruebas/2023-1/i5-2023-1-pauta.pdf#page=1",
     "destino": "Introducción al Álgebra/09-Funciones trigonométricas e identidades/adjuntos/Ángulos auxiliares para la tangente de gamma.png",
     "sha256": "c2790d1300e1bcfcb3639d31d9bb797416e616e45501e4360cd319eb5b7088e3"
+  },
+  {
+    "tema": "Funciones trigonométricas e identidades",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Pruebas/2026-1/I5-MAT1207.pdf#page=3",
+    "destino": "Introducción al Álgebra/09-Funciones trigonométricas e identidades/adjuntos/Triángulo rectángulo OAC con B sobre AC.png",
+    "sha256": "2d6295a1ea7b0fbdbb1c8773a23ff3e459593294d17eb695070795dd22ce76bf"
+  },
+  {
+    "tema": "Funciones trigonométricas e identidades",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana8.pdf#page=2",
+    "destino": "Introducción al Álgebra/09-Funciones trigonométricas e identidades/adjuntos/Punto P de la circunferencia unitaria determinado por t.png",
+    "sha256": "75e432197876f298e65a9661baf093eaa05571e03b6bd04fd36cdc3983bbdd51"
   }
 ]

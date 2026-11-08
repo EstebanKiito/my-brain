@@ -20,6 +20,11 @@ $$
 \sin(t) = y, \qquad \cos(t) = x.
 $$
 
+![Punto P de la circunferencia unitaria determinado por t](adjuntos/Punto%20P%20de%20la%20circunferencia%20unitaria%20determinado%20por%20t.png)
+
+> [!example]- Transcripción de la figura
+> Circunferencia de radio $1$ centrada en el origen $O$, con ejes $x$ e $y$. Desde $A = (1, 0)$ sale un arco rojo en sentido antihorario hasta el punto $P(x, y)$, en el primer cuadrante. Un segmento discontinuo une $O$ con $P$ y forma con el eje $x$ el ángulo $t$, cuya medida en radianes es la longitud del arco $AP$.
+
 Es decir, el coseno es la abscisa y el seno la ordenada del punto $P$.
 
 ## Propiedades fundamentales
