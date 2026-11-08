@@ -10,7 +10,7 @@ prerrequisitos:
   - "[[07 - Aplicaciones a encuestas]]"
 ---
 
-# Ejercicios de prueba de conjuntos
+# Ejercicios de la guía de conjuntos
 
 Preguntas de la guía sobre conjuntos, álgebra de conjuntos y cardinalidad. Conviene intentar cada una antes de abrir la solución.
 

@@ -31,6 +31,35 @@ $$
 > [!tip] Álgebra de conjuntos
 > Reescriba $A - B = A \cap B^{c}$, agrupe con distributividad, use $B \cup B^{c} = U$, $B \cap B^{c} = \emptyset$, y las identidades con $\emptyset$ y $U$. El objetivo es llegar a una expresión sin diferencias ni complementos anidados.
 
+En las pruebas se pide **nombrar cada ley** usada (caracterización de la diferencia, De Morgan, doble complemento, distributividad, absorción…): cada nombre suele valer puntaje.
+
+## Demostrar con una hipótesis de contención
+
+Muchas preguntas dicen "si $A \subseteq C$, entonces…". La hipótesis no se usa como una igualdad sino a través de alguno de estos hechos, todos fáciles de probar con elementos:
+
+> [!tip] Cómo se usa $X \subseteq Y$
+> - $X \cap Y = X$ y $X \cup Y = Y$.
+> - $X - Y = \emptyset$, es decir, $X \cap Y^{c} = \emptyset$.
+> - $Y^{c} \subseteq X^{c}$ (la contención se **invierte** al complementar).
+> - $X \cap Z \subseteq Y \cap Z$ y $X \cup Z \subseteq Y \cup Z$ para cualquier $Z$ (monotonía).
+
+**Ejemplo.** Si $A \subseteq C$, entonces $A - B = C - [B \cup (C - A)]$.
+
+$$
+\begin{aligned}
+C - [B \cup (C - A)] &= C \cap [B^{c} \cap (C \cap A^{c})^{c}] && \text{(diferencia y De Morgan)} \\
+&= C \cap [B^{c} \cap (C^{c} \cup A)] && \text{(De Morgan y doble complemento)} \\
+&= B^{c} \cap [(C \cap C^{c}) \cup (C \cap A)] && \text{(asociatividad, conmutatividad, distributividad)} \\
+&= B^{c} \cap A = A - B && (C \cap C^{c} = \emptyset \text{ y } C \cap A = A \text{ porque } A \subseteq C)
+\end{aligned}
+$$
+
+## Demostrar una igualdad por doble inclusión
+
+Cuando los conjuntos están definidos por una propiedad (y no como combinación de otros), el álgebra no sirve: se prueba $A \subseteq B$ y $B \subseteq A$ tomando un elemento arbitrario. Para mostrar que **no** son iguales basta un elemento que esté en uno y no en el otro.
+
+**Ejemplo.** $\{n^2 \mid n \in \mathbb{N} \cup \{0\}\} = \{n^2 \mid n \in \mathbb{Z}\}$. La contención $\subseteq$ es inmediata. Para $\supseteq$: si $x = n^2$ con $n \in \mathbb{Z}$ y $n < 0$, entonces $x = (-n)^2$ con $-n \in \mathbb{N}$.
+
 ## Cardinalidad de uniones
 
 Para conjuntos finitos, la cardinalidad de una unión no es la suma simple de cardinalidades: hay que restar lo que se cuenta dos veces.
@@ -59,3 +88,9 @@ Para conjuntos finitos, la cardinalidad de una unión no es la suma simple de ca
 
 > [!question]- En el principio de inclusión-exclusión con tres conjuntos, ¿por qué el último término se suma?
 > Porque al restar las tres intersecciones dobles, la triple intersección se restó tres veces; al sumar $n(A \cap B \cap C)$ se compensa y queda contada una sola vez.
+
+> [!question]- Si $A \subseteq B$, ¿qué relación hay entre $A^{c}$ y $B^{c}$?
+> $B^{c} \subseteq A^{c}$: si $x \notin B$, entonces $x \notin A$ (contrarrecíproca de $x \in A \Rightarrow x \in B$).
+
+> [!question]- Para probar $X^{c} = U$, ¿qué basta mostrar?
+> Que $X = \emptyset$, porque $\emptyset^{c} = U$.
