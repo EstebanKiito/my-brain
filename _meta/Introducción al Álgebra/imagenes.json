@@ -54,5 +54,12 @@
     "original": "_meta/Introducción al Álgebra/figuras/geometria.py",
     "destino": "Introducción al Álgebra/10-Geometría analítica: distancia, circunferencia y división de segmentos/adjuntos/circunferencia de centro C y radio r.png",
     "sha256": "692d6801d3440773a984a468500cfc414a6a32eff8b8400f1bea8cdfe88ebc8b"
+  },
+  {
+    "tema": "Cónicas: parábola, elipse e hipérbola",
+    "tipo": "generada",
+    "original": "_meta/Introducción al Álgebra/figuras/conicas.py",
+    "destino": "Introducción al Álgebra/11-Cónicas: parábola, elipse e hipérbola/adjuntos/parabola con foco y directriz.png",
+    "sha256": "7a7da70dfaf5521570066703c3111b4029e116b900d2696730a0e300430c7ad7"
   }
 ]

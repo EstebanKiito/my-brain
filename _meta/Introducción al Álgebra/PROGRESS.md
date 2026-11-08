@@ -15,7 +15,7 @@ Rama: `migrar/intros-matematicos`. Un commit por tema. Antes de cada commit se c
 | 8 | Funciones trigonométricas e identidades | `08-Funciones trigonométricas e identidades/` | ✅ hecho | 6 + índice | 2 |
 | 9 | Números complejos, inversas y ecuaciones trigonométricas | `09-Números complejos, inversas y ecuaciones trigonométricas/` | ✅ hecho | 5 + índice | 1 |
 | 10 | Geometría analítica: distancia, circunferencia y división de segmentos | `10-Geometría analítica: distancia, circunferencia y división de segmentos/` | ✅ hecho | 6 + índice | 1 |
-| 11 | Cónicas: parábola, elipse e hipérbola | `11-Cónicas: parábola, elipse e hipérbola/` | ⏳ pendiente | – | – |
+| 11 | Cónicas: parábola, elipse e hipérbola | `11-Cónicas: parábola, elipse e hipérbola/` | ✅ hecho | 4 + índice | 1 |
 | 12 | Geometría vectorial: componentes, producto punto y cruz | `12-Geometría vectorial: componentes, producto punto y cruz/` | ⏳ pendiente | – | – |
 | 13 | Gestión del curso | `13-Gestión del curso/` | ⏳ pendiente | – | – |
 
@@ -37,3 +37,4 @@ Rama: `migrar/intros-matematicos`. Un commit por tema. Antes de cada commit se c
 - **2026-11-07 · Funciones trigonométricas e identidades.** Fuentes: clase Semana 8 (medición de ángulos y radianes, seno y coseno en la circunferencia unitaria, gráficas, tangente y recíprocas, e identidades de suma, ángulo doble, medio, prostaféresis y reducción). Las gráficas se regeneraron con `figuras/trig_graficos.py` (2 PNG, `tipo: "generada"`). Ejercicios: 5 (guía del curso). 6 notas; 2 figuras.
 - **2026-11-07 · Números complejos, inversas y ecuaciones trigonométricas.** Fuentes: clase Semana 9 (forma polar de un complejo, producto y Moivre, raíces n-ésimas, inversas trigonométricas y ecuaciones trigonométricas). La figura de la forma polar se regeneró con `figuras/complejos.py` (1 PNG, `tipo: "generada"`). Ejercicios: 5 (guía del curso y clases). 5 notas; 1 figura.
 - **2026-11-08 · Geometría analítica: distancia, circunferencia y división de segmentos.** Fuentes: clase Semana 10 (distancia entre puntos y punto-recta, circunferencia, tangentes, familias de circunferencias y eje radical) y la división de un segmento de la Semana 13 (vector de posición y razón $\lambda$). La figura de la circunferencia se regeneró con `figuras/geometria.py` (1 PNG, `tipo: "generada"`). Ejercicios: 5 (guía del curso). 6 notas; 1 figura.
+- **2026-11-08 · Cónicas: parábola, elipse e hipérbola.** Fuentes: clase Semana 11 (parábola y elipse) y Semana 12 (hipérbola). La figura de la parábola con foco y directriz se regeneró con `figuras/conicas.py` (1 PNG, `tipo: "generada"`). Ejercicios: 5 (guía del curso y clases). 4 notas; 1 figura.
