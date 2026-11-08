@@ -208,5 +208,12 @@
     "original": "Semestre 3/Algebra Lineal/Clases/Clase 27 Matriz de cambio de base.pdf#page=5",
     "destino": "Álgebra Lineal/11-Cambio de base/adjuntos/Diagrama de la matriz de cambio de coordenadas.png",
     "sha256": "3a4fb8ed54c9a60d9ea93db3821454c02e656612dda420a35e34d9f48fdf88b6"
+  },
+  {
+    "tema": "Valores y vectores propios",
+    "tipo": "generada",
+    "original": "_meta/Álgebra Lineal/figuras/valores_propios.py",
+    "destino": "Álgebra Lineal/12-Valores y vectores propios/adjuntos/Vectores propios como direcciones que A no gira.gif",
+    "sha256": "4649f1fba04f206ce8a3e434c17b7f6be9f3e26b433b685c111b3b6beee7ce74"
   }
 ]

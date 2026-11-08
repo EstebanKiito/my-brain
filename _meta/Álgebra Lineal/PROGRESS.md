@@ -16,7 +16,7 @@ Rama: `migrar/algebra-lineal`. Un commit por tema. Antes de cada commit se corre
 | 9 | Espacios y subespacios vectoriales | `09-Espacios y subespacios vectoriales/` | ✅ hecho | 6 + índice | 3 |
 | 10 | Coordenadas, dimensión y rango | `10-Coordenadas, dimensión y rango/` | ✅ hecho | 4 + índice | 1 |
 | 11 | Cambio de base | `11-Cambio de base/` | ✅ hecho | 3 + índice | 2 |
-| 12 | Valores y vectores propios | `12-Valores y vectores propios/` | ⏳ pendiente | – | – |
+| 12 | Valores y vectores propios | `12-Valores y vectores propios/` | ✅ hecho | 3 + índice | 1 |
 | 13 | Diagonalización | `13-Diagonalización/` | ⏳ pendiente | – | – |
 | 14 | Valores propios complejos | `14-Valores propios complejos/` | ⏳ pendiente | – | – |
 | 15 | Ortogonalidad y complemento ortogonal | `15-Ortogonalidad y complemento ortogonal/` | ⏳ pendiente | – | – |
@@ -45,3 +45,4 @@ Rama: `migrar/algebra-lineal`. Un commit por tema. Antes de cada commit se corre
 - **2026-11-07 · Espacios y subespacios vectoriales.** Fuentes: slides 22-24 (espacio vectorial, subespacios, Gen, LI y bases, teorema del conjunto generador, Nul, Col, núcleo y rango) y Lay 4.1-4.3. Tres figuras recortadas del Lay (las slides no traen figuras). Ejercicios: 16 en dos notas (Ejercita; las de núcleo y rango en P2 estaban clasificadas como transformaciones). 6 notas; 3 figuras del libro.
 - **2026-11-07 · Coordenadas, dimensión y rango.** Fuentes: slides 25-26 (coordenadas, isomorfismo, dimensión, teorema de la base, espacio fila, teorema del rango, continuación del teorema de la matriz invertible) y Lay 4.4-4.6. Ejercicios: 8 (Ejercita), algunos agrupando V o F relacionados. 4 notas; 1 figura de clase.
 - **2026-11-07 · Cambio de base.** Fuentes: slide 27 (cambio de base, P C←B, inversa, cambio en Rⁿ y a la base estándar) y Lay 4.7. Ejercicios: 7 (Ejercita). 3 notas; 2 figuras de clase (a la primera se le quitó el pie de figura).
+- **2026-11-08 · Valores y vectores propios.** Fuentes: slides 28-29 (definición, espacio propio, triangulares, invertibilidad, independencia, ecuación característica, multiplicidad, similitud) y Lay 5.1-5.2. GIF generado (`figuras/valores_propios.py`): un vector recorre el círculo unitario y se resalta cuando Ax es paralelo a x. Ejercicios: 8 (Ejercita). 3 notas; 1 figura generada.
