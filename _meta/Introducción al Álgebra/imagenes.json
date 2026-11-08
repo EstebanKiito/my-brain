@@ -40,5 +40,12 @@
     "original": "_meta/Introducción al Álgebra/figuras/trig_graficos.py",
     "destino": "Introducción al Álgebra/08-Funciones trigonométricas e identidades/adjuntos/grafico de la tangente.png",
     "sha256": "85d7e68a4a27b886ff52a8fe5024007deaf12c17184891eaab3ce7ba6d83968a"
+  },
+  {
+    "tema": "Números complejos, inversas y ecuaciones trigonométricas",
+    "tipo": "generada",
+    "original": "_meta/Introducción al Álgebra/figuras/complejos.py",
+    "destino": "Introducción al Álgebra/09-Números complejos, inversas y ecuaciones trigonométricas/adjuntos/forma polar de un numero complejo.png",
+    "sha256": "0cf62768b936c315bdcda7c2b36bf99fdfcb23860a7be5d092501905432eba6a"
   }
 ]
