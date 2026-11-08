@@ -16,10 +16,10 @@ Para los ángulos de $30^\circ$, $45^\circ$ y $60^\circ$ los valores de seno y c
 
 Tomando un triángulo equilátero de lado $2$ y trazando su altura, queda dividido en dos triángulos rectángulos $30^\circ$-$60^\circ$-$90^\circ$. Sus lados son: hipotenusa $2$, cateto menor $1$ (opuesto a $30^\circ$) y cateto mayor $\sqrt{3}$ (opuesto a $60^\circ$).
 
-![Triángulo 30-60-90](adjuntos/triangulo%2030-60-90.png)
+![Triángulos para los ángulos de 30, 45 y 60 grados](adjuntos/Tri%C3%A1ngulos%20para%20los%20%C3%A1ngulos%20de%2030,%2045%20y%2060%20grados.png)
 
 > [!example]- Transcripción de la imagen
-> Un triángulo rectángulo con ángulos $60^\circ$ (vértice inferior izquierdo) y $30^\circ$ (vértice superior derecho). El cateto horizontal (opuesto a $60^\circ$) mide $\sqrt3$, el cateto vertical (opuesto a $30^\circ$) mide $1$ y la hipotenusa mide $2$.
+> Izquierda: un cuadrado de lado $1$ cortado por su diagonal, que mide $\sqrt2$; cada mitad es un triángulo rectángulo isósceles con dos ángulos de $45^\circ$. Derecha: un triángulo equilátero de lado $2$ con la altura $BD$ trazada; la mitad izquierda $ABD$ tiene hipotenusa $AB = 2$, cateto $AD = 1$ (junto al ángulo de $60^\circ$ en $A$) y altura $BD = \sqrt3$ (junto al ángulo de $30^\circ$ en $B$).
 
 De ahí salen $\sin 60^\circ = \sqrt3/2$, $\cos 60^\circ = 1/2$, y por simetría $\sin 30^\circ = 1/2$, $\cos 30^\circ = \sqrt3/2$. Para $45^\circ$ se usa un triángulo rectángulo isósceles de catetos $1$ e hipotenusa $\sqrt2$.
 

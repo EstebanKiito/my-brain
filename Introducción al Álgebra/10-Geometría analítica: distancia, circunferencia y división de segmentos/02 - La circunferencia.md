@@ -20,10 +20,10 @@ $$
 (x - h)^2 + (y - k)^2 = r^2.
 $$
 
-![Circunferencia de centro C y radio r](adjuntos/circunferencia%20de%20centro%20C%20y%20radio%20r.png)
+![Circunferencia de centro C y radio r](adjuntos/Circunferencia%20de%20centro%20C%20y%20radio%20r.png)
 
 > [!example]- Transcripción de la imagen
-> Una circunferencia con centro $C(h, k)$ marcado en su interior. Un radio $r$ (en rojo) une el centro con un punto $P(x, y)$ de la circunferencia. Todos los puntos de la curva están a distancia $r$ del centro.
+> Una circunferencia roja con centro $C(h, k)$ en el primer cuadrante, lejos del origen. Un segmento une el centro con un punto $P(x, y)$ de la circunferencia y está rotulado $r$: todo punto de la curva está a distancia $r$ del centro.
 
 **Ejemplo.** La circunferencia con diámetro de extremos $A(-4, 6)$ y $B(2, 0)$ tiene centro en el punto medio $(-1, 3)$ y radio la mitad de $d(A,B) = \sqrt{72} = 6\sqrt2$, es decir $r = 3\sqrt2$. Su ecuación es $(x + 1)^2 + (y - 3)^2 = 18$.
 

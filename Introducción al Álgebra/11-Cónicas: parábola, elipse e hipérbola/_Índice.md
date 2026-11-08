@@ -5,7 +5,7 @@ La parábola, la elipse y la hipérbola: sus definiciones, ecuaciones canónicas
 Volver al [[Introducción al Álgebra/_Índice|mapa del ramo]].
 
 > [!note] Origen
-> Reescrito a partir de las clases de las semanas 11 y 12; la figura de la parábola se regeneró (la clase la dibuja como gráfico vectorial) y los ejercicios vienen de la guía del curso.
+> Reescrito a partir de las clases de las semanas 11 y 12; la figura de la parábola es un recorte de la clase y los ejercicios vienen de la guía del curso.
 
 ## Orden de estudio
 1. [[01 - La parábola|La parábola]]: definición, ecuación, foco, directriz y lado recto.

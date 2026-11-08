@@ -5,7 +5,7 @@ La forma polar de un número complejo, el producto y las potencias (Moivre), las
 Volver al [[Introducción al Álgebra/_Índice|mapa del ramo]].
 
 > [!note] Origen
-> Reescrito a partir de la clase de la semana 9; la figura de la forma polar se regeneró (la clase la dibuja como gráfico vectorial) y los ejercicios vienen de la guía del curso.
+> Reescrito a partir de la clase de la semana 9; la figura de la forma polar viene del libro de precálculo del curso (la clase no la dibuja) y los ejercicios vienen de la guía del curso.
 
 ## Orden de estudio
 1. [[01 - Forma polar de un número complejo|Forma polar de un número complejo]]: módulo, argumento y la notación $\operatorname{cis}$.

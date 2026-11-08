@@ -22,10 +22,10 @@ $$
 
 $r$ es el **módulo** y $\theta$ el **argumento**. Se abrevia $\cos\theta + i\sin\theta$ como $\operatorname{cis}(\theta)$.
 
-![Forma polar de un número complejo](adjuntos/forma%20polar%20de%20un%20numero%20complejo.png)
+![Gráfico polar de dos números complejos](adjuntos/Gr%C3%A1fico%20polar%20de%20dos%20n%C3%BAmeros%20complejos.png)
 
 > [!example]- Transcripción de la imagen
-> Un plano con eje real (horizontal, Re) e imaginario (vertical, Im). Un punto $z = a + bi$ tiene coordenadas $(a, b)$; el segmento desde el origen hasta $z$ mide $r$ (el módulo) y forma el ángulo $\theta$ (el argumento) con el eje real positivo.
+> Dos planos complejos con eje real ($Re$) e imaginario ($Im$). (a) El punto $z_1 = 1 + i$, unido al origen por un segmento de largo $|z_1| = \sqrt2$, con el ángulo $\tfrac{\pi}{4}$ marcado desde el eje real. (b) El punto $z_2 = -1 + \sqrt3\,i$, en el segundo cuadrante, con módulo $2$ y el ángulo $\tfrac{2\pi}{3}$ marcado desde el eje real positivo: el argumento se mide siempre desde ahí, aunque el punto esté a la izquierda.
 
 ## El argumento según el cuadrante
 

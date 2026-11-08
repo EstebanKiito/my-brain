@@ -5,7 +5,7 @@ Conjuntos, pertenencia y notación; igualdad, conjunto vacío, universo y cardin
 Volver al [[Introducción al Álgebra/_Índice|mapa del ramo]].
 
 > [!note] Origen
-> Reescrito a partir de la clase de la semana 3; los diagramas de Venn se regeneraron (la clase los dibuja como gráficos vectoriales) y los ejercicios vienen de la guía del curso.
+> Reescrito a partir de la clase de la semana 3; los diagramas de Venn son recortes de la clase y los ejercicios vienen de la guía del curso.
 
 ## Orden de estudio
 1. [[01 - Conjuntos, elementos y notación|Conjuntos, elementos y notación]]: qué es un conjunto, pertenencia y descripción por extensión y compresión.

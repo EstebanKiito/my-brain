@@ -5,7 +5,7 @@ Las razones trigonométricas y sus identidades, los valores notables de $30^\cir
 Volver al [[Introducción al Álgebra/_Índice|mapa del ramo]].
 
 > [!note] Origen
-> Reescrito a partir de la clase de la semana 7; los triángulos de las definiciones se regeneraron (la clase los dibuja como gráficos vectoriales) y los ejercicios vienen de la guía del curso.
+> Reescrito a partir de la clase de la semana 7; los triángulos son recortes de la clase y los ejercicios vienen de la guía del curso.
 
 ## Orden de estudio
 1. [[01 - Razones trigonométricas|Razones trigonométricas]]: las seis razones y las identidades fundamentales.

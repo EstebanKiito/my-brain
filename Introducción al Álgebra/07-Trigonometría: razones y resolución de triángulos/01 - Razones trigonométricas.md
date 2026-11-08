@@ -24,10 +24,10 @@ $$
 \csc(\alpha) = \frac{c}{a}, \qquad \sec(\alpha) = \frac{c}{b}, \qquad \cot(\alpha) = \frac{b}{a}.
 $$
 
-![Triángulo rectángulo de razones trigonométricas](adjuntos/triangulo%20rectangulo%20de%20razones%20trigonometricas.png)
+![Triángulo rectángulo de las razones trigonométricas](adjuntos/Tri%C3%A1ngulo%20rect%C3%A1ngulo%20de%20las%20razones%20trigonom%C3%A9tricas.png)
 
 > [!example]- Transcripción de la imagen
-> Un triángulo rectángulo con el ángulo agudo $\alpha$ en el vértice inferior izquierdo. El cateto horizontal (adyacente a $\alpha$) mide $b$, el cateto vertical (opuesto a $\alpha$) mide $a$ y la hipotenusa mide $c$. El ángulo recto está en el vértice inferior derecho.
+> Un triángulo rectángulo $ABC$ con el ángulo recto en $C$ y el ángulo agudo $\alpha$ en $A$. El cateto $b$ (de $A$ a $C$) es el adyacente a $\alpha$, el cateto $a$ (de $C$ a $B$) es el opuesto y $c$ (de $A$ a $B$) es la hipotenusa.
 
 Las tres últimas son las recíprocas de las tres primeras.
 

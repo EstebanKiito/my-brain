@@ -45,10 +45,10 @@ Un *elemento* pertenece; un *conjunto* está contenido. Confundirlos produce err
 
 Un **diagrama de Venn** representa los conjuntos como figuras planas cerradas (discos) dentro de un rectángulo que es el universo $U$. Sirve para ver de un vistazo las relaciones de contención y las operaciones.
 
-![Diagrama de Venn de dos conjuntos](adjuntos/diagrama%20de%20Venn%20de%20dos%20conjuntos.png)
+![Diagramas de Venn de inclusión, intersección y conjuntos disjuntos](adjuntos/Diagramas%20de%20Venn%20de%20inclusi%C3%B3n,%20intersecci%C3%B3n%20y%20conjuntos%20disjuntos.png)
 
 > [!example]- Transcripción de la imagen
-> Un rectángulo rotulado $U$ representa el universo. Dentro hay dos discos superpuestos: $A$ (azul, izquierda) y $B$ (amarillo, derecha). La zona de solapamiento, rotulada $A \cap B$, contiene los elementos que están en ambos conjuntos a la vez.
+> Tres rectángulos rotulados $U$ (el universo), cada uno con dos conjuntos. Izquierda: $A$ dibujado dentro de $B$, es decir, $A \subseteq B$. Centro: $A$ y $B$ se superponen; tienen elementos en común. Derecha: $A$ y $B$ están separados; no tienen elementos en común (son disjuntos).
 
 ## Preguntas de repaso
 

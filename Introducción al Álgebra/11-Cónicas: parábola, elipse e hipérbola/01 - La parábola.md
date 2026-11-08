@@ -20,10 +20,10 @@ $$
 \sqrt{(x - p)^2 + y^2} = |x + p| \iff y^2 = 4px.
 $$
 
-![Parábola con foco y directriz](adjuntos/parabola%20con%20foco%20y%20directriz.png)
+![Parábola con foco y directriz](adjuntos/Par%C3%A1bola%20con%20foco%20y%20directriz.png)
 
 > [!example]- Transcripción de la imagen
-> Una parábola (azul) con vértice $V$ en el origen. El foco $F(p, 0)$ está sobre el eje $X$ (a la derecha), y la directriz es la recta vertical punteada $x = -p$. Todo punto de la curva está a igual distancia del foco y de la directriz.
+> Una parábola roja con vértice en el origen que abre hacia la derecha. El foco $F(p, 0)$ está sobre el eje $x$, dentro de la curva, y la directriz es la recta vertical azul $x = -p$, a la misma distancia del vértice pero al otro lado. Todo punto de la parábola está a igual distancia del foco y de la directriz.
 
 > [!tip] Parábola con vértice en el origen
 > - $y^2 = 4px$: abre a la derecha si $p > 0$ (izquierda si $p < 0$). Foco $(p, 0)$, directriz $x = -p$.

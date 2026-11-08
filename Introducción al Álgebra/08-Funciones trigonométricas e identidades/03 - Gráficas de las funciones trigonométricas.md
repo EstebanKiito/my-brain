@@ -16,10 +16,10 @@ Reuniendo los valores y las propiedades (periodicidad, paridad, recorrido) se ob
 
 Las gráficas de $\sin$ y $\cos$ son la misma onda desplazada: el coseno es el seno corrido $\pi/2$ a la izquierda. Ambas tienen **período** $2\pi$ y recorrido $[-1, 1]$.
 
-![Gráfico de seno y coseno](adjuntos/grafico%20de%20seno%20y%20coseno.png)
+![Gráficos de seno y coseno](adjuntos/Gr%C3%A1ficos%20de%20seno%20y%20coseno.png)
 
 > [!example]- Transcripción de la imagen
-> Sobre los ejes se dibujan dos ondas de período $2\pi$. La curva del coseno (azul) parte de $1$ en $t = 0$; la del seno (roja) parte de $0$, sube a $1$ en $\pi/2$ y vuelve a $0$ en $\pi$. Ambas oscilan entre $-1$ y $1$ y se repiten cada $2\pi$.
+> Dos gráficos sobre el intervalo de $-\pi$ a $4\pi$. Arriba, $y = \sin t$: vale $0$ en $t = 0$, sube a $1$ en $\tfrac{\pi}{2}$ y baja a $-1$ en $\tfrac{3\pi}{2}$. Abajo, $y = \cos t$: vale $1$ en $t = 0$. Ambos oscilan entre $-1$ y $1$, y una flecha marca el período $2\pi$ entre dos repeticiones.
 
 ## Tangente y recíprocas
 
@@ -30,10 +30,10 @@ Las gráficas de $\sin$ y $\cos$ son la misma onda desplazada: el coseno es el s
 
 La tangente tiene asíntotas verticales en los múltiplos impares de $\pi/2$ (donde el coseno se anula), y su gráfica se repite con **período** $\pi$.
 
-![Gráfico de la tangente](adjuntos/grafico%20de%20la%20tangente.png)
+![Gráficos de la tangente y la cotangente](adjuntos/Gr%C3%A1ficos%20de%20la%20tangente%20y%20la%20cotangente.png)
 
 > [!example]- Transcripción de la imagen
-> La curva de la tangente (naranja) cruza el origen, crece y se dispara hacia $+\infty$ al acercarse a la asíntota vertical en $\pi/2$ (línea punteada), reaparece desde $-\infty$ al otro lado, y se repite cada $\pi$. Hay asíntotas en $\pi/2$ y $3\pi/2$.
+> Dos gráficos con asíntotas verticales punteadas. (a) $y = \tan x$: crece en cada tramo, pasa por el origen y tiene asíntotas en $x = \pm\tfrac{\pi}{2}, \pm\tfrac{3\pi}{2}$, donde el coseno se anula. (b) $y = \cot x$: decrece en cada tramo y tiene asíntotas en $x = 0, \pm\pi$, donde el seno se anula. En ambas, cada tramo se repite cada $\pi$.
 
 > [!warning] Período de la tangente
 > La tangente tiene período $\pi$, no $2\pi$: como $\tan(t + \pi) = \tan t$, su onda se repite el doble de rápido que la del seno.

@@ -1,65 +1,65 @@
 [
   {
-    "tema": "Conjuntos y operaciones",
-    "tipo": "generada",
-    "original": "_meta/Introducción al Álgebra/figuras/venn.py",
-    "destino": "Introducción al Álgebra/03-Conjuntos y operaciones/adjuntos/diagrama de Venn de dos conjuntos.png",
-    "sha256": "b0d0305028d7a382c9dfdf9f6afffaedf88d6fa2fa67e2b6a29847843793d8f1"
+    "tema": "Geometría analítica: distancia, circunferencia y división de segmentos",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana10.pdf#page=2",
+    "destino": "Introducción al Álgebra/10-Geometría analítica: distancia, circunferencia y división de segmentos/adjuntos/Circunferencia de centro C y radio r.png",
+    "sha256": "6284bfad1ee69d23aede8eb4a5627b95e78ff5af9ce64b76c41278aba843a9d1"
   },
   {
     "tema": "Conjuntos y operaciones",
-    "tipo": "generada",
-    "original": "_meta/Introducción al Álgebra/figuras/venn.py",
-    "destino": "Introducción al Álgebra/03-Conjuntos y operaciones/adjuntos/diagrama de Venn del problema de los deportistas.png",
-    "sha256": "d60feab2569ee6c17b784ba818c8aa02c4c721b6b356ca0063dd3e5471db52be"
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana3.pdf#page=5",
+    "destino": "Introducción al Álgebra/03-Conjuntos y operaciones/adjuntos/Diagramas de Venn de inclusión, intersección y conjuntos disjuntos.png",
+    "sha256": "87dd6193d213287a00cd586382e2a1659b0389adba879501705d1ddf52767bc5"
   },
   {
-    "tema": "Trigonometría: razones y resolución de triángulos",
-    "tipo": "generada",
-    "original": "_meta/Introducción al Álgebra/figuras/triangulos.py",
-    "destino": "Introducción al Álgebra/07-Trigonometría: razones y resolución de triángulos/adjuntos/triangulo rectangulo de razones trigonometricas.png",
-    "sha256": "4a67095527f543fe9245bb36d4ec4dcc3cc347060ce3c9e81fc9f074a65dc95e"
-  },
-  {
-    "tema": "Trigonometría: razones y resolución de triángulos",
-    "tipo": "generada",
-    "original": "_meta/Introducción al Álgebra/figuras/triangulos.py",
-    "destino": "Introducción al Álgebra/07-Trigonometría: razones y resolución de triángulos/adjuntos/triangulo 30-60-90.png",
-    "sha256": "3403f72e783ce09e0168ac8659132101cfe4d56ebcec757b6b2f53900335105d"
-  },
-  {
-    "tema": "Funciones trigonométricas e identidades",
-    "tipo": "generada",
-    "original": "_meta/Introducción al Álgebra/figuras/trig_graficos.py",
-    "destino": "Introducción al Álgebra/08-Funciones trigonométricas e identidades/adjuntos/grafico de seno y coseno.png",
-    "sha256": "564ca6670a6a4de8402ad781df39f7a23c01b397667fbcdf99633a9f809633b6"
-  },
-  {
-    "tema": "Funciones trigonométricas e identidades",
-    "tipo": "generada",
-    "original": "_meta/Introducción al Álgebra/figuras/trig_graficos.py",
-    "destino": "Introducción al Álgebra/08-Funciones trigonométricas e identidades/adjuntos/grafico de la tangente.png",
-    "sha256": "85d7e68a4a27b886ff52a8fe5024007deaf12c17184891eaab3ce7ba6d83968a"
+    "tema": "Conjuntos y operaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana3.pdf#page=13",
+    "destino": "Introducción al Álgebra/03-Conjuntos y operaciones/adjuntos/Diagrama de Venn del problema de los deportistas.png",
+    "sha256": "23ca56358ee21c6e3c42622b23d5c153189bc78b11118546c9761facaf1b0306"
   },
   {
     "tema": "Números complejos, inversas y ecuaciones trigonométricas",
-    "tipo": "generada",
-    "original": "_meta/Introducción al Álgebra/figuras/complejos.py",
-    "destino": "Introducción al Álgebra/09-Números complejos, inversas y ecuaciones trigonométricas/adjuntos/forma polar de un numero complejo.png",
-    "sha256": "0cf62768b936c315bdcda7c2b36bf99fdfcb23860a7be5d092501905432eba6a"
+    "tipo": "libro",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Mickenberg.pdf#page=278",
+    "destino": "Introducción al Álgebra/09-Números complejos, inversas y ecuaciones trigonométricas/adjuntos/Gráfico polar de dos números complejos.png",
+    "sha256": "5a82ed85ee4b6ad8f75de7281a2000f42b6e84ec03649c4ff6d53f2f37b00399"
   },
   {
-    "tema": "Geometría analítica: distancia, circunferencia y división de segmentos",
-    "tipo": "generada",
-    "original": "_meta/Introducción al Álgebra/figuras/geometria.py",
-    "destino": "Introducción al Álgebra/10-Geometría analítica: distancia, circunferencia y división de segmentos/adjuntos/circunferencia de centro C y radio r.png",
-    "sha256": "692d6801d3440773a984a468500cfc414a6a32eff8b8400f1bea8cdfe88ebc8b"
+    "tema": "Trigonometría: razones y resolución de triángulos",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana7.pdf#page=1",
+    "destino": "Introducción al Álgebra/07-Trigonometría: razones y resolución de triángulos/adjuntos/Triángulo rectángulo de las razones trigonométricas.png",
+    "sha256": "35575598e7c60eec3b5bc95aa462367dc7af73bfbc63f2bd3e1d469a21772dc3"
+  },
+  {
+    "tema": "Trigonometría: razones y resolución de triángulos",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana7.pdf#page=2",
+    "destino": "Introducción al Álgebra/07-Trigonometría: razones y resolución de triángulos/adjuntos/Triángulos para los ángulos de 30, 45 y 60 grados.png",
+    "sha256": "164769479b021353118b335548ac82c42838d059e74237ac3cb784399010eba3"
+  },
+  {
+    "tema": "Funciones trigonométricas e identidades",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana8.pdf#page=3",
+    "destino": "Introducción al Álgebra/08-Funciones trigonométricas e identidades/adjuntos/Gráficos de seno y coseno.png",
+    "sha256": "47919989bdc8ce82e1a9a1de38a8acf324e0b0d22e0223f676b7258229770e8f"
+  },
+  {
+    "tema": "Funciones trigonométricas e identidades",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana8.pdf#page=4",
+    "destino": "Introducción al Álgebra/08-Funciones trigonométricas e identidades/adjuntos/Gráficos de la tangente y la cotangente.png",
+    "sha256": "cf85748b0d7adb4db5a16b74341036d2b24517df4ba736630ce860a522467fb4"
   },
   {
     "tema": "Cónicas: parábola, elipse e hipérbola",
-    "tipo": "generada",
-    "original": "_meta/Introducción al Álgebra/figuras/conicas.py",
-    "destino": "Introducción al Álgebra/11-Cónicas: parábola, elipse e hipérbola/adjuntos/parabola con foco y directriz.png",
-    "sha256": "7a7da70dfaf5521570066703c3111b4029e116b900d2696730a0e300430c7ad7"
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana11.pdf#page=1",
+    "destino": "Introducción al Álgebra/11-Cónicas: parábola, elipse e hipérbola/adjuntos/Parábola con foco y directriz.png",
+    "sha256": "17a67f9943476b35d813756f23c0e1ed4ef0a91a89f50f92ecc8d38c6f6be2c6"
   }
 ]

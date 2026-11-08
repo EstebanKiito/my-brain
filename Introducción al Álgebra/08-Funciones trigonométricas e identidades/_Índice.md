@@ -5,7 +5,7 @@
 Volver al [[Introducción al Álgebra/_Índice|mapa del ramo]].
 
 > [!note] Origen
-> Reescrito a partir de la clase de la semana 8; las gráficas de seno, coseno y tangente se regeneraron (la clase las dibuja como gráficos vectoriales) y los ejercicios vienen de la guía del curso.
+> Reescrito a partir de la clase de la semana 8; las gráficas de seno, coseno, tangente y cotangente son recortes de la clase y los ejercicios vienen de la guía del curso.
 
 ## Orden de estudio
 1. [[01 - Ángulos y radianes|Ángulos y radianes]]: la medida de ángulos en radianes y la circunferencia unitaria.

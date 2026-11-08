@@ -5,7 +5,7 @@ La distancia entre puntos y de un punto a una recta, la circunferencia y sus tan
 Volver al [[Introducción al Álgebra/_Índice|mapa del ramo]].
 
 > [!note] Origen
-> Reescrito a partir de las clases de las semanas 10 y 13; la figura de la circunferencia se regeneró (la clase la dibuja como gráfico vectorial) y los ejercicios vienen de la guía del curso.
+> Reescrito a partir de las clases de las semanas 10 y 13; la figura de la circunferencia es un recorte de la clase y los ejercicios vienen de la guía del curso.
 
 ## Orden de estudio
 1. [[01 - Distancia entre puntos y de un punto a una recta|Distancia entre puntos y de un punto a una recta]]: la distancia entre dos puntos y la fórmula punto-recta.

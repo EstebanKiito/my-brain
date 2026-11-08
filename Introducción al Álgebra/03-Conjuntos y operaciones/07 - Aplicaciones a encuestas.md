@@ -26,10 +26,10 @@ Los problemas de encuestas ("cuántos estudian X o Y") se resuelven traduciendo 
 
 Cada región del diagrama recibe una letra que representa su cardinalidad.
 
-![Diagrama de Venn del problema de los deportistas](adjuntos/diagrama%20de%20Venn%20del%20problema%20de%20los%20deportistas.png)
+![Diagrama de Venn del problema de los deportistas](adjuntos/Diagrama%20de%20Venn%20del%20problema%20de%20los%20deportistas.png)
 
 > [!example]- Transcripción de la imagen
-> Dentro del universo $U$ hay tres discos: $S$ (salto alto, arriba), $P$ (100 m, abajo-izquierda) y $G$ (garrocha, abajo-derecha). Las regiones muestran sus cardinalidades: $9$ (solo salto alto), $6$ (salto alto y 100 m), $3$ (solo 100 m), $2$ (salto alto y garrocha), $7$ (las tres, en el centro), $5$ (100 m y garrocha), $11$ (solo garrocha) y $1$ fuera de los tres discos (no participa en ninguno).
+> Dentro del universo $U$ hay tres círculos: $S$ (salto alto, arriba a la izquierda), $P$ (100 m, arriba a la derecha) y $G$ (garrocha, abajo). Las regiones muestran sus cardinalidades: $9$ (solo salto alto), $6$ (salto alto y 100 m), $3$ (solo 100 m), $2$ (salto alto y garrocha), $7$ (las tres, en el centro), $5$ (100 m y garrocha), $11$ (solo garrocha) y $1$ fuera de los círculos (no participa en ninguna).
 
 ## Traducir a ecuaciones
 
