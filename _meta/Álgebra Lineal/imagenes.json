@@ -187,5 +187,12 @@
     "original": "Semestre 3/Algebra Lineal/Algebra-Lineal-david-lay.pdf#page=222",
     "destino": "Álgebra Lineal/09-Espacios y subespacios vectoriales/adjuntos/Núcleo y rango de una transformación.png",
     "sha256": "480ee22bc169b46cd65f99571b92e79495af788ca22dba9cf99847959fd86150"
+  },
+  {
+    "tema": "Coordenadas, dimensión y rango",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 25 Sistemas de coordenadas.pdf#page=5",
+    "destino": "Álgebra Lineal/10-Coordenadas, dimensión y rango/adjuntos/Coordenadas de x en la base B.png",
+    "sha256": "6d087053cd299ad1bd02ff410af01fd4b23264a3032bb28b3fd4a382d2292883"
   }
 ]

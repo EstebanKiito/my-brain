@@ -14,7 +14,7 @@ Rama: `migrar/algebra-lineal`. Un commit por tema. Antes de cada commit se corre
 | 7 | Álgebra de matrices, inversa y LU | `07-Álgebra de matrices, inversa y LU/` | ✅ hecho | 7 + índice | 2 |
 | 8 | Determinantes | `08-Determinantes/` | ✅ hecho | 6 + índice | 4 |
 | 9 | Espacios y subespacios vectoriales | `09-Espacios y subespacios vectoriales/` | ✅ hecho | 6 + índice | 3 |
-| 10 | Coordenadas, dimensión y rango | `10-Coordenadas, dimensión y rango/` | ⏳ pendiente | – | – |
+| 10 | Coordenadas, dimensión y rango | `10-Coordenadas, dimensión y rango/` | ✅ hecho | 4 + índice | 1 |
 | 11 | Cambio de base | `11-Cambio de base/` | ⏳ pendiente | – | – |
 | 12 | Valores y vectores propios | `12-Valores y vectores propios/` | ⏳ pendiente | – | – |
 | 13 | Diagonalización | `13-Diagonalización/` | ⏳ pendiente | – | – |
@@ -27,7 +27,7 @@ Rama: `migrar/algebra-lineal`. Un commit por tema. Antes de cada commit se corre
 
 ## Convenciones
 - Notas según [`_meta/ESTANDAR-NOTAS.md`](../ESTANDAR-NOTAS.md) con detalle alto (hasta ~150 líneas): definiciones y teoremas en `[!tip]`, intuición geométrica, demostraciones cortas cuando aclaran y ejemplos resueltos paso a paso. Todo en LaTeX.
-- Fuentes: slides de clase (41 PDF; su numeración difiere del clase a clase desde la clase 27), clase a clase (indica las secciones del Lay) y el Lay para teoremas y contenidos sin slide (rango, LU).
+- Fuentes: slides de clase (41 PDF; su numeración difiere del clase a clase desde la clase 27), clase a clase (indica las secciones del Lay) y el Lay para teoremas y contenidos sin slide (LU).
 - Cada tema cierra con una nota **Ejercicios de prueba**: preguntas de interrogaciones y exámenes (banco de Ejercita, 2021-2026; PDF 2013-2019 de respaldo) con desarrollo completo escrito y verificado con sympy. Ejercita solo trae la respuesta final; si no calza con el cálculo, se registra en DUDAS.md.
 - Figuras del Lay (vectoriales) recortadas de un render a 200 dpi con `pdftoppm`, registradas con `tipo: "libro"`. Figuras y GIF generados con matplotlib a partir de los ejemplos de las notas; el script queda en `_meta/Álgebra Lineal/figuras/` y se registran con `tipo: "generada"`.
 - Figuras de las slides extraídas con `pdfimages` (imagen + máscara alfa sobre fondo blanco), sin los pies de figura del libro, registradas con `tipo: "clase"`.
@@ -43,3 +43,4 @@ Rama: `migrar/algebra-lineal`. Un commit por tema. Antes de cada commit se corre
 - **2026-11-07 · Álgebra de matrices, inversa y LU.** Fuentes: slides 15-17 (operaciones, producto, transpuesta, inversa, matrices elementales, algoritmo de la inversa, teorema de la matriz invertible) y Lay 2.1-2.3; la factorización LU (Lay 2.5) no tiene slide, pero se incluyó porque aparece en casi todas las I2. Ejercicios: 16 en dos notas (Ejercita); el ejercicio LU de 4 × 4 de la I2 2022-1 es el ejemplo 1 de Lay 2.5. 7 notas; 1 figura de clase y 1 del Lay.
 - **2026-11-07 · Determinantes.** Fuentes: slides 18-21 (cofactores, propiedades, invertibilidad, det AB, linealidad por columnas, Cramer, adjunta, área y volumen, elipse) y Lay 3.1-3.3. El ejemplo de 5 × 5 de la slide 18 se tomó del Lay (el texto extraído de la slide estaba desordenado). Se agregaron det(adj A) = (det A)^(n-1), que aparece en las pruebas, y un GIF generado sobre área y orientación. Ejercicios: 16 en dos notas (Ejercita). 6 notas; 3 figuras de clase y 1 generada.
 - **2026-11-07 · Espacios y subespacios vectoriales.** Fuentes: slides 22-24 (espacio vectorial, subespacios, Gen, LI y bases, teorema del conjunto generador, Nul, Col, núcleo y rango) y Lay 4.1-4.3. Tres figuras recortadas del Lay (las slides no traen figuras). Ejercicios: 16 en dos notas (Ejercita; las de núcleo y rango en P2 estaban clasificadas como transformaciones). 6 notas; 3 figuras del libro.
+- **2026-11-07 · Coordenadas, dimensión y rango.** Fuentes: slides 25-26 (coordenadas, isomorfismo, dimensión, teorema de la base, espacio fila, teorema del rango, continuación del teorema de la matriz invertible) y Lay 4.4-4.6. Ejercicios: 8 (Ejercita), algunos agrupando V o F relacionados. 4 notas; 1 figura de clase.
