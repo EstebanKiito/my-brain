@@ -278,5 +278,26 @@
     "original": "Semestre 3/Algebra Lineal/Clases/Clase 37 Problemas de m¡nimos cuadrados y recta de m¡nimos cuadrados.pdf#page=12",
     "destino": "Álgebra Lineal/17-Mínimos cuadrados/adjuntos/Recta de mínimos cuadrados y residuos.png",
     "sha256": "06cac0d5bc1764a7bebc693480c15edc225d2b54df8328a0e2f1ebcf7df16203"
+  },
+  {
+    "tema": "Matrices simétricas y formas cuadráticas",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 39 Formas cuadr ticas.pdf#page=8",
+    "destino": "Álgebra Lineal/18-Matrices simétricas y formas cuadráticas/adjuntos/Elipse e hipérbola en posición estándar.png",
+    "sha256": "bac14a367c19ea084cb162ef582a93678835b0b23d5a706f12e65db02fc4c588"
+  },
+  {
+    "tema": "Matrices simétricas y formas cuadráticas",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 39 Formas cuadr ticas.pdf#page=8",
+    "destino": "Álgebra Lineal/18-Matrices simétricas y formas cuadráticas/adjuntos/Cónicas con ejes rotados.png",
+    "sha256": "8015f2223789743efc7f3c40f9c63e436c8b4e80dc00c27a2aa3a8992f048875"
+  },
+  {
+    "tema": "Matrices simétricas y formas cuadráticas",
+    "tipo": "generada",
+    "original": "_meta/Álgebra Lineal/figuras/formas_cuadraticas_y_dvs.py",
+    "destino": "Álgebra Lineal/18-Matrices simétricas y formas cuadráticas/adjuntos/Formas cuadráticas definida, indefinida y semidefinida.png",
+    "sha256": "df0af4d6cff74bd78fb7dbb83e70f98c0e1b486b3ba09ad25803edac91c9bf4c"
   }
 ]
