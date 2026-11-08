@@ -23,7 +23,7 @@ Rama: `migrar/algebra-lineal`. Un commit por tema. Antes de cada commit se corre
 | 16 | Proyecciones y Gram-Schmidt | `16-Proyecciones y Gram-Schmidt/` | ✅ hecho | 3 + índice | 4 |
 | 17 | Mínimos cuadrados | `17-Mínimos cuadrados/` | ✅ hecho | 3 + índice | 2 |
 | 18 | Matrices simétricas y formas cuadráticas | `18-Matrices simétricas y formas cuadráticas/` | ✅ hecho | 3 + índice | 3 |
-| 19 | Cholesky y descomposición en valores singulares | `19-Cholesky y descomposición en valores singulares/` | ⏳ pendiente | – | – |
+| 19 | Cholesky y descomposición en valores singulares | `19-Cholesky y descomposición en valores singulares/` | ✅ hecho | 3 + índice | 2 |
 
 ## Convenciones
 - Notas según [`_meta/ESTANDAR-NOTAS.md`](../ESTANDAR-NOTAS.md) con detalle alto (hasta ~150 líneas): definiciones y teoremas en `[!tip]`, intuición geométrica, demostraciones cortas cuando aclaran y ejemplos resueltos paso a paso. Todo en LaTeX.
@@ -52,3 +52,5 @@ Rama: `migrar/algebra-lineal`. Un commit por tema. Antes de cada commit se corre
 - **2026-11-08 · Proyecciones y Gram-Schmidt.** Fuentes: slides 35-36 (proyección sobre una recta y sobre W, descomposición ortogonal, mejor aproximación, UUᵀ, Gram-Schmidt, QR) y Lay 6.3-6.4. El ejemplo de proyección sobre un plano se tomó del Lay porque el texto extraído de la slide 35 mezclaba los vectores. Ejercicios: 7 (Ejercita). 3 notas; 4 figuras de clase.
 - **2026-11-08 · Mínimos cuadrados.** Fuentes: slide 37 (definición, tres estrategias, ecuaciones normales, error, unicidad, QR, recta de mínimos cuadrados) y Lay 6.5-6.6. Ejercicios: 6 (Ejercita, exámenes). 3 notas; 2 figuras de clase.
 - **2026-11-08 · Matrices simétricas y formas cuadráticas.** Fuentes: slides 38-39 (simétricas, diagonalización ortogonal, teorema y descomposición espectral, formas cuadráticas, ejes principales, cónicas, clasificación) y Lay 7.1-7.2. Se agregó el criterio de los menores principales, que usan las pautas de examen. Figura generada con curvas de nivel de formas definida, indefinida y semidefinida. Ejercicios: 7 (Ejercita, exámenes). 3 notas; 2 figuras de clase y 1 generada.
+- **2026-11-08 · Cholesky y descomposición en valores singulares.** Fuentes: slides 40-41 (Cholesky con dos métodos, máximo de formas cuadráticas, valores singulares, DVS y algoritmo) y Lay 7.2 (ej. 26) y 7.4. Todas las DVS se verificaron reconstruyendo UΣVᵀ. Figura generada con la DVS de una matriz de 2 × 2. Ejercicios: 6 de DVS (Ejercita, exámenes); el banco no trae preguntas de Cholesky, que se practica en la nota de teoría. 3 notas; 1 figura de clase y 1 generada.
+- **2026-11-08 · Cierre.** Migración completa: 19 temas, 77 notas (24 de ejercicios de prueba), 45 imágenes (de clase, del Lay y generadas). Verificación completa del ramo: 0 errores y 0 advertencias. Ejercicios de Ejercita verificados con sympy; todas las respuestas del banco calzaron.

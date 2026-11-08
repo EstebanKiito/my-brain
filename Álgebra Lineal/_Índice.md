@@ -29,6 +29,7 @@ Vault de estudio del ramo. Cada tema reúne la teoría de las clases y del libro
 | [[Álgebra Lineal/16-Proyecciones y Gram-Schmidt/_Índice\|Proyecciones y Gram-Schmidt]] | Proyección ortogonal, mejor aproximación, distancia, Gram-Schmidt y QR |
 | [[Álgebra Lineal/17-Mínimos cuadrados/_Índice\|Mínimos cuadrados]] | Soluciones de mínimos cuadrados, ecuaciones normales, error y recta de ajuste |
 | [[Álgebra Lineal/18-Matrices simétricas y formas cuadráticas/_Índice\|Matrices simétricas y formas cuadráticas]] | Diagonalización ortogonal, teorema espectral, ejes principales y clasificación de formas |
+| [[Álgebra Lineal/19-Cholesky y descomposición en valores singulares/_Índice\|Cholesky y descomposición en valores singulares]] | Factorización de Cholesky, valores singulares y A = UΣVᵀ |
 
 ## Ruta de estudio y evaluaciones
 | Evaluación | Temas que entran |

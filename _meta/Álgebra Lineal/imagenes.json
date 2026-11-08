@@ -299,5 +299,19 @@
     "original": "_meta/Álgebra Lineal/figuras/formas_cuadraticas_y_dvs.py",
     "destino": "Álgebra Lineal/18-Matrices simétricas y formas cuadráticas/adjuntos/Formas cuadráticas definida, indefinida y semidefinida.png",
     "sha256": "df0af4d6cff74bd78fb7dbb83e70f98c0e1b486b3ba09ad25803edac91c9bf4c"
+  },
+  {
+    "tema": "Cholesky y descomposición en valores singulares",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 41 Descomposiciขn en valores singulares.pdf#page=8",
+    "destino": "Álgebra Lineal/19-Cholesky y descomposición en valores singulares/adjuntos/Forma de la matriz Sigma.png",
+    "sha256": "6f099940cfdd4fc42f4bc5a7400c544c70044bc9787ddd84946ff037b97860c9"
+  },
+  {
+    "tema": "Cholesky y descomposición en valores singulares",
+    "tipo": "generada",
+    "original": "_meta/Álgebra Lineal/figuras/formas_cuadraticas_y_dvs.py",
+    "destino": "Álgebra Lineal/19-Cholesky y descomposición en valores singulares/adjuntos/Descomposición en valores singulares de una matriz 2x2.png",
+    "sha256": "e9611fbe7fd50ed2cf40e0f676c7a9a36358a1e56e28f8374c14c4a4924f2095"
   }
 ]
