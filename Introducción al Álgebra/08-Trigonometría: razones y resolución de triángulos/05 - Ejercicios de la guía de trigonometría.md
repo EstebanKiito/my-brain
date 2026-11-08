@@ -10,7 +10,7 @@ prerrequisitos:
   - "[[04 - Teorema del seno y del coseno]]"
 ---
 
-# Ejercicios de prueba de trigonometría
+# Ejercicios de la guía de trigonometría
 
 Preguntas de la guía sobre razones trigonométricas, identidades y resolución de triángulos. Conviene intentar cada una antes de abrir la solución.
 

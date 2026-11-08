@@ -36,6 +36,22 @@ Se usa cuando se conocen **dos lados y el ángulo comprendido** (para hallar el 
 > [!warning] Cuándo usar cada uno
 > **Seno:** un lado con su ángulo opuesto, y otro dato. **Coseno:** dos lados y el ángulo entre ellos, o los tres lados. Confundirlos lleva a cuentas sin sentido.
 
+## El caso ambiguo del seno
+
+Al despejar un ángulo con el teorema del seno se obtiene $\sin\alpha = k$, y en $(0^\circ, 180^\circ)$ hay **dos** ángulos con ese seno: $\alpha$ y $180^\circ - \alpha$. Hay que revisar cuál es compatible con los otros ángulos (la suma debe ser menor que $180^\circ$).
+
+**Ejemplo.** Con $c = 5\sqrt 2$, $a = 5$ y $\gamma = 45^\circ$: $\sin\alpha = \frac{a\sin\gamma}{c} = \frac{5 \cdot \frac{\sqrt 2}{2}}{5\sqrt 2} = \frac{1}{2}$, así que $\alpha = 30^\circ$ o $150^\circ$. Pero $150^\circ + 45^\circ > 180^\circ$, y solo queda $\alpha = 30^\circ$. Con el teorema del coseno se llega a lo mismo: $50 = 25 + b^2 - 5\sqrt 2\, b$ tiene una sola raíz positiva, $b = \frac{5\sqrt 2 + 5\sqrt 6}{2}$.
+
+> [!warning] Las pautas puntúan el descarte
+> Escribir las dos opciones y justificar por qué una no sirve vale puntaje aparte. Si las dos son compatibles, hay dos triángulos distintos con esos datos.
+
+## Problemas con ángulos de elevación
+
+Cuando dos observadores ven el mismo punto alto con ángulos distintos, hay dos caminos:
+
+1. **Con dos triángulos rectángulos:** se llama $h$ a la altura y $x$ a una distancia horizontal, se escribe $\tan(\text{ángulo}) = \frac{h}{\text{distancia}}$ para cada observador y se resuelve el sistema.
+2. **Con el triángulo oblicuo:** el triángulo formado por los dos observadores y la cima tiene ángulos conocidos (el exterior es la suma de los dos interiores no adyacentes), así que el teorema del seno da la distancia a la cima, y luego $h = \text{distancia} \cdot \sin(\text{ángulo})$.
+
 ## Preguntas de repaso
 
 > [!question]- ¿Qué relaciona el teorema del seno?

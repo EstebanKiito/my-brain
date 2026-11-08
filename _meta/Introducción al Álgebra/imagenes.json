@@ -89,5 +89,40 @@
     "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Pruebas/2026-1/I7-MAT1207.pdf#page=1",
     "destino": "Introducción al Álgebra/07-Polinomios: raíces y gráfica/adjuntos/Gráfico de un polinomio de grado 3 con raíz doble en 2.png",
     "sha256": "3248caed639f397ff787bbbe9175bcd31d06230b6419ba515f85ceb1dd71ac11"
+  },
+  {
+    "tema": "Trigonometría: razones y resolución de triángulos",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Pruebas/2024-1/i5-2024-1-pauta.pdf#page=2",
+    "destino": "Introducción al Álgebra/08-Trigonometría: razones y resolución de triángulos/adjuntos/Triángulo ABC con el punto D sobre AC.png",
+    "sha256": "7bb0138fc033f8b57a325b231b21b5fd736293eaa42d1be763502fa081cfaa2d"
+  },
+  {
+    "tema": "Trigonometría: razones y resolución de triángulos",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Pruebas/2025-1/Interrogacin5-MAT1207.pdf#page=1",
+    "destino": "Introducción al Álgebra/08-Trigonometría: razones y resolución de triángulos/adjuntos/Teleférico desde A hasta la cima P.png",
+    "sha256": "721f453e1c5cbb518368cc2620b366ab3513517a45184b4531a91a4d4db1ad2d"
+  },
+  {
+    "tema": "Trigonometría: razones y resolución de triángulos",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Pruebas/2025-1/Interrogacin5-MAT1207.pdf#page=1",
+    "destino": "Introducción al Álgebra/08-Trigonometría: razones y resolución de triángulos/adjuntos/Triángulos auxiliares del teleférico.png",
+    "sha256": "b92cec2e78376b6a20c84404a3948c4e624eefbddb80d2616e35fe30426539c7"
+  },
+  {
+    "tema": "Funciones trigonométricas e identidades",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Pruebas/2023-1/i5-2023-1-pauta.pdf#page=1",
+    "destino": "Introducción al Álgebra/09-Funciones trigonométricas e identidades/adjuntos/Figura para calcular la tangente de gamma.png",
+    "sha256": "4ada57e64d02acc13654e6ecb8091c557e12cf60fad1cd36b8d2e5edaef2c609"
+  },
+  {
+    "tema": "Funciones trigonométricas e identidades",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Pruebas/2023-1/i5-2023-1-pauta.pdf#page=1",
+    "destino": "Introducción al Álgebra/09-Funciones trigonométricas e identidades/adjuntos/Ángulos auxiliares para la tangente de gamma.png",
+    "sha256": "c2790d1300e1bcfcb3639d31d9bb797416e616e45501e4360cd319eb5b7088e3"
   }
 ]
