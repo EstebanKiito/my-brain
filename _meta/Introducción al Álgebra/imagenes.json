@@ -12,5 +12,19 @@
     "original": "_meta/Introducción al Álgebra/figuras/venn.py",
     "destino": "Introducción al Álgebra/03-Conjuntos y operaciones/adjuntos/diagrama de Venn del problema de los deportistas.png",
     "sha256": "d60feab2569ee6c17b784ba818c8aa02c4c721b6b356ca0063dd3e5471db52be"
+  },
+  {
+    "tema": "Trigonometría: razones y resolución de triángulos",
+    "tipo": "generada",
+    "original": "_meta/Introducción al Álgebra/figuras/triangulos.py",
+    "destino": "Introducción al Álgebra/07-Trigonometría: razones y resolución de triángulos/adjuntos/triangulo rectangulo de razones trigonometricas.png",
+    "sha256": "4a67095527f543fe9245bb36d4ec4dcc3cc347060ce3c9e81fc9f074a65dc95e"
+  },
+  {
+    "tema": "Trigonometría: razones y resolución de triángulos",
+    "tipo": "generada",
+    "original": "_meta/Introducción al Álgebra/figuras/triangulos.py",
+    "destino": "Introducción al Álgebra/07-Trigonometría: razones y resolución de triángulos/adjuntos/triangulo 30-60-90.png",
+    "sha256": "3403f72e783ce09e0168ac8659132101cfe4d56ebcec757b6b2f53900335105d"
   }
 ]

@@ -11,7 +11,7 @@ Rama: `migrar/intros-matematicos`. Un commit por tema. Antes de cada commit se c
 | 4 | Cuantificadores y negación | `04-Cuantificadores y negación/` | ✅ hecho | 5 + índice | 0 |
 | 5 | Polinomios: división y algoritmo de Euclides | `05-Polinomios: división y algoritmo de Euclides/` | ✅ hecho | 4 + índice | 0 |
 | 6 | Polinomios: raíces y gráfica | `06-Polinomios: raíces y gráfica/` | ✅ hecho | 6 + índice | 0 |
-| 7 | Trigonometría: razones y resolución de triángulos | `07-Trigonometría: razones y resolución de triángulos/` | ⏳ pendiente | – | – |
+| 7 | Trigonometría: razones y resolución de triángulos | `07-Trigonometría: razones y resolución de triángulos/` | ✅ hecho | 5 + índice | 2 |
 | 8 | Funciones trigonométricas e identidades | `08-Funciones trigonométricas e identidades/` | ⏳ pendiente | – | – |
 | 9 | Números complejos, inversas y ecuaciones trigonométricas | `09-Números complejos, inversas y ecuaciones trigonométricas/` | ⏳ pendiente | – | – |
 | 10 | Geometría analítica: distancia, circunferencia y división de segmentos | `10-Geometría analítica: distancia, circunferencia y división de segmentos/` | ⏳ pendiente | – | – |
@@ -33,3 +33,4 @@ Rama: `migrar/intros-matematicos`. Un commit por tema. Antes de cada commit se c
 - **2026-11-07 · Cuantificadores y negación.** Fuentes: clase Semana 4 (funciones proposicionales, cuantificadores $\forall$, $\exists$, $\exists!$, demostración con cuantificadores, orden de cuantificadores y negación). Ejercicios: 5 (guía del curso). 5 notas; sin imágenes (las fuentes son texto).
 - **2026-11-07 · Polinomios: división y algoritmo de Euclides.** Fuentes: clase Semana 5 (funciones polinomiales, grado, coeficientes, $\mathbb{K}[x]$, igualdad, grado de suma y producto, algoritmo de la división y teorema del resto). Ejercicios: 5 (guía del curso y tarea 2), incluido hallar $c$ para que $x^2+c$ divida a $2x^3-x^2+6x-3$. 4 notas; sin imágenes (las fuentes son texto).
 - **2026-11-07 · Polinomios: raíces y gráfica.** Fuentes: clase de polinomios semana 6 (raíces, teorema del factor, ceros racionales, irreducibles, factorización en $\mathbb{R}$, teorema fundamental del álgebra, raíces conjugadas y gráfica/comportamiento final). El comportamiento final se tabuló (la clase lo da en gráficas vectoriales). Ejercicios: 5 (guía del curso). 6 notas; sin imágenes.
+- **2026-11-07 · Trigonometría: razones y resolución de triángulos.** Fuentes: clase Semana 7 (razones trigonométricas, identidades, valores notables de $30^\circ$, $45^\circ$ y $60^\circ$, área de un triángulo, teorema del seno y del coseno). Los triángulos de las definiciones se regeneraron con `figuras/triangulos.py` (2 PNG, `tipo: "generada"`). Ejercicios: 5 (guía del curso). 5 notas; 2 figuras.
