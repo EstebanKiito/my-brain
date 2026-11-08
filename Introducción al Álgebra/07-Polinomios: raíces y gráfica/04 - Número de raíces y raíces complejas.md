@@ -34,6 +34,17 @@ Como $P$ tiene coeficientes reales, $1 - i$ también es raíz. El producto $(x -
 
 Como $\alpha$ y $\overline{\alpha} = 1 - i$ son raíces, $x^2 - 2x + 2$ divide a $P$. Dividiendo, $P(x) = (x^2 - 2x + 2)(x^2 + 4x + 6) + (a + 4)x + (b - 12)$. Para que el resto sea $0$, $a + 4 = 0$ y $b - 12 = 0$, luego $a = -4$ y $b = 12$.
 
+> [!tip] El factor cuadrático de dos conjugadas
+> $(x - \alpha)(x - \overline{\alpha}) = x^2 - 2\operatorname{Re}(\alpha)\,x + |\alpha|^2$. Para $\alpha = 3 + 3i$ da $x^2 - 6x + 18$ sin multiplicar binomios.
+
+## Relaciones entre raíces y coeficientes
+
+Si $P(x) = x^3 + ax^2 + bx + c$ tiene raíces $\alpha, \beta, \gamma$, al expandir $(x - \alpha)(x - \beta)(x - \gamma)$ y comparar coeficientes:
+$$\alpha + \beta + \gamma = -a, \qquad \alpha\beta + \alpha\gamma + \beta\gamma = b, \qquad \alpha\beta\gamma = -c.$$
+Para grado $2$, $x^2 + bx + c$: la suma de las raíces es $-b$ y el producto es $c$. El polinomio debe estar **mónico** (coeficiente principal $1$); si no, se divide primero por él.
+
+**Ejemplo.** Las raíces de $x^3 - \frac{5}{3}x^2 + \frac{31}{36}x - \frac{5}{36}$ cumplen $\gamma = \alpha + \beta$. Como $\alpha + \beta + \gamma = \frac{5}{3}$, se tiene $2\gamma = \frac{5}{3}$ y $\gamma = \frac{5}{6}$, sin resolver la cúbica.
+
 ## Preguntas de repaso
 
 > [!question]- ¿Cuántas raíces complejas tiene un polinomio de grado $n$?

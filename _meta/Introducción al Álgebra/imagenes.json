@@ -68,5 +68,26 @@
     "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Pruebas/2025-1/Interrogacin2-MAT1207.pdf#page=1",
     "destino": "Introducción al Álgebra/03-Conjuntos y operaciones/adjuntos/Diagrama de Venn con los elementos de U repartidos.png",
     "sha256": "123e91064c88bc903ddf6fb76bafeb1822556b313df4c444394b67ab04b7f4f2"
+  },
+  {
+    "tema": "Polinomios: raíces y gráfica",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana6.pdf#page=3",
+    "destino": "Introducción al Álgebra/07-Polinomios: raíces y gráfica/adjuntos/Gráficas que son y no son de polinomios.png",
+    "sha256": "7df61f74b7a58cdc0faee9ee72465150c9e99518c92944bcf03cc960228c4121"
+  },
+  {
+    "tema": "Polinomios: raíces y gráfica",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana6.pdf#page=4",
+    "destino": "Introducción al Álgebra/07-Polinomios: raíces y gráfica/adjuntos/Comportamiento final según grado y coeficiente principal.png",
+    "sha256": "1df4494256b8f09864b90ca9da8aa97348904a24daa9f133a1c3556b26b6e34b"
+  },
+  {
+    "tema": "Polinomios: raíces y gráfica",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Pruebas/2026-1/I7-MAT1207.pdf#page=1",
+    "destino": "Introducción al Álgebra/07-Polinomios: raíces y gráfica/adjuntos/Gráfico de un polinomio de grado 3 con raíz doble en 2.png",
+    "sha256": "3248caed639f397ff787bbbe9175bcd31d06230b6419ba515f85ceb1dd71ac11"
   }
 ]

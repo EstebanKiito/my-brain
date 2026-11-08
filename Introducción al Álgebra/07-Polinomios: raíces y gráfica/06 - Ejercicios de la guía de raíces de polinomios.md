@@ -10,7 +10,7 @@ prerrequisitos:
   - "[[04 - Número de raíces y raíces complejas]]"
 ---
 
-# Ejercicios de prueba de raíces de polinomios
+# Ejercicios de la guía de raíces de polinomios
 
 Preguntas de la guía del curso sobre raíces, teorema del factor, ceros racionales y raíces complejas. Conviene intentar cada una antes de abrir la solución.
 
