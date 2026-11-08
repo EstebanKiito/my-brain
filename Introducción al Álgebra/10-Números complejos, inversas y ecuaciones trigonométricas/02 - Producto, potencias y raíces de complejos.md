@@ -42,6 +42,19 @@ que dan $z_0 = 3\operatorname{cis}(\pi/3) = \tfrac32 + \tfrac{3\sqrt3}{2}i$, $z_
 > [!warning] Hay $n$ raíces, no una
 > En $\mathbb{C}$ la ecuación $z^n = \omega$ tiene $n$ soluciones (para $\omega \neq 0$), repartidas simétricamente: todas con el mismo módulo $\sqrt[n]{r}$ y ángulos separados $2\pi/n$.
 
+## Raíces de la unidad
+
+Las soluciones de $z^n = 1$ son $\omega_k = \operatorname{cis}\frac{2k\pi}{n}$, $k = 0, \dots, n-1$. Para $n = 3$: $1$ y $-\frac{1}{2} \pm \frac{\sqrt 3}{2}i$. Las dos no reales son conjugadas, así que son raíces de un polinomio real: $(x - \omega_1)(x - \omega_2) = x^2 + x + 1$ (de hecho $z^3 - 1 = (z - 1)(z^2 + z + 1)$).
+
+## Conjugado y módulo
+
+Con $z = a + bi$ y $\overline{z} = a - bi$:
+- $z\,\overline{z} = |z|^2$, $z + \overline{z} = 2\operatorname{Re}(z)$ y $\overline{z^n} = \overline{z}^{\,n}$.
+- En forma polar, $\overline{r\operatorname{cis}\theta} = r\operatorname{cis}(-\theta)$, así que $z^n + \overline{z}^{\,n} = 2r^n\cos(n\theta)$.
+- Para dividir, se amplifica por el conjugado del denominador: $\frac{z}{\overline{z}} = \frac{z^2}{|z|^2}$.
+
+Las condiciones sobre módulos se resuelven elevando al cuadrado: $|z + 1| = |z - 1|$ da $(a+1)^2 + b^2 = (a-1)^2 + b^2$, es decir, $a = 0$ (los puntos equidistantes de $1$ y $-1$ forman el eje imaginario).
+
 ## Preguntas de repaso
 
 > [!question]- ¿Qué le hace el producto en forma polar a los módulos y a los ángulos?

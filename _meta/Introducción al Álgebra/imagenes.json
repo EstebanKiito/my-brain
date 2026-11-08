@@ -138,5 +138,40 @@
     "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana8.pdf#page=2",
     "destino": "Introducción al Álgebra/09-Funciones trigonométricas e identidades/adjuntos/Punto P de la circunferencia unitaria determinado por t.png",
     "sha256": "75e432197876f298e65a9661baf093eaa05571e03b6bd04fd36cdc3983bbdd51"
+  },
+  {
+    "tema": "Números complejos, inversas y ecuaciones trigonométricas",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana9.pdf#page=3",
+    "destino": "Introducción al Álgebra/10-Números complejos, inversas y ecuaciones trigonométricas/adjuntos/Gráfico del arcoseno.png",
+    "sha256": "c82a11db60ec7e2efa9cbbbcc6d52ce604dd2e4fa9967d0ef94ccb65f01dbbb5"
+  },
+  {
+    "tema": "Números complejos, inversas y ecuaciones trigonométricas",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana9.pdf#page=4",
+    "destino": "Introducción al Álgebra/10-Números complejos, inversas y ecuaciones trigonométricas/adjuntos/Gráfico del arcocoseno.png",
+    "sha256": "73856bc898d9ba6a7072d744c518763d6f075f933737a772374a9149dfdc2e9b"
+  },
+  {
+    "tema": "Números complejos, inversas y ecuaciones trigonométricas",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana9.pdf#page=4",
+    "destino": "Introducción al Álgebra/10-Números complejos, inversas y ecuaciones trigonométricas/adjuntos/Tangente restringida y arcotangente.png",
+    "sha256": "f629c1fc3cf3a1e2048c5e248156a453d4aa1c5e1507961e598b7b1a8aed7f5f"
+  },
+  {
+    "tema": "Números complejos, inversas y ecuaciones trigonométricas",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana9.pdf#page=5",
+    "destino": "Introducción al Álgebra/10-Números complejos, inversas y ecuaciones trigonométricas/adjuntos/Soluciones básicas de sen x igual a a.png",
+    "sha256": "21293b5a006f4570b9375f52423f0b98320683a5c352aaaa5c907c43e14cb1ca"
+  },
+  {
+    "tema": "Números complejos, inversas y ecuaciones trigonométricas",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-ALGEBRA/Intro-Algebra-MAT1207/Clases 2022/Semana9.pdf#page=5",
+    "destino": "Introducción al Álgebra/10-Números complejos, inversas y ecuaciones trigonométricas/adjuntos/Soluciones básicas de cos x igual a b.png",
+    "sha256": "7906efc35dccc317e375494afe064705fe19043308e67a321e9f29248defd78d"
   }
 ]

@@ -23,6 +23,21 @@ Las funciones seno, coseno y tangente no son inyectivas en todo $\mathbb{R}$, as
 > [!tip] El rango es clave
 > $\arcsin$ devuelve ángulos en $[-\pi/2, \pi/2]$, $\arccos$ en $[0, \pi]$ y $\arctan$ en $(-\pi/2, \pi/2)$. El valor de la inversa **siempre** cae en ese rango, aunque el ángulo original no estuviera ahí.
 
+![Gráfico del arcoseno](adjuntos/Gr%C3%A1fico%20del%20arcoseno.png)
+
+> [!example]- Transcripción de la figura
+> Curva roja $y = \arcsin(x)$, creciente, definida de $x = -1$ a $x = 1$: parte en $(-1, -\frac{\pi}{2})$, pasa por el origen y termina en $(1, \frac{\pi}{2})$. Es la gráfica del seno restringido a $[-\frac{\pi}{2}, \frac{\pi}{2}]$ reflejada en la recta $y = x$.
+
+![Gráfico del arcocoseno](adjuntos/Gr%C3%A1fico%20del%20arcocoseno.png)
+
+> [!example]- Transcripción de la figura
+> Curva roja $y = \arccos(x)$, decreciente, de $(-1, \pi)$ a $(1, 0)$, pasando por $(0, \frac{\pi}{2})$.
+
+![Tangente restringida y arcotangente](adjuntos/Tangente%20restringida%20y%20arcotangente.png)
+
+> [!example]- Transcripción de la figura
+> A la izquierda, $y = \tan(x)$ con asíntotas verticales discontinuas en $\pm\frac{\pi}{2}$ y $\pm\frac{3\pi}{2}$; la rama central, entre $-\frac{\pi}{2}$ y $\frac{\pi}{2}$, está en rojo (es el tramo que se invierte) y las otras en azul. A la derecha, $y = \arctan(x)$: curva roja creciente definida en todo $\mathbb{R}$, que pasa por el origen y se acerca a las asíntotas horizontales $y = \pm\frac{\pi}{2}$ sin tocarlas.
+
 **Ejemplo.** $\arcsin(\sin(\pi/3)) = \pi/3$, pero $\arcsin(\sin(2\pi/3)) = \pi/3$, no $2\pi/3$: como $2\pi/3 \notin [-\pi/2, \pi/2]$, la inversa devuelve el ángulo de igual seno que sí está en el rango.
 
 ## Componer inversas con funciones
@@ -33,6 +48,16 @@ Las funciones seno, coseno y tangente no son inyectivas en todo $\mathbb{R}$, as
 
 > [!warning] No "cancelar" a ciegas
 > $\arcsin(\sin x) = x$ solo si $x \in [-\pi/2, \pi/2]$. Fuera de ese rango, la inversa devuelve otro ángulo con el mismo seno.
+
+## Igualdades entre inversas
+
+Para probar algo como $\arctan 2 + \arctan 3 = \frac{3\pi}{4}$ se hacen dos cosas:
+
+1. Calcular una función trigonométrica de **ambos lados**: con $\alpha = \arctan 2$ y $\beta = \arctan 3$, $\tan(\alpha + \beta) = \frac{2 + 3}{1 - 6} = -1 = \tan\frac{3\pi}{4}$.
+2. **Ubicar** los ángulos en un intervalo donde esa función sea inyectiva: como $2, 3 > 1$, $\alpha, \beta \in (\frac{\pi}{4}, \frac{\pi}{2})$, así que $\alpha + \beta \in (\frac{\pi}{2}, \pi)$, donde la tangente es inyectiva. Ahí el único ángulo con tangente $-1$ es $\frac{3\pi}{4}$.
+
+> [!warning] El paso 2 no es opcional
+> $\tan(\alpha + \beta) = -1$ también lo cumple $-\frac{\pi}{4}$. Sin ubicar $\alpha + \beta$, la igualdad no está demostrada.
 
 ## Preguntas de repaso
 

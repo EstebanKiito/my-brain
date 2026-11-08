@@ -20,6 +20,16 @@ Usando la circunferencia unitaria se deducen los conjuntos solución de las tres
 - $\cos x = b$: $S = \{2k\pi \pm \alpha \mid k \in \mathbb{Z}\}$, con $\alpha$ en el primer o segundo cuadrante.
 - $\tan x = c$: $S = \{k\pi + \gamma \mid k \in \mathbb{Z}\}$, con $\gamma$ en el primer o cuarto cuadrante.
 
+![Soluciones básicas de sen x igual a a](adjuntos/Soluciones%20b%C3%A1sicas%20de%20sen%20x%20igual%20a%20a.png)
+
+> [!example]- Transcripción de la figura
+> Circunferencia unitaria cortada por la recta horizontal $y = a$ en dos puntos. Los radios rojos a esos puntos forman los ángulos $\alpha$ (primer cuadrante) y $\pi - \alpha$ (segundo cuadrante): los dos ángulos de $[0, 2\pi)$ con seno $a$.
+
+![Soluciones básicas de cos x igual a b](adjuntos/Soluciones%20b%C3%A1sicas%20de%20cos%20x%20igual%20a%20b.png)
+
+> [!example]- Transcripción de la figura
+> Circunferencia unitaria cortada por la recta vertical $x = b$ (con $b < 0$) en dos puntos, uno arriba y otro abajo del eje. Los radios rojos forman los ángulos $\alpha$ (segundo cuadrante) y $2\pi - \alpha$ (tercer cuadrante): los dos ángulos de $[0, 2\pi)$ con coseno $b$, simétricos respecto del eje $x$.
+
 > [!tip] De básica a general
 > Encuentre primero una (o dos) soluciones en $[0, 2\pi)$ y luego "repítalas" sumando el período ($2\pi$ para seno y coseno, $\pi$ para tangente) con el patrón correspondiente.
 

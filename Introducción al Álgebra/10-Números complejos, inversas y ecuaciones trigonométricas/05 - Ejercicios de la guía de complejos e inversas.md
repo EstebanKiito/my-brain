@@ -10,7 +10,7 @@ prerrequisitos:
   - "[[04 - Ecuaciones trigonométricas]]"
 ---
 
-# Ejercicios de prueba de complejos e inversas
+# Ejercicios de la guía de complejos e inversas
 
 Preguntas de la guía y de las clases sobre Moivre, raíces de complejos y ecuaciones trigonométricas. Conviene intentar cada una antes de abrir la solución.
 
