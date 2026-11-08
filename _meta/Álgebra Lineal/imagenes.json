@@ -1,0 +1,317 @@
+[
+  {
+    "tema": "Vectores en Rⁿ",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 01 Vectores en R3.pdf#page=5",
+    "destino": "Álgebra Lineal/01-Vectores en Rⁿ/adjuntos/Vector entre dos puntos y vectores en posición estándar.png",
+    "sha256": "6668d400e07992b0d8dbc84ab64316cf75956cecc999c074ff4cedc6487430c1"
+  },
+  {
+    "tema": "Vectores en Rⁿ",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 01 Vectores en R3.pdf#page=9",
+    "destino": "Álgebra Lineal/01-Vectores en Rⁿ/adjuntos/Suma de vectores punta con cola.png",
+    "sha256": "0791cc21385c1b9a62bd123c00f52ca6ac1dd3df4b44650019dba38e0dcf1e7a"
+  },
+  {
+    "tema": "Vectores en Rⁿ",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 01 Vectores en R3.pdf#page=10",
+    "destino": "Álgebra Lineal/01-Vectores en Rⁿ/adjuntos/Múltiplos escalares de un vector.png",
+    "sha256": "fa1dc84e785f0b8fdbb359e46d7bf6003ba07b372485292d451ca76298635f49"
+  },
+  {
+    "tema": "Vectores en Rⁿ",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 02 Combinaciones lineales y producto punto.pdf#page=5",
+    "destino": "Álgebra Lineal/01-Vectores en Rⁿ/adjuntos/Conjunto generado por uno y dos vectores.png",
+    "sha256": "af8b4f774c4a12a1e4e3f3bdf4fd40208937288c740186721689090e666a9f59"
+  },
+  {
+    "tema": "Vectores en Rⁿ",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 02 Combinaciones lineales y producto punto.pdf#page=11",
+    "destino": "Álgebra Lineal/01-Vectores en Rⁿ/adjuntos/Normalización de un vector.png",
+    "sha256": "d8dddb691727d5a2e6bc7d8ece131aa074c4bebe457f9a596bc3e9448e10d6f8"
+  },
+  {
+    "tema": "Rectas, planos e hiperplanos",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 03 Ortogonalidad y rectas en el espacio.pdf#page=8",
+    "destino": "Álgebra Lineal/02-Rectas, planos e hiperplanos/adjuntos/Recta por el origen y su vector normal.png",
+    "sha256": "9e28ea6fc878109e2d2a6ef31cd841f9af25022c491a27f83c22861618cec3a3"
+  },
+  {
+    "tema": "Rectas, planos e hiperplanos",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 04 Planos en el espacio.pdf#page=3",
+    "destino": "Álgebra Lineal/02-Rectas, planos e hiperplanos/adjuntos/Plano determinado por un punto y un vector normal.png",
+    "sha256": "553fa1498f948791b553bcffe5c15c5ec61ed28d981e202e66e012fa42b4d34c"
+  },
+  {
+    "tema": "Rectas, planos e hiperplanos",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 04 Planos en el espacio.pdf#page=6",
+    "destino": "Álgebra Lineal/02-Rectas, planos e hiperplanos/adjuntos/Forma vectorial del plano.png",
+    "sha256": "e1abfa2eeb30c41b5ab5f3d88044173d60fc6fa9a432c015d042144147b7ee1a"
+  },
+  {
+    "tema": "Sistemas de ecuaciones lineales",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 05 Intersecciขn de planos y SEL.pdf#page=8",
+    "destino": "Álgebra Lineal/03-Sistemas de ecuaciones lineales/adjuntos/Posiciones relativas de dos planos.png",
+    "sha256": "2c8669c9f6d17309e364ae246ddafdd6bea69440ebdd5e9c1ccb55ac9ce22349"
+  },
+  {
+    "tema": "Sistemas de ecuaciones lineales",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 05 Intersecciขn de planos y SEL.pdf#page=9",
+    "destino": "Álgebra Lineal/03-Sistemas de ecuaciones lineales/adjuntos/Posiciones relativas de tres planos.png",
+    "sha256": "c4b96e0686113c12fdd0635d66b7eb078bd914cd2a00be786a9267031b651427"
+  },
+  {
+    "tema": "Conjuntos solución e independencia lineal",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 11 Sistemas homog‚neos y conjunto soluci¢n.pdf#page=9",
+    "destino": "Álgebra Lineal/05-Conjuntos solución e independencia lineal/adjuntos/Soluciones no homogéneas como traslación de las homogéneas.png",
+    "sha256": "102725bb1da9f777616e6a7ee98240a6b1a49a51d9833e6f6b4003fd342df4e4"
+  },
+  {
+    "tema": "Transformaciones lineales",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 13 Transformaciones lineales.pdf#page=3",
+    "destino": "Álgebra Lineal/06-Transformaciones lineales/adjuntos/Dominio, codominio y rango de una transformación.png",
+    "sha256": "2fa4c12f1785af12dd5a32a89869d57ce22263493d011a42de6444ee50e06d1e"
+  },
+  {
+    "tema": "Conjuntos solución e independencia lineal",
+    "tipo": "libro",
+    "original": "Semestre 3/Algebra Lineal/Algebra-Lineal-david-lay.pdf#page=76",
+    "destino": "Álgebra Lineal/05-Conjuntos solución e independencia lineal/adjuntos/Dos vectores en R2 dependientes e independientes.png",
+    "sha256": "45f52bf38e42afa549fd372e5a027ff61e9da408f6f857735b59a34e94b9f0f6"
+  },
+  {
+    "tema": "Conjuntos solución e independencia lineal",
+    "tipo": "libro",
+    "original": "Semestre 3/Algebra Lineal/Algebra-Lineal-david-lay.pdf#page=76",
+    "destino": "Álgebra Lineal/05-Conjuntos solución e independencia lineal/adjuntos/Tres vectores en R3 dependientes e independientes.png",
+    "sha256": "cd773938853786753955d2973b027e56e702f1a3425eb4428b95a29ef8fe9180"
+  },
+  {
+    "tema": "Conjuntos solución e independencia lineal",
+    "tipo": "libro",
+    "original": "Semestre 3/Algebra Lineal/Algebra-Lineal-david-lay.pdf#page=77",
+    "destino": "Álgebra Lineal/05-Conjuntos solución e independencia lineal/adjuntos/Tres vectores en R2 siempre dependientes.png",
+    "sha256": "0574d08099c0f0d2152f358af9f3ebb70021e97b2bda788d273b33d8fdebdf6e"
+  },
+  {
+    "tema": "Transformaciones lineales",
+    "tipo": "generada",
+    "original": "_meta/Álgebra Lineal/figuras/transformaciones_del_plano.py",
+    "destino": "Álgebra Lineal/06-Transformaciones lineales/adjuntos/Cuadrado unitario bajo transformaciones del plano.png",
+    "sha256": "3d769d972ac7b59462e3bc824a2fcd4ecc84ab11ef6807f50ac70d383dd74110"
+  },
+  {
+    "tema": "Transformaciones lineales",
+    "tipo": "generada",
+    "original": "_meta/Álgebra Lineal/figuras/transformaciones_del_plano.py",
+    "destino": "Álgebra Lineal/06-Transformaciones lineales/adjuntos/Trasquilado horizontal animado.gif",
+    "sha256": "af490c8353245c72c0c7944d120f00ab85cc7153ecf30fda321a94ee7354a4fa"
+  },
+  {
+    "tema": "Transformaciones lineales",
+    "tipo": "generada",
+    "original": "_meta/Álgebra Lineal/figuras/transformaciones_del_plano.py",
+    "destino": "Álgebra Lineal/06-Transformaciones lineales/adjuntos/Rotación animada.gif",
+    "sha256": "2ca14574e58c1ed80f771e9c5df09f35b92e5da8ff629feae31e1a58cf9d196c"
+  },
+  {
+    "tema": "Álgebra de matrices, inversa y LU",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 15 Operaciones de matrices.pdf#page=7",
+    "destino": "Álgebra Lineal/07-Álgebra de matrices, inversa y LU/adjuntos/Multiplicación por B y luego por A.png",
+    "sha256": "70038cba6548a6feb79dfa26faf66f082d59558f00585c5d8bb805bdc05436cd"
+  },
+  {
+    "tema": "Álgebra de matrices, inversa y LU",
+    "tipo": "libro",
+    "original": "Semestre 3/Algebra Lineal/Algebra-Lineal-david-lay.pdf#page=143",
+    "destino": "Álgebra Lineal/07-Álgebra de matrices, inversa y LU/adjuntos/Factorización LU del mapeo x a Ax.png",
+    "sha256": "9e8c4f2a30325fa96cb7aaa94a455a6773051a3a0a46d9a9aea1bb9c91d687fe"
+  },
+  {
+    "tema": "Determinantes",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 21 Determinante como  rea o volumen.pdf#page=3",
+    "destino": "Álgebra Lineal/08-Determinantes/adjuntos/Área del paralelogramo de dos vectores.png",
+    "sha256": "641b830835964de6055160244d027f67b2a40cf7bd9cf737d09476e9d7a917b7"
+  },
+  {
+    "tema": "Determinantes",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 21 Determinante como  rea o volumen.pdf#page=3",
+    "destino": "Álgebra Lineal/08-Determinantes/adjuntos/Volumen del paralelepípedo de tres vectores.png",
+    "sha256": "034c04bbd24cd585546482d64b19cd7cb515d8d109575c481453d9572645198f"
+  },
+  {
+    "tema": "Determinantes",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 21 Determinante como  rea o volumen.pdf#page=8",
+    "destino": "Álgebra Lineal/08-Determinantes/adjuntos/Círculo unitario transformado en elipse.png",
+    "sha256": "c9104c88994a8795b0e95ffd7cb9dee30557e7e40016f6491cd65eb7ef576244"
+  },
+  {
+    "tema": "Determinantes",
+    "tipo": "generada",
+    "original": "_meta/Álgebra Lineal/figuras/determinante_area_orientacion.py",
+    "destino": "Álgebra Lineal/08-Determinantes/adjuntos/Determinante como factor de área y orientación.gif",
+    "sha256": "a4766b6edf98c3a56fa7e3dcc2d382592b8cf2dd51d8a4964d01d0032bfec8fd"
+  },
+  {
+    "tema": "Espacios y subespacios vectoriales",
+    "tipo": "libro",
+    "original": "Semestre 3/Algebra Lineal/Algebra-Lineal-david-lay.pdf#page=212",
+    "destino": "Álgebra Lineal/09-Espacios y subespacios vectoriales/adjuntos/Recta que no pasa por el origen no es subespacio.png",
+    "sha256": "aa39fc193ec5f540fe7cc509457753b3300d43529dcd038409b019880dfcafb3"
+  },
+  {
+    "tema": "Espacios y subespacios vectoriales",
+    "tipo": "libro",
+    "original": "Semestre 3/Algebra Lineal/Algebra-Lineal-david-lay.pdf#page=217",
+    "destino": "Álgebra Lineal/09-Espacios y subespacios vectoriales/adjuntos/El espacio nulo va al vector cero.png",
+    "sha256": "7440c200a9f16ec5d711da3b9861ea7ed79c39ac576fa510ccc02d4f7fddbab2"
+  },
+  {
+    "tema": "Espacios y subespacios vectoriales",
+    "tipo": "libro",
+    "original": "Semestre 3/Algebra Lineal/Algebra-Lineal-david-lay.pdf#page=222",
+    "destino": "Álgebra Lineal/09-Espacios y subespacios vectoriales/adjuntos/Núcleo y rango de una transformación.png",
+    "sha256": "480ee22bc169b46cd65f99571b92e79495af788ca22dba9cf99847959fd86150"
+  },
+  {
+    "tema": "Coordenadas, dimensión y rango",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 25 Sistemas de coordenadas.pdf#page=5",
+    "destino": "Álgebra Lineal/10-Coordenadas, dimensión y rango/adjuntos/Coordenadas de x en la base B.png",
+    "sha256": "6d087053cd299ad1bd02ff410af01fd4b23264a3032bb28b3fd4a382d2292883"
+  },
+  {
+    "tema": "Cambio de base",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 27 Matriz de cambio de base.pdf#page=3",
+    "destino": "Álgebra Lineal/11-Cambio de base/adjuntos/Dos sistemas de coordenadas en el mismo espacio.png",
+    "sha256": "fe9b6db843b8cb716947ac3c4e6f1a67cbaa2713ebb5b1c59ff9f6bff475597a"
+  },
+  {
+    "tema": "Cambio de base",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 27 Matriz de cambio de base.pdf#page=5",
+    "destino": "Álgebra Lineal/11-Cambio de base/adjuntos/Diagrama de la matriz de cambio de coordenadas.png",
+    "sha256": "3a4fb8ed54c9a60d9ea93db3821454c02e656612dda420a35e34d9f48fdf88b6"
+  },
+  {
+    "tema": "Valores y vectores propios",
+    "tipo": "generada",
+    "original": "_meta/Álgebra Lineal/figuras/valores_propios.py",
+    "destino": "Álgebra Lineal/12-Valores y vectores propios/adjuntos/Vectores propios como direcciones que A no gira.gif",
+    "sha256": "4649f1fba04f206ce8a3e434c17b7f6be9f3e26b433b685c111b3b6beee7ce74"
+  },
+  {
+    "tema": "Diagonalización",
+    "tipo": "generada",
+    "original": "_meta/Álgebra Lineal/figuras/valores_propios.py",
+    "destino": "Álgebra Lineal/13-Diagonalización/adjuntos/Acción de una matriz diagonalizable en la base de vectores propios.png",
+    "sha256": "61a9ded49f334dad632fe17036d96c97a9d9de0465d68ecc6482a2e09a5e0131"
+  },
+  {
+    "tema": "Valores propios complejos",
+    "tipo": "generada",
+    "original": "_meta/Álgebra Lineal/figuras/valores_propios.py",
+    "destino": "Álgebra Lineal/14-Valores propios complejos/adjuntos/Órbitas de matrices con valores propios complejos.png",
+    "sha256": "bb8253ee3315ca41a2a8739aabfa81c3a79adb6f8af6474a7026098580c125c7"
+  },
+  {
+    "tema": "Ortogonalidad y complemento ortogonal",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 33 Complemento ortogonal.pdf#page=4",
+    "destino": "Álgebra Lineal/15-Ortogonalidad y complemento ortogonal/adjuntos/Complemento ortogonal de un plano.png",
+    "sha256": "21caad0b612d0ffab9410ff91b303532a59647aee39079a086f02ccd84f7eca3"
+  },
+  {
+    "tema": "Proyecciones y Gram-Schmidt",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 35 Proyecciขn ortogonal.pdf#page=3",
+    "destino": "Álgebra Lineal/16-Proyecciones y Gram-Schmidt/adjuntos/Proyección sobre una recta.png",
+    "sha256": "c5beb13cccd3b74bcd5a1f2c9345b81489b20780d8e58f6297fb6198ee130ad0"
+  },
+  {
+    "tema": "Proyecciones y Gram-Schmidt",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 35 Proyecciขn ortogonal.pdf#page=3",
+    "destino": "Álgebra Lineal/16-Proyecciones y Gram-Schmidt/adjuntos/Proyección ortogonal sobre un subespacio.png",
+    "sha256": "2c31cde4b5a167fe066e3a21715216b7048167bd852ddc2c55196c92b83bdf05"
+  },
+  {
+    "tema": "Proyecciones y Gram-Schmidt",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 35 Proyecciขn ortogonal.pdf#page=7",
+    "destino": "Álgebra Lineal/16-Proyecciones y Gram-Schmidt/adjuntos/Proyección como suma de proyecciones sobre una base ortogonal.png",
+    "sha256": "f7b0e235dfd6e32bf88dac9e306a32657cda6db567998c804a61d79ea83d40e9"
+  },
+  {
+    "tema": "Proyecciones y Gram-Schmidt",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 36 Proceso de Gram-Schmidt.pdf#page=4",
+    "destino": "Álgebra Lineal/16-Proyecciones y Gram-Schmidt/adjuntos/Primer paso de Gram-Schmidt.png",
+    "sha256": "de645ef9a1863b8a03f739ba59aec329f1a93bca8a7d30ce69bcce508d32cf46"
+  },
+  {
+    "tema": "Mínimos cuadrados",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 37 Problemas de m¡nimos cuadrados y recta de m¡nimos cuadrados.pdf#page=4",
+    "destino": "Álgebra Lineal/17-Mínimos cuadrados/adjuntos/Solución de mínimos cuadrados como proyección.png",
+    "sha256": "173e2c246b408468f17fa443de563a5cfce0300a91eb4cdb2b018097a0484e45"
+  },
+  {
+    "tema": "Mínimos cuadrados",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 37 Problemas de m¡nimos cuadrados y recta de m¡nimos cuadrados.pdf#page=12",
+    "destino": "Álgebra Lineal/17-Mínimos cuadrados/adjuntos/Recta de mínimos cuadrados y residuos.png",
+    "sha256": "06cac0d5bc1764a7bebc693480c15edc225d2b54df8328a0e2f1ebcf7df16203"
+  },
+  {
+    "tema": "Matrices simétricas y formas cuadráticas",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 39 Formas cuadr ticas.pdf#page=8",
+    "destino": "Álgebra Lineal/18-Matrices simétricas y formas cuadráticas/adjuntos/Elipse e hipérbola en posición estándar.png",
+    "sha256": "bac14a367c19ea084cb162ef582a93678835b0b23d5a706f12e65db02fc4c588"
+  },
+  {
+    "tema": "Matrices simétricas y formas cuadráticas",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 39 Formas cuadr ticas.pdf#page=8",
+    "destino": "Álgebra Lineal/18-Matrices simétricas y formas cuadráticas/adjuntos/Cónicas con ejes rotados.png",
+    "sha256": "8015f2223789743efc7f3c40f9c63e436c8b4e80dc00c27a2aa3a8992f048875"
+  },
+  {
+    "tema": "Matrices simétricas y formas cuadráticas",
+    "tipo": "generada",
+    "original": "_meta/Álgebra Lineal/figuras/formas_cuadraticas_y_dvs.py",
+    "destino": "Álgebra Lineal/18-Matrices simétricas y formas cuadráticas/adjuntos/Formas cuadráticas definida, indefinida y semidefinida.png",
+    "sha256": "df0af4d6cff74bd78fb7dbb83e70f98c0e1b486b3ba09ad25803edac91c9bf4c"
+  },
+  {
+    "tema": "Cholesky y descomposición en valores singulares",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 41 Descomposiciขn en valores singulares.pdf#page=8",
+    "destino": "Álgebra Lineal/19-Cholesky y descomposición en valores singulares/adjuntos/Forma de la matriz Sigma.png",
+    "sha256": "6f099940cfdd4fc42f4bc5a7400c544c70044bc9787ddd84946ff037b97860c9"
+  },
+  {
+    "tema": "Cholesky y descomposición en valores singulares",
+    "tipo": "generada",
+    "original": "_meta/Álgebra Lineal/figuras/formas_cuadraticas_y_dvs.py",
+    "destino": "Álgebra Lineal/19-Cholesky y descomposición en valores singulares/adjuntos/Descomposición en valores singulares de una matriz 2x2.png",
+    "sha256": "e9611fbe7fd50ed2cf40e0f676c7a9a36358a1e56e28f8374c14c4a4924f2095"
+  }
+]
