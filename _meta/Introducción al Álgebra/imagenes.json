@@ -47,5 +47,12 @@
     "original": "_meta/Introducción al Álgebra/figuras/complejos.py",
     "destino": "Introducción al Álgebra/09-Números complejos, inversas y ecuaciones trigonométricas/adjuntos/forma polar de un numero complejo.png",
     "sha256": "0cf62768b936c315bdcda7c2b36bf99fdfcb23860a7be5d092501905432eba6a"
+  },
+  {
+    "tema": "Geometría analítica: distancia, circunferencia y división de segmentos",
+    "tipo": "generada",
+    "original": "_meta/Introducción al Álgebra/figuras/geometria.py",
+    "destino": "Introducción al Álgebra/10-Geometría analítica: distancia, circunferencia y división de segmentos/adjuntos/circunferencia de centro C y radio r.png",
+    "sha256": "692d6801d3440773a984a468500cfc414a6a32eff8b8400f1bea8cdfe88ebc8b"
   }
 ]
