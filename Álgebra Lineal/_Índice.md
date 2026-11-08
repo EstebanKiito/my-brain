@@ -25,6 +25,7 @@ Vault de estudio del ramo. Cada tema reúne la teoría de las clases y del libro
 | [[Álgebra Lineal/12-Valores y vectores propios/_Índice\|Valores y vectores propios]] | Vectores y espacios propios, polinomio característico, multiplicidad y similitud |
 | [[Álgebra Lineal/13-Diagonalización/_Índice\|Diagonalización]] | A = PDP⁻¹, criterios, potencias y matriz de una transformación en otras bases |
 | [[Álgebra Lineal/14-Valores propios complejos/_Índice\|Valores propios complejos]] | Números complejos, pares conjugados y rotaciones escaladas A = PCP⁻¹ |
+| [[Álgebra Lineal/15-Ortogonalidad y complemento ortogonal/_Índice\|Ortogonalidad y complemento ortogonal]] | Complemento ortogonal, bases ortogonales y ortonormales, matrices ortogonales |
 
 ## Ruta de estudio y evaluaciones
 | Evaluación | Temas que entran |

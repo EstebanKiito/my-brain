@@ -229,5 +229,12 @@
     "original": "_meta/Álgebra Lineal/figuras/valores_propios.py",
     "destino": "Álgebra Lineal/14-Valores propios complejos/adjuntos/Órbitas de matrices con valores propios complejos.png",
     "sha256": "bb8253ee3315ca41a2a8739aabfa81c3a79adb6f8af6474a7026098580c125c7"
+  },
+  {
+    "tema": "Ortogonalidad y complemento ortogonal",
+    "tipo": "clase",
+    "original": "Semestre 3/Algebra Lineal/Clases/Clase 33 Complemento ortogonal.pdf#page=4",
+    "destino": "Álgebra Lineal/15-Ortogonalidad y complemento ortogonal/adjuntos/Complemento ortogonal de un plano.png",
+    "sha256": "21caad0b612d0ffab9410ff91b303532a59647aee39079a086f02ccd84f7eca3"
   }
 ]
