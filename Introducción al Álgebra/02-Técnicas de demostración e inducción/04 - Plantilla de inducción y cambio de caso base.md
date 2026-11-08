@@ -58,7 +58,20 @@ porque $2k + 1 \le 2^k$ para $k \ge 4$ (en $k=4$, $9 \le 16$, y $2^k$ crece más
 Por inducción, $n^2 \le 2^n$ para todo $n \ge 4$.
 
 > [!warning] El caso base debe cubrir el punto de arranque
-> Si el enunciado vale desde $n \ge 4$, el caso base es $P(4)$, no $P(1)$ (que aquí ni siquiera se cumple: $1^2 \le 2$ sí, pero $3^2 = 9 \not\le 8$). La inducción demuestra solo lo que el caso base "enciende".
+> Si el enunciado vale desde $n \ge 4$, el caso base es $P(4)$, no $P(1)$: aunque $P(1)$ y $P(2)$ se cumplen, $P(3)$ es falsa ($3^2 = 9 \not\le 8$), así que una inducción desde $1$ no podría tener un paso inductivo válido para todo $k$. La inducción demuestra solo lo que el caso base "enciende".
+
+## Tres patrones del paso inductivo
+
+Casi todas las inducciones de prueba caen en uno de tres tipos, y cada uno tiene su maniobra para meter la hipótesis de inducción (HI):
+
+| Tipo | Ejemplo | Maniobra |
+|---|---|---|
+| Divisibilidad | $4^{n+1} + 5^{2n-1}$ divisible por $21$ | Escribir la HI como "expresión en $k$ $= 21c$", desarmar la expresión en $k+1$ y **separar el coeficiente** ($25 = 4 + 21$) para que aparezca $4$ veces la expresión en $k$ más un múltiplo de $21$. |
+| Suma | $\sum_{i=1}^{n} \frac{1}{i(i+1)} = \frac{n}{n+1}$ | La suma hasta $k+1$ es la suma hasta $k$ **más el último término**; se reemplaza la primera por la HI y se simplifica hasta la fórmula con $k+1$. |
+| Desigualdad | $3^n > 2n^2$ | Partir del lado "grande" de $P(k+1)$, usar la HI ($3^{k+1} = 3 \cdot 3^k > 6k^2$) y luego probar una desigualdad auxiliar ($6k^2 \ge 2(k+1)^2$), que a veces solo vale desde cierto $k$. |
+
+> [!warning] Si la desigualdad auxiliar falla en los primeros $k$
+> En $3^n > 2n^2$, la cadena $6k^2 > 2(k+1)^2$ falla en $k = 1$ ($6 < 8$). Hay dos salidas: verificar a mano ese paso ($3^2 = 9 > 8$) o tomar más de un caso base. Lo que no se puede es ignorar ese $k$: las pautas lo puntúan por separado.
 
 ## Preguntas de repaso
 

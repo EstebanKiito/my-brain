@@ -9,7 +9,7 @@ prerrequisitos:
   - "[[04 - Plantilla de inducción y cambio de caso base]]"
 ---
 
-# Ejercicios de prueba de inducción y demostraciones
+# Ejercicios de la guía de inducción y demostraciones
 
 Preguntas de la guía del curso y de tareas anteriores sobre inducción: divisibilidad, sumas, series geométricas, recurrencias y sumas que se colapsan. Conviene intentar cada una antes de abrir la solución.
 
