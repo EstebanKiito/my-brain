@@ -6,7 +6,7 @@ Rama: `migrar/introduccion-calculo`. Un commit por tema. Antes de cada commit se
 |---|---|---|---|---|---|
 | 0 | Infraestructura (`_meta/Introducción al Cálculo/`) | `_meta/` | ✅ hecho | – | – |
 | 1 | Números reales: axiomas de cuerpo y de orden | `01-Números reales: axiomas de cuerpo y de orden/` | ✅ hecho | 7 + índice | 0 |
-| 2 | Valor absoluto y raíces | `02-Valor absoluto y raíces/` | ⏳ pendiente | – | – |
+| 2 | Valor absoluto y raíces | `02-Valor absoluto y raíces/` | ✅ hecho | 7 + índice | 0 |
 | 3 | Inecuaciones | `03-Inecuaciones/` | ⏳ pendiente | – | – |
 | 4 | Funciones reales: gráficas y transformaciones | `04-Funciones reales: gráficas y transformaciones/` | ⏳ pendiente | – | – |
 | 5 | Polinomios y funciones racionales | `05-Polinomios y funciones racionales/` | ⏳ pendiente | – | – |
@@ -28,3 +28,5 @@ Rama: `migrar/introduccion-calculo`. Un commit por tema. Antes de cada commit se
 ## Registro
 - **2026-11-15 · Infraestructura.** Se creó `_meta/Introducción al Cálculo/` con `mapeo.json`, `imagenes.json`, `PROGRESS.md` y `DUDAS.md`. Temario de 11 temas de contenido + Gestión del curso, propuesto en el plan y aprobado por el usuario. Fuentes inventariadas: 25 clases (la clase 24 tiene una segunda versión, `clase24 (1).pdf`, por comparar), Mickenberg, Stewart, 10 guías, ~75 pruebas 2020-1 a 2026-1 (con pauta en 2022-1, 2023-2, 2024-2, 2025-2, parte de 2026-1 y la tarea), ayudantías 2022-1 a 2024-1 y el cuaderno manuscrito (sin texto, solo contraste).
 - **2026-11-15 · Números reales: axiomas de cuerpo y de orden (piloto).** Fuentes: clases 1 a 3 (axiomas de cuerpo, consecuencias, axiomas de orden, $\mathbb{R}^+$, cuadrados e inversos, ejemplos de desigualdades) y Guía 1. Ejercicios de prueba: 9 preguntas de I0, I1 e I2 de 2020-1, 2022-1, 2022-2, 2023-1, 2023-2, 2024-1, 2025-1, 2025-2 y 2026-1, con identidades verificadas con sympy y desigualdades muestreadas numéricamente. Para $a<b \Rightarrow a^3<b^3$ (I1 2025-2) se da una prueba sin casos, además del método de la pauta. 7 notas; sin imágenes (las clases no traen figuras en este tema).
+- **2026-11-15 · Valor absoluto y raíces (piloto).** Fuentes: clase 4 (estructura métrica de $\mathbb{R}$: valor absoluto, propiedades, distancia, ecuaciones y vecindades; los ejemplos 2 a 6 y el ejercicio 1 de la clase se desarrollaron) y Guía 2. Las clases no cubren la raíz cuadrada, que se tomó como definición propia (no negativa) para justificar $|x|=\sqrt{x^2}$ y la monotonía. Ejercicios de prueba: 7 preguntas de I1 2020-1, I2 2022-1, I1 2023-2, I2 2024-1, I2 2025-1, I2 2026-1 y de la lista de ejercicios 2022, verificadas con sympy y con comprobación numérica de los conjuntos solución. Se leyó el enunciado de 2026-1 I2 P2(a) en la imagen de la prueba, porque `pdftotext` pierde las barras del valor absoluto. 7 notas; sin imágenes (la clase 4 no trae figuras).
+
