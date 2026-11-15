@@ -1,0 +1,15 @@
+# Introducción al Cálculo (MAT1107) — mapa del curso
+
+Vault de estudio del ramo. Cada tema reúne la teoría de las clases del curso y del libro de precálculo en notas con definiciones, teoremas, demostraciones paso a paso y ejemplos resueltos, y cierra con notas de **ejercicios**: los de la guía del curso y preguntas reales de interrogaciones y exámenes anteriores, con su desarrollo completo. Dentro de cada carpeta, el número del archivo indica el orden de lectura.
+
+## Cómo están hechas las notas
+- **Frontmatter:** `ramo`, `tema`, `tags` y `prerrequisitos` (notas que conviene leer antes).
+- **Cuerpo:** definiciones y teoremas en recuadros, trampas típicas en advertencias y todas las fórmulas en LaTeX.
+- **Cierre:** preguntas de repaso con la respuesta oculta; en las notas de ejercicios, la solución también va plegada para intentar primero.
+
+## Temas
+| Tema | Qué cubre |
+|---|---|
+| [[Introducción al Cálculo/01-Números reales: axiomas de cuerpo y de orden/_Índice\|Números reales: axiomas de cuerpo y de orden]] | Axiomas de cuerpo, sus consecuencias, axiomas de orden y demostración de desigualdades |
+
+La materia es acumulativa: cada tema usa los anteriores, así que conviene seguir el orden numérico.

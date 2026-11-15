@@ -5,7 +5,7 @@ Rama: `migrar/introduccion-calculo`. Un commit por tema. Antes de cada commit se
 | # | Tema | Carpeta | Estado | Notas | Imágenes |
 |---|---|---|---|---|---|
 | 0 | Infraestructura (`_meta/Introducción al Cálculo/`) | `_meta/` | ✅ hecho | – | – |
-| 1 | Números reales: axiomas de cuerpo y de orden | `01-Números reales: axiomas de cuerpo y de orden/` | ⏳ pendiente | – | – |
+| 1 | Números reales: axiomas de cuerpo y de orden | `01-Números reales: axiomas de cuerpo y de orden/` | ✅ hecho | 7 + índice | 0 |
 | 2 | Valor absoluto y raíces | `02-Valor absoluto y raíces/` | ⏳ pendiente | – | – |
 | 3 | Inecuaciones | `03-Inecuaciones/` | ⏳ pendiente | – | – |
 | 4 | Funciones reales: gráficas y transformaciones | `04-Funciones reales: gráficas y transformaciones/` | ⏳ pendiente | – | – |
@@ -27,3 +27,4 @@ Rama: `migrar/introduccion-calculo`. Un commit por tema. Antes de cada commit se
 
 ## Registro
 - **2026-11-15 · Infraestructura.** Se creó `_meta/Introducción al Cálculo/` con `mapeo.json`, `imagenes.json`, `PROGRESS.md` y `DUDAS.md`. Temario de 11 temas de contenido + Gestión del curso, propuesto en el plan y aprobado por el usuario. Fuentes inventariadas: 25 clases (la clase 24 tiene una segunda versión, `clase24 (1).pdf`, por comparar), Mickenberg, Stewart, 10 guías, ~75 pruebas 2020-1 a 2026-1 (con pauta en 2022-1, 2023-2, 2024-2, 2025-2, parte de 2026-1 y la tarea), ayudantías 2022-1 a 2024-1 y el cuaderno manuscrito (sin texto, solo contraste).
+- **2026-11-15 · Números reales: axiomas de cuerpo y de orden (piloto).** Fuentes: clases 1 a 3 (axiomas de cuerpo, consecuencias, axiomas de orden, $\mathbb{R}^+$, cuadrados e inversos, ejemplos de desigualdades) y Guía 1. Ejercicios de prueba: 9 preguntas de I0, I1 e I2 de 2020-1, 2022-1, 2022-2, 2023-1, 2023-2, 2024-1, 2025-1, 2025-2 y 2026-1, con identidades verificadas con sympy y desigualdades muestreadas numéricamente. Para $a<b \Rightarrow a^3<b^3$ (I1 2025-2) se da una prueba sin casos, además del método de la pauta. 7 notas; sin imágenes (las clases no traen figuras en este tema).
