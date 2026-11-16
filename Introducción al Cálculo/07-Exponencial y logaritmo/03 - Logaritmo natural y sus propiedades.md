@@ -26,6 +26,15 @@ De la definición de inversa se obtienen las identidades básicas:
 - $\ln$ es **estrictamente creciente** (inversa de una función estrictamente creciente) y su único cero es $x = 1$.
 - Su gráfico es el reflejo del de $e^x$ respecto de la recta $y = x$: pasa por $(1, 0)$, tiene la recta $x = 0$ como asíntota vertical y crece lentamente.
 
+## Relación con las rectas de pendiente 1
+
+Como $\ln$ es el reflejo de $\exp$ respecto de $y = x$, el mismo argumento de la pendiente de $e^x$ vale para el logaritmo: la secante entre $(1, 0)$ y $(1 + h, \ln(1 + h))$ tiene pendiente $\dfrac{\ln(1 + h) - \ln 1}{h} = \dfrac{\ln(1 + h)}{h} \approx 1$ si $h \approx 0$. Con $h = \tfrac{1}{m}$, esto dice que $m\ln\!\left(1 + \tfrac{1}{m}\right) \approx 1$ para $m$ grande, es decir, $\left(1 + \tfrac{1}{m}\right)^m \approx e$.
+
+![Exponencial y logaritmo con rectas paralelas a y igual x](adjuntos/Exponencial%20y%20logaritmo%20con%20rectas%20paralelas%20a%20y%20igual%20x.png)
+
+> [!example]- Transcripción de la figura (cuaderno, clase 18)
+> En azul $y = e^x$, que pasa por $(0, 1)$, y en verde $y = \ln x$, que pasa por $(1, 0)$ y marca el punto $1 + h$ en el eje. Tres rectas grises paralelas, $y = x + 1$, $y = x$ e $y = x - 1$, tocan a las curvas en esos puntos: cerca de ellos, ambas curvas se parecen a una recta de pendiente $1$.
+
 ## Propiedades algebraicas
 
 > [!tip] Leyes del logaritmo

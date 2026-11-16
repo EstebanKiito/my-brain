@@ -348,5 +348,26 @@
     "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Cuaderno/Mat1107-clase-28-pdf.pdf#page=2",
     "destino": "Introducción al Cálculo/11-Cálculo de límites y límites infinitos/adjuntos/Sucesión que supera cualquier cota M.png",
     "sha256": "00fa5039f3e0f125e0631a8cee661477573e629c9f507999ad52777dff7217d3"
+  },
+  {
+    "tema": "Exponencial y logaritmo",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Cuaderno/Mat1107-clase-18-pdf.pdf#page=2",
+    "destino": "Introducción al Cálculo/07-Exponencial y logaritmo/adjuntos/Pendiente de la exponencial en el origen.png",
+    "sha256": "464db6d777463f364b3e5a7d76a2cfbed5129ca7259e3a02f2fe9eda8ceffbd1"
+  },
+  {
+    "tema": "Exponencial y logaritmo",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Cuaderno/Mat1107-clase-18-pdf.pdf#page=2",
+    "destino": "Introducción al Cálculo/07-Exponencial y logaritmo/adjuntos/Pendiente de la exponencial en un punto cualquiera.png",
+    "sha256": "9f0616c0088f4a999b8067a9a09a668b860c074500d21bc702db8045c8be5193"
+  },
+  {
+    "tema": "Exponencial y logaritmo",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Cuaderno/Mat1107-clase-18-pdf.pdf#page=3",
+    "destino": "Introducción al Cálculo/07-Exponencial y logaritmo/adjuntos/Exponencial y logaritmo con rectas paralelas a y igual x.png",
+    "sha256": "981696adc8d7b50c84834a198df3ea02fe6254e9223303d1fbbcebc08c9f1863"
   }
 ]

@@ -45,6 +45,24 @@ Cumple $e^{x + y} = e^x e^y$, $e^0 = 1$ y $e^{-x} = \tfrac{1}{e^x}$. Su dominio 
 
 La recta $y = x + 1$ es justamente la desigualdad fundamental $e^x \ge 1 + x$.
 
+## La pendiente de la exponencial
+
+Una observación de clase que anticipa la derivada: cerca de $0$, la recta secante que une $(0, 1)$ con $(h, e^h)$ tiene pendiente $m = \dfrac{e^h - e^0}{h} = \dfrac{e^h - 1}{h}$. Por la desigualdad fundamental, la curva queda sobre la recta $y = x + 1$ y esa pendiente es aproximadamente $1$ si $h \approx 0$.
+
+![Pendiente de la exponencial en el origen](adjuntos/Pendiente%20de%20la%20exponencial%20en%20el%20origen.png)
+
+> [!example]- Transcripción de la figura (cuaderno, clase 18)
+> La curva azul $y = e^x$ y la recta gris $y = x + 1$ se tocan en $(0, 1)$. Un segmento naranja de pendiente $m$ une ese punto con el de abscisa $h$ sobre la curva; para $h$ pequeño casi coincide con la recta gris.
+
+En un punto $x$ cualquiera, la secante entre $(x, e^x)$ y $(x + h, e^{x+h})$ tiene pendiente
+$$m = \frac{e^{x+h} - e^x}{h} = e^x\,\frac{e^h - 1}{h} \approx e^x \qquad (h \approx 0).$$
+Es decir, la pendiente de la recta tangente a $y = e^x$ **coincide con el valor de la función** en ese punto.
+
+![Pendiente de la exponencial en un punto cualquiera](adjuntos/Pendiente%20de%20la%20exponencial%20en%20un%20punto%20cualquiera.png)
+
+> [!example]- Transcripción de la figura (cuaderno, clase 18)
+> La curva azul $y = e^x$ con los puntos $(x, e^x)$ y $(x + h, e^{x+h})$ marcados en naranja sobre los ejes y unidos por una secante naranja. La recta roja, tangente en $(x, e^x)$, tiene pendiente $m = ?$, que el cálculo anterior responde: $e^x$.
+
 ## Gráficos a partir de $e^x$
 
 Con las transformaciones de funciones se obtienen otros gráficos:
