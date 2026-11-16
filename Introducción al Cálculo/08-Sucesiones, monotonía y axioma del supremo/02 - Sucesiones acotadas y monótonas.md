@@ -13,12 +13,22 @@ prerrequisitos:
 
 Dos propiedades describen el "aspecto" de una sucesión sin calcular su límite: si se mantiene dentro de una franja (acotada) y si siempre sube o siempre baja (monótona). Juntas, tienen una consecuencia profunda: una sucesión monótona y acotada **converge**. Por eso las interrogaciones piden, para sucesiones definidas por recurrencia, demostrar primero la monotonía y la cota.
 
+![Gráfico de una sucesión como puntos aislados](adjuntos/Gr%C3%A1fico%20de%20una%20sucesi%C3%B3n%20como%20puntos%20aislados.png)
+
+> [!example]- Transcripción de la figura (cuaderno, clase 24)
+> Ejes cartesianos con puntos azules aislados sobre los enteros $1, 2, 3, \ldots$; algunos quedan sobre el eje horizontal y otros bajo él. Un punto está rotulado $(m, a_m)$: la sucesión es la nube de pares (índice, valor).
+
 ## Sucesiones acotadas
 
 > [!tip] Acotación
 > Una sucesión $\{a_n\}$ es **acotada superiormente** si existe $M$ con $a_n \le M$ para todo $n$; **acotada inferiormente** si existe $m$ con $m \le a_n$ para todo $n$; y **acotada** si cumple ambas, es decir, existe $K$ con $|a_n| \le K$ para todo $n$.
 
 Esas cotas son para el **conjunto de valores** $\{a_n : n \in \mathbb{N}\}$, por lo que se pueden estudiar con las herramientas de [[03 - Cotas, supremo e ínfimo|cota superior, supremo e ínfimo]].
+
+![Sucesión acotada entre menos K y K](adjuntos/Sucesi%C3%B3n%20acotada%20entre%20menos%20K%20y%20K.png)
+
+> [!example]- Transcripción de la figura (cuaderno, clase 24)
+> Dos rectas horizontales naranjas, $y = K$ y $y = -K$, y una nube de puntos azules que queda siempre entre ambas: $-K \le a_n \le K$ para todo $n$.
 
 ## Sucesiones monótonas
 

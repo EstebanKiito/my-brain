@@ -22,6 +22,11 @@ Tres propiedades estructurales de las sucesiones convergentes: el límite es **�
 
 Gracias a esto tiene sentido escribir "**el** límite" de una sucesión convergente.
 
+![Unicidad del límite con dos franjas disjuntas](adjuntos/Unicidad%20del%20l%C3%ADmite%20con%20dos%20franjas%20disjuntas.png)
+
+> [!example]- Transcripción de la figura (cuaderno, clase 26)
+> Dos rectas, $y = L_1$ (roja) y $y = L_2$ (morada), cada una con su franja de radio $\varepsilon$. Los puntos de la sucesión entran en la franja de $L_1$ y quedan allí; la franja de $L_2$ (gris) queda vacía a partir de ese índice, así que $L_2$ no puede ser límite.
+
 ## Convergente implica acotada
 
 > [!tip] Convergentes son acotadas
@@ -32,6 +37,11 @@ Gracias a esto tiene sentido escribir "**el** límite" de una sucesión converge
 Su contrarrecíproca da un criterio de divergencia: **una sucesión no acotada es divergente**. Así, $a_n = n$ y $a_n = n^2$ divergen (crecen sin cota, sus términos no se acumulan en torno a un número fijo). El recíproco es falso: $a_n = (-1)^n$ está acotada ($|a_n| = 1$) y diverge, porque salta entre $-1$ y $1$.
 
 **Ejemplo.** $b_n = \tfrac{n}{n + 1}$ está acotada, pues $n < n + 1$ da $|b_n| < 1$ (y converge a $1$).
+
+![Sucesión convergente encerrada entre menos K y K](adjuntos/Sucesi%C3%B3n%20convergente%20encerrada%20entre%20menos%20K%20y%20K.png)
+
+> [!example]- Transcripción de la figura (cuaderno, clase 25)
+> Una sucesión creciente que se acerca a la recta morada $y = L$ y queda toda entre las rectas rojas $y = K$ e $y = -K$: una sucesión convergente está acotada.
 
 ## Un límite no preserva la desigualdad estricta, pero sí la no estricta
 
@@ -48,6 +58,11 @@ Con $a_n > 0$ el límite puede ser $0$ (por ejemplo, $\tfrac{1}{n} > 0$ y su lí
 > Toda sucesión **monótona y acotada** es convergente. Si $\{a_n\}$ es creciente y acotada superiormente, converge a $\sup\{a_n\}$; si es decreciente y acotada inferiormente, converge a $\inf\{a_n\}$.
 
 *Demostración (caso creciente).* El conjunto $A = \{a_n : n \in \mathbb{N}\}$ es no vacío y acotado superiormente, así que por el axioma del supremo existe $L = \sup A$. Dado $\varepsilon > 0$, $L - \varepsilon$ no es cota superior: existe $N$ con $a_N > L - \varepsilon$. Como la sucesión es creciente, para $n > N$ vale $L - \varepsilon < a_N \le a_n \le L$, y por tanto $|a_n - L| < \varepsilon$. $\blacksquare$
+
+![Sucesión creciente y acotada que converge](adjuntos/Sucesi%C3%B3n%20creciente%20y%20acotada%20que%20converge.png)
+
+> [!example]- Transcripción de la figura (cuaderno, clase 24)
+> Puntos azules que suben y se aplanan hacia una recta verde $y = L$, siempre entre $y = K$ y $y = -K$; a partir de cierto índice quedan dentro de la franja alrededor de $L$. Es la idea del teorema: monótona y acotada implica convergente.
 
 La idea es que una sucesión que sube sin pasarse de una cota "se va a aproximar a la menor de las cotas superiores". El teorema **no dice** cuánto vale el límite, solo que existe; para calcularlo se usa la ecuación del punto fijo (tema 11).
 

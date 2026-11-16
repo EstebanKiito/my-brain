@@ -285,5 +285,68 @@
     "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase21.pdf#page=5",
     "destino": "Introducción al Cálculo/10-Límites de sucesiones y álgebra de límites/adjuntos/Franja de ancho 2 epsilon alrededor del límite.png",
     "sha256": "fcd2680eb8c0780e3e2fd1df16130b4e7bb116fb93549d5d16fc854a69d03a86"
+  },
+  {
+    "tema": "Sucesiones, monotonía y axioma del supremo",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Cuaderno/Mat1107-clase-24-pdf.pdf#page=1",
+    "destino": "Introducción al Cálculo/08-Sucesiones, monotonía y axioma del supremo/adjuntos/Gráfico de una sucesión como puntos aislados.png",
+    "sha256": "0479020f8beafeb785a9ec9bde6b7d5b870293679a33496001eea8ba2fc0cda0"
+  },
+  {
+    "tema": "Sucesiones, monotonía y axioma del supremo",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Cuaderno/Mat1107-clase-24-pdf.pdf#page=9",
+    "destino": "Introducción al Cálculo/08-Sucesiones, monotonía y axioma del supremo/adjuntos/Sucesión acotada entre menos K y K.png",
+    "sha256": "234c8f5dbf595a902a55699868e5994c10c44b83e7a0c03fb4547538d859ad02"
+  },
+  {
+    "tema": "Límites de sucesiones y álgebra de límites",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Cuaderno/Mat1107-clase-24-pdf.pdf#page=2",
+    "destino": "Introducción al Cálculo/10-Límites de sucesiones y álgebra de límites/adjuntos/Convergencia a cero con franja de radio epsilon.png",
+    "sha256": "ad84b337aa438f4ca65a5b1bfe4c5612d09dc9e3c2c65125d298380433718e0b"
+  },
+  {
+    "tema": "Límites de sucesiones y álgebra de límites",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Cuaderno/Mat1107-clase-25-pdf.pdf#page=3",
+    "destino": "Introducción al Cálculo/10-Límites de sucesiones y álgebra de límites/adjuntos/Convergencia a L con franja de radio epsilon.png",
+    "sha256": "b3796f7dd15aff7f0c82f1b15abce284412a1474869bdf512743cd298f0293cc"
+  },
+  {
+    "tema": "Límites de sucesiones y álgebra de límites",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Cuaderno/Mat1107-clase-26-pdf.pdf#page=1",
+    "destino": "Introducción al Cálculo/10-Límites de sucesiones y álgebra de límites/adjuntos/Unicidad del límite con dos franjas disjuntas.png",
+    "sha256": "60fbb02f587521e897c0426e435729ec4e5f9a89a19ad67ace1cdc77ffde41c6"
+  },
+  {
+    "tema": "Límites de sucesiones y álgebra de límites",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Cuaderno/Mat1107-clase-25-pdf.pdf#page=6",
+    "destino": "Introducción al Cálculo/10-Límites de sucesiones y álgebra de límites/adjuntos/Sucesión convergente encerrada entre menos K y K.png",
+    "sha256": "110bc0621aab4ec6a8e8f42fbec88500586495c0166e68dbf2e69c9b79da829b"
+  },
+  {
+    "tema": "Límites de sucesiones y álgebra de límites",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Cuaderno/Mat1107-clase-24-pdf.pdf#page=10",
+    "destino": "Introducción al Cálculo/10-Límites de sucesiones y álgebra de límites/adjuntos/Sucesión creciente y acotada que converge.png",
+    "sha256": "6f7993c436615fda376d8aab1ad6cc8060dc0ba0d181651ece934b60af419ba6"
+  },
+  {
+    "tema": "Límites de sucesiones y álgebra de límites",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Cuaderno/Mat1107-clase-27-pdf.pdf#page=1",
+    "destino": "Introducción al Cálculo/10-Límites de sucesiones y álgebra de límites/adjuntos/Teorema del sándwich con tres sucesiones.png",
+    "sha256": "2f15cc8d49fe45ac033c4ba17cc462cb590104d09de9e70653d80b01e423cc07"
+  },
+  {
+    "tema": "Cálculo de límites y límites infinitos",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Cuaderno/Mat1107-clase-28-pdf.pdf#page=2",
+    "destino": "Introducción al Cálculo/11-Cálculo de límites y límites infinitos/adjuntos/Sucesión que supera cualquier cota M.png",
+    "sha256": "00fa5039f3e0f125e0631a8cee661477573e629c9f507999ad52777dff7217d3"
   }
 ]

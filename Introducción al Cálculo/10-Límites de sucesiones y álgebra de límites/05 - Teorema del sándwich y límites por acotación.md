@@ -33,6 +33,11 @@ Por ejemplo, $b_n = \operatorname{sen}(n)$ no converge, pero está acotada por $
 > 2. Verificar que ambos límites **coinciden**.
 > 3. Concluir. (Si $b_n \ge 0$, la cota inferior puede ser simplemente $0$.)
 
+![Teorema del sándwich con tres sucesiones](adjuntos/Teorema%20del%20s%C3%A1ndwich%20con%20tres%20sucesiones.png)
+
+> [!example]- Transcripción de la figura (cuaderno, clase 27)
+> Tres nubes de puntos: $a_n$ (morado) por debajo, $c_n$ (rojo) en medio y $b_n$ (azul) por encima, todas acercándose a la recta naranja $y = L$. A partir de cierto índice las tres caen dentro de la franja verde de radio $\varepsilon$ en torno a $L$: la sucesión del medio queda atrapada.
+
 ## Ejemplos
 
 **Con funciones acotadas (I7, 2026-1; I3, 2025-2).** Como $-1 \le \operatorname{sen}(n) \le 1$, para $n \ge 5$:

@@ -40,6 +40,16 @@ Como $|a_n - L| < \varepsilon \iff -\varepsilon < a_n - L < \varepsilon \iff L -
 > [!example]- Transcripción de la figura (clase 21)
 > Una nube de puntos rojos que sube, pasa por encima de la franja y se asienta dentro de ella. Tres rectas horizontales: $y = L + \varepsilon$ y $y = L - \varepsilon$ (naranjas) y $y = L$ (azul) en el centro. A partir de la marca $N$ en el eje horizontal, todos los puntos quedan entre las dos rectas naranjas, mientras que algunos puntos anteriores quedan fuera.
 
+![Convergencia a cero con franja de radio epsilon](adjuntos/Convergencia%20a%20cero%20con%20franja%20de%20radio%20epsilon.png)
+
+> [!example]- Transcripción de la figura (cuaderno, clase 24)
+> Puntos azules que al principio saltan por encima y por debajo del eje, y a partir de un índice marcado $m_0$ (con una flecha roja) quedan todos dentro de la franja verde de ancho $2\varepsilon$ centrada en $0$. Es la definición de $\lim a_n = 0$: $|a_n| < \varepsilon$ para $n \ge m_0$.
+
+![Convergencia a L con franja de radio epsilon](adjuntos/Convergencia%20a%20L%20con%20franja%20de%20radio%20epsilon.png)
+
+> [!example]- Transcripción de la figura (cuaderno, clase 25)
+> Igual que la figura anterior pero con la recta morada $y = L$ en el centro de la franja: los puntos azules, a partir de $m_0$, quedan entre $L - \varepsilon$ y $L + \varepsilon$. Equivale a $\lim (a_n - L) = 0$.
+
 > [!tip] Un $\varepsilon$ más pequeño pide un $N$ más grande
 > Cuanto más estrecha la franja, más tarde entra la sucesión en ella: $N$ **depende** de $\varepsilon$. Probar que $\lim a_n = L$ es dar una receta que, para cada $\varepsilon$, produzca un $N$.
 

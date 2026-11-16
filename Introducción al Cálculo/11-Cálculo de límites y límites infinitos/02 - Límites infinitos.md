@@ -21,6 +21,11 @@ Una sucesión puede diverger de varias maneras. Algunas simplemente oscilan ($(-
 
 $+\infty$ y $-\infty$ **no son números**: una sucesión que tiende a $\pm\infty$ **no es convergente** (sigue siendo divergente). Como $\lim a_n = +\infty \iff \lim(-a_n) = -\infty$, basta estudiar el primer caso.
 
+![Sucesión que supera cualquier cota M](adjuntos/Sucesi%C3%B3n%20que%20supera%20cualquier%20cota%20M.png)
+
+> [!example]- Transcripción de la figura (cuaderno, clase 28)
+> Puntos azules que suben cada vez más. Una recta roja horizontal marca la altura $M$; desde el índice $m_0$ (flecha gris) todos los puntos quedan por encima de ella: $a_n > M$ para $n \ge m_0$.
+
 > [!tip] Relación con la acotación
 > - Si $\lim a_n = +\infty$, entonces $\{a_n\}$ **no** está acotada superiormente.
 > - El recíproco es **falso**: $a_n = n + (-1)^n n$ no está acotada superiormente, pero no tiende a $+\infty$, porque $a_{2n-1} = 0$ para todo $n$.
