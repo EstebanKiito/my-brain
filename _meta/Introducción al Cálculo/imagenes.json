@@ -271,5 +271,19 @@
     "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/PRUEBAS/2022-2/I3MAT11072022S2.pdf#page=1",
     "destino": "Introducción al Cálculo/07-Exponencial y logaritmo/adjuntos/Gráfica de la temperatura de un objeto que se enfría.png",
     "sha256": "9bff1aaae701a7f10a7062929a1443ee87e952f1d3d4d7a45bb4dc9cf52f64b7"
+  },
+  {
+    "tema": "Límites de sucesiones y álgebra de límites",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase21.pdf#page=2",
+    "destino": "Introducción al Cálculo/10-Límites de sucesiones y álgebra de límites/adjuntos/Gráfica de la sucesión n sobre n más 1.png",
+    "sha256": "d559898b65440ac9e3ae75bb41b018515a484c27fabcad723c149c4236baab64"
+  },
+  {
+    "tema": "Límites de sucesiones y álgebra de límites",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase21.pdf#page=5",
+    "destino": "Introducción al Cálculo/10-Límites de sucesiones y álgebra de límites/adjuntos/Franja de ancho 2 epsilon alrededor del límite.png",
+    "sha256": "fcd2680eb8c0780e3e2fd1df16130b4e7bb116fb93549d5d16fc854a69d03a86"
   }
 ]

@@ -106,12 +106,13 @@
     },
     "Límites de sucesiones y álgebra de límites": {
       "carpeta": "Introducción al Cálculo/10-Límites de sucesiones y álgebra de límites",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [],
       "pdfs": [
         "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase21.pdf",
         "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase22.pdf",
-        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Guias/Guia10_MAT1107_2023.pdf"
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Guias/Guia10_MAT1107_2023.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase24.pdf"
       ]
     },
     "Cálculo de límites y límites infinitos": {
@@ -119,9 +120,9 @@
       "estado": "pendiente",
       "secciones": [],
       "pdfs": [
-        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase24.pdf",
         "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase25.pdf",
-        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Guias/Guia10_MAT1107_2023.pdf"
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Guias/Guia10_MAT1107_2023.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase24 (1).pdf"
       ]
     },
     "Gestión del curso": {

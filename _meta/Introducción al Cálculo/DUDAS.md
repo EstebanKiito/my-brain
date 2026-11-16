@@ -4,7 +4,7 @@ Criterio (ESTANDAR-NOTAS): las erratas se corrigen en la nota sin comentarlas. A
 
 Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ informativa (no es error tuyo).
 
-- ℹ️ **Dos versiones de la clase 24.** `Clases/clase24.pdf` y `Clases/clase24 (1).pdf` no son idénticas. Se compararán al migrar el tema 11 y se usará la más completa.
+- ✅ **Dos archivos de la clase 24.** `Clases/clase24.pdf` (1 de junio de 2022, "Cálculo de límites") y `Clases/clase24 (1).pdf` (15 de junio, "Sucesiones monótonas y acotadas") son **clases distintas**, no versiones: la primera continúa la clase 22 y se usa en el tema 10; la segunda se usa en el tema 11. Faltaría la numeración correcta: por fecha, el orden real es 21, 22, 24 (límites), 23 (préstamos), 24 (monótonas), 25.
 - ℹ️ **Orden de las evaluaciones.** Las interrogaciones de 2026-1 parten por polinomios (I1), antes de orden e inecuaciones, mientras que las clases de 2022 los ven después. El vault sigue el orden de las clases y el mapa de evaluaciones indica qué toma cada interrogación en cada semestre.
 - 🟡 **Guía 1, ejercicio 5.** Pide demostrar $(a+b+c)(bc+ca+ab) > 9abc$ para positivos, pero con $a=b=c$ ambos lados valen $9a^3$. La desigualdad estricta solo vale si no son todos iguales (como en la clase 3, ejemplo 3); en general vale "$\ge$". La nota de ejercicios prueba $\ge$ y explica cuándo es estricta.
 - ℹ️ **Guía 1, ejercicio 3.** Es el axioma O4 tal como se enuncia en la clase 2 ("si $a<b$ y $c>0$, entonces $ac<bc$"). La nota lo resuelve a partir de la cerradura de $\mathbb{R}^+$ y avisa de que con ese enunciado de axioma es literal.
@@ -29,4 +29,5 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 - 🟡 **I7, 2023-1, pregunta 1.** Al resolver $a = 5$, la pauta escribe "$b = 20$"; debe ser $c = 20$ (el sistema es en $a$ y $c$: $ac = 100$ y $a + c = 25$).
 - ℹ️ **Clase 23, tabla de montos.** La tabla de la clase (764, 1293, 1606, 1874, 2103 UF para 8, 15, 20, 25 y 30 años con 9 UF mensuales) se calculó con $r_m$ redondeado a $0{,}26\,\%$. Con $r_m = (1{,}0317)^{1/12} - 1$ exacto salen 764, 1292, 1605, 1872 y 2101 UF, y el monto máximo $\Delta / r_m$ es $\approx 3456$ UF (la clase dice $\approx 3460$). La nota muestra ambas columnas.
 - ℹ️ **I3, 2023-2, pregunta 3(a).** La pauta la marca como "problema anulado".
+- ℹ️ **Clase 22/24, suma de $n$ términos.** El ejemplo de la clase 22 ($a_n = \tfrac{n+1}{n^2+1} + \dots + \tfrac{n+n}{n^2+n}$) y la clase 24 lo plantean sin solución; la nota lo resuelve con sándwich y obtiene $\tfrac{3}{2}$.
 
