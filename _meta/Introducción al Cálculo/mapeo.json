@@ -41,14 +41,13 @@
     },
     "Funciones reales: gráficas y transformaciones": {
       "carpeta": "Introducción al Cálculo/04-Funciones reales: gráficas y transformaciones",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [],
       "pdfs": [
         "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase8.pdf",
         "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase9.pdf",
         "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase10.pdf",
-        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Guias/guia4_funciones_MAT1107.pdf",
-        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Guias/Guia6_MAT1107_2023.pdf"
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Guias/guia4_funciones_MAT1107.pdf"
       ]
     },
     "Polinomios y funciones racionales": {
@@ -58,7 +57,8 @@
       "pdfs": [
         "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase11.pdf",
         "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase12.pdf",
-        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Precálculo-Mickenberg.pdf"
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Precálculo-Mickenberg.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Guias/Guia6_MAT1107_2023.pdf"
       ]
     },
     "Composición, inversa y biyecciones": {
