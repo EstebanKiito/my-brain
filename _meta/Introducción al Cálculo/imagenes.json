@@ -1,0 +1,373 @@
+[
+  {
+    "tema": "Inecuaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase6.pdf#page=6",
+    "destino": "Introducción al Cálculo/03-Inecuaciones/adjuntos/Tabla de signos de un cociente con una restricción.png",
+    "sha256": "3c5c4088dde9dcec7d4f7cf5a7c74d6ffe5a1efb85e6a2a99544e620d1e7ec5f"
+  },
+  {
+    "tema": "Inecuaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase6.pdf#page=8",
+    "destino": "Introducción al Cálculo/03-Inecuaciones/adjuntos/Tabla de signos de un cociente con tres puntos críticos.png",
+    "sha256": "ae674596770e7b8aeb66a166c1c8476889f820cab3bcb7a5ac9d41fd1bc3f915"
+  },
+  {
+    "tema": "Inecuaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase6.pdf#page=11",
+    "destino": "Introducción al Cálculo/03-Inecuaciones/adjuntos/Tabla de signos con cuatro factores y raíces irracionales.png",
+    "sha256": "388b44238daa6c3093ea01f76aa34069856a1fb613c8d3c6a0fc938686b985e1"
+  },
+  {
+    "tema": "Inecuaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase6.pdf#page=13",
+    "destino": "Introducción al Cálculo/03-Inecuaciones/adjuntos/Tabla de signos de una inecuación con valor absoluto.png",
+    "sha256": "15fa99eec698170ea575c09a14fc69e8ce1c0aff69694b0ca814fd8a68c5cf99"
+  },
+  {
+    "tema": "Funciones reales: gráficas y transformaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase8.pdf#page=7",
+    "destino": "Introducción al Cálculo/04-Funciones reales: gráficas y transformaciones/adjuntos/Curva que es gráfica de una función y curva que no lo es.png",
+    "sha256": "87df44e1346d01d67caef319674e3d7db6fbbfa07d2145131032b776abd99ad1"
+  },
+  {
+    "tema": "Funciones reales: gráficas y transformaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase9.pdf#page=4",
+    "destino": "Introducción al Cálculo/04-Funciones reales: gráficas y transformaciones/adjuntos/Dominio y recorrido sobre los ejes de la gráfica.png",
+    "sha256": "e811e8faa8aa081c8ca751e040e07514331cf8e9f8f5d7e81682375ea27af048"
+  },
+  {
+    "tema": "Funciones reales: gráficas y transformaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase9.pdf#page=5",
+    "destino": "Introducción al Cálculo/04-Funciones reales: gráficas y transformaciones/adjuntos/Gráfica de la raíz de 4 menos x al cuadrado.png",
+    "sha256": "4e25445da1dfeee3d225a411fdd135e9a3230dd4b700660b0291f3edbb52c343"
+  },
+  {
+    "tema": "Funciones reales: gráficas y transformaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase9.pdf#page=6",
+    "destino": "Introducción al Cálculo/04-Funciones reales: gráficas y transformaciones/adjuntos/Funciones constante y lineal.png",
+    "sha256": "127d25241d741925f0dc15a4e808dbfb2c0012a53de135a9096082549c668d7c"
+  },
+  {
+    "tema": "Funciones reales: gráficas y transformaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase9.pdf#page=6",
+    "destino": "Introducción al Cálculo/04-Funciones reales: gráficas y transformaciones/adjuntos/Funciones potencia.png",
+    "sha256": "70d69f6b151c7d85fd83f371142a3a6cc93397997b8876fc096f270ad98f5eed"
+  },
+  {
+    "tema": "Funciones reales: gráficas y transformaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase9.pdf#page=7",
+    "destino": "Introducción al Cálculo/04-Funciones reales: gráficas y transformaciones/adjuntos/Funciones raíz.png",
+    "sha256": "42192cc7e3133edddb71fe833b115e414fbc2fd20ce18b8b23b69c0ee28490a5"
+  },
+  {
+    "tema": "Funciones reales: gráficas y transformaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase9.pdf#page=7",
+    "destino": "Introducción al Cálculo/04-Funciones reales: gráficas y transformaciones/adjuntos/Funciones recíprocas.png",
+    "sha256": "4a168284db111228b4c504aa42cdfc66a44c2a64d4679368515ae215fc62bb31"
+  },
+  {
+    "tema": "Funciones reales: gráficas y transformaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase9.pdf#page=9",
+    "destino": "Introducción al Cálculo/04-Funciones reales: gráficas y transformaciones/adjuntos/Gráfica del valor absoluto.png",
+    "sha256": "73bc2ba7acbe720988256ff51b886a3383f605ac37a87288b16fba5539a837d7"
+  },
+  {
+    "tema": "Funciones reales: gráficas y transformaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase9.pdf#page=10",
+    "destino": "Introducción al Cálculo/04-Funciones reales: gráficas y transformaciones/adjuntos/Gráfica de la parte entera.png",
+    "sha256": "f14e0c18d96a2cdbfe80bd4b6027af97b85807603ef0900959f0a3bac9c0d147"
+  },
+  {
+    "tema": "Funciones reales: gráficas y transformaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase10.pdf#page=2",
+    "destino": "Introducción al Cálculo/04-Funciones reales: gráficas y transformaciones/adjuntos/Desplazamientos verticales de una gráfica.png",
+    "sha256": "7213ef96ff143dd6eb4ff896293931fbe07c4e9061c85ed003107aceb5d3c21a"
+  },
+  {
+    "tema": "Funciones reales: gráficas y transformaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase10.pdf#page=4",
+    "destino": "Introducción al Cálculo/04-Funciones reales: gráficas y transformaciones/adjuntos/Desplazamientos horizontales de una gráfica.png",
+    "sha256": "26afd703b5e1dcef3d3cf5b6488c80f95b9a002fb32708e8de7de31ce402d042"
+  },
+  {
+    "tema": "Funciones reales: gráficas y transformaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase10.pdf#page=6",
+    "destino": "Introducción al Cálculo/04-Funciones reales: gráficas y transformaciones/adjuntos/Alargamiento y contracción verticales.png",
+    "sha256": "8741caa44a1c38d4fe9c46469c448b4bdcd77cdf41a6f28a85e7abea87f3cad3"
+  },
+  {
+    "tema": "Funciones reales: gráficas y transformaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase10.pdf#page=8",
+    "destino": "Introducción al Cálculo/04-Funciones reales: gráficas y transformaciones/adjuntos/Alargamiento y contracción horizontales.png",
+    "sha256": "9b80dd22bb1ea075df5e12b7f6255bc4d48698a64c7f39d85de65c5727c0b63a"
+  },
+  {
+    "tema": "Funciones reales: gráficas y transformaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase10.pdf#page=9",
+    "destino": "Introducción al Cálculo/04-Funciones reales: gráficas y transformaciones/adjuntos/Función con picos del ejemplo de contracción horizontal.png",
+    "sha256": "450a4d2b1a15b3a106be6b3e0bbb40bc0b9cff573133e2afd21d7e9826e76f86"
+  },
+  {
+    "tema": "Funciones reales: gráficas y transformaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase10.pdf#page=9",
+    "destino": "Introducción al Cálculo/04-Funciones reales: gráficas y transformaciones/adjuntos/Contracción y alargamiento horizontales de la función con picos.png",
+    "sha256": "3a77449b13a10a95fe09fd6c2939a85a00dbc61b200c4256b1acad08373fb63d"
+  },
+  {
+    "tema": "Funciones reales: gráficas y transformaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase10.pdf#page=10",
+    "destino": "Introducción al Cálculo/04-Funciones reales: gráficas y transformaciones/adjuntos/Reflexiones en los ejes.png",
+    "sha256": "45c06b20fbb606f62bea798ce6594343e893178b9b401269288cb1fda41eb1f1"
+  },
+  {
+    "tema": "Funciones reales: gráficas y transformaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase10.pdf#page=12",
+    "destino": "Introducción al Cálculo/04-Funciones reales: gráficas y transformaciones/adjuntos/Función de partida del ejemplo de transformaciones sucesivas.png",
+    "sha256": "a185eac1579eb7e513b6f480ab3d3e83d6aa37dab9b3b06756b9597620c0b172"
+  },
+  {
+    "tema": "Funciones reales: gráficas y transformaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase10.pdf#page=14",
+    "destino": "Introducción al Cálculo/04-Funciones reales: gráficas y transformaciones/adjuntos/Función original y su reflexión en el eje Y.png",
+    "sha256": "53bdb7bfc497bf0e10f2c5b4e290a1c30bd4df5814d0c80fad5684a729867d0e"
+  },
+  {
+    "tema": "Funciones reales: gráficas y transformaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase10.pdf#page=15",
+    "destino": "Introducción al Cálculo/04-Funciones reales: gráficas y transformaciones/adjuntos/Traslación y alargamiento vertical.png",
+    "sha256": "f93c79374b093f469acd349ac5e8d3ecd06f18ac4d456250f662a6b447f2c448"
+  },
+  {
+    "tema": "Funciones reales: gráficas y transformaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase10.pdf#page=16",
+    "destino": "Introducción al Cálculo/04-Funciones reales: gráficas y transformaciones/adjuntos/Reflexión en el eje X y traslación final.png",
+    "sha256": "19982f2974ce70856bb2a246698324a34535b4ee9cbddda3cc5615fd5e942721"
+  },
+  {
+    "tema": "Funciones reales: gráficas y transformaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/PRUEBAS/2026-1/I4-MAT1107.pdf#page=1",
+    "destino": "Introducción al Cálculo/04-Funciones reales: gráficas y transformaciones/adjuntos/Gráfico cualitativo de una función definida por tramos.png",
+    "sha256": "7858a7d43c64c934017b90684366a6e6d87c3876f39793d0ec86a12abd047b86"
+  },
+  {
+    "tema": "Funciones reales: gráficas y transformaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/PRUEBAS/2026-1/I4-MAT1107.pdf#page=2",
+    "destino": "Introducción al Cálculo/04-Funciones reales: gráficas y transformaciones/adjuntos/Gráfico del valor absoluto de una cuadrática.png",
+    "sha256": "68869223d20d776dcf52ff599fce8fb9f06c37aae9dbcad59608765d198172df"
+  },
+  {
+    "tema": "Polinomios y funciones racionales",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase11.pdf#page=4",
+    "destino": "Introducción al Cálculo/05-Polinomios y funciones racionales/adjuntos/Parábolas con vértice en la forma normal.png",
+    "sha256": "2ac5420b04570dc0dd97b0822246a9cd8bc38691238975288ed02af9e333cdcd"
+  },
+  {
+    "tema": "Polinomios y funciones racionales",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase11.pdf#page=10",
+    "destino": "Introducción al Cálculo/05-Polinomios y funciones racionales/adjuntos/Comportamiento final de un polinomio según grado y coeficiente principal.png",
+    "sha256": "bc477db0e5143acf22b286c91a101b19d7540ef7be5d6a2770966a064f8c7876"
+  },
+  {
+    "tema": "Polinomios y funciones racionales",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase11.pdf#page=14",
+    "destino": "Introducción al Cálculo/05-Polinomios y funciones racionales/adjuntos/Forma de la gráfica cerca de un cero según su multiplicidad.png",
+    "sha256": "6aeea28434dda458e69ab21f8bd983ca0deeb35adaa719337184430b00a0cc15"
+  },
+  {
+    "tema": "Polinomios y funciones racionales",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase12.pdf#page=3",
+    "destino": "Introducción al Cálculo/05-Polinomios y funciones racionales/adjuntos/Asíntotas verticales de una función racional.png",
+    "sha256": "91a8ffc8bb8cc2245606bcb30c03405011961042caa59956c4ce9c0e06d49c1d"
+  },
+  {
+    "tema": "Polinomios y funciones racionales",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase12.pdf#page=3",
+    "destino": "Introducción al Cálculo/05-Polinomios y funciones racionales/adjuntos/Asíntotas horizontales de una función racional.png",
+    "sha256": "1beaa4832004d49aeb67cf9fa84f4de2e0badd564b5c6a2832fa2f12d8f922c7"
+  },
+  {
+    "tema": "Composición, inversa y biyecciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase13.pdf#page=3",
+    "destino": "Introducción al Cálculo/06-Composición, inversa y biyecciones/adjuntos/Dos puntos con la misma imagen cortados por una recta horizontal.png",
+    "sha256": "1b9bca6aef50f3b480bfe00797377f664cb5e52d24f513a30a7a5338ebd19ced"
+  },
+  {
+    "tema": "Composición, inversa y biyecciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase13.pdf#page=4",
+    "destino": "Introducción al Cálculo/06-Composición, inversa y biyecciones/adjuntos/Gráfico de una función por tramos que no es inyectiva.png",
+    "sha256": "f9900ae718e3ddb6e4b23792791e13880110602a8d75fc58e05ff986cdc30472"
+  },
+  {
+    "tema": "Composición, inversa y biyecciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase15.pdf#page=8",
+    "destino": "Introducción al Cálculo/06-Composición, inversa y biyecciones/adjuntos/Gráfica de la inversa como reflexión en la recta y igual a x.png",
+    "sha256": "f6c68a820d5debe16af1d400969c231d8fdd7f848d77cec27f4b5986ba6d6fdb"
+  },
+  {
+    "tema": "Exponencial y logaritmo",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase16.pdf#page=10",
+    "destino": "Introducción al Cálculo/07-Exponencial y logaritmo/adjuntos/Gráfica de la exponencial y la recta y igual a x más 1.png",
+    "sha256": "994c6b31cd5c46995756f8e077126868e95cb2b7d5bf71c5a27153d69bc7942f"
+  },
+  {
+    "tema": "Sumas finitas, binomio y aplicaciones financieras",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase20.pdf#page=3",
+    "destino": "Introducción al Cálculo/09-Sumas finitas, binomio y aplicaciones financieras/adjuntos/Patrón de los exponentes en el desarrollo de a más b a la 5.png",
+    "sha256": "0d1a33d43e9d635d0f5be58f7c505f7d19d1f66afac889ea8e2b61ce3d97b5b4"
+  },
+  {
+    "tema": "Sumas finitas, binomio y aplicaciones financieras",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase20.pdf#page=4",
+    "destino": "Introducción al Cálculo/09-Sumas finitas, binomio y aplicaciones financieras/adjuntos/Triángulo de Pascal con cada número como suma de los dos de arriba.png",
+    "sha256": "c09307f456b46a63b2e8087ef5f6ddf3a374c485905be39a793fa4fc72aa1310"
+  },
+  {
+    "tema": "Sumas finitas, binomio y aplicaciones financieras",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase20.pdf#page=5",
+    "destino": "Introducción al Cálculo/09-Sumas finitas, binomio y aplicaciones financieras/adjuntos/Triángulo de Pascal con coeficientes binomiales.png",
+    "sha256": "6c6cd22125ee6fbf6f305bb9755d348012d352f66750aa6925c9748dc28e9b5d"
+  },
+  {
+    "tema": "Exponencial y logaritmo",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/PRUEBAS/2022-2/I3MAT11072022S2.pdf#page=1",
+    "destino": "Introducción al Cálculo/07-Exponencial y logaritmo/adjuntos/Gráfica de la temperatura de un objeto que se enfría.png",
+    "sha256": "9bff1aaae701a7f10a7062929a1443ee87e952f1d3d4d7a45bb4dc9cf52f64b7"
+  },
+  {
+    "tema": "Límites de sucesiones y álgebra de límites",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase21.pdf#page=2",
+    "destino": "Introducción al Cálculo/10-Límites de sucesiones y álgebra de límites/adjuntos/Gráfica de la sucesión n sobre n más 1.png",
+    "sha256": "d559898b65440ac9e3ae75bb41b018515a484c27fabcad723c149c4236baab64"
+  },
+  {
+    "tema": "Límites de sucesiones y álgebra de límites",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase21.pdf#page=5",
+    "destino": "Introducción al Cálculo/10-Límites de sucesiones y álgebra de límites/adjuntos/Franja de ancho 2 epsilon alrededor del límite.png",
+    "sha256": "fcd2680eb8c0780e3e2fd1df16130b4e7bb116fb93549d5d16fc854a69d03a86"
+  },
+  {
+    "tema": "Sucesiones, monotonía y axioma del supremo",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Cuaderno/Mat1107-clase-24-pdf.pdf#page=1",
+    "destino": "Introducción al Cálculo/08-Sucesiones, monotonía y axioma del supremo/adjuntos/Gráfico de una sucesión como puntos aislados.png",
+    "sha256": "0479020f8beafeb785a9ec9bde6b7d5b870293679a33496001eea8ba2fc0cda0"
+  },
+  {
+    "tema": "Sucesiones, monotonía y axioma del supremo",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Cuaderno/Mat1107-clase-24-pdf.pdf#page=9",
+    "destino": "Introducción al Cálculo/08-Sucesiones, monotonía y axioma del supremo/adjuntos/Sucesión acotada entre menos K y K.png",
+    "sha256": "234c8f5dbf595a902a55699868e5994c10c44b83e7a0c03fb4547538d859ad02"
+  },
+  {
+    "tema": "Límites de sucesiones y álgebra de límites",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Cuaderno/Mat1107-clase-24-pdf.pdf#page=2",
+    "destino": "Introducción al Cálculo/10-Límites de sucesiones y álgebra de límites/adjuntos/Convergencia a cero con franja de radio epsilon.png",
+    "sha256": "ad84b337aa438f4ca65a5b1bfe4c5612d09dc9e3c2c65125d298380433718e0b"
+  },
+  {
+    "tema": "Límites de sucesiones y álgebra de límites",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Cuaderno/Mat1107-clase-25-pdf.pdf#page=3",
+    "destino": "Introducción al Cálculo/10-Límites de sucesiones y álgebra de límites/adjuntos/Convergencia a L con franja de radio epsilon.png",
+    "sha256": "b3796f7dd15aff7f0c82f1b15abce284412a1474869bdf512743cd298f0293cc"
+  },
+  {
+    "tema": "Límites de sucesiones y álgebra de límites",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Cuaderno/Mat1107-clase-26-pdf.pdf#page=1",
+    "destino": "Introducción al Cálculo/10-Límites de sucesiones y álgebra de límites/adjuntos/Unicidad del límite con dos franjas disjuntas.png",
+    "sha256": "60fbb02f587521e897c0426e435729ec4e5f9a89a19ad67ace1cdc77ffde41c6"
+  },
+  {
+    "tema": "Límites de sucesiones y álgebra de límites",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Cuaderno/Mat1107-clase-25-pdf.pdf#page=6",
+    "destino": "Introducción al Cálculo/10-Límites de sucesiones y álgebra de límites/adjuntos/Sucesión convergente encerrada entre menos K y K.png",
+    "sha256": "110bc0621aab4ec6a8e8f42fbec88500586495c0166e68dbf2e69c9b79da829b"
+  },
+  {
+    "tema": "Límites de sucesiones y álgebra de límites",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Cuaderno/Mat1107-clase-24-pdf.pdf#page=10",
+    "destino": "Introducción al Cálculo/10-Límites de sucesiones y álgebra de límites/adjuntos/Sucesión creciente y acotada que converge.png",
+    "sha256": "6f7993c436615fda376d8aab1ad6cc8060dc0ba0d181651ece934b60af419ba6"
+  },
+  {
+    "tema": "Límites de sucesiones y álgebra de límites",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Cuaderno/Mat1107-clase-27-pdf.pdf#page=1",
+    "destino": "Introducción al Cálculo/10-Límites de sucesiones y álgebra de límites/adjuntos/Teorema del sándwich con tres sucesiones.png",
+    "sha256": "2f15cc8d49fe45ac033c4ba17cc462cb590104d09de9e70653d80b01e423cc07"
+  },
+  {
+    "tema": "Cálculo de límites y límites infinitos",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Cuaderno/Mat1107-clase-28-pdf.pdf#page=2",
+    "destino": "Introducción al Cálculo/11-Cálculo de límites y límites infinitos/adjuntos/Sucesión que supera cualquier cota M.png",
+    "sha256": "00fa5039f3e0f125e0631a8cee661477573e629c9f507999ad52777dff7217d3"
+  },
+  {
+    "tema": "Exponencial y logaritmo",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Cuaderno/Mat1107-clase-18-pdf.pdf#page=2",
+    "destino": "Introducción al Cálculo/07-Exponencial y logaritmo/adjuntos/Pendiente de la exponencial en el origen.png",
+    "sha256": "464db6d777463f364b3e5a7d76a2cfbed5129ca7259e3a02f2fe9eda8ceffbd1"
+  },
+  {
+    "tema": "Exponencial y logaritmo",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Cuaderno/Mat1107-clase-18-pdf.pdf#page=2",
+    "destino": "Introducción al Cálculo/07-Exponencial y logaritmo/adjuntos/Pendiente de la exponencial en un punto cualquiera.png",
+    "sha256": "9f0616c0088f4a999b8067a9a09a668b860c074500d21bc702db8045c8be5193"
+  },
+  {
+    "tema": "Exponencial y logaritmo",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Cuaderno/Mat1107-clase-18-pdf.pdf#page=3",
+    "destino": "Introducción al Cálculo/07-Exponencial y logaritmo/adjuntos/Exponencial y logaritmo con rectas paralelas a y igual x.png",
+    "sha256": "981696adc8d7b50c84834a198df3ea02fe6254e9223303d1fbbcebc08c9f1863"
+  }
+]

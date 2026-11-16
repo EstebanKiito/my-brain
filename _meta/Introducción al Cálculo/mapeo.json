@@ -1,0 +1,140 @@
+{
+  "_descripcion": "Mapeo de las fuentes originales (rutas relativas a _raw/) a los temas del vault. Introducción al Cálculo no tiene export de Notion ni apuntes propios: las fuentes son las clases (Clases/clase1..25.pdf, Rodrigo Vargas 2022-1), el libro de precálculo (Precálculo-Mickenberg.pdf; Stewart de respaldo), las guías (Guias/), las ayudantías (Ayudantias/) y las evaluaciones (PRUEBAS/ 2020-1 a 2026-1, Tarea/, Examen y Ejercicios). Como verificar.py solo procesa fuentes HTML, 'fuentes' queda vacío y cada tema lleva 'secciones' vacías; 'pdfs' es informativo. Las notas se reescriben, por eso 'cobertura' es 'reescrita'.",
+  "carpeta_ramo": "Introducción al Cálculo",
+  "cobertura": "reescrita",
+  "preguntas_repaso": [
+    3,
+    8
+  ],
+  "fuentes": {},
+  "temas": {
+    "Números reales: axiomas de cuerpo y de orden": {
+      "carpeta": "Introducción al Cálculo/01-Números reales: axiomas de cuerpo y de orden",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase1.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase2.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase3.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Guias/guia1_orden_MAT1107.pdf"
+      ]
+    },
+    "Valor absoluto y raíces": {
+      "carpeta": "Introducción al Cálculo/02-Valor absoluto y raíces",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase4.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Guias/guia2_MAt1107_2023.pdf"
+      ]
+    },
+    "Inecuaciones": {
+      "carpeta": "Introducción al Cálculo/03-Inecuaciones",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase5.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase6.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase7.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Guias/guia3_inecuaciones_MAT1107.pdf"
+      ]
+    },
+    "Funciones reales: gráficas y transformaciones": {
+      "carpeta": "Introducción al Cálculo/04-Funciones reales: gráficas y transformaciones",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase8.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase9.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase10.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Guias/guia4_funciones_MAT1107.pdf"
+      ]
+    },
+    "Polinomios y funciones racionales": {
+      "carpeta": "Introducción al Cálculo/05-Polinomios y funciones racionales",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase11.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase12.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Precálculo-Mickenberg.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Guias/Guia6_MAT1107_2023.pdf"
+      ]
+    },
+    "Composición, inversa y biyecciones": {
+      "carpeta": "Introducción al Cálculo/06-Composición, inversa y biyecciones",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase13.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase14.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase15.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Guias/guia5_biyecciones_MAT1107.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Guias/Guia7_MAT1107_2023.pdf"
+      ]
+    },
+    "Exponencial y logaritmo": {
+      "carpeta": "Introducción al Cálculo/07-Exponencial y logaritmo",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase16.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase17.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Guias/guia8_MAT1107_2023.pdf"
+      ]
+    },
+    "Sucesiones, monotonía y axioma del supremo": {
+      "carpeta": "Introducción al Cálculo/08-Sucesiones, monotonía y axioma del supremo",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase18.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Precálculo-Mickenberg.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Guias/Guia10_MAT1107_2023.pdf"
+      ]
+    },
+    "Sumas finitas, binomio y aplicaciones financieras": {
+      "carpeta": "Introducción al Cálculo/09-Sumas finitas, binomio y aplicaciones financieras",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase19.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase20.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase23.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Guias/guia9_MAT1107_2023.pdf"
+      ]
+    },
+    "Límites de sucesiones y álgebra de límites": {
+      "carpeta": "Introducción al Cálculo/10-Límites de sucesiones y álgebra de límites",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase21.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase22.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Guias/Guia10_MAT1107_2023.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase24.pdf"
+      ]
+    },
+    "Cálculo de límites y límites infinitos": {
+      "carpeta": "Introducción al Cálculo/11-Cálculo de límites y límites infinitos",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase25.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Guias/Guia10_MAT1107_2023.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase24 (1).pdf"
+      ]
+    },
+    "Gestión del curso": {
+      "carpeta": "Introducción al Cálculo/12-Gestión del curso",
+      "estado": "hecho",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/PRUEBAS",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Ejercicios_Intro Calculo.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/PRUEBAS/Tarea/Tarea MAT1107.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/PRUEBAS/Tarea/Solución Tarea MAT1107.pdf"
+      ]
+    }
+  }
+}
