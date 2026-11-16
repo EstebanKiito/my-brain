@@ -40,6 +40,10 @@ Una población sigue $N(t) = N_0 e^{0{,}1t}$. ¿En cuánto tiempo se triplica?
 La temperatura de un cuerpo en un ambiente a temperatura $C$ sigue $T = f(t) = ae^{-kt} + C$. A las 15:00 el forense mide $30^\circ$C, una hora después $28^\circ$C, y el departamento está a $20^\circ$C. Suponiendo $37^\circ$C en el momento de la muerte, ¿a qué hora murió la persona?
 
 > [!example]- Solución
+> ![Gráfica de la temperatura de un objeto que se enfría](adjuntos/Gráfica%20de%20la%20temperatura%20de%20un%20objeto%20que%20se%20enfría.png)
+>
+> *Transcripción de la figura (pauta I3, 2022-2):* una curva roja decreciente $T = f(t)$ que parte de la altura $a + C$ en $t = 0$ y se acerca a la recta punteada horizontal $T = C$ (la temperatura del ambiente) sin tocarla cuando $t$ crece.
+>
 > Con $t = 0$ a las 15:00: $C = 20$ y $f(0) = a + 20 = 30$, luego $a = 10$. Con $f(1) = 28$: $10e^{-k} + 20 = 28 \Rightarrow e^{-k} = \tfrac{4}{5}$, de modo que $f(t) = 10\left(\tfrac{4}{5}\right)^t + 20$. La muerte ocurrió cuando $f(t) = 37$: $\left(\tfrac{4}{5}\right)^t = \tfrac{17}{10}$, y
 > $$t = \frac{\ln(17/10)}{\ln(4/5)} \approx -2{,}378 \text{ horas}.$$
 > El signo negativo indica que fue **antes** de las 15:00: unas $2{,}38$ horas antes, es decir alrededor de las 12:37.

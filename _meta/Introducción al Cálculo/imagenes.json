@@ -243,5 +243,33 @@
     "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase16.pdf#page=10",
     "destino": "Introducción al Cálculo/07-Exponencial y logaritmo/adjuntos/Gráfica de la exponencial y la recta y igual a x más 1.png",
     "sha256": "994c6b31cd5c46995756f8e077126868e95cb2b7d5bf71c5a27153d69bc7942f"
+  },
+  {
+    "tema": "Sumas finitas, binomio y aplicaciones financieras",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase20.pdf#page=3",
+    "destino": "Introducción al Cálculo/09-Sumas finitas, binomio y aplicaciones financieras/adjuntos/Patrón de los exponentes en el desarrollo de a más b a la 5.png",
+    "sha256": "0d1a33d43e9d635d0f5be58f7c505f7d19d1f66afac889ea8e2b61ce3d97b5b4"
+  },
+  {
+    "tema": "Sumas finitas, binomio y aplicaciones financieras",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase20.pdf#page=4",
+    "destino": "Introducción al Cálculo/09-Sumas finitas, binomio y aplicaciones financieras/adjuntos/Triángulo de Pascal con cada número como suma de los dos de arriba.png",
+    "sha256": "c09307f456b46a63b2e8087ef5f6ddf3a374c485905be39a793fa4fc72aa1310"
+  },
+  {
+    "tema": "Sumas finitas, binomio y aplicaciones financieras",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase20.pdf#page=5",
+    "destino": "Introducción al Cálculo/09-Sumas finitas, binomio y aplicaciones financieras/adjuntos/Triángulo de Pascal con coeficientes binomiales.png",
+    "sha256": "6c6cd22125ee6fbf6f305bb9755d348012d352f66750aa6925c9748dc28e9b5d"
+  },
+  {
+    "tema": "Exponencial y logaritmo",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/PRUEBAS/2022-2/I3MAT11072022S2.pdf#page=1",
+    "destino": "Introducción al Cálculo/07-Exponencial y logaritmo/adjuntos/Gráfica de la temperatura de un objeto que se enfría.png",
+    "sha256": "9bff1aaae701a7f10a7062929a1443ee87e952f1d3d4d7a45bb4dc9cf52f64b7"
   }
 ]

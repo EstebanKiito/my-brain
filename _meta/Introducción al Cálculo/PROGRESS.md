@@ -5,15 +5,15 @@ Rama: `migrar/introduccion-calculo`. Un commit por tema. Antes de cada commit se
 | # | Tema | Carpeta | Estado | Notas | Imágenes |
 |---|---|---|---|---|---|
 | 0 | Infraestructura (`_meta/Introducción al Cálculo/`) | `_meta/` | ✅ hecho | – | – |
-| 1 | Números reales: axiomas de cuerpo y de orden | `01-Números reales: axiomas de cuerpo y de orden/` | ✅ hecho | 7 + índice | 0 |
-| 2 | Valor absoluto y raíces | `02-Valor absoluto y raíces/` | ✅ hecho | 7 + índice | 0 |
+| 1 | Números reales: axiomas de cuerpo y de orden | `01-Números reales: axiomas de cuerpo y de orden/` | ✅ hecho | 7 + índice | 3 |
+| 2 | Valor absoluto y raíces | `02-Valor absoluto y raíces/` | ✅ hecho | 7 + índice | 3 |
 | 3 | Inecuaciones | `03-Inecuaciones/` | ✅ hecho | 8 + índice | 4 |
 | 4 | Funciones reales: gráficas y transformaciones | `04-Funciones reales: gráficas y transformaciones/` | ✅ hecho | 9 + índice | 22 |
 | 5 | Polinomios y funciones racionales | `05-Polinomios y funciones racionales/` | ✅ hecho | 9 + índice | 5 |
 | 6 | Composición, inversa y biyecciones | `06-Composición, inversa y biyecciones/` | ✅ hecho | 8 + índice | 3 |
-| 7 | Exponencial y logaritmo | `07-Exponencial y logaritmo/` | ✅ hecho | 7 + índice | 1 |
+| 7 | Exponencial y logaritmo | `07-Exponencial y logaritmo/` | ✅ hecho | 7 + índice | 2 |
 | 8 | Sucesiones, monotonía y axioma del supremo | `08-Sucesiones, monotonía y axioma del supremo/` | ✅ hecho | 6 + índice | 0 |
-| 9 | Sumas finitas, binomio y aplicaciones financieras | `09-Sumas finitas, binomio y aplicaciones financieras/` | ✅ hecho | 7 + índice | 0 |
+| 9 | Sumas finitas, binomio y aplicaciones financieras | `09-Sumas finitas, binomio y aplicaciones financieras/` | ✅ hecho | 7 + índice | 3 |
 | 10 | Límites de sucesiones y álgebra de límites | `10-Límites de sucesiones y álgebra de límites/` | ⏳ pendiente | – | – |
 | 11 | Cálculo de límites y límites infinitos | `11-Cálculo de límites y límites infinitos/` | ⏳ pendiente | – | – |
 | 12 | Gestión del curso | `12-Gestión del curso/` | ⏳ pendiente | – | – |
@@ -36,4 +36,5 @@ Rama: `migrar/introduccion-calculo`. Un commit por tema. Antes de cada commit se
 - **2026-11-15 · Exponencial y logaritmo.** Fuentes: clases 16 (el número $e$, exponencial, desigualdad fundamental, positividad y crecimiento) y 17 (logaritmo natural, $a^x$, $\log_a$) y la Guía 8. Las clases traen una sola figura (la exponencial con la recta $y = x + 1$, 1 PNG de la clase 16). Los ejemplos de la clase 17 (ecuaciones y la inversa de $\log_2(3\log(10x) - 2)$) y los modelos (epidemia, enfriamiento) se resolvieron y verificaron con sympy. En el curso, $\log$ sin base es $\log_{10}$. Ejercicios: 7 de la guía y 6 de prueba (I3, I5, I6 y exámenes 2022-1 a 2026-1). 7 notas; 1 figura.
 - **2026-11-15 · Sucesiones, monotonía y axioma del supremo.** Fuentes: clase 18 (sucesiones, progresiones, iteración y sumas parciales) y Mickenberg, sección 10.1 (cotas, supremo, ínfimo, axioma del supremo y propiedad arquimediana; págs. PDF 370-383). La clase 18 no tiene figuras. La Guía 10 entera abarca sucesiones y límites: aquí se resuelve solo la parte de monotonía y cota de sus ejercicios 1, 2, 6 y 12, y el resto se reparte en los temas 10 y 11. El teorema de la sucesión monótona se enuncia aquí y se demuestra en el tema 10, una vez definido el límite. Ejercicios: 4 de la guía y 5 de prueba (I6 a I8 de 2023-1 a 2026-1), con monotonía y cotas verificadas con sympy. 6 notas; sin imágenes.
 - **2026-11-15 · Sumas finitas, binomio y aplicaciones financieras.** Fuentes: clases 19 (sumas finitas, telescópicas y geométricas), 20 (teorema del binomio) y 23 (ahorro y préstamos) y la Guía 9. Las clases son solo texto y tablas (sin figuras). La clase 23 se verificó numéricamente (tasa mensual, tabla de montos y el ejemplo de la cuota, con la recurrencia $p_{12N} = 0$). La materia coincide en parte con el tema 05 de Introducción al Álgebra: las notas de este tema tienen otros títulos y enlazan allá. Ejercicios: 18 de la guía y 7 de prueba (I7 de 2020-1, 2022-1, 2023-1 y 2024-1 y exámenes), con sumas y coeficientes verificados con sympy. 7 notas; sin imágenes. **Pausa de revisión después de este tema** (según el plan).
+- **2026-11-15 · Revisión de figuras de los temas 07, 08 y 09.** Se revisaron las clases 16 a 20 y 23 página por página. Se agregaron 4 figuras: en el tema 09, tres de la clase 20 (patrón de los exponentes en $(a+b)^5$, triángulo de Pascal con las sumas resaltadas y triángulo de coeficientes binomiales) y, en el tema 07, la gráfica del modelo de enfriamiento de la pauta I3 2022-2. Las clases 17, 18, 19 y 23 no traen figuras (solo texto y tablas) y la tabla de valores de $e$ de la clase 16 ya estaba como tabla. El tema 08 sigue sin imágenes. Totales: tema 07, 2 figuras; tema 09, 3 figuras.
 

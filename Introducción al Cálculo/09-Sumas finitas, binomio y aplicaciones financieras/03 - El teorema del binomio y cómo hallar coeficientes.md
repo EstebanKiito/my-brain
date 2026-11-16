@@ -16,7 +16,14 @@ Desarrollar $(a + b)^n$ multiplicando $n$ veces es impracticable. El teorema del
 
 Al desarrollar las primeras potencias:
 $$(a + b)^2 = a^2 + 2ab + b^2, \quad (a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3, \quad (a + b)^4 = a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4.$$
-Se ven tres regularidades en $(a + b)^n$: hay $n + 1$ términos; los exponentes de $a$ bajan de $n$ a $0$ mientras los de $b$ suben de $0$ a $n$; y en cada término los exponentes suman $n$. Lo que falta son los coeficientes, que forman el **triángulo de Pascal** (cada número es la suma de los dos que tiene encima):
+Se ven tres regularidades en $(a + b)^n$: hay $n + 1$ términos; los exponentes de $a$ bajan de $n$ a $0$ mientras los de $b$ suben de $0$ a $n$; y en cada término los exponentes suman $n$.
+
+![Patrón de los exponentes en el desarrollo de a más b a la 5](adjuntos/Patrón%20de%20los%20exponentes%20en%20el%20desarrollo%20de%20a%20más%20b%20a%20la%205.png)
+
+> [!example]- Transcripción de la figura (clase 20)
+> El desarrollo $(a + b)^5 = a^5 + 5a^4b^1 + 10a^3b^2 + 10a^2b^3 + 5a^1b^4 + b^5$ escrito dos veces. En la primera línea, flechas rojas unen los exponentes de $a$ y los muestran bajando de $5$ a $0$ (marcados $5, 4, 3, 2, 1$). En la segunda, bajo el texto "los exponentes de $b$ aumentan", las flechas unen los exponentes de $b$, que suben de $0$ a $5$ (marcados $1, 2, 3, 4, 5$).
+
+Lo que falta son los coeficientes, que forman el **triángulo de Pascal** (cada número es la suma de los dos que tiene encima):
 
 | $n$ | coeficientes |
 |---|---|
@@ -27,12 +34,23 @@ Se ven tres regularidades en $(a + b)^n$: hay $n + 1$ términos; los exponentes 
 | $4$ | $1\ \ 4\ \ 6\ \ 4\ \ 1$ |
 | $5$ | $1\ \ 5\ \ 10\ \ 10\ \ 5\ \ 1$ |
 
+![Triángulo de Pascal con cada número como suma de los dos de arriba](adjuntos/Triángulo%20de%20Pascal%20con%20cada%20número%20como%20suma%20de%20los%20dos%20de%20arriba.png)
+
+> [!example]- Transcripción de la figura (clase 20)
+> Las filas $(a + b)^0$ a $(a + b)^5$ del triángulo, con los coeficientes $1$; $1, 1$; $1, 2, 1$; $1, 3, 3, 1$; $1, 4, 6, 4, 1$; $1, 5, 10, 10, 5, 1$. Flechas azules muestran que el $4$ de la fila $(a + b)^4$ es la suma del $1$ y el $3$ de la fila de arriba, y flechas rojas que el $10$ de la última fila es la suma del $6$ y el $4$.
+
 ## Coeficientes binomiales
 
 > [!tip] Coeficiente binomial
 > Para $0 \le k \le n$: $\dbinom{n}{k} = \dfrac{n!}{k!\,(n - k)!}$. Por ejemplo, $\dbinom{5}{2} = \dfrac{5\cdot 4}{2} = 10$, $\dbinom{n}{n} = 1$ y $\dbinom{n}{1} = n$.
 
-Los números del triángulo de Pascal son exactamente $\binom{n}{k}$ (fila $n$, posición $k$). Dos propiedades:
+Los números del triángulo de Pascal son exactamente $\binom{n}{k}$ (fila $n$, posición $k$).
+![Triángulo de Pascal con coeficientes binomiales](adjuntos/Triángulo%20de%20Pascal%20con%20coeficientes%20binomiales.png)
+
+> [!example]- Transcripción de la figura (clase 20)
+> El mismo triángulo escrito con coeficientes binomiales: en la fila $n$ aparecen $\binom{n}{0}, \binom{n}{1}, \ldots, \binom{n}{n}$, desde la fila $0$ con $\binom{0}{0}$ hasta la fila $6$ con $\binom{6}{0}, \ldots, \binom{6}{6}$.
+
+Dos propiedades:
 
 > [!tip] Simetría y regla de Pascal
 > 1. $\dbinom{n}{k} = \dbinom{n}{n - k}$.
