@@ -236,5 +236,12 @@
     "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase15.pdf#page=8",
     "destino": "Introducción al Cálculo/06-Composición, inversa y biyecciones/adjuntos/Gráfica de la inversa como reflexión en la recta y igual a x.png",
     "sha256": "f6c68a820d5debe16af1d400969c231d8fdd7f848d77cec27f4b5986ba6d6fdb"
+  },
+  {
+    "tema": "Exponencial y logaritmo",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase16.pdf#page=10",
+    "destino": "Introducción al Cálculo/07-Exponencial y logaritmo/adjuntos/Gráfica de la exponencial y la recta y igual a x más 1.png",
+    "sha256": "994c6b31cd5c46995756f8e077126868e95cb2b7d5bf71c5a27153d69bc7942f"
   }
 ]
