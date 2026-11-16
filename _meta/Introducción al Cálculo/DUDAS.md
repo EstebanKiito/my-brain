@@ -25,4 +25,8 @@ Estados: 🟡 abierta (la tienes que decidir tú) · ✅ resuelta · ℹ️ info
 - ℹ️ **Guía 5, ejercicio 1.** El enunciado dice "demuestre que la función $f : [0, \infty) \to [0, \infty)$ es una biyección" sin dar la fórmula. La nota resuelve el caso estándar $f(x) = x^2$ y lo indica.
 - ℹ️ **Guía 7 (título).** El archivo es la guía 7 pero el encabezado dice "GUÍA 6, ... Composición de funciones", repitiendo el número de la guía de cuadráticas. Se la trata como la Guía 7.
 - ℹ️ **Clase 15, ejemplos sin solución.** Los ejemplos 1 a 4 de la clase 15 (inversas de $-\sqrt{x^4+4}$, de una función por tramos, de $\tfrac{x}{2}+\sqrt{\tfrac{x^2}{4}-1}$ y de la suma de raíces cúbicas) y los ejemplos 5 y 6 de la clase 13 solo traen el enunciado; las soluciones de la nota son propias y están verificadas.
+- 🟡 **Guía 9, ejercicio 18.** El enunciado dice "la progresión geométrica $2, 6, 8, \ldots$"; con esos términos no hay razón constante. Debe ser $2, 6, 18, \ldots$ (razón $3$), y entonces $118\,098$ es el término $n = 11$. La nota usa $2, 6, 18, \ldots$
+- 🟡 **I7, 2023-1, pregunta 1.** Al resolver $a = 5$, la pauta escribe "$b = 20$"; debe ser $c = 20$ (el sistema es en $a$ y $c$: $ac = 100$ y $a + c = 25$).
+- ℹ️ **Clase 23, tabla de montos.** La tabla de la clase (764, 1293, 1606, 1874, 2103 UF para 8, 15, 20, 25 y 30 años con 9 UF mensuales) se calculó con $r_m$ redondeado a $0{,}26\,\%$. Con $r_m = (1{,}0317)^{1/12} - 1$ exacto salen 764, 1292, 1605, 1872 y 2101 UF, y el monto máximo $\Delta / r_m$ es $\approx 3456$ UF (la clase dice $\approx 3460$). La nota muestra ambas columnas.
+- ℹ️ **I3, 2023-2, pregunta 3(a).** La pauta la marca como "problema anulado".
 

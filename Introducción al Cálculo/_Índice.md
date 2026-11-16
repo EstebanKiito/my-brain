@@ -18,5 +18,6 @@ Vault de estudio del ramo. Cada tema reúne la teoría de las clases del curso y
 | [[Introducción al Cálculo/06-Composición, inversa y biyecciones/_Índice\|Composición, inversa y biyecciones]] | Inyectividad, sobreyectividad, monotonía, composición de funciones con sus dominios y función inversa |
 | [[Introducción al Cálculo/07-Exponencial y logaritmo/_Índice\|Exponencial y logaritmo]] | El número e, exponencial, logaritmo natural, otras bases y ecuaciones exponenciales y logarítmicas |
 | [[Introducción al Cálculo/08-Sucesiones, monotonía y axioma del supremo/_Índice\|Sucesiones, monotonía y axioma del supremo]] | Sucesiones, acotación y monotonía, supremo e ínfimo, axioma del supremo y propiedad arquimediana |
+| [[Introducción al Cálculo/09-Sumas finitas, binomio y aplicaciones financieras/_Índice\|Sumas finitas, binomio y aplicaciones financieras]] | Notación sigma, sumas telescópicas y geométricas, teorema del binomio, progresiones y préstamos |
 
 La materia es acumulativa: cada tema usa los anteriores, así que conviene seguir el orden numérico.
