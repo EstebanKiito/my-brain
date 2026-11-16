@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "tema": "Inecuaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase6.pdf#page=6",
+    "destino": "Introducción al Cálculo/03-Inecuaciones/adjuntos/Tabla de signos de un cociente con una restricción.png",
+    "sha256": "3c5c4088dde9dcec7d4f7cf5a7c74d6ffe5a1efb85e6a2a99544e620d1e7ec5f"
+  },
+  {
+    "tema": "Inecuaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase6.pdf#page=8",
+    "destino": "Introducción al Cálculo/03-Inecuaciones/adjuntos/Tabla de signos de un cociente con tres puntos críticos.png",
+    "sha256": "ae674596770e7b8aeb66a166c1c8476889f820cab3bcb7a5ac9d41fd1bc3f915"
+  },
+  {
+    "tema": "Inecuaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase6.pdf#page=11",
+    "destino": "Introducción al Cálculo/03-Inecuaciones/adjuntos/Tabla de signos con cuatro factores y raíces irracionales.png",
+    "sha256": "388b44238daa6c3093ea01f76aa34069856a1fb613c8d3c6a0fc938686b985e1"
+  },
+  {
+    "tema": "Inecuaciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase6.pdf#page=13",
+    "destino": "Introducción al Cálculo/03-Inecuaciones/adjuntos/Tabla de signos de una inecuación con valor absoluto.png",
+    "sha256": "15fa99eec698170ea575c09a14fc69e8ce1c0aff69694b0ca814fd8a68c5cf99"
+  }
+]

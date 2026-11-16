@@ -12,5 +12,6 @@ Vault de estudio del ramo. Cada tema reúne la teoría de las clases del curso y
 |---|---|
 | [[Introducción al Cálculo/01-Números reales: axiomas de cuerpo y de orden/_Índice\|Números reales: axiomas de cuerpo y de orden]] | Axiomas de cuerpo, sus consecuencias, axiomas de orden y demostración de desigualdades |
 | [[Introducción al Cálculo/02-Valor absoluto y raíces/_Índice\|Valor absoluto y raíces]] | Distancia, valor absoluto, desigualdad triangular, vecindades, ecuaciones y raíces cuadradas |
+| [[Introducción al Cálculo/03-Inecuaciones/_Índice\|Inecuaciones]] | Intervalos, tabla de signos, cocientes con restricciones, valor absoluto y raíces cuadradas |
 
 La materia es acumulativa: cada tema usa los anteriores, así que conviene seguir el orden numérico.
