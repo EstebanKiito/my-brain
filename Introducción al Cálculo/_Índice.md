@@ -15,5 +15,6 @@ Vault de estudio del ramo. Cada tema reúne la teoría de las clases del curso y
 | [[Introducción al Cálculo/03-Inecuaciones/_Índice\|Inecuaciones]] | Intervalos, tabla de signos, cocientes con restricciones, valor absoluto y raíces cuadradas |
 | [[Introducción al Cálculo/04-Funciones reales: gráficas y transformaciones/_Índice\|Funciones reales: gráficas y transformaciones]] | Funciones, dominio y recorrido, funciones elementales, traslaciones, escalas y reflexiones de gráficas |
 | [[Introducción al Cálculo/05-Polinomios y funciones racionales/_Índice\|Polinomios y funciones racionales]] | Cuadráticas y optimización, gráfica de polinomios, factorización con teorema del factor y funciones racionales con asíntotas |
+| [[Introducción al Cálculo/06-Composición, inversa y biyecciones/_Índice\|Composición, inversa y biyecciones]] | Inyectividad, sobreyectividad, monotonía, composición de funciones con sus dominios y función inversa |
 
 La materia es acumulativa: cada tema usa los anteriores, así que conviene seguir el orden numérico.

@@ -215,5 +215,26 @@
     "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase12.pdf#page=3",
     "destino": "Introducción al Cálculo/05-Polinomios y funciones racionales/adjuntos/Asíntotas horizontales de una función racional.png",
     "sha256": "1beaa4832004d49aeb67cf9fa84f4de2e0badd564b5c6a2832fa2f12d8f922c7"
+  },
+  {
+    "tema": "Composición, inversa y biyecciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase13.pdf#page=3",
+    "destino": "Introducción al Cálculo/06-Composición, inversa y biyecciones/adjuntos/Dos puntos con la misma imagen cortados por una recta horizontal.png",
+    "sha256": "1b9bca6aef50f3b480bfe00797377f664cb5e52d24f513a30a7a5338ebd19ced"
+  },
+  {
+    "tema": "Composición, inversa y biyecciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase13.pdf#page=4",
+    "destino": "Introducción al Cálculo/06-Composición, inversa y biyecciones/adjuntos/Gráfico de una función por tramos que no es inyectiva.png",
+    "sha256": "f9900ae718e3ddb6e4b23792791e13880110602a8d75fc58e05ff986cdc30472"
+  },
+  {
+    "tema": "Composición, inversa y biyecciones",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase15.pdf#page=8",
+    "destino": "Introducción al Cálculo/06-Composición, inversa y biyecciones/adjuntos/Gráfica de la inversa como reflexión en la recta y igual a x.png",
+    "sha256": "f6c68a820d5debe16af1d400969c231d8fdd7f848d77cec27f4b5986ba6d6fdb"
   }
 ]
