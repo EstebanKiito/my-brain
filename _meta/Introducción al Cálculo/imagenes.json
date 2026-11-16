@@ -180,5 +180,40 @@
     "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/PRUEBAS/2026-1/I4-MAT1107.pdf#page=2",
     "destino": "Introducción al Cálculo/04-Funciones reales: gráficas y transformaciones/adjuntos/Gráfico del valor absoluto de una cuadrática.png",
     "sha256": "68869223d20d776dcf52ff599fce8fb9f06c37aae9dbcad59608765d198172df"
+  },
+  {
+    "tema": "Polinomios y funciones racionales",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase11.pdf#page=4",
+    "destino": "Introducción al Cálculo/05-Polinomios y funciones racionales/adjuntos/Parábolas con vértice en la forma normal.png",
+    "sha256": "2ac5420b04570dc0dd97b0822246a9cd8bc38691238975288ed02af9e333cdcd"
+  },
+  {
+    "tema": "Polinomios y funciones racionales",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase11.pdf#page=10",
+    "destino": "Introducción al Cálculo/05-Polinomios y funciones racionales/adjuntos/Comportamiento final de un polinomio según grado y coeficiente principal.png",
+    "sha256": "bc477db0e5143acf22b286c91a101b19d7540ef7be5d6a2770966a064f8c7876"
+  },
+  {
+    "tema": "Polinomios y funciones racionales",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase11.pdf#page=14",
+    "destino": "Introducción al Cálculo/05-Polinomios y funciones racionales/adjuntos/Forma de la gráfica cerca de un cero según su multiplicidad.png",
+    "sha256": "6aeea28434dda458e69ab21f8bd983ca0deeb35adaa719337184430b00a0cc15"
+  },
+  {
+    "tema": "Polinomios y funciones racionales",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase12.pdf#page=3",
+    "destino": "Introducción al Cálculo/05-Polinomios y funciones racionales/adjuntos/Asíntotas verticales de una función racional.png",
+    "sha256": "91a8ffc8bb8cc2245606bcb30c03405011961042caa59956c4ce9c0e06d49c1d"
+  },
+  {
+    "tema": "Polinomios y funciones racionales",
+    "tipo": "clase",
+    "original": "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Clases/clase12.pdf#page=3",
+    "destino": "Introducción al Cálculo/05-Polinomios y funciones racionales/adjuntos/Asíntotas horizontales de una función racional.png",
+    "sha256": "1beaa4832004d49aeb67cf9fa84f4de2e0badd564b5c6a2832fa2f12d8f922c7"
   }
 ]
