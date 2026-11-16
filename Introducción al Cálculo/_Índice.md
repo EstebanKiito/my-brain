@@ -21,5 +21,9 @@ Vault de estudio del ramo. Cada tema reúne la teoría de las clases del curso y
 | [[Introducción al Cálculo/09-Sumas finitas, binomio y aplicaciones financieras/_Índice\|Sumas finitas, binomio y aplicaciones financieras]] | Notación sigma, sumas telescópicas y geométricas, teorema del binomio, progresiones y préstamos |
 | [[Introducción al Cálculo/10-Límites de sucesiones y álgebra de límites/_Índice\|Límites de sucesiones y álgebra de límites]] | Definición ε-N, unicidad y acotación, sucesión monótona, álgebra de límites y teorema del sándwich |
 | [[Introducción al Cálculo/11-Cálculo de límites y límites infinitos/_Índice\|Cálculo de límites y límites infinitos]] | Recurrencias con punto fijo, límites infinitos, el número e y tabla de técnicas |
+| [[Introducción al Cálculo/12-Gestión del curso/_Índice\|Gestión del curso]] | Mapa de evaluaciones por semestre y la tarea de 2022-1 resuelta |
 
 La materia es acumulativa: cada tema usa los anteriores, así que conviene seguir el orden numérico.
+
+## Ruta de estudio y evaluaciones
+El curso va de los **números reales** (01–03: axiomas, valor absoluto, inecuaciones) a las **funciones** (04–07: gráficos, polinomios y racionales, inversa, exponencial y logaritmo) y termina con **sucesiones y límites** (08–11: sucesiones y supremo, sumas y binomio, límites y recurrencias). El formato de evaluación cambia entre semestres (una interrogación por semana, o tres más examen); en ambos las pruebas siguen el orden de los temas y el examen cubre todo. El detalle por interrogación, y dónde está cada tipo de pregunta, está en el [[Introducción al Cálculo/12-Gestión del curso/01 - Mapa de evaluaciones de Cálculo|mapa de evaluaciones]].

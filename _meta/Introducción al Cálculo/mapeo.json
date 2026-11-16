@@ -127,11 +127,13 @@
     },
     "Gestión del curso": {
       "carpeta": "Introducción al Cálculo/12-Gestión del curso",
-      "estado": "pendiente",
+      "estado": "hecho",
       "secciones": [],
       "pdfs": [
         "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/PRUEBAS",
-        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Ejercicios_Intro Calculo.pdf"
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/Ejercicios_Intro Calculo.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/PRUEBAS/Tarea/Tarea MAT1107.pdf",
+        "Semestre 1/INTRO-AL-CALCULO/Intro-Calculo-MAT1107/PRUEBAS/Tarea/Solución Tarea MAT1107.pdf"
       ]
     }
   }
