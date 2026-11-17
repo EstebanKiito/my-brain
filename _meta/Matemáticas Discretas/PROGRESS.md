@@ -13,7 +13,7 @@ Rama: `migrar/matematicas-discretas`. Un commit por tema. Antes de cada commit s
 | 6 | Relaciones y relaciones de equivalencia | `06-Relaciones y relaciones de equivalencia/` | ✅ hecho | 9 + índice | 8 |
 | 7 | Conjunto cuociente, órdenes y elementos extremos | `07-Conjunto cuociente, órdenes y elementos extremos/` | ✅ hecho | 9 + índice | 6 |
 | 8 | Funciones y cardinalidad | `08-Funciones y cardinalidad/` | ✅ hecho | 9 + índice | 6 |
-| 9 | Algoritmos y complejidad | `09-Algoritmos y complejidad/` | ⏳ pendiente | – | – |
+| 9 | Algoritmos y complejidad | `09-Algoritmos y complejidad/` | ✅ hecho | 10 + índice | 10 |
 | 10 | Grafos, caminos y ciclos | `10-Grafos, caminos y ciclos/` | ⏳ pendiente | – | – |
 | 11 | Árboles | `11-Árboles/` | ✅ hecho | 8 + índice | 8 |
 | 12 | Aritmética modular y criptografía | `12-Aritmética modular y criptografía/` | ✅ hecho | 12 + índice | 1 |
@@ -67,3 +67,14 @@ Fuentes: clases 23 a 26 (la 23 parte con árboles binarios, ya cubiertos en el t
 - ℹ️ **Pauta 2020-2 examen 3a.** El banco comenta un factor 3 en la pauta; se recalculó y el resultado 1731 es correcto.
 - ℹ️ **Ayudantía 13 (3.1) y examen 2016-2.** Fermat exige a distinto de 0 módulo p; se anotó en las notas.
 - ℹ️ **Figuras.** Solo hay una figura (cifrado del César); el resto del tema es simbólico.
+- **2026-11-17 · Algoritmos y complejidad.** Estado: 10 notas (8 de teoría, ayudantías y prueba) + _Índice, 10 imágenes.
+
+Registro: Fuentes: clases de algoritmos (diapositivas 1-42), complejidad de iterativos y de recursivos, ayudantías 9 (algoritmos y complejidad) y 10 (parte de correctitud: MCM), y banco de ejercicios de funciones y cardinalidad (10 preguntas de complejidad de exámenes e interrogaciones 2015-2024). Figuras: 8 recortes de las láminas y 2 de pseudocódigo de enunciados. Verificaciones con Python: traza e invariante de Multiply, RecMax, conteos de ciclos anidados y con mitades, comparaciones de búsqueda lineal, inserción (mejor y peor caso) y MergeSort, recurrencia de BinarySearch (T=4k+3, T<=7log2 n, no decreciente hasta 5000), cerro (3 log2 n + 1, peor caso medido), T(n)=4T(n/2)+n^2 log n <= n^2 log^2 n (n>=3), log2(n!) en Theta(n log n), suma de factoriales, theavengersaredead, Pow con piso/techo de log, Mayoría (T=4n+2n log n-3), T(n)=T(n-1)+n, TripleMergeSort, teorema maestro (3T(n/2)+n), MCM con invariante a/ia+b/ib=k+2 y condición a-ia<b, b-ib<a.
+
+- ℹ️ **Errata en láminas (clase de algoritmos y de recursivos).** `Multiply` usa `z + x` en vez de `z + n`, y `BinarySearch` compara con `a` en vez de `x` en el caso i=f; las notas lo indican en la transcripción y usan los nombres correctos.
+- ℹ️ **Cerro: pauta de ayudantía y de 2020-2.** La pauta de la ayudantía usa subarreglos y T(n)=T(ceil(n/2))+3 con T(1)=1; la nota da su propio pseudocódigo con índices (misma recurrencia, verificada con 3 log2 n + 1 para potencias de 2).
+- ℹ️ **Ayudantía 9, ejercicio 3.** La pauta resuelve con piso (T(floor(n/2))); con techo la cota con c=1 falla (p. ej. n=3), así que la nota fija el piso.
+- ℹ️ **Ayudantía 10, MCM.** La pauta prueba la minimalidad con un argumento por contradicción informal; la nota lo reemplaza por un invariante (a-ia<b y b-ib<a, y ningún múltiplo común < min) con prueba de terminación por la cota L=mcm.
+- ℹ️ **Potencia por dividir para conquistar (2018-2).** La pauta escribe la condición de paridad sobre x; debe ser sobre n. La cota medida es floor(log2 n) <= T(n) <= 2 floor(log2 n).
+- ℹ️ **Contar T(n) de BinarySearch.** El modelo de la clase cuenta 4 comparaciones por nivel (T(1)=3); el conteo exacto instrumentado es menor o igual (p. ej. n=8 da 12 frente a 15), por lo que el modelo es una cota superior del peor caso.
+- ℹ️ **Ejercicios omitidos de la parte de grafos de la ayudantía 10** (coloración de aristas, ancho de un grafo): pertenecen al tema de grafos.

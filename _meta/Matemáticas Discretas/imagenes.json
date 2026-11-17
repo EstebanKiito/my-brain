@@ -271,5 +271,75 @@
     "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/26 - Introducción a criptografía.pdf#page=8",
     "destino": "Matemáticas Discretas/12-Aritmética modular y criptografía/adjuntos/Cifrado del César desplazamiento de tres letras.png",
     "sha256": "59b820083600713cb9355e393909b54d9ac139b357ed40037a7f831e1f2b5544"
+  },
+  {
+    "tema": "Algoritmos y complejidad",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/16 - Algoritmos.pdf#page=21",
+    "destino": "Matemáticas Discretas/09-Algoritmos y complejidad/adjuntos/Algoritmo Multiply y traza de variables.png",
+    "sha256": "d6c79e8628b2337ebbefefa526681c7ef783fb1a70b3a4d4bfe44cb01b4075a0"
+  },
+  {
+    "tema": "Algoritmos y complejidad",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/16 - Algoritmos.pdf#page=26",
+    "destino": "Matemáticas Discretas/09-Algoritmos y complejidad/adjuntos/Algoritmo recursivo RecMax.png",
+    "sha256": "548fb076d6f2330aac8330204ee00a18458edd10590bb80cca7033cf4718f7e3"
+  },
+  {
+    "tema": "Algoritmos y complejidad",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/16 - Algoritmos.pdf#page=45",
+    "destino": "Matemáticas Discretas/09-Algoritmos y complejidad/adjuntos/Órdenes de crecimiento habituales.png",
+    "sha256": "a8c82e25fa7afe3e5739411160fdb7a55f65899ad72d48bf11ba174f15346a88"
+  },
+  {
+    "tema": "Algoritmos y complejidad",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/17 - Complejidad iterativos.pdf#page=28",
+    "destino": "Matemáticas Discretas/09-Algoritmos y complejidad/adjuntos/Búsqueda lineal en un arreglo.png",
+    "sha256": "9a409b63d6ca1faf492dab2c4c8c1ba8f7f8c5af3104748236e640d8813764db"
+  },
+  {
+    "tema": "Algoritmos y complejidad",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/17 - Complejidad iterativos.pdf#page=31",
+    "destino": "Matemáticas Discretas/09-Algoritmos y complejidad/adjuntos/Algoritmo InsertionSort.png",
+    "sha256": "8c58edbb58ec46c4e28e85f36a6fad1fe16b5d82105b3e854dfed6ac7be7ae70"
+  },
+  {
+    "tema": "Algoritmos y complejidad",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/18 - Complejidad recursivos.pdf#page=11",
+    "destino": "Matemáticas Discretas/09-Algoritmos y complejidad/adjuntos/Algoritmo BinarySearch.png",
+    "sha256": "ac6fe2043d607160c2ad7b1f57fc04bffee53fc2ec23c9908017d0717e1c5f2b"
+  },
+  {
+    "tema": "Algoritmos y complejidad",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/18 - Complejidad recursivos.pdf#page=39",
+    "destino": "Matemáticas Discretas/09-Algoritmos y complejidad/adjuntos/Algoritmo MergeSort.png",
+    "sha256": "bf0a6cc57b24ea18801077be12cacdde22ff68abc51cd2175366d72a44aae09a"
+  },
+  {
+    "tema": "Algoritmos y complejidad",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/18 - Complejidad recursivos.pdf#page=40",
+    "destino": "Matemáticas Discretas/09-Algoritmos y complejidad/adjuntos/Enunciado del teorema maestro.png",
+    "sha256": "183e69e25b100d8dab12915329e7288faece180a03f0ba48ef54c5292fb1aded"
+  },
+  {
+    "tema": "Algoritmos y complejidad",
+    "tipo": "clase",
+    "original": "licc-cursos-app/fuentes/ejercita/discretas/figuras/i3_2019_1_p2_algoritmo.png",
+    "destino": "Matemáticas Discretas/09-Algoritmos y complejidad/adjuntos/Algoritmo A con casos según la paridad.png",
+    "sha256": "7324580ed903939f3de534406eabe62bd44a9b6c4848eea5c1ee294674463ca4"
+  },
+  {
+    "tema": "Algoritmos y complejidad",
+    "tipo": "clase",
+    "original": "licc-cursos-app/fuentes/ejercita/discretas/figuras/c3_2020_1_p2_algoritmo.png",
+    "destino": "Matemáticas Discretas/09-Algoritmos y complejidad/adjuntos/Algoritmo de alcanzabilidad por composición.png",
+    "sha256": "383e55d16ce8e33c10697177f9e9f80df2cd7795df3ca0901a9a6ff28bd49f8a"
   }
 ]
