@@ -110,5 +110,47 @@
     "original": "Semestre 2/Mates-Discretas-IIC1253/Libros/Apuntes Luis Dissett.pdf#page=43",
     "destino": "Matemáticas Discretas/07-Conjunto cuociente, órdenes y elementos extremos/adjuntos/Grafo dirigido del orden de inclusión con lazos y flechas redundantes.png",
     "sha256": "fc82cf9fb7f6be5542c328a0d0060af24544f3c034553ff3b2f8d8d91baa69d4"
+  },
+  {
+    "tema": "Funciones y cardinalidad",
+    "tipo": "libro",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Libros/Discretas-4ta-edicion.pdf#page=422",
+    "destino": "Matemáticas Discretas/08-Funciones y cardinalidad/adjuntos/Función inyectiva separa puntos.png",
+    "sha256": "8c787a685f6cdaaf7eba2213451c89d67827386fc9da6ae6009adb46d8a66ac7"
+  },
+  {
+    "tema": "Funciones y cardinalidad",
+    "tipo": "libro",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Libros/Discretas-4ta-edicion.pdf#page=426",
+    "destino": "Matemáticas Discretas/08-Funciones y cardinalidad/adjuntos/Función sobreyectiva cubre el codominio.png",
+    "sha256": "ccf684c4c18cef5cdd09b5bf5c4a6389df795a03771a595394799b88db762ce3"
+  },
+  {
+    "tema": "Funciones y cardinalidad",
+    "tipo": "libro",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Libros/Discretas-4ta-edicion.pdf#page=454",
+    "destino": "Matemáticas Discretas/08-Funciones y cardinalidad/adjuntos/Biyección entre Z y los enteros pares.png",
+    "sha256": "6c66a56457100659bf32c3e46ca5d1580f9162988386491bcb11ecd5af13d1cf"
+  },
+  {
+    "tema": "Funciones y cardinalidad",
+    "tipo": "libro",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Libros/Discretas-4ta-edicion.pdf#page=455",
+    "destino": "Matemáticas Discretas/08-Funciones y cardinalidad/adjuntos/Contando los enteros alternando signo.png",
+    "sha256": "626e35c5ec74b5b324d406bf6899ebcf1af475495232057b80f44245cd75a60c"
+  },
+  {
+    "tema": "Funciones y cardinalidad",
+    "tipo": "libro",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Libros/Discretas-4ta-edicion.pdf#page=457",
+    "destino": "Matemáticas Discretas/08-Funciones y cardinalidad/adjuntos/Recorrido en diagonal de las fracciones.png",
+    "sha256": "6bc8dc80074596943e07b77774389a857b743ea5b056f19e79f33f70441bb35c"
+  },
+  {
+    "tema": "Funciones y cardinalidad",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/15 - Teorema de Cantor.pdf#page=22",
+    "destino": "Matemáticas Discretas/08-Funciones y cardinalidad/adjuntos/Diagonal de Cantor sobre los reales.png",
+    "sha256": "a7f669f81ac840663298f0102888e6bad43da3ab263066fa084f42340bcd12ca"
   }
 ]
