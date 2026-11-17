@@ -264,5 +264,12 @@
     "original": "Semestre 2/Mates-Discretas-IIC1253/Libros/Discretas-4ta-edicion.pdf#page=720",
     "destino": "Matemáticas Discretas/11-Árboles/adjuntos/Árbol binario con subárboles izquierdo y derecho.png",
     "sha256": "8452503ac87840e825e4705201b008aaeba88653606718fd05e746918fe24094"
+  },
+  {
+    "tema": "Aritmética modular y criptografía",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/26 - Introducción a criptografía.pdf#page=8",
+    "destino": "Matemáticas Discretas/12-Aritmética modular y criptografía/adjuntos/Cifrado del César desplazamiento de tres letras.png",
+    "sha256": "59b820083600713cb9355e393909b54d9ac139b357ed40037a7f831e1f2b5544"
   }
 ]

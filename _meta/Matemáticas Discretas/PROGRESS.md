@@ -16,7 +16,7 @@ Rama: `migrar/matematicas-discretas`. Un commit por tema. Antes de cada commit s
 | 9 | Algoritmos y complejidad | `09-Algoritmos y complejidad/` | ⏳ pendiente | – | – |
 | 10 | Grafos, caminos y ciclos | `10-Grafos, caminos y ciclos/` | ⏳ pendiente | – | – |
 | 11 | Árboles | `11-Árboles/` | ✅ hecho | 8 + índice | 8 |
-| 12 | Aritmética modular y criptografía | `12-Aritmética modular y criptografía/` | ⏳ pendiente | – | – |
+| 12 | Aritmética modular y criptografía | `12-Aritmética modular y criptografía/` | ✅ hecho | 12 + índice | 1 |
 | 13 | Gestión del curso | `13-Gestión del curso/` | ⏳ pendiente | – | – |
 
 ## Convenciones
@@ -59,3 +59,11 @@ Registro: Fuentes: parte de funciones de la clase 13 (diapositivas 22-42), clase
 - ℹ️ **Definición de árbol binario completo.** La clase exige hojas a igual profundidad y vértices internos con dos hijos; el libro de texto llama "completo" solo a que cada padre tenga exactamente dos hijos. Manda la clase; se anota la variante en la nota.
 - ℹ️ **Eulerianos y hamiltonianos en la clase de árboles.** Las primeras diapositivas de esa clase (ciclos y caminos eulerianos, ciclos hamiltonianos) pertenecen al tema 10 (referencia cruzada en el índice del ramo); este tema solo cubre árboles.
 - ℹ️ **Ejercicios de ayudantías.** La ayudantía de grafos tiene un solo ejercicio de árboles; se completó con dos ejercicios propuestos en la clase (torneo, árbol completo) y dos de práctica verificados con Python (grados, altura mínima). El banco solo tiene tres preguntas de exámenes sobre árboles (más una tarea); las demás de árboles binarios están en el tema 01.
+- **2026-11-17 · Aritmética modular y criptografía.** - Tema 12 Aritmética modular y criptografía: 12 notas (10 de teoría, ayudantías y prueba) + índice; 1 imagen.
+
+Fuentes: clases 23 a 26 (la 23 parte con árboles binarios, ya cubiertos en el tema de grafos; se usó solo la parte modular), ayudantías 12 y 13 con soluciones y 12 preguntas de prueba del banco de teoría de números y combinatoria (palomar y multinomial). El epílogo (clase 27, historia de la lógica y decidibilidad) no se migró por no aportar a este tema. Verificaciones: con Python se recalcularon MCD y Euclides extendido (403,156; 8,5; 240,46), inversos, congruencias lineales, teorema chino (23 mod 105; 1731 mod 3465), RSA con P=7, Q=11 (todos los M en 0..76), cifrado del César, Fermat, representación en base 3 balanceada hasta 3000, cuadrados mod 8/24/10, perros y gatos, palomar y multinomial; verificar.py sin errores en la carpeta del tema.
+
+- ℹ️ **Epílogo no migrado.** La clase 27 (historia de la lógica, filosofía y problemas indecidibles) no tiene contenido de teoría de números; se omitió.
+- ℹ️ **Pauta 2020-2 examen 3a.** El banco comenta un factor 3 en la pauta; se recalculó y el resultado 1731 es correcto.
+- ℹ️ **Ayudantía 13 (3.1) y examen 2016-2.** Fermat exige a distinto de 0 módulo p; se anotó en las notas.
+- ℹ️ **Figuras.** Solo hay una figura (cifrado del César); el resto del tema es simbólico.
