@@ -17,7 +17,7 @@ Rama: `migrar/matematicas-discretas`. Un commit por tema. Antes de cada commit s
 | 10 | Grafos, caminos y ciclos | `10-Grafos, caminos y ciclos/` | ✅ hecho | 10 + índice | 14 |
 | 11 | Árboles | `11-Árboles/` | ✅ hecho | 8 + índice | 8 |
 | 12 | Aritmética modular y criptografía | `12-Aritmética modular y criptografía/` | ✅ hecho | 12 + índice | 1 |
-| 13 | Gestión del curso | `13-Gestión del curso/` | ⏳ pendiente | – | – |
+| 13 | Gestión del curso | `13-Gestión del curso/` | ✅ hecho | 1 + índice | – |
 
 ## Convenciones
 - Notas según [`_meta/ESTANDAR-NOTAS.md`](../ESTANDAR-NOTAS.md): un concepto por nota, de 60 a 120 líneas (máximo 150), prosa explicativa, definiciones y teoremas en `[!tip]`, LaTeX y preguntas de repaso plegables (3 a 8).
@@ -86,3 +86,4 @@ Fuentes: clases de grafos, caminos y ciclos (figuras recortadas de las diapositi
 - ℹ️ **Fórmula de distancia 3 en examen 2016-2.** La pauta escribe ∀x,y(x≠y ∧ …), que es insatisfacible; se usa ∀x∀y(x=y ∨ E(x,y) ∨ φ2 ∨ φ3), verificada por fuerza bruta.
 - ℹ️ **Ayudantías 10 y 11 repiten ejercicios.** Los ejercicios de ancho (A10.3 y A11.1) son idénticos; el de coloración (A10.2) es el del examen 2022-1. Las demostraciones del ciclo de largo al menos raíz de k y del ancho 2 se reescribieron más cuidadosamente que en la solución.
 - ℹ️ **Sin ejercicios de árboles.** Los ejercicios de árboles (A11.3 y exámenes 2016-2, 2021-2) quedan para el tema 11.
+- **2026-11-17 · Gestión del curso y cierre.** Fuente: la clase de introducción (programa, evaluación, motivación de Königsberg) y la distribución por prueba del banco de ejercicios. Mapa final del ramo (`_Índice.md`).
