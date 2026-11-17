@@ -6,7 +6,7 @@ Rama: `migrar/matematicas-discretas`. Un commit por tema. Antes de cada commit s
 |---|---|---|---|---|---|
 | 0 | Infraestructura (`_meta/Matemáticas Discretas/`) | `_meta/` | ✅ hecho | – | – |
 | 1 | Inducción simple, fuerte y estructural | `01-Inducción simple, fuerte y estructural/` | ✅ hecho | 8 + índice | 1 |
-| 2 | Lógica proposicional y equivalencia | `02-Lógica proposicional y equivalencia/` | ⏳ pendiente | – | – |
+| 2 | Lógica proposicional y equivalencia | `02-Lógica proposicional y equivalencia/` | ✅ hecho | 9 + índice | 4 |
 | 3 | Satisfacibilidad, consecuencia y resolución | `03-Satisfacibilidad, consecuencia y resolución/` | ✅ hecho | 9 + índice | 3 |
 | 4 | Lógica de predicados y métodos de demostración | `04-Lógica de predicados y métodos de demostración/` | ⏳ pendiente | – | – |
 | 5 | Teoría de conjuntos | `05-Teoría de conjuntos/` | ⏳ pendiente | – | – |
@@ -29,3 +29,11 @@ Rama: `migrar/matematicas-discretas`. Un commit por tema. Antes de cada commit s
 ## Registro
 - **2026-11-17 · Inducción simple, fuerte y estructural (piloto).** Fuentes: clases 1 y 2 (buen orden, PIS, PICV, equivalencia, definiciones inductivas, listas $L_\mathbb{N}$, inducción estructural), ayudantía de inducción (5 ejercicios, con la figura de las regiones del plano) y 9 preguntas de I1, I3 y Examen 2015-2 a 2020-1 del banco de ejercicios. Verificadas numéricamente con Python las fórmulas (suma de cuadrados, $n! > 2^n$, $F_n \le 2^n$, $G_n \le 3^n$, $2p + 7q$, Fibonacci mod 5 y paridad). 8 notas + índice; las clases no traen figuras en este tema.
 - **2026-11-17 · Satisfacibilidad, consecuencia y resolución.** Fuentes: clases de satisfacibilidad y consecuencia y de consecuencia y resolución, ayudantías 3 y 4 (parte proposicional), banco de ejercicios de lógica proposicional (I1/examen 2015-2 a 2026-1). Verificaciones con Python (fuerza bruta de valuaciones): modus ponens, modus tollens, demostración por partes, inconsistencia de los conjuntos de las trazas, CNF/DNF de (p∧q)→(r∧¬q), redundancia de {p,q,p↔q}, consecuencia de 10 variables (1024 valuaciones), contraejemplos de uniones y consecuencia débil, equivalencia α⊨β ⇔ α≡α∧β y propiedades de consecuencia (modelado como conjuntos de mundos), cláusulas conjuntivas, 3-coloreo (triángulo sí, K4 no) y fórmula de jaulas contra conteo directo.
+- **2026-11-17 · Lógica proposicional y equivalencia.** **Estado (PROGRESS):** Lógica proposicional y equivalencia: 7 notas de teoría + 2 de ejercicios + índice, 4 imágenes.
+
+**Registro:** Fuentes: clases de lógica proposicional y de equivalencia lógica, ayudantía de lógica proposicional, banco de ejercicios (11 preguntas de prueba: 2015-2 a 2026-1) y figuras de enunciados 2018-2-i1-3 y 2026-1-i1-2. Verificaciones: con Python se recalcularon todas las leyes de equivalencia, la tabla de φ (≡ q↔r) y su DNF/CNF, NAND, traducciones a {¬,→}, Superman (64 valuaciones), tabla EQ, la equivalencia larga, el dual, CNF/DNF/mayoría 2024-2, CNF 2025-2, tautología 2026-1, δ (CNF, DNF, NOR), contraejemplos de 2019-1 (n=3..6), bicondicionales recursivos (k=1..4), paridad de modelos de XOR.
+
+- ℹ️ **Anidamiento de implicaciones 2019-1 (n=1).** La pauta dice "solo n=1,2", pero γ_1 es una conjunción vacía (sin implicaciones); en la nota se afirma solo n=2.
+- ℹ️ **Ayudantía de lógica proposicional.** El PDF de soluciones repite el encabezado "Ayudantía 1 - Inducción" en cada página; se usó el contenido (dual, Superman, EQ, equivalencia larga) y se omitió el ejercicio de palíndromos (pertenece al tema de inducción).
+- ℹ️ **Formas normales.** La clase no define DNF/CNF por nombre (solo la construcción desde la tabla); los términos "literal", "cláusula", DNF y CNF se tomaron de las pruebas y el banco de ejercicios.
+- ℹ️ **2022-1-i1-4.** El máximo real de fórmulas no equivalentes y satisfacibles es 2^(2^n−1), mayor que lo pedido 2^(2^(n−1)); la nota usa lo correcto.

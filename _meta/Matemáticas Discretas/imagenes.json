@@ -26,5 +26,33 @@
     "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/06 - Consecuencia y resolución.pdf#page=30",
     "destino": "Matemáticas Discretas/03-Satisfacibilidad, consecuencia y resolución/adjuntos/Resolución de la consecuencia con implicaciones anidadas.png",
     "sha256": "2bfbdeafb4924fd76cfdf3bcd294ac91ba3f7ca642ad2b9c2f69fa0b36645b23"
+  },
+  {
+    "tema": "Lógica proposicional y equivalencia",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/03 - Lógica proposicional.pdf#page=27",
+    "destino": "Matemáticas Discretas/02-Lógica proposicional y equivalencia/adjuntos/Tablas de verdad de los conectivos básicos.png",
+    "sha256": "3d81e698e728d30b6aca094441a8760a6888e2f07b051fdbf38559ac40cc970b"
+  },
+  {
+    "tema": "Lógica proposicional y equivalencia",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/04 - Equivalencia lógica.pdf#page=23",
+    "destino": "Matemáticas Discretas/02-Lógica proposicional y equivalencia/adjuntos/Forma normal disyuntiva desde una tabla de verdad.png",
+    "sha256": "5e6b0f260eec3a0303e30d328d3c2602f534b74967e0b2ab60c689cc76076b35"
+  },
+  {
+    "tema": "Lógica proposicional y equivalencia",
+    "tipo": "clase",
+    "original": "licc-cursos-app/public/ejercita/IIC1253/2018-2-i1-3.png",
+    "destino": "Matemáticas Discretas/02-Lógica proposicional y equivalencia/adjuntos/Tabla de verdad del conectivo flecha izquierda.png",
+    "sha256": "ecad573d6428789f075f0de32745035313193760bdfe9d2140c07675eac1b4ab"
+  },
+  {
+    "tema": "Lógica proposicional y equivalencia",
+    "tipo": "clase",
+    "original": "licc-cursos-app/public/ejercita/IIC1253/2026-1-i1-2.png",
+    "destino": "Matemáticas Discretas/02-Lógica proposicional y equivalencia/adjuntos/Tabla de verdad del conectivo ternario delta.png",
+    "sha256": "c4e55a039aba3bcbbababcef9e295395ba6db2aec479f642f4eeb0609ed498da"
   }
 ]
