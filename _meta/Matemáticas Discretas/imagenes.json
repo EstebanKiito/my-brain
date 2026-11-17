@@ -5,5 +5,26 @@
     "original": "Semestre 2/Mates-Discretas-IIC1253/Ayudantias/Soluciones/Ayudantia_1_Solucion.pdf#page=5",
     "destino": "Matemáticas Discretas/01-Inducción simple, fuerte y estructural/adjuntos/Regiones del plano al agregar una recta.png",
     "sha256": "f32b97b5ea3be2e101516b481c295fc43b312e3f316a9305c4ab4a0a7c1dbb17"
+  },
+  {
+    "tema": "Satisfacibilidad, consecuencia y resolución",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/05 - Satisfacibilidad y consecuencia.pdf#page=41",
+    "destino": "Matemáticas Discretas/03-Satisfacibilidad, consecuencia y resolución/adjuntos/Tabla de verdad de modus ponens.png",
+    "sha256": "f1503c81e5021c43c54bb8fdf33f1364a831f251bcc537f9df3219191dd4ad5b"
+  },
+  {
+    "tema": "Satisfacibilidad, consecuencia y resolución",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/06 - Consecuencia y resolución.pdf#page=25",
+    "destino": "Matemáticas Discretas/03-Satisfacibilidad, consecuencia y resolución/adjuntos/Resolución de un conjunto con cuatro variables.png",
+    "sha256": "55ceee0db3c06637613b706f3059d9de028c4c4ebccdbe4acc18701a417233a8"
+  },
+  {
+    "tema": "Satisfacibilidad, consecuencia y resolución",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/06 - Consecuencia y resolución.pdf#page=30",
+    "destino": "Matemáticas Discretas/03-Satisfacibilidad, consecuencia y resolución/adjuntos/Resolución de la consecuencia con implicaciones anidadas.png",
+    "sha256": "2bfbdeafb4924fd76cfdf3bcd294ac91ba3f7ca642ad2b9c2f69fa0b36645b23"
   }
 ]

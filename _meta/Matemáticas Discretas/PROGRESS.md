@@ -7,7 +7,7 @@ Rama: `migrar/matematicas-discretas`. Un commit por tema. Antes de cada commit s
 | 0 | Infraestructura (`_meta/Matemáticas Discretas/`) | `_meta/` | ✅ hecho | – | – |
 | 1 | Inducción simple, fuerte y estructural | `01-Inducción simple, fuerte y estructural/` | ✅ hecho | 8 + índice | 1 |
 | 2 | Lógica proposicional y equivalencia | `02-Lógica proposicional y equivalencia/` | ⏳ pendiente | – | – |
-| 3 | Satisfacibilidad, consecuencia y resolución | `03-Satisfacibilidad, consecuencia y resolución/` | ⏳ pendiente | – | – |
+| 3 | Satisfacibilidad, consecuencia y resolución | `03-Satisfacibilidad, consecuencia y resolución/` | ✅ hecho | 9 + índice | 3 |
 | 4 | Lógica de predicados y métodos de demostración | `04-Lógica de predicados y métodos de demostración/` | ⏳ pendiente | – | – |
 | 5 | Teoría de conjuntos | `05-Teoría de conjuntos/` | ⏳ pendiente | – | – |
 | 6 | Relaciones y relaciones de equivalencia | `06-Relaciones y relaciones de equivalencia/` | ⏳ pendiente | – | – |
@@ -28,3 +28,4 @@ Rama: `migrar/matematicas-discretas`. Un commit por tema. Antes de cada commit s
 
 ## Registro
 - **2026-11-17 · Inducción simple, fuerte y estructural (piloto).** Fuentes: clases 1 y 2 (buen orden, PIS, PICV, equivalencia, definiciones inductivas, listas $L_\mathbb{N}$, inducción estructural), ayudantía de inducción (5 ejercicios, con la figura de las regiones del plano) y 9 preguntas de I1, I3 y Examen 2015-2 a 2020-1 del banco de ejercicios. Verificadas numéricamente con Python las fórmulas (suma de cuadrados, $n! > 2^n$, $F_n \le 2^n$, $G_n \le 3^n$, $2p + 7q$, Fibonacci mod 5 y paridad). 8 notas + índice; las clases no traen figuras en este tema.
+- **2026-11-17 · Satisfacibilidad, consecuencia y resolución.** Fuentes: clases de satisfacibilidad y consecuencia y de consecuencia y resolución, ayudantías 3 y 4 (parte proposicional), banco de ejercicios de lógica proposicional (I1/examen 2015-2 a 2026-1). Verificaciones con Python (fuerza bruta de valuaciones): modus ponens, modus tollens, demostración por partes, inconsistencia de los conjuntos de las trazas, CNF/DNF de (p∧q)→(r∧¬q), redundancia de {p,q,p↔q}, consecuencia de 10 variables (1024 valuaciones), contraejemplos de uniones y consecuencia débil, equivalencia α⊨β ⇔ α≡α∧β y propiedades de consecuencia (modelado como conjuntos de mundos), cláusulas conjuntivas, 3-coloreo (triángulo sí, K4 no) y fórmula de jaulas contra conteo directo.
