@@ -54,5 +54,19 @@
     "original": "licc-cursos-app/public/ejercita/IIC1253/2026-1-i1-2.png",
     "destino": "Matemáticas Discretas/02-Lógica proposicional y equivalencia/adjuntos/Tabla de verdad del conectivo ternario delta.png",
     "sha256": "c4e55a039aba3bcbbababcef9e295395ba6db2aec479f642f4eeb0609ed498da"
+  },
+  {
+    "tema": "Teoría de conjuntos",
+    "tipo": "libro",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Libros/Discretas-4ta-edicion.pdf#page=365",
+    "destino": "Matemáticas Discretas/05-Teoría de conjuntos/adjuntos/Diagramas de Venn de las operaciones entre dos conjuntos.png",
+    "sha256": "0b204af8785678adb6d393f70171f0d32cf7f4e09a9dfed5a36ccf126bcb368a"
+  },
+  {
+    "tema": "Teoría de conjuntos",
+    "tipo": "libro",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Libros/Discretas-4ta-edicion.pdf#page=364",
+    "destino": "Matemáticas Discretas/05-Teoría de conjuntos/adjuntos/Diagramas de Venn de la inclusión A subconjunto de B.png",
+    "sha256": "345275c8477eb32db2bad39030cb26ea86d1c78cebdf688ff825427ef12e523a"
   }
 ]

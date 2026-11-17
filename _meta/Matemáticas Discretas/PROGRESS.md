@@ -9,7 +9,7 @@ Rama: `migrar/matematicas-discretas`. Un commit por tema. Antes de cada commit s
 | 2 | Lógica proposicional y equivalencia | `02-Lógica proposicional y equivalencia/` | ✅ hecho | 9 + índice | 4 |
 | 3 | Satisfacibilidad, consecuencia y resolución | `03-Satisfacibilidad, consecuencia y resolución/` | ✅ hecho | 9 + índice | 3 |
 | 4 | Lógica de predicados y métodos de demostración | `04-Lógica de predicados y métodos de demostración/` | ⏳ pendiente | – | – |
-| 5 | Teoría de conjuntos | `05-Teoría de conjuntos/` | ⏳ pendiente | – | – |
+| 5 | Teoría de conjuntos | `05-Teoría de conjuntos/` | ✅ hecho | 10 + índice | 2 |
 | 6 | Relaciones y relaciones de equivalencia | `06-Relaciones y relaciones de equivalencia/` | ⏳ pendiente | – | – |
 | 7 | Conjunto cuociente, órdenes y elementos extremos | `07-Conjunto cuociente, órdenes y elementos extremos/` | ⏳ pendiente | – | – |
 | 8 | Funciones y cardinalidad | `08-Funciones y cardinalidad/` | ⏳ pendiente | – | – |
@@ -37,3 +37,4 @@ Rama: `migrar/matematicas-discretas`. Un commit por tema. Antes de cada commit s
 - ℹ️ **Ayudantía de lógica proposicional.** El PDF de soluciones repite el encabezado "Ayudantía 1 - Inducción" en cada página; se usó el contenido (dual, Superman, EQ, equivalencia larga) y se omitió el ejercicio de palíndromos (pertenece al tema de inducción).
 - ℹ️ **Formas normales.** La clase no define DNF/CNF por nombre (solo la construcción desde la tabla); los términos "literal", "cláusula", DNF y CNF se tomaron de las pruebas y el banco de ejercicios.
 - ℹ️ **2022-1-i1-4.** El máximo real de fórmulas no equivalentes y satisfacibles es 2^(2^n−1), mayor que lo pedido 2^(2^(n−1)); la nota usa lo correcto.
+- **2026-11-17 · Teoría de conjuntos.** Fuentes: clase de teoría de conjuntos y la parte de pares ordenados y producto cartesiano de la clase de relaciones, apuntes de Jorge Pérez y de Luis Dissett (axiomas, Russell, leyes, generalizadas), libro de discretas (diagramas de Venn, intervalos), ayudantía 5 (con solución) y banco de pruebas (2015-2 a 2025-2; 8 preguntas curadas). Verificaciones con Python: leyes de conjuntos (distributividad, De Morgan, absorción, diferencia) comprobadas exhaustivamente sobre todos los subconjuntos de un universo de 4 elementos; conjunto potencia, construcción de naturales con frozenset (sum(3,4)=7, mult(3,2)=6), pares de Kuratowski y contraejemplo de la definición alternativa, producto cartesiano (A×B=B×A, A×(B\C), cancelación de la diferencia simétrica, sobre subconjuntos de {0,1,2}), P(A\B)≠P(A)\P(B), ejemplo de topología. Las preguntas de combinatoria del banco (palomar y teorema multinomial) y las de cardinalidad (unión de |X|<|Y|) no se incluyeron: corresponden a los temas de funciones/cardinalidad.
