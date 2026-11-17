@@ -341,5 +341,103 @@
     "original": "licc-cursos-app/fuentes/ejercita/discretas/figuras/c3_2020_1_p2_algoritmo.png",
     "destino": "Matemáticas Discretas/09-Algoritmos y complejidad/adjuntos/Algoritmo de alcanzabilidad por composición.png",
     "sha256": "383e55d16ce8e33c10697177f9e9f80df2cd7795df3ca0901a9a6ff28bd49f8a"
+  },
+  {
+    "tema": "Grafos, caminos y ciclos",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/19 - Grafos.pdf#page=20",
+    "destino": "Matemáticas Discretas/10-Grafos, caminos y ciclos/adjuntos/Grafo dirigido con rulos y aristas paralelas.png",
+    "sha256": "549b06606ca10866d453ba4ab6e6d8624195f7805610d44a31f7e17a2b046a58"
+  },
+  {
+    "tema": "Grafos, caminos y ciclos",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/19 - Grafos.pdf#page=26",
+    "destino": "Matemáticas Discretas/10-Grafos, caminos y ciclos/adjuntos/Grafo simple de cuatro vértices.png",
+    "sha256": "ec6100f21d33dd2dd51413244744723e797056cc193e62f482d803534c569fe9"
+  },
+  {
+    "tema": "Grafos, caminos y ciclos",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/19 - Grafos.pdf#page=15",
+    "destino": "Matemáticas Discretas/10-Grafos, caminos y ciclos/adjuntos/Puentes de Konigsberg y su grafo.png",
+    "sha256": "b292f9a3f1a785afc67da49e043a372d162b5ec8961f923687e9311b9f0aaf28"
+  },
+  {
+    "tema": "Grafos, caminos y ciclos",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/19 - Grafos.pdf#page=30",
+    "destino": "Matemáticas Discretas/10-Grafos, caminos y ciclos/adjuntos/Tres grafos isomorfos de cuatro vértices.png",
+    "sha256": "e41fef25f507206f7cdeb089e1f61da1c05d27ad5022d63dad669875a56067ed"
+  },
+  {
+    "tema": "Grafos, caminos y ciclos",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/19 - Grafos.pdf#page=35",
+    "destino": "Matemáticas Discretas/10-Grafos, caminos y ciclos/adjuntos/Camino de seis vértices.png",
+    "sha256": "d53fe534e18edf02f9e3380e955c09f260a187c32593f14c845bce784c0bd382"
+  },
+  {
+    "tema": "Grafos, caminos y ciclos",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/19 - Grafos.pdf#page=37",
+    "destino": "Matemáticas Discretas/10-Grafos, caminos y ciclos/adjuntos/Ciclo de siete vértices.png",
+    "sha256": "65526b5ae2ae5990ee88e8ac82238fd962e95250fa7418b4b60731e81496abea"
+  },
+  {
+    "tema": "Grafos, caminos y ciclos",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/19 - Grafos.pdf#page=39",
+    "destino": "Matemáticas Discretas/10-Grafos, caminos y ciclos/adjuntos/Grafo completo K5.png",
+    "sha256": "da05e6d675c6793d1d013d81a5847433974692e8750c4d621ab15272acf91fad"
+  },
+  {
+    "tema": "Grafos, caminos y ciclos",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/19 - Grafos.pdf#page=41",
+    "destino": "Matemáticas Discretas/10-Grafos, caminos y ciclos/adjuntos/Grafo bipartito con partición.png",
+    "sha256": "69366fd5798ae996fb92309f6a1ed81c8c6548264bd44a7e04a6660140715298"
+  },
+  {
+    "tema": "Grafos, caminos y ciclos",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/19 - Grafos.pdf#page=42",
+    "destino": "Matemáticas Discretas/10-Grafos, caminos y ciclos/adjuntos/Grafo bipartito completo K2-3.png",
+    "sha256": "b3a0f12bfd06a78b6568351ef99393afc073a50fd36fa15838ac8ffff4e4a71f"
+  },
+  {
+    "tema": "Grafos, caminos y ciclos",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/19 - Grafos.pdf#page=43",
+    "destino": "Matemáticas Discretas/10-Grafos, caminos y ciclos/adjuntos/Subgrafo de un grafo.png",
+    "sha256": "8ed908ce837bab29ce9b94efcae52f087c97e99c24ae31f939a4af5c38cbdd4d"
+  },
+  {
+    "tema": "Grafos, caminos y ciclos",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/19 - Grafos.pdf#page=44",
+    "destino": "Matemáticas Discretas/10-Grafos, caminos y ciclos/adjuntos/Clique y conjunto independiente.png",
+    "sha256": "521fb713b96f152647227ba10db59ef32b58b36c736e9e0f8f4c016b5984405b"
+  },
+  {
+    "tema": "Grafos, caminos y ciclos",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/21 - Ciclos.pdf#page=27",
+    "destino": "Matemáticas Discretas/10-Grafos, caminos y ciclos/adjuntos/Construcción del ciclo euleriano desde G prima.png",
+    "sha256": "f8bdb8418758658a98cb4eb00eb4dd8c95aacc4dcdd2d1ae00a9147b38891f46"
+  },
+  {
+    "tema": "Grafos, caminos y ciclos",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/21 - Ciclos.pdf#page=28",
+    "destino": "Matemáticas Discretas/10-Grafos, caminos y ciclos/adjuntos/Ciclos en las dos componentes de G prima.png",
+    "sha256": "6de95ee1cde8caa84fb65ee662955213521c44cad5976b557ca2909ddba05dc7"
+  },
+  {
+    "tema": "Grafos, caminos y ciclos",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/21 - Ciclos.pdf#page=33",
+    "destino": "Matemáticas Discretas/10-Grafos, caminos y ciclos/adjuntos/Tres grafos para ciclos hamiltonianos.png",
+    "sha256": "7d1e7d36fec9b53d548d4a84250281a196b4d6aad6327edd1453e7718eaa9661"
   }
 ]

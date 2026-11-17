@@ -14,7 +14,7 @@ Rama: `migrar/matematicas-discretas`. Un commit por tema. Antes de cada commit s
 | 7 | Conjunto cuociente, órdenes y elementos extremos | `07-Conjunto cuociente, órdenes y elementos extremos/` | ✅ hecho | 9 + índice | 6 |
 | 8 | Funciones y cardinalidad | `08-Funciones y cardinalidad/` | ✅ hecho | 9 + índice | 6 |
 | 9 | Algoritmos y complejidad | `09-Algoritmos y complejidad/` | ✅ hecho | 10 + índice | 10 |
-| 10 | Grafos, caminos y ciclos | `10-Grafos, caminos y ciclos/` | ⏳ pendiente | – | – |
+| 10 | Grafos, caminos y ciclos | `10-Grafos, caminos y ciclos/` | ✅ hecho | 10 + índice | 14 |
 | 11 | Árboles | `11-Árboles/` | ✅ hecho | 8 + índice | 8 |
 | 12 | Aritmética modular y criptografía | `12-Aritmética modular y criptografía/` | ✅ hecho | 12 + índice | 1 |
 | 13 | Gestión del curso | `13-Gestión del curso/` | ⏳ pendiente | – | – |
@@ -78,3 +78,11 @@ Registro: Fuentes: clases de algoritmos (diapositivas 1-42), complejidad de iter
 - ℹ️ **Potencia por dividir para conquistar (2018-2).** La pauta escribe la condición de paridad sobre x; debe ser sobre n. La cota medida es floor(log2 n) <= T(n) <= 2 floor(log2 n).
 - ℹ️ **Contar T(n) de BinarySearch.** El modelo de la clase cuenta 4 comparaciones por nivel (T(1)=3); el conteo exacto instrumentado es menor o igual (p. ej. n=8 da 12 frente a 15), por lo que el modelo es una cota superior del peor caso.
 - ℹ️ **Ejercicios omitidos de la parte de grafos de la ayudantía 10** (coloración de aristas, ancho de un grafo): pertenecen al tema de grafos.
+- **2026-11-17 · Grafos, caminos y ciclos.** - Grafos, caminos y ciclos: 10 notas (8 de teoría + 2 de ejercicios) + índice, 14 imágenes.
+
+Fuentes: clases de grafos, caminos y ciclos (figuras recortadas de las diapositivas), ayudantías 10 y 11, banco de ejercicios de grafos y exámenes 2016-2 y 2017-2. Verificaciones (Python): grados y matrices del grafo de ejemplo, lema del apretón de manos, caso de los 15 empleados (suma 93, impar), grados de Königsberg, ciclos eulerianos y hamiltonianos de G1, G2, G3, R(3,3) sobre los 2^15 grafos de 6 vértices, ancho/diámetro y complemento (ayudantía y examen 2015-2) en todos los grafos hasta 7 vértices, arista de corte vs ciclo, cota n-k de componentes, conteos 1, 2, 4, 11, 34 de grafos no isomorfos, autocomplementarios P4 y C5, grados repetidos, fórmulas de predicados de 2016-2.
+
+- ℹ️ **Definición de camino en el ramo.** La clase define caminata/camino/ciclo prohibiendo solo repetir aristas (los vértices pueden repetirse); la nota lo dice y aclara cuándo se exige ciclo sin vértices repetidos.
+- ℹ️ **Fórmula de distancia 3 en examen 2016-2.** La pauta escribe ∀x,y(x≠y ∧ …), que es insatisfacible; se usa ∀x∀y(x=y ∨ E(x,y) ∨ φ2 ∨ φ3), verificada por fuerza bruta.
+- ℹ️ **Ayudantías 10 y 11 repiten ejercicios.** Los ejercicios de ancho (A10.3 y A11.1) son idénticos; el de coloración (A10.2) es el del examen 2022-1. Las demostraciones del ciclo de largo al menos raíz de k y del ancho 2 se reescribieron más cuidadosamente que en la solución.
+- ℹ️ **Sin ejercicios de árboles.** Los ejercicios de árboles (A11.3 y exámenes 2016-2, 2021-2) quedan para el tema 11.
