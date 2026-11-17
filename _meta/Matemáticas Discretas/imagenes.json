@@ -68,5 +68,47 @@
     "original": "Semestre 2/Mates-Discretas-IIC1253/Libros/Discretas-4ta-edicion.pdf#page=364",
     "destino": "Matemáticas Discretas/05-Teoría de conjuntos/adjuntos/Diagramas de Venn de la inclusión A subconjunto de B.png",
     "sha256": "345275c8477eb32db2bad39030cb26ea86d1c78cebdf688ff825427ef12e523a"
+  },
+  {
+    "tema": "Conjunto cuociente, órdenes y elementos extremos",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/12 - Conjunto cuociente y órdenes.pdf#page=10",
+    "destino": "Matemáticas Discretas/07-Conjunto cuociente, órdenes y elementos extremos/adjuntos/Clases de equivalencia de congruencia módulo 4.png",
+    "sha256": "b5a9637e9b1e89870cf073a823dd4897ac6a116ad415bbc29a8769c4cb208946"
+  },
+  {
+    "tema": "Conjunto cuociente, órdenes y elementos extremos",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/12 - Conjunto cuociente y órdenes.pdf#page=25",
+    "destino": "Matemáticas Discretas/07-Conjunto cuociente, órdenes y elementos extremos/adjuntos/Pares de naturales coloreados por diagonales.png",
+    "sha256": "06fc6b65d145a27d1eb51bdaf200c42c6edfd6db0f9f3906f2e15365f2b50eff"
+  },
+  {
+    "tema": "Conjunto cuociente, órdenes y elementos extremos",
+    "tipo": "libro",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Apuntes Jorge Pérez.pdf#page=42",
+    "destino": "Matemáticas Discretas/07-Conjunto cuociente, órdenes y elementos extremos/adjuntos/Diagrama de Hasse de las tareas para vestirse.png",
+    "sha256": "aaefe15464a59880654ec9e6017c7306792e3494a002e7af9a5131e772ccdcc9"
+  },
+  {
+    "tema": "Conjunto cuociente, órdenes y elementos extremos",
+    "tipo": "libro",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Apuntes Jorge Pérez.pdf#page=42",
+    "destino": "Matemáticas Discretas/07-Conjunto cuociente, órdenes y elementos extremos/adjuntos/Diagrama de Hasse del conjunto potencia de tres elementos.png",
+    "sha256": "59065639bf8b18042ab37fa788d585e1ffb9b8a453139615403535766a270b70"
+  },
+  {
+    "tema": "Conjunto cuociente, órdenes y elementos extremos",
+    "tipo": "libro",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Apuntes Jorge Pérez.pdf#page=45",
+    "destino": "Matemáticas Discretas/07-Conjunto cuociente, órdenes y elementos extremos/adjuntos/Partición de N por N inducida por la relación de pares.png",
+    "sha256": "c0aa61105c4961221da507626ba16732fd2a262dc53bf305eeda8a6245fec56d"
+  },
+  {
+    "tema": "Conjunto cuociente, órdenes y elementos extremos",
+    "tipo": "libro",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Libros/Apuntes Luis Dissett.pdf#page=43",
+    "destino": "Matemáticas Discretas/07-Conjunto cuociente, órdenes y elementos extremos/adjuntos/Grafo dirigido del orden de inclusión con lazos y flechas redundantes.png",
+    "sha256": "fc82cf9fb7f6be5542c328a0d0060af24544f3c034553ff3b2f8d8d91baa69d4"
   }
 ]
