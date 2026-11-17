@@ -208,5 +208,61 @@
     "original": "licc-cursos-app/public/ejercita/IIC1253/2024-2-ex-3.png",
     "destino": "Matemáticas Discretas/06-Relaciones y relaciones de equivalencia/adjuntos/Algoritmo de clausura transitiva.png",
     "sha256": "f420322df5fabc7ec9bcd87741a2454e9f0a8dab3b6de99a72c15c3980cbeef7"
+  },
+  {
+    "tema": "Árboles",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Apuntes Jorge Pérez.pdf#page=87",
+    "destino": "Matemáticas Discretas/11-Árboles/adjuntos/Red de computadores con el mínimo de conexiones.png",
+    "sha256": "dfe111aedf3d3bc3c5f331e278e7f18d001987430af7fd212415be3ea04c49b9"
+  },
+  {
+    "tema": "Árboles",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Apuntes Jorge Pérez.pdf#page=87",
+    "destino": "Matemáticas Discretas/11-Árboles/adjuntos/Un árbol con diez vértices.png",
+    "sha256": "f149179d29b27146d5a7e4348df6246b88f06c27713067aac3868741f7c6c099"
+  },
+  {
+    "tema": "Árboles",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Apuntes Jorge Pérez.pdf#page=88",
+    "destino": "Matemáticas Discretas/11-Árboles/adjuntos/Dos caminos distintos forman un ciclo.png",
+    "sha256": "e35840f3d455885e44790e50a6925a944bf53119bc649ea6211cafd1e5d482b9"
+  },
+  {
+    "tema": "Árboles",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Apuntes Jorge Pérez.pdf#page=89",
+    "destino": "Matemáticas Discretas/11-Árboles/adjuntos/Dos caminos entre u y v contienen un ciclo.png",
+    "sha256": "6beaac30c8957282d67003ffb91b96688c5755fa4cf7b3a616099d34aac3b469"
+  },
+  {
+    "tema": "Árboles",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Apuntes Jorge Pérez.pdf#page=91",
+    "destino": "Matemáticas Discretas/11-Árboles/adjuntos/Definiciones sobre un árbol con raíz.png",
+    "sha256": "a14718d56e801f85221f759b3a3f0482cbf1e8b06ba2247c714e55451a69b109"
+  },
+  {
+    "tema": "Árboles",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Tareas/T6/Pauta_T6.pdf#page=4",
+    "destino": "Matemáticas Discretas/11-Árboles/adjuntos/Grafo simple de siete vértices.png",
+    "sha256": "03d5da645a74954882e5f5645e30422979ab48ef49bd74cf2b5aa1fe0c4ff94c"
+  },
+  {
+    "tema": "Árboles",
+    "tipo": "clase",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Tareas/T6/Pauta_T6.pdf#page=4",
+    "destino": "Matemáticas Discretas/11-Árboles/adjuntos/Árbol generador del grafo.png",
+    "sha256": "09da34508b36919b75b4a77a29f54ae89b0e73cc55595b201402d06d5a2ae354"
+  },
+  {
+    "tema": "Árboles",
+    "tipo": "libro",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Libros/Discretas-4ta-edicion.pdf#page=720",
+    "destino": "Matemáticas Discretas/11-Árboles/adjuntos/Árbol binario con subárboles izquierdo y derecho.png",
+    "sha256": "8452503ac87840e825e4705201b008aaeba88653606718fd05e746918fe24094"
   }
 ]
