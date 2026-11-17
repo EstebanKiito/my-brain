@@ -20,3 +20,10 @@ Dudas:
 - 🟡 **Pauta 2015-2 I2 (preorden por ínfimo y supremo).** La pauta propone $S = \{\emptyset,\{1\},\{2\},\{1,2\}\}$, pero $\inf$ y $\sup$ de $\emptyset$ no están definidos en $\mathbb{N}$; la nota usa $S = \{\{1\},\{2\},\{1,2\}\}$, verificado por enumeración.
 - 🟡 **Pauta examen 2016-2 (orden de subcadena).** La pauta dice que hay mínimo sólo si $|\Sigma| = 1$ (excluyendo $\varepsilon$); la nota considera $\Sigma^*$ con la palabra vacía, que es mínimo (verificado: $\varepsilon$ es subcadena de todas) y deja la otra lectura entre paréntesis.
 - ℹ️ **Contenidos sin figuras en la clase.** La clase no trae diagramas de Hasse ni orden lexicográfico; los Hasse y el grafo con lazos vienen de los apuntes y el orden lexicográfico se tomó de una pregunta de interrogación (2022-2).
+
+<!-- Lógica de predicados y métodos de demostración -->
+Dudas:
+- ✅ **Ayudantía I1, modelamiento de primos.** La solución de la ayudantía escribe sólo `Entre(x, z, y)` sin exigir x≠y ni considerar y<x; con eso la oración es falsa (x=7, y=5). En la nota se corrigió (x≠y y ambos órdenes) y se verificó por cálculo.
+- ✅ **2019-2-i1-4, banco.** El resumen dice que ≤ satisface c) pero habla de I2 ambiguamente; en la nota se dan I1 e I2 explícitos para a), b), c), verificados.
+- ℹ️ **Ayudantía 3 y 4 (predicados).** Sólo hay 4 ejercicios de predicados en ayudantías (cahuín, Σ⊨φ ⟺ Σ∪{¬φ} inconsistente, simétrica+transitiva⊨refleja, primos); las clases no traen ejercicios de métodos de demostración en ayudantía.
+- ℹ️ **Clases 07-08 sin figuras.** Son diapositivas de texto; no se generaron imágenes.
