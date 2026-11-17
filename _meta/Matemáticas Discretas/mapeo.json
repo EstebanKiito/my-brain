@@ -1,0 +1,131 @@
+{
+  "_descripcion": "Mapeo de las fuentes originales (rutas relativas a _raw/) a los temas del vault. Matemáticas Discretas no tiene export de Notion: las fuentes son las clases (Clases/00..27, Sebastián Bugedo), los apuntes de Jorge Pérez y Luis Dissett, los resúmenes, el libro, las ayudantías (Ayudantias/), las tareas (Tareas/T1-T7) y las evaluaciones (Pruebas/ 2014-1 a 2026-1), más el banco de ejercicios de licc-cursos-app (src/data/ejercita/IIC1253.json). Como verificar.py solo procesa fuentes HTML, 'fuentes' queda vacío y cada tema lleva 'secciones' vacías; 'pdfs' es informativo. Las notas se reescriben, por eso 'cobertura' es 'reescrita'.",
+  "carpeta_ramo": "Matemáticas Discretas",
+  "cobertura": "reescrita",
+  "preguntas_repaso": [
+    3,
+    8
+  ],
+  "fuentes": {},
+  "temas": {
+    "Inducción simple, fuerte y estructural": {
+      "carpeta": "Matemáticas Discretas/01-Inducción simple, fuerte y estructural",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/00 - Introducción.pdf",
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/01 - Inducción simple y fuerte.pdf",
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/02 - Inducción estructural.pdf"
+      ]
+    },
+    "Lógica proposicional y equivalencia": {
+      "carpeta": "Matemáticas Discretas/02-Lógica proposicional y equivalencia",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/03 - Lógica proposicional.pdf",
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/04 - Equivalencia lógica.pdf"
+      ]
+    },
+    "Satisfacibilidad, consecuencia y resolución": {
+      "carpeta": "Matemáticas Discretas/03-Satisfacibilidad, consecuencia y resolución",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/05 - Satisfacibilidad y consecuencia.pdf",
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/06 - Consecuencia y resolución.pdf"
+      ]
+    },
+    "Lógica de predicados y métodos de demostración": {
+      "carpeta": "Matemáticas Discretas/04-Lógica de predicados y métodos de demostración",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/07 - Lógica de predicados.pdf",
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/08 - Consecuencia en predicados y métodos de demostración.pdf"
+      ]
+    },
+    "Teoría de conjuntos": {
+      "carpeta": "Matemáticas Discretas/05-Teoría de conjuntos",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/09 - Teoría de conjuntos.pdf"
+      ]
+    },
+    "Relaciones y relaciones de equivalencia": {
+      "carpeta": "Matemáticas Discretas/06-Relaciones y relaciones de equivalencia",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/10 - Relaciones.pdf",
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/11 - Relaciones de equivalencia.pdf"
+      ]
+    },
+    "Conjunto cuociente, órdenes y elementos extremos": {
+      "carpeta": "Matemáticas Discretas/07-Conjunto cuociente, órdenes y elementos extremos",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/12 - Conjunto cuociente y órdenes.pdf",
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/13 - Elementos extremos y funciones.pdf"
+      ]
+    },
+    "Funciones y cardinalidad": {
+      "carpeta": "Matemáticas Discretas/08-Funciones y cardinalidad",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/13 - Elementos extremos y funciones.pdf",
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/14 - cardinalidad.pdf",
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/15 - Teorema de Cantor.pdf"
+      ]
+    },
+    "Algoritmos y complejidad": {
+      "carpeta": "Matemáticas Discretas/09-Algoritmos y complejidad",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/16 - Algoritmos.pdf",
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/17 - Complejidad iterativos.pdf",
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/18 - Complejidad recursivos.pdf"
+      ]
+    },
+    "Grafos, caminos y ciclos": {
+      "carpeta": "Matemáticas Discretas/10-Grafos, caminos y ciclos",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/19 - Grafos.pdf",
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/20 - Caminos.pdf",
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/21 - Ciclos.pdf"
+      ]
+    },
+    "Árboles": {
+      "carpeta": "Matemáticas Discretas/11-Árboles",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/22 - Árboles.pdf"
+      ]
+    },
+    "Aritmética modular y criptografía": {
+      "carpeta": "Matemáticas Discretas/12-Aritmética modular y criptografía",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": [
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/23 - Aritmética modular.pdf",
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/24 - Máximo común divisor.pdf",
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/25 - Congruencias lineales.pdf",
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/26 - Introducción a criptografía.pdf",
+        "Semestre 2/Mates-Discretas-IIC1253/Clases/27 - Epílogo.pdf"
+      ]
+    },
+    "Gestión del curso": {
+      "carpeta": "Matemáticas Discretas/13-Gestión del curso",
+      "estado": "pendiente",
+      "secciones": [],
+      "pdfs": []
+    }
+  }
+}
