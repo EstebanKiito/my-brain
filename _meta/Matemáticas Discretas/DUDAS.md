@@ -27,3 +27,11 @@ Dudas:
 - ✅ **2019-2-i1-4, banco.** El resumen dice que ≤ satisface c) pero habla de I2 ambiguamente; en la nota se dan I1 e I2 explícitos para a), b), c), verificados.
 - ℹ️ **Ayudantía 3 y 4 (predicados).** Sólo hay 4 ejercicios de predicados en ayudantías (cahuín, Σ⊨φ ⟺ Σ∪{¬φ} inconsistente, simétrica+transitiva⊨refleja, primos); las clases no traen ejercicios de métodos de demostración en ayudantía.
 - ℹ️ **Clases 07-08 sin figuras.** Son diapositivas de texto; no se generaron imágenes.
+
+<!-- Relaciones y relaciones de equivalencia -->
+- 🟡 **Cota del algoritmo de clausura transitiva (examen 2024-2).** El banco da una cota fina de $O(|A|)$ iteraciones afirmando que tras $i$ iteraciones solo hay caminos de largo $\le i+1$. En realidad la composición $R^+\circ R^+$ duplica el alcance: tras $i$ iteraciones están los caminos de largo $\le 2^i$, y sobre una cadena de $n$ nodos el ciclo corre $\lceil\log_2(n-1)\rceil+1$ veces. La nota usa $O(\log|A|)$ (y menciona que $O(|A|)$ y $O(|A|^2)$ también son cotas válidas, aunque no ajustadas).
+- ℹ️ **Ejemplo de vuelos en los apuntes de Pérez.** Dicen que la clausura transitiva de los vuelos directos no debería contener (Stgo, Mosc), pero hay camino Stgo→Lond→Paris→Mosc, así que sí lo contiene. El ejemplo no se usó en las notas.
+- ℹ️ **Convención de la composición.** La ayudantía 6 define $R_1\circ R_2$ aplicando primero $R_2$; los apuntes de Pérez y el banco (examen 2024-2) aplican primero $R_1$. Las notas usan la segunda y avisan de la diferencia; los enunciados de la ayudantía son simétricos y valen con cualquiera.
+- ℹ️ **Pares ordenados duplicados con el tema 05.** La demostración de Kuratowski aparece también en la nota de teoría de conjuntos (ahí como parte de producto cartesiano); aquí se incluye porque la clase de relaciones parte con ella. El agente principal puede enlazar ambas notas.
+- ℹ️ **Cuociente en el tema 07.** La clase de relaciones de equivalencia termina con conjunto cuociente, índice y particiones; se cubren aquí (nota 07) en lo necesario para las equivalencias, y el tema de órdenes/cuociente puede retomarlos.
+- ℹ️ **Pauta de la ayudantía 6, transitividad de ↑.** La solución "despeja r" y reordena de forma confusa; se reescribió con $msu = nru = nst$ y cancelación de $s \neq 0$.

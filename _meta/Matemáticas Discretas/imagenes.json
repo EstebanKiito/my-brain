@@ -152,5 +152,61 @@
     "original": "Semestre 2/Mates-Discretas-IIC1253/Clases/15 - Teorema de Cantor.pdf#page=22",
     "destino": "Matemáticas Discretas/08-Funciones y cardinalidad/adjuntos/Diagonal de Cantor sobre los reales.png",
     "sha256": "a7f669f81ac840663298f0102888e6bad43da3ab263066fa084f42340bcd12ca"
+  },
+  {
+    "tema": "Relaciones y relaciones de equivalencia",
+    "tipo": "libro",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Libros/Discretas-4ta-edicion.pdf#page=468",
+    "destino": "Matemáticas Discretas/06-Relaciones y relaciones de equivalencia/adjuntos/Relación divide de A en B en diagrama de flechas.png",
+    "sha256": "44257c3c4be659d7fa451df9f324b6ac1902c79cba4ce4233dfc9ed04888cad8"
+  },
+  {
+    "tema": "Relaciones y relaciones de equivalencia",
+    "tipo": "libro",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Libros/Discretas-4ta-edicion.pdf#page=468",
+    "destino": "Matemáticas Discretas/06-Relaciones y relaciones de equivalencia/adjuntos/Relación inversa de divide en diagrama de flechas.png",
+    "sha256": "b6407fdfb03a91a06295412ed759f79f6a8546bc9920c5ca2b8f977330b34ccb"
+  },
+  {
+    "tema": "Relaciones y relaciones de equivalencia",
+    "tipo": "libro",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Libros/Discretas-4ta-edicion.pdf#page=474",
+    "destino": "Matemáticas Discretas/06-Relaciones y relaciones de equivalencia/adjuntos/Grafo dirigido de la congruencia módulo 3.png",
+    "sha256": "696b2b253d3c7aefe6ba8b566cdf42dc0a220d8031d04df21ce12dd2393e9591"
+  },
+  {
+    "tema": "Relaciones y relaciones de equivalencia",
+    "tipo": "libro",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Libros/Discretas-4ta-edicion.pdf#page=475",
+    "destino": "Matemáticas Discretas/06-Relaciones y relaciones de equivalencia/adjuntos/Grafo dirigido de una relación refleja y simétrica no transitiva.png",
+    "sha256": "174a0672e5692eb19b65651a45f54820745bd332153af991fd0374feee1abff8"
+  },
+  {
+    "tema": "Relaciones y relaciones de equivalencia",
+    "tipo": "libro",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Libros/Discretas-4ta-edicion.pdf#page=481",
+    "destino": "Matemáticas Discretas/06-Relaciones y relaciones de equivalencia/adjuntos/Clausura transitiva paso 1 pares originales.png",
+    "sha256": "f92a527b5f70a6097b42118e5b792eef31bff93003b6d56c84ed3e2e30dab093"
+  },
+  {
+    "tema": "Relaciones y relaciones de equivalencia",
+    "tipo": "libro",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Libros/Discretas-4ta-edicion.pdf#page=481",
+    "destino": "Matemáticas Discretas/06-Relaciones y relaciones de equivalencia/adjuntos/Clausura transitiva paso 2 relación completada.png",
+    "sha256": "ab11419149f0ea8e228966604158d12bcfb48cb0185ae07e0f068cef80389f24"
+  },
+  {
+    "tema": "Relaciones y relaciones de equivalencia",
+    "tipo": "libro",
+    "original": "Semestre 2/Mates-Discretas-IIC1253/Libros/Discretas-4ta-edicion.pdf#page=484",
+    "destino": "Matemáticas Discretas/06-Relaciones y relaciones de equivalencia/adjuntos/Partición de un conjunto.png",
+    "sha256": "f2225f2b557c7023ede097fa51c29fdf1f08618732ac1c8625e41bab20650872"
+  },
+  {
+    "tema": "Relaciones y relaciones de equivalencia",
+    "tipo": "clase",
+    "original": "licc-cursos-app/public/ejercita/IIC1253/2024-2-ex-3.png",
+    "destino": "Matemáticas Discretas/06-Relaciones y relaciones de equivalencia/adjuntos/Algoritmo de clausura transitiva.png",
+    "sha256": "f420322df5fabc7ec9bcd87741a2454e9f0a8dab3b6de99a72c15c3980cbeef7"
   }
 ]
