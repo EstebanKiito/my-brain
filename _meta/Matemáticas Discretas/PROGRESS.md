@@ -5,7 +5,7 @@ Rama: `migrar/matematicas-discretas`. Un commit por tema. Antes de cada commit s
 | # | Tema | Carpeta | Estado | Notas | Imágenes |
 |---|---|---|---|---|---|
 | 0 | Infraestructura (`_meta/Matemáticas Discretas/`) | `_meta/` | ✅ hecho | – | – |
-| 1 | Inducción simple, fuerte y estructural | `01-Inducción simple, fuerte y estructural/` | ⏳ pendiente | – | – |
+| 1 | Inducción simple, fuerte y estructural | `01-Inducción simple, fuerte y estructural/` | ✅ hecho | 8 + índice | 1 |
 | 2 | Lógica proposicional y equivalencia | `02-Lógica proposicional y equivalencia/` | ⏳ pendiente | – | – |
 | 3 | Satisfacibilidad, consecuencia y resolución | `03-Satisfacibilidad, consecuencia y resolución/` | ⏳ pendiente | – | – |
 | 4 | Lógica de predicados y métodos de demostración | `04-Lógica de predicados y métodos de demostración/` | ⏳ pendiente | – | – |
@@ -27,3 +27,4 @@ Rama: `migrar/matematicas-discretas`. Un commit por tema. Antes de cada commit s
 - Nombres de nota únicos en todo el vault (se revisan colisiones con Álgebra, Cálculo, EDD, Algoritmos…): si el concepto ya existe en otro ramo, se enlaza.
 
 ## Registro
+- **2026-11-17 · Inducción simple, fuerte y estructural (piloto).** Fuentes: clases 1 y 2 (buen orden, PIS, PICV, equivalencia, definiciones inductivas, listas $L_\mathbb{N}$, inducción estructural), ayudantía de inducción (5 ejercicios, con la figura de las regiones del plano) y 9 preguntas de I1, I3 y Examen 2015-2 a 2020-1 del banco de ejercicios. Verificadas numéricamente con Python las fórmulas (suma de cuadrados, $n! > 2^n$, $F_n \le 2^n$, $G_n \le 3^n$, $2p + 7q$, Fibonacci mod 5 y paridad). 8 notas + índice; las clases no traen figuras en este tema.
